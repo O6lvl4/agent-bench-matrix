@@ -79,6 +79,34 @@
 - 推論量・thinking・温度は ID に入れず `model_config` へ。
 - 知らない名前でも、書かれているとおりに写す。直さない。
 
+## モデルの登録簿: `data/models.json`
+
+```json
+{
+  "models": [
+    {
+      "id": "glm-5.3",
+      "name": "GLM-5.3",
+      "vendor": "Z.ai",
+      "open_weights": true,
+      "weights_url": "https://huggingface.co/zai-org/GLM-5.3",
+      "aliases": ["glm-5p3"]
+    }
+  ]
+}
+```
+
+| フィールド | 意味 |
+|---|---|
+| `id` | 表の `model_ids` が使うID。表が使うIDはすべてここに無ければならない(`--strict`) |
+| `name` / `vendor` | 表示名と、そのモデルを出した組織 |
+| `open_weights` | 重みが公開されていれば `true`(`weights_url` に配布先が要る)、公開されていなければ `false`、確かめられなければ `null` |
+| `aliases` | このIDにまとめた、表記だけが違う旧ID |
+
+表記だけが違うID(並び順、`.` と `p`、ベンダー接頭辞の有無、日付の接尾辞、`-preview`、`-instruct`)は1つにまとめ、
+推論量・thinking・コンテキスト長などは表の `model_config` に移します。サイズ・`mini`/`flash`/`codex` のような
+別の製品は別のIDです。
+
 ## 取れなかった表: `data/gaps/<id>.json`
 
 ```json

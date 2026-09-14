@@ -177,14 +177,16 @@ fn check_model(m: Value, i: Int) -> List[Problem] = {
   let at = "data/models.json models[" + int.to_string(i) + "]"
   var out = required_text(m, ["id", "name", "vendor"], at)
   if not regex.is_match(SLUG, text_of(m, "id") ?? "") then list.push(out, problem(at, "id の形が規則に合わない"))
-  match value.as_bool(or_null(value.field(m, "open_weights"))) {
-    // Open weights is a claim about a download, so it names one.
+  // Open weights is a claim about a download, so it names one. A model whose
+  // weights could not be confirmed either way is null, not false.
+  let ow = or_null(value.field(m, "open_weights"))
+  if not is_null(ow) then match value.as_bool(ow) {
     ok(true) => match text_of(m, "weights_url") {
       some(u) => if not is_link(u) then list.push(out, problem(at, "weights_url がURLでない")),
       none => list.push(out, problem(at, "open_weights が true なら weights_url が要る")),
     },
     ok(false) => (),
-    err(_) => list.push(out, problem(at, "open_weights は true/false")),
+    err(_) => list.push(out, problem(at, "open_weights は true/false/null")),
   }
   match strings_of(or_null(value.field(m, "aliases"))) {
     some(_) => (),
