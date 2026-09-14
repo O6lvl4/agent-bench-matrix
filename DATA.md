@@ -64,7 +64,8 @@
 | `rows[].model_ids` | 正規化したモデルID(下の規則)。決められなければ `[]` |
 | `rows[].model_config` | 推論量・thinking 予算など、IDに含めない設定 |
 | `rows[].score_extra` | ボードが同じ行に出している他の数値列(費用・試行別の値など)。キーは snake_case |
-| `rows[].date` | ボードがその行に付けている日付。無ければ `null` |
+| `rows[].score` | ボードの主指標の値。ボードが行を載せつつ値を N/A としているなら `null`(表には出し、マトリクスには入れない) |
+| `rows[].date` | ボードがその行に付けている日付。`YYYY-MM-DD`、ボードが月までしか書いていなければ `YYYY-MM`。無ければ `null` |
 | `rows[].verified` | ボード自身の検証マーク。ボードに無ければ `null` |
 | `rows[].open_source` | ボード自身がオープンと示している場合だけ `true`/`false`。推測しない |
 

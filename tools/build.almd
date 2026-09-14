@@ -15,7 +15,9 @@ import value
 //   almide run tools/build.almd -- --strict  models.json に無いモデルIDも問題として扱う
 
 let CATEGORIES = ["coding", "terminal", "tool-use", "web", "computer-use", "research", "security", "long-horizon", "general"]
-let DATE = "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+// A board that dates a row by month is saying something less precise, not
+// something wrong, so a month is accepted as it was written.
+let DATE = "^[0-9]{4}-[0-9]{2}(-[0-9]{2})?$"
 let SLUG = "^[a-z0-9][a-z0-9.\\-]*$"
 
 type Problem = { at: String, what: String }
@@ -62,8 +64,8 @@ fn nullable(v: Value, key: String, kind: String, at: String) -> List[Problem] = 
     else if kind == "bool" then match value.as_bool(x) { ok(_) => [], err(_) => [problem(at, key + " は true/false/null")] }
     else if kind == "int" then match value.as_int(x) { ok(_) => [], err(_) => [problem(at, key + " は整数か null")] }
     else if kind == "date" then match value.as_string(x) {
-      ok(s) => if regex.is_match(DATE, s) then [] else [problem(at, key + " は YYYY-MM-DD か null: " + s)],
-      err(_) => [problem(at, key + " は YYYY-MM-DD か null")],
+      ok(s) => if regex.is_match(DATE, s) then [] else [problem(at, key + " は YYYY-MM-DD / YYYY-MM か null: " + s)],
+      err(_) => [problem(at, key + " は YYYY-MM-DD / YYYY-MM か null")],
     }
     else match value.as_string(x) { ok(_) => [], err(_) => [problem(at, key + " は文字列か null")] },
 }
@@ -74,9 +76,11 @@ fn required_text(v: Value, keys: List[String], at: String) -> List[Problem] =
 fn check_row(row: Value, i: Int, retrieved: String, at: String) -> List[Problem] = {
   let here = at + " rows[" + int.to_string(i) + "]"
   var out = required_text(row, ["system"], here)
+  // null is what the board shows as N/A: listed, with no value. It stays in its
+  // table and never reaches a matrix cell.
   match value.field(row, "score") {
-    ok(s) => match value.as_float(s) { ok(_) => (), err(_) => list.push(out, problem(here, "score が数値でない")) },
-    err(_) => list.push(out, problem(here, "score がない")),
+    ok(s) => if not is_null(s) then match value.as_float(s) { ok(_) => (), err(_) => list.push(out, problem(here, "score が数値でも null でもない")) },
+    err(_) => list.push(out, problem(here, "score がない(ボードが N/A なら null)")),
   }
   match strings_of(or_null(value.field(row, "model_raw"))) {
     some(_) => (),
