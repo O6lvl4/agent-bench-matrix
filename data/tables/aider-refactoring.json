@@ -1,0 +1,494 @@
+{
+  "id": "aider-refactoring",
+  "family": "aider",
+  "name": "Aider Refactoring",
+  "board": "aider.chat",
+  "category": "coding",
+  "measures_ja": "大きな Python クラスの長いメソッド 89 個を、省略せずにリファクタリングできるか。",
+  "tasks": 89,
+  "tasks_note": "ページに「refactor 89 large methods」とある。一部の行は test_cases が 89 未満。",
+  "metric": "Percent completed correctly (pass_rate_1)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "すべて aider(固定の足場)で、モデルと編集形式だけを変えて走らせる。結果はコミュニティや作者が YAML への PR で提出する。",
+  "source": "https://aider.chat/docs/leaderboards/refactor.html",
+  "fetched": [
+    "https://raw.githubusercontent.com/Aider-AI/aider/main/aider/website/_data/refactor_leaderboard.yml",
+    "https://aider.chat/docs/leaderboards/refactor.html"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2024-10-22",
+  "snapshot": "sources/aider-refactoring/refactor_leaderboard.yml",
+  "paper": null,
+  "repo": "https://github.com/Aider-AI/refactor-benchmark",
+  "notes_ja": "ボードは pass_rate_1 で並べる。YAML の最終更新は 2024-10 で、実質的に止まっている。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "claude-3-5-sonnet-20241022",
+      "agent": "aider",
+      "model_raw": [
+        "claude-3-5-sonnet-20241022"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": "20241022; edit_format=diff; command=aider --sonnet",
+      "score": 92.1,
+      "score_extra": {
+        "pass_rate_1": 92.1,
+        "percent_cases_well_formed": 91,
+        "error_outputs": 13,
+        "num_malformed_responses": 12,
+        "num_with_malformed_responses": 8,
+        "user_asks": 14,
+        "lazy_comments": 2,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 0,
+        "test_cases": 89,
+        "seconds_per_case": 32.5,
+        "cost_usd": 8.4644
+      },
+      "date": "2024-10-22",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "o1-preview",
+      "agent": "aider",
+      "model_raw": [
+        "o1-preview"
+      ],
+      "model_ids": [
+        "o1-preview"
+      ],
+      "model_config": "edit_format=diff; command=aider --model o1-preview",
+      "score": 75.3,
+      "score_extra": {
+        "pass_rate_1": 75.3,
+        "percent_cases_well_formed": 57.3,
+        "error_outputs": 75,
+        "num_malformed_responses": 74,
+        "num_with_malformed_responses": 38,
+        "user_asks": 19,
+        "lazy_comments": 2,
+        "syntax_errors": 2,
+        "indentation_errors": 3,
+        "exhausted_context_windows": 1,
+        "test_timeouts": 0,
+        "test_cases": 89,
+        "seconds_per_case": 231.7,
+        "cost_usd": 120.985
+      },
+      "date": "2024-10-22",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "claude-3-opus-20240229",
+      "agent": "aider",
+      "model_raw": [
+        "claude-3-opus-20240229"
+      ],
+      "model_ids": [
+        "claude-3-opus"
+      ],
+      "model_config": "edit_format=diff; command=aider --opus",
+      "score": 72.3,
+      "score_extra": {
+        "pass_rate_1": 72.3,
+        "percent_cases_well_formed": 79.5,
+        "error_outputs": 51,
+        "num_malformed_responses": 17,
+        "user_asks": 0,
+        "lazy_comments": 2,
+        "syntax_errors": 1,
+        "indentation_errors": 3,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 0,
+        "test_cases": 83,
+        "seconds_per_case": 67.8,
+        "cost_usd": 27.9176
+      },
+      "date": "2024-05-04",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "claude-3.5-sonnet-20240620",
+      "agent": "aider",
+      "model_raw": [
+        "claude-3.5-sonnet-20240620"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": "20240620; edit_format=diff; command=aider --sonnet",
+      "score": 64,
+      "score_extra": {
+        "pass_rate_1": 64,
+        "percent_cases_well_formed": 76.4,
+        "error_outputs": 176,
+        "num_malformed_responses": 39,
+        "num_with_malformed_responses": 21,
+        "user_asks": 11,
+        "lazy_comments": 2,
+        "syntax_errors": 4,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 0,
+        "test_cases": 89,
+        "seconds_per_case": 42.8,
+        "cost_usd": 11.5242
+      },
+      "date": "2024-07-01",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "gpt-4o",
+      "agent": "aider",
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": "edit_format=diff; command=aider",
+      "score": 62.9,
+      "score_extra": {
+        "pass_rate_1": 62.9,
+        "percent_cases_well_formed": 53.9,
+        "error_outputs": 9025,
+        "num_malformed_responses": 41,
+        "user_asks": 0,
+        "lazy_comments": 2,
+        "syntax_errors": 0,
+        "indentation_errors": 5,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 0,
+        "test_cases": 89,
+        "seconds_per_case": 27.8
+      },
+      "date": "2024-05-13",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 6,
+      "system": "gpt-4-1106-preview",
+      "agent": "aider",
+      "model_raw": [
+        "gpt-4-1106-preview"
+      ],
+      "model_ids": [
+        "gpt-4-1106-preview"
+      ],
+      "model_config": "edit_format=udiff; command=aider --model gpt-4-1106-preview",
+      "score": 50.6,
+      "score_extra": {
+        "pass_rate_1": 50.6,
+        "percent_cases_well_formed": 39.3,
+        "error_outputs": 164,
+        "num_malformed_responses": 54,
+        "user_asks": 1,
+        "lazy_comments": 17,
+        "syntax_errors": 0,
+        "indentation_errors": 8,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 0,
+        "test_cases": 89,
+        "seconds_per_case": 61.8,
+        "cost_usd": 18.3844
+      },
+      "date": "2024-05-08",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 7,
+      "system": "gemini/gemini-1.5-pro-latest",
+      "agent": "aider",
+      "model_raw": [
+        "gemini/gemini-1.5-pro-latest"
+      ],
+      "model_ids": [
+        "gemini-1.5-pro"
+      ],
+      "model_config": "latest; edit_format=diff-fenced; command=aider --model gemini/gemini-1.5-pro-latest",
+      "score": 49.4,
+      "score_extra": {
+        "pass_rate_1": 49.4,
+        "percent_cases_well_formed": 7.9,
+        "error_outputs": 247,
+        "num_malformed_responses": 82,
+        "user_asks": 0,
+        "lazy_comments": 4,
+        "syntax_errors": 0,
+        "indentation_errors": 8,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 0,
+        "test_cases": 89,
+        "seconds_per_case": 55.7
+      },
+      "date": "2024-05-04",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 7,
+      "system": "gpt-4o-2024-08-06",
+      "agent": "aider",
+      "model_raw": [
+        "gpt-4o-2024-08-06"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": "2024-08-06; edit_format=diff; command=aider --model openai/gpt-4o-2024-08-06",
+      "score": 49.4,
+      "score_extra": {
+        "pass_rate_1": 49.4,
+        "percent_cases_well_formed": 89.9,
+        "error_outputs": 97,
+        "num_malformed_responses": 19,
+        "num_with_malformed_responses": 9,
+        "user_asks": 16,
+        "lazy_comments": 2,
+        "syntax_errors": 0,
+        "indentation_errors": 13,
+        "exhausted_context_windows": 2,
+        "test_timeouts": 0,
+        "test_cases": 89,
+        "seconds_per_case": 16.9,
+        "cost_usd": 4.0873
+      },
+      "date": "2024-08-06",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 9,
+      "system": "o1-mini",
+      "agent": "aider",
+      "model_raw": [
+        "o1-mini"
+      ],
+      "model_ids": [
+        "o1-mini"
+      ],
+      "model_config": "edit_format=diff; command=aider --model o1-mini",
+      "score": 44.9,
+      "score_extra": {
+        "pass_rate_1": 44.9,
+        "percent_cases_well_formed": 29.2,
+        "error_outputs": 151,
+        "num_malformed_responses": 150,
+        "num_with_malformed_responses": 63,
+        "user_asks": 28,
+        "lazy_comments": 2,
+        "syntax_errors": 5,
+        "indentation_errors": 4,
+        "exhausted_context_windows": 1,
+        "test_timeouts": 0,
+        "test_cases": 89,
+        "seconds_per_case": 115.3,
+        "cost_usd": 29.0492
+      },
+      "date": "2024-10-22",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 10,
+      "system": "gpt-4-turbo-2024-04-09 (udiff)",
+      "agent": "aider",
+      "model_raw": [
+        "gpt-4-turbo-2024-04-09 (udiff)"
+      ],
+      "model_ids": [
+        "gpt-4-turbo"
+      ],
+      "model_config": "2024-04-09; edit_format=udiff; command=aider --gpt-4-turbo",
+      "score": 34.1,
+      "score_extra": {
+        "pass_rate_1": 34.1,
+        "percent_cases_well_formed": 30.7,
+        "error_outputs": 183,
+        "num_malformed_responses": 61,
+        "user_asks": 0,
+        "lazy_comments": 1,
+        "syntax_errors": 3,
+        "indentation_errors": 15,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 0,
+        "test_cases": 88,
+        "seconds_per_case": 42.4,
+        "cost_usd": 19.6556
+      },
+      "date": "2024-04-09",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 11,
+      "system": "gpt-4-0125-preview",
+      "agent": "aider",
+      "model_raw": [
+        "gpt-4-0125-preview"
+      ],
+      "model_ids": [
+        "gpt-4-0125-preview"
+      ],
+      "model_config": "edit_format=udiff; command=aider --model gpt-4-0125-preview",
+      "score": 33.7,
+      "score_extra": {
+        "pass_rate_1": 33.7,
+        "percent_cases_well_formed": 47.2,
+        "error_outputs": 142,
+        "num_malformed_responses": 47,
+        "user_asks": 0,
+        "lazy_comments": 1,
+        "syntax_errors": 2,
+        "indentation_errors": 16,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 0,
+        "test_cases": 89,
+        "seconds_per_case": 56.6,
+        "cost_usd": 20.327
+      },
+      "date": "2024-05-08",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 12,
+      "system": "DeepSeek Coder V2 0724 (deprecated)",
+      "agent": "aider",
+      "model_raw": [
+        "DeepSeek Coder V2 0724 (deprecated)"
+      ],
+      "model_ids": [
+        "deepseek-coder-v2-0724"
+      ],
+      "model_config": "edit_format=diff; command=aider --model deepseek/deepseek-coder",
+      "score": 32.6,
+      "score_extra": {
+        "pass_rate_1": 32.6,
+        "percent_cases_well_formed": 59.6,
+        "error_outputs": 487,
+        "num_malformed_responses": 113,
+        "num_with_malformed_responses": 36,
+        "user_asks": 10,
+        "lazy_comments": 2,
+        "syntax_errors": 1,
+        "indentation_errors": 12,
+        "exhausted_context_windows": 3,
+        "test_timeouts": 0,
+        "test_cases": 89,
+        "seconds_per_case": 85,
+        "cost_usd": 0.4148
+      },
+      "date": "2024-07-24",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 13,
+      "system": "DeepSeek Chat V2.5",
+      "agent": "aider",
+      "model_raw": [
+        "DeepSeek Chat V2.5"
+      ],
+      "model_ids": [
+        "deepseek-v2.5"
+      ],
+      "model_config": "edit_format=diff; command=aider --deepseek",
+      "score": 31.5,
+      "score_extra": {
+        "pass_rate_1": 31.5,
+        "percent_cases_well_formed": 67.4,
+        "error_outputs": 90,
+        "num_malformed_responses": 88,
+        "num_with_malformed_responses": 29,
+        "user_asks": 8,
+        "lazy_comments": 7,
+        "syntax_errors": 0,
+        "indentation_errors": 6,
+        "exhausted_context_windows": 2,
+        "test_timeouts": 0,
+        "test_cases": 89,
+        "seconds_per_case": 225.4,
+        "cost_usd": 1.0338
+      },
+      "date": "2024-09-05",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 14,
+      "system": "gpt-4-turbo-2024-04-09 (diff)",
+      "agent": "aider",
+      "model_raw": [
+        "gpt-4-turbo-2024-04-09 (diff)"
+      ],
+      "model_ids": [
+        "gpt-4-turbo"
+      ],
+      "model_config": "2024-04-09; edit_format=diff; command=aider --model gpt-4-turbo-2024-04-09",
+      "score": 21.4,
+      "score_extra": {
+        "pass_rate_1": 21.4,
+        "percent_cases_well_formed": 6.8,
+        "error_outputs": 247,
+        "num_malformed_responses": 82,
+        "user_asks": 1,
+        "lazy_comments": 2,
+        "syntax_errors": 3,
+        "indentation_errors": 8,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 0,
+        "test_cases": 88,
+        "seconds_per_case": 67.8,
+        "cost_usd": 20.4889
+      },
+      "date": "2024-04-10",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    }
+  ]
+}

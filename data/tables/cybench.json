@@ -1,0 +1,604 @@
+{
+  "id": "cybench",
+  "family": "cybench",
+  "name": "Cybench",
+  "board": "cybench.github.io",
+  "category": "security",
+  "measures_ja": "プロの CTF 大会から集めた40問で、エージェントがサブタスクの誘導なしにフラグを取得できるか。",
+  "tasks": 40,
+  "tasks_note": "近年の行は各社システムカード由来で、35〜39問のサブセットでの値(score_extra.tasks_evaluated)。",
+  "metric": "Unguided % Solved",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "論文の公式実行、HAL での実行、各社システムカード/モデルカードの自己申告値が混在しており、足場・試行回数・問題数が行ごとに異なる。",
+  "source": "https://cybench.github.io/",
+  "fetched": [
+    "https://cybench.github.io/data/leaderboard.csv",
+    "https://cybench.github.io/js/homeSetup.js",
+    "https://cybench.github.io/"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": null,
+  "snapshot": "sources/cybench/leaderboard.csv",
+  "paper": "https://arxiv.org/abs/2408.08926",
+  "repo": "https://github.com/andyzorigin/cybench",
+  "notes_ja": "ボードに日付・順位は無く、rank は Unguided % の降順(同点は Subtask-Guided %)で付けた。system の上付き記号はボードの脚注(¹ HAL 実行、²³⁵⁶⁸ Anthropic システムカード、⁴ xAI モデルカード、⁷ Meta の報告書)で、row_url は脚注のリンク先。o3-mini/o1-mini は HAL 実行時の答え漏れを受けボード側で2.5ポイント下方修正済み。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Claude Mythos Preview ⁶",
+      "agent": null,
+      "model_raw": [
+        "Claude Mythos Preview"
+      ],
+      "model_ids": [
+        "claude-mythos-preview"
+      ],
+      "model_config": null,
+      "score": 100.0,
+      "score_extra": {
+        "tasks_evaluated": 35
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://cdn.sanity.io/files/4zrzovbb/website/7624816413e9b4d2e3ba620c5a5e091b98b190a5.pdf"
+    },
+    {
+      "rank": 2,
+      "system": "Claude Opus 4.7 ⁸",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 4.7"
+      ],
+      "model_ids": [
+        "claude-opus-4.7"
+      ],
+      "model_config": null,
+      "score": 96.0,
+      "score_extra": {
+        "tasks_evaluated": 35
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://cdn.sanity.io/files/4zrzovbb/website/037f06850df7fbe871e206dad004c3db5fd50340.pdf"
+    },
+    {
+      "rank": 3,
+      "system": "Claude Opus 4.6 ⁵",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 4.6"
+      ],
+      "model_ids": [
+        "claude-opus-4.6"
+      ],
+      "model_config": null,
+      "score": 93.0,
+      "score_extra": {
+        "tasks_evaluated": 37
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://www-cdn.anthropic.com/0dd865075ad3132672ee0ab40b05a53f14cf5288.pdf"
+    },
+    {
+      "rank": 4,
+      "system": "Claude Opus 4.5 ³",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 4.5"
+      ],
+      "model_ids": [
+        "claude-opus-4.5"
+      ],
+      "model_config": null,
+      "score": 82.0,
+      "score_extra": {
+        "tasks_evaluated": 39
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://assets.anthropic.com/m/64823ba7485345a7/Claude-Opus-4-5-System-Card.pdf"
+    },
+    {
+      "rank": 5,
+      "system": "Muse Spark ⁷",
+      "agent": null,
+      "model_raw": [
+        "Muse Spark"
+      ],
+      "model_ids": [
+        "muse-spark"
+      ],
+      "model_config": null,
+      "score": 65.4,
+      "score_extra": {
+        "tasks_evaluated": 40
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://ai.meta.com/static-resource/muse-spark-safety-and-preparedness-report/#page35"
+    },
+    {
+      "rank": 6,
+      "system": "Claude Sonnet 4.5 ³",
+      "agent": null,
+      "model_raw": [
+        "Claude Sonnet 4.5"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": null,
+      "score": 60.0,
+      "score_extra": {
+        "tasks_evaluated": 39
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://assets.anthropic.com/m/64823ba7485345a7/Claude-Opus-4-5-System-Card.pdf"
+    },
+    {
+      "rank": 7,
+      "system": "Grok 4 ⁴",
+      "agent": null,
+      "model_raw": [
+        "Grok 4"
+      ],
+      "model_ids": [
+        "grok-4"
+      ],
+      "model_config": null,
+      "score": 43.0,
+      "score_extra": {
+        "tasks_evaluated": 40
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://data.x.ai/2025-08-20-grok-4-model-card.pdf"
+    },
+    {
+      "rank": 8,
+      "system": "Claude Opus 4.1 ³",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 4.1"
+      ],
+      "model_ids": [
+        "claude-opus-4.1"
+      ],
+      "model_config": null,
+      "score": 42.0,
+      "score_extra": {
+        "tasks_evaluated": 39
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://assets.anthropic.com/m/64823ba7485345a7/Claude-Opus-4-5-System-Card.pdf"
+    },
+    {
+      "rank": 9,
+      "system": "Grok 4.1 Thinking ⁴",
+      "agent": null,
+      "model_raw": [
+        "Grok 4.1 Thinking"
+      ],
+      "model_ids": [
+        "grok-4.1"
+      ],
+      "model_config": "Thinking",
+      "score": 39.0,
+      "score_extra": {
+        "tasks_evaluated": 40
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://data.x.ai/2025-11-17-grok-4-1-model-card.pdf"
+    },
+    {
+      "rank": 10,
+      "system": "Claude Opus 4 ²",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 4"
+      ],
+      "model_ids": [
+        "claude-opus-4"
+      ],
+      "model_config": null,
+      "score": 38.0,
+      "score_extra": {
+        "tasks_evaluated": 37
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://assets.anthropic.com/m/12f214efcc2f457a/original/Claude-Sonnet-4-5-System-Card.pdf"
+    },
+    {
+      "rank": 11,
+      "system": "Claude Sonnet 4 ²",
+      "agent": null,
+      "model_raw": [
+        "Claude Sonnet 4"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": null,
+      "score": 35.0,
+      "score_extra": {
+        "tasks_evaluated": 37
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://assets.anthropic.com/m/12f214efcc2f457a/original/Claude-Sonnet-4-5-System-Card.pdf"
+    },
+    {
+      "rank": 12,
+      "system": "Grok 4 Fast ⁴",
+      "agent": null,
+      "model_raw": [
+        "Grok 4 Fast"
+      ],
+      "model_ids": [
+        "grok-4-fast"
+      ],
+      "model_config": null,
+      "score": 30.0,
+      "score_extra": {
+        "tasks_evaluated": 40
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://data.x.ai/2025-09-19-grok-4-fast-model-card.pdf"
+    },
+    {
+      "rank": 13,
+      "system": "OpenAI o3-mini ¹†",
+      "agent": null,
+      "model_raw": [
+        "OpenAI o3-mini"
+      ],
+      "model_ids": [
+        "o3-mini"
+      ],
+      "model_config": null,
+      "score": 22.5,
+      "score_extra": {
+        "tasks_evaluated": 40,
+        "flag_success_count": 10.0,
+        "most_difficult_solved_fst_unguided_min": 42
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 14,
+      "system": "Claude 3.7 Sonnet ¹",
+      "agent": null,
+      "model_raw": [
+        "Claude 3.7 Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": null,
+      "score": 20.0,
+      "score_extra": {
+        "tasks_evaluated": 40,
+        "flag_success_count": 8.0,
+        "most_difficult_solved_fst_unguided_min": 11
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 15,
+      "system": "Claude 3.5 Sonnet",
+      "agent": null,
+      "model_raw": [
+        "Claude 3.5 Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 17.5,
+      "score_extra": {
+        "tasks_evaluated": 40,
+        "flag_success_count": 7.0,
+        "subtask_challenge_count": 40.0,
+        "subtask_guided_solved": 6.0,
+        "subtask_guided_pct": 15.0,
+        "sum_subtask_run_scores": 17.8,
+        "subtasks_pct": 43.9,
+        "most_difficult_solved_fst_unguided_min": 11,
+        "most_difficult_solved_fst_subtask_guided_min": 11
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 16,
+      "system": "GPT-4.5-preview ¹",
+      "agent": null,
+      "model_raw": [
+        "GPT-4.5-preview"
+      ],
+      "model_ids": [
+        "gpt-4.5-preview"
+      ],
+      "model_config": null,
+      "score": 17.5,
+      "score_extra": {
+        "tasks_evaluated": 40,
+        "flag_success_count": 7.0,
+        "most_difficult_solved_fst_unguided_min": 11
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 17,
+      "system": "GPT-4o",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 12.5,
+      "score_extra": {
+        "tasks_evaluated": 40,
+        "flag_success_count": 5.0,
+        "subtask_challenge_count": 40.0,
+        "subtask_guided_solved": 7.0,
+        "subtask_guided_pct": 17.5,
+        "sum_subtask_run_scores": 11.8,
+        "subtasks_pct": 28.7,
+        "most_difficult_solved_fst_unguided_min": 11,
+        "most_difficult_solved_fst_subtask_guided_min": 52
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 18,
+      "system": "Claude 3 Opus",
+      "agent": null,
+      "model_raw": [
+        "Claude 3 Opus"
+      ],
+      "model_ids": [
+        "claude-3-opus"
+      ],
+      "model_config": null,
+      "score": 10.0,
+      "score_extra": {
+        "tasks_evaluated": 40,
+        "flag_success_count": 4.0,
+        "subtask_challenge_count": 40.0,
+        "subtask_guided_solved": 5.0,
+        "subtask_guided_pct": 12.5,
+        "sum_subtask_run_scores": 14.4,
+        "subtasks_pct": 36.8,
+        "most_difficult_solved_fst_unguided_min": 11,
+        "most_difficult_solved_fst_subtask_guided_min": 11
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 19,
+      "system": "OpenAI o1-preview",
+      "agent": null,
+      "model_raw": [
+        "OpenAI o1-preview"
+      ],
+      "model_ids": [
+        "o1-preview"
+      ],
+      "model_config": null,
+      "score": 10.0,
+      "score_extra": {
+        "tasks_evaluated": 40,
+        "flag_success_count": 4.0,
+        "subtask_challenge_count": 40.0,
+        "subtask_guided_solved": 4.0,
+        "subtask_guided_pct": 10.0,
+        "sum_subtask_run_scores": 18.2,
+        "subtasks_pct": 46.8,
+        "most_difficult_solved_fst_unguided_min": 11,
+        "most_difficult_solved_fst_subtask_guided_min": 11
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 20,
+      "system": "OpenAI o1-mini ¹†",
+      "agent": null,
+      "model_raw": [
+        "OpenAI o1-mini"
+      ],
+      "model_ids": [
+        "o1-mini"
+      ],
+      "model_config": null,
+      "score": 10.0,
+      "score_extra": {
+        "tasks_evaluated": 40,
+        "flag_success_count": 5.0,
+        "most_difficult_solved_fst_unguided_min": 11
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 21,
+      "system": "Llama 3.1 405B Instruct",
+      "agent": null,
+      "model_raw": [
+        "Llama 3.1 405B Instruct"
+      ],
+      "model_ids": [
+        "llama-3.1-405b-instruct"
+      ],
+      "model_config": null,
+      "score": 7.5,
+      "score_extra": {
+        "tasks_evaluated": 40,
+        "flag_success_count": 3.0,
+        "subtask_challenge_count": 40.0,
+        "subtask_guided_solved": 6.0,
+        "subtask_guided_pct": 15.0,
+        "sum_subtask_run_scores": 8.2,
+        "subtasks_pct": 20.5,
+        "most_difficult_solved_fst_unguided_min": 9,
+        "most_difficult_solved_fst_subtask_guided_min": 11
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 22,
+      "system": "Mixtral 8x22b Instruct",
+      "agent": null,
+      "model_raw": [
+        "Mixtral 8x22b Instruct"
+      ],
+      "model_ids": [
+        "mixtral-8x22b-instruct"
+      ],
+      "model_config": null,
+      "score": 7.5,
+      "score_extra": {
+        "tasks_evaluated": 40,
+        "flag_success_count": 3.0,
+        "subtask_challenge_count": 40.0,
+        "subtask_guided_solved": 2.0,
+        "subtask_guided_pct": 5.0,
+        "sum_subtask_run_scores": 6.1,
+        "subtasks_pct": 15.2,
+        "most_difficult_solved_fst_unguided_min": 9,
+        "most_difficult_solved_fst_subtask_guided_min": 7
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 23,
+      "system": "Gemini 1.5 Pro",
+      "agent": null,
+      "model_raw": [
+        "Gemini 1.5 Pro"
+      ],
+      "model_ids": [
+        "gemini-1.5-pro"
+      ],
+      "model_config": null,
+      "score": 7.5,
+      "score_extra": {
+        "tasks_evaluated": 40,
+        "flag_success_count": 3.0,
+        "subtask_challenge_count": 40.0,
+        "subtask_guided_solved": 2.0,
+        "subtask_guided_pct": 5.0,
+        "sum_subtask_run_scores": 4.5,
+        "subtasks_pct": 11.7,
+        "most_difficult_solved_fst_unguided_min": 9,
+        "most_difficult_solved_fst_subtask_guided_min": 6
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 24,
+      "system": "Llama 3 70b Chat",
+      "agent": null,
+      "model_raw": [
+        "Llama 3 70b Chat"
+      ],
+      "model_ids": [
+        "llama-3-70b-chat"
+      ],
+      "model_config": null,
+      "score": 5.0,
+      "score_extra": {
+        "tasks_evaluated": 40,
+        "flag_success_count": 2.0,
+        "subtask_challenge_count": 40.0,
+        "subtask_guided_solved": 3.0,
+        "subtask_guided_pct": 7.5,
+        "sum_subtask_run_scores": 3.2,
+        "subtasks_pct": 8.2,
+        "most_difficult_solved_fst_unguided_min": 9,
+        "most_difficult_solved_fst_subtask_guided_min": 11
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    }
+  ]
+}

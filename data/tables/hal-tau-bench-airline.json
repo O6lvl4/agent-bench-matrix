@@ -1,0 +1,624 @@
+{
+  "id": "hal-tau-bench-airline",
+  "family": "tau-bench",
+  "name": "TAU-bench Airline (HAL)",
+  "board": "hal.cs.princeton.edu",
+  "category": "tool-use",
+  "measures_ja": "航空会社の顧客対応で、模擬ユーザーと対話しながら規定どおりにツールを操作できるか。",
+  "tasks": 50,
+  "tasks_note": "HAL ページの記載は公開テストセット50タスク。",
+  "metric": "Accuracy",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "HAL 運営が共通ハーネス(hal-harness)で足場×モデルを自ら実行した結果。費用は公開トークン単価から算出し、キャッシュ割引は含まない。",
+  "source": "https://hal.cs.princeton.edu/taubench_airline",
+  "fetched": [
+    "https://hal.cs.princeton.edu/taubench_airline"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": null,
+  "snapshot": "sources/hal-tau-bench-airline/leaderboard-table.html",
+  "paper": "https://arxiv.org/abs/2406.12045",
+  "repo": "https://github.com/princeton-pli/hal-harness",
+  "notes_ja": "HAL は新モデルの追加を停止し、信頼性(reliability)の測定に移行している。 ボードに行ごとの日付は無い。 2025-12-08 に TAU-bench Few Shot 足場の結果をデータ漏洩のため削除済み。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "TAU-bench Tool Calling",
+      "agent": "TAU-bench Tool Calling",
+      "model_raw": [
+        "o4-mini High (April 2025)"
+      ],
+      "model_ids": [
+        "o4-mini"
+      ],
+      "model_config": "High",
+      "score": 56.0,
+      "score_extra": {
+        "cost_usd": 11.36,
+        "runs": 1,
+        "pareto_optimal": true
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/taubench_airline_taubench_toolcalling_o4mini20250416_high_1760993011_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 2,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "Claude-3.7 Sonnet (February 2025)"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": null,
+      "score": 56.0,
+      "score_extra": {
+        "cost_usd": 42.11,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/taubench_airline_hal_generalist_agent_claude37sonnet20250219_1746038671_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 3,
+      "system": "TAU-bench Tool Calling",
+      "agent": "TAU-bench Tool Calling",
+      "model_raw": [
+        "o3 Medium (April 2025)"
+      ],
+      "model_ids": [
+        "o3"
+      ],
+      "model_config": "Medium",
+      "score": 54.0,
+      "score_extra": {
+        "cost_usd": 14.56,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/taubench_airline_taubench_toolcalling_o320250416_1760994863_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 4,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "Claude Opus 4.1 (August 2025)"
+      ],
+      "model_ids": [
+        "claude-opus-4.1"
+      ],
+      "model_config": null,
+      "score": 54.0,
+      "score_extra": {
+        "cost_usd": 180.49,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/taubench_airline_hal_generalist_no_reasoning_claudeopus41_1754431985_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 5,
+      "system": "TAU-bench Tool Calling",
+      "agent": "TAU-bench Tool Calling",
+      "model_raw": [
+        "Claude-3.7 Sonnet High (February 2025)"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": "High",
+      "score": 52.0,
+      "score_extra": {
+        "cost_usd": 31.94,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/taubench_airline_taubench_toolcalling_claude37sonnet_high_1760999140_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 6,
+      "system": "TAU-bench Tool Calling",
+      "agent": "TAU-bench Tool Calling",
+      "model_raw": [
+        "Claude Opus 4.1 High (August 2025)"
+      ],
+      "model_ids": [
+        "claude-opus-4.1"
+      ],
+      "model_config": "High",
+      "score": 52.0,
+      "score_extra": {
+        "cost_usd": 149.98,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/taubench_airline_taubench_toolcalling_claudeopus41_high_1761000598_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 7,
+      "system": "TAU-bench Tool Calling",
+      "agent": "TAU-bench Tool Calling",
+      "model_raw": [
+        "Claude Opus 4.1 (August 2025)"
+      ],
+      "model_ids": [
+        "claude-opus-4.1"
+      ],
+      "model_config": null,
+      "score": 50.0,
+      "score_extra": {
+        "cost_usd": 69.78,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/taubench_airline_taubench_toolcalling_claudeopus41_1760380824_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 8,
+      "system": "TAU-bench Tool Calling",
+      "agent": "TAU-bench Tool Calling",
+      "model_raw": [
+        "GPT-5 Medium (August 2025)"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": "Medium",
+      "score": 48.0,
+      "score_extra": {
+        "cost_usd": 23.83,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/taubench_airline_taubench_toolcalling_gpt520250807_1760996356_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 9,
+      "system": "TAU-bench Tool Calling",
+      "agent": "TAU-bench Tool Calling",
+      "model_raw": [
+        "DeepSeek V3 (March 2025)"
+      ],
+      "model_ids": [
+        "deepseek-v3-0324"
+      ],
+      "model_config": null,
+      "score": 44.0,
+      "score_extra": {
+        "cost_usd": 5.43,
+        "runs": 1,
+        "pareto_optimal": true
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/taubench_airline_taubench_toolcalling_deepseekv3_1760385714_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 10,
+      "system": "TAU-bench Tool Calling",
+      "agent": "TAU-bench Tool Calling",
+      "model_raw": [
+        "Claude-3.7 Sonnet (February 2025)"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": null,
+      "score": 44.0,
+      "score_extra": {
+        "cost_usd": 15.45,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/taubench_airline_taubench_toolcalling_claude37sonnet_1760379497_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 11,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "Claude-3.7 Sonnet High (February 2025)"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": "High",
+      "score": 44.0,
+      "score_extra": {
+        "cost_usd": 34.58,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/taubench_airline_hal_generalist_agent_claude37sonnet20250219_high_1746060636_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 12,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "Claude Opus 4 (May 2025)"
+      ],
+      "model_ids": [
+        "claude-opus-4"
+      ],
+      "model_config": null,
+      "score": 44.0,
+      "score_extra": {
+        "cost_usd": 150.15,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/taubench_airline_hal_generalist_claudeopus420250514_1754320139_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 13,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "Claude Opus 4 High (May 2025)"
+      ],
+      "model_ids": [
+        "claude-opus-4"
+      ],
+      "model_config": "High",
+      "score": 44.0,
+      "score_extra": {
+        "cost_usd": 150.29,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/taubench_airline_hal_generalist_high_reasoning_claudeopus420250514_1754320160_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 14,
+      "system": "TAU-bench Tool Calling",
+      "agent": "TAU-bench Tool Calling",
+      "model_raw": [
+        "o4-mini Low (April 2025)"
+      ],
+      "model_ids": [
+        "o4-mini"
+      ],
+      "model_config": "Low",
+      "score": 36.0,
+      "score_extra": {
+        "cost_usd": 7.14,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/taubench_airline_taubench_toolcalling_o4mini20250416_low_1760991692_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 15,
+      "system": "TAU-bench Tool Calling",
+      "agent": "TAU-bench Tool Calling",
+      "model_raw": [
+        "GPT-4.1 (April 2025)"
+      ],
+      "model_ids": [
+        "gpt-4.1"
+      ],
+      "model_config": null,
+      "score": 36.0,
+      "score_extra": {
+        "cost_usd": 8.18,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/taubench_airline_taubench_toolcalling_gpt4120250414_1760371184_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 16,
+      "system": "TAU-bench Tool Calling",
+      "agent": "TAU-bench Tool Calling",
+      "model_raw": [
+        "DeepSeek R1 (January 2025)"
+      ],
+      "model_ids": [
+        "deepseek-r1"
+      ],
+      "model_config": null,
+      "score": 36.0,
+      "score_extra": {
+        "cost_usd": 13.3,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/taubench_airline_taubench_toolcalling_deepseekr1_1760382872_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 17,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "Claude Opus 4.1 High (August 2025)"
+      ],
+      "model_ids": [
+        "claude-opus-4.1"
+      ],
+      "model_config": "High",
+      "score": 32.0,
+      "score_extra": {
+        "cost_usd": 140.28,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/taubench_airline_hal_generalist_high_reasoning_claudeopus41_1754432004_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 18,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "GPT-5 Medium (August 2025)"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": "Medium",
+      "score": 30.0,
+      "score_extra": {
+        "cost_usd": 52.78,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/taubench_airline_hal_generalist_high_reasoning___gpt5_1754597451_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 19,
+      "system": "TAU-bench Tool Calling",
+      "agent": "TAU-bench Tool Calling",
+      "model_raw": [
+        "Gemini 2.0 Flash High (February 2025)"
+      ],
+      "model_ids": [
+        "gemini-2.0-flash"
+      ],
+      "model_config": "High",
+      "score": 28.0,
+      "score_extra": {
+        "cost_usd": 0.31,
+        "runs": 1,
+        "pareto_optimal": true
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/taubench_airline_taubench_toolcalling_gemini20flash001_1760387340_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 20,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "Gemini 2.0 Flash (February 2025)"
+      ],
+      "model_ids": [
+        "gemini-2.0-flash"
+      ],
+      "model_config": null,
+      "score": 22.0,
+      "score_extra": {
+        "cost_usd": 2.0,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/taubench_airline_hal_generalist_agent_gemini20flash_1746038655_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 21,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "o4-mini Low (April 2025)"
+      ],
+      "model_ids": [
+        "o4-mini"
+      ],
+      "model_config": "Low",
+      "score": 22.0,
+      "score_extra": {
+        "cost_usd": 20.16,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/taubench_airline_hal_generalist_agent_o4mini20250416_low_1745166691_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 22,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "o3 Medium (April 2025)"
+      ],
+      "model_ids": [
+        "o3"
+      ],
+      "model_config": "Medium",
+      "score": 20.0,
+      "score_extra": {
+        "cost_usd": 45.03,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/taubench_airline_hal_generalist_agent_o320250416_medium_1753774187_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 23,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "DeepSeek V3 (March 2025)"
+      ],
+      "model_ids": [
+        "deepseek-v3-0324"
+      ],
+      "model_config": null,
+      "score": 18.0,
+      "score_extra": {
+        "cost_usd": 10.73,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/taubench_airline_hal_generalist_agent_deepseekaideepseekv3_1745263676_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 24,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "o4-mini High (April 2025)"
+      ],
+      "model_ids": [
+        "o4-mini"
+      ],
+      "model_config": "High",
+      "score": 18.0,
+      "score_extra": {
+        "cost_usd": 20.57,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/taubench_airline_hal_generalist_agent_o4mini20250416_high_1745167079_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 25,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "GPT-4.1 (April 2025)"
+      ],
+      "model_ids": [
+        "gpt-4.1"
+      ],
+      "model_config": null,
+      "score": 16.0,
+      "score_extra": {
+        "cost_usd": 17.85,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/taubench_airline_hal_generalist_agent_gpt4120250414_1745167124_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 26,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "DeepSeek R1 (January 2025)"
+      ],
+      "model_ids": [
+        "deepseek-r1"
+      ],
+      "model_config": null,
+      "score": 10.0,
+      "score_extra": {
+        "cost_usd": 30.18,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/taubench_airline_hal_generalist_agent_deepseekaideepseekr1_1744655092_UPLOAD.zip?download=true"
+    }
+  ]
+}

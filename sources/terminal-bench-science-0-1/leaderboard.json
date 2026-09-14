@@ -1,0 +1,1593 @@
+{
+ "leaderboard": {
+  "id": "9a545a14-78d0-44b4-9003-afe062522a47",
+  "package_id": "044b0b87-884f-4d2d-859e-47d88ab69288",
+  "package": "terminal-bench-science/terminal-bench-science",
+  "dataset_version_ids": [
+   "2b817f26-dc4f-4477-8032-2218dcc553b5"
+  ],
+  "name": "v0-1-eval",
+  "title": "Terminal-Bench-Science 0.1 Evaluation Results",
+  "description": "Evaluation results for Terminal-Bench-Science 0.1 with 3 trials per task.",
+  "metadata_schema": {
+   "type": "object",
+   "required": [
+    "agent_display",
+    "model_display",
+    "model_release_date",
+    "reasoning_effort",
+    "agent_org",
+    "model_org"
+   ],
+   "properties": {
+    "agent_org": {
+     "type": "object",
+     "required": [
+      "url",
+      "label"
+     ],
+     "properties": {
+      "url": {
+       "type": "string",
+       "format": "uri"
+      },
+      "label": {
+       "type": "string",
+       "minLength": 1
+      }
+     },
+     "additionalProperties": false
+    },
+    "model_org": {
+     "type": "object",
+     "required": [
+      "url",
+      "label"
+     ],
+     "properties": {
+      "url": {
+       "type": "string",
+       "format": "uri"
+      },
+      "label": {
+       "type": "string",
+       "minLength": 1
+      }
+     },
+     "additionalProperties": false
+    },
+    "agent_display": {
+     "type": "object",
+     "required": [
+      "url",
+      "label"
+     ],
+     "properties": {
+      "url": {
+       "type": "string",
+       "format": "uri"
+      },
+      "label": {
+       "type": "string",
+       "minLength": 1
+      }
+     },
+     "additionalProperties": false
+    },
+    "model_display": {
+     "type": "object",
+     "required": [
+      "url",
+      "label"
+     ],
+     "properties": {
+      "url": {
+       "type": "string",
+       "format": "uri"
+      },
+      "label": {
+       "type": "string",
+       "minLength": 1
+      }
+     },
+     "additionalProperties": false
+    },
+    "reasoning_effort": {
+     "type": "string"
+    },
+    "model_release_date": {
+     "type": "string",
+     "format": "date"
+    }
+   },
+   "additionalProperties": false
+  },
+  "metrics_schema": {
+   "type": "object",
+   "required": [
+    "accuracy",
+    "accuracy_stderr",
+    "passes",
+    "tasks",
+    "total_tokens",
+    "total_cost_usd",
+    "display_accuracy",
+    "display_total_tokens",
+    "display_cost"
+   ],
+   "properties": {
+    "tasks": {
+     "type": "integer",
+     "minimum": 1
+    },
+    "passes": {
+     "type": "integer",
+     "minimum": 0
+    },
+    "accuracy": {
+     "type": "number",
+     "maximum": 100,
+     "minimum": 0
+    },
+    "display_cost": {
+     "type": "string"
+    },
+    "total_tokens": {
+     "type": "integer",
+     "minimum": 0
+    },
+    "total_cost_usd": {
+     "type": "number",
+     "minimum": 0
+    },
+    "accuracy_stderr": {
+     "type": "number",
+     "maximum": 100,
+     "minimum": 0
+    },
+    "display_accuracy": {
+     "type": "string"
+    },
+    "display_total_tokens": {
+     "type": "string"
+    }
+   },
+   "additionalProperties": false
+  },
+  "columns": [
+   {
+    "id": "model_display",
+    "type": "link",
+    "header": "Model",
+    "accessor": "metadata.model_display"
+   },
+   {
+    "id": "agent_display",
+    "type": "link",
+    "header": "Agent",
+    "accessor": "metadata.agent_display"
+   },
+   {
+    "id": "accuracy",
+    "type": "number",
+    "align": "right",
+    "header": "Resolution Rate",
+    "accessor": "metrics.accuracy",
+    "display_type": "markdown",
+    "display_accessor": "metrics.display_accuracy"
+   },
+   {
+    "id": "model_release_date",
+    "type": "text",
+    "header": "Release Date",
+    "accessor": "metadata.model_release_date"
+   },
+   {
+    "id": "agent_org",
+    "type": "link",
+    "header": "Agent Org",
+    "accessor": "metadata.agent_org"
+   },
+   {
+    "id": "model_org",
+    "type": "link",
+    "header": "Model Org",
+    "accessor": "metadata.model_org"
+   },
+   {
+    "id": "total_tokens",
+    "type": "number",
+    "align": "right",
+    "header": "Tokens",
+    "accessor": "metrics.total_tokens",
+    "display_type": "text",
+    "display_accessor": "metrics.display_total_tokens"
+   },
+   {
+    "id": "total_cost_usd",
+    "type": "number",
+    "align": "right",
+    "header": "Cost",
+    "accessor": "metrics.total_cost_usd",
+    "display_type": "text",
+    "display_accessor": "metrics.display_cost"
+   }
+  ],
+  "rank_by": [
+   {
+    "nulls": "last",
+    "accessor": "metrics.accuracy",
+    "direction": "desc"
+   },
+   {
+    "nulls": "last",
+    "accessor": "metrics.total_cost_usd",
+    "direction": "asc"
+   }
+  ],
+  "visibility": "public",
+  "created_by": "5046effe-d7cc-4557-8aa0-76936826982b",
+  "created_at": "2026-08-23T21:45:52.95487+00:00",
+  "updated_at": "2026-09-13T19:56:10.565967+00:00"
+ },
+ "rows": [
+  {
+   "id": "1264a994-632f-4742-a143-a848a6ad4114",
+   "leaderboard_id": "9a545a14-78d0-44b4-9003-afe062522a47",
+   "rank": 1,
+   "metadata": {
+    "agent_org": {
+     "url": "https://www.anthropic.com",
+     "label": "Anthropic"
+    },
+    "model_org": {
+     "url": "https://www.anthropic.com",
+     "label": "Anthropic"
+    },
+    "agent_display": {
+     "url": "https://claude.com/product/claude-code",
+     "label": "Claude Code"
+    },
+    "model_display": {
+     "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+     "label": "Fable 5.1"
+    },
+    "reasoning_effort": "max",
+    "model_release_date": "2026-09-01"
+   },
+   "metrics": {
+    "tasks": 210,
+    "passes": 84,
+    "accuracy": 40,
+    "display_cost": "$6,247.14",
+    "total_tokens": 3753292530,
+    "total_cost_usd": 6247.1398385,
+    "accuracy_stderr": 3.380617018914066,
+    "display_accuracy": "**40.0%** +/- 3.4%",
+    "display_total_tokens": "3.8B",
+    "domain_metrics": {
+     "life": {
+      "tasks": 57,
+      "passes": 22,
+      "accuracy": 38.59649122807017,
+      "accuracy_stderr": 6.448119524174796,
+      "total_tokens": 751380608,
+      "total_cost_usd": 1109.489021,
+      "display_accuracy": "**38.6%** +/- 6.4%",
+      "display_total_tokens": "751.4M",
+      "display_cost": "$1.11k"
+     },
+     "physical": {
+      "tasks": 51,
+      "passes": 19,
+      "accuracy": 37.254901960784316,
+      "accuracy_stderr": 6.770122476910462,
+      "total_tokens": 1045886930,
+      "total_cost_usd": 1818.3650532499998,
+      "display_accuracy": "**37.3%** +/- 6.8%",
+      "display_total_tokens": "1B",
+      "display_cost": "$1.82k"
+     },
+     "earth": {
+      "tasks": 24,
+      "passes": 9,
+      "accuracy": 37.5,
+      "accuracy_stderr": 9.882117688026186,
+      "total_tokens": 431225074,
+      "total_cost_usd": 746.4760759999999,
+      "display_accuracy": "**37.5%** +/- 9.9%",
+      "display_total_tokens": "431.2M",
+      "display_cost": "$746.48"
+     },
+     "mathematical": {
+      "tasks": 51,
+      "passes": 21,
+      "accuracy": 41.17647058823529,
+      "accuracy_stderr": 6.891519836811836,
+      "total_tokens": 891442338,
+      "total_cost_usd": 1596.16417625,
+      "display_accuracy": "**41.2%** +/- 6.9%",
+      "display_total_tokens": "891.4M",
+      "display_cost": "$1.6k"
+     },
+     "engineering": {
+      "tasks": 27,
+      "passes": 13,
+      "accuracy": 48.148148148148145,
+      "accuracy_stderr": 9.615902424319279,
+      "total_tokens": 633357580,
+      "total_cost_usd": 976.645512,
+      "display_accuracy": "**48.1%** +/- 9.6%",
+      "display_total_tokens": "633.4M",
+      "display_cost": "$976.65"
+     }
+    }
+   },
+   "status": "display",
+   "created_at": "2026-09-13T19:56:07.340022+00:00",
+   "updated_at": "2026-09-13T19:56:10.565967+00:00",
+   "n_trials": 210
+  },
+  {
+   "id": "bcf50bd8-8555-48a6-8cae-9f697af54051",
+   "leaderboard_id": "9a545a14-78d0-44b4-9003-afe062522a47",
+   "rank": 2,
+   "metadata": {
+    "agent_org": {
+     "url": "https://www.anthropic.com",
+     "label": "Anthropic"
+    },
+    "model_org": {
+     "url": "https://www.anthropic.com",
+     "label": "Anthropic"
+    },
+    "agent_display": {
+     "url": "https://claude.com/product/claude-code",
+     "label": "Claude Code"
+    },
+    "model_display": {
+     "url": "https://www.anthropic.com/news/claude-opus-5",
+     "label": "Opus 5"
+    },
+    "reasoning_effort": "max",
+    "model_release_date": "2026-07-24"
+   },
+   "metrics": {
+    "tasks": 210,
+    "passes": 63,
+    "accuracy": 30,
+    "display_cost": "$6.99k",
+    "total_tokens": 7266668313,
+    "total_cost_usd": 6992.67732375,
+    "accuracy_stderr": 3.162277660168379,
+    "display_accuracy": "**30.0%** +/- 3.2%",
+    "display_total_tokens": "7.3B",
+    "domain_metrics": {
+     "life": {
+      "tasks": 57,
+      "passes": 17,
+      "accuracy": 29.82456140350877,
+      "accuracy_stderr": 6.059575107331345,
+      "total_tokens": 1306678199,
+      "total_cost_usd": 1324.0133410000003,
+      "display_accuracy": "**29.8%** +/- 6.1%",
+      "display_total_tokens": "1.3B",
+      "display_cost": "$1.32k"
+     },
+     "physical": {
+      "tasks": 51,
+      "passes": 14,
+      "accuracy": 27.450980392156865,
+      "accuracy_stderr": 6.2489869213841,
+      "total_tokens": 2127060729,
+      "total_cost_usd": 1848.3181522499997,
+      "display_accuracy": "**27.5%** +/- 6.2%",
+      "display_total_tokens": "2.1B",
+      "display_cost": "$1.85k"
+     },
+     "earth": {
+      "tasks": 24,
+      "passes": 11,
+      "accuracy": 45.83333333333333,
+      "accuracy_stderr": 10.170707302692229,
+      "total_tokens": 897476528,
+      "total_cost_usd": 1150.81077375,
+      "display_accuracy": "**45.8%** +/- 10.2%",
+      "display_total_tokens": "897.5M",
+      "display_cost": "$1.15k"
+     },
+     "mathematical": {
+      "tasks": 51,
+      "passes": 13,
+      "accuracy": 25.49019607843137,
+      "accuracy_stderr": 6.102505932917984,
+      "total_tokens": 1709641761,
+      "total_cost_usd": 1634.1868124999999,
+      "display_accuracy": "**25.5%** +/- 6.1%",
+      "display_total_tokens": "1.7B",
+      "display_cost": "$1.63k"
+     },
+     "engineering": {
+      "tasks": 27,
+      "passes": 8,
+      "accuracy": 29.629629629629626,
+      "accuracy_stderr": 8.787718725951697,
+      "total_tokens": 1225811096,
+      "total_cost_usd": 1035.3482442499999,
+      "display_accuracy": "**29.6%** +/- 8.8%",
+      "display_total_tokens": "1.2B",
+      "display_cost": "$1.04k"
+     }
+    }
+   },
+   "status": "display",
+   "created_at": "2026-08-24T07:50:37.026092+00:00",
+   "updated_at": "2026-08-30T03:13:14.468783+00:00",
+   "n_trials": 210
+  },
+  {
+   "id": "378f8b49-dbd8-4acf-a065-8c07e1712de2",
+   "leaderboard_id": "9a545a14-78d0-44b4-9003-afe062522a47",
+   "rank": 3,
+   "metadata": {
+    "agent_org": {
+     "url": "https://openai.com",
+     "label": "OpenAI"
+    },
+    "model_org": {
+     "url": "https://openai.com",
+     "label": "OpenAI"
+    },
+    "agent_display": {
+     "url": "https://openai.com/codex/",
+     "label": "Codex"
+    },
+    "model_display": {
+     "url": "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
+     "label": "GPT-5.6 Sol"
+    },
+    "reasoning_effort": "max",
+    "model_release_date": "2026-07-09"
+   },
+   "metrics": {
+    "tasks": 210,
+    "passes": 47,
+    "accuracy": 22.380952380952383,
+    "display_cost": "$4.22k",
+    "total_tokens": 8406870193,
+    "total_cost_usd": 4221.8683028,
+    "accuracy_stderr": 2.876164947101791,
+    "display_accuracy": "**22.4%** +/- 2.9%",
+    "display_total_tokens": "8.4B",
+    "domain_metrics": {
+     "life": {
+      "tasks": 57,
+      "passes": 10,
+      "accuracy": 17.543859649122805,
+      "accuracy_stderr": 5.03775039171214,
+      "total_tokens": 911217942,
+      "total_cost_usd": 513.1874942,
+      "display_accuracy": "**17.5%** +/- 5.0%",
+      "display_total_tokens": "911.2M",
+      "display_cost": "$513.19"
+     },
+     "physical": {
+      "tasks": 51,
+      "passes": 12,
+      "accuracy": 23.52941176470588,
+      "accuracy_stderr": 5.939743109381191,
+      "total_tokens": 2444538546,
+      "total_cost_usd": 1144.6274403999996,
+      "display_accuracy": "**23.5%** +/- 5.9%",
+      "display_total_tokens": "2.4B",
+      "display_cost": "$1.14k"
+     },
+     "earth": {
+      "tasks": 24,
+      "passes": 5,
+      "accuracy": 20.833333333333336,
+      "accuracy_stderr": 8.289816934939807,
+      "total_tokens": 1224726937,
+      "total_cost_usd": 584.5591491999999,
+      "display_accuracy": "**20.8%** +/- 8.3%",
+      "display_total_tokens": "1.2B",
+      "display_cost": "$584.56"
+     },
+     "mathematical": {
+      "tasks": 51,
+      "passes": 16,
+      "accuracy": 31.372549019607842,
+      "accuracy_stderr": 6.497387212388346,
+      "total_tokens": 3257195155,
+      "total_cost_usd": 1664.42933,
+      "display_accuracy": "**31.4%** +/- 6.5%",
+      "display_total_tokens": "3.3B",
+      "display_cost": "$1.66k"
+     },
+     "engineering": {
+      "tasks": 27,
+      "passes": 4,
+      "accuracy": 14.814814814814813,
+      "accuracy_stderr": 6.836727459191831,
+      "total_tokens": 569191613,
+      "total_cost_usd": 315.064889,
+      "display_accuracy": "**14.8%** +/- 6.8%",
+      "display_total_tokens": "569.2M",
+      "display_cost": "$315.06"
+     }
+    }
+   },
+   "status": "display",
+   "created_at": "2026-08-23T21:46:16.093869+00:00",
+   "updated_at": "2026-08-30T00:08:39.126225+00:00",
+   "n_trials": 210
+  },
+  {
+   "id": "e3f2861a-97db-4730-a0ff-99f08d8c7299",
+   "leaderboard_id": "9a545a14-78d0-44b4-9003-afe062522a47",
+   "rank": 4,
+   "metadata": {
+    "agent_org": {
+     "url": "https://www.anthropic.com",
+     "label": "Anthropic"
+    },
+    "model_org": {
+     "url": "https://www.anthropic.com",
+     "label": "Anthropic"
+    },
+    "agent_display": {
+     "url": "https://claude.com/product/claude-code",
+     "label": "Claude Code"
+    },
+    "model_display": {
+     "url": "https://www.anthropic.com/",
+     "label": "Fable 5"
+    },
+    "reasoning_effort": "max",
+    "model_release_date": "2026-06-09"
+   },
+   "metrics": {
+    "tasks": 210,
+    "passes": 45,
+    "accuracy": 21.428571428571427,
+    "display_cost": "$14.18k",
+    "total_tokens": 6363562181,
+    "total_cost_usd": 14175.948185250001,
+    "accuracy_stderr": 2.831517739900328,
+    "display_accuracy": "**21.4%** +/- 2.8%",
+    "display_total_tokens": "6.4B",
+    "domain_metrics": {
+     "life": {
+      "tasks": 57,
+      "passes": 10,
+      "accuracy": 17.543859649122805,
+      "accuracy_stderr": 5.03775039171214,
+      "total_tokens": 864297832,
+      "total_cost_usd": 1963.0306967499992,
+      "display_accuracy": "**17.5%** +/- 5.0%",
+      "display_total_tokens": "864.3M",
+      "display_cost": "$1.96k"
+     },
+     "physical": {
+      "tasks": 51,
+      "passes": 9,
+      "accuracy": 17.647058823529413,
+      "accuracy_stderr": 5.3381483116060595,
+      "total_tokens": 1499293809,
+      "total_cost_usd": 3575.090842499999,
+      "display_accuracy": "**17.6%** +/- 5.3%",
+      "display_total_tokens": "1.5B",
+      "display_cost": "$3.58k"
+     },
+     "earth": {
+      "tasks": 24,
+      "passes": 6,
+      "accuracy": 25,
+      "accuracy_stderr": 8.838834764831844,
+      "total_tokens": 602637767,
+      "total_cost_usd": 1622.574211,
+      "display_accuracy": "**25.0%** +/- 8.8%",
+      "display_total_tokens": "602.6M",
+      "display_cost": "$1.62k"
+     },
+     "mathematical": {
+      "tasks": 51,
+      "passes": 17,
+      "accuracy": 33.33333333333333,
+      "accuracy_stderr": 6.600983619844496,
+      "total_tokens": 2079346609,
+      "total_cost_usd": 4627.1448445,
+      "display_accuracy": "**33.3%** +/- 6.6%",
+      "display_total_tokens": "2.1B",
+      "display_cost": "$4.63k"
+     },
+     "engineering": {
+      "tasks": 27,
+      "passes": 3,
+      "accuracy": 11.11111111111111,
+      "accuracy_stderr": 6.04812282168686,
+      "total_tokens": 1317986164,
+      "total_cost_usd": 2388.1075905000002,
+      "display_accuracy": "**11.1%** +/- 6.0%",
+      "display_total_tokens": "1.3B",
+      "display_cost": "$2.39k"
+     }
+    }
+   },
+   "status": "display",
+   "created_at": "2026-08-24T14:02:29.713688+00:00",
+   "updated_at": "2026-08-30T02:23:50.049283+00:00",
+   "n_trials": 210
+  },
+  {
+   "id": "58d4c48d-791b-4873-ba3e-af1cf997a79c",
+   "leaderboard_id": "9a545a14-78d0-44b4-9003-afe062522a47",
+   "rank": 5,
+   "metadata": {
+    "agent_org": {
+     "url": "https://openai.com",
+     "label": "OpenAI"
+    },
+    "model_org": {
+     "url": "https://www.deepseek.com/",
+     "label": "DeepSeek"
+    },
+    "agent_display": {
+     "url": "https://openai.com/codex/",
+     "label": "Codex"
+    },
+    "model_display": {
+     "url": "https://api-docs.deepseek.com/updates/",
+     "label": "DeepSeek V4.1 Flash"
+    },
+    "reasoning_effort": "max",
+    "model_release_date": "2026-09-10"
+   },
+   "metrics": {
+    "tasks": 210,
+    "passes": 33,
+    "accuracy": 15.714285714285714,
+    "display_cost": "$385.93",
+    "total_tokens": 14859405919,
+    "total_cost_usd": 385.933474254,
+    "accuracy_stderr": 2.511392893650442,
+    "display_accuracy": "**15.7%** +/- 2.5%",
+    "display_total_tokens": "14.9B",
+    "domain_metrics": {
+     "life": {
+      "tasks": 57,
+      "passes": 6,
+      "accuracy": 10.526315789473683,
+      "accuracy_stderr": 4.064886556427542,
+      "total_tokens": 2470912103,
+      "total_cost_usd": 64.22627608800002,
+      "display_accuracy": "**10.5%** +/- 4.1%",
+      "display_total_tokens": "2.5B",
+      "display_cost": "$64.23"
+     },
+     "physical": {
+      "tasks": 51,
+      "passes": 14,
+      "accuracy": 27.450980392156865,
+      "accuracy_stderr": 6.2489869213841,
+      "total_tokens": 4648478757,
+      "total_cost_usd": 118.824719418,
+      "display_accuracy": "**27.5%** +/- 6.2%",
+      "display_total_tokens": "4.6B",
+      "display_cost": "$118.82"
+     },
+     "earth": {
+      "tasks": 24,
+      "passes": 2,
+      "accuracy": 8.333333333333332,
+      "accuracy_stderr": 5.64169333655275,
+      "total_tokens": 1777639333,
+      "total_cost_usd": 39.16776078,
+      "display_accuracy": "**8.3%** +/- 5.6%",
+      "display_total_tokens": "1.8B",
+      "display_cost": "$39.17"
+     },
+     "mathematical": {
+      "tasks": 51,
+      "passes": 6,
+      "accuracy": 11.76470588235294,
+      "accuracy_stderr": 4.511558757925709,
+      "total_tokens": 2921282541,
+      "total_cost_usd": 93.96861560400001,
+      "display_accuracy": "**11.8%** +/- 4.5%",
+      "display_total_tokens": "2.9B",
+      "display_cost": "$93.97"
+     },
+     "engineering": {
+      "tasks": 27,
+      "passes": 5,
+      "accuracy": 18.51851851851852,
+      "accuracy_stderr": 7.4756798866604734,
+      "total_tokens": 3041093185,
+      "total_cost_usd": 69.74610236399998,
+      "display_accuracy": "**18.5%** +/- 7.5%",
+      "display_total_tokens": "3B",
+      "display_cost": "$69.75"
+     }
+    }
+   },
+   "status": "display",
+   "created_at": "2026-09-11T18:11:57.008377+00:00",
+   "updated_at": "2026-09-12T09:51:25.501211+00:00",
+   "n_trials": 210
+  },
+  {
+   "id": "409f68a6-d6a4-43c9-adb8-63679dc17a45",
+   "leaderboard_id": "9a545a14-78d0-44b4-9003-afe062522a47",
+   "rank": 6,
+   "metadata": {
+    "agent_org": {
+     "url": "https://github.com/SWE-agent",
+     "label": "SWE-agent"
+    },
+    "model_org": {
+     "url": "https://deepmind.google/",
+     "label": "Google DeepMind"
+    },
+    "agent_display": {
+     "url": "https://mini-swe-agent.com/latest/",
+     "label": "mini-SWE-agent"
+    },
+    "model_display": {
+     "url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash",
+     "label": "Gemini 3.8 Flash"
+    },
+    "reasoning_effort": "high",
+    "model_release_date": "2026-09-02"
+   },
+   "metrics": {
+    "tasks": 210,
+    "passes": 26,
+    "accuracy": 12.380952380952381,
+    "display_cost": "$1.12k",
+    "total_tokens": 10499649912,
+    "total_cost_usd": 1116.97645035,
+    "accuracy_stderr": 2.2728283787427124,
+    "display_accuracy": "**12.4%** +/- 2.3%",
+    "display_total_tokens": "10.5B",
+    "domain_metrics": {
+     "life": {
+      "tasks": 57,
+      "passes": 8,
+      "accuracy": 14.035087719298245,
+      "accuracy_stderr": 4.600772407769725,
+      "total_tokens": 947480980,
+      "total_cost_usd": 129.486532875,
+      "display_accuracy": "**14.0%** +/- 4.6%",
+      "display_total_tokens": "947.5M",
+      "display_cost": "$129.49"
+     },
+     "physical": {
+      "tasks": 51,
+      "passes": 12,
+      "accuracy": 23.52941176470588,
+      "accuracy_stderr": 5.939743109381191,
+      "total_tokens": 2750669844,
+      "total_cost_usd": 288.6729866250001,
+      "display_accuracy": "**23.5%** +/- 5.9%",
+      "display_total_tokens": "2.8B",
+      "display_cost": "$288.67"
+     },
+     "earth": {
+      "tasks": 24,
+      "passes": 3,
+      "accuracy": 12.5,
+      "accuracy_stderr": 6.750771560841522,
+      "total_tokens": 1055679015,
+      "total_cost_usd": 117.57938257500001,
+      "display_accuracy": "**12.5%** +/- 6.8%",
+      "display_total_tokens": "1.1B",
+      "display_cost": "$117.58"
+     },
+     "mathematical": {
+      "tasks": 51,
+      "passes": 0,
+      "accuracy": 0,
+      "accuracy_stderr": 0,
+      "total_tokens": 5225589584,
+      "total_cost_usd": 510.9776022,
+      "display_accuracy": "**0.0%** +/- 0.0%",
+      "display_total_tokens": "5.2B",
+      "display_cost": "$510.98"
+     },
+     "engineering": {
+      "tasks": 27,
+      "passes": 3,
+      "accuracy": 11.11111111111111,
+      "accuracy_stderr": 6.04812282168686,
+      "total_tokens": 520230489,
+      "total_cost_usd": 70.25994607499999,
+      "display_accuracy": "**11.1%** +/- 6.0%",
+      "display_total_tokens": "520.2M",
+      "display_cost": "$70.26"
+     }
+    }
+   },
+   "status": "display",
+   "created_at": "2026-09-03T08:32:35.782397+00:00",
+   "updated_at": "2026-09-03T09:13:25.326394+00:00",
+   "n_trials": 210
+  },
+  {
+   "id": "e8bf7739-3c94-46a3-95a5-fa4d4444034e",
+   "leaderboard_id": "9a545a14-78d0-44b4-9003-afe062522a47",
+   "rank": 7,
+   "metadata": {
+    "agent_org": {
+     "url": "https://www.anthropic.com",
+     "label": "Anthropic"
+    },
+    "model_org": {
+     "url": "https://www.anthropic.com",
+     "label": "Anthropic"
+    },
+    "agent_display": {
+     "url": "https://claude.com/product/claude-code",
+     "label": "Claude Code"
+    },
+    "model_display": {
+     "url": "https://www.anthropic.com/",
+     "label": "Opus 4.8"
+    },
+    "reasoning_effort": "max",
+    "model_release_date": "2026-05-28"
+   },
+   "metrics": {
+    "tasks": 210,
+    "passes": 22,
+    "accuracy": 10.476190476190476,
+    "display_cost": "$5.84k",
+    "total_tokens": 6770231957,
+    "total_cost_usd": 5837.716905,
+    "accuracy_stderr": 2.1133008267654967,
+    "display_accuracy": "**10.5%** +/- 2.1%",
+    "display_total_tokens": "6.8B",
+    "domain_metrics": {
+     "life": {
+      "tasks": 57,
+      "passes": 4,
+      "accuracy": 7.017543859649122,
+      "accuracy_stderr": 3.383417933803951,
+      "total_tokens": 780549951,
+      "total_cost_usd": 806.35009475,
+      "display_accuracy": "**7.0%** +/- 3.4%",
+      "display_total_tokens": "780.5M",
+      "display_cost": "$806.35"
+     },
+     "physical": {
+      "tasks": 51,
+      "passes": 11,
+      "accuracy": 21.568627450980394,
+      "accuracy_stderr": 5.7593182040981175,
+      "total_tokens": 2004770718,
+      "total_cost_usd": 1603.7576537499995,
+      "display_accuracy": "**21.6%** +/- 5.8%",
+      "display_total_tokens": "2B",
+      "display_cost": "$1.6k"
+     },
+     "earth": {
+      "tasks": 24,
+      "passes": 1,
+      "accuracy": 4.166666666666666,
+      "accuracy_stderr": 4.078937543219003,
+      "total_tokens": 753694113,
+      "total_cost_usd": 694.2622874999998,
+      "display_accuracy": "**4.2%** +/- 4.1%",
+      "display_total_tokens": "753.7M",
+      "display_cost": "$694.26"
+     },
+     "mathematical": {
+      "tasks": 51,
+      "passes": 4,
+      "accuracy": 7.8431372549019605,
+      "accuracy_stderr": 3.7646418038888574,
+      "total_tokens": 2166018647,
+      "total_cost_usd": 1901.8542739999996,
+      "display_accuracy": "**7.8%** +/- 3.8%",
+      "display_total_tokens": "2.2B",
+      "display_cost": "$1.9k"
+     },
+     "engineering": {
+      "tasks": 27,
+      "passes": 2,
+      "accuracy": 7.4074074074074066,
+      "accuracy_stderr": 5.040102351405716,
+      "total_tokens": 1065198528,
+      "total_cost_usd": 831.492595,
+      "display_accuracy": "**7.4%** +/- 5.0%",
+      "display_total_tokens": "1.1B",
+      "display_cost": "$831.49"
+     }
+    }
+   },
+   "status": "display",
+   "created_at": "2026-08-25T19:25:57.794681+00:00",
+   "updated_at": "2026-08-30T00:48:53.817356+00:00",
+   "n_trials": 210
+  },
+  {
+   "id": "c79d5ef6-b3c6-40da-84b5-946c11099426",
+   "leaderboard_id": "9a545a14-78d0-44b4-9003-afe062522a47",
+   "rank": 8,
+   "metadata": {
+    "agent_org": {
+     "url": "https://openai.com",
+     "label": "OpenAI"
+    },
+    "model_org": {
+     "url": "https://openai.com",
+     "label": "OpenAI"
+    },
+    "agent_display": {
+     "url": "https://openai.com/codex/",
+     "label": "Codex"
+    },
+    "model_display": {
+     "url": "https://developers.openai.com/api/docs/models/gpt-5.6-terra",
+     "label": "GPT-5.6 Terra"
+    },
+    "reasoning_effort": "max",
+    "model_release_date": "2026-07-09"
+   },
+   "metrics": {
+    "tasks": 210,
+    "passes": 18,
+    "accuracy": 8.571428571428571,
+    "display_cost": "$1.98k",
+    "total_tokens": 7618801416,
+    "total_cost_usd": 1983.9189368999998,
+    "accuracy_stderr": 1.9317811536651808,
+    "display_accuracy": "**8.6%** +/- 1.9%",
+    "display_total_tokens": "7.6B",
+    "domain_metrics": {
+     "life": {
+      "tasks": 57,
+      "passes": 4,
+      "accuracy": 7.017543859649122,
+      "accuracy_stderr": 3.383417933803951,
+      "total_tokens": 1031960432,
+      "total_cost_usd": 297.9608035,
+      "display_accuracy": "**7.0%** +/- 3.4%",
+      "display_total_tokens": "1B",
+      "display_cost": "$297.96"
+     },
+     "physical": {
+      "tasks": 51,
+      "passes": 5,
+      "accuracy": 9.803921568627452,
+      "accuracy_stderr": 4.163980181949191,
+      "total_tokens": 3285452189,
+      "total_cost_usd": 791.8832043,
+      "display_accuracy": "**9.8%** +/- 4.2%",
+      "display_total_tokens": "3.3B",
+      "display_cost": "$791.88"
+     },
+     "earth": {
+      "tasks": 24,
+      "passes": 2,
+      "accuracy": 8.333333333333332,
+      "accuracy_stderr": 5.64169333655275,
+      "total_tokens": 1197812821,
+      "total_cost_usd": 302.40976619999986,
+      "display_accuracy": "**8.3%** +/- 5.6%",
+      "display_total_tokens": "1.2B",
+      "display_cost": "$302.41"
+     },
+     "mathematical": {
+      "tasks": 51,
+      "passes": 5,
+      "accuracy": 9.803921568627452,
+      "accuracy_stderr": 4.163980181949191,
+      "total_tokens": 1639432828,
+      "total_cost_usd": 450.6649798000001,
+      "display_accuracy": "**9.8%** +/- 4.2%",
+      "display_total_tokens": "1.6B",
+      "display_cost": "$450.66"
+     },
+     "engineering": {
+      "tasks": 27,
+      "passes": 2,
+      "accuracy": 7.4074074074074066,
+      "accuracy_stderr": 5.040102351405716,
+      "total_tokens": 464143146,
+      "total_cost_usd": 141.00018310000002,
+      "display_accuracy": "**7.4%** +/- 5.0%",
+      "display_total_tokens": "464.1M",
+      "display_cost": "$141.00"
+     }
+    }
+   },
+   "status": "display",
+   "created_at": "2026-08-25T08:52:26.313446+00:00",
+   "updated_at": "2026-08-30T01:34:23.771829+00:00",
+   "n_trials": 210
+  },
+  {
+   "id": "78f18248-3ee9-4eb4-b7af-19019f1fc64f",
+   "leaderboard_id": "9a545a14-78d0-44b4-9003-afe062522a47",
+   "rank": 9,
+   "metadata": {
+    "agent_org": {
+     "url": "https://www.anthropic.com",
+     "label": "Anthropic"
+    },
+    "model_org": {
+     "url": "https://z.ai",
+     "label": "Z.AI"
+    },
+    "agent_display": {
+     "url": "https://claude.com/product/claude-code",
+     "label": "Claude Code"
+    },
+    "model_display": {
+     "url": "https://z.ai/",
+     "label": "GLM 5.3"
+    },
+    "reasoning_effort": "max",
+    "model_release_date": "2026-08-14"
+   },
+   "metrics": {
+    "tasks": 210,
+    "passes": 17,
+    "accuracy": 8.095238095238095,
+    "display_cost": "$2.73k",
+    "total_tokens": 8486097200,
+    "total_cost_usd": 2733.16185912,
+    "accuracy_stderr": 1.8822364227102866,
+    "display_accuracy": "**8.1%** +/- 1.9%",
+    "display_total_tokens": "8.5B",
+    "domain_metrics": {
+     "life": {
+      "tasks": 57,
+      "passes": 6,
+      "accuracy": 10.526315789473683,
+      "accuracy_stderr": 4.064886556427542,
+      "total_tokens": 1506421392,
+      "total_cost_usd": 1310.9276260000004,
+      "display_accuracy": "**10.5%** +/- 4.1%",
+      "display_total_tokens": "1.5B",
+      "display_cost": "$1.31k"
+     },
+     "physical": {
+      "tasks": 51,
+      "passes": 5,
+      "accuracy": 9.803921568627452,
+      "accuracy_stderr": 4.163980181949191,
+      "total_tokens": 2345166065,
+      "total_cost_usd": 1726.556125,
+      "display_accuracy": "**9.8%** +/- 4.2%",
+      "display_total_tokens": "2.3B",
+      "display_cost": "$1.73k"
+     },
+     "earth": {
+      "tasks": 24,
+      "passes": 1,
+      "accuracy": 4.166666666666666,
+      "accuracy_stderr": 4.078937543219003,
+      "total_tokens": 1588775692,
+      "total_cost_usd": 1404.890923,
+      "display_accuracy": "**4.2%** +/- 4.1%",
+      "display_total_tokens": "1.6B",
+      "display_cost": "$1.4k"
+     },
+     "mathematical": {
+      "tasks": 51,
+      "passes": 3,
+      "accuracy": 5.88235294117647,
+      "accuracy_stderr": 3.294776668301199,
+      "total_tokens": 2053648887,
+      "total_cost_usd": 1571.9234520000002,
+      "display_accuracy": "**5.9%** +/- 3.3%",
+      "display_total_tokens": "2.1B",
+      "display_cost": "$1.57k"
+     },
+     "engineering": {
+      "tasks": 27,
+      "passes": 2,
+      "accuracy": 7.4074074074074066,
+      "accuracy_stderr": 5.040102351405716,
+      "total_tokens": 992085164,
+      "total_cost_usd": 788.2680359999999,
+      "display_accuracy": "**7.4%** +/- 5.0%",
+      "display_total_tokens": "992.1M",
+      "display_cost": "$788.27"
+     }
+    }
+   },
+   "status": "display",
+   "created_at": "2026-08-26T07:35:19.166068+00:00",
+   "updated_at": "2026-08-30T04:43:51.891874+00:00",
+   "n_trials": 210
+  },
+  {
+   "id": "66e64f64-abbd-40a6-a470-2151df25472e",
+   "leaderboard_id": "9a545a14-78d0-44b4-9003-afe062522a47",
+   "rank": 10,
+   "metadata": {
+    "agent_org": {
+     "url": "https://www.anthropic.com",
+     "label": "Anthropic"
+    },
+    "model_org": {
+     "url": "https://www.moonshot.ai",
+     "label": "Moonshot AI"
+    },
+    "agent_display": {
+     "url": "https://claude.com/product/claude-code",
+     "label": "Claude Code"
+    },
+    "model_display": {
+     "url": "https://www.moonshot.ai/",
+     "label": "Kimi K3"
+    },
+    "reasoning_effort": "max",
+    "model_release_date": "2026-07-16"
+   },
+   "metrics": {
+    "tasks": 210,
+    "passes": 15,
+    "accuracy": 7.142857142857142,
+    "display_cost": "$1.52k",
+    "total_tokens": 3191602969,
+    "total_cost_usd": 1523.7995976,
+    "accuracy_stderr": 1.7771905411718545,
+    "display_accuracy": "**7.1%** +/- 1.8%",
+    "display_total_tokens": "3.2B",
+    "domain_metrics": {
+     "life": {
+      "tasks": 57,
+      "passes": 4,
+      "accuracy": 7.017543859649122,
+      "accuracy_stderr": 3.383417933803951,
+      "total_tokens": 612759967,
+      "total_cost_usd": 591.3448354999999,
+      "display_accuracy": "**7.0%** +/- 3.4%",
+      "display_total_tokens": "612.8M",
+      "display_cost": "$591.34"
+     },
+     "physical": {
+      "tasks": 51,
+      "passes": 6,
+      "accuracy": 11.76470588235294,
+      "accuracy_stderr": 4.511558757925709,
+      "total_tokens": 799277999,
+      "total_cost_usd": 536.2298835,
+      "display_accuracy": "**11.8%** +/- 4.5%",
+      "display_total_tokens": "799.3M",
+      "display_cost": "$536.23"
+     },
+     "earth": {
+      "tasks": 24,
+      "passes": 3,
+      "accuracy": 12.5,
+      "accuracy_stderr": 6.750771560841522,
+      "total_tokens": 380051652,
+      "total_cost_usd": 342.59728249999995,
+      "display_accuracy": "**12.5%** +/- 6.8%",
+      "display_total_tokens": "380.1M",
+      "display_cost": "$342.60"
+     },
+     "mathematical": {
+      "tasks": 51,
+      "passes": 1,
+      "accuracy": 1.9607843137254901,
+      "accuracy_stderr": 1.9414657705424987,
+      "total_tokens": 863209487,
+      "total_cost_usd": 714.7604920000001,
+      "display_accuracy": "**2.0%** +/- 1.9%",
+      "display_total_tokens": "863.2M",
+      "display_cost": "$714.76"
+     },
+     "engineering": {
+      "tasks": 27,
+      "passes": 1,
+      "accuracy": 3.7037037037037033,
+      "accuracy_stderr": 3.6344694923159864,
+      "total_tokens": 536303864,
+      "total_cost_usd": 354.7335025000001,
+      "display_accuracy": "**3.7%** +/- 3.6%",
+      "display_total_tokens": "536.3M",
+      "display_cost": "$354.73"
+     }
+    }
+   },
+   "status": "display",
+   "created_at": "2026-08-25T19:57:08.310275+00:00",
+   "updated_at": "2026-08-29T19:21:10.538643+00:00",
+   "n_trials": 210
+  },
+  {
+   "id": "231bc6c3-8f2b-455e-8c87-5a08ec200b05",
+   "leaderboard_id": "9a545a14-78d0-44b4-9003-afe062522a47",
+   "rank": 11,
+   "metadata": {
+    "agent_org": {
+     "url": "https://x.ai",
+     "label": "xAI"
+    },
+    "model_org": {
+     "url": "https://x.ai",
+     "label": "xAI"
+    },
+    "agent_display": {
+     "url": "https://x.ai/",
+     "label": "Grok Build"
+    },
+    "model_display": {
+     "url": "https://x.ai/",
+     "label": "Grok 4.6"
+    },
+    "reasoning_effort": "xhigh",
+    "model_release_date": "2026-08-12"
+   },
+   "metrics": {
+    "tasks": 210,
+    "passes": 15,
+    "accuracy": 7.142857142857142,
+    "display_cost": "$3.34k",
+    "total_tokens": 3709385002,
+    "total_cost_usd": 3344.187332,
+    "accuracy_stderr": 1.7771905411718545,
+    "display_accuracy": "**7.1%** +/- 1.8%",
+    "display_total_tokens": "3.7B",
+    "domain_metrics": {
+     "life": {
+      "tasks": 57,
+      "passes": 4,
+      "accuracy": 7.017543859649122,
+      "accuracy_stderr": 3.383417933803951,
+      "total_tokens": 367523179,
+      "total_cost_usd": 281.65276,
+      "display_accuracy": "**7.0%** +/- 3.4%",
+      "display_total_tokens": "367.5M",
+      "display_cost": "$281.65"
+     },
+     "physical": {
+      "tasks": 51,
+      "passes": 3,
+      "accuracy": 5.88235294117647,
+      "accuracy_stderr": 3.294776668301199,
+      "total_tokens": 646860649,
+      "total_cost_usd": 539.5871699999999,
+      "display_accuracy": "**5.9%** +/- 3.3%",
+      "display_total_tokens": "646.9M",
+      "display_cost": "$539.59"
+     },
+     "earth": {
+      "tasks": 24,
+      "passes": 1,
+      "accuracy": 4.166666666666666,
+      "accuracy_stderr": 4.078937543219003,
+      "total_tokens": 244927564,
+      "total_cost_usd": 217.32519000000005,
+      "display_accuracy": "**4.2%** +/- 4.1%",
+      "display_total_tokens": "244.9M",
+      "display_cost": "$217.33"
+     },
+     "mathematical": {
+      "tasks": 51,
+      "passes": 3,
+      "accuracy": 5.88235294117647,
+      "accuracy_stderr": 3.294776668301199,
+      "total_tokens": 2173354326,
+      "total_cost_usd": 2074.054437999999,
+      "display_accuracy": "**5.9%** +/- 3.3%",
+      "display_total_tokens": "2.2B",
+      "display_cost": "$2.07k"
+     },
+     "engineering": {
+      "tasks": 27,
+      "passes": 4,
+      "accuracy": 14.814814814814813,
+      "accuracy_stderr": 6.836727459191831,
+      "total_tokens": 276719284,
+      "total_cost_usd": 231.56777400000001,
+      "display_accuracy": "**14.8%** +/- 6.8%",
+      "display_total_tokens": "276.7M",
+      "display_cost": "$231.57"
+     }
+    }
+   },
+   "status": "display",
+   "created_at": "2026-08-24T10:25:39.579396+00:00",
+   "updated_at": "2026-08-30T05:21:48.859178+00:00",
+   "n_trials": 210
+  },
+  {
+   "id": "5a71d088-1bfd-4bbe-a65a-973a4fffd50f",
+   "leaderboard_id": "9a545a14-78d0-44b4-9003-afe062522a47",
+   "rank": 12,
+   "metadata": {
+    "agent_org": {
+     "url": "https://github.com/SWE-agent",
+     "label": "SWE-agent"
+    },
+    "model_org": {
+     "url": "https://deepmind.google/",
+     "label": "Google DeepMind"
+    },
+    "agent_display": {
+     "url": "https://mini-swe-agent.com/latest/",
+     "label": "mini-SWE-agent"
+    },
+    "model_display": {
+     "url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.7-flash",
+     "label": "Gemini 3.7 Flash"
+    },
+    "reasoning_effort": "high",
+    "model_release_date": "2026-08-13"
+   },
+   "metrics": {
+    "tasks": 210,
+    "passes": 12,
+    "accuracy": 5.714285714285714,
+    "display_cost": "$1.30k",
+    "total_tokens": 12023077591,
+    "total_cost_usd": 1296.5871279,
+    "accuracy_stderr": 1.6017483159468233,
+    "display_accuracy": "**5.7%** +/- 1.6%",
+    "display_total_tokens": "12.0B",
+    "domain_metrics": {
+     "life": {
+      "tasks": 57,
+      "passes": 5,
+      "accuracy": 8.771929824561402,
+      "accuracy_stderr": 3.746919739866593,
+      "total_tokens": 704804016,
+      "total_cost_usd": 100.54085647500003,
+      "display_accuracy": "**8.8%** +/- 3.7%",
+      "display_total_tokens": "704.8M",
+      "display_cost": "$100.54"
+     },
+     "physical": {
+      "tasks": 51,
+      "passes": 4,
+      "accuracy": 7.8431372549019605,
+      "accuracy_stderr": 3.7646418038888574,
+      "total_tokens": 4734943451,
+      "total_cost_usd": 490.735906425,
+      "display_accuracy": "**7.8%** +/- 3.8%",
+      "display_total_tokens": "4.7B",
+      "display_cost": "$490.74"
+     },
+     "earth": {
+      "tasks": 24,
+      "passes": 0,
+      "accuracy": 0,
+      "accuracy_stderr": 0,
+      "total_tokens": 503645605,
+      "total_cost_usd": 63.50667502499999,
+      "display_accuracy": "**0.0%** +/- 0.0%",
+      "display_total_tokens": "503.6M",
+      "display_cost": "$63.51"
+     },
+     "mathematical": {
+      "tasks": 51,
+      "passes": 1,
+      "accuracy": 1.9607843137254901,
+      "accuracy_stderr": 1.9414657705424987,
+      "total_tokens": 5702475089,
+      "total_cost_usd": 585.3949539000001,
+      "display_accuracy": "**2.0%** +/- 1.9%",
+      "display_total_tokens": "5.7B",
+      "display_cost": "$585.39"
+     },
+     "engineering": {
+      "tasks": 27,
+      "passes": 2,
+      "accuracy": 7.4074074074074066,
+      "accuracy_stderr": 5.040102351405716,
+      "total_tokens": 377209430,
+      "total_cost_usd": 56.408736075,
+      "display_accuracy": "**7.4%** +/- 5.0%",
+      "display_total_tokens": "377.2M",
+      "display_cost": "$56.41"
+     }
+    }
+   },
+   "status": "display",
+   "created_at": "2026-09-03T08:32:35.782397+00:00",
+   "updated_at": "2026-09-03T09:13:10.360986+00:00",
+   "n_trials": 210
+  },
+  {
+   "id": "00b5eabf-caca-435c-b8a8-458633192aa8",
+   "leaderboard_id": "9a545a14-78d0-44b4-9003-afe062522a47",
+   "rank": 13,
+   "metadata": {
+    "agent_org": {
+     "url": "https://openai.com",
+     "label": "OpenAI"
+    },
+    "model_org": {
+     "url": "https://www.deepseek.com/",
+     "label": "DeepSeek"
+    },
+    "agent_display": {
+     "url": "https://openai.com/codex/",
+     "label": "Codex"
+    },
+    "model_display": {
+     "url": "https://api-docs.deepseek.com/news/news260813/",
+     "label": "DeepSeek V4 Pro"
+    },
+    "reasoning_effort": "max",
+    "model_release_date": "2026-08-13"
+   },
+   "metrics": {
+    "tasks": 210,
+    "passes": 8,
+    "accuracy": 3.8095238095238093,
+    "display_cost": "$1,120.15",
+    "total_tokens": 11201441597,
+    "total_cost_usd": 1120.15076932,
+    "accuracy_stderr": 1.3209662936780717,
+    "display_accuracy": "**3.8%** +/- 1.3%",
+    "display_total_tokens": "11.2B",
+    "domain_metrics": {
+     "life": {
+      "tasks": 57,
+      "passes": 0,
+      "accuracy": 0,
+      "accuracy_stderr": 0,
+      "total_tokens": 2083306722,
+      "total_cost_usd": 107.43456482000002,
+      "display_accuracy": "**0.0%** +/- 0.0%",
+      "display_total_tokens": "2.1B",
+      "display_cost": "$107.43"
+     },
+     "physical": {
+      "tasks": 51,
+      "passes": 2,
+      "accuracy": 3.9215686274509802,
+      "accuracy_stderr": 2.718052078759498,
+      "total_tokens": 2763809854,
+      "total_cost_usd": 140.452167108,
+      "display_accuracy": "**3.9%** +/- 2.7%",
+      "display_total_tokens": "2.8B",
+      "display_cost": "$140.45"
+     },
+     "earth": {
+      "tasks": 24,
+      "passes": 0,
+      "accuracy": 0,
+      "accuracy_stderr": 0,
+      "total_tokens": 1481972810,
+      "total_cost_usd": 71.822495184,
+      "display_accuracy": "**0.0%** +/- 0.0%",
+      "display_total_tokens": "1.5B",
+      "display_cost": "$71.82"
+     },
+     "mathematical": {
+      "tasks": 51,
+      "passes": 3,
+      "accuracy": 5.88235294117647,
+      "accuracy_stderr": 3.294776668301199,
+      "total_tokens": 2672070982,
+      "total_cost_usd": 146.126849924,
+      "display_accuracy": "**5.9%** +/- 3.3%",
+      "display_total_tokens": "2.7B",
+      "display_cost": "$146.13"
+     },
+     "engineering": {
+      "tasks": 27,
+      "passes": 3,
+      "accuracy": 11.11111111111111,
+      "accuracy_stderr": 6.04812282168686,
+      "total_tokens": 2200281229,
+      "total_cost_usd": 108.39618107999999,
+      "display_accuracy": "**11.1%** +/- 6.0%",
+      "display_total_tokens": "2.2B",
+      "display_cost": "$108.40"
+     }
+    }
+   },
+   "status": "display",
+   "created_at": "2026-09-05T19:44:39.989994+00:00",
+   "updated_at": "2026-09-11T21:22:14.945155+00:00",
+   "n_trials": 210
+  },
+  {
+   "id": "7cf10b06-3e5b-4723-b98f-c679e773959b",
+   "leaderboard_id": "9a545a14-78d0-44b4-9003-afe062522a47",
+   "rank": 14,
+   "metadata": {
+    "agent_org": {
+     "url": "https://openai.com",
+     "label": "OpenAI"
+    },
+    "model_org": {
+     "url": "https://openai.com",
+     "label": "OpenAI"
+    },
+    "agent_display": {
+     "url": "https://openai.com/codex/",
+     "label": "Codex"
+    },
+    "model_display": {
+     "url": "https://developers.openai.com/api/docs/models/gpt-5.6-luna",
+     "label": "GPT-5.6 Luna"
+    },
+    "reasoning_effort": "max",
+    "model_release_date": "2026-07-09"
+   },
+   "metrics": {
+    "tasks": 210,
+    "passes": 7,
+    "accuracy": 3.3333333333333335,
+    "display_cost": "$383.20",
+    "total_tokens": 14246922352,
+    "total_cost_usd": 383.19963959999995,
+    "accuracy_stderr": 1.2387055882620108,
+    "display_accuracy": "**3.3%** +/- 1.2%",
+    "display_total_tokens": "14.2B",
+    "domain_metrics": {
+     "life": {
+      "tasks": 57,
+      "passes": 1,
+      "accuracy": 1.7543859649122806,
+      "accuracy_stderr": 1.7389285185380774,
+      "total_tokens": 2852715005,
+      "total_cost_usd": 83.50810593999996,
+      "display_accuracy": "**1.8%** +/- 1.7%",
+      "display_total_tokens": "2.9B",
+      "display_cost": "$83.51"
+     },
+     "physical": {
+      "tasks": 51,
+      "passes": 0,
+      "accuracy": 0,
+      "accuracy_stderr": 0,
+      "total_tokens": 4766821210,
+      "total_cost_usd": 116.84312716999993,
+      "display_accuracy": "**0.0%** +/- 0.0%",
+      "display_total_tokens": "4.8B",
+      "display_cost": "$116.84"
+     },
+     "earth": {
+      "tasks": 24,
+      "passes": 0,
+      "accuracy": 0,
+      "accuracy_stderr": 0,
+      "total_tokens": 1640103008,
+      "total_cost_usd": 41.411879639999995,
+      "display_accuracy": "**0.0%** +/- 0.0%",
+      "display_total_tokens": "1.6B",
+      "display_cost": "$41.41"
+     },
+     "mathematical": {
+      "tasks": 51,
+      "passes": 4,
+      "accuracy": 7.8431372549019605,
+      "accuracy_stderr": 3.7646418038888574,
+      "total_tokens": 3739866520,
+      "total_cost_usd": 105.62130739999999,
+      "display_accuracy": "**7.8%** +/- 3.8%",
+      "display_total_tokens": "3.7B",
+      "display_cost": "$105.62"
+     },
+     "engineering": {
+      "tasks": 27,
+      "passes": 2,
+      "accuracy": 7.4074074074074066,
+      "accuracy_stderr": 5.040102351405716,
+      "total_tokens": 1247416609,
+      "total_cost_usd": 35.81521945,
+      "display_accuracy": "**7.4%** +/- 5.0%",
+      "display_total_tokens": "1.2B",
+      "display_cost": "$35.82"
+     }
+    }
+   },
+   "status": "display",
+   "created_at": "2026-08-25T19:25:57.794681+00:00",
+   "updated_at": "2026-08-30T04:12:04.906326+00:00",
+   "n_trials": 210
+  }
+ ]
+}

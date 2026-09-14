@@ -1,0 +1,36 @@
+name: check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          repository: almide/almide
+          ref: e706ba8c4e32eb39983bd125cec1890d17094300
+          path: .ci/almide
+          persist-credentials: false
+      - run: rustup toolchain install 1.94.0 --profile minimal
+      - uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        id: compiler
+        with:
+          path: .ci/almide/target/release/almide
+          key: almide-${{ runner.os }}-e706ba8c4e32eb39983bd125cec1890d17094300-rust1.94.0
+      - if: steps.compiler.outputs.cache-hit != 'true'
+        run: cargo build --release --locked --bin almide --manifest-path .ci/almide/Cargo.toml
+      # Every table must pass the checks. The model registry is not written yet, so
+      # unregistered model ids are not an error until it is (then: -- --strict).
+      - name: Check data and rebuild the bundle
+        run: .ci/almide/target/release/almide run tools/build.almd
+      # The page serves the committed bundle, so it must be the one the data builds.
+      - name: The committed bundle is the one the data builds
+        run: git diff --exit-code -- docs/data.json

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agent Bench Matrix</title>
+<meta name="description" content="エージェント向けベンチマークの公開リーダーボードを、モデル・エージェントごとに一枚の表にまとめたもの。数字はすべて各ボードの公開データから取得し、出典付き。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-inner">
+    <div class="brand">
+      <h1><a href="#/matrix">Agent Bench Matrix</a></h1>
+      <p class="lede">エージェント向けベンチマーク × モデル・エージェント。数字はすべて各リーダーボードの公開データから取得し、行ごとに出典を付けています。</p>
+    </div>
+    <dl class="stats" id="stats"></dl>
+  </div>
+  <nav class="wrap tabs" id="tabs">
+    <a href="#/matrix" data-view="matrix">マトリクス</a>
+    <a href="#/benchmarks" data-view="benchmarks">ベンチマーク</a>
+    <a href="#/table" data-view="table">表</a>
+    <a href="#/gaps" data-view="gaps">取れなかった表</a>
+    <a href="#/about" data-view="about">このデータについて</a>
+  </nav>
+</header>
+<main class="wrap" id="view" aria-live="polite">
+  <p class="loading">読み込み中…</p>
+</main>
+<aside class="drawer" id="drawer" hidden>
+  <div class="drawer-head">
+    <div id="drawer-title"></div>
+    <button type="button" class="close" id="drawer-close" aria-label="閉じる">×</button>
+  </div>
+  <div class="drawer-body" id="drawer-body"></div>
+</aside>
+<footer class="wrap foot">
+  <p>データの出所は各リーダーボードです。誤りや新しいボードは <a href="https://github.com/O6lvl4/agent-bench-matrix/issues">Issue</a> へ。</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>

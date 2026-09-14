@@ -1,0 +1,919 @@
+{
+  "id": "metr-time-horizon-1.0",
+  "family": "metr-time-horizon",
+  "name": "METR Time Horizon 1.0 (Mar 2025)",
+  "board": "metr.org",
+  "category": "long-horizon",
+  "measures_ja": "人間の専門家が何分かかるタスクまでなら、AI エージェントが50%の確率で成功できるか(タスク長で測る能力)。",
+  "tasks": 170,
+  "tasks_note": "TH1.1 リリース記事の記載(旧タスク群は170タスク)。",
+  "metric": "50% time horizon",
+  "unit": "minutes",
+  "higher_is_better": true,
+  "harness_ja": "METR が自前のタスク群(RE-Bench・HCAST・短いソフトウェアタスク)でモデルごとに足場(ReAct・Triframe・Claude Code 等)を選んで実行し、人間の所要時間に対する成功率のロジスティック曲線から推定。",
+  "source": "https://metr.org/time-horizons/",
+  "fetched": [
+    "https://metr.org/assets/benchmark_results_1_0.yaml",
+    "https://metr.org/assets/js/time-horizon-chart.js",
+    "https://metr.org/time-horizons/"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2025-11-24",
+  "snapshot": "sources/metr-time-horizon-1.0/benchmark_results_1_0.yaml",
+  "paper": "https://arxiv.org/abs/2503.14499",
+  "repo": "https://github.com/METR/eval-analysis-public",
+  "notes_ja": "旧版(TH1.0)の推定で、TH1.1 に置き換えられた。ボード上で切り替え表示できる。date はモデルの公開日。rank は p50 の降順で付けた。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Claude Opus 4.5",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 4.5"
+      ],
+      "model_ids": [
+        "claude-opus-4.5"
+      ],
+      "model_config": null,
+      "score": 246.781803,
+      "score_extra": {
+        "p50_ci_low": 104.265659,
+        "p50_ci_high": 821.560215,
+        "p80_minutes": 36.039286,
+        "p80_ci_low": 9.313074,
+        "p80_ci_high": 114.200812,
+        "average_score": 0.753054,
+        "is_sota": true
+      },
+      "date": "2025-11-24",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://x.com/METR_Evals/status/2002203627377574113"
+    },
+    {
+      "rank": 2,
+      "system": "GPT-5.1-Codex-Max",
+      "agent": null,
+      "model_raw": [
+        "GPT-5.1-Codex-Max"
+      ],
+      "model_ids": [
+        "gpt-5.1-codex-max"
+      ],
+      "model_config": null,
+      "score": 162.253699,
+      "score_extra": {
+        "p50_ci_low": 80.193214,
+        "p50_ci_high": 336.504695,
+        "p80_minutes": 40.039035,
+        "p80_ci_low": 10.315095,
+        "p80_ci_high": 129.233087,
+        "average_score": 0.721134,
+        "is_sota": true
+      },
+      "date": "2025-11-19",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://metr.org/evaluations/gpt-5-1-codex-max-report/"
+    },
+    {
+      "rank": 3,
+      "system": "GPT-5",
+      "agent": null,
+      "model_raw": [
+        "GPT-5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": null,
+      "score": 130.816528,
+      "score_extra": {
+        "p50_ci_low": 67.703931,
+        "p50_ci_high": 247.820152,
+        "p80_minutes": 32.984347,
+        "p80_ci_low": 9.79551,
+        "p80_ci_high": 92.692214,
+        "average_score": 0.698403,
+        "is_sota": true
+      },
+      "date": "2025-08-07",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://metr.org/evaluations/gpt-5-report/"
+    },
+    {
+      "rank": 4,
+      "system": "Claude Sonnet 4.5",
+      "agent": null,
+      "model_raw": [
+        "Claude Sonnet 4.5"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": null,
+      "score": 116.528413,
+      "score_extra": {
+        "p50_ci_low": 58.936193,
+        "p50_ci_high": 225.752849,
+        "p80_minutes": 26.095319,
+        "p80_ci_low": 7.513898,
+        "p80_ci_high": 73.824859,
+        "average_score": 0.683012,
+        "is_sota": false
+      },
+      "date": "2025-09-29",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://x.com/METR_Evals/status/1976331315772580274"
+    },
+    {
+      "rank": 5,
+      "system": "Claude Opus 4.1",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 4.1"
+      ],
+      "model_ids": [
+        "claude-opus-4.1"
+      ],
+      "model_config": null,
+      "score": 109.263038,
+      "score_extra": {
+        "p50_ci_low": 55.954932,
+        "p50_ci_high": 200.80836,
+        "p80_minutes": 27.289864,
+        "p80_ci_low": 8.357108,
+        "p80_ci_high": 66.554968,
+        "average_score": 0.677469,
+        "is_sota": true
+      },
+      "date": "2025-08-05",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://x.com/METR_Evals/status/1961527692072993272"
+    },
+    {
+      "rank": 6,
+      "system": "Grok 4",
+      "agent": null,
+      "model_raw": [
+        "Grok 4"
+      ],
+      "model_ids": [
+        "grok-4"
+      ],
+      "model_config": null,
+      "score": 104.84751,
+      "score_extra": {
+        "p50_ci_low": 47.555449,
+        "p50_ci_high": 208.297605,
+        "p80_minutes": 18.59131,
+        "p80_ci_low": 4.757614,
+        "p80_ci_high": 55.346662,
+        "average_score": 0.667187,
+        "is_sota": true
+      },
+      "date": "2025-07-09",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://x.com/METR_Evals/status/1950740117020389870"
+    },
+    {
+      "rank": 7,
+      "system": "o3",
+      "agent": null,
+      "model_raw": [
+        "o3"
+      ],
+      "model_ids": [
+        "o3"
+      ],
+      "model_config": null,
+      "score": 91.443799,
+      "score_extra": {
+        "p50_ci_low": 46.571206,
+        "p50_ci_high": 158.036682,
+        "p80_minutes": 27.30067,
+        "p80_ci_low": 9.243647,
+        "p80_ci_high": 67.256198,
+        "average_score": 0.658782,
+        "is_sota": true
+      },
+      "date": "2025-04-16",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://metr.org/evaluations/openai-o3-report/"
+    },
+    {
+      "rank": 8,
+      "system": "Claude Opus 4",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 4"
+      ],
+      "model_ids": [
+        "claude-opus-4"
+      ],
+      "model_config": null,
+      "score": 83.567793,
+      "score_extra": {
+        "p50_ci_low": 44.934856,
+        "p50_ci_high": 140.617499,
+        "p80_minutes": 26.88671,
+        "p80_ci_low": 9.151599,
+        "p80_ci_high": 61.850971,
+        "average_score": 0.648693,
+        "is_sota": false
+      },
+      "date": "2025-05-22",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://x.com/METR_Evals/status/1940088546385436738"
+    },
+    {
+      "rank": 9,
+      "system": "o4-mini",
+      "agent": null,
+      "model_raw": [
+        "o4-mini"
+      ],
+      "model_ids": [
+        "o4-mini"
+      ],
+      "model_config": null,
+      "score": 76.748308,
+      "score_extra": {
+        "p50_ci_low": 37.053517,
+        "p50_ci_high": 142.123876,
+        "p80_minutes": 20.147776,
+        "p80_ci_low": 6.654501,
+        "p80_ci_high": 52.779547,
+        "average_score": 0.642837,
+        "is_sota": false
+      },
+      "date": "2025-04-16",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://metr.org/evaluations/openai-o3-report/"
+    },
+    {
+      "rank": 10,
+      "system": "Claude Sonnet 4",
+      "agent": null,
+      "model_raw": [
+        "Claude Sonnet 4"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": null,
+      "score": 73.660733,
+      "score_extra": {
+        "p50_ci_low": 38.322944,
+        "p50_ci_high": 127.091712,
+        "p80_minutes": 21.948674,
+        "p80_ci_low": 7.941505,
+        "p80_ci_high": 49.861238,
+        "average_score": 0.632651,
+        "is_sota": false
+      },
+      "date": "2025-05-22",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://x.com/METR_Evals/status/1940088546385436738"
+    },
+    {
+      "rank": 11,
+      "system": "Kimi K2 Thinking (inference via Novita AI)",
+      "agent": null,
+      "model_raw": [
+        "Kimi K2 Thinking (inference via Novita AI)"
+      ],
+      "model_ids": [
+        "kimi-k2-thinking"
+      ],
+      "model_config": "inference via Novita AI",
+      "score": 57.621724,
+      "score_extra": {
+        "p50_ci_low": 27.423314,
+        "p50_ci_high": 100.591631,
+        "p80_minutes": 15.004943,
+        "p80_ci_low": 4.37601,
+        "p80_ci_high": 38.984235,
+        "average_score": 0.60027,
+        "is_sota": false
+      },
+      "date": "2025-11-06",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://x.com/METR_Evals/status/1991658241932292537"
+    },
+    {
+      "rank": 12,
+      "system": "Claude 3.7 Sonnet",
+      "agent": null,
+      "model_raw": [
+        "Claude 3.7 Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": null,
+      "score": 55.258445,
+      "score_extra": {
+        "p50_ci_low": 28.87097,
+        "p50_ci_high": 89.187313,
+        "p80_minutes": 20.378794,
+        "p80_ci_low": 7.749991,
+        "p80_ci_high": 43.669897,
+        "average_score": 0.605035,
+        "is_sota": true
+      },
+      "date": "2025-02-24",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://metr.org/evaluations/claude-3-7-report/"
+    },
+    {
+      "rank": 13,
+      "system": "gpt-oss-120b",
+      "agent": null,
+      "model_raw": [
+        "gpt-oss-120b"
+      ],
+      "model_ids": [
+        "gpt-oss-120b"
+      ],
+      "model_config": null,
+      "score": 45.110184,
+      "score_extra": {
+        "p50_ci_low": 19.901035,
+        "p50_ci_high": 85.537034,
+        "p80_minutes": 8.35222,
+        "p80_ci_low": 2.416079,
+        "p80_ci_high": 21.625724,
+        "average_score": 0.574566,
+        "is_sota": false
+      },
+      "date": "2025-08-05",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 14,
+      "system": "o1",
+      "agent": null,
+      "model_raw": [
+        "o1"
+      ],
+      "model_ids": [
+        "o1"
+      ],
+      "model_config": null,
+      "score": 41.551706,
+      "score_extra": {
+        "p50_ci_low": 19.822684,
+        "p50_ci_high": 85.806317,
+        "p80_minutes": 7.645697,
+        "p80_ci_low": 2.557853,
+        "p80_ci_high": 21.983284,
+        "average_score": 0.56549,
+        "is_sota": true
+      },
+      "date": "2024-12-05",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 15,
+      "system": "Gemini 2.5 Pro Preview",
+      "agent": null,
+      "model_raw": [
+        "Gemini 2.5 Pro Preview"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro-preview"
+      ],
+      "model_config": null,
+      "score": 40.182282,
+      "score_extra": {
+        "p50_ci_low": 20.357511,
+        "p50_ci_high": 69.856777,
+        "p80_minutes": 12.565677,
+        "p80_ci_low": 4.659581,
+        "p80_ci_high": 27.288387,
+        "average_score": 0.557925,
+        "is_sota": false
+      },
+      "date": "2025-06-05",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 16,
+      "system": "DeepSeek-R1-0528",
+      "agent": null,
+      "model_raw": [
+        "DeepSeek-R1-0528"
+      ],
+      "model_ids": [
+        "deepseek-r1-0528"
+      ],
+      "model_config": null,
+      "score": 32.764282,
+      "score_extra": {
+        "p50_ci_low": 13.756178,
+        "p50_ci_high": 64.081849,
+        "p80_minutes": 4.671541,
+        "p80_ci_low": 1.353217,
+        "p80_ci_high": 15.485703,
+        "average_score": 0.542232,
+        "is_sota": false
+      },
+      "date": "2025-05-28",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://metr.org/evaluations/deepseek-qwen-report/"
+    },
+    {
+      "rank": 17,
+      "system": "Claude 3.5 Sonnet (New)",
+      "agent": null,
+      "model_raw": [
+        "Claude 3.5 Sonnet (New)"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": "New (20241022)",
+      "score": 30.454555,
+      "score_extra": {
+        "p50_ci_low": 14.72191,
+        "p50_ci_high": 60.891717,
+        "p80_minutes": 5.907631,
+        "p80_ci_low": 2.249329,
+        "p80_ci_high": 15.195336,
+        "average_score": 0.530535,
+        "is_sota": true
+      },
+      "date": "2024-10-22",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 18,
+      "system": "DeepSeek-R1",
+      "agent": null,
+      "model_raw": [
+        "DeepSeek-R1"
+      ],
+      "model_ids": [
+        "deepseek-r1"
+      ],
+      "model_config": null,
+      "score": 27.887616,
+      "score_extra": {
+        "p50_ci_low": 14.422102,
+        "p50_ci_high": 52.750504,
+        "p80_minutes": 5.629461,
+        "p80_ci_low": 2.344816,
+        "p80_ci_high": 13.373897,
+        "average_score": 0.520133,
+        "is_sota": false
+      },
+      "date": "2025-01-20",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://metr.org/evaluations/deepseek-r1-report/"
+    },
+    {
+      "rank": 19,
+      "system": "DeepSeek-V3-0324",
+      "agent": null,
+      "model_raw": [
+        "DeepSeek-V3-0324"
+      ],
+      "model_ids": [
+        "deepseek-v3-0324"
+      ],
+      "model_config": null,
+      "score": 24.594348,
+      "score_extra": {
+        "p50_ci_low": 12.569662,
+        "p50_ci_high": 43.32637,
+        "p80_minutes": 7.452729,
+        "p80_ci_low": 3.283517,
+        "p80_ci_high": 15.876695,
+        "average_score": 0.497576,
+        "is_sota": false
+      },
+      "date": "2025-03-24",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://metr.org/evaluations/deepseek-qwen-report/"
+    },
+    {
+      "rank": 20,
+      "system": "o1-preview",
+      "agent": null,
+      "model_raw": [
+        "o1-preview"
+      ],
+      "model_ids": [
+        "o1-preview"
+      ],
+      "model_config": null,
+      "score": 23.254728,
+      "score_extra": {
+        "p50_ci_low": 12.640748,
+        "p50_ci_high": 39.370195,
+        "p80_minutes": 6.418505,
+        "p80_ci_low": 2.800499,
+        "p80_ci_high": 13.27718,
+        "average_score": 0.492955,
+        "is_sota": true
+      },
+      "date": "2024-09-12",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://metr.org/evaluations/openai-o1-preview-report/"
+    },
+    {
+      "rank": 21,
+      "system": "DeepSeek-V3",
+      "agent": null,
+      "model_raw": [
+        "DeepSeek-V3"
+      ],
+      "model_ids": [
+        "deepseek-v3"
+      ],
+      "model_config": null,
+      "score": 19.822812,
+      "score_extra": {
+        "p50_ci_low": 10.37305,
+        "p50_ci_high": 35.001162,
+        "p80_minutes": 5.424593,
+        "p80_ci_low": 2.208963,
+        "p80_ci_high": 13.145861,
+        "average_score": 0.474508,
+        "is_sota": false
+      },
+      "date": "2024-12-26",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://metr.org/evaluations/deepseek-v3-report/"
+    },
+    {
+      "rank": 22,
+      "system": "Claude 3.5 Sonnet (Old)",
+      "agent": null,
+      "model_raw": [
+        "Claude 3.5 Sonnet (Old)"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": "Old (20240620)",
+      "score": 19.764601,
+      "score_extra": {
+        "p50_ci_low": 10.531997,
+        "p50_ci_high": 35.808873,
+        "p80_minutes": 4.192071,
+        "p80_ci_low": 1.818235,
+        "p80_ci_high": 10.000262,
+        "average_score": 0.481203,
+        "is_sota": true
+      },
+      "date": "2024-06-20",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://metr.org/evaluations/claude-3-5-sonnet-report/"
+    },
+    {
+      "rank": 23,
+      "system": "GPT-4o",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 10.174857,
+      "score_extra": {
+        "p50_ci_low": 5.000948,
+        "p50_ci_high": 19.508766,
+        "p80_minutes": 2.374364,
+        "p80_ci_low": 0.947346,
+        "p80_ci_high": 5.947962,
+        "average_score": 0.408517,
+        "is_sota": true
+      },
+      "date": "2024-05-13",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://metr.org/evaluations/gpt-4o-report/"
+    },
+    {
+      "rank": 24,
+      "system": "GPT-4 Nov '23",
+      "agent": null,
+      "model_raw": [
+        "GPT-4 Nov '23"
+      ],
+      "model_ids": [
+        "gpt-4-1106"
+      ],
+      "model_config": null,
+      "score": 9.394536,
+      "score_extra": {
+        "p50_ci_low": 4.468489,
+        "p50_ci_high": 18.162454,
+        "p80_minutes": 2.01019,
+        "p80_ci_low": 0.73874,
+        "p80_ci_high": 5.666518,
+        "average_score": 0.404329,
+        "is_sota": true
+      },
+      "date": "2023-11-06",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 25,
+      "system": "GPT-4 Turbo",
+      "agent": null,
+      "model_raw": [
+        "GPT-4 Turbo"
+      ],
+      "model_ids": [
+        "gpt-4-turbo"
+      ],
+      "model_config": null,
+      "score": 7.777455,
+      "score_extra": {
+        "p50_ci_low": 4.050277,
+        "p50_ci_high": 14.21142,
+        "p80_minutes": 2.492662,
+        "p80_ci_low": 1.084966,
+        "p80_ci_high": 6.034151,
+        "average_score": 0.367357,
+        "is_sota": false
+      },
+      "date": "2024-04-09",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 26,
+      "system": "Claude 3 Opus",
+      "agent": null,
+      "model_raw": [
+        "Claude 3 Opus"
+      ],
+      "model_ids": [
+        "claude-3-opus"
+      ],
+      "model_config": null,
+      "score": 7.148402,
+      "score_extra": {
+        "p50_ci_low": 3.217769,
+        "p50_ci_high": 14.764711,
+        "p80_minutes": 1.578216,
+        "p80_ci_low": 0.585264,
+        "p80_ci_high": 4.612595,
+        "average_score": 0.377459,
+        "is_sota": false
+      },
+      "date": "2024-03-04",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 27,
+      "system": "GPT-4 Jan '24",
+      "agent": null,
+      "model_raw": [
+        "GPT-4 Jan '24"
+      ],
+      "model_ids": [
+        "gpt-4-0125"
+      ],
+      "model_config": null,
+      "score": 6.346859,
+      "score_extra": {
+        "p50_ci_low": 3.267886,
+        "p50_ci_high": 11.553041,
+        "p80_minutes": 1.913986,
+        "p80_ci_low": 0.854185,
+        "p80_ci_high": 4.699039,
+        "average_score": 0.351726,
+        "is_sota": false
+      },
+      "date": "2024-01-25",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 28,
+      "system": "GPT-4",
+      "agent": null,
+      "model_raw": [
+        "GPT-4"
+      ],
+      "model_ids": [
+        "gpt-4"
+      ],
+      "model_config": null,
+      "score": 6.024114,
+      "score_extra": {
+        "p50_ci_low": 2.768122,
+        "p50_ci_high": 11.721889,
+        "p80_minutes": 1.367526,
+        "p80_ci_low": 0.495441,
+        "p80_ci_high": 3.856515,
+        "average_score": 0.361067,
+        "is_sota": true
+      },
+      "date": "2023-03-14",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 29,
+      "system": "Qwen2.5-72B",
+      "agent": null,
+      "model_raw": [
+        "Qwen2.5-72B"
+      ],
+      "model_ids": [
+        "qwen2.5-72b"
+      ],
+      "model_config": null,
+      "score": 5.813798,
+      "score_extra": {
+        "p50_ci_low": 2.563669,
+        "p50_ci_high": 12.146289,
+        "p80_minutes": 1.325385,
+        "p80_ci_low": 0.46914,
+        "p80_ci_high": 3.916909,
+        "average_score": 0.357771,
+        "is_sota": false
+      },
+      "date": "2024-09-19",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://metr.org/evaluations/deepseek-qwen-report/"
+    },
+    {
+      "rank": 30,
+      "system": "Qwen2-72B",
+      "agent": null,
+      "model_raw": [
+        "Qwen2-72B"
+      ],
+      "model_ids": [
+        "qwen2-72b"
+      ],
+      "model_config": null,
+      "score": 2.536634,
+      "score_extra": {
+        "p50_ci_low": 0.945777,
+        "p50_ci_high": 5.937061,
+        "p80_minutes": 0.595157,
+        "p80_ci_low": 0.185057,
+        "p80_ci_high": 1.983832,
+        "average_score": 0.298999,
+        "is_sota": false
+      },
+      "date": "2024-06-07",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 31,
+      "system": "GPT-3.5",
+      "agent": null,
+      "model_raw": [
+        "GPT-3.5"
+      ],
+      "model_ids": [
+        "gpt-3.5-turbo-instruct"
+      ],
+      "model_config": null,
+      "score": 0.599247,
+      "score_extra": {
+        "p50_ci_low": 0.255148,
+        "p50_ci_high": 1.115905,
+        "p80_minutes": 0.25538,
+        "p80_ci_low": 0.141649,
+        "p80_ci_high": 0.492933,
+        "average_score": 0.214611,
+        "is_sota": true
+      },
+      "date": "2022-03-15",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 32,
+      "system": "GPT-3",
+      "agent": null,
+      "model_raw": [
+        "GPT-3"
+      ],
+      "model_ids": [
+        "davinci-002"
+      ],
+      "model_config": null,
+      "score": 0.144057,
+      "score_extra": {
+        "p50_ci_low": 0.093319,
+        "p50_ci_high": 0.221209,
+        "p80_minutes": 0.056238,
+        "p80_ci_low": 0.034813,
+        "p80_ci_high": 0.105813,
+        "average_score": 0.161869,
+        "is_sota": true
+      },
+      "date": "2020-05-28",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 33,
+      "system": "GPT-2",
+      "agent": null,
+      "model_raw": [
+        "GPT-2"
+      ],
+      "model_ids": [
+        "gpt-2"
+      ],
+      "model_config": null,
+      "score": 0.053778,
+      "score_extra": {
+        "p50_ci_low": 0.009994,
+        "p50_ci_high": 0.141825,
+        "p80_minutes": 0.0128,
+        "p80_ci_low": 0.001589,
+        "p80_ci_high": 0.068612,
+        "average_score": 0.101046,
+        "is_sota": true
+      },
+      "date": "2019-02-14",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    }
+  ]
+}

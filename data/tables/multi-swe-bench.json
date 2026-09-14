@@ -1,0 +1,1179 @@
+{
+  "id": "multi-swe-bench",
+  "family": "multi-swe-bench",
+  "name": "Multi-SWE-bench (All)",
+  "board": "multi-swe-bench.github.io",
+  "category": "coding",
+  "measures_ja": "Java・TS・JS・Go・Rust・C・C++ と Python の GitHub issue を、テストを通すパッチで解決できるか(全言語合算)。",
+  "tasks": 2132,
+  "tasks_note": "サイトの All タブが合算に使う 8 グループの件数合計(Python 500 を含む)。サイト本文は 7 言語 1,632 件と説明している。",
+  "metric": "Resolved Rate (Overall)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "提出者(多くは ByteDance の MagentLess / MSWE-agent / MopenHands 移植版)が走らせた結果を載せる。足場は行ごとに異なる。",
+  "source": "https://multi-swe-bench.github.io/",
+  "fetched": [
+    "https://raw.githubusercontent.com/multi-swe-bench/experiments/refs/heads/dist/leaderboard.json",
+    "https://multi-swe-bench.github.io/assets/index-nw-gzvrv.js"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2025-04-26",
+  "snapshot": "sources/multi-swe-bench/leaderboard.json",
+  "paper": "https://arxiv.org/abs/2504.02605",
+  "repo": "https://github.com/multi-swe-bench/multi-swe-bench",
+  "notes_ja": "All タブはサイトの JS が言語別データから合算して作る(全 8 言語に結果がある提出だけ)。同じ計算をスクリプトで再現した。verified はボードの ✅、open_source はボードの 🤠(オープンソース)印。score_extra の easy/medium/hard は難易度別の解決率。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "MopenHands + Gemini-2.5-Pro",
+      "agent": "MopenHands",
+      "model_raw": [
+        "Gemini-2.5-Pro"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": null,
+      "score": 21.62,
+      "score_extra": {
+        "easy": 39.08,
+        "medium": 22.28,
+        "hard": 5.51,
+        "resolved_count": 461,
+        "lang_python": 45.8,
+        "lang_java": 12.5,
+        "lang_typescript": 22.32,
+        "lang_javascript": 16.29,
+        "lang_go": 12.62,
+        "lang_rust": 14.64,
+        "lang_c": 5.47,
+        "lang_cpp": 9.3
+      },
+      "date": "2025-04-26",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/All-Hands-AI/OpenHands"
+    },
+    {
+      "rank": 2,
+      "system": "MopenHands + Claude-3.7-Sonnet",
+      "agent": "MopenHands",
+      "model_raw": [
+        "Claude-3.7-Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": null,
+      "score": 19.32,
+      "score_extra": {
+        "easy": 35.21,
+        "medium": 20.64,
+        "hard": 3.68,
+        "resolved_count": 412,
+        "lang_python": 52.2,
+        "lang_java": 21.88,
+        "lang_typescript": 2.23,
+        "lang_javascript": 5.06,
+        "lang_go": 7.48,
+        "lang_rust": 15.9,
+        "lang_c": 8.59,
+        "lang_cpp": 14.73
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/All-Hands-AI/OpenHands"
+    },
+    {
+      "rank": 3,
+      "system": "MagentLess + Gemini-2.5-Pro",
+      "agent": "MagentLess",
+      "model_raw": [
+        "Gemini-2.5-Pro"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": null,
+      "score": 18.01,
+      "score_extra": {
+        "easy": 34.51,
+        "medium": 18.11,
+        "hard": 3.52,
+        "resolved_count": 384,
+        "lang_python": 49.0,
+        "lang_java": 21.88,
+        "lang_typescript": 11.61,
+        "lang_javascript": 8.71,
+        "lang_go": 6.07,
+        "lang_rust": 5.44,
+        "lang_c": 9.38,
+        "lang_cpp": 2.33
+      },
+      "date": "2025-04-26",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/OpenAutoCoder/Agentless"
+    },
+    {
+      "rank": 4,
+      "system": "MSWE-agent + Claude-3.7-Sonnet",
+      "agent": "MSWE-agent",
+      "model_raw": [
+        "Claude-3.7-Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": null,
+      "score": 17.17,
+      "score_extra": {
+        "easy": 32.57,
+        "medium": 17.67,
+        "hard": 3.06,
+        "resolved_count": 366,
+        "lang_python": 45.8,
+        "lang_java": 23.44,
+        "lang_typescript": 11.16,
+        "lang_javascript": 4.78,
+        "lang_go": 5.37,
+        "lang_rust": 6.69,
+        "lang_c": 8.59,
+        "lang_cpp": 11.63
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/princeton-nlp/SWE-agent"
+    },
+    {
+      "rank": 5,
+      "system": "MagentLess + OpenAI-o1",
+      "agent": "MagentLess",
+      "model_raw": [
+        "OpenAI-o1"
+      ],
+      "model_ids": [
+        "o1"
+      ],
+      "model_config": null,
+      "score": 16.23,
+      "score_extra": {
+        "easy": 31.69,
+        "medium": 16.68,
+        "hard": 2.14,
+        "resolved_count": 346,
+        "lang_python": 48.2,
+        "lang_java": 21.09,
+        "lang_typescript": 5.8,
+        "lang_javascript": 5.06,
+        "lang_go": 4.44,
+        "lang_rust": 7.11,
+        "lang_c": 3.13,
+        "lang_cpp": 5.43
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/OpenAutoCoder/Agentless"
+    },
+    {
+      "rank": 6,
+      "system": "MagentLess + Doubao-1.5-thinking",
+      "agent": "MagentLess",
+      "model_raw": [
+        "Doubao-1.5-thinking"
+      ],
+      "model_ids": [
+        "doubao-1.5-thinking"
+      ],
+      "model_config": null,
+      "score": 15.24,
+      "score_extra": {
+        "easy": 30.99,
+        "medium": 14.71,
+        "hard": 2.3,
+        "resolved_count": 325,
+        "lang_python": 44.8,
+        "lang_java": 13.28,
+        "lang_typescript": 7.59,
+        "lang_javascript": 5.62,
+        "lang_go": 4.44,
+        "lang_rust": 7.11,
+        "lang_c": 4.69,
+        "lang_cpp": 3.88
+      },
+      "date": "2025-04-26",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/OpenAutoCoder/Agentless"
+    },
+    {
+      "rank": 7,
+      "system": "MopenHands + Claude-3.5-Sonnet(Oct)",
+      "agent": "MopenHands",
+      "model_raw": [
+        "Claude-3.5-Sonnet(Oct)"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 15.24,
+      "score_extra": {
+        "easy": 28.35,
+        "medium": 16.14,
+        "hard": 2.6,
+        "resolved_count": 325,
+        "lang_python": 39.0,
+        "lang_java": 14.84,
+        "lang_typescript": 11.61,
+        "lang_javascript": 1.97,
+        "lang_go": 6.78,
+        "lang_rust": 12.13,
+        "lang_c": 3.13,
+        "lang_cpp": 12.4
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/All-Hands-AI/OpenHands"
+    },
+    {
+      "rank": 8,
+      "system": "MSWE-agent + Gemini-2.5-Pro",
+      "agent": "MSWE-agent",
+      "model_raw": [
+        "Gemini-2.5-Pro"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": null,
+      "score": 14.63,
+      "score_extra": {
+        "easy": 27.11,
+        "medium": 15.59,
+        "hard": 2.45,
+        "resolved_count": 312,
+        "lang_python": 27.8,
+        "lang_java": 28.91,
+        "lang_typescript": 8.93,
+        "lang_javascript": 7.58,
+        "lang_go": 9.81,
+        "lang_rust": 10.04,
+        "lang_c": 9.38,
+        "lang_cpp": 8.53
+      },
+      "date": "2025-04-26",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/princeton-nlp/SWE-agent"
+    },
+    {
+      "rank": 9,
+      "system": "MagentLess + DeepSeek-R1",
+      "agent": "MagentLess",
+      "model_raw": [
+        "DeepSeek-R1"
+      ],
+      "model_ids": [
+        "deepseek-r1"
+      ],
+      "model_config": null,
+      "score": 14.4,
+      "score_extra": {
+        "easy": 28.52,
+        "medium": 14.71,
+        "hard": 1.68,
+        "resolved_count": 307,
+        "lang_python": 42.2,
+        "lang_java": 22.66,
+        "lang_typescript": 6.25,
+        "lang_javascript": 4.49,
+        "lang_go": 3.74,
+        "lang_rust": 6.69,
+        "lang_c": 0.78,
+        "lang_cpp": 3.1
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/OpenAutoCoder/Agentless"
+    },
+    {
+      "rank": 10,
+      "system": "MagentLess + Claude-3.7-Sonnet",
+      "agent": "MagentLess",
+      "model_raw": [
+        "Claude-3.7-Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": null,
+      "score": 14.35,
+      "score_extra": {
+        "easy": 30.46,
+        "medium": 13.5,
+        "hard": 1.53,
+        "resolved_count": 306,
+        "lang_python": 44.6,
+        "lang_java": 14.06,
+        "lang_typescript": 3.57,
+        "lang_javascript": 1.97,
+        "lang_go": 5.84,
+        "lang_rust": 5.44,
+        "lang_c": 6.25,
+        "lang_cpp": 3.1
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/OpenAutoCoder/Agentless"
+    },
+    {
+      "rank": 11,
+      "system": "MagentLess + OpenAI-o3-mini-high",
+      "agent": "MagentLess",
+      "model_raw": [
+        "OpenAI-o3-mini-high"
+      ],
+      "model_ids": [
+        "o3-mini"
+      ],
+      "model_config": "high",
+      "score": 13.65,
+      "score_extra": {
+        "easy": 29.75,
+        "medium": 12.62,
+        "hard": 1.07,
+        "resolved_count": 291,
+        "lang_python": 46.4,
+        "lang_java": 5.47,
+        "lang_typescript": 0.45,
+        "lang_javascript": 2.81,
+        "lang_go": 3.97,
+        "lang_rust": 7.95,
+        "lang_c": 2.34,
+        "lang_cpp": 1.55
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/OpenAutoCoder/Agentless"
+    },
+    {
+      "rank": 12,
+      "system": "MagentLess + Claude-3.5-Sonnet(Oct)",
+      "agent": "MagentLess",
+      "model_raw": [
+        "Claude-3.5-Sonnet(Oct)"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 13.56,
+      "score_extra": {
+        "easy": 29.4,
+        "medium": 12.4,
+        "hard": 1.38,
+        "resolved_count": 289,
+        "lang_python": 42.4,
+        "lang_java": 14.84,
+        "lang_typescript": 4.91,
+        "lang_javascript": 1.97,
+        "lang_go": 5.14,
+        "lang_rust": 5.02,
+        "lang_c": 0.78,
+        "lang_cpp": 3.88
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/OpenAutoCoder/Agentless"
+    },
+    {
+      "rank": 13,
+      "system": "MagentLess + Llama-4-Maverick",
+      "agent": "MagentLess",
+      "model_raw": [
+        "Llama-4-Maverick"
+      ],
+      "model_ids": [
+        "llama-4-maverick"
+      ],
+      "model_config": null,
+      "score": 13.56,
+      "score_extra": {
+        "easy": 30.46,
+        "medium": 12.07,
+        "hard": 0.92,
+        "resolved_count": 289,
+        "lang_python": 37.8,
+        "lang_java": 14.84,
+        "lang_typescript": 9.38,
+        "lang_javascript": 5.06,
+        "lang_go": 3.5,
+        "lang_rust": 6.28,
+        "lang_c": 3.91,
+        "lang_cpp": 5.43
+      },
+      "date": "2025-04-26",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/OpenAutoCoder/Agentless"
+    },
+    {
+      "rank": 14,
+      "system": "MagentLess + DeepSeek-V3",
+      "agent": "MagentLess",
+      "model_raw": [
+        "DeepSeek-V3"
+      ],
+      "model_ids": [
+        "deepseek-v3"
+      ],
+      "model_config": null,
+      "score": 13.23,
+      "score_extra": {
+        "easy": 27.11,
+        "medium": 12.84,
+        "hard": 1.68,
+        "resolved_count": 282,
+        "lang_python": 41.0,
+        "lang_java": 7.03,
+        "lang_typescript": 6.7,
+        "lang_javascript": 3.37,
+        "lang_go": 5.37,
+        "lang_rust": 5.02,
+        "lang_c": 3.13,
+        "lang_cpp": 1.55
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/OpenAutoCoder/Agentless"
+    },
+    {
+      "rank": 15,
+      "system": "MopenHands + Doubao-1.5-thinking",
+      "agent": "MopenHands",
+      "model_raw": [
+        "Doubao-1.5-thinking"
+      ],
+      "model_ids": [
+        "doubao-1.5-thinking"
+      ],
+      "model_config": null,
+      "score": 11.49,
+      "score_extra": {
+        "easy": 24.3,
+        "medium": 9.99,
+        "hard": 2.45,
+        "resolved_count": 245,
+        "lang_python": 27.8,
+        "lang_java": 10.94,
+        "lang_typescript": 5.36,
+        "lang_javascript": 9.55,
+        "lang_go": 6.07,
+        "lang_rust": 3.35,
+        "lang_c": 3.91,
+        "lang_cpp": 5.43
+      },
+      "date": "2025-04-26",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/All-Hands-AI/OpenHands"
+    },
+    {
+      "rank": 16,
+      "system": "MagentLess + GPT-4o-1120",
+      "agent": "MagentLess",
+      "model_raw": [
+        "GPT-4o-1120"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 11.4,
+      "score_extra": {
+        "easy": 25.18,
+        "medium": 10.32,
+        "hard": 0.92,
+        "resolved_count": 243,
+        "lang_python": 36.2,
+        "lang_java": 11.72,
+        "lang_typescript": 2.23,
+        "lang_javascript": 1.4,
+        "lang_go": 2.8,
+        "lang_rust": 5.86,
+        "lang_c": 1.56,
+        "lang_cpp": 6.98
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/OpenAutoCoder/Agentless"
+    },
+    {
+      "rank": 17,
+      "system": "MSWE-agent + Claude-3.5-Sonnet(Oct)",
+      "agent": "MSWE-agent",
+      "model_raw": [
+        "Claude-3.5-Sonnet(Oct)"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 11.21,
+      "score_extra": {
+        "easy": 20.42,
+        "medium": 11.96,
+        "hard": 2.14,
+        "resolved_count": 239,
+        "lang_python": 24.8,
+        "lang_java": 20.31,
+        "lang_typescript": 8.04,
+        "lang_javascript": 4.21,
+        "lang_go": 5.84,
+        "lang_rust": 6.69,
+        "lang_c": 4.69,
+        "lang_cpp": 6.98
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/princeton-nlp/SWE-agent"
+    },
+    {
+      "rank": 18,
+      "system": "MSWE-agent + OpenAI-o1",
+      "agent": "MSWE-agent",
+      "model_raw": [
+        "OpenAI-o1"
+      ],
+      "model_ids": [
+        "o1"
+      ],
+      "model_config": null,
+      "score": 11.07,
+      "score_extra": {
+        "easy": 20.6,
+        "medium": 11.53,
+        "hard": 2.14,
+        "resolved_count": 236,
+        "lang_python": 28.8,
+        "lang_java": 21.88,
+        "lang_typescript": 4.02,
+        "lang_javascript": 4.21,
+        "lang_go": 4.67,
+        "lang_rust": 4.18,
+        "lang_c": 3.91,
+        "lang_cpp": 3.88
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/princeton-nlp/SWE-agent"
+    },
+    {
+      "rank": 19,
+      "system": "MSWE-agent + OpenAI-o3-mini-high",
+      "agent": "MSWE-agent",
+      "model_raw": [
+        "OpenAI-o3-mini-high"
+      ],
+      "model_ids": [
+        "o3-mini"
+      ],
+      "model_config": "high",
+      "score": 10.74,
+      "score_extra": {
+        "easy": 22.54,
+        "medium": 9.55,
+        "hard": 2.14,
+        "resolved_count": 229,
+        "lang_python": 28.6,
+        "lang_java": 16.41,
+        "lang_typescript": 4.91,
+        "lang_javascript": 4.21,
+        "lang_go": 3.97,
+        "lang_rust": 5.02,
+        "lang_c": 2.34,
+        "lang_cpp": 5.43
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/princeton-nlp/SWE-agent"
+    },
+    {
+      "rank": 20,
+      "system": "MSWE-agent + Doubao-1.5-thinking",
+      "agent": "MSWE-agent",
+      "model_raw": [
+        "Doubao-1.5-thinking"
+      ],
+      "model_ids": [
+        "doubao-1.5-thinking"
+      ],
+      "model_config": null,
+      "score": 10.46,
+      "score_extra": {
+        "easy": 20.6,
+        "medium": 10.54,
+        "hard": 1.53,
+        "resolved_count": 223,
+        "lang_python": 30.6,
+        "lang_java": 11.72,
+        "lang_typescript": 7.14,
+        "lang_javascript": 1.69,
+        "lang_go": 4.21,
+        "lang_rust": 3.35,
+        "lang_c": 0.78,
+        "lang_cpp": 4.65
+      },
+      "date": "2025-04-26",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/princeton-nlp/SWE-agent"
+    },
+    {
+      "rank": 21,
+      "system": "MopenHands + DeepSeek-V3",
+      "agent": "MopenHands",
+      "model_raw": [
+        "DeepSeek-V3"
+      ],
+      "model_ids": [
+        "deepseek-v3"
+      ],
+      "model_config": null,
+      "score": 8.72,
+      "score_extra": {
+        "easy": 17.78,
+        "medium": 8.45,
+        "hard": 1.23,
+        "resolved_count": 186,
+        "lang_python": 27.8,
+        "lang_java": 9.38,
+        "lang_typescript": 1.34,
+        "lang_javascript": 1.12,
+        "lang_go": 0.7,
+        "lang_rust": 4.6,
+        "lang_c": 3.13,
+        "lang_cpp": 7.75
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/All-Hands-AI/OpenHands"
+    },
+    {
+      "rank": 22,
+      "system": "MagentLess + Qwen2.5-72B-Instruct",
+      "agent": "MagentLess",
+      "model_raw": [
+        "Qwen2.5-72B-Instruct"
+      ],
+      "model_ids": [
+        "qwen2.5-72b"
+      ],
+      "model_config": null,
+      "score": 8.26,
+      "score_extra": {
+        "easy": 19.89,
+        "medium": 6.7,
+        "hard": 0.31,
+        "resolved_count": 176,
+        "lang_python": 26.8,
+        "lang_java": 10.94,
+        "lang_typescript": 4.46,
+        "lang_javascript": 0.84,
+        "lang_go": 1.4,
+        "lang_rust": 2.51,
+        "lang_c": 1.56,
+        "lang_cpp": 0.78
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/OpenAutoCoder/Agentless"
+    },
+    {
+      "rank": 23,
+      "system": "MopenHands + GPT-4o-1120",
+      "agent": "MopenHands",
+      "model_raw": [
+        "GPT-4o-1120"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 8.21,
+      "score_extra": {
+        "easy": 17.96,
+        "medium": 7.24,
+        "hard": 1.07,
+        "resolved_count": 175,
+        "lang_python": 25.6,
+        "lang_java": 9.38,
+        "lang_typescript": 0.0,
+        "lang_javascript": 1.97,
+        "lang_go": 3.5,
+        "lang_rust": 3.35,
+        "lang_c": 0.0,
+        "lang_cpp": 3.88
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/All-Hands-AI/OpenHands"
+    },
+    {
+      "rank": 24,
+      "system": "MopenHands + DeepSeek-R1",
+      "agent": "MopenHands",
+      "model_raw": [
+        "DeepSeek-R1"
+      ],
+      "model_ids": [
+        "deepseek-r1"
+      ],
+      "model_config": null,
+      "score": 8.02,
+      "score_extra": {
+        "easy": 17.78,
+        "medium": 7.14,
+        "hard": 0.77,
+        "resolved_count": 171,
+        "lang_python": 26.0,
+        "lang_java": 8.59,
+        "lang_typescript": 0.45,
+        "lang_javascript": 2.53,
+        "lang_go": 0.0,
+        "lang_rust": 4.6,
+        "lang_c": 2.34,
+        "lang_cpp": 4.65
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/All-Hands-AI/OpenHands"
+    },
+    {
+      "rank": 25,
+      "system": "MagentLess + Doubao-1.5-pro",
+      "agent": "MagentLess",
+      "model_raw": [
+        "Doubao-1.5-pro"
+      ],
+      "model_ids": [
+        "doubao-1.5-pro"
+      ],
+      "model_config": null,
+      "score": 7.83,
+      "score_extra": {
+        "easy": 16.55,
+        "medium": 7.24,
+        "hard": 1.07,
+        "resolved_count": 167,
+        "lang_python": 26.2,
+        "lang_java": 5.47,
+        "lang_typescript": 2.23,
+        "lang_javascript": 1.12,
+        "lang_go": 2.1,
+        "lang_rust": 4.18,
+        "lang_c": 0.78,
+        "lang_cpp": 0.0
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/OpenAutoCoder/Agentless"
+    },
+    {
+      "rank": 26,
+      "system": "MopenHands + OpenAI-o3-mini-high",
+      "agent": "MopenHands",
+      "model_raw": [
+        "OpenAI-o3-mini-high"
+      ],
+      "model_ids": [
+        "o3-mini"
+      ],
+      "model_config": "high",
+      "score": 7.55,
+      "score_extra": {
+        "easy": 16.55,
+        "medium": 6.26,
+        "hard": 1.53,
+        "resolved_count": 161,
+        "lang_python": 20.4,
+        "lang_java": 10.16,
+        "lang_typescript": 0.45,
+        "lang_javascript": 3.37,
+        "lang_go": 2.34,
+        "lang_rust": 5.02,
+        "lang_c": 1.56,
+        "lang_cpp": 6.98
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/All-Hands-AI/OpenHands"
+    },
+    {
+      "rank": 27,
+      "system": "MopenHands + Llama-4-Maverick",
+      "agent": "MopenHands",
+      "model_raw": [
+        "Llama-4-Maverick"
+      ],
+      "model_ids": [
+        "llama-4-maverick"
+      ],
+      "model_config": null,
+      "score": 7.46,
+      "score_extra": {
+        "easy": 16.2,
+        "medium": 5.82,
+        "hard": 2.14,
+        "resolved_count": 159,
+        "lang_python": 14.4,
+        "lang_java": 6.25,
+        "lang_typescript": 8.04,
+        "lang_javascript": 4.78,
+        "lang_go": 5.61,
+        "lang_rust": 5.02,
+        "lang_c": 3.13,
+        "lang_cpp": 3.1
+      },
+      "date": "2025-04-26",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/All-Hands-AI/OpenHands"
+    },
+    {
+      "rank": 28,
+      "system": "MSWE-agent + GPT-4o-1120",
+      "agent": "MSWE-agent",
+      "model_raw": [
+        "GPT-4o-1120"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 6.29,
+      "score_extra": {
+        "easy": 12.15,
+        "medium": 6.7,
+        "hard": 0.61,
+        "resolved_count": 134,
+        "lang_python": 18.8,
+        "lang_java": 12.5,
+        "lang_typescript": 0.45,
+        "lang_javascript": 0.84,
+        "lang_go": 2.34,
+        "lang_rust": 2.09,
+        "lang_c": 1.56,
+        "lang_cpp": 2.33
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/princeton-nlp/SWE-agent"
+    },
+    {
+      "rank": 29,
+      "system": "MopenHands + OpenAI-o1",
+      "agent": "MopenHands",
+      "model_raw": [
+        "OpenAI-o1"
+      ],
+      "model_ids": [
+        "o1"
+      ],
+      "model_config": null,
+      "score": 6.1,
+      "score_extra": {
+        "easy": 10.56,
+        "medium": 7.03,
+        "hard": 0.92,
+        "resolved_count": 130,
+        "lang_python": 16.0,
+        "lang_java": 3.91,
+        "lang_typescript": 0.45,
+        "lang_javascript": 3.65,
+        "lang_go": 3.74,
+        "lang_rust": 2.51,
+        "lang_c": 3.13,
+        "lang_cpp": 3.88
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/All-Hands-AI/OpenHands"
+    },
+    {
+      "rank": 30,
+      "system": "MSWE-agent + Doubao-1.5-pro",
+      "agent": "MSWE-agent",
+      "model_raw": [
+        "Doubao-1.5-pro"
+      ],
+      "model_ids": [
+        "doubao-1.5-pro"
+      ],
+      "model_config": null,
+      "score": 4.88,
+      "score_extra": {
+        "easy": 9.68,
+        "medium": 4.72,
+        "hard": 0.92,
+        "resolved_count": 104,
+        "lang_python": 12.4,
+        "lang_java": 7.03,
+        "lang_typescript": 1.79,
+        "lang_javascript": 1.4,
+        "lang_go": 2.1,
+        "lang_rust": 1.67,
+        "lang_c": 2.34,
+        "lang_cpp": 6.2
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/princeton-nlp/SWE-agent"
+    },
+    {
+      "rank": 31,
+      "system": "MSWE-agent + DeepSeek-V3",
+      "agent": "MSWE-agent",
+      "model_raw": [
+        "DeepSeek-V3"
+      ],
+      "model_ids": [
+        "deepseek-v3"
+      ],
+      "model_config": null,
+      "score": 4.55,
+      "score_extra": {
+        "easy": 8.8,
+        "medium": 4.17,
+        "hard": 1.38,
+        "resolved_count": 97,
+        "lang_python": 4.2,
+        "lang_java": 11.72,
+        "lang_typescript": 2.68,
+        "lang_javascript": 2.53,
+        "lang_go": 4.44,
+        "lang_rust": 5.86,
+        "lang_c": 2.34,
+        "lang_cpp": 7.75
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/princeton-nlp/SWE-agent"
+    },
+    {
+      "rank": 32,
+      "system": "MSWE-agent + DeepSeek-R1",
+      "agent": "MSWE-agent",
+      "model_raw": [
+        "DeepSeek-R1"
+      ],
+      "model_ids": [
+        "deepseek-r1"
+      ],
+      "model_config": null,
+      "score": 2.95,
+      "score_extra": {
+        "easy": 6.16,
+        "medium": 2.74,
+        "hard": 0.46,
+        "resolved_count": 63,
+        "lang_python": 2.0,
+        "lang_java": 9.38,
+        "lang_typescript": 5.8,
+        "lang_javascript": 1.4,
+        "lang_go": 2.1,
+        "lang_rust": 2.09,
+        "lang_c": 0.78,
+        "lang_cpp": 6.2
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/princeton-nlp/SWE-agent"
+    },
+    {
+      "rank": 33,
+      "system": "MSWE-agent + Llama-4-Maverick",
+      "agent": "MSWE-agent",
+      "model_raw": [
+        "Llama-4-Maverick"
+      ],
+      "model_ids": [
+        "llama-4-maverick"
+      ],
+      "model_config": null,
+      "score": 2.95,
+      "score_extra": {
+        "easy": 6.34,
+        "medium": 2.2,
+        "hard": 1.07,
+        "resolved_count": 63,
+        "lang_python": 2.0,
+        "lang_java": 6.25,
+        "lang_typescript": 4.46,
+        "lang_javascript": 2.25,
+        "lang_go": 2.8,
+        "lang_rust": 2.51,
+        "lang_c": 0.0,
+        "lang_cpp": 6.98
+      },
+      "date": "2025-04-26",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/princeton-nlp/SWE-agent"
+    },
+    {
+      "rank": 34,
+      "system": "MopenHands + Doubao-1.5-pro",
+      "agent": "MopenHands",
+      "model_raw": [
+        "Doubao-1.5-pro"
+      ],
+      "model_ids": [
+        "doubao-1.5-pro"
+      ],
+      "model_config": null,
+      "score": 2.91,
+      "score_extra": {
+        "easy": 7.57,
+        "medium": 1.65,
+        "hard": 0.61,
+        "resolved_count": 62,
+        "lang_python": 8.8,
+        "lang_java": 0.78,
+        "lang_typescript": 0.0,
+        "lang_javascript": 1.12,
+        "lang_go": 1.64,
+        "lang_rust": 0.84,
+        "lang_c": 0.0,
+        "lang_cpp": 3.1
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/All-Hands-AI/OpenHands"
+    },
+    {
+      "rank": 35,
+      "system": "MSWE-agent + Qwen2.5-72B-Instruct",
+      "agent": "MSWE-agent",
+      "model_raw": [
+        "Qwen2.5-72B-Instruct"
+      ],
+      "model_ids": [
+        "qwen2.5-72b"
+      ],
+      "model_config": null,
+      "score": 2.49,
+      "score_extra": {
+        "easy": 6.16,
+        "medium": 1.87,
+        "hard": 0.15,
+        "resolved_count": 53,
+        "lang_python": 8.6,
+        "lang_java": 2.34,
+        "lang_typescript": 0.0,
+        "lang_javascript": 0.56,
+        "lang_go": 0.47,
+        "lang_rust": 0.42,
+        "lang_c": 1.56,
+        "lang_cpp": 0.0
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/princeton-nlp/SWE-agent"
+    },
+    {
+      "rank": 36,
+      "system": "MopenHands + Qwen2.5-72B-Instruct",
+      "agent": "MopenHands",
+      "model_raw": [
+        "Qwen2.5-72B-Instruct"
+      ],
+      "model_ids": [
+        "qwen2.5-72b"
+      ],
+      "model_config": null,
+      "score": 2.02,
+      "score_extra": {
+        "easy": 4.23,
+        "medium": 1.76,
+        "hard": 0.46,
+        "resolved_count": 43,
+        "lang_python": 4.4,
+        "lang_java": 3.13,
+        "lang_typescript": 0.0,
+        "lang_javascript": 0.84,
+        "lang_go": 1.4,
+        "lang_rust": 1.67,
+        "lang_c": 0.78,
+        "lang_cpp": 2.33
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/All-Hands-AI/OpenHands"
+    }
+  ]
+}

@@ -1,0 +1,621 @@
+{
+  "id": "terminal-bench-4-0",
+  "family": "terminal-bench",
+  "name": "Terminal-Bench 4.0",
+  "board": "tbench.ai",
+  "category": "terminal",
+  "measures_ja": "Docker 環境のターミナルで、難度の高い実務タスクを完遂できるか(3.0 から飽和・不備タスクを除き、資源設定を調整した版)。",
+  "tasks": 66,
+  "tasks_note": "公式発表では 3.0 の 74 タスクから 8 タスクを削除。Harbor Hub のデータセット v4 の件数も 66。",
+  "metric": "Accuracy (%)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "Terminal-Bench チームが各エージェント(Codex, Claude Code など)とモデルを 1 タスク 5 試行で走らせた結果。推論量 (Effort) 別に別行。",
+  "source": "https://www.tbench.ai/",
+  "fetched": [
+    "https://ofhuhcpkvzjlejydnvyd.supabase.co/functions/v1/leaderboard-read (POST {\"package\":\"terminal-bench/terminal-bench\",\"name\":\"4-0-0\"})",
+    "https://www.tbench.ai/"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-09-03",
+  "snapshot": "sources/terminal-bench-4-0/leaderboard.json",
+  "paper": "https://arxiv.org/abs/2601.11868",
+  "repo": "https://github.com/harbor-framework/terminal-bench",
+  "notes_ja": "日付列はボードの「Release Date」(モデルの公開日)。費用・トークンは実行全体の合計。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Codex / GPT-6 Astra",
+      "agent": "Codex",
+      "model_raw": [
+        "GPT-6 Astra"
+      ],
+      "model_ids": [
+        "gpt-6-astra"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 58.18,
+      "score_extra": {
+        "ci95_half_width": 2.79,
+        "pass_at_2": 0.6485,
+        "pass_at_3": 0.6788,
+        "pass_at_4": 0.697,
+        "pass_at_5": 0.7121,
+        "successes": 192,
+        "trials": 330,
+        "total_tokens": 1529778322,
+        "output_tokens": 23988992,
+        "cached_input_tokens": 1443351702,
+        "uncached_input_tokens": 1505789330,
+        "cost_usd": 3267.18,
+        "avg_trial_duration_sec": 2796.3
+      },
+      "date": "2026-09-03",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench/4/leaderboards/4-0-0/rows/5c537be4-7fc3-449b-8bfc-ceb9061c2535"
+    },
+    {
+      "rank": 2,
+      "system": "Claude Code / Fable 5.1",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Fable 5.1"
+      ],
+      "model_ids": [
+        "claude-fable-5.1"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 57.88,
+      "score_extra": {
+        "ci95_half_width": 3.76,
+        "pass_at_2": 0.7,
+        "pass_at_3": 0.747,
+        "pass_at_4": 0.7727,
+        "pass_at_5": 0.7879,
+        "successes": 191,
+        "trials": 330,
+        "total_tokens": 2746221560,
+        "output_tokens": 63121568,
+        "cached_input_tokens": 2467056906,
+        "uncached_input_tokens": 2683099992,
+        "cost_usd": 6243.5,
+        "avg_trial_duration_sec": 3893.5
+      },
+      "date": "2026-09-01",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench/4/leaderboards/4-0-0/rows/c741608e-c94e-417d-b7a8-e67111a0c887"
+    },
+    {
+      "rank": 2,
+      "system": "Codex / GPT-6 Astra",
+      "agent": "Codex",
+      "model_raw": [
+        "GPT-6 Astra"
+      ],
+      "model_ids": [
+        "gpt-6-astra"
+      ],
+      "model_config": "reasoning_effort=xhigh",
+      "score": 57.88,
+      "score_extra": {
+        "ci95_half_width": 2.72,
+        "pass_at_2": 0.6424,
+        "pass_at_3": 0.6697,
+        "pass_at_4": 0.6848,
+        "pass_at_5": 0.697,
+        "successes": 191,
+        "trials": 330,
+        "total_tokens": 1201907334,
+        "output_tokens": 14950287,
+        "cached_input_tokens": 1140730194,
+        "uncached_input_tokens": 1186957047,
+        "cost_usd": 2350.51,
+        "avg_trial_duration_sec": 2208.5
+      },
+      "date": "2026-09-03",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench/4/leaderboards/4-0-0/rows/16db8ad5-84aa-4588-b660-1ce68c0d45e2"
+    },
+    {
+      "rank": 2,
+      "system": "Codex / GPT-6 Astra",
+      "agent": "Codex",
+      "model_raw": [
+        "GPT-6 Astra"
+      ],
+      "model_ids": [
+        "gpt-6-astra"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 57.88,
+      "score_extra": {
+        "ci95_half_width": 2.97,
+        "pass_at_2": 0.6545,
+        "pass_at_3": 0.6864,
+        "pass_at_4": 0.703,
+        "pass_at_5": 0.7121,
+        "successes": 191,
+        "trials": 330,
+        "total_tokens": 1208224034,
+        "output_tokens": 13703943,
+        "cached_input_tokens": 1151219647,
+        "uncached_input_tokens": 1194520091,
+        "cost_usd": 2269.42,
+        "avg_trial_duration_sec": 2113.7
+      },
+      "date": "2026-09-03",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench/4/leaderboards/4-0-0/rows/3475050c-bf5e-4261-a3f6-0af5350af13f"
+    },
+    {
+      "rank": 5,
+      "system": "Codex / GPT-6 Astra",
+      "agent": "Codex",
+      "model_raw": [
+        "GPT-6 Astra"
+      ],
+      "model_ids": [
+        "gpt-6-astra"
+      ],
+      "model_config": "reasoning_effort=medium",
+      "score": 54.24,
+      "score_extra": {
+        "ci95_half_width": 2.66,
+        "pass_at_2": 0.603,
+        "pass_at_3": 0.6318,
+        "pass_at_4": 0.6515,
+        "pass_at_5": 0.6667,
+        "successes": 179,
+        "trials": 330,
+        "total_tokens": 1051885207,
+        "output_tokens": 10770605,
+        "cached_input_tokens": 1003874758,
+        "uncached_input_tokens": 1041114602,
+        "cost_usd": 1914.8,
+        "avg_trial_duration_sec": 1885.9
+      },
+      "date": "2026-09-03",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench/4/leaderboards/4-0-0/rows/f3c3d5a6-6424-4acb-bfcc-615c3f79f6dd"
+    },
+    {
+      "rank": 6,
+      "system": "Claude Code / Opus 5",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Opus 5"
+      ],
+      "model_ids": [
+        "claude-opus-5"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 51.82,
+      "score_extra": {
+        "ci95_half_width": 3.39,
+        "pass_at_2": 0.6167,
+        "pass_at_3": 0.6576,
+        "pass_at_4": 0.6818,
+        "pass_at_5": 0.697,
+        "successes": 171,
+        "trials": 330,
+        "total_tokens": 6527147637,
+        "output_tokens": 66012156,
+        "cached_input_tokens": 6271909956,
+        "uncached_input_tokens": 6461135481,
+        "cost_usd": 5969.11,
+        "avg_trial_duration_sec": 4792.8
+      },
+      "date": "2026-07-24",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench/4/leaderboards/4-0-0/rows/d71ac3d0-da36-49cb-89d9-323136e77111"
+    },
+    {
+      "rank": 7,
+      "system": "Codex / GPT-6 Astra",
+      "agent": "Codex",
+      "model_raw": [
+        "GPT-6 Astra"
+      ],
+      "model_ids": [
+        "gpt-6-astra"
+      ],
+      "model_config": "reasoning_effort=low",
+      "score": 50.61,
+      "score_extra": {
+        "ci95_half_width": 2.75,
+        "pass_at_2": 0.5712,
+        "pass_at_3": 0.6015,
+        "pass_at_4": 0.6212,
+        "pass_at_5": 0.6364,
+        "successes": 167,
+        "trials": 330,
+        "total_tokens": 889780710,
+        "output_tokens": 7988337,
+        "cached_input_tokens": 851115630,
+        "uncached_input_tokens": 881792373,
+        "cost_usd": 1557.3,
+        "avg_trial_duration_sec": 1683.7
+      },
+      "date": "2026-09-03",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench/4/leaderboards/4-0-0/rows/b3ad58f3-b311-4d4d-875b-3158cf0309d6"
+    },
+    {
+      "rank": 8,
+      "system": "Claude Code / Fable 5",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Fable 5"
+      ],
+      "model_ids": [
+        "claude-fable-5"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 44.55,
+      "score_extra": {
+        "ci95_half_width": 3.85,
+        "pass_at_2": 0.5727,
+        "pass_at_3": 0.6318,
+        "pass_at_4": 0.6636,
+        "pass_at_5": 0.6818,
+        "successes": 147,
+        "trials": 330,
+        "total_tokens": 3785220369,
+        "output_tokens": 58619905,
+        "cached_input_tokens": 3564065093,
+        "uncached_input_tokens": 3726600464,
+        "cost_usd": 7265.01,
+        "avg_trial_duration_sec": 4202.8
+      },
+      "date": "2026-06-09",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench/4/leaderboards/4-0-0/rows/36c077e0-4879-4444-b315-8532d66401d6"
+    },
+    {
+      "rank": 9,
+      "system": "Claude Code / GLM-5.3",
+      "agent": "Claude Code",
+      "model_raw": [
+        "GLM-5.3"
+      ],
+      "model_ids": [
+        "glm-5.3"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 41.82,
+      "score_extra": {
+        "ci95_half_width": 3.23,
+        "pass_at_2": 0.5076,
+        "pass_at_3": 0.547,
+        "pass_at_4": 0.5667,
+        "pass_at_5": 0.5758,
+        "successes": 138,
+        "trials": 330,
+        "total_tokens": 8677039373,
+        "output_tokens": 68660047,
+        "cached_input_tokens": 8444041600,
+        "uncached_input_tokens": 8608379326,
+        "cost_usd": 2727.63,
+        "avg_trial_duration_sec": 5831
+      },
+      "date": "2026-08-14",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench/4/leaderboards/4-0-0/rows/d72e8775-f4f1-4313-99e7-35b1cb499f24"
+    },
+    {
+      "rank": 10,
+      "system": "Codex / GPT-5.6 Sol",
+      "agent": "Codex",
+      "model_raw": [
+        "GPT-5.6 Sol"
+      ],
+      "model_ids": [
+        "gpt-5.6-sol"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 37.27,
+      "score_extra": {
+        "ci95_half_width": 3.78,
+        "pass_at_2": 0.4955,
+        "pass_at_3": 0.55,
+        "pass_at_4": 0.5818,
+        "pass_at_5": 0.6061,
+        "successes": 123,
+        "trials": 330,
+        "total_tokens": 4409948969,
+        "output_tokens": 23451415,
+        "cached_input_tokens": 4316454466,
+        "uncached_input_tokens": 4386497554,
+        "cost_usd": 2541.7,
+        "avg_trial_duration_sec": 2388.4
+      },
+      "date": "2026-06-26",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench/4/leaderboards/4-0-0/rows/0e349bde-b264-494d-a853-fada9c696192"
+    },
+    {
+      "rank": 11,
+      "system": "Claude Code / Opus 4.8",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Opus 4.8"
+      ],
+      "model_ids": [
+        "claude-opus-4.8"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 23.64,
+      "score_extra": {
+        "ci95_half_width": 3.56,
+        "pass_at_2": 0.3455,
+        "pass_at_3": 0.4045,
+        "pass_at_4": 0.4424,
+        "pass_at_5": 0.4697,
+        "successes": 78,
+        "trials": 330,
+        "total_tokens": 6415823126,
+        "output_tokens": 88813309,
+        "cached_input_tokens": 6136275149,
+        "uncached_input_tokens": 6327009817,
+        "cost_usd": 6481.26,
+        "avg_trial_duration_sec": 5163
+      },
+      "date": "2026-05-28",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench/4/leaderboards/4-0-0/rows/952b4217-421f-4d14-849b-9968fcb2063b"
+    },
+    {
+      "rank": 12,
+      "system": "Codex / GPT-5.6 Terra",
+      "agent": "Codex",
+      "model_raw": [
+        "GPT-5.6 Terra"
+      ],
+      "model_ids": [
+        "gpt-5.6-terra"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 21.52,
+      "score_extra": {
+        "ci95_half_width": 3.25,
+        "pass_at_2": 0.3061,
+        "pass_at_3": 0.3636,
+        "pass_at_4": 0.4061,
+        "pass_at_5": 0.4394,
+        "successes": 71,
+        "trials": 330,
+        "total_tokens": 5683805798,
+        "output_tokens": 33224833,
+        "cached_input_tokens": 5560907776,
+        "uncached_input_tokens": 5650580965,
+        "cost_usd": 1733.52,
+        "avg_trial_duration_sec": 2514.6
+      },
+      "date": "2026-06-26",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench/4/leaderboards/4-0-0/rows/e53da412-5e92-408c-b369-c767924c7c1c"
+    },
+    {
+      "rank": 13,
+      "system": "Grok Build / Grok 4.6",
+      "agent": "Grok Build",
+      "model_raw": [
+        "Grok 4.6"
+      ],
+      "model_ids": [
+        "grok-4.6"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 20.3,
+      "score_extra": {
+        "ci95_half_width": 3.09,
+        "pass_at_2": 0.2848,
+        "pass_at_3": 0.3303,
+        "pass_at_4": 0.3636,
+        "pass_at_5": 0.3939,
+        "successes": 67,
+        "trials": 330,
+        "total_tokens": 4001923428,
+        "output_tokens": 32618221,
+        "cached_input_tokens": 3877638528,
+        "uncached_input_tokens": 3969305207,
+        "cost_usd": 3591.58,
+        "avg_trial_duration_sec": 2351.5
+      },
+      "date": "2026-08-12",
+      "verified": null,
+      "open_source": null,
+      "org": "xAI",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench/4/leaderboards/4-0-0/rows/26354542-edc0-40cd-8f8d-9fe6fbe92ac3"
+    },
+    {
+      "rank": 14,
+      "system": "mini-SWE-agent / Gemini 3.8 Flash",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "Gemini 3.8 Flash"
+      ],
+      "model_ids": [
+        "gemini-3.8-flash"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 19.09,
+      "score_extra": {
+        "ci95_half_width": 3.36,
+        "pass_at_2": 0.2879,
+        "pass_at_3": 0.353,
+        "pass_at_4": 0.4,
+        "pass_at_5": 0.4394,
+        "successes": 63,
+        "trials": 330,
+        "total_tokens": 17189729495,
+        "output_tokens": 68056484,
+        "cached_input_tokens": 16692887408,
+        "uncached_input_tokens": 17121673011,
+        "cost_usd": 1828.77,
+        "avg_trial_duration_sec": 1995.1
+      },
+      "date": "2026-09-02",
+      "verified": null,
+      "open_source": null,
+      "org": "SWE-agent",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench/4/leaderboards/4-0-0/rows/06850434-507d-4dbd-b74a-09d52519ee35"
+    },
+    {
+      "rank": 15,
+      "system": "Codex / GPT-5.6 Luna",
+      "agent": "Codex",
+      "model_raw": [
+        "GPT-5.6 Luna"
+      ],
+      "model_ids": [
+        "gpt-5.6-luna"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 17.27,
+      "score_extra": {
+        "ci95_half_width": 2.85,
+        "pass_at_2": 0.2424,
+        "pass_at_3": 0.2848,
+        "pass_at_4": 0.3121,
+        "pass_at_5": 0.3333,
+        "successes": 57,
+        "trials": 330,
+        "total_tokens": 11557463640,
+        "output_tokens": 61282672,
+        "cached_input_tokens": 11305212851,
+        "uncached_input_tokens": 11496180968,
+        "cost_usd": 346.67,
+        "avg_trial_duration_sec": 4088.3
+      },
+      "date": "2026-06-26",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench/4/leaderboards/4-0-0/rows/51c6d76e-5baa-48c1-97b3-88656c620eef"
+    },
+    {
+      "rank": 16,
+      "system": "Grok Build / Grok 4.5",
+      "agent": "Grok Build",
+      "model_raw": [
+        "Grok 4.5"
+      ],
+      "model_ids": [
+        "grok-4.5"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 12.42,
+      "score_extra": {
+        "ci95_half_width": 2.62,
+        "pass_at_2": 0.1833,
+        "pass_at_3": 0.2227,
+        "pass_at_4": 0.2515,
+        "pass_at_5": 0.2727,
+        "successes": 41,
+        "trials": 330,
+        "total_tokens": 3402536479,
+        "output_tokens": 32389328,
+        "cached_input_tokens": 3248613376,
+        "uncached_input_tokens": 3370147151,
+        "cost_usd": 2094.11,
+        "avg_trial_duration_sec": 3162.1
+      },
+      "date": "2026-07-16",
+      "verified": null,
+      "open_source": null,
+      "org": "xAI",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench/4/leaderboards/4-0-0/rows/0eed5a0d-96b6-491b-aeb7-cd5e4700c2d7"
+    },
+    {
+      "rank": 16,
+      "system": "Claude Code / Sonnet 5",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Sonnet 5"
+      ],
+      "model_ids": [
+        "claude-sonnet-5"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 12.42,
+      "score_extra": {
+        "ci95_half_width": 3.06,
+        "pass_at_2": 0.2045,
+        "pass_at_3": 0.2621,
+        "pass_at_4": 0.3091,
+        "pass_at_5": 0.3485,
+        "successes": 41,
+        "trials": 330,
+        "total_tokens": 21562180742,
+        "output_tokens": 116598866,
+        "cached_input_tokens": 21027162464,
+        "uncached_input_tokens": 21445581876,
+        "cost_usd": 9603.86,
+        "avg_trial_duration_sec": 6510.3
+      },
+      "date": "2026-06-30",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench/4/leaderboards/4-0-0/rows/8180b9e4-4990-43d0-b906-cd8b43adaaa2"
+    },
+    {
+      "rank": 18,
+      "system": "mini-SWE-agent / Gemini 3.7 Flash",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "Gemini 3.7 Flash"
+      ],
+      "model_ids": [
+        "gemini-3.7-flash"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 11.21,
+      "score_extra": {
+        "ci95_half_width": 2.45,
+        "pass_at_2": 0.1636,
+        "pass_at_3": 0.2,
+        "pass_at_4": 0.2303,
+        "pass_at_5": 0.2576,
+        "successes": 37,
+        "trials": 330,
+        "total_tokens": 11137189802,
+        "output_tokens": 52134001,
+        "cached_input_tokens": 10736925351,
+        "uncached_input_tokens": 11085055801,
+        "cost_usd": 1261.87,
+        "avg_trial_duration_sec": 1688.9
+      },
+      "date": "2026-08-13",
+      "verified": null,
+      "open_source": null,
+      "org": "SWE-agent",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench/4/leaderboards/4-0-0/rows/14f4da14-b86a-4dca-92d7-11178d4fe064"
+    }
+  ]
+}

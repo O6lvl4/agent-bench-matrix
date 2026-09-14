@@ -1,0 +1,320 @@
+{
+  "id": "swe-bench-pro-private",
+  "family": "swe-bench-pro",
+  "name": "SWE-Bench Pro (Private Dataset)",
+  "board": "labs.scale.com",
+  "category": "coding",
+  "measures_ja": "スタートアップ提供の非公開コードベースから作ったタスクで、テストを通すパッチを作れるか。",
+  "tasks": 276,
+  "tasks_note": null,
+  "metric": "Resolve Rate",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "Scale AI が固定の足場で全モデルを走らせる(無印は SWE-Agent、* 付きは mini-swe-agent)。",
+  "source": "https://labs.scale.com/leaderboard/swe_bench_pro_private",
+  "fetched": [
+    "https://labs.scale.com/leaderboard/swe_bench_pro_private"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-07-09",
+  "snapshot": "sources/swe-bench-pro-private/entries.json",
+  "paper": "https://scale.com/research/swe_bench_pro",
+  "repo": "https://github.com/scaleapi/SWE-bench_Pro-os",
+  "notes_ja": "旧称は commercial set。rank は信頼区間の上限基準(Rank (UB))。score_extra.ci_plus_minus はボードの ± 値。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Muse Spark 1.1*",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "Muse Spark 1.1"
+      ],
+      "model_ids": [
+        "muse-spark-1.1"
+      ],
+      "model_config": null,
+      "score": 51.5,
+      "score_extra": {
+        "ci_plus_minus": 5.5
+      },
+      "date": "2026-07-09",
+      "verified": null,
+      "open_source": null,
+      "org": "meta",
+      "row_url": null
+    },
+    {
+      "rank": 1,
+      "system": "claude-opus-4-6 (thinking)*",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "claude-opus-4-6 (thinking)"
+      ],
+      "model_ids": [
+        "claude-opus-4.6"
+      ],
+      "model_config": "thinking",
+      "score": 47.1,
+      "score_extra": {
+        "ci_plus_minus": 6.07
+      },
+      "date": "2026-04-08",
+      "verified": null,
+      "open_source": null,
+      "org": "anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "Muse Spark*",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "Muse Spark"
+      ],
+      "model_ids": [
+        "muse-spark"
+      ],
+      "model_config": null,
+      "score": 44.7,
+      "score_extra": {
+        "ci_plus_minus": 6.05
+      },
+      "date": "2026-04-08",
+      "verified": null,
+      "open_source": null,
+      "org": "meta",
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "gpt-5.4(xHigh)*",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gpt-5.4(xHigh)"
+      ],
+      "model_ids": [
+        "gpt-5.4"
+      ],
+      "model_config": "xHigh",
+      "score": 43.4,
+      "score_extra": {
+        "ci_plus_minus": 6.03
+      },
+      "date": "2026-04-08",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "gemini-3.1-pro (thinking)*",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gemini-3.1-pro (thinking)"
+      ],
+      "model_ids": [
+        "gemini-3.1-pro"
+      ],
+      "model_config": "thinking",
+      "score": 32.2,
+      "score_extra": {
+        "ci_plus_minus": 5.69
+      },
+      "date": "2026-04-08",
+      "verified": null,
+      "open_source": null,
+      "org": "google",
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "GPT 5.2 Codex",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "GPT 5.2 Codex"
+      ],
+      "model_ids": [
+        "gpt-5.2-codex"
+      ],
+      "model_config": null,
+      "score": 27.74,
+      "score_extra": {
+        "ci_plus_minus": 5.09
+      },
+      "date": "2026-01-12",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": 7,
+      "system": "GPT 5.2",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "GPT 5.2"
+      ],
+      "model_ids": [
+        "gpt-5.2"
+      ],
+      "model_config": null,
+      "score": 23.81,
+      "score_extra": {
+        "ci_plus_minus": 5.09
+      },
+      "date": "2026-01-12",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": 7,
+      "system": "Opus 4.5",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "Opus 4.5"
+      ],
+      "model_ids": [
+        "claude-opus-4.5"
+      ],
+      "model_config": null,
+      "score": 23.44,
+      "score_extra": {
+        "ci_plus_minus": 5.07
+      },
+      "date": "2026-01-12",
+      "verified": null,
+      "open_source": null,
+      "org": "anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 9,
+      "system": "Gemini 3 Pro",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "Gemini 3 Pro"
+      ],
+      "model_ids": [
+        "gemini-3-pro"
+      ],
+      "model_config": null,
+      "score": 17.95,
+      "score_extra": {
+        "ci_plus_minus": 4.78
+      },
+      "date": "2025-09-19",
+      "verified": null,
+      "open_source": null,
+      "org": "google",
+      "row_url": null
+    },
+    {
+      "rank": 9,
+      "system": "Claude Opus 4.1",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "Claude Opus 4.1"
+      ],
+      "model_ids": [
+        "claude-opus-4.1"
+      ],
+      "model_config": null,
+      "score": 17.75,
+      "score_extra": {
+        "ci_plus_minus": 4.51
+      },
+      "date": "2025-09-19",
+      "verified": null,
+      "open_source": null,
+      "org": "anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 9,
+      "system": "OpenAI GPT-5",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "OpenAI GPT-5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": null,
+      "score": 14.86,
+      "score_extra": {
+        "ci_plus_minus": 4.2
+      },
+      "date": "2025-09-19",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": 12,
+      "system": "Gemini 2.5 Pro Preview",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "Gemini 2.5 Pro Preview"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": null,
+      "score": 10.14,
+      "score_extra": {
+        "ci_plus_minus": 3.56
+      },
+      "date": "2025-09-19",
+      "verified": null,
+      "open_source": null,
+      "org": "google",
+      "row_url": null
+    },
+    {
+      "rank": 12,
+      "system": "Claude Sonnet 4",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "Claude Sonnet 4"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": null,
+      "score": 9.06,
+      "score_extra": {
+        "ci_plus_minus": 3.39
+      },
+      "date": "2025-09-19",
+      "verified": null,
+      "open_source": null,
+      "org": "anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 13,
+      "system": "OpenAI GPT-4o",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "OpenAI GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 3.62,
+      "score_extra": {
+        "ci_plus_minus": 2.2
+      },
+      "date": "2025-09-19",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    }
+  ]
+}

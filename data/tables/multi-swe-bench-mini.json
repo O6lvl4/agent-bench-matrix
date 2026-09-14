@@ -1,0 +1,915 @@
+{
+  "id": "multi-swe-bench-mini",
+  "family": "multi-swe-bench",
+  "name": "Multi-SWE-bench mini",
+  "board": "multi-swe-bench.github.io",
+  "category": "coding",
+  "measures_ja": "Multi-SWE-bench から選んだ 400 件の軽量版で、テストを通すパッチを作れるか。",
+  "tasks": 400,
+  "tasks_note": "ボードのデータにあるインスタンス ID 数。",
+  "metric": "Resolved Rate (Overall)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "提出者(多くは ByteDance の MagentLess / MSWE-agent / MopenHands 移植版)が走らせた結果を載せる。足場は行ごとに異なる。",
+  "source": "https://multi-swe-bench.github.io/",
+  "fetched": [
+    "https://raw.githubusercontent.com/multi-swe-bench/experiments/refs/heads/dist/leaderboard-mini.json",
+    "https://multi-swe-bench.github.io/assets/index-nw-gzvrv.js"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2025-07-25",
+  "snapshot": "sources/multi-swe-bench-mini/leaderboard-mini.json",
+  "paper": "https://arxiv.org/abs/2504.02605",
+  "repo": "https://github.com/multi-swe-bench/multi-swe-bench",
+  "notes_ja": "サイト上のボタン名は「Multi-SWE-bench mini」(JS 内部名 Lite)。verified はボードの ✅、open_source はボードの 🤠(オープンソース)印。score_extra の easy/medium/hard は難易度別の解決率。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "MopenHands + Qwen3-Coder-480B-A35B",
+      "agent": "MopenHands",
+      "model_raw": [
+        "Qwen3-Coder-480B-A35B"
+      ],
+      "model_ids": [
+        "qwen3-coder-480b-a35b"
+      ],
+      "model_config": null,
+      "score": 25.75,
+      "score_extra": {
+        "easy": 42.0,
+        "medium": 29.89,
+        "hard": 7.14,
+        "resolved_count": 103
+      },
+      "date": "2025-07-25",
+      "verified": false,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/lite/mini/20250725_MopenHands_Qwen3-Coder-480B-A35B"
+    },
+    {
+      "rank": 2,
+      "system": "MopenHands + Claude-3.7-Sonnet",
+      "agent": "MopenHands",
+      "model_raw": [
+        "Claude-3.7-Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": null,
+      "score": 18.25,
+      "score_extra": {
+        "easy": 33.0,
+        "medium": 20.69,
+        "hard": 3.17,
+        "resolved_count": 73
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/lite/mini/20250329_MopenHands_Claude-3.7-Sonnet"
+    },
+    {
+      "rank": 3,
+      "system": "MopenHands + Gemini-2.5-Pro",
+      "agent": "MopenHands",
+      "model_raw": [
+        "Gemini-2.5-Pro"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": null,
+      "score": 18.0,
+      "score_extra": {
+        "easy": 27.0,
+        "medium": 21.84,
+        "hard": 5.56,
+        "resolved_count": 72
+      },
+      "date": "2025-04-26",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/lite/mini/20250426_MopenHands_Gemini-2.5-Pro"
+    },
+    {
+      "rank": 4,
+      "system": "MSWE-agent + Claude-3.7-Sonnet",
+      "agent": "MSWE-agent",
+      "model_raw": [
+        "Claude-3.7-Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": null,
+      "score": 15.25,
+      "score_extra": {
+        "easy": 28.0,
+        "medium": 18.39,
+        "hard": 0.79,
+        "resolved_count": 61
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/lite/mini/20250329_MSWE-agent_Claude-3.7-Sonnet"
+    },
+    {
+      "rank": 5,
+      "system": "MopenHands + Claude-3.5-Sonnet(Oct)",
+      "agent": "MopenHands",
+      "model_raw": [
+        "Claude-3.5-Sonnet(Oct)"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 12.25,
+      "score_extra": {
+        "easy": 22.0,
+        "medium": 14.37,
+        "hard": 1.59,
+        "resolved_count": 49
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/lite/mini/20250329_MopenHands_Claude-3.5-Sonnet(Oct)"
+    },
+    {
+      "rank": 6,
+      "system": "MagentLess + Gemini-2.5-Pro",
+      "agent": "MagentLess",
+      "model_raw": [
+        "Gemini-2.5-Pro"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": null,
+      "score": 12.25,
+      "score_extra": {
+        "easy": 25.0,
+        "medium": 12.64,
+        "hard": 1.59,
+        "resolved_count": 49
+      },
+      "date": "2025-04-26",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/lite/mini/20250426_MagentLess_Gemini-2.5-Pro"
+    },
+    {
+      "rank": 7,
+      "system": "MagentLess + OpenAI-o1",
+      "agent": "MagentLess",
+      "model_raw": [
+        "OpenAI-o1"
+      ],
+      "model_ids": [
+        "o1"
+      ],
+      "model_config": null,
+      "score": 10.75,
+      "score_extra": {
+        "easy": 16.0,
+        "medium": 14.37,
+        "hard": 1.59,
+        "resolved_count": 43
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/lite/mini/20250329_MagentLess_OpenAI-o1"
+    },
+    {
+      "rank": 8,
+      "system": "MagentLess + Llama-4-Maverick",
+      "agent": "MagentLess",
+      "model_raw": [
+        "Llama-4-Maverick"
+      ],
+      "model_ids": [
+        "llama-4-maverick"
+      ],
+      "model_config": null,
+      "score": 10.25,
+      "score_extra": {
+        "easy": 21.0,
+        "medium": 11.49,
+        "hard": 0.0,
+        "resolved_count": 41
+      },
+      "date": "2025-04-26",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/lite/mini/20250426_MagentLess_Llama-4-Maverick"
+    },
+    {
+      "rank": 9,
+      "system": "MagentLess + DeepSeek-R1",
+      "agent": "MagentLess",
+      "model_raw": [
+        "DeepSeek-R1"
+      ],
+      "model_ids": [
+        "deepseek-r1"
+      ],
+      "model_config": null,
+      "score": 10.0,
+      "score_extra": {
+        "easy": 18.0,
+        "medium": 12.07,
+        "hard": 0.79,
+        "resolved_count": 40
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/lite/mini/20250329_MagentLess_DeepSeek-R1"
+    },
+    {
+      "rank": 10,
+      "system": "MSWE-agent + Gemini-2.5-Pro",
+      "agent": "MSWE-agent",
+      "model_raw": [
+        "Gemini-2.5-Pro"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": null,
+      "score": 9.75,
+      "score_extra": {
+        "easy": 15.0,
+        "medium": 13.79,
+        "hard": 0.0,
+        "resolved_count": 39
+      },
+      "date": "2025-04-26",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/lite/mini/20250426_MSWE-agent_Gemini-2.5-Pro"
+    },
+    {
+      "rank": 11,
+      "system": "MagentLess + Doubao-1.5-thinking",
+      "agent": "MagentLess",
+      "model_raw": [
+        "Doubao-1.5-thinking"
+      ],
+      "model_ids": [
+        "doubao-1.5-thinking"
+      ],
+      "model_config": null,
+      "score": 9.5,
+      "score_extra": {
+        "easy": 19.0,
+        "medium": 10.92,
+        "hard": 0.0,
+        "resolved_count": 38
+      },
+      "date": "2025-04-26",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/lite/mini/20250426_MagentLess_Doubao-1.5-thinking"
+    },
+    {
+      "rank": 12,
+      "system": "MSWE-agent + Claude-3.5-Sonnet(Oct)",
+      "agent": "MSWE-agent",
+      "model_raw": [
+        "Claude-3.5-Sonnet(Oct)"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 9.25,
+      "score_extra": {
+        "easy": 16.0,
+        "medium": 11.49,
+        "hard": 0.79,
+        "resolved_count": 37
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/lite/mini/20250329_MSWE-agent_Claude-3.5-Sonnet(Oct)"
+    },
+    {
+      "rank": 13,
+      "system": "MagentLess + Claude-3.7-Sonnet",
+      "agent": "MagentLess",
+      "model_raw": [
+        "Claude-3.7-Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": null,
+      "score": 9.25,
+      "score_extra": {
+        "easy": 19.0,
+        "medium": 9.77,
+        "hard": 0.79,
+        "resolved_count": 37
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/lite/mini/20250329_MagentLess_Claude-3.7-Sonnet"
+    },
+    {
+      "rank": 14,
+      "system": "MagentLess + OpenAI-o3-mini-high",
+      "agent": "MagentLess",
+      "model_raw": [
+        "OpenAI-o3-mini-high"
+      ],
+      "model_ids": [
+        "o3-mini"
+      ],
+      "model_config": "high",
+      "score": 9.0,
+      "score_extra": {
+        "easy": 19.0,
+        "medium": 9.77,
+        "hard": 0.0,
+        "resolved_count": 36
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/lite/mini/20250329_MagentLess_OpenAI-o3-mini-high"
+    },
+    {
+      "rank": 15,
+      "system": "MopenHands + Doubao-1.5-thinking",
+      "agent": "MopenHands",
+      "model_raw": [
+        "Doubao-1.5-thinking"
+      ],
+      "model_ids": [
+        "doubao-1.5-thinking"
+      ],
+      "model_config": null,
+      "score": 8.75,
+      "score_extra": {
+        "easy": 19.0,
+        "medium": 9.2,
+        "hard": 0.0,
+        "resolved_count": 35
+      },
+      "date": "2025-04-26",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/lite/mini/20250426_MopenHands_Doubao-1.5-thinking"
+    },
+    {
+      "rank": 16,
+      "system": "MagentLess + Claude-3.5-Sonnet(Oct)",
+      "agent": "MagentLess",
+      "model_raw": [
+        "Claude-3.5-Sonnet(Oct)"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 8.25,
+      "score_extra": {
+        "easy": 18.0,
+        "medium": 7.47,
+        "hard": 1.59,
+        "resolved_count": 33
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/lite/mini/20250329_MagentLess_Claude-3.5-Sonnet(Oct)"
+    },
+    {
+      "rank": 17,
+      "system": "MagentLess + DeepSeek-V3",
+      "agent": "MagentLess",
+      "model_raw": [
+        "DeepSeek-V3"
+      ],
+      "model_ids": [
+        "deepseek-v3"
+      ],
+      "model_config": null,
+      "score": 8.0,
+      "score_extra": {
+        "easy": 17.0,
+        "medium": 8.05,
+        "hard": 0.79,
+        "resolved_count": 32
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/lite/mini/20250329_MagentLess_DeepSeek-V3"
+    },
+    {
+      "rank": 18,
+      "system": "MSWE-agent + Doubao-1.5-thinking",
+      "agent": "MSWE-agent",
+      "model_raw": [
+        "Doubao-1.5-thinking"
+      ],
+      "model_ids": [
+        "doubao-1.5-thinking"
+      ],
+      "model_config": null,
+      "score": 7.75,
+      "score_extra": {
+        "easy": 13.0,
+        "medium": 10.34,
+        "hard": 0.0,
+        "resolved_count": 31
+      },
+      "date": "2025-04-26",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/lite/mini/20250426_MSWE-agent_Doubao-1.5-thinking"
+    },
+    {
+      "rank": 19,
+      "system": "MSWE-agent + OpenAI-o3-mini-high",
+      "agent": "MSWE-agent",
+      "model_raw": [
+        "OpenAI-o3-mini-high"
+      ],
+      "model_ids": [
+        "o3-mini"
+      ],
+      "model_config": "high",
+      "score": 7.5,
+      "score_extra": {
+        "easy": 16.0,
+        "medium": 7.47,
+        "hard": 0.79,
+        "resolved_count": 30
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/lite/mini/20250329_MSWE-agent_OpenAI-o3-mini-high"
+    },
+    {
+      "rank": 20,
+      "system": "MagentLess + GPT-4o-1120",
+      "agent": "MagentLess",
+      "model_raw": [
+        "GPT-4o-1120"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 7.5,
+      "score_extra": {
+        "easy": 16.0,
+        "medium": 7.47,
+        "hard": 0.79,
+        "resolved_count": 30
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/lite/mini/20250329_MagentLess_GPT-4o-1120"
+    },
+    {
+      "rank": 21,
+      "system": "MopenHands + DeepSeek-V3",
+      "agent": "MopenHands",
+      "model_raw": [
+        "DeepSeek-V3"
+      ],
+      "model_ids": [
+        "deepseek-v3"
+      ],
+      "model_config": null,
+      "score": 7.5,
+      "score_extra": {
+        "easy": 16.0,
+        "medium": 8.05,
+        "hard": 0.0,
+        "resolved_count": 30
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/lite/mini/20250329_MopenHands_DeepSeek-V3"
+    },
+    {
+      "rank": 22,
+      "system": "MSWE-agent + OpenAI-o1",
+      "agent": "MSWE-agent",
+      "model_raw": [
+        "OpenAI-o1"
+      ],
+      "model_ids": [
+        "o1"
+      ],
+      "model_config": null,
+      "score": 7.25,
+      "score_extra": {
+        "easy": 14.0,
+        "medium": 8.05,
+        "hard": 0.79,
+        "resolved_count": 29
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/lite/mini/20250329_MSWE-agent_OpenAI-o1"
+    },
+    {
+      "rank": 23,
+      "system": "MopenHands + DeepSeek-R1",
+      "agent": "MopenHands",
+      "model_raw": [
+        "DeepSeek-R1"
+      ],
+      "model_ids": [
+        "deepseek-r1"
+      ],
+      "model_config": null,
+      "score": 7.0,
+      "score_extra": {
+        "easy": 14.0,
+        "medium": 7.47,
+        "hard": 0.79,
+        "resolved_count": 28
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/lite/mini/20250329_MopenHands_DeepSeek-R1"
+    },
+    {
+      "rank": 24,
+      "system": "MopenHands + GPT-4o-1120",
+      "agent": "MopenHands",
+      "model_raw": [
+        "GPT-4o-1120"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 6.75,
+      "score_extra": {
+        "easy": 14.0,
+        "medium": 7.47,
+        "hard": 0.0,
+        "resolved_count": 27
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/lite/mini/20250329_MopenHands_GPT-4o-1120"
+    },
+    {
+      "rank": 25,
+      "system": "MagentLess + Qwen2.5-72B-Instruct",
+      "agent": "MagentLess",
+      "model_raw": [
+        "Qwen2.5-72B-Instruct"
+      ],
+      "model_ids": [
+        "qwen2.5-72b"
+      ],
+      "model_config": null,
+      "score": 6.0,
+      "score_extra": {
+        "easy": 16.0,
+        "medium": 4.6,
+        "hard": 0.0,
+        "resolved_count": 24
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/lite/mini/20250329_MagentLess_Qwen2.5-72B-Instruct"
+    },
+    {
+      "rank": 26,
+      "system": "MopenHands + OpenAI-o3-mini-high",
+      "agent": "MopenHands",
+      "model_raw": [
+        "OpenAI-o3-mini-high"
+      ],
+      "model_ids": [
+        "o3-mini"
+      ],
+      "model_config": "high",
+      "score": 5.75,
+      "score_extra": {
+        "easy": 12.0,
+        "medium": 5.75,
+        "hard": 0.79,
+        "resolved_count": 23
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/lite/mini/20250329_MopenHands_OpenAI-o3-mini-high"
+    },
+    {
+      "rank": 27,
+      "system": "MopenHands + Llama-4-Maverick",
+      "agent": "MopenHands",
+      "model_raw": [
+        "Llama-4-Maverick"
+      ],
+      "model_ids": [
+        "llama-4-maverick"
+      ],
+      "model_config": null,
+      "score": 5.5,
+      "score_extra": {
+        "easy": 7.0,
+        "medium": 7.47,
+        "hard": 1.59,
+        "resolved_count": 22
+      },
+      "date": "2025-04-26",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/lite/mini/20250426_MopenHands_Llama-4-Maverick"
+    },
+    {
+      "rank": 28,
+      "system": "MSWE-agent + GPT-4o-1120",
+      "agent": "MSWE-agent",
+      "model_raw": [
+        "GPT-4o-1120"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 5.25,
+      "score_extra": {
+        "easy": 9.0,
+        "medium": 6.32,
+        "hard": 0.79,
+        "resolved_count": 21
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/lite/mini/20250329_MSWE-agent_GPT-4o-1120"
+    },
+    {
+      "rank": 29,
+      "system": "MSWE-agent + DeepSeek-V3",
+      "agent": "MSWE-agent",
+      "model_raw": [
+        "DeepSeek-V3"
+      ],
+      "model_ids": [
+        "deepseek-v3"
+      ],
+      "model_config": null,
+      "score": 5.0,
+      "score_extra": {
+        "easy": 8.0,
+        "medium": 6.32,
+        "hard": 0.79,
+        "resolved_count": 20
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/lite/mini/20250329_MSWE-agent_DeepSeek-V3"
+    },
+    {
+      "rank": 30,
+      "system": "MopenHands + OpenAI-o1",
+      "agent": "MopenHands",
+      "model_raw": [
+        "OpenAI-o1"
+      ],
+      "model_ids": [
+        "o1"
+      ],
+      "model_config": null,
+      "score": 4.75,
+      "score_extra": {
+        "easy": 7.0,
+        "medium": 6.9,
+        "hard": 0.0,
+        "resolved_count": 19
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/lite/mini/20250329_MopenHands_OpenAI-o1"
+    },
+    {
+      "rank": 31,
+      "system": "MagentLess + Doubao-1.5-pro",
+      "agent": "MagentLess",
+      "model_raw": [
+        "Doubao-1.5-pro"
+      ],
+      "model_ids": [
+        "doubao-1.5-pro"
+      ],
+      "model_config": null,
+      "score": 4.5,
+      "score_extra": {
+        "easy": 9.0,
+        "medium": 4.6,
+        "hard": 0.79,
+        "resolved_count": 18
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/lite/mini/20250329_MagentLess_Doubao-1.5-pro"
+    },
+    {
+      "rank": 32,
+      "system": "MSWE-agent + Llama-4-Maverick",
+      "agent": "MSWE-agent",
+      "model_raw": [
+        "Llama-4-Maverick"
+      ],
+      "model_ids": [
+        "llama-4-maverick"
+      ],
+      "model_config": null,
+      "score": 4.25,
+      "score_extra": {
+        "easy": 9.0,
+        "medium": 4.02,
+        "hard": 0.79,
+        "resolved_count": 17
+      },
+      "date": "2025-04-26",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/lite/mini/20250426_MSWE-agent_Llama-4-Maverick"
+    },
+    {
+      "rank": 33,
+      "system": "MSWE-agent + DeepSeek-R1",
+      "agent": "MSWE-agent",
+      "model_raw": [
+        "DeepSeek-R1"
+      ],
+      "model_ids": [
+        "deepseek-r1"
+      ],
+      "model_config": null,
+      "score": 3.75,
+      "score_extra": {
+        "easy": 7.0,
+        "medium": 4.6,
+        "hard": 0.0,
+        "resolved_count": 15
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/lite/mini/20250329_MSWE-agent_DeepSeek-R1"
+    },
+    {
+      "rank": 34,
+      "system": "MSWE-agent + Doubao-1.5-pro",
+      "agent": "MSWE-agent",
+      "model_raw": [
+        "Doubao-1.5-pro"
+      ],
+      "model_ids": [
+        "doubao-1.5-pro"
+      ],
+      "model_config": null,
+      "score": 3.75,
+      "score_extra": {
+        "easy": 5.0,
+        "medium": 5.17,
+        "hard": 0.79,
+        "resolved_count": 15
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/lite/mini/20250329_MSWE-agent_Doubao-1.5-pro"
+    },
+    {
+      "rank": 35,
+      "system": "MopenHands + Qwen2.5-72B-Instruct",
+      "agent": "MopenHands",
+      "model_raw": [
+        "Qwen2.5-72B-Instruct"
+      ],
+      "model_ids": [
+        "qwen2.5-72b"
+      ],
+      "model_config": null,
+      "score": 2.25,
+      "score_extra": {
+        "easy": 3.0,
+        "medium": 2.87,
+        "hard": 0.79,
+        "resolved_count": 9
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/lite/mini/20250329_MopenHands_Qwen2.5-72B-Instruct"
+    },
+    {
+      "rank": 36,
+      "system": "MopenHands + Doubao-1.5-pro",
+      "agent": "MopenHands",
+      "model_raw": [
+        "Doubao-1.5-pro"
+      ],
+      "model_ids": [
+        "doubao-1.5-pro"
+      ],
+      "model_config": null,
+      "score": 2.0,
+      "score_extra": {
+        "easy": 2.0,
+        "medium": 3.45,
+        "hard": 0.0,
+        "resolved_count": 8
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/lite/mini/20250329_MopenHands_Doubao-1.5-pro"
+    },
+    {
+      "rank": 37,
+      "system": "MSWE-agent + Qwen2.5-72B-Instruct",
+      "agent": "MSWE-agent",
+      "model_raw": [
+        "Qwen2.5-72B-Instruct"
+      ],
+      "model_ids": [
+        "qwen2.5-72b"
+      ],
+      "model_config": null,
+      "score": 1.0,
+      "score_extra": {
+        "easy": 1.0,
+        "medium": 1.72,
+        "hard": 0.0,
+        "resolved_count": 4
+      },
+      "date": "2025-03-29",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/lite/mini/20250329_MSWE-agent_Qwen2.5-72B-Instruct"
+    }
+  ]
+}

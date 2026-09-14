@@ -1,0 +1,1162 @@
+{
+  "id": "hal-core-bench-hard",
+  "family": "core-bench",
+  "name": "CORE-Bench Hard (HAL)",
+  "board": "hal.cs.princeton.edu",
+  "category": "research",
+  "measures_ja": "論文のコードだけを渡され、環境構築から実行まで行って論文の結果に関する質問に答えられるか。",
+  "tasks": 45,
+  "tasks_note": "HAL ページの記載は論文90本のうち公開テストセット45本。",
+  "metric": "Accuracy",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "HAL 運営が共通ハーネス(hal-harness)で足場×モデルを自ら実行した結果。費用は公開トークン単価から算出し、キャッシュ割引は含まない。",
+  "source": "https://hal.cs.princeton.edu/corebench_hard",
+  "fetched": [
+    "https://hal.cs.princeton.edu/corebench_hard"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": null,
+  "snapshot": "sources/hal-core-bench-hard/leaderboard-table.html",
+  "paper": "https://arxiv.org/abs/2409.11363",
+  "repo": "https://github.com/princeton-pli/hal-harness",
+  "notes_ja": "HAL は新モデルの追加を停止し、信頼性(reliability)の測定に移行している。 ボードに行ごとの日付は無い。 HAL は Claude Code 足場(Nicholas Carlini 提出)の Opus 4.5 で「CORE-Bench solved」と宣言。手動採点値は score_extra.accuracy_manual_validation。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Claude Code",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Claude Opus 4.5"
+      ],
+      "model_ids": [
+        "claude-opus-4.5"
+      ],
+      "model_config": null,
+      "score": 77.78,
+      "score_extra": {
+        "cost_usd": 87.16,
+        "accuracy_manual_validation": 95.5,
+        "runs": 1,
+        "pareto_optimal": true
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": "Nicholas Carlini",
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_claude_code_claudeopus45_1764537671_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 2,
+      "system": "Claude Code",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Claude Sonnet 4.5 (September 2025)"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": null,
+      "score": 62.22,
+      "score_extra": {
+        "cost_usd": 68.33,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": "Nicholas Carlini",
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_claude_code_claudesonnet4520250929_1764605733_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 3,
+      "system": "CORE-Agent",
+      "agent": "CORE-Agent",
+      "model_raw": [
+        "Claude Opus 4.1 (August 2025)"
+      ],
+      "model_ids": [
+        "claude-opus-4.1"
+      ],
+      "model_config": null,
+      "score": 51.11,
+      "score_extra": {
+        "cost_usd": 412.42,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_coreagent_1754492675_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 4,
+      "system": "Claude Code",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Claude Sonnet 4 (May 2025)"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": null,
+      "score": 46.67,
+      "score_extra": {
+        "cost_usd": 65.58,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": "Nicholas Carlini",
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_claude_code_claudesonnet420250514_1764558813_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 5,
+      "system": "CORE-Agent",
+      "agent": "CORE-Agent",
+      "model_raw": [
+        "Claude Sonnet 4.5 High (September 2025)"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": "High",
+      "score": 44.44,
+      "score_extra": {
+        "cost_usd": 92.34,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_coreagentclaudesonnet45high_1759330487_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 6,
+      "system": "CORE-Agent",
+      "agent": "CORE-Agent",
+      "model_raw": [
+        "Claude Opus 4.5 High (November 2025)"
+      ],
+      "model_ids": [
+        "claude-opus-4.5"
+      ],
+      "model_config": "High",
+      "score": 42.22,
+      "score_extra": {
+        "cost_usd": 152.66,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_core_agent_opus_45_high_1764027725_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 7,
+      "system": "CORE-Agent",
+      "agent": "CORE-Agent",
+      "model_raw": [
+        "Claude Opus 4.5 (November 2025)"
+      ],
+      "model_ids": [
+        "claude-opus-4.5"
+      ],
+      "model_config": null,
+      "score": 42.22,
+      "score_extra": {
+        "cost_usd": 168.99,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_core_agent_opus_45_1764027531_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 8,
+      "system": "Claude Code",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Claude Opus 4.1"
+      ],
+      "model_ids": [
+        "claude-opus-4.1"
+      ],
+      "model_config": null,
+      "score": 42.22,
+      "score_extra": {
+        "cost_usd": 331.79,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": "Nicholas Carlini",
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_claude_code_claudeopus41_1764560915_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 9,
+      "system": "CORE-Agent",
+      "agent": "CORE-Agent",
+      "model_raw": [
+        "Claude Opus 4.1 High (August 2025)"
+      ],
+      "model_ids": [
+        "claude-opus-4.1"
+      ],
+      "model_config": "High",
+      "score": 42.22,
+      "score_extra": {
+        "cost_usd": 509.95,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_coreagent_1754539779_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 10,
+      "system": "CORE-Agent",
+      "agent": "CORE-Agent",
+      "model_raw": [
+        "Gemini 3 Pro Preview High (November 2025)"
+      ],
+      "model_ids": [
+        "gemini-3-pro-preview"
+      ],
+      "model_config": "High",
+      "score": 40.0,
+      "score_extra": {
+        "cost_usd": 86.6,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_core_agent_1763842609_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 11,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "Claude-3.7 Sonnet High (February 2025)"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": "High",
+      "score": 37.78,
+      "score_extra": {
+        "cost_usd": 66.15,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_hal_generalist_agentsonnet_37_high_1755663010_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 12,
+      "system": "CORE-Agent",
+      "agent": "CORE-Agent",
+      "model_raw": [
+        "Claude Sonnet 4.5 (September 2025)"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": null,
+      "score": 37.78,
+      "score_extra": {
+        "cost_usd": 97.15,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_coreagentclaudesonnet45_1759329435_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 13,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "o4-mini High (April 2025)"
+      ],
+      "model_ids": [
+        "o4-mini"
+      ],
+      "model_config": "High",
+      "score": 35.56,
+      "score_extra": {
+        "cost_usd": 45.37,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_hal_generalist_agento4minihigh_1755580383_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 14,
+      "system": "CORE-Agent",
+      "agent": "CORE-Agent",
+      "model_raw": [
+        "Claude-3.7 Sonnet (February 2025)"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": null,
+      "score": 35.56,
+      "score_extra": {
+        "cost_usd": 73.04,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_coreagent_1744922181_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 15,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "Gemini 3 Pro Preview High (November 2025)"
+      ],
+      "model_ids": [
+        "gemini-3-pro-preview"
+      ],
+      "model_config": "High",
+      "score": 35.56,
+      "score_extra": {
+        "cost_usd": 101.27,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_hal_generalist_agent_1763837773_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 16,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "Claude Opus 4.1 (August 2025)"
+      ],
+      "model_ids": [
+        "claude-opus-4.1"
+      ],
+      "model_config": null,
+      "score": 35.56,
+      "score_extra": {
+        "cost_usd": 375.11,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_hal_generalist_agent_1754443772_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 17,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "Claude Sonnet 4.5 (September 2025)"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": null,
+      "score": 33.33,
+      "score_extra": {
+        "cost_usd": 85.19,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_halgeneralistagentclaudesonnet45_1759433359_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 18,
+      "system": "CORE-Agent",
+      "agent": "CORE-Agent",
+      "model_raw": [
+        "Claude Sonnet 4 High (May 2025)"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": "High",
+      "score": 33.33,
+      "score_extra": {
+        "cost_usd": 100.48,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_coreagentclaudesonnet4high_1755814601_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 19,
+      "system": "CORE-Agent",
+      "agent": "CORE-Agent",
+      "model_raw": [
+        "GPT-4.1 (April 2025)"
+      ],
+      "model_ids": [
+        "gpt-4.1"
+      ],
+      "model_config": null,
+      "score": 33.33,
+      "score_extra": {
+        "cost_usd": 107.36,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_coreagent_1744752123_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 20,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "Claude Opus 4.5 (November 2025)"
+      ],
+      "model_ids": [
+        "claude-opus-4.5"
+      ],
+      "model_config": null,
+      "score": 33.33,
+      "score_extra": {
+        "cost_usd": 127.41,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_hal_generalist_agent_opus_45_1764046559_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 21,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "Claude Opus 4.1 High (August 2025)"
+      ],
+      "model_ids": [
+        "claude-opus-4.1"
+      ],
+      "model_config": "High",
+      "score": 33.33,
+      "score_extra": {
+        "cost_usd": 358.47,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_hal_generalist_agent_1754569694_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 22,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "Claude-3.7 Sonnet (February 2025)"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": null,
+      "score": 31.11,
+      "score_extra": {
+        "cost_usd": 56.64,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_hal_generalist_agentsonnet_37_1755652380_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 23,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "Claude Opus 4.5 High (November 2025)"
+      ],
+      "model_ids": [
+        "claude-opus-4.5"
+      ],
+      "model_config": "High",
+      "score": 31.11,
+      "score_extra": {
+        "cost_usd": 112.38,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_hal_generalist_agent_opus_45_high_1764046628_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 24,
+      "system": "CORE-Agent",
+      "agent": "CORE-Agent",
+      "model_raw": [
+        "Claude Sonnet 4 (May 2025)"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": null,
+      "score": 28.89,
+      "score_extra": {
+        "cost_usd": 50.27,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_coreagentclaudesonnet4_1755796611_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 25,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "Claude Sonnet 4.5 High (September 2025)"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": "High",
+      "score": 28.89,
+      "score_extra": {
+        "cost_usd": 87.77,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_halgeneralistagentclaudesonnet45high_1759423572_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 26,
+      "system": "CORE-Agent",
+      "agent": "CORE-Agent",
+      "model_raw": [
+        "GPT-5 Medium (August 2025)"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": "Medium",
+      "score": 26.67,
+      "score_extra": {
+        "cost_usd": 31.76,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_coreagent_1754599494_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 27,
+      "system": "CORE-Agent",
+      "agent": "CORE-Agent",
+      "model_raw": [
+        "o4-mini High (April 2025)"
+      ],
+      "model_ids": [
+        "o4-mini"
+      ],
+      "model_config": "High",
+      "score": 26.67,
+      "score_extra": {
+        "cost_usd": 61.35,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_coreagent_1745075792_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 28,
+      "system": "CORE-Agent",
+      "agent": "CORE-Agent",
+      "model_raw": [
+        "Claude-3.7 Sonnet High (February 2025)"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": "High",
+      "score": 24.44,
+      "score_extra": {
+        "cost_usd": 72.47,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_coreagent_1745258007_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 29,
+      "system": "CORE-Agent",
+      "agent": "CORE-Agent",
+      "model_raw": [
+        "o3 Medium (April 2025)"
+      ],
+      "model_ids": [
+        "o3"
+      ],
+      "model_config": "Medium",
+      "score": 24.44,
+      "score_extra": {
+        "cost_usd": 120.47,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_coreagent_1745118876_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 30,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "GPT-4.1 (April 2025)"
+      ],
+      "model_ids": [
+        "gpt-4.1"
+      ],
+      "model_config": null,
+      "score": 22.22,
+      "score_extra": {
+        "cost_usd": 58.32,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_hal_generalist_agentgpt41_1755644685_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 31,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "o3 Medium (April 2025)"
+      ],
+      "model_ids": [
+        "o3"
+      ],
+      "model_config": "Medium",
+      "score": 22.22,
+      "score_extra": {
+        "cost_usd": 88.34,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_hal_generalist_agento3medium_1755626315_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 32,
+      "system": "CORE-Agent",
+      "agent": "CORE-Agent",
+      "model_raw": [
+        "Gemini 2.5 Pro Preview (March 2025)"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro-preview"
+      ],
+      "model_config": null,
+      "score": 22.22,
+      "score_extra": {
+        "cost_usd": 182.34,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_coreagent_1744922265_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 33,
+      "system": "CORE-Agent",
+      "agent": "CORE-Agent",
+      "model_raw": [
+        "DeepSeek V3.1 (August 2025)"
+      ],
+      "model_ids": [
+        "deepseek-v3.1"
+      ],
+      "model_config": null,
+      "score": 20.0,
+      "score_extra": {
+        "cost_usd": 12.55,
+        "runs": 1,
+        "pareto_optimal": true
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_coreagentdeepseekv31_1755793007_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 34,
+      "system": "CORE-Agent",
+      "agent": "CORE-Agent",
+      "model_raw": [
+        "DeepSeek V3 (March 2025)"
+      ],
+      "model_ids": [
+        "deepseek-v3-0324"
+      ],
+      "model_config": null,
+      "score": 17.78,
+      "score_extra": {
+        "cost_usd": 25.26,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_coreagent_1744854746_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 35,
+      "system": "CORE-Agent",
+      "agent": "CORE-Agent",
+      "model_raw": [
+        "o4-mini Low (April 2025)"
+      ],
+      "model_ids": [
+        "o4-mini"
+      ],
+      "model_config": "Low",
+      "score": 17.78,
+      "score_extra": {
+        "cost_usd": 31.79,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_coreagent_1745046580_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 36,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "o4-mini Low (April 2025)"
+      ],
+      "model_ids": [
+        "o4-mini"
+      ],
+      "model_config": "Low",
+      "score": 15.56,
+      "score_extra": {
+        "cost_usd": 22.5,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_hal_generalist_agento4minilow_1755608756_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 37,
+      "system": "CORE-Agent",
+      "agent": "CORE-Agent",
+      "model_raw": [
+        "GPT-OSS-120B (August 2025)"
+      ],
+      "model_ids": [
+        "gpt-oss-120b"
+      ],
+      "model_config": null,
+      "score": 11.11,
+      "score_extra": {
+        "cost_usd": 4.21,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_coreagent_1754492673_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 38,
+      "system": "CORE-Agent",
+      "agent": "CORE-Agent",
+      "model_raw": [
+        "GPT-OSS-120B High (August 2025)"
+      ],
+      "model_ids": [
+        "gpt-oss-120b"
+      ],
+      "model_config": "High",
+      "score": 11.11,
+      "score_extra": {
+        "cost_usd": 4.21,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_coreagent_1754539776_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 39,
+      "system": "CORE-Agent",
+      "agent": "CORE-Agent",
+      "model_raw": [
+        "Gemini 2.0 Flash (February 2025)"
+      ],
+      "model_ids": [
+        "gemini-2.0-flash"
+      ],
+      "model_config": null,
+      "score": 11.11,
+      "score_extra": {
+        "cost_usd": 12.46,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_coreagent_1744856042_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 40,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "GPT-5 Medium (August 2025)"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": "Medium",
+      "score": 11.11,
+      "score_extra": {
+        "cost_usd": 29.75,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_hal_generalist_agentgpt5medium_1756137340_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 41,
+      "system": "CORE-Agent",
+      "agent": "CORE-Agent",
+      "model_raw": [
+        "Claude Haiku 4.5 (October 2025)"
+      ],
+      "model_ids": [
+        "claude-haiku-4.5"
+      ],
+      "model_config": null,
+      "score": 11.11,
+      "score_extra": {
+        "cost_usd": 43.93,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_coreagentclaudehaiku45_1760647306_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 42,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "GPT-OSS-120B High (August 2025)"
+      ],
+      "model_ids": [
+        "gpt-oss-120b"
+      ],
+      "model_config": "High",
+      "score": 8.89,
+      "score_extra": {
+        "cost_usd": 2.05,
+        "runs": 1,
+        "pareto_optimal": true
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_hal_generalist_agent_1754569684_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 43,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "GPT-OSS-120B (August 2025)"
+      ],
+      "model_ids": [
+        "gpt-oss-120b"
+      ],
+      "model_config": null,
+      "score": 8.89,
+      "score_extra": {
+        "cost_usd": 2.79,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_hal_generalist_agent_1754439280_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 44,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "DeepSeek V3 (March 2025)"
+      ],
+      "model_ids": [
+        "deepseek-v3-0324"
+      ],
+      "model_config": null,
+      "score": 8.89,
+      "score_extra": {
+        "cost_usd": 4.69,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_hal_generalist_agentdeepseekv30324_1755710007_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 45,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "DeepSeek R1 (May 2025)"
+      ],
+      "model_ids": [
+        "deepseek-r1-0528"
+      ],
+      "model_config": null,
+      "score": 8.89,
+      "score_extra": {
+        "cost_usd": 7.77,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_hal_generalist_agentdeepseekr10528_1755721934_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 46,
+      "system": "CORE-Agent",
+      "agent": "CORE-Agent",
+      "model_raw": [
+        "DeepSeek R1 (January 2025)"
+      ],
+      "model_ids": [
+        "deepseek-r1"
+      ],
+      "model_config": null,
+      "score": 6.67,
+      "score_extra": {
+        "cost_usd": 81.11,
+        "score_err_minus": 2.22,
+        "score_err_plus": 2.22,
+        "cost_usd_err_minus": 46.45,
+        "cost_usd_err_plus": 46.45,
+        "runs": 2,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_coreagent_1744922373_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 47,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "DeepSeek R1 (January 2025)"
+      ],
+      "model_ids": [
+        "deepseek-r1"
+      ],
+      "model_config": null,
+      "score": 4.45,
+      "score_extra": {
+        "cost_usd": 24.95,
+        "score_err_minus": 2.22,
+        "score_err_plus": 2.22,
+        "cost_usd_err_minus": 11.07,
+        "cost_usd_err_plus": 22.15,
+        "runs": 2,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_hal_generalist_agent_1747247500_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 48,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "Gemini 2.0 Flash (February 2025)"
+      ],
+      "model_ids": [
+        "gemini-2.0-flash"
+      ],
+      "model_config": null,
+      "score": 4.44,
+      "score_extra": {
+        "cost_usd": 7.06,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_hal_generalist_agentgemini20flash_1755839828_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 49,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "Gemini 2.5 Pro Preview (March 2025)"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro-preview"
+      ],
+      "model_config": null,
+      "score": 4.44,
+      "score_extra": {
+        "cost_usd": 30.38,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/corebench_hard_hal_generalist_agent_1747247518_UPLOAD.zip?download=true"
+    }
+  ]
+}

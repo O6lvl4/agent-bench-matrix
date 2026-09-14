@@ -1,0 +1,243 @@
+{
+  "id": "multi-swe-bench-flash",
+  "family": "multi-swe-bench",
+  "name": "Multi-SWE-bench flash",
+  "board": "multi-swe-bench.github.io",
+  "category": "coding",
+  "measures_ja": "Multi-SWE-bench から素早く回すために選んだ 300 件で、テストを通すパッチを作れるか。",
+  "tasks": 300,
+  "tasks_note": "ボードのデータにあるインスタンス ID 数。",
+  "metric": "Resolved Rate (Overall)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "提出者(多くは ByteDance の MagentLess / MSWE-agent / MopenHands 移植版)が走らせた結果を載せる。足場は行ごとに異なる。",
+  "source": "https://multi-swe-bench.github.io/",
+  "fetched": [
+    "https://raw.githubusercontent.com/multi-swe-bench/experiments/refs/heads/dist/leaderboard-flash.json",
+    "https://multi-swe-bench.github.io/assets/index-nw-gzvrv.js"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2025-07-25",
+  "snapshot": "sources/multi-swe-bench-flash/leaderboard-flash.json",
+  "paper": "https://arxiv.org/abs/2504.02605",
+  "repo": "https://github.com/multi-swe-bench/multi-swe-bench",
+  "notes_ja": "サイト上のボタン名は「Multi-SWE-bench flash」(JS 内部名 Flash)。verified はボードの ✅、open_source はボードの 🤠(オープンソース)印。score_extra の easy/medium/hard は難易度別の解決率。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "MopenHands + Qwen3-Coder-480B-A35B",
+      "agent": "MopenHands",
+      "model_raw": [
+        "Qwen3-Coder-480B-A35B"
+      ],
+      "model_ids": [
+        "qwen3-coder-480b-a35b"
+      ],
+      "model_config": null,
+      "score": 25.33,
+      "score_extra": {
+        "easy": 36.56,
+        "medium": 27.27,
+        "hard": 8.0,
+        "resolved_count": 76
+      },
+      "date": "2025-07-25",
+      "verified": false,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/flash/flash/20250725_MopenHands_Qwen3-Coder-480B-A35B"
+    },
+    {
+      "rank": 2,
+      "system": "MopenHands + Claude-4-Sonnet",
+      "agent": "MopenHands",
+      "model_raw": [
+        "Claude-4-Sonnet"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": null,
+      "score": 25.0,
+      "score_extra": {
+        "easy": 32.26,
+        "medium": 28.03,
+        "hard": 10.67,
+        "resolved_count": 75
+      },
+      "date": "2025-07-12",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/flash/flash/20250712_MopenHands_Claude-4-Sonnet"
+    },
+    {
+      "rank": 3,
+      "system": "MopenHands + OpenAI-o3",
+      "agent": "MopenHands",
+      "model_raw": [
+        "OpenAI-o3"
+      ],
+      "model_ids": [
+        "o3"
+      ],
+      "model_config": null,
+      "score": 23.67,
+      "score_extra": {
+        "easy": 35.48,
+        "medium": 22.73,
+        "hard": 10.67,
+        "resolved_count": 71
+      },
+      "date": "2025-07-12",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/flash/flash/20250712_MopenHands_OpenAI-o3"
+    },
+    {
+      "rank": 4,
+      "system": "MopenHands + Claude-3.7-Sonnet",
+      "agent": "MopenHands",
+      "model_raw": [
+        "Claude-3.7-Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": null,
+      "score": 21.33,
+      "score_extra": {
+        "easy": 26.88,
+        "medium": 23.48,
+        "hard": 10.67,
+        "resolved_count": 64
+      },
+      "date": "2025-07-12",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/flash/flash/20250712_MopenHands_Claude-3.7-Sonnet"
+    },
+    {
+      "rank": 5,
+      "system": "MopenHands + Kimi-K2",
+      "agent": "MopenHands",
+      "model_raw": [
+        "Kimi-K2"
+      ],
+      "model_ids": [
+        "kimi-k2"
+      ],
+      "model_config": null,
+      "score": 18.33,
+      "score_extra": {
+        "easy": 25.81,
+        "medium": 19.7,
+        "hard": 6.67,
+        "resolved_count": 55
+      },
+      "date": "2025-07-18",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/flash/flash/20250718_MopenHands_Kimi-K2"
+    },
+    {
+      "rank": 6,
+      "system": "MopenHands + Doubao-1.6-pro",
+      "agent": "MopenHands",
+      "model_raw": [
+        "Doubao-1.6-pro"
+      ],
+      "model_ids": [
+        "doubao-1.6-pro"
+      ],
+      "model_config": null,
+      "score": 17.0,
+      "score_extra": {
+        "easy": 29.03,
+        "medium": 12.12,
+        "hard": 10.67,
+        "resolved_count": 51
+      },
+      "date": "2025-07-12",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/flash/flash/20250712_MopenHands_Doubao-1.6-pro"
+    },
+    {
+      "rank": 7,
+      "system": "MopenHands + Gemini-2.5-Pro",
+      "agent": "MopenHands",
+      "model_raw": [
+        "Gemini-2.5-Pro"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": null,
+      "score": 15.67,
+      "score_extra": {
+        "easy": 21.51,
+        "medium": 16.67,
+        "hard": 6.67,
+        "resolved_count": 47
+      },
+      "date": "2025-07-12",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/flash/flash/20250712_MopenHands_Gemini-2.5-Pro"
+    },
+    {
+      "rank": 8,
+      "system": "MopenHands + DeepSeek-R1-0528",
+      "agent": "MopenHands",
+      "model_raw": [
+        "DeepSeek-R1-0528"
+      ],
+      "model_ids": [
+        "deepseek-r1-0528"
+      ],
+      "model_config": null,
+      "score": 15.33,
+      "score_extra": {
+        "easy": 23.66,
+        "medium": 13.64,
+        "hard": 8.0,
+        "resolved_count": 46
+      },
+      "date": "2025-07-12",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/flash/flash/20250712_MopenHands_DeepSeek-R1-0528"
+    },
+    {
+      "rank": 9,
+      "system": "MopenHands + GPT-41-0414",
+      "agent": "MopenHands",
+      "model_raw": [
+        "GPT-41-0414"
+      ],
+      "model_ids": [
+        "gpt-4.1"
+      ],
+      "model_config": null,
+      "score": 14.33,
+      "score_extra": {
+        "easy": 19.35,
+        "medium": 14.39,
+        "hard": 8.0,
+        "resolved_count": 43
+      },
+      "date": "2025-07-12",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/multi-swe-bench/experiments/tree/main/evaluation/flash/flash/20250712_MopenHands_GPT-41-0414"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "id": "mle-bench-additional",
+  "family": "mle-bench",
+  "name": "MLE-bench (Additional Submissions)",
+  "board": "github.com/openai/mle-bench",
+  "category": "research",
+  "measures_ja": "Kaggle の機械学習コンペ75件で、エージェントが自力でモデルを作り提出し、メダル相当の成績を取れた割合。",
+  "tasks": 75,
+  "tasks_note": "Low(Lite)22件・Medium・High の3分割。",
+  "metric": "Any Medal (%) — All",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "提出者が自前の足場とハードウェア(時間制限つき)で走らせ、採点レポートを README に提出する。",
+  "source": "https://github.com/openai/mle-bench#leaderboard",
+  "fetched": [
+    "https://raw.githubusercontent.com/openai/mle-bench/main/README.md"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-02-09",
+  "snapshot": "sources/mle-bench-additional/README.md",
+  "paper": "https://arxiv.org/abs/2410.07095",
+  "repo": "https://github.com/openai/mle-bench",
+  "notes_ja": "メイン表と直接比較できない追加提出。どちらも Notes 欄に「Test-set feedback」(テストセットのフィードバックを利用)とある。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Disarray",
+      "agent": "Disarray",
+      "model_raw": [
+        "Claude-Opus-4.5",
+        "Claude-Sonnet-4.5",
+        "GPT-5.2-Codex",
+        "Gemini-3-Pro-Preview"
+      ],
+      "model_ids": [
+        "claude-opus-4.5",
+        "claude-sonnet-4.5",
+        "gpt-5.2-codex",
+        "gemini-3-pro-preview"
+      ],
+      "model_config": "Ensemble",
+      "score": 77.78,
+      "score_extra": {
+        "all_sem": 0.44,
+        "low_lite_pct": 90.91,
+        "low_lite_sem": 0.0,
+        "medium_pct": 72.81,
+        "medium_sem": 0.88,
+        "high_pct": 71.11,
+        "high_sem": 2.22,
+        "running_time_hours": 24.0,
+        "grading_reports_available": true
+      },
+      "date": "2026-02-03",
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://disarray.ai"
+    },
+    {
+      "rank": 2,
+      "system": "LoongFlow",
+      "agent": "LoongFlow",
+      "model_raw": [
+        "Gemini-3-Flash-Preview"
+      ],
+      "model_ids": [
+        "gemini-3-flash-preview"
+      ],
+      "model_config": null,
+      "score": 62.66,
+      "score_extra": {
+        "all_sem": 0.76,
+        "low_lite_pct": 77.27,
+        "low_lite_sem": 0.0,
+        "medium_pct": 63.15,
+        "medium_sem": 1.51,
+        "high_pct": 40.0,
+        "high_sem": 0.0,
+        "running_time_hours": 24.0,
+        "grading_reports_available": true,
+        "padded_incomplete_seeds": true
+      },
+      "date": "2026-02-09",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/baidu-baige/LoongFlow"
+    }
+  ]
+}

@@ -1,0 +1,282 @@
+import env
+import fs
+import json
+import process
+import regex
+import value
+
+// build — data/ にある表をすべて検査し、ページが読む docs/data.json を書く。
+//
+// ページに出る数字は、それが来た行と同じだけしか信用できない。だから行を検証
+// できるようにしているもの(出典・スナップショット・形の正しい日付)が欠けた表は、
+// ページに届く前にここで止める。
+//
+//   almide run tools/build.almd            検査して書く。問題があれば終了コード 1
+//   almide run tools/build.almd -- --strict  models.json に無いモデルIDも問題として扱う
+
+let CATEGORIES = ["coding", "terminal", "tool-use", "web", "computer-use", "research", "security", "long-horizon", "general"]
+let DATE = "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+let SLUG = "^[a-z0-9][a-z0-9.\\-]*$"
+
+type Problem = { at: String, what: String }
+
+fn problem(at: String, what: String) -> Problem = Problem { at: at, what: what }
+
+fn or_null(r: Result[Value, String]) -> Value = match r {
+  ok(v) => v,
+  err(_) => value.null(),
+}
+
+fn is_null(v: Value) -> Bool = value.stringify(v) == "null"
+fn is_object(v: Value) -> Bool = string.starts_with(value.stringify(v), "{")
+fn is_link(s: String) -> Bool = string.starts_with(s, "https://") or string.starts_with(s, "http://")
+
+fn text_of(v: Value, key: String) -> Option[String] = match value.field(v, key) {
+  ok(x) => match value.as_string(x) {
+    ok(s) => if string.len(string.trim(s)) > 0 then some(s) else none,
+    err(_) => none,
+  },
+  err(_) => none,
+}
+
+fn strings_of(v: Value) -> Option[List[String]] = match value.as_array(v) {
+  ok(items) => {
+    var out: List[String] = []
+    var fine = true
+    for item in items {
+      match value.as_string(item) {
+        ok(s) => list.push(out, s),
+        err(_) => { fine = false },
+      }
+    }
+    if fine then some(out) else none
+  },
+  err(_) => none,
+}
+
+// A field that must be there and may be null. Missing and wrong are different
+// mistakes, and the message says which.
+fn nullable(v: Value, key: String, kind: String, at: String) -> List[Problem] = match value.field(v, key) {
+  err(_) => [problem(at, key + " がない(値が無いなら null と書く)")],
+  ok(x) => if is_null(x) then []
+    else if kind == "bool" then match value.as_bool(x) { ok(_) => [], err(_) => [problem(at, key + " は true/false/null")] }
+    else if kind == "int" then match value.as_int(x) { ok(_) => [], err(_) => [problem(at, key + " は整数か null")] }
+    else if kind == "date" then match value.as_string(x) {
+      ok(s) => if regex.is_match(DATE, s) then [] else [problem(at, key + " は YYYY-MM-DD か null: " + s)],
+      err(_) => [problem(at, key + " は YYYY-MM-DD か null")],
+    }
+    else match value.as_string(x) { ok(_) => [], err(_) => [problem(at, key + " は文字列か null")] },
+}
+
+fn required_text(v: Value, keys: List[String], at: String) -> List[Problem] =
+  list.flat_map(keys, (k) => match text_of(v, k) { some(_) => [], none => [problem(at, k + " が空か、文字列でない")] })
+
+fn check_row(row: Value, i: Int, retrieved: String, at: String) -> List[Problem] = {
+  let here = at + " rows[" + int.to_string(i) + "]"
+  var out = required_text(row, ["system"], here)
+  match value.field(row, "score") {
+    ok(s) => match value.as_float(s) { ok(_) => (), err(_) => list.push(out, problem(here, "score が数値でない")) },
+    err(_) => list.push(out, problem(here, "score がない")),
+  }
+  match strings_of(or_null(value.field(row, "model_raw"))) {
+    some(_) => (),
+    none => list.push(out, problem(here, "model_raw は文字列の配列")),
+  }
+  match strings_of(or_null(value.field(row, "model_ids"))) {
+    some(ids) => for id in ids {
+      if not regex.is_match(SLUG, id) then list.push(out, problem(here, "model_ids の形が規則に合わない: " + id))
+    },
+    none => list.push(out, problem(here, "model_ids は文字列の配列")),
+  }
+  if not is_object(or_null(value.field(row, "score_extra"))) then list.push(out, problem(here, "score_extra はオブジェクト({} でもよい)"))
+  out = out + nullable(row, "rank", "int", here)
+  out = out + nullable(row, "agent", "text", here)
+  out = out + nullable(row, "model_config", "text", here)
+  out = out + nullable(row, "date", "date", here)
+  out = out + nullable(row, "verified", "bool", here)
+  out = out + nullable(row, "open_source", "bool", here)
+  out = out + nullable(row, "org", "text", here)
+  out = out + nullable(row, "row_url", "text", here)
+  // A row dated after the day it was read was not read that day.
+  match text_of(row, "date") {
+    some(d) => if d > retrieved then list.push(out, problem(here, "date が取得日より後: " + d)),
+    none => (),
+  }
+  out
+}
+
+fn row_dates(rows: List[Value]) -> List[String] =
+  list.filter_map(rows, (r) => text_of(r, "date"))
+
+effect fn check_table(t: Value, stem: String) -> List[Problem] = {
+  let at = "data/tables/" + stem + ".json"
+  var out = required_text(t, ["id", "family", "name", "board", "category", "measures_ja", "harness_ja", "metric", "unit", "source", "retrieved", "snapshot"], at)
+  let id = text_of(t, "id") ?? ""
+  if id != stem then list.push(out, problem(at, "id がファイル名と違う: " + id))
+  let category = text_of(t, "category") ?? ""
+  if not list.contains(CATEGORIES, category) then list.push(out, problem(at, "category が一覧に無い: " + category))
+  let source = text_of(t, "source") ?? ""
+  if not is_link(source) then list.push(out, problem(at, "source がURLでない"))
+  let retrieved = text_of(t, "retrieved") ?? ""
+  if not regex.is_match(DATE, retrieved) then list.push(out, problem(at, "retrieved は YYYY-MM-DD"))
+  let snapshot = text_of(t, "snapshot") ?? ""
+  if snapshot != "" and not fs.exists(snapshot) then list.push(out, problem(at, "snapshot のファイルが無い: " + snapshot))
+  match value.as_bool(or_null(value.field(t, "higher_is_better"))) {
+    ok(_) => (),
+    err(_) => list.push(out, problem(at, "higher_is_better は true/false")),
+  }
+  match strings_of(or_null(value.field(t, "fetched"))) {
+    some(urls) => {
+      if list.is_empty(urls) then list.push(out, problem(at, "fetched が空"))
+      for u in urls { if not is_link(u) then list.push(out, problem(at, "fetched にURLでないもの: " + u)) }
+    },
+    none => list.push(out, problem(at, "fetched は文字列の配列")),
+  }
+  out = out + nullable(t, "tasks", "int", at)
+  out = out + nullable(t, "tasks_note", "text", at)
+  out = out + nullable(t, "newest_row_date", "date", at)
+  out = out + nullable(t, "paper", "text", at)
+  out = out + nullable(t, "repo", "text", at)
+  out = out + nullable(t, "notes_ja", "text", at)
+  match value.as_array(or_null(value.field(t, "rows"))) {
+    ok(rows) => {
+      if list.is_empty(rows) then list.push(out, problem(at, "rows が空(取れなかった表は data/gaps へ)"))
+      var i = 0
+      for row in rows {
+        out = out + check_row(row, i, retrieved, at)
+        i = i + 1
+      }
+      // The newest date is derived, so it can only disagree by being wrong.
+      let dates = row_dates(rows)
+      let newest = list.fold(dates, "", (a, d) => if d > a then d else a)
+      let stated = text_of(t, "newest_row_date") ?? ""
+      if stated != newest then list.push(out, problem(at, "newest_row_date が行の日付の最大と違う: " + stated + " / " + newest))
+    },
+    err(_) => list.push(out, problem(at, "rows は配列")),
+  }
+  out
+}
+
+fn check_gap(g: Value, stem: String) -> List[Problem] = {
+  let at = "data/gaps/" + stem + ".json"
+  var out = required_text(g, ["id", "name", "reason_ja", "retrieved"], at)
+  if (text_of(g, "id") ?? "") != stem then list.push(out, problem(at, "id がファイル名と違う"))
+  if not regex.is_match(DATE, text_of(g, "retrieved") ?? "") then list.push(out, problem(at, "retrieved は YYYY-MM-DD"))
+  match strings_of(or_null(value.field(g, "tried"))) {
+    some(_) => (),
+    none => list.push(out, problem(at, "tried は文字列の配列")),
+  }
+  out
+}
+
+fn check_model(m: Value, i: Int) -> List[Problem] = {
+  let at = "data/models.json models[" + int.to_string(i) + "]"
+  var out = required_text(m, ["id", "name", "vendor"], at)
+  if not regex.is_match(SLUG, text_of(m, "id") ?? "") then list.push(out, problem(at, "id の形が規則に合わない"))
+  match value.as_bool(or_null(value.field(m, "open_weights"))) {
+    // Open weights is a claim about a download, so it names one.
+    ok(true) => match text_of(m, "weights_url") {
+      some(u) => if not is_link(u) then list.push(out, problem(at, "weights_url がURLでない")),
+      none => list.push(out, problem(at, "open_weights が true なら weights_url が要る")),
+    },
+    ok(false) => (),
+    err(_) => list.push(out, problem(at, "open_weights は true/false")),
+  }
+  match strings_of(or_null(value.field(m, "aliases"))) {
+    some(_) => (),
+    none => list.push(out, problem(at, "aliases は文字列の配列")),
+  }
+  out
+}
+
+fn stem_of(name: String) -> String = string.replace(name, ".json", "")
+
+effect fn json_files(dir: String) -> List[String] = {
+  let names = fs.list_dir(dir) ?? []
+  list.sort(list.filter(names, (n) => string.ends_with(n, ".json")))
+}
+
+effect fn load(path: String) -> Result[Value, String] = {
+  let raw = fs.read_text(path)!
+  json.parse(raw) |> result.map_err((e) => path + ": JSON として読めない: " + e)
+}
+
+effect fn main() -> Unit = {
+  let strict = list.contains(env.args(), "--strict")
+  var problems: List[Problem] = []
+  var tables: List[Value] = []
+  var gaps: List[Value] = []
+  var models: List[Value] = []
+  var generated = ""
+  var row_count = 0
+
+  for name in json_files("data/tables")! {
+    match load("data/tables/" + name) {
+      ok(t) => {
+        problems = problems + check_table(t, stem_of(name))
+        let r = text_of(t, "retrieved") ?? ""
+        if r > generated then { generated = r }
+        row_count = row_count + list.len(value.as_array(or_null(value.field(t, "rows"))) ?? [])
+        list.push(tables, t)
+      },
+      err(e) => list.push(problems, problem("data/tables/" + name, e)),
+    }
+  }
+  for name in json_files("data/gaps")! {
+    match load("data/gaps/" + name) {
+      ok(g) => {
+        problems = problems + check_gap(g, stem_of(name))
+        list.push(gaps, g)
+      },
+      err(e) => list.push(problems, problem("data/gaps/" + name, e)),
+    }
+  }
+
+  var known: List[String] = []
+  if fs.exists("data/models.json") then {
+    match load("data/models.json") {
+      ok(doc) => {
+        var i = 0
+        for m in value.as_array(or_null(value.field(doc, "models"))) ?? [] {
+          problems = problems + check_model(m, i)
+          let id = text_of(m, "id") ?? ""
+          if list.contains(known, id) then list.push(problems, problem("data/models.json", "id が重複: " + id))
+          list.push(known, id)
+          list.push(models, m)
+          i = i + 1
+        }
+      },
+      err(e) => list.push(problems, problem("data/models.json", e)),
+    }
+  }
+
+  // A row naming a model the registry does not know still reaches its own
+  // table; it just cannot join the matrix. Under --strict that is a problem.
+  var unknown: List[String] = []
+  for t in tables {
+    for row in value.as_array(or_null(value.field(t, "rows"))) ?? [] {
+      for id in strings_of(or_null(value.field(row, "model_ids"))) ?? [] {
+        if not list.contains(known, id) and not list.contains(unknown, id) then list.push(unknown, id)
+      }
+    }
+  }
+  if strict then {
+    for id in unknown { list.push(problems, problem("data/models.json", "表が使うモデルIDが登録されていない: " + id)) }
+  }
+
+  for p in problems { eprintln(p.at + ": " + p.what) }
+  println(int.to_string(list.len(tables)) + " 表 / " + int.to_string(row_count) + " 行 / 取れなかった表 " + int.to_string(list.len(gaps)) + " / モデル " + int.to_string(list.len(models)) + " / 未登録のモデルID " + int.to_string(list.len(unknown)))
+  if not list.is_empty(problems) then {
+    eprintln(int.to_string(list.len(problems)) + " 件の問題。docs/data.json は書かない")
+    process.exit(1)
+  }
+
+  let bundle: List[(String, Value)] = [
+    ("generated", value.str(generated)),
+    ("tables", value.array(tables)),
+    ("gaps", value.array(gaps)),
+    ("models", value.array(models)),
+  ]
+  fs.write("docs/data.json", json.stringify(value.object(bundle)))!
+  println("docs/data.json を書いた")
+}

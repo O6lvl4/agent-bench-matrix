@@ -1,0 +1,2685 @@
+{
+  "id": "aider-polyglot",
+  "family": "aider",
+  "name": "Aider Polyglot",
+  "board": "aider.chat",
+  "category": "coding",
+  "measures_ja": "C++・Go・Java・JavaScript・Python・Rust の難しい Exercism 課題を、aider 経由でファイルを編集して解けるか。",
+  "tasks": 225,
+  "tasks_note": "リーダーボードのページに「225 challenging Exercism coding exercises」とある。一部の行は test_cases が 225 未満。",
+  "metric": "Percent correct (pass_rate_2)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "すべて aider(固定の足場)で、モデルと編集形式だけを変えて走らせる。結果はコミュニティや作者が YAML への PR で提出する。",
+  "source": "https://aider.chat/docs/leaderboards/",
+  "fetched": [
+    "https://raw.githubusercontent.com/Aider-AI/aider/main/aider/website/_data/polyglot_leaderboard.yml",
+    "https://aider.chat/docs/leaderboards/"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2025-10-03",
+  "snapshot": "sources/aider-polyglot/polyglot_leaderboard.yml",
+  "paper": null,
+  "repo": "https://github.com/Aider-AI/polyglot-benchmark",
+  "notes_ja": "2 回目の試行(テスト失敗を見せて直させた後)の正解率が score。データの最終更新は 2025-10 で、以後は更新が止まっている。費用 0 の行はボードでも空欄なので cost_usd を入れていない。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "gpt-5 (high)",
+      "agent": "aider",
+      "model_raw": [
+        "gpt-5 (high)"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": "reasoning_effort=high; edit_format=diff; command=aider --model openai/gpt-5",
+      "score": 88,
+      "score_extra": {
+        "pass_rate_1": 52,
+        "pass_rate_2": 88,
+        "pass_num_1": 117,
+        "pass_num_2": 198,
+        "percent_cases_well_formed": 91.6,
+        "error_outputs": 23,
+        "num_malformed_responses": 22,
+        "num_with_malformed_responses": 19,
+        "user_asks": 96,
+        "lazy_comments": 3,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 3,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 194,
+        "prompt_tokens": 2675561,
+        "completion_tokens": 2623429,
+        "cost_usd": 29.0829
+      },
+      "date": "2025-08-23",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "gpt-5 (medium)",
+      "agent": "aider",
+      "model_raw": [
+        "gpt-5 (medium)"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": "reasoning_effort=medium; edit_format=diff; command=aider --model openai/gpt-5",
+      "score": 86.7,
+      "score_extra": {
+        "pass_rate_1": 49.8,
+        "pass_rate_2": 86.7,
+        "pass_num_1": 112,
+        "pass_num_2": 195,
+        "percent_cases_well_formed": 88.4,
+        "error_outputs": 40,
+        "num_malformed_responses": 40,
+        "num_with_malformed_responses": 26,
+        "user_asks": 102,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 0,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 118.7,
+        "prompt_tokens": 2827261,
+        "completion_tokens": 1468799,
+        "cost_usd": 17.693
+      },
+      "date": "2025-08-25",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "o3-pro (high)",
+      "agent": "aider",
+      "model_raw": [
+        "o3-pro (high)"
+      ],
+      "model_ids": [
+        "o3-pro"
+      ],
+      "model_config": "reasoning_effort=high; edit_format=diff; command=aider --model o3-pro",
+      "score": 84.9,
+      "score_extra": {
+        "pass_rate_1": 43.6,
+        "pass_rate_2": 84.9,
+        "pass_num_1": 98,
+        "pass_num_2": 191,
+        "percent_cases_well_formed": 97.8,
+        "error_outputs": 20,
+        "num_malformed_responses": 8,
+        "num_with_malformed_responses": 5,
+        "user_asks": 100,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 1,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 449,
+        "prompt_tokens": 2372636,
+        "completion_tokens": 1235902,
+        "cost_usd": 146.3249
+      },
+      "date": "2025-06-28",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "gemini-2.5-pro-preview-06-05 (32k think)",
+      "agent": "aider",
+      "model_raw": [
+        "gemini-2.5-pro-preview-06-05 (32k think)"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": "preview-06-05; thinking_tokens=32k; edit_format=diff-fenced; command=aider --model gemini/gemini-2.5-pro-preview-06-05 --thinking-tokens 32k",
+      "score": 83.1,
+      "score_extra": {
+        "pass_rate_1": 46.2,
+        "pass_rate_2": 83.1,
+        "pass_num_1": 104,
+        "pass_num_2": 187,
+        "percent_cases_well_formed": 99.6,
+        "error_outputs": 1,
+        "num_malformed_responses": 1,
+        "num_with_malformed_responses": 1,
+        "user_asks": 112,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 0,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 200.3,
+        "prompt_tokens": 2719961,
+        "completion_tokens": 4648227,
+        "thinking_tokens": 32768,
+        "cost_usd": 49.8822
+      },
+      "date": "2025-06-06",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "o3 (high)",
+      "agent": "aider",
+      "model_raw": [
+        "o3 (high)"
+      ],
+      "model_ids": [
+        "o3"
+      ],
+      "model_config": "reasoning_effort=high; edit_format=diff; command=aider --model o3 --reasoning-effort high",
+      "score": 81.3,
+      "score_extra": {
+        "pass_rate_1": 40,
+        "pass_rate_2": 81.3,
+        "pass_num_1": 90,
+        "pass_num_2": 183,
+        "percent_cases_well_formed": 94.7,
+        "error_outputs": 25,
+        "num_malformed_responses": 23,
+        "num_with_malformed_responses": 12,
+        "user_asks": 116,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 1,
+        "test_timeouts": 2,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 197.3,
+        "prompt_tokens": 3148932,
+        "completion_tokens": 2047615,
+        "cost_usd": 21.2259
+      },
+      "date": "2025-06-25",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "gpt-5 (low)",
+      "agent": "aider",
+      "model_raw": [
+        "gpt-5 (low)"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": "reasoning_effort=low; edit_format=diff; command=aider --model openai/gpt-5",
+      "score": 81.3,
+      "score_extra": {
+        "pass_rate_1": 43.1,
+        "pass_rate_2": 81.3,
+        "pass_num_1": 97,
+        "pass_num_2": 183,
+        "percent_cases_well_formed": 86.7,
+        "error_outputs": 46,
+        "num_malformed_responses": 46,
+        "num_with_malformed_responses": 30,
+        "user_asks": 113,
+        "lazy_comments": 1,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 1,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 62.4,
+        "prompt_tokens": 2534059,
+        "completion_tokens": 779568,
+        "cost_usd": 10.3713
+      },
+      "date": "2025-08-25",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 7,
+      "system": "grok-4 (high)",
+      "agent": "aider",
+      "model_raw": [
+        "grok-4 (high)"
+      ],
+      "model_ids": [
+        "grok-4"
+      ],
+      "model_config": "reasoning_effort=high; edit_format=diff; command=aider --model openrouter/x-ai/grok-4",
+      "score": 79.6,
+      "score_extra": {
+        "pass_rate_1": 40.9,
+        "pass_rate_2": 79.6,
+        "pass_num_1": 92,
+        "pass_num_2": 179,
+        "percent_cases_well_formed": 97.3,
+        "error_outputs": 11,
+        "num_malformed_responses": 8,
+        "num_with_malformed_responses": 6,
+        "user_asks": 133,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 0,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 403.2,
+        "prompt_tokens": 2815347,
+        "completion_tokens": 3411480,
+        "cost_usd": 59.6182
+      },
+      "date": "2025-07-11",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 8,
+      "system": "gemini-2.5-pro-preview-06-05 (default think)",
+      "agent": "aider",
+      "model_raw": [
+        "gemini-2.5-pro-preview-06-05 (default think)"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": "preview-06-05; default thinking; edit_format=diff-fenced; command=aider --model gemini/gemini-2.5-pro-preview-06-05",
+      "score": 79.1,
+      "score_extra": {
+        "pass_rate_1": 44.9,
+        "pass_rate_2": 79.1,
+        "pass_num_1": 101,
+        "pass_num_2": 178,
+        "percent_cases_well_formed": 100,
+        "error_outputs": 4,
+        "num_malformed_responses": 0,
+        "num_with_malformed_responses": 0,
+        "user_asks": 105,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 4,
+        "test_timeouts": 1,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 175.2,
+        "prompt_tokens": 2751296,
+        "completion_tokens": 4142197,
+        "cost_usd": 45.5961
+      },
+      "date": "2025-06-06",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 9,
+      "system": "o3 (high) + gpt-4.1",
+      "agent": "aider",
+      "model_raw": [
+        "o3 (high) + gpt-4.1"
+      ],
+      "model_ids": [
+        "o3",
+        "gpt-4.1"
+      ],
+      "model_config": "architect: o3 (reasoning_effort=high) + editor gpt-4.1; edit_format=architect; editor_edit_format=editor-diff; command=aider --model o3",
+      "score": 78.2,
+      "score_extra": {
+        "pass_rate_1": 34.8,
+        "pass_rate_2": 78.2,
+        "pass_num_1": 78,
+        "pass_num_2": 176,
+        "percent_cases_well_formed": 100,
+        "error_outputs": 18,
+        "num_malformed_responses": 0,
+        "num_with_malformed_responses": 0,
+        "user_asks": 172,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 1,
+        "test_timeouts": 1,
+        "test_cases": 224,
+        "total_tests": 225,
+        "seconds_per_case": 121.8,
+        "prompt_tokens": 1306877,
+        "completion_tokens": 1327154,
+        "cost_usd": 17.5518
+      },
+      "date": "2025-06-27",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 10,
+      "system": "Gemini 2.5 Pro Preview 05-06",
+      "agent": "aider",
+      "model_raw": [
+        "Gemini 2.5 Pro Preview 05-06"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": "preview-05-06; edit_format=diff-fenced; command=aider --model gemini/gemini-2.5-pro-preview-05-06",
+      "score": 76.9,
+      "score_extra": {
+        "pass_rate_1": 36.4,
+        "pass_rate_2": 76.9,
+        "pass_num_1": 82,
+        "pass_num_2": 173,
+        "percent_cases_well_formed": 97.3,
+        "error_outputs": 15,
+        "num_malformed_responses": 7,
+        "num_with_malformed_responses": 6,
+        "user_asks": 105,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 2,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 165.3,
+        "cost_usd": 37.4104
+      },
+      "date": "2025-05-07",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 10,
+      "system": "o3",
+      "agent": "aider",
+      "model_raw": [
+        "o3"
+      ],
+      "model_ids": [
+        "o3"
+      ],
+      "model_config": "edit_format=diff; command=aider --model o3",
+      "score": 76.9,
+      "score_extra": {
+        "pass_rate_1": 40.9,
+        "pass_rate_2": 76.9,
+        "pass_num_1": 92,
+        "pass_num_2": 173,
+        "percent_cases_well_formed": 93.8,
+        "error_outputs": 22,
+        "num_malformed_responses": 22,
+        "num_with_malformed_responses": 14,
+        "user_asks": 108,
+        "lazy_comments": 2,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 1,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 101.7,
+        "prompt_tokens": 2893189,
+        "completion_tokens": 1154767,
+        "cost_usd": 13.7517
+      },
+      "date": "2025-06-25",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 12,
+      "system": "DeepSeek-V3.2-Exp (Reasoner)",
+      "agent": "aider",
+      "model_raw": [
+        "DeepSeek-V3.2-Exp (Reasoner)"
+      ],
+      "model_ids": [
+        "deepseek-v3.2-exp"
+      ],
+      "model_config": "reasoner; edit_format=diff; command=aider --model deepseek/deepseek-reasoner",
+      "score": 74.2,
+      "score_extra": {
+        "pass_rate_1": 39.6,
+        "pass_rate_2": 74.2,
+        "pass_num_1": 89,
+        "pass_num_2": 167,
+        "percent_cases_well_formed": 97.3,
+        "error_outputs": 8,
+        "num_malformed_responses": 6,
+        "num_with_malformed_responses": 6,
+        "user_asks": 67,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 1,
+        "test_timeouts": 1,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 291.2,
+        "prompt_tokens": 2191446,
+        "completion_tokens": 1645129,
+        "cost_usd": 1.3045
+      },
+      "date": "2025-10-03",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 13,
+      "system": "Gemini 2.5 Pro Preview 03-25",
+      "agent": "aider",
+      "model_raw": [
+        "Gemini 2.5 Pro Preview 03-25"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": "preview-03-25; edit_format=diff-fenced; command=aider --model gemini/gemini-2.5-pro-preview-03-25",
+      "score": 72.9,
+      "score_extra": {
+        "pass_rate_1": 40.9,
+        "pass_rate_2": 72.9,
+        "pass_num_1": 92,
+        "pass_num_2": 164,
+        "percent_cases_well_formed": 92.4,
+        "error_outputs": 21,
+        "num_malformed_responses": 21,
+        "num_with_malformed_responses": 17,
+        "user_asks": 69,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 2,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 45.3
+      },
+      "date": "2025-04-12",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 14,
+      "system": "o4-mini (high)",
+      "agent": "aider",
+      "model_raw": [
+        "o4-mini (high)"
+      ],
+      "model_ids": [
+        "o4-mini"
+      ],
+      "model_config": "reasoning_effort=high; edit_format=diff; command=aider --model o4-mini",
+      "score": 72,
+      "score_extra": {
+        "pass_rate_1": 19.6,
+        "pass_rate_2": 72,
+        "pass_num_1": 44,
+        "pass_num_2": 162,
+        "percent_cases_well_formed": 90.7,
+        "error_outputs": 26,
+        "num_malformed_responses": 24,
+        "num_with_malformed_responses": 21,
+        "user_asks": 66,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 1,
+        "test_timeouts": 2,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 176.5,
+        "cost_usd": 19.6399
+      },
+      "date": "2025-04-16",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 14,
+      "system": "claude-opus-4-20250514 (32k thinking)",
+      "agent": "aider",
+      "model_raw": [
+        "claude-opus-4-20250514 (32k thinking)"
+      ],
+      "model_ids": [
+        "claude-opus-4"
+      ],
+      "model_config": "thinking_tokens=32k; edit_format=diff; command=aider --model claude-opus-4-20250514",
+      "score": 72,
+      "score_extra": {
+        "pass_rate_1": 37.3,
+        "pass_rate_2": 72,
+        "pass_num_1": 84,
+        "pass_num_2": 162,
+        "percent_cases_well_formed": 97.3,
+        "error_outputs": 10,
+        "num_malformed_responses": 6,
+        "num_with_malformed_responses": 6,
+        "user_asks": 97,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 4,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 44.1,
+        "prompt_tokens": 2567514,
+        "completion_tokens": 363142,
+        "thinking_tokens": 32000,
+        "cost_usd": 65.7484
+      },
+      "date": "2025-05-25",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 16,
+      "system": "DeepSeek R1 (0528)",
+      "agent": "aider",
+      "model_raw": [
+        "DeepSeek R1 (0528)"
+      ],
+      "model_ids": [
+        "deepseek-r1-0528"
+      ],
+      "model_config": "edit_format=diff; command=aider --model deepseek/deepseek-reasoner",
+      "score": 71.4,
+      "score_extra": {
+        "pass_rate_1": 34.4,
+        "pass_rate_2": 71.4,
+        "pass_num_1": 77,
+        "pass_num_2": 160,
+        "percent_cases_well_formed": 94.6,
+        "error_outputs": 28,
+        "num_malformed_responses": 15,
+        "num_with_malformed_responses": 12,
+        "user_asks": 105,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 2,
+        "test_cases": 224,
+        "total_tests": 225,
+        "seconds_per_case": 716.6,
+        "prompt_tokens": 2644169,
+        "completion_tokens": 1842168,
+        "cost_usd": 4.8016
+      },
+      "date": "2025-06-06",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 17,
+      "system": "claude-opus-4-20250514 (no think)",
+      "agent": "aider",
+      "model_raw": [
+        "claude-opus-4-20250514 (no think)"
+      ],
+      "model_ids": [
+        "claude-opus-4"
+      ],
+      "model_config": "no thinking; edit_format=diff; command=aider --model claude-opus-4-20250514",
+      "score": 70.7,
+      "score_extra": {
+        "pass_rate_1": 32.9,
+        "pass_rate_2": 70.7,
+        "pass_num_1": 74,
+        "pass_num_2": 159,
+        "percent_cases_well_formed": 98.7,
+        "error_outputs": 3,
+        "num_malformed_responses": 3,
+        "num_with_malformed_responses": 3,
+        "user_asks": 105,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 3,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 42.5,
+        "prompt_tokens": 2671437,
+        "completion_tokens": 380717,
+        "cost_usd": 68.6253
+      },
+      "date": "2025-05-25",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 18,
+      "system": "DeepSeek-V3.2-Exp (Chat)",
+      "agent": "aider",
+      "model_raw": [
+        "DeepSeek-V3.2-Exp (Chat)"
+      ],
+      "model_ids": [
+        "deepseek-v3.2-exp"
+      ],
+      "model_config": "chat (non-thinking); edit_format=diff; command=aider --model deepseek/deepseek-chat",
+      "score": 70.2,
+      "score_extra": {
+        "pass_rate_1": 38.7,
+        "pass_rate_2": 70.2,
+        "pass_num_1": 87,
+        "pass_num_2": 158,
+        "percent_cases_well_formed": 98.2,
+        "error_outputs": 6,
+        "num_malformed_responses": 4,
+        "num_with_malformed_responses": 4,
+        "user_asks": 60,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 1,
+        "test_timeouts": 4,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 104,
+        "prompt_tokens": 2266868,
+        "completion_tokens": 573477,
+        "cost_usd": 0.8756
+      },
+      "date": "2025-10-03",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 19,
+      "system": "claude-3-7-sonnet-20250219 (32k thinking tokens)",
+      "agent": "aider",
+      "model_raw": [
+        "claude-3-7-sonnet-20250219 (32k thinking tokens)"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": "thinking_tokens=32k; edit_format=diff; command=aider --model anthropic/claude-3-7-sonnet-20250219 --thinking-tokens 32k",
+      "score": 64.9,
+      "score_extra": {
+        "pass_rate_1": 29.3,
+        "pass_rate_2": 64.9,
+        "pass_num_1": 66,
+        "pass_num_2": 146,
+        "percent_cases_well_formed": 97.8,
+        "error_outputs": 66,
+        "num_malformed_responses": 5,
+        "num_with_malformed_responses": 5,
+        "user_asks": 5,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 1,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 105.2,
+        "cost_usd": 36.8343
+      },
+      "date": "2025-02-24",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 20,
+      "system": "DeepSeek R1 + claude-3-5-sonnet-20241022",
+      "agent": "aider",
+      "model_raw": [
+        "DeepSeek R1 + claude-3-5-sonnet-20241022"
+      ],
+      "model_ids": [
+        "deepseek-r1",
+        "claude-3.5-sonnet"
+      ],
+      "model_config": "architect: DeepSeek R1 + editor claude-3-5-sonnet-20241022; edit_format=architect; editor_edit_format=editor-diff; command=aider --architect --model r1 --editor-model sonnet",
+      "score": 64,
+      "score_extra": {
+        "pass_rate_1": 27.1,
+        "pass_rate_2": 64,
+        "pass_num_1": 61,
+        "pass_num_2": 144,
+        "percent_cases_well_formed": 100,
+        "error_outputs": 2,
+        "num_malformed_responses": 0,
+        "num_with_malformed_responses": 0,
+        "user_asks": 392,
+        "lazy_comments": 6,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 5,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 251.6,
+        "cost_usd": 13.2933
+      },
+      "date": "2025-01-23",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 21,
+      "system": "o1-2024-12-17 (high)",
+      "agent": "aider",
+      "model_raw": [
+        "o1-2024-12-17 (high)"
+      ],
+      "model_ids": [
+        "o1"
+      ],
+      "model_config": "reasoning_effort=high; edit_format=diff; command=aider --model openrouter/openai/o1",
+      "score": 61.7,
+      "score_extra": {
+        "pass_rate_1": 23.7,
+        "pass_rate_2": 61.7,
+        "pass_num_1": 53,
+        "pass_num_2": 139,
+        "percent_cases_well_formed": 91.5,
+        "error_outputs": 25,
+        "num_malformed_responses": 24,
+        "num_with_malformed_responses": 19,
+        "user_asks": 16,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 2,
+        "test_cases": 224,
+        "total_tests": 225,
+        "seconds_per_case": 133.2,
+        "cost_usd": 186.4958
+      },
+      "date": "2024-12-21",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 22,
+      "system": "claude-sonnet-4-20250514 (32k thinking)",
+      "agent": "aider",
+      "model_raw": [
+        "claude-sonnet-4-20250514 (32k thinking)"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": "thinking_tokens=32k; edit_format=diff; command=aider --model claude-sonnet-4-20250514",
+      "score": 61.3,
+      "score_extra": {
+        "pass_rate_1": 25.8,
+        "pass_rate_2": 61.3,
+        "pass_num_1": 58,
+        "pass_num_2": 138,
+        "percent_cases_well_formed": 97.3,
+        "error_outputs": 10,
+        "num_malformed_responses": 10,
+        "num_with_malformed_responses": 6,
+        "user_asks": 111,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 6,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 79.9,
+        "prompt_tokens": 2863068,
+        "completion_tokens": 1271074,
+        "thinking_tokens": 32000,
+        "cost_usd": 26.5755
+      },
+      "date": "2025-05-24",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 23,
+      "system": "o3-mini (high)",
+      "agent": "aider",
+      "model_raw": [
+        "o3-mini (high)"
+      ],
+      "model_ids": [
+        "o3-mini"
+      ],
+      "model_config": "reasoning_effort=high; edit_format=diff; command=aider --model o3-mini --reasoning-effort high",
+      "score": 60.4,
+      "score_extra": {
+        "pass_rate_1": 21,
+        "pass_rate_2": 60.4,
+        "pass_num_1": 47,
+        "pass_num_2": 136,
+        "percent_cases_well_formed": 93.3,
+        "error_outputs": 26,
+        "num_malformed_responses": 24,
+        "num_with_malformed_responses": 15,
+        "user_asks": 19,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 1,
+        "test_timeouts": 7,
+        "test_cases": 224,
+        "total_tests": 225,
+        "seconds_per_case": 124.6,
+        "cost_usd": 18.1584
+      },
+      "date": "2025-01-31",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 23,
+      "system": "claude-3-7-sonnet-20250219 (no thinking)",
+      "agent": "aider",
+      "model_raw": [
+        "claude-3-7-sonnet-20250219 (no thinking)"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": "no thinking; edit_format=diff; command=aider --model sonnet",
+      "score": 60.4,
+      "score_extra": {
+        "pass_rate_1": 24.4,
+        "pass_rate_2": 60.4,
+        "pass_num_1": 55,
+        "pass_num_2": 136,
+        "percent_cases_well_formed": 93.3,
+        "error_outputs": 16,
+        "num_malformed_responses": 16,
+        "num_with_malformed_responses": 15,
+        "user_asks": 12,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 0,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 28.3,
+        "cost_usd": 17.7191
+      },
+      "date": "2025-02-24",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 25,
+      "system": "Qwen3 235B A22B diff, no think, Alibaba API",
+      "agent": "aider",
+      "model_raw": [
+        "Qwen3 235B A22B diff, no think, Alibaba API"
+      ],
+      "model_ids": [
+        "qwen3-235b-a22b"
+      ],
+      "model_config": "no thinking; Alibaba API; edit_format=diff; command=aider --model openai/qwen3-235b-a22b",
+      "score": 59.6,
+      "score_extra": {
+        "pass_rate_1": 28.9,
+        "pass_rate_2": 59.6,
+        "pass_num_1": 65,
+        "pass_num_2": 134,
+        "percent_cases_well_formed": 92.9,
+        "error_outputs": 22,
+        "num_malformed_responses": 22,
+        "num_with_malformed_responses": 16,
+        "user_asks": 111,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 1,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 45.4,
+        "prompt_tokens": 2816192,
+        "completion_tokens": 342062
+      },
+      "date": "2025-05-09",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 26,
+      "system": "Kimi K2",
+      "agent": "aider",
+      "model_raw": [
+        "Kimi K2"
+      ],
+      "model_ids": [
+        "kimi-k2"
+      ],
+      "model_config": "edit_format=diff; command=aider --model openrouter/moonshotai/kimi-k2",
+      "score": 59.1,
+      "score_extra": {
+        "pass_rate_1": 20.4,
+        "pass_rate_2": 59.1,
+        "pass_num_1": 46,
+        "pass_num_2": 133,
+        "percent_cases_well_formed": 92.9,
+        "error_outputs": 19,
+        "num_malformed_responses": 19,
+        "num_with_malformed_responses": 16,
+        "user_asks": 61,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 4,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 67.6,
+        "prompt_tokens": 2355141,
+        "completion_tokens": 363846,
+        "cost_usd": 1.2357
+      },
+      "date": "2025-07-17",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 27,
+      "system": "DeepSeek R1",
+      "agent": "aider",
+      "model_raw": [
+        "DeepSeek R1"
+      ],
+      "model_ids": [
+        "deepseek-r1"
+      ],
+      "model_config": "edit_format=diff; command=aider --model deepseek/deepseek-reasoner",
+      "score": 56.9,
+      "score_extra": {
+        "pass_rate_1": 26.7,
+        "pass_rate_2": 56.9,
+        "pass_num_1": 60,
+        "pass_num_2": 128,
+        "percent_cases_well_formed": 96.9,
+        "error_outputs": 8,
+        "num_malformed_responses": 7,
+        "num_with_malformed_responses": 7,
+        "user_asks": 15,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 1,
+        "test_timeouts": 5,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 113.7,
+        "cost_usd": 5.4193
+      },
+      "date": "2025-01-20",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 28,
+      "system": "claude-sonnet-4-20250514 (no thinking)",
+      "agent": "aider",
+      "model_raw": [
+        "claude-sonnet-4-20250514 (no thinking)"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": "no thinking; edit_format=diff; command=aider --model claude-sonnet-4-20250514",
+      "score": 56.4,
+      "score_extra": {
+        "pass_rate_1": 20.4,
+        "pass_rate_2": 56.4,
+        "pass_num_1": 46,
+        "pass_num_2": 127,
+        "percent_cases_well_formed": 98.2,
+        "error_outputs": 6,
+        "num_malformed_responses": 4,
+        "num_with_malformed_responses": 4,
+        "user_asks": 129,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 1,
+        "test_timeouts": 7,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 29.8,
+        "prompt_tokens": 3460663,
+        "completion_tokens": 433373,
+        "cost_usd": 15.8155
+      },
+      "date": "2025-05-24",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 29,
+      "system": "DeepSeek V3 (0324)",
+      "agent": "aider",
+      "model_raw": [
+        "DeepSeek V3 (0324)"
+      ],
+      "model_ids": [
+        "deepseek-v3-0324"
+      ],
+      "model_config": "edit_format=diff; command=aider --model deepseek/deepseek-chat",
+      "score": 55.1,
+      "score_extra": {
+        "pass_rate_1": 28,
+        "pass_rate_2": 55.1,
+        "pass_num_1": 63,
+        "pass_num_2": 124,
+        "percent_cases_well_formed": 99.6,
+        "error_outputs": 32,
+        "num_malformed_responses": 1,
+        "num_with_malformed_responses": 1,
+        "user_asks": 96,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 2,
+        "test_timeouts": 4,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 290,
+        "cost_usd": 1.1164
+      },
+      "date": "2025-03-24",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 29,
+      "system": "gemini-2.5-flash-preview-05-20 (24k think)",
+      "agent": "aider",
+      "model_raw": [
+        "gemini-2.5-flash-preview-05-20 (24k think)"
+      ],
+      "model_ids": [
+        "gemini-2.5-flash"
+      ],
+      "model_config": "preview-05-20; thinking_tokens=24k; edit_format=diff; command=aider --model gemini/gemini-2.5-flash-preview-05-20",
+      "score": 55.1,
+      "score_extra": {
+        "pass_rate_1": 26.2,
+        "pass_rate_2": 55.1,
+        "pass_num_1": 59,
+        "pass_num_2": 124,
+        "percent_cases_well_formed": 95.6,
+        "error_outputs": 15,
+        "num_malformed_responses": 15,
+        "num_with_malformed_responses": 10,
+        "user_asks": 101,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 4,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 53.9,
+        "prompt_tokens": 3666792,
+        "completion_tokens": 2703162,
+        "thinking_tokens": 24576,
+        "cost_usd": 8.5625
+      },
+      "date": "2025-05-25",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 31,
+      "system": "Quasar Alpha",
+      "agent": "aider",
+      "model_raw": [
+        "Quasar Alpha"
+      ],
+      "model_ids": [
+        "quasar-alpha"
+      ],
+      "model_config": "edit_format=diff; command=aider --model openrouter/openrouter/quasar-alpha",
+      "score": 54.7,
+      "score_extra": {
+        "pass_rate_1": 21.8,
+        "pass_rate_2": 54.7,
+        "pass_num_1": 49,
+        "pass_num_2": 123,
+        "percent_cases_well_formed": 98.2,
+        "error_outputs": 4,
+        "num_malformed_responses": 4,
+        "num_with_malformed_responses": 4,
+        "user_asks": 187,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 4,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 14.8
+      },
+      "date": "2025-04-04",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 32,
+      "system": "o3-mini (medium)",
+      "agent": "aider",
+      "model_raw": [
+        "o3-mini (medium)"
+      ],
+      "model_ids": [
+        "o3-mini"
+      ],
+      "model_config": "reasoning_effort=medium; edit_format=diff; command=aider --model o3-mini",
+      "score": 53.8,
+      "score_extra": {
+        "pass_rate_1": 19.1,
+        "pass_rate_2": 53.8,
+        "pass_num_1": 43,
+        "pass_num_2": 121,
+        "percent_cases_well_formed": 95.1,
+        "error_outputs": 28,
+        "num_malformed_responses": 28,
+        "num_with_malformed_responses": 11,
+        "user_asks": 17,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 2,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 47.2,
+        "cost_usd": 8.8599
+      },
+      "date": "2025-01-31",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 33,
+      "system": "Grok 3 Beta",
+      "agent": "aider",
+      "model_raw": [
+        "Grok 3 Beta"
+      ],
+      "model_ids": [
+        "grok-3"
+      ],
+      "model_config": "beta; edit_format=diff; command=aider --model openrouter/x-ai/grok-3-beta",
+      "score": 53.3,
+      "score_extra": {
+        "pass_rate_1": 22.2,
+        "pass_rate_2": 53.3,
+        "pass_num_1": 50,
+        "pass_num_2": 120,
+        "percent_cases_well_formed": 99.6,
+        "error_outputs": 1,
+        "num_malformed_responses": 1,
+        "num_with_malformed_responses": 1,
+        "user_asks": 68,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 2,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 15.3,
+        "cost_usd": 11.0338
+      },
+      "date": "2025-04-10",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 34,
+      "system": "Optimus Alpha",
+      "agent": "aider",
+      "model_raw": [
+        "Optimus Alpha"
+      ],
+      "model_ids": [
+        "optimus-alpha"
+      ],
+      "model_config": "edit_format=diff; command=aider --model openrouter/openrouter/optimus-alpha",
+      "score": 52.9,
+      "score_extra": {
+        "pass_rate_1": 21.3,
+        "pass_rate_2": 52.9,
+        "pass_num_1": 48,
+        "pass_num_2": 119,
+        "percent_cases_well_formed": 97.3,
+        "error_outputs": 7,
+        "num_malformed_responses": 6,
+        "num_with_malformed_responses": 6,
+        "user_asks": 182,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 3,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 18.4
+      },
+      "date": "2025-04-10",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 35,
+      "system": "gpt-4.1",
+      "agent": "aider",
+      "model_raw": [
+        "gpt-4.1"
+      ],
+      "model_ids": [
+        "gpt-4.1"
+      ],
+      "model_config": "edit_format=diff; command=aider --model gpt-4.1",
+      "score": 52.4,
+      "score_extra": {
+        "pass_rate_1": 20,
+        "pass_rate_2": 52.4,
+        "pass_num_1": 45,
+        "pass_num_2": 118,
+        "percent_cases_well_formed": 98.2,
+        "error_outputs": 6,
+        "num_malformed_responses": 5,
+        "num_with_malformed_responses": 4,
+        "user_asks": 171,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 1,
+        "test_timeouts": 5,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 20.5,
+        "cost_usd": 9.8556
+      },
+      "date": "2025-04-14",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 36,
+      "system": "claude-3-5-sonnet-20241022",
+      "agent": "aider",
+      "model_raw": [
+        "claude-3-5-sonnet-20241022"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": "20241022; edit_format=diff; command=aider --model claude-3-5-sonnet-20241022",
+      "score": 51.6,
+      "score_extra": {
+        "pass_rate_1": 22.2,
+        "pass_rate_2": 51.6,
+        "pass_num_1": 50,
+        "pass_num_2": 116,
+        "percent_cases_well_formed": 99.6,
+        "error_outputs": 2,
+        "num_malformed_responses": 1,
+        "num_with_malformed_responses": 1,
+        "user_asks": 11,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 1,
+        "test_timeouts": 8,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 21.4,
+        "cost_usd": 14.4063
+      },
+      "date": "2025-01-17",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 37,
+      "system": "Grok 3 Mini Beta (high)",
+      "agent": "aider",
+      "model_raw": [
+        "Grok 3 Mini Beta (high)"
+      ],
+      "model_ids": [
+        "grok-3-mini"
+      ],
+      "model_config": "beta; reasoning_effort=high; edit_format=whole; command=aider --model xai/grok-3-mini-beta --reasoning-effort high",
+      "score": 49.3,
+      "score_extra": {
+        "pass_rate_1": 17.3,
+        "pass_rate_2": 49.3,
+        "pass_num_1": 39,
+        "pass_num_2": 111,
+        "percent_cases_well_formed": 99.6,
+        "error_outputs": 1,
+        "num_malformed_responses": 1,
+        "num_with_malformed_responses": 1,
+        "user_asks": 64,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 0,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 79.1,
+        "cost_usd": 0.7346
+      },
+      "date": "2025-04-10",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 38,
+      "system": "DeepSeek Chat V3 (prev)",
+      "agent": "aider",
+      "model_raw": [
+        "DeepSeek Chat V3 (prev)"
+      ],
+      "model_ids": [
+        "deepseek-v3"
+      ],
+      "model_config": "edit_format=diff; command=aider --model deepseek/deepseek-chat",
+      "score": 48.4,
+      "score_extra": {
+        "pass_rate_1": 22.7,
+        "pass_rate_2": 48.4,
+        "pass_num_1": 51,
+        "pass_num_2": 109,
+        "percent_cases_well_formed": 98.7,
+        "error_outputs": 7,
+        "num_malformed_responses": 7,
+        "num_with_malformed_responses": 3,
+        "user_asks": 19,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 8,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 34.8,
+        "cost_usd": 0.3369
+      },
+      "date": "2024-12-25",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 39,
+      "system": "gemini-2.5-flash-preview-04-17 (default)",
+      "agent": "aider",
+      "model_raw": [
+        "gemini-2.5-flash-preview-04-17 (default)"
+      ],
+      "model_ids": [
+        "gemini-2.5-flash"
+      ],
+      "model_config": "preview-04-17; default thinking; edit_format=diff; command=aider --model gemini/gemini-2.5-flash-preview-04-17",
+      "score": 47.1,
+      "score_extra": {
+        "pass_rate_1": 21.8,
+        "pass_rate_2": 47.1,
+        "pass_num_1": 49,
+        "pass_num_2": 106,
+        "percent_cases_well_formed": 85.3,
+        "error_outputs": 60,
+        "num_malformed_responses": 55,
+        "num_with_malformed_responses": 33,
+        "user_asks": 82,
+        "lazy_comments": 1,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 5,
+        "test_timeouts": 4,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 50.1,
+        "cost_usd": 1.8451
+      },
+      "date": "2025-04-20",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 40,
+      "system": "chatgpt-4o-latest (2025-03-29)",
+      "agent": "aider",
+      "model_raw": [
+        "chatgpt-4o-latest (2025-03-29)"
+      ],
+      "model_ids": [
+        "chatgpt-4o-latest"
+      ],
+      "model_config": "2025-03-29; edit_format=diff; command=aider --model chatgpt-4o-latest",
+      "score": 45.3,
+      "score_extra": {
+        "pass_rate_1": 16.4,
+        "pass_rate_2": 45.3,
+        "pass_num_1": 37,
+        "pass_num_2": 102,
+        "percent_cases_well_formed": 64.4,
+        "error_outputs": 85,
+        "num_malformed_responses": 85,
+        "num_with_malformed_responses": 80,
+        "user_asks": 174,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 4,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 10.3,
+        "cost_usd": 19.7416
+      },
+      "date": "2025-03-29",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 41,
+      "system": "gpt-4.5-preview",
+      "agent": "aider",
+      "model_raw": [
+        "gpt-4.5-preview"
+      ],
+      "model_ids": [
+        "gpt-4.5"
+      ],
+      "model_config": "preview; edit_format=diff; command=aider --model openai/gpt-4.5-preview",
+      "score": 44.9,
+      "score_extra": {
+        "pass_rate_1": 22.3,
+        "pass_rate_2": 44.9,
+        "pass_num_1": 50,
+        "pass_num_2": 101,
+        "percent_cases_well_formed": 97.3,
+        "error_outputs": 10,
+        "num_malformed_responses": 8,
+        "num_with_malformed_responses": 6,
+        "user_asks": 15,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 1,
+        "test_timeouts": 2,
+        "test_cases": 224,
+        "total_tests": 225,
+        "seconds_per_case": 113.5,
+        "cost_usd": 183.1802
+      },
+      "date": "2025-02-27",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 42,
+      "system": "gemini-2.5-flash-preview-05-20 (no think)",
+      "agent": "aider",
+      "model_raw": [
+        "gemini-2.5-flash-preview-05-20 (no think)"
+      ],
+      "model_ids": [
+        "gemini-2.5-flash"
+      ],
+      "model_config": "preview-05-20; no thinking; edit_format=diff; command=aider --model gemini/gemini-2.5-flash-preview-05-20",
+      "score": 44,
+      "score_extra": {
+        "pass_rate_1": 20.9,
+        "pass_rate_2": 44,
+        "pass_num_1": 47,
+        "pass_num_2": 99,
+        "percent_cases_well_formed": 93.8,
+        "error_outputs": 16,
+        "num_malformed_responses": 16,
+        "num_with_malformed_responses": 14,
+        "user_asks": 79,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 4,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 12.2,
+        "prompt_tokens": 5512458,
+        "completion_tokens": 514145,
+        "thinking_tokens": 0,
+        "cost_usd": 1.1354
+      },
+      "date": "2025-05-26",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 43,
+      "system": "gpt-oss-120b (high)",
+      "agent": "aider",
+      "model_raw": [
+        "gpt-oss-120b (high)"
+      ],
+      "model_ids": [
+        "gpt-oss-120b"
+      ],
+      "model_config": "reasoning_effort=high; edit_format=diff; command=aider --model openrouter/openai/gpt-oss-120b --reasoning-effort high",
+      "score": 41.8,
+      "score_extra": {
+        "pass_rate_1": 13.8,
+        "pass_rate_2": 41.8,
+        "pass_num_1": 31,
+        "pass_num_2": 94,
+        "percent_cases_well_formed": 79.1,
+        "error_outputs": 95,
+        "num_malformed_responses": 77,
+        "num_with_malformed_responses": 47,
+        "user_asks": 142,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 4,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 35.5,
+        "prompt_tokens": 3123768,
+        "completion_tokens": 856495,
+        "cost_usd": 0.7406
+      },
+      "date": "2025-08-06",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 44,
+      "system": "Qwen3 32B",
+      "agent": "aider",
+      "model_raw": [
+        "Qwen3 32B"
+      ],
+      "model_ids": [
+        "qwen3-32b"
+      ],
+      "model_config": "edit_format=diff; command=aider --model openrouter/qwen/qwen3-32b",
+      "score": 40,
+      "score_extra": {
+        "pass_rate_1": 14.2,
+        "pass_rate_2": 40,
+        "pass_num_1": 32,
+        "pass_num_2": 90,
+        "percent_cases_well_formed": 83.6,
+        "error_outputs": 119,
+        "num_malformed_responses": 50,
+        "num_with_malformed_responses": 37,
+        "user_asks": 97,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 12,
+        "test_timeouts": 5,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 372.2,
+        "prompt_tokens": 317591,
+        "completion_tokens": 120418,
+        "cost_usd": 0.7603
+      },
+      "date": "2025-05-08",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 45,
+      "system": "gemini-exp-1206",
+      "agent": "aider",
+      "model_raw": [
+        "gemini-exp-1206"
+      ],
+      "model_ids": [
+        "gemini-exp-1206"
+      ],
+      "model_config": "edit_format=whole; command=aider --model gemini/gemini-exp-1206",
+      "score": 38.2,
+      "score_extra": {
+        "pass_rate_1": 19.6,
+        "pass_rate_2": 38.2,
+        "pass_num_1": 44,
+        "pass_num_2": 86,
+        "percent_cases_well_formed": 98.2,
+        "error_outputs": 8,
+        "num_malformed_responses": 8,
+        "num_with_malformed_responses": 4,
+        "user_asks": 32,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 9,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 45.5
+      },
+      "date": "2024-12-22",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 46,
+      "system": "Gemini 2.0 Pro exp-02-05",
+      "agent": "aider",
+      "model_raw": [
+        "Gemini 2.0 Pro exp-02-05"
+      ],
+      "model_ids": [
+        "gemini-2.0-pro"
+      ],
+      "model_config": "exp-02-05; edit_format=whole; command=aider --model gemini/gemini-2.0-pro-exp-02-05",
+      "score": 35.6,
+      "score_extra": {
+        "pass_rate_1": 20.4,
+        "pass_rate_2": 35.6,
+        "pass_num_1": 46,
+        "pass_num_2": 80,
+        "percent_cases_well_formed": 100,
+        "error_outputs": 430,
+        "num_malformed_responses": 0,
+        "num_with_malformed_responses": 0,
+        "user_asks": 13,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 5,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 34.8
+      },
+      "date": "2025-02-25",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 47,
+      "system": "Grok 3 Mini Beta (low)",
+      "agent": "aider",
+      "model_raw": [
+        "Grok 3 Mini Beta (low)"
+      ],
+      "model_ids": [
+        "grok-3-mini"
+      ],
+      "model_config": "beta; reasoning_effort=low; edit_format=whole; command=aider --model openrouter/x-ai/grok-3-mini-beta",
+      "score": 34.7,
+      "score_extra": {
+        "pass_rate_1": 11.1,
+        "pass_rate_2": 34.7,
+        "pass_num_1": 25,
+        "pass_num_2": 78,
+        "percent_cases_well_formed": 100,
+        "error_outputs": 3,
+        "num_malformed_responses": 0,
+        "num_with_malformed_responses": 0,
+        "user_asks": 73,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 5,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 35.1,
+        "cost_usd": 0.7856
+      },
+      "date": "2025-04-10",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 48,
+      "system": "o1-mini-2024-09-12",
+      "agent": "aider",
+      "model_raw": [
+        "o1-mini-2024-09-12"
+      ],
+      "model_ids": [
+        "o1-mini"
+      ],
+      "model_config": "edit_format=whole; command=aider --model o1-mini",
+      "score": 32.9,
+      "score_extra": {
+        "pass_rate_1": 5.8,
+        "pass_rate_2": 32.9,
+        "pass_num_1": 13,
+        "pass_num_2": 74,
+        "percent_cases_well_formed": 96.9,
+        "error_outputs": 8,
+        "num_malformed_responses": 8,
+        "num_with_malformed_responses": 7,
+        "user_asks": 27,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 3,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 34.7,
+        "cost_usd": 18.577
+      },
+      "date": "2024-12-22",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 49,
+      "system": "gpt-4.1-mini",
+      "agent": "aider",
+      "model_raw": [
+        "gpt-4.1-mini"
+      ],
+      "model_ids": [
+        "gpt-4.1-mini"
+      ],
+      "model_config": "edit_format=diff; command=aider --model gpt-4.1-mini",
+      "score": 32.4,
+      "score_extra": {
+        "pass_rate_1": 11.1,
+        "pass_rate_2": 32.4,
+        "pass_num_1": 25,
+        "pass_num_2": 73,
+        "percent_cases_well_formed": 92.4,
+        "error_outputs": 64,
+        "num_malformed_responses": 62,
+        "num_with_malformed_responses": 17,
+        "user_asks": 159,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 2,
+        "test_timeouts": 2,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 19.5,
+        "cost_usd": 1.9918
+      },
+      "date": "2025-04-14",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 50,
+      "system": "claude-3-5-haiku-20241022",
+      "agent": "aider",
+      "model_raw": [
+        "claude-3-5-haiku-20241022"
+      ],
+      "model_ids": [
+        "claude-3.5-haiku"
+      ],
+      "model_config": "edit_format=diff; command=aider --model claude-3-5-haiku-20241022",
+      "score": 28,
+      "score_extra": {
+        "pass_rate_1": 7.1,
+        "pass_rate_2": 28,
+        "pass_num_1": 16,
+        "pass_num_2": 63,
+        "percent_cases_well_formed": 91.1,
+        "error_outputs": 31,
+        "num_malformed_responses": 30,
+        "num_with_malformed_responses": 20,
+        "user_asks": 13,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 1,
+        "test_timeouts": 9,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 31.8,
+        "cost_usd": 6.0583
+      },
+      "date": "2024-12-21",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 51,
+      "system": "chatgpt-4o-latest (2025-02-15)",
+      "agent": "aider",
+      "model_raw": [
+        "chatgpt-4o-latest (2025-02-15)"
+      ],
+      "model_ids": [
+        "chatgpt-4o-latest"
+      ],
+      "model_config": "2025-02-15; edit_format=diff; command=aider --model chatgpt-4o-latest",
+      "score": 27.1,
+      "score_extra": {
+        "pass_rate_1": 9,
+        "pass_rate_2": 27.1,
+        "pass_num_1": 20,
+        "pass_num_2": 61,
+        "percent_cases_well_formed": 93.3,
+        "error_outputs": 66,
+        "num_malformed_responses": 21,
+        "num_with_malformed_responses": 15,
+        "user_asks": 57,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 2,
+        "test_cases": 223,
+        "total_tests": 225,
+        "seconds_per_case": 12.4,
+        "cost_usd": 14.3703
+      },
+      "date": "2025-02-15",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 52,
+      "system": "QwQ-32B + Qwen 2.5 Coder Instruct",
+      "agent": "aider",
+      "model_raw": [
+        "QwQ-32B + Qwen 2.5 Coder Instruct"
+      ],
+      "model_ids": [
+        "qwq-32b",
+        "qwen2.5-coder-32b"
+      ],
+      "model_config": "architect: QwQ-32B + editor qwen2p5-coder-32b-instruct; edit_format=architect; editor_edit_format=editor-diff; command=aider --model fireworks_ai/accounts/fireworks/models/qwq-32b --architect",
+      "score": 26.2,
+      "score_extra": {
+        "pass_rate_1": 9.8,
+        "pass_rate_2": 26.2,
+        "pass_num_1": 22,
+        "pass_num_2": 59,
+        "percent_cases_well_formed": 100,
+        "error_outputs": 122,
+        "num_malformed_responses": 0,
+        "num_with_malformed_responses": 0,
+        "user_asks": 489,
+        "lazy_comments": 8,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 1,
+        "test_timeouts": 2,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 137.4
+      },
+      "date": "2025-03-07",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 53,
+      "system": "gpt-4o-2024-08-06",
+      "agent": "aider",
+      "model_raw": [
+        "gpt-4o-2024-08-06"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": "2024-08-06; edit_format=diff; command=aider --model gpt-4o-2024-08-06",
+      "score": 23.1,
+      "score_extra": {
+        "pass_rate_1": 4.9,
+        "pass_rate_2": 23.1,
+        "pass_num_1": 11,
+        "pass_num_2": 52,
+        "percent_cases_well_formed": 94.2,
+        "error_outputs": 21,
+        "num_malformed_responses": 21,
+        "num_with_malformed_responses": 13,
+        "user_asks": 65,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 3,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 16,
+        "cost_usd": 7.0286
+      },
+      "date": "2024-12-30",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 54,
+      "system": "gemini-2.0-flash-exp",
+      "agent": "aider",
+      "model_raw": [
+        "gemini-2.0-flash-exp"
+      ],
+      "model_ids": [
+        "gemini-2.0-flash"
+      ],
+      "model_config": "exp; edit_format=whole; command=aider --model gemini/gemini-2.0-flash-exp",
+      "score": 22.2,
+      "score_extra": {
+        "pass_rate_1": 11.6,
+        "pass_rate_2": 22.2,
+        "pass_num_1": 26,
+        "pass_num_2": 50,
+        "percent_cases_well_formed": 100,
+        "error_outputs": 1,
+        "num_malformed_responses": 0,
+        "num_with_malformed_responses": 0,
+        "user_asks": 9,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 1,
+        "test_timeouts": 8,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 12.2
+      },
+      "date": "2024-12-22",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 55,
+      "system": "qwen-max-2025-01-25",
+      "agent": "aider",
+      "model_raw": [
+        "qwen-max-2025-01-25"
+      ],
+      "model_ids": [
+        "qwen-max"
+      ],
+      "model_config": "2025-01-25; edit_format=diff; command=OPENAI_API_BASE=https://dashscope-intl.aliyuncs.com/compatible-mode/v1 aider --model openai/qwen-max-2025-01-25",
+      "score": 21.8,
+      "score_extra": {
+        "pass_rate_1": 9.3,
+        "pass_rate_2": 21.8,
+        "pass_num_1": 21,
+        "pass_num_2": 49,
+        "percent_cases_well_formed": 90.2,
+        "error_outputs": 46,
+        "num_malformed_responses": 44,
+        "num_with_malformed_responses": 22,
+        "user_asks": 23,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 9,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 39.5
+      },
+      "date": "2025-01-28",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 56,
+      "system": "QwQ-32B",
+      "agent": "aider",
+      "model_raw": [
+        "QwQ-32B"
+      ],
+      "model_ids": [
+        "qwq-32b"
+      ],
+      "model_config": "edit_format=diff; command=aider --model fireworks_ai/accounts/fireworks/models/qwq-32b",
+      "score": 20.9,
+      "score_extra": {
+        "pass_rate_1": 8,
+        "pass_rate_2": 20.9,
+        "pass_num_1": 18,
+        "pass_num_2": 47,
+        "percent_cases_well_formed": 67.6,
+        "error_outputs": 145,
+        "num_malformed_responses": 143,
+        "num_with_malformed_responses": 73,
+        "user_asks": 17,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 1,
+        "test_timeouts": 4,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 228.6
+      },
+      "date": "2025-03-06",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 57,
+      "system": "gpt-4o-2024-11-20",
+      "agent": "aider",
+      "model_raw": [
+        "gpt-4o-2024-11-20"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": "2024-11-20; edit_format=diff; command=aider --model gpt-4o-2024-11-20",
+      "score": 18.2,
+      "score_extra": {
+        "pass_rate_1": 4.9,
+        "pass_rate_2": 18.2,
+        "pass_num_1": 11,
+        "pass_num_2": 41,
+        "percent_cases_well_formed": 95.1,
+        "error_outputs": 12,
+        "num_malformed_responses": 12,
+        "num_with_malformed_responses": 11,
+        "user_asks": 53,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 12,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 12.1,
+        "cost_usd": 6.7351
+      },
+      "date": "2024-12-30",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 57,
+      "system": "gemini-2.0-flash-thinking-exp-01-21",
+      "agent": "aider",
+      "model_raw": [
+        "gemini-2.0-flash-thinking-exp-01-21"
+      ],
+      "model_ids": [
+        "gemini-2.0-flash-thinking"
+      ],
+      "model_config": "exp-01-21; edit_format=diff; command=aider --model gemini/gemini-2.0-flash-thinking-exp-01-21",
+      "score": 18.2,
+      "score_extra": {
+        "pass_rate_1": 5.8,
+        "pass_rate_2": 18.2,
+        "pass_num_1": 13,
+        "pass_num_2": 41,
+        "percent_cases_well_formed": 77.8,
+        "error_outputs": 182,
+        "num_malformed_responses": 180,
+        "num_with_malformed_responses": 50,
+        "user_asks": 26,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 2,
+        "test_timeouts": 7,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 24.2
+      },
+      "date": "2025-01-21",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 59,
+      "system": "DeepSeek Chat V2.5",
+      "agent": "aider",
+      "model_raw": [
+        "DeepSeek Chat V2.5"
+      ],
+      "model_ids": [
+        "deepseek-v2.5"
+      ],
+      "model_config": "edit_format=diff; command=aider --model deepseek/deepseek-chat",
+      "score": 17.8,
+      "score_extra": {
+        "pass_rate_1": 5.3,
+        "pass_rate_2": 17.8,
+        "pass_num_1": 12,
+        "pass_num_2": 40,
+        "percent_cases_well_formed": 92.9,
+        "error_outputs": 42,
+        "num_malformed_responses": 37,
+        "num_with_malformed_responses": 16,
+        "user_asks": 23,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 5,
+        "test_timeouts": 5,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 184,
+        "cost_usd": 0.5101
+      },
+      "date": "2024-12-21",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 60,
+      "system": "Qwen2.5-Coder-32B-Instruct",
+      "agent": "aider",
+      "model_raw": [
+        "Qwen2.5-Coder-32B-Instruct"
+      ],
+      "model_ids": [
+        "qwen2.5-coder-32b"
+      ],
+      "model_config": "edit_format=whole; command=aider --model openai/Qwen2.5-Coder-32B-Instruct",
+      "score": 16.4,
+      "score_extra": {
+        "pass_rate_1": 4.9,
+        "pass_rate_2": 16.4,
+        "pass_num_1": 11,
+        "pass_num_2": 37,
+        "percent_cases_well_formed": 99.6,
+        "error_outputs": 1,
+        "num_malformed_responses": 1,
+        "num_with_malformed_responses": 1,
+        "user_asks": 33,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 6,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 42
+      },
+      "date": "2024-12-26",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 61,
+      "system": "Llama 4 Maverick",
+      "agent": "aider",
+      "model_raw": [
+        "Llama 4 Maverick"
+      ],
+      "model_ids": [
+        "llama-4-maverick"
+      ],
+      "model_config": "edit_format=whole; command=aider --model nvidia_nim/meta/llama-4-maverick-17b-128e-instruct",
+      "score": 15.6,
+      "score_extra": {
+        "pass_rate_1": 4.4,
+        "pass_rate_2": 15.6,
+        "pass_num_1": 10,
+        "pass_num_2": 35,
+        "percent_cases_well_formed": 99.1,
+        "error_outputs": 12,
+        "num_malformed_responses": 2,
+        "num_with_malformed_responses": 2,
+        "user_asks": 248,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 4,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 20.5
+      },
+      "date": "2025-04-06",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 62,
+      "system": "yi-lightning",
+      "agent": "aider",
+      "model_raw": [
+        "yi-lightning"
+      ],
+      "model_ids": [
+        "yi-lightning"
+      ],
+      "model_config": "edit_format=whole; command=aider --model openai/yi-lightning",
+      "score": 12.9,
+      "score_extra": {
+        "pass_rate_1": 5.8,
+        "pass_rate_2": 12.9,
+        "pass_num_1": 13,
+        "pass_num_2": 29,
+        "percent_cases_well_formed": 92.9,
+        "error_outputs": 87,
+        "num_malformed_responses": 72,
+        "num_with_malformed_responses": 16,
+        "user_asks": 107,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 1,
+        "test_timeouts": 6,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 146.7
+      },
+      "date": "2024-12-23",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 63,
+      "system": "command-a-03-2025-quality",
+      "agent": "aider",
+      "model_raw": [
+        "command-a-03-2025-quality"
+      ],
+      "model_ids": [
+        "command-a-03-2025"
+      ],
+      "model_config": "quality; edit_format=whole; command=OPENAI_API_BASE=https://api.cohere.ai/compatibility/v1 aider --model openai/command-a-03-2025-quality",
+      "score": 12,
+      "score_extra": {
+        "pass_rate_1": 2.2,
+        "pass_rate_2": 12,
+        "pass_num_1": 5,
+        "pass_num_2": 27,
+        "percent_cases_well_formed": 99.6,
+        "error_outputs": 2,
+        "num_malformed_responses": 1,
+        "num_with_malformed_responses": 1,
+        "user_asks": 215,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 1,
+        "test_timeouts": 4,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 85.1
+      },
+      "date": "2025-03-14",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 64,
+      "system": "Codestral 25.01",
+      "agent": "aider",
+      "model_raw": [
+        "Codestral 25.01"
+      ],
+      "model_ids": [
+        "codestral-25.01"
+      ],
+      "model_config": "edit_format=whole; command=aider --model mistral/codestral-latest",
+      "score": 11.1,
+      "score_extra": {
+        "pass_rate_1": 4,
+        "pass_rate_2": 11.1,
+        "pass_num_1": 9,
+        "pass_num_2": 25,
+        "percent_cases_well_formed": 100,
+        "error_outputs": 0,
+        "num_malformed_responses": 0,
+        "num_with_malformed_responses": 0,
+        "user_asks": 47,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 4,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 9.3,
+        "cost_usd": 1.9834
+      },
+      "date": "2025-01-13",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 65,
+      "system": "openhands-lm-32b-v0.1",
+      "agent": "aider",
+      "model_raw": [
+        "openhands-lm-32b-v0.1"
+      ],
+      "model_ids": [
+        "openhands-lm-32b-v0.1"
+      ],
+      "model_config": "edit_format=whole; command=aider --model openrouter/all-hands/openhands-lm-32b-v0.1",
+      "score": 10.2,
+      "score_extra": {
+        "pass_rate_1": 4,
+        "pass_rate_2": 10.2,
+        "pass_num_1": 9,
+        "pass_num_2": 23,
+        "percent_cases_well_formed": 95.1,
+        "error_outputs": 55,
+        "num_malformed_responses": 41,
+        "num_with_malformed_responses": 11,
+        "user_asks": 166,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 11,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 195.6
+      },
+      "date": "2025-04-19",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 66,
+      "system": "gpt-4.1-nano",
+      "agent": "aider",
+      "model_raw": [
+        "gpt-4.1-nano"
+      ],
+      "model_ids": [
+        "gpt-4.1-nano"
+      ],
+      "model_config": "edit_format=whole; command=aider --model gpt-4.1-nano",
+      "score": 8.9,
+      "score_extra": {
+        "pass_rate_1": 3.1,
+        "pass_rate_2": 8.9,
+        "pass_num_1": 7,
+        "pass_num_2": 20,
+        "percent_cases_well_formed": 94.2,
+        "error_outputs": 20,
+        "num_malformed_responses": 20,
+        "num_with_malformed_responses": 13,
+        "user_asks": 316,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 8,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 12,
+        "cost_usd": 0.4281
+      },
+      "date": "2025-04-14",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 67,
+      "system": "Qwen2.5-Coder-32B-Instruct",
+      "agent": "aider",
+      "model_raw": [
+        "Qwen2.5-Coder-32B-Instruct"
+      ],
+      "model_ids": [
+        "qwen2.5-coder-32b"
+      ],
+      "model_config": "edit_format=diff; command=aider --model openai/Qwen/Qwen2.5-Coder-32B-Instruct # via hyperbolic",
+      "score": 8,
+      "score_extra": {
+        "pass_rate_1": 4.4,
+        "pass_rate_2": 8,
+        "pass_num_1": 10,
+        "pass_num_2": 18,
+        "percent_cases_well_formed": 71.6,
+        "error_outputs": 158,
+        "num_malformed_responses": 148,
+        "num_with_malformed_responses": 64,
+        "user_asks": 132,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 1,
+        "test_timeouts": 2,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 84.4
+      },
+      "date": "2024-12-22",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 68,
+      "system": "gemma-3-27b-it",
+      "agent": "aider",
+      "model_raw": [
+        "gemma-3-27b-it"
+      ],
+      "model_ids": [
+        "gemma-3-27b"
+      ],
+      "model_config": "edit_format=whole; command=aider --model openrouter/google/gemma-3-27b-it",
+      "score": 4.9,
+      "score_extra": {
+        "pass_rate_1": 1.8,
+        "pass_rate_2": 4.9,
+        "pass_num_1": 4,
+        "pass_num_2": 11,
+        "percent_cases_well_formed": 100,
+        "error_outputs": 3,
+        "num_malformed_responses": 0,
+        "num_with_malformed_responses": 0,
+        "user_asks": 181,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 1,
+        "test_timeouts": 3,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 79.7
+      },
+      "date": "2025-03-15",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 69,
+      "system": "gpt-4o-mini-2024-07-18",
+      "agent": "aider",
+      "model_raw": [
+        "gpt-4o-mini-2024-07-18"
+      ],
+      "model_ids": [
+        "gpt-4o-mini"
+      ],
+      "model_config": "edit_format=whole; command=aider --model gpt-4o-mini-2024-07-18",
+      "score": 3.6,
+      "score_extra": {
+        "pass_rate_1": 0.9,
+        "pass_rate_2": 3.6,
+        "pass_num_1": 2,
+        "pass_num_2": 8,
+        "percent_cases_well_formed": 100,
+        "error_outputs": 0,
+        "num_malformed_responses": 0,
+        "num_with_malformed_responses": 0,
+        "user_asks": 36,
+        "lazy_comments": 0,
+        "syntax_errors": 0,
+        "indentation_errors": 0,
+        "exhausted_context_windows": 0,
+        "test_timeouts": 3,
+        "test_cases": 225,
+        "total_tests": 225,
+        "seconds_per_case": 17.3,
+        "cost_usd": 0.3236
+      },
+      "date": "2024-12-21",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    }
+  ]
+}

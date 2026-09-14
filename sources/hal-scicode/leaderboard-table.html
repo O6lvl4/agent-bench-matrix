@@ -1,0 +1,1682 @@
+<table class="min-w-full">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Rank</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Scaffold</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider group relative">
+                                <span class="cursor-help inline-flex items-center">
+                                    Primary Model
+                                    <svg class="w-4 h-4 ml-1 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </span>
+                                <div class="invisible group-hover:visible absolute z-50 w-64 p-4 text-sm bg-white rounded-lg shadow-lg border border-gray-200 -translate-x-1/2 left-1/2 top-full mt-1">
+                                    <div class="absolute w-4 h-4 bg-white transform rotate-45 -translate-x-1/2 left-1/2 -top-2 border-t border-l border-gray-200"></div>
+                                    <div class="flex items-center mb-2">
+                                        <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 4.5v1.5m3-1.5v1.5m3-1.5v1.5M4.5 9h1.5m-1.5 3h1.5m-1.5 3h1.5M18 9h1.5m-1.5 3h1.5m-1.5 3h1.5M9 18v1.5m3-1.5v1.5m3-1.5v1.5M7.5 6h9A1.5 1.5 0 0118 7.5v9a1.5 1.5 0 01-1.5 1.5h-9A1.5 1.5 0 016 16.5v-9A1.5 1.5 0 017.5 6z"/>
+                                        </svg>
+                                        <span class="font-medium text-gray-900">Primary Model</span>
+                                    </div>
+                                    <p class="text-gray-600 leading-relaxed">This is the primary model used by the agent. In some cases, an embedding model is used for RAG, or a secondary model like GPT-4o for image processing.
+                                        <span class="font-semibold">Note:</span> For non-OpenAI reasoning models, the reasoning token budget is set at 1,024 (low), 2,048 (medium), and 4,096 (high).
+                                    </p>
+                                </div>
+                            </th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider group relative">
+                                <span class="cursor-help inline-flex items-center">
+                                    Verified
+                                    <svg class="w-4 h-4 ml-1 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </span>
+                                <div class="invisible group-hover:visible absolute z-50 w-64 p-4 text-sm bg-white rounded-lg shadow-lg border border-gray-200 -translate-x-1/2 left-1/2 top-full mt-1">
+                                    <div class="absolute w-4 h-4 bg-white transform rotate-45 -translate-x-1/2 left-1/2 -top-2 border-t border-l border-gray-200"></div>
+                                    <div class="flex items-center mb-2">
+                                        <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span class="font-medium text-gray-900">Verified Results</span>
+                                    </div>
+                                    <p class="text-gray-600 leading-relaxed">Results have been reproduced by the HAL team</p>
+                                </div>
+                            </th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider group relative">
+                                <span class="cursor-help inline-flex items-center">
+                                    Accuracy
+                                    <svg class="w-4 h-4 ml-1 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </span>
+                                <div class="invisible group-hover:visible absolute z-50 w-64 p-4 text-sm bg-white rounded-lg shadow-lg border border-gray-200 -translate-x-1/2 left-1/2 top-full mt-1">
+                                    <div class="absolute w-4 h-4 bg-white transform rotate-45 -translate-x-1/2 left-1/2 -top-2 border-t border-l border-gray-200"></div>
+                                    <div class="flex items-center mb-2">
+                                        <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                                        </svg>
+                                        <span class="font-medium text-gray-900">Accuracy</span>
+                                    </div>
+                                    <p class="text-gray-600 leading-relaxed">Confidence intervals show the min-max values across runs for those agents where multiple runs are available</p>
+                                </div>
+                            </th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider group relative">
+                                <span class="cursor-help inline-flex items-center">
+                                    Cost (USD)
+                                    <svg class="w-4 h-4 ml-1 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </span>
+                                <div class="invisible group-hover:visible absolute z-50 w-64 p-4 text-sm bg-white rounded-lg shadow-lg border border-gray-200 -translate-x-1/2 left-1/2 top-full mt-1">
+                                    <div class="absolute w-4 h-4 bg-white transform rotate-45 -translate-x-1/2 left-1/2 -top-2 border-t border-l border-gray-200"></div>
+                                    <div class="flex items-center mb-2">
+                                        <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span class="font-medium text-gray-900">Total Cost</span>
+                                    </div>
+                                    <p class="text-gray-600 leading-relaxed">Total API cost for running the agent on all tasks. Confidence intervals show the min-max values across runs for those agents where multiple runs are available</p>
+                                </div>
+                            </th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider group relative">
+                                <span class="cursor-help inline-flex items-center">
+                                    Runs
+                                    <svg class="w-4 h-4 ml-1 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </span>
+                                <div class="invisible group-hover:visible absolute z-50 w-64 p-4 text-sm bg-white rounded-lg shadow-lg border border-gray-200 -translate-x-1/2 left-1/2 top-full mt-1">
+                                    <div class="absolute w-4 h-4 bg-white transform rotate-45 -translate-x-1/2 left-1/2 -top-2 border-t border-l border-gray-200"></div>
+                                    <div class="flex items-center mb-2">
+                                        <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                                        </svg>
+                                        <span class="font-medium text-gray-900">Number of Runs</span>
+                                    </div>
+                                    <p class="text-gray-600 leading-relaxed">The number of runs for this agent submitted to the leaderboard. To submit multiple evaluations, rerun the same agent and set the same agent name</p>
+                                </div>
+                            </th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider group relative">
+                                <span class="cursor-help inline-flex items-center">
+                                    Traces
+                                    <svg class="w-4 h-4 ml-1 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </span>
+                                <div class="invisible group-hover:visible absolute z-50 w-72 p-4 text-sm bg-white rounded-lg shadow-lg border border-gray-200 -translate-x-1/2 left-1/2 top-full mt-1">
+                                    <div class="absolute w-4 h-4 bg-white transform rotate-45 -translate-x-1/2 left-1/2 -top-2 border-t border-l border-gray-200"></div>
+                                    <div class="flex items-center mb-2">
+                                        <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                                        </svg>
+                                        <span class="font-medium text-gray-900">Encrypted Traces</span>
+                                    </div>
+                                    <p class="text-gray-600 leading-relaxed mb-2">Downloaded traces are encrypted. Install <code class="bg-gray-100 px-1 rounded text-xs">cryptography</code> (<code class="bg-gray-100 px-1 rounded text-xs">pip install cryptography</code>), then decrypt with <code class="bg-gray-100 px-1 rounded text-xs">hal-decrypt.sh</code>.</p>
+                                    <a href="/#traces" class="text-blue-600 hover:text-blue-800 text-xs font-medium">Full instructions &rarr;</a>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        
+                        <tr class="hover:bg-gray-50 bg-blue-50/40">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">1</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">
+                                    
+                                        <a href="/agent/Scicode%20Zero%20Shot%20Agent" class="text-blue-600 hover:text-blue-800 font-medium">
+                                            Scicode Zero Shot Agent
+                                        </a>
+                                    
+                                    
+                                        <span class="ml-2 inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">Pareto optimal</span>
+                                    
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <a href="/model/o4-mini%20Low%20(April%202025)" class="inline-block text-blue-600 hover:text-blue-800 mr-2 py-0.5 rounded font-medium">o4-mini Low (April 2025)</a>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <span class="text-green-600">✓</span>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                    9.23%
+                                    
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                $1.74
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                1
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                
+                                    <a href="https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scicode_scicode_zero_shot_agent_o4mini20250416_low_1745290900_UPLOAD.zip?download=true" target="_blank" class="text-blue-600 hover:text-blue-800">
+                                        Download
+                                        <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                        </svg>
+                                    </a>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr class="hover:bg-gray-50 ">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">2</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">
+                                    
+                                        <a href="/agent/Scicode%20Tool%20Calling%20Agent" class="text-blue-600 hover:text-blue-800 font-medium">
+                                            Scicode Tool Calling Agent
+                                        </a>
+                                    
+                                    
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <a href="/model/o3%20Medium%20(April%202025)" class="inline-block text-blue-600 hover:text-blue-800 mr-2 py-0.5 rounded font-medium">o3 Medium (April 2025)</a>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <span class="text-green-600">✓</span>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                    9.23%
+                                    
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                $111.11
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                1
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                
+                                    <a href="https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scicode_scicode_tool_calling_agent_o320250416_1745276105_UPLOAD.zip?download=true" target="_blank" class="text-blue-600 hover:text-blue-800">
+                                        Download
+                                        <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                        </svg>
+                                    </a>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr class="hover:bg-gray-50 ">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">3</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">
+                                    
+                                        <a href="/agent/Scicode%20Tool%20Calling%20Agent" class="text-blue-600 hover:text-blue-800 font-medium">
+                                            Scicode Tool Calling Agent
+                                        </a>
+                                    
+                                    
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <a href="/model/Claude%20Opus%204.1%20(August%202025)" class="inline-block text-blue-600 hover:text-blue-800 mr-2 py-0.5 rounded font-medium">Claude Opus 4.1 (August 2025)</a>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <span class="text-green-600">✓</span>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                    7.69%
+                                    
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                $625.13
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                1
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                
+                                    <a href="https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scicode_scicode_tool_calling_agent_claudeopus41_1755801688_UPLOAD.zip?download=true" target="_blank" class="text-blue-600 hover:text-blue-800">
+                                        Download
+                                        <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                        </svg>
+                                    </a>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr class="hover:bg-gray-50 ">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">4</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">
+                                    
+                                        <a href="/agent/Scicode%20Tool%20Calling%20Agent" class="text-blue-600 hover:text-blue-800 font-medium">
+                                            Scicode Tool Calling Agent
+                                        </a>
+                                    
+                                    
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <a href="/model/Claude%20Opus%204.1%20High%20(August%202025)" class="inline-block text-blue-600 hover:text-blue-800 mr-2 py-0.5 rounded font-medium">Claude Opus 4.1 High (August 2025)</a>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <span class="text-green-600">✓</span>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                    6.92%
+                                    
+                                        <span class="text-gray-500 ml-1">(-0.77/+0.77)</span>
+                                    
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                $550.54
+                                
+                                    <span class="text-gray-400 text-xs">(-42.81/+42.81)</span>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                2
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                
+                                    <a href="https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scicode_scicode-tool_calling_agent_claudeopus4120250514_1754678715_UPLOAD.zip?download=true" target="_blank" class="text-blue-600 hover:text-blue-800">
+                                        Download
+                                        <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                        </svg>
+                                    </a>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr class="hover:bg-gray-50 ">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">5</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">
+                                    
+                                        <a href="/agent/Scicode%20Zero%20Shot%20Agent" class="text-blue-600 hover:text-blue-800 font-medium">
+                                            Scicode Zero Shot Agent
+                                        </a>
+                                    
+                                    
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <a href="/model/GPT-4.1%20(April%202025)" class="inline-block text-blue-600 hover:text-blue-800 mr-2 py-0.5 rounded font-medium">GPT-4.1 (April 2025)</a>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <span class="text-green-600">✓</span>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                    6.15%
+                                    
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                $2.82
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                1
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                
+                                    <a href="https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scicode_scicode_zero_shot_agent_gpt4120250414_1745265933_UPLOAD.zip?download=true" target="_blank" class="text-blue-600 hover:text-blue-800">
+                                        Download
+                                        <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                        </svg>
+                                    </a>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr class="hover:bg-gray-50 ">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">6</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">
+                                    
+                                        <a href="/agent/Scicode%20Zero%20Shot%20Agent" class="text-blue-600 hover:text-blue-800 font-medium">
+                                            Scicode Zero Shot Agent
+                                        </a>
+                                    
+                                    
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <a href="/model/o4-mini%20High%20(April%202025)" class="inline-block text-blue-600 hover:text-blue-800 mr-2 py-0.5 rounded font-medium">o4-mini High (April 2025)</a>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <span class="text-green-600">✓</span>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                    6.15%
+                                    
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                $5.37
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                1
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                
+                                    <a href="https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scicode_scicode_zero_shot_agent_o4mini20250416_high_1745429794_UPLOAD.zip?download=true" target="_blank" class="text-blue-600 hover:text-blue-800">
+                                        Download
+                                        <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                        </svg>
+                                    </a>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr class="hover:bg-gray-50 ">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">7</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">
+                                    
+                                        <a href="/agent/HAL%20Generalist%20Agent" class="text-blue-600 hover:text-blue-800 font-medium">
+                                            HAL Generalist Agent
+                                        </a>
+                                    
+                                    
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <a href="/model/o4-mini%20Low%20(April%202025)" class="inline-block text-blue-600 hover:text-blue-800 mr-2 py-0.5 rounded font-medium">o4-mini Low (April 2025)</a>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <span class="text-green-600">✓</span>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                    6.15%
+                                    
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                $165.90
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                1
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                
+                                    <a href="https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scicode_hal_generalist_agent_o4mini20250416_low_1745608137_UPLOAD.zip?download=true" target="_blank" class="text-blue-600 hover:text-blue-800">
+                                        Download
+                                        <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                        </svg>
+                                    </a>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr class="hover:bg-gray-50 ">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">8</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">
+                                    
+                                        <a href="/agent/Scicode%20Tool%20Calling%20Agent" class="text-blue-600 hover:text-blue-800 font-medium">
+                                            Scicode Tool Calling Agent
+                                        </a>
+                                    
+                                    
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <a href="/model/GPT-5%20Medium%20(August%202025)" class="inline-block text-blue-600 hover:text-blue-800 mr-2 py-0.5 rounded font-medium">GPT-5 Medium (August 2025)</a>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <span class="text-green-600">✓</span>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                    6.15%
+                                    
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                $193.52
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                1
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                
+                                    <a href="https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scicode_scicode_tool_calling_agent_gpt5_1754600998_UPLOAD.zip?download=true" target="_blank" class="text-blue-600 hover:text-blue-800">
+                                        Download
+                                        <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                        </svg>
+                                    </a>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr class="hover:bg-gray-50 ">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">9</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">
+                                    
+                                        <a href="/agent/Scicode%20Zero%20Shot%20Agent" class="text-blue-600 hover:text-blue-800 font-medium">
+                                            Scicode Zero Shot Agent
+                                        </a>
+                                    
+                                    
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <a href="/model/o3%20Medium%20(April%202025)" class="inline-block text-blue-600 hover:text-blue-800 mr-2 py-0.5 rounded font-medium">o3 Medium (April 2025)</a>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <span class="text-green-600">✓</span>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                    4.62%
+                                    
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                $6.03
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                1
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                
+                                    <a href="https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scicode_scicode_zero_shot_agent_o320250416_1745284451_UPLOAD.zip?download=true" target="_blank" class="text-blue-600 hover:text-blue-800">
+                                        Download
+                                        <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                        </svg>
+                                    </a>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr class="hover:bg-gray-50 ">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">10</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">
+                                    
+                                        <a href="/agent/Scicode%20Tool%20Calling%20Agent" class="text-blue-600 hover:text-blue-800 font-medium">
+                                            Scicode Tool Calling Agent
+                                        </a>
+                                    
+                                    
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <a href="/model/o4-mini%20Low%20(April%202025)" class="inline-block text-blue-600 hover:text-blue-800 mr-2 py-0.5 rounded font-medium">o4-mini Low (April 2025)</a>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <span class="text-green-600">✓</span>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                    4.62%
+                                    
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                $46.30
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                1
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                
+                                    <a href="https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scicode_scicode_tool_calling_agent_o4mini20250416_low_1745286980_UPLOAD.zip?download=true" target="_blank" class="text-blue-600 hover:text-blue-800">
+                                        Download
+                                        <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                        </svg>
+                                    </a>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr class="hover:bg-gray-50 ">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">11</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">
+                                    
+                                        <a href="/agent/Scicode%20Tool%20Calling%20Agent" class="text-blue-600 hover:text-blue-800 font-medium">
+                                            Scicode Tool Calling Agent
+                                        </a>
+                                    
+                                    
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <a href="/model/o4-mini%20High%20(April%202025)" class="inline-block text-blue-600 hover:text-blue-800 mr-2 py-0.5 rounded font-medium">o4-mini High (April 2025)</a>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <span class="text-green-600">✓</span>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                    4.62%
+                                    
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                $66.20
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                1
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                
+                                    <a href="https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scicode_scicode_tool_calling_agent_o4mini20250416_high_1745414081_UPLOAD.zip?download=true" target="_blank" class="text-blue-600 hover:text-blue-800">
+                                        Download
+                                        <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                        </svg>
+                                    </a>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr class="hover:bg-gray-50 ">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">12</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">
+                                    
+                                        <a href="/agent/Scicode%20Tool%20Calling%20Agent" class="text-blue-600 hover:text-blue-800 font-medium">
+                                            Scicode Tool Calling Agent
+                                        </a>
+                                    
+                                    
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <a href="/model/Claude-3.7%20Sonnet%20High%20(February%202025)" class="inline-block text-blue-600 hover:text-blue-800 mr-2 py-0.5 rounded font-medium">Claude-3.7 Sonnet High (February 2025)</a>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <span class="text-green-600">✓</span>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                    4.62%
+                                    
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                $204.37
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                1
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                
+                                    <a href="https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scicode_scicode_tool_calling_agent_claude37sonnet20250219_high_1753770104_UPLOAD.zip?download=true" target="_blank" class="text-blue-600 hover:text-blue-800">
+                                        Download
+                                        <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                        </svg>
+                                    </a>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr class="hover:bg-gray-50 ">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">13</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">
+                                    
+                                        <a href="/agent/Scicode%20Zero%20Shot%20Agent" class="text-blue-600 hover:text-blue-800 font-medium">
+                                            Scicode Zero Shot Agent
+                                        </a>
+                                    
+                                    
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <a href="/model/DeepSeek%20V3%20(March%202025)" class="inline-block text-blue-600 hover:text-blue-800 mr-2 py-0.5 rounded font-medium">DeepSeek V3 (March 2025)</a>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <span class="text-green-600">✓</span>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                    3.08%
+                                    
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                $0.79
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                1
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                
+                                    <a href="https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scicode_scicode_zero_shot_agent_deepseekaideepseekv3_1745456160_UPLOAD.zip?download=true" target="_blank" class="text-blue-600 hover:text-blue-800">
+                                        Download
+                                        <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                        </svg>
+                                    </a>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr class="hover:bg-gray-50 ">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">14</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">
+                                    
+                                        <a href="/agent/Scicode%20Zero%20Shot%20Agent" class="text-blue-600 hover:text-blue-800 font-medium">
+                                            Scicode Zero Shot Agent
+                                        </a>
+                                    
+                                    
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <a href="/model/Claude-3.7%20Sonnet%20High%20(February%202025)" class="inline-block text-blue-600 hover:text-blue-800 mr-2 py-0.5 rounded font-medium">Claude-3.7 Sonnet High (February 2025)</a>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <span class="text-green-600">✓</span>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                    3.08%
+                                    
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                $4.99
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                1
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                
+                                    <a href="https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scicode_scicode_zero_shot_agent_claude37sonnet20250219_high_1748945506_UPLOAD.zip?download=true" target="_blank" class="text-blue-600 hover:text-blue-800">
+                                        Download
+                                        <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                        </svg>
+                                    </a>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr class="hover:bg-gray-50 ">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">15</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">
+                                    
+                                        <a href="/agent/HAL%20Generalist%20Agent" class="text-blue-600 hover:text-blue-800 font-medium">
+                                            HAL Generalist Agent
+                                        </a>
+                                    
+                                    
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <a href="/model/Claude-3.7%20Sonnet%20(February%202025)" class="inline-block text-blue-600 hover:text-blue-800 mr-2 py-0.5 rounded font-medium">Claude-3.7 Sonnet (February 2025)</a>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <span class="text-green-600">✓</span>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                    3.08%
+                                    
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                $60.40
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                1
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                
+                                    <a href="https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scicode_hal_generalist_agent_claude37sonnet20250219_1745706693_UPLOAD.zip?download=true" target="_blank" class="text-blue-600 hover:text-blue-800">
+                                        Download
+                                        <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                        </svg>
+                                    </a>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr class="hover:bg-gray-50 ">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">16</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">
+                                    
+                                        <a href="/agent/HAL%20Generalist%20Agent" class="text-blue-600 hover:text-blue-800 font-medium">
+                                            HAL Generalist Agent
+                                        </a>
+                                    
+                                    
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <a href="/model/o3%20Medium%20(April%202025)" class="inline-block text-blue-600 hover:text-blue-800 mr-2 py-0.5 rounded font-medium">o3 Medium (April 2025)</a>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <span class="text-green-600">✓</span>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                    3.08%
+                                    
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                $66.98
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                1
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                
+                                    <a href="https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scicode_hal_generalist_agent_o320250416_1750127070_UPLOAD.zip?download=true" target="_blank" class="text-blue-600 hover:text-blue-800">
+                                        Download
+                                        <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                        </svg>
+                                    </a>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr class="hover:bg-gray-50 ">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">17</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">
+                                    
+                                        <a href="/agent/Scicode%20Tool%20Calling%20Agent" class="text-blue-600 hover:text-blue-800 font-medium">
+                                            Scicode Tool Calling Agent
+                                        </a>
+                                    
+                                    
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <a href="/model/Claude%20Sonnet%204.5%20(September%202025)" class="inline-block text-blue-600 hover:text-blue-800 mr-2 py-0.5 rounded font-medium">Claude Sonnet 4.5 (September 2025)</a>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <span class="text-green-600">✓</span>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                    3.08%
+                                    
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                $104.29
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                1
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                
+                                    <a href="https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scicode_scicode_tool_calling_agent_claudesonnet4520250929_1759418654_UPLOAD.zip?download=true" target="_blank" class="text-blue-600 hover:text-blue-800">
+                                        Download
+                                        <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                        </svg>
+                                    </a>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr class="hover:bg-gray-50 ">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">18</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">
+                                    
+                                        <a href="/agent/HAL%20Generalist%20Agent" class="text-blue-600 hover:text-blue-800 font-medium">
+                                            HAL Generalist Agent
+                                        </a>
+                                    
+                                    
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <a href="/model/Claude-3.7%20Sonnet%20High%20(February%202025)" class="inline-block text-blue-600 hover:text-blue-800 mr-2 py-0.5 rounded font-medium">Claude-3.7 Sonnet High (February 2025)</a>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <span class="text-green-600">✓</span>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                    3.08%
+                                    
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                $188.15
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                1
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                
+                                    <a href="https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scicode_hal_generalist_agent_claude37sonnet20250219_high_1748947217_UPLOAD.zip?download=true" target="_blank" class="text-blue-600 hover:text-blue-800">
+                                        Download
+                                        <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                        </svg>
+                                    </a>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr class="hover:bg-gray-50 ">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">19</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">
+                                    
+                                        <a href="/agent/Scicode%20Tool%20Calling%20Agent" class="text-blue-600 hover:text-blue-800 font-medium">
+                                            Scicode Tool Calling Agent
+                                        </a>
+                                    
+                                    
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <a href="/model/Claude-3.7%20Sonnet%20(February%202025)" class="inline-block text-blue-600 hover:text-blue-800 mr-2 py-0.5 rounded font-medium">Claude-3.7 Sonnet (February 2025)</a>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <span class="text-green-600">✓</span>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                    3.08%
+                                    
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                $191.41
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                1
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                
+                                    <a href="https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scicode_scicode_tool_calling_agent_claude37sonnet20250219_1745294865_UPLOAD.zip?download=true" target="_blank" class="text-blue-600 hover:text-blue-800">
+                                        Download
+                                        <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                        </svg>
+                                    </a>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr class="hover:bg-gray-50 bg-blue-50/40">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">20</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">
+                                    
+                                        <a href="/agent/Scicode%20Zero%20Shot%20Agent" class="text-blue-600 hover:text-blue-800 font-medium">
+                                            Scicode Zero Shot Agent
+                                        </a>
+                                    
+                                    
+                                        <span class="ml-2 inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">Pareto optimal</span>
+                                    
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <a href="/model/Gemini%202.0%20Flash%20(February%202025)" class="inline-block text-blue-600 hover:text-blue-800 mr-2 py-0.5 rounded font-medium">Gemini 2.0 Flash (February 2025)</a>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <span class="text-green-600">✓</span>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                    1.54%
+                                    
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                $0.12
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                1
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                
+                                    <a href="https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scicode_scicode_zero_shot_agent_gemini20flash_1745437512_UPLOAD.zip?download=true" target="_blank" class="text-blue-600 hover:text-blue-800">
+                                        Download
+                                        <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                        </svg>
+                                    </a>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr class="hover:bg-gray-50 ">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">21</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">
+                                    
+                                        <a href="/agent/Scicode%20Tool%20Calling%20Agent" class="text-blue-600 hover:text-blue-800 font-medium">
+                                            Scicode Tool Calling Agent
+                                        </a>
+                                    
+                                    
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <a href="/model/Gemini%202.0%20Flash%20(February%202025)" class="inline-block text-blue-600 hover:text-blue-800 mr-2 py-0.5 rounded font-medium">Gemini 2.0 Flash (February 2025)</a>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <span class="text-green-600">✓</span>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                    1.54%
+                                    
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                $5.23
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                1
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                
+                                    <a href="https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scicode_scicode_tool_calling_agent_gemini20flash_1745324545_UPLOAD.zip?download=true" target="_blank" class="text-blue-600 hover:text-blue-800">
+                                        Download
+                                        <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                        </svg>
+                                    </a>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr class="hover:bg-gray-50 ">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">22</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">
+                                    
+                                        <a href="/agent/Scicode%20Tool%20Calling%20Agent" class="text-blue-600 hover:text-blue-800 font-medium">
+                                            Scicode Tool Calling Agent
+                                        </a>
+                                    
+                                    
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <a href="/model/GPT-4.1%20(April%202025)" class="inline-block text-blue-600 hover:text-blue-800 mr-2 py-0.5 rounded font-medium">GPT-4.1 (April 2025)</a>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <span class="text-green-600">✓</span>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                    1.54%
+                                    
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                $69.39
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                1
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                
+                                    <a href="https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scicode_scicode_tool_calling_agent_gpt4120250414_1745260672_UPLOAD.zip?download=true" target="_blank" class="text-blue-600 hover:text-blue-800">
+                                        Download
+                                        <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                        </svg>
+                                    </a>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr class="hover:bg-gray-50 ">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">23</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">
+                                    
+                                        <a href="/agent/HAL%20Generalist%20Agent" class="text-blue-600 hover:text-blue-800 font-medium">
+                                            HAL Generalist Agent
+                                        </a>
+                                    
+                                    
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <a href="/model/GPT-4.1%20(April%202025)" class="inline-block text-blue-600 hover:text-blue-800 mr-2 py-0.5 rounded font-medium">GPT-4.1 (April 2025)</a>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <span class="text-green-600">✓</span>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                    1.54%
+                                    
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                $73.87
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                1
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                
+                                    <a href="https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scicode_hal_generalist_agent_gpt4120250414_1745597325_UPLOAD.zip?download=true" target="_blank" class="text-blue-600 hover:text-blue-800">
+                                        Download
+                                        <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                        </svg>
+                                    </a>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr class="hover:bg-gray-50 ">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">24</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">
+                                    
+                                        <a href="/agent/HAL%20Generalist%20Agent" class="text-blue-600 hover:text-blue-800 font-medium">
+                                            HAL Generalist Agent
+                                        </a>
+                                    
+                                    
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <a href="/model/o4-mini%20High%20(April%202025)" class="inline-block text-blue-600 hover:text-blue-800 mr-2 py-0.5 rounded font-medium">o4-mini High (April 2025)</a>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <span class="text-green-600">✓</span>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                    1.54%
+                                    
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                $92.10
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                1
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                
+                                    <a href="https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scicode_hal_generalist_agent_o4mini20250416_high_1745615438_UPLOAD.zip?download=true" target="_blank" class="text-blue-600 hover:text-blue-800">
+                                        Download
+                                        <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                        </svg>
+                                    </a>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr class="hover:bg-gray-50 ">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">25</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">
+                                    
+                                        <a href="/agent/Scicode%20Tool%20Calling%20Agent" class="text-blue-600 hover:text-blue-800 font-medium">
+                                            Scicode Tool Calling Agent
+                                        </a>
+                                    
+                                    
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <a href="/model/Claude%20Sonnet%204.5%20High%20(September%202025)" class="inline-block text-blue-600 hover:text-blue-800 mr-2 py-0.5 rounded font-medium">Claude Sonnet 4.5 High (September 2025)</a>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <span class="text-green-600">✓</span>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                    1.54%
+                                    
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                $118.14
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                1
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                
+                                    <a href="https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scicode_scicode_tool_calling_agent_claudesonnet45_high_1759429729_UPLOAD.zip?download=true" target="_blank" class="text-blue-600 hover:text-blue-800">
+                                        Download
+                                        <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                        </svg>
+                                    </a>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr class="hover:bg-gray-50 ">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">26</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">
+                                    
+                                        <a href="/agent/Scicode%20Zero%20Shot%20Agent" class="text-blue-600 hover:text-blue-800 font-medium">
+                                            Scicode Zero Shot Agent
+                                        </a>
+                                    
+                                    
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <a href="/model/DeepSeek%20R1%20(May%202025)" class="inline-block text-blue-600 hover:text-blue-800 mr-2 py-0.5 rounded font-medium">DeepSeek R1 (May 2025)</a>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <span class="text-green-600">✓</span>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                    0.00%
+                                    
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                $2.19
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                1
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                
+                                    <a href="https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scicode_scicode_zero_shot_agent_deepseekaideepseekr1_1753815994_UPLOAD.zip?download=true" target="_blank" class="text-blue-600 hover:text-blue-800">
+                                        Download
+                                        <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                        </svg>
+                                    </a>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr class="hover:bg-gray-50 ">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">27</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">
+                                    
+                                        <a href="/agent/Scicode%20Zero%20Shot%20Agent" class="text-blue-600 hover:text-blue-800 font-medium">
+                                            Scicode Zero Shot Agent
+                                        </a>
+                                    
+                                    
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <a href="/model/Claude-3.7%20Sonnet%20(February%202025)" class="inline-block text-blue-600 hover:text-blue-800 mr-2 py-0.5 rounded font-medium">Claude-3.7 Sonnet (February 2025)</a>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <span class="text-green-600">✓</span>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                    0.00%
+                                    
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                $5.10
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                1
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                
+                                    <a href="https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scicode_scicode_zero_shot_agent_claude37sonnet20250219_1745345545_UPLOAD.zip?download=true" target="_blank" class="text-blue-600 hover:text-blue-800">
+                                        Download
+                                        <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                        </svg>
+                                    </a>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr class="hover:bg-gray-50 ">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">28</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">
+                                    
+                                        <a href="/agent/Scicode%20Tool%20Calling%20Agent" class="text-blue-600 hover:text-blue-800 font-medium">
+                                            Scicode Tool Calling Agent
+                                        </a>
+                                    
+                                    
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <a href="/model/DeepSeek%20V3%20(March%202025)" class="inline-block text-blue-600 hover:text-blue-800 mr-2 py-0.5 rounded font-medium">DeepSeek V3 (March 2025)</a>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <span class="text-green-600">✓</span>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                    0.00%
+                                    
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                $52.11
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                1
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                
+                                    <a href="https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scicode_scicode_tool_calling_agent_deepseekaiDeepSeekV3_1745349011_UPLOAD.zip?download=true" target="_blank" class="text-blue-600 hover:text-blue-800">
+                                        Download
+                                        <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                        </svg>
+                                    </a>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr class="hover:bg-gray-50 ">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">29</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">
+                                    
+                                        <a href="/agent/Scicode%20Tool%20Calling%20Agent" class="text-blue-600 hover:text-blue-800 font-medium">
+                                            Scicode Tool Calling Agent
+                                        </a>
+                                    
+                                    
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <a href="/model/DeepSeek%20R1%20(May%202025)" class="inline-block text-blue-600 hover:text-blue-800 mr-2 py-0.5 rounded font-medium">DeepSeek R1 (May 2025)</a>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <span class="text-green-600">✓</span>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                    0.00%
+                                    
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                $57.62
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                1
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                
+                                    <a href="https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scicode_scicode_tool_calling_agent_deepseekaideepseekr1_1753819405_UPLOAD.zip?download=true" target="_blank" class="text-blue-600 hover:text-blue-800">
+                                        Download
+                                        <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                        </svg>
+                                    </a>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr class="hover:bg-gray-50 ">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">30</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">
+                                    
+                                        <a href="/agent/HAL%20Generalist%20Agent" class="text-blue-600 hover:text-blue-800 font-medium">
+                                            HAL Generalist Agent
+                                        </a>
+                                    
+                                    
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <a href="/model/Gemini%202.0%20Flash%20(February%202025)" class="inline-block text-blue-600 hover:text-blue-800 mr-2 py-0.5 rounded font-medium">Gemini 2.0 Flash (February 2025)</a>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <span class="text-green-600">✓</span>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                    0.00%
+                                    
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                $61.49
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                1
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                
+                                    <a href="https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scicode_hal_generalist_agent_gemini20flash_1745628676_UPLOAD.zip?download=true" target="_blank" class="text-blue-600 hover:text-blue-800">
+                                        Download
+                                        <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                        </svg>
+                                    </a>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr class="hover:bg-gray-50 ">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">31</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">
+                                    
+                                        <a href="/agent/HAL%20Generalist%20Agent" class="text-blue-600 hover:text-blue-800 font-medium">
+                                            HAL Generalist Agent
+                                        </a>
+                                    
+                                    
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <a href="/model/DeepSeek%20V3%20(March%202025)" class="inline-block text-blue-600 hover:text-blue-800 mr-2 py-0.5 rounded font-medium">DeepSeek V3 (March 2025)</a>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <span class="text-green-600">✓</span>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                    0.00%
+                                    
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                $219.36
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                1
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                
+                                    <a href="https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scicode_hal_generalist_agent_deepseekaideepseekv3_1745642054_UPLOAD.zip?download=true" target="_blank" class="text-blue-600 hover:text-blue-800">
+                                        Download
+                                        <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                        </svg>
+                                    </a>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr class="hover:bg-gray-50 ">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">32</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">
+                                    
+                                        <a href="/agent/Scicode%20Tool%20Calling%20Agent" class="text-blue-600 hover:text-blue-800 font-medium">
+                                            Scicode Tool Calling Agent
+                                        </a>
+                                    
+                                    
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <a href="/model/Claude%20Haiku%204.5%20(October%202025)" class="inline-block text-blue-600 hover:text-blue-800 mr-2 py-0.5 rounded font-medium">Claude Haiku 4.5 (October 2025)</a>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <span class="text-green-600">✓</span>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                    0.00%
+                                    
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                $232.36
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                1
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                
+                                    <a href="https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scicode_scicode_tool_calling_agent_claudehaiku45_1760968740_UPLOAD.zip?download=true" target="_blank" class="text-blue-600 hover:text-blue-800">
+                                        Download
+                                        <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                        </svg>
+                                    </a>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr class="hover:bg-gray-50 ">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">33</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">
+                                    
+                                        <a href="/agent/HAL%20Generalist%20Agent" class="text-blue-600 hover:text-blue-800 font-medium">
+                                            HAL Generalist Agent
+                                        </a>
+                                    
+                                    
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <a href="/model/DeepSeek%20R1%20(January%202025)" class="inline-block text-blue-600 hover:text-blue-800 mr-2 py-0.5 rounded font-medium">DeepSeek R1 (January 2025)</a>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                
+                                    <span class="text-green-600">✓</span>
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                    0.00%
+                                    
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                $486.78
+                                
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                1
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                
+                                    <a href="https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scicode_hal_generalist_agent_deepseekaideepseekr1_1753777608_UPLOAD.zip?download=true" target="_blank" class="text-blue-600 hover:text-blue-800">
+                                        Download
+                                        <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                        </svg>
+                                    </a>
+                                
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>

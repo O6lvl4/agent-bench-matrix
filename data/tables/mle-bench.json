@@ -1,0 +1,840 @@
+{
+  "id": "mle-bench",
+  "family": "mle-bench",
+  "name": "MLE-bench",
+  "board": "github.com/openai/mle-bench",
+  "category": "research",
+  "measures_ja": "Kaggle の機械学習コンペ75件で、エージェントが自力でモデルを作り提出し、メダル相当の成績を取れた割合。",
+  "tasks": 75,
+  "tasks_note": "Low(Lite)22件・Medium・High の3分割。",
+  "metric": "Any Medal (%) — All",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "提出者が自前の足場とハードウェア(時間制限つき)で走らせ、採点レポートを README に提出する。",
+  "source": "https://github.com/openai/mle-bench#leaderboard",
+  "fetched": [
+    "https://raw.githubusercontent.com/openai/mle-bench/main/README.md"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-03-06",
+  "snapshot": "sources/mle-bench/README.md",
+  "paper": "https://arxiv.org/abs/2410.07095",
+  "repo": "https://github.com/openai/mle-bench",
+  "notes_ja": "2026-04-24 以降、公正な比較のための手続きを整えるまで新規提出を受け付けていない。値は3シード以上の平均±標準誤差で、Low/Medium/High 別の値は score_extra。[^3] の行は未完了シードを失敗扱いで埋めた値(padded_incomplete_seeds)。PiEvolve/Leeroo は主に Gemini-3-Pro-Preview だが一部モジュールで GPT-5/GPT-5-mini を使用、Operand は他モデルの補助ありと脚注にある。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Famou-Agent 2.0",
+      "agent": "Famou-Agent 2.0",
+      "model_raw": [
+        "Gemini-3-Pro-Preview"
+      ],
+      "model_ids": [
+        "gemini-3-pro-preview"
+      ],
+      "model_config": null,
+      "score": 64.44,
+      "score_extra": {
+        "all_sem": 1.18,
+        "low_lite_pct": 80.3,
+        "low_lite_sem": 1.52,
+        "medium_pct": 64.04,
+        "medium_sem": 2.32,
+        "high_pct": 42.22,
+        "high_sem": 2.22,
+        "running_time_hours": 24.0,
+        "grading_reports_available": true
+      },
+      "date": "2026-02-23",
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://github.com/baidubce/FM-Agent"
+    },
+    {
+      "rank": 2,
+      "system": "AIBuildAI",
+      "agent": "AIBuildAI",
+      "model_raw": [
+        "Claude-Opus-4.6"
+      ],
+      "model_ids": [
+        "claude-opus-4.6"
+      ],
+      "model_config": null,
+      "score": 63.11,
+      "score_extra": {
+        "all_sem": 0.44,
+        "low_lite_pct": 77.27,
+        "low_lite_sem": 0.0,
+        "medium_pct": 61.4,
+        "medium_sem": 0.88,
+        "high_pct": 46.67,
+        "high_sem": 0.0,
+        "running_time_hours": 24.0,
+        "grading_reports_available": true
+      },
+      "date": "2026-03-06",
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://github.com/aibuildai/AI-Build-AI"
+    },
+    {
+      "rank": 3,
+      "system": "CAIR MARS+",
+      "agent": "MARS+",
+      "model_raw": [
+        "Gemini-3-Pro-Preview"
+      ],
+      "model_ids": [
+        "gemini-3-pro-preview"
+      ],
+      "model_config": null,
+      "score": 62.67,
+      "score_extra": {
+        "all_sem": 0.77,
+        "low_lite_pct": 78.79,
+        "low_lite_sem": 1.52,
+        "medium_pct": 60.53,
+        "medium_sem": 1.52,
+        "high_pct": 44.44,
+        "high_sem": 2.22,
+        "running_time_hours": 24.0,
+        "grading_reports_available": true
+      },
+      "date": "2026-02-17",
+      "verified": null,
+      "open_source": false,
+      "org": "CAIR",
+      "row_url": "https://arxiv.org/pdf/2602.02660"
+    },
+    {
+      "rank": 4,
+      "system": "MLEvolve",
+      "agent": "MLEvolve",
+      "model_raw": [
+        "Gemini-3-Pro-Preview"
+      ],
+      "model_ids": [
+        "gemini-3-pro-preview"
+      ],
+      "model_config": null,
+      "score": 61.33,
+      "score_extra": {
+        "all_sem": 1.33,
+        "low_lite_pct": 80.3,
+        "low_lite_sem": 1.52,
+        "medium_pct": 57.89,
+        "medium_sem": 1.52,
+        "high_pct": 42.22,
+        "high_sem": 2.22,
+        "running_time_hours": 12.0,
+        "grading_reports_available": true
+      },
+      "date": "2026-02-14",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/InternScience/MLEvolve"
+    },
+    {
+      "rank": 5,
+      "system": "PiEvolve (Fractal AI Research)",
+      "agent": "PiEvolve",
+      "model_raw": [
+        "Gemini-3-Pro-Preview"
+      ],
+      "model_ids": [
+        "gemini-3-pro-preview"
+      ],
+      "model_config": null,
+      "score": 61.33,
+      "score_extra": {
+        "all_sem": 0.77,
+        "low_lite_pct": 80.3,
+        "low_lite_sem": 1.52,
+        "medium_pct": 58.77,
+        "medium_sem": 0.88,
+        "high_pct": 40.0,
+        "high_sem": 0.0,
+        "running_time_hours": 24.0,
+        "grading_reports_available": true,
+        "padded_incomplete_seeds": true
+      },
+      "date": "2026-01-05",
+      "verified": null,
+      "open_source": false,
+      "org": "Fractal AI Research",
+      "row_url": "https://github.com/FractalAIResearchLabs/PiEvolve"
+    },
+    {
+      "rank": 6,
+      "system": "Famou-Agent 2.0",
+      "agent": "Famou-Agent 2.0",
+      "model_raw": [
+        "Gemini-2.5-Pro"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": null,
+      "score": 59.56,
+      "score_extra": {
+        "all_sem": 0.89,
+        "low_lite_pct": 75.76,
+        "low_lite_sem": 1.52,
+        "medium_pct": 57.89,
+        "medium_sem": 1.52,
+        "high_pct": 40.0,
+        "high_sem": 0.0,
+        "running_time_hours": 24.0,
+        "grading_reports_available": true
+      },
+      "date": "2025-12-27",
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://github.com/baidubce/FM-Agent"
+    },
+    {
+      "rank": 7,
+      "system": "ML-Master 2.0",
+      "agent": "ML-Master 2.0",
+      "model_raw": [
+        "Deepseek-V3.2-Speciale"
+      ],
+      "model_ids": [
+        "deepseek-v3.2-speciale"
+      ],
+      "model_config": null,
+      "score": 56.44,
+      "score_extra": {
+        "all_sem": 2.47,
+        "low_lite_pct": 75.76,
+        "low_lite_sem": 1.51,
+        "medium_pct": 50.88,
+        "medium_sem": 3.51,
+        "high_pct": 42.22,
+        "high_sem": 2.22,
+        "running_time_hours": 24.0,
+        "grading_reports_available": true
+      },
+      "date": "2025-12-16",
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://github.com/sjtu-sai-agents/ML-Master"
+    },
+    {
+      "rank": 8,
+      "system": "CAIR MARS",
+      "agent": "MARS",
+      "model_raw": [
+        "Gemini-3-Pro-Preview"
+      ],
+      "model_ids": [
+        "gemini-3-pro-preview"
+      ],
+      "model_config": null,
+      "score": 56.0,
+      "score_extra": {
+        "all_sem": 1.54,
+        "low_lite_pct": 74.24,
+        "low_lite_sem": 1.52,
+        "medium_pct": 52.63,
+        "medium_sem": 3.04,
+        "high_pct": 37.78,
+        "high_sem": 2.22,
+        "running_time_hours": 24.0,
+        "grading_reports_available": true
+      },
+      "date": "2026-01-25",
+      "verified": null,
+      "open_source": false,
+      "org": "CAIR",
+      "row_url": "https://arxiv.org/pdf/2602.02660"
+    },
+    {
+      "rank": 9,
+      "system": "PiEvolve (Fractal AI Research)",
+      "agent": "PiEvolve",
+      "model_raw": [
+        "Gemini-3-Pro-Preview"
+      ],
+      "model_ids": [
+        "gemini-3-pro-preview"
+      ],
+      "model_config": null,
+      "score": 52.0,
+      "score_extra": {
+        "all_sem": 0.77,
+        "low_lite_pct": 74.24,
+        "low_lite_sem": 3.03,
+        "medium_pct": 45.61,
+        "medium_sem": 0.88,
+        "high_pct": 35.55,
+        "high_sem": 2.22,
+        "running_time_hours": 12.0,
+        "grading_reports_available": true,
+        "padded_incomplete_seeds": true
+      },
+      "date": "2026-01-05",
+      "verified": null,
+      "open_source": false,
+      "org": "Fractal AI Research",
+      "row_url": "https://github.com/FractalAIResearchLabs/PiEvolve"
+    },
+    {
+      "rank": 10,
+      "system": "Leeroo",
+      "agent": "Leeroo",
+      "model_raw": [
+        "Gemini-3-Pro-Preview"
+      ],
+      "model_ids": [
+        "gemini-3-pro-preview"
+      ],
+      "model_config": null,
+      "score": 50.67,
+      "score_extra": {
+        "all_sem": 1.33,
+        "low_lite_pct": 68.18,
+        "low_lite_sem": 2.62,
+        "medium_pct": 44.74,
+        "medium_sem": 1.52,
+        "high_pct": 40.0,
+        "high_sem": 0.0,
+        "running_time_hours": 24.0,
+        "grading_reports_available": true,
+        "padded_incomplete_seeds": true
+      },
+      "date": "2025-12-07",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/Leeroo-AI/kapso"
+    },
+    {
+      "rank": 11,
+      "system": "Thesis",
+      "agent": "Thesis",
+      "model_raw": [
+        "gpt-5-codex"
+      ],
+      "model_ids": [
+        "gpt-5-codex"
+      ],
+      "model_config": null,
+      "score": 48.44,
+      "score_extra": {
+        "all_sem": 3.64,
+        "low_lite_pct": 65.15,
+        "low_lite_sem": 1.52,
+        "medium_pct": 45.61,
+        "medium_sem": 7.18,
+        "high_pct": 31.11,
+        "high_sem": 2.22,
+        "running_time_hours": 24.0,
+        "grading_reports_available": true
+      },
+      "date": "2025-11-10",
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://thesislabs.ai"
+    },
+    {
+      "rank": 12,
+      "system": "CAIR MLE-STAR-Pro-1.5",
+      "agent": "MLE-STAR-Pro-1.5",
+      "model_raw": [
+        "Gemini-2.5-Pro"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": null,
+      "score": 44.0,
+      "score_extra": {
+        "all_sem": 1.33,
+        "low_lite_pct": 68.18,
+        "low_lite_sem": 2.62,
+        "medium_pct": 34.21,
+        "medium_sem": 1.52,
+        "high_pct": 33.33,
+        "high_sem": 0.0,
+        "running_time_hours": 24.0,
+        "grading_reports_available": true
+      },
+      "date": "2025-11-25",
+      "verified": null,
+      "open_source": false,
+      "org": "CAIR",
+      "row_url": "https://research.google/teams/cloud-ai-research/"
+    },
+    {
+      "rank": 13,
+      "system": "Famou-Agent",
+      "agent": "Famou-Agent",
+      "model_raw": [
+        "Gemini-2.5-Pro"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": null,
+      "score": 43.56,
+      "score_extra": {
+        "all_sem": 0.89,
+        "low_lite_pct": 62.12,
+        "low_lite_sem": 1.52,
+        "medium_pct": 36.84,
+        "medium_sem": 1.52,
+        "high_pct": 33.33,
+        "high_sem": 0.0,
+        "running_time_hours": 24.0,
+        "grading_reports_available": true
+      },
+      "date": "2025-10-10",
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://github.com/baidubce/FM-Agent"
+    },
+    {
+      "rank": 14,
+      "system": "Operand ensemble",
+      "agent": "Operand ensemble",
+      "model_raw": [
+        "gpt-5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": "low verbosity/effort",
+      "score": 39.56,
+      "score_extra": {
+        "all_sem": 0.44,
+        "low_lite_pct": 63.64,
+        "low_lite_sem": 0.0,
+        "medium_pct": 33.33,
+        "medium_sem": 0.88,
+        "high_pct": 20.0,
+        "high_sem": 0.0,
+        "running_time_hours": 24.0,
+        "grading_reports_available": true,
+        "padded_incomplete_seeds": true
+      },
+      "date": "2025-10-06",
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://operand.com"
+    },
+    {
+      "rank": 15,
+      "system": "CAIR MLE-STAR-Pro-1.0",
+      "agent": "MLE-STAR-Pro-1.0",
+      "model_raw": [
+        "Gemini-2.5-Pro"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": null,
+      "score": 38.67,
+      "score_extra": {
+        "all_sem": 0.77,
+        "low_lite_pct": 66.67,
+        "low_lite_sem": 1.52,
+        "medium_pct": 25.44,
+        "medium_sem": 0.88,
+        "high_pct": 31.11,
+        "high_sem": 2.22,
+        "running_time_hours": 12.0,
+        "grading_reports_available": true
+      },
+      "date": "2025-11-03",
+      "verified": null,
+      "open_source": false,
+      "org": "CAIR",
+      "row_url": "https://research.google/teams/cloud-ai-research/"
+    },
+    {
+      "rank": 16,
+      "system": "InternAgent",
+      "agent": "InternAgent",
+      "model_raw": [
+        "deepseek-r1"
+      ],
+      "model_ids": [
+        "deepseek-r1"
+      ],
+      "model_config": null,
+      "score": 36.44,
+      "score_extra": {
+        "all_sem": 1.18,
+        "low_lite_pct": 62.12,
+        "low_lite_sem": 3.03,
+        "medium_pct": 26.32,
+        "medium_sem": 2.63,
+        "high_pct": 24.44,
+        "high_sem": 2.22,
+        "running_time_hours": 12.0,
+        "grading_reports_available": true
+      },
+      "date": "2025-09-12",
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://github.com/Alpha-Innovator/InternAgent/"
+    },
+    {
+      "rank": 17,
+      "system": "R&D-Agent",
+      "agent": "R&D-Agent",
+      "model_raw": [
+        "gpt-5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": null,
+      "score": 35.11,
+      "score_extra": {
+        "all_sem": 0.44,
+        "low_lite_pct": 68.18,
+        "low_lite_sem": 2.62,
+        "medium_pct": 21.05,
+        "medium_sem": 1.52,
+        "high_pct": 22.22,
+        "high_sem": 2.22,
+        "running_time_hours": 12.0,
+        "grading_reports_available": true
+      },
+      "date": "2025-09-26",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/microsoft/RD-Agent"
+    },
+    {
+      "rank": 18,
+      "system": "Neo multi-agent",
+      "agent": "Neo multi-agent",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 34.22,
+      "score_extra": {
+        "all_sem": 0.89,
+        "low_lite_pct": 48.48,
+        "low_lite_sem": 1.52,
+        "medium_pct": 29.82,
+        "medium_sem": 2.32,
+        "high_pct": 24.44,
+        "high_sem": 2.22,
+        "running_time_hours": 36.0,
+        "grading_reports_available": true
+      },
+      "date": "2025-07-28",
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://heyneo.so/"
+    },
+    {
+      "rank": 19,
+      "system": "AIRA-dojo",
+      "agent": "AIRA-dojo",
+      "model_raw": [
+        "o3"
+      ],
+      "model_ids": [
+        "o3"
+      ],
+      "model_config": null,
+      "score": 31.6,
+      "score_extra": {
+        "all_sem": 0.82,
+        "low_lite_pct": 55.0,
+        "low_lite_sem": 1.47,
+        "medium_pct": 21.97,
+        "medium_sem": 1.17,
+        "high_pct": 21.67,
+        "high_sem": 1.07,
+        "running_time_hours": 24.0,
+        "grading_reports_available": true
+      },
+      "date": "2025-05-15",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/facebookresearch/aira-dojo/"
+    },
+    {
+      "rank": 20,
+      "system": "R&D-Agent",
+      "agent": "R&D-Agent",
+      "model_raw": [
+        "o3",
+        "GPT-4.1"
+      ],
+      "model_ids": [
+        "o3",
+        "gpt-4.1"
+      ],
+      "model_config": null,
+      "score": 30.22,
+      "score_extra": {
+        "all_sem": 0.89,
+        "low_lite_pct": 51.52,
+        "low_lite_sem": 4.01,
+        "medium_pct": 19.3,
+        "medium_sem": 3.16,
+        "high_pct": 26.67,
+        "high_sem": 0.0,
+        "running_time_hours": 24.0,
+        "grading_reports_available": true
+      },
+      "date": "2025-08-15",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/microsoft/RD-Agent"
+    },
+    {
+      "rank": 21,
+      "system": "ML-Master",
+      "agent": "ML-Master",
+      "model_raw": [
+        "deepseek-r1"
+      ],
+      "model_ids": [
+        "deepseek-r1"
+      ],
+      "model_config": null,
+      "score": 29.33,
+      "score_extra": {
+        "all_sem": 0.77,
+        "low_lite_pct": 48.48,
+        "low_lite_sem": 1.52,
+        "medium_pct": 20.18,
+        "medium_sem": 2.32,
+        "high_pct": 24.44,
+        "high_sem": 2.22,
+        "running_time_hours": 12.0,
+        "grading_reports_available": true
+      },
+      "date": "2025-06-17",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/zeroxleo/ML-Master"
+    },
+    {
+      "rank": 22,
+      "system": "R&D-Agent",
+      "agent": "R&D-Agent",
+      "model_raw": [
+        "o1-preview"
+      ],
+      "model_ids": [
+        "o1-preview"
+      ],
+      "model_config": null,
+      "score": 22.4,
+      "score_extra": {
+        "all_sem": 0.5,
+        "low_lite_pct": 48.18,
+        "low_lite_sem": 1.11,
+        "medium_pct": 8.95,
+        "medium_sem": 1.05,
+        "high_pct": 18.67,
+        "high_sem": 1.33,
+        "running_time_hours": 24.0,
+        "grading_reports_available": true
+      },
+      "date": "2025-05-14",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/microsoft/RD-Agent"
+    },
+    {
+      "rank": 23,
+      "system": "AIDE",
+      "agent": "AIDE",
+      "model_raw": [
+        "o1-preview"
+      ],
+      "model_ids": [
+        "o1-preview"
+      ],
+      "model_config": null,
+      "score": 17.12,
+      "score_extra": {
+        "all_sem": 0.61,
+        "low_lite_pct": 35.91,
+        "low_lite_sem": 1.86,
+        "medium_pct": 8.45,
+        "medium_sem": 0.43,
+        "high_pct": 11.67,
+        "high_sem": 1.27,
+        "running_time_hours": 24.0,
+        "grading_reports_available": true
+      },
+      "date": "2024-10-08",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/wecoai/aideml"
+    },
+    {
+      "rank": 24,
+      "system": "AIDE",
+      "agent": "AIDE",
+      "model_raw": [
+        "gpt-4o-2024-08-06"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 8.63,
+      "score_extra": {
+        "all_sem": 0.54,
+        "low_lite_pct": 18.55,
+        "low_lite_sem": 1.26,
+        "medium_pct": 3.06,
+        "medium_sem": 0.33,
+        "high_pct": 8.15,
+        "high_sem": 0.84,
+        "running_time_hours": 24.0,
+        "grading_reports_available": true
+      },
+      "date": "2024-10-08",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/wecoai/aideml"
+    },
+    {
+      "rank": 25,
+      "system": "AIDE",
+      "agent": "AIDE",
+      "model_raw": [
+        "claude-3-5-sonnet-20240620"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 7.56,
+      "score_extra": {
+        "all_sem": 1.6,
+        "low_lite_pct": 19.7,
+        "low_lite_sem": 1.52,
+        "medium_pct": 2.63,
+        "medium_sem": 1.52,
+        "high_pct": 2.22,
+        "high_sem": 2.22,
+        "running_time_hours": 24.0,
+        "grading_reports_available": true
+      },
+      "date": "2024-10-08",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/wecoai/aideml"
+    },
+    {
+      "rank": 26,
+      "system": "OpenHands",
+      "agent": "OpenHands",
+      "model_raw": [
+        "gpt-4o-2024-08-06"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 4.89,
+      "score_extra": {
+        "all_sem": 0.44,
+        "low_lite_pct": 12.12,
+        "low_lite_sem": 1.52,
+        "medium_pct": 1.75,
+        "medium_sem": 0.88,
+        "high_pct": 2.22,
+        "high_sem": 2.22,
+        "running_time_hours": 24.0,
+        "grading_reports_available": true
+      },
+      "date": "2024-10-08",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 27,
+      "system": "AIDE",
+      "agent": "AIDE",
+      "model_raw": [
+        "llama-3.1-405b-instruct"
+      ],
+      "model_ids": [
+        "llama-3.1-405b-instruct"
+      ],
+      "model_config": null,
+      "score": 3.33,
+      "score_extra": {
+        "all_sem": 0.38,
+        "low_lite_pct": 10.23,
+        "low_lite_sem": 1.14,
+        "medium_pct": 0.66,
+        "medium_sem": 0.66,
+        "high_pct": 0.0,
+        "high_sem": 0.0,
+        "running_time_hours": 24.0,
+        "grading_reports_available": true
+      },
+      "date": "2024-10-08",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/wecoai/aideml"
+    },
+    {
+      "rank": 28,
+      "system": "MLAB",
+      "agent": "MLAB",
+      "model_raw": [
+        "gpt-4o-2024-08-06"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 1.6,
+      "score_extra": {
+        "all_sem": 0.27,
+        "low_lite_pct": 4.55,
+        "low_lite_sem": 0.86,
+        "medium_pct": 0.0,
+        "medium_sem": 0.0,
+        "high_pct": 0.0,
+        "high_sem": 0.0,
+        "running_time_hours": 24.0,
+        "grading_reports_available": true
+      },
+      "date": "2024-10-08",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    }
+  ]
+}

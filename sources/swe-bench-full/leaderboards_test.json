@@ -1,0 +1,737 @@
+{
+ "_source": "https://raw.githubusercontent.com/SWE-bench/swe-bench.github.io/master/data/leaderboards.json",
+ "_retrieved": "2026-09-14",
+ "_note": "board entry from leaderboards.json; per_instance_details removed",
+ "leaderboard": {
+  "name": "Test",
+  "results": [
+   {
+    "agent": "Sonar Foundation Agent",
+    "agent_org": "Sonar",
+    "checked": false,
+    "cost": null,
+    "date": "2025-12-19",
+    "folder": "20251219_sonar-foundation-agent_claude-opus-4-5",
+    "instance_calls": null,
+    "instance_cost": null,
+    "logo": [
+     "img/logos/20251219_sonar-foundation-agent_claude-opus-4-5.png"
+    ],
+    "logs": "s3://swe-bench-submissions/test/20251219_sonar-foundation-agent_claude-opus-4-5/logs",
+    "model_display": "Claude 4.5 Opus",
+    "model_org": "Anthropic",
+    "model_release_date": null,
+    "name": "Sonar Foundation Agent + Claude 4.5 Opus",
+    "os_model": false,
+    "os_system": false,
+    "reasoning_effort": null,
+    "resolved": 52.62,
+    "site": "https://www.sonarsource.com",
+    "tags": [
+     "Model: claude-opus-4-5",
+     "Org: Sonar",
+     "System: Attempts - 1"
+    ],
+    "trajs": "s3://swe-bench-submissions/test/20251219_sonar-foundation-agent_claude-opus-4-5/trajs",
+    "trajs_docent": false,
+    "warning": null
+   },
+   {
+    "agent": "Salesforce AI Research SAGE",
+    "agent_org": "Salesforce AI Research",
+    "checked": false,
+    "cost": null,
+    "date": "2025-10-27",
+    "folder": "20251027_salesforce_SAGE",
+    "instance_calls": null,
+    "instance_cost": null,
+    "logo": [
+     "img/logos/20251027_salesforce_SAGE.png"
+    ],
+    "logs": "s3://swe-bench-submissions/test/20251027_salesforce_SAGE/logs",
+    "model_display": "Multiple",
+    "model_org": "Anthropic",
+    "model_release_date": null,
+    "name": "Salesforce AI Research SAGE (bash-only)",
+    "os_model": false,
+    "os_system": false,
+    "reasoning_effort": null,
+    "resolved": 44.25,
+    "site": "https://www.salesforce.com/blog/sage-swe/",
+    "tags": [
+     "Model: claude-sonnet-4.5",
+     "Model: gpt-5",
+     "Org: Salesforce AI Research",
+     "System: Attempts - 2+"
+    ],
+    "trajs": "s3://swe-bench-submissions/test/20251027_salesforce_SAGE/trajs",
+    "trajs_docent": false,
+    "warning": null
+   },
+   {
+    "agent": "Atlassian Rovo Dev",
+    "agent_org": "Atlassian",
+    "checked": false,
+    "cost": null,
+    "date": "2025-06-05",
+    "folder": "20250605_atlassian-rovo-dev",
+    "instance_calls": null,
+    "instance_cost": null,
+    "logo": [
+     "img/logos/20250605_atlassian-rovo-dev.png"
+    ],
+    "logs": "s3://swe-bench-submissions/test/20250605_atlassian-rovo-dev/logs",
+    "model_display": "Undisclosed",
+    "model_org": null,
+    "model_release_date": null,
+    "name": "Atlassian Rovo Dev (2025-06-05)",
+    "os_model": false,
+    "os_system": false,
+    "reasoning_effort": null,
+    "resolved": 41.98,
+    "site": "https://www.atlassian.com/rovo-dev",
+    "tags": [
+     "Org: Atlassian",
+     "System: Attempts - 1"
+    ],
+    "trajs": "s3://swe-bench-submissions/test/20250605_atlassian-rovo-dev/trajs",
+    "trajs_docent": false,
+    "warning": null
+   },
+   {
+    "agent": "Amazon Q Developer Agent",
+    "agent_org": "AWS",
+    "checked": false,
+    "cost": null,
+    "date": "2025-05-22",
+    "folder": "20250522_amazon-q-developer-agent-20250405-dev",
+    "instance_calls": null,
+    "instance_cost": null,
+    "logo": [
+     "img/logos/20250522_amazon-q-developer-agent-20250405-dev.jpg"
+    ],
+    "logs": "s3://swe-bench-submissions/test/20250522_amazon-q-developer-agent-20250405-dev/logs",
+    "model_display": "Undisclosed",
+    "model_org": null,
+    "model_release_date": null,
+    "name": "Amazon Q Developer Agent (v20250405-dev)",
+    "os_model": false,
+    "os_system": false,
+    "reasoning_effort": null,
+    "resolved": 37.1,
+    "site": "https://aws.amazon.com/q/developer/",
+    "tags": [
+     "Org: AWS",
+     "System: Attempts - 2+"
+    ],
+    "trajs": "s3://swe-bench-submissions/test/20250522_amazon-q-developer-agent-20250405-dev/trajs",
+    "trajs_docent": false,
+    "warning": null
+   },
+   {
+    "agent": "SWE-agent 1.0",
+    "agent_org": "SWE-agent",
+    "checked": true,
+    "cost": null,
+    "date": "2025-02-27",
+    "folder": "20250227_sweagent-claude-3-7-20250219",
+    "instance_calls": null,
+    "instance_cost": null,
+    "logo": [
+     "img/logos/20250227_sweagent-claude-3-7-20250219.png"
+    ],
+    "logs": "s3://swe-bench-submissions/test/20250227_sweagent-claude-3-7-20250219/logs/",
+    "model_display": "Claude 3.7 Sonnet",
+    "model_org": "Anthropic",
+    "model_release_date": null,
+    "name": "SWE-agent 1.0 (Claude 3.7 Sonnet)",
+    "os_model": false,
+    "os_system": true,
+    "reasoning_effort": null,
+    "resolved": 33.83,
+    "site": "https://github.com/swe-agent/swe-agent",
+    "tags": [
+     "Model: claude-3-7-sonnet-20250219",
+     "Org: SWE-agent",
+     "System: Attempts - 1"
+    ],
+    "trajs": "s3://swe-bench-submissions/test/20250227_sweagent-claude-3-7-20250219/trajs/",
+    "trajs_docent": false,
+    "warning": null
+   },
+   {
+    "agent": "Amazon Q Developer Agent",
+    "agent_org": "AWS",
+    "checked": false,
+    "cost": null,
+    "date": "2025-01-31",
+    "folder": "20250131_amazon-q-developer-agent-20241202-dev",
+    "instance_calls": null,
+    "instance_cost": null,
+    "logo": [
+     "img/logos/20250131_amazon-q-developer-agent-20241202-dev.jpg"
+    ],
+    "logs": "s3://swe-bench-submissions/test/20250131_amazon-q-developer-agent-20241202-dev/logs/",
+    "model_display": "Undisclosed",
+    "model_org": null,
+    "model_release_date": null,
+    "name": "Amazon Q Developer Agent (v20241202-dev)",
+    "os_model": false,
+    "os_system": false,
+    "reasoning_effort": null,
+    "resolved": 29.99,
+    "site": "https://aws.amazon.com/q/developer/",
+    "tags": [
+     "Org: AWS",
+     "System: Attempts - 1"
+    ],
+    "trajs": "s3://swe-bench-submissions/test/20250131_amazon-q-developer-agent-20241202-dev/trajs/",
+    "trajs_docent": false,
+    "warning": null
+   },
+   {
+    "agent": "OpenHands",
+    "agent_org": "OpenHands",
+    "checked": true,
+    "cost": null,
+    "date": "2024-11-03",
+    "folder": "20241103_OpenHands-CodeAct-2.1-sonnet-20241022",
+    "instance_calls": null,
+    "instance_cost": null,
+    "logo": [
+     "img/logos/20241103_OpenHands-CodeAct-2.1-sonnet-20241022.png"
+    ],
+    "logs": "s3://swe-bench-submissions/test/20241103_OpenHands-CodeAct-2.1-sonnet-20241022/logs",
+    "model_display": "CodeAct v2.1 (claude-3-5-sonnet-20241022)",
+    "model_org": "Anthropic",
+    "model_release_date": null,
+    "name": "OpenHands + CodeAct v2.1 (claude-3-5-sonnet-20241022)",
+    "os_model": false,
+    "os_system": true,
+    "reasoning_effort": null,
+    "resolved": 29.38,
+    "site": "https://docs.all-hands.dev/",
+    "tags": [
+     "Org: OpenHands",
+     "System: Attempts - 1"
+    ],
+    "trajs": "s3://swe-bench-submissions/test/20241103_OpenHands-CodeAct-2.1-sonnet-20241022/trajs",
+    "trajs_docent": false,
+    "warning": null
+   },
+   {
+    "agent": "AutoCodeRover-v2.0",
+    "agent_org": null,
+    "checked": false,
+    "cost": null,
+    "date": "2024-11-21",
+    "folder": "20241121_autocoderover-v2.0-claude-3-5-sonnet-20241022",
+    "instance_calls": null,
+    "instance_cost": null,
+    "logo": [
+     "img/logos/20241121_autocoderover-v2.0-claude-3-5-sonnet-20241022.png"
+    ],
+    "logs": "s3://swe-bench-submissions/test/20241121_autocoderover-v2.0-claude-3-5-sonnet-20241022/logs",
+    "model_display": "Claude 3.5-Sonnet-20241022",
+    "model_org": "Anthropic",
+    "model_release_date": null,
+    "name": "AutoCodeRover-v2.0 (Claude-3.5-Sonnet-20241022)",
+    "os_model": false,
+    "os_system": true,
+    "reasoning_effort": null,
+    "resolved": 24.89,
+    "site": "https://www.autocoderover.net/",
+    "tags": [
+     "Model: claude-3-5-sonnet-20241022",
+     "System: Attempts - 1"
+    ],
+    "trajs": "s3://swe-bench-submissions/test/20241121_autocoderover-v2.0-claude-3-5-sonnet-20241022/trajs",
+    "trajs_docent": false,
+    "warning": null
+   },
+   {
+    "agent": "Honeycomb",
+    "agent_org": null,
+    "checked": false,
+    "cost": null,
+    "date": "2024-08-20",
+    "folder": "20240820_honeycomb",
+    "instance_calls": null,
+    "instance_cost": null,
+    "logo": [
+     "img/logos/20240820_honeycomb.png"
+    ],
+    "logs": "s3://swe-bench-submissions/test/20240820_honeycomb/logs",
+    "model_display": "Undisclosed",
+    "model_org": null,
+    "model_release_date": null,
+    "name": "Honeycomb",
+    "os_model": false,
+    "os_system": false,
+    "reasoning_effort": null,
+    "resolved": 22.06,
+    "site": "https://honeycomb.sh/",
+    "tags": [
+     "System: Attempts - 1"
+    ],
+    "trajs": "s3://swe-bench-submissions/test/20240820_honeycomb/trajs",
+    "trajs_docent": false,
+    "warning": null
+   },
+   {
+    "agent": "Amazon Q Developer Agent",
+    "agent_org": "AWS",
+    "checked": false,
+    "cost": null,
+    "date": "2024-07-21",
+    "folder": "20240721_amazon-q-developer-agent-20240719-dev",
+    "instance_calls": null,
+    "instance_cost": null,
+    "logo": [
+     "img/logos/20240721_amazon-q-developer-agent-20240719-dev.jpg"
+    ],
+    "logs": "s3://swe-bench-submissions/test/20240721_amazon-q-developer-agent-20240719-dev/logs",
+    "model_display": "Undisclosed",
+    "model_org": null,
+    "model_release_date": null,
+    "name": "Amazon Q Developer Agent (v20240719-dev)",
+    "os_model": false,
+    "os_system": false,
+    "reasoning_effort": null,
+    "resolved": 19.75,
+    "site": "https://aws.amazon.com/q/developer/",
+    "tags": [
+     "Org: AWS",
+     "System: Attempts - 1"
+    ],
+    "trajs": "s3://swe-bench-submissions/test/20240721_amazon-q-developer-agent-20240719-dev/trajs",
+    "trajs_docent": false,
+    "warning": null
+   },
+   {
+    "agent": "Factory Code Droid",
+    "agent_org": null,
+    "checked": false,
+    "cost": null,
+    "date": "2024-06-17",
+    "folder": "20240617_factory_code_droid",
+    "instance_calls": null,
+    "instance_cost": null,
+    "logo": [
+     "img/logos/20240617_factory_code_droid.jpg"
+    ],
+    "logs": "s3://swe-bench-submissions/test/20240617_factory_code_droid/logs",
+    "model_display": "Undisclosed",
+    "model_org": null,
+    "model_release_date": null,
+    "name": "Factory Code Droid",
+    "os_model": false,
+    "os_system": false,
+    "reasoning_effort": null,
+    "resolved": 19.27,
+    "site": "https://www.factory.ai/",
+    "tags": [
+     "System: Attempts - 1"
+    ],
+    "trajs": null,
+    "trajs_docent": false,
+    "warning": null
+   },
+   {
+    "agent": "AutoCodeRover",
+    "agent_org": null,
+    "checked": false,
+    "cost": null,
+    "date": "2024-06-28",
+    "folder": "20240628_autocoderover-v20240620",
+    "instance_calls": null,
+    "instance_cost": null,
+    "logo": [
+     "img/logos/20240628_autocoderover-v20240620.jpg"
+    ],
+    "logs": "s3://swe-bench-submissions/test/20240628_autocoderover-v20240620/logs",
+    "model_display": "GPT-4o",
+    "model_org": "OpenAI",
+    "model_release_date": null,
+    "name": "AutoCodeRover (v20240620) + GPT 4o (2024-05-13)",
+    "os_model": false,
+    "os_system": false,
+    "reasoning_effort": null,
+    "resolved": 18.83,
+    "site": "https://autocoderover.dev/",
+    "tags": [
+     "Model: gpt-4o-2024-05-13",
+     "System: Attempts - 1"
+    ],
+    "trajs": null,
+    "trajs_docent": false,
+    "warning": null
+   },
+   {
+    "agent": "SWE-agent",
+    "agent_org": "SWE-agent",
+    "checked": true,
+    "cost": null,
+    "date": "2024-06-20",
+    "folder": "20240620_sweagent_claude3.5sonnet",
+    "instance_calls": null,
+    "instance_cost": null,
+    "logo": [
+     "img/logos/20240620_sweagent_claude3.5sonnet.png"
+    ],
+    "logs": "s3://swe-bench-submissions/test/20240620_sweagent_claude3.5sonnet/logs",
+    "model_display": "Claude 3.5 Sonnet",
+    "model_org": "Anthropic",
+    "model_release_date": null,
+    "name": "SWE-agent + Claude 3.5 Sonnet",
+    "os_model": false,
+    "os_system": true,
+    "reasoning_effort": null,
+    "resolved": 18.13,
+    "site": null,
+    "tags": [
+     "Model: claude-3-5-sonnet-20241022",
+     "Org: SWE-agent",
+     "System: Attempts - 1"
+    ],
+    "trajs": "s3://swe-bench-submissions/test/20240620_sweagent_claude3.5sonnet/trajs",
+    "trajs_docent": false,
+    "warning": null
+   },
+   {
+    "agent": "AppMap Navie",
+    "agent_org": null,
+    "checked": true,
+    "cost": null,
+    "date": "2024-06-15",
+    "folder": "20240615_appmap-navie_gpt4o",
+    "instance_calls": null,
+    "instance_cost": null,
+    "logo": [
+     "img/logos/20240615_appmap-navie_gpt4o.png"
+    ],
+    "logs": "s3://swe-bench-submissions/test/20240615_appmap-navie_gpt4o/logs",
+    "model_display": "GPT-4o",
+    "model_org": "OpenAI",
+    "model_release_date": null,
+    "name": "AppMap Navie + GPT 4o (2024-05-13)",
+    "os_model": true,
+    "os_system": false,
+    "reasoning_effort": null,
+    "resolved": 14.6,
+    "site": "https://appmap.io/navie",
+    "tags": [
+     "Model: gpt-4o-2024-05-13",
+     "System: Attempts - 1"
+    ],
+    "trajs": null,
+    "trajs_docent": false,
+    "warning": null
+   },
+   {
+    "agent": "Amazon Q Developer Agent",
+    "agent_org": "AWS",
+    "checked": false,
+    "cost": null,
+    "date": "2024-05-09",
+    "folder": "20240509_amazon-q-developer-agent-20240430-dev",
+    "instance_calls": null,
+    "instance_cost": null,
+    "logo": [
+     "img/logos/20240509_amazon-q-developer-agent-20240430-dev.jpg"
+    ],
+    "logs": "s3://swe-bench-submissions/test/20240509_amazon-q-developer-agent-20240430-dev/logs",
+    "model_display": "Undisclosed",
+    "model_org": null,
+    "model_release_date": null,
+    "name": "Amazon Q Developer Agent (v20240430-dev)",
+    "os_model": false,
+    "os_system": false,
+    "reasoning_effort": null,
+    "resolved": 13.82,
+    "site": "https://aws.amazon.com/q/developer/",
+    "tags": [
+     "Org: AWS",
+     "System: Attempts - 1"
+    ],
+    "trajs": null,
+    "trajs_docent": false,
+    "warning": null
+   },
+   {
+    "agent": "SWE-agent",
+    "agent_org": "SWE-agent",
+    "checked": true,
+    "cost": null,
+    "date": "2024-04-02",
+    "folder": "20240402_sweagent_gpt4",
+    "instance_calls": null,
+    "instance_cost": null,
+    "logo": [
+     "img/logos/20240402_sweagent_gpt4.png"
+    ],
+    "logs": "s3://swe-bench-submissions/test/20240402_sweagent_gpt4/logs",
+    "model_display": "GPT-4 (1106)",
+    "model_org": "OpenAI",
+    "model_release_date": null,
+    "name": "SWE-agent + GPT 4 (1106)",
+    "os_model": false,
+    "os_system": true,
+    "reasoning_effort": null,
+    "resolved": 12.47,
+    "site": "https://github.com/SWE-agent/SWE-agent",
+    "tags": [
+     "Model: gpt-4-1106-preview",
+     "Org: SWE-agent",
+     "System: Attempts - 1"
+    ],
+    "trajs": "s3://swe-bench-submissions/test/20240402_sweagent_gpt4/trajs",
+    "trajs_docent": false,
+    "warning": null
+   },
+   {
+    "agent": "SWE-agent",
+    "agent_org": "SWE-agent",
+    "checked": true,
+    "cost": null,
+    "date": "2024-07-28",
+    "folder": "20240728_sweagent_gpt4o",
+    "instance_calls": null,
+    "instance_cost": null,
+    "logo": [
+     "img/logos/20240728_sweagent_gpt4o.png"
+    ],
+    "logs": "s3://swe-bench-submissions/test/20240728_sweagent_gpt4o/logs",
+    "model_display": "GPT-4o",
+    "model_org": "OpenAI",
+    "model_release_date": null,
+    "name": "SWE-agent + GPT 4o (2024-05-13)",
+    "os_model": false,
+    "os_system": true,
+    "reasoning_effort": null,
+    "resolved": 11.99,
+    "site": "https://github.com/SWE-agent/SWE-agent",
+    "tags": [
+     "Model: gpt-4o-2024-05-13",
+     "Org: SWE-agent",
+     "System: Attempts - 1"
+    ],
+    "trajs": "s3://swe-bench-submissions/test/20240728_sweagent_gpt4o/trajs",
+    "trajs_docent": false,
+    "warning": null
+   },
+   {
+    "agent": "SWE-agent",
+    "agent_org": "SWE-agent",
+    "checked": true,
+    "cost": null,
+    "date": "2024-04-02",
+    "folder": "20240402_sweagent_claude3opus",
+    "instance_calls": null,
+    "instance_cost": null,
+    "logo": [
+     "img/logos/20240402_sweagent_claude3opus.png"
+    ],
+    "logs": "s3://swe-bench-submissions/test/20240402_sweagent_claude3opus/logs",
+    "model_display": "Claude 3 Opus",
+    "model_org": "Anthropic",
+    "model_release_date": null,
+    "name": "SWE-agent + Claude 3 Opus",
+    "os_model": false,
+    "os_system": true,
+    "reasoning_effort": null,
+    "resolved": 10.51,
+    "site": null,
+    "tags": [
+     "Model: claude-3-opus-20240229",
+     "Org: SWE-agent",
+     "System: Attempts - 1"
+    ],
+    "trajs": "s3://swe-bench-submissions/test/20240402_sweagent_claude3opus/trajs",
+    "trajs_docent": false,
+    "warning": null
+   },
+   {
+    "agent": "RAG baseline",
+    "agent_org": null,
+    "checked": true,
+    "cost": null,
+    "date": "2024-04-02",
+    "folder": "20240402_rag_claude3opus",
+    "instance_calls": null,
+    "instance_cost": null,
+    "logo": [
+     "img/logos/20240402_rag_claude3opus.png"
+    ],
+    "logs": "s3://swe-bench-submissions/test/20240402_rag_claude3opus/logs",
+    "model_display": "Claude 3 Opus",
+    "model_org": "Anthropic",
+    "model_release_date": null,
+    "name": "RAG + Claude 3 Opus",
+    "os_model": false,
+    "os_system": true,
+    "reasoning_effort": null,
+    "resolved": 3.79,
+    "site": "https://github.com/SWE-bench/SWE-bench/tree/main/swebench/inference",
+    "tags": [
+     "Model: claude-3-opus-20240229",
+     "System: Attempts - 1"
+    ],
+    "trajs": null,
+    "trajs_docent": false,
+    "warning": null
+   },
+   {
+    "agent": "RAG baseline",
+    "agent_org": null,
+    "checked": true,
+    "cost": null,
+    "date": "2023-10-10",
+    "folder": "20231010_rag_claude2",
+    "instance_calls": null,
+    "instance_cost": null,
+    "logo": [
+     "img/logos/20231010_rag_claude2.png"
+    ],
+    "logs": "s3://swe-bench-submissions/test/20231010_rag_claude2/logs",
+    "model_display": "Claude 2",
+    "model_org": "Anthropic",
+    "model_release_date": null,
+    "name": "RAG + Claude 2",
+    "os_model": false,
+    "os_system": true,
+    "reasoning_effort": null,
+    "resolved": 1.96,
+    "site": null,
+    "tags": [
+     "Model: claude-2",
+     "System: Attempts - 1"
+    ],
+    "trajs": null,
+    "trajs_docent": false,
+    "warning": null
+   },
+   {
+    "agent": "RAG baseline",
+    "agent_org": null,
+    "checked": true,
+    "cost": null,
+    "date": "2024-04-02",
+    "folder": "20240402_rag_gpt4",
+    "instance_calls": null,
+    "instance_cost": null,
+    "logo": [
+     "img/logos/20240402_rag_gpt4.png"
+    ],
+    "logs": "s3://swe-bench-submissions/test/20240402_rag_gpt4/logs",
+    "model_display": "GPT-4 (1106)",
+    "model_org": "OpenAI",
+    "model_release_date": null,
+    "name": "RAG + GPT 4 (1106)",
+    "os_model": false,
+    "os_system": true,
+    "reasoning_effort": null,
+    "resolved": 1.31,
+    "site": null,
+    "tags": [
+     "Model: gpt-4-1106-preview",
+     "System: Attempts - 1"
+    ],
+    "trajs": null,
+    "trajs_docent": false,
+    "warning": null
+   },
+   {
+    "agent": "RAG baseline",
+    "agent_org": "SWE-agent",
+    "checked": true,
+    "cost": null,
+    "date": "2023-10-10",
+    "folder": "20231010_rag_swellama13b",
+    "instance_calls": null,
+    "instance_cost": null,
+    "logo": [
+     "img/logos/20231010_rag_swellama13b.png"
+    ],
+    "logs": "s3://swe-bench-submissions/test/20231010_rag_swellama13b/logs",
+    "model_display": "SWE-Llama 13B",
+    "model_org": "Meta",
+    "model_release_date": null,
+    "name": "RAG + SWE-Llama 13B",
+    "os_model": false,
+    "os_system": true,
+    "reasoning_effort": null,
+    "resolved": 0.7,
+    "site": null,
+    "tags": [
+     "Org: SWE-agent",
+     "System: Attempts - 1"
+    ],
+    "trajs": null,
+    "trajs_docent": false,
+    "warning": null
+   },
+   {
+    "agent": "RAG baseline",
+    "agent_org": "SWE-agent",
+    "checked": true,
+    "cost": null,
+    "date": "2023-10-10",
+    "folder": "20231010_rag_swellama7b",
+    "instance_calls": null,
+    "instance_cost": null,
+    "logo": [
+     "img/logos/20231010_rag_swellama7b.png"
+    ],
+    "logs": "s3://swe-bench-submissions/test/20231010_rag_swellama7b/logs",
+    "model_display": "SWE-Llama 7B",
+    "model_org": "Meta",
+    "model_release_date": null,
+    "name": "RAG + SWE-Llama 7B",
+    "os_model": false,
+    "os_system": true,
+    "reasoning_effort": null,
+    "resolved": 0.7,
+    "site": null,
+    "tags": [
+     "Model: SWE-Llama",
+     "Org: SWE-agent",
+     "System: Attempts - 1"
+    ],
+    "trajs": null,
+    "trajs_docent": false,
+    "warning": null
+   },
+   {
+    "agent": "RAG baseline",
+    "agent_org": "SWE-agent",
+    "checked": true,
+    "cost": null,
+    "date": "2023-10-10",
+    "folder": "20231010_rag_gpt35",
+    "instance_calls": null,
+    "instance_cost": null,
+    "logo": [
+     "img/logos/20231010_rag_gpt35.png"
+    ],
+    "logs": "s3://swe-bench-submissions/test/20231010_rag_gpt35/logs",
+    "model_display": "GPT-3.5",
+    "model_org": "OpenAI",
+    "model_release_date": null,
+    "name": "RAG + ChatGPT 3.5",
+    "os_model": false,
+    "os_system": true,
+    "reasoning_effort": null,
+    "resolved": 0.17,
+    "site": null,
+    "tags": [
+     "Org: SWE-agent",
+     "System: Attempts - 1"
+    ],
+    "trajs": null,
+    "trajs_docent": false,
+    "warning": null
+   }
+  ]
+ }
+}

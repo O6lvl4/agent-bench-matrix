@@ -1,0 +1,730 @@
+{
+  "id": "metr-time-horizon",
+  "family": "metr-time-horizon",
+  "name": "METR Time Horizon 1.1",
+  "board": "metr.org",
+  "category": "long-horizon",
+  "measures_ja": "人間の専門家が何分かかるタスクまでなら、AI エージェントが50%の確率で成功できるか(タスク長で測る能力)。",
+  "tasks": 228,
+  "tasks_note": "TH1.1 リリース記事の記載(170→228 タスクに拡大)。",
+  "metric": "50% time horizon",
+  "unit": "minutes",
+  "higher_is_better": true,
+  "harness_ja": "METR が自前のタスク群(RE-Bench・HCAST・短いソフトウェアタスク)でモデルごとに足場(ReAct・Triframe・Claude Code 等)を選んで実行し、人間の所要時間に対する成功率のロジスティック曲線から推定。",
+  "source": "https://metr.org/time-horizons/",
+  "fetched": [
+    "https://metr.org/assets/benchmark_results_1_1.yaml",
+    "https://metr.org/assets/js/time-horizon-chart.js",
+    "https://metr.org/time-horizons/"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-04-07",
+  "snapshot": "sources/metr-time-horizon/benchmark_results_1_1.yaml",
+  "paper": "https://arxiv.org/abs/2503.14499",
+  "repo": "https://github.com/METR/eval-analysis-public",
+  "notes_ja": "date はボードが付けているモデルの公開日で、測定日ではない。16時間を超える測定値は現行タスク群では信頼できないとボード自身が注記。p80 と信頼区間は score_extra。ボードに順位は無く、rank は p50 の降順で付けた。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Claude Mythos Preview (early)",
+      "agent": null,
+      "model_raw": [
+        "Claude Mythos Preview (early)"
+      ],
+      "model_ids": [
+        "claude-mythos-preview"
+      ],
+      "model_config": "early",
+      "score": 1044.780145,
+      "score_extra": {
+        "p50_ci_low": 508.876789,
+        "p50_ci_high": 3304.261235,
+        "p80_minutes": 185.911829,
+        "p80_ci_low": 97.30292,
+        "p80_ci_high": 398.514614,
+        "average_score": 0.85205,
+        "is_sota": true
+      },
+      "date": "2026-04-07",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "Claude Opus 4.6",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 4.6"
+      ],
+      "model_ids": [
+        "claude-opus-4.6"
+      ],
+      "model_config": null,
+      "score": 718.80683,
+      "score_extra": {
+        "p50_ci_low": 316.685725,
+        "p50_ci_high": 3633.786163,
+        "p80_minutes": 69.874587,
+        "p80_ci_low": 27.026521,
+        "p80_ci_high": 170.437873,
+        "average_score": 0.788644,
+        "is_sota": true
+      },
+      "date": "2026-02-05",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://x.com/METR_Evals/status/2024923422867030027"
+    },
+    {
+      "rank": 3,
+      "system": "Gemini 3.1 Pro",
+      "agent": null,
+      "model_raw": [
+        "Gemini 3.1 Pro"
+      ],
+      "model_ids": [
+        "gemini-3.1-pro"
+      ],
+      "model_config": null,
+      "score": 384.147435,
+      "score_extra": {
+        "p50_ci_low": 233.50073,
+        "p50_ci_high": 694.750898,
+        "p80_minutes": 89.801503,
+        "p80_ci_low": 52.025934,
+        "p80_ci_high": 158.618017,
+        "average_score": 0.77035,
+        "is_sota": false
+      },
+      "date": "2026-02-19",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://x.com/METR_Evals/status/2044463380057194868"
+    },
+    {
+      "rank": 4,
+      "system": "GPT-5.2 (high)",
+      "agent": null,
+      "model_raw": [
+        "GPT-5.2 (high)"
+      ],
+      "model_ids": [
+        "gpt-5.2"
+      ],
+      "model_config": "high",
+      "score": 352.249302,
+      "score_extra": {
+        "p50_ci_low": 198.067494,
+        "p50_ci_high": 815.177445,
+        "p80_minutes": 66.002649,
+        "p80_ci_low": 31.665111,
+        "p80_ci_high": 131.730719,
+        "average_score": 0.752875,
+        "is_sota": true
+      },
+      "date": "2025-12-11",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://x.com/METR_Evals/status/2019169900317798857"
+    },
+    {
+      "rank": 5,
+      "system": "GPT-5.3-Codex (high)",
+      "agent": null,
+      "model_raw": [
+        "GPT-5.3-Codex (high)"
+      ],
+      "model_ids": [
+        "gpt-5.3-codex"
+      ],
+      "model_config": "high",
+      "score": 349.530732,
+      "score_extra": {
+        "p50_ci_low": 194.913134,
+        "p50_ci_high": 816.351994,
+        "p80_minutes": 54.739407,
+        "p80_ci_low": 22.361504,
+        "p80_ci_high": 122.058963,
+        "average_score": 0.745439,
+        "is_sota": false
+      },
+      "date": "2026-02-05",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://x.com/METR_Evals/status/2025035574118416460"
+    },
+    {
+      "rank": 6,
+      "system": "GPT-5.4 (xhigh)",
+      "agent": null,
+      "model_raw": [
+        "GPT-5.4 (xhigh)"
+      ],
+      "model_ids": [
+        "gpt-5.4"
+      ],
+      "model_config": "xhigh",
+      "score": 341.735276,
+      "score_extra": {
+        "p50_ci_low": 186.581591,
+        "p50_ci_high": 768.779526,
+        "p80_minutes": 53.877851,
+        "p80_ci_low": 23.957027,
+        "p80_ci_high": 108.679232,
+        "average_score": 0.743443,
+        "is_sota": false
+      },
+      "date": "2026-03-05",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://x.com/METR_Evals/status/2042640545126965441"
+    },
+    {
+      "rank": 7,
+      "system": "Claude Opus 4.5",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 4.5"
+      ],
+      "model_ids": [
+        "claude-opus-4.5"
+      ],
+      "model_config": null,
+      "score": 292.994594,
+      "score_extra": {
+        "p50_ci_low": 161.717714,
+        "p50_ci_high": 623.704698,
+        "p80_minutes": 49.430584,
+        "p80_ci_low": 20.660485,
+        "p80_ci_high": 104.641318,
+        "average_score": 0.73007,
+        "is_sota": true
+      },
+      "date": "2025-11-24",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://x.com/METR_Evals/status/2002203627377574113"
+    },
+    {
+      "rank": 8,
+      "system": "Gemini 3 Pro",
+      "agent": null,
+      "model_raw": [
+        "Gemini 3 Pro"
+      ],
+      "model_ids": [
+        "gemini-3-pro"
+      ],
+      "model_config": null,
+      "score": 224.325884,
+      "score_extra": {
+        "p50_ci_low": 139.565157,
+        "p50_ci_high": 379.235434,
+        "p80_minutes": 54.142849,
+        "p80_ci_low": 25.650451,
+        "p80_ci_high": 103.295501,
+        "average_score": 0.709822,
+        "is_sota": true
+      },
+      "date": "2025-11-18",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://x.com/METR_Evals/status/2018752230376210586"
+    },
+    {
+      "rank": 9,
+      "system": "GPT-5.1-Codex-Max",
+      "agent": null,
+      "model_raw": [
+        "GPT-5.1-Codex-Max"
+      ],
+      "model_ids": [
+        "gpt-5.1-codex-max"
+      ],
+      "model_config": null,
+      "score": 223.714694,
+      "score_extra": {
+        "p50_ci_low": 134.31077,
+        "p50_ci_high": 396.206723,
+        "p80_minutes": 50.632499,
+        "p80_ci_low": 27.30204,
+        "p80_ci_high": 88.365435,
+        "average_score": 0.708301,
+        "is_sota": false
+      },
+      "date": "2025-11-19",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://metr.org/evaluations/gpt-5-1-codex-max-report/"
+    },
+    {
+      "rank": 10,
+      "system": "GPT-5",
+      "agent": null,
+      "model_raw": [
+        "GPT-5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": null,
+      "score": 203.012577,
+      "score_extra": {
+        "p50_ci_low": 112.641357,
+        "p50_ci_high": 405.551565,
+        "p80_minutes": 38.312431,
+        "p80_ci_low": 19.184874,
+        "p80_ci_high": 70.093125,
+        "average_score": 0.693697,
+        "is_sota": true
+      },
+      "date": "2025-08-07",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://metr.org/evaluations/gpt-5-report/"
+    },
+    {
+      "rank": 11,
+      "system": "o3",
+      "agent": null,
+      "model_raw": [
+        "o3"
+      ],
+      "model_ids": [
+        "o3"
+      ],
+      "model_config": null,
+      "score": 119.732634,
+      "score_extra": {
+        "p50_ci_low": 74.615398,
+        "p50_ci_high": 190.943818,
+        "p80_minutes": 29.981603,
+        "p80_ci_low": 15.127348,
+        "p80_ci_high": 57.823511,
+        "average_score": 0.636235,
+        "is_sota": true
+      },
+      "date": "2025-04-16",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://metr.org/evaluations/openai-o3-report/"
+    },
+    {
+      "rank": 12,
+      "system": "Claude Opus 4.1",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 4.1"
+      ],
+      "model_ids": [
+        "claude-opus-4.1"
+      ],
+      "model_config": null,
+      "score": 100.472004,
+      "score_extra": {
+        "p50_ci_low": 59.272391,
+        "p50_ci_high": 159.451918,
+        "p80_minutes": 23.455761,
+        "p80_ci_low": 10.538456,
+        "p80_ci_high": 47.785951,
+        "average_score": 0.615713,
+        "is_sota": false
+      },
+      "date": "2025-08-05",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://x.com/METR_Evals/status/1961527692072993272"
+    },
+    {
+      "rank": 13,
+      "system": "Claude Opus 4",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 4"
+      ],
+      "model_ids": [
+        "claude-opus-4"
+      ],
+      "model_config": null,
+      "score": 100.366123,
+      "score_extra": {
+        "p50_ci_low": 59.994073,
+        "p50_ci_high": 163.454074,
+        "p80_minutes": 20.429752,
+        "p80_ci_low": 8.483125,
+        "p80_ci_high": 41.937268,
+        "average_score": 0.615452,
+        "is_sota": false
+      },
+      "date": "2025-05-22",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://x.com/METR_Evals/status/1940088546385436738"
+    },
+    {
+      "rank": 14,
+      "system": "Claude 3.7 Sonnet",
+      "agent": null,
+      "model_raw": [
+        "Claude 3.7 Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": null,
+      "score": 60.388937,
+      "score_extra": {
+        "p50_ci_low": 33.006168,
+        "p50_ci_high": 104.226017,
+        "p80_minutes": 12.09179,
+        "p80_ci_low": 4.575608,
+        "p80_ci_high": 28.889879,
+        "average_score": 0.558217,
+        "is_sota": true
+      },
+      "date": "2025-02-24",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://metr.org/evaluations/claude-3-7-report/"
+    },
+    {
+      "rank": 15,
+      "system": "o1",
+      "agent": null,
+      "model_raw": [
+        "o1"
+      ],
+      "model_ids": [
+        "o1"
+      ],
+      "model_config": null,
+      "score": 38.831588,
+      "score_extra": {
+        "p50_ci_low": 21.164512,
+        "p50_ci_high": 64.95249,
+        "p80_minutes": 7.090121,
+        "p80_ci_low": 3.036033,
+        "p80_ci_high": 16.640636,
+        "average_score": 0.510512,
+        "is_sota": true
+      },
+      "date": "2024-12-05",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 16,
+      "system": "Claude 3.5 Sonnet (New)",
+      "agent": null,
+      "model_raw": [
+        "Claude 3.5 Sonnet (New)"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": "New (20241022)",
+      "score": 20.522872,
+      "score_extra": {
+        "p50_ci_low": 10.144026,
+        "p50_ci_high": 40.82028,
+        "p80_minutes": 2.595677,
+        "p80_ci_low": 0.89379,
+        "p80_ci_high": 7.363864,
+        "average_score": 0.452356,
+        "is_sota": true
+      },
+      "date": "2024-10-22",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 17,
+      "system": "o1-preview",
+      "agent": null,
+      "model_raw": [
+        "o1-preview"
+      ],
+      "model_ids": [
+        "o1-preview"
+      ],
+      "model_config": null,
+      "score": 20.326586,
+      "score_extra": {
+        "p50_ci_low": 11.716193,
+        "p50_ci_high": 33.379877,
+        "p80_minutes": 4.420545,
+        "p80_ci_low": 2.012646,
+        "p80_ci_high": 8.912444,
+        "average_score": 0.451441,
+        "is_sota": true
+      },
+      "date": "2024-09-12",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://metr.org/evaluations/openai-o1-preview-report/"
+    },
+    {
+      "rank": 18,
+      "system": "Claude 3.5 Sonnet (Old)",
+      "agent": null,
+      "model_raw": [
+        "Claude 3.5 Sonnet (Old)"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": "Old (20240620)",
+      "score": 11.395377,
+      "score_extra": {
+        "p50_ci_low": 5.489734,
+        "p50_ci_high": 22.384214,
+        "p80_minutes": 1.671757,
+        "p80_ci_low": 0.57927,
+        "p80_ci_high": 4.573519,
+        "average_score": 0.401502,
+        "is_sota": true
+      },
+      "date": "2024-06-20",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://metr.org/evaluations/claude-3-5-sonnet-report/"
+    },
+    {
+      "rank": 19,
+      "system": "GPT-4o",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 6.991195,
+      "score_extra": {
+        "p50_ci_low": 4.001482,
+        "p50_ci_high": 12.905741,
+        "p80_minutes": 1.267009,
+        "p80_ci_low": 0.562997,
+        "p80_ci_high": 3.01517,
+        "average_score": 0.338424,
+        "is_sota": true
+      },
+      "date": "2024-05-13",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://metr.org/evaluations/gpt-4o-report/"
+    },
+    {
+      "rank": 20,
+      "system": "GPT-4 Nov '23",
+      "agent": null,
+      "model_raw": [
+        "GPT-4 Nov '23"
+      ],
+      "model_ids": [
+        "gpt-4-1106"
+      ],
+      "model_config": null,
+      "score": 4.044959,
+      "score_extra": {
+        "p50_ci_low": 1.866859,
+        "p50_ci_high": 8.443226,
+        "p80_minutes": 0.783032,
+        "p80_ci_low": 0.276599,
+        "p80_ci_high": 2.358414,
+        "average_score": 0.28905,
+        "is_sota": true
+      },
+      "date": "2023-11-06",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 21,
+      "system": "GPT-4",
+      "agent": null,
+      "model_raw": [
+        "GPT-4"
+      ],
+      "model_ids": [
+        "gpt-4"
+      ],
+      "model_config": null,
+      "score": 3.987428,
+      "score_extra": {
+        "p50_ci_low": 1.93292,
+        "p50_ci_high": 7.995283,
+        "p80_minutes": 0.889561,
+        "p80_ci_low": 0.342984,
+        "p80_ci_high": 2.523746,
+        "average_score": 0.293044,
+        "is_sota": true
+      },
+      "date": "2023-03-14",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 22,
+      "system": "Claude 3 Opus",
+      "agent": null,
+      "model_raw": [
+        "Claude 3 Opus"
+      ],
+      "model_ids": [
+        "claude-3-opus"
+      ],
+      "model_config": null,
+      "score": 3.952262,
+      "score_extra": {
+        "p50_ci_low": 1.706313,
+        "p50_ci_high": 8.76484,
+        "p80_minutes": 0.638973,
+        "p80_ci_low": 0.190491,
+        "p80_ci_high": 2.118276,
+        "average_score": 0.294753,
+        "is_sota": false
+      },
+      "date": "2024-03-04",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 23,
+      "system": "GPT-4 Turbo",
+      "agent": null,
+      "model_raw": [
+        "GPT-4 Turbo"
+      ],
+      "model_ids": [
+        "gpt-4-turbo"
+      ],
+      "model_config": null,
+      "score": 3.732787,
+      "score_extra": {
+        "p50_ci_low": 1.980046,
+        "p50_ci_high": 6.736613,
+        "p80_minutes": 0.927933,
+        "p80_ci_low": 0.428277,
+        "p80_ci_high": 2.196806,
+        "average_score": 0.271786,
+        "is_sota": false
+      },
+      "date": "2024-04-09",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 24,
+      "system": "GPT-3.5",
+      "agent": null,
+      "model_raw": [
+        "GPT-3.5"
+      ],
+      "model_ids": [
+        "gpt-3.5-turbo-instruct"
+      ],
+      "model_config": null,
+      "score": 0.599247,
+      "score_extra": {
+        "p50_ci_low": 0.255148,
+        "p50_ci_high": 1.115905,
+        "p80_minutes": 0.25538,
+        "p80_ci_low": 0.141649,
+        "p80_ci_high": 0.492933,
+        "average_score": 0.214611,
+        "is_sota": true
+      },
+      "date": "2022-03-15",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 25,
+      "system": "GPT-3",
+      "agent": null,
+      "model_raw": [
+        "GPT-3"
+      ],
+      "model_ids": [
+        "davinci-002"
+      ],
+      "model_config": null,
+      "score": 0.144057,
+      "score_extra": {
+        "p50_ci_low": 0.093319,
+        "p50_ci_high": 0.221209,
+        "p80_minutes": 0.056238,
+        "p80_ci_low": 0.034813,
+        "p80_ci_high": 0.105813,
+        "average_score": 0.161869,
+        "is_sota": true
+      },
+      "date": "2020-05-28",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 26,
+      "system": "GPT-2",
+      "agent": null,
+      "model_raw": [
+        "GPT-2"
+      ],
+      "model_ids": [
+        "gpt-2"
+      ],
+      "model_config": null,
+      "score": 0.053778,
+      "score_extra": {
+        "p50_ci_low": 0.009994,
+        "p50_ci_high": 0.141825,
+        "p80_minutes": 0.0128,
+        "p80_ci_low": 0.001589,
+        "p80_ci_high": 0.068612,
+        "average_score": 0.101046,
+        "is_sota": true
+      },
+      "date": "2019-02-14",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    }
+  ]
+}

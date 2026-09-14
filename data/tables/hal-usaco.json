@@ -1,0 +1,325 @@
+{
+  "id": "hal-usaco",
+  "family": "usaco",
+  "name": "USACO (HAL)",
+  "board": "hal.cs.princeton.edu",
+  "category": "coding",
+  "measures_ja": "USA Computing Olympiad の競技プログラミング問題を、テストケースを通す形で解けるか。",
+  "tasks": 307,
+  "tasks_note": null,
+  "metric": "Accuracy",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "HAL 運営が共通ハーネス(hal-harness)で足場×モデルを自ら実行した結果。費用は公開トークン単価から算出し、キャッシュ割引は含まない。",
+  "source": "https://hal.cs.princeton.edu/usaco",
+  "fetched": [
+    "https://hal.cs.princeton.edu/usaco"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": null,
+  "snapshot": "sources/hal-usaco/leaderboard-table.html",
+  "paper": "https://arxiv.org/abs/2404.10952",
+  "repo": "https://github.com/princeton-pli/hal-harness",
+  "notes_ja": "HAL は新モデルの追加を停止し、信頼性(reliability)の測定に移行している。 ボードに行ごとの日付は無い。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "USACO Episodic + Semantic",
+      "agent": "USACO Episodic + Semantic",
+      "model_raw": [
+        "GPT-5 Medium (August 2025)"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": "Medium",
+      "score": 69.06,
+      "score_extra": {
+        "cost_usd": 116.63,
+        "runs": 1,
+        "pareto_optimal": true
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/usaco_usaco_episodic__semantic_gpt5_medium_1774238836_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 2,
+      "system": "USACO Episodic + Semantic",
+      "agent": "USACO Episodic + Semantic",
+      "model_raw": [
+        "o4-mini High (April 2025)"
+      ],
+      "model_ids": [
+        "o4-mini"
+      ],
+      "model_config": "High",
+      "score": 64.82,
+      "score_extra": {
+        "cost_usd": 77.28,
+        "runs": 1,
+        "pareto_optimal": true
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/usaco_usaco_episodic__semantic_o4mini_high_1774243383_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 3,
+      "system": "USACO Episodic + Semantic",
+      "agent": "USACO Episodic + Semantic",
+      "model_raw": [
+        "o4-mini Low (April 2025)"
+      ],
+      "model_ids": [
+        "o4-mini"
+      ],
+      "model_config": "Low",
+      "score": 53.09,
+      "score_extra": {
+        "cost_usd": 24.6,
+        "runs": 1,
+        "pareto_optimal": true
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/usaco_usaco_episodic__semantic_o4mini_low_1774239521_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 4,
+      "system": "USACO Episodic + Semantic",
+      "agent": "USACO Episodic + Semantic",
+      "model_raw": [
+        "Claude Opus 4.1 High (August 2025)"
+      ],
+      "model_ids": [
+        "claude-opus-4.1"
+      ],
+      "model_config": "High",
+      "score": 51.47,
+      "score_extra": {
+        "cost_usd": 267.72,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/usaco_usaco_episodic__semantic_claudeopus4120250514_high_1756132384_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 5,
+      "system": "USACO Episodic + Semantic",
+      "agent": "USACO Episodic + Semantic",
+      "model_raw": [
+        "Claude Opus 4.1 (August 2025)"
+      ],
+      "model_ids": [
+        "claude-opus-4.1"
+      ],
+      "model_config": null,
+      "score": 48.21,
+      "score_extra": {
+        "cost_usd": 276.19,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/usaco_usaco_episodic__semantic_claudeopus4120250514_1756127006_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 6,
+      "system": "USACO Episodic + Semantic",
+      "agent": "USACO Episodic + Semantic",
+      "model_raw": [
+        "o3 Medium (April 2025)"
+      ],
+      "model_ids": [
+        "o3"
+      ],
+      "model_config": "Medium",
+      "score": 46.25,
+      "score_extra": {
+        "cost_usd": 57.3,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/usaco_usaco_episodic__semantic_o320250416_1745878600_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 7,
+      "system": "USACO Episodic + Semantic",
+      "agent": "USACO Episodic + Semantic",
+      "model_raw": [
+        "GPT-4.1 (April 2025)"
+      ],
+      "model_ids": [
+        "gpt-4.1"
+      ],
+      "model_config": null,
+      "score": 44.95,
+      "score_extra": {
+        "cost_usd": 28.1,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/usaco_usaco_episodic__semantic_gpt4120250414_1744661741_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 8,
+      "system": "USACO Episodic + Semantic",
+      "agent": "USACO Episodic + Semantic",
+      "model_raw": [
+        "DeepSeek V3 (March 2025)"
+      ],
+      "model_ids": [
+        "deepseek-v3-0324"
+      ],
+      "model_config": null,
+      "score": 39.09,
+      "score_extra": {
+        "cost_usd": 12.08,
+        "runs": 1,
+        "pareto_optimal": true
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/usaco_usaco_episodic__semantic_deepseekaideepseekv3_1744580934_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 9,
+      "system": "USACO Episodic + Semantic",
+      "agent": "USACO Episodic + Semantic",
+      "model_raw": [
+        "DeepSeek R1 (January 2025)"
+      ],
+      "model_ids": [
+        "deepseek-r1"
+      ],
+      "model_config": null,
+      "score": 38.11,
+      "score_extra": {
+        "cost_usd": 80.04,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/usaco_usaco_episodic__semantic_deepseekaideepseekr1_1744597968_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 10,
+      "system": "USACO Episodic + Semantic",
+      "agent": "USACO Episodic + Semantic",
+      "model_raw": [
+        "Claude-3.7 Sonnet (February 2025)"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": null,
+      "score": 29.32,
+      "score_extra": {
+        "cost_usd": 38.7,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/usaco_usaco_episodic__semantic_claude37sonnet20250219_1744648510_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 11,
+      "system": "USACO Episodic + Semantic",
+      "agent": "USACO Episodic + Semantic",
+      "model_raw": [
+        "Gemini 2.0 Flash (February 2025)"
+      ],
+      "model_ids": [
+        "gemini-2.0-flash"
+      ],
+      "model_config": null,
+      "score": 27.04,
+      "score_extra": {
+        "cost_usd": 1.46,
+        "runs": 1,
+        "pareto_optimal": true
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/usaco_usaco_episodic__semantic_geminigemini20flash_1756136853_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 12,
+      "system": "USACO Episodic + Semantic",
+      "agent": "USACO Episodic + Semantic",
+      "model_raw": [
+        "Claude-3.7 Sonnet High (February 2025)"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": "High",
+      "score": 26.71,
+      "score_extra": {
+        "cost_usd": 56.43,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/usaco_usaco_episodic__semantic_claude37sonnet20250219_high_1744655395_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 13,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "GPT-4.1 (April 2025)"
+      ],
+      "model_ids": [
+        "gpt-4.1"
+      ],
+      "model_config": null,
+      "score": 25.41,
+      "score_extra": {
+        "cost_usd": 197.33,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/usaco_hal_generalist_agent_gpt4120250414_1750887884_UPLOAD.zip?download=true"
+    }
+  ]
+}

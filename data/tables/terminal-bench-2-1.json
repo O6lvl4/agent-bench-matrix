@@ -1,0 +1,774 @@
+{
+  "id": "terminal-bench-2-1",
+  "family": "terminal-bench",
+  "name": "Terminal-Bench 2.1",
+  "board": "tbench.ai",
+  "category": "terminal",
+  "measures_ja": "Terminal-Bench 2.0 の 89 タスクのうち 28 タスクの不具合を直した版で、ターミナル作業を完遂できるか。",
+  "tasks": 89,
+  "tasks_note": "公式ブログ「fix issues in 28 of the 89 tasks in Terminal-Bench 2.0」。",
+  "metric": "Accuracy (%)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "TB2.1 リポジトリへの PR で結果を提出して掲載される。各行 1 タスク 5 試行(445 試行)。",
+  "source": "https://www.tbench.ai/?version=2.1",
+  "fetched": [
+    "https://ofhuhcpkvzjlejydnvyd.supabase.co/functions/v1/leaderboard-read (POST {\"package\":\"terminal-bench/terminal-bench-2-1\",\"name\":\"main\"})"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-09-03",
+  "snapshot": "sources/terminal-bench-2-1/leaderboard.json",
+  "paper": "https://arxiv.org/abs/2601.11868",
+  "repo": "https://github.com/harbor-framework/terminal-bench-2-1",
+  "notes_ja": "Hacks 列(報酬ハックと判定された割合)を reward_hacks_pct に入れた。日付はモデル公開日。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Codex / GPT-6 Astra",
+      "agent": "Codex",
+      "model_raw": [
+        "GPT-6 Astra"
+      ],
+      "model_ids": [
+        "gpt-6-astra"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 87.42,
+      "score_extra": {
+        "ci95_half_width": 1.79,
+        "stderr": 0.91,
+        "pass_at_2": 0.9112,
+        "pass_at_3": 0.927,
+        "pass_at_4": 0.9371,
+        "pass_at_5": 0.9438,
+        "trials": 445,
+        "reward_hacks_pct": 0,
+        "total_tokens": 368258713,
+        "output_tokens": 4220835,
+        "cached_input_tokens": 341991423,
+        "uncached_input_tokens": 364037878,
+        "cost_usd": 773.5,
+        "avg_trial_duration_sec": 434.1
+      },
+      "date": "2026-09-03",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2-1/latest/leaderboards/main/rows/03ff7953-4955-4fc5-9ddd-911cab72d7f1"
+    },
+    {
+      "rank": 2,
+      "system": "Codex / GPT-6 Astra",
+      "agent": "Codex",
+      "model_raw": [
+        "GPT-6 Astra"
+      ],
+      "model_ids": [
+        "gpt-6-astra"
+      ],
+      "model_config": "reasoning_effort=medium",
+      "score": 86.97,
+      "score_extra": {
+        "ci95_half_width": 1.89,
+        "stderr": 0.96,
+        "pass_at_2": 0.9112,
+        "pass_at_3": 0.927,
+        "pass_at_4": 0.9371,
+        "pass_at_5": 0.9438,
+        "trials": 445,
+        "reward_hacks_pct": 0,
+        "total_tokens": 320800101,
+        "output_tokens": 2900108,
+        "cached_input_tokens": 300548240,
+        "uncached_input_tokens": 317899993,
+        "cost_usd": 619.07,
+        "avg_trial_duration_sec": 390.4
+      },
+      "date": "2026-09-03",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2-1/latest/leaderboards/main/rows/17be4c09-ab31-4202-9d56-31a2ccf37e1b"
+    },
+    {
+      "rank": 3,
+      "system": "Codex / GPT-6 Astra",
+      "agent": "Codex",
+      "model_raw": [
+        "GPT-6 Astra"
+      ],
+      "model_ids": [
+        "gpt-6-astra"
+      ],
+      "model_config": "reasoning_effort=low",
+      "score": 86.74,
+      "score_extra": {
+        "ci95_half_width": 1.82,
+        "stderr": 0.93,
+        "pass_at_2": 0.9056,
+        "pass_at_3": 0.9191,
+        "pass_at_4": 0.9281,
+        "pass_at_5": 0.9326,
+        "trials": 445,
+        "reward_hacks_pct": 0,
+        "total_tokens": 239142284,
+        "output_tokens": 1957872,
+        "cached_input_tokens": 222920585,
+        "uncached_input_tokens": 237184412,
+        "cost_usd": 463.45,
+        "avg_trial_duration_sec": 348.9
+      },
+      "date": "2026-09-03",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2-1/latest/leaderboards/main/rows/93fc9e32-98c9-4e4a-a6a0-89dd3da598af"
+    },
+    {
+      "rank": 3,
+      "system": "Codex / GPT-6 Astra",
+      "agent": "Codex",
+      "model_raw": [
+        "GPT-6 Astra"
+      ],
+      "model_ids": [
+        "gpt-6-astra"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 86.74,
+      "score_extra": {
+        "ci95_half_width": 1.36,
+        "stderr": 0.69,
+        "pass_at_2": 0.8888,
+        "pass_at_3": 0.8989,
+        "pass_at_4": 0.9056,
+        "pass_at_5": 0.9101,
+        "trials": 445,
+        "reward_hacks_pct": 0,
+        "total_tokens": 429273930,
+        "output_tokens": 7577290,
+        "cached_input_tokens": 391786531,
+        "uncached_input_tokens": 421696640,
+        "cost_usd": 1069.75,
+        "avg_trial_duration_sec": 576
+      },
+      "date": "2026-09-03",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2-1/latest/leaderboards/main/rows/f8d623c8-5f1b-4f9c-8deb-d110fa91e1d2"
+    },
+    {
+      "rank": 5,
+      "system": "Codex / GPT-6 Astra",
+      "agent": "Codex",
+      "model_raw": [
+        "GPT-6 Astra"
+      ],
+      "model_ids": [
+        "gpt-6-astra"
+      ],
+      "model_config": "reasoning_effort=xhigh",
+      "score": 85.84,
+      "score_extra": {
+        "ci95_half_width": 1.43,
+        "stderr": 0.73,
+        "pass_at_2": 0.882,
+        "pass_at_3": 0.8944,
+        "pass_at_4": 0.9034,
+        "pass_at_5": 0.9101,
+        "trials": 445,
+        "reward_hacks_pct": 0,
+        "total_tokens": 404698440,
+        "output_tokens": 5287268,
+        "cached_input_tokens": 374437038,
+        "uncached_input_tokens": 399411172,
+        "cost_usd": 888.54,
+        "avg_trial_duration_sec": 487.3
+      },
+      "date": "2026-09-03",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2-1/latest/leaderboards/main/rows/3d9a7a70-ad72-4197-b895-c73698601637"
+    },
+    {
+      "rank": 6,
+      "system": "Claude Code / Fable 5",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Fable 5"
+      ],
+      "model_ids": [
+        "claude-fable-5"
+      ],
+      "model_config": "reasoning_effort=xhigh",
+      "score": 83.82,
+      "score_extra": {
+        "ci95_half_width": 2.27,
+        "stderr": 1.16,
+        "pass_at_2": 0.8978,
+        "pass_at_3": 0.918,
+        "pass_at_4": 0.9281,
+        "pass_at_5": 0.9326,
+        "trials": 445,
+        "reward_hacks_pct": 0.22,
+        "total_tokens": 204502003,
+        "output_tokens": 9954945,
+        "cached_input_tokens": 174066133,
+        "uncached_input_tokens": 20480925,
+        "cost_usd": 552.67,
+        "avg_trial_duration_sec": 579.7
+      },
+      "date": "2026-06-09",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2-1/latest/leaderboards/main/rows/40dbe33d-e8af-475b-8eba-7d5d8f70054c"
+    },
+    {
+      "rank": 7,
+      "system": "Codex / GPT-5.5",
+      "agent": "Codex",
+      "model_raw": [
+        "GPT-5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": "reasoning_effort=xhigh",
+      "score": 83.15,
+      "score_extra": {
+        "ci95_half_width": 2.21,
+        "stderr": 1.13,
+        "pass_at_2": 0.8888,
+        "pass_at_3": 0.9135,
+        "pass_at_4": 0.9303,
+        "pass_at_5": 0.9438,
+        "trials": 445,
+        "reward_hacks_pct": 0.22,
+        "total_tokens": 735197348,
+        "output_tokens": 5966373,
+        "cached_input_tokens": 392433664,
+        "uncached_input_tokens": 336797311,
+        "cost_usd": 2059.19,
+        "avg_trial_duration_sec": 482.6
+      },
+      "date": "2026-04-23",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2-1/latest/leaderboards/main/rows/6d091468-3fda-4cbf-ba1c-645b0f522e97"
+    },
+    {
+      "rank": 8,
+      "system": "Terminus 2 / Fable 5",
+      "agent": "Terminus 2",
+      "model_raw": [
+        "Fable 5"
+      ],
+      "model_ids": [
+        "claude-fable-5"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 80.45,
+      "score_extra": {
+        "ci95_half_width": 2.27,
+        "stderr": 1.16,
+        "pass_at_2": 0.864,
+        "pass_at_3": 0.891,
+        "pass_at_4": 0.9079,
+        "pass_at_5": 0.9213,
+        "trials": 445,
+        "reward_hacks_pct": 0,
+        "total_tokens": 71432809,
+        "output_tokens": 7412519,
+        "cached_input_tokens": 56146091,
+        "uncached_input_tokens": 7874199,
+        "cost_usd": 438.64,
+        "avg_trial_duration_sec": 697.1
+      },
+      "date": "2026-06-09",
+      "verified": null,
+      "open_source": null,
+      "org": "Terminal-Bench",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2-1/latest/leaderboards/main/rows/ce0677b9-0fea-46ce-b8de-893c4d68e77a"
+    },
+    {
+      "rank": 9,
+      "system": "Cursor CLI / Grok 4.5",
+      "agent": "Cursor CLI",
+      "model_raw": [
+        "Grok 4.5"
+      ],
+      "model_ids": [
+        "grok-4.5"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 79.33,
+      "score_extra": {
+        "ci95_half_width": 2.86,
+        "stderr": 1.46,
+        "pass_at_2": 0.8888,
+        "pass_at_3": 0.9236,
+        "pass_at_4": 0.9416,
+        "pass_at_5": 0.9551,
+        "trials": 445,
+        "reward_hacks_pct": 8.99,
+        "total_tokens": 178384443,
+        "output_tokens": 4734062,
+        "cached_input_tokens": 161079936,
+        "uncached_input_tokens": 12570445,
+        "cost_usd": 134.09,
+        "avg_trial_duration_sec": 443
+      },
+      "date": "2026-07-08",
+      "verified": null,
+      "open_source": null,
+      "org": "Cursor",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2-1/latest/leaderboards/main/rows/1fe87c62-99ed-477b-9f6c-23ffbabc49f6"
+    },
+    {
+      "rank": 10,
+      "system": "Claude Code / Opus 4.8",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Opus 4.8"
+      ],
+      "model_ids": [
+        "claude-opus-4.8"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 78.88,
+      "score_extra": {
+        "ci95_half_width": 2.57,
+        "stderr": 1.31,
+        "pass_at_2": 0.8652,
+        "pass_at_3": 0.9011,
+        "pass_at_4": 0.9258,
+        "pass_at_5": 0.9438,
+        "trials": 445,
+        "reward_hacks_pct": 0,
+        "total_tokens": 182894067,
+        "output_tokens": 8089069,
+        "cached_input_tokens": 161931526,
+        "uncached_input_tokens": 12873472,
+        "cost_usd": 286.94,
+        "avg_trial_duration_sec": 551.4
+      },
+      "date": "2026-05-28",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2-1/latest/leaderboards/main/rows/dcd48d03-9df9-46ab-bc4c-ade6dc35b8da"
+    },
+    {
+      "rank": 11,
+      "system": "Codex / GPT-5.6 Terra",
+      "agent": "Codex",
+      "model_raw": [
+        "GPT-5.6 Terra"
+      ],
+      "model_ids": [
+        "gpt-5.6-terra"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 78.43,
+      "score_extra": {
+        "ci95_half_width": 2.45,
+        "stderr": 1.25,
+        "pass_at_2": 0.8539,
+        "pass_at_3": 0.8753,
+        "pass_at_4": 0.8876,
+        "pass_at_5": 0.8989,
+        "trials": 445,
+        "reward_hacks_pct": 0.22,
+        "total_tokens": 902641810,
+        "output_tokens": 8707506,
+        "cached_input_tokens": 864130644,
+        "uncached_input_tokens": 29803660,
+        "cost_usd": 421.15,
+        "avg_trial_duration_sec": 432.8
+      },
+      "date": "2026-06-26",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2-1/latest/leaderboards/main/rows/23ab6a14-4b2d-461d-9171-f8109f5692f1"
+    },
+    {
+      "rank": 12,
+      "system": "Terminus 2 / GPT-5.5",
+      "agent": "Terminus 2",
+      "model_raw": [
+        "GPT-5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": "reasoning_effort=xhigh",
+      "score": 77.98,
+      "score_extra": {
+        "ci95_half_width": 2.39,
+        "stderr": 1.22,
+        "pass_at_2": 0.8461,
+        "pass_at_3": 0.864,
+        "pass_at_4": 0.8719,
+        "pass_at_5": 0.8764,
+        "trials": 445,
+        "reward_hacks_pct": 0.22,
+        "total_tokens": 92237198,
+        "output_tokens": 10768129,
+        "cached_input_tokens": 0,
+        "uncached_input_tokens": 81469069,
+        "cost_usd": 493.85,
+        "avg_trial_duration_sec": 726.7
+      },
+      "date": "2026-04-23",
+      "verified": null,
+      "open_source": null,
+      "org": "Terminal-Bench",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2-1/latest/leaderboards/main/rows/db1f499b-d948-43d2-9aaf-27cfe97f6caf"
+    },
+    {
+      "rank": 13,
+      "system": "mini-SWE-agent / Muse Spark 1.1",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "Muse Spark 1.1"
+      ],
+      "model_ids": [
+        "muse-spark-1.1"
+      ],
+      "model_config": "reasoning_effort=xhigh",
+      "score": 76.18,
+      "score_extra": {
+        "ci95_half_width": 2.41,
+        "stderr": 1.23,
+        "pass_at_2": 0.8292,
+        "pass_at_3": 0.8697,
+        "pass_at_4": 0.8966,
+        "pass_at_5": 0.9101,
+        "trials": 445,
+        "reward_hacks_pct": 0,
+        "total_tokens": 945980322,
+        "output_tokens": 13679953,
+        "cached_input_tokens": 932239373,
+        "uncached_input_tokens": 60996,
+        "cost_usd": 198.05,
+        "avg_trial_duration_sec": 687
+      },
+      "date": "2026-07-09",
+      "verified": null,
+      "open_source": null,
+      "org": "Princeton",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2-1/latest/leaderboards/main/rows/64890377-54de-4cc2-bcd7-e76610983482"
+    },
+    {
+      "rank": 14,
+      "system": "Codex / GPT-5.6 Luna",
+      "agent": "Codex",
+      "model_raw": [
+        "GPT-5.6 Luna"
+      ],
+      "model_ids": [
+        "gpt-5.6-luna"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 75.73,
+      "score_extra": {
+        "ci95_half_width": 2.59,
+        "stderr": 1.32,
+        "pass_at_2": 0.8348,
+        "pass_at_3": 0.864,
+        "pass_at_4": 0.8787,
+        "pass_at_5": 0.8876,
+        "trials": 445,
+        "reward_hacks_pct": 0.9,
+        "total_tokens": 1427219692,
+        "output_tokens": 10628905,
+        "cached_input_tokens": 1376567117,
+        "uncached_input_tokens": 40023670,
+        "cost_usd": 241.45,
+        "avg_trial_duration_sec": 457.3
+      },
+      "date": "2026-06-26",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2-1/latest/leaderboards/main/rows/e5f3feda-4629-46ba-963f-300dcf7c2a4c"
+    },
+    {
+      "rank": 15,
+      "system": "Claude Code / Sonnet 5",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Sonnet 5"
+      ],
+      "model_ids": [
+        "claude-sonnet-5"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 74.61,
+      "score_extra": {
+        "ci95_half_width": 3.21,
+        "stderr": 1.64,
+        "pass_at_2": 0.8652,
+        "pass_at_3": 0.8955,
+        "pass_at_4": 0.9101,
+        "pass_at_5": 0.9213,
+        "trials": 445,
+        "reward_hacks_pct": 0.67,
+        "total_tokens": 558574454,
+        "output_tokens": 11216322,
+        "cached_input_tokens": 527220403,
+        "uncached_input_tokens": 20137729,
+        "cost_usd": 288.18,
+        "avg_trial_duration_sec": 629.6
+      },
+      "date": "2026-06-30",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2-1/latest/leaderboards/main/rows/d7540f21-67af-4b3a-ad31-b81b85fef895"
+    },
+    {
+      "rank": 16,
+      "system": "Terminus 2 / Gemini 3 Pro",
+      "agent": "Terminus 2",
+      "model_raw": [
+        "Gemini 3 Pro"
+      ],
+      "model_ids": [
+        "gemini-3-pro"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 73.93,
+      "score_extra": {
+        "ci95_half_width": 2.53,
+        "stderr": 1.29,
+        "pass_at_2": 0.8135,
+        "pass_at_3": 0.8472,
+        "pass_at_4": 0.8652,
+        "pass_at_5": 0.8764,
+        "trials": 445,
+        "reward_hacks_pct": 0.45,
+        "total_tokens": 128452571,
+        "output_tokens": 12862730,
+        "cached_input_tokens": 89495525,
+        "uncached_input_tokens": 26094316,
+        "cost_usd": 224.44,
+        "avg_trial_duration_sec": 547.8
+      },
+      "date": "2025-11-18",
+      "verified": null,
+      "open_source": null,
+      "org": "Terminal-Bench",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2-1/latest/leaderboards/main/rows/b03a8a69-fea8-42dd-a4fb-96a6a39e6857"
+    },
+    {
+      "rank": 17,
+      "system": "Claude Code / Opus 4.7",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Opus 4.7"
+      ],
+      "model_ids": [
+        "claude-opus-4.7"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 68.9,
+      "score_extra": {
+        "ci95_half_width": 2.76,
+        "stderr": 1.41,
+        "pass_at_2": 0.7801,
+        "pass_at_3": 0.8124,
+        "pass_at_4": 0.83,
+        "pass_at_5": 0.8408,
+        "trials": 447,
+        "reward_hacks_pct": 0.45,
+        "total_tokens": 853354358,
+        "output_tokens": 14896548,
+        "cached_input_tokens": 806584422,
+        "uncached_input_tokens": 31873388,
+        "cost_usd": 599.52,
+        "avg_trial_duration_sec": 799.6
+      },
+      "date": "2026-04-16",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2-1/latest/leaderboards/main/rows/fdb8393b-5b29-4645-b784-84f52cf31722"
+    },
+    {
+      "rank": 18,
+      "system": "Terminus 2 / Opus 4.7",
+      "agent": "Terminus 2",
+      "model_raw": [
+        "Opus 4.7"
+      ],
+      "model_ids": [
+        "claude-opus-4.7"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 66.07,
+      "score_extra": {
+        "ci95_half_width": 2.69,
+        "stderr": 1.37,
+        "pass_at_2": 0.7438,
+        "pass_at_3": 0.782,
+        "pass_at_4": 0.809,
+        "pass_at_5": 0.8315,
+        "trials": 445,
+        "reward_hacks_pct": 0,
+        "total_tokens": 365259530,
+        "output_tokens": 12451178,
+        "cached_input_tokens": 336161721,
+        "uncached_input_tokens": 16646631,
+        "cost_usd": 582.26,
+        "avg_trial_duration_sec": 1042.7
+      },
+      "date": "2026-04-16",
+      "verified": null,
+      "open_source": null,
+      "org": "Terminal-Bench",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2-1/latest/leaderboards/main/rows/f867b631-36c8-476e-aa2f-96007ae70da0"
+    },
+    {
+      "rank": 19,
+      "system": "Gemini CLI / Gemini 3 Pro",
+      "agent": "Gemini CLI",
+      "model_raw": [
+        "Gemini 3 Pro"
+      ],
+      "model_ids": [
+        "gemini-3-pro"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 65.84,
+      "score_extra": {
+        "ci95_half_width": 2.7,
+        "stderr": 1.38,
+        "pass_at_2": 0.7427,
+        "pass_at_3": 0.7831,
+        "pass_at_4": 0.8067,
+        "pass_at_5": 0.8202,
+        "trials": 445,
+        "reward_hacks_pct": 0.45,
+        "total_tokens": 383995828,
+        "output_tokens": 7219388,
+        "cached_input_tokens": 329123284,
+        "uncached_input_tokens": 47653156,
+        "cost_usd": 247.76,
+        "avg_trial_duration_sec": 436.6
+      },
+      "date": "2025-11-18",
+      "verified": null,
+      "open_source": null,
+      "org": "Google",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2-1/latest/leaderboards/main/rows/660c330f-9cd8-4ce7-8890-3ce573d038a0"
+    },
+    {
+      "rank": 19,
+      "system": "Gemini CLI / Gemini 3.1 Pro",
+      "agent": "Gemini CLI",
+      "model_raw": [
+        "Gemini 3.1 Pro"
+      ],
+      "model_ids": [
+        "gemini-3.1-pro"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 65.84,
+      "score_extra": {
+        "ci95_half_width": 3.27,
+        "stderr": 1.67,
+        "pass_at_2": 0.782,
+        "pass_at_3": 0.8315,
+        "pass_at_4": 0.8584,
+        "pass_at_5": 0.8764,
+        "trials": 445,
+        "reward_hacks_pct": 0.22,
+        "total_tokens": 417550107,
+        "output_tokens": 6123596,
+        "cached_input_tokens": 366583353,
+        "uncached_input_tokens": 44843158,
+        "cost_usd": 236.49,
+        "avg_trial_duration_sec": 652.9
+      },
+      "date": "2026-02-19",
+      "verified": null,
+      "open_source": null,
+      "org": "Google",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2-1/latest/leaderboards/main/rows/1095d399-9d66-44f4-8adc-e11fbb407a68"
+    },
+    {
+      "rank": 21,
+      "system": "Terminus 2 / Gemini 3.1 Pro",
+      "agent": "Terminus 2",
+      "model_raw": [
+        "Gemini 3.1 Pro"
+      ],
+      "model_ids": [
+        "gemini-3.1-pro"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 65.62,
+      "score_extra": {
+        "ci95_half_width": 3.23,
+        "stderr": 1.65,
+        "pass_at_2": 0.7775,
+        "pass_at_3": 0.8225,
+        "pass_at_4": 0.8472,
+        "pass_at_5": 0.8652,
+        "trials": 445,
+        "reward_hacks_pct": 0.45,
+        "total_tokens": 136661331,
+        "output_tokens": 12935831,
+        "cached_input_tokens": 96199940,
+        "uncached_input_tokens": 27525560,
+        "cost_usd": 229.99,
+        "avg_trial_duration_sec": 672.8
+      },
+      "date": "2026-02-19",
+      "verified": null,
+      "open_source": null,
+      "org": "Terminal-Bench",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2-1/latest/leaderboards/main/rows/360942d9-d27b-4f7e-bcf6-e0ea9cdcdee8"
+    },
+    {
+      "rank": 22,
+      "system": "Claude Code / GLM-5.1",
+      "agent": "Claude Code",
+      "model_raw": [
+        "GLM-5.1"
+      ],
+      "model_ids": [
+        "glm-5.1"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 58.65,
+      "score_extra": {
+        "ci95_half_width": 2.43,
+        "stderr": 1.24,
+        "pass_at_2": 0.6551,
+        "pass_at_3": 0.6899,
+        "pass_at_4": 0.7146,
+        "pass_at_5": 0.7303,
+        "trials": 445,
+        "reward_hacks_pct": 0,
+        "total_tokens": 398783761,
+        "output_tokens": 10635681,
+        "cached_input_tokens": 374577728,
+        "uncached_input_tokens": 13570352,
+        "cost_usd": 277.14,
+        "avg_trial_duration_sec": 944.6
+      },
+      "date": "2026-03-27",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2-1/latest/leaderboards/main/rows/ef2b00eb-f360-41e6-8c97-23c4d762d06b"
+    }
+  ]
+}

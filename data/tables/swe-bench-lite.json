@@ -1,0 +1,1540 @@
+{
+  "id": "swe-bench-lite",
+  "family": "swe-bench",
+  "name": "SWE-bench Lite",
+  "board": "swebench.com",
+  "category": "coding",
+  "measures_ja": "SWE-bench から選んだ安価に回せる 300 件の GitHub issue を、テストを通すパッチで解決できるか。",
+  "tasks": 300,
+  "tasks_note": null,
+  "metric": "% Resolved",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "提出者がそれぞれ自前の足場で走らせた結果を載せる。",
+  "source": "https://www.swebench.com/lite.html",
+  "fetched": [
+    "https://raw.githubusercontent.com/SWE-bench/swe-bench.github.io/master/data/leaderboards.json",
+    "https://www.swebench.com/"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2025-09-11",
+  "snapshot": "sources/swe-bench-lite/leaderboards_lite.json",
+  "paper": "https://arxiv.org/abs/2310.06770",
+  "repo": "https://github.com/SWE-bench/SWE-bench",
+  "notes_ja": "新規の提出はほぼ止まっている。verified は SWE-bench チームが実行または直接確認した印(checked)。open_source はボードの「オープンウェイト」印。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "ExpeRepair-v1.0 + Claude 4 Sonnet",
+      "agent": "ExpeRepair-v1.0",
+      "model_raw": [
+        "claude-4-sonnet-20250514",
+        "o3-mini",
+        "o4-mini"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 60.33,
+      "score_extra": {},
+      "date": "2025-06-25",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://github.com/ExpeRepair/ExpeRepair"
+    },
+    {
+      "rank": 2,
+      "system": "Refact.ai Agent",
+      "agent": "Refact.ai Agent",
+      "model_raw": [
+        "claude-3-7-sonnet-20250219",
+        "o4-mini"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 60.0,
+      "score_extra": {},
+      "date": "2025-04-25",
+      "verified": false,
+      "open_source": false,
+      "org": "Refact.ai",
+      "row_url": "https://refact.ai"
+    },
+    {
+      "rank": 3,
+      "system": "KGCompass + Claude 4 Sonnet (20250514)",
+      "agent": "KGCompass",
+      "model_raw": [
+        "claude-4-sonnet-20250514"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": null,
+      "score": 58.33,
+      "score_extra": {},
+      "date": "2025-09-06",
+      "verified": false,
+      "open_source": false,
+      "org": "GLEAM-Lab",
+      "row_url": "https://github.com/GLEAM-Lab/KGCompass"
+    },
+    {
+      "rank": 4,
+      "system": "SWE-agent + Claude 4 Sonnet",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "claude-4-sonnet-20250514"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": null,
+      "score": 56.67,
+      "score_extra": {},
+      "date": "2025-05-26",
+      "verified": true,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://github.com/SWE-agent/SWE-agent"
+    },
+    {
+      "rank": 5,
+      "system": "Isoform",
+      "agent": "Isoform",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 55.0,
+      "score_extra": {},
+      "date": "2025-01-14",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://www.isoform.ai"
+    },
+    {
+      "rank": 6,
+      "system": "SemAgent_Multi-v1.0",
+      "agent": "SemAgent_Multi-v1.0",
+      "model_raw": [
+        "claude-3-7-sonnet-20250219",
+        "gemini-2.5-pro-preview-05-06"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 51.67,
+      "score_extra": {},
+      "date": "2025-06-25",
+      "verified": false,
+      "open_source": false,
+      "org": "Columbia",
+      "row_url": "https://arxiv.org/abs/2506.16650"
+    },
+    {
+      "rank": 7,
+      "system": "Isea",
+      "agent": "Isea",
+      "model_raw": [
+        "claude-3.5-sonnet-20241022"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 51.33,
+      "score_extra": {},
+      "date": "2025-09-11",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 8,
+      "system": "EntroPO + R2E + Qwen3-Coder-30B-A3B-Instruct",
+      "agent": "EntroPO + R2E",
+      "model_raw": [
+        "Qwen3-Coder-30B-A3B-Instruct"
+      ],
+      "model_ids": [
+        "qwen3-coder-30b-a3b"
+      ],
+      "model_config": null,
+      "score": 49.67,
+      "score_extra": {},
+      "date": "2025-09-01",
+      "verified": false,
+      "open_source": true,
+      "org": "42-b3yond-6ug",
+      "row_url": "https://github.com/sherdencooper/R2E-Gym"
+    },
+    {
+      "rank": 9,
+      "system": "Blackbox AI Agent",
+      "agent": "Blackbox AI Agent",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 49.0,
+      "score_extra": {},
+      "date": "2024-12-20",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://www.blackbox.ai/"
+    },
+    {
+      "rank": 10,
+      "system": "Codev",
+      "agent": "Codev",
+      "model_raw": [
+        "claude-3-7-sonnet-20250219",
+        "claude-3-5-haiku-20241022",
+        "gemini-2.5-pro-preview-05-06",
+        "gemini-2.5-flash-preview-04-17",
+        "o4-mini-2025-04-16",
+        "gpt-4o-mini",
+        "text-embedding-3-small"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 49.0,
+      "score_extra": {},
+      "date": "2025-05-28",
+      "verified": false,
+      "open_source": false,
+      "org": "co-dev.ai",
+      "row_url": "https://www.co-dev.ai"
+    },
+    {
+      "rank": 11,
+      "system": "Gru(2024-12-08)",
+      "agent": "Gru",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 48.67,
+      "score_extra": {},
+      "date": "2024-12-08",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://gru.ai"
+    },
+    {
+      "rank": 12,
+      "system": "Globant Code Fixer Agent",
+      "agent": "Globant Code Fixer Agent",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 48.33,
+      "score_extra": {},
+      "date": "2024-11-27",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://ai.globant.com/us-en/"
+    },
+    {
+      "rank": 13,
+      "system": "ExpeRepair-v1.0",
+      "agent": "ExpeRepair-v1.0",
+      "model_raw": [
+        "claude-3.5-sonnet-20241022",
+        "o3-mini",
+        "o4-mini"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 48.33,
+      "score_extra": {},
+      "date": "2025-06-13",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://github.com/ExpeRepair/ExpeRepair"
+    },
+    {
+      "rank": 14,
+      "system": "SWE-agent + Claude 3.7 Sonnet",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "claude-3-7-sonnet-20250219"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": null,
+      "score": 48.0,
+      "score_extra": {},
+      "date": "2025-02-26",
+      "verified": true,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://github.com/SWE-agent/SWE-agent"
+    },
+    {
+      "rank": 15,
+      "system": "devlo",
+      "agent": "devlo",
+      "model_raw": [
+        "claude-3-5-sonnet-20241022"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 47.33,
+      "score_extra": {},
+      "date": "2024-11-22",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://devlo.ai/?utm_source=swe-bench"
+    },
+    {
+      "rank": 16,
+      "system": "DARS Agent",
+      "agent": "DARS Agent",
+      "model_raw": [
+        "claude-3-5-sonnet-20241022",
+        "deepseek-reasoner"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 47.0,
+      "score_extra": {},
+      "date": "2025-02-05",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://github.com/darsagent/DARS-Agent"
+    },
+    {
+      "rank": 17,
+      "system": "KGCompass + Claude 3.5 Sonnet (20241022)",
+      "agent": "KGCompass",
+      "model_raw": [
+        "claude-3-5-sonnet-20241022"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 46.0,
+      "score_extra": {},
+      "date": "2025-06-19",
+      "verified": false,
+      "open_source": false,
+      "org": "GLEAM-Lab",
+      "row_url": "https://github.com/GLEAM-Lab/KGCompass"
+    },
+    {
+      "rank": 18,
+      "system": "EntroPO + R2E + Qwen3-Coder-30B-A3B-Instruct",
+      "agent": "EntroPO + R2E",
+      "model_raw": [
+        "Qwen3-Coder-30B-A3B-Instruct"
+      ],
+      "model_ids": [
+        "qwen3-coder-30b-a3b"
+      ],
+      "model_config": null,
+      "score": 45.0,
+      "score_extra": {},
+      "date": "2025-09-01",
+      "verified": false,
+      "open_source": true,
+      "org": "42-b3yond-6ug",
+      "row_url": "https://github.com/sherdencooper/R2E-Gym"
+    },
+    {
+      "rank": 19,
+      "system": "Kodu-v1 + Claude-3.5 Sonnet (20241022)",
+      "agent": "Kodu-v1",
+      "model_raw": [
+        "claude-3-5-sonnet-20241022"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 44.67,
+      "score_extra": {},
+      "date": "2024-12-07",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://www.kodu.ai/"
+    },
+    {
+      "rank": 20,
+      "system": "CodeFuse-CGM",
+      "agent": "CodeFuse-CGM",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 44.0,
+      "score_extra": {},
+      "date": "2025-03-10",
+      "verified": true,
+      "open_source": true,
+      "org": "Ant Group",
+      "row_url": "https://github.com/codefuse-ai/CodeFuse-CGM"
+    },
+    {
+      "rank": 21,
+      "system": "CodeStory Aide + Mixed Models",
+      "agent": "CodeStory Aide",
+      "model_raw": [
+        "Mixed Models"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 43.0,
+      "score_extra": {},
+      "date": "2024-07-02",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://aide.dev/"
+    },
+    {
+      "rank": 22,
+      "system": "Lingxi",
+      "agent": "Lingxi",
+      "model_raw": [
+        "claude-3-5-sonnet-20241022"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 42.67,
+      "score_extra": {},
+      "date": "2025-05-09",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://github.com/nimasteryang/Lingxi"
+    },
+    {
+      "rank": 23,
+      "system": "OpenHands + CodeAct v2.1 (claude-3-5-sonnet-20241022)",
+      "agent": "OpenHands",
+      "model_raw": [
+        "claude-3-5-sonnet-20241022"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 41.67,
+      "score_extra": {},
+      "date": "2024-10-25",
+      "verified": true,
+      "open_source": false,
+      "org": "OpenHands",
+      "row_url": "https://docs.all-hands.dev/"
+    },
+    {
+      "rank": 24,
+      "system": "Codart AI",
+      "agent": "Codart AI",
+      "model_raw": [
+        "claude-3-5-haiku-latest",
+        "claude-3.5-sonnet-latest"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 41.67,
+      "score_extra": {},
+      "date": "2025-05-15",
+      "verified": false,
+      "open_source": false,
+      "org": "Codart AI",
+      "row_url": "https://srics96.github.io/Codart-AI/"
+    },
+    {
+      "rank": 25,
+      "system": "PatchKitty-0.9 + Claude-3.5 Sonnet (20241022)",
+      "agent": "PatchKitty-0.9",
+      "model_raw": [
+        "claude-3-5-sonnet-20241022"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 41.33,
+      "score_extra": {},
+      "date": "2024-12-20",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 26,
+      "system": "Composio SWE-Kit (2024-10-30)",
+      "agent": "Composio SWE-Kit",
+      "model_raw": [
+        "claude-3-5-sonnet-20241022",
+        "o1-mini"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 41.0,
+      "score_extra": {},
+      "date": "2024-10-30",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://github.com/ComposioHQ/composio/tree/master/python/swe/agent"
+    },
+    {
+      "rank": 27,
+      "system": "OrcaLoca + Agentless-1.5 + Claude-3.5 Sonnet (20241022)",
+      "agent": "OrcaLoca + Agentless-1.5",
+      "model_raw": [
+        "claude-3-5-sonnet-20241022"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 41.0,
+      "score_extra": {},
+      "date": "2025-01-13",
+      "verified": false,
+      "open_source": false,
+      "org": "Agentless",
+      "row_url": "https://github.com/fishmingyu/OrcarLLM"
+    },
+    {
+      "rank": 28,
+      "system": "Agentless-1.5 + Claude-3.5 Sonnet (20241022)",
+      "agent": "Agentless-1.5",
+      "model_raw": [
+        "claude-3-5-sonnet-20241022"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 40.67,
+      "score_extra": {},
+      "date": "2024-12-02",
+      "verified": false,
+      "open_source": false,
+      "org": "Agentless",
+      "row_url": "https://github.com/OpenAutoCoder/Agentless"
+    },
+    {
+      "rank": 29,
+      "system": "OpenCSG Starship Agentic Coder + GPT 4 (0806)",
+      "agent": "OpenCSG Starship Agentic Coder",
+      "model_raw": [
+        "gpt-4o-2024-08-06"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 39.67,
+      "score_extra": {},
+      "date": "2025-01-13",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://opencsg.com/starship"
+    },
+    {
+      "rank": 30,
+      "system": "Bytedance MarsCode Agent",
+      "agent": "Bytedance MarsCode Agent",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 39.33,
+      "score_extra": {},
+      "date": "2024-09-12",
+      "verified": false,
+      "open_source": false,
+      "org": "Bytedance",
+      "row_url": "https://www.marscode.com/"
+    },
+    {
+      "rank": 31,
+      "system": "Moatless Tools + Claude 3.5 Sonnet (20241022)",
+      "agent": "Moatless Tools",
+      "model_raw": [
+        "claude-3-5-sonnet-20241022"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 39.0,
+      "score_extra": {},
+      "date": "2025-01-14",
+      "verified": true,
+      "open_source": false,
+      "org": "Moatless Tools",
+      "row_url": "https://github.com/aorwall/moatless-tools"
+    },
+    {
+      "rank": 32,
+      "system": "Honeycomb",
+      "agent": "Honeycomb",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 38.33,
+      "score_extra": {},
+      "date": "2024-08-20",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://honeycomb.sh/"
+    },
+    {
+      "rank": 33,
+      "system": "Moatless Tools + Claude 3.5 Sonnet (20241022)",
+      "agent": "Moatless Tools",
+      "model_raw": [
+        "claude-3-5-sonnet-20241022"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 38.33,
+      "score_extra": {},
+      "date": "2024-11-17",
+      "verified": true,
+      "open_source": false,
+      "org": "Moatless Tools",
+      "row_url": "https://github.com/aorwall/moatless-tools"
+    },
+    {
+      "rank": 34,
+      "system": "AbanteAI MentatBot + GPT 4o (2024-05-13)",
+      "agent": "AbanteAI MentatBot",
+      "model_raw": [
+        "gpt-4o-2024-05-13"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 38.0,
+      "score_extra": {},
+      "date": "2024-06-27",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://mentat.ai/blog/mentatbot-sota-coding-agent"
+    },
+    {
+      "rank": 35,
+      "system": "Patched.Codes Patchwork",
+      "agent": "Patched.Codes Patchwork",
+      "model_raw": [
+        "claude-3-5-sonnet-20241022"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 37.0,
+      "score_extra": {},
+      "date": "2025-01-04",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://github.com/patched-codes/patchwork"
+    },
+    {
+      "rank": 36,
+      "system": "KGCompass + DeepSeek V3",
+      "agent": "KGCompass",
+      "model_raw": [
+        "deepseek-v3"
+      ],
+      "model_ids": [
+        "deepseek-v3"
+      ],
+      "model_config": null,
+      "score": 36.67,
+      "score_extra": {},
+      "date": "2025-06-09",
+      "verified": false,
+      "open_source": true,
+      "org": "GLEAM-Lab",
+      "row_url": "https://github.com/GLEAM-Lab/KGCompass"
+    },
+    {
+      "rank": 37,
+      "system": "AppMap Navie v2",
+      "agent": "AppMap Navie v2",
+      "model_raw": [
+        "claude-3-5-sonnet-20241022",
+        "gpt-4o-2024-08-06"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 36.0,
+      "score_extra": {},
+      "date": "2024-11-13",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://appmap.io/navie"
+    },
+    {
+      "rank": 38,
+      "system": "Gru(2024-08-11)",
+      "agent": "Gru",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 35.67,
+      "score_extra": {},
+      "date": "2024-08-11",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://gru.ai"
+    },
+    {
+      "rank": 39,
+      "system": "CodeFuse-AAIS",
+      "agent": "CodeFuse-AAIS",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 35.67,
+      "score_extra": {},
+      "date": "2025-01-04",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://codefuse.ai/"
+    },
+    {
+      "rank": 40,
+      "system": "Isoform",
+      "agent": "Isoform",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 35.0,
+      "score_extra": {},
+      "date": "2024-08-29",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://isoform.ai"
+    },
+    {
+      "rank": 41,
+      "system": "Bytedance MarsCode Agent + GPT 4o (2024-05-13)",
+      "agent": "Bytedance MarsCode Agent",
+      "model_raw": [
+        "gpt-4o-2024-05-13"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 34.0,
+      "score_extra": {},
+      "date": "2024-07-23",
+      "verified": false,
+      "open_source": false,
+      "org": "Bytedance",
+      "row_url": "https://www.marscode.com/"
+    },
+    {
+      "rank": 42,
+      "system": "SuperCoder2.0",
+      "agent": "SuperCoder2.0",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 34.0,
+      "score_extra": {},
+      "date": "2024-08-06",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://superagi.com/supercoder/"
+    },
+    {
+      "rank": 43,
+      "system": "Alibaba Lingma Agent",
+      "agent": "Alibaba Lingma Agent",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 33.0,
+      "score_extra": {},
+      "date": "2024-06-22",
+      "verified": false,
+      "open_source": false,
+      "org": "Alibaba",
+      "row_url": "https://arxiv.org/abs/2406.01422"
+    },
+    {
+      "rank": 44,
+      "system": "Agentless Lite + O3 Mini (20250214)",
+      "agent": "Agentless Lite",
+      "model_raw": [
+        "o3-mini"
+      ],
+      "model_ids": [
+        "o3-mini"
+      ],
+      "model_config": null,
+      "score": 32.33,
+      "score_extra": {},
+      "date": "2025-02-14",
+      "verified": true,
+      "open_source": false,
+      "org": "Agentless",
+      "row_url": "https://github.com/sorendunn/Agentless-Lite"
+    },
+    {
+      "rank": 45,
+      "system": "Agentless-1.5 + GPT 4o (2024-05-13)",
+      "agent": "Agentless-1.5",
+      "model_raw": [
+        "gpt-4o-2024-05-13"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 32.0,
+      "score_extra": {},
+      "date": "2024-10-28",
+      "verified": false,
+      "open_source": false,
+      "org": "Agentless",
+      "row_url": "https://github.com/OpenAutoCoder/Agentless"
+    },
+    {
+      "rank": 46,
+      "system": "Factory Code Droid",
+      "agent": "Factory Code Droid",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 31.33,
+      "score_extra": {},
+      "date": "2024-06-17",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://www.factory.ai/"
+    },
+    {
+      "rank": 47,
+      "system": "CodeShellTester + GPT 4o (2024-05-13)",
+      "agent": "CodeShellTester",
+      "model_raw": [
+        "gpt-4o-2024-05-13"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 31.33,
+      "score_extra": {},
+      "date": "2024-11-11",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://github.com/WisdomShell/codeshell"
+    },
+    {
+      "rank": 48,
+      "system": "AutoCodeRover (v20240620) + GPT 4o (2024-05-13)",
+      "agent": "AutoCodeRover",
+      "model_raw": [
+        "gpt-4o-2024-05-13"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 30.67,
+      "score_extra": {},
+      "date": "2024-06-21",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://autocoderover.dev/"
+    },
+    {
+      "rank": 49,
+      "system": "Moatless Tools + Deepseek V3",
+      "agent": "Moatless Tools",
+      "model_raw": [
+        "deepseek-chat"
+      ],
+      "model_ids": [
+        "deepseek-v3"
+      ],
+      "model_config": null,
+      "score": 30.67,
+      "score_extra": {},
+      "date": "2025-01-11",
+      "verified": true,
+      "open_source": true,
+      "org": "Moatless Tools",
+      "row_url": "https://github.com/aorwall/moatless-tools"
+    },
+    {
+      "rank": 50,
+      "system": "Aegis - o3-mini_1.0",
+      "agent": "Aegis",
+      "model_raw": [
+        "o3-mini"
+      ],
+      "model_ids": [
+        "o3-mini"
+      ],
+      "model_config": null,
+      "score": 30.33,
+      "score_extra": {},
+      "date": "2025-02-07",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://github.com/evandiewald/aegis"
+    },
+    {
+      "rank": 51,
+      "system": "AIGCode Infant-Coder(2024-08-30)",
+      "agent": "AIGCode Infant-Coder",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 30.0,
+      "score_extra": {},
+      "date": "2024-09-08",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://aigcode.net/"
+    },
+    {
+      "rank": 52,
+      "system": "Kortix AI (claude-3-5-sonnet-20241022)",
+      "agent": "Kortix AI",
+      "model_raw": [
+        "claude-3-5-sonnet-20241022"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 30.0,
+      "score_extra": {},
+      "date": "2024-12-03",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://www.kortix.ai/"
+    },
+    {
+      "rank": 53,
+      "system": "Amazon Q Developer Agent (v20240719-dev)",
+      "agent": "Amazon Q Developer Agent",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 29.67,
+      "score_extra": {},
+      "date": "2024-07-21",
+      "verified": false,
+      "open_source": false,
+      "org": "AWS",
+      "row_url": "https://aws.amazon.com/q/developer/"
+    },
+    {
+      "rank": 54,
+      "system": "Agentless + RepoGraph + GPT-4o",
+      "agent": "Agentless + RepoGraph",
+      "model_raw": [
+        "gpt-4o-2024-08-06"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 29.67,
+      "score_extra": {},
+      "date": "2024-08-08",
+      "verified": false,
+      "open_source": false,
+      "org": "Agentless",
+      "row_url": "https://github.com/ozyyshr/RepoGraph"
+    },
+    {
+      "rank": 55,
+      "system": "CodeR + GPT 4 (1106)",
+      "agent": "CodeR",
+      "model_raw": [
+        "gpt-4-1106-preview"
+      ],
+      "model_ids": [
+        "gpt-4-1106-preview"
+      ],
+      "model_config": null,
+      "score": 28.33,
+      "score_extra": {},
+      "date": "2024-06-04",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://github.com/NL2Code/CodeR"
+    },
+    {
+      "rank": 56,
+      "system": "reproducedRG",
+      "agent": "reproducedRG",
+      "model_raw": [
+        "gpt-4o-2024-08-06"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 28.0,
+      "score_extra": {},
+      "date": "2024-11-17",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 57,
+      "system": "SIMA + GPT 4o (2024-05-13)",
+      "agent": "SIMA",
+      "model_raw": [
+        "gpt-4o-2024-05-13"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 27.67,
+      "score_extra": {},
+      "date": "2024-07-06",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240706_sima_gpt4o"
+    },
+    {
+      "rank": 58,
+      "system": "MASAI + GPT 4o (2024-05-13)",
+      "agent": "MASAI",
+      "model_raw": [
+        "gpt-4o-2024-05-13"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 27.33,
+      "score_extra": {},
+      "date": "2024-06-12",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://masai-dev-agent.github.io/"
+    },
+    {
+      "rank": 59,
+      "system": "Agentless + GPT 4o (2024-05-13)",
+      "agent": "Agentless",
+      "model_raw": [
+        "gpt-4o-2024-05-13"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 27.33,
+      "score_extra": {},
+      "date": "2024-06-30",
+      "verified": false,
+      "open_source": false,
+      "org": "Agentless",
+      "row_url": "https://github.com/OpenAutoCoder/Agentless"
+    },
+    {
+      "rank": 60,
+      "system": "IBM Research Agent-101",
+      "agent": "IBM Research Agent-101",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 26.67,
+      "score_extra": {},
+      "date": "2024-06-12",
+      "verified": false,
+      "open_source": false,
+      "org": "IBM",
+      "row_url": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20240612_IBM_Research_Agent101"
+    },
+    {
+      "rank": 61,
+      "system": "Moatless Tools + Claude 3.5 Sonnet",
+      "agent": "Moatless Tools",
+      "model_raw": [
+        "claude-3-5-sonnet-20241022"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 26.67,
+      "score_extra": {},
+      "date": "2024-06-23",
+      "verified": true,
+      "open_source": false,
+      "org": "Moatless Tools",
+      "row_url": "https://github.com/aorwall/moatless-tools"
+    },
+    {
+      "rank": 62,
+      "system": "OpenHands + CodeAct v1.8",
+      "agent": "OpenHands",
+      "model_raw": [
+        "claude-3-5-sonnet-20241022"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 26.67,
+      "score_extra": {},
+      "date": "2024-07-25",
+      "verified": true,
+      "open_source": false,
+      "org": "OpenHands",
+      "row_url": "https://docs.all-hands.dev/"
+    },
+    {
+      "rank": 63,
+      "system": "Aider + GPT 4o & Claude 3 Opus",
+      "agent": "Aider",
+      "model_raw": [
+        "claude-3-opus-20240229",
+        "gpt-4o-2024-08-06"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 26.33,
+      "score_extra": {},
+      "date": "2024-05-23",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://github.com/paul-gauthier/aider"
+    },
+    {
+      "rank": 64,
+      "system": "HyperAgent",
+      "agent": "HyperAgent",
+      "model_raw": [
+        "gpt-4o-2024-08-06"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 25.33,
+      "score_extra": {},
+      "date": "2024-09-25",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2409.16299"
+    },
+    {
+      "rank": 65,
+      "system": "Moatless Tools + GPT 4o (2024-05-13)",
+      "agent": "Moatless Tools",
+      "model_raw": [
+        "gpt-4o-2024-05-13"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 24.67,
+      "score_extra": {},
+      "date": "2024-06-17",
+      "verified": true,
+      "open_source": false,
+      "org": "Moatless Tools",
+      "row_url": "https://github.com/aorwall/moatless-tools"
+    },
+    {
+      "rank": 66,
+      "system": "SWE-Fixer (Qwen2.5-7b retriever + Qwen2.5-72b editor)",
+      "agent": "SWE-Fixer",
+      "model_raw": [
+        "Qwen 2.5"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 24.67,
+      "score_extra": {},
+      "date": "2025-03-06",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/InternLM/SWE-Fixer"
+    },
+    {
+      "rank": 67,
+      "system": "OpenCSG StarShip CodeGenAgent + GPT 4 (0613)",
+      "agent": "OpenCSG StarShip CodeGenAgent",
+      "model_raw": [
+        "gpt-4-0613"
+      ],
+      "model_ids": [
+        "gpt-4-0613"
+      ],
+      "model_config": null,
+      "score": 23.67,
+      "score_extra": {},
+      "date": "2024-05-24",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://opencsg.com/product?class=StarShip"
+    },
+    {
+      "rank": 68,
+      "system": "IBM AI Agent SWE-1.0 (with open LLMs)",
+      "agent": "IBM AI Agent SWE-1.0",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 23.67,
+      "score_extra": {},
+      "date": "2024-10-16",
+      "verified": false,
+      "open_source": false,
+      "org": "IBM",
+      "row_url": "https://github.com/swe-bench/experiments/tree/main/evaluation/lite/20241016_IBM-SWE-1.0"
+    },
+    {
+      "rank": 69,
+      "system": "SWE-Fixer (Qwen2.5-7b retriever + Qwen2.5-72b editor) 20241128",
+      "agent": "SWE-Fixer",
+      "model_raw": [
+        "Qwen 2.5"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 23.33,
+      "score_extra": {},
+      "date": "2024-11-28",
+      "verified": false,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/InternLM/SWE-Fixer"
+    },
+    {
+      "rank": 70,
+      "system": "SWE-agent + Claude 3.5 Sonnet",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "claude-3-5-sonnet-20241022"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 23.0,
+      "score_extra": {},
+      "date": "2024-06-20",
+      "verified": true,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://github.com/SWE-agent/SWE-agent"
+    },
+    {
+      "rank": 71,
+      "system": "AppMap Navie + GPT 4o (2024-05-13)",
+      "agent": "AppMap Navie",
+      "model_raw": [
+        "gpt-4o-2024-05-13"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 21.67,
+      "score_extra": {},
+      "date": "2024-06-15",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://appmap.io/navie"
+    },
+    {
+      "rank": 72,
+      "system": "Bytedance AutoSE (based on SWE-Agent) + GPT4/GPT4o Mixed (20240828)",
+      "agent": "Bytedance AutoSE",
+      "model_raw": [
+        "gpt-4o-2024-08-06"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 21.67,
+      "score_extra": {},
+      "date": "2024-08-28",
+      "verified": false,
+      "open_source": false,
+      "org": "Bytedance",
+      "row_url": null
+    },
+    {
+      "rank": 73,
+      "system": "Amazon Q Developer Agent (v20240430-dev)",
+      "agent": "Amazon Q Developer Agent",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 20.33,
+      "score_extra": {},
+      "date": "2024-05-09",
+      "verified": false,
+      "open_source": false,
+      "org": "AWS",
+      "row_url": "https://aws.amazon.com/q/developer/"
+    },
+    {
+      "rank": 74,
+      "system": "AutoCodeRover (v20240408) + GPT 4 (0125)",
+      "agent": "AutoCodeRover",
+      "model_raw": [
+        "gpt-4-0125-preview"
+      ],
+      "model_ids": [
+        "gpt-4-0125-preview"
+      ],
+      "model_config": null,
+      "score": 19.0,
+      "score_extra": {},
+      "date": "2024-05-30",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://github.com/nus-apr/auto-code-rover"
+    },
+    {
+      "rank": 75,
+      "system": "SWE-agent + GPT 4o (2024-05-13)",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "gpt-4o-2024-05-13"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 18.33,
+      "score_extra": {},
+      "date": "2024-07-28",
+      "verified": true,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://github.com/SWE-agent/SWE-agent"
+    },
+    {
+      "rank": 76,
+      "system": "SWE-agent + GPT 4 (1106)",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "gpt-4-1106-preview"
+      ],
+      "model_ids": [
+        "gpt-4-1106-preview"
+      ],
+      "model_config": null,
+      "score": 18.0,
+      "score_extra": {},
+      "date": "2024-04-02",
+      "verified": true,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://github.com/SWE-agent/SWE-agent"
+    },
+    {
+      "rank": 77,
+      "system": "MCTS-Refine-7B",
+      "agent": "MCTS-Refine-7B",
+      "model_raw": [
+        "MCTS-Refine-7B"
+      ],
+      "model_ids": [
+        "mcts-refine-7b"
+      ],
+      "model_config": null,
+      "score": 16.33,
+      "score_extra": {},
+      "date": "2025-06-27",
+      "verified": false,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://mcts-refine.github.io/MCTS-Refine"
+    },
+    {
+      "rank": 78,
+      "system": "SWE-agent + Claude 3 Opus",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "Claude 3 Opus"
+      ],
+      "model_ids": [
+        "claude-3-opus"
+      ],
+      "model_config": null,
+      "score": 11.67,
+      "score_extra": {},
+      "date": "2024-04-02",
+      "verified": true,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://github.com/SWE-agent/SWE-agent"
+    },
+    {
+      "rank": 79,
+      "system": "RAG + Claude 3 Opus",
+      "agent": "RAG baseline",
+      "model_raw": [
+        "claude-3-opus-20240229"
+      ],
+      "model_ids": [
+        "claude-3-opus"
+      ],
+      "model_config": null,
+      "score": 4.33,
+      "score_extra": {},
+      "date": "2024-04-02",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://swebench.com/"
+    },
+    {
+      "rank": 80,
+      "system": "RAG + Claude 2",
+      "agent": "RAG baseline",
+      "model_raw": [
+        "claude-2"
+      ],
+      "model_ids": [
+        "claude-2"
+      ],
+      "model_config": null,
+      "score": 3.0,
+      "score_extra": {},
+      "date": "2023-10-10",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://swebench.com/"
+    },
+    {
+      "rank": 81,
+      "system": "RAG + GPT 4 (1106)",
+      "agent": "RAG baseline",
+      "model_raw": [
+        "gpt-4-1106-preview"
+      ],
+      "model_ids": [
+        "gpt-4-1106-preview"
+      ],
+      "model_config": null,
+      "score": 2.67,
+      "score_extra": {},
+      "date": "2024-04-02",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://swebench.com/"
+    },
+    {
+      "rank": 82,
+      "system": "RAG + SWE-Llama 7B",
+      "agent": "RAG baseline",
+      "model_raw": [
+        "SWE-Llama"
+      ],
+      "model_ids": [
+        "swe-llama-7b"
+      ],
+      "model_config": null,
+      "score": 1.33,
+      "score_extra": {},
+      "date": "2023-10-10",
+      "verified": true,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://swebench.com/"
+    },
+    {
+      "rank": 83,
+      "system": "RAG + SWE-Llama 13B",
+      "agent": "RAG baseline",
+      "model_raw": [
+        "SWE-Llama 13B"
+      ],
+      "model_ids": [
+        "swe-llama-13b"
+      ],
+      "model_config": null,
+      "score": 1.0,
+      "score_extra": {},
+      "date": "2023-10-10",
+      "verified": true,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://swebench.com/"
+    },
+    {
+      "rank": 84,
+      "system": "RAG + ChatGPT 3.5",
+      "agent": "RAG baseline",
+      "model_raw": [
+        "GPT-3.5"
+      ],
+      "model_ids": [
+        "gpt-3.5-turbo"
+      ],
+      "model_config": null,
+      "score": 0.33,
+      "score_extra": {},
+      "date": "2023-10-10",
+      "verified": true,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://swebench.com/"
+    }
+  ]
+}

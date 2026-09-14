@@ -1,0 +1,454 @@
+{
+  "id": "swe-bench-full",
+  "family": "swe-bench",
+  "name": "SWE-bench (Full)",
+  "board": "swebench.com",
+  "category": "coding",
+  "measures_ja": "Python の 12 リポジトリから集めた 2294 件の GitHub issue 全体を、テストを通すパッチで解決できるか。",
+  "tasks": 2294,
+  "tasks_note": null,
+  "metric": "% Resolved",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "提出者がそれぞれ自前の足場で走らせた結果を載せる。",
+  "source": "https://www.swebench.com/original.html",
+  "fetched": [
+    "https://raw.githubusercontent.com/SWE-bench/swe-bench.github.io/master/data/leaderboards.json",
+    "https://www.swebench.com/"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2025-12-19",
+  "snapshot": "sources/swe-bench-full/leaderboards_test.json",
+  "paper": "https://arxiv.org/abs/2310.06770",
+  "repo": "https://github.com/SWE-bench/SWE-bench",
+  "notes_ja": "データ上の名前は Test、タブ表示は Full。verified は SWE-bench チームが実行または直接確認した印(checked)。open_source はボードの「オープンウェイト」印。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Sonar Foundation Agent + Claude 4.5 Opus",
+      "agent": "Sonar Foundation Agent",
+      "model_raw": [
+        "claude-opus-4-5"
+      ],
+      "model_ids": [
+        "claude-opus-4.5"
+      ],
+      "model_config": null,
+      "score": 52.62,
+      "score_extra": {},
+      "date": "2025-12-19",
+      "verified": false,
+      "open_source": false,
+      "org": "Sonar",
+      "row_url": "https://www.sonarsource.com"
+    },
+    {
+      "rank": 2,
+      "system": "Salesforce AI Research SAGE (bash-only)",
+      "agent": "Salesforce AI Research SAGE",
+      "model_raw": [
+        "claude-sonnet-4.5",
+        "gpt-5"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 44.25,
+      "score_extra": {},
+      "date": "2025-10-27",
+      "verified": false,
+      "open_source": false,
+      "org": "Salesforce AI Research",
+      "row_url": "https://www.salesforce.com/blog/sage-swe/"
+    },
+    {
+      "rank": 3,
+      "system": "Atlassian Rovo Dev (2025-06-05)",
+      "agent": "Atlassian Rovo Dev",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 41.98,
+      "score_extra": {},
+      "date": "2025-06-05",
+      "verified": false,
+      "open_source": false,
+      "org": "Atlassian",
+      "row_url": "https://www.atlassian.com/rovo-dev"
+    },
+    {
+      "rank": 4,
+      "system": "Amazon Q Developer Agent (v20250405-dev)",
+      "agent": "Amazon Q Developer Agent",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 37.1,
+      "score_extra": {},
+      "date": "2025-05-22",
+      "verified": false,
+      "open_source": false,
+      "org": "AWS",
+      "row_url": "https://aws.amazon.com/q/developer/"
+    },
+    {
+      "rank": 5,
+      "system": "SWE-agent 1.0 (Claude 3.7 Sonnet)",
+      "agent": "SWE-agent 1.0",
+      "model_raw": [
+        "claude-3-7-sonnet-20250219"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": null,
+      "score": 33.83,
+      "score_extra": {},
+      "date": "2025-02-27",
+      "verified": true,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://github.com/swe-agent/swe-agent"
+    },
+    {
+      "rank": 6,
+      "system": "Amazon Q Developer Agent (v20241202-dev)",
+      "agent": "Amazon Q Developer Agent",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 29.99,
+      "score_extra": {},
+      "date": "2025-01-31",
+      "verified": false,
+      "open_source": false,
+      "org": "AWS",
+      "row_url": "https://aws.amazon.com/q/developer/"
+    },
+    {
+      "rank": 7,
+      "system": "OpenHands + CodeAct v2.1 (claude-3-5-sonnet-20241022)",
+      "agent": "OpenHands",
+      "model_raw": [
+        "CodeAct v2.1 (claude-3-5-sonnet-20241022)"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 29.38,
+      "score_extra": {},
+      "date": "2024-11-03",
+      "verified": true,
+      "open_source": false,
+      "org": "OpenHands",
+      "row_url": "https://docs.all-hands.dev/"
+    },
+    {
+      "rank": 8,
+      "system": "AutoCodeRover-v2.0 (Claude-3.5-Sonnet-20241022)",
+      "agent": "AutoCodeRover-v2.0",
+      "model_raw": [
+        "claude-3-5-sonnet-20241022"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 24.89,
+      "score_extra": {},
+      "date": "2024-11-21",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://www.autocoderover.net/"
+    },
+    {
+      "rank": 9,
+      "system": "Honeycomb",
+      "agent": "Honeycomb",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 22.06,
+      "score_extra": {},
+      "date": "2024-08-20",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://honeycomb.sh/"
+    },
+    {
+      "rank": 10,
+      "system": "Amazon Q Developer Agent (v20240719-dev)",
+      "agent": "Amazon Q Developer Agent",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 19.75,
+      "score_extra": {},
+      "date": "2024-07-21",
+      "verified": false,
+      "open_source": false,
+      "org": "AWS",
+      "row_url": "https://aws.amazon.com/q/developer/"
+    },
+    {
+      "rank": 11,
+      "system": "Factory Code Droid",
+      "agent": "Factory Code Droid",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 19.27,
+      "score_extra": {},
+      "date": "2024-06-17",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://www.factory.ai/"
+    },
+    {
+      "rank": 12,
+      "system": "AutoCodeRover (v20240620) + GPT 4o (2024-05-13)",
+      "agent": "AutoCodeRover",
+      "model_raw": [
+        "gpt-4o-2024-05-13"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 18.83,
+      "score_extra": {},
+      "date": "2024-06-28",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://autocoderover.dev/"
+    },
+    {
+      "rank": 13,
+      "system": "SWE-agent + Claude 3.5 Sonnet",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "claude-3-5-sonnet-20241022"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 18.13,
+      "score_extra": {},
+      "date": "2024-06-20",
+      "verified": true,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": null
+    },
+    {
+      "rank": 14,
+      "system": "AppMap Navie + GPT 4o (2024-05-13)",
+      "agent": "AppMap Navie",
+      "model_raw": [
+        "gpt-4o-2024-05-13"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 14.6,
+      "score_extra": {},
+      "date": "2024-06-15",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://appmap.io/navie"
+    },
+    {
+      "rank": 15,
+      "system": "Amazon Q Developer Agent (v20240430-dev)",
+      "agent": "Amazon Q Developer Agent",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 13.82,
+      "score_extra": {},
+      "date": "2024-05-09",
+      "verified": false,
+      "open_source": false,
+      "org": "AWS",
+      "row_url": "https://aws.amazon.com/q/developer/"
+    },
+    {
+      "rank": 16,
+      "system": "SWE-agent + GPT 4 (1106)",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "gpt-4-1106-preview"
+      ],
+      "model_ids": [
+        "gpt-4-1106-preview"
+      ],
+      "model_config": null,
+      "score": 12.47,
+      "score_extra": {},
+      "date": "2024-04-02",
+      "verified": true,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://github.com/SWE-agent/SWE-agent"
+    },
+    {
+      "rank": 17,
+      "system": "SWE-agent + GPT 4o (2024-05-13)",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "gpt-4o-2024-05-13"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 11.99,
+      "score_extra": {},
+      "date": "2024-07-28",
+      "verified": true,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://github.com/SWE-agent/SWE-agent"
+    },
+    {
+      "rank": 18,
+      "system": "SWE-agent + Claude 3 Opus",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "claude-3-opus-20240229"
+      ],
+      "model_ids": [
+        "claude-3-opus"
+      ],
+      "model_config": null,
+      "score": 10.51,
+      "score_extra": {},
+      "date": "2024-04-02",
+      "verified": true,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": null
+    },
+    {
+      "rank": 19,
+      "system": "RAG + Claude 3 Opus",
+      "agent": "RAG baseline",
+      "model_raw": [
+        "claude-3-opus-20240229"
+      ],
+      "model_ids": [
+        "claude-3-opus"
+      ],
+      "model_config": null,
+      "score": 3.79,
+      "score_extra": {},
+      "date": "2024-04-02",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://github.com/SWE-bench/SWE-bench/tree/main/swebench/inference"
+    },
+    {
+      "rank": 20,
+      "system": "RAG + Claude 2",
+      "agent": "RAG baseline",
+      "model_raw": [
+        "claude-2"
+      ],
+      "model_ids": [
+        "claude-2"
+      ],
+      "model_config": null,
+      "score": 1.96,
+      "score_extra": {},
+      "date": "2023-10-10",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 21,
+      "system": "RAG + GPT 4 (1106)",
+      "agent": "RAG baseline",
+      "model_raw": [
+        "gpt-4-1106-preview"
+      ],
+      "model_ids": [
+        "gpt-4-1106-preview"
+      ],
+      "model_config": null,
+      "score": 1.31,
+      "score_extra": {},
+      "date": "2024-04-02",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 22,
+      "system": "RAG + SWE-Llama 13B",
+      "agent": "RAG baseline",
+      "model_raw": [
+        "SWE-Llama 13B"
+      ],
+      "model_ids": [
+        "swe-llama-13b"
+      ],
+      "model_config": null,
+      "score": 0.7,
+      "score_extra": {},
+      "date": "2023-10-10",
+      "verified": true,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": null
+    },
+    {
+      "rank": 23,
+      "system": "RAG + SWE-Llama 7B",
+      "agent": "RAG baseline",
+      "model_raw": [
+        "SWE-Llama"
+      ],
+      "model_ids": [
+        "swe-llama-7b"
+      ],
+      "model_config": null,
+      "score": 0.7,
+      "score_extra": {},
+      "date": "2023-10-10",
+      "verified": true,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": null
+    },
+    {
+      "rank": 24,
+      "system": "RAG + ChatGPT 3.5",
+      "agent": "RAG baseline",
+      "model_raw": [
+        "GPT-3.5"
+      ],
+      "model_ids": [
+        "gpt-3.5-turbo"
+      ],
+      "model_config": null,
+      "score": 0.17,
+      "score_extra": {},
+      "date": "2023-10-10",
+      "verified": true,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": null
+    }
+  ]
+}

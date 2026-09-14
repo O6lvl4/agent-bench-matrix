@@ -1,0 +1,555 @@
+{
+  "id": "hal-scienceagentbench",
+  "family": "scienceagentbench",
+  "name": "ScienceAgentBench (HAL)",
+  "board": "hal.cs.princeton.edu",
+  "category": "research",
+  "measures_ja": "論文由来のデータ駆動型科学タスクで、分析プログラムを書いて結果を出せるか。",
+  "tasks": 102,
+  "tasks_note": null,
+  "metric": "Accuracy",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "HAL 運営が共通ハーネス(hal-harness)で足場×モデルを自ら実行した結果。費用は公開トークン単価から算出し、キャッシュ割引は含まない。",
+  "source": "https://hal.cs.princeton.edu/scienceagentbench",
+  "fetched": [
+    "https://hal.cs.princeton.edu/scienceagentbench"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": null,
+  "snapshot": "sources/hal-scienceagentbench/leaderboard-table.html",
+  "paper": "https://arxiv.org/abs/2410.05080",
+  "repo": "https://github.com/princeton-pli/hal-harness",
+  "notes_ja": "HAL は新モデルの追加を停止し、信頼性(reliability)の測定に移行している。 ボードに行ごとの日付は無い。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "SAB Self-Debug",
+      "agent": "SAB Self-Debug",
+      "model_raw": [
+        "o3 Medium (April 2025)"
+      ],
+      "model_ids": [
+        "o3"
+      ],
+      "model_config": "Medium",
+      "score": 33.33,
+      "score_extra": {
+        "cost_usd": 11.69,
+        "runs": 1,
+        "pareto_optimal": true
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scienceagentbench_sab_selfdebug_o3_medium_1745186112_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 2,
+      "system": "SAB Self-Debug",
+      "agent": "SAB Self-Debug",
+      "model_raw": [
+        "Claude Sonnet 4.5 High (September 2025)"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": "High",
+      "score": 30.39,
+      "score_extra": {
+        "cost_usd": 7.47,
+        "runs": 1,
+        "pareto_optimal": true
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scienceagentbench_sab_selfdebug_claudesonnet45_high_1761419019_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 3,
+      "system": "SAB Self-Debug",
+      "agent": "SAB Self-Debug",
+      "model_raw": [
+        "Claude-3.7 Sonnet High (February 2025)"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": "High",
+      "score": 30.39,
+      "score_extra": {
+        "cost_usd": 11.74,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scienceagentbench_sab_selfdebug_claude37_high_1744847608_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 4,
+      "system": "SAB Self-Debug",
+      "agent": "SAB Self-Debug",
+      "model_raw": [
+        "GPT-5 Medium (August 2025)"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": "Medium",
+      "score": 30.39,
+      "score_extra": {
+        "cost_usd": 18.26,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scienceagentbench_sab_selfdebug_gpt5medium_1755353093_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 5,
+      "system": "SAB Self-Debug",
+      "agent": "SAB Self-Debug",
+      "model_raw": [
+        "Claude Sonnet 4.5 (September 2025)"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": null,
+      "score": 29.41,
+      "score_extra": {
+        "cost_usd": 7.39,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scienceagentbench_sab_selfdebug_claudesonnet45_1761249283_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 6,
+      "system": "SAB Self-Debug",
+      "agent": "SAB Self-Debug",
+      "model_raw": [
+        "o4-mini Low (April 2025)"
+      ],
+      "model_ids": [
+        "o4-mini"
+      ],
+      "model_config": "Low",
+      "score": 27.45,
+      "score_extra": {
+        "cost_usd": 3.95,
+        "runs": 1,
+        "pareto_optimal": true
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scienceagentbench_sab_selfdebug_o4mini_low_1745199029_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 7,
+      "system": "SAB Self-Debug",
+      "agent": "SAB Self-Debug",
+      "model_raw": [
+        "o4-mini High (April 2025)"
+      ],
+      "model_ids": [
+        "o4-mini"
+      ],
+      "model_config": "High",
+      "score": 27.45,
+      "score_extra": {
+        "cost_usd": 11.18,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scienceagentbench_sab_selfdebug_o4mini_high_1745253602_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 8,
+      "system": "SAB Self-Debug",
+      "agent": "SAB Self-Debug",
+      "model_raw": [
+        "Claude Opus 4.1 (August 2025)"
+      ],
+      "model_ids": [
+        "claude-opus-4.1"
+      ],
+      "model_config": null,
+      "score": 27.45,
+      "score_extra": {
+        "cost_usd": 33.37,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scienceagentbench_sab_selfdebug_claudeopus41_1755385889_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 9,
+      "system": "SAB Self-Debug",
+      "agent": "SAB Self-Debug",
+      "model_raw": [
+        "Claude Opus 4.1 High (August 2025)"
+      ],
+      "model_ids": [
+        "claude-opus-4.1"
+      ],
+      "model_config": "High",
+      "score": 26.47,
+      "score_extra": {
+        "cost_usd": 33.75,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scienceagentbench_sab_selfdebug_claudeopus41high_1755438590_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 10,
+      "system": "SAB Self-Debug",
+      "agent": "SAB Self-Debug",
+      "model_raw": [
+        "GPT-4.1 (April 2025)"
+      ],
+      "model_ids": [
+        "gpt-4.1"
+      ],
+      "model_config": null,
+      "score": 24.51,
+      "score_extra": {
+        "cost_usd": 7.42,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scienceagentbench_sab_selfdebug_gpt_41_1744993235_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 11,
+      "system": "SAB Self-Debug",
+      "agent": "SAB Self-Debug",
+      "model_raw": [
+        "Claude Haiku 4.5 High (October 2025)"
+      ],
+      "model_ids": [
+        "claude-haiku-4.5"
+      ],
+      "model_config": "High",
+      "score": 23.53,
+      "score_extra": {
+        "cost_usd": 3.41,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scienceagentbench_sab_selfdebug_claudehaiku45_high_1761435103_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 12,
+      "system": "SAB Self-Debug",
+      "agent": "SAB Self-Debug",
+      "model_raw": [
+        "DeepSeek R1 (January 2025)"
+      ],
+      "model_ids": [
+        "deepseek-r1"
+      ],
+      "model_config": null,
+      "score": 23.53,
+      "score_extra": {
+        "cost_usd": 18.24,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scienceagentbench_sab_selfdebug_dsr1_1744769491_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 13,
+      "system": "SAB Self-Debug",
+      "agent": "SAB Self-Debug",
+      "model_raw": [
+        "Claude-3.7 Sonnet (February 2025)"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": null,
+      "score": 22.55,
+      "score_extra": {
+        "cost_usd": 7.12,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scienceagentbench_sab_selfdebug_claude37_1744812715_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 14,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "o4-mini High (April 2025)"
+      ],
+      "model_ids": [
+        "o4-mini"
+      ],
+      "model_config": "High",
+      "score": 21.57,
+      "score_extra": {
+        "cost_usd": 76.3,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scienceagentbench_hal_generalist_agent_o4mini20250416_high_1746044352_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 15,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "o4-mini Low (April 2025)"
+      ],
+      "model_ids": [
+        "o4-mini"
+      ],
+      "model_config": "Low",
+      "score": 19.61,
+      "score_extra": {
+        "cost_usd": 77.32,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scienceagentbench_hal_generalist_agent_o4mini20250416_low_1746044336_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 16,
+      "system": "SAB Self-Debug",
+      "agent": "SAB Self-Debug",
+      "model_raw": [
+        "Claude Haiku 4.5 (October 2025)"
+      ],
+      "model_ids": [
+        "claude-haiku-4.5"
+      ],
+      "model_config": null,
+      "score": 18.63,
+      "score_extra": {
+        "cost_usd": 2.66,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scienceagentbench_sab_selfdebug_claudehaiku45_1761449412_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 17,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "Claude-3.7 Sonnet High (February 2025)"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": "High",
+      "score": 17.65,
+      "score_extra": {
+        "cost_usd": 48.28,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scienceagentbench_hal_generalist_agent_claude37sonnet20250219_high_1746405109_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 18,
+      "system": "SAB Self-Debug",
+      "agent": "SAB Self-Debug",
+      "model_raw": [
+        "DeepSeek V3 (March 2025)"
+      ],
+      "model_ids": [
+        "deepseek-v3-0324"
+      ],
+      "model_config": null,
+      "score": 15.69,
+      "score_extra": {
+        "cost_usd": 2.09,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scienceagentbench_sab_selfdebug_dsv3_1744757465_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 19,
+      "system": "SAB Self-Debug",
+      "agent": "SAB Self-Debug",
+      "model_raw": [
+        "Gemini 2.0 Flash (February 2025)"
+      ],
+      "model_ids": [
+        "gemini-2.0-flash"
+      ],
+      "model_config": null,
+      "score": 12.75,
+      "score_extra": {
+        "cost_usd": 0.19,
+        "runs": 1,
+        "pareto_optimal": true
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scienceagentbench_sab_selfdebug_gemini20flash_1744901453_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 20,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "Claude-3.7 Sonnet (February 2025)"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": null,
+      "score": 10.78,
+      "score_extra": {
+        "cost_usd": 41.22,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scienceagentbench_hal_generalist_agent_claude37sonnet20250219_1746110849_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 21,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "o3 Medium (April 2025)"
+      ],
+      "model_ids": [
+        "o3"
+      ],
+      "model_config": "Medium",
+      "score": 9.8,
+      "score_extra": {
+        "cost_usd": 31.08,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scienceagentbench_hal_generalist_agent_o320250416_1746110877_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 22,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "GPT-4.1 (April 2025)"
+      ],
+      "model_ids": [
+        "gpt-4.1"
+      ],
+      "model_config": null,
+      "score": 6.86,
+      "score_extra": {
+        "cost_usd": 68.95,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scienceagentbench_hal_generalist_agent_gpt4120250414_1745541259_UPLOAD.zip?download=true"
+    },
+    {
+      "rank": 23,
+      "system": "HAL Generalist Agent",
+      "agent": "HAL Generalist Agent",
+      "model_raw": [
+        "DeepSeek V3 (March 2025)"
+      ],
+      "model_ids": [
+        "deepseek-v3-0324"
+      ],
+      "model_config": null,
+      "score": 0.98,
+      "score_extra": {
+        "cost_usd": 55.73,
+        "runs": 1,
+        "pareto_optimal": false
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/main/scienceagentbench_hal_generalist_agent_deepseekaideepseekv3_1746052235_UPLOAD.zip?download=true"
+    }
+  ]
+}

@@ -1,0 +1,3015 @@
+{
+  "id": "terminal-bench-2-0",
+  "family": "terminal-bench",
+  "name": "Terminal-Bench 2.0",
+  "board": "tbench.ai",
+  "category": "terminal",
+  "measures_ja": "Docker 環境のターミナルで、ビルド・環境構築・データ処理などの実務タスクを完遂できるか。",
+  "tasks": 89,
+  "tasks_note": "Terminal-Bench 2.1 の公式ブログに「the 89 tasks in Terminal-Bench 2.0」とある。",
+  "metric": "Accuracy (%)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "提出者がそれぞれ自前のエージェントで走らせた結果が中心。ボードの verified フラグが付いた行だけが検証済み。",
+  "source": "https://www.tbench.ai/?version=2.0",
+  "fetched": [
+    "https://ofhuhcpkvzjlejydnvyd.supabase.co/functions/v1/leaderboard-read (POST {\"package\":\"terminal-bench/terminal-bench-2\",\"name\":\"2-0\"})"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-05-14",
+  "snapshot": "sources/terminal-bench-2-0/leaderboard.json",
+  "paper": "https://arxiv.org/abs/2601.11868",
+  "repo": "https://github.com/harbor-framework/terminal-bench-2",
+  "notes_ja": "旧 tbench.ai のボードから移した表。model_raw は行データの model_names(表示は「Multiple」の場合あり)。日付はモデル公開日。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "NexAU-AHE / GPT-5.5",
+      "agent": "NexAU-AHE",
+      "model_raw": [
+        "gpt-5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": null,
+      "score": 84.7191011236,
+      "score_extra": {
+        "ci95_half_width": 2.0892351283
+      },
+      "date": "2026-04-23",
+      "verified": false,
+      "open_source": null,
+      "org": "china-qijizhifeng",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/5d127407-a570-4864-8e8a-022123748a19"
+    },
+    {
+      "rank": 2,
+      "system": "LemonHarness / Multiple",
+      "agent": "LemonHarness",
+      "model_raw": [
+        "gemini-3.1-pro-preview",
+        "gpt-5.3-codex"
+      ],
+      "model_ids": [
+        "gemini-3.1-pro",
+        "gpt-5.3-codex"
+      ],
+      "model_config": null,
+      "score": 84.4943820225,
+      "score_extra": {
+        "ci95_half_width": 2.5682394863
+      },
+      "date": "2026-05-14",
+      "verified": false,
+      "open_source": null,
+      "org": "LR AILab of Lenovo CTO Org",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/23468b80-50e7-428a-925f-b6da113f2334"
+    },
+    {
+      "rank": 3,
+      "system": "Capy / GPT-5.5",
+      "agent": "Capy",
+      "model_raw": [
+        "gpt-5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": null,
+      "score": 83.1460674157,
+      "score_extra": {
+        "ci95_half_width": 2.1123213002
+      },
+      "date": "2026-04-23",
+      "verified": false,
+      "open_source": null,
+      "org": "Capy",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/02e83b89-a3e1-4b8b-8733-b1bc70da7515"
+    },
+    {
+      "rank": 4,
+      "system": "Codex CLI / GPT-5.5",
+      "agent": "Codex CLI",
+      "model_raw": [
+        "gpt-5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": null,
+      "score": 82.2471910112,
+      "score_extra": {
+        "ci95_half_width": 2.2241606381
+      },
+      "date": "2026-04-23",
+      "verified": true,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/2c65c359-ec3f-4466-ace8-0cf8ca0f3f20"
+    },
+    {
+      "rank": 5,
+      "system": "Polaris / Multiple",
+      "agent": "Polaris",
+      "model_raw": [
+        "claude-opus-4-7",
+        "gemini-3.1-pro-preview",
+        "gpt-5.5"
+      ],
+      "model_ids": [
+        "claude-opus-4.7",
+        "gemini-3.1-pro",
+        "gpt-5.5"
+      ],
+      "model_config": null,
+      "score": 82.191011236,
+      "score_extra": {
+        "ci95_half_width": 2.7878222749
+      },
+      "date": "2026-05-14",
+      "verified": false,
+      "open_source": null,
+      "org": "PolarisOps",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/8cbda106-f115-4005-a0e5-4b54a9efc24a"
+    },
+    {
+      "rank": 6,
+      "system": "TongAgents / Gemini 3.1 Pro",
+      "agent": "TongAgents",
+      "model_raw": [
+        "gemini-3.1-pro-preview"
+      ],
+      "model_ids": [
+        "gemini-3.1-pro"
+      ],
+      "model_config": null,
+      "score": 80.2247191011,
+      "score_extra": {
+        "ci95_half_width": 2.6242804005
+      },
+      "date": "2026-02-19",
+      "verified": false,
+      "open_source": null,
+      "org": "BIGAI",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/89ecbaeb-8405-42b5-b6ff-d946322c6667"
+    },
+    {
+      "rank": 6,
+      "system": "WOZCODE / Claude Opus 4.7",
+      "agent": "WOZCODE",
+      "model_raw": [
+        "claude-opus-4-7"
+      ],
+      "model_ids": [
+        "claude-opus-4.7"
+      ],
+      "model_config": null,
+      "score": 80.2247191011,
+      "score_extra": {
+        "ci95_half_width": 2.1123213002
+      },
+      "date": "2026-04-16",
+      "verified": false,
+      "open_source": null,
+      "org": "WOZCODE",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/bdb1cd1d-07a6-4419-8f5c-ad2341212de9"
+    },
+    {
+      "rank": 8,
+      "system": "LemonHarness / Multiple",
+      "agent": "LemonHarness",
+      "model_raw": [
+        "gemini-3.1-pro-preview",
+        "gpt-3.5-codex"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 79.925093633,
+      "score_extra": {
+        "ci95_half_width": 3.0284791487
+      },
+      "date": "2026-05-14",
+      "verified": false,
+      "open_source": null,
+      "org": "LR AILab of Lenovo CTO Org",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/b0aca4b6-7b0d-4519-9ec1-95476fe7b594"
+    },
+    {
+      "rank": 9,
+      "system": "SageAgent / GPT-5.3-Codex",
+      "agent": "SageAgent",
+      "model_raw": [
+        "gpt-5.3-codex"
+      ],
+      "model_ids": [
+        "gpt-5.3-codex"
+      ],
+      "model_config": null,
+      "score": 78.4269662921,
+      "score_extra": {
+        "ci95_half_width": 2.202247191
+      },
+      "date": "2026-02-05",
+      "verified": false,
+      "open_source": null,
+      "org": "OpenSage",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/afbe4bdb-facb-4c0c-b949-aa94bbafc2c4"
+    },
+    {
+      "rank": 10,
+      "system": "Droid / GPT-5.3-Codex",
+      "agent": "Droid",
+      "model_raw": [
+        "gpt-5.3-codex"
+      ],
+      "model_ids": [
+        "gpt-5.3-codex"
+      ],
+      "model_config": null,
+      "score": 77.3033707865,
+      "score_extra": {
+        "ci95_half_width": 2.1577527622
+      },
+      "date": "2026-02-05",
+      "verified": false,
+      "open_source": null,
+      "org": "Factory",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/b4f1b334-c8fb-4688-a1e5-ce76608f569b"
+    },
+    {
+      "rank": 11,
+      "system": "Meta-Harness / Claude Opus 4.6",
+      "agent": "Meta-Harness",
+      "model_raw": [
+        "claude-opus-4-6"
+      ],
+      "model_ids": [
+        "claude-opus-4.6"
+      ],
+      "model_config": null,
+      "score": 76.404494382,
+      "score_extra": {
+        "ci95_half_width": 2.4324615274
+      },
+      "date": "2026-02-05",
+      "verified": false,
+      "open_source": null,
+      "org": "Stanford IRIS",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/b07599b0-2c02-48d7-9e80-2fc441c1d2ec"
+    },
+    {
+      "rank": 12,
+      "system": "CodeBrain-1.5 / GPT-5.3-Codex",
+      "agent": "CodeBrain-1.5",
+      "model_raw": [
+        "gpt-5.3-codex"
+      ],
+      "model_ids": [
+        "gpt-5.3-codex"
+      ],
+      "model_config": null,
+      "score": 75.8426966292,
+      "score_extra": {
+        "ci95_half_width": 2.0303715883
+      },
+      "date": "2026-02-05",
+      "verified": false,
+      "open_source": null,
+      "org": "Feeling AI",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/4787daf4-29d8-4be5-9c73-13f0a3d4cc01"
+    },
+    {
+      "rank": 13,
+      "system": "Codelia / GPT-5.3-Codex",
+      "agent": "Codelia",
+      "model_raw": [
+        "gpt-5.3-codex"
+      ],
+      "model_ids": [
+        "gpt-5.3-codex"
+      ],
+      "model_config": null,
+      "score": 75.7303370787,
+      "score_extra": {
+        "ci95_half_width": 2.1577527622
+      },
+      "date": "2026-02-05",
+      "verified": false,
+      "open_source": null,
+      "org": "kousw",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/ef9373a2-1e93-4535-8e5d-203933a0609d"
+    },
+    {
+      "rank": 14,
+      "system": "Capy / Claude Opus 4.6",
+      "agent": "Capy",
+      "model_raw": [
+        "claude-opus-4-6"
+      ],
+      "model_ids": [
+        "claude-opus-4.6"
+      ],
+      "model_config": null,
+      "score": 75.2808988764,
+      "score_extra": {
+        "ci95_half_width": 2.3922527823
+      },
+      "date": "2026-02-05",
+      "verified": false,
+      "open_source": null,
+      "org": "Capy",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/10825d4e-8b6d-474a-8bf7-d7cb50b60a7d"
+    },
+    {
+      "rank": 15,
+      "system": "Simple Codex / GPT-5.3-Codex",
+      "agent": "Simple Codex",
+      "model_raw": [
+        "gpt-5.3-codex"
+      ],
+      "model_ids": [
+        "gpt-5.3-codex"
+      ],
+      "model_config": null,
+      "score": 75.0561797753,
+      "score_extra": {
+        "ci95_half_width": 2.3922527823
+      },
+      "date": "2026-02-05",
+      "verified": true,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/0f9aafb1-5ab9-461f-bec2-877436e77c58"
+    },
+    {
+      "rank": 16,
+      "system": "Terminus-KIRA / Gemini 3.1 Pro",
+      "agent": "Terminus-KIRA",
+      "model_raw": [
+        "gemini-3.1-pro-preview"
+      ],
+      "model_ids": [
+        "gemini-3.1-pro"
+      ],
+      "model_config": null,
+      "score": 74.8314606742,
+      "score_extra": {
+        "ci95_half_width": 2.5682394863
+      },
+      "date": "2026-02-19",
+      "verified": false,
+      "open_source": null,
+      "org": "KRAFTON AI",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/cebf92a9-164d-4697-941a-cfe7df83f528"
+    },
+    {
+      "rank": 17,
+      "system": "Terminus-KIRA / Claude Opus 4.6",
+      "agent": "Terminus-KIRA",
+      "model_raw": [
+        "claude-opus-4-6"
+      ],
+      "model_ids": [
+        "claude-opus-4.6"
+      ],
+      "model_config": null,
+      "score": 74.7191011236,
+      "score_extra": {
+        "ci95_half_width": 2.5964111461
+      },
+      "date": "2026-02-05",
+      "verified": false,
+      "open_source": null,
+      "org": "KRAFTON AI",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/90459a1d-8a22-4893-86dc-9fb24f7b69ea"
+    },
+    {
+      "rank": 18,
+      "system": "Mux / GPT-5.3-Codex",
+      "agent": "Mux",
+      "model_raw": [
+        "gpt-5.3-codex"
+      ],
+      "model_ids": [
+        "gpt-5.3-codex"
+      ],
+      "model_config": null,
+      "score": 74.606741573,
+      "score_extra": {
+        "ci95_half_width": 2.5109481272
+      },
+      "date": "2026-02-05",
+      "verified": false,
+      "open_source": null,
+      "org": "Coder",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/ddea4838-7b77-4448-bebe-076ade4c906e"
+    },
+    {
+      "rank": 19,
+      "system": "MAYA-V2 / Claude 4.6 Opus",
+      "agent": "MAYA-V2",
+      "model_raw": [
+        "claude-4.6-opus"
+      ],
+      "model_ids": [
+        "claude-opus-4.6"
+      ],
+      "model_config": null,
+      "score": 72.0786516854,
+      "score_extra": {
+        "ci95_half_width": 2.208661072
+      },
+      "date": "2026-02-05",
+      "verified": false,
+      "open_source": null,
+      "org": "ADYA",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/0b92871b-3219-48f9-bec8-4cac9526e29f"
+    },
+    {
+      "rank": 20,
+      "system": "TongAgents / Claude Opus 4.6",
+      "agent": "TongAgents",
+      "model_raw": [
+        "claude-opus-4.6"
+      ],
+      "model_ids": [
+        "claude-opus-4.6"
+      ],
+      "model_config": null,
+      "score": 71.9101123596,
+      "score_extra": {
+        "ci95_half_width": 2.6791493392
+      },
+      "date": "2026-02-05",
+      "verified": false,
+      "open_source": null,
+      "org": "Bigai",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/e2e42102-9a97-48c7-ad8f-9f56116ba4d8"
+    },
+    {
+      "rank": 21,
+      "system": "spoox-o-m / GPT-5.3-Codex",
+      "agent": "spoox-o-m",
+      "model_raw": [
+        "gpt-5.3-codex"
+      ],
+      "model_ids": [
+        "gpt-5.3-codex"
+      ],
+      "model_config": null,
+      "score": 71.4606741573,
+      "score_extra": {
+        "ci95_half_width": 2.4915582762
+      },
+      "date": "2026-02-05",
+      "verified": false,
+      "open_source": null,
+      "org": "TUM",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/cc09d949-8cbe-472f-8747-0a4ee35ced43"
+    },
+    {
+      "rank": 22,
+      "system": "Junie CLI / Multiple",
+      "agent": "Junie CLI",
+      "model_raw": [
+        "claude-opus-4-6",
+        "gemini-3-flash-preview",
+        "gemini-3.1-pro-preview",
+        "gpt-5.3-codex"
+      ],
+      "model_ids": [
+        "claude-opus-4.6",
+        "gemini-3-flash",
+        "gemini-3.1-pro",
+        "gpt-5.3-codex"
+      ],
+      "model_config": null,
+      "score": 71.0112359551,
+      "score_extra": {
+        "ci95_half_width": 2.8713790369
+      },
+      "date": "2026-03-07",
+      "verified": false,
+      "open_source": null,
+      "org": "JetBrains",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/95036726-d901-44be-a783-5a0c9fcd67c6"
+    },
+    {
+      "rank": 23,
+      "system": "Droid / Claude Opus 4.6",
+      "agent": "Droid",
+      "model_raw": [
+        "claude-opus-4-6"
+      ],
+      "model_ids": [
+        "claude-opus-4.6"
+      ],
+      "model_config": null,
+      "score": 69.8876404494,
+      "score_extra": {
+        "ci95_half_width": 2.4720163409
+      },
+      "date": "2026-02-05",
+      "verified": false,
+      "open_source": null,
+      "org": "Factory",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/3f0c75f6-1841-40fb-b2de-d8b65bea36a7"
+    },
+    {
+      "rank": 24,
+      "system": "Ante / Gemini 3 Pro",
+      "agent": "Ante",
+      "model_raw": [
+        "gemini-3-pro-preview"
+      ],
+      "model_ids": [
+        "gemini-3-pro"
+      ],
+      "model_config": null,
+      "score": 69.4257178527,
+      "score_extra": {
+        "ci95_half_width": 2.0886618713
+      },
+      "date": "2025-11-18",
+      "verified": true,
+      "open_source": null,
+      "org": "Antigma Labs",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/9f49f98f-73fb-49e0-8a8f-0d71b53e3d63"
+    },
+    {
+      "rank": 25,
+      "system": "IndusAGI Coding Agent / GPT-5.3-Codex",
+      "agent": "IndusAGI Coding Agent",
+      "model_raw": [
+        "gpt-5.3-codex"
+      ],
+      "model_ids": [
+        "gpt-5.3-codex"
+      ],
+      "model_config": null,
+      "score": 69.138576779,
+      "score_extra": {
+        "ci95_half_width": 2.2792046745
+      },
+      "date": "2026-02-05",
+      "verified": false,
+      "open_source": null,
+      "org": "Varun Israni (SoloVpx)",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/110da0f8-f587-4497-8edf-e074099cffcc"
+    },
+    {
+      "rank": 26,
+      "system": "Crux / Claude Opus 4.6",
+      "agent": "Crux",
+      "model_raw": [
+        "claude-opus-4-6"
+      ],
+      "model_ids": [
+        "claude-opus-4.6"
+      ],
+      "model_config": null,
+      "score": 66.872659176,
+      "score_extra": {},
+      "date": "2026-02-05",
+      "verified": false,
+      "open_source": null,
+      "org": "Roam",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/1ac9cff3-4325-4106-9806-ac1509b84c1b"
+    },
+    {
+      "rank": 27,
+      "system": "Deep Agents / GPT-5.2-Codex",
+      "agent": "Deep Agents",
+      "model_raw": [
+        "gpt-5.2-codex"
+      ],
+      "model_ids": [
+        "gpt-5.2-codex"
+      ],
+      "model_config": null,
+      "score": 66.5168539326,
+      "score_extra": {
+        "ci95_half_width": 3.0621004558
+      },
+      "date": "2026-01-14",
+      "verified": false,
+      "open_source": null,
+      "org": "LangChain",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/0789a7c7-4add-43d0-a17c-1c6d0f6fadb5"
+    },
+    {
+      "rank": 27,
+      "system": "Mux / Claude Opus 4.6",
+      "agent": "Mux",
+      "model_raw": [
+        "claude-opus-4-6"
+      ],
+      "model_ids": [
+        "claude-opus-4.6"
+      ],
+      "model_config": null,
+      "score": 66.5168539326,
+      "score_extra": {
+        "ci95_half_width": 2.5301893904
+      },
+      "date": "2026-02-05",
+      "verified": false,
+      "open_source": null,
+      "org": "Coder",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/64394e94-26e1-4ec3-889c-cf60bd00a332"
+    },
+    {
+      "rank": 29,
+      "system": "clnkr / GPT-5.5",
+      "agent": "clnkr",
+      "model_raw": [
+        "gpt-5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": null,
+      "score": 66.0674157303,
+      "score_extra": {
+        "ci95_half_width": 2.4915582762
+      },
+      "date": "2026-04-23",
+      "verified": false,
+      "open_source": null,
+      "org": "clnkr",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/8a49d9d3-42b9-46ff-8f0a-d25bf71ca7e1"
+    },
+    {
+      "rank": 30,
+      "system": "SageAgent / Gemini 3 Pro",
+      "agent": "SageAgent",
+      "model_raw": [
+        "gemini-3-pro-preview"
+      ],
+      "model_ids": [
+        "gemini-3-pro"
+      ],
+      "model_config": null,
+      "score": 65.1685393258,
+      "score_extra": {
+        "ci95_half_width": 2.0658909863
+      },
+      "date": "2025-11-18",
+      "verified": false,
+      "open_source": null,
+      "org": "OpenSage",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/9f22a24a-31c9-47e7-b638-9c228ed75caf"
+    },
+    {
+      "rank": 31,
+      "system": "Droid / GPT-5.2",
+      "agent": "Droid",
+      "model_raw": [
+        "gpt-5.2"
+      ],
+      "model_ids": [
+        "gpt-5.2"
+      ],
+      "model_config": null,
+      "score": 64.9438202247,
+      "score_extra": {
+        "ci95_half_width": 2.7681817951
+      },
+      "date": "2025-12-11",
+      "verified": false,
+      "open_source": null,
+      "org": "Factory",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/9465b353-6918-4d6f-9cba-ddcad5bedb96"
+    },
+    {
+      "rank": 32,
+      "system": "Terminus 2 / GPT-5.3-Codex",
+      "agent": "Terminus 2",
+      "model_raw": [
+        "gpt-5.3-codex"
+      ],
+      "model_ids": [
+        "gpt-5.3-codex"
+      ],
+      "model_config": null,
+      "score": 64.7191011236,
+      "score_extra": {
+        "ci95_half_width": 2.7151126845
+      },
+      "date": "2026-02-05",
+      "verified": true,
+      "open_source": null,
+      "org": "Terminal-Bench",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/492e5c59-91c0-497d-ae1d-ae826114c764"
+    },
+    {
+      "rank": 33,
+      "system": "Junie CLI / Gemini 3 Flash",
+      "agent": "Junie CLI",
+      "model_raw": [
+        "gemini-3-flash-preview"
+      ],
+      "model_ids": [
+        "gemini-3-flash"
+      ],
+      "model_config": null,
+      "score": 64.2696629213,
+      "score_extra": {
+        "ci95_half_width": 2.7856468377
+      },
+      "date": "2025-12-17",
+      "verified": false,
+      "open_source": null,
+      "org": "JetBrains",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/fab0af24-3837-447e-85c7-85353400ec94"
+    },
+    {
+      "rank": 34,
+      "system": "Droid / Claude Opus 4.5",
+      "agent": "Droid",
+      "model_raw": [
+        "claude-opus-4-5-20251101"
+      ],
+      "model_ids": [
+        "claude-opus-4.5"
+      ],
+      "model_config": null,
+      "score": 63.1460674157,
+      "score_extra": {
+        "ci95_half_width": 2.6971909527
+      },
+      "date": "2025-11-24",
+      "verified": false,
+      "open_source": null,
+      "org": "Factory",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/fbb06b97-4b44-4b1d-a8d5-95ec5bac9889"
+    },
+    {
+      "rank": 35,
+      "system": "Codex CLI / GPT-5.2",
+      "agent": "Codex CLI",
+      "model_raw": [
+        "gpt-5.2"
+      ],
+      "model_ids": [
+        "gpt-5.2"
+      ],
+      "model_config": null,
+      "score": 62.9213483146,
+      "score_extra": {
+        "ci95_half_width": 3.0034647333
+      },
+      "date": "2025-12-11",
+      "verified": true,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/b8f998b4-2acc-490b-9f71-2d997ae220e5"
+    },
+    {
+      "rank": 35,
+      "system": "Terminus 2 / Claude Opus 4.6",
+      "agent": "Terminus 2",
+      "model_raw": [
+        "claude-opus-4-6"
+      ],
+      "model_ids": [
+        "claude-opus-4.6"
+      ],
+      "model_config": null,
+      "score": 62.9213483146,
+      "score_extra": {
+        "ci95_half_width": 2.6609854054
+      },
+      "date": "2026-02-05",
+      "verified": true,
+      "open_source": null,
+      "org": "Terminal-Bench",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/c4919172-ebad-4f72-987c-2891f94eeb97"
+    },
+    {
+      "rank": 37,
+      "system": "CodeBrain-1.5 / Gemini 3 Pro",
+      "agent": "CodeBrain-1.5",
+      "model_raw": [
+        "gemini-3-pro-preview"
+      ],
+      "model_ids": [
+        "gemini-3-pro"
+      ],
+      "model_config": null,
+      "score": 62.2471910112,
+      "score_extra": {
+        "ci95_half_width": 2.6057340168
+      },
+      "date": "2025-11-18",
+      "verified": false,
+      "open_source": null,
+      "org": "Feeling AI",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/a106e294-0328-46c9-ab8e-32c9f6c313e3"
+    },
+    {
+      "rank": 38,
+      "system": "II-Agent / Gemini 3 Pro",
+      "agent": "II-Agent",
+      "model_raw": [
+        "gemini-3-pro-preview"
+      ],
+      "model_ids": [
+        "gemini-3-pro"
+      ],
+      "model_config": null,
+      "score": 61.797752809,
+      "score_extra": {
+        "ci95_half_width": 2.8202524731
+      },
+      "date": "2025-11-18",
+      "verified": false,
+      "open_source": null,
+      "org": "Intelligent Internet",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/925e4532-fda8-45e5-9ebd-033512e6678f"
+    },
+    {
+      "rank": 39,
+      "system": "hookele / GPT-5.1-Codex-Mini",
+      "agent": "hookele",
+      "model_raw": [
+        "gpt-5.1-codex-mini"
+      ],
+      "model_ids": [
+        "gpt-5.1-codex-mini"
+      ],
+      "model_config": null,
+      "score": 61.5730337079,
+      "score_extra": {
+        "ci95_half_width": 1.8944446656
+      },
+      "date": "2025-11-12",
+      "verified": false,
+      "open_source": null,
+      "org": "Dmitry Barakhov",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/c266c2a6-6e2c-4037-9b5d-54616c81b212"
+    },
+    {
+      "rank": 40,
+      "system": "Gemini CLI / Gemini 3.1 Pro",
+      "agent": "Gemini CLI",
+      "model_raw": [
+        "gemini-3.1-pro-preview"
+      ],
+      "model_ids": [
+        "gemini-3.1-pro"
+      ],
+      "model_config": null,
+      "score": 61.4232209738,
+      "score_extra": {
+        "ci95_half_width": 4.1200272349
+      },
+      "date": "2026-02-19",
+      "verified": false,
+      "open_source": null,
+      "org": "Google",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/5f2c4e5d-090c-481f-a64e-62b07ec6bead"
+    },
+    {
+      "rank": 41,
+      "system": "Warp / Multiple",
+      "agent": "Warp",
+      "model_raw": [
+        "claude-haiku-4-5",
+        "gpt-5.2"
+      ],
+      "model_ids": [
+        "claude-haiku-4.5",
+        "gpt-5.2"
+      ],
+      "model_config": null,
+      "score": 61.2359550562,
+      "score_extra": {
+        "ci95_half_width": 3.0222449548
+      },
+      "date": "2025-12-12",
+      "verified": false,
+      "open_source": null,
+      "org": "Warp",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/bfe75887-adec-4339-a800-850f472180e1"
+    },
+    {
+      "rank": 42,
+      "system": "Droid / Gemini 3 Pro",
+      "agent": "Droid",
+      "model_raw": [
+        "gemini-3-pro-preview"
+      ],
+      "model_ids": [
+        "gemini-3-pro"
+      ],
+      "model_config": null,
+      "score": 61.1235955056,
+      "score_extra": {
+        "ci95_half_width": 2.7856468377
+      },
+      "date": "2025-11-18",
+      "verified": false,
+      "open_source": null,
+      "org": "Factory",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/4d518931-1afd-448c-b369-71aa018b9f6d"
+    },
+    {
+      "rank": 43,
+      "system": "Mux / GPT-5.2",
+      "agent": "Mux",
+      "model_raw": [
+        "gpt-5.2"
+      ],
+      "model_ids": [
+        "gpt-5.2"
+      ],
+      "model_config": null,
+      "score": 60.6741573034,
+      "score_extra": {},
+      "date": "2025-12-11",
+      "verified": false,
+      "open_source": null,
+      "org": "Coder",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/1ba7f56e-c553-4e79-b0fc-2a8ff296d6ad"
+    },
+    {
+      "rank": 44,
+      "system": "Codex CLI / GPT-5.1-Codex-Max",
+      "agent": "Codex CLI",
+      "model_raw": [
+        "gpt-5.1-codex-max"
+      ],
+      "model_ids": [
+        "gpt-5.1-codex-max"
+      ],
+      "model_config": null,
+      "score": 60.4494382022,
+      "score_extra": {
+        "ci95_half_width": 2.6609854054
+      },
+      "date": "2025-11-19",
+      "verified": true,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/9e7de6b0-5e36-43e3-a6ed-03dffa66ac23"
+    },
+    {
+      "rank": 45,
+      "system": "Gemini CLI / Gemini 3.1 Pro",
+      "agent": "Gemini CLI",
+      "model_raw": [
+        "gemini-3.1-pro-preview"
+      ],
+      "model_ids": [
+        "gemini-3.1-pro"
+      ],
+      "model_config": null,
+      "score": 59.3632958801,
+      "score_extra": {
+        "ci95_half_width": 4.2009785316
+      },
+      "date": "2026-02-19",
+      "verified": false,
+      "open_source": null,
+      "org": "Google",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/b6f6c0a7-297c-49d7-89b3-fa2058935df6"
+    },
+    {
+      "rank": 46,
+      "system": "Letta Code / Claude Opus 4.5",
+      "agent": "Letta Code",
+      "model_raw": [
+        "claude-opus-4-5"
+      ],
+      "model_ids": [
+        "claude-opus-4.5"
+      ],
+      "model_config": null,
+      "score": 59.1011235955,
+      "score_extra": {
+        "ci95_half_width": 2.4124409274
+      },
+      "date": "2025-11-24",
+      "verified": false,
+      "open_source": null,
+      "org": "Letta",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/33fe55be-6090-4dfc-b167-7c8d024c0133"
+    },
+    {
+      "rank": 46,
+      "system": "Warp / Multiple",
+      "agent": "Warp",
+      "model_raw": [
+        "claude-haiku-4-5-20251001",
+        "gemini-3-pro-preview",
+        "gpt-5-nano"
+      ],
+      "model_ids": [
+        "claude-haiku-4.5",
+        "gemini-3-pro",
+        "gpt-5-nano"
+      ],
+      "model_config": null,
+      "score": 59.1011235955,
+      "score_extra": {
+        "ci95_half_width": 2.75060586
+      },
+      "date": "2025-11-20",
+      "verified": false,
+      "open_source": null,
+      "org": "Warp",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/c8dd4cd7-d036-41f7-8bcb-ee247f853da0"
+    },
+    {
+      "rank": 48,
+      "system": "Mux / Claude Opus 4.5",
+      "agent": "Mux",
+      "model_raw": [
+        "claude-opus-4-5"
+      ],
+      "model_ids": [
+        "claude-opus-4.5"
+      ],
+      "model_config": null,
+      "score": 58.4269662921,
+      "score_extra": {},
+      "date": "2025-11-24",
+      "verified": false,
+      "open_source": null,
+      "org": "Coder",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/57bdb229-90b1-4f01-b2d3-e546449b0356"
+    },
+    {
+      "rank": 48,
+      "system": "Abacus AI Desktop / Multiple",
+      "agent": "Abacus AI Desktop",
+      "model_raw": [
+        "claude-haiku-4-5",
+        "gemini-3-pro-preview"
+      ],
+      "model_ids": [
+        "claude-haiku-4.5",
+        "gemini-3-pro"
+      ],
+      "model_config": null,
+      "score": 58.4269662921,
+      "score_extra": {
+        "ci95_half_width": 2.75060586
+      },
+      "date": "2025-12-11",
+      "verified": false,
+      "open_source": null,
+      "org": "Abacus.AI",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/7af52645-ca4f-49a6-9cdf-f00512041d22"
+    },
+    {
+      "rank": 50,
+      "system": "Claude Code / Claude Opus 4.6",
+      "agent": "Claude Code",
+      "model_raw": [
+        "claude-opus-4-6"
+      ],
+      "model_ids": [
+        "claude-opus-4.6"
+      ],
+      "model_config": null,
+      "score": 57.9775280899,
+      "score_extra": {
+        "ci95_half_width": 2.9049635593
+      },
+      "date": "2026-02-05",
+      "verified": true,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/dd5af789-5d7e-483a-9c10-38b8725d8245"
+    },
+    {
+      "rank": 51,
+      "system": "Crux / GPT-5.1-Codex",
+      "agent": "Crux",
+      "model_raw": [
+        "gpt-5.1-codex"
+      ],
+      "model_ids": [
+        "gpt-5.1-codex"
+      ],
+      "model_config": null,
+      "score": 57.7528089888,
+      "score_extra": {
+        "ci95_half_width": 2.9381642209
+      },
+      "date": "2025-11-12",
+      "verified": true,
+      "open_source": null,
+      "org": "Roam",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/53e26a81-1328-475b-95f1-41667a7435fb"
+    },
+    {
+      "rank": 51,
+      "system": "Terminus 2 / Claude Opus 4.5",
+      "agent": "Terminus 2",
+      "model_raw": [
+        "claude-opus-4-5-20251101"
+      ],
+      "model_ids": [
+        "claude-opus-4.5"
+      ],
+      "model_config": null,
+      "score": 57.7528089888,
+      "score_extra": {
+        "ci95_half_width": 2.5301893904
+      },
+      "date": "2025-11-24",
+      "verified": true,
+      "open_source": null,
+      "org": "Terminal-Bench",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/e1e57e89-0e4a-40e3-a7b8-c2adda7c6248"
+    },
+    {
+      "rank": 53,
+      "system": "Grok CLI / Grok 4.20 Reasoning",
+      "agent": "Grok CLI",
+      "model_raw": [
+        "grok-4.20-0309-reasoning"
+      ],
+      "model_ids": [
+        "grok-4.20"
+      ],
+      "model_config": "reasoning",
+      "score": 57.3033707865,
+      "score_extra": {},
+      "date": "2026-03-10",
+      "verified": false,
+      "open_source": null,
+      "org": "Superagent",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/3ffeec7b-2ea7-4a1a-8bd6-39610aecf23b"
+    },
+    {
+      "rank": 54,
+      "system": "Terminus 2 / Gemini 3 Pro",
+      "agent": "Terminus 2",
+      "model_raw": [
+        "gemini-3-pro-preview"
+      ],
+      "model_ids": [
+        "gemini-3-pro"
+      ],
+      "model_config": null,
+      "score": 56.8539325843,
+      "score_extra": {
+        "ci95_half_width": 2.4720163409
+      },
+      "date": "2025-11-18",
+      "verified": true,
+      "open_source": null,
+      "org": "Terminal-Bench",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/80b4e936-587d-46e9-bd69-8ec14eb7cfdf"
+    },
+    {
+      "rank": 55,
+      "system": "Letta Code / Gemini 3 Pro",
+      "agent": "Letta Code",
+      "model_raw": [
+        "gemini-3-pro-preview"
+      ],
+      "model_ids": [
+        "gemini-3-pro"
+      ],
+      "model_config": null,
+      "score": 55.9550561798,
+      "score_extra": {
+        "ci95_half_width": 2.9709938903
+      },
+      "date": "2025-11-18",
+      "verified": false,
+      "open_source": null,
+      "org": "Letta",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/7d174ffb-45d9-4c1a-a332-91ce47a344de"
+    },
+    {
+      "rank": 56,
+      "system": "Goose / Claude Opus 4.5",
+      "agent": "Goose",
+      "model_raw": [
+        "claude-opus-4-5"
+      ],
+      "model_ids": [
+        "claude-opus-4.5"
+      ],
+      "model_config": null,
+      "score": 54.3258426966,
+      "score_extra": {
+        "ci95_half_width": 2.6265894906
+      },
+      "date": "2025-11-24",
+      "verified": false,
+      "open_source": null,
+      "org": "Block",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/c0e5a14b-57d8-45e6-bfb5-4c099d694cc9"
+    },
+    {
+      "rank": 57,
+      "system": "Terminus 2 / GPT-5.2",
+      "agent": "Terminus 2",
+      "model_raw": [
+        "gpt-5.2"
+      ],
+      "model_ids": [
+        "gpt-5.2"
+      ],
+      "model_config": null,
+      "score": 54.0449438202,
+      "score_extra": {
+        "ci95_half_width": 2.8910174223
+      },
+      "date": "2025-12-11",
+      "verified": true,
+      "open_source": null,
+      "org": "Terminal-Bench",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/a6209ab0-1487-43dd-87a4-7cd805601611"
+    },
+    {
+      "rank": 58,
+      "system": "Letta Code / GPT-5.1-Codex",
+      "agent": "Letta Code",
+      "model_raw": [
+        "gpt-5.1-codex"
+      ],
+      "model_ids": [
+        "gpt-5.1-codex"
+      ],
+      "model_config": null,
+      "score": 53.4831460674,
+      "score_extra": {
+        "ci95_half_width": 2.837397023
+      },
+      "date": "2025-11-12",
+      "verified": false,
+      "open_source": null,
+      "org": "Letta",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/fb597d51-7d15-48a6-bf22-a4f7695b6840"
+    },
+    {
+      "rank": 59,
+      "system": "Simplai Agent / Claude Sonnet 4.6",
+      "agent": "Simplai Agent",
+      "model_raw": [
+        "claude-sonnet-4-6"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.6"
+      ],
+      "model_config": null,
+      "score": 53.4269662921,
+      "score_extra": {
+        "ci95_half_width": 2.8300280743
+      },
+      "date": "2026-02-17",
+      "verified": false,
+      "open_source": null,
+      "org": "SimplAI",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/0f5a1ef3-cbcd-4371-8a8c-00e1aaf53215"
+    },
+    {
+      "rank": 60,
+      "system": "Terminus 2 / GLM 5",
+      "agent": "Terminus 2",
+      "model_raw": [
+        "glm-5"
+      ],
+      "model_ids": [
+        "glm-5"
+      ],
+      "model_config": null,
+      "score": 52.4157303371,
+      "score_extra": {
+        "ci95_half_width": 2.6265894906
+      },
+      "date": "2026-02-11",
+      "verified": false,
+      "open_source": null,
+      "org": "Terminal-Bench",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/799a1d6a-0f50-4c74-845b-a6a040b8be61"
+    },
+    {
+      "rank": 61,
+      "system": "Claude Code / Claude Opus 4.5",
+      "agent": "Claude Code",
+      "model_raw": [
+        "claude-opus-4-5-20251101"
+      ],
+      "model_ids": [
+        "claude-opus-4.5"
+      ],
+      "model_config": null,
+      "score": 52.1348314607,
+      "score_extra": {
+        "ci95_half_width": 2.5301893904
+      },
+      "date": "2025-11-24",
+      "verified": true,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/e7ae5092-e57c-491d-af2e-2daa9d6380ba"
+    },
+    {
+      "rank": 62,
+      "system": "OpenHands / Claude Opus 4.5",
+      "agent": "OpenHands",
+      "model_raw": [
+        "claude-opus-4-5-20251101"
+      ],
+      "model_ids": [
+        "claude-opus-4.5"
+      ],
+      "model_config": null,
+      "score": 51.9101123596,
+      "score_extra": {
+        "ci95_half_width": 2.8882201141
+      },
+      "date": "2025-11-24",
+      "verified": true,
+      "open_source": null,
+      "org": "OpenHands",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/1a9b51cb-285b-4298-b95f-a20e021bc7f3"
+    },
+    {
+      "rank": 63,
+      "system": "OpenCode / Claude Opus 4.5",
+      "agent": "OpenCode",
+      "model_raw": [
+        "claude-opus-4-5"
+      ],
+      "model_ids": [
+        "claude-opus-4.5"
+      ],
+      "model_config": null,
+      "score": 51.6853932584,
+      "score_extra": {},
+      "date": "2025-11-24",
+      "verified": false,
+      "open_source": null,
+      "org": "Anomaly Innovations",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/426d8680-665d-48f1-9e52-f88dfdce7571"
+    },
+    {
+      "rank": 63,
+      "system": "Terminus 2 / Gemini 3 Flash",
+      "agent": "Terminus 2",
+      "model_raw": [
+        "gemini-3-flash-preview"
+      ],
+      "model_ids": [
+        "gemini-3-flash"
+      ],
+      "model_config": null,
+      "score": 51.6853932584,
+      "score_extra": {
+        "ci95_half_width": 3.1299813473
+      },
+      "date": "2025-12-17",
+      "verified": true,
+      "open_source": null,
+      "org": "Terminal-Bench",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/9a1eb58c-ca60-4e2a-9613-5e3a9f97db79"
+    },
+    {
+      "rank": 65,
+      "system": "Warp / Multiple",
+      "agent": "Warp",
+      "model_raw": [
+        "claude-haiku-4-5-20251001",
+        "claude-sonnet-4-5-20250929",
+        "gpt-5-nano"
+      ],
+      "model_ids": [
+        "claude-haiku-4.5",
+        "claude-sonnet-4.5",
+        "gpt-5-nano"
+      ],
+      "model_config": null,
+      "score": 50.1123595506,
+      "score_extra": {
+        "ci95_half_width": 2.6609854054
+      },
+      "date": "2025-11-11",
+      "verified": false,
+      "open_source": null,
+      "org": "Warp",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/615d408e-c438-4fcc-ba6d-04b7cdb04653"
+    },
+    {
+      "rank": 66,
+      "system": "Codex CLI / GPT-5",
+      "agent": "Codex CLI",
+      "model_raw": [
+        "gpt-5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": null,
+      "score": 49.606741573,
+      "score_extra": {
+        "ci95_half_width": 2.8973014913
+      },
+      "date": "2025-08-07",
+      "verified": true,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/be52ecff-1441-4423-b781-dd744586a072"
+    },
+    {
+      "rank": 67,
+      "system": "Terminus 2 / GPT-5.1",
+      "agent": "Terminus 2",
+      "model_raw": [
+        "gpt-5.1"
+      ],
+      "model_ids": [
+        "gpt-5.1"
+      ],
+      "model_config": null,
+      "score": 47.5842696629,
+      "score_extra": {
+        "ci95_half_width": 2.7616039281
+      },
+      "date": "2025-11-12",
+      "verified": true,
+      "open_source": null,
+      "org": "Terminal-Bench",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/e520bf29-5e1a-4ac9-9a31-bb304af7e6bf"
+    },
+    {
+      "rank": 68,
+      "system": "Gemini CLI / Gemini 3 Flash",
+      "agent": "Gemini CLI",
+      "model_raw": [
+        "gemini-3-flash-preview"
+      ],
+      "model_ids": [
+        "gemini-3-flash"
+      ],
+      "model_config": null,
+      "score": 47.4157303371,
+      "score_extra": {
+        "ci95_half_width": 3.0355882645
+      },
+      "date": "2025-12-17",
+      "verified": false,
+      "open_source": null,
+      "org": "Google",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/368c54c7-9583-409b-ae11-9210cf5d17fe"
+    },
+    {
+      "rank": 69,
+      "system": "CAMEL-AI / Claude Sonnet 4.5",
+      "agent": "CAMEL-AI",
+      "model_raw": [
+        "claude-sonnet-4-5"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": null,
+      "score": 46.5168539326,
+      "score_extra": {
+        "ci95_half_width": 2.3513565589
+      },
+      "date": "2025-09-29",
+      "verified": false,
+      "open_source": null,
+      "org": "CAMEL-AI",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/e53b57f8-6598-432f-9c84-6daf94df604a"
+    },
+    {
+      "rank": 70,
+      "system": "IndusAGI Coding Agent / MiniMax M2.7",
+      "agent": "IndusAGI Coding Agent",
+      "model_raw": [
+        "minimax/MiniMax-M2.7"
+      ],
+      "model_ids": [
+        "minimax-m2.7"
+      ],
+      "model_config": null,
+      "score": 45.0561797753,
+      "score_extra": {},
+      "date": "2026-03-18",
+      "verified": false,
+      "open_source": null,
+      "org": "Varun Israni (SoloVpx)",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/a43db265-90f1-4986-abf0-7eabe4af7547"
+    },
+    {
+      "rank": 71,
+      "system": "Codex CLI / GPT-5-Codex",
+      "agent": "Codex CLI",
+      "model_raw": [
+        "gpt-5-codex"
+      ],
+      "model_ids": [
+        "gpt-5-codex"
+      ],
+      "model_config": null,
+      "score": 44.3258426966,
+      "score_extra": {
+        "ci95_half_width": 2.7054198168
+      },
+      "date": "2025-09-15",
+      "verified": true,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/1c9aa638-1d6b-4b89-8d83-3261aa0a4114"
+    },
+    {
+      "rank": 72,
+      "system": "OpenHands / GPT-5",
+      "agent": "OpenHands",
+      "model_raw": [
+        "gpt-5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": null,
+      "score": 43.8202247191,
+      "score_extra": {
+        "ci95_half_width": 2.9872734308
+      },
+      "date": "2025-08-07",
+      "verified": true,
+      "open_source": null,
+      "org": "OpenHands",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/5cab0514-f397-4a51-8a1a-6b7c58e1a073"
+    },
+    {
+      "rank": 73,
+      "system": "Terminus 2 / GPT-5-Codex",
+      "agent": "Terminus 2",
+      "model_raw": [
+        "gpt-5-codex"
+      ],
+      "model_ids": [
+        "gpt-5-codex"
+      ],
+      "model_config": null,
+      "score": 43.4269662921,
+      "score_extra": {
+        "ci95_half_width": 2.8734895694
+      },
+      "date": "2025-09-15",
+      "verified": true,
+      "open_source": null,
+      "org": "Terminal-Bench",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/87df4398-68b9-41db-8ec7-209d3ba5f398"
+    },
+    {
+      "rank": 74,
+      "system": "Terminus 2 / Kimi K2.5",
+      "agent": "Terminus 2",
+      "model_raw": [
+        "kimi-k2.5"
+      ],
+      "model_ids": [
+        "kimi-k2.5"
+      ],
+      "model_config": null,
+      "score": 43.202247191,
+      "score_extra": {
+        "ci95_half_width": 2.8777059907
+      },
+      "date": "2026-01-27",
+      "verified": true,
+      "open_source": null,
+      "org": "Terminal-Bench",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/f8b869c1-d5ec-40bc-b053-b5612f0533b0"
+    },
+    {
+      "rank": 75,
+      "system": "Goose / Claude Sonnet 4.5",
+      "agent": "Goose",
+      "model_raw": [
+        "claude-sonnet-4-5"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": null,
+      "score": 43.1460674157,
+      "score_extra": {
+        "ci95_half_width": 2.5870546791
+      },
+      "date": "2025-09-29",
+      "verified": false,
+      "open_source": null,
+      "org": "Block",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/49c4352d-a7e2-4127-84ab-67d135be7848"
+    },
+    {
+      "rank": 75,
+      "system": "Crux / GPT-5.1-Codex-Mini",
+      "agent": "Crux",
+      "model_raw": [
+        "gpt-5.1-codex-mini"
+      ],
+      "model_ids": [
+        "gpt-5.1-codex-mini"
+      ],
+      "model_config": null,
+      "score": 43.1460674157,
+      "score_extra": {
+        "ci95_half_width": 3.0034647333
+      },
+      "date": "2025-11-12",
+      "verified": true,
+      "open_source": null,
+      "org": "Roam",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/a87c406d-add7-4532-acd6-921bdb4ef0be"
+    },
+    {
+      "rank": 77,
+      "system": "Harness Agent / MiniMax M2.7 Highspeed",
+      "agent": "Harness Agent",
+      "model_raw": [
+        "MiniMax-M2.7-highspeed"
+      ],
+      "model_ids": [
+        "minimax-m2.7-highspeed"
+      ],
+      "model_config": null,
+      "score": 42.9213483146,
+      "score_extra": {
+        "ci95_half_width": 2.9381642209
+      },
+      "date": "2026-03-18",
+      "verified": false,
+      "open_source": null,
+      "org": "lazyFrogLOL",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/16d92deb-2fe5-4512-81d9-2dd3466cccef"
+    },
+    {
+      "rank": 78,
+      "system": "Terminus 2 / Claude Sonnet 4.5",
+      "agent": "Terminus 2",
+      "model_raw": [
+        "claude-sonnet-4-5-20250929"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": null,
+      "score": 42.808988764,
+      "score_extra": {
+        "ci95_half_width": 2.7885470434
+      },
+      "date": "2025-09-29",
+      "verified": true,
+      "open_source": null,
+      "org": "Terminal-Bench",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/9b515488-f4b1-4415-817c-d1657749e225"
+    },
+    {
+      "rank": 79,
+      "system": "MAYA-V2 / Claude 4.5 Sonnet",
+      "agent": "MAYA-V2",
+      "model_raw": [
+        "claude-4.5-sonnet"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": null,
+      "score": 42.6966292135,
+      "score_extra": {},
+      "date": "2025-09-29",
+      "verified": false,
+      "open_source": null,
+      "org": "ADYA",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/00359677-7761-4bd2-a7ba-a295588fb2e1"
+    },
+    {
+      "rank": 79,
+      "system": "cchuter / minimax-m2.5",
+      "agent": "cchuter",
+      "model_raw": [
+        "minimax-m2.5"
+      ],
+      "model_ids": [
+        "minimax-m2.5"
+      ],
+      "model_config": null,
+      "score": 42.6966292135,
+      "score_extra": {
+        "ci95_half_width": 2.8245483667
+      },
+      "date": "2026-02-12",
+      "verified": false,
+      "open_source": null,
+      "org": "teamblobfish.com",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/cca6643f-d3a9-4661-be01-9a2200f0ef64"
+    },
+    {
+      "rank": 81,
+      "system": "OpenHands / Claude Sonnet 4.5",
+      "agent": "OpenHands",
+      "model_raw": [
+        "claude-sonnet-4-5-20250929"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": null,
+      "score": 42.5842696629,
+      "score_extra": {
+        "ci95_half_width": 2.7711002796
+      },
+      "date": "2025-09-29",
+      "verified": true,
+      "open_source": null,
+      "org": "OpenHands",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/200504c6-b5c0-4208-9052-e7d50a7a776c"
+    },
+    {
+      "rank": 82,
+      "system": "Mini-SWE-Agent / Claude Sonnet 4.5",
+      "agent": "Mini-SWE-Agent",
+      "model_raw": [
+        "claude-sonnet-4-5-20250929"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": null,
+      "score": 42.5280898876,
+      "score_extra": {
+        "ci95_half_width": 2.8051650379
+      },
+      "date": "2025-09-29",
+      "verified": true,
+      "open_source": null,
+      "org": "Princeton",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/4a97a8d0-dfd6-438b-b2cc-65d7f6dcabd5"
+    },
+    {
+      "rank": 83,
+      "system": "Terminus 2 / Minimax m2.5",
+      "agent": "Terminus 2",
+      "model_raw": [
+        "minimax-m2.5"
+      ],
+      "model_ids": [
+        "minimax-m2.5"
+      ],
+      "model_config": null,
+      "score": 42.2471910112,
+      "score_extra": {
+        "ci95_half_width": 2.6242804005
+      },
+      "date": "2026-02-12",
+      "verified": false,
+      "open_source": null,
+      "org": "Terminal-Bench",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/8283d6f6-3a65-4e1d-91eb-cf58e59e4d16"
+    },
+    {
+      "rank": 84,
+      "system": "Mini-SWE-Agent / GPT-5-Codex",
+      "agent": "Mini-SWE-Agent",
+      "model_raw": [
+        "gpt-5-codex"
+      ],
+      "model_ids": [
+        "gpt-5-codex"
+      ],
+      "model_config": null,
+      "score": 41.3483146067,
+      "score_extra": {
+        "ci95_half_width": 2.7681817951
+      },
+      "date": "2025-09-15",
+      "verified": true,
+      "open_source": null,
+      "org": "Princeton",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/6a2767b5-89ac-4ddb-afdb-9beacac8224a"
+    },
+    {
+      "rank": 85,
+      "system": "Claude Code / Claude Sonnet 4.5",
+      "agent": "Claude Code",
+      "model_raw": [
+        "claude-sonnet-4-5-20250929"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": null,
+      "score": 40.0561797753,
+      "score_extra": {
+        "ci95_half_width": 2.9153793818
+      },
+      "date": "2025-09-29",
+      "verified": true,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/ffc8e5be-966e-49ee-8ca5-d6b771e361e3"
+    },
+    {
+      "rank": 86,
+      "system": "Terminus 2 / DeepSeek-V3.2",
+      "agent": "Terminus 2",
+      "model_raw": [
+        "deepseek-v3.2"
+      ],
+      "model_ids": [
+        "deepseek-v3.2"
+      ],
+      "model_config": null,
+      "score": 39.5505617978,
+      "score_extra": {
+        "ci95_half_width": 2.75060586
+      },
+      "date": "2025-12-01",
+      "verified": false,
+      "open_source": null,
+      "org": "Terminal-Bench",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/8f375cf1-22fe-4eee-8842-ff67032fdba7"
+    },
+    {
+      "rank": 87,
+      "system": "Terminus 2 / Claude Opus 4.1",
+      "agent": "Terminus 2",
+      "model_raw": [
+        "claude-opus-4-1-20250805"
+      ],
+      "model_ids": [
+        "claude-opus-4.1"
+      ],
+      "model_config": null,
+      "score": 37.9775280899,
+      "score_extra": {
+        "ci95_half_width": 2.6242804005
+      },
+      "date": "2025-08-05",
+      "verified": true,
+      "open_source": null,
+      "org": "Terminal-Bench",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/b1e7901f-b12c-49ad-94c0-ef644faaa194"
+    },
+    {
+      "rank": 88,
+      "system": "OpenHands / Claude Opus 4.1",
+      "agent": "OpenHands",
+      "model_raw": [
+        "claude-opus-4-1-20250805"
+      ],
+      "model_ids": [
+        "claude-opus-4.1"
+      ],
+      "model_config": null,
+      "score": 36.8539325843,
+      "score_extra": {
+        "ci95_half_width": 2.6971909527
+      },
+      "date": "2025-08-05",
+      "verified": true,
+      "open_source": null,
+      "org": "OpenHands",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/4361b0d7-0187-40e0-98e4-ecc89c838ba1"
+    },
+    {
+      "rank": 88,
+      "system": "Terminus 2 / GPT-5.1-Codex",
+      "agent": "Terminus 2",
+      "model_raw": [
+        "gpt-5.1-codex"
+      ],
+      "model_ids": [
+        "gpt-5.1-codex"
+      ],
+      "model_config": null,
+      "score": 36.8539325843,
+      "score_extra": {
+        "ci95_half_width": 3.2366291433
+      },
+      "date": "2025-11-12",
+      "verified": true,
+      "open_source": null,
+      "org": "Terminal-Bench",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/ab63e612-e7af-4357-899a-34968605d41c"
+    },
+    {
+      "rank": 90,
+      "system": "Crux / MiniMax M2.1",
+      "agent": "Crux",
+      "model_raw": [
+        "minimax-m2.1"
+      ],
+      "model_ids": [
+        "minimax-m2.1"
+      ],
+      "model_config": null,
+      "score": 36.6292134831,
+      "score_extra": {
+        "ci95_half_width": 2.8882201141
+      },
+      "date": "2025-12-23",
+      "verified": true,
+      "open_source": null,
+      "org": "Roam",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/abb899a4-a0e4-4b93-969b-5005e0850b99"
+    },
+    {
+      "rank": 91,
+      "system": "Terminus 2 / Kimi K2 Thinking",
+      "agent": "Terminus 2",
+      "model_raw": [
+        "moonshotai/Kimi-K2-Thinking"
+      ],
+      "model_ids": [
+        "kimi-k2-thinking"
+      ],
+      "model_config": null,
+      "score": 35.7303370787,
+      "score_extra": {
+        "ci95_half_width": 2.8202524731
+      },
+      "date": "2025-11-06",
+      "verified": true,
+      "open_source": null,
+      "org": "Terminal-Bench",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/3194b97c-74c2-48d0-8387-97fa0d52d64b"
+    },
+    {
+      "rank": 92,
+      "system": "Goose / Claude Haiku 4.5",
+      "agent": "Goose",
+      "model_raw": [
+        "claude-haiku-4-5"
+      ],
+      "model_ids": [
+        "claude-haiku-4.5"
+      ],
+      "model_config": null,
+      "score": 35.5056179775,
+      "score_extra": {
+        "ci95_half_width": 2.8882201141
+      },
+      "date": "2025-10-15",
+      "verified": false,
+      "open_source": null,
+      "org": "Block",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/aacd1a4e-f568-4a64-9fda-3c70fda6e19a"
+    },
+    {
+      "rank": 93,
+      "system": "Terminus 2 / GPT-5",
+      "agent": "Terminus 2",
+      "model_raw": [
+        "gpt-5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": null,
+      "score": 35.1685393258,
+      "score_extra": {
+        "ci95_half_width": 3.0554939746
+      },
+      "date": "2025-08-07",
+      "verified": true,
+      "open_source": null,
+      "org": "Terminal-Bench",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/f08563d8-7c20-497c-a108-9663513c57ef"
+    },
+    {
+      "rank": 94,
+      "system": "Mini-SWE-Agent / Claude Opus 4.1",
+      "agent": "Mini-SWE-Agent",
+      "model_raw": [
+        "claude-opus-4-1-20250805"
+      ],
+      "model_ids": [
+        "claude-opus-4.1"
+      ],
+      "model_config": null,
+      "score": 35.0561797753,
+      "score_extra": {
+        "ci95_half_width": 2.5109481272
+      },
+      "date": "2025-08-05",
+      "verified": true,
+      "open_source": null,
+      "org": "Princeton",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/6ec43fbc-ae65-4924-a936-d8d7bb8ebdc6"
+    },
+    {
+      "rank": 95,
+      "system": "Claude Code / Claude Opus 4.1",
+      "agent": "Claude Code",
+      "model_raw": [
+        "claude-opus-4-1-20250805"
+      ],
+      "model_ids": [
+        "claude-opus-4.1"
+      ],
+      "model_config": null,
+      "score": 34.8314606742,
+      "score_extra": {
+        "ci95_half_width": 2.8993931543
+      },
+      "date": "2025-08-05",
+      "verified": true,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/4710de33-b26a-44a5-9571-d5a0c5e4cd8d"
+    },
+    {
+      "rank": 95,
+      "system": "spoox-o-m / GPT-5-Mini",
+      "agent": "spoox-o-m",
+      "model_raw": [
+        "gpt-5-mini"
+      ],
+      "model_ids": [
+        "gpt-5-mini"
+      ],
+      "model_config": null,
+      "score": 34.8314606742,
+      "score_extra": {
+        "ci95_half_width": 2.7151126845
+      },
+      "date": "2025-08-07",
+      "verified": false,
+      "open_source": null,
+      "org": "TUM",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/f57d3918-4118-4750-8e54-b5f87bb43776"
+    },
+    {
+      "rank": 97,
+      "system": "Mini-SWE-Agent / GPT-5",
+      "agent": "Mini-SWE-Agent",
+      "model_raw": [
+        "gpt-5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": null,
+      "score": 33.9325842697,
+      "score_extra": {
+        "ci95_half_width": 2.9049635593
+      },
+      "date": "2025-08-07",
+      "verified": true,
+      "open_source": null,
+      "org": "Princeton",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/36711f32-59d2-46ba-a701-152763990804"
+    },
+    {
+      "rank": 98,
+      "system": "Terminus 2 / GLM 4.7",
+      "agent": "Terminus 2",
+      "model_raw": [
+        "glm-4.7"
+      ],
+      "model_ids": [
+        "glm-4.7"
+      ],
+      "model_config": null,
+      "score": 33.3895131086,
+      "score_extra": {
+        "ci95_half_width": 2.8414299458
+      },
+      "date": "2025-12-22",
+      "verified": true,
+      "open_source": null,
+      "org": "Terminal-Bench",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/6ce8bffb-8b85-4497-9e33-e1390bb5bc8e"
+    },
+    {
+      "rank": 99,
+      "system": "Crux / GLM 4.7",
+      "agent": "Crux",
+      "model_raw": [
+        "GLM-4.7"
+      ],
+      "model_ids": [
+        "glm-4.7"
+      ],
+      "model_config": null,
+      "score": 33.2584269663,
+      "score_extra": {
+        "ci95_half_width": 2.4523186857
+      },
+      "date": "2025-12-22",
+      "verified": false,
+      "open_source": null,
+      "org": "Roam",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/f7a58ce8-036f-4b90-95ea-b2c225c5b00d"
+    },
+    {
+      "rank": 100,
+      "system": "Terminus 2 / Gemini 2.5 Pro",
+      "agent": "Terminus 2",
+      "model_raw": [
+        "gemini-2.5-pro"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": null,
+      "score": 32.6404494382,
+      "score_extra": {
+        "ci95_half_width": 3.0215762425
+      },
+      "date": "2025-06-17",
+      "verified": true,
+      "open_source": null,
+      "org": "Terminal-Bench",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/22893aa4-2850-426c-93b5-9d262be57f5e"
+    },
+    {
+      "rank": 101,
+      "system": "Codex CLI / GPT-5-Mini",
+      "agent": "Codex CLI",
+      "model_raw": [
+        "gpt-5-mini"
+      ],
+      "model_ids": [
+        "gpt-5-mini"
+      ],
+      "model_config": null,
+      "score": 31.8539325843,
+      "score_extra": {
+        "ci95_half_width": 2.9987513007
+      },
+      "date": "2025-08-07",
+      "verified": true,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/0e1c42d4-9df1-4813-9905-36c796cd20d1"
+    },
+    {
+      "rank": 102,
+      "system": "Terminus 2 / MiniMax M2",
+      "agent": "Terminus 2",
+      "model_raw": [
+        "accounts/fireworks/models/minimax-m2"
+      ],
+      "model_ids": [
+        "minimax-m2"
+      ],
+      "model_config": null,
+      "score": 30.0374531835,
+      "score_extra": {
+        "ci95_half_width": 2.7407927503
+      },
+      "date": "2025-10-27",
+      "verified": true,
+      "open_source": null,
+      "org": "Terminal-Bench",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/4409f67a-3389-4bab-877e-e6f2eb63cdd7"
+    },
+    {
+      "rank": 103,
+      "system": "Mini-SWE-Agent / Claude Haiku 4.5",
+      "agent": "Mini-SWE-Agent",
+      "model_raw": [
+        "claude-haiku-4-5-20251001"
+      ],
+      "model_ids": [
+        "claude-haiku-4.5"
+      ],
+      "model_config": null,
+      "score": 29.8314606742,
+      "score_extra": {
+        "ci95_half_width": 2.5133613407
+      },
+      "date": "2025-10-15",
+      "verified": true,
+      "open_source": null,
+      "org": "Princeton",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/a0734ef9-203e-4e7e-99d3-2c49f5fd8ff3"
+    },
+    {
+      "rank": 104,
+      "system": "Terminus 2 / MiniMax M2.1",
+      "agent": "Terminus 2",
+      "model_raw": [
+        "minimax-m2.1"
+      ],
+      "model_ids": [
+        "minimax-m2.1"
+      ],
+      "model_config": null,
+      "score": 29.2134831461,
+      "score_extra": {
+        "ci95_half_width": 2.9049635593
+      },
+      "date": "2025-12-23",
+      "verified": true,
+      "open_source": null,
+      "org": "Terminal-Bench",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/86d32696-18b3-475c-9b6a-109fcdcebdf3"
+    },
+    {
+      "rank": 104,
+      "system": "OpenHands / GPT-5-Mini",
+      "agent": "OpenHands",
+      "model_raw": [
+        "gpt-5-mini"
+      ],
+      "model_ids": [
+        "gpt-5-mini"
+      ],
+      "model_config": null,
+      "score": 29.2134831461,
+      "score_extra": {
+        "ci95_half_width": 2.75060586
+      },
+      "date": "2025-08-07",
+      "verified": true,
+      "open_source": null,
+      "org": "OpenHands",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/ad578d73-93c6-4e4f-9060-3dcf638cdc82"
+    },
+    {
+      "rank": 106,
+      "system": "Terminus 2 / Claude Haiku 4.5",
+      "agent": "Terminus 2",
+      "model_raw": [
+        "claude-haiku-4-5-20251001"
+      ],
+      "model_ids": [
+        "claude-haiku-4.5"
+      ],
+      "model_config": null,
+      "score": 28.3146067416,
+      "score_extra": {
+        "ci95_half_width": 2.8755985528
+      },
+      "date": "2025-10-15",
+      "verified": true,
+      "open_source": null,
+      "org": "Terminal-Bench",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/aec5653c-e094-4f92-a65a-e3c63dbe7a39"
+    },
+    {
+      "rank": 107,
+      "system": "Terminus 2 / Kimi K2 Instruct",
+      "agent": "Terminus 2",
+      "model_raw": [
+        "moonshotai/Kimi-K2-Instruct-0905"
+      ],
+      "model_ids": [
+        "kimi-k2-0905"
+      ],
+      "model_config": null,
+      "score": 27.7902621723,
+      "score_extra": {
+        "ci95_half_width": 2.5216558437
+      },
+      "date": "2025-07-11",
+      "verified": true,
+      "open_source": null,
+      "org": "Terminal-Bench",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/accca51c-cd72-4653-a6e2-810627697767"
+    },
+    {
+      "rank": 108,
+      "system": "Claude Code / Claude Haiku 4.5",
+      "agent": "Claude Code",
+      "model_raw": [
+        "claude-haiku-4-5-20251001"
+      ],
+      "model_ids": [
+        "claude-haiku-4.5"
+      ],
+      "model_config": null,
+      "score": 27.5280898876,
+      "score_extra": {
+        "ci95_half_width": 2.7754722523
+      },
+      "date": "2025-10-15",
+      "verified": true,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/bfb54b4b-0724-4257-8876-f43f6fee9df6"
+    },
+    {
+      "rank": 109,
+      "system": "OpenHands / Grok 4",
+      "agent": "OpenHands",
+      "model_raw": [
+        "grok-4-0709"
+      ],
+      "model_ids": [
+        "grok-4"
+      ],
+      "model_config": null,
+      "score": 27.191011236,
+      "score_extra": {
+        "ci95_half_width": 3.0515232205
+      },
+      "date": "2025-07-09",
+      "verified": true,
+      "open_source": null,
+      "org": "OpenHands",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/0bded3f8-75ae-450b-9407-a9f7616d3ee7"
+    },
+    {
+      "rank": 109,
+      "system": "Dakou Agent / Qwen 3 Coder 480B",
+      "agent": "Dakou Agent",
+      "model_raw": [
+        "Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8"
+      ],
+      "model_ids": [
+        "qwen3-coder-480b-a35b"
+      ],
+      "model_config": null,
+      "score": 27.191011236,
+      "score_extra": {
+        "ci95_half_width": 2.5682394863
+      },
+      "date": "2025-07-22",
+      "verified": false,
+      "open_source": null,
+      "org": "iflow",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/1a195d82-60c9-462a-ace1-c7b0251c25a5"
+    },
+    {
+      "rank": 111,
+      "system": "OpenHands / Kimi K2 Instruct",
+      "agent": "OpenHands",
+      "model_raw": [
+        "moonshotai/Kimi-K2-Instruct-0905"
+      ],
+      "model_ids": [
+        "kimi-k2-0905"
+      ],
+      "model_config": null,
+      "score": 26.7415730337,
+      "score_extra": {
+        "ci95_half_width": 2.6971909527
+      },
+      "date": "2025-07-11",
+      "verified": true,
+      "open_source": null,
+      "org": "OpenHands",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/cd853a7c-9f5c-4671-b39f-36db7ad775dd"
+    },
+    {
+      "rank": 112,
+      "system": "Mini-SWE-Agent / Gemini 2.5 Pro",
+      "agent": "Mini-SWE-Agent",
+      "model_raw": [
+        "gemini-2.5-pro"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": null,
+      "score": 26.0674157303,
+      "score_extra": {
+        "ci95_half_width": 2.5492854303
+      },
+      "date": "2025-06-17",
+      "verified": true,
+      "open_source": null,
+      "org": "Princeton",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/e2ace8f8-b4c3-4bcd-a277-7dd1b177f5e5"
+    },
+    {
+      "rank": 113,
+      "system": "Mini-SWE-Agent / Grok Code Fast 1",
+      "agent": "Mini-SWE-Agent",
+      "model_raw": [
+        "grok-code-fast-1"
+      ],
+      "model_ids": [
+        "grok-code-fast-1"
+      ],
+      "model_config": null,
+      "score": 25.8426966292,
+      "score_extra": {
+        "ci95_half_width": 2.6242804005
+      },
+      "date": "2025-08-28",
+      "verified": true,
+      "open_source": null,
+      "org": "Princeton",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/7d247ec9-a33a-4d39-bc0f-4a2d466db09d"
+    },
+    {
+      "rank": 114,
+      "system": "Mini-SWE-Agent / Grok 4",
+      "agent": "Mini-SWE-Agent",
+      "model_raw": [
+        "grok-4-0709"
+      ],
+      "model_ids": [
+        "grok-4"
+      ],
+      "model_config": null,
+      "score": 25.393258427,
+      "score_extra": {
+        "ci95_half_width": 2.9216110513
+      },
+      "date": "2025-07-09",
+      "verified": true,
+      "open_source": null,
+      "org": "Princeton",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/2e4f21e7-390e-4b27-b5b8-22a82b6b0680"
+    },
+    {
+      "rank": 114,
+      "system": "OpenHands / Qwen 3 Coder 480B",
+      "agent": "OpenHands",
+      "model_raw": [
+        "Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8"
+      ],
+      "model_ids": [
+        "qwen3-coder-480b-a35b"
+      ],
+      "model_config": null,
+      "score": 25.393258427,
+      "score_extra": {
+        "ci95_half_width": 2.5870546791
+      },
+      "date": "2025-07-22",
+      "verified": true,
+      "open_source": null,
+      "org": "OpenHands",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/e9cd5887-76c0-413b-82bd-84cdeeced315"
+    },
+    {
+      "rank": 116,
+      "system": "little-coder / Qwen3.6-35B-A3B",
+      "agent": "little-coder",
+      "model_raw": [
+        "Qwen/Qwen3.6-35B-A3B"
+      ],
+      "model_ids": [
+        "qwen3.6-35b-a3b"
+      ],
+      "model_config": null,
+      "score": 24.6254681648,
+      "score_extra": {
+        "ci95_half_width": 3.205049478
+      },
+      "date": "2026-04-16",
+      "verified": false,
+      "open_source": null,
+      "org": "Itay Inbar",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/d75e2f18-7d14-4c76-8a75-4696d681b1de"
+    },
+    {
+      "rank": 117,
+      "system": "Terminus 2 / GLM 4.6",
+      "agent": "Terminus 2",
+      "model_raw": [
+        "accounts/fireworks/models/glm-4p6"
+      ],
+      "model_ids": [
+        "glm-4.6"
+      ],
+      "model_config": null,
+      "score": 24.531835206,
+      "score_extra": {
+        "ci95_half_width": 2.4446156239
+      },
+      "date": "2025-09-30",
+      "verified": true,
+      "open_source": null,
+      "org": "Terminal-Bench",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/679afc81-4f52-4f46-8b6b-9057d8844e31"
+    },
+    {
+      "rank": 118,
+      "system": "Terminus 2 / GPT-5-Mini",
+      "agent": "Terminus 2",
+      "model_raw": [
+        "gpt-5-mini"
+      ],
+      "model_ids": [
+        "gpt-5-mini"
+      ],
+      "model_config": null,
+      "score": 24.0449438202,
+      "score_extra": {
+        "ci95_half_width": 2.5301893904
+      },
+      "date": "2025-08-07",
+      "verified": true,
+      "open_source": null,
+      "org": "Terminal-Bench",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/6040c49b-e717-4d15-951b-90633f275334"
+    },
+    {
+      "rank": 119,
+      "system": "Terminus 2 / Qwen 3 Coder 480B",
+      "agent": "Terminus 2",
+      "model_raw": [
+        "Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8"
+      ],
+      "model_ids": [
+        "qwen3-coder-480b-a35b"
+      ],
+      "model_config": null,
+      "score": 23.8951310861,
+      "score_extra": {
+        "ci95_half_width": 2.8010799023
+      },
+      "date": "2025-07-22",
+      "verified": true,
+      "open_source": null,
+      "org": "Terminal-Bench",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/7f4e2a32-d728-4366-bacc-5c35316a6a1c"
+    },
+    {
+      "rank": 120,
+      "system": "Terminus 2 / Grok 4",
+      "agent": "Terminus 2",
+      "model_raw": [
+        "grok-4-0709"
+      ],
+      "model_ids": [
+        "grok-4"
+      ],
+      "model_config": null,
+      "score": 23.1460674157,
+      "score_extra": {
+        "ci95_half_width": 2.9049635593
+      },
+      "date": "2025-07-09",
+      "verified": true,
+      "open_source": null,
+      "org": "Terminal-Bench",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/9405ddf0-3ed5-46dc-8a81-91d7649d225e"
+    },
+    {
+      "rank": 121,
+      "system": "little-coder / Qwen3.6-35B-A3B",
+      "agent": "little-coder",
+      "model_raw": [
+        "Qwen/Qwen3.6-35B-A3B"
+      ],
+      "model_ids": [
+        "qwen3.6-35b-a3b"
+      ],
+      "model_config": null,
+      "score": 23.0337078652,
+      "score_extra": {},
+      "date": "2026-04-16",
+      "verified": false,
+      "open_source": null,
+      "org": "Itay Inbar",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/7d0b731b-119c-48cb-9871-f51d20f65409"
+    },
+    {
+      "rank": 122,
+      "system": "Mini-SWE-Agent / GPT-5-Mini",
+      "agent": "Mini-SWE-Agent",
+      "model_raw": [
+        "gpt-5-mini"
+      ],
+      "model_ids": [
+        "gpt-5-mini"
+      ],
+      "model_config": null,
+      "score": 22.2471910112,
+      "score_extra": {
+        "ci95_half_width": 2.6242804005
+      },
+      "date": "2025-08-07",
+      "verified": true,
+      "open_source": null,
+      "org": "Princeton",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/e65cc5a2-e0b6-4be9-9f37-e8a9616f9dc9"
+    },
+    {
+      "rank": 123,
+      "system": "spoox-o-m / GPT-5-Nano",
+      "agent": "spoox-o-m",
+      "model_raw": [
+        "gpt-5-nano"
+      ],
+      "model_ids": [
+        "gpt-5-nano"
+      ],
+      "model_config": null,
+      "score": 21.797752809,
+      "score_extra": {
+        "ci95_half_width": 2.8030030607
+      },
+      "date": "2025-08-07",
+      "verified": false,
+      "open_source": null,
+      "org": "TUM",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/bdca517c-7517-49e8-9097-c1c22a4073a3"
+    },
+    {
+      "rank": 124,
+      "system": "Gemini CLI / Gemini 2.5 Pro",
+      "agent": "Gemini CLI",
+      "model_raw": [
+        "gemini-2.5-pro"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": null,
+      "score": 19.5505617978,
+      "score_extra": {
+        "ci95_half_width": 2.8586831205
+      },
+      "date": "2025-06-17",
+      "verified": true,
+      "open_source": null,
+      "org": "Google",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/badf0ef7-eb6c-4405-88c8-e1c38f6a2701"
+    },
+    {
+      "rank": 125,
+      "system": "Bash Agent / TermiGen-32B",
+      "agent": "Bash Agent",
+      "model_raw": [
+        "UCSB-SURFI/TermiGen-32B"
+      ],
+      "model_ids": [
+        "termigen-32b"
+      ],
+      "model_config": null,
+      "score": 19.3258426966,
+      "score_extra": {
+        "ci95_half_width": 1.9942196484
+      },
+      "date": "2026-05-14",
+      "verified": false,
+      "open_source": null,
+      "org": "UCSB-SURFI",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/57ecc770-dc65-4fda-b7df-c72cfa897c45"
+    },
+    {
+      "rank": 126,
+      "system": "Terminus 2 / GPT-OSS-120B",
+      "agent": "Terminus 2",
+      "model_raw": [
+        "openai/gpt-oss-120b"
+      ],
+      "model_ids": [
+        "gpt-oss-120b"
+      ],
+      "model_config": null,
+      "score": 18.6891385768,
+      "score_extra": {
+        "ci95_half_width": 2.6599726612
+      },
+      "date": "2025-08-05",
+      "verified": true,
+      "open_source": null,
+      "org": "Terminal-Bench",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/2b3e22a1-8a77-435b-ab14-ea852a75344b"
+    },
+    {
+      "rank": 127,
+      "system": "Mini-SWE-Agent / Gemini 2.5 Flash",
+      "agent": "Mini-SWE-Agent",
+      "model_raw": [
+        "gemini-2.5-flash"
+      ],
+      "model_ids": [
+        "gemini-2.5-flash"
+      ],
+      "model_config": null,
+      "score": 17.0786516854,
+      "score_extra": {
+        "ci95_half_width": 2.4915582762
+      },
+      "date": "2025-06-17",
+      "verified": true,
+      "open_source": null,
+      "org": "Princeton",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/570bf46f-576d-4ab8-aa3e-a65729dcd341"
+    },
+    {
+      "rank": 128,
+      "system": "Terminus 2 / AfterQuery-GPT-OSS-20B",
+      "agent": "Terminus 2",
+      "model_raw": [
+        "gpt-oss-20b-rl"
+      ],
+      "model_ids": [
+        "afterquery-gpt-oss-20b"
+      ],
+      "model_config": null,
+      "score": 17.0224719101,
+      "score_extra": {
+        "ci95_half_width": 2.4547895363
+      },
+      "date": "2026-03-31",
+      "verified": false,
+      "open_source": null,
+      "org": "Terminal-Bench",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/2bb374e8-a6f5-4aea-b19f-0d4c5f19fb2c"
+    },
+    {
+      "rank": 129,
+      "system": "Terminus 2 / Gemini 2.5 Flash",
+      "agent": "Terminus 2",
+      "model_raw": [
+        "gemini-2.5-flash"
+      ],
+      "model_ids": [
+        "gemini-2.5-flash"
+      ],
+      "model_config": null,
+      "score": 16.8539325843,
+      "score_extra": {
+        "ci95_half_width": 2.3718928139
+      },
+      "date": "2025-06-17",
+      "verified": true,
+      "open_source": null,
+      "org": "Terminal-Bench",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/172af3bc-fe8a-4696-9086-e87cc85e1cf2"
+    },
+    {
+      "rank": 130,
+      "system": "OpenHands / Gemini 2.5 Pro",
+      "agent": "OpenHands",
+      "model_raw": [
+        "gemini-2.5-pro"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": null,
+      "score": 16.404494382,
+      "score_extra": {
+        "ci95_half_width": 2.75060586
+      },
+      "date": "2025-06-17",
+      "verified": true,
+      "open_source": null,
+      "org": "OpenHands",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/8751ed19-e29c-461d-973f-5a3770450c8e"
+    },
+    {
+      "rank": 130,
+      "system": "OpenHands / Gemini 2.5 Flash",
+      "agent": "OpenHands",
+      "model_raw": [
+        "gemini-2.5-flash"
+      ],
+      "model_ids": [
+        "gemini-2.5-flash"
+      ],
+      "model_config": null,
+      "score": 16.404494382,
+      "score_extra": {
+        "ci95_half_width": 2.3922527823
+      },
+      "date": "2025-06-17",
+      "verified": true,
+      "open_source": null,
+      "org": "OpenHands",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/a89448a7-d4af-436f-a95d-4bf3972bb426"
+    },
+    {
+      "rank": 132,
+      "system": "Gemini CLI / Gemini 2.5 Flash",
+      "agent": "Gemini CLI",
+      "model_raw": [
+        "gemini-2.5-flash"
+      ],
+      "model_ids": [
+        "gemini-2.5-flash"
+      ],
+      "model_config": null,
+      "score": 15.4494382022,
+      "score_extra": {
+        "ci95_half_width": 2.3158525428
+      },
+      "date": "2025-06-17",
+      "verified": true,
+      "open_source": null,
+      "org": "Google",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/6b3ee8bf-a073-4131-9e82-398690cbaa3a"
+    },
+    {
+      "rank": 133,
+      "system": "Terminus 2 / Grok Code Fast 1",
+      "agent": "Terminus 2",
+      "model_raw": [
+        "grok-code-fast-1"
+      ],
+      "model_ids": [
+        "grok-code-fast-1"
+      ],
+      "model_config": null,
+      "score": 14.1573033708,
+      "score_extra": {
+        "ci95_half_width": 2.5492854303
+      },
+      "date": "2025-08-28",
+      "verified": true,
+      "open_source": null,
+      "org": "Terminal-Bench",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/dcced808-b476-4faf-8635-01f830874943"
+    },
+    {
+      "rank": 133,
+      "system": "Mini-SWE-Agent / GPT-OSS-120B",
+      "agent": "Mini-SWE-Agent",
+      "model_raw": [
+        "openai/gpt-oss-120b"
+      ],
+      "model_ids": [
+        "gpt-oss-120b"
+      ],
+      "model_config": null,
+      "score": 14.1573033708,
+      "score_extra": {
+        "ci95_half_width": 2.2673522558
+      },
+      "date": "2025-08-05",
+      "verified": true,
+      "open_source": null,
+      "org": "Princeton",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/e796c03a-70b4-4092-9b59-fe3f56045208"
+    },
+    {
+      "rank": 135,
+      "system": "OpenHands / Claude Haiku 4.5",
+      "agent": "OpenHands",
+      "model_raw": [
+        "claude-haiku-4-5-20251001"
+      ],
+      "model_ids": [
+        "claude-haiku-4.5"
+      ],
+      "model_config": null,
+      "score": 13.9325842697,
+      "score_extra": {
+        "ci95_half_width": 2.7329168928
+      },
+      "date": "2025-10-15",
+      "verified": true,
+      "open_source": null,
+      "org": "OpenHands",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/9d205977-aa5d-41b3-8288-071fe558e80d"
+    },
+    {
+      "rank": 136,
+      "system": "Codex CLI / GPT-5-Nano",
+      "agent": "Codex CLI",
+      "model_raw": [
+        "gpt-5-nano"
+      ],
+      "model_ids": [
+        "gpt-5-nano"
+      ],
+      "model_config": null,
+      "score": 11.4606741573,
+      "score_extra": {
+        "ci95_half_width": 2.2673522558
+      },
+      "date": "2025-08-07",
+      "verified": true,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/db5f3206-acce-4556-a0f9-1e3b30133e29"
+    },
+    {
+      "rank": 137,
+      "system": "OpenHands / GPT-5-Nano",
+      "agent": "OpenHands",
+      "model_raw": [
+        "gpt-5-nano"
+      ],
+      "model_ids": [
+        "gpt-5-nano"
+      ],
+      "model_config": null,
+      "score": 9.8876404494,
+      "score_extra": {
+        "ci95_half_width": 2.1123213002
+      },
+      "date": "2025-08-07",
+      "verified": true,
+      "open_source": null,
+      "org": "OpenHands",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/3539c241-dba7-4dcf-8633-b1956c3d23de"
+    },
+    {
+      "rank": 138,
+      "system": "little-coder / Qwen3.5-9B",
+      "agent": "little-coder",
+      "model_raw": [
+        "Qwen/Qwen3.5-9B"
+      ],
+      "model_ids": [
+        "qwen3.5-9b"
+      ],
+      "model_config": null,
+      "score": 9.2134831461,
+      "score_extra": {
+        "ci95_half_width": 2.3513565589
+      },
+      "date": "2026-03-02",
+      "verified": false,
+      "open_source": null,
+      "org": "Itay Inbar",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/ed903af2-80ce-43b4-a780-8defe52058c6"
+    },
+    {
+      "rank": 139,
+      "system": "Terminus 2 / GPT-5-Nano",
+      "agent": "Terminus 2",
+      "model_raw": [
+        "gpt-5-nano"
+      ],
+      "model_ids": [
+        "gpt-5-nano"
+      ],
+      "model_config": null,
+      "score": 7.8651685393,
+      "score_extra": {
+        "ci95_half_width": 1.8686687071
+      },
+      "date": "2025-08-07",
+      "verified": true,
+      "open_source": null,
+      "org": "Terminal-Bench",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/038e5963-8154-4604-8dbb-e9e5f0d31931"
+    },
+    {
+      "rank": 140,
+      "system": "Mini-SWE-Agent / GPT-5-Nano",
+      "agent": "Mini-SWE-Agent",
+      "model_raw": [
+        "gpt-5-nano"
+      ],
+      "model_ids": [
+        "gpt-5-nano"
+      ],
+      "model_config": null,
+      "score": 6.9662921348,
+      "score_extra": {
+        "ci95_half_width": 1.9198745909
+      },
+      "date": "2025-08-07",
+      "verified": true,
+      "open_source": null,
+      "org": "Princeton",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/3d633795-8403-4caa-a28c-9a82058e3a8b"
+    },
+    {
+      "rank": 141,
+      "system": "Mini-SWE-Agent / GPT-OSS-20B",
+      "agent": "Mini-SWE-Agent",
+      "model_raw": [
+        "openai/gpt-oss-20b"
+      ],
+      "model_ids": [
+        "gpt-oss-20b"
+      ],
+      "model_config": null,
+      "score": 3.3707865169,
+      "score_extra": {
+        "ci95_half_width": 1.3575563422
+      },
+      "date": "2025-08-05",
+      "verified": true,
+      "open_source": null,
+      "org": "Princeton",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/1aabe524-c703-454f-b9b8-e11c84c41c42"
+    },
+    {
+      "rank": 142,
+      "system": "Terminus 2 / GPT-OSS-20B",
+      "agent": "Terminus 2",
+      "model_raw": [
+        "openai/gpt-oss-20b"
+      ],
+      "model_ids": [
+        "gpt-oss-20b"
+      ],
+      "model_config": null,
+      "score": 3.0711610487,
+      "score_extra": {
+        "ci95_half_width": 1.5186814718
+      },
+      "date": "2025-08-05",
+      "verified": true,
+      "open_source": null,
+      "org": "Terminal-Bench",
+      "row_url": "https://hub.harborframework.com/datasets/terminal-bench/terminal-bench-2/latest/leaderboards/2-0/rows/fe987aa6-4575-4140-975e-2b00ce123273"
+    }
+  ]
+}

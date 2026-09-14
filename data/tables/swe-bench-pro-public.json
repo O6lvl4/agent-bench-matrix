@@ -1,0 +1,551 @@
+{
+  "id": "swe-bench-pro-public",
+  "family": "swe-bench-pro",
+  "name": "SWE-Bench Pro (Public Dataset)",
+  "board": "labs.scale.com",
+  "category": "coding",
+  "measures_ja": "GPL 系の公開リポジトリから作った長く複雑な実務的タスクで、テストを通すパッチを作れるか。",
+  "tasks": 731,
+  "tasks_note": null,
+  "metric": "Resolve Rate",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "Scale AI が固定の足場で全モデルを走らせる(無印は SWE-Agent、* 付きは mini-swe-agent)。ターン上限 250・費用上限なし。",
+  "source": "https://labs.scale.com/leaderboard/swe_bench_pro_public",
+  "fetched": [
+    "https://labs.scale.com/leaderboard/swe_bench_pro_public"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-07-09",
+  "snapshot": "sources/swe-bench-pro-public/entries.json",
+  "paper": "https://scale.com/research/swe_bench_pro",
+  "repo": "https://github.com/scaleapi/SWE-bench_Pro-os",
+  "notes_ja": "rank は信頼区間の上限基準(Rank (UB))。score_extra.ci_plus_minus はボードの ± 値。agent は脚注と本文の記述から付けた。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Muse Spark 1.1*",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "Muse Spark 1.1"
+      ],
+      "model_ids": [
+        "muse-spark-1.1"
+      ],
+      "model_config": null,
+      "score": 61.5,
+      "score_extra": {
+        "ci_plus_minus": 3.1
+      },
+      "date": "2026-07-09",
+      "verified": null,
+      "open_source": null,
+      "org": "meta",
+      "row_url": null
+    },
+    {
+      "rank": 1,
+      "system": "gpt-5.4 (xHigh)*",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gpt-5.4 (xHigh)"
+      ],
+      "model_ids": [
+        "gpt-5.4"
+      ],
+      "model_config": "xHigh",
+      "score": 59.1,
+      "score_extra": {
+        "ci_plus_minus": 3.56
+      },
+      "date": "2026-04-08",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "Muse Spark*",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "Muse Spark"
+      ],
+      "model_ids": [
+        "muse-spark"
+      ],
+      "model_config": null,
+      "score": 55.0,
+      "score_extra": {
+        "ci_plus_minus": 3.6
+      },
+      "date": "2026-04-08",
+      "verified": null,
+      "open_source": null,
+      "org": "meta",
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "claude-opus-4-6 (thinking)*",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "claude-opus-4-6 (thinking)"
+      ],
+      "model_ids": [
+        "claude-opus-4.6"
+      ],
+      "model_config": "thinking",
+      "score": 51.9,
+      "score_extra": {
+        "ci_plus_minus": 3.61
+      },
+      "date": "2026-04-08",
+      "verified": null,
+      "open_source": null,
+      "org": "anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "gemini-3.1-pro (thinking)*",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gemini-3.1-pro (thinking)"
+      ],
+      "model_ids": [
+        "gemini-3.1-pro"
+      ],
+      "model_config": "thinking",
+      "score": 46.1,
+      "score_extra": {
+        "ci_plus_minus": 3.6
+      },
+      "date": "2026-04-08",
+      "verified": null,
+      "open_source": null,
+      "org": "google",
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "claude-opus-4-5-20251101",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "claude-opus-4-5-20251101"
+      ],
+      "model_ids": [
+        "claude-opus-4.5"
+      ],
+      "model_config": null,
+      "score": 45.89,
+      "score_extra": {
+        "ci_plus_minus": 3.6
+      },
+      "date": "2025-12-11",
+      "verified": null,
+      "open_source": null,
+      "org": "anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "claude-4-5-Sonnet",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "claude-4-5-Sonnet"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": null,
+      "score": 43.6,
+      "score_extra": {
+        "ci_plus_minus": 3.6
+      },
+      "date": "2025-09-19",
+      "verified": null,
+      "open_source": null,
+      "org": "anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "gemini-3-pro-preview",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "gemini-3-pro-preview"
+      ],
+      "model_ids": [
+        "gemini-3-pro"
+      ],
+      "model_config": null,
+      "score": 43.3,
+      "score_extra": {
+        "ci_plus_minus": 3.6
+      },
+      "date": "2025-11-26",
+      "verified": null,
+      "open_source": null,
+      "org": "google",
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "claude-4-Sonnet",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "claude-4-Sonnet"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": null,
+      "score": 42.7,
+      "score_extra": {
+        "ci_plus_minus": 3.59
+      },
+      "date": "2025-09-19",
+      "verified": null,
+      "open_source": null,
+      "org": "anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 10,
+      "system": "gpt-5-2025-08-07 (High)",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "gpt-5-2025-08-07 (High)"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": "High",
+      "score": 41.78,
+      "score_extra": {
+        "ci_plus_minus": 3.49
+      },
+      "date": "2025-11-26",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": 10,
+      "system": "gpt-5.2-codex",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "gpt-5.2-codex"
+      ],
+      "model_ids": [
+        "gpt-5.2-codex"
+      ],
+      "model_config": null,
+      "score": 41.04,
+      "score_extra": {
+        "ci_plus_minus": 3.57
+      },
+      "date": "2026-01-27",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": 10,
+      "system": "claude-4-5-haiku",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "claude-4-5-haiku"
+      ],
+      "model_ids": [
+        "claude-haiku-4.5"
+      ],
+      "model_config": null,
+      "score": 39.45,
+      "score_extra": {
+        "ci_plus_minus": 3.55
+      },
+      "date": "2025-09-19",
+      "verified": null,
+      "open_source": null,
+      "org": "anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 10,
+      "system": "qwen3-coder-480b-a35b",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "qwen3-coder-480b-a35b"
+      ],
+      "model_ids": [
+        "qwen3-coder-480b-a35b"
+      ],
+      "model_config": null,
+      "score": 38.7,
+      "score_extra": {
+        "ci_plus_minus": 3.55
+      },
+      "date": "2026-01-27",
+      "verified": null,
+      "open_source": null,
+      "org": "alibaba",
+      "row_url": null
+    },
+    {
+      "rank": 14,
+      "system": "minimax-2.1",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "minimax-2.1"
+      ],
+      "model_ids": [
+        "minimax-m2.1"
+      ],
+      "model_config": null,
+      "score": 36.81,
+      "score_extra": {
+        "ci_plus_minus": 3.55
+      },
+      "date": "2026-01-12",
+      "verified": null,
+      "open_source": null,
+      "org": "minimax",
+      "row_url": null
+    },
+    {
+      "rank": 14,
+      "system": "gemini-3-flash",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "gemini-3-flash"
+      ],
+      "model_ids": [
+        "gemini-3-flash"
+      ],
+      "model_config": null,
+      "score": 34.63,
+      "score_extra": {
+        "ci_plus_minus": 3.55
+      },
+      "date": "2026-01-12",
+      "verified": null,
+      "open_source": null,
+      "org": "google",
+      "row_url": null
+    },
+    {
+      "rank": 16,
+      "system": "gpt-5.2",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "gpt-5.2"
+      ],
+      "model_ids": [
+        "gpt-5.2"
+      ],
+      "model_config": null,
+      "score": 29.94,
+      "score_extra": {
+        "ci_plus_minus": 2.15
+      },
+      "date": "2026-01-27",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": 16,
+      "system": "kimi-k2-instruct",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "kimi-k2-instruct"
+      ],
+      "model_ids": [
+        "kimi-k2"
+      ],
+      "model_config": null,
+      "score": 27.67,
+      "score_extra": {
+        "ci_plus_minus": 3.25
+      },
+      "date": "2025-09-19",
+      "verified": null,
+      "open_source": null,
+      "org": "moonshot",
+      "row_url": null
+    },
+    {
+      "rank": 18,
+      "system": "qwen3-235b-a22b",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "qwen3-235b-a22b"
+      ],
+      "model_ids": [
+        "qwen3-235b-a22b"
+      ],
+      "model_config": null,
+      "score": 21.41,
+      "score_extra": {
+        "ci_plus_minus": 2.25
+      },
+      "date": "2026-01-27",
+      "verified": null,
+      "open_source": null,
+      "org": "alibaba",
+      "row_url": null
+    },
+    {
+      "rank": 19,
+      "system": "gpt-oss-120b",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "gpt-oss-120b"
+      ],
+      "model_ids": [
+        "gpt-oss-120b"
+      ],
+      "model_config": null,
+      "score": 16.2,
+      "score_extra": {
+        "ci_plus_minus": 2.67
+      },
+      "date": "2026-01-27",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": 19,
+      "system": "deepseek-v3p2",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "deepseek-v3p2"
+      ],
+      "model_ids": [
+        "deepseek-v3.2"
+      ],
+      "model_config": null,
+      "score": 15.56,
+      "score_extra": {
+        "ci_plus_minus": 2.63
+      },
+      "date": "2026-01-27",
+      "verified": null,
+      "open_source": null,
+      "org": "deepseek",
+      "row_url": null
+    },
+    {
+      "rank": 21,
+      "system": "gemma-3-27b-it",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "gemma-3-27b-it"
+      ],
+      "model_ids": [
+        "gemma-3-27b"
+      ],
+      "model_config": null,
+      "score": 11.38,
+      "score_extra": {
+        "ci_plus_minus": 2.15
+      },
+      "date": "2026-01-27",
+      "verified": null,
+      "open_source": null,
+      "org": "google",
+      "row_url": null
+    },
+    {
+      "rank": 21,
+      "system": "llama3-1-405b-instruct",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "llama3-1-405b-instruct"
+      ],
+      "model_ids": [
+        "llama-3.1-405b"
+      ],
+      "model_config": null,
+      "score": 11.18,
+      "score_extra": {
+        "ci_plus_minus": 2.15
+      },
+      "date": "2026-01-27",
+      "verified": null,
+      "open_source": null,
+      "org": "meta",
+      "row_url": null
+    },
+    {
+      "rank": 21,
+      "system": "glm-4.6",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "glm-4.6"
+      ],
+      "model_ids": [
+        "glm-4.6"
+      ],
+      "model_config": null,
+      "score": 9.67,
+      "score_extra": {
+        "ci_plus_minus": 2.15
+      },
+      "date": "2026-01-27",
+      "verified": null,
+      "open_source": null,
+      "org": "zai",
+      "row_url": null
+    },
+    {
+      "rank": 24,
+      "system": "llama4-maverick-17b-instruct",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "llama4-maverick-17b-instruct"
+      ],
+      "model_ids": [
+        "llama-4-maverick"
+      ],
+      "model_config": null,
+      "score": 5.24,
+      "score_extra": {
+        "ci_plus_minus": 1.24
+      },
+      "date": "2026-01-27",
+      "verified": null,
+      "open_source": null,
+      "org": "meta",
+      "row_url": null
+    },
+    {
+      "rank": 25,
+      "system": "codestral-2405",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "codestral-2405"
+      ],
+      "model_ids": [
+        "codestral-2405"
+      ],
+      "model_config": null,
+      "score": 1.51,
+      "score_extra": {
+        "ci_plus_minus": 1.51
+      },
+      "date": "2026-01-27",
+      "verified": null,
+      "open_source": null,
+      "org": "mistral",
+      "row_url": null
+    }
+  ]
+}

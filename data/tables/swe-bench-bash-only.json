@@ -1,0 +1,1100 @@
+{
+  "id": "swe-bench-bash-only",
+  "family": "swe-bench",
+  "name": "SWE-bench Verified (Bash Only / mini-SWE-agent)",
+  "board": "swebench.com",
+  "category": "coding",
+  "measures_ja": "SWE-bench Verified の 500 件を、全モデル同じ mini-SWE-agent(bash だけ)の環境で解かせたときの解決率。",
+  "tasks": 500,
+  "tasks_note": null,
+  "metric": "% Resolved",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "SWE-bench チームが mini-SWE-agent という同一の最小足場で全モデルを走らせる。足場の差が無いのでモデル同士を比べやすい。",
+  "source": "https://www.swebench.com/verified.html",
+  "fetched": [
+    "https://raw.githubusercontent.com/SWE-bench/swe-bench.github.io/master/data/leaderboards.json",
+    "https://www.swebench.com/"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-02-26",
+  "snapshot": "sources/swe-bench-bash-only/leaderboards_verified_mini-swe-agent.json",
+  "paper": "https://openai.com/index/introducing-swe-bench-verified/",
+  "repo": "https://github.com/SWE-bench/SWE-bench",
+  "notes_ja": "2026-09-01 に独立ボードは廃止され、Verified ボードの初期フィルタ(Agent = mini-SWE-agent)になった。行は swe-bench-verified と重複する。順位は絞り込み後に振り直したもの。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Claude 4.5 Opus (high)",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "claude-4-5-opus"
+      ],
+      "model_ids": [
+        "claude-opus-4.5"
+      ],
+      "model_config": "high",
+      "score": 76.8,
+      "score_extra": {
+        "cost_usd_per_instance": 0.7539,
+        "cost_usd_total": 376.95,
+        "api_calls_per_instance": 32.9
+      },
+      "date": "2026-02-17",
+      "verified": false,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://www.anthropic.com/claude"
+    },
+    {
+      "rank": 2,
+      "system": "Gemini 3 Flash (high)",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "gemini-3-flash-preview"
+      ],
+      "model_ids": [
+        "gemini-3-flash"
+      ],
+      "model_config": "high",
+      "score": 75.8,
+      "score_extra": {
+        "cost_usd_per_instance": 0.356,
+        "cost_usd_total": 177.98,
+        "api_calls_per_instance": 56.13
+      },
+      "date": "2026-02-17",
+      "verified": false,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://ai.google.dev/gemini-api/docs/models"
+    },
+    {
+      "rank": 3,
+      "system": "MiniMax M2.5 (high)",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "minimax-m2.5"
+      ],
+      "model_ids": [
+        "minimax-m2.5"
+      ],
+      "model_config": "high",
+      "score": 75.8,
+      "score_extra": {
+        "cost_usd_per_instance": 0.0733,
+        "cost_usd_total": 36.64,
+        "api_calls_per_instance": 60.45
+      },
+      "date": "2026-02-17",
+      "verified": false,
+      "open_source": true,
+      "org": "SWE-agent",
+      "row_url": "https://www.minimax.io"
+    },
+    {
+      "rank": 4,
+      "system": "Claude 4.6 Opus",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "claude-opus-4-6"
+      ],
+      "model_ids": [
+        "claude-opus-4.6"
+      ],
+      "model_config": null,
+      "score": 75.6,
+      "score_extra": {
+        "cost_usd_per_instance": 0.5515,
+        "cost_usd_total": 275.76,
+        "api_calls_per_instance": 28.93
+      },
+      "date": "2026-02-17",
+      "verified": false,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://www.anthropic.com/claude"
+    },
+    {
+      "rank": 5,
+      "system": "Claude 4.5 Opus (20251101) (medium)",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "claude-opus-4-5-20251101"
+      ],
+      "model_ids": [
+        "claude-opus-4.5"
+      ],
+      "model_config": "medium",
+      "score": 74.4,
+      "score_extra": {
+        "cost_usd_per_instance": 0.7212,
+        "cost_usd_total": 360.62,
+        "api_calls_per_instance": 38.04
+      },
+      "date": "2025-11-24",
+      "verified": true,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://www.anthropic.com/news/claude-opus-4-5"
+    },
+    {
+      "rank": 6,
+      "system": "Gemini 3 Pro Preview (2025-11-18)",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "gemini-3-pro-preview"
+      ],
+      "model_ids": [
+        "gemini-3-pro"
+      ],
+      "model_config": null,
+      "score": 74.2,
+      "score_extra": {
+        "cost_usd_per_instance": 0.46,
+        "cost_usd_total": 229.98,
+        "api_calls_per_instance": 40.33
+      },
+      "date": "2025-11-18",
+      "verified": true,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://ai.google.dev/gemini-api/docs/models"
+    },
+    {
+      "rank": 7,
+      "system": "GLM 5 (high)",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "glm-5"
+      ],
+      "model_ids": [
+        "glm-5"
+      ],
+      "model_config": "high",
+      "score": 72.8,
+      "score_extra": {
+        "cost_usd_per_instance": 0.5344,
+        "cost_usd_total": 267.19,
+        "api_calls_per_instance": 76.18
+      },
+      "date": "2026-02-17",
+      "verified": false,
+      "open_source": true,
+      "org": "SWE-agent",
+      "row_url": "https://z.ai"
+    },
+    {
+      "rank": 8,
+      "system": "GPT 5.2 (high)",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "gpt-5-2"
+      ],
+      "model_ids": [
+        "gpt-5.2"
+      ],
+      "model_config": "high",
+      "score": 72.8,
+      "score_extra": {
+        "cost_usd_per_instance": 0.4736,
+        "cost_usd_total": 236.78,
+        "api_calls_per_instance": 35.05
+      },
+      "date": "2026-02-17",
+      "verified": false,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://platform.openai.com"
+    },
+    {
+      "rank": 9,
+      "system": "GPT 5.2 Codex",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "gpt-5-2-codex"
+      ],
+      "model_ids": [
+        "gpt-5.2-codex"
+      ],
+      "model_config": null,
+      "score": 72.8,
+      "score_extra": {
+        "cost_usd_per_instance": 0.4494,
+        "cost_usd_total": 224.71,
+        "api_calls_per_instance": 28.07
+      },
+      "date": "2026-02-19",
+      "verified": false,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://platform.openai.com/docs/models/gpt-5"
+    },
+    {
+      "rank": 10,
+      "system": "GPT 5.2 (2025-12-11) (high)",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "gpt-5.2-2025-12-11"
+      ],
+      "model_ids": [
+        "gpt-5.2"
+      ],
+      "model_config": "high",
+      "score": 71.8,
+      "score_extra": {
+        "cost_usd_per_instance": 0.5203,
+        "cost_usd_total": 260.13,
+        "api_calls_per_instance": 19.76
+      },
+      "date": "2025-12-11",
+      "verified": false,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://platform.openai.com/docs/models/gpt-5"
+    },
+    {
+      "rank": 11,
+      "system": "Claude 4.5 Sonnet (high)",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "claude-sonnet-4-5-20250929"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": "high",
+      "score": 71.4,
+      "score_extra": {
+        "cost_usd_per_instance": 0.6579,
+        "cost_usd_total": 328.95,
+        "api_calls_per_instance": 48.3
+      },
+      "date": "2026-02-17",
+      "verified": false,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://www.anthropic.com/claude"
+    },
+    {
+      "rank": 12,
+      "system": "Kimi K2.5 (high)",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "kimi-k2.5"
+      ],
+      "model_ids": [
+        "kimi-k2.5"
+      ],
+      "model_config": "high",
+      "score": 70.8,
+      "score_extra": {
+        "cost_usd_per_instance": 0.1466,
+        "cost_usd_total": 73.28,
+        "api_calls_per_instance": 51.18
+      },
+      "date": "2026-02-17",
+      "verified": false,
+      "open_source": true,
+      "org": "SWE-agent",
+      "row_url": "https://moonshotai.github.io/Kimi-K2/"
+    },
+    {
+      "rank": 13,
+      "system": "Claude 4.5 Sonnet (20250929)",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "claude-sonnet-4-5-20250929"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": null,
+      "score": 70.6,
+      "score_extra": {
+        "cost_usd_per_instance": 0.5583,
+        "cost_usd_total": 279.17,
+        "api_calls_per_instance": 50.99
+      },
+      "date": "2025-09-29",
+      "verified": true,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://www.anthropic.com/news/claude-sonnet-4-5"
+    },
+    {
+      "rank": 14,
+      "system": "DeepSeek V3.2 (high)",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "deepseek-v3.2"
+      ],
+      "model_ids": [
+        "deepseek-v3.2"
+      ],
+      "model_config": "high",
+      "score": 70.0,
+      "score_extra": {
+        "cost_usd_per_instance": 0.4478,
+        "cost_usd_total": 223.92,
+        "api_calls_per_instance": 88.51
+      },
+      "date": "2026-02-17",
+      "verified": false,
+      "open_source": true,
+      "org": "SWE-agent",
+      "row_url": "https://api-docs.deepseek.com"
+    },
+    {
+      "rank": 15,
+      "system": "Gemini 3 Pro",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "gemini-3-pro-preview"
+      ],
+      "model_ids": [
+        "gemini-3-pro"
+      ],
+      "model_config": "high",
+      "score": 69.6,
+      "score_extra": {
+        "cost_usd_per_instance": 0.96,
+        "cost_usd_total": 480.01,
+        "api_calls_per_instance": 51.28
+      },
+      "date": "2026-02-26",
+      "verified": false,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://ai.google.dev/gemini-api/docs/models"
+    },
+    {
+      "rank": 16,
+      "system": "GPT 5.2 (2025-12-11)",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "gpt-5.2-2025-12-11"
+      ],
+      "model_ids": [
+        "gpt-5.2"
+      ],
+      "model_config": null,
+      "score": 69.0,
+      "score_extra": {
+        "cost_usd_per_instance": 0.2697,
+        "cost_usd_total": 134.83,
+        "api_calls_per_instance": 16.27
+      },
+      "date": "2025-12-11",
+      "verified": false,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://platform.openai.com/docs/models/"
+    },
+    {
+      "rank": 17,
+      "system": "Claude 4 Opus (20250514)",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "claude-4-opus-20250514"
+      ],
+      "model_ids": [
+        "claude-opus-4"
+      ],
+      "model_config": null,
+      "score": 67.6,
+      "score_extra": {
+        "cost_usd_per_instance": 1.1313,
+        "cost_usd_total": 565.64,
+        "api_calls_per_instance": 31.08
+      },
+      "date": "2025-08-02",
+      "verified": true,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://www.anthropic.com/news/claude-4"
+    },
+    {
+      "rank": 18,
+      "system": "Claude 4.5 Haiku (high)",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "claude-haiku-4-5-20251001"
+      ],
+      "model_ids": [
+        "claude-haiku-4.5"
+      ],
+      "model_config": "high",
+      "score": 66.6,
+      "score_extra": {
+        "cost_usd_per_instance": 0.3309,
+        "cost_usd_total": 165.46,
+        "api_calls_per_instance": 66.15
+      },
+      "date": "2026-02-17",
+      "verified": false,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://www.anthropic.com/claude"
+    },
+    {
+      "rank": 19,
+      "system": "GPT 5.1 (2025-11-13) (medium)",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "gpt-5.1-2025-11-13"
+      ],
+      "model_ids": [
+        "gpt-5.1"
+      ],
+      "model_config": "medium",
+      "score": 66.0,
+      "score_extra": {
+        "cost_usd_per_instance": 0.3062,
+        "cost_usd_total": 153.08,
+        "api_calls_per_instance": 21.0
+      },
+      "date": "2025-11-20",
+      "verified": false,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://platform.openai.com/docs/models/gpt-5"
+    },
+    {
+      "rank": 20,
+      "system": "GPT 5.1 Codex (medium)",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "gpt-5.1-codex"
+      ],
+      "model_ids": [
+        "gpt-5.1-codex"
+      ],
+      "model_config": "medium",
+      "score": 66.0,
+      "score_extra": {
+        "cost_usd_per_instance": 0.5889,
+        "cost_usd_total": 294.44,
+        "api_calls_per_instance": 23.88
+      },
+      "date": "2025-11-24",
+      "verified": false,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://platform.openai.com/docs/models/gpt-5"
+    },
+    {
+      "rank": 21,
+      "system": "GPT 5 (2025-08-07) (medium)",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "gpt-5-2025-08-07"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": "medium",
+      "score": 65.0,
+      "score_extra": {
+        "cost_usd_per_instance": 0.2804,
+        "cost_usd_total": 140.19,
+        "api_calls_per_instance": 13.21
+      },
+      "date": "2025-08-07",
+      "verified": true,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://platform.openai.com/docs/models/gpt-5"
+    },
+    {
+      "rank": 22,
+      "system": "Claude 4 Sonnet (20250514)",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "claude-4-sonnet-20250514"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": null,
+      "score": 64.93,
+      "score_extra": {
+        "cost_usd_per_instance": 0.3715,
+        "cost_usd_total": 185.73,
+        "api_calls_per_instance": 37.17
+      },
+      "date": "2025-07-26",
+      "verified": true,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://www.anthropic.com/news/claude-4"
+    },
+    {
+      "rank": 23,
+      "system": "Kimi K2 Thinking",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "Kimi-K2-Thinking"
+      ],
+      "model_ids": [
+        "kimi-k2-thinking"
+      ],
+      "model_config": null,
+      "score": 63.4,
+      "score_extra": {
+        "cost_usd_per_instance": 0.4383,
+        "cost_usd_total": 219.15,
+        "api_calls_per_instance": 46.82
+      },
+      "date": "2025-12-10",
+      "verified": true,
+      "open_source": true,
+      "org": "SWE-agent",
+      "row_url": "https://moonshotai.github.io/Kimi-K2/"
+    },
+    {
+      "rank": 24,
+      "system": "MiniMax M2",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "minimax-m2"
+      ],
+      "model_ids": [
+        "minimax-m2"
+      ],
+      "model_config": null,
+      "score": 61.0,
+      "score_extra": {
+        "cost_usd_per_instance": 0.4283,
+        "cost_usd_total": 214.13,
+        "api_calls_per_instance": 74.14
+      },
+      "date": "2025-11-24",
+      "verified": true,
+      "open_source": true,
+      "org": "SWE-agent",
+      "row_url": "https://www.minimax.io"
+    },
+    {
+      "rank": 25,
+      "system": "DeepSeek V3.2 Reasoner",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "deepseek-v3.2-reasoner"
+      ],
+      "model_ids": [
+        "deepseek-v3.2"
+      ],
+      "model_config": "Reasoner",
+      "score": 60.0,
+      "score_extra": {
+        "cost_usd_per_instance": 0.0281,
+        "cost_usd_total": 14.04,
+        "api_calls_per_instance": 46.4
+      },
+      "date": "2025-12-01",
+      "verified": true,
+      "open_source": true,
+      "org": "SWE-agent",
+      "row_url": null
+    },
+    {
+      "rank": 26,
+      "system": "GPT 5 mini (2025-08-07) (medium)",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "gpt-5-mini-2025-08-07"
+      ],
+      "model_ids": [
+        "gpt-5-mini"
+      ],
+      "model_config": "medium",
+      "score": 59.8,
+      "score_extra": {
+        "cost_usd_per_instance": 0.0355,
+        "cost_usd_total": 17.74,
+        "api_calls_per_instance": 14.47
+      },
+      "date": "2025-08-07",
+      "verified": true,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://platform.openai.com/docs/models/gpt-5-mini"
+    },
+    {
+      "rank": 27,
+      "system": "o3 (2025-04-16)",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "o3-20250416"
+      ],
+      "model_ids": [
+        "o3"
+      ],
+      "model_config": null,
+      "score": 58.4,
+      "score_extra": {
+        "cost_usd_per_instance": 0.3337,
+        "cost_usd_total": 166.83,
+        "api_calls_per_instance": 24.7
+      },
+      "date": "2025-07-26",
+      "verified": true,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://platform.openai.com/docs/models/o3"
+    },
+    {
+      "rank": 28,
+      "system": "Devstral Small (2512)",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "devstral-small-2512"
+      ],
+      "model_ids": [
+        "devstral-small-2"
+      ],
+      "model_config": null,
+      "score": 56.4,
+      "score_extra": {
+        "api_calls_per_instance": 86.87
+      },
+      "date": "2025-12-09",
+      "verified": true,
+      "open_source": true,
+      "org": "SWE-agent",
+      "row_url": null
+    },
+    {
+      "rank": 29,
+      "system": "GPT 5 mini",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "gpt-5-mini-2025-08-07"
+      ],
+      "model_ids": [
+        "gpt-5-mini"
+      ],
+      "model_config": null,
+      "score": 56.2,
+      "score_extra": {
+        "cost_usd_per_instance": 0.0472,
+        "cost_usd_total": 23.6,
+        "api_calls_per_instance": 20.34
+      },
+      "date": "2026-02-17",
+      "verified": false,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://platform.openai.com"
+    },
+    {
+      "rank": 30,
+      "system": "Qwen3-Coder 480B/A35B Instruct",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "Qwen3-Coder-480B-A35B-Instruct"
+      ],
+      "model_ids": [
+        "qwen3-coder-480b-a35b"
+      ],
+      "model_config": null,
+      "score": 55.4,
+      "score_extra": {
+        "cost_usd_per_instance": 0.2479,
+        "cost_usd_total": 123.96,
+        "api_calls_per_instance": 64.79
+      },
+      "date": "2025-08-02",
+      "verified": true,
+      "open_source": true,
+      "org": "SWE-agent",
+      "row_url": "https://qwenlm.github.io/blog/qwen3-coder/"
+    },
+    {
+      "rank": 31,
+      "system": "GLM 4.6 (T=1)",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "glm-4.6"
+      ],
+      "model_ids": [
+        "glm-4.6"
+      ],
+      "model_config": "T=1",
+      "score": 55.4,
+      "score_extra": {
+        "cost_usd_per_instance": 0.0966,
+        "cost_usd_total": 48.31,
+        "api_calls_per_instance": 49.35
+      },
+      "date": "2025-12-01",
+      "verified": true,
+      "open_source": true,
+      "org": "SWE-agent",
+      "row_url": null
+    },
+    {
+      "rank": 32,
+      "system": "GLM 4.5 (2025-08-22)",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "GLM-4.5"
+      ],
+      "model_ids": [
+        "glm-4.5"
+      ],
+      "model_config": null,
+      "score": 54.2,
+      "score_extra": {
+        "cost_usd_per_instance": 0.2972,
+        "cost_usd_total": 148.6,
+        "api_calls_per_instance": 40.22
+      },
+      "date": "2025-08-22",
+      "verified": true,
+      "open_source": true,
+      "org": "SWE-agent",
+      "row_url": "https://z.ai/blog/glm-4.5"
+    },
+    {
+      "rank": 33,
+      "system": "Devstral (2512)",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "devstral-2512"
+      ],
+      "model_ids": [
+        "devstral-2"
+      ],
+      "model_config": null,
+      "score": 53.8,
+      "score_extra": {
+        "api_calls_per_instance": 75.09
+      },
+      "date": "2025-12-09",
+      "verified": true,
+      "open_source": true,
+      "org": "SWE-agent",
+      "row_url": null
+    },
+    {
+      "rank": 34,
+      "system": "Gemini 2.5 Pro (2025-05-06)",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "gemini-2.5-pro"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": null,
+      "score": 53.6,
+      "score_extra": {
+        "cost_usd_per_instance": 0.2884,
+        "cost_usd_total": 144.19,
+        "api_calls_per_instance": 20.48
+      },
+      "date": "2025-07-26",
+      "verified": true,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://ai.google.dev/gemini-api/docs/models"
+    },
+    {
+      "rank": 35,
+      "system": "Claude 3.7 Sonnet (20250219)",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "claude-3-7-sonnet-20250219"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": null,
+      "score": 52.8,
+      "score_extra": {
+        "cost_usd_per_instance": 0.3546,
+        "cost_usd_total": 177.31,
+        "api_calls_per_instance": 34.7
+      },
+      "date": "2025-07-20",
+      "verified": true,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://www.anthropic.com/news/claude-3-7-sonnet"
+    },
+    {
+      "rank": 36,
+      "system": "o4-mini (2025-04-16)",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "o4-mini-20250416"
+      ],
+      "model_ids": [
+        "o4-mini"
+      ],
+      "model_config": null,
+      "score": 45.0,
+      "score_extra": {
+        "cost_usd_per_instance": 0.21,
+        "cost_usd_total": 104.99,
+        "api_calls_per_instance": 23.28
+      },
+      "date": "2025-07-26",
+      "verified": true,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://platform.openai.com/docs/models/o4-mini"
+    },
+    {
+      "rank": 37,
+      "system": "Kimi K2 Instruct",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "Kimi-K2-Instruct"
+      ],
+      "model_ids": [
+        "kimi-k2"
+      ],
+      "model_config": null,
+      "score": 43.8,
+      "score_extra": {
+        "cost_usd_per_instance": 0.5316,
+        "cost_usd_total": 265.8,
+        "api_calls_per_instance": 37.52
+      },
+      "date": "2025-08-07",
+      "verified": true,
+      "open_source": true,
+      "org": "SWE-agent",
+      "row_url": "https://moonshotai.github.io/Kimi-K2/"
+    },
+    {
+      "rank": 38,
+      "system": "GPT 4.1 (2025-04-14)",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "gpt-4.1-20250414"
+      ],
+      "model_ids": [
+        "gpt-4.1"
+      ],
+      "model_config": null,
+      "score": 39.58,
+      "score_extra": {
+        "cost_usd_per_instance": 0.1463,
+        "cost_usd_total": 73.16,
+        "api_calls_per_instance": 19.54
+      },
+      "date": "2025-07-26",
+      "verified": true,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://platform.openai.com/docs/models/gpt-4.1"
+    },
+    {
+      "rank": 39,
+      "system": "GPT 5 nano (2025-08-07) (medium)",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "gpt-5-nano-2025-08-07"
+      ],
+      "model_ids": [
+        "gpt-5-nano"
+      ],
+      "model_config": "medium",
+      "score": 34.8,
+      "score_extra": {
+        "cost_usd_per_instance": 0.0381,
+        "cost_usd_total": 19.04,
+        "api_calls_per_instance": 39.76
+      },
+      "date": "2025-08-07",
+      "verified": true,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://platform.openai.com/docs/models/gpt-5-nano"
+    },
+    {
+      "rank": 40,
+      "system": "Gemini 2.5 Flash (2025-04-17)",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "gemini-2.5-flash"
+      ],
+      "model_ids": [
+        "gemini-2.5-flash"
+      ],
+      "model_config": null,
+      "score": 28.73,
+      "score_extra": {
+        "cost_usd_per_instance": 0.1339,
+        "cost_usd_total": 66.94,
+        "api_calls_per_instance": 26.65
+      },
+      "date": "2025-07-26",
+      "verified": true,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://ai.google.dev/gemini-api/docs/models"
+    },
+    {
+      "rank": 41,
+      "system": "gpt-oss-120b",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "gpt-oss-120b"
+      ],
+      "model_ids": [
+        "gpt-oss-120b"
+      ],
+      "model_config": null,
+      "score": 26.0,
+      "score_extra": {
+        "cost_usd_per_instance": 0.0571,
+        "cost_usd_total": 28.56,
+        "api_calls_per_instance": 27.6
+      },
+      "date": "2025-08-07",
+      "verified": true,
+      "open_source": true,
+      "org": "SWE-agent",
+      "row_url": "https://platform.openai.com/docs/models/gpt-oss-120b"
+    },
+    {
+      "rank": 42,
+      "system": "GPT 4.1 mini (2025-04-14)",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "gpt-4.1-mini-20250414"
+      ],
+      "model_ids": [
+        "gpt-4.1-mini"
+      ],
+      "model_config": null,
+      "score": 23.94,
+      "score_extra": {
+        "cost_usd_per_instance": 0.4352,
+        "cost_usd_total": 217.58,
+        "api_calls_per_instance": 89.2
+      },
+      "date": "2025-07-20",
+      "verified": true,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://platform.openai.com/docs/models/gpt-4.1-mini"
+    },
+    {
+      "rank": 43,
+      "system": "GPT 4o (2024-11-20)",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "gpt-4o-20241120"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 21.62,
+      "score_extra": {
+        "cost_usd_per_instance": 1.5311,
+        "cost_usd_total": 765.57,
+        "api_calls_per_instance": 63.07
+      },
+      "date": "2025-07-20",
+      "verified": true,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://platform.openai.com/docs/models/gpt-4o"
+    },
+    {
+      "rank": 44,
+      "system": "Llama 4 Maverick Instruct",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "llama-4-maverick-instruct"
+      ],
+      "model_ids": [
+        "llama-4-maverick"
+      ],
+      "model_config": null,
+      "score": 21.04,
+      "score_extra": {
+        "cost_usd_per_instance": 0.3137,
+        "cost_usd_total": 156.85,
+        "api_calls_per_instance": 48.08
+      },
+      "date": "2025-07-20",
+      "verified": true,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://www.together.ai/models/llama-4-maverick"
+    },
+    {
+      "rank": 45,
+      "system": "Gemini 2.0 Flash",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "gemini-2.0-flash"
+      ],
+      "model_ids": [
+        "gemini-2.0-flash"
+      ],
+      "model_config": null,
+      "score": 13.52,
+      "score_extra": {},
+      "date": "2025-07-26",
+      "verified": true,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://ai.google.dev/gemini-api/docs/models"
+    },
+    {
+      "rank": 46,
+      "system": "Llama 4 Scout Instruct",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "llama-4-scout-instruct"
+      ],
+      "model_ids": [
+        "llama-4-scout"
+      ],
+      "model_config": null,
+      "score": 9.06,
+      "score_extra": {
+        "cost_usd_per_instance": 0.1156,
+        "cost_usd_total": 57.82,
+        "api_calls_per_instance": 29.22
+      },
+      "date": "2025-07-20",
+      "verified": true,
+      "open_source": false,
+      "org": "SWE-agent",
+      "row_url": "https://www.together.ai/models/llama-4-scout"
+    },
+    {
+      "rank": 47,
+      "system": "Qwen2.5-Coder 32B Instruct",
+      "agent": "mini-SWE-agent",
+      "model_raw": [
+        "Qwen2.5-Coder-32B-Instruct"
+      ],
+      "model_ids": [
+        "qwen2.5-coder-32b"
+      ],
+      "model_config": null,
+      "score": 9.0,
+      "score_extra": {
+        "cost_usd_per_instance": 0.0681,
+        "cost_usd_total": 34.06,
+        "api_calls_per_instance": 48.21
+      },
+      "date": "2025-08-03",
+      "verified": true,
+      "open_source": true,
+      "org": "SWE-agent",
+      "row_url": "https://qwenlm.github.io/blog/qwen2.5-coder/"
+    }
+  ]
+}
