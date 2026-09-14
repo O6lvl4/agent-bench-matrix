@@ -1,0 +1,120 @@
+{
+  "id": "swe-lancer-diamond",
+  "family": "swe-lancer",
+  "name": "SWE-Lancer (Diamond offline subset)",
+  "board": "swelancer.github.io",
+  "category": "coding",
+  "measures_ja": "Upwork の実際のフリーランス案件(バグ修正〜機能実装)を解き、報酬額ベースでいくら稼げるか。",
+  "tasks": 198,
+  "tasks_note": "ボードに「the leaderboard only contains tasks from the 198 diamond offline subset」とある。",
+  "metric": "Earned (USD)",
+  "unit": "usd",
+  "higher_is_better": true,
+  "harness_ja": "提出者が README の手順で結果フォルダを PR し、運営が確認して掲載する。足場は行ごとに不明。",
+  "source": "https://swelancer.github.io/leaderboard/",
+  "fetched": [
+    "https://raw.githubusercontent.com/swelancer/leaderboard/main/data/results.csv",
+    "https://swelancer.github.io/leaderboard/"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2025-07-17",
+  "snapshot": "sources/swe-lancer-diamond/results.csv",
+  "paper": "https://arxiv.org/abs/2502.12115",
+  "repo": "https://github.com/openai/swelancer",
+  "notes_ja": "ボードは Earned で並べる。「dummy」3 行はボードにそのまま載っている仮の行。2025-07 以降更新されていない。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "o1",
+      "agent": null,
+      "model_raw": [
+        "o1"
+      ],
+      "model_ids": [
+        "o1"
+      ],
+      "model_config": null,
+      "score": 45625,
+      "score_extra": {
+        "accuracy_pct": 28.426
+      },
+      "date": "2025-07-17",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "4o",
+      "agent": null,
+      "model_raw": [
+        "4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 11500,
+      "score_extra": {
+        "accuracy_pct": 8.081
+      },
+      "date": "2025-07-17",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "dummy",
+      "agent": null,
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 0,
+      "score_extra": {
+        "accuracy_pct": 0
+      },
+      "date": "2025-07-17",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "dummy2",
+      "agent": null,
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 0,
+      "score_extra": {
+        "accuracy_pct": 0
+      },
+      "date": "2025-06-21",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "dummy3",
+      "agent": null,
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 0,
+      "score_extra": {
+        "accuracy_pct": 0
+      },
+      "date": "2025-06-22",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    }
+  ]
+}

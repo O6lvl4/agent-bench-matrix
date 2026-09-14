@@ -1,0 +1,366 @@
+{
+  "id": "algotune",
+  "family": "algotune",
+  "name": "AlgoTune",
+  "board": "algotune.io",
+  "category": "coding",
+  "measures_ja": "数学・物理・CS の既存実装(SciPy など)より速く、同じ出力を返すコードを反復して書けるか。",
+  "tasks": 154,
+  "tasks_note": "公式リポジトリの説明「154 math, physics, and computer science problems」。サイト本文は「more than one hundred」。",
+  "metric": "AlgoTune Score (harmonic mean speedup, x)",
+  "unit": "x",
+  "higher_is_better": true,
+  "harness_ja": "運営が全モデルを自前のエージェント AlgoTuner(タスクごとの予算上限つき)で走らせる。",
+  "source": "https://algotune.io/",
+  "fetched": [
+    "https://algotune.io/"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-03-07",
+  "snapshot": "sources/algotune/leaderboard_table.html",
+  "paper": "https://arxiv.org/abs/2507.15887",
+  "repo": "https://github.com/oripress/AlgoTune",
+  "notes_ja": "静的 HTML の表を解析した。date は行の data-earliest-date 属性(付いている行のみ)。score は速度向上倍率の調和平均で、1.0 が参照実装と同等。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "GPT-5.2 (high)",
+      "agent": "AlgoTuner",
+      "model_raw": [
+        "GPT-5.2 (high)"
+      ],
+      "model_ids": [
+        "gpt-5.2"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 2.05,
+      "score_extra": {},
+      "date": "2026-01-18",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "Gemini 3.1 Pro Preview (high)",
+      "agent": "AlgoTuner",
+      "model_raw": [
+        "Gemini 3.1 Pro Preview (high)"
+      ],
+      "model_ids": [
+        "gemini-3.1-pro"
+      ],
+      "model_config": "reasoning_effort=high; preview",
+      "score": 2.02,
+      "score_extra": {},
+      "date": "2026-02-19",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "GPT-5.4 (high)",
+      "agent": "AlgoTuner",
+      "model_raw": [
+        "GPT-5.4 (high)"
+      ],
+      "model_ids": [
+        "gpt-5.4"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 1.85,
+      "score_extra": {},
+      "date": "2026-03-07",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "Gemini 3 Pro Preview (high)",
+      "agent": "AlgoTuner",
+      "model_raw": [
+        "Gemini 3 Pro Preview (high)"
+      ],
+      "model_ids": [
+        "gemini-3-pro"
+      ],
+      "model_config": "reasoning_effort=high; preview",
+      "score": 1.83,
+      "score_extra": {},
+      "date": "2026-01-19",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "Claude Opus 4.5 (high)",
+      "agent": "AlgoTuner",
+      "model_raw": [
+        "Claude Opus 4.5 (high)"
+      ],
+      "model_ids": [
+        "claude-opus-4.5"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 1.77,
+      "score_extra": {},
+      "date": "2026-01-26",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 6,
+      "system": "o4-mini (high)",
+      "agent": "AlgoTuner",
+      "model_raw": [
+        "o4-mini (high)"
+      ],
+      "model_ids": [
+        "o4-mini"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 1.72,
+      "score_extra": {},
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 7,
+      "system": "DeepSeek R1 (high)",
+      "agent": "AlgoTuner",
+      "model_raw": [
+        "DeepSeek R1 (high)"
+      ],
+      "model_ids": [
+        "deepseek-r1"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 1.7,
+      "score_extra": {},
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 8,
+      "system": "GPT-5 (high)",
+      "agent": "AlgoTuner",
+      "model_raw": [
+        "GPT-5 (high)"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 1.67,
+      "score_extra": {},
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 9,
+      "system": "Claude Sonnet 4.5 (high)",
+      "agent": "AlgoTuner",
+      "model_raw": [
+        "Claude Sonnet 4.5 (high)"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 1.52,
+      "score_extra": {},
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 9,
+      "system": "GLM-4.5 (high)",
+      "agent": "AlgoTuner",
+      "model_raw": [
+        "GLM-4.5 (high)"
+      ],
+      "model_ids": [
+        "glm-4.5"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 1.52,
+      "score_extra": {},
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 11,
+      "system": "Gemini 2.5 Pro (high)",
+      "agent": "AlgoTuner",
+      "model_raw": [
+        "Gemini 2.5 Pro (high)"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 1.51,
+      "score_extra": {},
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 12,
+      "system": "Claude Opus 4.6 (high)",
+      "agent": "AlgoTuner",
+      "model_raw": [
+        "Claude Opus 4.6 (high)"
+      ],
+      "model_ids": [
+        "claude-opus-4.6"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 1.47,
+      "score_extra": {},
+      "date": "2026-02-07",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 13,
+      "system": "Qwen3 Coder (high)",
+      "agent": "AlgoTuner",
+      "model_raw": [
+        "Qwen3 Coder (high)"
+      ],
+      "model_ids": [],
+      "model_config": "reasoning_effort=high",
+      "score": 1.44,
+      "score_extra": {},
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 14,
+      "system": "gpt-oss-120b (high)",
+      "agent": "AlgoTuner",
+      "model_raw": [
+        "gpt-oss-120b (high)"
+      ],
+      "model_ids": [
+        "gpt-oss-120b"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 1.41,
+      "score_extra": {},
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 15,
+      "system": "GPT-5 Mini (high)",
+      "agent": "AlgoTuner",
+      "model_raw": [
+        "GPT-5 Mini (high)"
+      ],
+      "model_ids": [
+        "gpt-5-mini"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 1.38,
+      "score_extra": {},
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 16,
+      "system": "Claude Opus 4.1 (high)",
+      "agent": "AlgoTuner",
+      "model_raw": [
+        "Claude Opus 4.1 (high)"
+      ],
+      "model_ids": [
+        "claude-opus-4.1"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 1.34,
+      "score_extra": {},
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 17,
+      "system": "Claude Opus 4 (high)",
+      "agent": "AlgoTuner",
+      "model_raw": [
+        "Claude Opus 4 (high)"
+      ],
+      "model_ids": [
+        "claude-opus-4"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 1.33,
+      "score_extra": {},
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 18,
+      "system": "GPT-5 Pro (medium)",
+      "agent": "AlgoTuner",
+      "model_raw": [
+        "GPT-5 Pro (medium)"
+      ],
+      "model_ids": [
+        "gpt-5-pro"
+      ],
+      "model_config": "reasoning_effort=medium",
+      "score": 1.31,
+      "score_extra": {},
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    }
+  ]
+}

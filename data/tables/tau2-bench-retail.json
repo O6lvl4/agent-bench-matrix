@@ -1,0 +1,248 @@
+{
+  "id": "tau2-bench-retail",
+  "family": "tau-bench",
+  "name": "τ²-bench Retail",
+  "board": "taubench.com",
+  "category": "tool-use",
+  "measures_ja": "顧客サポート役のエージェントが、小売の注文キャンセル・返品・交換・住所変更をツールとポリシーに従って模擬ユーザーと解決できるか。",
+  "tasks": 114,
+  "tasks_note": "提出データの methodology 記載による。",
+  "metric": "Pass^1",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "標準提出は τ-bench 側の既定の足場・プロンプトで走らせる(提出者は Sierra が多い)。ユーザー役はLLMのシミュレータで、行ごとに使ったシミュレータが異なりうる。",
+  "source": "https://taubench.com/leaderboard?benchmark=core",
+  "fetched": [
+    "https://taubench.com/",
+    "https://taubench.com/assets/index-QtX8yEBE.js",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3.5-397b-a17b-think_sierra_2026-03-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/raft-30b-a3b_neu_2026-04-29/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2_sierra_2026-02-26/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-5_sierra_2026-02-26/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-flash_sierra_2026-03-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_sierra_2026-03-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2-none_sierra_2026-02-26/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/glm-5-think_sierra_2026-03-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_sierra_2026-02-26/submission.json"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-04-30",
+  "snapshot": "sources/tau2-bench-retail/submissions.json",
+  "paper": "https://arxiv.org/abs/2506.07982",
+  "repo": "https://github.com/sierra-research/tau2-bench",
+  "notes_ja": "pass^2〜pass^4(同じタスクをk回とも成功する率)は score_extra に入れた。rank はボード既定表示(Standard のみ)での順位で、Custom 提出は rank を null にした。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Qwen3.5-397B-A17B",
+      "agent": null,
+      "model_raw": [
+        "Qwen3.5-397B-A17B"
+      ],
+      "model_ids": [
+        "qwen3.5-397b-a17b"
+      ],
+      "model_config": "reasoning: enabled; user sim: gpt-5.2; submission type: standard",
+      "score": 84.43,
+      "score_extra": {
+        "pass_hat_2": 74.42,
+        "pass_hat_3": 66.45,
+        "pass_hat_4": 59.65
+      },
+      "date": "2026-03-02",
+      "verified": true,
+      "open_source": null,
+      "org": "Sierra",
+      "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3.5-397b-a17b-think_sierra_2026-03-02/submission.json"
+    },
+    {
+      "rank": null,
+      "system": "RAFT-30B-A3B",
+      "agent": null,
+      "model_raw": [
+        "RAFT-30B-A3B"
+      ],
+      "model_ids": [
+        "raft-30b-a3b"
+      ],
+      "model_config": "user sim: claude-sonnet-4-5-20250929; submission type: custom",
+      "score": 82.45614035087719,
+      "score_extra": {
+        "pass_hat_2": 72.95321637426902,
+        "pass_hat_3": 66.22807017543859,
+        "pass_hat_4": 61.40350877192983
+      },
+      "date": "2026-04-30",
+      "verified": true,
+      "open_source": null,
+      "org": "Northeastern University HAI Lab",
+      "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/raft-30b-a3b_neu_2026-04-29/submission.json"
+    },
+    {
+      "rank": 2,
+      "system": "GPT-5.2",
+      "agent": null,
+      "model_raw": [
+        "GPT-5.2"
+      ],
+      "model_ids": [
+        "gpt-5.2"
+      ],
+      "model_config": "reasoning: high; user sim: gpt-5.2; submission type: standard",
+      "score": 81.58,
+      "score_extra": {
+        "pass_hat_2": 69.59,
+        "pass_hat_3": 59.87,
+        "pass_hat_4": 51.75,
+        "cost": 0.07156
+      },
+      "date": "2026-02-26",
+      "verified": true,
+      "open_source": null,
+      "org": "Sierra",
+      "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2_sierra_2026-02-26/submission.json"
+    },
+    {
+      "rank": 3,
+      "system": "Claude Opus 4.5",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 4.5"
+      ],
+      "model_ids": [
+        "claude-opus-4.5"
+      ],
+      "model_config": "reasoning: high; user sim: gpt-5.2; submission type: standard",
+      "score": 79.61,
+      "score_extra": {
+        "pass_hat_2": 67.4,
+        "pass_hat_3": 58.77,
+        "pass_hat_4": 51.75,
+        "cost": 0.38695
+      },
+      "date": "2026-02-26",
+      "verified": true,
+      "open_source": null,
+      "org": "Sierra",
+      "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-5_sierra_2026-02-26/submission.json"
+    },
+    {
+      "rank": 4,
+      "system": "Gemini 3 Flash",
+      "agent": null,
+      "model_raw": [
+        "Gemini 3 Flash"
+      ],
+      "model_ids": [
+        "gemini-3-flash"
+      ],
+      "model_config": "reasoning: high; user sim: gpt-5.2; submission type: standard",
+      "score": 76.75,
+      "score_extra": {
+        "pass_hat_2": 65.94,
+        "pass_hat_3": 57.89,
+        "pass_hat_4": 51.75
+      },
+      "date": "2026-03-02",
+      "verified": true,
+      "open_source": null,
+      "org": "Sierra",
+      "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-flash_sierra_2026-03-02/submission.json"
+    },
+    {
+      "rank": 5,
+      "system": "Gemini 3 Pro",
+      "agent": null,
+      "model_raw": [
+        "Gemini 3 Pro"
+      ],
+      "model_ids": [
+        "gemini-3-pro"
+      ],
+      "model_config": "reasoning: high; user sim: gpt-5.2; submission type: standard",
+      "score": 75.88,
+      "score_extra": {
+        "pass_hat_2": 63.45,
+        "pass_hat_3": 54.39,
+        "pass_hat_4": 47.37
+      },
+      "date": "2026-03-02",
+      "verified": true,
+      "open_source": null,
+      "org": "Sierra",
+      "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_sierra_2026-03-02/submission.json"
+    },
+    {
+      "rank": 6,
+      "system": "GPT-5.2",
+      "agent": null,
+      "model_raw": [
+        "GPT-5.2"
+      ],
+      "model_ids": [
+        "gpt-5.2"
+      ],
+      "model_config": "reasoning: none; user sim: gpt-5.2; submission type: standard",
+      "score": 75.0,
+      "score_extra": {
+        "pass_hat_2": 62.13450292397662,
+        "pass_hat_3": 53.07017543859649,
+        "pass_hat_4": 45.614035087719294,
+        "cost": 0.048219267434210525
+      },
+      "date": "2026-02-26",
+      "verified": true,
+      "open_source": null,
+      "org": "Sierra",
+      "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2-none_sierra_2026-02-26/submission.json"
+    },
+    {
+      "rank": 7,
+      "system": "GLM-5",
+      "agent": null,
+      "model_raw": [
+        "GLM-5"
+      ],
+      "model_ids": [
+        "glm-5"
+      ],
+      "model_config": "reasoning: enabled; user sim: gpt-5.2; submission type: standard",
+      "score": 73.68,
+      "score_extra": {
+        "pass_hat_2": 60.38,
+        "pass_hat_3": 51.1,
+        "pass_hat_4": 43.86
+      },
+      "date": "2026-03-02",
+      "verified": true,
+      "open_source": null,
+      "org": "Sierra",
+      "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/glm-5-think_sierra_2026-03-02/submission.json"
+    },
+    {
+      "rank": 8,
+      "system": "Claude Sonnet 4.5",
+      "agent": null,
+      "model_raw": [
+        "Claude Sonnet 4.5"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": "reasoning: enabled; user sim: gpt-5.2; submission type: standard",
+      "score": 72.37,
+      "score_extra": {
+        "pass_hat_2": 57.46,
+        "pass_hat_3": 47.37,
+        "pass_hat_4": 39.47,
+        "cost": 0.25494
+      },
+      "date": "2026-02-26",
+      "verified": true,
+      "open_source": null,
+      "org": "Sierra",
+      "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_sierra_2026-02-26/submission.json"
+    }
+  ]
+}

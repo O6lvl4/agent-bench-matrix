@@ -1,0 +1,531 @@
+{
+  "id": "apex-agents-corporate-lawyer",
+  "family": "apex-agents",
+  "name": "APEX-Agents 1.1 Corporate Lawyer",
+  "board": "mercor.com",
+  "category": "tool-use",
+  "measures_ja": "APEX-Agents のうち企業法務弁護士の実務タスクを、複数アプリを横断して長時間かけて仕上げられるか。",
+  "tasks": null,
+  "tasks_note": "職種別ページの numTasks は 160 だが、v1.1 告知ブログは「80 tasks per domain」としており食い違うため null。",
+  "metric": "Mean Score",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "Mercor が共通のエージェント(Loop: loop_truncated_tools_agent)で各モデルを実行し、専門家作成のルーブリックを使ってLLM審査で採点する。",
+  "source": "https://www.mercor.com/apex/apex-agents-leaderboard/corporate-lawyer-agent/",
+  "fetched": [
+    "https://www.mercor.com/apex/apex-agents-leaderboard/corporate-lawyer-agent/",
+    "https://www.mercor.com/blog/introducing-apex-agents-1-1"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-09-03",
+  "snapshot": "sources/apex-agents-corporate-lawyer/leaderboard_data.json",
+  "paper": "https://arxiv.org/abs/2601.14242",
+  "repo": "https://github.com/Mercor-Intelligence/apex_loop_truncated_tools_agent",
+  "notes_ja": "職種別ページのデータ。FAQ に従い Mean Score を score にして降順で rank を振った。Pass@1 は score_extra。date はモデルのリリース日。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "GPT-6 Astra",
+      "agent": "Loop",
+      "model_raw": [
+        "GPT-6 Astra"
+      ],
+      "model_ids": [
+        "gpt-6-astra"
+      ],
+      "model_config": "effort: max; model_id: gpt-6-astra-max",
+      "score": 88.9,
+      "score_extra": {
+        "pass_at_1": 73.4
+      },
+      "date": "2026-09-03",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "Opus 5",
+      "agent": "Loop",
+      "model_raw": [
+        "Opus 5"
+      ],
+      "model_ids": [
+        "claude-opus-5"
+      ],
+      "model_config": "effort: max; model_id: claude-opus-5",
+      "score": 85.3,
+      "score_extra": {
+        "pass_at_1": 70
+      },
+      "date": "2026-07-24",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "GPT-5.6 Terra",
+      "agent": "Loop",
+      "model_raw": [
+        "GPT-5.6 Terra"
+      ],
+      "model_ids": [
+        "gpt-5.6-terra"
+      ],
+      "model_config": "effort: max; model_id: gpt-5.6-terra-max",
+      "score": 85.1,
+      "score_extra": {
+        "pass_at_1": 63.1
+      },
+      "date": "2026-07-09",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "Fable 5.1",
+      "agent": "Loop",
+      "model_raw": [
+        "Fable 5.1"
+      ],
+      "model_ids": [
+        "claude-fable-5.1"
+      ],
+      "model_config": "effort: max; model_id: claude-fable-5.1",
+      "score": 84.9,
+      "score_extra": {
+        "pass_at_1": 71.9
+      },
+      "date": "2026-09-01",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "Gemini 3.7 Flash",
+      "agent": "Loop",
+      "model_raw": [
+        "Gemini 3.7 Flash"
+      ],
+      "model_ids": [
+        "gemini-3.7-flash"
+      ],
+      "model_config": "effort: high; model_id: gemini-3.7-flash",
+      "score": 84.7,
+      "score_extra": {
+        "pass_at_1": 63.3
+      },
+      "date": "2026-08-13",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 6,
+      "system": "GLM-5.3-Flash",
+      "agent": "Loop",
+      "model_raw": [
+        "GLM-5.3-Flash"
+      ],
+      "model_ids": [
+        "glm-5.3-flash"
+      ],
+      "model_config": "effort: max; model_id: glm-5-3-flash",
+      "score": 84.1,
+      "score_extra": {
+        "pass_at_1": 66.9
+      },
+      "date": "2026-08-26",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 7,
+      "system": "GPT-5.5",
+      "agent": "Loop",
+      "model_raw": [
+        "GPT-5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": "effort: xhigh; model_id: gpt-5.5-xhigh",
+      "score": 83.2,
+      "score_extra": {
+        "pass_at_1": 59.7
+      },
+      "date": "2026-04-23",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 8,
+      "system": "Grok 4.6",
+      "agent": "Loop",
+      "model_raw": [
+        "Grok 4.6"
+      ],
+      "model_ids": [
+        "grok-4.6"
+      ],
+      "model_config": "effort: xhigh; model_id: grok-4-6-xhigh",
+      "score": 83,
+      "score_extra": {
+        "pass_at_1": 62.8
+      },
+      "date": "2026-08-12",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 9,
+      "system": "Fable 5",
+      "agent": "Loop",
+      "model_raw": [
+        "Fable 5"
+      ],
+      "model_ids": [
+        "claude-fable-5"
+      ],
+      "model_config": "effort: max; model_id: claude-fable-5",
+      "score": 82.7,
+      "score_extra": {
+        "pass_at_1": 67.8
+      },
+      "date": "2026-06-09",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 10,
+      "system": "Gemini 3.8 Flash",
+      "agent": "Loop",
+      "model_raw": [
+        "Gemini 3.8 Flash"
+      ],
+      "model_ids": [
+        "gemini-3.8-flash"
+      ],
+      "model_config": "effort: high; model_id: gemini-3.8-flash",
+      "score": 82.2,
+      "score_extra": {
+        "pass_at_1": 61.4
+      },
+      "date": "2026-09-02",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 11,
+      "system": "Gemini 3.6 Flash",
+      "agent": "Loop",
+      "model_raw": [
+        "Gemini 3.6 Flash"
+      ],
+      "model_ids": [
+        "gemini-3.6-flash"
+      ],
+      "model_config": "effort: high; model_id: gemini-3.6-flash",
+      "score": 82.2,
+      "score_extra": {
+        "pass_at_1": 57.3
+      },
+      "date": "2026-07-21",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 12,
+      "system": "GPT-5.4",
+      "agent": "Loop",
+      "model_raw": [
+        "GPT-5.4"
+      ],
+      "model_ids": [
+        "gpt-5.4"
+      ],
+      "model_config": "effort: xhigh; model_id: responses/gpt-5.4",
+      "score": 82.1,
+      "score_extra": {
+        "pass_at_1": 57.5
+      },
+      "date": "2026-03-05",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 13,
+      "system": "Muse Spark 1.3",
+      "agent": "Loop",
+      "model_raw": [
+        "Muse Spark 1.3"
+      ],
+      "model_ids": [
+        "muse-spark-1.3"
+      ],
+      "model_config": "effort: xhigh; model_id: muse-spark-1-3",
+      "score": 81.6,
+      "score_extra": {
+        "pass_at_1": 64.4
+      },
+      "date": "2026-09-02",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 14,
+      "system": "Opus 4.8",
+      "agent": "Loop",
+      "model_raw": [
+        "Opus 4.8"
+      ],
+      "model_ids": [
+        "claude-opus-4.8"
+      ],
+      "model_config": "effort: max; model_id: claude-opus-4-8",
+      "score": 81.4,
+      "score_extra": {
+        "pass_at_1": 62.8
+      },
+      "date": "2026-05-28",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 15,
+      "system": "GPT-5.6 Sol",
+      "agent": "Loop",
+      "model_raw": [
+        "GPT-5.6 Sol"
+      ],
+      "model_ids": [
+        "gpt-5.6-sol"
+      ],
+      "model_config": "effort: max; model_id: gpt-5-6-sol-max-pro",
+      "score": 81.2,
+      "score_extra": {
+        "pass_at_1": 61.9
+      },
+      "date": "2026-07-09",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 16,
+      "system": "DeepSeek-V4-Pro-0813",
+      "agent": "Loop",
+      "model_raw": [
+        "DeepSeek-V4-Pro-0813"
+      ],
+      "model_ids": [
+        "deepseek-v4-pro-0813"
+      ],
+      "model_config": "effort: max; model_id: deepseek-v4-pro-08-13",
+      "score": 81,
+      "score_extra": {
+        "pass_at_1": 60.7
+      },
+      "date": "2026-08-13",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 17,
+      "system": "Grok 4.5",
+      "agent": "Loop",
+      "model_raw": [
+        "Grok 4.5"
+      ],
+      "model_ids": [
+        "grok-4.5"
+      ],
+      "model_config": "effort: high; model_id: grok-4-5",
+      "score": 80.1,
+      "score_extra": {
+        "pass_at_1": 58.1
+      },
+      "date": "2026-07-08",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 18,
+      "system": "Muse Spark 1.2",
+      "agent": "Loop",
+      "model_raw": [
+        "Muse Spark 1.2"
+      ],
+      "model_ids": [
+        "muse-spark-1.2"
+      ],
+      "model_config": "effort: xhigh; model_id: muse-spark-1-2",
+      "score": 80.1,
+      "score_extra": {
+        "pass_at_1": 62.2
+      },
+      "date": "2026-08-05",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 19,
+      "system": "Opus 4.7",
+      "agent": "Loop",
+      "model_raw": [
+        "Opus 4.7"
+      ],
+      "model_ids": [
+        "claude-opus-4.7"
+      ],
+      "model_config": "effort: max; model_id: claude-opus-4-7",
+      "score": 79.2,
+      "score_extra": {
+        "pass_at_1": 60.3
+      },
+      "date": "2026-04-16",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 20,
+      "system": "Sonnet 5",
+      "agent": "Loop",
+      "model_raw": [
+        "Sonnet 5"
+      ],
+      "model_ids": [
+        "claude-sonnet-5"
+      ],
+      "model_config": "effort: max; model_id: claude-sonnet-5-max",
+      "score": 78.5,
+      "score_extra": {
+        "pass_at_1": 61.6
+      },
+      "date": "2026-06-30",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 21,
+      "system": "Opus 4.6",
+      "agent": "Loop",
+      "model_raw": [
+        "Opus 4.6"
+      ],
+      "model_ids": [
+        "claude-opus-4.6"
+      ],
+      "model_config": "effort: max; model_id: claude-opus-4-6-max",
+      "score": 78.5,
+      "score_extra": {
+        "pass_at_1": 55.9
+      },
+      "date": "2026-02-05",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 22,
+      "system": "Kimi K3",
+      "agent": "Loop",
+      "model_raw": [
+        "Kimi K3"
+      ],
+      "model_ids": [
+        "kimi-k3"
+      ],
+      "model_config": "effort: max; model_id: kimi-k3",
+      "score": 78.4,
+      "score_extra": {
+        "pass_at_1": 61.3
+      },
+      "date": "2026-07-27",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 23,
+      "system": "GLM-5.3",
+      "agent": "Loop",
+      "model_raw": [
+        "GLM-5.3"
+      ],
+      "model_ids": [
+        "glm-5.3"
+      ],
+      "model_config": "effort: max; model_id: glm-5-3",
+      "score": 78.2,
+      "score_extra": {
+        "pass_at_1": 65.9
+      },
+      "date": "2026-08-14",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 24,
+      "system": "Gemini 3.5 Flash",
+      "agent": "Loop",
+      "model_raw": [
+        "Gemini 3.5 Flash"
+      ],
+      "model_ids": [
+        "gemini-3.5-flash"
+      ],
+      "model_config": "effort: high; model_id: gemini-3.5-flash",
+      "score": 75.6,
+      "score_extra": {
+        "pass_at_1": 50.9
+      },
+      "date": "2026-05-19",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    }
+  ]
+}

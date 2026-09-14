@@ -1,0 +1,209 @@
+{
+  "id": "gaia2-cli",
+  "family": "gaia2",
+  "name": "Gaia2-CLI",
+  "board": "huggingface.co/spaces/meta-agents-research-environments/leaderboard",
+  "category": "general",
+  "measures_ja": "メール・カレンダー・連絡先などのアプリが動く模擬環境で、検索・実行・曖昧さ対応・状況変化への適応・時間制約をこなせるか。",
+  "tasks": 800,
+  "tasks_note": "gaia2-cli データセットは5分割 × 160シナリオ = 800。",
+  "metric": "pass@1",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "ボード表示の Harness はすべて OpenClaw 2026.4.1。ボードの注記では全スコアが提出チームの申告。",
+  "source": "https://huggingface.co/spaces/meta-agents-research-environments/leaderboard",
+  "fetched": [
+    "https://huggingface.co/spaces/meta-agents-research-environments/leaderboard/raw/main/app.py",
+    "https://huggingface.co/spaces/meta-agents-research-environments/leaderboard/raw/main/content.py"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-05-15",
+  "snapshot": "sources/gaia2-cli/gaia2_cli_data_from_app_py.json",
+  "paper": "https://arxiv.org/abs/2602.11964",
+  "repo": "https://github.com/facebookresearch/meta-agents-research-environments",
+  "notes_ja": "表はスペースの app.py に直書きされたデータ。Provider が OpenRouter* の行は、推論内容をターン間で引き継がない経路での測定だとボードが注記している。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Claude Opus 4.6 (high)",
+      "agent": "OpenClaw 2026.4.1",
+      "model_raw": [
+        "Claude Opus 4.6 (high)"
+      ],
+      "model_ids": [
+        "claude-opus-4.6"
+      ],
+      "model_config": "high",
+      "score": 57.0,
+      "score_extra": {
+        "search": 88.1,
+        "execution": 82.9,
+        "adaptability": 61.9,
+        "ambiguity": 48.3,
+        "time": 3.8,
+        "provider": "Anthropic"
+      },
+      "date": "2026-04-13",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "GPT-5.5 (xhigh)",
+      "agent": "OpenClaw 2026.4.1",
+      "model_raw": [
+        "GPT-5.5 (xhigh)"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": "xhigh",
+      "score": 56.4,
+      "score_extra": {
+        "search": 96.2,
+        "execution": 79.4,
+        "adaptability": 55.0,
+        "ambiguity": 46.9,
+        "time": 4.4,
+        "provider": "OpenAI"
+      },
+      "date": "2026-05-15",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "GPT-5.4 (high)",
+      "agent": "OpenClaw 2026.4.1",
+      "model_raw": [
+        "GPT-5.4 (high)"
+      ],
+      "model_ids": [
+        "gpt-5.4"
+      ],
+      "model_config": "high",
+      "score": 55.6,
+      "score_extra": {
+        "search": 94.8,
+        "execution": 78.8,
+        "adaptability": 54.8,
+        "ambiguity": 47.3,
+        "time": 2.5,
+        "provider": "OpenAI"
+      },
+      "date": "2026-04-13",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "Gemini 3.1 Pro (high)",
+      "agent": "OpenClaw 2026.4.1",
+      "model_raw": [
+        "Gemini 3.1 Pro (high)"
+      ],
+      "model_ids": [
+        "gemini-3.1-pro"
+      ],
+      "model_config": "high",
+      "score": 52.0,
+      "score_extra": {
+        "search": 92.8,
+        "execution": 78.6,
+        "adaptability": 45.9,
+        "ambiguity": 40.6,
+        "time": 2.1,
+        "provider": "Google"
+      },
+      "date": "2026-04-14",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "Claude Sonnet 4.6 (high)",
+      "agent": "OpenClaw 2026.4.1",
+      "model_raw": [
+        "Claude Sonnet 4.6 (high)"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.6"
+      ],
+      "model_config": "high",
+      "score": 51.9,
+      "score_extra": {
+        "search": 82.5,
+        "execution": 75.8,
+        "adaptability": 55.7,
+        "ambiguity": 40.4,
+        "time": 5.0,
+        "provider": "Anthropic"
+      },
+      "date": "2026-04-13",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 6,
+      "system": "GLM 5.1 (enabled)",
+      "agent": "OpenClaw 2026.4.1",
+      "model_raw": [
+        "GLM 5.1 (enabled)"
+      ],
+      "model_ids": [
+        "glm-5.1"
+      ],
+      "model_config": "enabled",
+      "score": 50.5,
+      "score_extra": {
+        "search": 83.8,
+        "execution": 71.2,
+        "adaptability": 56.9,
+        "ambiguity": 39.4,
+        "time": 1.2,
+        "provider": "OpenRouter*"
+      },
+      "date": "2026-04-13",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 7,
+      "system": "Kimi-K2.5 (enabled)",
+      "agent": "OpenClaw 2026.4.1",
+      "model_raw": [
+        "Kimi-K2.5 (enabled)"
+      ],
+      "model_ids": [
+        "kimi-k2.5"
+      ],
+      "model_config": "enabled",
+      "score": 34.0,
+      "score_extra": {
+        "search": 62.2,
+        "execution": 47.0,
+        "adaptability": 43.4,
+        "ambiguity": 16.6,
+        "time": 0.8,
+        "provider": "OpenRouter*"
+      },
+      "date": "2026-04-14",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    }
+  ]
+}

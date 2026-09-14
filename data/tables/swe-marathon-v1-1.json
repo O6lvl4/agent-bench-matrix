@@ -1,0 +1,475 @@
+{
+  "id": "swe-marathon-v1-1",
+  "family": "swe-marathon",
+  "name": "SWE-Marathon v1.1",
+  "board": "swe-marathon.org",
+  "category": "long-horizon",
+  "measures_ja": "ライブラリ再実装・フルスタックのクローン・ML 実験など、人間なら数十〜数百時間かかる超長丁場の開発タスクを完遂できるか。",
+  "tasks": 20,
+  "tasks_note": "サイト上のタスク一覧(データセット abundant/swe-marathon)の件数。",
+  "metric": "Resolution rate (pass@1, %)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "Abundant が各社の公式エージェント(Claude Code, Codex など)でタスクごとに k=8 試行を走らせる(GLM-5.3 系は Z.ai が実施)。報酬は全テスト合格時のみ 1。",
+  "source": "https://www.swe-marathon.org/",
+  "fetched": [
+    "https://www.swe-marathon.org/",
+    "https://www.swe-marathon.org/assets/index-r_3Fj-TG.js"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": null,
+  "snapshot": "sources/swe-marathon-v1-1/task_results_trimmed.json",
+  "paper": null,
+  "repo": "https://github.com/abundant-ai/swe-marathon",
+  "notes_ja": "表はサイトの JS に埋め込まれたタスク別試行データから、サイト自身の集計式(reward>=1 の試行割合、表示対象の推論量のみ)で再計算した。行ごとの日付は無く、試行開始時刻の最新は 2026-09-10。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Claude Opus 5 (max) / Claude Code",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Claude Opus 5"
+      ],
+      "model_ids": [
+        "claude-opus-5"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 50,
+      "score_extra": {
+        "partial_avg_pct": 85.62062499999996,
+        "cost_avg_usd": 55.15031615468746,
+        "tokens_avg_m": 77.429203125,
+        "trials": 160,
+        "cost_trials": 160
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "Claude Opus 4.8 (max) / Claude Code",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Claude Opus 4.8"
+      ],
+      "model_ids": [
+        "claude-opus-4.8"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 48.75,
+      "score_extra": {
+        "partial_avg_pct": 86.77937499999997,
+        "cost_avg_usd": 63.8304082015625,
+        "tokens_avg_m": 88.98884906875,
+        "trials": 160,
+        "cost_trials": 160
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "Kimi K3 (max) / Claude Code",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Kimi K3"
+      ],
+      "model_ids": [
+        "kimi-k3"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 48.125,
+      "score_extra": {
+        "partial_avg_pct": 83.83312499999998,
+        "cost_avg_usd": 661.1542658125,
+        "tokens_avg_m": 133.30282229375,
+        "trials": 160,
+        "cost_trials": 160
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "Claude Fable 5.1 (max) / Claude Code",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Claude Fable 5.1"
+      ],
+      "model_ids": [
+        "claude-fable-5.1"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 45.625,
+      "score_extra": {
+        "partial_avg_pct": 80.20874999999997,
+        "cost_avg_usd": 62.87026639687499,
+        "tokens_avg_m": 41.3705373375,
+        "trials": 160,
+        "cost_trials": 160
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "Claude Fable 5 (max) / Claude Code",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Claude Fable 5"
+      ],
+      "model_ids": [
+        "claude-fable-5"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 45,
+      "score_extra": {
+        "partial_avg_pct": 80.62437499999996,
+        "cost_avg_usd": 82.71209472031249,
+        "tokens_avg_m": 67.68342878125,
+        "trials": 160,
+        "cost_trials": 160
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 6,
+      "system": "GPT-5.6-sol (max) / Codex",
+      "agent": "Codex",
+      "model_raw": [
+        "GPT-5.6-sol"
+      ],
+      "model_ids": [
+        "gpt-5.6-sol"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 42.5,
+      "score_extra": {
+        "partial_avg_pct": 84.88812499999997,
+        "cost_avg_usd": 35.849915881250034,
+        "tokens_avg_m": 41.398887818750005,
+        "trials": 160,
+        "cost_trials": 160
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 7,
+      "system": "GPT-6 Astra (max) / Codex",
+      "agent": "Codex",
+      "model_raw": [
+        "GPT-6 Astra"
+      ],
+      "model_ids": [
+        "gpt-6-astra"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 42.5,
+      "score_extra": {
+        "partial_avg_pct": 77.31875,
+        "cost_avg_usd": 51.84227415624997,
+        "tokens_avg_m": 29.38336915625,
+        "trials": 160,
+        "cost_trials": 160
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 8,
+      "system": "GLM 5.3 (max) / Claude Code",
+      "agent": "Claude Code",
+      "model_raw": [
+        "GLM 5.3"
+      ],
+      "model_ids": [
+        "glm-5.3"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 42.5,
+      "score_extra": {
+        "partial_avg_pct": 67.420625,
+        "cost_avg_usd": 59.13190444753246,
+        "tokens_avg_m": 56.82494618181818,
+        "trials": 160,
+        "cost_trials": 154
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 9,
+      "system": "GLM 5.3 Flash (max) / Claude Code",
+      "agent": "Claude Code",
+      "model_raw": [
+        "GLM 5.3 Flash"
+      ],
+      "model_ids": [
+        "glm-5.3-flash"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 38.75,
+      "score_extra": {
+        "partial_avg_pct": 69.10437500000003,
+        "cost_avg_usd": 2.4566418501935483,
+        "tokens_avg_m": 65.7598656516129,
+        "trials": 160,
+        "cost_trials": 155
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 10,
+      "system": "GPT-5.6-terra (max) / Codex",
+      "agent": "Codex",
+      "model_raw": [
+        "GPT-5.6-terra"
+      ],
+      "model_ids": [
+        "gpt-5.6-terra"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 32.5,
+      "score_extra": {
+        "partial_avg_pct": 86.1125,
+        "cost_avg_usd": 17.25881999125,
+        "tokens_avg_m": 68.99715210625,
+        "trials": 160,
+        "cost_trials": 160
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 11,
+      "system": "Grok 4.6 (high) / Grok Build",
+      "agent": "Grok Build",
+      "model_raw": [
+        "Grok 4.6"
+      ],
+      "model_ids": [
+        "grok-4.6"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 31.875,
+      "score_extra": {
+        "partial_avg_pct": 71.183125,
+        "cost_avg_usd": 33.33514447798745,
+        "tokens_avg_m": 31.4008753125,
+        "trials": 160,
+        "cost_trials": 159
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 12,
+      "system": "Muse Spark 1.3 (xhigh) / Muse Code",
+      "agent": "Muse Code",
+      "model_raw": [
+        "Muse Spark 1.3"
+      ],
+      "model_ids": [
+        "muse-spark-1.3"
+      ],
+      "model_config": "reasoning_effort=xhigh",
+      "score": 30.625,
+      "score_extra": {
+        "partial_avg_pct": 78.80187500000002,
+        "tokens_avg_m": 73.6858492625,
+        "trials": 160,
+        "cost_trials": 0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 13,
+      "system": "Claude Sonnet 5 (max) / Claude Code",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Claude Sonnet 5"
+      ],
+      "model_ids": [
+        "claude-sonnet-5"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 30,
+      "score_extra": {
+        "partial_avg_pct": 77.49250000000002,
+        "cost_avg_usd": 108.70869468843755,
+        "tokens_avg_m": 289.43853641875,
+        "trials": 160,
+        "cost_trials": 160
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 14,
+      "system": "Grok 4.5 (max) / Grok Build",
+      "agent": "Grok Build",
+      "model_raw": [
+        "Grok 4.5"
+      ],
+      "model_ids": [
+        "grok-4.5"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 29.375,
+      "score_extra": {
+        "partial_avg_pct": 67.61187500000001,
+        "cost_avg_usd": 45.00214603749998,
+        "tokens_avg_m": 21.952453143750002,
+        "trials": 160,
+        "cost_trials": 160
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 15,
+      "system": "GPT-5.6-luna (max) / Codex",
+      "agent": "Codex",
+      "model_raw": [
+        "GPT-5.6-luna"
+      ],
+      "model_ids": [
+        "gpt-5.6-luna"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 24.375,
+      "score_extra": {
+        "partial_avg_pct": 78.7625,
+        "cost_avg_usd": 2.2925509768749994,
+        "tokens_avg_m": 89.04927904375,
+        "trials": 160,
+        "cost_trials": 160
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 16,
+      "system": "Gemini 3.7 Flash (max) / OpenCode",
+      "agent": "OpenCode",
+      "model_raw": [
+        "Gemini 3.7 Flash"
+      ],
+      "model_ids": [
+        "gemini-3.7-flash"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 22.5,
+      "score_extra": {
+        "partial_avg_pct": 69.773125,
+        "cost_avg_usd": 10.860108714622648,
+        "tokens_avg_m": 118.86704143137256,
+        "trials": 160,
+        "cost_trials": 53
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 17,
+      "system": "GLM 5.2 (max) / Claude Code",
+      "agent": "Claude Code",
+      "model_raw": [
+        "GLM 5.2"
+      ],
+      "model_ids": [
+        "glm-5.2"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 19.375,
+      "score_extra": {
+        "partial_avg_pct": 73.28999999999999,
+        "cost_avg_usd": 15.630904638749996,
+        "tokens_avg_m": 49.534164075,
+        "trials": 160,
+        "cost_trials": 160
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 18,
+      "system": "DeepSeek V4 Pro (max) / Mini-SWE-Agent",
+      "agent": "Mini-SWE-Agent",
+      "model_raw": [
+        "DeepSeek V4 Pro"
+      ],
+      "model_ids": [
+        "deepseek-v4-pro"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 10.625,
+      "score_extra": {
+        "partial_avg_pct": 59.72187500000003,
+        "tokens_avg_m": 65.39437565,
+        "trials": 160,
+        "cost_trials": 0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    }
+  ]
+}

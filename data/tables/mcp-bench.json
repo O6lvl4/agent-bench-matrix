@@ -1,0 +1,608 @@
+{
+  "id": "mcp-bench",
+  "family": "mcp-bench",
+  "name": "MCP-Bench",
+  "board": "huggingface.co/spaces/mcpbench/mcp-bench",
+  "category": "tool-use",
+  "measures_ja": "複数のMCPサーバーにまたがる現実的なタスクで、ツールの発見・選択・引数指定・依存関係の把握を含めて依頼を達成できるか。",
+  "tasks": null,
+  "tasks_note": "リーダーボード上にタスク数の記載が無いため null。",
+  "metric": "Overall Score",
+  "unit": "score",
+  "higher_is_better": true,
+  "harness_ja": "論文著者(Accenture ほか)の評価パイプラインで各モデルを動かした結果。外部からの提出受付の記載は無い。",
+  "source": "https://huggingface.co/spaces/mcpbench/mcp-bench",
+  "fetched": [
+    "https://huggingface.co/spaces/mcpbench/mcp-bench",
+    "https://mcpbench-mcp-bench.static.hf.space/index.html",
+    "https://mcpbench-mcp-bench.static.hf.space/script.js"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": null,
+  "snapshot": "sources/mcp-bench/leaderboard_data.json",
+  "paper": "https://arxiv.org/abs/2508.20453",
+  "repo": "https://github.com/Accenture/mcp-bench",
+  "notes_ja": "ボードの lastUpdated は 2025-09-05 で、それ以降更新されていない。Overall Score は0〜1、ツール名妥当率など3列は%、他の下位指標は0〜1で score_extra に入れた。同じ Space にある data.json は列名がずれているため使わず、ページが実際に表示する script.js 内のデータを使った。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "gpt-5",
+      "agent": null,
+      "model_raw": [
+        "gpt-5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": null,
+      "score": 0.749,
+      "score_extra": {
+        "valid_tool_name_rate": 100,
+        "schema_compliance": 99.3,
+        "execution_success": 99.1,
+        "task_fulfillment": 0.677,
+        "information_grounding": 0.828,
+        "tool_appropriateness": 0.767,
+        "parameter_accuracy": 0.749,
+        "dependency_awareness": 0.649,
+        "parallelism_efficiency": 0.339
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "o3",
+      "agent": null,
+      "model_raw": [
+        "o3"
+      ],
+      "model_ids": [
+        "o3"
+      ],
+      "model_config": null,
+      "score": 0.715,
+      "score_extra": {
+        "valid_tool_name_rate": 99.3,
+        "schema_compliance": 99.9,
+        "execution_success": 97.1,
+        "task_fulfillment": 0.641,
+        "information_grounding": 0.706,
+        "tool_appropriateness": 0.724,
+        "parameter_accuracy": 0.726,
+        "dependency_awareness": 0.592,
+        "parallelism_efficiency": 0.359
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "gpt-oss-120b",
+      "agent": null,
+      "model_raw": [
+        "gpt-oss-120b"
+      ],
+      "model_ids": [
+        "gpt-oss-120b"
+      ],
+      "model_config": null,
+      "score": 0.692,
+      "score_extra": {
+        "valid_tool_name_rate": 97.7,
+        "schema_compliance": 98.8,
+        "execution_success": 94,
+        "task_fulfillment": 0.636,
+        "information_grounding": 0.705,
+        "tool_appropriateness": 0.691,
+        "parameter_accuracy": 0.661,
+        "dependency_awareness": 0.576,
+        "parallelism_efficiency": 0.329
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "gemini-2.5-pro",
+      "agent": null,
+      "model_raw": [
+        "gemini-2.5-pro"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": null,
+      "score": 0.69,
+      "score_extra": {
+        "valid_tool_name_rate": 99.4,
+        "schema_compliance": 99.6,
+        "execution_success": 96.9,
+        "task_fulfillment": 0.562,
+        "information_grounding": 0.725,
+        "tool_appropriateness": 0.717,
+        "parameter_accuracy": 0.67,
+        "dependency_awareness": 0.541,
+        "parallelism_efficiency": 0.329
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "claude-sonnet-4",
+      "agent": null,
+      "model_raw": [
+        "claude-sonnet-4"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": null,
+      "score": 0.681,
+      "score_extra": {
+        "valid_tool_name_rate": 100,
+        "schema_compliance": 99.8,
+        "execution_success": 98.8,
+        "task_fulfillment": 0.554,
+        "information_grounding": 0.676,
+        "tool_appropriateness": 0.689,
+        "parameter_accuracy": 0.671,
+        "dependency_awareness": 0.541,
+        "parallelism_efficiency": 0.328
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 6,
+      "system": "qwen3-235b-a22b-2507",
+      "agent": null,
+      "model_raw": [
+        "qwen3-235b-a22b-2507"
+      ],
+      "model_ids": [
+        "qwen3-235b-a22b-2507"
+      ],
+      "model_config": null,
+      "score": 0.678,
+      "score_extra": {
+        "valid_tool_name_rate": 99.1,
+        "schema_compliance": 99.3,
+        "execution_success": 94.8,
+        "task_fulfillment": 0.549,
+        "information_grounding": 0.625,
+        "tool_appropriateness": 0.688,
+        "parameter_accuracy": 0.712,
+        "dependency_awareness": 0.542,
+        "parallelism_efficiency": 0.355
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 7,
+      "system": "glm-4.5",
+      "agent": null,
+      "model_raw": [
+        "glm-4.5"
+      ],
+      "model_ids": [
+        "glm-4.5"
+      ],
+      "model_config": null,
+      "score": 0.668,
+      "score_extra": {
+        "valid_tool_name_rate": 99.7,
+        "schema_compliance": 99.7,
+        "execution_success": 97.4,
+        "task_fulfillment": 0.525,
+        "information_grounding": 0.682,
+        "tool_appropriateness": 0.68,
+        "parameter_accuracy": 0.661,
+        "dependency_awareness": 0.523,
+        "parallelism_efficiency": 0.297
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 8,
+      "system": "gpt-oss-20b",
+      "agent": null,
+      "model_raw": [
+        "gpt-oss-20b"
+      ],
+      "model_ids": [
+        "gpt-oss-20b"
+      ],
+      "model_config": null,
+      "score": 0.654,
+      "score_extra": {
+        "valid_tool_name_rate": 98.8,
+        "schema_compliance": 99.1,
+        "execution_success": 93.6,
+        "task_fulfillment": 0.547,
+        "information_grounding": 0.623,
+        "tool_appropriateness": 0.661,
+        "parameter_accuracy": 0.638,
+        "dependency_awareness": 0.509,
+        "parallelism_efficiency": 0.309
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 9,
+      "system": "kimi-k2",
+      "agent": null,
+      "model_raw": [
+        "kimi-k2"
+      ],
+      "model_ids": [
+        "kimi-k2"
+      ],
+      "model_config": null,
+      "score": 0.629,
+      "score_extra": {
+        "valid_tool_name_rate": 98.8,
+        "schema_compliance": 98.1,
+        "execution_success": 94.5,
+        "task_fulfillment": 0.502,
+        "information_grounding": 0.577,
+        "tool_appropriateness": 0.631,
+        "parameter_accuracy": 0.623,
+        "dependency_awareness": 0.448,
+        "parallelism_efficiency": 0.307
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 10,
+      "system": "qwen3-30b-a3b-instruct-2507",
+      "agent": null,
+      "model_raw": [
+        "qwen3-30b-a3b-instruct-2507"
+      ],
+      "model_ids": [
+        "qwen3-30b-a3b-instruct-2507"
+      ],
+      "model_config": null,
+      "score": 0.627,
+      "score_extra": {
+        "valid_tool_name_rate": 99,
+        "schema_compliance": 98.4,
+        "execution_success": 92.3,
+        "task_fulfillment": 0.481,
+        "information_grounding": 0.53,
+        "tool_appropriateness": 0.658,
+        "parameter_accuracy": 0.638,
+        "dependency_awareness": 0.473,
+        "parallelism_efficiency": 0.303
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 11,
+      "system": "gemini-2.5-flash-lite",
+      "agent": null,
+      "model_raw": [
+        "gemini-2.5-flash-lite"
+      ],
+      "model_ids": [
+        "gemini-2.5-flash-lite"
+      ],
+      "model_config": null,
+      "score": 0.598,
+      "score_extra": {
+        "valid_tool_name_rate": 99.4,
+        "schema_compliance": 97.8,
+        "execution_success": 94.3,
+        "task_fulfillment": 0.412,
+        "information_grounding": 0.577,
+        "tool_appropriateness": 0.627,
+        "parameter_accuracy": 0.597,
+        "dependency_awareness": 0.404,
+        "parallelism_efficiency": 0.226
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 12,
+      "system": "gpt-4o",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 0.595,
+      "score_extra": {
+        "valid_tool_name_rate": 98.9,
+        "schema_compliance": 98.3,
+        "execution_success": 92.8,
+        "task_fulfillment": 0.394,
+        "information_grounding": 0.542,
+        "tool_appropriateness": 0.627,
+        "parameter_accuracy": 0.587,
+        "dependency_awareness": 0.405,
+        "parallelism_efficiency": 0.272
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 13,
+      "system": "gemma-3-27b-it",
+      "agent": null,
+      "model_raw": [
+        "gemma-3-27b-it"
+      ],
+      "model_ids": [
+        "gemma-3-27b-it"
+      ],
+      "model_config": null,
+      "score": 0.582,
+      "score_extra": {
+        "valid_tool_name_rate": 98.8,
+        "schema_compliance": 97.6,
+        "execution_success": 94.4,
+        "task_fulfillment": 0.378,
+        "information_grounding": 0.53,
+        "tool_appropriateness": 0.608,
+        "parameter_accuracy": 0.572,
+        "dependency_awareness": 0.383,
+        "parallelism_efficiency": 0.249
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 14,
+      "system": "llama-3-3-70b-instruct",
+      "agent": null,
+      "model_raw": [
+        "llama-3-3-70b-instruct"
+      ],
+      "model_ids": [
+        "llama-3.3-70b-instruct"
+      ],
+      "model_config": null,
+      "score": 0.558,
+      "score_extra": {
+        "valid_tool_name_rate": 99.5,
+        "schema_compliance": 93.8,
+        "execution_success": 91.6,
+        "task_fulfillment": 0.349,
+        "information_grounding": 0.493,
+        "tool_appropriateness": 0.583,
+        "parameter_accuracy": 0.525,
+        "dependency_awareness": 0.355,
+        "parallelism_efficiency": 0.262
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 15,
+      "system": "gpt-4o-mini",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o-mini"
+      ],
+      "model_ids": [
+        "gpt-4o-mini"
+      ],
+      "model_config": null,
+      "score": 0.557,
+      "score_extra": {
+        "valid_tool_name_rate": 97.5,
+        "schema_compliance": 98.1,
+        "execution_success": 93.9,
+        "task_fulfillment": 0.374,
+        "information_grounding": 0.5,
+        "tool_appropriateness": 0.555,
+        "parameter_accuracy": 0.544,
+        "dependency_awareness": 0.352,
+        "parallelism_efficiency": 0.201
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 16,
+      "system": "mistral-small-2503",
+      "agent": null,
+      "model_raw": [
+        "mistral-small-2503"
+      ],
+      "model_ids": [
+        "mistral-small-2503"
+      ],
+      "model_config": null,
+      "score": 0.53,
+      "score_extra": {
+        "valid_tool_name_rate": 96.4,
+        "schema_compliance": 95.6,
+        "execution_success": 86.2,
+        "task_fulfillment": 0.373,
+        "information_grounding": 0.445,
+        "tool_appropriateness": 0.537,
+        "parameter_accuracy": 0.446,
+        "dependency_awareness": 0.349,
+        "parallelism_efficiency": 0.232
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 17,
+      "system": "llama-3-1-70b-instruct",
+      "agent": null,
+      "model_raw": [
+        "llama-3-1-70b-instruct"
+      ],
+      "model_ids": [
+        "llama-3.1-70b-instruct"
+      ],
+      "model_config": null,
+      "score": 0.51,
+      "score_extra": {
+        "valid_tool_name_rate": 99.2,
+        "schema_compliance": 90.5,
+        "execution_success": 92.5,
+        "task_fulfillment": 0.314,
+        "information_grounding": 0.432,
+        "tool_appropriateness": 0.523,
+        "parameter_accuracy": 0.451,
+        "dependency_awareness": 0.287,
+        "parallelism_efficiency": 0.191
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 18,
+      "system": "nova-micro-v1",
+      "agent": null,
+      "model_raw": [
+        "nova-micro-v1"
+      ],
+      "model_ids": [
+        "amazon-nova-micro"
+      ],
+      "model_config": null,
+      "score": 0.508,
+      "score_extra": {
+        "valid_tool_name_rate": 96,
+        "schema_compliance": 93.1,
+        "execution_success": 87.8,
+        "task_fulfillment": 0.339,
+        "information_grounding": 0.419,
+        "tool_appropriateness": 0.504,
+        "parameter_accuracy": 0.428,
+        "dependency_awareness": 0.315,
+        "parallelism_efficiency": 0.212
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 19,
+      "system": "llama-3-2-90b-vision-instruct",
+      "agent": null,
+      "model_raw": [
+        "llama-3-2-90b-vision-instruct"
+      ],
+      "model_ids": [
+        "llama-3.2-90b-vision-instruct"
+      ],
+      "model_config": null,
+      "score": 0.495,
+      "score_extra": {
+        "valid_tool_name_rate": 99.6,
+        "schema_compliance": 85,
+        "execution_success": 90.9,
+        "task_fulfillment": 0.293,
+        "information_grounding": 0.444,
+        "tool_appropriateness": 0.515,
+        "parameter_accuracy": 0.427,
+        "dependency_awareness": 0.267,
+        "parallelism_efficiency": 0.173
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 20,
+      "system": "llama-3-1-8b-instruct",
+      "agent": null,
+      "model_raw": [
+        "llama-3-1-8b-instruct"
+      ],
+      "model_ids": [
+        "llama-3.1-8b-instruct"
+      ],
+      "model_config": null,
+      "score": 0.428,
+      "score_extra": {
+        "valid_tool_name_rate": 96.1,
+        "schema_compliance": 89.4,
+        "execution_success": 90.9,
+        "task_fulfillment": 0.261,
+        "information_grounding": 0.295,
+        "tool_appropriateness": 0.352,
+        "parameter_accuracy": 0.31,
+        "dependency_awareness": 0.221,
+        "parallelism_efficiency": 0.141
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    }
+  ]
+}

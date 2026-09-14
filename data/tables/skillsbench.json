@@ -1,0 +1,698 @@
+{
+  "id": "skillsbench",
+  "family": "skillsbench",
+  "name": "SkillsBench 1.1",
+  "board": "skillsbench.ai",
+  "category": "general",
+  "measures_ja": "科学・金融・医療・セキュリティ・ソフトウェアなど 87 タスクで、エージェントが Skills(手順書やスクリプト)を使って課題を解けるか。",
+  "tasks": 87,
+  "tasks_note": "ボードの「87-task SkillsBench suite」と leaderboardDataset.taskCount。",
+  "metric": "Resolution rate with Skills (%)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "モデルと足場(既定は OpenHands、ほか Claude Code・Codex・Gemini CLI)の組を、Skills あり/なしで 1 タスク 3 試行ずつ走らせる。",
+  "source": "https://www.skillsbench.ai/leaderboard",
+  "fetched": [
+    "https://www.skillsbench.ai/leaderboard",
+    "https://www.skillsbench.ai/_next/static/chunks/8e836c7a01322d0f.js"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": null,
+  "snapshot": "sources/skillsbench/leaderboardData.json",
+  "paper": null,
+  "repo": "https://github.com/benchflow-ai/skillsbench",
+  "notes_ja": "ボード既定の並び (With Skills) を score にした。Skills なしの値と差分は score_extra。HY3 (Claude Code) は Skills ありのみ。データの再計算日は 2026-07-16 で、行ごとの日付は無い。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "GPT-5.5 (OpenHands)",
+      "agent": "OpenHands",
+      "model_raw": [
+        "GPT-5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": "reasoning_effort=max; with Skills",
+      "score": 67.3,
+      "score_extra": {
+        "with_skills_ci": 8.2,
+        "no_skills_pct": 51.5,
+        "no_skills_ci": 9,
+        "delta_pts": 15.8,
+        "normalized_gain": 32.6,
+        "with_trials": 261,
+        "no_trials": 261
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "GPT-5.5 (Codex)",
+      "agent": "Codex",
+      "model_raw": [
+        "GPT-5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": "reasoning_effort=max; with Skills",
+      "score": 66.5,
+      "score_extra": {
+        "with_skills_ci": 8.5,
+        "no_skills_pct": 46.8,
+        "no_skills_ci": 9.2,
+        "delta_pts": 19.7,
+        "normalized_gain": 37,
+        "with_trials": 261,
+        "no_trials": 261
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "Opus 4.7 (Claude Code)",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Opus 4.7"
+      ],
+      "model_ids": [
+        "claude-opus-4.7"
+      ],
+      "model_config": "reasoning_effort=max; with Skills",
+      "score": 61.2,
+      "score_extra": {
+        "with_skills_ci": 8.6,
+        "no_skills_pct": 43,
+        "no_skills_ci": 9.4,
+        "delta_pts": 18.2,
+        "normalized_gain": 31.9,
+        "with_trials": 261,
+        "no_trials": 261
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "Gemini 3.1 Pro (Gemini CLI)",
+      "agent": "Gemini CLI",
+      "model_raw": [
+        "Gemini 3.1 Pro"
+      ],
+      "model_ids": [
+        "gemini-3.1-pro"
+      ],
+      "model_config": "reasoning_effort=max; with Skills",
+      "score": 60.8,
+      "score_extra": {
+        "with_skills_ci": 9.3,
+        "no_skills_pct": 36,
+        "no_skills_ci": 9.6,
+        "delta_pts": 24.8,
+        "normalized_gain": 38.7,
+        "with_trials": 261,
+        "no_trials": 261
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "GLM 5.1 (OpenHands)",
+      "agent": "OpenHands",
+      "model_raw": [
+        "GLM 5.1"
+      ],
+      "model_ids": [
+        "glm-5.1"
+      ],
+      "model_config": "reasoning_effort=max; with Skills",
+      "score": 58.4,
+      "score_extra": {
+        "with_skills_ci": 8.8,
+        "no_skills_pct": 32.7,
+        "no_skills_ci": 8.5,
+        "delta_pts": 25.7,
+        "normalized_gain": 38.1,
+        "with_trials": 261,
+        "no_trials": 261
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 6,
+      "system": "HY3 (Claude Code)",
+      "agent": "Claude Code",
+      "model_raw": [
+        "HY3"
+      ],
+      "model_ids": [
+        "hy3"
+      ],
+      "model_config": "reasoning_effort=max; with Skills",
+      "score": 55.9,
+      "score_extra": {
+        "with_skills_ci": 9,
+        "with_trials": 261,
+        "no_trials": 0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/datasets/benchflow/skillsbench-leaderboard/tree/refs%2Fpr%2F18/submissions/skillsbench/v1.1/claude-code-with-skills__hunyuan-hy3/2026-07-05__hy3-3trial"
+    },
+    {
+      "rank": 7,
+      "system": "Gemini 3 Flash (Gemini CLI)",
+      "agent": "Gemini CLI",
+      "model_raw": [
+        "Gemini 3 Flash"
+      ],
+      "model_ids": [
+        "gemini-3-flash"
+      ],
+      "model_config": "reasoning_effort=max; with Skills",
+      "score": 54.6,
+      "score_extra": {
+        "with_skills_ci": 9,
+        "no_skills_pct": 34.2,
+        "no_skills_ci": 8.1,
+        "delta_pts": 20.4,
+        "normalized_gain": 31,
+        "with_trials": 261,
+        "no_trials": 261
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 8,
+      "system": "Opus 4.8 (OpenHands)",
+      "agent": "OpenHands",
+      "model_raw": [
+        "Opus 4.8"
+      ],
+      "model_ids": [
+        "claude-opus-4.8"
+      ],
+      "model_config": "reasoning_effort=max; with Skills",
+      "score": 54.1,
+      "score_extra": {
+        "with_skills_ci": 8.6,
+        "no_skills_pct": 45.7,
+        "no_skills_ci": 9.2,
+        "delta_pts": 8.4,
+        "normalized_gain": 15.5,
+        "with_trials": 261,
+        "no_trials": 261
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 9,
+      "system": "Kimi K2.6 (OpenHands)",
+      "agent": "OpenHands",
+      "model_raw": [
+        "Kimi K2.6"
+      ],
+      "model_ids": [
+        "kimi-k2.6"
+      ],
+      "model_config": "reasoning_effort=max; with Skills",
+      "score": 54,
+      "score_extra": {
+        "with_skills_ci": 8.8,
+        "no_skills_pct": 33.4,
+        "no_skills_ci": 7.8,
+        "delta_pts": 20.6,
+        "normalized_gain": 31,
+        "with_trials": 261,
+        "no_trials": 261
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 10,
+      "system": "Opus 4.7 (OpenHands)",
+      "agent": "OpenHands",
+      "model_raw": [
+        "Opus 4.7"
+      ],
+      "model_ids": [
+        "claude-opus-4.7"
+      ],
+      "model_config": "reasoning_effort=max; with Skills",
+      "score": 53.1,
+      "score_extra": {
+        "with_skills_ci": 9.2,
+        "no_skills_pct": 42.1,
+        "no_skills_ci": 8.8,
+        "delta_pts": 11.1,
+        "normalized_gain": 19.1,
+        "with_trials": 261,
+        "no_trials": 261
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 11,
+      "system": "MiniMax M3 (OpenHands)",
+      "agent": "OpenHands",
+      "model_raw": [
+        "MiniMax M3"
+      ],
+      "model_ids": [
+        "minimax-m3"
+      ],
+      "model_config": "reasoning_effort=max; with Skills",
+      "score": 53,
+      "score_extra": {
+        "with_skills_ci": 8.8,
+        "no_skills_pct": 29.7,
+        "no_skills_ci": 7.7,
+        "delta_pts": 23.3,
+        "normalized_gain": 33.2,
+        "with_trials": 261,
+        "no_trials": 261
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 12,
+      "system": "Gemini 3.1 Pro (OpenHands)",
+      "agent": "OpenHands",
+      "model_raw": [
+        "Gemini 3.1 Pro"
+      ],
+      "model_ids": [
+        "gemini-3.1-pro"
+      ],
+      "model_config": "reasoning_effort=max; with Skills",
+      "score": 52.8,
+      "score_extra": {
+        "with_skills_ci": 9.2,
+        "no_skills_pct": 33.8,
+        "no_skills_ci": 8.6,
+        "delta_pts": 19,
+        "normalized_gain": 28.7,
+        "with_trials": 261,
+        "no_trials": 261
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 13,
+      "system": "GPT-5.2 (Codex)",
+      "agent": "Codex",
+      "model_raw": [
+        "GPT-5.2"
+      ],
+      "model_ids": [
+        "gpt-5.2"
+      ],
+      "model_config": "reasoning_effort=max; with Skills",
+      "score": 51.7,
+      "score_extra": {
+        "with_skills_ci": 8.8,
+        "no_skills_pct": 29.7,
+        "no_skills_ci": 7.7,
+        "delta_pts": 22,
+        "normalized_gain": 31.3,
+        "with_trials": 261,
+        "no_trials": 261
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 14,
+      "system": "Opus 4.6 (Claude Code)",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Opus 4.6"
+      ],
+      "model_ids": [
+        "claude-opus-4.6"
+      ],
+      "model_config": "reasoning_effort=max; with Skills",
+      "score": 50.2,
+      "score_extra": {
+        "with_skills_ci": 9,
+        "no_skills_pct": 33.7,
+        "no_skills_ci": 8.5,
+        "delta_pts": 16.5,
+        "normalized_gain": 25,
+        "with_trials": 259,
+        "no_trials": 258
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 15,
+      "system": "DeepSeek V4 Pro (OpenHands)",
+      "agent": "OpenHands",
+      "model_raw": [
+        "DeepSeek V4 Pro"
+      ],
+      "model_ids": [
+        "deepseek-v4-pro"
+      ],
+      "model_config": "reasoning_effort=max; with Skills",
+      "score": 50.1,
+      "score_extra": {
+        "with_skills_ci": 8.5,
+        "no_skills_pct": 26.9,
+        "no_skills_ci": 7.4,
+        "delta_pts": 23.2,
+        "normalized_gain": 31.8,
+        "with_trials": 261,
+        "no_trials": 261
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 16,
+      "system": "Opus 4.5 (Claude Code)",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Opus 4.5"
+      ],
+      "model_ids": [
+        "claude-opus-4.5"
+      ],
+      "model_config": "reasoning_effort=max; with Skills",
+      "score": 49,
+      "score_extra": {
+        "with_skills_ci": 9.2,
+        "no_skills_pct": 23.8,
+        "no_skills_ci": 7.3,
+        "delta_pts": 25.2,
+        "normalized_gain": 33.1,
+        "with_trials": 257,
+        "no_trials": 261
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 17,
+      "system": "Gemini 3.5 Flash (OpenHands)",
+      "agent": "OpenHands",
+      "model_raw": [
+        "Gemini 3.5 Flash"
+      ],
+      "model_ids": [
+        "gemini-3.5-flash"
+      ],
+      "model_config": "reasoning_effort=max; with Skills",
+      "score": 48.2,
+      "score_extra": {
+        "with_skills_ci": 8.5,
+        "no_skills_pct": 41.1,
+        "no_skills_ci": 8.8,
+        "delta_pts": 7.1,
+        "normalized_gain": 12.1,
+        "with_trials": 261,
+        "no_trials": 261
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 18,
+      "system": "Sonnet 4.6 (OpenHands)",
+      "agent": "OpenHands",
+      "model_raw": [
+        "Sonnet 4.6"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.6"
+      ],
+      "model_config": "reasoning_effort=max; with Skills",
+      "score": 47.2,
+      "score_extra": {
+        "with_skills_ci": 9,
+        "no_skills_pct": 33.5,
+        "no_skills_ci": 8,
+        "delta_pts": 13.6,
+        "normalized_gain": 20.5,
+        "with_trials": 261,
+        "no_trials": 261
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 19,
+      "system": "DeepSeek V4 Flash (OpenHands)",
+      "agent": "OpenHands",
+      "model_raw": [
+        "DeepSeek V4 Flash"
+      ],
+      "model_ids": [
+        "deepseek-v4-flash"
+      ],
+      "model_config": "reasoning_effort=max; with Skills",
+      "score": 44.7,
+      "score_extra": {
+        "with_skills_ci": 8.5,
+        "no_skills_pct": 27.5,
+        "no_skills_ci": 7.4,
+        "delta_pts": 17.2,
+        "normalized_gain": 23.7,
+        "with_trials": 261,
+        "no_trials": 261
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 20,
+      "system": "Grok 4.3 (OpenHands)",
+      "agent": "OpenHands",
+      "model_raw": [
+        "Grok 4.3"
+      ],
+      "model_ids": [
+        "grok-4.3"
+      ],
+      "model_config": "reasoning_effort=max; with Skills",
+      "score": 41.7,
+      "score_extra": {
+        "with_skills_ci": 9.2,
+        "no_skills_pct": 22.8,
+        "no_skills_ci": 7.4,
+        "delta_pts": 18.8,
+        "normalized_gain": 24.4,
+        "with_trials": 261,
+        "no_trials": 261
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 21,
+      "system": "GPT-5.4 Mini (OpenHands)",
+      "agent": "OpenHands",
+      "model_raw": [
+        "GPT-5.4 Mini"
+      ],
+      "model_ids": [
+        "gpt-5.4-mini"
+      ],
+      "model_config": "reasoning_effort=max; with Skills",
+      "score": 41.4,
+      "score_extra": {
+        "with_skills_ci": 8.2,
+        "no_skills_pct": 29.9,
+        "no_skills_ci": 7.4,
+        "delta_pts": 11.5,
+        "normalized_gain": 16.4,
+        "with_trials": 261,
+        "no_trials": 261
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 22,
+      "system": "Sonnet 4.5 (Claude Code)",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Sonnet 4.5"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": "reasoning_effort=max; with Skills",
+      "score": 36.2,
+      "score_extra": {
+        "with_skills_ci": 8.3,
+        "no_skills_pct": 16.7,
+        "no_skills_ci": 6.2,
+        "delta_pts": 19.5,
+        "normalized_gain": 23.4,
+        "with_trials": 260,
+        "no_trials": 261
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 23,
+      "system": "MiniMax M2.7 (OpenHands)",
+      "agent": "OpenHands",
+      "model_raw": [
+        "MiniMax M2.7"
+      ],
+      "model_ids": [
+        "minimax-m2.7"
+      ],
+      "model_config": "reasoning_effort=max; with Skills",
+      "score": 34.9,
+      "score_extra": {
+        "with_skills_ci": 8.4,
+        "no_skills_pct": 18.1,
+        "no_skills_ci": 6.7,
+        "delta_pts": 16.8,
+        "normalized_gain": 20.5,
+        "with_trials": 261,
+        "no_trials": 261
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 24,
+      "system": "Haiku 4.5 (Claude Code)",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Haiku 4.5"
+      ],
+      "model_ids": [
+        "claude-haiku-4.5"
+      ],
+      "model_config": "reasoning_effort=max; with Skills",
+      "score": 30.1,
+      "score_extra": {
+        "with_skills_ci": 7.7,
+        "no_skills_pct": 8.8,
+        "no_skills_ci": 4.6,
+        "delta_pts": 21.3,
+        "normalized_gain": 23.4,
+        "with_trials": 261,
+        "no_trials": 261
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 25,
+      "system": "Gemini 3.1 Flash Lite (OpenHands)",
+      "agent": "OpenHands",
+      "model_raw": [
+        "Gemini 3.1 Flash Lite"
+      ],
+      "model_ids": [
+        "gemini-3.1-flash-lite"
+      ],
+      "model_config": "reasoning_effort=max; with Skills",
+      "score": 20.1,
+      "score_extra": {
+        "with_skills_ci": 6.8,
+        "no_skills_pct": 16,
+        "no_skills_ci": 6.3,
+        "delta_pts": 4.1,
+        "normalized_gain": 4.9,
+        "with_trials": 261,
+        "no_trials": 261
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    }
+  ]
+}

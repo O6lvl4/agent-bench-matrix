@@ -1,0 +1,952 @@
+{
+  "id": "browsecomp-kaggle",
+  "family": "browsecomp",
+  "name": "BrowseComp (Kaggle Benchmarks)",
+  "board": "kaggle.com/benchmarks/openai/browsecomp",
+  "category": "web",
+  "measures_ja": "ネット上に散らばった見つけにくい事実を組み合わせないと答えられない短答式の難問に正答できるか。",
+  "tasks": 1266,
+  "tasks_note": null,
+  "metric": "Score (accuracy)",
+  "unit": "ratio",
+  "higher_is_better": true,
+  "harness_ja": "Kaggle が管理するボードで、simple-evals 由来の Kaggle ノートブック実装により各モデルを一律に実行。ブラウジング用の道具を与えたという記載はデータに無い。",
+  "source": "https://www.kaggle.com/benchmarks/openai/browsecomp",
+  "fetched": [
+    "https://www.kaggle.com/api/i/benchmarks.BenchmarkService/GetBenchmarkLeaderboard",
+    "https://www.kaggle.com/api/i/benchmarks.BenchmarkService/GetBenchmark",
+    "https://www.kaggle.com/api/v1/datasets/view/openai/browsecomp-a-benchmark-for-browsing-agents"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-03-25",
+  "snapshot": "sources/browsecomp-kaggle/GetBenchmarkLeaderboard.json",
+  "paper": "https://arxiv.org/abs/2504.12516",
+  "repo": "https://github.com/openai/simple-evals",
+  "notes_ja": "OpenAI 組織ページ配下だが、作成・保守は Kaggle(maintenanceLevel=KAGGLE_MAINTAINED)。スコアは0〜1の比率(ボードは%表示)。ほとんどのモデルが数%以下で、ベンダー発表のエージェント値とは比べられない。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Gemini 3.1 Pro Preview",
+      "agent": null,
+      "model_raw": [
+        "gemini-3.1-pro-preview"
+      ],
+      "model_ids": [
+        "gemini-3.1-pro"
+      ],
+      "model_config": null,
+      "score": 0.3118536197295147,
+      "score_extra": {
+        "confidence_interval": 0.0256092147347973,
+        "license": "Proprietary"
+      },
+      "date": "2026-03-25",
+      "verified": null,
+      "open_source": null,
+      "org": "Google",
+      "row_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/"
+    },
+    {
+      "rank": 2,
+      "system": "GPT-5",
+      "agent": null,
+      "model_raw": [
+        "gpt-5-2025-08-07"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": null,
+      "score": 0.2006319115323854,
+      "score_extra": {
+        "confidence_interval": 0.0220599562632808,
+        "license": "Proprietary"
+      },
+      "date": "2025-08-26",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://platform.openai.com/docs/models/gpt-5"
+    },
+    {
+      "rank": 3,
+      "system": "Gemini 3 Flash Preview",
+      "agent": null,
+      "model_raw": [
+        "gemini-3-flash-preview"
+      ],
+      "model_ids": [
+        "gemini-3-flash"
+      ],
+      "model_config": null,
+      "score": 0.1691699604743083,
+      "score_extra": {
+        "confidence_interval": 0.0206595352448205,
+        "license": "Proprietary"
+      },
+      "date": "2026-03-23",
+      "verified": null,
+      "open_source": null,
+      "org": "Google",
+      "row_url": "https://blog.google/products-and-platforms/products/gemini/gemini-3-flash/"
+    },
+    {
+      "rank": 4,
+      "system": "Gemini 2.5 Pro Preview",
+      "agent": null,
+      "model_raw": [
+        "gemini-2.5-pro-preview-06-05"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": null,
+      "score": 0.0781990521327014,
+      "score_extra": {
+        "confidence_interval": 0.0147894000891353,
+        "license": "Proprietary"
+      },
+      "date": "2025-06-13",
+      "verified": null,
+      "open_source": null,
+      "org": "Google",
+      "row_url": "https://www.kaggle.com/models/google/gemini-2.5-pro-api"
+    },
+    {
+      "rank": 5,
+      "system": "o1",
+      "agent": null,
+      "model_raw": [
+        "o1-2024-12-17"
+      ],
+      "model_ids": [
+        "o1"
+      ],
+      "model_config": null,
+      "score": 0.0631911532385466,
+      "score_extra": {
+        "confidence_interval": 0.0134024708249485,
+        "license": "Proprietary"
+      },
+      "date": "2025-06-13",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://platform.openai.com/docs/models/o1"
+    },
+    {
+      "rank": 6,
+      "system": "GPT-4.1",
+      "agent": null,
+      "model_raw": [
+        "gpt-4.1-2025-04-14"
+      ],
+      "model_ids": [
+        "gpt-4.1"
+      ],
+      "model_config": null,
+      "score": 0.0355450236966824,
+      "score_extra": {
+        "confidence_interval": 0.0101990946312181,
+        "license": "Proprietary"
+      },
+      "date": "2025-06-13",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://platform.openai.com/docs/models/gpt-4.1"
+    },
+    {
+      "rank": 7,
+      "system": "o4 mini",
+      "agent": null,
+      "model_raw": [
+        "o4-mini-2025-04-16"
+      ],
+      "model_ids": [
+        "o4-mini"
+      ],
+      "model_config": null,
+      "score": 0.0331753554502369,
+      "score_extra": {
+        "confidence_interval": 0.0098653588357216,
+        "license": "Proprietary"
+      },
+      "date": "2025-06-13",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://platform.openai.com/docs/models/o4-mini"
+    },
+    {
+      "rank": 8,
+      "system": "DeepSeek-R1",
+      "agent": null,
+      "model_raw": [
+        "deepseek-r1-0528"
+      ],
+      "model_ids": [
+        "deepseek-r1-0528"
+      ],
+      "model_config": null,
+      "score": 0.0308056872037914,
+      "score_extra": {
+        "confidence_interval": 0.009518140634117,
+        "license": "DeepSeek License Agreement"
+      },
+      "date": "2025-07-02",
+      "verified": null,
+      "open_source": null,
+      "org": "DeepSeek",
+      "row_url": "https://api-docs.deepseek.com/news/news250528"
+    },
+    {
+      "rank": 9,
+      "system": "Deepseek V3.1",
+      "agent": null,
+      "model_raw": [
+        "deepseek-v3.1"
+      ],
+      "model_ids": [
+        "deepseek-v3.1"
+      ],
+      "model_config": null,
+      "score": 0.026066350710900472,
+      "score_extra": {
+        "confidence_interval": 0.008776796739938603,
+        "license": "DeepSeek License Agreement"
+      },
+      "date": "2025-08-27",
+      "verified": null,
+      "open_source": null,
+      "org": "DeepSeek",
+      "row_url": "https://api-docs.deepseek.com/news/news250821"
+    },
+    {
+      "rank": 10,
+      "system": "Gemini 2.5 Flash Preview",
+      "agent": null,
+      "model_raw": [
+        "gemini-2.5-flash-preview-05-20"
+      ],
+      "model_ids": [
+        "gemini-2.5-flash"
+      ],
+      "model_config": null,
+      "score": 0.0252764612954186,
+      "score_extra": {
+        "confidence_interval": 0.0086462960454222,
+        "license": "Proprietary"
+      },
+      "date": "2025-06-13",
+      "verified": null,
+      "open_source": null,
+      "org": "Google",
+      "row_url": "https://www.kaggle.com/models/google/gemini-2.5-flash-api"
+    },
+    {
+      "rank": 11,
+      "system": "Grok 3 Mini",
+      "agent": null,
+      "model_raw": [
+        "grok-3-mini"
+      ],
+      "model_ids": [
+        "grok-3-mini"
+      ],
+      "model_config": null,
+      "score": 0.0173775671406003,
+      "score_extra": {
+        "confidence_interval": 0.0071981196780867,
+        "license": "Proprietary"
+      },
+      "date": "2025-06-13",
+      "verified": null,
+      "open_source": null,
+      "org": "xAI",
+      "row_url": "https://x.ai/api"
+    },
+    {
+      "rank": 12,
+      "system": "gpt-oss-120b",
+      "agent": null,
+      "model_raw": [
+        "gpt-oss-120b"
+      ],
+      "model_ids": [
+        "gpt-oss-120b"
+      ],
+      "model_config": null,
+      "score": 0.0157977883096366,
+      "score_extra": {
+        "confidence_interval": 0.00686865260213,
+        "license": "Apache 2.0"
+      },
+      "date": "2025-08-21",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://openai.com/index/introducing-gpt-oss/"
+    },
+    {
+      "rank": 13,
+      "system": "o3 mini",
+      "agent": null,
+      "model_raw": [
+        "o3-mini-2025-01-31"
+      ],
+      "model_ids": [
+        "o3-mini"
+      ],
+      "model_config": null,
+      "score": 0.0150078988941548,
+      "score_extra": {
+        "confidence_interval": 0.0066974203856263,
+        "license": "Proprietary"
+      },
+      "date": "2025-06-13",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://platform.openai.com/docs/models/o3-mini"
+    },
+    {
+      "rank": 14,
+      "system": "DeepSeek-V3",
+      "agent": null,
+      "model_raw": [
+        "deepseek-v3"
+      ],
+      "model_ids": [
+        "deepseek-v3"
+      ],
+      "model_config": null,
+      "score": 0.0126382306477093,
+      "score_extra": {
+        "confidence_interval": 0.0061533629224853,
+        "license": "DeepSeek License Agreement"
+      },
+      "date": "2025-06-13",
+      "verified": null,
+      "open_source": null,
+      "org": "DeepSeek",
+      "row_url": "https://www.kaggle.com/models/deepseek-ai/deepseek-v3"
+    },
+    {
+      "rank": 15,
+      "system": "Grok 3",
+      "agent": null,
+      "model_raw": [
+        "grok-3"
+      ],
+      "model_ids": [
+        "grok-3"
+      ],
+      "model_config": null,
+      "score": 0.0126382306477093,
+      "score_extra": {
+        "confidence_interval": 0.0061533629224853,
+        "license": "Proprietary"
+      },
+      "date": "2025-06-13",
+      "verified": null,
+      "open_source": null,
+      "org": "xAI",
+      "row_url": "https://x.ai/api"
+    },
+    {
+      "rank": 16,
+      "system": "gpt-oss-20b",
+      "agent": null,
+      "model_raw": [
+        "gpt-oss-20b"
+      ],
+      "model_ids": [
+        "gpt-oss-20b"
+      ],
+      "model_config": null,
+      "score": 0.0126382306477093,
+      "score_extra": {
+        "confidence_interval": 0.0061533629224853,
+        "license": "Apache 2.0"
+      },
+      "date": "2025-08-21",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://platform.openai.com/docs/models/gpt-oss-20b"
+    },
+    {
+      "rank": 17,
+      "system": "Gemini 3.1 Flash-Lite Preview",
+      "agent": null,
+      "model_raw": [
+        "gemini-3.1-flash-lite-preview"
+      ],
+      "model_ids": [
+        "gemini-3.1-flash-lite"
+      ],
+      "model_config": null,
+      "score": 0.0110584518167456,
+      "score_extra": {
+        "confidence_interval": 0.0057605468728409,
+        "license": "Proprietary"
+      },
+      "date": "2026-03-23",
+      "verified": null,
+      "open_source": null,
+      "org": "Google",
+      "row_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-lite/"
+    },
+    {
+      "rank": 18,
+      "system": "Grok 2",
+      "agent": null,
+      "model_raw": [
+        "grok-2-1212"
+      ],
+      "model_ids": [
+        "grok-2"
+      ],
+      "model_config": null,
+      "score": 0.0102685624012638,
+      "score_extra": {
+        "confidence_interval": 0.0055532182743072,
+        "license": "Proprietary"
+      },
+      "date": "2025-06-13",
+      "verified": null,
+      "open_source": null,
+      "org": "xAI",
+      "row_url": "https://x.ai/news/grok-1212"
+    },
+    {
+      "rank": 19,
+      "system": "Claude Opus 4",
+      "agent": null,
+      "model_raw": [
+        "claude-opus-4-20250514"
+      ],
+      "model_ids": [
+        "claude-opus-4"
+      ],
+      "model_config": null,
+      "score": 0.0102685624012638,
+      "score_extra": {
+        "confidence_interval": 0.0055532182743072,
+        "license": "Proprietary"
+      },
+      "date": "2025-06-13",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://www.anthropic.com/news/claude-4"
+    },
+    {
+      "rank": 20,
+      "system": "Claude Opus 4.1",
+      "agent": null,
+      "model_raw": [
+        "claude-opus-4-1-20250805"
+      ],
+      "model_ids": [
+        "claude-opus-4.1"
+      ],
+      "model_config": null,
+      "score": 0.0102685624012638,
+      "score_extra": {
+        "confidence_interval": 0.0055532182743072,
+        "license": "Proprietary"
+      },
+      "date": "2025-09-03",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://www.anthropic.com/news/claude-opus-4-1"
+    },
+    {
+      "rank": 21,
+      "system": "Claude 3.5 Sonnet",
+      "agent": null,
+      "model_raw": [
+        "claude-3-5-sonnet-20241022"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 0.0094786729857819,
+      "score_extra": {
+        "confidence_interval": 0.0053374881491649,
+        "license": "Proprietary"
+      },
+      "date": "2025-06-13",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://www.anthropic.com/claude/sonnet"
+    },
+    {
+      "rank": 22,
+      "system": "o1 mini",
+      "agent": null,
+      "model_raw": [
+        "o1-mini-2024-09-12"
+      ],
+      "model_ids": [
+        "o1-mini"
+      ],
+      "model_config": null,
+      "score": 0.0094786729857819,
+      "score_extra": {
+        "confidence_interval": 0.0053374881491649,
+        "license": "Proprietary"
+      },
+      "date": "2025-06-13",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://platform.openai.com/docs/models/o1-mini"
+    },
+    {
+      "rank": 23,
+      "system": "Claude 3.7 Sonnet",
+      "agent": null,
+      "model_raw": [
+        "claude-3-7-sonnet-20250219"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": null,
+      "score": 0.0086887835703001,
+      "score_extra": {
+        "confidence_interval": 0.005112293017358,
+        "license": "Proprietary"
+      },
+      "date": "2025-06-13",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://www.anthropic.com/news/claude-3-7-sonnet"
+    },
+    {
+      "rank": 24,
+      "system": "GPT-4o",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o-2024-08-06"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 0.0071090047393364,
+      "score_extra": {
+        "confidence_interval": 0.004627926213592,
+        "license": "Proprietary"
+      },
+      "date": "2025-06-13",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://help.openai.com/en/articles/9624314-model-release-notes"
+    },
+    {
+      "rank": 25,
+      "system": "GPT-4o mini",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o-mini-2024-07-18"
+      ],
+      "model_ids": [
+        "gpt-4o-mini"
+      ],
+      "model_config": null,
+      "score": 0.0063191153238546,
+      "score_extra": {
+        "confidence_interval": 0.0043649859139208,
+        "license": "Proprietary"
+      },
+      "date": "2025-06-13",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://platform.openai.com/docs/models/gpt-4o-mini"
+    },
+    {
+      "rank": 26,
+      "system": "GPT-3.5 Turbo",
+      "agent": null,
+      "model_raw": [
+        "gpt-3.5-turbo-1106"
+      ],
+      "model_ids": [
+        "gpt-3.5-turbo"
+      ],
+      "model_config": null,
+      "score": 0.0063191153238546,
+      "score_extra": {
+        "confidence_interval": 0.0043649859139208,
+        "license": "Proprietary"
+      },
+      "date": "2025-06-13",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://platform.openai.com/docs/models/gpt-3.5-turbo"
+    },
+    {
+      "rank": 27,
+      "system": "Codestral",
+      "agent": null,
+      "model_raw": [
+        "codestral-2501"
+      ],
+      "model_ids": [
+        "codestral"
+      ],
+      "model_config": null,
+      "score": 0.0063191153238546,
+      "score_extra": {
+        "confidence_interval": 0.0043649859139208,
+        "license": "Mistral AI Research License"
+      },
+      "date": "2025-07-02",
+      "verified": null,
+      "open_source": null,
+      "org": "Mistral AI",
+      "row_url": "https://mistral.ai/news/codestral-2501"
+    },
+    {
+      "rank": 28,
+      "system": "Claude Sonnet 4",
+      "agent": null,
+      "model_raw": [
+        "claude-sonnet-4-20250514"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": null,
+      "score": 0.0063191153238546,
+      "score_extra": {
+        "confidence_interval": 0.0043649859139208,
+        "license": "Proprietary"
+      },
+      "date": "2025-06-13",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://www.anthropic.com/news/claude-4"
+    },
+    {
+      "rank": 29,
+      "system": "Gemini 2.0 Flash",
+      "agent": null,
+      "model_raw": [
+        "gemini-2.0-flash-001"
+      ],
+      "model_ids": [
+        "gemini-2.0-flash"
+      ],
+      "model_config": null,
+      "score": 0.0055292259083728,
+      "score_extra": {
+        "confidence_interval": 0.0040846929666103,
+        "license": "Proprietary"
+      },
+      "date": "2025-06-13",
+      "verified": null,
+      "open_source": null,
+      "org": "Google",
+      "row_url": "https://www.kaggle.com/models/google/gemini-2.0-flash-api"
+    },
+    {
+      "rank": 30,
+      "system": "Mistral Large 2",
+      "agent": null,
+      "model_raw": [
+        "mistral-large-2411"
+      ],
+      "model_ids": [
+        "mistral-large-2"
+      ],
+      "model_config": null,
+      "score": 0.0055292259083728,
+      "score_extra": {
+        "confidence_interval": 0.0040846929666103,
+        "license": "Mistral AI Research License"
+      },
+      "date": "2025-07-02",
+      "verified": null,
+      "open_source": null,
+      "org": "Mistral AI",
+      "row_url": "https://mistral.ai/news/mistral-large-2407"
+    },
+    {
+      "rank": 31,
+      "system": "Gemma 3 27B",
+      "agent": null,
+      "model_raw": [
+        "gemma-3-27b-it"
+      ],
+      "model_ids": [
+        "gemma-3-27b"
+      ],
+      "model_config": null,
+      "score": 0.0055292259083728,
+      "score_extra": {
+        "confidence_interval": 0.0040846929666103,
+        "license": "Gemma"
+      },
+      "date": "2025-06-13",
+      "verified": null,
+      "open_source": null,
+      "org": "Google",
+      "row_url": "https://www.kaggle.com/models/google/gemma-3/transformers/gemma-3-27b-it"
+    },
+    {
+      "rank": 32,
+      "system": "Mixtral 8x22B",
+      "agent": null,
+      "model_raw": [
+        "open-mixtral-8x22b-2404"
+      ],
+      "model_ids": [
+        "mixtral-8x22b"
+      ],
+      "model_config": null,
+      "score": 0.0047393364928909,
+      "score_extra": {
+        "confidence_interval": 0.0037831924147072,
+        "license": "Apache 2.0"
+      },
+      "date": "2025-07-02",
+      "verified": null,
+      "open_source": null,
+      "org": "Mistral AI",
+      "row_url": "https://mistral.ai/news/mixtral-8x22b"
+    },
+    {
+      "rank": 33,
+      "system": "Gemma 3 12B",
+      "agent": null,
+      "model_raw": [
+        "gemma-3-12b-it"
+      ],
+      "model_ids": [
+        "gemma-3-12b"
+      ],
+      "model_config": null,
+      "score": 0.0047393364928909,
+      "score_extra": {
+        "confidence_interval": 0.0037831924147072,
+        "license": "Gemma"
+      },
+      "date": "2025-06-13",
+      "verified": null,
+      "open_source": null,
+      "org": "Google",
+      "row_url": "https://www.kaggle.com/models/google/gemma-3/transformers/gemma-3-12b-it"
+    },
+    {
+      "rank": 34,
+      "system": "Qwen 3 235B A22B Thinking",
+      "agent": null,
+      "model_raw": [
+        "qwen3-235b-a22b-thinking-2507"
+      ],
+      "model_ids": [
+        "qwen3-235b-a22b-thinking-2507"
+      ],
+      "model_config": null,
+      "score": 0.0047393364928909,
+      "score_extra": {
+        "confidence_interval": 0.0037831924147072,
+        "license": "Apache 2.0"
+      },
+      "date": "2025-08-21",
+      "verified": null,
+      "open_source": null,
+      "org": "QwenLM",
+      "row_url": "https://github.com/QwenLM/Qwen3"
+    },
+    {
+      "rank": 35,
+      "system": "Gemini 1.5 Pro",
+      "agent": null,
+      "model_raw": [
+        "gemini-1.5-pro-002"
+      ],
+      "model_ids": [
+        "gemini-1.5-pro"
+      ],
+      "model_config": null,
+      "score": 0.0039494470774091,
+      "score_extra": {
+        "confidence_interval": 0.0034549365659004,
+        "license": "Proprietary"
+      },
+      "date": "2025-06-13",
+      "verified": null,
+      "open_source": null,
+      "org": "Google",
+      "row_url": "https://www.kaggle.com/models/google/gemini-1.5-pro-api"
+    },
+    {
+      "rank": 36,
+      "system": "Gemini 1.5 Flash",
+      "agent": null,
+      "model_raw": [
+        "gemini-1.5-flash-002"
+      ],
+      "model_ids": [
+        "gemini-1.5-flash"
+      ],
+      "model_config": null,
+      "score": 0.0039494470774091,
+      "score_extra": {
+        "confidence_interval": 0.0034549365659004,
+        "license": "Proprietary"
+      },
+      "date": "2025-06-13",
+      "verified": null,
+      "open_source": null,
+      "org": "Google",
+      "row_url": "https://www.kaggle.com/models/google/gemini-1.5-flash-api"
+    },
+    {
+      "rank": 37,
+      "system": "Gemma 3 4B",
+      "agent": null,
+      "model_raw": [
+        "gemma-3-4b-it"
+      ],
+      "model_ids": [
+        "gemma-3-4b"
+      ],
+      "model_config": null,
+      "score": 0.0039494470774091,
+      "score_extra": {
+        "confidence_interval": 0.0034549365659004,
+        "license": "Gemma"
+      },
+      "date": "2025-06-13",
+      "verified": null,
+      "open_source": null,
+      "org": "Google",
+      "row_url": "https://www.kaggle.com/models/google/gemma-3/transformers/gemma-3-4b-it"
+    },
+    {
+      "rank": 38,
+      "system": "Granite 4.0 Small",
+      "agent": null,
+      "model_raw": [
+        "granite-4.0-h-small"
+      ],
+      "model_ids": [
+        "granite-4.0-h-small"
+      ],
+      "model_config": null,
+      "score": 0.0039494470774091,
+      "score_extra": {
+        "confidence_interval": 0.0034549365659004,
+        "license": "Apache 2.0"
+      },
+      "date": "2025-09-30",
+      "verified": null,
+      "open_source": null,
+      "org": "IBM Research",
+      "row_url": "https://www.kaggle.com/models/ibm-research/granite-4.0"
+    },
+    {
+      "rank": 39,
+      "system": "Claude 3.5 Haiku",
+      "agent": null,
+      "model_raw": [
+        "claude-3-5-haiku-20241022"
+      ],
+      "model_ids": [
+        "claude-3.5-haiku"
+      ],
+      "model_config": null,
+      "score": 0.0031595576619273,
+      "score_extra": {
+        "confidence_interval": 0.0030914142580004,
+        "license": "Proprietary"
+      },
+      "date": "2025-06-13",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://www.anthropic.com/news/3-5-models-and-computer-use"
+    },
+    {
+      "rank": 40,
+      "system": "Ministral 8B",
+      "agent": null,
+      "model_raw": [
+        "ministral-8b-2410"
+      ],
+      "model_ids": [
+        "ministral-8b"
+      ],
+      "model_config": null,
+      "score": 0.0031595576619273,
+      "score_extra": {
+        "confidence_interval": 0.0030914142580004,
+        "license": "Mistral AI Research License"
+      },
+      "date": "2025-07-02",
+      "verified": null,
+      "open_source": null,
+      "org": "Mistral AI",
+      "row_url": "https://mistral.ai/news/ministraux"
+    },
+    {
+      "rank": 41,
+      "system": "Ministral 3B",
+      "agent": null,
+      "model_raw": [
+        "ministral-3b-2410"
+      ],
+      "model_ids": [
+        "ministral-3b"
+      ],
+      "model_config": null,
+      "score": 0.0015797788309636,
+      "score_extra": {
+        "confidence_interval": 0.002187691439014,
+        "license": "Mistral AI Research License"
+      },
+      "date": "2025-07-02",
+      "verified": null,
+      "open_source": null,
+      "org": "Mistral AI",
+      "row_url": "https://mistral.ai/news/ministraux"
+    },
+    {
+      "rank": 42,
+      "system": "Gemini 1.5 Flash 8B",
+      "agent": null,
+      "model_raw": [
+        "gemini-1.5-flash-8b-001"
+      ],
+      "model_ids": [
+        "gemini-1.5-flash-8b"
+      ],
+      "model_config": null,
+      "score": 0.0007898894154818,
+      "score_extra": {
+        "confidence_interval": 0.001547543249777,
+        "license": "Proprietary"
+      },
+      "date": "2025-06-13",
+      "verified": null,
+      "open_source": null,
+      "org": "Google",
+      "row_url": "https://www.kaggle.com/models/google/gemini-1.5-flash-8b-api"
+    }
+  ]
+}

@@ -1,0 +1,360 @@
+<!-- extracted from https://mcp-universe.github.io/ (retrieved 2026-09-14), panel panel-llm -->
+<div id="panel-llm" class="results-table hidden" role="tabpanel" aria-labelledby="tab-llm">
+                    <div class="track-description">
+                        <p><strong>LLM (w/ ReAct) Track:</strong> Evaluates large language models using the ReAct (Reasoning and Acting) prompting strategy, in which models alternate between reasoning about the task and taking actions through MCP server function calls. In each step, the LLM can use only one tool.</p>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="text-align: left;" data-column="model">Model</th>
+                                <th class="sortable" data-column="location" data-type="number">Location<br>Navigation</th>
+                                <th class="sortable" data-column="repository" data-type="number">Repository<br>Management</th>
+                                <th class="sortable" data-column="financial" data-type="number">Financial<br>Analysis</th>
+                                <th class="sortable" data-column="3d" data-type="number">3D<br>Designing</th>
+                                <th class="sortable" data-column="browser" data-type="number">Browser<br>Automation</th>
+                                <th class="sortable" data-column="web" data-type="number">Web<br>Searching</th>
+                                <th class="sortable" data-column="ae" data-type="number">Average<br>Evaluator Score</th>
+                                <th class="sortable" data-column="as" data-type="number">Average<br>Steps</th>
+                                <th class="sortable" data-column="overall" data-type="number">Overall<br>Success Rate</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="model-name"><i class="fas fa-lock" style="color: #fbbf24; margin-right: 0.5rem;" title="Proprietary Model"></i><a href="https://platform.openai.com/docs/models/gpt-5" target="_blank" style="color: inherit; text-decoration: none;">GPT-5-High<i class="fas fa-external-link-alt" style="margin-left: 0.3rem; font-size: 0.8em; color: #6b7280;"></i></a></td>
+                                 <td>26.67</td>
+                                 <td class="best-score">30.30</td>
+                                 <td class="best-score">67.50</td>
+                                 <td class="best-score">57.89</td>
+                                 <td class="best-score">43.59</td>
+                                 <td class="best-score">45.45</td>
+                                 <td class="best-score">62.82</td>
+                                 <td>6.84</td>
+                                 <td class="best-score">44.16</td>
+                             </tr>
+                                                        <tr>
+                                <td class="model-name"><i class="fas fa-lock" style="color: #fbbf24; margin-right: 0.5rem;" title="Proprietary Model"></i><a href="https://platform.openai.com/docs/models/gpt-5" target="_blank" style="color: inherit; text-decoration: none;">GPT-5-Medium<i class="fas fa-external-link-alt" style="margin-left: 0.3rem; font-size: 0.8em; color: #6b7280;"></i></a></td>
+                                 <td class="best-score">33.33</td>
+                                 <td class="best-score">30.30</td>
+                                 <td class="best-score">67.50</td>
+                                 <td>52.63</td>
+                                 <td>35.90</td>
+                                 <td class="best-score">45.45</td>
+                                 <td>60.23</td>
+                                 <td class="best-score">8.22</td>
+                                 <td>43.72</td>
+                             </tr>
+                                                         <tr>
+                                <td class="model-name"><i class="fas fa-lock" style="color: #fbbf24; margin-right: 0.5rem;" title="Proprietary Model"></i><a href="https://docs.x.ai/docs/models/grok-4-0709" target="_blank" style="color: inherit; text-decoration: none;">Grok-4<i class="fas fa-external-link-alt" style="margin-left: 0.3rem; font-size: 0.8em; color: #6b7280;"></i></a></td>
+                                 <td>28.89</td>
+                                 <td>12.12</td>
+                                 <td>40.00</td>
+                                 <td>26.32</td>
+                                 <td>41.03</td>
+                                 <td>41.82</td>
+                                 <td>49.01</td>
+                                 <td>7.75</td>
+                                 <td>33.33</td>
+                             </tr>
+                             <tr>
+                                <td class="model-name"><i class="fas fa-lock" style="color: #fbbf24; margin-right: 0.5rem;" title="Proprietary Model"></i><a href="https://www.anthropic.com/news/claude-4" target="_blank" style="color: inherit; text-decoration: none;">Claude-4.0-Sonnet-Thinking<i class="fas fa-external-link-alt" style="margin-left: 0.3rem; font-size: 0.8em; color: #6b7280;"></i></a></td>
+                                 <td>17.78</td>
+                                 <td>12.12</td>
+                                 <td>55.00</td>
+                                 <td>42.11</td>
+                                 <td>38.46</td>
+                                 <td>23.64</td>
+                                 <td>51.74</td>
+                                 <td>6.91</td>
+                                 <td>30.30</td>
+                             </tr>
+                             <tr>
+                                <td class="model-name"><i class="fas fa-lock" style="color: #fbbf24; margin-right: 0.5rem;" title="Proprietary Model"></i><a href="https://www.anthropic.com/news/claude-opus-4-1" target="_blank" style="color: inherit; text-decoration: none;">Claude-4.1-Opus<i class="fas fa-external-link-alt" style="margin-left: 0.3rem; font-size: 0.8em; color: #6b7280;"></i></a></td>
+                                 <td>17.78</td>
+                                 <td>21.21</td>
+                                 <td>52.50</td>
+                                 <td>36.84</td>
+                                 <td>35.90</td>
+                                 <td>20.00</td>
+                                 <td>49.14</td>
+                                 <td>7.04</td>
+                                 <td>29.44</td>
+                             </tr>
+                                                         <tr>
+                                <td class="model-name"><i class="fas fa-lock" style="color: #fbbf24; margin-right: 0.5rem;" title="Proprietary Model"></i><a href="https://www.anthropic.com/news/claude-4" target="_blank" style="color: inherit; text-decoration: none;">Claude-4.0-Opus<i class="fas fa-external-link-alt" style="margin-left: 0.3rem; font-size: 0.8em; color: #6b7280;"></i></a></td>
+                                 <td>15.56</td>
+                                 <td>15.15</td>
+                                 <td>55.00</td>
+                                 <td>31.58</td>
+                                 <td>38.46</td>
+                                 <td>18.18</td>
+                                 <td>46.40</td>
+                                 <td>7.69</td>
+                                 <td>28.14</td>
+                             </tr>
+                             <tr>
+                                <td class="model-name"><i class="fas fa-lock" style="color: #fbbf24; margin-right: 0.5rem;" title="Proprietary Model"></i><a href="https://www.anthropic.com/news/claude-4" target="_blank" style="color: inherit; text-decoration: none;">Claude-4.0-Sonnet<i class="fas fa-external-link-alt" style="margin-left: 0.3rem; font-size: 0.8em; color: #6b7280;"></i></a></td>
+                                 <td>22.22</td>
+                                 <td>12.12</td>
+                                 <td>55.00</td>
+                                 <td>26.32</td>
+                                 <td>38.46</td>
+                                 <td>21.82</td>
+                                 <td>50.61</td>
+                                 <td>7.46</td>
+                                 <td>29.44</td>
+                             </tr>
+                             <tr>
+                                <td class="model-name"><i class="fas fa-lock" style="color: #fbbf24; margin-right: 0.5rem;" title="Proprietary Model"></i><a href="https://x.ai/news/grok-4-fast" target="_blank" style="color: inherit; text-decoration: none;">Grok-4-Fast<i class="fas fa-external-link-alt" style="margin-left: 0.3rem; font-size: 0.8em; color: #6b7280;"></i></a></td>
+                                 <td>24.44</td>
+                                 <td>9.09</td>
+                                 <td>65.00</td>
+                                 <td>5.26</td>
+                                 <td>25.64</td>
+                                 <td>21.82</td>
+                                 <td>48.95</td>
+                                 <td>6.54</td>
+                                 <td>27.27</td>
+                             </tr>
+                             <tr>
+                                <td class="model-name"><i class="fas fa-lock" style="color: #fbbf24; margin-right: 0.5rem;" title="Proprietary Model"></i><a href="https://x.ai/news/grok-code-fast-1" target="_blank" style="color: inherit; text-decoration: none;">Grok-Code-Fast-1<i class="fas fa-external-link-alt" style="margin-left: 0.3rem; font-size: 0.8em; color: #6b7280;"></i></a></td>
+                                 <td>26.67</td>
+                                 <td>9.09</td>
+                                 <td>62.50</td>
+                                 <td>15.79</td>
+                                 <td>20.51</td>
+                                 <td>18.18</td>
+                                 <td>44.72</td>
+                                 <td>6.87</td>
+                                 <td>26.41</td>
+                             </tr>
+                                                         <tr>
+                                <td class="model-name"><i class="fas fa-lock" style="color: #fbbf24; margin-right: 0.5rem;" title="Proprietary Model"></i><a href="https://platform.openai.com/docs/models/o3" target="_blank" style="color: inherit; text-decoration: none;">o3-Medium<i class="fas fa-external-link-alt" style="margin-left: 0.3rem; font-size: 0.8em; color: #6b7280;"></i></a></td>
+                                 <td>26.67</td>
+                                 <td>6.06</td>
+                                 <td>40.00</td>
+                                 <td>26.32</td>
+                                 <td>25.64</td>
+                                 <td>29.09</td>
+                                 <td>38.95</td>
+                                 <td>4.82</td>
+                                 <td>26.41</td>
+                             </tr>
+                                                         <tr>
+                                <td class="model-name"><i class="fas fa-lock" style="color: #fbbf24; margin-right: 0.5rem;" title="Proprietary Model"></i><a href="https://platform.openai.com/docs/models/o4-mini" target="_blank" style="color: inherit; text-decoration: none;">o4-mini-Medium<i class="fas fa-external-link-alt" style="margin-left: 0.3rem; font-size: 0.8em; color: #6b7280;"></i></a></td>
+                                 <td>26.67</td>
+                                 <td>18.18</td>
+                                 <td>40.00</td>
+                                 <td>36.84</td>
+                                 <td>23.08</td>
+                                 <td>18.18</td>
+                                 <td>40.38</td>
+                                 <td>7.90</td>
+                                 <td>25.97</td>
+                             </tr>
+                                                         <tr>
+                                <td class="model-name"><i class="fas fa-lock" style="color: #fbbf24; margin-right: 0.5rem;" title="Proprietary Model"></i><a href="https://www.anthropic.com/news/claude-3-7-sonnet" target="_blank" style="color: inherit; text-decoration: none;">Claude-3.7-Sonnet<i class="fas fa-external-link-alt" style="margin-left: 0.3rem; font-size: 0.8em; color: #6b7280;"></i></a></td>
+                                 <td>13.33</td>
+                                 <td>18.18</td>
+                                 <td>40.00</td>
+                                 <td>36.84</td>
+                                 <td>23.08</td>
+                                 <td>21.82</td>
+                                 <td>40.36</td>
+                                 <td>7.16</td>
+                                 <td>24.24</td>
+                             </tr>
+                                                         <tr>
+                                <td class="model-name"><i class="fas fa-lock" style="color: #fbbf24; margin-right: 0.5rem;" title="Proprietary Model"></i><a href="https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-pro" target="_blank" style="color: inherit; text-decoration: none;">Gemini-2.5-Pro<i class="fas fa-external-link-alt" style="margin-left: 0.3rem; font-size: 0.8em; color: #6b7280;"></i></a></td>
+                                 <td>13.33</td>
+                                 <td>12.12</td>
+                                 <td>50.00</td>
+                                 <td>21.05</td>
+                                 <td>25.64</td>
+                                 <td>12.73</td>
+                                 <td>36.93</td>
+                                 <td>6.98</td>
+                                 <td>22.08</td>
+                             </tr>
+                                                         <tr>
+                                <td class="model-name"><i class="fas fa-lock" style="color: #fbbf24; margin-right: 0.5rem;" title="Proprietary Model"></i><a href="https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash" target="_blank" style="color: inherit; text-decoration: none;">Gemini-2.5-Flash<i class="fas fa-external-link-alt" style="margin-left: 0.3rem; font-size: 0.8em; color: #6b7280;"></i></a></td>
+                                 <td>15.56</td>
+                                 <td>12.12</td>
+                                 <td>37.50</td>
+                                 <td>21.05</td>
+                                 <td>30.77</td>
+                                 <td>14.55</td>
+                                 <td>33.99</td>
+                                 <td>8.26</td>
+                                 <td>21.65</td>
+                             </tr>
+                                                         <tr>
+                                <td class="model-name"><i class="fas fa-lock" style="color: #fbbf24; margin-right: 0.5rem;" title="Proprietary Model"></i><a href="https://platform.openai.com/docs/models/gpt-4.1" target="_blank" style="color: inherit; text-decoration: none;">GPT-4.1<i class="fas fa-external-link-alt" style="margin-left: 0.3rem; font-size: 0.8em; color: #6b7280;"></i></a></td>
+                                 <td>8.89</td>
+                                 <td>6.06</td>
+                                 <td>40.00</td>
+                                 <td>26.32</td>
+                                 <td>23.08</td>
+                                 <td>10.91</td>
+                                 <td>41.32</td>
+                                 <td>5.24</td>
+                                 <td>18.18</td>
+                             </tr>
+                                                         <tr>
+                                <td class="model-name"><i class="fas fa-lock" style="color: #fbbf24; margin-right: 0.5rem;" title="Proprietary Model"></i><a href="https://platform.openai.com/docs/models/gpt-4o" target="_blank" style="color: inherit; text-decoration: none;">GPT-4o-2024-08-06<i class="fas fa-external-link-alt" style="margin-left: 0.3rem; font-size: 0.8em; color: #6b7280;"></i></a></td>
+                                 <td>8.89</td>
+                                 <td>9.09</td>
+                                 <td>35.00</td>
+                                 <td>26.32</td>
+                                 <td>12.82</td>
+                                 <td>9.09</td>
+                                 <td>37.03</td>
+                                 <td>6.03</td>
+                                 <td>15.58</td>
+                             </tr>
+                                                        <tr>
+                                <td class="model-name"><i class="fas fa-unlock" style="color: #10b981; margin-right: 0.5rem;" title="Open-Source Model"></i><a href="https://z.ai/blog/glm-4.5" target="_blank" style="color: inherit; text-decoration: none;">GLM-4.5<i class="fas fa-external-link-alt" style="margin-left: 0.3rem; font-size: 0.8em; color: #6b7280;"></i></a></td>
+                                 <td>17.78</td>
+                                 <td>9.09</td>
+                                 <td>50.00</td>
+                                 <td>26.32</td>
+                                 <td>15.38</td>
+                                 <td>27.27</td>
+                                 <td>41.16</td>
+                                 <td>7.33</td>
+                                 <td>24.68</td>
+                             </tr>
+                             <tr>
+                                <td class="model-name"><i class="fas fa-unlock" style="color: #10b981; margin-right: 0.5rem;" title="Open-Source Model"></i><a href="https://z.ai/blog/glm-4.6" target="_blank" style="color: inherit; text-decoration: none;">GLM-4.6<i class="fas fa-external-link-alt" style="margin-left: 0.3rem; font-size: 0.8em; color: #6b7280;"></i></a></td>
+                                 <td>15.56</td>
+                                 <td>9.09</td>
+                                 <td>55.00</td>
+                                 <td>31.58</td>
+                                 <td>25.64</td>
+                                 <td>21.82</td>
+                                 <td>43.94</td>
+                                 <td>8.07</td>
+                                 <td>25.97</td>
+                             </tr>
+                                                         <tr>
+                                <td class="model-name"><i class="fas fa-unlock" style="color: #10b981; margin-right: 0.5rem;" title="Open-Source Model"></i><a href="https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct" target="_blank" style="color: inherit; text-decoration: none;">Qwen3-Coder-480B-A35B-Instruct<i class="fas fa-external-link-alt" style="margin-left: 0.3rem; font-size: 0.8em; color: #6b7280;"></i></a></td>
+                                 <td>13.33</td>
+                                 <td>3.03</td>
+                                 <td>57.50</td>
+                                 <td>31.58</td>
+                                 <td>30.77</td>
+                                 <td>9.09</td>
+                                 <td>41.39</td>
+                                 <td>7.77</td>
+                                 <td>22.94</td>
+                             </tr>
+                             <tr>
+                                <td class="model-name"><i class="fas fa-unlock" style="color: #10b981; margin-right: 0.5rem;" title="Open-Source Model"></i><a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1" target="_blank" style="color: inherit; text-decoration: none;">DeepSeek-V3.1<i class="fas fa-external-link-alt" style="margin-left: 0.3rem; font-size: 0.8em; color: #6b7280;"></i></a></td>
+                                 <td>15.56</td>
+                                 <td>0.00</td>
+                                 <td>42.50</td>
+                                 <td>31.58</td>
+                                 <td>28.21</td>
+                                 <td>18.18</td>
+                                 <td>43.23</td>
+                                 <td>6.31</td>
+                                 <td>22.08</td>
+                             </tr>
+                             <tr>
+                                <td class="model-name"><i class="fas fa-unlock" style="color: #10b981; margin-right: 0.5rem;" title="Open-Source Model"></i><a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus" target="_blank" style="color: inherit; text-decoration: none;">DeepSeek-V3.1-Terminus<i class="fas fa-external-link-alt" style="margin-left: 0.3rem; font-size: 0.8em; color: #6b7280;"></i></a></td>
+                                 <td>13.33</td>
+                                 <td>6.06</td>
+                                 <td>45.00</td>
+                                 <td>15.79</td>
+                                 <td>25.64</td>
+                                 <td>20.00</td>
+                                 <td>42.68</td>
+                                 <td>6.44</td>
+                                 <td>21.65</td>
+                             </tr>
+                             <tr>
+                                <td class="model-name"><i class="fas fa-unlock" style="color: #10b981; margin-right: 0.5rem;" title="Open-Source Model"></i><a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Exp" target="_blank" style="color: inherit; text-decoration: none;">DeepSeek-V3.2-Exp<i class="fas fa-external-link-alt" style="margin-left: 0.3rem; font-size: 0.8em; color: #6b7280;"></i></a></td>
+                                 <td>17.78</td>
+                                 <td>0.00</td>
+                                 <td>45.00</td>
+                                 <td>15.79</td>
+                                 <td>20.51</td>
+                                 <td>16.36</td>
+                                 <td>41.92</td>
+                                 <td>6.48</td>
+                                 <td>19.91</td>
+                             </tr>
+                             <tr>
+                                <td class="model-name"><i class="fas fa-unlock" style="color: #10b981; margin-right: 0.5rem;" title="Open-Source Model"></i><a href="https://moonshotai.github.io/Kimi-K2/" target="_blank" style="color: inherit; text-decoration: none;">Kimi-K2-0905<i class="fas fa-external-link-alt" style="margin-left: 0.3rem; font-size: 0.8em; color: #6b7280;"></i></a></td>
+                                 <td>11.11</td>
+                                 <td>3.03</td>
+                                 <td>52.50</td>
+                                 <td>15.79</td>
+                                 <td>25.64</td>
+                                 <td>10.91</td>
+                                 <td>41.28</td>
+                                 <td>6.96</td>
+                                 <td>19.91</td>
+                             </tr>
+                             <tr>
+                                <td class="model-name"><i class="fas fa-unlock" style="color: #10b981; margin-right: 0.5rem;" title="Open-Source Model"></i><a href="https://z.ai/blog/glm-4.5" target="_blank" style="color: inherit; text-decoration: none;">GLM-4.5-Air<i class="fas fa-external-link-alt" style="margin-left: 0.3rem; font-size: 0.8em; color: #6b7280;"></i></a></td>
+                                 <td>17.78</td>
+                                 <td>6.06</td>
+                                 <td>42.50</td>
+                                 <td>10.53</td>
+                                 <td>17.95</td>
+                                 <td>16.36</td>
+                                 <td>37.42</td>
+                                 <td>6.42</td>
+                                 <td>19.48</td>
+                             </tr>
+                                                         <tr>
+                                <td class="model-name"><i class="fas fa-unlock" style="color: #10b981; margin-right: 0.5rem;" title="Open-Source Model"></i><a href="https://moonshotai.github.io/Kimi-K2/" target="_blank" style="color: inherit; text-decoration: none;">Kimi-K2-0711<i class="fas fa-external-link-alt" style="margin-left: 0.3rem; font-size: 0.8em; color: #6b7280;"></i></a></td>
+                                 <td>11.11</td>
+                                 <td>9.09</td>
+                                 <td>47.50</td>
+                                 <td>15.79</td>
+                                 <td>15.38</td>
+                                 <td>14.55</td>
+                                 <td>35.10</td>
+                                 <td>6.07</td>
+                                 <td>19.05</td>
+                             </tr>
+                             <tr>
+                                <td class="model-name"><i class="fas fa-lock" style="color: #fbbf24; margin-right: 0.5rem;" title="Proprietary Model"></i><a href="https://modelstudio.console.alibabacloud.com/?tab=doc#/doc/?type=model&url=2840914_2&modelId=qwen3-max-preview" target="_blank" style="color: inherit; text-decoration: none;">Qwen3-Max-Preview (Instruct)<i class="fas fa-external-link-alt" style="margin-left: 0.3rem; font-size: 0.8em; color: #6b7280;"></i></a></td>
+                                 <td>20.00</td>
+                                 <td>6.06</td>
+                                 <td>42.50</td>
+                                 <td>31.58</td>
+                                 <td>10.26</td>
+                                 <td>7.27</td>
+                                 <td>37.74</td>
+                                 <td>5.50</td>
+                                 <td>18.18</td>
+                             </tr>
+                                                         <tr>
+                                <td class="model-name"><i class="fas fa-unlock" style="color: #10b981; margin-right: 0.5rem;" title="Open-Source Model"></i><a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507" target="_blank" style="color: inherit; text-decoration: none;">Qwen3-235B-A22B-Instruct-2507<i class="fas fa-external-link-alt" style="margin-left: 0.3rem; font-size: 0.8em; color: #6b7280;"></i></a></td>
+                                 <td>11.11</td>
+                                 <td>9.09</td>
+                                 <td>50.00</td>
+                                 <td>15.79</td>
+                                 <td>15.38</td>
+                                 <td>9.09</td>
+                                 <td>38.53</td>
+                                 <td>5.74</td>
+                                 <td>18.18</td>
+                             </tr>
+                                                         <tr>
+                                <td class="model-name"><i class="fas fa-unlock" style="color: #10b981; margin-right: 0.5rem;" title="Open-Source Model"></i><a href="https://huggingface.co/deepseek-ai/DeepSeek-V3" target="_blank" style="color: inherit; text-decoration: none;">DeepSeek-V3<i class="fas fa-external-link-alt" style="margin-left: 0.3rem; font-size: 0.8em; color: #6b7280;"></i></a></td>
+                                 <td>11.11</td>
+                                 <td>6.06</td>
+                                 <td>30.00</td>
+                                 <td>26.32</td>
+                                 <td>12.82</td>
+                                 <td>7.27</td>
+                                 <td>35.82</td>
+                                 <td>5.06</td>
+                                 <td>14.29</td>
+                             </tr>
+                        </tbody>
+                    </table>
+</div>

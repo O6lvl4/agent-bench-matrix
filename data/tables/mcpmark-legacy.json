@@ -1,0 +1,1194 @@
+{
+  "id": "mcpmark-legacy",
+  "family": "mcpmark",
+  "name": "MCPMark Legacy Leaderboard",
+  "board": "mcpmark.ai",
+  "category": "tool-use",
+  "measures_ja": "Notion・GitHub・ファイルシステム・Postgres・Playwright の実MCPサーバー環境で、現実的な操作タスクを最後までやり切れるか。",
+  "tasks": 127,
+  "tasks_note": "ページのサービス別タスク数(filesystem 30 / github 23 / notion 28 / playwright 25 / postgres 21)の合計。",
+  "metric": "Pass@1",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "MCPMark の評価基盤で各モデル設定を複数回実行した結果(Pass@4 を出している。実行者の明記は無い)。",
+  "source": "https://mcpmark.ai/leaderboard",
+  "fetched": [
+    "https://mcpmark.ai/leaderboard"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": null,
+  "snapshot": "sources/mcpmark-legacy/leaderboard_data.json",
+  "paper": "https://arxiv.org/abs/2509.24002",
+  "repo": "https://github.com/eval-sys/mcpmark",
+  "notes_ja": "行ごとの日付は無く、ページの表示は「Updated at 12/15/2025 06:36:08」。値は0〜1の比率を100倍して%にした。system はボードのモデル設定名、model_raw は actualModelName。open_source はボードのデータの is_open_source_model による。ボード名は「Legacy Leaderboard」で、現行は Verified 版。Pass@1 は複数回実行の平均(± は標準偏差)。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "gpt-5-2-high",
+      "agent": null,
+      "model_raw": [
+        "gpt-5.2-2025-12-11"
+      ],
+      "model_ids": [
+        "gpt-5.2"
+      ],
+      "model_config": "high",
+      "score": 57.48,
+      "score_extra": {
+        "pass_at_1_std": 1.11,
+        "pass_at_4": 66.93,
+        "pass_hat_4": 44.88,
+        "avg_time_s": 732.5017,
+        "cost_per_run_usd": 250.471116,
+        "filesystem_pass_at_1": 60.83,
+        "github_pass_at_1": 47.83,
+        "notion_pass_at_1": 60.71,
+        "playwright_pass_at_1": 46.0,
+        "postgres_pass_at_1": 72.62
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "gemini-3-pro-high",
+      "agent": null,
+      "model_raw": [
+        "gemini-3-pro"
+      ],
+      "model_ids": [
+        "gemini-3-pro"
+      ],
+      "model_config": "high",
+      "score": 53.94,
+      "score_extra": {
+        "pass_at_1_std": 0.39,
+        "pass_at_4": 66.93,
+        "pass_hat_4": 37.8,
+        "avg_time_s": 222.3709,
+        "cost_per_run_usd": 265.587514,
+        "filesystem_pass_at_1": 59.17,
+        "github_pass_at_1": 46.74,
+        "notion_pass_at_1": 47.32,
+        "playwright_pass_at_1": 40.0,
+        "postgres_pass_at_1": 79.76
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "gpt-5-medium",
+      "agent": null,
+      "model_raw": [
+        "gpt-5-2025-08-07"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": "medium",
+      "score": 52.56,
+      "score_extra": {
+        "pass_at_1_std": 1.29,
+        "pass_at_4": 68.5,
+        "pass_hat_4": 33.86,
+        "avg_time_s": 478.2114,
+        "cost_per_run_usd": 127.463965,
+        "filesystem_pass_at_1": 57.5,
+        "github_pass_at_1": 47.83,
+        "notion_pass_at_1": 41.96,
+        "playwright_pass_at_1": 43.0,
+        "postgres_pass_at_1": 76.19
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "gpt-5-high",
+      "agent": null,
+      "model_raw": [
+        "gpt-5-2025-08-07"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": "high",
+      "score": 51.57,
+      "score_extra": {
+        "pass_at_1_std": 2.52,
+        "pass_at_4": 66.14,
+        "pass_hat_4": 33.07,
+        "avg_time_s": 1029.2555,
+        "cost_per_run_usd": 153.887407,
+        "filesystem_pass_at_1": 52.5,
+        "github_pass_at_1": 50.0,
+        "notion_pass_at_1": 44.64,
+        "playwright_pass_at_1": 42.0,
+        "postgres_pass_at_1": 72.62
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "gemini-3-pro-low",
+      "agent": null,
+      "model_raw": [
+        "gemini-3-pro"
+      ],
+      "model_ids": [
+        "gemini-3-pro"
+      ],
+      "model_config": "low",
+      "score": 50.79,
+      "score_extra": {
+        "pass_at_1_std": 2.05,
+        "pass_at_4": 67.72,
+        "pass_hat_4": 30.71,
+        "avg_time_s": 209.4299,
+        "cost_per_run_usd": 257.148216,
+        "filesystem_pass_at_1": 56.67,
+        "github_pass_at_1": 45.65,
+        "notion_pass_at_1": 43.75,
+        "playwright_pass_at_1": 40.0,
+        "postgres_pass_at_1": 70.24
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 6,
+      "system": "gpt-5-low",
+      "agent": null,
+      "model_raw": [
+        "gpt-5-2025-08-07"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": "low",
+      "score": 46.85,
+      "score_extra": {
+        "pass_at_1_std": 2.87,
+        "pass_at_4": 62.99,
+        "pass_hat_4": 26.77,
+        "avg_time_s": 385.817,
+        "cost_per_run_usd": 125.866256,
+        "filesystem_pass_at_1": 54.17,
+        "github_pass_at_1": 27.17,
+        "notion_pass_at_1": 36.61,
+        "playwright_pass_at_1": 45.0,
+        "postgres_pass_at_1": 73.81
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 7,
+      "system": "claude-opus-4-5-high",
+      "agent": null,
+      "model_raw": [
+        "claude-opus-4-5-20251101"
+      ],
+      "model_ids": [
+        "claude-opus-4.5"
+      ],
+      "model_config": "high",
+      "score": 42.32,
+      "score_extra": {
+        "pass_at_1_std": 1.96,
+        "pass_at_4": 53.54,
+        "pass_hat_4": 33.86,
+        "avg_time_s": 216.8675,
+        "cost_per_run_usd": 466.176765,
+        "filesystem_pass_at_1": 40.0,
+        "github_pass_at_1": 36.96,
+        "notion_pass_at_1": 38.39,
+        "playwright_pass_at_1": 45.0,
+        "postgres_pass_at_1": 53.57
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 8,
+      "system": "deepseek-v3-2-thinking",
+      "agent": null,
+      "model_raw": [
+        "deepseek-v3.2-reasoner"
+      ],
+      "model_ids": [
+        "deepseek-v3.2"
+      ],
+      "model_config": "thinking",
+      "score": 36.81,
+      "score_extra": {
+        "pass_at_1_std": 1.79,
+        "pass_at_4": 51.18,
+        "pass_hat_4": 21.26,
+        "avg_time_s": 398.0085,
+        "cost_per_run_usd": 31.279727,
+        "filesystem_pass_at_1": 36.67,
+        "github_pass_at_1": 20.65,
+        "notion_pass_at_1": 45.54,
+        "playwright_pass_at_1": 17.0,
+        "postgres_pass_at_1": 66.67
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 9,
+      "system": "claude-sonnet-4-5",
+      "agent": null,
+      "model_raw": [
+        "claude-sonnet-4-5-20250929"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": null,
+      "score": 32.09,
+      "score_extra": {
+        "pass_at_1_std": 2.32,
+        "pass_at_4": 46.46,
+        "pass_hat_4": 16.54,
+        "avg_time_s": 173.2065,
+        "cost_per_run_usd": 281.599415,
+        "filesystem_pass_at_1": 32.5,
+        "github_pass_at_1": 29.35,
+        "notion_pass_at_1": 25.0,
+        "playwright_pass_at_1": 27.0,
+        "postgres_pass_at_1": 50.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 10,
+      "system": "grok-4",
+      "agent": null,
+      "model_raw": [
+        "grok-4-0709"
+      ],
+      "model_ids": [
+        "grok-4"
+      ],
+      "model_config": null,
+      "score": 31.69,
+      "score_extra": {
+        "pass_at_1_std": 2.91,
+        "pass_at_4": 44.88,
+        "pass_hat_4": 18.11,
+        "avg_time_s": 319.8178,
+        "cost_per_run_usd": 257.40578,
+        "filesystem_pass_at_1": 50.83,
+        "github_pass_at_1": 14.13,
+        "notion_pass_at_1": 2.68,
+        "playwright_pass_at_1": 35.0,
+        "postgres_pass_at_1": 58.33
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 11,
+      "system": "gpt-5-mini-high",
+      "agent": null,
+      "model_raw": [
+        "gpt-5-mini-2025-08-07"
+      ],
+      "model_ids": [
+        "gpt-5-mini"
+      ],
+      "model_config": "high",
+      "score": 30.32,
+      "score_extra": {
+        "pass_at_1_std": 1.72,
+        "pass_at_4": 46.46,
+        "pass_hat_4": 16.54,
+        "avg_time_s": 349.9335,
+        "cost_per_run_usd": 40.354673,
+        "filesystem_pass_at_1": 35.0,
+        "github_pass_at_1": 19.57,
+        "notion_pass_at_1": 20.54,
+        "playwright_pass_at_1": 15.0,
+        "postgres_pass_at_1": 66.67
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 12,
+      "system": "claude-opus-4-1",
+      "agent": null,
+      "model_raw": [
+        "claude-opus-4-1-20250805"
+      ],
+      "model_ids": [
+        "claude-opus-4.1"
+      ],
+      "model_config": null,
+      "score": 29.92,
+      "score_extra": {
+        "pass_at_1_std": 0,
+        "avg_time_s": 361.8116,
+        "cost_per_run_usd": 1165.45209,
+        "filesystem_pass_at_1": 33.33,
+        "github_pass_at_1": 21.74,
+        "notion_pass_at_1": 35.71,
+        "playwright_pass_at_1": 24.0,
+        "postgres_pass_at_1": 33.33
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 13,
+      "system": "deepseek-v3-2-chat",
+      "agent": null,
+      "model_raw": [
+        "deepseek-v3.2-chat"
+      ],
+      "model_ids": [
+        "deepseek-v3.2"
+      ],
+      "model_config": null,
+      "score": 29.72,
+      "score_extra": {
+        "pass_at_1_std": 1.51,
+        "pass_at_4": 46.46,
+        "pass_hat_4": 13.39,
+        "avg_time_s": 298.3631,
+        "cost_per_run_usd": 26.575381,
+        "filesystem_pass_at_1": 25.0,
+        "github_pass_at_1": 17.39,
+        "notion_pass_at_1": 32.14,
+        "playwright_pass_at_1": 19.0,
+        "postgres_pass_at_1": 59.52
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 14,
+      "system": "claude-sonnet-4-high",
+      "agent": null,
+      "model_raw": [
+        "claude-sonnet-4-20250514"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": "high",
+      "score": 28.35,
+      "score_extra": {
+        "pass_at_1_std": 2.36,
+        "pass_at_4": 40.94,
+        "pass_hat_4": 18.11,
+        "avg_time_s": 185.5519,
+        "cost_per_run_usd": 442.325179,
+        "filesystem_pass_at_1": 23.33,
+        "github_pass_at_1": 28.26,
+        "notion_pass_at_1": 19.64,
+        "playwright_pass_at_1": 26.0,
+        "postgres_pass_at_1": 50.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 15,
+      "system": "claude-sonnet-4",
+      "agent": null,
+      "model_raw": [
+        "claude-sonnet-4-20250514"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": null,
+      "score": 28.15,
+      "score_extra": {
+        "pass_at_1_std": 2.57,
+        "pass_at_4": 44.88,
+        "pass_hat_4": 12.6,
+        "avg_time_s": 218.2704,
+        "cost_per_run_usd": 252.410362,
+        "filesystem_pass_at_1": 27.5,
+        "github_pass_at_1": 16.3,
+        "notion_pass_at_1": 21.43,
+        "playwright_pass_at_1": 26.0,
+        "postgres_pass_at_1": 53.57
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 16,
+      "system": "claude-sonnet-4-low",
+      "agent": null,
+      "model_raw": [
+        "claude-sonnet-4-20250514"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": "low",
+      "score": 27.36,
+      "score_extra": {
+        "pass_at_1_std": 1.7,
+        "pass_at_4": 39.37,
+        "pass_hat_4": 18.11,
+        "avg_time_s": 199.3877,
+        "cost_per_run_usd": 460.948718,
+        "filesystem_pass_at_1": 23.33,
+        "github_pass_at_1": 25.0,
+        "notion_pass_at_1": 22.32,
+        "playwright_pass_at_1": 22.0,
+        "postgres_pass_at_1": 48.81
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 17,
+      "system": "gpt-5-mini-medium",
+      "agent": null,
+      "model_raw": [
+        "gpt-5-mini-2025-08-07"
+      ],
+      "model_ids": [
+        "gpt-5-mini"
+      ],
+      "model_config": "medium",
+      "score": 27.36,
+      "score_extra": {
+        "pass_at_1_std": 3.12,
+        "pass_at_4": 45.67,
+        "pass_hat_4": 9.45,
+        "avg_time_s": 159.9184,
+        "cost_per_run_usd": 26.024723,
+        "filesystem_pass_at_1": 33.33,
+        "github_pass_at_1": 18.48,
+        "notion_pass_at_1": 16.07,
+        "playwright_pass_at_1": 12.0,
+        "postgres_pass_at_1": 61.9
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 18,
+      "system": "o3",
+      "agent": null,
+      "model_raw": [
+        "o3-2025-04-16"
+      ],
+      "model_ids": [
+        "o3"
+      ],
+      "model_config": null,
+      "score": 25.39,
+      "score_extra": {
+        "pass_at_1_std": 2.04,
+        "pass_at_4": 43.31,
+        "pass_hat_4": 12.6,
+        "avg_time_s": 169.4241,
+        "cost_per_run_usd": 113.944068,
+        "filesystem_pass_at_1": 35.83,
+        "github_pass_at_1": 14.13,
+        "notion_pass_at_1": 24.11,
+        "playwright_pass_at_1": 15.0,
+        "postgres_pass_at_1": 36.9
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 19,
+      "system": "qwen-3-coder-plus",
+      "agent": null,
+      "model_raw": [
+        "qwen3-coder-480b-a35b-instruct"
+      ],
+      "model_ids": [
+        "qwen3-coder-480b-a35b"
+      ],
+      "model_config": null,
+      "score": 24.8,
+      "score_extra": {
+        "pass_at_1_std": 2.05,
+        "pass_at_4": 40.94,
+        "pass_hat_4": 12.6,
+        "avg_time_s": 274.2899,
+        "cost_per_run_usd": 36.462068,
+        "filesystem_pass_at_1": 13.33,
+        "github_pass_at_1": 19.57,
+        "notion_pass_at_1": 19.64,
+        "playwright_pass_at_1": 30.0,
+        "postgres_pass_at_1": 47.62
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 20,
+      "system": "grok-4-fast",
+      "agent": null,
+      "model_raw": [
+        "grok-4-fast"
+      ],
+      "model_ids": [
+        "grok-4-fast"
+      ],
+      "model_config": null,
+      "score": 24.02,
+      "score_extra": {
+        "pass_at_1_std": 3.07,
+        "pass_at_4": 38.58,
+        "pass_hat_4": 12.6,
+        "avg_time_s": 109.922,
+        "cost_per_run_usd": 17.875503,
+        "filesystem_pass_at_1": 29.17,
+        "github_pass_at_1": 13.04,
+        "notion_pass_at_1": 3.57,
+        "playwright_pass_at_1": 27.0,
+        "postgres_pass_at_1": 52.38
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 21,
+      "system": "kimi-k2-0905",
+      "agent": null,
+      "model_raw": [
+        "kimi-k2-0905-preview"
+      ],
+      "model_ids": [
+        "kimi-k2-0905"
+      ],
+      "model_config": null,
+      "score": 21.85,
+      "score_extra": {
+        "pass_at_1_std": 1.16,
+        "pass_at_4": 31.5,
+        "pass_hat_4": 12.6,
+        "avg_time_s": 493.759,
+        "cost_per_run_usd": 72.571305,
+        "filesystem_pass_at_1": 14.17,
+        "github_pass_at_1": 16.3,
+        "notion_pass_at_1": 8.04,
+        "playwright_pass_at_1": 30.0,
+        "postgres_pass_at_1": 47.62
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 22,
+      "system": "deepseek-v3-1-terminus-thinking",
+      "agent": null,
+      "model_raw": [
+        "deepseek-v3.1-terminus-thinking"
+      ],
+      "model_ids": [
+        "deepseek-v3.1-terminus"
+      ],
+      "model_config": null,
+      "score": 21.26,
+      "score_extra": {
+        "pass_at_1_std": 3.29,
+        "pass_at_4": 37.01,
+        "pass_hat_4": 5.51,
+        "avg_time_s": 734.5195,
+        "cost_per_run_usd": 10.5158,
+        "filesystem_pass_at_1": 24.17,
+        "github_pass_at_1": 10.87,
+        "notion_pass_at_1": 22.32,
+        "playwright_pass_at_1": 9.0,
+        "postgres_pass_at_1": 41.67
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 23,
+      "system": "grok-code-fast-1",
+      "agent": null,
+      "model_raw": [
+        "grok-code-fast-1"
+      ],
+      "model_ids": [
+        "grok-code-fast-1"
+      ],
+      "model_config": null,
+      "score": 20.47,
+      "score_extra": {
+        "pass_at_1_std": 3.39,
+        "pass_at_4": 30.71,
+        "pass_hat_4": 9.45,
+        "avg_time_s": 156.6268,
+        "cost_per_run_usd": 16.075033,
+        "filesystem_pass_at_1": 23.33,
+        "github_pass_at_1": 8.7,
+        "notion_pass_at_1": 2.68,
+        "playwright_pass_at_1": 25.0,
+        "postgres_pass_at_1": 47.62
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 24,
+      "system": "kimi-k2-0711",
+      "agent": null,
+      "model_raw": [
+        "kimi-k2-0711-preview"
+      ],
+      "model_ids": [
+        "kimi-k2-0711"
+      ],
+      "model_config": null,
+      "score": 19.09,
+      "score_extra": {
+        "pass_at_1_std": 1.61,
+        "pass_at_4": 31.5,
+        "pass_hat_4": 11.81,
+        "avg_time_s": 214.7814,
+        "cost_per_run_usd": 36.452198,
+        "filesystem_pass_at_1": 20.0,
+        "github_pass_at_1": 10.87,
+        "notion_pass_at_1": 14.29,
+        "playwright_pass_at_1": 13.0,
+        "postgres_pass_at_1": 40.48
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 25,
+      "system": "qwen-3-max",
+      "agent": null,
+      "model_raw": [
+        "qwen3-max-preview"
+      ],
+      "model_ids": [
+        "qwen3-max-preview"
+      ],
+      "model_config": null,
+      "score": 17.72,
+      "score_extra": {
+        "pass_at_1_std": 1.31,
+        "pass_at_4": 22.83,
+        "pass_hat_4": 11.02,
+        "avg_time_s": 213.5824,
+        "cost_per_run_usd": 160.003345,
+        "filesystem_pass_at_1": 10.83,
+        "github_pass_at_1": 14.13,
+        "notion_pass_at_1": 16.96,
+        "playwright_pass_at_1": 8.0,
+        "postgres_pass_at_1": 44.05
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 26,
+      "system": "o4-mini",
+      "agent": null,
+      "model_raw": [
+        "o4-mini-2025-04-16"
+      ],
+      "model_ids": [
+        "o4-mini"
+      ],
+      "model_config": null,
+      "score": 17.32,
+      "score_extra": {
+        "pass_at_1_std": 2.3,
+        "pass_at_4": 31.5,
+        "pass_hat_4": 6.3,
+        "avg_time_s": 323.3189,
+        "cost_per_run_usd": 63.617323,
+        "filesystem_pass_at_1": 25.0,
+        "github_pass_at_1": 14.13,
+        "notion_pass_at_1": 20.54,
+        "playwright_pass_at_1": 12.0,
+        "postgres_pass_at_1": 11.9
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 27,
+      "system": "deepseek-chat",
+      "agent": null,
+      "model_raw": [
+        "deepseek-v3.1-non-think"
+      ],
+      "model_ids": [
+        "deepseek-v3.1"
+      ],
+      "model_config": "chat",
+      "score": 16.73,
+      "score_extra": {
+        "pass_at_1_std": 1.41,
+        "pass_at_4": 28.35,
+        "pass_hat_4": 7.87,
+        "avg_time_s": 269.9071,
+        "cost_per_run_usd": 35.664255,
+        "filesystem_pass_at_1": 15.83,
+        "github_pass_at_1": 9.78,
+        "notion_pass_at_1": 12.5,
+        "playwright_pass_at_1": 7.0,
+        "postgres_pass_at_1": 42.86
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 28,
+      "system": "deepseek-v3-1-terminus",
+      "agent": null,
+      "model_raw": [
+        "deepseek-v3.1-terminus"
+      ],
+      "model_ids": [
+        "deepseek-v3.1-terminus"
+      ],
+      "model_config": null,
+      "score": 16.54,
+      "score_extra": {
+        "pass_at_1_std": 5.07,
+        "pass_at_4": 29.92,
+        "pass_hat_4": 3.94,
+        "avg_time_s": 244.8813,
+        "cost_per_run_usd": 12.651154,
+        "filesystem_pass_at_1": 10.83,
+        "github_pass_at_1": 5.43,
+        "notion_pass_at_1": 22.32,
+        "playwright_pass_at_1": 13.0,
+        "postgres_pass_at_1": 33.33
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 29,
+      "system": "gemini-2-5-pro",
+      "agent": null,
+      "model_raw": [
+        "gemini-2.5-pro"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": null,
+      "score": 15.75,
+      "score_extra": {
+        "pass_at_1_std": 0.56,
+        "pass_at_4": 29.92,
+        "pass_hat_4": 4.72,
+        "avg_time_s": 119.3501,
+        "cost_per_run_usd": 162.478579,
+        "filesystem_pass_at_1": 24.17,
+        "github_pass_at_1": 9.78,
+        "notion_pass_at_1": 4.46,
+        "playwright_pass_at_1": 15.0,
+        "postgres_pass_at_1": 26.19
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 30,
+      "system": "glm-4-5",
+      "agent": null,
+      "model_raw": [
+        "glm-4.5"
+      ],
+      "model_ids": [
+        "glm-4.5"
+      ],
+      "model_config": null,
+      "score": 15.55,
+      "score_extra": {
+        "pass_at_1_std": 1.16,
+        "pass_at_4": 24.41,
+        "pass_hat_4": 6.3,
+        "avg_time_s": 166.3003,
+        "cost_per_run_usd": 18.27381,
+        "filesystem_pass_at_1": 7.5,
+        "github_pass_at_1": 22.83,
+        "notion_pass_at_1": 21.43,
+        "playwright_pass_at_1": 13.0,
+        "postgres_pass_at_1": 14.29
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 31,
+      "system": "gemini-2-5-flash",
+      "agent": null,
+      "model_raw": [
+        "gemini-2.5-flash"
+      ],
+      "model_ids": [
+        "gemini-2.5-flash"
+      ],
+      "model_config": null,
+      "score": 9.06,
+      "score_extra": {
+        "pass_at_1_std": 0.68,
+        "pass_at_4": 18.11,
+        "pass_hat_4": 3.94,
+        "avg_time_s": 114.869,
+        "cost_per_run_usd": 41.811599,
+        "filesystem_pass_at_1": 8.33,
+        "github_pass_at_1": 15.22,
+        "notion_pass_at_1": 6.25,
+        "playwright_pass_at_1": 6.0,
+        "postgres_pass_at_1": 10.71
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 32,
+      "system": "gpt-5-mini-low",
+      "agent": null,
+      "model_raw": [
+        "gpt-5-mini-2025-08-07"
+      ],
+      "model_ids": [
+        "gpt-5-mini"
+      ],
+      "model_config": "low",
+      "score": 8.27,
+      "score_extra": {
+        "pass_at_1_std": 1.31,
+        "pass_at_4": 18.9,
+        "pass_hat_4": 0.79,
+        "avg_time_s": 63.1593,
+        "cost_per_run_usd": 7.855897,
+        "filesystem_pass_at_1": 12.5,
+        "github_pass_at_1": 8.7,
+        "notion_pass_at_1": 5.36,
+        "playwright_pass_at_1": 1.0,
+        "postgres_pass_at_1": 14.29
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 33,
+      "system": "gpt-4-1",
+      "agent": null,
+      "model_raw": [
+        "gpt-4.1-2025-04-14"
+      ],
+      "model_ids": [
+        "gpt-4.1"
+      ],
+      "model_config": null,
+      "score": 8.07,
+      "score_extra": {
+        "pass_at_1_std": 0.65,
+        "pass_at_4": 12.6,
+        "pass_hat_4": 3.15,
+        "avg_time_s": 59.6853,
+        "cost_per_run_usd": 83.615814,
+        "filesystem_pass_at_1": 12.5,
+        "github_pass_at_1": 7.61,
+        "notion_pass_at_1": 6.25,
+        "playwright_pass_at_1": 8.0,
+        "postgres_pass_at_1": 4.76
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 34,
+      "system": "gpt-5-nano-medium",
+      "agent": null,
+      "model_raw": [
+        "gpt-5-nano-2025-08-07"
+      ],
+      "model_ids": [
+        "gpt-5-nano"
+      ],
+      "model_config": "medium",
+      "score": 6.3,
+      "score_extra": {
+        "pass_at_1_std": 2.01,
+        "pass_at_4": 11.81,
+        "pass_hat_4": 1.57,
+        "avg_time_s": 157.1501,
+        "cost_per_run_usd": 4.055188,
+        "filesystem_pass_at_1": 6.67,
+        "github_pass_at_1": 7.61,
+        "notion_pass_at_1": 3.57,
+        "playwright_pass_at_1": 0,
+        "postgres_pass_at_1": 15.48
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 35,
+      "system": "gpt-5-nano-high",
+      "agent": null,
+      "model_raw": [
+        "gpt-5-nano-2025-08-07"
+      ],
+      "model_ids": [
+        "gpt-5-nano"
+      ],
+      "model_config": "high",
+      "score": 5.12,
+      "score_extra": {
+        "pass_at_1_std": 2.05,
+        "pass_at_4": 14.17,
+        "pass_hat_4": 0,
+        "avg_time_s": 309.4824,
+        "cost_per_run_usd": 7.792193,
+        "filesystem_pass_at_1": 5.83,
+        "github_pass_at_1": 8.7,
+        "notion_pass_at_1": 0.89,
+        "playwright_pass_at_1": 2.0,
+        "postgres_pass_at_1": 9.52
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 36,
+      "system": "gpt-oss-120b",
+      "agent": null,
+      "model_raw": [
+        "gpt-oss-120b"
+      ],
+      "model_ids": [
+        "gpt-oss-120b"
+      ],
+      "model_config": null,
+      "score": 4.72,
+      "score_extra": {
+        "pass_at_1_std": 0.96,
+        "pass_at_4": 13.39,
+        "pass_hat_4": 0,
+        "avg_time_s": 27.3652,
+        "cost_per_run_usd": 0.638661,
+        "filesystem_pass_at_1": 5.83,
+        "github_pass_at_1": 4.35,
+        "notion_pass_at_1": 3.57,
+        "playwright_pass_at_1": 3.0,
+        "postgres_pass_at_1": 7.14
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 37,
+      "system": "gpt-5-nano-low",
+      "agent": null,
+      "model_raw": [
+        "gpt-5-nano-2025-08-07"
+      ],
+      "model_ids": [
+        "gpt-5-nano"
+      ],
+      "model_config": "low",
+      "score": 4.33,
+      "score_extra": {
+        "pass_at_1_std": 1.18,
+        "pass_at_4": 10.24,
+        "pass_hat_4": 0.79,
+        "avg_time_s": 96.354,
+        "cost_per_run_usd": 2.50393,
+        "filesystem_pass_at_1": 12.5,
+        "github_pass_at_1": 0,
+        "notion_pass_at_1": 0,
+        "playwright_pass_at_1": 0,
+        "postgres_pass_at_1": 8.33
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 38,
+      "system": "gpt-4-1-mini",
+      "agent": null,
+      "model_raw": [
+        "gpt-4.1-mini-2025-04-14"
+      ],
+      "model_ids": [
+        "gpt-4.1-mini"
+      ],
+      "model_config": null,
+      "score": 3.94,
+      "score_extra": {
+        "pass_at_1_std": 0.96,
+        "pass_at_4": 7.09,
+        "pass_hat_4": 1.57,
+        "avg_time_s": 85.7262,
+        "cost_per_run_usd": 59.959081,
+        "filesystem_pass_at_1": 3.33,
+        "github_pass_at_1": 6.52,
+        "notion_pass_at_1": 1.79,
+        "playwright_pass_at_1": 0,
+        "postgres_pass_at_1": 9.52
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 39,
+      "system": "gpt-4-1-nano",
+      "agent": null,
+      "model_raw": [
+        "gpt-4.1-nano-2025-04-14"
+      ],
+      "model_ids": [
+        "gpt-4.1-nano"
+      ],
+      "model_config": null,
+      "score": 0,
+      "score_extra": {
+        "pass_at_1_std": 0,
+        "pass_at_4": 0,
+        "pass_hat_4": 0,
+        "avg_time_s": 39.0946,
+        "cost_per_run_usd": 2.538841,
+        "filesystem_pass_at_1": 0,
+        "github_pass_at_1": 0,
+        "notion_pass_at_1": 0,
+        "playwright_pass_at_1": 0,
+        "postgres_pass_at_1": 0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    }
+  ]
+}

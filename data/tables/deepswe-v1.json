@@ -1,0 +1,954 @@
+{
+  "id": "deepswe-v1",
+  "family": "deepswe",
+  "name": "DeepSWE v1",
+  "board": "deepswe.datacurve.ai",
+  "category": "coding",
+  "measures_ja": "91 の OSS リポジトリから作った新規の長丁場な実装タスク(TS/Go/Python/JS/Rust)を、エージェントが完遂できるか。",
+  "tasks": 113,
+  "tasks_note": "サイトの表示「tasks 113」と artifact の n_tasks_in_set。",
+  "metric": "Pass@1 (%)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "Datacurve が全モデルを mini-swe-agent(Pier で実行)で推論量別に 4 回ずつ走らせる。足場は共通なので行どうし比べやすい。",
+  "source": "https://deepswe.datacurve.ai/",
+  "fetched": [
+    "https://deepswe.datacurve.ai/artifacts/v1/leaderboard-live.json",
+    "https://deepswe.datacurve.ai/assets/index-C8-z8dCr.js"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": null,
+  "snapshot": "sources/deepswe-v1/leaderboard-live.json",
+  "paper": "https://arxiv.org/abs/2607.07946",
+  "repo": "https://github.com/datacurve-ai/deep-swe",
+  "notes_ja": "凍結された旧版(exit-code 採点)。行は「足場+モデル+推論量」の組ごと。行ごとの日付は無い。費用はサイトの価格補正に合わせた。 データ生成日 (generated_at): 2026-06-20。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "mini-swe-agent / gpt-5.5 [xhigh]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gpt-5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": "reasoning_effort=xhigh",
+      "score": 70.04504504504504,
+      "score_extra": {
+        "pass_at_4": 0.8828828828828829,
+        "ci95_half_width_pct": 2.82655245358195,
+        "n_passed": 311,
+        "n_attempted": 444,
+        "n_tasks_attempted": 111,
+        "n_tasks_passed_any": 98,
+        "n_runs": 4,
+        "mean_cost_usd": 6.605861326576576,
+        "median_cost_usd": 5.755558499999999,
+        "mean_output_tokens": 46977.0472972973,
+        "mean_agent_steps": 78.96396396396396,
+        "mean_duration_seconds": 1248.1249566531533
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "mini-swe-agent / gpt-5.5 [high]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gpt-5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 61.94690265486725,
+      "score_extra": {
+        "pass_at_4": 0.8407079646017699,
+        "ci95_half_width_pct": 3.610610961765661,
+        "n_passed": 280,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 95,
+        "n_runs": 4,
+        "mean_cost_usd": 4.473357603982301,
+        "median_cost_usd": 3.9625985000000004,
+        "mean_output_tokens": 30784.19690265487,
+        "mean_agent_steps": 58.27433628318584,
+        "mean_duration_seconds": 922.463924789823
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "mini-swe-agent / claude-opus-4.8 [max]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "claude-opus-4.8"
+      ],
+      "model_ids": [
+        "claude-opus-4.8"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 58.1858407079646,
+      "score_extra": {
+        "pass_at_4": 0.7876106194690266,
+        "ci95_half_width_pct": 2.280804572877925,
+        "n_passed": 263,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 89,
+        "n_runs": 4,
+        "mean_cost_usd": 12.581343959070795,
+        "median_cost_usd": 11.281396249999997,
+        "mean_output_tokens": 136262.3738938053,
+        "mean_agent_steps": 108.19026548672566,
+        "mean_duration_seconds": 2596.4228794601772
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "mini-swe-agent / claude-opus-4.8 [xhigh]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "claude-opus-4.8"
+      ],
+      "model_ids": [
+        "claude-opus-4.8"
+      ],
+      "model_config": "reasoning_effort=xhigh",
+      "score": 57.743362831858406,
+      "score_extra": {
+        "pass_at_4": 0.8053097345132744,
+        "ci95_half_width_pct": 3.966303010520437,
+        "n_passed": 261,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 91,
+        "n_runs": 4,
+        "mean_cost_usd": 7.553111373340708,
+        "median_cost_usd": 6.428008875,
+        "mean_output_tokens": 85553.93805309734,
+        "mean_agent_steps": 87.17699115044248,
+        "mean_duration_seconds": 1897.5801840353984
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "mini-swe-agent / gpt-5.4 [xhigh]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gpt-5.4"
+      ],
+      "model_ids": [
+        "gpt-5.4"
+      ],
+      "model_config": "reasoning_effort=xhigh; hidden in default view",
+      "score": 55.530973451327434,
+      "score_extra": {
+        "pass_at_4": 0.7699115044247787,
+        "ci95_half_width_pct": 2.1681017528097937,
+        "n_passed": 251,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 87,
+        "n_runs": 4,
+        "mean_cost_usd": 4.377431901548673,
+        "median_cost_usd": 3.30643275,
+        "mean_output_tokens": 71059.83849557523,
+        "mean_agent_steps": 68.67699115044248,
+        "mean_duration_seconds": 1591.8628975376105
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 6,
+      "system": "mini-swe-agent / claude-opus-4.7 [max]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "claude-opus-4.7"
+      ],
+      "model_ids": [
+        "claude-opus-4.7"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 54.20353982300885,
+      "score_extra": {
+        "pass_at_4": 0.8584070796460177,
+        "ci95_half_width_pct": 4.71697099099355,
+        "n_passed": 245,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 97,
+        "n_runs": 4,
+        "mean_cost_usd": 18.186730838691798,
+        "median_cost_usd": 15.951027500000002,
+        "mean_output_tokens": 103427.95343680709,
+        "mean_agent_steps": 202.83813747228382,
+        "mean_duration_seconds": 2354.2714533539825
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 7,
+      "system": "mini-swe-agent / claude-opus-4.8 [high]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "claude-opus-4.8"
+      ],
+      "model_ids": [
+        "claude-opus-4.8"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 50.66371681415929,
+      "score_extra": {
+        "pass_at_4": 0.7079646017699115,
+        "ci95_half_width_pct": 2.9515927096278682,
+        "n_passed": 229,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 80,
+        "n_runs": 4,
+        "mean_cost_usd": 3.9815333136061946,
+        "median_cost_usd": 3.22568475,
+        "mean_output_tokens": 48188.20575221239,
+        "mean_agent_steps": 66.10619469026548,
+        "mean_duration_seconds": 1226.3305612389381
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 8,
+      "system": "mini-swe-agent / gpt-5.5 [medium]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gpt-5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": "reasoning_effort=medium",
+      "score": 48.008849557522126,
+      "score_extra": {
+        "pass_at_4": 0.7079646017699115,
+        "ci95_half_width_pct": 2.8653961740751406,
+        "n_passed": 217,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 80,
+        "n_runs": 4,
+        "mean_cost_usd": 2.3425817588495574,
+        "median_cost_usd": 2.0020310000000006,
+        "mean_output_tokens": 18643.477876106193,
+        "mean_agent_steps": 41.73672566371681,
+        "mean_duration_seconds": 586.2912002146018
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 9,
+      "system": "mini-swe-agent / claude-opus-4.8 [medium]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "claude-opus-4.8"
+      ],
+      "model_ids": [
+        "claude-opus-4.8"
+      ],
+      "model_config": "reasoning_effort=medium",
+      "score": 47.34513274336283,
+      "score_extra": {
+        "pass_at_4": 0.6814159292035398,
+        "ci95_half_width_pct": 3.910604917180982,
+        "n_passed": 214,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 77,
+        "n_runs": 4,
+        "mean_cost_usd": 3.2540401521017697,
+        "median_cost_usd": 2.6678887500000004,
+        "mean_output_tokens": 40208.9092920354,
+        "mean_agent_steps": 60.347345132743364,
+        "mean_duration_seconds": 1168.3134818561946
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 10,
+      "system": "mini-swe-agent / claude-opus-4.7 [xhigh]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "claude-opus-4.7"
+      ],
+      "model_ids": [
+        "claude-opus-4.7"
+      ],
+      "model_config": "reasoning_effort=xhigh",
+      "score": 44.690265486725664,
+      "score_extra": {
+        "pass_at_4": 0.7610619469026548,
+        "ci95_half_width_pct": 2.876312008552783,
+        "n_passed": 202,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 86,
+        "n_runs": 4,
+        "mean_cost_usd": 8.579992504424778,
+        "median_cost_usd": 6.649466500000003,
+        "mean_output_tokens": 65620.80530973451,
+        "mean_agent_steps": 125.90929203539822,
+        "mean_duration_seconds": 1459.9585168053097
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 11,
+      "system": "mini-swe-agent / glm-5.2 [max]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "glm-5.2"
+      ],
+      "model_ids": [
+        "glm-5.2"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 41.517857142857146,
+      "score_extra": {
+        "pass_at_4": 0.6991150442477876,
+        "ci95_half_width_pct": 2.9077017300689194,
+        "n_passed": 186,
+        "n_attempted": 448,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 79,
+        "n_runs": 4,
+        "mean_cost_usd": 3.9521292135714288,
+        "median_cost_usd": 3.3501246799999995,
+        "mean_output_tokens": 81512.77232142857,
+        "mean_agent_steps": 125.48660714285714,
+        "mean_duration_seconds": 2630.7548021473217
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 12,
+      "system": "mini-swe-agent / claude-opus-4.7 [high]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "claude-opus-4.7"
+      ],
+      "model_ids": [
+        "claude-opus-4.7"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 40.26548672566372,
+      "score_extra": {
+        "pass_at_4": 0.6902654867256637,
+        "ci95_half_width_pct": 3.504911565722656,
+        "n_passed": 182,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 78,
+        "n_runs": 4,
+        "mean_cost_usd": 4.830124757190266,
+        "median_cost_usd": 3.6115387500000002,
+        "mean_output_tokens": 45735.96460176991,
+        "mean_agent_steps": 87.15265486725664,
+        "mean_duration_seconds": 1005.1988138960178
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 13,
+      "system": "mini-swe-agent / claude-sonnet-4.6 [high]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "claude-sonnet-4.6"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.6"
+      ],
+      "model_config": "reasoning_effort=high; hidden in default view",
+      "score": 31.767337807606268,
+      "score_extra": {
+        "pass_at_4": 0.6194690265486725,
+        "ci95_half_width_pct": 1.9404660120287773,
+        "n_passed": 142,
+        "n_attempted": 447,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 70,
+        "n_runs": 4,
+        "mean_cost_usd": 5.518456022818792,
+        "median_cost_usd": 4.751740500000001,
+        "mean_output_tokens": 76182.25950782998,
+        "mean_agent_steps": 128.78299776286354,
+        "mean_duration_seconds": 2502.20626106264
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 14,
+      "system": "mini-swe-agent / claude-opus-4.7 [medium]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "claude-opus-4.7"
+      ],
+      "model_ids": [
+        "claude-opus-4.7"
+      ],
+      "model_config": "reasoning_effort=medium",
+      "score": 31.63716814159292,
+      "score_extra": {
+        "pass_at_4": 0.584070796460177,
+        "ci95_half_width_pct": 4.0290152469787754,
+        "n_passed": 143,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 66,
+        "n_runs": 4,
+        "mean_cost_usd": 2.340389400442478,
+        "median_cost_usd": 1.8745804999999998,
+        "mean_output_tokens": 27445.17699115044,
+        "mean_agent_steps": 55.39601769911504,
+        "mean_duration_seconds": 604.0399310265486
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 15,
+      "system": "mini-swe-agent / gemini-3.5-flash [medium]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gemini-3.5-flash"
+      ],
+      "model_ids": [
+        "gemini-3.5-flash"
+      ],
+      "model_config": "reasoning_effort=medium",
+      "score": 28.31858407079646,
+      "score_extra": {
+        "pass_at_4": 0.5663716814159292,
+        "ci95_half_width_pct": 3.5404953365452143,
+        "n_passed": 128,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 64,
+        "n_runs": 4,
+        "mean_cost_usd": 7.423100473451328,
+        "median_cost_usd": 5.6732165000000006,
+        "mean_output_tokens": 189024.15707964601,
+        "mean_agent_steps": 75.13938053097345,
+        "mean_duration_seconds": 1011.7519485929204
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 16,
+      "system": "mini-swe-agent / claude-opus-4.6 [max]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "claude-opus-4.6"
+      ],
+      "model_ids": [
+        "claude-opus-4.6"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 27.601809954751133,
+      "score_extra": {
+        "pass_at_4": 0.504424778761062,
+        "ci95_half_width_pct": 3.6822797738134647,
+        "n_passed": 122,
+        "n_attempted": 442,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 57,
+        "n_runs": 4,
+        "mean_cost_usd": 5.394612032239819,
+        "median_cost_usd": 4.662465875,
+        "mean_output_tokens": 44481.24886877828,
+        "mean_agent_steps": 102.98642533936652,
+        "mean_duration_seconds": 1798.3296063122173
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 17,
+      "system": "mini-swe-agent / gpt-5.4-mini [xhigh]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gpt-5.4-mini"
+      ],
+      "model_ids": [
+        "gpt-5.4-mini"
+      ],
+      "model_config": "reasoning_effort=xhigh",
+      "score": 24.336283185840706,
+      "score_extra": {
+        "pass_at_4": 0.46017699115044247,
+        "ci95_half_width_pct": 2.962190922217688,
+        "n_passed": 110,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 52,
+        "n_runs": 4,
+        "mean_cost_usd": 2.0848254975663716,
+        "median_cost_usd": 2.02783005,
+        "mean_output_tokens": 134515.6261061947,
+        "mean_agent_steps": 85.89159292035399,
+        "mean_duration_seconds": 1954.5444856039824
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 18,
+      "system": "mini-swe-agent / kimi-k2.6",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "kimi-k2.6"
+      ],
+      "model_ids": [
+        "kimi-k2.6"
+      ],
+      "model_config": null,
+      "score": 23.893805309734514,
+      "score_extra": {
+        "pass_at_4": 0.48672566371681414,
+        "ci95_half_width_pct": 2.4529271227427913,
+        "n_passed": 108,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 55,
+        "n_runs": 4,
+        "mean_cost_usd": 3.1615826901659294,
+        "median_cost_usd": 2.6950519500000008,
+        "mean_output_tokens": 84415.54646017699,
+        "mean_agent_steps": 146.7986725663717,
+        "mean_duration_seconds": 3341.8481933207963
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 19,
+      "system": "mini-swe-agent / minimax-m3",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "minimax-m3"
+      ],
+      "model_ids": [
+        "minimax-m3"
+      ],
+      "model_config": null,
+      "score": 20.444444444444446,
+      "score_extra": {
+        "pass_at_4": 0.48672566371681414,
+        "ci95_half_width_pct": 3.7261878667718977,
+        "n_passed": 92,
+        "n_attempted": 450,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 55,
+        "mean_cost_usd": 5.571048344133333,
+        "median_cost_usd": 5.04354582,
+        "mean_output_tokens": 97541.98444444445,
+        "mean_agent_steps": 314.2288888888889,
+        "mean_duration_seconds": 3434.345192631111
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 20,
+      "system": "mini-swe-agent / mimo-v2.5-pro",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "mimo-v2.5-pro"
+      ],
+      "model_ids": [
+        "mimo-v2.5-pro"
+      ],
+      "model_config": null,
+      "score": 19.469026548672566,
+      "score_extra": {
+        "pass_at_4": 0.45132743362831856,
+        "ci95_half_width_pct": 1.8734540356965133,
+        "n_passed": 88,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 51,
+        "n_runs": 4,
+        "mean_cost_usd": 1.9863005676991152,
+        "median_cost_usd": 1.6824870000000003,
+        "mean_output_tokens": 49321.347345132745,
+        "mean_agent_steps": 121.49115044247787,
+        "mean_duration_seconds": 1653.3857751172566
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 21,
+      "system": "mini-swe-agent / qwen3.7-max",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "qwen3.7-max"
+      ],
+      "model_ids": [
+        "qwen3.7-max"
+      ],
+      "model_config": null,
+      "score": 17.699115044247787,
+      "score_extra": {
+        "pass_at_4": 0.415929203539823,
+        "ci95_half_width_pct": 1.4161981346180854,
+        "n_passed": 80,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 47,
+        "n_runs": 4,
+        "mean_cost_usd": 2.1210952610619467,
+        "median_cost_usd": 1.8698703749999999,
+        "mean_output_tokens": 42446.92256637168,
+        "mean_agent_steps": 110.30309734513274,
+        "mean_duration_seconds": 1043.2295215862832
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 22,
+      "system": "mini-swe-agent / glm-5.1",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "glm-5.1"
+      ],
+      "model_ids": [
+        "glm-5.1"
+      ],
+      "model_config": null,
+      "score": 17.516629711751662,
+      "score_extra": {
+        "pass_at_4": 0.3893805309734513,
+        "ci95_half_width_pct": 0.794384866778268,
+        "n_passed": 79,
+        "n_attempted": 451,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 44,
+        "n_runs": 4,
+        "mean_cost_usd": 7.4640665507982265,
+        "median_cost_usd": 6.703224380000005,
+        "mean_output_tokens": 49157.29268292683,
+        "mean_agent_steps": 176.60088691796008,
+        "mean_duration_seconds": 2089.0986713170732
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 23,
+      "system": "mini-swe-agent / grok-build-0.1",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "grok-build-0.1"
+      ],
+      "model_ids": [
+        "grok-build-0.1"
+      ],
+      "model_config": null,
+      "score": 13.082039911308204,
+      "score_extra": {
+        "pass_at_4": 0.2920353982300885,
+        "ci95_half_width_pct": 2.443404294829217,
+        "n_passed": 59,
+        "n_attempted": 451,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 33,
+        "n_runs": 4,
+        "mean_cost_usd": 6.60105246518847,
+        "median_cost_usd": 6.1736846,
+        "mean_output_tokens": 51896.41019955654,
+        "mean_agent_steps": 176.1330376940133,
+        "mean_duration_seconds": 2662.449221465632
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 24,
+      "system": "mini-swe-agent / gemini-3.1-pro",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gemini-3.1-pro"
+      ],
+      "model_ids": [
+        "gemini-3.1-pro"
+      ],
+      "model_config": "hidden in default view",
+      "score": 9.728506787330318,
+      "score_extra": {
+        "pass_at_4": 0.24778761061946902,
+        "ci95_half_width_pct": 2.832366025188389,
+        "n_passed": 43,
+        "n_attempted": 442,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 28,
+        "n_runs": 4,
+        "mean_cost_usd": 1.8365265176470589,
+        "median_cost_usd": 1.5215495999999997,
+        "mean_output_tokens": 52991.00452488688,
+        "mean_agent_steps": 74.13348416289593,
+        "mean_duration_seconds": 2186.0834545
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 25,
+      "system": "mini-swe-agent / deepseek-v4-pro",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "deepseek-v4-pro"
+      ],
+      "model_ids": [
+        "deepseek-v4-pro"
+      ],
+      "model_config": "cost rescaled by site x0.25 (raw mean_cost_usd=4.218363417836283)",
+      "score": 7.52212389380531,
+      "score_extra": {
+        "pass_at_4": 0.18584070796460178,
+        "ci95_half_width_pct": 2.6963609165497626,
+        "n_passed": 34,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 21,
+        "n_runs": 4,
+        "mean_cost_usd": 1.0545908544590707,
+        "median_cost_usd": 0.88437631625,
+        "mean_output_tokens": 49949.31194690266,
+        "mean_agent_steps": 111.33628318584071,
+        "mean_duration_seconds": 2219.0574695530972
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 26,
+      "system": "mini-swe-agent / gemini-3-flash",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gemini-3-flash"
+      ],
+      "model_ids": [
+        "gemini-3-flash"
+      ],
+      "model_config": null,
+      "score": 5.14018691588785,
+      "score_extra": {
+        "pass_at_4": 0.1504424778761062,
+        "ci95_half_width_pct": 2.4774168218621773,
+        "n_passed": 22,
+        "n_attempted": 428,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 17,
+        "n_runs": 4,
+        "mean_cost_usd": 1.5269507896028036,
+        "median_cost_usd": 1.0448696749999995,
+        "mean_output_tokens": 233061.65420560748,
+        "mean_agent_steps": 70.82943925233644,
+        "mean_duration_seconds": 2320.6969538084113
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 27,
+      "system": "mini-swe-agent / qwen3.6-plus",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "qwen3.6-plus"
+      ],
+      "model_ids": [
+        "qwen3.6-plus"
+      ],
+      "model_config": null,
+      "score": 2.6548672566371683,
+      "score_extra": {
+        "pass_at_4": 0.09734513274336283,
+        "ci95_half_width_pct": 1.2264635613713963,
+        "n_passed": 12,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 11,
+        "n_runs": 4,
+        "mean_cost_usd": 4.254706259986172,
+        "median_cost_usd": 3.6144070218750004,
+        "mean_output_tokens": 66892.56637168142,
+        "mean_agent_steps": 164.391592920354,
+        "mean_duration_seconds": 2093.469759511062
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 28,
+      "system": "mini-swe-agent / claude-haiku-4.5",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "claude-haiku-4.5"
+      ],
+      "model_ids": [
+        "claude-haiku-4.5"
+      ],
+      "model_config": null,
+      "score": 0.22123893805309736,
+      "score_extra": {
+        "pass_at_4": 0.008849557522123894,
+        "ci95_half_width_pct": 0.4336203505619588,
+        "n_passed": 1,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 1,
+        "n_runs": 4,
+        "mean_cost_usd": 0.8383226758849558,
+        "median_cost_usd": 0.7769098499999998,
+        "mean_output_tokens": 39188.00442477876,
+        "mean_agent_steps": 109.25442477876106,
+        "mean_duration_seconds": 549.0759855066372
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 28,
+      "system": "mini-swe-agent / minimax-m2.7",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "minimax-m2.7"
+      ],
+      "model_ids": [
+        "minimax-m2.7"
+      ],
+      "model_config": null,
+      "score": 0.22123893805309736,
+      "score_extra": {
+        "pass_at_4": 0.008849557522123894,
+        "ci95_half_width_pct": 0.4336203505619588,
+        "n_passed": 1,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 1,
+        "n_runs": 4,
+        "mean_cost_usd": 0.7043865151858407,
+        "median_cost_usd": 0.5399446019999999,
+        "mean_output_tokens": 60022.76991150442,
+        "mean_agent_steps": 135.57743362831857,
+        "mean_duration_seconds": 2095.642494482301
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    }
+  ]
+}

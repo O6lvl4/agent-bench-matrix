@@ -1,0 +1,171 @@
+{
+  "id": "real-v1-open-arena",
+  "family": "real",
+  "name": "REAL v1 (Open Arena)",
+  "board": "realevals.xyz",
+  "category": "web",
+  "measures_ja": "Amazon・DoorDash・Airbnb などを模した決定的な複製サイト上で、買い物・予約・情報取得などの目標を達成できるか。",
+  "tasks": 112,
+  "tasks_note": "ボードのデータ上、各エントリの v1 タスクは112件。",
+  "metric": "REAL Score",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "Open Arena タブ(一般提出のエントリ)。誰がどの足場で走らせたかは行ごとに示されない。採点は複製サイトの状態と回答の自動評価。",
+  "source": "https://www.realevals.xyz/",
+  "fetched": [
+    "https://www.realevals.xyz/api/getVerifiedModelData",
+    "https://www.realevals.xyz/_next/static/chunks/app/(main)/page-89fe682a64228531.js"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": null,
+  "snapshot": "sources/real-v1-open-arena/getVerifiedModelData_v1_open-arena.json",
+  "paper": "https://arxiv.org/abs/2504.11543",
+  "repo": "https://github.com/agi-inc/REAL",
+  "notes_ja": "スコアはボードが公開する課題ごとの合否データから、ページ自身の計算式(合格数/タスク数×100、小数1桁)を再現して出した。日付は無い。system はボードの表示名そのままで、同名が別エントリとして並ぶことがある。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "GBOX",
+      "agent": null,
+      "model_raw": [
+        "GBOX"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 59.8,
+      "score_extra": {
+        "tasks_passed": 67,
+        "tasks_total": 112
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "KISS-1",
+      "agent": null,
+      "model_raw": [
+        "KISS-1"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 57.1,
+      "score_extra": {
+        "tasks_passed": 64,
+        "tasks_total": 112
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "Web_Agent_GPT-4o",
+      "agent": null,
+      "model_raw": [
+        "Web_Agent_GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 26.8,
+      "score_extra": {
+        "tasks_passed": 30,
+        "tasks_total": 112
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "gpt-4o-prsm",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o-prsm"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 23.2,
+      "score_extra": {
+        "tasks_passed": 26,
+        "tasks_total": 112
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "brassbunny",
+      "agent": null,
+      "model_raw": [
+        "brassbunny"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 22.3,
+      "score_extra": {
+        "tasks_passed": 25,
+        "tasks_total": 112
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 6,
+      "system": "Update Eval",
+      "agent": null,
+      "model_raw": [
+        "Update Eval"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 10.7,
+      "score_extra": {
+        "tasks_passed": 12,
+        "tasks_total": 112
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 7,
+      "system": "Magellanes",
+      "agent": null,
+      "model_raw": [
+        "Magellanes"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 10.7,
+      "score_extra": {
+        "tasks_passed": 12,
+        "tasks_total": 112
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    }
+  ]
+}

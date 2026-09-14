@@ -1,0 +1,532 @@
+{
+ "sheet_csv_preamble": [
+  [
+   "Comment here or email jingyuk@cs.cmu.edu to submit your work! Please attach how should the data looks like. ",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ],
+  [
+   "Starting in September 2024, we require submissions to include raw trajectories (per-step observation and predicted action), to enhance transparency on the leaderboard.",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ],
+  [
+   "Release Date",
+   "Model Type",
+   "Model",
+   "Inputs",
+   "Success Rate (%)",
+   "Result Source"
+  ]
+ ],
+ "human_baseline_row": [
+  "Human Baseline",
+  "",
+  "",
+  "Image",
+  "88.70",
+  "VisualWebArena"
+ ],
+ "rows": [
+  {
+   "cells": [
+    "07/2025",
+    "Multimodal (SoM)",
+    "Gemini 2.5 Flash",
+    "SoM",
+    "54.0",
+    "SGV"
+   ],
+   "result_source_links": [
+    "https://arxiv.org/abs/2507.11662"
+   ]
+  },
+  {
+   "cells": [
+    "10/2025",
+    "Multimodal (SoM)",
+    "GPT-5",
+    "SoM",
+    "52.9",
+    "WALT"
+   ],
+   "result_source_links": [
+    "https://arxiv.org/abs/2510.01524"
+   ]
+  },
+  {
+   "cells": [
+    "06/2026",
+    "Caption-augmented",
+    "GLM-4-32B",
+    "Structured DOM Representation",
+    "48.7",
+    "WebChallenger"
+   ],
+   "result_source_links": [
+    "https://arxiv.org/abs/2606.10423"
+   ]
+  },
+  {
+   "cells": [
+    "09/2025",
+    "Multimodal (SoM)",
+    "GPT-5",
+    "SoM + Caption + Image",
+    "36.5",
+    "AWorld"
+   ],
+   "result_source_links": [
+    "https://github.com/inclusionAI/AWorld/tree/main/examples/visualwebarena"
+   ]
+  },
+  {
+   "cells": [
+    "04/2026",
+    "Multimodal",
+    "A3-Qwen3.5-9B",
+    "AXTree + Image",
+    "33.7",
+    "Agent-as-Annotators"
+   ],
+   "result_source_links": [
+    "https://arxiv.org/abs/2604.07776"
+   ]
+  },
+  {
+   "cells": [
+    "10/2024",
+    "Multimodal (SoM)",
+    "GPT-4o + R-MCTS",
+    "SoM + Caption + Image",
+    "33.7",
+    "ExACT"
+   ],
+   "result_source_links": [
+    "https://agent-e3.github.io/ExACT/"
+   ]
+  },
+  {
+   "cells": [
+    "06/2024",
+    "Multimodal (SoM)",
+    "GPT-4o + Search",
+    "SoM + Caption + Image",
+    "26.4",
+    "Tree Search for LM Agents"
+   ],
+   "result_source_links": [
+    "https://jykoh.com/search-agents"
+   ]
+  },
+  {
+   "cells": [
+    "11/2024",
+    "Multimodal (SoM)",
+    "GPT-4o + WebDreamer",
+    "SoM + Caption + Image",
+    "23.6",
+    "WebDreamer"
+   ],
+   "result_source_links": [
+    "https://arxiv.org/abs/2411.06559"
+   ]
+  },
+  {
+   "cells": [
+    "06/2024",
+    "Multimodal (SoM)",
+    "GPT-4o + ICAL",
+    "SoM + Caption + Image",
+    "23.4",
+    "ICAL"
+   ],
+   "result_source_links": [
+    "https://arxiv.org/abs/2406.14596"
+   ]
+  },
+  {
+   "cells": [
+    "06/2024",
+    "Multimodal (SoM)",
+    "GPT-4o",
+    "SoM + Caption + Image",
+    "19.78",
+    "VisualWebArena"
+   ],
+   "result_source_links": [
+    "https://arxiv.org/abs/2401.13649"
+   ]
+  },
+  {
+   "cells": [
+    "06/2024",
+    "Caption-augmented",
+    "Llama-3-70B + Search",
+    "AxTree + Caption",
+    "16.7",
+    "Tree Search for LM Agents"
+   ],
+   "result_source_links": [
+    "https://jykoh.com/search-agents"
+   ]
+  },
+  {
+   "cells": [
+    "01/2024",
+    "Multimodal (SoM)",
+    "GPT-4V",
+    "SoM + Caption + Image",
+    "16.37",
+    "VisualWebArena"
+   ],
+   "result_source_links": [
+    "https://arxiv.org/abs/2401.13649"
+   ]
+  },
+  {
+   "cells": [
+    "01/2024",
+    "Multimodal",
+    "GPT-4V",
+    "AXTree + Caption + Image",
+    "15.05",
+    "VisualWebArena"
+   ],
+   "result_source_links": [
+    "https://arxiv.org/abs/2401.13649"
+   ]
+  },
+  {
+   "cells": [
+    "01/2024",
+    "Caption-augmented",
+    "GPT-4 + BLIP-2-T5XL",
+    "AxTree + Caption",
+    "12.75",
+    "VisualWebArena"
+   ],
+   "result_source_links": [
+    "https://arxiv.org/abs/2401.13649"
+   ]
+  },
+  {
+   "cells": [
+    "06/2024",
+    "Multimodal (SoM)",
+    "Gemini-Pro-1.5",
+    "SoM + Caption + Image",
+    "11.98",
+    "VisualWebArena"
+   ],
+   "result_source_links": [
+    "https://arxiv.org/abs/2401.13649"
+   ]
+  },
+  {
+   "cells": [
+    "05/2025",
+    "Image-only",
+    "ViGoRL-7B",
+    "Image",
+    "11.2",
+    "ViGoRL"
+   ],
+   "result_source_links": [
+    "https://arxiv.org/abs/2505.23678"
+   ]
+  },
+  {
+   "cells": [
+    "06/2024",
+    "Caption-augmented",
+    "Llama-3-70B-Instruct + BLIP-2-T5XL",
+    "AxTree + Caption",
+    "9.78",
+    "VisualWebArena"
+   ],
+   "result_source_links": [
+    "https://arxiv.org/abs/2401.13649"
+   ]
+  },
+  {
+   "cells": [
+    "01/2025",
+    "Multimodal (SoM)",
+    "Qwen2-VL + ICAL",
+    "SoM + Caption + Image",
+    "8.2",
+    "ICAL"
+   ],
+   "result_source_links": [
+    "https://arxiv.org/abs/2406.14596"
+   ]
+  },
+  {
+   "cells": [
+    "01/2024",
+    "Text-only",
+    "GPT-4",
+    "AXTree",
+    "7.25",
+    "VisualWebArena"
+   ],
+   "result_source_links": [
+    "https://arxiv.org/abs/2401.13649"
+   ]
+  },
+  {
+   "cells": [
+    "06/2024",
+    "Multimodal (SoM)",
+    "Gemini-Flash-1.5",
+    "SoM + Caption + Image",
+    "6.59",
+    "VisualWebArena"
+   ],
+   "result_source_links": [
+    "https://arxiv.org/abs/2401.13649"
+   ]
+  },
+  {
+   "cells": [
+    "05/2025",
+    "Image-only",
+    "ViGoRL-3B",
+    "Image",
+    "6.4",
+    "ViGoRL"
+   ],
+   "result_source_links": [
+    "https://arxiv.org/abs/2505.23678"
+   ]
+  },
+  {
+   "cells": [
+    "01/2024",
+    "Multimodal",
+    "Gemini-Pro",
+    "AXTree + Caption + Image",
+    "6.04",
+    "VisualWebArena"
+   ],
+   "result_source_links": [
+    "https://arxiv.org/abs/2401.13649"
+   ]
+  },
+  {
+   "cells": [
+    "01/2024",
+    "Multimodal (SoM)",
+    "Gemini-Pro",
+    "SoM + Caption + Image",
+    "5.71",
+    "VisualWebArena"
+   ],
+   "result_source_links": [
+    "https://arxiv.org/abs/2401.13649"
+   ]
+  },
+  {
+   "cells": [
+    "05/2025",
+    "Image-only",
+    "Qwen-VL-7B",
+    "Image",
+    "5.5",
+    "ViGoRL"
+   ],
+   "result_source_links": [
+    "https://arxiv.org/abs/2505.23678"
+   ]
+  },
+  {
+   "cells": [
+    "01/2024",
+    "Caption-augmented",
+    "Gemini-Pro + BLIP-2-T5XL",
+    "AxTree + Caption",
+    "3.85",
+    "VisualWebArena"
+   ],
+   "result_source_links": [
+    "https://arxiv.org/abs/2401.13649"
+   ]
+  },
+  {
+   "cells": [
+    "01/2024",
+    "Caption-augmented",
+    "GPT-3.5 + BLIP-2-T5XL",
+    "AxTree + Caption",
+    "2.97",
+    "VisualWebArena"
+   ],
+   "result_source_links": [
+    "https://arxiv.org/abs/2401.13649"
+   ]
+  },
+  {
+   "cells": [
+    "01/2025",
+    "Multimodal (SoM)",
+    "Qwen2-VL",
+    "SoM + Caption + Image",
+    "2.9",
+    "ICAL"
+   ],
+   "result_source_links": [
+    "https://arxiv.org/abs/2406.14596"
+   ]
+  },
+  {
+   "cells": [
+    "01/2024",
+    "Caption-augmented",
+    "GPT-3.5 + LLaVa-7B",
+    "AxTree + Caption",
+    "2.75",
+    "VisualWebArena"
+   ],
+   "result_source_links": [
+    "https://arxiv.org/abs/2401.13649"
+   ]
+  },
+  {
+   "cells": [
+    "01/2024",
+    "Text-only",
+    "GPT-3.5",
+    "AXTree",
+    "2.20",
+    "VisualWebArena"
+   ],
+   "result_source_links": [
+    "https://arxiv.org/abs/2401.13649"
+   ]
+  },
+  {
+   "cells": [
+    "01/2024",
+    "Text-only",
+    "Gemini-Pro",
+    "AXTree",
+    "2.20",
+    "VisualWebArena"
+   ],
+   "result_source_links": [
+    "https://arxiv.org/abs/2401.13649"
+   ]
+  },
+  {
+   "cells": [
+    "01/2024",
+    "Caption-augmented",
+    "Mixtral-8x7b + BLIP-2-T5XL",
+    "AxTree + Caption",
+    "1.87",
+    "VisualWebArena"
+   ],
+   "result_source_links": [
+    "https://arxiv.org/abs/2401.13649"
+   ]
+  },
+  {
+   "cells": [
+    "01/2024",
+    "Text-only",
+    "Mixtral-8x7B",
+    "AXTree",
+    "1.76",
+    "VisualWebArena"
+   ],
+   "result_source_links": [
+    "https://arxiv.org/abs/2401.13649"
+   ]
+  },
+  {
+   "cells": [
+    "01/2024",
+    "Text-only",
+    "Llama-2-70B",
+    "AXTree",
+    "1.10",
+    "VisualWebArena"
+   ],
+   "result_source_links": [
+    "https://arxiv.org/abs/2401.13649"
+   ]
+  },
+  {
+   "cells": [
+    "01/2024",
+    "Multimodal (SoM)",
+    "IDEFICS-80B-Instruct",
+    "SoM + Caption + Image",
+    "0.99",
+    "VisualWebArena"
+   ],
+   "result_source_links": [
+    "https://arxiv.org/abs/2401.13649"
+   ]
+  },
+  {
+   "cells": [
+    "01/2024",
+    "Multimodal",
+    "IDEFICS-80B-Instruct",
+    "AXTree + Caption + Image",
+    "0.77",
+    "VisualWebArena"
+   ],
+   "result_source_links": [
+    "https://arxiv.org/abs/2401.13649"
+   ]
+  },
+  {
+   "cells": [
+    "01/2024",
+    "Caption-augmented",
+    "Llama-2-70B + BLIP-2-T5XL",
+    "AxTree + Caption",
+    "0.66",
+    "VisualWebArena"
+   ],
+   "result_source_links": [
+    "https://arxiv.org/abs/2401.13649"
+   ]
+  },
+  {
+   "cells": [
+    "01/2024",
+    "Multimodal (SoM)",
+    "CogVLM",
+    "SoM + Caption + Image",
+    "0.33",
+    "VisualWebArena"
+   ],
+   "result_source_links": [
+    "https://arxiv.org/abs/2401.13649"
+   ]
+  },
+  {
+   "cells": [
+    "01/2024",
+    "Multimodal",
+    "CogVLM",
+    "AXTree + Caption + Image",
+    "0.33",
+    "VisualWebArena"
+   ],
+   "result_source_links": [
+    "https://arxiv.org/abs/2401.13649"
+   ]
+  }
+ ]
+}

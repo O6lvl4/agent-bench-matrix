@@ -1,0 +1,201 @@
+{
+  "id": "sec-bench-pro-overall",
+  "family": "sec-bench-pro",
+  "name": "SEC-bench Pro (Overall)",
+  "board": "sec-bench.github.io",
+  "category": "security",
+  "measures_ja": "V8・Firefox・Linux を合わせた344件で、脆弱性の PoC を作って再現できるか。",
+  "tasks": 344,
+  "tasks_note": "V8 103・Firefox 104・Linux 137 の合計。",
+  "metric": "Success (% instances with valid PoC)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "SEC-bench Pro チームが3種のコーディングエージェント(Codex・Claude Code・OpenCode)でモデルを固定タイムアウト付きで実行。採点は LLM ベースの判定器。",
+  "source": "https://sec-bench.github.io/",
+  "fetched": [
+    "https://sec-bench.github.io/",
+    "https://sec-bench.github.io/data/leaderboards.yaml"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-06-17",
+  "snapshot": "sources/sec-bench-pro-overall/leaderboard-table.html",
+  "paper": "https://arxiv.org/abs/2605.26548",
+  "repo": "https://github.com/SEC-bench/SEC-bench-Pro",
+  "notes_ja": "ボードの Version は 260617 スナップショット。score_extra.solved_count は成功/全件、completed は制限時間内に完走した件数。Opus 4.6 は多くがタイムアウトしたが完走分の正答率は高い、とボードが注記。新しめの Claude/Mythos はセーフガード制限のため結果無し、とも。open_source はボードの Model Type 列。 分割 (v8/firefox/linux_split) は各プロジェクトの内訳。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "GPT-5.5 (xhigh) Codex",
+      "agent": "Codex",
+      "model_raw": [
+        "GPT-5.5 (xhigh)"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": "xhigh",
+      "score": 58.4,
+      "score_extra": {
+        "solved_count": "201/344",
+        "completed": "330/344",
+        "completed_score_pct": 60.3,
+        "completed_solved_count": "199/330",
+        "backend": "OpenAI",
+        "model_type": "proprietary",
+        "v8_split": "V8: 49/103 (47.6%)",
+        "firefox_split": "Firefox: 46/104 (44.2%)",
+        "linux_split": "Linux: 106/137 (77.4%)"
+      },
+      "date": "2026-06-17",
+      "verified": null,
+      "open_source": false,
+      "org": "OpenAI",
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "GPT-5.4 (xhigh) Codex",
+      "agent": "Codex",
+      "model_raw": [
+        "GPT-5.4 (xhigh)"
+      ],
+      "model_ids": [
+        "gpt-5.4"
+      ],
+      "model_config": "xhigh",
+      "score": 39.0,
+      "score_extra": {
+        "solved_count": "134/344",
+        "completed": "326/344",
+        "completed_score_pct": 40.5,
+        "completed_solved_count": "132/326",
+        "backend": "OpenAI",
+        "model_type": "proprietary",
+        "v8_split": "V8: 36/103 (35.0%)",
+        "firefox_split": "Firefox: 26/104 (25.0%)",
+        "linux_split": "Linux: 72/137 (52.6%)"
+      },
+      "date": "2026-06-17",
+      "verified": null,
+      "open_source": false,
+      "org": "OpenAI",
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "Opus 4.6 (max) Claude Code",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Opus 4.6 (max)"
+      ],
+      "model_ids": [
+        "claude-opus-4.6"
+      ],
+      "model_config": "max",
+      "score": 30.8,
+      "score_extra": {
+        "solved_count": "106/344",
+        "completed": "136/344",
+        "completed_score_pct": 72.8,
+        "completed_solved_count": "99/136",
+        "backend": "AWS Bedrock",
+        "model_type": "proprietary",
+        "v8_split": "V8: 23/103 (22.3%)",
+        "firefox_split": "Firefox: 29/104 (27.9%)",
+        "linux_split": "Linux: 54/137 (39.4%)"
+      },
+      "date": "2026-06-17",
+      "verified": null,
+      "open_source": false,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "GLM-5 (high) OpenCode",
+      "agent": "OpenCode",
+      "model_raw": [
+        "GLM-5 (high)"
+      ],
+      "model_ids": [
+        "glm-5"
+      ],
+      "model_config": "high",
+      "score": 3.8,
+      "score_extra": {
+        "solved_count": "13/344",
+        "completed": "314/344",
+        "completed_score_pct": 4.1,
+        "completed_solved_count": "13/314",
+        "backend": "AWS Bedrock",
+        "model_type": "open-source",
+        "v8_split": "V8: 2/103 (1.9%)",
+        "firefox_split": "Firefox: 6/104 (5.8%)",
+        "linux_split": "Linux: 5/137 (3.6%)"
+      },
+      "date": "2026-06-17",
+      "verified": null,
+      "open_source": true,
+      "org": "Z.ai",
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "Kimi K2.5 (high) OpenCode",
+      "agent": "OpenCode",
+      "model_raw": [
+        "Kimi K2.5 (high)"
+      ],
+      "model_ids": [
+        "kimi-k2.5"
+      ],
+      "model_config": "high",
+      "score": 2.3,
+      "score_extra": {
+        "solved_count": "8/344",
+        "completed": "341/344",
+        "completed_score_pct": 2.3,
+        "completed_solved_count": "8/341",
+        "backend": "AWS Bedrock",
+        "model_type": "open-source",
+        "v8_split": "V8: 2/103 (1.9%)",
+        "firefox_split": "Firefox: 3/104 (2.9%)",
+        "linux_split": "Linux: 3/137 (2.2%)"
+      },
+      "date": "2026-06-17",
+      "verified": null,
+      "open_source": true,
+      "org": "Moonshot AI",
+      "row_url": null
+    },
+    {
+      "rank": 6,
+      "system": "MiniMax M2.5 (high) OpenCode",
+      "agent": "OpenCode",
+      "model_raw": [
+        "MiniMax M2.5 (high)"
+      ],
+      "model_ids": [
+        "minimax-m2.5"
+      ],
+      "model_config": "high",
+      "score": 0.6,
+      "score_extra": {
+        "solved_count": "2/344",
+        "completed": "330/344",
+        "completed_score_pct": 0.6,
+        "completed_solved_count": "2/330",
+        "backend": "AWS Bedrock",
+        "model_type": "open-source",
+        "v8_split": "V8: 0/103 (0.0%)",
+        "firefox_split": "Firefox: 0/104 (0.0%)",
+        "linux_split": "Linux: 2/137 (1.5%)"
+      },
+      "date": "2026-06-17",
+      "verified": null,
+      "open_source": true,
+      "org": "MiniMax",
+      "row_url": null
+    }
+  ]
+}

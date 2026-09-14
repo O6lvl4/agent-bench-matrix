@@ -1,0 +1,106 @@
+{
+  "id": "tau3-voice-banking",
+  "family": "tau-bench",
+  "name": "τ³-Voice Banking",
+  "board": "taubench.com",
+  "category": "tool-use",
+  "measures_ja": "音声で対話するエージェントが、知識ベース検索を伴う銀行の顧客サポート依頼を解決できるか。",
+  "tasks": 97,
+  "tasks_note": "テキスト版 banking_knowledge の提出データ記載(97タスク)による。",
+  "metric": "Pass^1",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "リアルタイム全二重の音声エージェントを、音声化したユーザーシミュレータと対話させて評価する。多くは Sierra が1試行で走らせている。",
+  "source": "https://taubench.com/leaderboard?benchmark=voice",
+  "fetched": [
+    "https://taubench.com/",
+    "https://taubench.com/assets/index-QtX8yEBE.js",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha-user-sim-gpt-5-5_openai_2026-09-09/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime-banking_xai_2026-07-13/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-high-banking_google_2026-07-13/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-banking_openai_2026-07-12/submission.json"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-09-09",
+  "snapshot": "sources/tau3-voice-banking/submissions.json",
+  "paper": "https://arxiv.org/abs/2603.13686",
+  "repo": "https://github.com/sierra-research/tau2-bench",
+  "notes_ja": "rank はボード既定表示(Standard のみ)での順位で、Custom 提出は rank を null にした。",
+  "rows": [
+    {
+      "rank": null,
+      "system": "gpt-live-1",
+      "agent": null,
+      "model_raw": [
+        "gpt-live-1"
+      ],
+      "model_ids": [
+        "gpt-live-1"
+      ],
+      "model_config": "reasoning: Backend: GPT-6 Astra (medium); user sim: gpt-5.5-2026-04-23 (xhigh); retrieval: alltools; voice model: gpt-live-1-diamond-alpha; submission type: custom",
+      "score": 31.958762886597935,
+      "score_extra": {},
+      "date": "2026-09-09",
+      "verified": true,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha-user-sim-gpt-5-5_openai_2026-09-09/submission.json"
+    },
+    {
+      "rank": null,
+      "system": "xai-realtime",
+      "agent": null,
+      "model_raw": [
+        "xai-realtime"
+      ],
+      "model_ids": [],
+      "model_config": "reasoning: enabled; user sim: gpt-5.5-2026-04-23 (xhigh); retrieval: alltools; voice model: xai-realtime; submission type: custom",
+      "score": 16.49484536082474,
+      "score_extra": {},
+      "date": "2026-07-13",
+      "verified": true,
+      "open_source": null,
+      "org": "xai",
+      "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime-banking_xai_2026-07-13/submission.json"
+    },
+    {
+      "rank": null,
+      "system": "gemini-3.1-flash-live-preview-thinking-high",
+      "agent": null,
+      "model_raw": [
+        "gemini-3.1-flash-live-preview-thinking-high"
+      ],
+      "model_ids": [
+        "gemini-3.1-flash-live-preview"
+      ],
+      "model_config": "reasoning: high; user sim: gpt-5.5-2026-04-23 (xhigh); retrieval: alltools; voice model: gemini-3.1-flash-live-preview; submission type: custom",
+      "score": 11.34020618556701,
+      "score_extra": {},
+      "date": "2026-07-13",
+      "verified": true,
+      "open_source": null,
+      "org": "gemini",
+      "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-high-banking_google_2026-07-13/submission.json"
+    },
+    {
+      "rank": null,
+      "system": "gpt-realtime-2",
+      "agent": null,
+      "model_raw": [
+        "gpt-realtime-2"
+      ],
+      "model_ids": [
+        "gpt-realtime-2"
+      ],
+      "model_config": "reasoning: xhigh; user sim: gpt-5.5-2026-04-23 (xhigh); retrieval: alltools; voice model: gpt-realtime-2; submission type: custom",
+      "score": 10.309278350515463,
+      "score_extra": {},
+      "date": "2026-07-12",
+      "verified": true,
+      "open_source": null,
+      "org": "openai",
+      "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-banking_openai_2026-07-12/submission.json"
+    }
+  ]
+}

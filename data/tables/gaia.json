@@ -1,0 +1,2326 @@
+{
+  "id": "gaia",
+  "family": "gaia",
+  "name": "GAIA (test)",
+  "board": "huggingface.co/spaces/gaia-benchmark/leaderboard",
+  "category": "general",
+  "measures_ja": "検索・ファイル読解・計算などの道具を使い、答えが一意に決まる実世界の質問に正答できるか。",
+  "tasks": 301,
+  "tasks_note": "テストセット301問(レベル1: 93、レベル2: 159、レベル3: 49)。検証セット165問は別で、ボードには出ていない。",
+  "metric": "Average score (%)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "提出者が自前のエージェントで回答を作り、ボード側が隠された正解と自動照合して採点する。",
+  "source": "https://huggingface.co/spaces/gaia-benchmark/leaderboard",
+  "fetched": [
+    "https://gaia-benchmark-leaderboard.hf.space/gradio_api/call/refresh",
+    "https://huggingface.co/spaces/gaia-benchmark/leaderboard/raw/main/app.py",
+    "https://huggingface.co/datasets/gaia-benchmark/results_public/resolve/main/2023/test-00000-of-00001.parquet"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-09-14",
+  "snapshot": "sources/gaia/board_test_top100.json",
+  "paper": "https://arxiv.org/abs/2311.12983",
+  "repo": null,
+  "notes_ja": "ボードはテストセットのみを平均スコア順に上位100件だけ表示する(データセットには全3704件)。rank は表示順で、同点の並びはボード任せ。同じ組織の版違い投稿が大量に並び、名前やモデル欄が空・テスト名の投稿も混ざる。ボード上で Agent name が空の行は、ボードに出ている組織名(organisation)を system に入れ、score_extra.agent_name_empty_on_board=true を付けた。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "CustomGPT.ai Research Lab v44",
+      "agent": null,
+      "model_raw": [
+        "CustomGPT.ai enterprise agent",
+        "Claude",
+        "Gemini",
+        "GPT"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 93.36,
+      "score_extra": {
+        "level1": 97.85,
+        "level2": 91.82,
+        "level3": 89.8
+      },
+      "date": "2026-06-03",
+      "verified": null,
+      "open_source": null,
+      "org": "CustomGPT.ai",
+      "row_url": "https://github.com/adorosario/customgpt-agent"
+    },
+    {
+      "rank": 2,
+      "system": "DDDD1111",
+      "agent": null,
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 93.02,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 91.82,
+        "level3": 89.8,
+        "agent_name_empty_on_board": true
+      },
+      "date": "2026-07-08",
+      "verified": null,
+      "open_source": null,
+      "org": "DDDD1111",
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "Co-Sight Pro v1.0.1",
+      "agent": null,
+      "model_raw": [
+        "ZTE Nebula LLM",
+        "Gemini 3.1 Pro",
+        "GPT 5.5",
+        "Claude Opus 4.7"
+      ],
+      "model_ids": [
+        "gemini-3.1-pro",
+        "gpt-5.5",
+        "claude-opus-4.7"
+      ],
+      "model_config": null,
+      "score": 93.02,
+      "score_extra": {
+        "level1": 97.85,
+        "level2": 91.82,
+        "level3": 87.76
+      },
+      "date": "2026-05-16",
+      "verified": null,
+      "open_source": null,
+      "org": "ZTE-AICloud",
+      "row_url": "https://github.com/ZTE-AICloud/Co-Sight"
+    },
+    {
+      "rank": 4,
+      "system": "OPS-Agentic-Search",
+      "agent": null,
+      "model_raw": [
+        "Qwen",
+        "Claude 4.6",
+        "GPT 5",
+        "DeepSeek 3.2",
+        "Gemini 3 Pro",
+        "Kimi K2.5"
+      ],
+      "model_ids": [
+        "gpt-5",
+        "deepseek-v3.2",
+        "gemini-3-pro",
+        "kimi-k2.5"
+      ],
+      "model_config": null,
+      "score": 92.36,
+      "score_extra": {
+        "level1": 98.92,
+        "level2": 90.57,
+        "level3": 85.71
+      },
+      "date": "2026-03-11",
+      "verified": null,
+      "open_source": null,
+      "org": "Alibaba Cloud",
+      "row_url": "https://www.alibabacloud.com/en/product/opensearch?_p_lc=1"
+    },
+    {
+      "rank": 5,
+      "system": "CustomGPT.ai Research Lab v43",
+      "agent": null,
+      "model_raw": [
+        "Claude"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 92.03,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 90.57,
+        "level3": 87.76
+      },
+      "date": "2026-05-23",
+      "verified": null,
+      "open_source": null,
+      "org": "CustomGPT.ai",
+      "row_url": "https://github.com/adorosario/customgpt-manus-agent"
+    },
+    {
+      "rank": 6,
+      "system": "Cobra Agent Orch",
+      "agent": null,
+      "model_raw": [
+        "GPT 5.5",
+        "Gemini 3 Pro",
+        "Claude Opus 4.8"
+      ],
+      "model_ids": [
+        "gpt-5.5",
+        "gemini-3-pro",
+        "claude-opus-4.8"
+      ],
+      "model_config": null,
+      "score": 92.03,
+      "score_extra": {
+        "level1": 98.92,
+        "level2": 88.68,
+        "level3": 89.8
+      },
+      "date": "2026-06-23",
+      "verified": null,
+      "open_source": null,
+      "org": "Dalpha Inc",
+      "row_url": null
+    },
+    {
+      "rank": 7,
+      "system": "Co-Sight Pro v1.0.0",
+      "agent": null,
+      "model_raw": [
+        "ZTE Nebula LLM",
+        "claude-opus-4.7",
+        "gemini-3.1-pro-preview"
+      ],
+      "model_ids": [
+        "claude-opus-4.7",
+        "gemini-3.1-pro"
+      ],
+      "model_config": null,
+      "score": 92.03,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 90.57,
+        "level3": 87.76
+      },
+      "date": "2026-05-11",
+      "verified": null,
+      "open_source": null,
+      "org": "ZTE-AICloud",
+      "row_url": "https://github.com/ZTE-AICloud/Co-Sight"
+    },
+    {
+      "rank": 8,
+      "system": "CustomGPT.ai Research Lab V42",
+      "agent": null,
+      "model_raw": [
+        "CustomGPT.ai Enterprise Agents"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 92.03,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 89.94,
+        "level3": 89.8
+      },
+      "date": "2026-05-22",
+      "verified": null,
+      "open_source": null,
+      "org": "CustomGPT.ai",
+      "row_url": "https://github.com/adorosario/customgpt-agent"
+    },
+    {
+      "rank": 9,
+      "system": "CustomGPT.ai Research Lab v41",
+      "agent": null,
+      "model_raw": [
+        "Claude",
+        "GPT",
+        "Gemini"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 92.03,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 89.94,
+        "level3": 89.8
+      },
+      "date": "2026-05-22",
+      "verified": null,
+      "open_source": null,
+      "org": "CustomGPT.ai",
+      "row_url": "https://github.com/adorosario/customgpt-agent"
+    },
+    {
+      "rank": 10,
+      "system": "AuraAi",
+      "agent": null,
+      "model_raw": [
+        "Claude"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 92.03,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 89.94,
+        "level3": 89.8
+      },
+      "date": "2026-05-27",
+      "verified": null,
+      "open_source": null,
+      "org": "AI",
+      "row_url": null
+    },
+    {
+      "rank": 11,
+      "system": "Cobra Agent_v3.1",
+      "agent": null,
+      "model_raw": [
+        "GPT 5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": null,
+      "score": 91.69,
+      "score_extra": {
+        "level1": 98.92,
+        "level2": 88.68,
+        "level3": 87.76
+      },
+      "date": "2026-06-23",
+      "verified": null,
+      "open_source": null,
+      "org": "Dalpha Inc",
+      "row_url": null
+    },
+    {
+      "rank": 12,
+      "system": "Cobra Agent_v3.2.1",
+      "agent": null,
+      "model_raw": [
+        "GPT 5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": null,
+      "score": 91.69,
+      "score_extra": {
+        "level1": 98.92,
+        "level2": 88.68,
+        "level3": 87.76
+      },
+      "date": "2026-06-23",
+      "verified": null,
+      "open_source": null,
+      "org": "Dalpha Inc",
+      "row_url": null
+    },
+    {
+      "rank": 13,
+      "system": "Cobra Agent_v3.2.3",
+      "agent": null,
+      "model_raw": [
+        "GPT 5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": null,
+      "score": 91.69,
+      "score_extra": {
+        "level1": 98.92,
+        "level2": 88.68,
+        "level3": 87.76
+      },
+      "date": "2026-06-23",
+      "verified": null,
+      "open_source": null,
+      "org": "Dalpha Inc",
+      "row_url": null
+    },
+    {
+      "rank": 14,
+      "system": "Cobra Agent_v3.2",
+      "agent": null,
+      "model_raw": [
+        "GPT 5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": null,
+      "score": 91.69,
+      "score_extra": {
+        "level1": 98.92,
+        "level2": 88.68,
+        "level3": 87.76
+      },
+      "date": "2026-06-23",
+      "verified": null,
+      "open_source": null,
+      "org": "Dalpha Inc",
+      "row_url": null
+    },
+    {
+      "rank": 15,
+      "system": "CustomGPT.ai Research Lab v39",
+      "agent": null,
+      "model_raw": [
+        "Claude"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 91.69,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 89.94,
+        "level3": 87.76
+      },
+      "date": "2026-05-21",
+      "verified": null,
+      "open_source": null,
+      "org": "CustomGPT.ai",
+      "row_url": "https://github.com/adorosario/customgpt-agent"
+    },
+    {
+      "rank": 16,
+      "system": "openJiuwen-deepagent",
+      "agent": null,
+      "model_raw": [
+        "GPT5",
+        "Gemini-3-Pro"
+      ],
+      "model_ids": [
+        "gpt-5",
+        "gemini-3-pro"
+      ],
+      "model_config": null,
+      "score": 91.69,
+      "score_extra": {
+        "level1": 98.92,
+        "level2": 88.68,
+        "level3": 87.76
+      },
+      "date": "2026-02-09",
+      "verified": null,
+      "open_source": null,
+      "org": "openJiuwen",
+      "row_url": "https://gitcode.com/openJiuwen/agent-store/tree/main/community/deepagent"
+    },
+    {
+      "rank": 17,
+      "system": "Cobra Agent_v3.3",
+      "agent": null,
+      "model_raw": [
+        "GPT 5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": null,
+      "score": 91.69,
+      "score_extra": {
+        "level1": 98.92,
+        "level2": 88.68,
+        "level3": 87.76
+      },
+      "date": "2026-06-23",
+      "verified": null,
+      "open_source": null,
+      "org": "Dalpha Inc",
+      "row_url": null
+    },
+    {
+      "rank": 18,
+      "system": "Cobra Agent_v3.2.2",
+      "agent": null,
+      "model_raw": [
+        "GPT 5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": null,
+      "score": 91.69,
+      "score_extra": {
+        "level1": 98.92,
+        "level2": 88.68,
+        "level3": 87.76
+      },
+      "date": "2026-06-23",
+      "verified": null,
+      "open_source": null,
+      "org": "Dalpha Inc",
+      "row_url": null
+    },
+    {
+      "rank": 19,
+      "system": "Cobra Agent_2.7",
+      "agent": null,
+      "model_raw": [
+        "GPT 5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": null,
+      "score": 91.36,
+      "score_extra": {
+        "level1": 98.92,
+        "level2": 88.05,
+        "level3": 87.76
+      },
+      "date": "2026-06-19",
+      "verified": null,
+      "open_source": null,
+      "org": "Dalpha Inc",
+      "row_url": null
+    },
+    {
+      "rank": 20,
+      "system": "Lemon",
+      "agent": null,
+      "model_raw": [
+        "GPT5",
+        "Gemini-3-pro",
+        "o3"
+      ],
+      "model_ids": [
+        "gpt-5",
+        "gemini-3-pro",
+        "o3"
+      ],
+      "model_config": null,
+      "score": 91.36,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 89.31,
+        "level3": 87.76
+      },
+      "date": "2026-02-06",
+      "verified": null,
+      "open_source": null,
+      "org": "LR AILab of Lenovo CTO Org",
+      "row_url": "https://github.com/Open-Lemon/LemonAgent"
+    },
+    {
+      "rank": 21,
+      "system": "CustomGPT.ai Research Lab v34",
+      "agent": null,
+      "model_raw": [
+        "Claude"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 91.36,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 89.31,
+        "level3": 87.76
+      },
+      "date": "2026-05-19",
+      "verified": null,
+      "open_source": null,
+      "org": "CustomGPT.ai",
+      "row_url": "https://github.com/adorosario/customgpt-agent"
+    },
+    {
+      "rank": 22,
+      "system": "CustomGPT.ai Research Lab v35",
+      "agent": null,
+      "model_raw": [
+        "Claude"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 91.36,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 89.31,
+        "level3": 87.76
+      },
+      "date": "2026-05-20",
+      "verified": null,
+      "open_source": null,
+      "org": "CustomGPT.ai",
+      "row_url": "https://github.com/adorosario/customgpt-agent"
+    },
+    {
+      "rank": 23,
+      "system": "Cobra Agent_v3.4",
+      "agent": null,
+      "model_raw": [
+        "GPT 5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": null,
+      "score": 91.36,
+      "score_extra": {
+        "level1": 98.92,
+        "level2": 87.42,
+        "level3": 89.8
+      },
+      "date": "2026-06-23",
+      "verified": null,
+      "open_source": null,
+      "org": "Dalpha Inc",
+      "row_url": null
+    },
+    {
+      "rank": 24,
+      "system": "Cobra Agent_v2.7",
+      "agent": null,
+      "model_raw": [
+        "GPT 5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": null,
+      "score": 91.36,
+      "score_extra": {
+        "level1": 98.92,
+        "level2": 88.05,
+        "level3": 87.76
+      },
+      "date": "2026-06-22",
+      "verified": null,
+      "open_source": null,
+      "org": "Dalpha Inc",
+      "row_url": null
+    },
+    {
+      "rank": 25,
+      "system": "Cobra Agent_v3.0",
+      "agent": null,
+      "model_raw": [
+        "GPT 5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": null,
+      "score": 91.36,
+      "score_extra": {
+        "level1": 98.92,
+        "level2": 88.05,
+        "level3": 87.76
+      },
+      "date": "2026-06-22",
+      "verified": null,
+      "open_source": null,
+      "org": "Dalpha Inc",
+      "row_url": null
+    },
+    {
+      "rank": 26,
+      "system": "CustomGPT.ai Research Lab v33",
+      "agent": null,
+      "model_raw": [
+        "Claude"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 91.03,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 88.68,
+        "level3": 87.76
+      },
+      "date": "2026-05-18",
+      "verified": null,
+      "open_source": null,
+      "org": "CustomGPT.ai",
+      "row_url": "https://github.com/adorosario/customgpt-agent"
+    },
+    {
+      "rank": 27,
+      "system": "CustomGPT.ai Research Lab v29",
+      "agent": null,
+      "model_raw": [
+        "claude",
+        "gemini",
+        "gpt"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 90.7,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 88.68,
+        "level3": 85.71
+      },
+      "date": "2026-05-14",
+      "verified": null,
+      "open_source": null,
+      "org": "CustomGPT.ai",
+      "row_url": null
+    },
+    {
+      "rank": 28,
+      "system": "Deep_Ensemble_1.2",
+      "agent": null,
+      "model_raw": [
+        "GPT 5.5",
+        "Claude"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": null,
+      "score": 90.7,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 88.05,
+        "level3": 87.76
+      },
+      "date": "2026-06-23",
+      "verified": null,
+      "open_source": null,
+      "org": "0",
+      "row_url": null
+    },
+    {
+      "rank": 29,
+      "system": "CustomGPT.ai Research Lab V37",
+      "agent": null,
+      "model_raw": [
+        "claude",
+        "gemini",
+        "gpt"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 90.7,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 88.05,
+        "level3": 87.76
+      },
+      "date": "2026-05-21",
+      "verified": null,
+      "open_source": null,
+      "org": "CustomGPT.ai",
+      "row_url": null
+    },
+    {
+      "rank": 30,
+      "system": "CustomGPT.ai Research Lab v36",
+      "agent": null,
+      "model_raw": [
+        "Claude",
+        "GPT",
+        "Gemini"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 90.7,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 88.05,
+        "level3": 87.76
+      },
+      "date": "2026-05-21",
+      "verified": null,
+      "open_source": null,
+      "org": "CustomGPT.ai",
+      "row_url": null
+    },
+    {
+      "rank": 31,
+      "system": "CustomGPT.ai Research Lab v31",
+      "agent": null,
+      "model_raw": [
+        "claude",
+        "gemini",
+        "gpt"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 90.7,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 88.68,
+        "level3": 85.71
+      },
+      "date": "2026-05-15",
+      "verified": null,
+      "open_source": null,
+      "org": "CustomGPT.ai",
+      "row_url": "https://github.com/adorosario/customgpt-agent"
+    },
+    {
+      "rank": 32,
+      "system": "CustomGPT.ai Research Lab v32",
+      "agent": null,
+      "model_raw": [
+        "Claude"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 90.7,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 88.05,
+        "level3": 87.76
+      },
+      "date": "2026-05-18",
+      "verified": null,
+      "open_source": null,
+      "org": "CustomGPT.ai",
+      "row_url": "https://github.com/adorosario/customgpt-agent"
+    },
+    {
+      "rank": 33,
+      "system": "CustomGPT.ai Research Lab v28",
+      "agent": null,
+      "model_raw": [
+        "Claude",
+        "GPT",
+        "Gemini"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 90.7,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 88.68,
+        "level3": 85.71
+      },
+      "date": "2026-05-14",
+      "verified": null,
+      "open_source": null,
+      "org": "CustomGPT.ai",
+      "row_url": null
+    },
+    {
+      "rank": 34,
+      "system": "JoinAI_V2.2",
+      "agent": null,
+      "model_raw": [
+        "GPT 5",
+        "Gemini 3 Pro",
+        "DeepSeek 3.1",
+        "Qwen 3"
+      ],
+      "model_ids": [
+        "gpt-5",
+        "gemini-3-pro",
+        "deepseek-v3.1"
+      ],
+      "model_config": null,
+      "score": 90.7,
+      "score_extra": {
+        "level1": 98.92,
+        "level2": 86.79,
+        "level3": 87.76
+      },
+      "date": "2026-01-14",
+      "verified": null,
+      "open_source": null,
+      "org": "JoinAI-CMCC",
+      "row_url": null
+    },
+    {
+      "rank": 35,
+      "system": "CustomGPT.ai Research Lab v30",
+      "agent": null,
+      "model_raw": [
+        "Claude"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 90.37,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 88.05,
+        "level3": 85.71
+      },
+      "date": "2026-05-15",
+      "verified": null,
+      "open_source": null,
+      "org": "CustomGPT.ai",
+      "row_url": null
+    },
+    {
+      "rank": 36,
+      "system": "Nemotron-ToolOrchestra-0106",
+      "agent": null,
+      "model_raw": [
+        "Nemotron-ToolOrchestrator-8B",
+        "GPT-5",
+        "Claude Opus 4.1",
+        "Qwen2.5-Math-72B"
+      ],
+      "model_ids": [
+        "nemotron-toolorchestrator-8b",
+        "gpt-5",
+        "claude-opus-4.1",
+        "qwen2.5-math-72b"
+      ],
+      "model_config": null,
+      "score": 90.37,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 86.79,
+        "level3": 89.8
+      },
+      "date": "2026-01-06",
+      "verified": null,
+      "open_source": null,
+      "org": "NVIDIA",
+      "row_url": "https://research.nvidia.com/labs/lpr/ToolOrchestra/"
+    },
+    {
+      "rank": 37,
+      "system": "Nemotron-ToolOrchestra-0107",
+      "agent": null,
+      "model_raw": [
+        "Nemotron-ToolOrchestrator-8B",
+        "GPT-5",
+        "Claude Opus 4.1",
+        "Qwen2.5-Math-72B"
+      ],
+      "model_ids": [
+        "nemotron-toolorchestrator-8b",
+        "gpt-5",
+        "claude-opus-4.1",
+        "qwen2.5-math-72b"
+      ],
+      "model_config": null,
+      "score": 90.37,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 86.79,
+        "level3": 89.8
+      },
+      "date": "2026-01-06",
+      "verified": null,
+      "open_source": null,
+      "org": "NVIDIA",
+      "row_url": "https://research.nvidia.com/labs/lpr/ToolOrchestra/"
+    },
+    {
+      "rank": 38,
+      "system": "as_v2",
+      "agent": null,
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 90.37,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 89.31,
+        "level3": 81.63
+      },
+      "date": "2026-08-13",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 39,
+      "system": "Deep_Ensemble_1.4",
+      "agent": null,
+      "model_raw": [
+        "GPT 5.5",
+        "Claude"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": null,
+      "score": 90.37,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 87.42,
+        "level3": 87.76
+      },
+      "date": "2026-06-25",
+      "verified": null,
+      "open_source": null,
+      "org": "0",
+      "row_url": null
+    },
+    {
+      "rank": 40,
+      "system": "SHAPARTNER V4",
+      "agent": null,
+      "model_raw": [
+        "GPT  CLAUDE  GEMINI    DEEPSEEK"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 90.37,
+      "score_extra": {
+        "level1": 95.7,
+        "level2": 90.57,
+        "level3": 79.59
+      },
+      "date": "2026-09-14",
+      "verified": null,
+      "open_source": null,
+      "org": "SHAPARTNER",
+      "row_url": null
+    },
+    {
+      "rank": 41,
+      "system": "Deep_Ensemble_1.0",
+      "agent": null,
+      "model_raw": [
+        "GPT 5.5",
+        "Claude"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": null,
+      "score": 90.03,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 87.42,
+        "level3": 85.71
+      },
+      "date": "2026-06-23",
+      "verified": null,
+      "open_source": null,
+      "org": "0",
+      "row_url": null
+    },
+    {
+      "rank": 42,
+      "system": "SU Zero - Shuqian Series Pro MAX",
+      "agent": null,
+      "model_raw": [
+        "Self Consistency 35"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 90.03,
+      "score_extra": {
+        "level1": 98.92,
+        "level2": 86.79,
+        "level3": 83.67
+      },
+      "date": "2025-12-23",
+      "verified": null,
+      "open_source": null,
+      "org": "Suzhou AI Lab, Shuqian Tech",
+      "row_url": null
+    },
+    {
+      "rank": 43,
+      "system": "JoinAI_V2.1",
+      "agent": null,
+      "model_raw": [
+        "GPT",
+        "Gemini",
+        "DeepSeek",
+        "Qwen"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 90.03,
+      "score_extra": {
+        "level1": 98.92,
+        "level2": 86.79,
+        "level3": 83.67
+      },
+      "date": "2026-01-13",
+      "verified": null,
+      "open_source": null,
+      "org": "JoinAI-CMCC",
+      "row_url": null
+    },
+    {
+      "rank": 44,
+      "system": "CustomGPT.ai Research Lab v27",
+      "agent": null,
+      "model_raw": [
+        "Claude"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 90.03,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 88.05,
+        "level3": 83.67
+      },
+      "date": "2026-05-14",
+      "verified": null,
+      "open_source": null,
+      "org": "CustomGPT.ai",
+      "row_url": "https://huggingface.co/Arnav3035/garuda-sql-2b"
+    },
+    {
+      "rank": 45,
+      "system": "Deep_Ensemble_1.1",
+      "agent": null,
+      "model_raw": [
+        "GPT 5.5",
+        "Claude"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": null,
+      "score": 90.03,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 87.42,
+        "level3": 85.71
+      },
+      "date": "2026-06-23",
+      "verified": null,
+      "open_source": null,
+      "org": "0",
+      "row_url": null
+    },
+    {
+      "rank": 46,
+      "system": "Cobra Agent_v2.1",
+      "agent": null,
+      "model_raw": [
+        "GPT 5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": null,
+      "score": 90.03,
+      "score_extra": {
+        "level1": 97.85,
+        "level2": 87.42,
+        "level3": 83.67
+      },
+      "date": "2026-06-19",
+      "verified": null,
+      "open_source": null,
+      "org": "Dalpha Inc",
+      "row_url": null
+    },
+    {
+      "rank": 47,
+      "system": "Submit Test",
+      "agent": null,
+      "model_raw": [
+        "Claude"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 89.7,
+      "score_extra": {
+        "level1": 97.85,
+        "level2": 86.16,
+        "level3": 85.71
+      },
+      "date": "2026-06-23",
+      "verified": null,
+      "open_source": null,
+      "org": "0",
+      "row_url": null
+    },
+    {
+      "rank": 48,
+      "system": "SHADOW HARNESS",
+      "agent": null,
+      "model_raw": [
+        "CLAUDE GPT"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 89.7,
+      "score_extra": {
+        "level1": 95.7,
+        "level2": 89.94,
+        "level3": 77.55
+      },
+      "date": "2026-09-13",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 49,
+      "system": "SHAPARTNER V3",
+      "agent": null,
+      "model_raw": [
+        "CLAUDE GPT"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 89.7,
+      "score_extra": {
+        "level1": 94.62,
+        "level2": 89.94,
+        "level3": 79.59
+      },
+      "date": "2026-09-13",
+      "verified": null,
+      "open_source": null,
+      "org": "SHAPARTNER",
+      "row_url": null
+    },
+    {
+      "rank": 50,
+      "system": "Cobra Agent_v2.26",
+      "agent": null,
+      "model_raw": [
+        "GPT 5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": null,
+      "score": 89.7,
+      "score_extra": {
+        "level1": 94.62,
+        "level2": 88.05,
+        "level3": 85.71
+      },
+      "date": "2026-06-22",
+      "verified": null,
+      "open_source": null,
+      "org": "Dalpha Inc",
+      "row_url": null
+    },
+    {
+      "rank": 51,
+      "system": "Shadow Harness V4",
+      "agent": null,
+      "model_raw": [
+        "GPT CLAUDE GEMINI DEEPSEEK"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 89.7,
+      "score_extra": {
+        "level1": 94.62,
+        "level2": 89.94,
+        "level3": 79.59
+      },
+      "date": "2026-09-14",
+      "verified": null,
+      "open_source": null,
+      "org": "Shadow",
+      "row_url": null
+    },
+    {
+      "rank": 52,
+      "system": "SHADOW HARNESS V3",
+      "agent": null,
+      "model_raw": [
+        "CLAUDE GPT"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 89.7,
+      "score_extra": {
+        "level1": 95.7,
+        "level2": 89.94,
+        "level3": 77.55
+      },
+      "date": "2026-09-14",
+      "verified": null,
+      "open_source": null,
+      "org": "SHADOW",
+      "row_url": null
+    },
+    {
+      "rank": 53,
+      "system": "CustomGPT.ai Research Lab v24",
+      "agent": null,
+      "model_raw": [
+        "claude",
+        "gemini",
+        "gpt"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 89.7,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 87.42,
+        "level3": 83.67
+      },
+      "date": "2026-05-14",
+      "verified": null,
+      "open_source": null,
+      "org": "CustomGPT.ai",
+      "row_url": null
+    },
+    {
+      "rank": 54,
+      "system": "CustomGPT.ai Research Lab v25",
+      "agent": null,
+      "model_raw": [
+        "Claude"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 89.7,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 87.42,
+        "level3": 83.67
+      },
+      "date": "2026-05-14",
+      "verified": null,
+      "open_source": null,
+      "org": "CustomGPT.ai",
+      "row_url": "https://huggingface.co/Arnav3035/garuda-sql-2b"
+    },
+    {
+      "rank": 55,
+      "system": "SHAPARTNER V2",
+      "agent": null,
+      "model_raw": [
+        "Claude  GPT"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 89.37,
+      "score_extra": {
+        "level1": 95.7,
+        "level2": 89.94,
+        "level3": 75.51
+      },
+      "date": "2026-09-13",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 56,
+      "system": "CustomGPT.ai Research Lab v23",
+      "agent": null,
+      "model_raw": [
+        "claude",
+        "gemini",
+        "gpt"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 89.37,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 86.79,
+        "level3": 83.67
+      },
+      "date": "2026-05-14",
+      "verified": null,
+      "open_source": null,
+      "org": "CustomGPT.ai",
+      "row_url": null
+    },
+    {
+      "rank": 57,
+      "system": "HALO V1217-1",
+      "agent": null,
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 89.37,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 86.79,
+        "level3": 83.67
+      },
+      "date": "2025-12-17",
+      "verified": null,
+      "open_source": null,
+      "org": "Microsoft AI Asia - Ads",
+      "row_url": null
+    },
+    {
+      "rank": 58,
+      "system": "ShawnAgent_v3.1",
+      "agent": null,
+      "model_raw": [
+        "GPT5.2",
+        "Claude Sonnet 4.5",
+        "Gemini 3 Pro"
+      ],
+      "model_ids": [
+        "gpt-5.2",
+        "claude-sonnet-4.5",
+        "gemini-3-pro"
+      ],
+      "model_config": null,
+      "score": 89.37,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 86.79,
+        "level3": 83.67
+      },
+      "date": "2026-01-16",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 59,
+      "system": "CustomGPT.ai Research Lab v26",
+      "agent": null,
+      "model_raw": [
+        "Claude"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 89.37,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 86.79,
+        "level3": 83.67
+      },
+      "date": "2026-05-14",
+      "verified": null,
+      "open_source": null,
+      "org": "CustomGPT.ai",
+      "row_url": "https://huggingface.co/Arnav3035/garuda-sql-2b"
+    },
+    {
+      "rank": 60,
+      "system": "CustomGPT.ai Research Lab v22",
+      "agent": null,
+      "model_raw": [
+        "claude",
+        "gemini",
+        "gpt"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 89.37,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 86.79,
+        "level3": 83.67
+      },
+      "date": "2026-05-13",
+      "verified": null,
+      "open_source": null,
+      "org": "CustomGPT.ai Research Lab v22",
+      "row_url": null
+    },
+    {
+      "rank": 61,
+      "system": "Cobra Agent_v2.25",
+      "agent": null,
+      "model_raw": [
+        "GPT 5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": null,
+      "score": 89.04,
+      "score_extra": {
+        "level1": 93.55,
+        "level2": 88.05,
+        "level3": 83.67
+      },
+      "date": "2026-06-22",
+      "verified": null,
+      "open_source": null,
+      "org": "Dalpha Inc",
+      "row_url": null
+    },
+    {
+      "rank": 62,
+      "system": "Cobra Agent_v1.14",
+      "agent": null,
+      "model_raw": [
+        "GPT 5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": null,
+      "score": 89.04,
+      "score_extra": {
+        "level1": 95.7,
+        "level2": 86.79,
+        "level3": 83.67
+      },
+      "date": "2026-06-18",
+      "verified": null,
+      "open_source": null,
+      "org": "Dalpha Inc",
+      "row_url": null
+    },
+    {
+      "rank": 63,
+      "system": "SHAPARTNER",
+      "agent": null,
+      "model_raw": [
+        "SHAPARTNER"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 89.04,
+      "score_extra": {
+        "level1": 95.7,
+        "level2": 89.94,
+        "level3": 73.47
+      },
+      "date": "2026-09-12",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 64,
+      "system": "CustomGPT.ai Research Lab v19",
+      "agent": null,
+      "model_raw": [
+        "Claude"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 89.04,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 86.16,
+        "level3": 83.67
+      },
+      "date": "2026-05-12",
+      "verified": null,
+      "open_source": null,
+      "org": "CustomGPT.ai",
+      "row_url": "https://huggingface.co/Arnav3035/garuda-sql-2b"
+    },
+    {
+      "rank": 65,
+      "system": "JoinAI_V2",
+      "agent": null,
+      "model_raw": [
+        "GPT",
+        "Gemini",
+        "DeepSeek",
+        "Qwen"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 89.04,
+      "score_extra": {
+        "level1": 98.92,
+        "level2": 85.53,
+        "level3": 81.63
+      },
+      "date": "2025-12-28",
+      "verified": null,
+      "open_source": null,
+      "org": "JoinAI-CMCC",
+      "row_url": null
+    },
+    {
+      "rank": 66,
+      "system": "CustomGPT.ai Research Lab v21",
+      "agent": null,
+      "model_raw": [
+        "Claude"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 89.04,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 86.16,
+        "level3": 83.67
+      },
+      "date": "2026-05-13",
+      "verified": null,
+      "open_source": null,
+      "org": "CustomGPT.ai",
+      "row_url": null
+    },
+    {
+      "rank": 67,
+      "system": "Su Zero + SQ Pro ",
+      "agent": null,
+      "model_raw": [
+        "GPT",
+        "Gemini",
+        "Claude"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 89.04,
+      "score_extra": {
+        "level1": 97.85,
+        "level2": 86.16,
+        "level3": 81.63
+      },
+      "date": "2025-12-11",
+      "verified": null,
+      "open_source": null,
+      "org": "Suzhou AI Lab, Shuqian Tech",
+      "row_url": null
+    },
+    {
+      "rank": 68,
+      "system": "Cobra Agent_v2.6",
+      "agent": null,
+      "model_raw": [
+        "GPT 5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": null,
+      "score": 89.04,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 86.16,
+        "level3": 83.67
+      },
+      "date": "2026-06-19",
+      "verified": null,
+      "open_source": null,
+      "org": "Dalpha Inc",
+      "row_url": null
+    },
+    {
+      "rank": 69,
+      "system": "HALO V1217",
+      "agent": null,
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 89.04,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 86.79,
+        "level3": 81.63
+      },
+      "date": "2025-12-17",
+      "verified": null,
+      "open_source": null,
+      "org": "MAI-A Ads",
+      "row_url": null
+    },
+    {
+      "rank": 70,
+      "system": "ShawnAgent_v3.0",
+      "agent": null,
+      "model_raw": [
+        "GPT5.2",
+        "Claude Sonnet 4.5",
+        "Gemini 3 Pro"
+      ],
+      "model_ids": [
+        "gpt-5.2",
+        "claude-sonnet-4.5",
+        "gemini-3-pro"
+      ],
+      "model_config": null,
+      "score": 89.04,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 86.16,
+        "level3": 83.67
+      },
+      "date": "2026-01-14",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 71,
+      "system": "jsearch_base",
+      "agent": null,
+      "model_raw": [
+        "GLM5.2"
+      ],
+      "model_ids": [
+        "glm-5.2"
+      ],
+      "model_config": null,
+      "score": 89.04,
+      "score_extra": {
+        "level1": 97.85,
+        "level2": 87.42,
+        "level3": 77.55
+      },
+      "date": "2026-07-22",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 72,
+      "system": "mmagent",
+      "agent": null,
+      "model_raw": [
+        "claude opus 4.8"
+      ],
+      "model_ids": [
+        "claude-opus-4.8"
+      ],
+      "model_config": null,
+      "score": 88.7,
+      "score_extra": {
+        "level1": 93.55,
+        "level2": 86.79,
+        "level3": 85.71
+      },
+      "date": "2026-07-23",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 73,
+      "system": "Cobra Agent_v1.15",
+      "agent": null,
+      "model_raw": [
+        "GPT 5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": null,
+      "score": 88.7,
+      "score_extra": {
+        "level1": 95.7,
+        "level2": 86.79,
+        "level3": 81.63
+      },
+      "date": "2026-06-18",
+      "verified": null,
+      "open_source": null,
+      "org": "Dalpha Inc",
+      "row_url": null
+    },
+    {
+      "rank": 74,
+      "system": "jsearch_run1_0723",
+      "agent": null,
+      "model_raw": [
+        "GLM5.2"
+      ],
+      "model_ids": [
+        "glm-5.2"
+      ],
+      "model_config": null,
+      "score": 88.7,
+      "score_extra": {
+        "level1": 93.55,
+        "level2": 86.79,
+        "level3": 85.71
+      },
+      "date": "2026-07-23",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 75,
+      "system": "CustomGPT.ai Research Lab v20",
+      "agent": null,
+      "model_raw": [
+        "claude",
+        "gemini",
+        "gpt"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 88.7,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 85.53,
+        "level3": 83.67
+      },
+      "date": "2026-05-12",
+      "verified": null,
+      "open_source": null,
+      "org": "CustomGPT.ai",
+      "row_url": null
+    },
+    {
+      "rank": 76,
+      "system": "CustomGPT.ai Research Lab v16",
+      "agent": null,
+      "model_raw": [
+        "Claude"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 88.37,
+      "score_extra": {
+        "level1": 95.7,
+        "level2": 85.53,
+        "level3": 83.67
+      },
+      "date": "2026-05-10",
+      "verified": null,
+      "open_source": null,
+      "org": "CustomGPT.ai",
+      "row_url": "https://huggingface.co/Arnav3035/garuda-sql-2b"
+    },
+    {
+      "rank": 77,
+      "system": "CustomGPT.ai Research Lab v18",
+      "agent": null,
+      "model_raw": [
+        "claude",
+        "gemini",
+        "gpt"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 88.37,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 84.91,
+        "level3": 83.67
+      },
+      "date": "2026-05-11",
+      "verified": null,
+      "open_source": null,
+      "org": "CustomGPT.ai",
+      "row_url": null
+    },
+    {
+      "rank": 78,
+      "system": "jsearch_glm",
+      "agent": null,
+      "model_raw": [
+        "GLM52"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 88.37,
+      "score_extra": {
+        "level1": 93.55,
+        "level2": 86.79,
+        "level3": 83.67
+      },
+      "date": "2026-07-22",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 79,
+      "system": "Lemon Agent v1.0.8",
+      "agent": null,
+      "model_raw": [
+        "GPT5",
+        "o3",
+        "Gemini-3-pro"
+      ],
+      "model_ids": [
+        "gpt-5",
+        "o3",
+        "gemini-3-pro"
+      ],
+      "model_config": null,
+      "score": 88.37,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 86.16,
+        "level3": 79.59
+      },
+      "date": "2025-12-04",
+      "verified": null,
+      "open_source": null,
+      "org": "LR AILab of Lenovo CTO Org",
+      "row_url": "https://github.com/Open-Lemon/LemonAgent"
+    },
+    {
+      "rank": 80,
+      "system": "CustomGPT.ai Research Lab v17e",
+      "agent": null,
+      "model_raw": [
+        "claude",
+        "gemini",
+        "gpt"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 88.37,
+      "score_extra": {
+        "level1": 95.7,
+        "level2": 85.53,
+        "level3": 83.67
+      },
+      "date": "2026-05-11",
+      "verified": null,
+      "open_source": null,
+      "org": "CustomGPT.ai",
+      "row_url": null
+    },
+    {
+      "rank": 81,
+      "system": "Cobra Agent_v2.8",
+      "agent": null,
+      "model_raw": [
+        "GPT 5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": null,
+      "score": 88.04,
+      "score_extra": {
+        "level1": 93.55,
+        "level2": 86.16,
+        "level3": 83.67
+      },
+      "date": "2026-06-19",
+      "verified": null,
+      "open_source": null,
+      "org": "Dalpha Inc",
+      "row_url": null
+    },
+    {
+      "rank": 82,
+      "system": "Cobra Agent_v2.22",
+      "agent": null,
+      "model_raw": [
+        "GPT 5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": null,
+      "score": 88.04,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 83.02,
+        "level3": 87.76
+      },
+      "date": "2026-06-22",
+      "verified": null,
+      "open_source": null,
+      "org": "Dalpha Inc",
+      "row_url": null
+    },
+    {
+      "rank": 83,
+      "system": "mmagent_0724",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 4.8"
+      ],
+      "model_ids": [
+        "claude-opus-4.8"
+      ],
+      "model_config": null,
+      "score": 88.04,
+      "score_extra": {
+        "level1": 93.55,
+        "level2": 86.16,
+        "level3": 83.67
+      },
+      "date": "2026-07-24",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 84,
+      "system": "Cobra Agent_v2.10",
+      "agent": null,
+      "model_raw": [
+        "GPT 5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": null,
+      "score": 88.04,
+      "score_extra": {
+        "level1": 93.55,
+        "level2": 86.16,
+        "level3": 83.67
+      },
+      "date": "2026-06-19",
+      "verified": null,
+      "open_source": null,
+      "org": "Dalpha Inc",
+      "row_url": null
+    },
+    {
+      "rank": 85,
+      "system": "Jsearch_new",
+      "agent": null,
+      "model_raw": [
+        "DSv4"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 88.04,
+      "score_extra": {
+        "level1": 93.55,
+        "level2": 86.16,
+        "level3": 83.67
+      },
+      "date": "2026-08-06",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 86,
+      "system": "Jsearch_v1",
+      "agent": null,
+      "model_raw": [
+        "GLM52"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 88.04,
+      "score_extra": {
+        "level1": 93.55,
+        "level2": 86.16,
+        "level3": 83.67
+      },
+      "date": "2026-08-06",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 87,
+      "system": "CustomGPT.ai Research Lab v17",
+      "agent": null,
+      "model_raw": [
+        "Claude"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 88.04,
+      "score_extra": {
+        "level1": 95.7,
+        "level2": 84.91,
+        "level3": 83.67
+      },
+      "date": "2026-05-11",
+      "verified": null,
+      "open_source": null,
+      "org": "CustomGPT.ai",
+      "row_url": "https://huggingface.co/Arnav3035/garuda-sql-2b"
+    },
+    {
+      "rank": 88,
+      "system": "jsearch_0723",
+      "agent": null,
+      "model_raw": [
+        "GLM52"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 88.04,
+      "score_extra": {
+        "level1": 93.55,
+        "level2": 86.16,
+        "level3": 83.67
+      },
+      "date": "2026-07-23",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 89,
+      "system": "Cobra Agent_v2.3",
+      "agent": null,
+      "model_raw": [
+        "GPT 5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": null,
+      "score": 87.71,
+      "score_extra": {
+        "level1": 94.62,
+        "level2": 85.53,
+        "level3": 81.63
+      },
+      "date": "2026-06-19",
+      "verified": null,
+      "open_source": null,
+      "org": "Dalpha Inc",
+      "row_url": null
+    },
+    {
+      "rank": 90,
+      "system": "Cobra Agent_v2.20",
+      "agent": null,
+      "model_raw": [
+        "GPT 5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": null,
+      "score": 87.71,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 86.16,
+        "level3": 75.51
+      },
+      "date": "2026-06-22",
+      "verified": null,
+      "open_source": null,
+      "org": "Dalpha Inc",
+      "row_url": null
+    },
+    {
+      "rank": 91,
+      "system": "Cobra Agent_v2.13",
+      "agent": null,
+      "model_raw": [
+        "GPT 5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": null,
+      "score": 87.71,
+      "score_extra": {
+        "level1": 92.47,
+        "level2": 86.16,
+        "level3": 83.67
+      },
+      "date": "2026-06-20",
+      "verified": null,
+      "open_source": null,
+      "org": "Dalpha Inc",
+      "row_url": null
+    },
+    {
+      "rank": 92,
+      "system": "Cobra Agent_v2.4",
+      "agent": null,
+      "model_raw": [
+        "GPT 5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": null,
+      "score": 87.71,
+      "score_extra": {
+        "level1": 95.7,
+        "level2": 85.53,
+        "level3": 79.59
+      },
+      "date": "2026-06-19",
+      "verified": null,
+      "open_source": null,
+      "org": "Dalpha Inc",
+      "row_url": null
+    },
+    {
+      "rank": 93,
+      "system": "Cobra Agent_v2.0",
+      "agent": null,
+      "model_raw": [
+        "GPT 5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": null,
+      "score": 87.71,
+      "score_extra": {
+        "level1": 94.62,
+        "level2": 84.91,
+        "level3": 83.67
+      },
+      "date": "2026-06-19",
+      "verified": null,
+      "open_source": null,
+      "org": "Dalpha Inc",
+      "row_url": null
+    },
+    {
+      "rank": 94,
+      "system": "Cobra Agent_v1.11",
+      "agent": null,
+      "model_raw": [
+        "GPT 5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": null,
+      "score": 87.71,
+      "score_extra": {
+        "level1": 94.62,
+        "level2": 85.53,
+        "level3": 81.63
+      },
+      "date": "2026-06-18",
+      "verified": null,
+      "open_source": null,
+      "org": "Dalpha Inc",
+      "row_url": null
+    },
+    {
+      "rank": 95,
+      "system": "Nemotron-ToolOrchestra",
+      "agent": null,
+      "model_raw": [
+        "Nemotron-ToolOrchestrator-8B",
+        "GPT-5",
+        "Claude Opus 4.1",
+        "Qwen2.5-Math-72B"
+      ],
+      "model_ids": [
+        "nemotron-toolorchestrator-8b",
+        "gpt-5",
+        "claude-opus-4.1",
+        "qwen2.5-math-72b"
+      ],
+      "model_config": null,
+      "score": 87.38,
+      "score_extra": {
+        "level1": 95.7,
+        "level2": 82.39,
+        "level3": 87.76
+      },
+      "date": "2025-12-02",
+      "verified": null,
+      "open_source": null,
+      "org": "NVIDIA",
+      "row_url": "https://research.nvidia.com/labs/lpr/ToolOrchestra/"
+    },
+    {
+      "rank": 96,
+      "system": "CustomGPT.ai Research Lab v15",
+      "agent": null,
+      "model_raw": [
+        "claude",
+        "gemini",
+        "gpt"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 87.38,
+      "score_extra": {
+        "level1": 94.62,
+        "level2": 84.91,
+        "level3": 81.63
+      },
+      "date": "2026-05-09",
+      "verified": null,
+      "open_source": null,
+      "org": "CustomGPT.ai",
+      "row_url": null
+    },
+    {
+      "rank": 97,
+      "system": "Cobra Agent_v2.5",
+      "agent": null,
+      "model_raw": [
+        "GPT 5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": null,
+      "score": 87.38,
+      "score_extra": {
+        "level1": 93.55,
+        "level2": 85.53,
+        "level3": 81.63
+      },
+      "date": "2026-06-19",
+      "verified": null,
+      "open_source": null,
+      "org": "Dalpha Inc",
+      "row_url": null
+    },
+    {
+      "rank": 98,
+      "system": "Su Zero + Shuqian Lite",
+      "agent": null,
+      "model_raw": [
+        "Gemini 3",
+        "Claude Sonnet 4.5",
+        "GPT 5.1"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5",
+        "gpt-5.1"
+      ],
+      "model_config": null,
+      "score": 87.38,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 84.28,
+        "level3": 79.59
+      },
+      "date": "2025-12-07",
+      "verified": null,
+      "open_source": null,
+      "org": "Suzhou AI Lab, Shuqian Tech",
+      "row_url": null
+    },
+    {
+      "rank": 99,
+      "system": "Cobra Agent_v2.2",
+      "agent": null,
+      "model_raw": [
+        "GPT 5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": null,
+      "score": 87.38,
+      "score_extra": {
+        "level1": 95.7,
+        "level2": 84.91,
+        "level3": 79.59
+      },
+      "date": "2026-06-19",
+      "verified": null,
+      "open_source": null,
+      "org": "Dalpha Inc",
+      "row_url": null
+    },
+    {
+      "rank": 100,
+      "system": "Cobra Agent_v1.12",
+      "agent": null,
+      "model_raw": [
+        "GPT 5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": null,
+      "score": 87.04,
+      "score_extra": {
+        "level1": 92.47,
+        "level2": 85.53,
+        "level3": 81.63
+      },
+      "date": "2026-06-18",
+      "verified": null,
+      "open_source": null,
+      "org": "Dalpha Inc",
+      "row_url": null
+    }
+  ]
+}

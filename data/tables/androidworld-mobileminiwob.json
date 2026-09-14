@@ -1,0 +1,112 @@
+{
+  "id": "androidworld-mobileminiwob",
+  "family": "androidworld",
+  "name": "MobileMiniWoB++ (AndroidWorld)",
+  "board": "AndroidWorld leaderboard (Google Sheet)",
+  "category": "computer-use",
+  "measures_ja": "Web 操作ベンチ MiniWoB++ を Android 上に移したタスク群を、エージェントがこなせるか。",
+  "tasks": null,
+  "tasks_note": "AndroidWorld の README・シートにタスク数の記載が見当たらないため null。",
+  "metric": "Success Rate (pass@1, %)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "提出者の自己申告。足場・画面表現は提出者任せ。",
+  "source": "https://docs.google.com/spreadsheets/d/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo/edit?gid=1078963525#gid=1078963525",
+  "fetched": [
+    "https://docs.google.com/spreadsheets/d/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo/export?format=csv&gid=1078963525"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2025-06",
+  "snapshot": "sources/androidworld-mobileminiwob/androidworld_gid1078963525.csv",
+  "paper": "https://arxiv.org/abs/2405.14573",
+  "repo": "https://github.com/google-research/android_world",
+  "notes_ja": "AndroidWorld シートの2枚目のタブ。順位列が無いのでシートの並び順を rank とした。4行だけで更新は2025年6月が最後。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "AndroidWorld",
+      "agent": null,
+      "model_raw": [
+        "GPT-4 Turbo"
+      ],
+      "model_ids": [
+        "gpt-4-turbo"
+      ],
+      "model_config": "screen=Set-of-Mark",
+      "score": 67.6,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2024-05",
+      "verified": false,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "Mirage-1",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": "screen=Screenshot",
+      "score": 62.0,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2025-06",
+      "verified": false,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "ScaleTrack",
+      "agent": null,
+      "model_raw": [
+        "ScaleTrack-7B"
+      ],
+      "model_ids": [
+        "scaletrack-7b"
+      ],
+      "model_config": "screen=Screenshot; size=8B",
+      "score": 61.0,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2025-04",
+      "verified": false,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "Aria-UI",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o",
+        "Aria-UI"
+      ],
+      "model_ids": [
+        "gpt-4o",
+        "aria-ui"
+      ],
+      "model_config": "screen=A11y tree; size=3.9B",
+      "score": 60.4,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2024-12",
+      "verified": false,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    }
+  ]
+}

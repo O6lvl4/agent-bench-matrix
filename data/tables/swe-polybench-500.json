@@ -1,0 +1,288 @@
+{
+  "id": "swe-polybench-500",
+  "family": "swe-polybench",
+  "name": "SWE-PolyBench 500 (PB500)",
+  "board": "amazon-science.github.io/SWE-PolyBench",
+  "category": "coding",
+  "measures_ja": "SWE-PolyBench から 4 言語 125 件ずつ選んだ 500 件で、テストを通すパッチを作れるか。",
+  "tasks": 500,
+  "tasks_note": "各言語 125 件の層化サンプル(リポジトリ README)。",
+  "metric": "Resolve Rate (Overall)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "提出者がそれぞれ自前の足場で走らせた結果を載せる(-PB 付きは論文著者が既存エージェントを移植して走らせたもの)。",
+  "source": "https://amazon-science.github.io/SWE-PolyBench/",
+  "fetched": [
+    "https://raw.githubusercontent.com/amazon-science/SWE-PolyBench/gh-pages/template/polybench_data.json",
+    "https://amazon-science.github.io/SWE-PolyBench/"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-02-06",
+  "snapshot": "sources/swe-polybench-500/polybench_data_polybench500.json",
+  "paper": "https://arxiv.org/abs/2504.08703",
+  "repo": "https://github.com/amazon-science/SWE-PolyBench",
+  "notes_ja": "ボードのタブ名は PB500。Overall が N/A(一部の言語だけ提出)の行は score を null にし、言語別の値を score_extra に入れた。score_extra には検索(file/node retrieval)指標も含む。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Amazon Q Developer Agent (v20250402)",
+      "agent": "Amazon Q Developer Agent",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 25.0,
+      "score_extra": {
+        "python": 36.0,
+        "java": 26.4,
+        "javascript": 21.6,
+        "typescript": 16.0,
+        "file_retrieval_recall": 61.35,
+        "file_retrieval_precision": 62.88,
+        "node_retrieval_recall": 47.97,
+        "node_retrieval_precision": 48.8
+      },
+      "date": "2025-04-11",
+      "verified": null,
+      "open_source": null,
+      "org": "aws",
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "Aider-PB (Sonnet 3.5)",
+      "agent": "Aider-PB",
+      "model_raw": [
+        "Sonnet 3.5"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 16.4,
+      "score_extra": {
+        "python": 25.6,
+        "java": 15.2,
+        "javascript": 14.4,
+        "typescript": 10.4,
+        "file_retrieval_recall": 42.38,
+        "file_retrieval_precision": 62.3,
+        "node_retrieval_recall": 29.56,
+        "node_retrieval_precision": 46.15
+      },
+      "date": "2025-04-02",
+      "verified": null,
+      "open_source": null,
+      "org": "aider",
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "SWE-agent-PB (Sonnet 3.5)",
+      "agent": "SWE-agent-PB",
+      "model_raw": [
+        "Sonnet 3.5"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 15.4,
+      "score_extra": {
+        "python": 25.6,
+        "java": 16.0,
+        "javascript": 9.6,
+        "typescript": 10.4,
+        "file_retrieval_recall": 41.49,
+        "file_retrieval_precision": 45.17,
+        "node_retrieval_recall": 30.83,
+        "node_retrieval_precision": 41.52
+      },
+      "date": "2025-04-08",
+      "verified": null,
+      "open_source": null,
+      "org": "sweagent",
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "Aider-PB (Deepseek R1)",
+      "agent": "Aider-PB",
+      "model_raw": [
+        "Deepseek R1"
+      ],
+      "model_ids": [
+        "deepseek-r1"
+      ],
+      "model_config": null,
+      "score": 13.2,
+      "score_extra": {
+        "python": 18.4,
+        "java": 13.6,
+        "javascript": 13.6,
+        "typescript": 7.2,
+        "file_retrieval_recall": 38.15,
+        "file_retrieval_precision": 51.17,
+        "node_retrieval_recall": 27.94,
+        "node_retrieval_precision": 39.74
+      },
+      "date": "2025-04-02",
+      "verified": null,
+      "open_source": null,
+      "org": "aider",
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "Aider-PB (Haiku)",
+      "agent": "Aider-PB",
+      "model_raw": [
+        "Haiku"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 11.2,
+      "score_extra": {
+        "python": 19.2,
+        "java": 11.2,
+        "javascript": 8.8,
+        "typescript": 5.6,
+        "file_retrieval_recall": 36.34,
+        "file_retrieval_precision": 52.4,
+        "node_retrieval_recall": 24.15,
+        "node_retrieval_precision": 37.59
+      },
+      "date": "2025-04-02",
+      "verified": null,
+      "open_source": null,
+      "org": "aider",
+      "row_url": null
+    },
+    {
+      "rank": 6,
+      "system": "Agentless-PB (Sonnet 3.5)",
+      "agent": "Agentless-PB",
+      "model_raw": [
+        "Sonnet 3.5"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 10.8,
+      "score_extra": {
+        "python": 19.2,
+        "java": 11.2,
+        "javascript": 9.6,
+        "typescript": 3.2,
+        "file_retrieval_recall": 31.53,
+        "file_retrieval_precision": 47.9,
+        "node_retrieval_recall": 22.86,
+        "node_retrieval_precision": 39.57
+      },
+      "date": "2025-04-02",
+      "verified": null,
+      "open_source": null,
+      "org": "aider",
+      "row_url": null
+    },
+    {
+      "rank": 7,
+      "system": "Aider-PB (Llama3.3 70B)",
+      "agent": "Aider-PB",
+      "model_raw": [
+        "Llama3.3 70B"
+      ],
+      "model_ids": [
+        "llama-3.3-70b"
+      ],
+      "model_config": null,
+      "score": 7.4,
+      "score_extra": {
+        "python": 11.2,
+        "java": 9.6,
+        "javascript": 5.6,
+        "typescript": 3.2,
+        "file_retrieval_recall": 27.86,
+        "file_retrieval_precision": 42.3,
+        "node_retrieval_recall": 17.38,
+        "node_retrieval_precision": 26.97
+      },
+      "date": "2025-04-02",
+      "verified": null,
+      "open_source": null,
+      "org": "aider",
+      "row_url": null
+    },
+    {
+      "rank": 8,
+      "system": "Aider-PB (Mistral-Large)",
+      "agent": "Aider-PB",
+      "model_raw": [
+        "Mistral-Large"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 6.8,
+      "score_extra": {
+        "python": 8.0,
+        "java": 7.2,
+        "javascript": 7.2,
+        "typescript": 4.8,
+        "file_retrieval_recall": 31.04,
+        "file_retrieval_precision": 44.13,
+        "node_retrieval_recall": 24.17,
+        "node_retrieval_precision": 18.49
+      },
+      "date": "2025-04-02",
+      "verified": null,
+      "open_source": null,
+      "org": "aider",
+      "row_url": null
+    },
+    {
+      "rank": 9,
+      "system": "Aider-PB (Deepseek-R1-Distill Llama 70B)",
+      "agent": "Aider-PB",
+      "model_raw": [
+        "Deepseek-R1-Distill Llama 70B"
+      ],
+      "model_ids": [
+        "deepseek-r1-distill-llama-70b"
+      ],
+      "model_config": null,
+      "score": 6.0,
+      "score_extra": {
+        "python": 11.2,
+        "java": 6.4,
+        "javascript": 4.0,
+        "typescript": 2.4,
+        "file_retrieval_recall": 32.03,
+        "file_retrieval_precision": 44.25,
+        "node_retrieval_recall": 20.32,
+        "node_retrieval_precision": 29.64
+      },
+      "date": "2025-04-02",
+      "verified": null,
+      "open_source": null,
+      "org": "aider",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "iSWE-Agent",
+      "agent": "iSWE-Agent",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "java": 32.0
+      },
+      "date": "2026-02-06",
+      "verified": null,
+      "open_source": null,
+      "org": "IBM Research",
+      "row_url": "https://arxiv.org/abs/2603.11356"
+    }
+  ]
+}

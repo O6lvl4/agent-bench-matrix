@@ -1,0 +1,234 @@
+{
+  "id": "mcp-universe-agent",
+  "family": "mcp-universe",
+  "name": "MCP-Universe Agent Track",
+  "board": "mcp-universe.github.io",
+  "category": "tool-use",
+  "measures_ja": "実在のMCPサーバー(地図・GitHub・金融データ・3Dモデリング・ブラウザ・検索)を使い、6領域の実タスクを長い手順で解けるか。",
+  "tasks": null,
+  "tasks_note": "サイト上にタスク総数の記載が無いため null。",
+  "metric": "Overall Success Rate",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "エージェント製品・フレームワーク(ReAct・OpenAI Agent SDK・Cursor Agent など)とモデルの組み合わせで動かした結果。足場が行ごとに違う。",
+  "source": "https://mcp-universe.github.io/#results",
+  "fetched": [
+    "https://mcp-universe.github.io/"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": null,
+  "snapshot": "sources/mcp-universe-agent/leaderboard_panel.html",
+  "paper": "https://arxiv.org/abs/2508.14704",
+  "repo": "https://github.com/SalesforceAIResearch/MCP-Universe",
+  "notes_ja": "行ごとの日付は無く、掲載モデルは2025年秋頃までのもの。領域別の成功率・平均評価スコア・平均ステップ数は score_extra。open_source はボードの鍵/オープンのアイコン表示による。既定表示の Overall Track は ReAct と関数呼び出しの良い方を JS で合成したもので、ここには含めていない。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "ReAct (GPT-5-Medium)",
+      "agent": "ReAct",
+      "model_raw": [
+        "GPT-5-Medium"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": "Medium",
+      "score": 43.72,
+      "score_extra": {
+        "location_navigation": 33.33,
+        "repository_management": 30.3,
+        "financial_analysis": 67.5,
+        "3d_designing": 52.63,
+        "browser_automation": 35.9,
+        "web_searching": 45.45
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "OpenAI Agent SDK (o3-Medium)",
+      "agent": "OpenAI Agent SDK",
+      "model_raw": [
+        "o3-Medium"
+      ],
+      "model_ids": [
+        "o3"
+      ],
+      "model_config": "Medium",
+      "score": 31.6,
+      "score_extra": {
+        "location_navigation": 28.89,
+        "repository_management": 6.06,
+        "financial_analysis": 60.0,
+        "3d_designing": 36.84,
+        "browser_automation": 28.89,
+        "web_searching": 29.09
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "HarmonyReAct (GPT-OSS-120B)",
+      "agent": "HarmonyReAct",
+      "model_raw": [
+        "GPT-OSS-120B"
+      ],
+      "model_ids": [
+        "gpt-oss-120b"
+      ],
+      "model_config": null,
+      "score": 31.17,
+      "score_extra": {
+        "location_navigation": 28.89,
+        "repository_management": 3.03,
+        "financial_analysis": 62.5,
+        "3d_designing": 26.32,
+        "browser_automation": 28.21,
+        "web_searching": 30.91
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://www.notion.so/Unlocking-the-Potential-of-GPT-OSS-with-a-Co-Designed-Agent-Framework-2718397721c0803fbd7fca65072550a3"
+    },
+    {
+      "rank": 4,
+      "system": "ReAct (Claude-4.0-Sonnet)",
+      "agent": "ReAct",
+      "model_raw": [
+        "Claude-4.0-Sonnet"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": null,
+      "score": 29.44,
+      "score_extra": {
+        "location_navigation": 22.22,
+        "repository_management": 12.12,
+        "financial_analysis": 55.0,
+        "3d_designing": 26.32,
+        "browser_automation": 38.46,
+        "web_searching": 21.82
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "Cursor Agent 1.4.5 (Claude-4.0-Sonnet-Thinking)",
+      "agent": "Cursor Agent 1.4.5",
+      "model_raw": [
+        "Claude-4.0-Sonnet-Thinking"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": "Thinking",
+      "score": 26.41,
+      "score_extra": {
+        "location_navigation": 22.22,
+        "repository_management": 9.09,
+        "financial_analysis": 55.0,
+        "3d_designing": 26.32,
+        "browser_automation": 43.59,
+        "web_searching": 7.27
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 6,
+      "system": "ReAct (o3-Medium)",
+      "agent": "ReAct",
+      "model_raw": [
+        "o3-Medium"
+      ],
+      "model_ids": [
+        "o3"
+      ],
+      "model_config": "Medium",
+      "score": 26.41,
+      "score_extra": {
+        "location_navigation": 26.67,
+        "repository_management": 6.06,
+        "financial_analysis": 40.0,
+        "3d_designing": 26.32,
+        "browser_automation": 25.64,
+        "web_searching": 29.09
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 7,
+      "system": "HarmonyReAct (GPT-OSS-20B)",
+      "agent": "HarmonyReAct",
+      "model_raw": [
+        "GPT-OSS-20B"
+      ],
+      "model_ids": [
+        "gpt-oss-20b"
+      ],
+      "model_config": null,
+      "score": 24.24,
+      "score_extra": {
+        "location_navigation": 15.56,
+        "repository_management": 0.0,
+        "financial_analysis": 55.0,
+        "3d_designing": 10.52,
+        "browser_automation": 23.08,
+        "web_searching": 29.09
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://www.notion.so/Unlocking-the-Potential-of-GPT-OSS-with-a-Co-Designed-Agent-Framework-2718397721c0803fbd7fca65072550a3"
+    },
+    {
+      "rank": 8,
+      "system": "OpenAI Agent SDK (GPT-OSS-120B)",
+      "agent": "OpenAI Agent SDK",
+      "model_raw": [
+        "GPT-OSS-120B"
+      ],
+      "model_ids": [
+        "gpt-oss-120b"
+      ],
+      "model_config": null,
+      "score": 11.26,
+      "score_extra": {
+        "location_navigation": 6.67,
+        "repository_management": 6.06,
+        "financial_analysis": 35.0,
+        "3d_designing": 10.53,
+        "browser_automation": 5.13,
+        "web_searching": 5.45
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    }
+  ]
+}

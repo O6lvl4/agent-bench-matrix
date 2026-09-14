@@ -1,0 +1,224 @@
+{
+  "id": "tau2-bench-telecom",
+  "family": "tau-bench",
+  "name": "τ²-bench Telecom",
+  "board": "taubench.com",
+  "category": "tool-use",
+  "measures_ja": "顧客サポート役のエージェントが、通信の接続トラブル対応・支払い・プラン管理をツールとポリシーに従って模擬ユーザーと解決できるか。",
+  "tasks": 114,
+  "tasks_note": "提出データの methodology 記載による。",
+  "metric": "Pass^1",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "標準提出は τ-bench 側の既定の足場・プロンプトで走らせる(提出者は Sierra が多い)。ユーザー役はLLMのシミュレータで、行ごとに使ったシミュレータが異なりうる。",
+  "source": "https://taubench.com/leaderboard?benchmark=core",
+  "fetched": [
+    "https://taubench.com/",
+    "https://taubench.com/assets/index-QtX8yEBE.js",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3.5-397b-a17b-think_sierra_2026-03-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-5_sierra_2026-02-26/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-flash_sierra_2026-03-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_sierra_2026-03-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2_sierra_2026-02-26/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/glm-5-think_sierra_2026-03-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_sierra_2026-02-26/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2-none_sierra_2026-02-26/submission.json"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-03-02",
+  "snapshot": "sources/tau2-bench-telecom/submissions.json",
+  "paper": "https://arxiv.org/abs/2506.07982",
+  "repo": "https://github.com/sierra-research/tau2-bench",
+  "notes_ja": "pass^2〜pass^4(同じタスクをk回とも成功する率)は score_extra に入れた。rank はボード既定表示(Standard のみ)での順位で、Custom 提出は rank を null にした。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Qwen3.5-397B-A17B",
+      "agent": null,
+      "model_raw": [
+        "Qwen3.5-397B-A17B"
+      ],
+      "model_ids": [
+        "qwen3.5-397b-a17b"
+      ],
+      "model_config": "reasoning: enabled; user sim: gpt-5.2; submission type: standard",
+      "score": 97.81,
+      "score_extra": {
+        "pass_hat_2": 95.76,
+        "pass_hat_3": 93.86,
+        "pass_hat_4": 92.11
+      },
+      "date": "2026-03-02",
+      "verified": true,
+      "open_source": null,
+      "org": "Sierra",
+      "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3.5-397b-a17b-think_sierra_2026-03-02/submission.json"
+    },
+    {
+      "rank": 2,
+      "system": "Claude Opus 4.5",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 4.5"
+      ],
+      "model_ids": [
+        "claude-opus-4.5"
+      ],
+      "model_config": "reasoning: high; user sim: gpt-5.2; submission type: standard",
+      "score": 92.32,
+      "score_extra": {
+        "pass_hat_2": 86.11,
+        "pass_hat_3": 81.36,
+        "pass_hat_4": 78.07,
+        "cost": 0.71992
+      },
+      "date": "2026-02-26",
+      "verified": true,
+      "open_source": null,
+      "org": "Sierra",
+      "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-5_sierra_2026-02-26/submission.json"
+    },
+    {
+      "rank": 3,
+      "system": "Gemini 3 Flash",
+      "agent": null,
+      "model_raw": [
+        "Gemini 3 Flash"
+      ],
+      "model_ids": [
+        "gemini-3-flash"
+      ],
+      "model_config": "reasoning: high; user sim: gpt-5.2; submission type: standard",
+      "score": 91.23,
+      "score_extra": {
+        "pass_hat_2": 83.48,
+        "pass_hat_3": 76.54,
+        "pass_hat_4": 70.18
+      },
+      "date": "2026-03-02",
+      "verified": true,
+      "open_source": null,
+      "org": "Sierra",
+      "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-flash_sierra_2026-03-02/submission.json"
+    },
+    {
+      "rank": 4,
+      "system": "Gemini 3 Pro",
+      "agent": null,
+      "model_raw": [
+        "Gemini 3 Pro"
+      ],
+      "model_ids": [
+        "gemini-3-pro"
+      ],
+      "model_config": "reasoning: high; user sim: gpt-5.2; submission type: standard",
+      "score": 91.01,
+      "score_extra": {
+        "pass_hat_2": 84.5,
+        "pass_hat_3": 79.17,
+        "pass_hat_4": 74.56
+      },
+      "date": "2026-03-02",
+      "verified": true,
+      "open_source": null,
+      "org": "Sierra",
+      "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_sierra_2026-03-02/submission.json"
+    },
+    {
+      "rank": 5,
+      "system": "GPT-5.2",
+      "agent": null,
+      "model_raw": [
+        "GPT-5.2"
+      ],
+      "model_ids": [
+        "gpt-5.2"
+      ],
+      "model_config": "reasoning: high; user sim: gpt-5.2; submission type: standard",
+      "score": 89.69,
+      "score_extra": {
+        "pass_hat_2": 82.46,
+        "pass_hat_3": 76.75,
+        "pass_hat_4": 71.93,
+        "cost": 0.09312
+      },
+      "date": "2026-02-26",
+      "verified": true,
+      "open_source": null,
+      "org": "Sierra",
+      "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2_sierra_2026-02-26/submission.json"
+    },
+    {
+      "rank": 6,
+      "system": "GLM-5",
+      "agent": null,
+      "model_raw": [
+        "GLM-5"
+      ],
+      "model_ids": [
+        "glm-5"
+      ],
+      "model_config": "reasoning: enabled; user sim: gpt-5.2; submission type: standard",
+      "score": 86.84,
+      "score_extra": {
+        "pass_hat_2": 76.32,
+        "pass_hat_3": 68.2,
+        "pass_hat_4": 62.28
+      },
+      "date": "2026-03-02",
+      "verified": true,
+      "open_source": null,
+      "org": "Sierra",
+      "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/glm-5-think_sierra_2026-03-02/submission.json"
+    },
+    {
+      "rank": 7,
+      "system": "Claude Sonnet 4.5",
+      "agent": null,
+      "model_raw": [
+        "Claude Sonnet 4.5"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": "reasoning: enabled; user sim: gpt-5.2; submission type: standard",
+      "score": 84.87,
+      "score_extra": {
+        "pass_hat_2": 75.44,
+        "pass_hat_3": 68.86,
+        "pass_hat_4": 64.04,
+        "cost": 0.48769
+      },
+      "date": "2026-02-26",
+      "verified": true,
+      "open_source": null,
+      "org": "Sierra",
+      "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_sierra_2026-02-26/submission.json"
+    },
+    {
+      "rank": 8,
+      "system": "GPT-5.2",
+      "agent": null,
+      "model_raw": [
+        "GPT-5.2"
+      ],
+      "model_ids": [
+        "gpt-5.2"
+      ],
+      "model_config": "reasoning: none; user sim: gpt-5.2; submission type: standard",
+      "score": 57.23684210526315,
+      "score_extra": {
+        "pass_hat_2": 42.83625730994152,
+        "pass_hat_3": 35.526315789473685,
+        "pass_hat_4": 30.701754385964914,
+        "cost": 0.04937742280701755
+      },
+      "date": "2026-02-26",
+      "verified": true,
+      "open_source": null,
+      "org": "Sierra",
+      "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2-none_sierra_2026-02-26/submission.json"
+    }
+  ]
+}

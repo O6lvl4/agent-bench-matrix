@@ -1,0 +1,190 @@
+{
+  "id": "browsergym-weblinx",
+  "family": "weblinx",
+  "name": "WebLINX (BrowserGym)",
+  "board": "huggingface.co/spaces/ServiceNow/browsergym-leaderboard",
+  "category": "web",
+  "measures_ja": "人と対話しながら進める実在サイトの操作記録に対し、次の一手を正しく予測できるか(静的ベンチマーク)。",
+  "tasks": null,
+  "tasks_note": "BrowserGym 版で使う件数はボードに記載なし。",
+  "metric": "Score",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "BrowserGym 環境で走らせた結果を提出者が JSON で登録する。多くの行は AgentLab の GenericAgent に各モデルを載せたもので、独自エージェントの行も混ざる。",
+  "source": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard",
+  "fetched": [
+    "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+    "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/<agent>/weblinx.json",
+    "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/raw/main/app.py"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2024-11-07",
+  "snapshot": "sources/browsergym-weblinx/results_weblinx.json",
+  "paper": "https://arxiv.org/abs/2412.05467",
+  "repo": "https://github.com/ServiceNow/BrowserGym",
+  "notes_ja": "ボードの WebLINX タブ。結果の無いエージェントはボードでは「-」行として並ぶが、ここでは除いた。system はエージェント名で、「足場-モデル」の形を agent と model_raw に分けた。score_extra の真偽系列(benchmark_specific など)は提出者の自己申告。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "GenericAgent-Claude-3.5-Sonnet",
+      "agent": "GenericAgent",
+      "model_raw": [
+        "Claude-3.5-Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 13.7,
+      "score_extra": {
+        "std_err": 0.6,
+        "benchmark_specific": "No",
+        "benchmark_tuned": "No",
+        "followed_evaluation_protocol": "Yes",
+        "reproducible": "Yes",
+        "study_id": "b9451759-4f0e-492c-a3c8-fa5109d2d9b1",
+        "comments": "NA"
+      },
+      "date": "2024-11-07",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/main/results/GenericAgent-Claude-3.5-Sonnet/README.md"
+    },
+    {
+      "rank": 2,
+      "system": "GenericAgent-GPT-4o",
+      "agent": "GenericAgent",
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 12.5,
+      "score_extra": {
+        "std_err": 0.6,
+        "benchmark_specific": "No",
+        "benchmark_tuned": "No",
+        "followed_evaluation_protocol": "Yes",
+        "reproducible": "Yes",
+        "study_id": "b9451759-4f0e-492c-a3c8-fa5109d2d9b1",
+        "comments": "NA"
+      },
+      "date": "2024-11-07",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/main/results/GenericAgent-GPT-4o/README.md"
+    },
+    {
+      "rank": 3,
+      "system": "GenericAgent-GPT-o1-mini",
+      "agent": "GenericAgent",
+      "model_raw": [
+        "GPT-o1-mini"
+      ],
+      "model_ids": [
+        "o1-mini"
+      ],
+      "model_config": null,
+      "score": 12.5,
+      "score_extra": {
+        "std_err": 0.6,
+        "benchmark_specific": "No",
+        "benchmark_tuned": "No",
+        "followed_evaluation_protocol": "Yes",
+        "reproducible": "Yes",
+        "study_id": "b9451759-4f0e-492c-a3c8-fa5109d2d9b1",
+        "comments": "NA"
+      },
+      "date": "2024-11-07",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/main/results/GenericAgent-GPT-o1-mini/README.md"
+    },
+    {
+      "rank": 4,
+      "system": "GenericAgent-GPT-4o-mini",
+      "agent": "GenericAgent",
+      "model_raw": [
+        "GPT-4o-mini"
+      ],
+      "model_ids": [
+        "gpt-4o-mini"
+      ],
+      "model_config": null,
+      "score": 11.6,
+      "score_extra": {
+        "std_err": 0.6,
+        "benchmark_specific": "No",
+        "benchmark_tuned": "No",
+        "followed_evaluation_protocol": "Yes",
+        "reproducible": "Yes",
+        "study_id": "b9451759-4f0e-492c-a3c8-fa5109d2d9b1",
+        "comments": "NA"
+      },
+      "date": "2024-11-07",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/main/results/GenericAgent-GPT-4o-mini/README.md"
+    },
+    {
+      "rank": 5,
+      "system": "GenericAgent-Llama-3.1-70b",
+      "agent": "GenericAgent",
+      "model_raw": [
+        "Llama-3.1-70b"
+      ],
+      "model_ids": [
+        "llama-3.1-70b"
+      ],
+      "model_config": null,
+      "score": 8.9,
+      "score_extra": {
+        "std_err": 0.5,
+        "benchmark_specific": "No",
+        "benchmark_tuned": "No",
+        "followed_evaluation_protocol": "Yes",
+        "reproducible": "Yes",
+        "study_id": "b9451759-4f0e-492c-a3c8-fa5109d2d9b1",
+        "comments": "NA"
+      },
+      "date": "2024-11-07",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/main/results/GenericAgent-Llama-3.1-70b/README.md"
+    },
+    {
+      "rank": 6,
+      "system": "GenericAgent-Llama-3.1-405b",
+      "agent": "GenericAgent",
+      "model_raw": [
+        "Llama-3.1-405b"
+      ],
+      "model_ids": [
+        "llama-3.1-405b"
+      ],
+      "model_config": null,
+      "score": 7.9,
+      "score_extra": {
+        "std_err": 0.5,
+        "benchmark_specific": "No",
+        "benchmark_tuned": "No",
+        "followed_evaluation_protocol": "Yes",
+        "reproducible": "Yes",
+        "study_id": "b9451759-4f0e-492c-a3c8-fa5109d2d9b1",
+        "comments": "NA"
+      },
+      "date": "2024-11-07",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/main/results/GenericAgent-Llama-3.1-405b/README.md"
+    }
+  ]
+}

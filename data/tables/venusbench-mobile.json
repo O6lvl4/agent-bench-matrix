@@ -1,0 +1,439 @@
+{
+  "id": "venusbench-mobile",
+  "family": "venusbench-mobile",
+  "name": "VenusBench-Mobile",
+  "board": "ui-venus.github.io/VenusBench-Mobile-Leaderboard",
+  "category": "computer-use",
+  "measures_ja": "27のオープンソース Android アプリで、曖昧な指示・衝突処理・複数回のやり取りなど利用者寄りの難しいタスクを完了できるか。",
+  "tasks": 149,
+  "tasks_note": "主タスク149件。安定性評価用の変種80件は別(score_extra.stability_*)。",
+  "metric": "Primary success rate (%)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "作成チーム(Ant Group Venus Team)が論文の表と提出結果をまとめたもの。行ごとの足場は setup(End-to-end / Planner-executor など)。",
+  "source": "https://ui-venus.github.io/VenusBench-Mobile-Leaderboard/",
+  "fetched": [
+    "https://ui-venus.github.io/VenusBench-Mobile-Leaderboard/results/venusbench-mobile.json"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": null,
+  "snapshot": "sources/venusbench-mobile/venusbench-mobile.json",
+  "paper": "https://arxiv.org/abs/2604.06182",
+  "repo": "https://github.com/inclusionAI/UI-Venus/tree/VenusBench-Mobile",
+  "notes_ja": "行の日付は無く、JSON の lastUpdated は「May 11, 2026」。open_source はボードの Type(Open-source / Closed-source)。category_* は9つのタスク種別、stability_spr は5設定すべてで通った率。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Gemini-3-Pro + UI-Venus-72B",
+      "agent": null,
+      "model_raw": [
+        "Gemini-3-Pro",
+        "UI-Venus-72B"
+      ],
+      "model_ids": [
+        "gemini-3-pro",
+        "ui-venus-72b"
+      ],
+      "model_config": "setup=Planner-executor",
+      "score": 36.9,
+      "score_extra": {
+        "category_fa": 54.6,
+        "category_cf": 4.6,
+        "category_va": 56.3,
+        "category_mr": 20.0,
+        "category_gsa": 0.0,
+        "category_guim": 11.1,
+        "category_hgb": 41.2,
+        "category_nr": 75.0,
+        "category_bc": 40.0,
+        "stability_original": 35,
+        "stability_chinese": 35,
+        "stability_variation": 25,
+        "stability_dark": 35,
+        "stability_pad": 30,
+        "stability_min": 25,
+        "stability_max": 35,
+        "stability_spr": 15,
+        "cost_tt_k": 259.7,
+        "cost_pt": 86.3
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "GPT-5.1 + UI-Venus-72B",
+      "agent": null,
+      "model_raw": [
+        "GPT-5.1",
+        "UI-Venus-72B"
+      ],
+      "model_ids": [
+        "gpt-5.1",
+        "ui-venus-72b"
+      ],
+      "model_config": "setup=Planner-executor",
+      "score": 26.9,
+      "score_extra": {
+        "category_fa": 54.6,
+        "category_cf": 0.0,
+        "category_va": 31.3,
+        "category_mr": 0.0,
+        "category_gsa": 0.0,
+        "category_guim": 11.1,
+        "category_hgb": 26.5,
+        "category_nr": 56.3,
+        "category_bc": 40.0,
+        "stability_original": 40,
+        "stability_chinese": 15,
+        "stability_variation": 35,
+        "stability_dark": 30,
+        "stability_pad": 20,
+        "stability_min": 15,
+        "stability_max": 40,
+        "stability_spr": 5,
+        "cost_tt_k": 167.5,
+        "cost_pt": 54.6
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "Kimi K2.5",
+      "agent": null,
+      "model_raw": [
+        "Kimi K2.5"
+      ],
+      "model_ids": [
+        "kimi-k2.5"
+      ],
+      "model_config": "setup=End-to-end standalone agent",
+      "score": 24.8,
+      "score_extra": {
+        "category_fa": 40.9,
+        "category_cf": 0.0,
+        "category_va": 50.0,
+        "category_mr": 10.0,
+        "category_gsa": 0.0,
+        "category_guim": 0.0,
+        "category_hgb": 20.6,
+        "category_nr": 43.8,
+        "category_bc": 50.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "Seed 2.0",
+      "agent": null,
+      "model_raw": [
+        "Seed 2.0"
+      ],
+      "model_ids": [
+        "seed-2.0"
+      ],
+      "model_config": "setup=End-to-end standalone agent",
+      "score": 18.1,
+      "score_extra": {
+        "category_fa": 18.2,
+        "category_cf": 4.6,
+        "category_va": 43.8,
+        "category_mr": 10.0,
+        "category_gsa": 0.0,
+        "category_guim": 11.1,
+        "category_hgb": 17.7,
+        "category_nr": 31.3,
+        "category_bc": 20.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "UI-Venus-72B",
+      "agent": null,
+      "model_raw": [
+        "UI-Venus-72B"
+      ],
+      "model_ids": [
+        "ui-venus-72b"
+      ],
+      "model_config": "setup=End-to-end agent",
+      "score": 15.4,
+      "score_extra": {
+        "category_fa": 22.7,
+        "category_cf": 4.6,
+        "category_va": 12.5,
+        "category_mr": 0.0,
+        "category_gsa": 10.0,
+        "category_guim": 0.0,
+        "category_hgb": 17.7,
+        "category_nr": 50.0,
+        "category_bc": 0.0,
+        "stability_original": 15,
+        "stability_chinese": 15,
+        "stability_variation": 20,
+        "stability_dark": 15,
+        "stability_pad": 5,
+        "stability_min": 5,
+        "stability_max": 20,
+        "stability_spr": 0,
+        "cost_tt_k": 850.0,
+        "cost_pt": 153.2
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/inclusionAI/UI-Venus"
+    },
+    {
+      "rank": 6,
+      "system": "MAI-UI-8B",
+      "agent": null,
+      "model_raw": [
+        "MAI-UI-8B"
+      ],
+      "model_ids": [
+        "mai-ui-8b"
+      ],
+      "model_config": "setup=End-to-end agent",
+      "score": 12.8,
+      "score_extra": {
+        "category_fa": 9.1,
+        "category_cf": 13.6,
+        "category_va": 25.0,
+        "category_mr": 0.0,
+        "category_gsa": 10.0,
+        "category_guim": 11.1,
+        "category_hgb": 5.9,
+        "category_nr": 31.3,
+        "category_bc": 10.0,
+        "stability_original": 25,
+        "stability_chinese": 20,
+        "stability_variation": 30,
+        "stability_dark": 30,
+        "stability_pad": 15,
+        "stability_min": 15,
+        "stability_max": 30,
+        "stability_spr": 0,
+        "cost_tt_k": 601.6,
+        "cost_pt": 102.9
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 7,
+      "system": "MA3 (GUI-Owl-7B)",
+      "agent": "MA3",
+      "model_raw": [
+        "GUI-Owl-7B"
+      ],
+      "model_ids": [
+        "gui-owl-7b"
+      ],
+      "model_config": "setup=Multi-agent framework",
+      "score": 12.1,
+      "score_extra": {
+        "category_fa": 18.2,
+        "category_cf": 9.1,
+        "category_va": 6.3,
+        "category_mr": 0.0,
+        "category_gsa": 0.0,
+        "category_guim": 0.0,
+        "category_hgb": 11.8,
+        "category_nr": 31.3,
+        "category_bc": 20.0,
+        "stability_original": 10,
+        "stability_chinese": 15,
+        "stability_variation": 15,
+        "stability_dark": 20,
+        "stability_pad": 10,
+        "stability_min": 10,
+        "stability_max": 20,
+        "stability_spr": 0,
+        "cost_tt_k": 1640.0,
+        "cost_pt": 438.7
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 8,
+      "system": "Qwen3-VL-30B-A3B",
+      "agent": null,
+      "model_raw": [
+        "Qwen3-VL-30B-A3B"
+      ],
+      "model_ids": [
+        "qwen3-vl-30b-a3b"
+      ],
+      "model_config": "setup=End-to-end agent",
+      "score": 8.7,
+      "score_extra": {
+        "category_fa": 22.7,
+        "category_cf": 4.6,
+        "category_va": 18.8,
+        "category_mr": 0.0,
+        "category_gsa": 0.0,
+        "category_guim": 0.0,
+        "category_hgb": 5.9,
+        "category_nr": 6.3,
+        "category_bc": 10.0,
+        "stability_original": 10,
+        "stability_chinese": 10,
+        "stability_variation": 15,
+        "stability_dark": 10,
+        "stability_pad": 5,
+        "stability_min": 5,
+        "stability_max": 15,
+        "stability_spr": 0,
+        "cost_tt_k": 463.2,
+        "cost_pt": 138.9
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 9,
+      "system": "UI-Venus-7B",
+      "agent": null,
+      "model_raw": [
+        "UI-Venus-7B"
+      ],
+      "model_ids": [
+        "ui-venus-7b"
+      ],
+      "model_config": "setup=End-to-end agent",
+      "score": 8.1,
+      "score_extra": {
+        "category_fa": 13.6,
+        "category_cf": 4.6,
+        "category_va": 25.0,
+        "category_mr": 0.0,
+        "category_gsa": 10.0,
+        "category_guim": 0.0,
+        "category_hgb": 0.0,
+        "category_nr": 18.8,
+        "category_bc": 0.0,
+        "stability_original": 15,
+        "stability_chinese": 20,
+        "stability_variation": 15,
+        "stability_dark": 10,
+        "stability_pad": 5,
+        "stability_min": 5,
+        "stability_max": 20,
+        "stability_spr": 5,
+        "cost_tt_k": 447.4,
+        "cost_pt": 101.5
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/inclusionAI/UI-Venus"
+    },
+    {
+      "rank": 10,
+      "system": "Qwen3-VL-8B",
+      "agent": null,
+      "model_raw": [
+        "Qwen3-VL-8B"
+      ],
+      "model_ids": [
+        "qwen3-vl-8b"
+      ],
+      "model_config": "setup=End-to-end agent",
+      "score": 6.7,
+      "score_extra": {
+        "category_fa": 18.2,
+        "category_cf": 4.6,
+        "category_va": 18.8,
+        "category_mr": 0.0,
+        "category_gsa": 0.0,
+        "category_guim": 0.0,
+        "category_hgb": 0.0,
+        "category_nr": 6.3,
+        "category_bc": 10.0,
+        "stability_original": 10,
+        "stability_chinese": 20,
+        "stability_variation": 15,
+        "stability_dark": 10,
+        "stability_pad": 10,
+        "stability_min": 10,
+        "stability_max": 20,
+        "stability_spr": 0,
+        "cost_tt_k": 357.7,
+        "cost_pt": 132.4
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 11,
+      "system": "GUI-Owl-7B",
+      "agent": null,
+      "model_raw": [
+        "GUI-Owl-7B"
+      ],
+      "model_ids": [
+        "gui-owl-7b"
+      ],
+      "model_config": "setup=End-to-end agent",
+      "score": 6.7,
+      "score_extra": {
+        "category_fa": 13.6,
+        "category_cf": 0.0,
+        "category_va": 18.8,
+        "category_mr": 0.0,
+        "category_gsa": 0.0,
+        "category_guim": 11.1,
+        "category_hgb": 2.9,
+        "category_nr": 12.5,
+        "category_bc": 0.0,
+        "stability_original": 15,
+        "stability_chinese": 20,
+        "stability_variation": 10,
+        "stability_dark": 15,
+        "stability_pad": 0,
+        "stability_min": 0,
+        "stability_max": 20,
+        "stability_spr": 0,
+        "cost_tt_k": 373.7,
+        "cost_pt": 146.5
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    }
+  ]
+}

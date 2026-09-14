@@ -1,0 +1,677 @@
+{
+  "id": "mcp-atlas",
+  "family": "mcp-atlas",
+  "name": "MCP-Atlas",
+  "board": "labs.scale.com",
+  "category": "tool-use",
+  "measures_ja": "36の実MCPサーバー・220ツールから、紛らわしい候補の中で正しいツールを見つけて呼び、複数手順の結果を正しい最終回答にまとめられるか。",
+  "tasks": 1000,
+  "tasks_note": "ページ記載「1,000 Tasks (500 public + 500 private)」。掲載スコアは方法論表の「All 1000」列と一致する。",
+  "metric": "Pass Rate",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "Scale が共通のハーネス(実MCPサーバーのコンテナ、1タスク最大100ツール呼び出し、追加のシステムプロンプト無し)で各モデルを実行し、LLM審査で採点する。",
+  "source": "https://labs.scale.com/leaderboard/mcp_atlas",
+  "fetched": [
+    "https://labs.scale.com/leaderboard/mcp_atlas"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-09-04",
+  "snapshot": "sources/mcp-atlas/leaderboard_entries.json",
+  "paper": "https://arxiv.org/abs/2602.00933",
+  "repo": "https://github.com/scaleapi/mcp-atlas",
+  "notes_ja": "rank は Scale の信頼区間を考慮した順位で、同順位が多い。± は ci_plus_minus。date は掲載データの createdAt(登録日)。2026年4月に採点方法を更新し全モデルを再採点したとページに記載。ページ上部の「83.6% Top Pass Rate」は表の最高値(88.1)と食い違う。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Muse Spark 1.1",
+      "agent": null,
+      "model_raw": [
+        "Muse Spark 1.1"
+      ],
+      "model_ids": [
+        "muse-spark-1.1"
+      ],
+      "model_config": null,
+      "score": 88.1,
+      "score_extra": {
+        "ci_plus_minus": 1.95
+      },
+      "date": "2026-07-09",
+      "verified": null,
+      "open_source": null,
+      "org": "meta",
+      "row_url": null
+    },
+    {
+      "rank": 1,
+      "system": "claude-fable-5-1",
+      "agent": null,
+      "model_raw": [
+        "claude-fable-5-1"
+      ],
+      "model_ids": [
+        "claude-fable-5.1"
+      ],
+      "model_config": null,
+      "score": 87.2,
+      "score_extra": {
+        "ci_plus_minus": 2.05
+      },
+      "date": "2026-09-04",
+      "verified": null,
+      "open_source": null,
+      "org": "anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "claude-opus-5 (xhigh)",
+      "agent": null,
+      "model_raw": [
+        "claude-opus-5 (xhigh)"
+      ],
+      "model_ids": [
+        "claude-opus-5"
+      ],
+      "model_config": "xhigh",
+      "score": 85.8,
+      "score_extra": {
+        "ci_plus_minus": 2.1
+      },
+      "date": "2026-08-03",
+      "verified": null,
+      "open_source": null,
+      "org": "anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "gemini-3.5-flash (high)",
+      "agent": null,
+      "model_raw": [
+        "gemini-3.5-flash (high)"
+      ],
+      "model_ids": [
+        "gemini-3.5-flash"
+      ],
+      "model_config": "high",
+      "score": 83.6,
+      "score_extra": {
+        "ci_plus_minus": 2.3
+      },
+      "date": "2026-05-19",
+      "verified": null,
+      "open_source": null,
+      "org": "google",
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "Claude Fable 5",
+      "agent": null,
+      "model_raw": [
+        "Claude Fable 5"
+      ],
+      "model_ids": [
+        "claude-fable-5"
+      ],
+      "model_config": null,
+      "score": 83.3,
+      "score_extra": {
+        "ci_plus_minus": 2.25
+      },
+      "date": "2026-06-09",
+      "verified": null,
+      "open_source": null,
+      "org": "anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "kimi-k3 (max)",
+      "agent": null,
+      "model_raw": [
+        "kimi-k3 (max)"
+      ],
+      "model_ids": [
+        "kimi-k3"
+      ],
+      "model_config": "max",
+      "score": 82.3,
+      "score_extra": {
+        "ci_plus_minus": 2.35
+      },
+      "date": "2026-07-20",
+      "verified": null,
+      "open_source": null,
+      "org": "kimi",
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "claude-opus-4-8 (max)",
+      "agent": null,
+      "model_raw": [
+        "claude-opus-4-8 (max)"
+      ],
+      "model_ids": [
+        "claude-opus-4.8"
+      ],
+      "model_config": "max",
+      "score": 82.2,
+      "score_extra": {
+        "ci_plus_minus": 2.4
+      },
+      "date": "2026-05-28",
+      "verified": null,
+      "open_source": null,
+      "org": "anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "Muse Spark",
+      "agent": null,
+      "model_raw": [
+        "Muse Spark"
+      ],
+      "model_ids": [
+        "muse-spark"
+      ],
+      "model_config": null,
+      "score": 82.2,
+      "score_extra": {
+        "ci_plus_minus": 2.3
+      },
+      "date": "2026-04-08",
+      "verified": null,
+      "open_source": null,
+      "org": "meta",
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "gpt-5.6 (sol)",
+      "agent": null,
+      "model_raw": [
+        "gpt-5.6 (sol)"
+      ],
+      "model_ids": [
+        "gpt-5.6-sol"
+      ],
+      "model_config": null,
+      "score": 81.8,
+      "score_extra": {
+        "ci_plus_minus": 2.4
+      },
+      "date": "2026-07-15",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "Inkling-small",
+      "agent": null,
+      "model_raw": [
+        "Inkling-small"
+      ],
+      "model_ids": [
+        "inkling-small"
+      ],
+      "model_config": null,
+      "score": 79.2,
+      "score_extra": {
+        "ci_plus_minus": 2.5
+      },
+      "date": "2026-07-30",
+      "verified": null,
+      "open_source": null,
+      "org": "thinkingmachines",
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "claude-opus-4-7 (max)",
+      "agent": null,
+      "model_raw": [
+        "claude-opus-4-7 (max)"
+      ],
+      "model_ids": [
+        "claude-opus-4.7"
+      ],
+      "model_config": "max",
+      "score": 79.1,
+      "score_extra": {
+        "ci_plus_minus": 2.5
+      },
+      "date": "2026-04-08",
+      "verified": null,
+      "open_source": null,
+      "org": "anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "gemini-3.1-pro-preview (high)",
+      "agent": null,
+      "model_raw": [
+        "gemini-3.1-pro-preview (high)"
+      ],
+      "model_ids": [
+        "gemini-3.1-pro-preview"
+      ],
+      "model_config": "high",
+      "score": 78.2,
+      "score_extra": {
+        "ci_plus_minus": 2.5
+      },
+      "date": "2025-11-24",
+      "verified": null,
+      "open_source": null,
+      "org": "google",
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "glm-5p2",
+      "agent": null,
+      "model_raw": [
+        "glm-5p2"
+      ],
+      "model_ids": [
+        "glm-5.2"
+      ],
+      "model_config": null,
+      "score": 77.8,
+      "score_extra": {
+        "ci_plus_minus": 2.6
+      },
+      "date": "2026-07-20",
+      "verified": null,
+      "open_source": null,
+      "org": "zai",
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "claude-opus-4-6 (max)",
+      "agent": null,
+      "model_raw": [
+        "claude-opus-4-6 (max)"
+      ],
+      "model_ids": [
+        "claude-opus-4.6"
+      ],
+      "model_config": "max",
+      "score": 76.8,
+      "score_extra": {
+        "ci_plus_minus": 2.7
+      },
+      "date": "2025-12-18",
+      "verified": null,
+      "open_source": null,
+      "org": "anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "Inkling (xHigh)",
+      "agent": null,
+      "model_raw": [
+        "Inkling (xHigh)"
+      ],
+      "model_ids": [
+        "inkling"
+      ],
+      "model_config": "xHigh",
+      "score": 76,
+      "score_extra": {
+        "ci_plus_minus": 2.6
+      },
+      "date": "2026-07-15",
+      "verified": null,
+      "open_source": null,
+      "org": "thinkingmachines",
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "glm-5p1",
+      "agent": null,
+      "model_raw": [
+        "glm-5p1"
+      ],
+      "model_ids": [
+        "glm-5.1"
+      ],
+      "model_config": null,
+      "score": 75.6,
+      "score_extra": {
+        "ci_plus_minus": 2.7
+      },
+      "date": "2025-12-17",
+      "verified": null,
+      "open_source": null,
+      "org": "zai",
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "gpt-5.5 (xhigh)",
+      "agent": null,
+      "model_raw": [
+        "gpt-5.5 (xhigh)"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": "xhigh",
+      "score": 75.3,
+      "score_extra": {
+        "ci_plus_minus": 2.7
+      },
+      "date": "2026-04-28",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": 13,
+      "system": "gpt-5.4 (xhigh)",
+      "agent": null,
+      "model_raw": [
+        "gpt-5.4 (xhigh)"
+      ],
+      "model_ids": [
+        "gpt-5.4"
+      ],
+      "model_config": "xhigh",
+      "score": 70.6,
+      "score_extra": {
+        "ci_plus_minus": 2.8
+      },
+      "date": "2025-11-30",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": 13,
+      "system": "gemini-3-pro-preview",
+      "agent": null,
+      "model_raw": [
+        "gemini-3-pro-preview"
+      ],
+      "model_ids": [
+        "gemini-3-pro-preview"
+      ],
+      "model_config": null,
+      "score": 70.3,
+      "score_extra": {
+        "ci_plus_minus": 2.8
+      },
+      "date": "2025-12-18",
+      "verified": null,
+      "open_source": null,
+      "org": "google",
+      "row_url": null
+    },
+    {
+      "rank": 13,
+      "system": "claude-opus-4-5 (high)",
+      "agent": null,
+      "model_raw": [
+        "claude-opus-4-5 (high)"
+      ],
+      "model_ids": [
+        "claude-opus-4.5"
+      ],
+      "model_config": "high",
+      "score": 69.8,
+      "score_extra": {
+        "ci_plus_minus": 2.9
+      },
+      "date": "2025-09-10",
+      "verified": null,
+      "open_source": null,
+      "org": "anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 13,
+      "system": "claude-sonnet-4-6",
+      "agent": null,
+      "model_raw": [
+        "claude-sonnet-4-6"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.6"
+      ],
+      "model_config": null,
+      "score": 69.5,
+      "score_extra": {
+        "ci_plus_minus": 2.9
+      },
+      "date": "2025-11-06",
+      "verified": null,
+      "open_source": null,
+      "org": "anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 17,
+      "system": "gpt-5.2 (xhigh)",
+      "agent": null,
+      "model_raw": [
+        "gpt-5.2 (xhigh)"
+      ],
+      "model_ids": [
+        "gpt-5.2"
+      ],
+      "model_config": "xhigh",
+      "score": 67.6,
+      "score_extra": {
+        "ci_plus_minus": 2.9
+      },
+      "date": "2025-09-10",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": 18,
+      "system": "kimi-k2p5",
+      "agent": null,
+      "model_raw": [
+        "kimi-k2p5"
+      ],
+      "model_ids": [
+        "kimi-k2.5"
+      ],
+      "model_config": null,
+      "score": 64.4,
+      "score_extra": {
+        "ci_plus_minus": 3
+      },
+      "date": "2025-09-10",
+      "verified": null,
+      "open_source": null,
+      "org": "kimi",
+      "row_url": null
+    },
+    {
+      "rank": 18,
+      "system": "gemini-3-flash-preview",
+      "agent": null,
+      "model_raw": [
+        "gemini-3-flash-preview"
+      ],
+      "model_ids": [
+        "gemini-3-flash-preview"
+      ],
+      "model_config": null,
+      "score": 62,
+      "score_extra": {
+        "ci_plus_minus": 3
+      },
+      "date": "2025-09-18",
+      "verified": null,
+      "open_source": null,
+      "org": "google",
+      "row_url": null
+    },
+    {
+      "rank": 19,
+      "system": "claude-sonnet-4-5 (thinking)",
+      "agent": null,
+      "model_raw": [
+        "claude-sonnet-4-5 (thinking)"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": "thinking",
+      "score": 59.5,
+      "score_extra": {
+        "ci_plus_minus": 3.1
+      },
+      "date": "2025-12-16",
+      "verified": null,
+      "open_source": null,
+      "org": "anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 19,
+      "system": "glm-4p7",
+      "agent": null,
+      "model_raw": [
+        "glm-4p7"
+      ],
+      "model_ids": [
+        "glm-4.7"
+      ],
+      "model_config": null,
+      "score": 58.1,
+      "score_extra": {
+        "ci_plus_minus": 3
+      },
+      "date": "2025-09-10",
+      "verified": null,
+      "open_source": null,
+      "org": "zai",
+      "row_url": null
+    },
+    {
+      "rank": 19,
+      "system": "gemini-3.1-flash-lite (high)",
+      "agent": null,
+      "model_raw": [
+        "gemini-3.1-flash-lite (high)"
+      ],
+      "model_ids": [
+        "gemini-3.1-flash-lite"
+      ],
+      "model_config": "high",
+      "score": 57.1,
+      "score_extra": {
+        "ci_plus_minus": 3
+      },
+      "date": "2026-01-08",
+      "verified": null,
+      "open_source": null,
+      "org": "google",
+      "row_url": null
+    },
+    {
+      "rank": 19,
+      "system": "gpt-5.4-mini (xhigh)",
+      "agent": null,
+      "model_raw": [
+        "gpt-5.4-mini (xhigh)"
+      ],
+      "model_ids": [
+        "gpt-5.4-mini"
+      ],
+      "model_config": "xhigh",
+      "score": 56.7,
+      "score_extra": {
+        "ci_plus_minus": 3.1
+      },
+      "date": "2025-09-10",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": 24,
+      "system": "gpt-5.1 (high)",
+      "agent": null,
+      "model_raw": [
+        "gpt-5.1 (high)"
+      ],
+      "model_ids": [
+        "gpt-5.1"
+      ],
+      "model_config": "high",
+      "score": 50.1,
+      "score_extra": {
+        "ci_plus_minus": 3.1
+      },
+      "date": "2025-09-10",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": 25,
+      "system": "o3-pro",
+      "agent": null,
+      "model_raw": [
+        "o3-pro"
+      ],
+      "model_ids": [
+        "o3-pro"
+      ],
+      "model_config": null,
+      "score": 44.5,
+      "score_extra": {
+        "ci_plus_minus": 3.1
+      },
+      "date": "2025-09-10",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": 26,
+      "system": "claude-haiku-4-5",
+      "agent": null,
+      "model_raw": [
+        "claude-haiku-4-5"
+      ],
+      "model_ids": [
+        "claude-haiku-4.5"
+      ],
+      "model_config": null,
+      "score": 40.2,
+      "score_extra": {
+        "ci_plus_minus": 3
+      },
+      "date": "2025-09-10",
+      "verified": null,
+      "open_source": null,
+      "org": "anthropic",
+      "row_url": null
+    }
+  ]
+}

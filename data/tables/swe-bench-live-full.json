@@ -1,0 +1,116 @@
+{
+  "id": "swe-bench-live-full",
+  "family": "swe-bench-live",
+  "name": "SWE-bench-Live Full",
+  "board": "swe-bench-live.github.io",
+  "category": "coding",
+  "measures_ja": "SWE-bench-Live の Python タスク全体で、テストを通すパッチを作れるか。",
+  "tasks": null,
+  "tasks_note": "行ごとの total は 1319。データセットは更新され続けるため件数は固定ではない。",
+  "metric": "Resolved (%)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "提出者がそれぞれの足場で走らせた結果を載せる。メンテナ(Microsoft)が OpenHands・SWE-agent・Claude Code 等で走らせた参照行も含む。",
+  "source": "https://swe-bench-live.github.io/",
+  "fetched": [
+    "https://swe-bench-live.github.io/reports-0605.jsonl",
+    "https://swe-bench-live.github.io/leaderboard.js",
+    "https://swe-bench-live.github.io/"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2025-05-01",
+  "snapshot": "sources/swe-bench-live-full/reports-0605_full.json",
+  "paper": "https://arxiv.org/abs/2505.23419",
+  "repo": "https://github.com/microsoft/SWE-bench-Live",
+  "notes_ja": "score はボードと同じく resolved / total を小数1桁に丸めた値。total が行ごとに違う表では分母が揃っていない。verified は 2026-08 以降の検証済み提出に付く Verified タグ。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "OpenHands + Claude 3.7 Sonnet",
+      "agent": "OpenHands",
+      "model_raw": [
+        "Claude 3.7 Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": null,
+      "score": 19.3,
+      "score_extra": {
+        "resolved_count": 254,
+        "num_valid_inst": 1319
+      },
+      "date": "2025-05-01",
+      "verified": false,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "SWE-agent + GPT 4.1",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "GPT 4.1"
+      ],
+      "model_ids": [
+        "gpt-4.1"
+      ],
+      "model_config": null,
+      "score": 18.6,
+      "score_extra": {
+        "resolved_count": 245,
+        "num_valid_inst": 1319
+      },
+      "date": "2025-05-01",
+      "verified": false,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "SWE-agent + Claude 3.7 Sonnet",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "Claude 3.7 Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": null,
+      "score": 17.1,
+      "score_extra": {
+        "resolved_count": 226,
+        "num_valid_inst": 1319
+      },
+      "date": "2025-05-01",
+      "verified": false,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "SWE-agent + GPT 4o",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "GPT 4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 9.1,
+      "score_extra": {
+        "resolved_count": 120,
+        "num_valid_inst": 1319
+      },
+      "date": "2025-05-01",
+      "verified": false,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    }
+  ]
+}

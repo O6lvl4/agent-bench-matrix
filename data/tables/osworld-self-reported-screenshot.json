@@ -1,0 +1,1101 @@
+{
+  "id": "osworld-self-reported-screenshot",
+  "family": "osworld",
+  "name": "OSWorld (self-reported, Screenshot)",
+  "board": "os-world.github.io (osworld-v1.xlang.ai)",
+  "category": "computer-use",
+  "measures_ja": "実機の Ubuntu デスクトップ上で、Chrome・LibreOffice・GIMP・VS Code などを使う実タスクを最後までこなせるか。",
+  "tasks": 369,
+  "tasks_note": "サイト記載は369タスク(Google Drive 系8タスクを除く361でも可)。自己申告のため各行が何タスクで測ったかは行ごとに異なりうる。",
+  "metric": "Success rate (%)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "提出者の自己申告(スクリーンショットのみを入力)。環境・ステップ上限・足場は提出者任せで、OSWorld-Verified 以前の版の結果を多く含む。",
+  "source": "https://os-world.github.io/",
+  "fetched": [
+    "http://osworld-v1.xlang.ai/static/data/self_reported_results.xlsx"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-03-23",
+  "snapshot": "sources/osworld-self-reported-screenshot/self_reported_results.Screenshot.json",
+  "paper": "https://arxiv.org/abs/2404.07972",
+  "repo": "https://github.com/xlang-ai/OSWorld",
+  "notes_ja": "ボード上では「self-reported results」リンクから開く旧タブ。順位はシートの並び順(ボードの表示どおり)。「~ 28」のような概算値は score_extra.approximate=true とした。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "AskUI VisionAgent",
+      "agent": "AskUI VisionAgent",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": "General Model, Max Steps 100, Runs: 1",
+      "score": 66.2,
+      "score_extra": {},
+      "date": "2025-11-05",
+      "verified": false,
+      "open_source": null,
+      "org": "AskUI",
+      "row_url": "https://www.askui.com/"
+    },
+    {
+      "rank": 2,
+      "system": "Turix (computer_13, 50 steps)",
+      "agent": "Turix",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": "computer_13, 50 steps; Provider: VMware; Observation type: screenshot; Action space: computer_13; Max steps: 50; Parallel environments: 3; Run date: 2026-03-23; Repository: xlang-ai/OSWorld (fork); Commit: 3afe772dc54e5c47ef6916f0de27f7c2b5c34d2b; Test set: evaluation_examples/test_nogdrive_turix.json (no Google Drive).",
+      "score": 57.99,
+      "score_extra": {},
+      "date": "2026-03-23",
+      "verified": false,
+      "open_source": null,
+      "org": "New Generation Technology",
+      "row_url": "https://github.com/xlang-ai/OSWorld"
+    },
+    {
+      "rank": 3,
+      "system": "GTA1  w/ o3 (100 steps)",
+      "agent": "GTA1",
+      "model_raw": [
+        "GTA1",
+        "o3"
+      ],
+      "model_ids": [
+        "o3"
+      ],
+      "model_config": "100 steps",
+      "score": 45.2,
+      "score_extra": {},
+      "date": "2025-07-07",
+      "verified": false,
+      "open_source": null,
+      "org": "Salesforce & The Australian National University & The University of Hong Kong",
+      "row_url": "https://arxiv.org/abs/2507.05791"
+    },
+    {
+      "rank": 4,
+      "system": "OpenAI CUA o3 (200 steps)",
+      "agent": "OpenAI CUA",
+      "model_raw": [
+        "o3"
+      ],
+      "model_ids": [
+        "o3"
+      ],
+      "model_config": "200 steps",
+      "score": 42.9,
+      "score_extra": {},
+      "date": "2025-05-23",
+      "verified": false,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://help.openai.com/en/articles/10561834-operator-release-notes"
+    },
+    {
+      "rank": 5,
+      "system": "UI-TARS-1.5 (100 steps)",
+      "agent": null,
+      "model_raw": [
+        "UI-TARS-1.5"
+      ],
+      "model_ids": [
+        "ui-tars-1.5"
+      ],
+      "model_config": "100 steps; Active parameter >20B?",
+      "score": 42.5,
+      "score_extra": {},
+      "date": "2025-04-17",
+      "verified": false,
+      "open_source": null,
+      "org": "ByteDance Seed & Tsinghua University",
+      "row_url": "https://seed-tars.com/1.5"
+    },
+    {
+      "rank": 6,
+      "system": "Agent S2 w/ Gemini 2.5 (50 steps)",
+      "agent": "Agent S2",
+      "model_raw": [
+        "Gemini 2.5"
+      ],
+      "model_ids": [],
+      "model_config": "50 steps",
+      "score": 41.4,
+      "score_extra": {},
+      "date": "2025-04-18",
+      "verified": false,
+      "open_source": null,
+      "org": "Simular Research",
+      "row_url": "https://github.com/simular-ai/Agent-S"
+    },
+    {
+      "rank": 7,
+      "system": "OpenAI CUA 4o (200 steps)",
+      "agent": "OpenAI CUA",
+      "model_raw": [
+        "4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": "200 steps",
+      "score": 38.1,
+      "score_extra": {},
+      "date": "2025-01-24",
+      "verified": false,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://openai.com/index/computer-using-agent/"
+    },
+    {
+      "rank": 8,
+      "system": "InfantAgent (50 steps)",
+      "agent": "InfantAgent",
+      "model_raw": [
+        "Claude-3.7 Sonnet",
+        "UI-TARS-1.5-7B"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet",
+        "ui-tars-1.5-7b"
+      ],
+      "model_config": "50 steps; Planner: Claude-3.7 Sonnet，Grounder: UI-TARS-1.5-7B",
+      "score": 35.27,
+      "score_extra": {},
+      "date": "2025-04-30",
+      "verified": false,
+      "open_source": null,
+      "org": "Evolution intelligence & University of Minnesota",
+      "row_url": "https://arxiv.org/abs/2505.10887"
+    },
+    {
+      "rank": 9,
+      "system": "Agent S2 w/ Claude 3.7 (50 steps)",
+      "agent": "Agent S2",
+      "model_raw": [
+        "Claude 3.7"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": "50 steps",
+      "score": 34.5,
+      "score_extra": {},
+      "date": "2025-03-13",
+      "verified": false,
+      "open_source": null,
+      "org": "Simular Research",
+      "row_url": "https://www.simular.ai/agent-s"
+    },
+    {
+      "rank": 10,
+      "system": "UI-TARS-7B-1.5 + ARPO (w. gold reward)",
+      "agent": "ARPO",
+      "model_raw": [
+        "UI-TARS-7B-1.5"
+      ],
+      "model_ids": [
+        "ui-tars-1.5-7b"
+      ],
+      "model_config": "w. gold reward",
+      "score": 29.9,
+      "score_extra": {},
+      "date": "2025-05-22",
+      "verified": false,
+      "open_source": null,
+      "org": "CUHK, SmartMore, HKUST",
+      "row_url": "https://arxiv.org/abs/2505.16282"
+    },
+    {
+      "rank": 11,
+      "system": "Claude 3.7 Sonnet (100 steps)",
+      "agent": null,
+      "model_raw": [
+        "Claude 3.7 Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": "100 steps",
+      "score": 28.0,
+      "score_extra": {
+        "approximate": true
+      },
+      "date": "2025-02-24",
+      "verified": false,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://www.anthropic.com/research/visible-extended-thinking"
+    },
+    {
+      "rank": 12,
+      "system": "Jedi-7B w/ GPT-4o (100 steps)",
+      "agent": "Jedi-7B",
+      "model_raw": [
+        "Jedi-7B",
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "jedi-7b",
+        "gpt-4o"
+      ],
+      "model_config": "100 steps; avg 27.04, std 1.81",
+      "score": 27.04,
+      "score_extra": {},
+      "date": "2025-05-09",
+      "verified": false,
+      "open_source": null,
+      "org": "Salesforce & The University of Hong Kong",
+      "row_url": "https://osworld-grounding.github.io/"
+    },
+    {
+      "rank": 13,
+      "system": "Simular Agent S2 (15 steps)",
+      "agent": "Agent S2",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": "15 steps",
+      "score": 27,
+      "score_extra": {},
+      "date": "2025-03-13",
+      "verified": false,
+      "open_source": null,
+      "org": "Simular Research",
+      "row_url": "https://www.simular.ai/agent-s"
+    },
+    {
+      "rank": 14,
+      "system": "UI-TARS-1.5 7B (100 steps)",
+      "agent": null,
+      "model_raw": [
+        "UI-TARS-1.5 7B"
+      ],
+      "model_ids": [
+        "ui-tars-1.5-7b"
+      ],
+      "model_config": "100 steps",
+      "score": 26.92,
+      "score_extra": {},
+      "date": "2025-04-17",
+      "verified": false,
+      "open_source": null,
+      "org": "ByteDance Seed & Tsinghua University",
+      "row_url": "https://seed-tars.com/1.5"
+    },
+    {
+      "rank": 15,
+      "system": "Claude 3.7 Sonnet (50 steps)",
+      "agent": null,
+      "model_raw": [
+        "Claude 3.7 Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": "50 steps",
+      "score": 26.0,
+      "score_extra": {
+        "approximate": true
+      },
+      "date": "2025-02-24",
+      "verified": false,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://www.anthropic.com/research/visible-extended-thinking"
+    },
+    {
+      "rank": 16,
+      "system": "Jedi-7B w/ GPT-4o (50 steps)",
+      "agent": "Jedi-7B",
+      "model_raw": [
+        "Jedi-7B",
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "jedi-7b",
+        "gpt-4o"
+      ],
+      "model_config": "50 steps; avg 25.02, std 1.30",
+      "score": 25.02,
+      "score_extra": {},
+      "date": "2025-05-09",
+      "verified": false,
+      "open_source": null,
+      "org": "Salesforce & The University of Hong Kong",
+      "row_url": "https://osworld-grounding.github.io/"
+    },
+    {
+      "rank": 17,
+      "system": "UI-TARS-72B-DPO (50 steps)",
+      "agent": null,
+      "model_raw": [
+        "UI-TARS-72B-DPO"
+      ],
+      "model_ids": [
+        "ui-tars-72b-dpo"
+      ],
+      "model_config": "50 steps",
+      "score": 24.6,
+      "score_extra": {},
+      "date": "2025-01-21",
+      "verified": false,
+      "open_source": null,
+      "org": "ByteDance Seed & Tsinghua University",
+      "row_url": "https://github.com/bytedance/UI-TARS"
+    },
+    {
+      "rank": 18,
+      "system": "Jedi-7B w/ GPT-4o (15 steps)",
+      "agent": "Jedi-7B",
+      "model_raw": [
+        "Jedi-7B",
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "jedi-7b",
+        "gpt-4o"
+      ],
+      "model_config": "15 steps; avg 22.74, std 0.51",
+      "score": 22.74,
+      "score_extra": {},
+      "date": "2025-05-09",
+      "verified": false,
+      "open_source": null,
+      "org": "Salesforce & The University of Hong Kong",
+      "row_url": "https://osworld-grounding.github.io/"
+    },
+    {
+      "rank": 19,
+      "system": "UI-TARS-72B-DPO (15 steps)",
+      "agent": null,
+      "model_raw": [
+        "UI-TARS-72B-DPO"
+      ],
+      "model_ids": [
+        "ui-tars-72b-dpo"
+      ],
+      "model_config": "15 steps",
+      "score": 22.7,
+      "score_extra": {},
+      "date": "2025-01-21",
+      "verified": false,
+      "open_source": null,
+      "org": "ByteDance Seed & Tsinghua University",
+      "row_url": "https://github.com/bytedance/UI-TARS"
+    },
+    {
+      "rank": 20,
+      "system": "Claude 3.5 Sonnet (50 steps)",
+      "agent": null,
+      "model_raw": [
+        "Claude 3.5 Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": "50 steps",
+      "score": 22,
+      "score_extra": {},
+      "date": "2024-10-22",
+      "verified": false,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf"
+    },
+    {
+      "rank": 21,
+      "system": "Jedi-3B w/ GPT-4o (15 steps)",
+      "agent": "Jedi-3B",
+      "model_raw": [
+        "Jedi-3B",
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "jedi-3b",
+        "gpt-4o"
+      ],
+      "model_config": "15 steps; avg 21.8, std 0.19",
+      "score": 21.8,
+      "score_extra": {},
+      "date": "2025-05-09",
+      "verified": false,
+      "open_source": null,
+      "org": "Salesforce & The University of Hong Kong",
+      "row_url": "https://osworld-grounding.github.io/"
+    },
+    {
+      "rank": 22,
+      "system": "Claude 3.5 Sonnet (new) (100 steps)",
+      "agent": null,
+      "model_raw": [
+        "Claude 3.5 Sonnet (new)"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": "(new); 100 steps",
+      "score": 21.0,
+      "score_extra": {
+        "approximate": true
+      },
+      "date": "2025-02-24",
+      "verified": false,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://www.anthropic.com/research/visible-extended-thinking"
+    },
+    {
+      "rank": 23,
+      "system": "UI-TARS-7B-DPO + ZeroGUI",
+      "agent": "ZeroGUI",
+      "model_raw": [
+        "UI-TARS-7B-DPO"
+      ],
+      "model_ids": [
+        "ui-tars-7b-dpo"
+      ],
+      "model_config": null,
+      "score": 20.2,
+      "score_extra": {},
+      "date": "2025-05-30",
+      "verified": false,
+      "open_source": null,
+      "org": "Shanghai AI Lab",
+      "row_url": "https://arxiv.org/abs/2505.23762"
+    },
+    {
+      "rank": 24,
+      "system": "OpenAI CUA 4o (15 steps)",
+      "agent": "OpenAI CUA",
+      "model_raw": [
+        "4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": "15 steps",
+      "score": 19.7,
+      "score_extra": {},
+      "date": "2025-01-24",
+      "verified": false,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://openai.com/index/computer-using-agent/"
+    },
+    {
+      "rank": 25,
+      "system": "Claude 3.5 Sonnet (new) (50 steps)",
+      "agent": null,
+      "model_raw": [
+        "Claude 3.5 Sonnet (new)"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": "(new); 50 steps",
+      "score": 19.5,
+      "score_extra": {
+        "approximate": true
+      },
+      "date": "2025-02-24",
+      "verified": false,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://www.anthropic.com/research/visible-extended-thinking"
+    },
+    {
+      "rank": 26,
+      "system": "UI-TARS-72B-SFT (15 steps)",
+      "agent": null,
+      "model_raw": [
+        "UI-TARS-72B-SFT"
+      ],
+      "model_ids": [
+        "ui-tars-72b-sft"
+      ],
+      "model_config": "15 steps",
+      "score": 18.8,
+      "score_extra": {},
+      "date": "2025-01-21",
+      "verified": false,
+      "open_source": null,
+      "org": "ByteDance Seed & Tsinghua University",
+      "row_url": "https://github.com/bytedance/UI-TARS"
+    },
+    {
+      "rank": 27,
+      "system": "UI-TARS-7B-DPO (15 steps)",
+      "agent": null,
+      "model_raw": [
+        "UI-TARS-7B-DPO"
+      ],
+      "model_ids": [
+        "ui-tars-7b-dpo"
+      ],
+      "model_config": "15 steps",
+      "score": 18.7,
+      "score_extra": {},
+      "date": "2025-01-21",
+      "verified": false,
+      "open_source": null,
+      "org": "ByteDance Seed & Tsinghua University",
+      "row_url": "https://github.com/bytedance/UI-TARS"
+    },
+    {
+      "rank": 28,
+      "system": "UI-TARS-7B-SFT (15 steps)",
+      "agent": null,
+      "model_raw": [
+        "UI-TARS-7B-SFT"
+      ],
+      "model_ids": [
+        "ui-tars-7b-sft"
+      ],
+      "model_config": "15 steps",
+      "score": 17.7,
+      "score_extra": {},
+      "date": "2025-01-21",
+      "verified": false,
+      "open_source": null,
+      "org": "ByteDance Seed & Tsinghua University",
+      "row_url": "https://github.com/bytedance/UI-TARS"
+    },
+    {
+      "rank": 29,
+      "system": "Aguvis-72B w/ GPT-4o",
+      "agent": "Aguvis-72B",
+      "model_raw": [
+        "Aguvis-72B",
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "aguvis-72b",
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 17.04,
+      "score_extra": {},
+      "date": "2024-11-22",
+      "verified": false,
+      "open_source": null,
+      "org": "Salesforce & The University of Hong Kong",
+      "row_url": "https://aguvis-project.github.io/"
+    },
+    {
+      "rank": 30,
+      "system": "Claude 3.7 Sonnet (15 steps)",
+      "agent": null,
+      "model_raw": [
+        "Claude 3.7 Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": "15 steps",
+      "score": 15.5,
+      "score_extra": {
+        "approximate": true
+      },
+      "date": "2025-02-24",
+      "verified": false,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://www.anthropic.com/research/visible-extended-thinking"
+    },
+    {
+      "rank": 31,
+      "system": "Aria-UI w/ GPT-4o",
+      "agent": "Aria-UI",
+      "model_raw": [
+        "Aria-UI",
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "aria-ui",
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 15.15,
+      "score_extra": {},
+      "date": "2024-12-24",
+      "verified": false,
+      "open_source": null,
+      "org": "University of Hong Kong & Rhymes AI",
+      "row_url": "https://arxiv.org/abs/2412.16256"
+    },
+    {
+      "rank": 32,
+      "system": "PC Agent-E",
+      "agent": null,
+      "model_raw": [
+        "PC Agent-E"
+      ],
+      "model_ids": [
+        "pc-agent-e"
+      ],
+      "model_config": null,
+      "score": 14.9,
+      "score_extra": {},
+      "date": "2025-05-20",
+      "verified": false,
+      "open_source": null,
+      "org": "GAIR, Shanghai Jiao Tong University",
+      "row_url": "https://arxiv.org/abs/2505.13909"
+    },
+    {
+      "rank": 33,
+      "system": "Claude 3.5 Sonnet (15 steps)",
+      "agent": null,
+      "model_raw": [
+        "Claude 3.5 Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": "15 steps",
+      "score": 14.9,
+      "score_extra": {},
+      "date": "2024-10-22",
+      "verified": false,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf"
+    },
+    {
+      "rank": 34,
+      "system": "Aguvis-7B w/ GPT-4o",
+      "agent": "Aguvis-7B",
+      "model_raw": [
+        "Aguvis-7B",
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "aguvis-7b",
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 14.79,
+      "score_extra": {},
+      "date": "2024-11-22",
+      "verified": false,
+      "open_source": null,
+      "org": "Salesforce & The University of Hong Kong",
+      "row_url": "https://aguvis-project.github.io/"
+    },
+    {
+      "rank": 35,
+      "system": "OS-Atlas-Base-7B w/ GPT-4o",
+      "agent": "OS-Atlas-Base-7B",
+      "model_raw": [
+        "OS-Atlas-Base-7B",
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "os-atlas-base-7b",
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 14.63,
+      "score_extra": {},
+      "date": "2024-10-30",
+      "verified": false,
+      "open_source": null,
+      "org": "Shanghai AI Lab",
+      "row_url": "https://osatlas.github.io/"
+    },
+    {
+      "rank": 36,
+      "system": "OS-Atlas-Base-4B w/ GPT-4o",
+      "agent": "OS-Atlas-Base-4B",
+      "model_raw": [
+        "OS-Atlas-Base-4B",
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "os-atlas-base-4b",
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 11.65,
+      "score_extra": {},
+      "date": "2024-10-30",
+      "verified": false,
+      "open_source": null,
+      "org": "Shanghai AI Lab",
+      "row_url": "https://osatlas.github.io/"
+    },
+    {
+      "rank": 37,
+      "system": "Aguvis-72B",
+      "agent": null,
+      "model_raw": [
+        "Aguvis-72B"
+      ],
+      "model_ids": [
+        "aguvis-72b"
+      ],
+      "model_config": null,
+      "score": 10.26,
+      "score_extra": {},
+      "date": "2024-11-22",
+      "verified": false,
+      "open_source": null,
+      "org": "Salesforce & The University of Hong Kong",
+      "row_url": "https://aguvis-project.github.io/"
+    },
+    {
+      "rank": 38,
+      "system": "SeeClick w/ GPT-4o",
+      "agent": "SeeClick",
+      "model_raw": [
+        "SeeClick",
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "seeclick",
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 9.21,
+      "score_extra": {},
+      "date": "2024-10-30",
+      "verified": false,
+      "open_source": null,
+      "org": "Nanjing University & Shanghai AI Lab",
+      "row_url": "https://arxiv.org/abs/2401.10935"
+    },
+    {
+      "rank": 39,
+      "system": "Qwen2.5-vl-72B",
+      "agent": null,
+      "model_raw": [
+        "Qwen2.5-vl-72B"
+      ],
+      "model_ids": [
+        "qwen2.5-vl-72b"
+      ],
+      "model_config": "t=1.0, top-p=0.9",
+      "score": 8.8,
+      "score_extra": {},
+      "date": "2025-01-26",
+      "verified": false,
+      "open_source": null,
+      "org": "Alibaba Cloud, Qwen Team",
+      "row_url": "https://qwenlm.github.io/blog/qwen2.5-vl/"
+    },
+    {
+      "rank": 40,
+      "system": "Ponder&Press w/ GPT-4o",
+      "agent": "Ponder&Press",
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 8.7,
+      "score_extra": {},
+      "date": "2024-12-02",
+      "verified": false,
+      "open_source": null,
+      "org": "Shenzhen International Graduate School, Tsinghua University",
+      "row_url": "https://arxiv.org/abs/2412.01268"
+    },
+    {
+      "rank": 41,
+      "system": "Kimi-VL",
+      "agent": null,
+      "model_raw": [
+        "Kimi-VL"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 8.22,
+      "score_extra": {},
+      "date": "2025-04-10",
+      "verified": false,
+      "open_source": null,
+      "org": "Kimi & The University of Hong Kong",
+      "row_url": "https://arxiv.org/abs/2504.07491"
+    },
+    {
+      "rank": 42,
+      "system": "CogAgent-9B-20241220",
+      "agent": null,
+      "model_raw": [
+        "CogAgent-9B-20241220"
+      ],
+      "model_ids": [
+        "cogagent-9b-20241220"
+      ],
+      "model_config": "t=1.0, top-p=0.9",
+      "score": 8.12,
+      "score_extra": {},
+      "date": "2024-12-24",
+      "verified": false,
+      "open_source": null,
+      "org": "Tsinghua University & Zhipu AI",
+      "row_url": "https://cogagent.aminer.cn/blog#/articles/cogagent-9b-20241220-technical-report-en"
+    },
+    {
+      "rank": 43,
+      "system": "CRADLE w/ GPT-4o",
+      "agent": "CRADLE",
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": "t=1.0, top-p=0.9",
+      "score": 7.81,
+      "score_extra": {},
+      "date": "2024-06-14",
+      "verified": false,
+      "open_source": null,
+      "org": "BAAI",
+      "row_url": "https://baai-agents.github.io/Cradle/"
+    },
+    {
+      "rank": 44,
+      "system": "GPT-4 Vision",
+      "agent": null,
+      "model_raw": [
+        "GPT-4 Vision"
+      ],
+      "model_ids": [
+        "gpt-4-vision"
+      ],
+      "model_config": "t=1.0, top-p=0.9",
+      "score": 7.69,
+      "score_extra": {},
+      "date": "2024-05-24",
+      "verified": false,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://openai.com/research/gpt-4v-system-card"
+    },
+    {
+      "rank": 45,
+      "system": "Gemini-Pro Vision",
+      "agent": null,
+      "model_raw": [
+        "Gemini-Pro Vision"
+      ],
+      "model_ids": [
+        "gemini-pro-vision"
+      ],
+      "model_config": "t=1.0, top-p=0.9",
+      "score": 5.8,
+      "score_extra": {},
+      "date": "2024-03-20",
+      "verified": false,
+      "open_source": null,
+      "org": "Google",
+      "row_url": "https://arxiv.org/abs/2312.11805"
+    },
+    {
+      "rank": 46,
+      "system": "GPT-4 Vision (0409)",
+      "agent": null,
+      "model_raw": [
+        "GPT-4 Vision (0409)"
+      ],
+      "model_ids": [
+        "gpt-4-vision-0409"
+      ],
+      "model_config": "t=1.0, top-p=0.9",
+      "score": 5.4,
+      "score_extra": {},
+      "date": "2024-04-23",
+      "verified": false,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://openai.com/research/gpt-4v-system-card"
+    },
+    {
+      "rank": 47,
+      "system": "Gemini-Pro-1.5",
+      "agent": null,
+      "model_raw": [
+        "Gemini-Pro-1.5"
+      ],
+      "model_ids": [
+        "gemini-1.5-pro"
+      ],
+      "model_config": "t=1.0, top-p=0.9",
+      "score": 5.4,
+      "score_extra": {},
+      "date": "2024-05-03",
+      "verified": false,
+      "open_source": null,
+      "org": "Google",
+      "row_url": "https://arxiv.org/abs/2403.05530"
+    },
+    {
+      "rank": 48,
+      "system": "GPT-4 Vision",
+      "agent": null,
+      "model_raw": [
+        "GPT-4 Vision"
+      ],
+      "model_ids": [
+        "gpt-4-vision"
+      ],
+      "model_config": "t=1.0, top-p=0.9",
+      "score": 5.26,
+      "score_extra": {},
+      "date": "2024-03-20",
+      "verified": false,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://openai.com/research/gpt-4v-system-card"
+    },
+    {
+      "rank": 49,
+      "system": "GPT-4o",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": "t=1.0, top-p=0.9",
+      "score": 5.03,
+      "score_extra": {},
+      "date": "2024-05-20",
+      "verified": false,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://openai.com/index/hello-gpt-4o/"
+    },
+    {
+      "rank": 50,
+      "system": "GPT-4o-mini",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o-mini"
+      ],
+      "model_ids": [
+        "gpt-4o-mini"
+      ],
+      "model_config": "t=1.0, top-p=0.9",
+      "score": 3.77,
+      "score_extra": {},
+      "date": "2024-08-17",
+      "verified": false,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/"
+    },
+    {
+      "rank": 51,
+      "system": "InternVL2",
+      "agent": null,
+      "model_raw": [
+        "InternVL2"
+      ],
+      "model_ids": [],
+      "model_config": "t=1.0, top-p=0.9",
+      "score": 3.33,
+      "score_extra": {},
+      "date": "2024-08-17",
+      "verified": false,
+      "open_source": null,
+      "org": "OpenGVLab",
+      "row_url": "https://internvl.github.io/blog/2024-07-02-InternVL-2.0/"
+    },
+    {
+      "rank": 52,
+      "system": "Claude-3-Opus",
+      "agent": null,
+      "model_raw": [
+        "Claude-3-Opus"
+      ],
+      "model_ids": [
+        "claude-3-opus"
+      ],
+      "model_config": "t=1.0, top-p=0.9",
+      "score": 2.42,
+      "score_extra": {},
+      "date": "2024-03-20",
+      "verified": false,
+      "open_source": null,
+      "org": "AnthropicAI",
+      "row_url": "https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf"
+    },
+    {
+      "rank": 53,
+      "system": "Llava-OneVision",
+      "agent": null,
+      "model_raw": [
+        "Llava-OneVision"
+      ],
+      "model_ids": [],
+      "model_config": "t=1.0, top-p=0.9",
+      "score": 2.42,
+      "score_extra": {},
+      "date": "2024-08-17",
+      "verified": false,
+      "open_source": null,
+      "org": "ByteDance & NTU & CUHK & HKUST",
+      "row_url": "https://arxiv.org/abs/2408.03326"
+    },
+    {
+      "rank": 54,
+      "system": "Qwen-vl-Max-0809",
+      "agent": null,
+      "model_raw": [
+        "Qwen-vl-Max-0809"
+      ],
+      "model_ids": [
+        "qwen-vl-max-0809"
+      ],
+      "model_config": "t=1.0, top-p=0.9",
+      "score": 2.42,
+      "score_extra": {},
+      "date": "2024-09-10",
+      "verified": false,
+      "open_source": null,
+      "org": "Alibaba Cloud, Qwen Team",
+      "row_url": "https://github.com/QwenLM/Qwen2-VL"
+    },
+    {
+      "rank": 55,
+      "system": "MiniCPM-V 2.6",
+      "agent": null,
+      "model_raw": [
+        "MiniCPM-V 2.6"
+      ],
+      "model_ids": [
+        "minicpm-v-2.6"
+      ],
+      "model_config": "t=1.0, top-p=0.9",
+      "score": 1.88,
+      "score_extra": {},
+      "date": "2024-08-17",
+      "verified": false,
+      "open_source": null,
+      "org": "MiniCPM-V Team & OpenBMB",
+      "row_url": "https://arxiv.org/abs/2408.03326"
+    },
+    {
+      "rank": 56,
+      "system": "CogAgent",
+      "agent": null,
+      "model_raw": [
+        "CogAgent"
+      ],
+      "model_ids": [],
+      "model_config": "t=1.0, top-p=0.9",
+      "score": 1.11,
+      "score_extra": {},
+      "date": "2024-03-20",
+      "verified": false,
+      "open_source": null,
+      "org": "Tsinghua University & Zhipu AI",
+      "row_url": "https://arxiv.org/abs/2312.08914"
+    }
+  ]
+}

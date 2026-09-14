@@ -1,0 +1,102 @@
+{
+  "id": "commit0-all",
+  "family": "commit0",
+  "name": "Commit0 (all)",
+  "board": "commit-0.github.io",
+  "category": "coding",
+  "measures_ja": "仕様書と単体テストだけを手がかりに、Python ライブラリの実装を空の状態から書き起こせるか。",
+  "tasks": 56,
+  "tasks_note": "ボードの列見出し「Repos Resolved (/56)」。テスト総数は 140926。",
+  "metric": "Tests Passed (%)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "Commit0 の公式ベースライン(Claude 3.5 Sonnet)と、OpenHands・SWE-Agent の提出が混在。足場もモデルも行ごとに違う。",
+  "source": "https://commit-0.github.io/analysis/",
+  "fetched": [
+    "https://commit-0.github.io/analysis/"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2024-11-26",
+  "snapshot": "sources/commit0-all/leaderboard_tables.html",
+  "paper": "https://arxiv.org/abs/2412.01769",
+  "repo": "https://github.com/commit-0/commit0",
+  "notes_ja": "静的 HTML の表を解析した。Reference (Gold) は正解実装の参照行なので rank を null にした。OpenHands・SWE-Agent 行のモデルはボードに書かれていない。2024-11 以降更新なし。",
+  "rows": [
+    {
+      "rank": null,
+      "system": "Reference (Gold)",
+      "agent": null,
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 98.29,
+      "score_extra": {
+        "repos_resolved": 19,
+        "test_duration_s": 5467.81
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://commit-0.github.io/analysis_commit0_all_reference/"
+    },
+    {
+      "rank": 1,
+      "system": "OpenHands",
+      "agent": "OpenHands",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 15.08,
+      "score_extra": {
+        "repos_resolved": 2,
+        "test_duration_s": 408.27
+      },
+      "date": "2024-11-25",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://commit-0.github.io/analysis_openhands-commit0_openhands/"
+    },
+    {
+      "rank": 2,
+      "system": "Claude Sonnet 3.5 - Fill-in",
+      "agent": null,
+      "model_raw": [
+        "Claude Sonnet 3.5"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": "Fill-in",
+      "score": 5.98,
+      "score_extra": {
+        "repos_resolved": 0,
+        "test_duration_s": 629.19
+      },
+      "date": "2024-09-25",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://commit-0.github.io/analysis_commit0-all-plain_fillin/"
+    },
+    {
+      "rank": 3,
+      "system": "SWE-Agent",
+      "agent": "SWE-Agent",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 2.99,
+      "score_extra": {
+        "repos_resolved": 0,
+        "test_duration_s": 62.35
+      },
+      "date": "2024-11-26",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://commit-0.github.io/analysis_sweagent-commit0_sweagent/"
+    }
+  ]
+}

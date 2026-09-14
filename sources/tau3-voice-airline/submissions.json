@@ -1,0 +1,2749 @@
+{
+ "source": "taubench.com leaderboard data (S3 manifest.json + per-submission submission.json)",
+ "manifest_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+ "manifest": {
+  "submissions": [
+   "claude-opus-4-5_sierra_2026-02-26",
+   "claude-sonnet-4-5_sierra_2026-02-26",
+   "gpt-5-2_sierra_2026-02-26",
+   "gpt-5-2-none_sierra_2026-02-26",
+   "glm-5-think_sierra_2026-03-02",
+   "qwen3.5-397b-a17b-think_sierra_2026-03-02",
+   "gemini-3-flash_sierra_2026-03-02",
+   "gemini-3-pro_sierra_2026-03-02",
+   "distyl-buttonagent_distyl_2026-03-25",
+   "gpt-5-4_sierra_2026-03-25",
+   "raft-30b-a3b_neu_2026-04-29",
+   "gpt-5-5_sierra_2026-05-05",
+   "claude-opus-4-6_sierra_2026-05-05",
+   "claude-opus-4-7_sierra_2026-05-05",
+   "gemini-2-5-pro_sierra_2026-05-05",
+   "gemini-3-1-pro-preview_sierra_2026-05-05",
+   "grok-4-fast_sierra_2026-05-05",
+   "grok-4-1-fast_sierra_2026-05-05",
+   "grok-4-2_sierra_2026-05-05",
+   "gpt-5-6-sol_sierra_2026-08-04",
+   "claude-opus-4-8_sierra_2026-08-04",
+   "claude-fable-5_sierra_2026-08-04",
+   "muse-spark-1-1_sierra_2026-08-04",
+   "kimi-k3_sierra_2026-08-04",
+   "glm-5-2_sierra_2026-08-04",
+   "grok-4-5_sierra_2026-08-04",
+   "inkling_sierra_2026-08-04",
+   "claude-opus-5_sierra_2026-08-04",
+   "qwen3-8-max_sierra_2026-08-04"
+  ],
+  "voice_submissions": [
+   "gpt-realtime-1.5_sierra_2026-03-03",
+   "gemini-live-2.5-flash_sierra_2026-03-03",
+   "xai-realtime_sierra_2026-03-03",
+   "grok-voice-think-fast-1-0_xai_2026-04-21",
+   "gemini-3-1-flash-live-preview-thinking-high_google_2026-04-02",
+   "gemini-3-1-flash-live-preview-thinking-minimal_google_2026-04-13",
+   "gpt-realtime-1-0_openai_2026-04-13",
+   "livekit-cascaded_livekit_2026-05-19",
+   "gpt-realtime-2_openai_2026-06-24",
+   "gpt-realtime-2_openai_2026-06-29",
+   "gpt-realtime-2-minimal_openai_2026-07-01",
+   "grok-voice-think-fast-1-0-tool-mentor_pickle_2026-07-07",
+   "gpt-realtime-2-banking_openai_2026-07-12",
+   "gemini-3-1-flash-live-preview-thinking-high-banking_google_2026-07-13",
+   "xai-realtime-banking_xai_2026-07-13",
+   "qwen3-5-omni-plus-realtime_qwen_2026-08-06",
+   "grok-voice-think-fast-2-0_xai_2026-08-06",
+   "pine-voice-preview-user-sim-v1-0_pineai_2026-08-17",
+   "pine-voice-preview-user-sim-gpt-5-5_pineai_2026-08-17",
+   "gpt-live-1-diamond-alpha_openai_2026-09-09",
+   "gpt-live-1-diamond-alpha-user-sim-gpt-5-5_openai_2026-09-09"
+  ],
+  "legacy_submissions": [
+   "claude-3-7-sonnet_anthropic_2024-06-20",
+   "claude-opus-4_anthropic_2025-05-22",
+   "claude-opus-4-1_anthropic_2025-01-15",
+   "claude-sonnet-4_anthropic_2025-05-22",
+   "claude-sonnet-4-5_anthropic_2025-10-02",
+   "gpt-4-1_openai_2024-06-20",
+   "gpt-4-1-mini_openai_2024-06-20",
+   "kimi-k2_moonshot-ai_2025-07-11",
+   "o3_openai_2025-01-15",
+   "o4-mini_openai_2024-06-20",
+   "gpt-5_sierra_2025-08-09",
+   "qwen3-max_qwen_2024_09_23",
+   "gemini-3-pro_google_2025-11-18",
+   "deepseek-v3.2_deepseek_2025-12-01",
+   "toolorchestra_nvidia_2025-12-02",
+   "qwen3-max_qwen_2026-01-23"
+  ]
+ },
+ "submissions": {
+  "gpt-live-1-diamond-alpha_openai_2026-09-09": {
+   "model_name": "gpt-live-1",
+   "model_organization": "OpenAI",
+   "submitting_organization": "Sierra",
+   "submission_date": "2026-09-09",
+   "submission_type": "standard",
+   "modality": "voice",
+   "contact_info": {
+    "email": "keshav@sierra.ai",
+    "name": "Sierra Research Team"
+   },
+   "results": {
+    "retail": {
+     "pass_1": 78.94736842105263
+    },
+    "airline": {
+     "pass_1": 82.0
+    },
+    "telecom": {
+     "pass_1": 84.21052631578947
+    }
+   },
+   "is_new": true,
+   "trajectories_available": true,
+   "trajectory_files": {
+    "airline": "airline_regular_openai_live__medium",
+    "retail": "retail_regular_openai_live__medium",
+    "telecom": "telecom_regular_openai_live__medium"
+   },
+   "references": [
+    {
+     "title": "OpenAI Live provider integration",
+     "url": "https://github.com/sierra-research/tau2-bench/pull/523",
+     "type": "github"
+    },
+    {
+     "title": "OpenAI Live prompt templates and evaluation runner",
+     "url": "https://github.com/sierra-research/tau2-bench/pull/527",
+     "type": "github"
+    }
+   ],
+   "methodology": {
+    "evaluation_date": "2026-09-09",
+    "tau2_bench_version": "1.0.1",
+    "user_simulator": "v1.0",
+    "notes": "Standard GPT Live evaluation using the provider-owned frontend/backend prompt templates, gpt-live-1-diamond-alpha frontend, gpt-6-astra backend at medium reasoning effort, marin agent voice, regular speech complexity, realtime user generation, seed 300, and the default Anthropic hallucination reviewer. One trial was scheduled for every task: airline 50, retail 114, and telecom 114.",
+    "verification": {
+     "modified_prompts": false,
+     "omitted_questions": false
+    }
+   },
+   "voice_config": {
+    "provider": "OpenAI",
+    "model": "gpt-live-1-diamond-alpha",
+    "tick_duration_seconds": 0.2,
+    "max_steps_seconds": 1200.0,
+    "user_tts_provider": "elevenlabs/eleven_v3"
+   },
+   "interaction_metrics": {
+    "version": "1.0",
+    "config": {
+     "tick_duration_sec": 0.2,
+     "no_yield_window_sec": 2.0,
+     "backchannel_yield_window_sec": 1.0,
+     "vocal_tic_yield_window_sec": 1.0,
+     "non_directed_yield_window_sec": 1.0,
+     "vocal_tic_response_window_sec": 2.0,
+     "non_directed_response_window_sec": 2.0
+    },
+    "domains": {
+     "airline": {
+      "response_latency_mean": 2.670232558139535,
+      "yield_latency_mean": 1.077777777777778,
+      "response_rate": 0.9188034188034188,
+      "yield_rate": 0.3643724696356275,
+      "agent_interruption_rate": 0.23504273504273504,
+      "selectivity_backchannel": 1.0,
+      "selectivity_vocal_tic": 0.6851851851851851,
+      "selectivity_non_directed": 0.5714285714285714,
+      "counts": {
+       "n_simulations": 50,
+       "response_total": 468,
+       "yield_total": 247,
+       "backchannel_total": 14,
+       "vocal_tic_total": 54,
+       "non_directed_total": 42,
+       "agent_interrupts_count": 110
+      }
+     },
+     "retail": {
+      "response_latency_mean": 2.682307692307692,
+      "yield_latency_mean": 1.0439306358381504,
+      "response_rate": 0.9567617295308187,
+      "yield_rate": 0.27724358974358976,
+      "agent_interruption_rate": 0.250229990800368,
+      "selectivity_backchannel": 0.967741935483871,
+      "selectivity_vocal_tic": 0.6164383561643836,
+      "selectivity_non_directed": 0.4591836734693877,
+      "counts": {
+       "n_simulations": 114,
+       "response_total": 1087,
+       "yield_total": 624,
+       "backchannel_total": 31,
+       "vocal_tic_total": 146,
+       "non_directed_total": 98,
+       "agent_interrupts_count": 272
+      }
+     },
+     "telecom": {
+      "response_latency_mean": 2.2615626638699524,
+      "yield_latency_mean": 1.1204545454545454,
+      "response_rate": 0.9896211728074727,
+      "yield_rate": 0.43636363636363634,
+      "agent_interruption_rate": 0.17384535547483135,
+      "selectivity_backchannel": 1.0,
+      "selectivity_vocal_tic": 0.463302752293578,
+      "selectivity_non_directed": 0.34013605442176875,
+      "counts": {
+       "n_simulations": 114,
+       "response_total": 1927,
+       "yield_total": 605,
+       "backchannel_total": 2,
+       "vocal_tic_total": 218,
+       "non_directed_total": 147,
+       "agent_interrupts_count": 335
+      }
+     }
+    },
+    "overall": {
+     "response_latency_mean": 2.5380343047723932,
+     "yield_latency_mean": 1.0807209863568246,
+     "response_rate": 0.9550621070472367,
+     "yield_rate": 0.35932656524761786,
+     "agent_interruption_rate": 0.2197060271059781,
+     "selectivity_backchannel": 0.989247311827957,
+     "selectivity_vocal_tic": 0.5883087645477155,
+     "selectivity_non_directed": 0.45691609977324266,
+     "counts": {
+      "agent_interrupts_count": 717,
+      "backchannel_total": 47,
+      "n_simulations": 278,
+      "non_directed_total": 287,
+      "response_total": 3482,
+      "vocal_tic_total": 418,
+      "yield_total": 1476
+     }
+    }
+   },
+   "reasoning_effort": "Backend: GPT-6 Astra (medium)",
+   "model_release": {
+    "release_date": "2026-09-10",
+    "announcement_url": "https://openai.com/index/introducing-gpt-live-1-in-the-api/",
+    "announcement_title": "Build more natural voice experiences with GPT-Live-1 in the API"
+   }
+  },
+  "pine-voice-preview-user-sim-gpt-5-5_pineai_2026-08-17": {
+   "model_name": "Pine Voice Preview",
+   "model_organization": "Pine AI",
+   "submitting_organization": "Pine AI",
+   "submission_date": "2026-08-17",
+   "submission_type": "custom",
+   "modality": "voice",
+   "model_release": {
+    "release_date": "2026-08-10",
+    "announcement_url": "https://www.19pine.ai/blog/pine-ai-the-most-natural-human-computer-interface-is-your-voice",
+    "announcement_title": "Pine AI: The most natural human-computer interface is your voice"
+   },
+   "contact_info": {
+    "email": "arvinx@19pine.ai",
+    "name": "Arvin Xu",
+    "github": "a7vinx"
+   },
+   "results": {
+    "retail": {
+     "pass_1": 85.08771929824562
+    },
+    "airline": {
+     "pass_1": 80.0
+    },
+    "telecom": {
+     "pass_1": 75.43859649122807
+    }
+   },
+   "is_new": true,
+   "trajectories_available": true,
+   "trajectory_files": {
+    "airline": "airline_regular_openai_pine-voice-preview",
+    "retail": "retail_regular_openai_pine-voice-preview",
+    "telecom": "telecom_regular_openai_pine-voice-preview"
+   },
+   "references": [
+    {
+     "title": "Pine AI",
+     "url": "https://19pine.ai",
+     "type": "other"
+    },
+    {
+     "title": "Pine AI: The most natural human-computer interface is your voice",
+     "url": "https://www.19pine.ai/blog/pine-ai-the-most-natural-human-computer-interface-is-your-voice",
+     "type": "blog_post"
+    }
+   ],
+   "methodology": {
+    "evaluation_date": "2026-08-15",
+    "tau2_bench_version": "1.0.1",
+    "user_simulator": "gpt-5.5-2026-04-23 (xhigh)",
+    "notes": "Custom submission from Pine AI, independently evaluated by Sierra. The agent is a two-agent system: (1) a voice agent handling real-time speech via a customized ASR -> LLM -> TTS pipeline coordinated by a custom interaction model that governs turn-taking, backchanneling, and other conversational dynamics; (2) a background agent (gemini-3.5-flash) that issues the tool calls for the operational task. The two agents share context.\nAll voice-side models are the same production models serving 19pine.ai -- not benchmark-trained. No files in this tau-voice repo are modified. On top of the standard tau-voice agent system prompt, Pine prepends an additional scaffold system message that defines each agent's identity and role (the real-time voice agent vs. the background tool-calling agent), the responsibilities each one owns, and how the two coordinate and share context.\nSierra independently evaluated the full base splits on all three domains (retail 114, airline 50, telecom 114), 1 trial per task, --speech-complexity regular. User simulator is the standard v1.0 pipeline with only its LLM swapped to gpt-5.5-2026-04-23 at reasoning_effort=xhigh; all other simulator components (TTS, transcription, decision models, audio pipeline) are unchanged. The four telecom infrastructure errors are counted as non-passes, so the denominator remains 114. Not directly comparable to standard-user-simulator leaderboard entries. A matched-simulator companion result under v1.0 (gpt-4.1) is submitted separately. User-side voices are local ElevenLabs personas created via the standard setup_voices script; not Sierra-managed submission voices.",
+    "verification": {
+     "modified_prompts": false,
+     "omitted_questions": false,
+     "details": "Standard tau-voice agent prompt, user-simulator prompt, domain policies (data/tau2/domains/<domain>/policy.md), tool schemas, tool results, and evaluator are byte-identical to upstream -- no file in the tau-voice repo is modified. The agent additionally receives a prepended scaffold system message defining each agent's identity and role (real-time voice agent vs. background tool-calling agent), the responsibilities it owns, and how the two coordinate and share context. Sierra independently ran the full base splits: retail 114, airline 50, telecom 114; 1 trial per task at regular speech complexity; no task omitted. The four telecom infrastructure errors are retained as non-passes, preserving the 114-task denominator. User-side voices are local ElevenLabs personas from setup_voices (not Sierra-managed submission voices)."
+    }
+   },
+   "voice_config": {
+    "provider": "Pine AI",
+    "model": "pine-voice-preview",
+    "tick_duration_seconds": 0.2,
+    "max_steps_seconds": 1200.0,
+    "user_tts_provider": "elevenlabs/eleven_v3"
+   },
+   "interaction_metrics": {
+    "version": "1.0",
+    "config": {
+     "tick_duration_sec": 0.2,
+     "no_yield_window_sec": 2.0,
+     "backchannel_yield_window_sec": 1.0,
+     "vocal_tic_yield_window_sec": 1.0,
+     "non_directed_yield_window_sec": 1.0,
+     "vocal_tic_response_window_sec": 2.0,
+     "non_directed_response_window_sec": 2.0
+    },
+    "domains": {
+     "airline": {
+      "response_latency_mean": 2.0630014858841017,
+      "yield_latency_mean": 1.2120000000000002,
+      "response_rate": 0.9505649717514124,
+      "yield_rate": 0.38699690402476783,
+      "agent_interruption_rate": 0.943502824858757,
+      "selectivity_backchannel": 0.9411764705882353,
+      "selectivity_vocal_tic": 0.4731182795698925,
+      "selectivity_non_directed": 0.38636363636363635,
+      "counts": {
+       "n_simulations": 50,
+       "response_total": 708,
+       "yield_total": 646,
+       "backchannel_total": 51,
+       "vocal_tic_total": 93,
+       "non_directed_total": 44,
+       "agent_interrupts_count": 668
+      }
+     },
+     "retail": {
+      "response_latency_mean": 2.034962962962963,
+      "yield_latency_mean": 1.2004310344827587,
+      "response_rate": 0.9440559440559441,
+      "yield_rate": 0.45048543689320386,
+      "agent_interruption_rate": 0.7867132867132867,
+      "selectivity_backchannel": 0.98989898989899,
+      "selectivity_vocal_tic": 0.5251396648044693,
+      "selectivity_non_directed": 0.40625,
+      "counts": {
+       "n_simulations": 114,
+       "response_total": 1430,
+       "yield_total": 1030,
+       "backchannel_total": 99,
+       "vocal_tic_total": 179,
+       "non_directed_total": 96,
+       "agent_interrupts_count": 1125
+      }
+     },
+     "telecom": {
+      "response_latency_mean": 1.904272863568215,
+      "yield_latency_mean": 1.1698945349952063,
+      "response_rate": 0.9424231720240198,
+      "yield_rate": 0.394776684330053,
+      "agent_interruption_rate": 0.5662310137760509,
+      "selectivity_backchannel": 0.9736842105263158,
+      "selectivity_vocal_tic": 0.6120092378752886,
+      "selectivity_non_directed": 0.41916167664670656,
+      "counts": {
+       "n_simulations": 110,
+       "response_total": 2831,
+       "yield_total": 2642,
+       "backchannel_total": 38,
+       "vocal_tic_total": 433,
+       "non_directed_total": 167,
+       "agent_interrupts_count": 1603
+      }
+     }
+    },
+    "overall": {
+     "response_latency_mean": 2.0007457708050933,
+     "yield_latency_mean": 1.1941085231593218,
+     "response_rate": 0.9456813626104589,
+     "yield_rate": 0.4107530084160082,
+     "agent_interruption_rate": 0.7654823751160316,
+     "selectivity_backchannel": 0.9682532236711804,
+     "selectivity_vocal_tic": 0.5367557274165501,
+     "selectivity_non_directed": 0.4039251043367809,
+     "counts": {
+      "agent_interrupts_count": 3396,
+      "backchannel_total": 188,
+      "n_simulations": 274,
+      "non_directed_total": 307,
+      "response_total": 4969,
+      "vocal_tic_total": 705,
+      "yield_total": 4318
+     }
+    }
+   },
+   "reasoning_effort": "enabled"
+  },
+  "gpt-live-1-diamond-alpha-user-sim-gpt-5-5_openai_2026-09-09": {
+   "model_name": "gpt-live-1",
+   "model_organization": "OpenAI",
+   "submitting_organization": "Sierra",
+   "submission_date": "2026-09-09",
+   "submission_type": "custom",
+   "modality": "voice",
+   "contact_info": {
+    "email": "keshav@sierra.ai",
+    "name": "Sierra Research Team"
+   },
+   "results": {
+    "retail": {
+     "pass_1": 84.21052631578947
+    },
+    "airline": {
+     "pass_1": 78.0
+    },
+    "telecom": {
+     "pass_1": 96.49122807017544
+    },
+    "banking_knowledge": {
+     "pass_1": 31.958762886597935,
+     "retrieval_config": "alltools"
+    }
+   },
+   "is_new": true,
+   "trajectories_available": true,
+   "trajectory_files": {
+    "airline": "airline_regular_openai_live__medium",
+    "banking_knowledge": "banking_knowledge_regular_openai_live__medium",
+    "retail": "retail_regular_openai_live__medium",
+    "telecom": "telecom_regular_openai_live__medium"
+   },
+   "references": [
+    {
+     "title": "OpenAI Live provider integration",
+     "url": "https://github.com/sierra-research/tau2-bench/pull/523",
+     "type": "github"
+    },
+    {
+     "title": "OpenAI Live prompt templates and evaluation runner",
+     "url": "https://github.com/sierra-research/tau2-bench/pull/527",
+     "type": "github"
+    }
+   ],
+   "methodology": {
+    "evaluation_date": "2026-09-09",
+    "tau2_bench_version": "1.0.1",
+    "user_simulator": "gpt-5.5-2026-04-23 (xhigh)",
+    "notes": "Custom GPT Live evaluation using the same agent, tools, prompts, policies, regular speech complexity, realtime generation, marin voice, seed 300, alltools banking retrieval, and default Anthropic hallucination reviewer as the standard submission; only the benchmark user-simulator LLM changes from GPT-4.1 temperature 0 to gpt-5.5-2026-04-23 at xhigh reasoning effort.",
+    "verification": {
+     "modified_prompts": false,
+     "omitted_questions": false
+    }
+   },
+   "voice_config": {
+    "provider": "OpenAI",
+    "model": "gpt-live-1-diamond-alpha",
+    "tick_duration_seconds": 0.2,
+    "max_steps_seconds": 1200.0,
+    "user_tts_provider": "elevenlabs/eleven_v3"
+   },
+   "interaction_metrics": {
+    "version": "1.0",
+    "config": {
+     "tick_duration_sec": 0.2,
+     "no_yield_window_sec": 2.0,
+     "backchannel_yield_window_sec": 1.0,
+     "vocal_tic_yield_window_sec": 1.0,
+     "non_directed_yield_window_sec": 1.0,
+     "vocal_tic_response_window_sec": 2.0,
+     "non_directed_response_window_sec": 2.0
+    },
+    "domains": {
+     "airline": {
+      "response_latency_mean": 2.543046357615894,
+      "yield_latency_mean": 1.069135802469136,
+      "response_rate": 0.9457202505219207,
+      "yield_rate": 0.36818181818181817,
+      "agent_interruption_rate": 0.21294363256784968,
+      "selectivity_backchannel": null,
+      "selectivity_vocal_tic": 0.6301369863013699,
+      "selectivity_non_directed": 0.5,
+      "counts": {
+       "n_simulations": 50,
+       "response_total": 479,
+       "yield_total": 220,
+       "backchannel_total": 0,
+       "vocal_tic_total": 73,
+       "non_directed_total": 42,
+       "agent_interrupts_count": 102
+      }
+     },
+     "banking_knowledge": {
+      "response_latency_mean": 2.85496688741722,
+      "yield_latency_mean": 1.0623655913978496,
+      "response_rate": 0.8564946114577425,
+      "yield_rate": 0.28054298642533937,
+      "agent_interruption_rate": 0.20930232558139536,
+      "selectivity_backchannel": 0.8,
+      "selectivity_vocal_tic": 0.6502057613168724,
+      "selectivity_non_directed": 0.6235955056179776,
+      "counts": {
+       "n_simulations": 97,
+       "response_total": 1763,
+       "yield_total": 663,
+       "backchannel_total": 20,
+       "vocal_tic_total": 243,
+       "non_directed_total": 178,
+       "agent_interrupts_count": 369
+      }
+     },
+     "retail": {
+      "response_latency_mean": 2.3781312127236576,
+      "yield_latency_mean": 1.0246753246753249,
+      "response_rate": 0.9748062015503876,
+      "yield_rate": 0.3235294117647059,
+      "agent_interruption_rate": 0.2189922480620155,
+      "selectivity_backchannel": 0.8571428571428572,
+      "selectivity_vocal_tic": 0.5984848484848485,
+      "selectivity_non_directed": 0.5643564356435644,
+      "counts": {
+       "n_simulations": 114,
+       "response_total": 1032,
+       "yield_total": 476,
+       "backchannel_total": 14,
+       "vocal_tic_total": 132,
+       "non_directed_total": 101,
+       "agent_interrupts_count": 226
+      }
+     },
+     "telecom": {
+      "response_latency_mean": 2.334981684981685,
+      "yield_latency_mean": 1.0254545454545454,
+      "response_rate": 0.9081081081081082,
+      "yield_rate": 0.383008356545961,
+      "agent_interruption_rate": 0.1446985446985447,
+      "selectivity_backchannel": 1.0,
+      "selectivity_vocal_tic": 0.5860805860805861,
+      "selectivity_non_directed": 0.5954545454545455,
+      "counts": {
+       "n_simulations": 114,
+       "response_total": 2405,
+       "yield_total": 718,
+       "backchannel_total": 5,
+       "vocal_tic_total": 273,
+       "non_directed_total": 220,
+       "agent_interrupts_count": 348
+      }
+     }
+    },
+    "overall": {
+     "response_latency_mean": 2.527781535684614,
+     "yield_latency_mean": 1.045407815999214,
+     "response_rate": 0.9212822929095397,
+     "yield_rate": 0.3388156432294561,
+     "agent_interruption_rate": 0.1964841877274513,
+     "selectivity_backchannel": 0.8857142857142858,
+     "selectivity_vocal_tic": 0.6162270455459192,
+     "selectivity_non_directed": 0.5708516216790218,
+     "counts": {
+      "agent_interrupts_count": 1045,
+      "backchannel_total": 39,
+      "n_simulations": 375,
+      "non_directed_total": 541,
+      "response_total": 5679,
+      "vocal_tic_total": 721,
+      "yield_total": 2077
+     }
+    }
+   },
+   "reasoning_effort": "Backend: GPT-6 Astra (medium)",
+   "model_release": {
+    "release_date": "2026-09-10",
+    "announcement_url": "https://openai.com/index/introducing-gpt-live-1-in-the-api/",
+    "announcement_title": "Build more natural voice experiences with GPT-Live-1 in the API"
+   }
+  },
+  "grok-voice-think-fast-1-0-tool-mentor_pickle_2026-07-07": {
+   "model_name": "grok-voice-think-fast-1.0 + tool-mentor",
+   "model_organization": "Pickle",
+   "submitting_organization": "Pickle",
+   "submission_date": "2026-07-07",
+   "submission_type": "custom",
+   "modality": "voice",
+   "contact_info": {
+    "email": "hojin@pickle.com",
+    "name": "Hojin Yu",
+    "github": "pickle-com"
+   },
+   "results": {
+    "retail": {
+     "pass_1": 76.31578947368422
+    },
+    "airline": {
+     "pass_1": 70.0
+    },
+    "telecom": {
+     "pass_1": 78.0701754385965
+    }
+   },
+   "reasoning_effort": "enabled",
+   "is_new": true,
+   "trajectories_available": true,
+   "trajectory_files": {
+    "airline": "grok-voice-tool-mentor-airline",
+    "retail": "grok-voice-tool-mentor-retail",
+    "telecom": "grok-voice-tool-mentor-telecom"
+   },
+   "references": [
+    {
+     "title": "Tool-mentor fork (tag tool-mentor-v1.0): methodology, reproduction command, mentor prompt",
+     "url": "https://github.com/pickle-com/tau2-bench/tree/tool-mentor-v1.0",
+     "type": "github"
+    },
+    {
+     "title": "Methodology and reproduction contract",
+     "url": "https://github.com/pickle-com/tau2-bench/blob/tool-mentor-v1.0/docs/tool-mentor-methodology.md",
+     "type": "documentation"
+    },
+    {
+     "title": "Trajectories (submit-prepare bundles, all three domains)",
+     "url": "https://huggingface.co/datasets/samtiz/tau2-voice-grok-tool-mentor-trajectories",
+     "type": "huggingface"
+    }
+   ],
+   "methodology": {
+    "evaluation_date": "2026-07-06",
+    "tau2_bench_version": "1.0.0",
+    "user_simulator": "gpt-5.5-2026-04-23 (xhigh)",
+    "notes": "Custom submission: base model is xAI grok-voice-think-fast-1.0 (audio-native, regular speech complexity, single trial on the full base splits) with an added tool-boundary mentor — a separate LLM (gemini-3.5-flash, reasoning_effort=high, read/write deadlines 10s/15s, fail-open) that reviews the voice agent's tool calls at runtime: pre-execution gates on state-mutating and escalation calls (transfer_to_human_agents), guidance notes appended to read results, and stop-interception so a blocked hand-off proposal continues the conversation. The mentor receives only agent-visible inputs (agent-heard STT transcript, official tool results, the same domain policy the agent receives, agent tool names and descriptions); its prompt contains no benchmark-derived facts and is published verbatim in the referenced fork together with its content policy. Standard tau2 agent and user-simulator prompts are byte-unmodified; the mentor is an additional component with its own prompt. Explicit xAI server-VAD settings (threshold 0.1, silence 1200ms, prefix padding 600ms) and 2.0x input gain restore a working audio pipeline on the July 2026 xAI serving stack (in our environment, server-default VAD frequently failed to detect user speech, and we were unable to reproduce the April 2026 official score with default settings). All non-mentor behavioral differences from upstream are enumerated in the referenced methodology document; submitted runs used the upstream-compatible voice-seed behavior (TAU2_OFFICIAL_PYTHON_HASH_VOICE_SEED=1). The voice user-simulator pipeline is the standard v1.0 lineage with only its LLM swapped: gpt-5.5-2026-04-23 at reasoning_effort=xhigh — not comparable to standard-user-simulator leaderboard entries. Voices are local ElevenLabs personas, not Sierra-managed submission voices.",
+    "verification": {
+     "modified_prompts": false,
+     "omitted_questions": false,
+     "details": "Standard agent and user-simulator prompts are byte-identical to upstream. The added mentor component has its own prompt (published in the referenced fork; no benchmark proper nouns or task-derived facts, per the fork's mentor-prompt-constitution). Full base splits evaluated: retail 114, airline 50, telecom 114; no task omitted. Sierra verification (2026-07-14, fork tag tool-mentor-v1.0 = 8ba2f72, Sierra-internal held-out voices): 10-task parity check agreed on 9/10 tasks with the single flip scoring higher than submitted; a full 278-task re-run reached ~230 tasks before the submitter's xAI API key expired, with per-domain scores tracking at or above the submitted results throughout (airline complete: 0.780 vs submitted 0.700). Submitted scores recomputed from trajectories and confirmed."
+    }
+   },
+   "voice_config": {
+    "provider": "xAI",
+    "model": "grok-voice-think-fast-1.0",
+    "tick_duration_seconds": 0.2,
+    "max_steps_seconds": 1200.0,
+    "user_tts_provider": "elevenlabs/eleven_v3"
+   },
+   "model_release": {
+    "release_date": "2026-04-23",
+    "announcement_url": "https://x.ai/news/grok-voice-think-fast-1",
+    "announcement_title": "Grok Voice Think Fast 1.0"
+   },
+   "interaction_metrics": {
+    "version": "1.0",
+    "config": {
+     "tick_duration_sec": 0.2,
+     "no_yield_window_sec": 2.0,
+     "backchannel_yield_window_sec": 1.0,
+     "vocal_tic_yield_window_sec": 1.0,
+     "non_directed_yield_window_sec": 1.0,
+     "vocal_tic_response_window_sec": 2.0,
+     "non_directed_response_window_sec": 2.0
+    },
+    "domains": {
+     "airline": {
+      "response_latency_mean": 1.7975903614457809,
+      "yield_latency_mean": 1.0197628458498025,
+      "response_rate": 0.9948630136986302,
+      "yield_rate": 0.9035714285714286,
+      "agent_interruption_rate": 0.3424657534246575,
+      "selectivity_backchannel": 0.65,
+      "selectivity_vocal_tic": 0.45833333333333337,
+      "selectivity_non_directed": 0.33333333333333337,
+      "counts": {
+       "n_simulations": 50,
+       "response_total": 584,
+       "yield_total": 560,
+       "backchannel_total": 40,
+       "vocal_tic_total": 72,
+       "non_directed_total": 45,
+       "agent_interrupts_count": 200
+      }
+     },
+     "retail": {
+      "response_latency_mean": 1.7278940027894,
+      "yield_latency_mean": 0.9354252683732452,
+      "response_rate": 0.9937629937629938,
+      "yield_rate": 0.9322555812163202,
+      "agent_interruption_rate": 0.3354123354123354,
+      "selectivity_backchannel": 0.7254901960784313,
+      "selectivity_vocal_tic": 0.34042553191489366,
+      "selectivity_non_directed": 0.1885245901639344,
+      "counts": {
+       "n_simulations": 114,
+       "response_total": 1443,
+       "yield_total": 1299,
+       "backchannel_total": 102,
+       "vocal_tic_total": 188,
+       "non_directed_total": 122,
+       "agent_interrupts_count": 484
+      }
+     },
+     "telecom": {
+      "response_latency_mean": 1.66759847522236,
+      "yield_latency_mean": 0.9802980734278445,
+      "response_rate": 0.9984142086901364,
+      "yield_rate": 0.9528922757187391,
+      "agent_interruption_rate": 0.1807802093244529,
+      "selectivity_backchannel": 0.6170212765957447,
+      "selectivity_vocal_tic": 0.4545454545454546,
+      "selectivity_non_directed": 0.2896174863387978,
+      "counts": {
+       "n_simulations": 114,
+       "response_total": 3153,
+       "yield_total": 2887,
+       "backchannel_total": 47,
+       "vocal_tic_total": 286,
+       "non_directed_total": 183,
+       "agent_interrupts_count": 570
+      }
+     }
+    },
+    "overall": {
+     "response_latency_mean": 1.7310276131525137,
+     "yield_latency_mean": 0.9784953958836308,
+     "response_rate": 0.9956800720505868,
+     "yield_rate": 0.9295730951688294,
+     "agent_interruption_rate": 0.28621943272048195,
+     "selectivity_backchannel": 0.664170490891392,
+     "selectivity_vocal_tic": 0.41776810659789393,
+     "selectivity_non_directed": 0.27049180327868855,
+     "counts": {
+      "agent_interrupts_count": 1254,
+      "backchannel_total": 189,
+      "n_simulations": 278,
+      "non_directed_total": 350,
+      "response_total": 5180,
+      "vocal_tic_total": 546,
+      "yield_total": 4746
+     }
+    }
+   }
+  },
+  "pine-voice-preview-user-sim-v1-0_pineai_2026-08-17": {
+   "model_name": "Pine Voice Preview",
+   "model_organization": "Pine AI",
+   "submitting_organization": "Pine AI",
+   "submission_date": "2026-08-17",
+   "submission_type": "standard",
+   "modality": "voice",
+   "model_release": {
+    "release_date": "2026-08-10",
+    "announcement_url": "https://www.19pine.ai/blog/pine-ai-the-most-natural-human-computer-interface-is-your-voice",
+    "announcement_title": "Pine AI: The most natural human-computer interface is your voice"
+   },
+   "contact_info": {
+    "email": "arvinx@19pine.ai",
+    "name": "Arvin Xu",
+    "github": "a7vinx"
+   },
+   "results": {
+    "retail": {
+     "pass_1": 70.17543859649122
+    },
+    "airline": {
+     "pass_1": 70.0
+    },
+    "telecom": {
+     "pass_1": 85.96491228070175
+    }
+   },
+   "is_new": true,
+   "trajectories_available": true,
+   "trajectory_files": {
+    "airline": "airline_regular_openai_pine-voice-preview",
+    "retail": "retail_regular_openai_pine-voice-preview",
+    "telecom": "telecom_regular_openai_pine-voice-preview"
+   },
+   "references": [
+    {
+     "title": "Pine AI",
+     "url": "https://19pine.ai",
+     "type": "other"
+    },
+    {
+     "title": "Pine AI: The most natural human-computer interface is your voice",
+     "url": "https://www.19pine.ai/blog/pine-ai-the-most-natural-human-computer-interface-is-your-voice",
+     "type": "blog_post"
+    }
+   ],
+   "methodology": {
+    "evaluation_date": "2026-08-12",
+    "tau2_bench_version": "1.0.1",
+    "user_simulator": "v1.0",
+    "verification": {
+     "modified_prompts": false,
+     "omitted_questions": false,
+     "details": "Standard tau-voice agent prompt, user-simulator prompt, domain policies (data/tau2/domains/<domain>/policy.md), tool schemas, tool results, and evaluator are byte-identical to upstream -- no file in the tau-voice repo is modified. Sierra independently ran the full base splits: retail 114, airline 50, telecom 114; 1 trial per task at regular speech complexity; no task omitted. The single telecom infrastructure error is retained as a non-pass, preserving the 114-task denominator. User-side voices are local ElevenLabs personas from setup_voices (not Sierra-managed submission voices)."
+    },
+    "notes": "Standard submission from Pine AI, independently evaluated by Sierra. The system uses two agents: (1) a voice agent handling real-time speech via a customized ASR -> LLM -> TTS pipeline coordinated by a custom interaction model that governs turn-taking, backchanneling, and other conversational dynamics; (2) a background agent (gemini-3.5-flash) that issues the tool calls for the operational task. The two agents share context.\nAll voice-side models are the same production models serving 19pine.ai -- not benchmark-trained. No files in the tau-voice repository are modified. Pine prepends a scaffold system message that defines its internal agents' identities, responsibilities, and coordination.\nSierra independently evaluated the full base splits on all three domains (retail 114, airline 50, telecom 114), 1 trial per task, --speech-complexity regular. User simulator is the standard v1.0 pipeline (gpt-4.1). The single telecom infrastructure error is counted as a non-pass, so the denominator remains 114. User-side voices are local ElevenLabs personas created via the standard setup_voices script; not Sierra-managed submission voices.\nA companion custom result uses gpt-5.5-2026-04-23 at reasoning_effort=xhigh as the user-simulator LLM."
+   },
+   "voice_config": {
+    "provider": "Pine AI",
+    "model": "pine-voice-preview",
+    "tick_duration_seconds": 0.2,
+    "max_steps_seconds": 1200.0,
+    "user_tts_provider": "elevenlabs/eleven_v3"
+   },
+   "interaction_metrics": {
+    "version": "1.0",
+    "config": {
+     "tick_duration_sec": 0.2,
+     "no_yield_window_sec": 2.0,
+     "backchannel_yield_window_sec": 1.0,
+     "vocal_tic_yield_window_sec": 1.0,
+     "non_directed_yield_window_sec": 1.0,
+     "vocal_tic_response_window_sec": 2.0,
+     "non_directed_response_window_sec": 2.0
+    },
+    "domains": {
+     "airline": {
+      "response_latency_mean": 2.1953232462173315,
+      "yield_latency_mean": 1.1394422310756973,
+      "response_rate": 0.920253164556962,
+      "yield_rate": 0.46395563770794823,
+      "agent_interruption_rate": 0.4835443037974684,
+      "selectivity_backchannel": 0.9803921568627451,
+      "selectivity_vocal_tic": 0.5263157894736843,
+      "selectivity_non_directed": 0.4117647058823529,
+      "counts": {
+       "n_simulations": 50,
+       "response_total": 790,
+       "yield_total": 541,
+       "backchannel_total": 51,
+       "vocal_tic_total": 95,
+       "non_directed_total": 34,
+       "agent_interrupts_count": 382
+      }
+     },
+     "retail": {
+      "response_latency_mean": 2.274142480211082,
+      "yield_latency_mean": 1.1258687258687259,
+      "response_rate": 0.9154589371980676,
+      "yield_rate": 0.49521988527724664,
+      "agent_interruption_rate": 0.4993961352657005,
+      "selectivity_backchannel": 0.9615384615384616,
+      "selectivity_vocal_tic": 0.5333333333333333,
+      "selectivity_non_directed": 0.5800000000000001,
+      "counts": {
+       "n_simulations": 114,
+       "response_total": 1656,
+       "yield_total": 1046,
+       "backchannel_total": 104,
+       "vocal_tic_total": 210,
+       "non_directed_total": 100,
+       "agent_interrupts_count": 827
+      }
+     },
+     "telecom": {
+      "response_latency_mean": 1.940700068634178,
+      "yield_latency_mean": 1.116380297823597,
+      "response_rate": 0.9448767833981842,
+      "yield_rate": 0.4045412418906395,
+      "agent_interruption_rate": 0.42347600518806744,
+      "selectivity_backchannel": 0.9701492537313433,
+      "selectivity_vocal_tic": 0.5377643504531722,
+      "selectivity_non_directed": 0.4840764331210191,
+      "counts": {
+       "n_simulations": 113,
+       "response_total": 3084,
+       "yield_total": 2158,
+       "backchannel_total": 67,
+       "vocal_tic_total": 331,
+       "non_directed_total": 157,
+       "agent_interrupts_count": 1306
+      }
+     }
+    },
+    "overall": {
+     "response_latency_mean": 2.1367219316875303,
+     "yield_latency_mean": 1.1272304182560067,
+     "response_rate": 0.9268629617177379,
+     "yield_rate": 0.4545722549586115,
+     "agent_interruption_rate": 0.4688054814170788,
+     "selectivity_backchannel": 0.97069329071085,
+     "selectivity_vocal_tic": 0.5324711577533966,
+     "selectivity_non_directed": 0.49194704633445735,
+     "counts": {
+      "agent_interrupts_count": 2515,
+      "backchannel_total": 222,
+      "n_simulations": 277,
+      "non_directed_total": 291,
+      "response_total": 5530,
+      "vocal_tic_total": 636,
+      "yield_total": 3745
+     }
+    }
+   },
+   "reasoning_effort": "enabled"
+  },
+  "grok-voice-think-fast-1-0_xai_2026-04-21": {
+   "model_name": "grok-voice-think-fast-1.0",
+   "model_organization": "xAI",
+   "submitting_organization": "Sierra",
+   "submission_date": "2026-04-21",
+   "submission_type": "standard",
+   "modality": "voice",
+   "contact_info": {
+    "email": "victor@sierra.ai",
+    "name": "Sierra Research Team"
+   },
+   "results": {
+    "retail": {
+     "pass_1": 62.28070175438597
+    },
+    "airline": {
+     "pass_1": 66.0
+    },
+    "telecom": {
+     "pass_1": 73.68421052631578
+    }
+   },
+   "is_new": true,
+   "trajectories_available": true,
+   "trajectory_files": {
+    "airline": "xai-grok-voice-think-fast-1.0-airline",
+    "retail": "xai-grok-voice-think-fast-1.0-retail",
+    "telecom": "xai-grok-voice-think-fast-1.0-telecom"
+   },
+   "reasoning_effort": "enabled",
+   "methodology": {
+    "evaluation_date": "2026-04-21",
+    "tau2_bench_version": "1.0.0",
+    "user_simulator": "v1.0",
+    "verification": {
+     "modified_prompts": false,
+     "omitted_questions": false
+    }
+   },
+   "voice_config": {
+    "provider": "xAI",
+    "model": "grok-voice-think-fast-1.0",
+    "tick_duration_seconds": 0.2,
+    "max_steps_seconds": 1200.0,
+    "user_tts_provider": "elevenlabs/eleven_v3"
+   },
+   "model_release": {
+    "release_date": "2026-04-23",
+    "announcement_url": "https://x.ai/news/grok-voice-think-fast-1",
+    "announcement_title": "Grok Voice Think Fast 1.0"
+   },
+   "interaction_metrics": {
+    "version": "1.0",
+    "config": {
+     "tick_duration_sec": 0.2,
+     "no_yield_window_sec": 2.0,
+     "backchannel_yield_window_sec": 1.0,
+     "vocal_tic_yield_window_sec": 1.0,
+     "non_directed_yield_window_sec": 1.0,
+     "vocal_tic_response_window_sec": 2.0,
+     "non_directed_response_window_sec": 2.0
+    },
+    "domains": {
+     "airline": {
+      "response_latency_mean": 1.2317025440313105,
+      "yield_latency_mean": 1.3604989604989608,
+      "response_rate": 1.0,
+      "yield_rate": 0.9581673306772909,
+      "agent_interruption_rate": 0.22113502935420742,
+      "selectivity_backchannel": 0.6097560975609756,
+      "selectivity_vocal_tic": 0.5348837209302326,
+      "selectivity_non_directed": 0.24137931034482762,
+      "counts": {
+       "n_simulations": 50,
+       "response_total": 511,
+       "yield_total": 502,
+       "backchannel_total": 41,
+       "vocal_tic_total": 43,
+       "non_directed_total": 29,
+       "agent_interrupts_count": 113
+      }
+     },
+     "retail": {
+      "response_latency_mean": 1.238461538461537,
+      "yield_latency_mean": 1.34,
+      "response_rate": 0.9989327641408752,
+      "yield_rate": 0.9572072072072072,
+      "agent_interruption_rate": 0.18783351120597652,
+      "selectivity_backchannel": 0.6063829787234043,
+      "selectivity_vocal_tic": 0.5760869565217391,
+      "selectivity_non_directed": 0.2678571428571429,
+      "counts": {
+       "n_simulations": 114,
+       "response_total": 937,
+       "yield_total": 888,
+       "backchannel_total": 94,
+       "vocal_tic_total": 92,
+       "non_directed_total": 56,
+       "agent_interrupts_count": 176
+      }
+     },
+     "telecom": {
+      "response_latency_mean": 1.1710718897976728,
+      "yield_latency_mean": 1.42039911308204,
+      "response_rate": 0.9995697074010327,
+      "yield_rate": 0.8993020937188435,
+      "agent_interruption_rate": 0.18287435456110154,
+      "selectivity_backchannel": 0.7692307692307692,
+      "selectivity_vocal_tic": 0.6900584795321638,
+      "selectivity_non_directed": 0.34375,
+      "counts": {
+       "n_simulations": 114,
+       "response_total": 2324,
+       "yield_total": 2006,
+       "backchannel_total": 26,
+       "vocal_tic_total": 171,
+       "non_directed_total": 64,
+       "agent_interrupts_count": 425
+      }
+     }
+    },
+    "overall": {
+     "response_latency_mean": 1.21374532409684,
+     "yield_latency_mean": 1.3736326911936672,
+     "response_rate": 0.9995008238473027,
+     "yield_rate": 0.9382255438677806,
+     "agent_interruption_rate": 0.1972809650404285,
+     "selectivity_backchannel": 0.6617899485050497,
+     "selectivity_vocal_tic": 0.6003430523280452,
+     "selectivity_non_directed": 0.28432881773399016,
+     "counts": {
+      "agent_interrupts_count": 714,
+      "backchannel_total": 161,
+      "n_simulations": 278,
+      "non_directed_total": 149,
+      "response_total": 3772,
+      "vocal_tic_total": 306,
+      "yield_total": 3396
+     }
+    }
+   }
+  },
+  "gpt-realtime-2_openai_2026-06-24": {
+   "model_name": "gpt-realtime-2",
+   "model_organization": "OpenAI",
+   "submitting_organization": "Sierra",
+   "submission_date": "2026-06-29",
+   "submission_type": "custom",
+   "modality": "voice",
+   "contact_info": {
+    "email": "soham@sierra.ai",
+    "name": "Sierra Research Team"
+   },
+   "results": {
+    "retail": {
+     "pass_1": 50.0
+    },
+    "airline": {
+     "pass_1": 66.0
+    },
+    "telecom": {
+     "pass_1": 37.719298245614034
+    }
+   },
+   "reasoning_effort": "xhigh",
+   "is_new": true,
+   "trajectories_available": true,
+   "trajectory_files": {
+    "airline": "gpt-realtime-2_voice_xhigh_usersim-gpt55xhigh_airline",
+    "retail": "gpt-realtime-2_voice_xhigh_usersim-gpt55xhigh_retail",
+    "telecom": "gpt-realtime-2_voice_xhigh_usersim-gpt55_telecom"
+   },
+   "methodology": {
+    "evaluation_date": "2026-06-29",
+    "tau2_bench_version": "1.0.0",
+    "user_simulator": "gpt-5.5-2026-04-23 (xhigh)",
+    "notes": "Custom submission: identical to the standard gpt-realtime-2 voice evaluation (audio-native, regular speech complexity, ElevenLabs eleven_v3 TTS, agent reasoning_effort=xhigh) EXCEPT the user simulator LLM is gpt-5.5-2026-04-23 run at reasoning_effort=xhigh instead of the leaderboard-standard v1.0 (gpt-4.1). Because telecom's user simulator uses function tools, gpt-5.5 rejects reasoning_effort=none with tools, so all domains use xhigh for consistency. Not comparable to standard-user-simulator leaderboard entries.",
+    "verification": {
+     "modified_prompts": false,
+     "omitted_questions": false
+    }
+   },
+   "voice_config": {
+    "provider": "OpenAI",
+    "model": "gpt-realtime-2",
+    "tick_duration_seconds": 0.2,
+    "max_steps_seconds": 1200.0,
+    "user_tts_provider": "elevenlabs/eleven_v3"
+   },
+   "model_release": {
+    "release_date": "2026-05-07",
+    "announcement_url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/",
+    "announcement_title": "Advancing voice intelligence with new models in the API"
+   },
+   "interaction_metrics": {
+    "version": "1.0",
+    "config": {
+     "tick_duration_sec": 0.2,
+     "no_yield_window_sec": 2.0,
+     "backchannel_yield_window_sec": 1.0,
+     "vocal_tic_yield_window_sec": 1.0,
+     "non_directed_yield_window_sec": 1.0,
+     "vocal_tic_response_window_sec": 2.0,
+     "non_directed_response_window_sec": 2.0
+    },
+    "domains": {
+     "airline": {
+      "response_latency_mean": 2.1115973741794303,
+      "yield_latency_mean": 0.6211267605633803,
+      "response_rate": 0.9481327800829875,
+      "yield_rate": 1.0,
+      "agent_interruption_rate": 0.21991701244813278,
+      "selectivity_backchannel": 0.0,
+      "selectivity_vocal_tic": 0.13043478260869568,
+      "selectivity_non_directed": 0.31999999999999995,
+      "counts": {
+       "n_simulations": 50,
+       "response_total": 482,
+       "yield_total": 284,
+       "backchannel_total": 29,
+       "vocal_tic_total": 46,
+       "non_directed_total": 50,
+       "agent_interrupts_count": 106
+      }
+     },
+     "retail": {
+      "response_latency_mean": 1.8020682523267835,
+      "yield_latency_mean": 0.5992673992673994,
+      "response_rate": 0.9757820383451059,
+      "yield_rate": 0.9981718464351006,
+      "agent_interruption_rate": 0.2401614530776993,
+      "selectivity_backchannel": 0.0,
+      "selectivity_vocal_tic": 0.09890109890109888,
+      "selectivity_non_directed": 0.16891891891891897,
+      "counts": {
+       "n_simulations": 114,
+       "response_total": 991,
+       "yield_total": 547,
+       "backchannel_total": 55,
+       "vocal_tic_total": 91,
+       "non_directed_total": 148,
+       "agent_interrupts_count": 238
+      }
+     },
+     "telecom": {
+      "response_latency_mean": 1.9037001441614605,
+      "yield_latency_mean": 0.5997118155619595,
+      "response_rate": 0.9848556554661618,
+      "yield_rate": 0.9971264367816092,
+      "agent_interruption_rate": 0.17132039753904402,
+      "selectivity_backchannel": 0.03389830508474578,
+      "selectivity_vocal_tic": 0.11055276381909551,
+      "selectivity_non_directed": 0.12077294685990336,
+      "counts": {
+       "n_simulations": 114,
+       "response_total": 2113,
+       "yield_total": 1392,
+       "backchannel_total": 59,
+       "vocal_tic_total": 199,
+       "non_directed_total": 207,
+       "agent_interrupts_count": 362
+      }
+     }
+    },
+    "overall": {
+     "response_latency_mean": 1.9391219235558914,
+     "yield_latency_mean": 0.6067019917975798,
+     "response_rate": 0.9695901579647517,
+     "yield_rate": 0.9984327610722366,
+     "agent_interruption_rate": 0.21046628768829204,
+     "selectivity_backchannel": 0.011299435028248594,
+     "selectivity_vocal_tic": 0.11329621510963002,
+     "selectivity_non_directed": 0.20323062192627409,
+     "counts": {
+      "agent_interrupts_count": 706,
+      "backchannel_total": 143,
+      "n_simulations": 278,
+      "non_directed_total": 405,
+      "response_total": 3586,
+      "vocal_tic_total": 336,
+      "yield_total": 2223
+     }
+    }
+   }
+  },
+  "gemini-3-1-flash-live-preview-thinking-high_google_2026-04-02": {
+   "model_name": "gemini-3.1-flash-live-preview-thinking-high",
+   "model_organization": "Google",
+   "submitting_organization": "Sierra",
+   "submission_date": "2026-04-02",
+   "submission_type": "standard",
+   "modality": "voice",
+   "contact_info": {
+    "email": "keshav@sierra.ai",
+    "name": "Sierra Research Team"
+   },
+   "results": {
+    "retail": {
+     "pass_1": 45.614035087719294
+    },
+    "airline": {
+     "pass_1": 64.0
+    },
+    "telecom": {
+     "pass_1": 21.929824561403507
+    }
+   },
+   "is_new": true,
+   "trajectories_available": true,
+   "trajectory_files": {
+    "airline": "airline_regular",
+    "retail": "retail_regular",
+    "telecom": "telecom_regular"
+   },
+   "reasoning_effort": "high",
+   "methodology": {
+    "evaluation_date": "2026-04-02",
+    "tau2_bench_version": "1.0.0",
+    "user_simulator": "v1.0",
+    "notes": "Evaluated using Gemini 3.1 Flash Live Preview with thinking = HIGH.",
+    "verification": {
+     "modified_prompts": false,
+     "omitted_questions": false
+    }
+   },
+   "voice_config": {
+    "provider": "Google",
+    "model": "gemini-3.1-flash-live-preview",
+    "tick_duration_seconds": 0.2,
+    "max_steps_seconds": 600.0,
+    "user_tts_provider": "elevenlabs/eleven_v3"
+   },
+   "model_release": {
+    "release_date": "2026-03-26",
+    "announcement_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-live/",
+    "announcement_title": "Gemini 3.1 Flash Live: Google's latest AI audio model"
+   },
+   "interaction_metrics": {
+    "version": "1.0",
+    "config": {
+     "tick_duration_sec": 0.2,
+     "no_yield_window_sec": 2.0,
+     "backchannel_yield_window_sec": 1.0,
+     "vocal_tic_yield_window_sec": 1.0,
+     "non_directed_yield_window_sec": 1.0,
+     "vocal_tic_response_window_sec": 2.0,
+     "non_directed_response_window_sec": 2.0
+    },
+    "domains": {
+     "airline": {
+      "response_latency_mean": 3.5902735562310024,
+      "yield_latency_mean": 0.9329479768786128,
+      "response_rate": 0.7723004694835681,
+      "yield_rate": 0.565359477124183,
+      "agent_interruption_rate": 0.2323943661971831,
+      "selectivity_backchannel": 0.9444444444444444,
+      "selectivity_vocal_tic": 0.6875,
+      "selectivity_non_directed": 0.45945945945945943,
+      "counts": {
+       "n_simulations": 50,
+       "response_total": 426,
+       "yield_total": 306,
+       "backchannel_total": 18,
+       "vocal_tic_total": 48,
+       "non_directed_total": 37,
+       "agent_interrupts_count": 99
+      }
+     },
+     "retail": {
+      "response_latency_mean": 2.983682983682984,
+      "yield_latency_mean": 0.7965317919075146,
+      "response_rate": 0.8693009118541033,
+      "yield_rate": 0.4594953519256308,
+      "agent_interruption_rate": 0.1540020263424519,
+      "selectivity_backchannel": 0.8771929824561404,
+      "selectivity_vocal_tic": 0.5913043478260869,
+      "selectivity_non_directed": 0.4683544303797469,
+      "counts": {
+       "n_simulations": 114,
+       "response_total": 987,
+       "yield_total": 753,
+       "backchannel_total": 57,
+       "vocal_tic_total": 115,
+       "non_directed_total": 79,
+       "agent_interrupts_count": 152
+      }
+     },
+     "telecom": {
+      "response_latency_mean": 2.8765217391304345,
+      "yield_latency_mean": 0.8392070484581498,
+      "response_rate": 0.8997155049786629,
+      "yield_rate": 0.4724245577523413,
+      "agent_interruption_rate": 0.17923186344238975,
+      "selectivity_backchannel": 1.0,
+      "selectivity_vocal_tic": 0.5723270440251572,
+      "selectivity_non_directed": 0.3655913978494624,
+      "counts": {
+       "n_simulations": 114,
+       "response_total": 1406,
+       "yield_total": 961,
+       "backchannel_total": 18,
+       "vocal_tic_total": 159,
+       "non_directed_total": 93,
+       "agent_interrupts_count": 252
+      }
+     }
+    },
+    "overall": {
+     "response_latency_mean": 3.1501594263481407,
+     "yield_latency_mean": 0.8562289390814257,
+     "response_rate": 0.8471056287721114,
+     "yield_rate": 0.49909312893405167,
+     "agent_interruption_rate": 0.18854275199400825,
+     "selectivity_backchannel": 0.9405458089668617,
+     "selectivity_vocal_tic": 0.617043797283748,
+     "selectivity_non_directed": 0.43113509589622295,
+     "counts": {
+      "agent_interrupts_count": 503,
+      "backchannel_total": 93,
+      "n_simulations": 278,
+      "non_directed_total": 209,
+      "response_total": 2819,
+      "vocal_tic_total": 322,
+      "yield_total": 2020
+     }
+    }
+   }
+  },
+  "gpt-realtime-2_openai_2026-06-29": {
+   "model_name": "gpt-realtime-2",
+   "model_organization": "OpenAI",
+   "submitting_organization": "Sierra",
+   "submission_date": "2026-06-29",
+   "submission_type": "standard",
+   "modality": "voice",
+   "contact_info": {
+    "email": "soham@sierra.ai",
+    "name": "Sierra Research Team"
+   },
+   "results": {
+    "retail": {
+     "pass_1": 47.368421052631575
+    },
+    "airline": {
+     "pass_1": 57.99999999999999
+    },
+    "telecom": {
+     "pass_1": 21.929824561403507
+    }
+   },
+   "is_new": true,
+   "trajectories_available": true,
+   "trajectory_files": {
+    "airline": "gpt-realtime-2_voice_xhigh_airline",
+    "retail": "gpt-realtime-2_voice_xhigh_retail",
+    "telecom": "gpt-realtime-2_voice_xhigh_telecom"
+   },
+   "methodology": {
+    "evaluation_date": "2026-06-24",
+    "tau2_bench_version": "1.0.0",
+    "user_simulator": "v1.0",
+    "verification": {
+     "modified_prompts": false,
+     "omitted_questions": false
+    }
+   },
+   "voice_config": {
+    "provider": "openai",
+    "model": "gpt-realtime-2",
+    "tick_duration_seconds": 0.2,
+    "max_steps_seconds": 1200.0,
+    "user_tts_provider": "elevenlabs/eleven_v3"
+   },
+   "model_release": {
+    "release_date": "2026-05-07",
+    "announcement_url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/",
+    "announcement_title": "Advancing voice intelligence with new models in the API"
+   },
+   "reasoning_effort": "xhigh",
+   "interaction_metrics": {
+    "version": "1.0",
+    "config": {
+     "tick_duration_sec": 0.2,
+     "no_yield_window_sec": 2.0,
+     "backchannel_yield_window_sec": 1.0,
+     "vocal_tic_yield_window_sec": 1.0,
+     "non_directed_yield_window_sec": 1.0,
+     "vocal_tic_response_window_sec": 2.0,
+     "non_directed_response_window_sec": 2.0
+    },
+    "domains": {
+     "airline": {
+      "response_latency_mean": 2.0741573033707863,
+      "yield_latency_mean": 0.6270742358078601,
+      "response_rate": 0.9081632653061225,
+      "yield_rate": 1.0,
+      "agent_interruption_rate": 0.2066326530612245,
+      "selectivity_backchannel": 0.05555555555555558,
+      "selectivity_vocal_tic": 0.21052631578947367,
+      "selectivity_non_directed": 0.16666666666666663,
+      "counts": {
+       "n_simulations": 50,
+       "response_total": 392,
+       "yield_total": 229,
+       "backchannel_total": 18,
+       "vocal_tic_total": 38,
+       "non_directed_total": 24,
+       "agent_interrupts_count": 81
+      }
+     },
+     "retail": {
+      "response_latency_mean": 1.946205357142856,
+      "yield_latency_mean": 0.613448275862069,
+      "response_rate": 0.9718004338394793,
+      "yield_rate": 0.9931506849315068,
+      "agent_interruption_rate": 0.23535791757049893,
+      "selectivity_backchannel": 0.04347826086956519,
+      "selectivity_vocal_tic": 0.125,
+      "selectivity_non_directed": 0.16346153846153844,
+      "counts": {
+       "n_simulations": 114,
+       "response_total": 922,
+       "yield_total": 584,
+       "backchannel_total": 69,
+       "vocal_tic_total": 88,
+       "non_directed_total": 104,
+       "agent_interrupts_count": 217
+      }
+     },
+     "telecom": {
+      "response_latency_mean": 1.9145945945945937,
+      "yield_latency_mean": 0.6064264849074974,
+      "response_rate": 0.9730440499671269,
+      "yield_rate": 0.9990272373540856,
+      "agent_interruption_rate": 0.18080210387902695,
+      "selectivity_backchannel": 0.017857142857142905,
+      "selectivity_vocal_tic": 0.048387096774193505,
+      "selectivity_non_directed": 0.13725490196078427,
+      "counts": {
+       "n_simulations": 114,
+       "response_total": 1521,
+       "yield_total": 1028,
+       "backchannel_total": 56,
+       "vocal_tic_total": 124,
+       "non_directed_total": 153,
+       "agent_interrupts_count": 275
+      }
+     }
+    },
+    "overall": {
+     "response_latency_mean": 1.9783190850360786,
+     "yield_latency_mean": 0.6156496655258089,
+     "response_rate": 0.9510025830375762,
+     "yield_rate": 0.9973926407618642,
+     "agent_interruption_rate": 0.20759755817025013,
+     "selectivity_backchannel": 0.03896365309408789,
+     "selectivity_vocal_tic": 0.12797113752122238,
+     "selectivity_non_directed": 0.15579436902966312,
+     "counts": {
+      "agent_interrupts_count": 573,
+      "backchannel_total": 143,
+      "n_simulations": 278,
+      "non_directed_total": 281,
+      "response_total": 2835,
+      "vocal_tic_total": 250,
+      "yield_total": 1841
+     }
+    }
+   }
+  },
+  "gpt-realtime-2-minimal_openai_2026-07-01": {
+   "model_name": "gpt-realtime-2",
+   "model_organization": "OpenAI",
+   "submitting_organization": "Sierra",
+   "submission_date": "2026-07-01",
+   "submission_type": "standard",
+   "modality": "voice",
+   "contact_info": {
+    "email": "soham@sierra.ai",
+    "name": "Sierra Research Team"
+   },
+   "results": {
+    "retail": {
+     "pass_1": 39.473684210526315
+    },
+    "airline": {
+     "pass_1": 56.00000000000001
+    },
+    "telecom": {
+     "pass_1": 20.175438596491226
+    }
+   },
+   "is_new": true,
+   "trajectories_available": true,
+   "trajectory_files": {
+    "airline": "gpt-realtime-2_voice_minimal_airline",
+    "retail": "gpt-realtime-2_voice_minimal_retail",
+    "telecom": "gpt-realtime-2_voice_minimal_telecom"
+   },
+   "methodology": {
+    "evaluation_date": "2026-07-01",
+    "tau2_bench_version": "1.0.0",
+    "user_simulator": "v1.0",
+    "verification": {
+     "modified_prompts": false,
+     "omitted_questions": false
+    }
+   },
+   "voice_config": {
+    "provider": "openai",
+    "model": "gpt-realtime-2",
+    "tick_duration_seconds": 0.2,
+    "max_steps_seconds": 1200.0,
+    "user_tts_provider": "elevenlabs/eleven_v3"
+   },
+   "model_release": {
+    "release_date": "2026-05-07",
+    "announcement_url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/",
+    "announcement_title": "Advancing voice intelligence with new models in the API"
+   },
+   "reasoning_effort": "minimal",
+   "interaction_metrics": {
+    "version": "1.0",
+    "config": {
+     "tick_duration_sec": 0.2,
+     "no_yield_window_sec": 2.0,
+     "backchannel_yield_window_sec": 1.0,
+     "vocal_tic_yield_window_sec": 1.0,
+     "non_directed_yield_window_sec": 1.0,
+     "vocal_tic_response_window_sec": 2.0,
+     "non_directed_response_window_sec": 2.0
+    },
+    "domains": {
+     "airline": {
+      "response_latency_mean": 1.4709219858156015,
+      "yield_latency_mean": 0.618627450980392,
+      "response_rate": 0.9964664310954063,
+      "yield_rate": 1.0,
+      "agent_interruption_rate": 0.18374558303886926,
+      "selectivity_backchannel": 0.0,
+      "selectivity_vocal_tic": 0.05555555555555558,
+      "selectivity_non_directed": 0.16279069767441856,
+      "counts": {
+       "n_simulations": 50,
+       "response_total": 283,
+       "yield_total": 204,
+       "backchannel_total": 28,
+       "vocal_tic_total": 36,
+       "non_directed_total": 43,
+       "agent_interrupts_count": 52
+      }
+     },
+     "retail": {
+      "response_latency_mean": 1.443644544431945,
+      "yield_latency_mean": 0.6187279151943462,
+      "response_rate": 0.9977553310886644,
+      "yield_rate": 1.0,
+      "agent_interruption_rate": 0.20089786756453423,
+      "selectivity_backchannel": 0.038961038961038974,
+      "selectivity_vocal_tic": 0.06024096385542166,
+      "selectivity_non_directed": 0.14925373134328357,
+      "counts": {
+       "n_simulations": 114,
+       "response_total": 891,
+       "yield_total": 566,
+       "backchannel_total": 77,
+       "vocal_tic_total": 83,
+       "non_directed_total": 134,
+       "agent_interrupts_count": 179
+      }
+     },
+     "telecom": {
+      "response_latency_mean": 1.4040816326530599,
+      "yield_latency_mean": 0.6238095238095239,
+      "response_rate": 1.0,
+      "yield_rate": 0.9966101694915255,
+      "agent_interruption_rate": 0.17573696145124718,
+      "selectivity_backchannel": 0.01851851851851849,
+      "selectivity_vocal_tic": 0.07317073170731703,
+      "selectivity_non_directed": 0.19148936170212771,
+      "counts": {
+       "n_simulations": 114,
+       "response_total": 882,
+       "yield_total": 590,
+       "backchannel_total": 54,
+       "vocal_tic_total": 82,
+       "non_directed_total": 94,
+       "agent_interrupts_count": 155
+      }
+     }
+    },
+    "overall": {
+     "response_latency_mean": 1.4395493876335355,
+     "yield_latency_mean": 0.6203882966614207,
+     "response_rate": 0.9980739207280237,
+     "yield_rate": 0.9988700564971751,
+     "agent_interruption_rate": 0.18679347068488358,
+     "selectivity_backchannel": 0.01915985249318582,
+     "selectivity_vocal_tic": 0.06298908370609808,
+     "selectivity_non_directed": 0.16784459690660994,
+     "counts": {
+      "agent_interrupts_count": 386,
+      "backchannel_total": 159,
+      "n_simulations": 278,
+      "non_directed_total": 271,
+      "response_total": 2056,
+      "vocal_tic_total": 201,
+      "yield_total": 1360
+     }
+    }
+   }
+  },
+  "grok-voice-think-fast-2-0_xai_2026-08-06": {
+   "model_name": "grok-voice-think-fast-2.0",
+   "model_organization": "xAI",
+   "submitting_organization": "Sierra",
+   "submission_date": "2026-08-06",
+   "submission_type": "standard",
+   "modality": "voice",
+   "contact_info": {
+    "email": "keshav@sierra.ai",
+    "name": "Sierra Research Team"
+   },
+   "results": {
+    "retail": {
+     "pass_1": 59.64912280701754,
+     "cost": 0.23825263157894733
+    },
+    "airline": {
+     "pass_1": 56.00000000000001,
+     "cost": 0.20933333333333337
+    },
+    "telecom": {
+     "pass_1": 71.9298245614035,
+     "cost": 0.38721871345029246
+    }
+   },
+   "is_new": true,
+   "trajectories_available": true,
+   "trajectory_files": {
+    "airline": "airline_regular_xai",
+    "retail": "retail_regular_xai",
+    "telecom": "telecom_regular_xai"
+   },
+   "methodology": {
+    "evaluation_date": "2026-08-06",
+    "tau2_bench_version": "1.0.1",
+    "user_simulator": "v1.0",
+    "notes": "Full-duplex audio-native evaluation using regular speech complexity (realistic audio conditions). 1 trial per task.",
+    "verification": {
+     "modified_prompts": false,
+     "omitted_questions": false
+    }
+   },
+   "voice_config": {
+    "provider": "xai",
+    "model": "grok-voice-think-fast-2.0",
+    "tick_duration_seconds": 0.2,
+    "max_steps_seconds": 1200.0,
+    "user_tts_provider": "elevenlabs/eleven_v3"
+   },
+   "interaction_metrics": {
+    "version": "1.0",
+    "config": {
+     "tick_duration_sec": 0.2,
+     "no_yield_window_sec": 2.0,
+     "backchannel_yield_window_sec": 1.0,
+     "vocal_tic_yield_window_sec": 1.0,
+     "non_directed_yield_window_sec": 1.0,
+     "vocal_tic_response_window_sec": 2.0,
+     "non_directed_response_window_sec": 2.0
+    },
+    "domains": {
+     "airline": {
+      "response_latency_mean": 1.6867924528301874,
+      "yield_latency_mean": 0.9123076923076923,
+      "response_rate": 1.0,
+      "yield_rate": 0.959409594095941,
+      "agent_interruption_rate": 0.13746630727762804,
+      "selectivity_backchannel": 0.5483870967741935,
+      "selectivity_vocal_tic": 0.33333333333333337,
+      "selectivity_non_directed": 0.2682926829268293,
+      "counts": {
+       "n_simulations": 50,
+       "response_total": 371,
+       "yield_total": 271,
+       "backchannel_total": 31,
+       "vocal_tic_total": 30,
+       "non_directed_total": 41,
+       "agent_interrupts_count": 51
+      }
+     },
+     "retail": {
+      "response_latency_mean": 1.778121546961324,
+      "yield_latency_mean": 0.9117088607594938,
+      "response_rate": 1.0,
+      "yield_rate": 0.9678407350689127,
+      "agent_interruption_rate": 0.11602209944751381,
+      "selectivity_backchannel": 0.5217391304347826,
+      "selectivity_vocal_tic": 0.36986301369863017,
+      "selectivity_non_directed": 0.28,
+      "counts": {
+       "n_simulations": 114,
+       "response_total": 905,
+       "yield_total": 653,
+       "backchannel_total": 92,
+       "vocal_tic_total": 73,
+       "non_directed_total": 75,
+       "agent_interrupts_count": 105
+      }
+     },
+     "telecom": {
+      "response_latency_mean": 1.6603235014272104,
+      "yield_latency_mean": 0.9883244882486734,
+      "response_rate": 0.9990494296577946,
+      "yield_rate": 0.9821295606850335,
+      "agent_interruption_rate": 0.06701520912547529,
+      "selectivity_backchannel": 0.34523809523809523,
+      "selectivity_vocal_tic": 0.28402366863905326,
+      "selectivity_non_directed": 0.28301886792452835,
+      "counts": {
+       "n_simulations": 114,
+       "response_total": 2104,
+       "yield_total": 1343,
+       "backchannel_total": 84,
+       "vocal_tic_total": 169,
+       "non_directed_total": 106,
+       "agent_interrupts_count": 141
+      }
+     }
+    },
+    "overall": {
+     "response_latency_mean": 1.7084125004062407,
+     "yield_latency_mean": 0.937447013771953,
+     "response_rate": 0.9996831432192649,
+     "yield_rate": 0.969793296616629,
+     "agent_interruption_rate": 0.10683453861687238,
+     "selectivity_backchannel": 0.4717881074823571,
+     "selectivity_vocal_tic": 0.3290733385570056,
+     "selectivity_non_directed": 0.27710385028378587,
+     "counts": {
+      "n_simulations": 278,
+      "response_total": 3380,
+      "yield_total": 2267,
+      "backchannel_total": 207,
+      "vocal_tic_total": 272,
+      "non_directed_total": 222,
+      "agent_interrupts_count": 297
+     }
+    }
+   },
+   "model_release": {
+    "release_date": "2026-07-29",
+    "announcement_url": "https://x.ai/news/grok-voice-think-fast-2",
+    "announcement_title": "Introducing Grok Voice Think Fast 2.0"
+   },
+   "reasoning_effort": "high"
+  },
+  "qwen3-5-omni-plus-realtime_qwen_2026-08-06": {
+   "model_name": "qwen3.5-omni-plus-realtime",
+   "model_organization": "Qwen",
+   "submitting_organization": "Sierra",
+   "submission_date": "2026-08-06",
+   "submission_type": "standard",
+   "modality": "voice",
+   "contact_info": {
+    "email": "keshav@sierra.ai",
+    "name": "Sierra Research Team"
+   },
+   "results": {
+    "retail": {
+     "pass_1": 46.49122807017544,
+     "cost": 0.580765906741573
+    },
+    "airline": {
+     "pass_1": 54.0,
+     "cost": 0.5397773999999999
+    },
+    "telecom": {
+     "pass_1": 60.526315789473685,
+     "cost": 1.467414694736842
+    }
+   },
+   "is_new": true,
+   "trajectories_available": true,
+   "trajectory_files": {
+    "airline": "airline_regular_qwen",
+    "retail": "retail_regular_qwen",
+    "telecom": "telecom_regular_qwen"
+   },
+   "methodology": {
+    "evaluation_date": "2026-08-05",
+    "tau2_bench_version": "1.0.1",
+    "user_simulator": "v1.0",
+    "notes": "Full-duplex audio-native evaluation using regular speech complexity (realistic audio conditions). 1 trial per task.",
+    "verification": {
+     "modified_prompts": false,
+     "omitted_questions": false
+    }
+   },
+   "voice_config": {
+    "provider": "qwen",
+    "model": "qwen3.5-omni-plus-realtime",
+    "tick_duration_seconds": 0.2,
+    "max_steps_seconds": 1200.0,
+    "user_tts_provider": "elevenlabs/eleven_v3"
+   },
+   "interaction_metrics": {
+    "version": "1.0",
+    "config": {
+     "tick_duration_sec": 0.2,
+     "no_yield_window_sec": 2.0,
+     "backchannel_yield_window_sec": 1.0,
+     "vocal_tic_yield_window_sec": 1.0,
+     "non_directed_yield_window_sec": 1.0,
+     "vocal_tic_response_window_sec": 2.0,
+     "non_directed_response_window_sec": 2.0
+    },
+    "domains": {
+     "airline": {
+      "response_latency_mean": 1.7473451327433622,
+      "yield_latency_mean": 0.9282352941176472,
+      "response_rate": 0.9847494553376906,
+      "yield_rate": 0.8374384236453202,
+      "agent_interruption_rate": 0.41830065359477125,
+      "selectivity_backchannel": 0.926829268292683,
+      "selectivity_vocal_tic": 0.3770491803278688,
+      "selectivity_non_directed": 0.18367346938775508,
+      "counts": {
+       "n_simulations": 50,
+       "response_total": 459,
+       "yield_total": 406,
+       "backchannel_total": 41,
+       "vocal_tic_total": 61,
+       "non_directed_total": 49,
+       "agent_interrupts_count": 192
+      }
+     },
+     "retail": {
+      "response_latency_mean": 1.706824925816023,
+      "yield_latency_mean": 0.9324855491329481,
+      "response_rate": 0.9931237721021611,
+      "yield_rate": 0.9124472573839663,
+      "agent_interruption_rate": 0.35952848722986247,
+      "selectivity_backchannel": 0.7439024390243902,
+      "selectivity_vocal_tic": 0.37755102040816324,
+      "selectivity_non_directed": 0.15596330275229353,
+      "counts": {
+       "n_simulations": 114,
+       "response_total": 1018,
+       "yield_total": 948,
+       "backchannel_total": 82,
+       "vocal_tic_total": 98,
+       "non_directed_total": 109,
+       "agent_interrupts_count": 366
+      }
+     },
+     "telecom": {
+      "response_latency_mean": 1.6407796101948993,
+      "yield_latency_mean": 0.9368817710786622,
+      "response_rate": 0.9977561705310396,
+      "yield_rate": 0.9558757316524088,
+      "agent_interruption_rate": 0.30553477935676887,
+      "selectivity_backchannel": 0.8493150684931507,
+      "selectivity_vocal_tic": 0.33624454148471616,
+      "selectivity_non_directed": 0.09569377990430628,
+      "counts": {
+       "n_simulations": 114,
+       "response_total": 2674,
+       "yield_total": 2221,
+       "backchannel_total": 73,
+       "vocal_tic_total": 229,
+       "non_directed_total": 209,
+       "agent_interrupts_count": 817
+      }
+     }
+    },
+    "overall": {
+     "response_latency_mean": 1.6983165562514282,
+     "yield_latency_mean": 0.9325342047764192,
+     "response_rate": 0.9918764659902971,
+     "yield_rate": 0.9019204708938985,
+     "agent_interruption_rate": 0.36112130672713416,
+     "selectivity_backchannel": 0.8400155919367412,
+     "selectivity_vocal_tic": 0.3636149140735827,
+     "selectivity_non_directed": 0.14511018401478495,
+     "counts": {
+      "agent_interrupts_count": 1375,
+      "backchannel_total": 196,
+      "n_simulations": 278,
+      "non_directed_total": 367,
+      "response_total": 4151,
+      "vocal_tic_total": 388,
+      "yield_total": 3575
+     }
+    }
+   },
+   "model_release": {
+    "release_date": "2026-03-30",
+    "announcement_url": "https://www.alibabacloud.com/help/en/model-studio/qwen-omni",
+    "announcement_title": "Qwen-Omni Models | Alibaba Cloud Model Studio"
+   }
+  },
+  "livekit-cascaded_livekit_2026-05-19": {
+   "model_name": "Cascaded baseline",
+   "model_organization": "Multiple providers",
+   "submitting_organization": "Sierra",
+   "submission_date": "2026-05-19",
+   "submission_type": "standard",
+   "modality": "voice",
+   "contact_info": {
+    "email": "ben.s@sierra.ai",
+    "name": "Sierra Research Team"
+   },
+   "results": {
+    "retail": {
+     "pass_1": 28.947368421052634
+    },
+    "airline": {
+     "pass_1": 48.0
+    },
+    "telecom": {
+     "pass_1": 16.666666666666664
+    }
+   },
+   "is_new": true,
+   "trajectories_available": true,
+   "trajectory_files": {
+    "airline": "airline_regular_livekit",
+    "retail": "retail_regular_livekit",
+    "telecom": "telecom_regular_livekit"
+   },
+   "methodology": {
+    "evaluation_date": "2026-04-20",
+    "tau2_bench_version": "1.0.0",
+    "user_simulator": "v1.0",
+    "notes": "Cascaded STT-LLM-TTS pipeline using Deepgram nova-3 STT, OpenAI gpt-4.1 LLM, and Deepgram aura-asteria-en TTS. Full-duplex audio-native evaluation using regular speech complexity (realistic audio conditions). 1 trial per task.",
+    "verification": {
+     "modified_prompts": false,
+     "omitted_questions": false
+    }
+   },
+   "voice_config": {
+    "provider": "Cascaded",
+    "model": "STT-LLM-TTS",
+    "pipeline": {
+     "asr": "Deepgram nova-3",
+     "llm": "OpenAI gpt-4.1",
+     "tts": "Deepgram aura-asteria-en"
+    },
+    "tick_duration_seconds": 0.2,
+    "max_steps_seconds": 1200.0,
+    "user_tts_provider": "elevenlabs/eleven_v3"
+   },
+   "model_release": {
+    "release_date": "2026-05-19"
+   },
+   "references": [],
+   "interaction_metrics": {
+    "version": "1.0",
+    "config": {
+     "tick_duration_sec": 0.2,
+     "no_yield_window_sec": 2.0,
+     "backchannel_yield_window_sec": 1.0,
+     "vocal_tic_yield_window_sec": 1.0,
+     "non_directed_yield_window_sec": 1.0,
+     "vocal_tic_response_window_sec": 2.0,
+     "non_directed_response_window_sec": 2.0
+    },
+    "domains": {
+     "airline": {
+      "response_latency_mean": 4.4028021015761825,
+      "yield_latency_mean": 0.8839328537170265,
+      "response_rate": 0.7664429530201342,
+      "yield_rate": 0.9858156028368794,
+      "agent_interruption_rate": 0.7087248322147651,
+      "selectivity_backchannel": 0.75,
+      "selectivity_vocal_tic": 0.4631578947368421,
+      "selectivity_non_directed": 0.6111111111111112,
+      "counts": {
+       "n_simulations": 50,
+       "response_total": 745,
+       "yield_total": 423,
+       "backchannel_total": 8,
+       "vocal_tic_total": 95,
+       "non_directed_total": 54,
+       "agent_interrupts_count": 528
+      }
+     },
+     "retail": {
+      "response_latency_mean": 4.016493313521546,
+      "yield_latency_mean": 0.843699421965318,
+      "response_rate": 0.768703597944032,
+      "yield_rate": 0.9919724770642202,
+      "agent_interruption_rate": 0.5762421473443746,
+      "selectivity_backchannel": 0.5714285714285714,
+      "selectivity_vocal_tic": 0.4971428571428571,
+      "selectivity_non_directed": 0.5227272727272727,
+      "counts": {
+       "n_simulations": 114,
+       "response_total": 1751,
+       "yield_total": 872,
+       "backchannel_total": 14,
+       "vocal_tic_total": 175,
+       "non_directed_total": 132,
+       "agent_interrupts_count": 1009
+      }
+     },
+     "telecom": {
+      "response_latency_mean": 4.291288160833953,
+      "yield_latency_mean": 0.8824863174354965,
+      "response_rate": 0.8369339426672207,
+      "yield_rate": 0.985362095531587,
+      "agent_interruption_rate": 0.6476942251765684,
+      "selectivity_backchannel": 0.6799999999999999,
+      "selectivity_vocal_tic": 0.5067961165048543,
+      "selectivity_non_directed": 0.5981308411214954,
+      "counts": {
+       "n_simulations": 114,
+       "response_total": 4814,
+       "yield_total": 2596,
+       "backchannel_total": 25,
+       "vocal_tic_total": 515,
+       "non_directed_total": 321,
+       "agent_interrupts_count": 3118
+      }
+     }
+    },
+    "overall": {
+     "response_latency_mean": 4.236861191977227,
+     "yield_latency_mean": 0.8700395310392803,
+     "response_rate": 0.790693497877129,
+     "yield_rate": 0.9877167251442289,
+     "agent_interruption_rate": 0.6442204015785694,
+     "selectivity_backchannel": 0.6671428571428571,
+     "selectivity_vocal_tic": 0.48903228946151783,
+     "selectivity_non_directed": 0.5773230749866264,
+     "counts": {
+      "agent_interrupts_count": 4655,
+      "backchannel_total": 47,
+      "n_simulations": 278,
+      "non_directed_total": 507,
+      "response_total": 7310,
+      "vocal_tic_total": 785,
+      "yield_total": 3891
+     }
+    }
+   }
+  },
+  "gemini-3-1-flash-live-preview-thinking-minimal_google_2026-04-13": {
+   "model_name": "gemini-3.1-flash-live-preview-thinking-minimal",
+   "model_organization": "Google",
+   "submitting_organization": "Sierra",
+   "submission_date": "2026-04-13",
+   "submission_type": "standard",
+   "modality": "voice",
+   "contact_info": {
+    "email": "keshav@sierra.ai",
+    "name": "Sierra Research Team"
+   },
+   "results": {
+    "retail": {
+     "pass_1": 26.31578947368421
+    },
+    "airline": {
+     "pass_1": 42.0
+    },
+    "telecom": {
+     "pass_1": 17.543859649122805
+    }
+   },
+   "is_new": true,
+   "trajectories_available": true,
+   "trajectory_files": {
+    "airline": "airline_regular_gemini_gemini-3.1-flash-live-preview",
+    "retail": "retail_regular_gemini_gemini-3.1-flash-live-preview",
+    "telecom": "telecom_regular_gemini_gemini-3.1-flash-live-preview"
+   },
+   "reasoning_effort": "minimal",
+   "methodology": {
+    "evaluation_date": "2026-04-13",
+    "tau2_bench_version": "1.0.0",
+    "user_simulator": "v1.0",
+    "notes": "Evaluated using Gemini 3.1 Flash Live Preview with thinking = MINIMAL.",
+    "verification": {
+     "modified_prompts": false,
+     "omitted_questions": false
+    }
+   },
+   "voice_config": {
+    "provider": "Google",
+    "model": "gemini-3.1-flash-live-preview-thinking-minimal",
+    "tick_duration_seconds": 0.2,
+    "max_steps_seconds": 600.0,
+    "user_tts_provider": "elevenlabs/eleven_v3"
+   },
+   "model_release": {
+    "release_date": "2026-03-26",
+    "announcement_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-live/",
+    "announcement_title": "Gemini 3.1 Flash Live: Google's latest AI audio model"
+   },
+   "interaction_metrics": {
+    "version": "1.0",
+    "config": {
+     "tick_duration_sec": 0.2,
+     "no_yield_window_sec": 2.0,
+     "backchannel_yield_window_sec": 1.0,
+     "vocal_tic_yield_window_sec": 1.0,
+     "non_directed_yield_window_sec": 1.0,
+     "vocal_tic_response_window_sec": 2.0,
+     "non_directed_response_window_sec": 2.0
+    },
+    "domains": {
+     "airline": {
+      "response_latency_mean": 1.5637096774193529,
+      "yield_latency_mean": 0.8020905923344949,
+      "response_rate": 0.9725490196078431,
+      "yield_rate": 0.5942028985507246,
+      "agent_interruption_rate": 0.09411764705882353,
+      "selectivity_backchannel": 0.8947368421052632,
+      "selectivity_vocal_tic": 0.6346153846153846,
+      "selectivity_non_directed": 0.3055555555555556,
+      "counts": {
+       "n_simulations": 50,
+       "response_total": 510,
+       "yield_total": 483,
+       "backchannel_total": 19,
+       "vocal_tic_total": 52,
+       "non_directed_total": 36,
+       "agent_interrupts_count": 48
+      }
+     },
+     "retail": {
+      "response_latency_mean": 1.835789473684209,
+      "yield_latency_mean": 0.8098214285714286,
+      "response_rate": 0.9557344064386318,
+      "yield_rate": 0.4843243243243243,
+      "agent_interruption_rate": 0.09557344064386318,
+      "selectivity_backchannel": 0.8367346938775511,
+      "selectivity_vocal_tic": 0.5333333333333333,
+      "selectivity_non_directed": 0.2588235294117647,
+      "counts": {
+       "n_simulations": 114,
+       "response_total": 994,
+       "yield_total": 925,
+       "backchannel_total": 49,
+       "vocal_tic_total": 120,
+       "non_directed_total": 85,
+       "agent_interrupts_count": 95
+      }
+     },
+     "telecom": {
+      "response_latency_mean": 1.518483412322274,
+      "yield_latency_mean": 0.8547215496368039,
+      "response_rate": 0.9806351665375678,
+      "yield_rate": 0.4887573964497041,
+      "agent_interruption_rate": 0.10534469403563129,
+      "selectivity_backchannel": 0.96,
+      "selectivity_vocal_tic": 0.37142857142857144,
+      "selectivity_non_directed": 0.24444444444444446,
+      "counts": {
+       "n_simulations": 114,
+       "response_total": 1291,
+       "yield_total": 845,
+       "backchannel_total": 25,
+       "vocal_tic_total": 140,
+       "non_directed_total": 90,
+       "agent_interrupts_count": 136
+      }
+     }
+    },
+    "overall": {
+     "response_latency_mean": 1.6393275211419454,
+     "yield_latency_mean": 0.8222111901809092,
+     "response_rate": 0.9696395308613476,
+     "yield_rate": 0.5224282064415844,
+     "agent_interruption_rate": 0.09834526057943933,
+     "selectivity_backchannel": 0.897157178660938,
+     "selectivity_vocal_tic": 0.5131257631257631,
+     "selectivity_non_directed": 0.2696078431372549,
+     "counts": {
+      "agent_interrupts_count": 279,
+      "backchannel_total": 93,
+      "n_simulations": 278,
+      "non_directed_total": 211,
+      "response_total": 2795,
+      "vocal_tic_total": 312,
+      "yield_total": 2253
+     }
+    }
+   }
+  },
+  "gpt-realtime-1.5_sierra_2026-03-03": {
+   "model_name": "gpt-realtime-1.5",
+   "model_organization": "OpenAI",
+   "submitting_organization": "Sierra",
+   "submission_date": "2026-03-03",
+   "submission_type": "standard",
+   "modality": "voice",
+   "contact_info": {
+    "email": "victor@sierra.ai",
+    "name": "Sierra Research Team"
+   },
+   "is_new": true,
+   "trajectories_available": true,
+   "trajectory_files": {
+    "airline": "airline_regular_openai_gpt-realtime-1.5",
+    "retail": "retail_regular_openai_gpt-realtime-1.5",
+    "telecom": "telecom_regular_openai_gpt-realtime-1.5"
+   },
+   "results": {
+    "airline": {
+     "pass_1": 40.0
+    },
+    "retail": {
+     "pass_1": 44.7
+    },
+    "telecom": {
+     "pass_1": 21.1
+    }
+   },
+   "voice_config": {
+    "provider": "OpenAI",
+    "model": "gpt-realtime-1.5",
+    "tick_duration_seconds": 0.2,
+    "max_steps_seconds": 600,
+    "user_tts_provider": "elevenlabs/eleven_v3"
+   },
+   "methodology": {
+    "evaluation_date": "2026-03-03",
+    "tau2_bench_version": "1.0.0",
+    "user_simulator": "v1.0",
+    "notes": "Full-duplex audio-native evaluation using regular speech complexity (realistic audio conditions). 1 trial per task.",
+    "verification": {
+     "modified_prompts": false,
+     "omitted_questions": false
+    }
+   },
+   "model_release": {
+    "release_date": "2026-02-23",
+    "announcement_url": "https://developers.openai.com/api/docs/models/gpt-realtime-1.5",
+    "announcement_title": "gpt-realtime-1.5 Model | OpenAI API"
+   },
+   "interaction_metrics": {
+    "version": "1.0",
+    "config": {
+     "tick_duration_sec": 0.2,
+     "no_yield_window_sec": 2.0,
+     "backchannel_yield_window_sec": 1.0,
+     "vocal_tic_yield_window_sec": 1.0,
+     "non_directed_yield_window_sec": 1.0,
+     "vocal_tic_response_window_sec": 2.0,
+     "non_directed_response_window_sec": 2.0
+    },
+    "domains": {
+     "airline": {
+      "response_latency_mean": 1.4279069767441859,
+      "yield_latency_mean": 0.417479674796748,
+      "response_rate": 0.9985486211901307,
+      "yield_rate": 1.0,
+      "agent_interruption_rate": 0.14223512336719885,
+      "selectivity_backchannel": 0.023255813953488413,
+      "selectivity_vocal_tic": 0.06493506493506496,
+      "selectivity_non_directed": 0.0714285714285714,
+      "counts": {
+       "n_simulations": 50,
+       "response_total": 689,
+       "yield_total": 492,
+       "backchannel_total": 43,
+       "vocal_tic_total": 77,
+       "non_directed_total": 98,
+       "agent_interrupts_count": 98
+      }
+     },
+     "retail": {
+      "response_latency_mean": 1.3924137931034484,
+      "yield_latency_mean": 0.4255744255744257,
+      "response_rate": 0.9993108201240524,
+      "yield_rate": 1.0,
+      "agent_interruption_rate": 0.14679531357684356,
+      "selectivity_backchannel": 0.033333333333333326,
+      "selectivity_vocal_tic": 0.06153846153846154,
+      "selectivity_non_directed": 0.08433734939759041,
+      "counts": {
+       "n_simulations": 114,
+       "response_total": 1451,
+       "yield_total": 1001,
+       "backchannel_total": 90,
+       "vocal_tic_total": 130,
+       "non_directed_total": 166,
+       "agent_interrupts_count": 213
+      }
+     },
+     "telecom": {
+      "response_latency_mean": 1.346034276604224,
+      "yield_latency_mean": 0.4145584725536993,
+      "response_rate": 1.0,
+      "yield_rate": 0.99880810488677,
+      "agent_interruption_rate": 0.11717815862893582,
+      "selectivity_backchannel": 0.0,
+      "selectivity_vocal_tic": 0.03200000000000003,
+      "selectivity_non_directed": 0.13461538461538458,
+      "counts": {
+       "n_simulations": 114,
+       "response_total": 2509,
+       "yield_total": 1678,
+       "backchannel_total": 32,
+       "vocal_tic_total": 250,
+       "non_directed_total": 208,
+       "agent_interrupts_count": 294
+      }
+     }
+    },
+    "overall": {
+     "response_latency_mean": 1.388785015483953,
+     "yield_latency_mean": 0.4192041909749577,
+     "response_rate": 0.999286480438061,
+     "yield_rate": 0.9996027016289233,
+     "agent_interruption_rate": 0.13540286519099273,
+     "selectivity_backchannel": 0.018863049095607248,
+     "selectivity_vocal_tic": 0.05282450882450884,
+     "selectivity_non_directed": 0.09679376848051546,
+     "counts": {
+      "agent_interrupts_count": 605,
+      "backchannel_total": 165,
+      "n_simulations": 278,
+      "non_directed_total": 472,
+      "response_total": 4649,
+      "vocal_tic_total": 457,
+      "yield_total": 3171
+     }
+    }
+   }
+  },
+  "xai-realtime_sierra_2026-03-03": {
+   "model_name": "grok-voice-fast-1.0",
+   "model_organization": "xAI",
+   "submitting_organization": "Sierra",
+   "submission_date": "2026-03-03",
+   "submission_type": "standard",
+   "modality": "voice",
+   "contact_info": {
+    "email": "victor@sierra.ai",
+    "name": "Sierra Research Team"
+   },
+   "is_new": true,
+   "trajectories_available": true,
+   "trajectory_files": {
+    "airline": "airline_regular_xai_xai-realtime",
+    "retail": "retail_regular_xai_xai-realtime",
+    "telecom": "telecom_regular_xai_xai-realtime"
+   },
+   "results": {
+    "airline": {
+     "pass_1": 36.0
+    },
+    "retail": {
+     "pass_1": 38.6
+    },
+    "telecom": {
+     "pass_1": 40.4
+    }
+   },
+   "voice_config": {
+    "provider": "xAI",
+    "model": "grok-voice-fast-1.0",
+    "tick_duration_seconds": 0.2,
+    "max_steps_seconds": 600,
+    "user_tts_provider": "elevenlabs/eleven_v3"
+   },
+   "methodology": {
+    "evaluation_date": "2026-03-03",
+    "tau2_bench_version": "1.0.0",
+    "user_simulator": "v1.0",
+    "notes": "Full-duplex audio-native evaluation using regular speech complexity (realistic audio conditions). 1 trial per task.",
+    "verification": {
+     "modified_prompts": false,
+     "omitted_questions": false
+    }
+   },
+   "model_release": {
+    "release_date": "2025-12-17",
+    "announcement_url": "https://www.ainews.com/p/xai-launches-grok-voice-agent-api-for-real-time-ai-voice-apps",
+    "announcement_title": "xAI launches Grok Voice Agent API"
+   },
+   "interaction_metrics": {
+    "version": "1.0",
+    "config": {
+     "tick_duration_sec": 0.2,
+     "no_yield_window_sec": 2.0,
+     "backchannel_yield_window_sec": 1.0,
+     "vocal_tic_yield_window_sec": 1.0,
+     "non_directed_yield_window_sec": 1.0,
+     "vocal_tic_response_window_sec": 2.0,
+     "non_directed_response_window_sec": 2.0
+    },
+    "domains": {
+     "airline": {
+      "response_latency_mean": 1.1765306122448969,
+      "yield_latency_mean": 1.1243243243243242,
+      "response_rate": 0.9074074074074074,
+      "yield_rate": 0.7717265353418308,
+      "agent_interruption_rate": 0.8252314814814815,
+      "selectivity_backchannel": 0.9090909090909091,
+      "selectivity_vocal_tic": 0.5943396226415094,
+      "selectivity_non_directed": 0.19672131147540983,
+      "counts": {
+       "n_simulations": 50,
+       "response_total": 864,
+       "yield_total": 863,
+       "backchannel_total": 11,
+       "vocal_tic_total": 106,
+       "non_directed_total": 61,
+       "agent_interrupts_count": 713
+      }
+     },
+     "retail": {
+      "response_latency_mean": 1.1152903569525843,
+      "yield_latency_mean": 1.1759220598469033,
+      "response_rate": 0.9050144648023144,
+      "yield_rate": 0.7020029311187103,
+      "agent_interruption_rate": 0.7738669238187078,
+      "selectivity_backchannel": 0.9344262295081968,
+      "selectivity_vocal_tic": 0.6058091286307055,
+      "selectivity_non_directed": 0.21656050955414008,
+      "counts": {
+       "n_simulations": 114,
+       "response_total": 2074,
+       "yield_total": 2047,
+       "backchannel_total": 61,
+       "vocal_tic_total": 241,
+       "non_directed_total": 157,
+       "agent_interrupts_count": 1605
+      }
+     },
+     "telecom": {
+      "response_latency_mean": 1.1559752996730819,
+      "yield_latency_mean": 1.1585513078470826,
+      "response_rate": 0.9272482317278545,
+      "yield_rate": 0.7823691460055097,
+      "agent_interruption_rate": 0.9296059279218593,
+      "selectivity_backchannel": 0.9411764705882353,
+      "selectivity_vocal_tic": 0.5509554140127388,
+      "selectivity_non_directed": 0.2222222222222222,
+      "counts": {
+       "n_simulations": 114,
+       "response_total": 2969,
+       "yield_total": 2541,
+       "backchannel_total": 17,
+       "vocal_tic_total": 314,
+       "non_directed_total": 144,
+       "agent_interrupts_count": 2760
+      }
+     }
+    },
+    "overall": {
+     "response_latency_mean": 1.1492654229568544,
+     "yield_latency_mean": 1.1529325640061032,
+     "response_rate": 0.913223367979192,
+     "yield_rate": 0.752032870822017,
+     "agent_interruption_rate": 0.8429014444073495,
+     "selectivity_backchannel": 0.9282312030624471,
+     "selectivity_vocal_tic": 0.5837013884283179,
+     "selectivity_non_directed": 0.21183468108392403,
+     "counts": {
+      "agent_interrupts_count": 5078,
+      "backchannel_total": 89,
+      "n_simulations": 278,
+      "non_directed_total": 362,
+      "response_total": 5907,
+      "vocal_tic_total": 661,
+      "yield_total": 5451
+     }
+    }
+   }
+  },
+  "gpt-realtime-1-0_openai_2026-04-13": {
+   "model_name": "gpt-realtime-1.0",
+   "model_organization": "OpenAI",
+   "submitting_organization": "Sierra",
+   "submission_date": "2026-04-13",
+   "submission_type": "standard",
+   "modality": "voice",
+   "contact_info": {
+    "email": "victor@sierra.ai",
+    "name": "Sierra Research Team"
+   },
+   "results": {
+    "retail": {
+     "pass_1": 35.96491228070175
+    },
+    "airline": {
+     "pass_1": 36.0
+    },
+    "telecom": {
+     "pass_1": 19.298245614035086
+    }
+   },
+   "is_new": true,
+   "trajectories_available": true,
+   "trajectory_files": {
+    "airline": "airline_regular_openai_gpt-realtime-2025-08-28",
+    "retail": "retail_regular_openai_gpt-realtime-2025-08-28",
+    "telecom": "telecom_regular_openai_gpt-realtime-2025-08-28"
+   },
+   "methodology": {
+    "evaluation_date": "2026-03-27",
+    "tau2_bench_version": "1.0.0",
+    "user_simulator": "v1.0",
+    "verification": {
+     "modified_prompts": false,
+     "omitted_questions": false
+    }
+   },
+   "voice_config": {
+    "provider": "OpenAI",
+    "model": "gpt-realtime-1.0",
+    "tick_duration_seconds": 0.2,
+    "max_steps_seconds": 600.0,
+    "user_tts_provider": "elevenlabs/eleven_v3"
+   },
+   "model_release": {
+    "release_date": "2025-08-28",
+    "announcement_url": "https://openai.com/index/introducing-gpt-realtime/",
+    "announcement_title": "Introducing gpt-realtime"
+   },
+   "interaction_metrics": {
+    "version": "1.0",
+    "config": {
+     "tick_duration_sec": 0.2,
+     "no_yield_window_sec": 2.0,
+     "backchannel_yield_window_sec": 1.0,
+     "vocal_tic_yield_window_sec": 1.0,
+     "non_directed_yield_window_sec": 1.0,
+     "vocal_tic_response_window_sec": 2.0,
+     "non_directed_response_window_sec": 2.0
+    },
+    "domains": {
+     "airline": {
+      "response_latency_mean": 1.5197183098591538,
+      "yield_latency_mean": 0.42000000000000004,
+      "response_rate": 0.9681818181818181,
+      "yield_rate": 0.9926470588235294,
+      "agent_interruption_rate": 0.12045454545454545,
+      "selectivity_backchannel": 0.09375,
+      "selectivity_vocal_tic": 0.04878048780487809,
+      "selectivity_non_directed": 0.10256410256410253,
+      "counts": {
+       "n_simulations": 50,
+       "response_total": 440,
+       "yield_total": 272,
+       "backchannel_total": 32,
+       "vocal_tic_total": 41,
+       "non_directed_total": 39,
+       "agent_interrupts_count": 53
+      }
+     },
+     "retail": {
+      "response_latency_mean": 1.607185628742514,
+      "yield_latency_mean": 0.4097693351424695,
+      "response_rate": 0.984006734006734,
+      "yield_rate": 1.0,
+      "agent_interruption_rate": 0.132996632996633,
+      "selectivity_backchannel": 0.015625,
+      "selectivity_vocal_tic": 0.0535714285714286,
+      "selectivity_non_directed": 0.14876033057851235,
+      "counts": {
+       "n_simulations": 114,
+       "response_total": 1188,
+       "yield_total": 737,
+       "backchannel_total": 64,
+       "vocal_tic_total": 112,
+       "non_directed_total": 121,
+       "agent_interrupts_count": 158
+      }
+     },
+     "telecom": {
+      "response_latency_mean": 1.472087658592848,
+      "yield_latency_mean": 0.4134597156398105,
+      "response_rate": 0.9824362606232294,
+      "yield_rate": 1.0,
+      "agent_interruption_rate": 0.11558073654390935,
+      "selectivity_backchannel": 0.023809523809523836,
+      "selectivity_vocal_tic": 0.05434782608695654,
+      "selectivity_non_directed": 0.13812154696132595,
+      "counts": {
+       "n_simulations": 114,
+       "response_total": 1765,
+       "yield_total": 1055,
+       "backchannel_total": 42,
+       "vocal_tic_total": 184,
+       "non_directed_total": 181,
+       "agent_interrupts_count": 204
+      }
+     }
+    },
+    "overall": {
+     "response_latency_mean": 1.5329971990648386,
+     "yield_latency_mean": 0.41440968359409336,
+     "response_rate": 0.9782082709372606,
+     "yield_rate": 0.9975490196078431,
+     "agent_interruption_rate": 0.12301063833169594,
+     "selectivity_backchannel": 0.04439484126984128,
+     "selectivity_vocal_tic": 0.05223324748775441,
+     "selectivity_non_directed": 0.1298153267013136,
+     "counts": {
+      "agent_interrupts_count": 415,
+      "backchannel_total": 138,
+      "n_simulations": 278,
+      "non_directed_total": 341,
+      "response_total": 3393,
+      "vocal_tic_total": 337,
+      "yield_total": 2064
+     }
+    }
+   }
+  },
+  "gemini-live-2.5-flash_sierra_2026-03-03": {
+   "model_name": "gemini-live-2.5-flash-native-audio",
+   "model_organization": "Google",
+   "submitting_organization": "Sierra",
+   "submission_date": "2026-03-03",
+   "submission_type": "standard",
+   "modality": "voice",
+   "contact_info": {
+    "email": "victor@sierra.ai",
+    "name": "Sierra Research Team"
+   },
+   "is_new": true,
+   "trajectories_available": true,
+   "trajectory_files": {
+    "airline": "airline_regular_gemini_gemini-live-2.5-flash-native-audio",
+    "retail": "retail_regular_gemini_gemini-live-2.5-flash-native-audio",
+    "telecom": "telecom_regular_gemini_gemini-live-2.5-flash-native-audio"
+   },
+   "results": {
+    "airline": {
+     "pass_1": 30.0
+    },
+    "retail": {
+     "pass_1": 29.8
+    },
+    "telecom": {
+     "pass_1": 17.5
+    }
+   },
+   "voice_config": {
+    "provider": "Google",
+    "model": "gemini-live-2.5-flash-native-audio",
+    "tick_duration_seconds": 0.2,
+    "max_steps_seconds": 600,
+    "user_tts_provider": "elevenlabs/eleven_v3"
+   },
+   "methodology": {
+    "evaluation_date": "2026-03-03",
+    "tau2_bench_version": "1.0.0",
+    "user_simulator": "v1.0",
+    "notes": "Full-duplex audio-native evaluation using regular speech complexity (realistic audio conditions). 1 trial per task.",
+    "verification": {
+     "modified_prompts": false,
+     "omitted_questions": false
+    }
+   },
+   "model_release": {
+    "release_date": "2025-12-12",
+    "announcement_url": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-live-api-available-on-vertex-ai",
+    "announcement_title": "Gemini Live API on Vertex AI"
+   },
+   "interaction_metrics": {
+    "version": "1.0",
+    "config": {
+     "tick_duration_sec": 0.2,
+     "no_yield_window_sec": 2.0,
+     "backchannel_yield_window_sec": 1.0,
+     "vocal_tic_yield_window_sec": 1.0,
+     "non_directed_yield_window_sec": 1.0,
+     "vocal_tic_response_window_sec": 2.0,
+     "non_directed_response_window_sec": 2.0
+    },
+    "domains": {
+     "airline": {
+      "response_latency_mean": 1.4598382749326142,
+      "yield_latency_mean": 0.7253333333333333,
+      "response_rate": 0.8047722342733189,
+      "yield_rate": 0.5725190839694656,
+      "agent_interruption_rate": 0.19088937093275488,
+      "selectivity_backchannel": 0.8888888888888888,
+      "selectivity_vocal_tic": 0.4,
+      "selectivity_non_directed": 0.5483870967741935,
+      "counts": {
+       "n_simulations": 50,
+       "response_total": 461,
+       "yield_total": 131,
+       "backchannel_total": 9,
+       "vocal_tic_total": 35,
+       "non_directed_total": 31,
+       "agent_interrupts_count": 88
+      }
+     },
+     "retail": {
+      "response_latency_mean": 1.4463519313304718,
+      "yield_latency_mean": 0.8627218934911244,
+      "response_rate": 0.7945439045183291,
+      "yield_rate": 0.6145454545454545,
+      "agent_interruption_rate": 0.16624040920716113,
+      "selectivity_backchannel": 0.9090909090909091,
+      "selectivity_vocal_tic": 0.2844036697247706,
+      "selectivity_non_directed": 0.4464285714285714,
+      "counts": {
+       "n_simulations": 114,
+       "response_total": 1173,
+       "yield_total": 275,
+       "backchannel_total": 33,
+       "vocal_tic_total": 109,
+       "non_directed_total": 56,
+       "agent_interrupts_count": 195
+      }
+     },
+     "telecom": {
+      "response_latency_mean": 1.3810391978122138,
+      "yield_latency_mean": 0.9896103896103896,
+      "response_rate": 0.8192681105302465,
+      "yield_rate": 0.5049180327868853,
+      "agent_interruption_rate": 0.2621359223300971,
+      "selectivity_backchannel": 0.75,
+      "selectivity_vocal_tic": 0.33333333333333337,
+      "selectivity_non_directed": 0.34285714285714286,
+      "counts": {
+       "n_simulations": 114,
+       "response_total": 1339,
+       "yield_total": 305,
+       "backchannel_total": 4,
+       "vocal_tic_total": 105,
+       "non_directed_total": 70,
+       "agent_interrupts_count": 351
+      }
+     }
+    },
+    "overall": {
+     "response_latency_mean": 1.4290764680250998,
+     "yield_latency_mean": 0.859221872144949,
+     "response_rate": 0.8061947497739649,
+     "yield_rate": 0.5639941904339351,
+     "agent_interruption_rate": 0.2064219008233377,
+     "selectivity_backchannel": 0.8493265993265994,
+     "selectivity_vocal_tic": 0.33924566768603465,
+     "selectivity_non_directed": 0.44589093701996924,
+     "counts": {
+      "agent_interrupts_count": 634,
+      "backchannel_total": 46,
+      "n_simulations": 278,
+      "non_directed_total": 157,
+      "response_total": 2973,
+      "vocal_tic_total": 249,
+      "yield_total": 711
+     }
+    }
+   }
+  }
+ }
+}

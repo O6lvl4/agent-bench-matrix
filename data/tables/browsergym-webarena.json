@@ -1,0 +1,352 @@
+{
+  "id": "browsergym-webarena",
+  "family": "webarena",
+  "name": "WebArena (BrowserGym)",
+  "board": "huggingface.co/spaces/ServiceNow/browsergym-leaderboard",
+  "category": "web",
+  "measures_ja": "自前ホストした通販・掲示板・GitLab・CMS・地図などのサイト上で、指示されたウェブ操作をやり遂げられるか。",
+  "tasks": 812,
+  "tasks_note": null,
+  "metric": "Score",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "BrowserGym 環境で走らせた結果を提出者が JSON で登録する。多くの行は AgentLab の GenericAgent に各モデルを載せたもので、独自エージェントの行も混ざる。",
+  "source": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard",
+  "fetched": [
+    "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+    "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/<agent>/webarena.json",
+    "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/raw/main/app.py"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-03-10",
+  "snapshot": "sources/browsergym-webarena/results_webarena.json",
+  "paper": "https://arxiv.org/abs/2412.05467",
+  "repo": "https://github.com/ServiceNow/BrowserGym",
+  "notes_ja": "ボードの WebArena タブ。結果の無いエージェントはボードでは「-」行として並ぶが、ここでは除いた。system はエージェント名で、「足場-モデル」の形を agent と model_raw に分けた。score_extra の真偽系列(benchmark_specific など)は提出者の自己申告。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "GenericAgent-Claude-3.7-Sonnet",
+      "agent": "GenericAgent",
+      "model_raw": [
+        "Claude-3.7-Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": null,
+      "score": 44.6,
+      "score_extra": {
+        "std_err": 2.5,
+        "benchmark_specific": "No",
+        "benchmark_tuned": "No",
+        "followed_evaluation_protocol": "Yes",
+        "reproducible": "Yes",
+        "study_id": "2025-08-07_21-09-16",
+        "comments": "NA"
+      },
+      "date": "2025-08-07",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/main/results/GenericAgent-Claude-3.7-Sonnet/README.md"
+    },
+    {
+      "rank": 2,
+      "system": "A3-Qwen3.5-9B",
+      "agent": null,
+      "model_raw": [
+        "A3-Qwen3.5-9B"
+      ],
+      "model_ids": [
+        "a3-qwen3.5-9b"
+      ],
+      "model_config": null,
+      "score": 42.1,
+      "score_extra": {
+        "std_err": 1.7,
+        "benchmark_specific": "No",
+        "benchmark_tuned": "Yes",
+        "followed_evaluation_protocol": "Yes",
+        "reproducible": "Yes",
+        "study_id": "2026-03-10_15-17-39_genericagent-checkpoints-qwen-qwen3-5-9b-web-pro-low-8903051-checkpoint-latest-on-webarena-test-test",
+        "comments": "812 tasks (full benchmark). Fine-tuned on A3-Synth trajectories via the Agent-as-Annotators framework. A3-Synth is derived from WebArena environments but uses entirely different, synthetically generated tasks."
+      },
+      "date": "2026-03-10",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/main/results/A3-Qwen3.5-9B/README.md"
+    },
+    {
+      "rank": 3,
+      "system": "OrbyAgent-Claude-3.5-Sonnet",
+      "agent": "OrbyAgent",
+      "model_raw": [
+        "Claude-3.5-Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 36.5,
+      "score_extra": {
+        "std_err": 0,
+        "benchmark_specific": "No",
+        "benchmark_tuned": "No",
+        "followed_evaluation_protocol": "Yes",
+        "reproducible": "Yes",
+        "study_id": "orby-agent-v0-claude-3.5-webarena",
+        "comments": "Use original WebArena eval protocol and task definitions"
+      },
+      "date": "2025-02-21",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/main/results/OrbyAgent-Claude-3.5-Sonnet/README.md"
+    },
+    {
+      "rank": 4,
+      "system": "GenericAgent-Claude-3.5-Sonnet",
+      "agent": "GenericAgent",
+      "model_raw": [
+        "Claude-3.5-Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 36.2,
+      "score_extra": {
+        "std_err": 1.7,
+        "benchmark_specific": "No",
+        "benchmark_tuned": "No",
+        "followed_evaluation_protocol": "Yes",
+        "reproducible": "Yes",
+        "study_id": "b5fc5be7-54cc-4fc1-a9ee-73447b9c3eae",
+        "comments": "NA"
+      },
+      "date": "2024-11-29",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/main/results/GenericAgent-Claude-3.5-Sonnet/README.md"
+    },
+    {
+      "rank": 5,
+      "system": "OrbyAgent-ActIO-72b",
+      "agent": "OrbyAgent",
+      "model_raw": [
+        "ActIO-72b"
+      ],
+      "model_ids": [
+        "actio-72b"
+      ],
+      "model_config": null,
+      "score": 34.7,
+      "score_extra": {
+        "std_err": 0.25,
+        "benchmark_specific": "No",
+        "benchmark_tuned": "No",
+        "followed_evaluation_protocol": "Yes",
+        "reproducible": "Yes",
+        "study_id": "b5fc5be7-54cc-4fc1-a9ee-73447b9c3eae",
+        "comments": "Use original WebArena eval protocol and task definitions"
+      },
+      "date": "2025-02-21",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/main/results/OrbyAgent-ActIO-72b/README.md"
+    },
+    {
+      "rank": 6,
+      "system": "GenericAgent-GPT-4o",
+      "agent": "GenericAgent",
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 31.4,
+      "score_extra": {
+        "std_err": 1.6,
+        "benchmark_specific": "No",
+        "benchmark_tuned": "No",
+        "followed_evaluation_protocol": "Yes",
+        "reproducible": "Yes",
+        "study_id": "d2eed215-91bb-4603-b69c-8ef8f9d57f34",
+        "comments": "NA"
+      },
+      "date": "2024-11-29",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/main/results/GenericAgent-GPT-4o/README.md"
+    },
+    {
+      "rank": 7,
+      "system": "GenericAgent-GPT-4.1-Mini",
+      "agent": "GenericAgent",
+      "model_raw": [
+        "GPT-4.1-Mini"
+      ],
+      "model_ids": [
+        "gpt-4.1-mini"
+      ],
+      "model_config": null,
+      "score": 30.7,
+      "score_extra": {
+        "std_err": 2.4,
+        "benchmark_specific": "No",
+        "benchmark_tuned": "No",
+        "followed_evaluation_protocol": "Yes",
+        "reproducible": "Yes",
+        "study_id": "2025-08-07_21-09-16",
+        "comments": "NA"
+      },
+      "date": "2025-08-07",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/main/results/GenericAgent-GPT-4.1-Mini/README.md"
+    },
+    {
+      "rank": 8,
+      "system": "GenericAgent-GPT-o1-mini",
+      "agent": "GenericAgent",
+      "model_raw": [
+        "GPT-o1-mini"
+      ],
+      "model_ids": [
+        "o1-mini"
+      ],
+      "model_config": null,
+      "score": 28.6,
+      "score_extra": {
+        "std_err": 1.6,
+        "benchmark_specific": "No",
+        "benchmark_tuned": "No",
+        "followed_evaluation_protocol": "Yes",
+        "reproducible": "Yes",
+        "study_id": "1827983d-5e84-4b63-ad49-bf45ec2a6348",
+        "comments": "NA"
+      },
+      "date": "2024-11-30",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/main/results/GenericAgent-GPT-o1-mini/README.md"
+    },
+    {
+      "rank": 9,
+      "system": "GenericAgent-Llama-3.1-405b",
+      "agent": "GenericAgent",
+      "model_raw": [
+        "Llama-3.1-405b"
+      ],
+      "model_ids": [
+        "llama-3.1-405b"
+      ],
+      "model_config": null,
+      "score": 24.0,
+      "score_extra": {
+        "std_err": 1.5,
+        "benchmark_specific": "No",
+        "benchmark_tuned": "No",
+        "followed_evaluation_protocol": "Yes",
+        "reproducible": "Yes",
+        "study_id": "aaeca13d-0cf5-444f-8445-590350b54746",
+        "comments": "NA"
+      },
+      "date": "2024-12-01",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/main/results/GenericAgent-Llama-3.1-405b/README.md"
+    },
+    {
+      "rank": 10,
+      "system": "GenericAgent-AgentTrek-1.0-32b",
+      "agent": "GenericAgent",
+      "model_raw": [
+        "AgentTrek-1.0-32b"
+      ],
+      "model_ids": [
+        "agenttrek-1.0-32b"
+      ],
+      "model_config": null,
+      "score": 22.4,
+      "score_extra": {
+        "std_err": 1.5,
+        "benchmark_specific": "No",
+        "benchmark_tuned": "No",
+        "followed_evaluation_protocol": "Yes",
+        "reproducible": "Yes",
+        "study_id": "ac309635-f3fd-417e-ac16-1e0fc943a54f",
+        "comments": "Additional details"
+      },
+      "date": "2025-01-25",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/main/results/GenericAgent-AgentTrek-1.0-32b/README.md"
+    },
+    {
+      "rank": 11,
+      "system": "GenericAgent-Llama-3.1-70b",
+      "agent": "GenericAgent",
+      "model_raw": [
+        "Llama-3.1-70b"
+      ],
+      "model_ids": [
+        "llama-3.1-70b"
+      ],
+      "model_config": null,
+      "score": 18.4,
+      "score_extra": {
+        "std_err": 1.4,
+        "benchmark_specific": "No",
+        "benchmark_tuned": "No",
+        "followed_evaluation_protocol": "Yes",
+        "reproducible": "Yes",
+        "study_id": "fc5747bc-d998-4942-a0eb-e55a3ccc1cb3",
+        "comments": "NA"
+      },
+      "date": "2024-12-02",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/main/results/GenericAgent-Llama-3.1-70b/README.md"
+    },
+    {
+      "rank": 12,
+      "system": "GenericAgent-GPT-4o-mini",
+      "agent": "GenericAgent",
+      "model_raw": [
+        "GPT-4o-mini"
+      ],
+      "model_ids": [
+        "gpt-4o-mini"
+      ],
+      "model_config": null,
+      "score": 17.4,
+      "score_extra": {
+        "std_err": 1.3,
+        "benchmark_specific": "No",
+        "benchmark_tuned": "No",
+        "followed_evaluation_protocol": "Yes",
+        "reproducible": "Yes",
+        "study_id": "c6bdeb87-9879-4c06-aa70-00d895001156",
+        "comments": "NA"
+      },
+      "date": "2024-11-29",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/main/results/GenericAgent-GPT-4o-mini/README.md"
+    }
+  ]
+}

@@ -1,0 +1,256 @@
+{
+  "id": "cua-bench-eda-kicad",
+  "family": "cua-bench",
+  "name": "Cua-Bench EDA (KiCad)",
+  "board": "cua.ai/cuabench",
+  "category": "computer-use",
+  "measures_ja": "電気技術者が書いた KiCad の回路図編集タスクを、専門知識と GUI 操作で正しいネットリストまで仕上げられるか。",
+  "tasks": 25,
+  "tasks_note": null,
+  "metric": "Full pass (tasks passed out of 25)",
+  "unit": "tasks",
+  "higher_is_better": true,
+  "harness_ja": "Cua が同じ環境・200ステップ上限で各モデルを実行。多くはネイティブの computer-use ツール、* 付きは function-calling 経由。",
+  "source": "https://cua.ai/cuabench/leaderboard",
+  "fetched": [
+    "https://cua.ai/cuabench/leaderboard"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": null,
+  "snapshot": "sources/cua-bench-eda-kicad/leaderboard_table.html",
+  "paper": "https://cua.ai/cuabench/report",
+  "repo": null,
+  "notes_ja": "サーバー描画HTMLの表から取得。順位は完全合格数、次に平均報酬の順でボードが付けたもの。v1 で25タスクと小さく、1タスク差が大きい。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Claude Fable 5 *",
+      "agent": null,
+      "model_raw": [
+        "Claude Fable 5"
+      ],
+      "model_ids": [
+        "claude-fable-5"
+      ],
+      "model_config": "function-calling (native computer use not enabled)",
+      "score": 6,
+      "score_extra": {
+        "tasks_total": 25,
+        "partial": 2,
+        "mean_reward": 0.267
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "GPT-5.5",
+      "agent": null,
+      "model_raw": [
+        "GPT-5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": "native computer-use tool",
+      "score": 6,
+      "score_extra": {
+        "tasks_total": 25,
+        "partial": 0,
+        "mean_reward": 0.24
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "Gemini 3.5 Flash",
+      "agent": null,
+      "model_raw": [
+        "Gemini 3.5 Flash"
+      ],
+      "model_ids": [
+        "gemini-3.5-flash"
+      ],
+      "model_config": "native computer-use tool",
+      "score": 5,
+      "score_extra": {
+        "tasks_total": 25,
+        "partial": 3,
+        "mean_reward": 0.267
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "Google",
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "Claude Sonnet 4.5",
+      "agent": null,
+      "model_raw": [
+        "Claude Sonnet 4.5"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": "native computer-use tool",
+      "score": 5,
+      "score_extra": {
+        "tasks_total": 25,
+        "partial": 3,
+        "mean_reward": 0.253
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "Claude Haiku 4.5",
+      "agent": null,
+      "model_raw": [
+        "Claude Haiku 4.5"
+      ],
+      "model_ids": [
+        "claude-haiku-4.5"
+      ],
+      "model_config": "native computer-use tool",
+      "score": 5,
+      "score_extra": {
+        "tasks_total": 25,
+        "partial": 3,
+        "mean_reward": 0.253
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 6,
+      "system": "Gemini 3.1 Pro *",
+      "agent": null,
+      "model_raw": [
+        "Gemini 3.1 Pro"
+      ],
+      "model_ids": [
+        "gemini-3.1-pro"
+      ],
+      "model_config": "function-calling (native computer use not enabled)",
+      "score": 5,
+      "score_extra": {
+        "tasks_total": 25,
+        "partial": 3,
+        "mean_reward": 0.253
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "Google",
+      "row_url": null
+    },
+    {
+      "rank": 7,
+      "system": "GPT-5.6 Sol *",
+      "agent": null,
+      "model_raw": [
+        "GPT-5.6 Sol"
+      ],
+      "model_ids": [
+        "gpt-5.6-sol"
+      ],
+      "model_config": "function-calling (native computer use not enabled)",
+      "score": 5,
+      "score_extra": {
+        "tasks_total": 25,
+        "partial": 3,
+        "mean_reward": 0.253
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": null
+    },
+    {
+      "rank": 8,
+      "system": "Claude Opus 4.8",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 4.8"
+      ],
+      "model_ids": [
+        "claude-opus-4.8"
+      ],
+      "model_config": "native computer-use tool",
+      "score": 4,
+      "score_extra": {
+        "tasks_total": 25,
+        "partial": 4,
+        "mean_reward": 0.24
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 9,
+      "system": "Muse Spark 1.1 *†",
+      "agent": null,
+      "model_raw": [
+        "Muse Spark 1.1"
+      ],
+      "model_ids": [
+        "muse-spark-1.1"
+      ],
+      "model_config": "function-calling (native computer use not enabled); 2 of 25 tasks rejected by API content filter and scored 0",
+      "score": 4,
+      "score_extra": {
+        "tasks_total": 25,
+        "partial": 3,
+        "mean_reward": 0.227
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "Meta",
+      "row_url": null
+    },
+    {
+      "rank": 10,
+      "system": "Gemini 3 Flash *",
+      "agent": null,
+      "model_raw": [
+        "Gemini 3 Flash"
+      ],
+      "model_ids": [
+        "gemini-3-flash"
+      ],
+      "model_config": "function-calling (native computer use not enabled)",
+      "score": 1,
+      "score_extra": {
+        "tasks_total": 25,
+        "partial": 7,
+        "mean_reward": 0.2
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "Google",
+      "row_url": null
+    }
+  ]
+}

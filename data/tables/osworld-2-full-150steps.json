@@ -1,0 +1,164 @@
+{
+  "id": "osworld-2-full-150steps",
+  "family": "osworld-2",
+  "name": "OSWorld 2.0 (full set, 150 steps)",
+  "board": "osworld-v2.xlang.ai",
+  "category": "computer-use",
+  "measures_ja": "熟練者でも1時間以上かかる長い実務ワークフロー(自前ホストのWebサイト・オフィスソフト・複数アプリ連携)を端から端まで完遂できるか。",
+  "tasks": 108,
+  "tasks_note": null,
+  "metric": "Binary accuracy (%)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "OSWorld 2.0 チームが公式に実行した結果(official)。ステップ上限・推論量・ツール設定(standard / batch tool)は行ごとに異なる。",
+  "source": "https://osworld-v2.xlang.ai/",
+  "fetched": [
+    "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": null,
+  "snapshot": "sources/osworld-2-full-150steps/official-results.json",
+  "paper": "https://arxiv.org/abs/2606.29537",
+  "repo": "https://github.com/xlang-ai/OSWorld-V2",
+  "notes_ja": "ボードはステップ上限と full/offline を切り替えて別々に順位付けするので表を分けた。行に日付は無く、データの updatedAt は 2026-09-03。費用はJSONの総額(estimatedCostUsd)で、ボードは108で割った1タスクあたりを表示する。v2026.08.08 の結果は Claude Opus 5 が7回、GPT-5.6 Sol が2回の平均とボードに注記あり。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "GPT-5.5",
+      "agent": null,
+      "model_raw": [
+        "GPT-5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": "reasoning=xhigh; tool_setting=batch tool; step_budget=150; release=v2026.06.24",
+      "score": 13.0,
+      "score_extra": {
+        "partial_score": 46.7,
+        "step_budget": 150,
+        "estimated_cost_usd_total": 1875
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "Claude Opus 4.7",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 4.7"
+      ],
+      "model_ids": [
+        "claude-opus-4.7"
+      ],
+      "model_config": "reasoning=max; tool_setting=standard; step_budget=150; release=v2026.06.24",
+      "score": 4.6,
+      "score_extra": {
+        "partial_score": 20.3,
+        "step_budget": 150,
+        "estimated_cost_usd_total": 1030
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "Claude Sonnet 4.6",
+      "agent": null,
+      "model_raw": [
+        "Claude Sonnet 4.6"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.6"
+      ],
+      "model_config": "reasoning=max; tool_setting=standard; step_budget=150; release=v2026.06.24",
+      "score": 4.6,
+      "score_extra": {
+        "partial_score": 20.0,
+        "step_budget": 150,
+        "estimated_cost_usd_total": 800
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "Claude Sonnet 4.6",
+      "agent": null,
+      "model_raw": [
+        "Claude Sonnet 4.6"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.6"
+      ],
+      "model_config": "reasoning=medium; tool_setting=standard; step_budget=150; release=v2026.06.24",
+      "score": 4.6,
+      "score_extra": {
+        "partial_score": 14.2,
+        "step_budget": 150,
+        "estimated_cost_usd_total": 410
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "MiniMax M3",
+      "agent": null,
+      "model_raw": [
+        "MiniMax M3"
+      ],
+      "model_ids": [
+        "minimax-m3"
+      ],
+      "model_config": "reasoning=enabled; tool_setting=standard; step_budget=150; release=v2026.06.24",
+      "score": 1.9,
+      "score_extra": {
+        "partial_score": 8.2,
+        "step_budget": 150,
+        "estimated_cost_usd_total": 86.82
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": "MiniMax",
+      "row_url": null
+    },
+    {
+      "rank": 6,
+      "system": "Kimi 2.6",
+      "agent": null,
+      "model_raw": [
+        "Kimi 2.6"
+      ],
+      "model_ids": [
+        "kimi-k2.6"
+      ],
+      "model_config": "reasoning=enabled; tool_setting=standard; step_budget=150; release=v2026.06.24",
+      "score": 1.9,
+      "score_extra": {
+        "partial_score": 7.1,
+        "step_budget": 150,
+        "estimated_cost_usd_total": 336
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": "Moonshot AI",
+      "row_url": null
+    }
+  ]
+}

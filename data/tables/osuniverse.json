@@ -1,0 +1,226 @@
+{
+  "id": "osuniverse",
+  "family": "osuniverse",
+  "name": "OSUniverse",
+  "board": "agentsea.github.io/osuniverse",
+  "category": "computer-use",
+  "measures_ja": "デスクトップ上で、画面の読み取りから複数アプリをまたぐ操作まで5段階の難度のタスクをこなせるか。",
+  "tasks": 160,
+  "tasks_note": "サイト記載は160タスク(5段階・9カテゴリ)。",
+  "metric": "Total Score (%)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "作成者(AgentSea)が論文時点で各エージェントを実行し、Gemini による自動検証で採点した結果。",
+  "source": "https://agentsea.github.io/osuniverse/",
+  "fetched": [
+    "https://agentsea.github.io/osuniverse/"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": null,
+  "snapshot": "sources/osuniverse/agent_performance_table.html",
+  "paper": "https://arxiv.org/abs/2505.03570",
+  "repo": "https://github.com/agentsea/osuniverse",
+  "notes_ja": "プロジェクトページの静的な表で、2025-05-07 以降更新されていない(継続的なリーダーボードではない)。score_extra は難度別(Paper〜Gold)の値。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Computer Use Agent with computer-use-preview-2025-03-11",
+      "agent": "Computer Use Agent",
+      "model_raw": [
+        "computer-use-preview-2025-03-11"
+      ],
+      "model_ids": [
+        "computer-use-preview"
+      ],
+      "model_config": null,
+      "score": 47.8,
+      "score_extra": {
+        "paper": 100.0,
+        "wood": 86.21,
+        "bronze": 75.0,
+        "silver": 34.38,
+        "gold": 9.09
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "Claude Computer Use with claude-3-5-sonnet-20241022",
+      "agent": "Claude Computer Use",
+      "model_raw": [
+        "claude-3-5-sonnet-20241022"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 28.36,
+      "score_extra": {
+        "paper": 100.0,
+        "wood": 53.45,
+        "bronze": 43.75,
+        "silver": 21.88,
+        "gold": 0.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "AgentDesk-based ReACT with claude-3-5-sonnet-20241022",
+      "agent": "AgentDesk-based ReACT",
+      "model_raw": [
+        "claude-3-5-sonnet-20241022"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 23.44,
+      "score_extra": {
+        "paper": 90.91,
+        "wood": 56.9,
+        "bronze": 39.58,
+        "silver": 9.38,
+        "gold": 0.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "QWEN-based ReACT with qwen2.5-vl-72b-instruct",
+      "agent": "QWEN-based ReACT",
+      "model_raw": [
+        "qwen2.5-vl-72b-instruct"
+      ],
+      "model_ids": [
+        "qwen2.5-vl-72b-instruct"
+      ],
+      "model_config": null,
+      "score": 18.64,
+      "score_extra": {
+        "paper": 90.91,
+        "wood": 46.55,
+        "bronze": 31.25,
+        "silver": 6.25,
+        "gold": 0.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "AgentDesk-based ReACT with gemini-2.5-pro-exp-03-25",
+      "agent": "AgentDesk-based ReACT",
+      "model_raw": [
+        "gemini-2.5-pro-exp-03-25"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": null,
+      "score": 9.59,
+      "score_extra": {
+        "paper": 90.91,
+        "wood": 15.52,
+        "bronze": 18.75,
+        "silver": 3.12,
+        "gold": 0.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 6,
+      "system": "AgentDesk-based ReACT with gemini-2.0-flash-001",
+      "agent": "AgentDesk-based ReACT",
+      "model_raw": [
+        "gemini-2.0-flash-001"
+      ],
+      "model_ids": [
+        "gemini-2.0-flash"
+      ],
+      "model_config": null,
+      "score": 8.26,
+      "score_extra": {
+        "paper": 90.91,
+        "wood": 13.79,
+        "bronze": 14.58,
+        "silver": 3.12,
+        "gold": 0.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 7,
+      "system": "AgentDesk-based ReACT with gpt-4o-2024-11-20",
+      "agent": "AgentDesk-based ReACT",
+      "model_raw": [
+        "gpt-4o-2024-11-20"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 6.79,
+      "score_extra": {
+        "paper": 100.0,
+        "wood": 6.9,
+        "bronze": 12.5,
+        "silver": 3.12,
+        "gold": 0.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 8,
+      "system": "AgentDesk-based ReACT with gemini-1.5-pro-002",
+      "agent": "AgentDesk-based ReACT",
+      "model_raw": [
+        "gemini-1.5-pro-002"
+      ],
+      "model_ids": [
+        "gemini-1.5-pro"
+      ],
+      "model_config": null,
+      "score": 6.12,
+      "score_extra": {
+        "paper": 90.91,
+        "wood": 3.45,
+        "bronze": 12.5,
+        "silver": 3.12,
+        "gold": 0.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    }
+  ]
+}

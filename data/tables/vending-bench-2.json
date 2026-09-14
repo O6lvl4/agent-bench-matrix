@@ -1,0 +1,1597 @@
+{
+  "id": "vending-bench-2",
+  "family": "vending-bench",
+  "name": "Vending-Bench 2",
+  "board": "andonlabs.com",
+  "category": "long-horizon",
+  "measures_ja": "模擬の自動販売機ビジネスを1年間、仕入れ交渉・在庫・価格・トラブル対応をしながら運営し、最終的な所持金をどれだけ増やせるか。",
+  "tasks": null,
+  "tasks_note": "単一の長期シミュレーション(1年間)をモデルごとに複数回走らせる形式で、タスク数という単位が無い。",
+  "metric": "Money Balance (mean of runs)",
+  "unit": "usd",
+  "higher_is_better": true,
+  "harness_ja": "Andon Labs が共通の足場(メモ・リマインダーなどの道具付き)で各モデルを複数回(主に5〜6回)走らせる。",
+  "source": "https://andonlabs.com/evals/vending-bench-2",
+  "fetched": [
+    "https://andonlabs.com/evals/vending-bench-2",
+    "https://andonlabs.com/_app/immutable/chunks/DAnYm5vA.js",
+    "https://andonlabs.com/_app/immutable/nodes/26.kUxgg4v0.js"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-09-04",
+  "snapshot": "sources/vending-bench-2/vb2_data.json",
+  "paper": "https://arxiv.org/abs/2502.15840",
+  "repo": null,
+  "notes_ja": "score は開始資金 $500 からの1年後の所持金(複数回の算術平均)、± はボードと同じく標準誤差(std_error)。date はボードの「性能 vs リリース日」グラフが使うモデルのリリース日で、評価日ではない(Grok 4.6 など4件は日付なし)。org と mean_cost_usd はボードの「費用 vs スコア」データの provider と平均費用。New バッジは Claude Fable 5.1 / Gemini 3.8 Flash / GPT-6 Astra。paper は初代 Vending-Bench の論文。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "GPT-6 Astra",
+      "agent": null,
+      "model_raw": [
+        "GPT-6 Astra"
+      ],
+      "model_ids": [
+        "gpt-6-astra"
+      ],
+      "model_config": null,
+      "score": 15514.701666666668,
+      "score_extra": {
+        "std_error": 1074.4843271151583,
+        "num_runs": 6,
+        "geomean_money_balance": 15345.095599163022,
+        "geomean_num_runs": 6,
+        "mean_cost_usd": 810.41
+      },
+      "date": "2026-09-04",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "Claude Opus 5",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 5"
+      ],
+      "model_ids": [
+        "claude-opus-5"
+      ],
+      "model_config": null,
+      "score": 11181.87333333333,
+      "score_extra": {
+        "std_error": 2093.5784609159264,
+        "num_runs": 6,
+        "geomean_money_balance": 10370.04806441597,
+        "geomean_num_runs": 6,
+        "mean_cost_usd": 555
+      },
+      "date": "2026-07-24",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "Claude Opus 4.7",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 4.7"
+      ],
+      "model_ids": [
+        "claude-opus-4.7"
+      ],
+      "model_config": null,
+      "score": 10936.763333333334,
+      "score_extra": {
+        "std_error": 1181.314959592816,
+        "num_runs": 6,
+        "geomean_money_balance": 10570.374447409016,
+        "geomean_num_runs": 6,
+        "mean_cost_usd": 558.6
+      },
+      "date": "2026-04-16",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "GPT-5.6 Sol",
+      "agent": null,
+      "model_raw": [
+        "GPT-5.6 Sol"
+      ],
+      "model_ids": [
+        "gpt-5.6-sol"
+      ],
+      "model_config": null,
+      "score": 9619.367999999999,
+      "score_extra": {
+        "std_error": 1337.7985407728625,
+        "num_runs": 5,
+        "geomean_money_balance": 9246.594496711794,
+        "geomean_num_runs": 5,
+        "mean_cost_usd": 339.57
+      },
+      "date": "2026-07-09",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "Grok 4.6",
+      "agent": null,
+      "model_raw": [
+        "Grok 4.6"
+      ],
+      "model_ids": [
+        "grok-4.6"
+      ],
+      "model_config": null,
+      "score": 9047.032500000001,
+      "score_extra": {
+        "std_error": 1603.9577454241899,
+        "num_runs": 4,
+        "geomean_money_balance": 8693.095282222388,
+        "geomean_num_runs": 4,
+        "mean_cost_usd": 223.22
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "xAI",
+      "row_url": null
+    },
+    {
+      "rank": 6,
+      "system": "GLM-5.2",
+      "agent": null,
+      "model_raw": [
+        "GLM-5.2"
+      ],
+      "model_ids": [
+        "glm-5.2"
+      ],
+      "model_config": null,
+      "score": 8313.778333333335,
+      "score_extra": {
+        "std_error": 1084.106303399,
+        "num_runs": 6,
+        "geomean_money_balance": 7988.294096269425,
+        "geomean_num_runs": 6,
+        "mean_cost_usd": 184.47
+      },
+      "date": "2026-06-16",
+      "verified": null,
+      "open_source": null,
+      "org": "Zhipu",
+      "row_url": null
+    },
+    {
+      "rank": 7,
+      "system": "GLM-5.3",
+      "agent": null,
+      "model_raw": [
+        "GLM-5.3"
+      ],
+      "model_ids": [
+        "glm-5.3"
+      ],
+      "model_config": null,
+      "score": 8163.609999999998,
+      "score_extra": {
+        "std_error": 786.9159479851284,
+        "num_runs": 6,
+        "geomean_money_balance": 7950.579987807122,
+        "geomean_num_runs": 6,
+        "mean_cost_usd": 113.23
+      },
+      "date": "2026-08-14",
+      "verified": null,
+      "open_source": null,
+      "org": "Zhipu",
+      "row_url": null
+    },
+    {
+      "rank": 8,
+      "system": "Claude Opus 4.6",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 4.6"
+      ],
+      "model_ids": [
+        "claude-opus-4.6"
+      ],
+      "model_config": null,
+      "score": 8017.594,
+      "score_extra": {
+        "std_error": 1366.993565927068,
+        "num_runs": 5,
+        "geomean_money_balance": 7518.585297708784,
+        "geomean_num_runs": 5,
+        "mean_cost_usd": 682.37
+      },
+      "date": "2026-02-05",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 9,
+      "system": "GPT-5.5",
+      "agent": null,
+      "model_raw": [
+        "GPT-5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": null,
+      "score": 7523.843999999999,
+      "score_extra": {
+        "std_error": 1345.98436122267,
+        "num_runs": 5,
+        "geomean_money_balance": 6740.904500953284,
+        "geomean_num_runs": 5,
+        "mean_cost_usd": 255.61
+      },
+      "date": "2026-04-23",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": null
+    },
+    {
+      "rank": 10,
+      "system": "GPT-5.6 Terra",
+      "agent": null,
+      "model_raw": [
+        "GPT-5.6 Terra"
+      ],
+      "model_ids": [
+        "gpt-5.6-terra"
+      ],
+      "model_config": null,
+      "score": 7343.206,
+      "score_extra": {
+        "std_error": 373.2659993034456,
+        "num_runs": 5,
+        "geomean_money_balance": 7304.278160188037,
+        "geomean_num_runs": 5,
+        "mean_cost_usd": 137.6
+      },
+      "date": "2026-07-09",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": null
+    },
+    {
+      "rank": 11,
+      "system": "Claude Sonnet 4.6",
+      "agent": null,
+      "model_raw": [
+        "Claude Sonnet 4.6"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.6"
+      ],
+      "model_config": null,
+      "score": 7204.139999999999,
+      "score_extra": {
+        "std_error": 721.9818395361477,
+        "num_runs": 5,
+        "geomean_money_balance": 7041.487873139292,
+        "geomean_num_runs": 5,
+        "mean_cost_usd": 265.03
+      },
+      "date": "2026-02-17",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 12,
+      "system": "Muse Spark 1.1",
+      "agent": null,
+      "model_raw": [
+        "Muse Spark 1.1"
+      ],
+      "model_ids": [
+        "muse-spark-1.1"
+      ],
+      "model_config": null,
+      "score": 6520.474999999999,
+      "score_extra": {
+        "std_error": 1016.3318297837902,
+        "num_runs": 6,
+        "geomean_money_balance": 5879.277429525139,
+        "geomean_num_runs": 6,
+        "mean_cost_usd": 54.44
+      },
+      "date": "2026-07-09",
+      "verified": null,
+      "open_source": null,
+      "org": "Meta",
+      "row_url": null
+    },
+    {
+      "rank": 13,
+      "system": "Claude Sonnet 5",
+      "agent": null,
+      "model_raw": [
+        "Claude Sonnet 5"
+      ],
+      "model_ids": [
+        "claude-sonnet-5"
+      ],
+      "model_config": null,
+      "score": 6377.701666666665,
+      "score_extra": {
+        "std_error": 783.7400790841168,
+        "num_runs": 6,
+        "geomean_money_balance": 6117.1395254154995,
+        "geomean_num_runs": 6,
+        "mean_cost_usd": 247.51
+      },
+      "date": "2026-06-30",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 14,
+      "system": "Kimi K2.6",
+      "agent": null,
+      "model_raw": [
+        "Kimi K2.6"
+      ],
+      "model_ids": [
+        "kimi-k2.6"
+      ],
+      "model_config": null,
+      "score": 6204.570000000001,
+      "score_extra": {
+        "std_error": 660.8708767300919,
+        "num_runs": 5,
+        "geomean_money_balance": 6029.829477515791,
+        "geomean_num_runs": 5,
+        "mean_cost_usd": 127.85
+      },
+      "date": "2026-04-20",
+      "verified": null,
+      "open_source": null,
+      "org": "Moonshot",
+      "row_url": null
+    },
+    {
+      "rank": 15,
+      "system": "GPT-5.4",
+      "agent": null,
+      "model_raw": [
+        "GPT-5.4"
+      ],
+      "model_ids": [
+        "gpt-5.4"
+      ],
+      "model_config": null,
+      "score": 6144.176,
+      "score_extra": {
+        "std_error": 871.0986940387411,
+        "num_runs": 5,
+        "geomean_money_balance": 5795.766108948811,
+        "geomean_num_runs": 5,
+        "mean_cost_usd": 113.75
+      },
+      "date": "2026-03-05",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": null
+    },
+    {
+      "rank": 16,
+      "system": "GPT-5.3-Codex",
+      "agent": null,
+      "model_raw": [
+        "GPT-5.3-Codex"
+      ],
+      "model_ids": [
+        "gpt-5.3-codex"
+      ],
+      "model_config": null,
+      "score": 5940.124000000002,
+      "score_extra": {
+        "std_error": 795.978741805333,
+        "num_runs": 5,
+        "geomean_money_balance": 5711.741277241385,
+        "geomean_num_runs": 5,
+        "mean_cost_usd": 68.47
+      },
+      "date": "2026-02-05",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": null
+    },
+    {
+      "rank": 17,
+      "system": "Claude Opus 4.8 - High",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 4.8 - High"
+      ],
+      "model_ids": [
+        "claude-opus-4.8"
+      ],
+      "model_config": "High",
+      "score": 5787.428,
+      "score_extra": {
+        "std_error": 830.6721687488999,
+        "num_runs": 5,
+        "geomean_money_balance": 5583.374481449344,
+        "geomean_num_runs": 5,
+        "mean_cost_usd": 455.12
+      },
+      "date": "2026-05-28",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 18,
+      "system": "Claude Fable 5 - High",
+      "agent": null,
+      "model_raw": [
+        "Claude Fable 5 - High"
+      ],
+      "model_ids": [
+        "claude-fable-5"
+      ],
+      "model_config": "High",
+      "score": 5680.258,
+      "score_extra": {
+        "std_error": 1074.9314240843462,
+        "num_runs": 5,
+        "geomean_money_balance": 5341.207346436972,
+        "geomean_num_runs": 5,
+        "mean_cost_usd": 1369.26
+      },
+      "date": "2026-06-09",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 19,
+      "system": "GLM-5.1",
+      "agent": null,
+      "model_raw": [
+        "GLM-5.1"
+      ],
+      "model_ids": [
+        "glm-5.1"
+      ],
+      "model_config": null,
+      "score": 5634.406,
+      "score_extra": {
+        "std_error": 333.6195100949586,
+        "num_runs": 5,
+        "geomean_money_balance": 5592.9020167210365,
+        "geomean_num_runs": 5,
+        "mean_cost_usd": 169.97
+      },
+      "date": "2026-04-07",
+      "verified": null,
+      "open_source": null,
+      "org": "Zhipu",
+      "row_url": null
+    },
+    {
+      "rank": 20,
+      "system": "Gemini 3 Pro",
+      "agent": null,
+      "model_raw": [
+        "Gemini 3 Pro"
+      ],
+      "model_ids": [
+        "gemini-3-pro"
+      ],
+      "model_config": null,
+      "score": 5478.158000000001,
+      "score_extra": {
+        "std_error": 905.0284592342944,
+        "num_runs": 5,
+        "geomean_money_balance": 5220.278352146656,
+        "geomean_num_runs": 5,
+        "mean_cost_usd": 146.86
+      },
+      "date": "2025-11-18",
+      "verified": null,
+      "open_source": null,
+      "org": "Google",
+      "row_url": null
+    },
+    {
+      "rank": 21,
+      "system": "Claude Fable 5.1",
+      "agent": null,
+      "model_raw": [
+        "Claude Fable 5.1"
+      ],
+      "model_ids": [
+        "claude-fable-5.1"
+      ],
+      "model_config": null,
+      "score": 5421.556666666666,
+      "score_extra": {
+        "std_error": 1244.4364258428172,
+        "num_runs": 6,
+        "geomean_money_balance": 4600.877511141228,
+        "geomean_num_runs": 6,
+        "mean_cost_usd": 1503.66
+      },
+      "date": "2026-09-01",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 22,
+      "system": "Gemini 3.5 Flash",
+      "agent": null,
+      "model_raw": [
+        "Gemini 3.5 Flash"
+      ],
+      "model_ids": [
+        "gemini-3.5-flash"
+      ],
+      "model_config": null,
+      "score": 5396.418333333334,
+      "score_extra": {
+        "std_error": 1058.7341136231728,
+        "num_runs": 6,
+        "geomean_money_balance": 4738.811006939041,
+        "geomean_num_runs": 6,
+        "mean_cost_usd": 180.78
+      },
+      "date": "2026-05-19",
+      "verified": null,
+      "open_source": null,
+      "org": "Google",
+      "row_url": null
+    },
+    {
+      "rank": 23,
+      "system": "Kimi K3 (Moonshot)",
+      "agent": null,
+      "model_raw": [
+        "Kimi K3 (Moonshot)"
+      ],
+      "model_ids": [
+        "kimi-k3"
+      ],
+      "model_config": "provider: Moonshot",
+      "score": 5165.035000000001,
+      "score_extra": {
+        "std_error": 691.1590364826801,
+        "num_runs": 6,
+        "geomean_money_balance": 4928.080870604488,
+        "geomean_num_runs": 6,
+        "mean_cost_usd": 234.63
+      },
+      "date": "2026-07-16",
+      "verified": null,
+      "open_source": null,
+      "org": "Moonshot",
+      "row_url": null
+    },
+    {
+      "rank": 24,
+      "system": "Qwen 3.6 Plus",
+      "agent": null,
+      "model_raw": [
+        "Qwen 3.6 Plus"
+      ],
+      "model_ids": [
+        "qwen3.6-plus"
+      ],
+      "model_config": null,
+      "score": 5114.872000000001,
+      "score_extra": {
+        "std_error": 1097.1241807762697,
+        "num_runs": 5,
+        "geomean_money_balance": 4346.044095133253,
+        "geomean_num_runs": 5,
+        "mean_cost_usd": 65.47
+      },
+      "date": "2026-04-02",
+      "verified": null,
+      "open_source": null,
+      "org": "Alibaba",
+      "row_url": null
+    },
+    {
+      "rank": 25,
+      "system": "Gemini 3.8 Flash",
+      "agent": null,
+      "model_raw": [
+        "Gemini 3.8 Flash"
+      ],
+      "model_ids": [
+        "gemini-3.8-flash"
+      ],
+      "model_config": null,
+      "score": 5093.793333333332,
+      "score_extra": {
+        "std_error": 490.1639138673693,
+        "num_runs": 6,
+        "geomean_money_balance": 4978.1163620343395,
+        "geomean_num_runs": 6,
+        "mean_cost_usd": 69.95
+      },
+      "date": "2026-09-02",
+      "verified": null,
+      "open_source": null,
+      "org": "Google",
+      "row_url": null
+    },
+    {
+      "rank": 26,
+      "system": "Kimi K2.7 Code",
+      "agent": null,
+      "model_raw": [
+        "Kimi K2.7 Code"
+      ],
+      "model_ids": [
+        "kimi-k2.7-code"
+      ],
+      "model_config": null,
+      "score": 5082.936,
+      "score_extra": {
+        "std_error": 1069.3686883465405,
+        "num_runs": 5,
+        "geomean_money_balance": 4261.8181038321,
+        "geomean_num_runs": 5
+      },
+      "date": "2026-06-12",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 27,
+      "system": "Claude Fable 5 - Low",
+      "agent": null,
+      "model_raw": [
+        "Claude Fable 5 - Low"
+      ],
+      "model_ids": [
+        "claude-fable-5"
+      ],
+      "model_config": "Low",
+      "score": 5018.519999999999,
+      "score_extra": {
+        "std_error": 1225.2342459831914,
+        "num_runs": 5,
+        "geomean_money_balance": 4319.937175552408,
+        "geomean_num_runs": 5,
+        "mean_cost_usd": 1252.48
+      },
+      "date": "2026-06-09",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 28,
+      "system": "Claude Opus 4.5",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 4.5"
+      ],
+      "model_ids": [
+        "claude-opus-4.5"
+      ],
+      "model_config": null,
+      "score": 4967.056666666668,
+      "score_extra": {
+        "std_error": 979.2482646760785,
+        "num_runs": 6,
+        "geomean_money_balance": 4481.980086297864,
+        "geomean_num_runs": 6,
+        "mean_cost_usd": 770.73
+      },
+      "date": "2025-11-24",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 29,
+      "system": "Claude Fable 5 - Max",
+      "agent": null,
+      "model_raw": [
+        "Claude Fable 5 - Max"
+      ],
+      "model_ids": [
+        "claude-fable-5"
+      ],
+      "model_config": "Max",
+      "score": 4966.639999999998,
+      "score_extra": {
+        "std_error": 953.630613020576,
+        "num_runs": 5,
+        "geomean_money_balance": 4330.134096896836,
+        "geomean_num_runs": 5,
+        "mean_cost_usd": 1122.55
+      },
+      "date": "2026-06-09",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 30,
+      "system": "Kimi K3 (Fireworks)",
+      "agent": null,
+      "model_raw": [
+        "Kimi K3 (Fireworks)"
+      ],
+      "model_ids": [
+        "kimi-k3"
+      ],
+      "model_config": "provider: Fireworks",
+      "score": 4906.963333333332,
+      "score_extra": {
+        "std_error": 1652.4201746502342,
+        "num_runs": 6,
+        "geomean_money_balance": 3683.736013939564,
+        "geomean_num_runs": 6
+      },
+      "date": "2026-07-16",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 31,
+      "system": "Grok 4.20",
+      "agent": null,
+      "model_raw": [
+        "Grok 4.20"
+      ],
+      "model_ids": [
+        "grok-4.20"
+      ],
+      "model_config": null,
+      "score": 4662.846666666667,
+      "score_extra": {
+        "std_error": 1276.3313500515628,
+        "num_runs": 6,
+        "geomean_money_balance": 3775.660144377659,
+        "geomean_num_runs": 6,
+        "mean_cost_usd": 187.56
+      },
+      "date": "2026-03-10",
+      "verified": null,
+      "open_source": null,
+      "org": "xAI",
+      "row_url": null
+    },
+    {
+      "rank": 32,
+      "system": "Claude Fable 5 - None",
+      "agent": null,
+      "model_raw": [
+        "Claude Fable 5 - None"
+      ],
+      "model_ids": [
+        "claude-fable-5"
+      ],
+      "model_config": "None",
+      "score": 4529.944000000001,
+      "score_extra": {
+        "std_error": 662.3874858615611,
+        "num_runs": 5,
+        "geomean_money_balance": 4327.534666545449,
+        "geomean_num_runs": 5,
+        "mean_cost_usd": 1294.72
+      },
+      "date": "2026-06-09",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 33,
+      "system": "GLM-5",
+      "agent": null,
+      "model_raw": [
+        "GLM-5"
+      ],
+      "model_ids": [
+        "glm-5"
+      ],
+      "model_config": null,
+      "score": 4432.122000000001,
+      "score_extra": {
+        "std_error": 393.5501827772413,
+        "num_runs": 5,
+        "geomean_money_balance": 4353.616706861484,
+        "geomean_num_runs": 5,
+        "mean_cost_usd": 133.01
+      },
+      "date": "2026-02-11",
+      "verified": null,
+      "open_source": null,
+      "org": "Zhipu",
+      "row_url": null
+    },
+    {
+      "rank": 34,
+      "system": "Claude Fable 5 - Medium",
+      "agent": null,
+      "model_raw": [
+        "Claude Fable 5 - Medium"
+      ],
+      "model_ids": [
+        "claude-fable-5"
+      ],
+      "model_config": "Medium",
+      "score": 4339.812500000001,
+      "score_extra": {
+        "std_error": 1426.8295361533499,
+        "num_runs": 4,
+        "geomean_money_balance": 3544.93821570813,
+        "geomean_num_runs": 4,
+        "mean_cost_usd": 1193.31
+      },
+      "date": "2026-06-09",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 35,
+      "system": "Qwen 3.6 Max",
+      "agent": null,
+      "model_raw": [
+        "Qwen 3.6 Max"
+      ],
+      "model_ids": [
+        "qwen3.6-max"
+      ],
+      "model_config": null,
+      "score": 4254.1866666666665,
+      "score_extra": {
+        "std_error": 1469.5577387310937,
+        "num_runs": 6,
+        "geomean_money_balance": 4303.436877306527,
+        "geomean_num_runs": 5,
+        "mean_cost_usd": 120.68
+      },
+      "date": "2026-04-22",
+      "verified": null,
+      "open_source": null,
+      "org": "Alibaba",
+      "row_url": null
+    },
+    {
+      "rank": 36,
+      "system": "GPT-5.6 Luna",
+      "agent": null,
+      "model_raw": [
+        "GPT-5.6 Luna"
+      ],
+      "model_ids": [
+        "gpt-5.6-luna"
+      ],
+      "model_config": null,
+      "score": 4094.7120000000004,
+      "score_extra": {
+        "std_error": 1344.1559814113837,
+        "num_runs": 5,
+        "geomean_money_balance": 2667.7395491823154,
+        "geomean_num_runs": 5,
+        "mean_cost_usd": 61.84
+      },
+      "date": "2026-07-09",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": null
+    },
+    {
+      "rank": 37,
+      "system": "Grok 4.5",
+      "agent": null,
+      "model_raw": [
+        "Grok 4.5"
+      ],
+      "model_ids": [
+        "grok-4.5"
+      ],
+      "model_config": null,
+      "score": 3887.4259999999986,
+      "score_extra": {
+        "std_error": 435.2849462317763,
+        "num_runs": 5,
+        "geomean_money_balance": 3783.8927080192097,
+        "geomean_num_runs": 5,
+        "mean_cost_usd": 173.59
+      },
+      "date": "2026-07-08",
+      "verified": null,
+      "open_source": null,
+      "org": "xAI",
+      "row_url": null
+    },
+    {
+      "rank": 38,
+      "system": "Claude Sonnet 4.5",
+      "agent": null,
+      "model_raw": [
+        "Claude Sonnet 4.5"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": null,
+      "score": 3838.7400000000002,
+      "score_extra": {
+        "std_error": 1102.0977149236812,
+        "num_runs": 5,
+        "geomean_money_balance": 3006.3255724953715,
+        "geomean_num_runs": 5,
+        "mean_cost_usd": 90.72
+      },
+      "date": "2025-09-29",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 39,
+      "system": "Gemini 3.1 Pro Custom Tools",
+      "agent": null,
+      "model_raw": [
+        "Gemini 3.1 Pro Custom Tools"
+      ],
+      "model_ids": [
+        "gemini-3.1-pro"
+      ],
+      "model_config": "Custom Tools",
+      "score": 3774.254,
+      "score_extra": {
+        "std_error": 1241.567713081328,
+        "num_runs": 5,
+        "geomean_money_balance": 2883.4220997113075,
+        "geomean_num_runs": 5,
+        "mean_cost_usd": 102.04
+      },
+      "date": "2026-02-19",
+      "verified": null,
+      "open_source": null,
+      "org": "Google",
+      "row_url": null
+    },
+    {
+      "rank": 40,
+      "system": "Gemini 3 Flash",
+      "agent": null,
+      "model_raw": [
+        "Gemini 3 Flash"
+      ],
+      "model_ids": [
+        "gemini-3-flash"
+      ],
+      "model_config": null,
+      "score": 3634.715999999999,
+      "score_extra": {
+        "std_error": 639.3358759259487,
+        "num_runs": 5,
+        "geomean_money_balance": 3394.674790169186,
+        "geomean_num_runs": 5,
+        "mean_cost_usd": 36.56
+      },
+      "date": "2025-12-17",
+      "verified": null,
+      "open_source": null,
+      "org": "Google",
+      "row_url": null
+    },
+    {
+      "rank": 41,
+      "system": "GPT-5.2",
+      "agent": null,
+      "model_raw": [
+        "GPT-5.2"
+      ],
+      "model_ids": [
+        "gpt-5.2"
+      ],
+      "model_config": null,
+      "score": 3591.3259999999996,
+      "score_extra": {
+        "std_error": 392.0799849086917,
+        "num_runs": 5,
+        "geomean_money_balance": 3498.9069778645526,
+        "geomean_num_runs": 5,
+        "mean_cost_usd": 95.07
+      },
+      "date": "2025-12-11",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": null
+    },
+    {
+      "rank": 42,
+      "system": "Deepseek V4 Pro",
+      "agent": null,
+      "model_raw": [
+        "Deepseek V4 Pro"
+      ],
+      "model_ids": [
+        "deepseek-v4-pro"
+      ],
+      "model_config": null,
+      "score": 3284.519999999999,
+      "score_extra": {
+        "std_error": 570.7043444960502,
+        "num_runs": 6,
+        "geomean_money_balance": 3014.569684982306,
+        "geomean_num_runs": 6,
+        "mean_cost_usd": 289.01
+      },
+      "date": "2026-04-24",
+      "verified": null,
+      "open_source": null,
+      "org": "DeepSeek",
+      "row_url": null
+    },
+    {
+      "rank": 43,
+      "system": "Claude Opus 4.8 - Max",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 4.8 - Max"
+      ],
+      "model_ids": [
+        "claude-opus-4.8"
+      ],
+      "model_config": "Max",
+      "score": 2992.344,
+      "score_extra": {
+        "std_error": 722.0194956689185,
+        "num_runs": 5,
+        "geomean_money_balance": 2669.85720024821,
+        "geomean_num_runs": 5,
+        "mean_cost_usd": 453.54
+      },
+      "date": "2026-05-28",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 44,
+      "system": "GLM-4.7",
+      "agent": null,
+      "model_raw": [
+        "GLM-4.7"
+      ],
+      "model_ids": [
+        "glm-4.7"
+      ],
+      "model_config": null,
+      "score": 2376.816,
+      "score_extra": {
+        "std_error": 620.5982737858684,
+        "num_runs": 5,
+        "geomean_money_balance": 1923.928863328843,
+        "geomean_num_runs": 5,
+        "mean_cost_usd": 73.89
+      },
+      "date": "2025-12-22",
+      "verified": null,
+      "open_source": null,
+      "org": "Zhipu",
+      "row_url": null
+    },
+    {
+      "rank": 45,
+      "system": "MiniMax-M3",
+      "agent": null,
+      "model_raw": [
+        "MiniMax-M3"
+      ],
+      "model_ids": [
+        "minimax-m3"
+      ],
+      "model_config": null,
+      "score": 2157.7716666666665,
+      "score_extra": {
+        "std_error": 1151.0357691355398,
+        "num_runs": 6,
+        "geomean_money_balance": 1323.0014629641062,
+        "geomean_num_runs": 5
+      },
+      "date": "2026-06-11",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 46,
+      "system": "GPT-5.1",
+      "agent": null,
+      "model_raw": [
+        "GPT-5.1"
+      ],
+      "model_ids": [
+        "gpt-5.1"
+      ],
+      "model_config": null,
+      "score": 1473.432,
+      "score_extra": {
+        "std_error": 756.1658962053234,
+        "num_runs": 5,
+        "geomean_money_balance": 2261.236909779181,
+        "geomean_num_runs": 3,
+        "mean_cost_usd": 57.5
+      },
+      "date": "2025-11-12",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": null
+    },
+    {
+      "rank": 47,
+      "system": "Kimi K2.5",
+      "agent": null,
+      "model_raw": [
+        "Kimi K2.5"
+      ],
+      "model_ids": [
+        "kimi-k2.5"
+      ],
+      "model_config": null,
+      "score": 1198.4579999999999,
+      "score_extra": {
+        "std_error": 596.6970510015948,
+        "num_runs": 5,
+        "geomean_money_balance": 1117.8576238170353,
+        "geomean_num_runs": 4,
+        "mean_cost_usd": 61.14
+      },
+      "date": "2026-01-27",
+      "verified": null,
+      "open_source": null,
+      "org": "Moonshot",
+      "row_url": null
+    },
+    {
+      "rank": 48,
+      "system": "Grok 4.1 Fast",
+      "agent": null,
+      "model_raw": [
+        "Grok 4.1 Fast"
+      ],
+      "model_ids": [
+        "grok-4.1-fast"
+      ],
+      "model_config": null,
+      "score": 1106.6280000000002,
+      "score_extra": {
+        "std_error": 457.64703638721403,
+        "num_runs": 5,
+        "geomean_money_balance": 972.1441276886194,
+        "geomean_num_runs": 4,
+        "mean_cost_usd": 13.54
+      },
+      "date": "2025-11-19",
+      "verified": null,
+      "open_source": null,
+      "org": "xAI",
+      "row_url": null
+    },
+    {
+      "rank": 49,
+      "system": "DeepSeek-V3.2",
+      "agent": null,
+      "model_raw": [
+        "DeepSeek-V3.2"
+      ],
+      "model_ids": [
+        "deepseek-v3.2"
+      ],
+      "model_config": null,
+      "score": 1034.0040000000001,
+      "score_extra": {
+        "std_error": 503.1488034031285,
+        "num_runs": 5,
+        "geomean_money_balance": 1603.2221507421768,
+        "geomean_num_runs": 3,
+        "mean_cost_usd": 31.54
+      },
+      "date": "2025-12-01",
+      "verified": null,
+      "open_source": null,
+      "org": "DeepSeek",
+      "row_url": null
+    },
+    {
+      "rank": 50,
+      "system": "Gemini 3.1 Pro",
+      "agent": null,
+      "model_raw": [
+        "Gemini 3.1 Pro"
+      ],
+      "model_ids": [
+        "gemini-3.1-pro"
+      ],
+      "model_config": null,
+      "score": 911.2139999999997,
+      "score_extra": {
+        "std_error": 652.5516313718016,
+        "num_runs": 5,
+        "geomean_money_balance": 2081.8941591252906,
+        "geomean_num_runs": 2,
+        "mean_cost_usd": 189.95
+      },
+      "date": "2026-02-19",
+      "verified": null,
+      "open_source": null,
+      "org": "Google",
+      "row_url": null
+    },
+    {
+      "rank": 51,
+      "system": "Gemini 2.5 Pro",
+      "agent": null,
+      "model_raw": [
+        "Gemini 2.5 Pro"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": null,
+      "score": 573.6420000000003,
+      "score_extra": {
+        "std_error": 465.30327731921267,
+        "num_runs": 5,
+        "geomean_money_balance": 493.2901510363499,
+        "geomean_num_runs": 3,
+        "mean_cost_usd": 73.71
+      },
+      "date": "2025-03-25",
+      "verified": null,
+      "open_source": null,
+      "org": "Google",
+      "row_url": null
+    },
+    {
+      "rank": 52,
+      "system": "Gemini 2.5 Flash",
+      "agent": null,
+      "model_raw": [
+        "Gemini 2.5 Flash"
+      ],
+      "model_ids": [
+        "gemini-2.5-flash"
+      ],
+      "model_config": null,
+      "score": 548.836,
+      "score_extra": {
+        "std_error": 365.68944068157055,
+        "num_runs": 5,
+        "geomean_money_balance": 1378.7000739827351,
+        "geomean_num_runs": 2,
+        "mean_cost_usd": 16.35
+      },
+      "date": "2025-04-09",
+      "verified": null,
+      "open_source": null,
+      "org": "Google",
+      "row_url": null
+    },
+    {
+      "rank": 53,
+      "system": "Qwen 3.5 35B A3B",
+      "agent": null,
+      "model_raw": [
+        "Qwen 3.5 35B A3B"
+      ],
+      "model_ids": [
+        "qwen3.5-35b-a3b"
+      ],
+      "model_config": null,
+      "score": 462.68500000000023,
+      "score_extra": {
+        "std_error": 486.4718261883213,
+        "num_runs": 4,
+        "geomean_money_balance": 1922.100000000001,
+        "geomean_num_runs": 1,
+        "mean_cost_usd": 17.42
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "Alibaba",
+      "row_url": null
+    },
+    {
+      "rank": 54,
+      "system": "Claude Haiku 4.5",
+      "agent": null,
+      "model_raw": [
+        "Claude Haiku 4.5"
+      ],
+      "model_ids": [
+        "claude-haiku-4.5"
+      ],
+      "model_config": null,
+      "score": 458.88599999999985,
+      "score_extra": {
+        "std_error": 274.9433748719906,
+        "num_runs": 5,
+        "geomean_money_balance": 364.15229067740256,
+        "geomean_num_runs": 4,
+        "mean_cost_usd": 84.08
+      },
+      "date": "2025-10-15",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 55,
+      "system": "Qwen 3.5 27B",
+      "agent": null,
+      "model_raw": [
+        "Qwen 3.5 27B"
+      ],
+      "model_ids": [
+        "qwen3.5-27b"
+      ],
+      "model_config": null,
+      "score": 201.97599999999994,
+      "score_extra": {
+        "std_error": 134.5486148795297,
+        "num_runs": 5,
+        "geomean_money_balance": 531.4593361678765,
+        "geomean_num_runs": 2,
+        "mean_cost_usd": 26.19
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "Alibaba",
+      "row_url": null
+    },
+    {
+      "rank": 56,
+      "system": "MiniMax-M2",
+      "agent": null,
+      "model_raw": [
+        "MiniMax-M2"
+      ],
+      "model_ids": [
+        "minimax-m2"
+      ],
+      "model_config": null,
+      "score": 160.5959999999999,
+      "score_extra": {
+        "std_error": 97.3986709662919,
+        "num_runs": 5,
+        "geomean_money_balance": 238.6477802873046,
+        "geomean_num_runs": 3,
+        "mean_cost_usd": 17.76
+      },
+      "date": "2025-10-27",
+      "verified": null,
+      "open_source": null,
+      "org": "MiniMax",
+      "row_url": null
+    },
+    {
+      "rank": 57,
+      "system": "Qwen3 Max",
+      "agent": null,
+      "model_raw": [
+        "Qwen3 Max"
+      ],
+      "model_ids": [
+        "qwen3-max"
+      ],
+      "model_config": null,
+      "score": 71.56500000000018,
+      "score_extra": {
+        "std_error": 94.52113099725399,
+        "num_runs": 6,
+        "geomean_money_balance": 544.1700000000016,
+        "geomean_num_runs": 1,
+        "mean_cost_usd": 109.01
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "Alibaba",
+      "row_url": null
+    },
+    {
+      "rank": 58,
+      "system": "Grok 4.3",
+      "agent": null,
+      "model_raw": [
+        "Grok 4.3"
+      ],
+      "model_ids": [
+        "grok-4.3"
+      ],
+      "model_config": null,
+      "score": 35.26166666666665,
+      "score_extra": {
+        "std_error": 58.90209913727844,
+        "num_runs": 6,
+        "geomean_money_balance": 329.77,
+        "geomean_num_runs": 1,
+        "mean_cost_usd": 82.62
+      },
+      "date": "2026-04-30",
+      "verified": null,
+      "open_source": null,
+      "org": "xAI",
+      "row_url": null
+    },
+    {
+      "rank": 59,
+      "system": "Qwen 3.5 Plus",
+      "agent": null,
+      "model_raw": [
+        "Qwen 3.5 Plus"
+      ],
+      "model_ids": [
+        "qwen3.5-plus"
+      ],
+      "model_config": null,
+      "score": 0.5440000000000417,
+      "score_extra": {
+        "std_error": 20.30710703177587,
+        "num_runs": 5,
+        "geomean_money_balance": 80.95000000000014,
+        "geomean_num_runs": 1,
+        "mean_cost_usd": 23.1
+      },
+      "date": "2026-02-16",
+      "verified": null,
+      "open_source": null,
+      "org": "Alibaba",
+      "row_url": null
+    },
+    {
+      "rank": 60,
+      "system": "Qwen3 235B A22B Thinking",
+      "agent": null,
+      "model_raw": [
+        "Qwen3 235B A22B Thinking"
+      ],
+      "model_ids": [
+        "qwen3-235b-a22b-thinking"
+      ],
+      "model_config": null,
+      "score": -11.340000000000078,
+      "score_extra": {
+        "std_error": 14.589143566364699,
+        "num_runs": 5,
+        "geomean_money_balance": 46.99999999999997,
+        "geomean_num_runs": 1,
+        "mean_cost_usd": 48.25
+      },
+      "date": "2025-07-25",
+      "verified": null,
+      "open_source": null,
+      "org": "Alibaba",
+      "row_url": null
+    },
+    {
+      "rank": 61,
+      "system": "GPT-OSS-120b",
+      "agent": null,
+      "model_raw": [
+        "GPT-OSS-120b"
+      ],
+      "model_ids": [
+        "gpt-oss-120b"
+      ],
+      "model_config": null,
+      "score": -21.532000000000053,
+      "score_extra": {
+        "std_error": 2.8717092471209504,
+        "num_runs": 5,
+        "geomean_num_runs": 0,
+        "mean_cost_usd": 9.94
+      },
+      "date": "2025-08-05",
+      "verified": null,
+      "open_source": null,
+      "org": "Fireworks",
+      "row_url": null
+    },
+    {
+      "rank": 62,
+      "system": "MiniMax-M2.5",
+      "agent": null,
+      "model_raw": [
+        "MiniMax-M2.5"
+      ],
+      "model_ids": [
+        "minimax-m2.5"
+      ],
+      "model_config": null,
+      "score": -23.15999999999999,
+      "score_extra": {
+        "std_error": 0.2811761014026704,
+        "num_runs": 5,
+        "geomean_num_runs": 0,
+        "mean_cost_usd": 10.01
+      },
+      "date": "2026-02-12",
+      "verified": null,
+      "open_source": null,
+      "org": "MiniMax",
+      "row_url": null
+    },
+    {
+      "rank": 63,
+      "system": "GPT-5 mini",
+      "agent": null,
+      "model_raw": [
+        "GPT-5 mini"
+      ],
+      "model_ids": [
+        "gpt-5-mini"
+      ],
+      "model_config": null,
+      "score": -31.18399999999995,
+      "score_extra": {
+        "std_error": 5.972541837442429,
+        "num_runs": 5,
+        "geomean_num_runs": 0,
+        "mean_cost_usd": 6.19
+      },
+      "date": "2025-08-07",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": null
+    }
+  ]
+}

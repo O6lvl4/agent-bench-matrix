@@ -1,0 +1,183 @@
+{
+  "id": "sec-bench-pro-firefox",
+  "family": "sec-bench-pro",
+  "name": "SEC-bench Pro (Firefox/SpiderMonkey)",
+  "board": "sec-bench.github.io",
+  "category": "security",
+  "measures_ja": "Firefox の SpiderMonkey エンジンの脆弱性104件で PoC を再現できるか。",
+  "tasks": 104,
+  "tasks_note": null,
+  "metric": "Success (% instances with valid PoC)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "SEC-bench Pro チームが3種のコーディングエージェント(Codex・Claude Code・OpenCode)でモデルを固定タイムアウト付きで実行。採点は LLM ベースの判定器。",
+  "source": "https://sec-bench.github.io/",
+  "fetched": [
+    "https://sec-bench.github.io/",
+    "https://sec-bench.github.io/data/leaderboards.yaml"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-06-17",
+  "snapshot": "sources/sec-bench-pro-firefox/leaderboard-table.html",
+  "paper": "https://arxiv.org/abs/2605.26548",
+  "repo": "https://github.com/SEC-bench/SEC-bench-Pro",
+  "notes_ja": "ボードの Version は 260617 スナップショット。score_extra.solved_count は成功/全件、completed は制限時間内に完走した件数。Opus 4.6 は多くがタイムアウトしたが完走分の正答率は高い、とボードが注記。新しめの Claude/Mythos はセーフガード制限のため結果無し、とも。open_source はボードの Model Type 列。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "GPT-5.5 (xhigh) Codex",
+      "agent": "Codex",
+      "model_raw": [
+        "GPT-5.5 (xhigh)"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": "xhigh",
+      "score": 44.2,
+      "score_extra": {
+        "solved_count": "46/104",
+        "completed": "103/104",
+        "completed_score_pct": 44.7,
+        "completed_solved_count": "46/103",
+        "backend": "OpenAI",
+        "model_type": "proprietary"
+      },
+      "date": "2026-06-17",
+      "verified": null,
+      "open_source": false,
+      "org": "OpenAI",
+      "row_url": "https://sec-bench.github.io/firefox/runs/codex_gpt-5.5-xhigh"
+    },
+    {
+      "rank": 3,
+      "system": "GPT-5.4 (xhigh) Codex",
+      "agent": "Codex",
+      "model_raw": [
+        "GPT-5.4 (xhigh)"
+      ],
+      "model_ids": [
+        "gpt-5.4"
+      ],
+      "model_config": "xhigh",
+      "score": 25.0,
+      "score_extra": {
+        "solved_count": "26/104",
+        "completed": "104/104",
+        "completed_score_pct": 25.0,
+        "completed_solved_count": "26/104",
+        "backend": "OpenAI",
+        "model_type": "proprietary"
+      },
+      "date": "2026-06-17",
+      "verified": null,
+      "open_source": false,
+      "org": "OpenAI",
+      "row_url": "https://sec-bench.github.io/firefox/runs/codex_gpt-5.4-xhigh"
+    },
+    {
+      "rank": 2,
+      "system": "Opus 4.6 (max) Claude Code",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Opus 4.6 (max)"
+      ],
+      "model_ids": [
+        "claude-opus-4.6"
+      ],
+      "model_config": "max",
+      "score": 27.9,
+      "score_extra": {
+        "solved_count": "29/104",
+        "completed": "43/104",
+        "completed_score_pct": 58.1,
+        "completed_solved_count": "25/43",
+        "backend": "AWS Bedrock",
+        "model_type": "proprietary"
+      },
+      "date": "2026-06-17",
+      "verified": null,
+      "open_source": false,
+      "org": "Anthropic",
+      "row_url": "https://sec-bench.github.io/firefox/runs/claude_opus-4.6-max"
+    },
+    {
+      "rank": 4,
+      "system": "GLM-5 (high) OpenCode",
+      "agent": "OpenCode",
+      "model_raw": [
+        "GLM-5 (high)"
+      ],
+      "model_ids": [
+        "glm-5"
+      ],
+      "model_config": "high",
+      "score": 5.8,
+      "score_extra": {
+        "solved_count": "6/104",
+        "completed": "96/104",
+        "completed_score_pct": 6.2,
+        "completed_solved_count": "6/96",
+        "backend": "AWS Bedrock",
+        "model_type": "open-source"
+      },
+      "date": "2026-06-17",
+      "verified": null,
+      "open_source": true,
+      "org": "Z.ai",
+      "row_url": "https://sec-bench.github.io/firefox/runs/opencode_glm-5-high"
+    },
+    {
+      "rank": 5,
+      "system": "Kimi K2.5 (high) OpenCode",
+      "agent": "OpenCode",
+      "model_raw": [
+        "Kimi K2.5 (high)"
+      ],
+      "model_ids": [
+        "kimi-k2.5"
+      ],
+      "model_config": "high",
+      "score": 2.9,
+      "score_extra": {
+        "solved_count": "3/104",
+        "completed": "103/104",
+        "completed_score_pct": 2.9,
+        "completed_solved_count": "3/103",
+        "backend": "AWS Bedrock",
+        "model_type": "open-source"
+      },
+      "date": "2026-06-17",
+      "verified": null,
+      "open_source": true,
+      "org": "Moonshot AI",
+      "row_url": "https://sec-bench.github.io/firefox/runs/opencode_kimi-k2.5-high"
+    },
+    {
+      "rank": 6,
+      "system": "MiniMax M2.5 (high) OpenCode",
+      "agent": "OpenCode",
+      "model_raw": [
+        "MiniMax M2.5 (high)"
+      ],
+      "model_ids": [
+        "minimax-m2.5"
+      ],
+      "model_config": "high",
+      "score": 0.0,
+      "score_extra": {
+        "solved_count": "0/104",
+        "completed": "100/104",
+        "completed_score_pct": 0.0,
+        "completed_solved_count": "0/100",
+        "backend": "AWS Bedrock",
+        "model_type": "open-source"
+      },
+      "date": "2026-06-17",
+      "verified": null,
+      "open_source": true,
+      "org": "MiniMax",
+      "row_url": "https://sec-bench.github.io/firefox/runs/opencode_minimax-m2.5-high"
+    }
+  ]
+}

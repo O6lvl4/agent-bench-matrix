@@ -1,0 +1,2771 @@
+{
+  "id": "swe-rebench",
+  "family": "swe-rebench",
+  "name": "SWE-rebench",
+  "board": "swe-rebench.com",
+  "category": "coding",
+  "measures_ja": "毎月新しく集めた GitHub の issue(学習データ汚染を避けた新しいタスク)を、テストを通すパッチで解決できるか。",
+  "tasks": 111,
+  "tasks_note": "ボード初期表示の時間窓 2026-05-15〜2026-07-01(終端を含まない)に入る問題数。窓を動かすと変わる。65 リポジトリ。",
+  "metric": "Resolved Rate (%)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "Nebius が全モデルを同じ最小の ReAct 型足場・同じプロンプトで 5 回ずつ走らせ、平均を載せる。Claude Code などの外部エージェントは参考値として別扱い。",
+  "source": "https://swe-rebench.com/",
+  "fetched": [
+    "https://swe-rebench.com/",
+    "https://swe-rebench.com/_next/static/chunks/app/page-943ec679adc8bf34.js"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-07-24",
+  "snapshot": "sources/swe-rebench/leaderboard_props.json",
+  "paper": null,
+  "repo": null,
+  "notes_ja": "初期表示の時間窓での値。窓の期間を評価していない行はボードで灰色の N/A になり、score と rank を null にした。date はボードが行に付けるモデル公開日。score_extra.row_status の contamination-risk は公開日が窓の開始より後の行。外部エージェント行のモデルは同じ窓の Insights の記載から取った。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Fable 5 [high]",
+      "agent": null,
+      "model_raw": [
+        "Fable 5 [high]"
+      ],
+      "model_ids": [
+        "claude-fable-5"
+      ],
+      "model_config": "high",
+      "score": 64.5,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "contamination-risk",
+        "sem": 1.41,
+        "pass_at_5": 78.4,
+        "cost_usd_per_problem": 4.4,
+        "tokens_per_problem": 2518308,
+        "cached_tokens_pct": 94.9,
+        "lang_go": 74.3,
+        "lang_java": 51.4,
+        "lang_python": 56.0,
+        "lang_rust": 62.4,
+        "lang_typescript": 76.7
+      },
+      "date": "2026-06-09",
+      "verified": null,
+      "open_source": null,
+      "org": "anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "Grok 4.5 [high]",
+      "agent": null,
+      "model_raw": [
+        "Grok 4.5 [high]"
+      ],
+      "model_ids": [
+        "grok-4.5"
+      ],
+      "model_config": "high",
+      "score": 63.8,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "contamination-risk",
+        "sem": 0.6,
+        "pass_at_5": 77.5,
+        "cost_usd_per_problem": 1.47,
+        "tokens_per_problem": 2429424,
+        "cached_tokens_pct": 92.6,
+        "lang_go": 68.6,
+        "lang_java": 60.0,
+        "lang_python": 54.0,
+        "lang_rust": 64.0,
+        "lang_typescript": 70.8
+      },
+      "date": "2026-07-08",
+      "verified": null,
+      "open_source": null,
+      "org": "xai",
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "Opus 5 [high]",
+      "agent": null,
+      "model_raw": [
+        "Opus 5 [high]"
+      ],
+      "model_ids": [
+        "claude-opus-5"
+      ],
+      "model_config": "high",
+      "score": 63.4,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "contamination-risk",
+        "sem": 1.35,
+        "pass_at_5": 74.8,
+        "cost_usd_per_problem": 3.47,
+        "tokens_per_problem": 4322143,
+        "cached_tokens_pct": 95.7,
+        "lang_go": 73.3,
+        "lang_java": 48.6,
+        "lang_python": 53.0,
+        "lang_rust": 61.6,
+        "lang_typescript": 78.3
+      },
+      "date": "2026-07-24",
+      "verified": null,
+      "open_source": null,
+      "org": "anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "GLM-5.2 [high]",
+      "agent": null,
+      "model_raw": [
+        "GLM-5.2 [high]"
+      ],
+      "model_ids": [
+        "glm-5.2"
+      ],
+      "model_config": "high",
+      "score": 62.9,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "contamination-risk",
+        "sem": 1.19,
+        "pass_at_5": 81.1,
+        "cost_usd_per_problem": 1.4,
+        "tokens_per_problem": 5524892,
+        "cached_tokens_pct": 92.1,
+        "lang_go": 69.5,
+        "lang_java": 51.4,
+        "lang_python": 57.0,
+        "lang_rust": 61.6,
+        "lang_typescript": 73.3
+      },
+      "date": "2026-05-16",
+      "verified": null,
+      "open_source": null,
+      "org": "zhipu",
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "GPT-5.6 Sol [medium]",
+      "agent": null,
+      "model_raw": [
+        "GPT-5.6 Sol [medium]"
+      ],
+      "model_ids": [
+        "gpt-5.6-sol"
+      ],
+      "model_config": "medium",
+      "score": 62.3,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "contamination-risk",
+        "sem": 1.83,
+        "pass_at_5": 79.3,
+        "cost_usd_per_problem": 0.85,
+        "tokens_per_problem": 605340,
+        "cached_tokens_pct": 84.7,
+        "lang_go": 70.5,
+        "lang_java": 57.1,
+        "lang_python": 48.0,
+        "lang_rust": 68.0,
+        "lang_typescript": 65.8
+      },
+      "date": "2026-06-26",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": 6,
+      "system": "Junie",
+      "agent": "Junie",
+      "model_raw": [
+        "grok-4.5"
+      ],
+      "model_ids": [
+        "grok-4.5"
+      ],
+      "model_config": null,
+      "score": 61.8,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "external-system",
+        "sem": 0.54,
+        "pass_at_5": 73.9,
+        "cost_usd_per_problem": 0.81,
+        "tokens_per_problem": 1684501,
+        "cached_tokens_pct": 85.9,
+        "lang_go": 69.5,
+        "lang_java": 62.9,
+        "lang_python": 44.0,
+        "lang_rust": 55.2,
+        "lang_typescript": 75.8
+      },
+      "date": "2025-12-17",
+      "verified": null,
+      "open_source": null,
+      "org": "jetbrains",
+      "row_url": null
+    },
+    {
+      "rank": 7,
+      "system": "Claude Code",
+      "agent": "Claude Code",
+      "model_raw": [
+        "claude-fable-5"
+      ],
+      "model_ids": [
+        "claude-fable-5"
+      ],
+      "model_config": "high",
+      "score": 60.4,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "external-system",
+        "sem": 1.03,
+        "pass_at_5": 75.7,
+        "cost_usd_per_problem": 3.39,
+        "tokens_per_problem": 3341581,
+        "cached_tokens_pct": 93.4,
+        "lang_go": 70.5,
+        "lang_java": 49.5,
+        "lang_python": 50.0,
+        "lang_rust": 61.6,
+        "lang_typescript": 68.3
+      },
+      "date": "2025-11-24",
+      "verified": null,
+      "open_source": null,
+      "org": "anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 8,
+      "system": "Codex",
+      "agent": "Codex",
+      "model_raw": [
+        "gpt-5.6-sol"
+      ],
+      "model_ids": [
+        "gpt-5.6-sol"
+      ],
+      "model_config": "medium",
+      "score": 58.0,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "external-system",
+        "sem": 1.29,
+        "pass_at_5": 73.0,
+        "cost_usd_per_problem": 1.59,
+        "tokens_per_problem": 2070976,
+        "cached_tokens_pct": 94.6,
+        "lang_go": 67.6,
+        "lang_java": 48.6,
+        "lang_python": 50.0,
+        "lang_rust": 60.8,
+        "lang_typescript": 61.7
+      },
+      "date": "2025-12-18",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": 9,
+      "system": "Sonnet 5 [high]",
+      "agent": null,
+      "model_raw": [
+        "Sonnet 5 [high]"
+      ],
+      "model_ids": [
+        "claude-sonnet-5"
+      ],
+      "model_config": "high",
+      "score": 56.8,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "contamination-risk",
+        "sem": 0.94,
+        "pass_at_5": 74.8,
+        "cost_usd_per_problem": 1.43,
+        "tokens_per_problem": 4645617,
+        "cached_tokens_pct": 96.4,
+        "lang_go": 66.7,
+        "lang_java": 49.5,
+        "lang_python": 53.0,
+        "lang_rust": 57.6,
+        "lang_typescript": 56.7
+      },
+      "date": "2026-06-30",
+      "verified": null,
+      "open_source": null,
+      "org": "anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 10,
+      "system": "Cursor",
+      "agent": "Cursor",
+      "model_raw": [
+        "composer-2.5"
+      ],
+      "model_ids": [
+        "composer-2.5"
+      ],
+      "model_config": null,
+      "score": 51.7,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "external-system",
+        "sem": 0.84,
+        "pass_at_5": 65.8,
+        "cost_usd_per_problem": 0.41,
+        "tokens_per_problem": 1827002,
+        "cached_tokens_pct": 94.3,
+        "lang_go": 65.7,
+        "lang_java": 42.9,
+        "lang_python": 42.0,
+        "lang_rust": 46.4,
+        "lang_typescript": 60.8
+      },
+      "date": "2026-03-19",
+      "verified": null,
+      "open_source": null,
+      "org": "anysphere",
+      "row_url": null
+    },
+    {
+      "rank": 11,
+      "system": "MiniMax M3",
+      "agent": null,
+      "model_raw": [
+        "MiniMax M3"
+      ],
+      "model_ids": [
+        "minimax-m3"
+      ],
+      "model_config": null,
+      "score": 47.2,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "contamination-risk",
+        "sem": 1.13,
+        "pass_at_5": 69.4,
+        "cost_usd_per_problem": 0.95,
+        "tokens_per_problem": 13869459,
+        "cached_tokens_pct": 97.0,
+        "lang_go": 48.6,
+        "lang_java": 43.8,
+        "lang_python": 33.0,
+        "lang_rust": 46.4,
+        "lang_typescript": 61.7
+      },
+      "date": "2026-05-31",
+      "verified": null,
+      "open_source": null,
+      "org": "minimax",
+      "row_url": null
+    },
+    {
+      "rank": 12,
+      "system": "MiMo V2.5 Pro",
+      "agent": null,
+      "model_raw": [
+        "MiMo V2.5 Pro"
+      ],
+      "model_ids": [
+        "mimo-v2.5-pro"
+      ],
+      "model_config": null,
+      "score": 46.5,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "normal",
+        "sem": 0.54,
+        "pass_at_5": 65.8,
+        "cost_usd_per_problem": 0.1,
+        "tokens_per_problem": 4687987,
+        "cached_tokens_pct": 95.7,
+        "lang_go": 56.2,
+        "lang_java": 42.9,
+        "lang_python": 44.0,
+        "lang_rust": 44.0,
+        "lang_typescript": 45.8
+      },
+      "date": "2026-03-22",
+      "verified": null,
+      "open_source": null,
+      "org": "xiaomi",
+      "row_url": null
+    },
+    {
+      "rank": 13,
+      "system": "GPT-5.6 Luna [medium]",
+      "agent": null,
+      "model_raw": [
+        "GPT-5.6 Luna [medium]"
+      ],
+      "model_ids": [
+        "gpt-5.6-luna"
+      ],
+      "model_config": "medium",
+      "score": 43.6,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "contamination-risk",
+        "sem": 1.47,
+        "pass_at_5": 59.5,
+        "cost_usd_per_problem": 0.11,
+        "tokens_per_problem": 395522,
+        "cached_tokens_pct": 85.2,
+        "lang_go": 54.3,
+        "lang_java": 41.9,
+        "lang_python": 37.0,
+        "lang_rust": 32.8,
+        "lang_typescript": 52.5
+      },
+      "date": "2026-06-26",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": 14,
+      "system": "DeepSeek-V4 Pro [high]",
+      "agent": null,
+      "model_raw": [
+        "DeepSeek-V4 Pro [high]"
+      ],
+      "model_ids": [
+        "deepseek-v4-pro"
+      ],
+      "model_config": "high",
+      "score": 40.2,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "normal",
+        "sem": 1.29,
+        "pass_at_5": 64.0,
+        "cost_usd_per_problem": 0.15,
+        "tokens_per_problem": 3955414,
+        "cached_tokens_pct": 91.2,
+        "lang_go": 48.6,
+        "lang_java": 34.3,
+        "lang_python": 37.0,
+        "lang_rust": 39.2,
+        "lang_typescript": 41.7
+      },
+      "date": "2026-04-24",
+      "verified": null,
+      "open_source": null,
+      "org": "deepseek",
+      "row_url": null
+    },
+    {
+      "rank": 15,
+      "system": "Qwen3.6-27B",
+      "agent": null,
+      "model_raw": [
+        "Qwen3.6-27B"
+      ],
+      "model_ids": [
+        "qwen3.6-27b"
+      ],
+      "model_config": null,
+      "score": 31.2,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "normal",
+        "sem": 1.68,
+        "pass_at_5": 57.7,
+        "cost_usd_per_problem": 0.62,
+        "tokens_per_problem": 3078970,
+        "cached_tokens_pct": 76.8,
+        "lang_go": 38.1,
+        "lang_java": 22.9,
+        "lang_python": 28.0,
+        "lang_rust": 31.2,
+        "lang_typescript": 35.0
+      },
+      "date": "2026-03-22",
+      "verified": null,
+      "open_source": null,
+      "org": "alibaba",
+      "row_url": null
+    },
+    {
+      "rank": 16,
+      "system": "Qwen3.6-35B-A3B",
+      "agent": null,
+      "model_raw": [
+        "Qwen3.6-35B-A3B"
+      ],
+      "model_ids": [
+        "qwen3.6-35b-a3b"
+      ],
+      "model_config": null,
+      "score": 24.7,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "normal",
+        "sem": 0.79,
+        "pass_at_5": 43.2,
+        "cost_usd_per_problem": 0.27,
+        "tokens_per_problem": 3726061,
+        "cached_tokens_pct": 87.5,
+        "lang_go": 33.3,
+        "lang_java": 15.2,
+        "lang_python": 14.0,
+        "lang_rust": 34.4,
+        "lang_typescript": 24.2
+      },
+      "date": "2026-03-14",
+      "verified": null,
+      "open_source": null,
+      "org": "alibaba",
+      "row_url": null
+    },
+    {
+      "rank": 17,
+      "system": "Qwen3.5-35B-A3B",
+      "agent": null,
+      "model_raw": [
+        "Qwen3.5-35B-A3B"
+      ],
+      "model_ids": [
+        "qwen3.5-35b-a3b"
+      ],
+      "model_config": null,
+      "score": 17.1,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "normal",
+        "sem": 1.07,
+        "pass_at_5": 36.9,
+        "cost_usd_per_problem": 0.99,
+        "tokens_per_problem": 5939227,
+        "cached_tokens_pct": 72.3,
+        "lang_go": 18.1,
+        "lang_java": 16.2,
+        "lang_python": 11.0,
+        "lang_rust": 22.4,
+        "lang_typescript": 16.7
+      },
+      "date": "2026-02-15",
+      "verified": null,
+      "open_source": null,
+      "org": "alibaba",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Claude Opus 4.1",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 4.1"
+      ],
+      "model_ids": [
+        "claude-opus-4.1"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-08-05",
+      "verified": null,
+      "open_source": null,
+      "org": "anthropic",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Claude Opus 4.5",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 4.5"
+      ],
+      "model_ids": [
+        "claude-opus-4.5"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-11-24",
+      "verified": null,
+      "open_source": null,
+      "org": "anthropic",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Claude Opus 4.6-high",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 4.6-high"
+      ],
+      "model_ids": [
+        "claude-opus-4.6"
+      ],
+      "model_config": "high",
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2026-02-05",
+      "verified": null,
+      "open_source": null,
+      "org": "anthropic",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Claude Opus 4.7-high",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 4.7-high"
+      ],
+      "model_ids": [
+        "claude-opus-4.7"
+      ],
+      "model_config": "high",
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2026-04-16",
+      "verified": null,
+      "open_source": null,
+      "org": "anthropic",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Claude Opus 4.8-xhigh",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 4.8-xhigh"
+      ],
+      "model_ids": [
+        "claude-opus-4.8"
+      ],
+      "model_config": "xhigh",
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2026-05-28",
+      "verified": null,
+      "open_source": null,
+      "org": "anthropic",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Claude Sonnet 3.5",
+      "agent": null,
+      "model_raw": [
+        "Claude Sonnet 3.5"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2024-10-22",
+      "verified": null,
+      "open_source": null,
+      "org": "anthropic",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Claude Sonnet 4",
+      "agent": null,
+      "model_raw": [
+        "Claude Sonnet 4"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-05-22",
+      "verified": null,
+      "open_source": null,
+      "org": "anthropic",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Claude Sonnet 4.5",
+      "agent": null,
+      "model_raw": [
+        "Claude Sonnet 4.5"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-09-29",
+      "verified": null,
+      "open_source": null,
+      "org": "anthropic",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Claude Sonnet 4.6",
+      "agent": null,
+      "model_raw": [
+        "Claude Sonnet 4.6"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.6"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2026-02-17",
+      "verified": null,
+      "open_source": null,
+      "org": "anthropic",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "DeepSeek-R1-0528",
+      "agent": null,
+      "model_raw": [
+        "DeepSeek-R1-0528"
+      ],
+      "model_ids": [
+        "deepseek-r1-0528"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-05-28",
+      "verified": null,
+      "open_source": null,
+      "org": "deepseek",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "DeepSeek-V3",
+      "agent": null,
+      "model_raw": [
+        "DeepSeek-V3"
+      ],
+      "model_ids": [
+        "deepseek-v3"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "text",
+        "row_status": "inactive"
+      },
+      "date": "2024-12-26",
+      "verified": null,
+      "open_source": null,
+      "org": "deepseek",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "DeepSeek-V3-0324",
+      "agent": null,
+      "model_raw": [
+        "DeepSeek-V3-0324"
+      ],
+      "model_ids": [
+        "deepseek-v3-0324"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "text",
+        "row_status": "inactive"
+      },
+      "date": "2025-03-24",
+      "verified": null,
+      "open_source": null,
+      "org": "deepseek",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "DeepSeek-V3-0324",
+      "agent": null,
+      "model_raw": [
+        "DeepSeek-V3-0324"
+      ],
+      "model_ids": [
+        "deepseek-v3-0324"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-03-24",
+      "verified": null,
+      "open_source": null,
+      "org": "deepseek",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "DeepSeek-V3.1",
+      "agent": null,
+      "model_raw": [
+        "DeepSeek-V3.1"
+      ],
+      "model_ids": [
+        "deepseek-v3.1"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-08-21",
+      "verified": null,
+      "open_source": null,
+      "org": "deepseek",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "DeepSeek-V3.2",
+      "agent": null,
+      "model_raw": [
+        "DeepSeek-V3.2"
+      ],
+      "model_ids": [
+        "deepseek-v3.2"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-12-01",
+      "verified": null,
+      "open_source": null,
+      "org": "deepseek",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "DeepSeek-V4 Flash [high]",
+      "agent": null,
+      "model_raw": [
+        "DeepSeek-V4 Flash [high]"
+      ],
+      "model_ids": [
+        "deepseek-v4-flash"
+      ],
+      "model_config": "high",
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2026-04-24",
+      "verified": null,
+      "open_source": null,
+      "org": "deepseek",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Devstral-2-123B-Instruct-2512",
+      "agent": null,
+      "model_raw": [
+        "Devstral-2-123B-Instruct-2512"
+      ],
+      "model_ids": [
+        "devstral-2"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-12-25",
+      "verified": null,
+      "open_source": null,
+      "org": "mistral",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Devstral-Small-2-24B-Instruct-2512",
+      "agent": null,
+      "model_raw": [
+        "Devstral-Small-2-24B-Instruct-2512"
+      ],
+      "model_ids": [
+        "devstral-small-2"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-12-25",
+      "verified": null,
+      "open_source": null,
+      "org": "mistral",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Devstral-Small-2505",
+      "agent": null,
+      "model_raw": [
+        "Devstral-Small-2505"
+      ],
+      "model_ids": [
+        "devstral-small-2505"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "text",
+        "row_status": "inactive"
+      },
+      "date": "2025-05-21",
+      "verified": null,
+      "open_source": null,
+      "org": "mistral",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Gemini 3 Flash Preview",
+      "agent": null,
+      "model_raw": [
+        "Gemini 3 Flash Preview"
+      ],
+      "model_ids": [
+        "gemini-3-flash"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-12-17",
+      "verified": null,
+      "open_source": null,
+      "org": "google",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Gemini 3 Pro Preview",
+      "agent": null,
+      "model_raw": [
+        "Gemini 3 Pro Preview"
+      ],
+      "model_ids": [
+        "gemini-3-pro"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-11-19",
+      "verified": null,
+      "open_source": null,
+      "org": "google",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Gemini 3.1 Pro Preview",
+      "agent": null,
+      "model_raw": [
+        "Gemini 3.1 Pro Preview"
+      ],
+      "model_ids": [
+        "gemini-3.1-pro"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2026-02-19",
+      "verified": null,
+      "open_source": null,
+      "org": "google",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Gemini 3.5 Flash",
+      "agent": null,
+      "model_raw": [
+        "Gemini 3.5 Flash"
+      ],
+      "model_ids": [
+        "gemini-3.5-flash"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2026-05-19",
+      "verified": null,
+      "open_source": null,
+      "org": "google",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "gemini-2.0-flash",
+      "agent": null,
+      "model_raw": [
+        "gemini-2.0-flash"
+      ],
+      "model_ids": [
+        "gemini-2.0-flash"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "text",
+        "row_status": "inactive"
+      },
+      "date": "2025-02-05",
+      "verified": null,
+      "open_source": null,
+      "org": "google",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "gemini-2.0-flash",
+      "agent": null,
+      "model_raw": [
+        "gemini-2.0-flash"
+      ],
+      "model_ids": [
+        "gemini-2.0-flash"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-02-05",
+      "verified": null,
+      "open_source": null,
+      "org": "google",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "gemini-2.5-flash",
+      "agent": null,
+      "model_raw": [
+        "gemini-2.5-flash"
+      ],
+      "model_ids": [
+        "gemini-2.5-flash"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-06-17",
+      "verified": null,
+      "open_source": null,
+      "org": "google",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "gemini-2.5-flash-preview-05-20 no-thinking",
+      "agent": null,
+      "model_raw": [
+        "gemini-2.5-flash-preview-05-20 no-thinking"
+      ],
+      "model_ids": [
+        "gemini-2.5-flash"
+      ],
+      "model_config": "no-thinking",
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "text",
+        "row_status": "inactive"
+      },
+      "date": "2025-05-20",
+      "verified": null,
+      "open_source": null,
+      "org": "google",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "gemini-2.5-flash-preview-05-20 no-thinking",
+      "agent": null,
+      "model_raw": [
+        "gemini-2.5-flash-preview-05-20 no-thinking"
+      ],
+      "model_ids": [
+        "gemini-2.5-flash"
+      ],
+      "model_config": "no-thinking",
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-05-20",
+      "verified": null,
+      "open_source": null,
+      "org": "google",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "gemini-2.5-pro",
+      "agent": null,
+      "model_raw": [
+        "gemini-2.5-pro"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-06-17",
+      "verified": null,
+      "open_source": null,
+      "org": "google",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Gemma 4 31B",
+      "agent": null,
+      "model_raw": [
+        "Gemma 4 31B"
+      ],
+      "model_ids": [
+        "gemma-4-31b"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2026-04-02",
+      "verified": null,
+      "open_source": null,
+      "org": "google",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "gemma-3-27b-it",
+      "agent": null,
+      "model_raw": [
+        "gemma-3-27b-it"
+      ],
+      "model_ids": [
+        "gemma-3-27b"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "text",
+        "row_status": "inactive"
+      },
+      "date": "2025-03-10",
+      "verified": null,
+      "open_source": null,
+      "org": "google",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "GLM-4.5",
+      "agent": null,
+      "model_raw": [
+        "GLM-4.5"
+      ],
+      "model_ids": [
+        "glm-4.5"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-07-28",
+      "verified": null,
+      "open_source": null,
+      "org": "zhipu",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "GLM-4.5 Air",
+      "agent": null,
+      "model_raw": [
+        "GLM-4.5 Air"
+      ],
+      "model_ids": [
+        "glm-4.5-air"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-07-28",
+      "verified": null,
+      "open_source": null,
+      "org": "zhipu",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "GLM-4.6",
+      "agent": null,
+      "model_raw": [
+        "GLM-4.6"
+      ],
+      "model_ids": [
+        "glm-4.6"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-09-30",
+      "verified": null,
+      "open_source": null,
+      "org": "zhipu",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "GLM-4.7",
+      "agent": null,
+      "model_raw": [
+        "GLM-4.7"
+      ],
+      "model_ids": [
+        "glm-4.7"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-12-22",
+      "verified": null,
+      "open_source": null,
+      "org": "zhipu",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "GLM-4.7 Flash",
+      "agent": null,
+      "model_raw": [
+        "GLM-4.7 Flash"
+      ],
+      "model_ids": [
+        "glm-4.7-flash"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2026-01-19",
+      "verified": null,
+      "open_source": null,
+      "org": "zhipu",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "GLM-5",
+      "agent": null,
+      "model_raw": [
+        "GLM-5"
+      ],
+      "model_ids": [
+        "glm-5"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2026-02-11",
+      "verified": null,
+      "open_source": null,
+      "org": "zhipu",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "GLM-5.1",
+      "agent": null,
+      "model_raw": [
+        "GLM-5.1"
+      ],
+      "model_ids": [
+        "glm-5.1"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2026-04-07",
+      "verified": null,
+      "open_source": null,
+      "org": "zhipu",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "GLM-5.1",
+      "agent": null,
+      "model_raw": [
+        "GLM-5.1"
+      ],
+      "model_ids": [
+        "glm-5.1"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2026-04-07",
+      "verified": null,
+      "open_source": null,
+      "org": "zhipu",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "gpt-4.1-2025-04-14",
+      "agent": null,
+      "model_raw": [
+        "gpt-4.1-2025-04-14"
+      ],
+      "model_ids": [
+        "gpt-4.1"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "text",
+        "row_status": "inactive"
+      },
+      "date": "2025-04-14",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "gpt-4.1-2025-04-14",
+      "agent": null,
+      "model_raw": [
+        "gpt-4.1-2025-04-14"
+      ],
+      "model_ids": [
+        "gpt-4.1"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-04-14",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "gpt-4.1-mini-2025-04-14",
+      "agent": null,
+      "model_raw": [
+        "gpt-4.1-mini-2025-04-14"
+      ],
+      "model_ids": [
+        "gpt-4.1-mini"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "text",
+        "row_status": "inactive"
+      },
+      "date": "2025-04-14",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "gpt-4.1-mini-2025-04-14",
+      "agent": null,
+      "model_raw": [
+        "gpt-4.1-mini-2025-04-14"
+      ],
+      "model_ids": [
+        "gpt-4.1-mini"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-04-14",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "gpt-4.1-nano-2025-04-14",
+      "agent": null,
+      "model_raw": [
+        "gpt-4.1-nano-2025-04-14"
+      ],
+      "model_ids": [
+        "gpt-4.1-nano"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "text",
+        "row_status": "inactive"
+      },
+      "date": "2025-04-14",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "gpt-5-2025-08-07-high",
+      "agent": null,
+      "model_raw": [
+        "gpt-5-2025-08-07-high"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": "high",
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-08-07",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "gpt-5-2025-08-07-medium",
+      "agent": null,
+      "model_raw": [
+        "gpt-5-2025-08-07-medium"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": "medium",
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-08-07",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "gpt-5-2025-08-07-minimal",
+      "agent": null,
+      "model_raw": [
+        "gpt-5-2025-08-07-minimal"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": "minimal",
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-08-07",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "gpt-5-codex",
+      "agent": null,
+      "model_raw": [
+        "gpt-5-codex"
+      ],
+      "model_ids": [
+        "gpt-5-codex"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-09-23",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "gpt-5-mini-2025-08-07-high",
+      "agent": null,
+      "model_raw": [
+        "gpt-5-mini-2025-08-07-high"
+      ],
+      "model_ids": [
+        "gpt-5-mini"
+      ],
+      "model_config": "high",
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-08-06",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "gpt-5-mini-2025-08-07-medium",
+      "agent": null,
+      "model_raw": [
+        "gpt-5-mini-2025-08-07-medium"
+      ],
+      "model_ids": [
+        "gpt-5-mini"
+      ],
+      "model_config": "medium",
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-08-07",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "gpt-5.1-codex",
+      "agent": null,
+      "model_raw": [
+        "gpt-5.1-codex"
+      ],
+      "model_ids": [
+        "gpt-5.1-codex"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-11-12",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "gpt-5.1-codex-max",
+      "agent": null,
+      "model_raw": [
+        "gpt-5.1-codex-max"
+      ],
+      "model_ids": [
+        "gpt-5.1-codex-max"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-11-19",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "gpt-5.2-2025-12-11-medium",
+      "agent": null,
+      "model_raw": [
+        "gpt-5.2-2025-12-11-medium"
+      ],
+      "model_ids": [
+        "gpt-5.2"
+      ],
+      "model_config": "medium",
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-12-11",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "gpt-5.2-2025-12-11-xhigh",
+      "agent": null,
+      "model_raw": [
+        "gpt-5.2-2025-12-11-xhigh"
+      ],
+      "model_ids": [
+        "gpt-5.2"
+      ],
+      "model_config": "xhigh",
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-12-11",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "gpt-5.2-codex",
+      "agent": null,
+      "model_raw": [
+        "gpt-5.2-codex"
+      ],
+      "model_ids": [
+        "gpt-5.2-codex"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-12-18",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "gpt-5.3-codex",
+      "agent": null,
+      "model_raw": [
+        "gpt-5.3-codex"
+      ],
+      "model_ids": [
+        "gpt-5.3-codex"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2026-02-05",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "gpt-5.3-codex-xhigh",
+      "agent": null,
+      "model_raw": [
+        "gpt-5.3-codex-xhigh"
+      ],
+      "model_ids": [
+        "gpt-5.3-codex"
+      ],
+      "model_config": "xhigh",
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2026-02-05",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "gpt-5.4-2026-03-05-medium",
+      "agent": null,
+      "model_raw": [
+        "gpt-5.4-2026-03-05-medium"
+      ],
+      "model_ids": [
+        "gpt-5.4"
+      ],
+      "model_config": "medium",
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2026-03-05",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "gpt-5.5-2026-04-23-medium",
+      "agent": null,
+      "model_raw": [
+        "gpt-5.5-2026-04-23-medium"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": "medium",
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2026-04-23",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "gpt-5.5-2026-04-23-xhigh",
+      "agent": null,
+      "model_raw": [
+        "gpt-5.5-2026-04-23-xhigh"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": "xhigh",
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2026-04-23",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "gpt-oss-120b",
+      "agent": null,
+      "model_raw": [
+        "gpt-oss-120b"
+      ],
+      "model_ids": [
+        "gpt-oss-120b"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-07-13",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "gpt-oss-120b-high",
+      "agent": null,
+      "model_raw": [
+        "gpt-oss-120b-high"
+      ],
+      "model_ids": [
+        "gpt-oss-120b"
+      ],
+      "model_config": "high",
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-08-05",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "gpt-oss-20b",
+      "agent": null,
+      "model_raw": [
+        "gpt-oss-20b"
+      ],
+      "model_ids": [
+        "gpt-oss-20b"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-07-13",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Grok 4",
+      "agent": null,
+      "model_raw": [
+        "Grok 4"
+      ],
+      "model_ids": [
+        "grok-4"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-07-09",
+      "verified": null,
+      "open_source": null,
+      "org": "xai",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Grok Code Fast 1",
+      "agent": null,
+      "model_raw": [
+        "Grok Code Fast 1"
+      ],
+      "model_ids": [
+        "grok-code-fast-1"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-08-26",
+      "verified": null,
+      "open_source": null,
+      "org": "xai",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "horizon-alpha",
+      "agent": null,
+      "model_raw": [
+        "horizon-alpha"
+      ],
+      "model_ids": [
+        "horizon-alpha"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-07-30",
+      "verified": null,
+      "open_source": null,
+      "org": "openrouter",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "horizon-beta",
+      "agent": null,
+      "model_raw": [
+        "horizon-beta"
+      ],
+      "model_ids": [
+        "horizon-beta"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-08-01",
+      "verified": null,
+      "open_source": null,
+      "org": "openrouter",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Kimi K2",
+      "agent": null,
+      "model_raw": [
+        "Kimi K2"
+      ],
+      "model_ids": [
+        "kimi-k2"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-07-11",
+      "verified": null,
+      "open_source": null,
+      "org": "moonshot",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Kimi K2 Instruct 0905",
+      "agent": null,
+      "model_raw": [
+        "Kimi K2 Instruct 0905"
+      ],
+      "model_ids": [
+        "kimi-k2-0905"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-09-05",
+      "verified": null,
+      "open_source": null,
+      "org": "moonshot",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Kimi K2 Thinking",
+      "agent": null,
+      "model_raw": [
+        "Kimi K2 Thinking"
+      ],
+      "model_ids": [
+        "kimi-k2-thinking"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-11-06",
+      "verified": null,
+      "open_source": null,
+      "org": "moonshot",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Kimi K2.5",
+      "agent": null,
+      "model_raw": [
+        "Kimi K2.5"
+      ],
+      "model_ids": [
+        "kimi-k2.5"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2026-01-26",
+      "verified": null,
+      "open_source": null,
+      "org": "moonshot",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Kimi K2.6",
+      "agent": null,
+      "model_raw": [
+        "Kimi K2.6"
+      ],
+      "model_ids": [
+        "kimi-k2.6"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2026-03-01",
+      "verified": null,
+      "open_source": null,
+      "org": "moonshot",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Llama-3.3-70B-Instruct",
+      "agent": null,
+      "model_raw": [
+        "Llama-3.3-70B-Instruct"
+      ],
+      "model_ids": [
+        "llama-3.3-70b"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "text",
+        "row_status": "inactive"
+      },
+      "date": "2024-12-06",
+      "verified": null,
+      "open_source": null,
+      "org": "meta",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Llama-4-Maverick-17B-128E-Instruct",
+      "agent": null,
+      "model_raw": [
+        "Llama-4-Maverick-17B-128E-Instruct"
+      ],
+      "model_ids": [
+        "llama-4-maverick"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "text",
+        "row_status": "inactive"
+      },
+      "date": "2025-04-05",
+      "verified": null,
+      "open_source": null,
+      "org": "meta",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Llama-4-Scout-17B-16E-Instruct",
+      "agent": null,
+      "model_raw": [
+        "Llama-4-Scout-17B-16E-Instruct"
+      ],
+      "model_ids": [
+        "llama-4-scout"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "text",
+        "row_status": "inactive"
+      },
+      "date": "2025-04-05",
+      "verified": null,
+      "open_source": null,
+      "org": "meta",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "MiniMax M2",
+      "agent": null,
+      "model_raw": [
+        "MiniMax M2"
+      ],
+      "model_ids": [
+        "minimax-m2"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-10-23",
+      "verified": null,
+      "open_source": null,
+      "org": "minimax",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "MiniMax M2.1",
+      "agent": null,
+      "model_raw": [
+        "MiniMax M2.1"
+      ],
+      "model_ids": [
+        "minimax-m2.1"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-12-22",
+      "verified": null,
+      "open_source": null,
+      "org": "minimax",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "MiniMax M2.5",
+      "agent": null,
+      "model_raw": [
+        "MiniMax M2.5"
+      ],
+      "model_ids": [
+        "minimax-m2.5"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2026-02-12",
+      "verified": null,
+      "open_source": null,
+      "org": "minimax",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "MiniMax M2.7",
+      "agent": null,
+      "model_raw": [
+        "MiniMax M2.7"
+      ],
+      "model_ids": [
+        "minimax-m2.7"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2026-03-18",
+      "verified": null,
+      "open_source": null,
+      "org": "minimax",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "o3-2025-04-16",
+      "agent": null,
+      "model_raw": [
+        "o3-2025-04-16"
+      ],
+      "model_ids": [
+        "o3"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-04-16",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "o4-mini-2025-04-16",
+      "agent": null,
+      "model_raw": [
+        "o4-mini-2025-04-16"
+      ],
+      "model_ids": [
+        "o4-mini"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-04-16",
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Qwen2.5-72B-Instruct",
+      "agent": null,
+      "model_raw": [
+        "Qwen2.5-72B-Instruct"
+      ],
+      "model_ids": [
+        "qwen2.5-72b"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "text",
+        "row_status": "inactive"
+      },
+      "date": "2024-09-16",
+      "verified": null,
+      "open_source": null,
+      "org": "alibaba",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Qwen2.5-Coder-32B-Instruct",
+      "agent": null,
+      "model_raw": [
+        "Qwen2.5-Coder-32B-Instruct"
+      ],
+      "model_ids": [
+        "qwen2.5-coder-32b"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "text",
+        "row_status": "inactive"
+      },
+      "date": "2024-11-10",
+      "verified": null,
+      "open_source": null,
+      "org": "alibaba",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Qwen3-235B-A22B",
+      "agent": null,
+      "model_raw": [
+        "Qwen3-235B-A22B"
+      ],
+      "model_ids": [
+        "qwen3-235b-a22b"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-04-29",
+      "verified": null,
+      "open_source": null,
+      "org": "alibaba",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Qwen3-235B-A22B no-thinking",
+      "agent": null,
+      "model_raw": [
+        "Qwen3-235B-A22B no-thinking"
+      ],
+      "model_ids": [
+        "qwen3-235b-a22b"
+      ],
+      "model_config": "no-thinking",
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "text",
+        "row_status": "inactive"
+      },
+      "date": "2025-04-28",
+      "verified": null,
+      "open_source": null,
+      "org": "alibaba",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Qwen3-235B-A22B thinking",
+      "agent": null,
+      "model_raw": [
+        "Qwen3-235B-A22B thinking"
+      ],
+      "model_ids": [
+        "qwen3-235b-a22b"
+      ],
+      "model_config": "thinking",
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "text",
+        "row_status": "inactive"
+      },
+      "date": "2025-04-28",
+      "verified": null,
+      "open_source": null,
+      "org": "alibaba",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Qwen3-235B-A22B-Instruct-2507",
+      "agent": null,
+      "model_raw": [
+        "Qwen3-235B-A22B-Instruct-2507"
+      ],
+      "model_ids": [
+        "qwen3-235b-a22b-instruct-2507"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-07-25",
+      "verified": null,
+      "open_source": null,
+      "org": "alibaba",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Qwen3-235B-A22B-Thinking-2507",
+      "agent": null,
+      "model_raw": [
+        "Qwen3-235B-A22B-Thinking-2507"
+      ],
+      "model_ids": [
+        "qwen3-235b-a22b-thinking-2507"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-07-25",
+      "verified": null,
+      "open_source": null,
+      "org": "alibaba",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Qwen3-30B-A3B-Instruct-2507",
+      "agent": null,
+      "model_raw": [
+        "Qwen3-30B-A3B-Instruct-2507"
+      ],
+      "model_ids": [
+        "qwen3-30b-a3b-instruct-2507"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-07-25",
+      "verified": null,
+      "open_source": null,
+      "org": "alibaba",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Qwen3-30B-A3B-Thinking-2507",
+      "agent": null,
+      "model_raw": [
+        "Qwen3-30B-A3B-Thinking-2507"
+      ],
+      "model_ids": [
+        "qwen3-30b-a3b-thinking-2507"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-07-25",
+      "verified": null,
+      "open_source": null,
+      "org": "alibaba",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Qwen3-32B",
+      "agent": null,
+      "model_raw": [
+        "Qwen3-32B"
+      ],
+      "model_ids": [
+        "qwen3-32b"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-04-29",
+      "verified": null,
+      "open_source": null,
+      "org": "alibaba",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Qwen3-32B no-thinking",
+      "agent": null,
+      "model_raw": [
+        "Qwen3-32B no-thinking"
+      ],
+      "model_ids": [
+        "qwen3-32b"
+      ],
+      "model_config": "no-thinking",
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "text",
+        "row_status": "inactive"
+      },
+      "date": "2025-04-28",
+      "verified": null,
+      "open_source": null,
+      "org": "alibaba",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Qwen3-32B thinking",
+      "agent": null,
+      "model_raw": [
+        "Qwen3-32B thinking"
+      ],
+      "model_ids": [
+        "qwen3-32b"
+      ],
+      "model_config": "thinking",
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "text",
+        "row_status": "inactive"
+      },
+      "date": "2025-04-28",
+      "verified": null,
+      "open_source": null,
+      "org": "alibaba",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Qwen3-Coder-30B-A3B-Instruct",
+      "agent": null,
+      "model_raw": [
+        "Qwen3-Coder-30B-A3B-Instruct"
+      ],
+      "model_ids": [
+        "qwen3-coder-30b-a3b"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-07-31",
+      "verified": null,
+      "open_source": null,
+      "org": "alibaba",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Qwen3-Coder-480B-A35B-Instruct",
+      "agent": null,
+      "model_raw": [
+        "Qwen3-Coder-480B-A35B-Instruct"
+      ],
+      "model_ids": [
+        "qwen3-coder-480b-a35b"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-07-22",
+      "verified": null,
+      "open_source": null,
+      "org": "alibaba",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Qwen3-Coder-Next",
+      "agent": null,
+      "model_raw": [
+        "Qwen3-Coder-Next"
+      ],
+      "model_ids": [
+        "qwen3-coder-next"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2026-02-02",
+      "verified": null,
+      "open_source": null,
+      "org": "alibaba",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Qwen3-Next-80B-A3B-Instruct",
+      "agent": null,
+      "model_raw": [
+        "Qwen3-Next-80B-A3B-Instruct"
+      ],
+      "model_ids": [
+        "qwen3-next-80b-a3b-instruct"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2025-09-11",
+      "verified": null,
+      "open_source": null,
+      "org": "alibaba",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Qwen3.5-27B",
+      "agent": null,
+      "model_raw": [
+        "Qwen3.5-27B"
+      ],
+      "model_ids": [
+        "qwen3.5-27b"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2026-02-15",
+      "verified": null,
+      "open_source": null,
+      "org": "alibaba",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Qwen3.5-397B-A17B",
+      "agent": null,
+      "model_raw": [
+        "Qwen3.5-397B-A17B"
+      ],
+      "model_ids": [
+        "qwen3.5-397b-a17b"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2026-02-15",
+      "verified": null,
+      "open_source": null,
+      "org": "alibaba",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Step-3.5-Flash",
+      "agent": null,
+      "model_raw": [
+        "Step-3.5-Flash"
+      ],
+      "model_ids": [
+        "step-3.5-flash"
+      ],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "interaction_mode": "tools",
+        "row_status": "inactive"
+      },
+      "date": "2026-02-01",
+      "verified": null,
+      "open_source": null,
+      "org": "stepfun",
+      "row_url": null
+    }
+  ]
+}

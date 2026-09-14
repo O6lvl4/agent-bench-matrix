@@ -1,0 +1,416 @@
+{
+  "id": "theagentcompany",
+  "family": "theagentcompany",
+  "name": "TheAgentCompany",
+  "board": "the-agent-company.com",
+  "category": "tool-use",
+  "measures_ja": "社内サイト・コードリポジトリ・同僚役を備えた模擬ソフトウェア会社で、ブラウザ・コード実行・チャットを使って実務タスクを完遂できるか。",
+  "tasks": 175,
+  "tasks_note": "公式リポジトリ README の「175 task images」の記載による。",
+  "metric": "% Resolved",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "提出者が各自の足場(OpenHands など)で走らせ、軌跡を experiments リポジトリに PR で提出する。同僚役などの環境モデルも行ごとに異なる。",
+  "source": "https://the-agent-company.com/leaderboard",
+  "fetched": [
+    "https://the-agent-company.com/",
+    "https://the-agent-company.com/static/js/main.6a1ea1e4.js"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2025-11-10",
+  "snapshot": "sources/theagentcompany/leaderboard.json",
+  "paper": "https://arxiv.org/abs/2412.14161",
+  "repo": "https://github.com/TheAgentCompany/TheAgentCompany",
+  "notes_ja": "順位はボードと同じく % Resolved 降順・同点は % Score 降順。score_extra.partial_score はボードの % Score(部分点)。verified はボードの「✅ Checked」、open_source は「🤠 Open」(提出コードが公開という意味でモデルの公開ではない)。org はロゴ画像のみのため null。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "TTE-MatrixAgent + Deepseek-V3.2",
+      "agent": "TTE-MatrixAgent",
+      "model_raw": [
+        "Deepseek-V3.2"
+      ],
+      "model_ids": [
+        "deepseek-v3.2"
+      ],
+      "model_config": "environment model: Qwen_Plus",
+      "score": 42.86,
+      "score_extra": {
+        "partial_score": 52.4,
+        "avg_steps": 29.91,
+        "avg_cost_usd": 0.4
+      },
+      "date": "2025-11-10",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://github.com/TheAgentCompany/experiments/tree/main/evaluation/1.0.0/20251110_TTE-MatrixAgent-Deepseek-V3.2"
+    },
+    {
+      "rank": 2,
+      "system": "MUSE + Gemini 2.5 Flash",
+      "agent": "MUSE",
+      "model_raw": [
+        "Gemini 2.5 Flash"
+      ],
+      "model_ids": [
+        "gemini-2.5-flash"
+      ],
+      "model_config": "environment model: GPT 4o",
+      "score": 41.14,
+      "score_extra": {
+        "partial_score": 51.78
+      },
+      "date": "2025-10-13",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/TheAgentCompany/experiments/tree/main/evaluation/1.0.0/20251013_MUSE-gemini-2.5-flash"
+    },
+    {
+      "rank": 3,
+      "system": "OpenHands-Versa + Claude Sonnet 4",
+      "agent": "OpenHands-Versa",
+      "model_raw": [
+        "Claude Sonnet 4"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": "environment model: Claude 3.5 Sonnet",
+      "score": 33.14,
+      "score_extra": {
+        "partial_score": 43.19,
+        "avg_steps": 46.45,
+        "avg_cost_usd": 1.63
+      },
+      "date": "2025-06-14",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/TheAgentCompany/experiments/tree/main/evaluation/1.0.0/20250614_OpenHands-Versa-claude-sonnet-4"
+    },
+    {
+      "rank": 4,
+      "system": "OpenHands-Versa + Claude 3.7 Sonnet",
+      "agent": "OpenHands-Versa",
+      "model_raw": [
+        "Claude 3.7 Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": "environment model: Claude 3.5 Sonnet",
+      "score": 30.86,
+      "score_extra": {
+        "partial_score": 40.18,
+        "avg_steps": 52.73,
+        "avg_cost_usd": 3.7
+      },
+      "date": "2025-06-14",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/TheAgentCompany/experiments/tree/main/evaluation/1.0.0/20250614_OpenHands-Versa-claude-3.7-sonnet"
+    },
+    {
+      "rank": 5,
+      "system": "OpenHands + Gemini 2.5 Pro",
+      "agent": "OpenHands",
+      "model_raw": [
+        "Gemini 2.5 Pro"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": "environment model: Claude 3.5 Sonnet",
+      "score": 30.29,
+      "score_extra": {
+        "partial_score": 39.28,
+        "avg_steps": 27.23,
+        "avg_cost_usd": 4.23
+      },
+      "date": "2025-05-10",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/TheAgentCompany/experiments/tree/main/evaluation/1.0.0/20250510_OpenHands-0.28.1-gemini-2.5-pro"
+    },
+    {
+      "rank": 6,
+      "system": "OpenHands + Claude 3.7 Sonnet",
+      "agent": "OpenHands",
+      "model_raw": [
+        "Claude 3.7 Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": "environment model: Claude 3.5 Sonnet",
+      "score": 26.29,
+      "score_extra": {
+        "partial_score": 36.41,
+        "avg_steps": 27.78,
+        "avg_cost_usd": 4.05
+      },
+      "date": "2025-05-10",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/TheAgentCompany/experiments/tree/main/evaluation/1.0.0/20250510_OpenHands-0.28.1-sonnet-20250219"
+    },
+    {
+      "rank": 7,
+      "system": "OpenHands + Claude 3.5 Sonnet",
+      "agent": "OpenHands",
+      "model_raw": [
+        "Claude 3.5 Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": "environment model: Claude 3.5 Sonnet",
+      "score": 24,
+      "score_extra": {
+        "partial_score": 34.4,
+        "avg_steps": 29.17,
+        "avg_cost_usd": 6.34
+      },
+      "date": "2024-12-17",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/TheAgentCompany/experiments/tree/main/evaluation/1.0.0/20241217_OpenHands-0.14.2-sonnet-20241022"
+    },
+    {
+      "rank": 8,
+      "system": "OpenHands + Gemini 2.0 Flash",
+      "agent": "OpenHands",
+      "model_raw": [
+        "Gemini 2.0 Flash"
+      ],
+      "model_ids": [
+        "gemini-2.0-flash"
+      ],
+      "model_config": "environment model: Claude 3.5 Sonnet",
+      "score": 11.4,
+      "score_extra": {
+        "partial_score": 19,
+        "avg_steps": 39.85,
+        "avg_cost_usd": 0.58
+      },
+      "date": "2024-12-17",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/TheAgentCompany/experiments/tree/main/evaluation/1.0.0/20241217_OpenHands-0.14.2-gemini-2.0-flash"
+    },
+    {
+      "rank": 9,
+      "system": "OpenHands + GPT 4o",
+      "agent": "OpenHands",
+      "model_raw": [
+        "GPT 4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": "environment model: Claude 3.5 Sonnet",
+      "score": 8.6,
+      "score_extra": {
+        "partial_score": 16.7,
+        "avg_steps": 14.55,
+        "avg_cost_usd": 1.29
+      },
+      "date": "2024-12-17",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/TheAgentCompany/experiments/tree/main/evaluation/1.0.0/20241217_OpenHands-0.14.2-gpt-4o-2024-08-06"
+    },
+    {
+      "rank": 10,
+      "system": "OpenHands + Llama-3.1-405b",
+      "agent": "OpenHands",
+      "model_raw": [
+        "Llama-3.1-405b"
+      ],
+      "model_ids": [
+        "llama-3.1-405b"
+      ],
+      "model_config": "environment model: Claude 3.5 Sonnet",
+      "score": 7.4,
+      "score_extra": {
+        "partial_score": 14.1,
+        "avg_steps": 22.95,
+        "avg_cost_usd": 3.21
+      },
+      "date": "2024-12-17",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/TheAgentCompany/experiments/tree/main/evaluation/1.0.0/20241217_OpenHands-0.14.2-llama-3.1-405b"
+    },
+    {
+      "rank": 11,
+      "system": "OpenHands + Llama-3.3-70b",
+      "agent": "OpenHands",
+      "model_raw": [
+        "Llama-3.3-70b"
+      ],
+      "model_ids": [
+        "llama-3.3-70b"
+      ],
+      "model_config": "environment model: Claude 3.5 Sonnet",
+      "score": 6.9,
+      "score_extra": {
+        "partial_score": 12.8,
+        "avg_steps": 20.93,
+        "avg_cost_usd": 0.93
+      },
+      "date": "2024-12-17",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/TheAgentCompany/experiments/tree/main/evaluation/1.0.0/20241217_OpenHands-0.14.2-llama-3.3-70b"
+    },
+    {
+      "rank": 12,
+      "system": "OpenHands + Qwen-2.5-72b",
+      "agent": "OpenHands",
+      "model_raw": [
+        "Qwen-2.5-72b"
+      ],
+      "model_ids": [
+        "qwen2.5-72b"
+      ],
+      "model_config": "environment model: Claude 3.5 Sonnet",
+      "score": 5.7,
+      "score_extra": {
+        "partial_score": 11.8,
+        "avg_steps": 23.99,
+        "avg_cost_usd": 1.53
+      },
+      "date": "2024-12-17",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/TheAgentCompany/experiments/tree/main/evaluation/1.0.0/20241217_OpenHands-0.14.2-qwen2.5-72b"
+    },
+    {
+      "rank": 13,
+      "system": "OWL RolePlay + GPT 4o/o3-mini",
+      "agent": "OWL RolePlay",
+      "model_raw": [
+        "GPT 4o",
+        "o3-mini"
+      ],
+      "model_ids": [
+        "gpt-4o",
+        "o3-mini"
+      ],
+      "model_config": "environment model: Claude 3.5 Sonnet",
+      "score": 4,
+      "score_extra": {
+        "partial_score": 11.3
+      },
+      "date": "2025-05-10",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/TheAgentCompany/experiments/tree/main/evaluation/1.0.0/20250510_OWL-RolePlay-gpt-4o-o3-mini"
+    },
+    {
+      "rank": 14,
+      "system": "OpenHands + Gemini 1.5 Pro",
+      "agent": "OpenHands",
+      "model_raw": [
+        "Gemini 1.5 Pro"
+      ],
+      "model_ids": [
+        "gemini-1.5-pro"
+      ],
+      "model_config": "environment model: Claude 3.5 Sonnet",
+      "score": 3.4,
+      "score_extra": {
+        "partial_score": 8,
+        "avg_steps": 22.1,
+        "avg_cost_usd": 6.78
+      },
+      "date": "2024-12-17",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/TheAgentCompany/experiments/tree/main/evaluation/1.0.0/20241217_OpenHands-0.14.2-gemini-1.5-pro"
+    },
+    {
+      "rank": 15,
+      "system": "OpenHands + Llama-3.1-70b",
+      "agent": "OpenHands",
+      "model_raw": [
+        "Llama-3.1-70b"
+      ],
+      "model_ids": [
+        "llama-3.1-70b"
+      ],
+      "model_config": "environment model: Claude 3.5 Sonnet",
+      "score": 1.7,
+      "score_extra": {
+        "partial_score": 6.5,
+        "avg_steps": 19.18,
+        "avg_cost_usd": 0.83
+      },
+      "date": "2024-12-17",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/TheAgentCompany/experiments/tree/main/evaluation/1.0.0/20241217_OpenHands-0.14.2-llama-3.1-70b"
+    },
+    {
+      "rank": 16,
+      "system": "OpenHands + amazon nova pro v1:0",
+      "agent": "OpenHands",
+      "model_raw": [
+        "amazon nova pro v1:0"
+      ],
+      "model_ids": [
+        "amazon-nova-pro"
+      ],
+      "model_config": "environment model: Claude 3.5 Sonnet",
+      "score": 1.7,
+      "score_extra": {
+        "partial_score": 5.7,
+        "avg_steps": 19.59,
+        "avg_cost_usd": 1.55
+      },
+      "date": "2024-12-17",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/TheAgentCompany/experiments/tree/main/evaluation/1.0.0/20241217_OpenHands-0.14.2-nova-pro-v1%3A0"
+    },
+    {
+      "rank": 17,
+      "system": "OpenHands + Qwen-2-72b",
+      "agent": "OpenHands",
+      "model_raw": [
+        "Qwen-2-72b"
+      ],
+      "model_ids": [
+        "qwen2-72b"
+      ],
+      "model_config": "environment model: Claude 3.5 Sonnet",
+      "score": 1.1,
+      "score_extra": {
+        "partial_score": 4.2,
+        "avg_steps": 23.7,
+        "avg_cost_usd": 0.28
+      },
+      "date": "2024-12-17",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/TheAgentCompany/experiments/tree/main/evaluation/1.0.0/20241217_OpenHands-0.14.2-qwen2-72b"
+    }
+  ]
+}

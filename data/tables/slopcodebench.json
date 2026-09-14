@@ -1,0 +1,698 @@
+{
+  "id": "slopcodebench",
+  "family": "slopcodebench",
+  "name": "SlopCodeBench v1.0",
+  "board": "scbench.ai",
+  "category": "coding",
+  "measures_ja": "要件が段階的に追加される課題で、エージェントが自分のコードを壊さずに拡張し続けられるか(コードの劣化も測る)。",
+  "tasks": 36,
+  "tasks_note": "サイトの「v1.0 · 36 problems · 196 checkpoints」。score はチェックポイント単位。",
+  "metric": "Iso Solve (% checkpoints)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "モデルとエージェント(Claude Code, Codex, OpenCode など)の組ごとに走らせた結果。足場のバージョンも行ごとに違う。",
+  "source": "https://www.scbench.ai/leaderboard",
+  "fetched": [
+    "https://www.scbench.ai/leaderboard"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": null,
+  "snapshot": "sources/slopcodebench/leaderboard_data.json",
+  "paper": "https://arxiv.org/abs/2603.24755",
+  "repo": "https://github.com/SprocketLab/slop-code-bench",
+  "notes_ja": "ページ埋め込みの全 24 実行を載せた(既定表示は組ごとの最良版 16 件)。rank はデータ内の rank(Iso Solve 順)。Strict Solve などは score_extra。行ごとの日付は無い。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "GPT 5.5 (High) / Codex 0.124.0",
+      "agent": "Codex",
+      "model_raw": [
+        "GPT 5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": "thinking=High; agent_version=0.124.0",
+      "score": 28.061224,
+      "score_extra": {
+        "strict_solve_pct": 14.285714,
+        "core_solve_pct": 65.306122,
+        "problems_solved_pct": 0,
+        "cost_per_checkpoint_usd": 1.508125,
+        "erosion_mean": 0.493703,
+        "verbosity_mean": 0.268727,
+        "violation_pct_mean": 0.248899,
+        "clone_pct_mean": 0.046516
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "GPT 5.3-Codex (High) / Codex 0.98.0",
+      "agent": "Codex",
+      "model_raw": [
+        "GPT 5.3-Codex"
+      ],
+      "model_ids": [
+        "gpt-5.3-codex"
+      ],
+      "model_config": "thinking=High; agent_version=0.98.0",
+      "score": 26.020408,
+      "score_extra": {
+        "strict_solve_pct": 11.22449,
+        "core_solve_pct": 59.183673,
+        "problems_solved_pct": 0,
+        "cost_per_checkpoint_usd": 0.691694,
+        "erosion_mean": 0.643618,
+        "verbosity_mean": 0.335518,
+        "violation_pct_mean": 0.314369,
+        "clone_pct_mean": 0.069109
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "GPT 5.4 (High) / Codex 0.110.0",
+      "agent": "Codex",
+      "model_raw": [
+        "GPT 5.4"
+      ],
+      "model_ids": [
+        "gpt-5.4"
+      ],
+      "model_config": "thinking=High; agent_version=0.110.0",
+      "score": 25.510204,
+      "score_extra": {
+        "strict_solve_pct": 9.183673,
+        "core_solve_pct": 60.204082,
+        "problems_solved_pct": 0,
+        "cost_per_checkpoint_usd": 0.818758,
+        "erosion_mean": 0.277548,
+        "verbosity_mean": 0.192906,
+        "violation_pct_mean": 0.169255,
+        "clone_pct_mean": 0.057866
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "GPT 5.4 (High) / Codex 0.110.0",
+      "agent": "Codex",
+      "model_raw": [
+        "GPT 5.4"
+      ],
+      "model_ids": [
+        "gpt-5.4"
+      ],
+      "model_config": "thinking=High; agent_version=0.110.0",
+      "score": 25,
+      "score_extra": {
+        "strict_solve_pct": 9.693878,
+        "core_solve_pct": 61.734694,
+        "problems_solved_pct": 0,
+        "cost_per_checkpoint_usd": 0.818758,
+        "erosion_mean": 0.392182,
+        "verbosity_mean": 0.236146,
+        "violation_pct_mean": 0.202057,
+        "clone_pct_mean": 0.057866
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "GPT 5.3-Codex (High) / Codex 0.98.0",
+      "agent": "Codex",
+      "model_raw": [
+        "GPT 5.3-Codex"
+      ],
+      "model_ids": [
+        "gpt-5.3-codex"
+      ],
+      "model_config": "thinking=High; agent_version=0.98.0",
+      "score": 23.469388,
+      "score_extra": {
+        "strict_solve_pct": 11.22449,
+        "core_solve_pct": 55.612245,
+        "problems_solved_pct": 0,
+        "cost_per_checkpoint_usd": 0.691694,
+        "erosion_mean": 0.421157,
+        "verbosity_mean": 0.231586,
+        "violation_pct_mean": 0.204125,
+        "clone_pct_mean": 0.069109
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 6,
+      "system": "GPT 5.4 (High) / Codex 0.110.0",
+      "agent": "Codex",
+      "model_raw": [
+        "GPT 5.4"
+      ],
+      "model_ids": [
+        "gpt-5.4"
+      ],
+      "model_config": "thinking=High; agent_version=0.110.0",
+      "score": 23.469388,
+      "score_extra": {
+        "strict_solve_pct": 10.714286,
+        "core_solve_pct": 61.22449,
+        "problems_solved_pct": 0,
+        "cost_per_checkpoint_usd": 0.818758,
+        "erosion_mean": 0.507583,
+        "verbosity_mean": 0.272743,
+        "violation_pct_mean": 0.239704,
+        "clone_pct_mean": 0.057866
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 7,
+      "system": "GPT 5.2-Codex (High) / Codex 0.93.0",
+      "agent": "Codex",
+      "model_raw": [
+        "GPT 5.2-Codex"
+      ],
+      "model_ids": [
+        "gpt-5.2-codex"
+      ],
+      "model_config": "thinking=High; agent_version=0.93.0",
+      "score": 21.938776,
+      "score_extra": {
+        "strict_solve_pct": 9.693878,
+        "core_solve_pct": 54.591837,
+        "problems_solved_pct": 0,
+        "cost_per_checkpoint_usd": 0.853502,
+        "erosion_mean": 0.72818,
+        "verbosity_mean": 0.39811,
+        "violation_pct_mean": 0.364017,
+        "clone_pct_mean": 0.097311
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 8,
+      "system": "GPT 5.3-Codex (High) / Codex 0.98.0",
+      "agent": "Codex",
+      "model_raw": [
+        "GPT 5.3-Codex"
+      ],
+      "model_ids": [
+        "gpt-5.3-codex"
+      ],
+      "model_config": "thinking=High; agent_version=0.98.0",
+      "score": 21.428571,
+      "score_extra": {
+        "strict_solve_pct": 8.163265,
+        "core_solve_pct": 60.714286,
+        "problems_solved_pct": 0,
+        "cost_per_checkpoint_usd": 0.691694,
+        "erosion_mean": 0.546878,
+        "verbosity_mean": 0.297292,
+        "violation_pct_mean": 0.273349,
+        "clone_pct_mean": 0.069109
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 9,
+      "system": "Opus 4.6 (High) / Claude Code 2.1.32",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Opus 4.6"
+      ],
+      "model_ids": [
+        "claude-opus-4.6"
+      ],
+      "model_config": "thinking=High; agent_version=2.1.32",
+      "score": 20.918367,
+      "score_extra": {
+        "strict_solve_pct": 9.693878,
+        "core_solve_pct": 65.306122,
+        "problems_solved_pct": 0,
+        "cost_per_checkpoint_usd": 3.167345,
+        "erosion_mean": 0.737155,
+        "verbosity_mean": 0.317649,
+        "violation_pct_mean": 0.287875,
+        "clone_pct_mean": 0.102946
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 10,
+      "system": "Opus 4.7 (High) / Claude Code 2.1.111",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Opus 4.7"
+      ],
+      "model_ids": [
+        "claude-opus-4.7"
+      ],
+      "model_config": "thinking=High; agent_version=2.1.111",
+      "score": 20.918367,
+      "score_extra": {
+        "strict_solve_pct": 8.163265,
+        "core_solve_pct": 64.285714,
+        "problems_solved_pct": 0,
+        "cost_per_checkpoint_usd": 2.170089,
+        "erosion_mean": 0.759188,
+        "verbosity_mean": 0.357422,
+        "violation_pct_mean": 0.327217,
+        "clone_pct_mean": 0.08444
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 11,
+      "system": "Kimi K2.6 (High) / Kimi CLI 1.37.0",
+      "agent": "Kimi CLI",
+      "model_raw": [
+        "Kimi K2.6"
+      ],
+      "model_ids": [
+        "kimi-k2.6"
+      ],
+      "model_config": "thinking=High; agent_version=1.37.0",
+      "score": 18.877551,
+      "score_extra": {
+        "strict_solve_pct": 10.714286,
+        "core_solve_pct": 51.020408,
+        "problems_solved_pct": 0,
+        "cost_per_checkpoint_usd": 0.735812,
+        "erosion_mean": 0.76353,
+        "verbosity_mean": 0.398729,
+        "violation_pct_mean": 0.35896,
+        "clone_pct_mean": 0.128595
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 12,
+      "system": "Opus 4.5 (High) / Claude Code 2.0.51",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Opus 4.5"
+      ],
+      "model_ids": [
+        "claude-opus-4.5"
+      ],
+      "model_config": "thinking=High; agent_version=2.0.51",
+      "score": 17.346939,
+      "score_extra": {
+        "strict_solve_pct": 9.183673,
+        "core_solve_pct": 56.122449,
+        "problems_solved_pct": 0,
+        "cost_per_checkpoint_usd": 2.525106,
+        "erosion_mean": 0.691015,
+        "verbosity_mean": 0.296638,
+        "violation_pct_mean": 0.293619,
+        "clone_pct_mean": 0.091236
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 13,
+      "system": "Sonnet 4.6 (High) / Claude Code 2.1.44",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Sonnet 4.6"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.6"
+      ],
+      "model_config": "thinking=High; agent_version=2.1.44",
+      "score": 16.836735,
+      "score_extra": {
+        "strict_solve_pct": 7.142857,
+        "core_solve_pct": 56.122449,
+        "problems_solved_pct": 0,
+        "cost_per_checkpoint_usd": 1.958314,
+        "erosion_mean": 0.741448,
+        "verbosity_mean": 0.316333,
+        "violation_pct_mean": 0.297997,
+        "clone_pct_mean": 0.092606
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 14,
+      "system": "Composer 2 (None) / Cursor CLI 2026.04.13-a9d7fb5",
+      "agent": "Cursor CLI",
+      "model_raw": [
+        "Composer 2"
+      ],
+      "model_ids": [
+        "composer-2"
+      ],
+      "model_config": "thinking=None; agent_version=2026.04.13-a9d7fb5",
+      "score": 16.326531,
+      "score_extra": {
+        "strict_solve_pct": 6.122449,
+        "core_solve_pct": 51.530612,
+        "problems_solved_pct": 0,
+        "cost_per_checkpoint_usd": 0.440376,
+        "erosion_mean": 0.715877,
+        "verbosity_mean": 0.352893,
+        "violation_pct_mean": 0.317717,
+        "clone_pct_mean": 0.106802
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 15,
+      "system": "GLM 5.1 (High) / Claude Code 2.1.44",
+      "agent": "Claude Code",
+      "model_raw": [
+        "GLM 5.1"
+      ],
+      "model_ids": [
+        "glm-5.1"
+      ],
+      "model_config": "thinking=High; agent_version=2.1.44",
+      "score": 13.77551,
+      "score_extra": {
+        "strict_solve_pct": 9.693878,
+        "core_solve_pct": 38.77551,
+        "problems_solved_pct": 0,
+        "cost_per_checkpoint_usd": 1.473712,
+        "erosion_mean": 0.684005,
+        "verbosity_mean": 0.322234,
+        "violation_pct_mean": 0.300926,
+        "clone_pct_mean": 0.096091
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 16,
+      "system": "GPT 5.4-Mini (High) / Codex 0.110.0",
+      "agent": "Codex",
+      "model_raw": [
+        "GPT 5.4-Mini"
+      ],
+      "model_ids": [
+        "gpt-5.4-mini"
+      ],
+      "model_config": "thinking=High; agent_version=0.110.0",
+      "score": 13.77551,
+      "score_extra": {
+        "strict_solve_pct": 5.102041,
+        "core_solve_pct": 51.020408,
+        "problems_solved_pct": 0,
+        "cost_per_checkpoint_usd": 0.454246,
+        "erosion_mean": 0.654894,
+        "verbosity_mean": 0.330227,
+        "violation_pct_mean": 0.304742,
+        "clone_pct_mean": 0.075916
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 17,
+      "system": "Kimi K2.5 (High) / Kimi CLI 1.37.0",
+      "agent": "Kimi CLI",
+      "model_raw": [
+        "Kimi K2.5"
+      ],
+      "model_ids": [
+        "kimi-k2.5"
+      ],
+      "model_config": "thinking=High; agent_version=1.37.0",
+      "score": 9.693878,
+      "score_extra": {
+        "strict_solve_pct": 4.591837,
+        "core_solve_pct": 39.795918,
+        "problems_solved_pct": 2.777778,
+        "cost_per_checkpoint_usd": 0.334425,
+        "erosion_mean": 0.712481,
+        "verbosity_mean": 0.308704,
+        "violation_pct_mean": 0.306181,
+        "clone_pct_mean": 0.094259
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 18,
+      "system": "Kimi K2.5 (None) / OpenCode 1.4.3",
+      "agent": "OpenCode",
+      "model_raw": [
+        "Kimi K2.5"
+      ],
+      "model_ids": [
+        "kimi-k2.5"
+      ],
+      "model_config": "thinking=None; agent_version=1.4.3",
+      "score": 8.673469,
+      "score_extra": {
+        "strict_solve_pct": 4.591837,
+        "core_solve_pct": 31.122449,
+        "problems_solved_pct": 0,
+        "cost_per_checkpoint_usd": 0.53455,
+        "erosion_mean": 0.701791,
+        "verbosity_mean": 0.319345,
+        "violation_pct_mean": 0.296651,
+        "clone_pct_mean": 0.117106
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 19,
+      "system": "GLM 5.1 (High) / OpenCode 1.4.3",
+      "agent": "OpenCode",
+      "model_raw": [
+        "GLM 5.1"
+      ],
+      "model_ids": [
+        "glm-5.1"
+      ],
+      "model_config": "thinking=High; agent_version=1.4.3",
+      "score": 8.163265,
+      "score_extra": {
+        "strict_solve_pct": 5.612245,
+        "core_solve_pct": 20.408163,
+        "problems_solved_pct": 0,
+        "cost_per_checkpoint_usd": 0.586852,
+        "erosion_mean": 0.549645,
+        "verbosity_mean": 0.387461,
+        "violation_pct_mean": 0.32941,
+        "clone_pct_mean": 0.144758
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 20,
+      "system": "GPT 5.3-Codex-Spark (High) / Codex 0.100.0",
+      "agent": "Codex",
+      "model_raw": [
+        "GPT 5.3-Codex-Spark"
+      ],
+      "model_ids": [
+        "gpt-5.3-codex-spark"
+      ],
+      "model_config": "thinking=High; agent_version=0.100.0",
+      "score": 8.163265,
+      "score_extra": {
+        "strict_solve_pct": 3.061224,
+        "core_solve_pct": 29.081633,
+        "problems_solved_pct": 0,
+        "cost_per_checkpoint_usd": 0.201999,
+        "erosion_mean": 0.585672,
+        "verbosity_mean": 0.357425,
+        "violation_pct_mean": 0.340105,
+        "clone_pct_mean": 0.086279
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 21,
+      "system": "Kimi K2.5 (High) / Claude Code 2.1.44",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Kimi K2.5"
+      ],
+      "model_ids": [
+        "kimi-k2.5"
+      ],
+      "model_config": "thinking=High; agent_version=2.1.44",
+      "score": 7.142857,
+      "score_extra": {
+        "strict_solve_pct": 3.571429,
+        "core_solve_pct": 28.061224,
+        "problems_solved_pct": 0,
+        "cost_per_checkpoint_usd": 1.073245,
+        "erosion_mean": 0.692495,
+        "verbosity_mean": 0.310359,
+        "violation_pct_mean": 0.30134,
+        "clone_pct_mean": 0.096844
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 22,
+      "system": "MiniMax M2.7 (High) / Claude Code 2.1.44",
+      "agent": "Claude Code",
+      "model_raw": [
+        "MiniMax M2.7"
+      ],
+      "model_ids": [
+        "minimax-m2.7"
+      ],
+      "model_config": "thinking=High; agent_version=2.1.44",
+      "score": 4.081633,
+      "score_extra": {
+        "strict_solve_pct": 2.55102,
+        "core_solve_pct": 28.571429,
+        "problems_solved_pct": 0,
+        "cost_per_checkpoint_usd": 0.333462,
+        "erosion_mean": 0.500349,
+        "verbosity_mean": 0.264831,
+        "violation_pct_mean": 0.227059,
+        "clone_pct_mean": 0.107931
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 23,
+      "system": "MiniMax M2.7 (High) / Claude Code 2.1.44",
+      "agent": "Claude Code",
+      "model_raw": [
+        "MiniMax M2.7"
+      ],
+      "model_ids": [
+        "minimax-m2.7"
+      ],
+      "model_config": "thinking=High; agent_version=2.1.44",
+      "score": 4.081633,
+      "score_extra": {
+        "strict_solve_pct": 2.040816,
+        "core_solve_pct": 27.55102,
+        "problems_solved_pct": 0,
+        "cost_per_checkpoint_usd": 0.333462,
+        "erosion_mean": 0.71136,
+        "verbosity_mean": 0.34406,
+        "violation_pct_mean": 0.323655,
+        "clone_pct_mean": 0.107931
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 24,
+      "system": "MiniMax M2.7 (None) / OpenCode 1.4.3",
+      "agent": "OpenCode",
+      "model_raw": [
+        "MiniMax M2.7"
+      ],
+      "model_ids": [
+        "minimax-m2.7"
+      ],
+      "model_config": "thinking=None; agent_version=1.4.3",
+      "score": 3.571429,
+      "score_extra": {
+        "strict_solve_pct": 1.530612,
+        "core_solve_pct": 20.918367,
+        "problems_solved_pct": 0,
+        "cost_per_checkpoint_usd": 0.27227,
+        "erosion_mean": 0.746376,
+        "verbosity_mean": 0.417973,
+        "violation_pct_mean": 0.379156,
+        "clone_pct_mean": 0.146085
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    }
+  ]
+}

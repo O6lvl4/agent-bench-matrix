@@ -1,0 +1,4733 @@
+{
+  "id": "assistantbench",
+  "family": "assistantbench",
+  "name": "AssistantBench (test)",
+  "board": "huggingface.co/spaces/AssistantBench/leaderboard",
+  "category": "web",
+  "measures_ja": "実際のウェブを調べ回らないと答えられない、時間のかかる現実的な調べもの課題に正答できるか。",
+  "tasks": 181,
+  "tasks_note": "公式データセット(AssistantBench/AssistantBench)の test 分割の件数。ボードはテスト分割で採点する。",
+  "metric": "Accuracy",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "提出者が自前のエージェントで回答ファイルを作り、ボードが隠された正解と自動採点する。",
+  "source": "https://huggingface.co/spaces/AssistantBench/leaderboard",
+  "fetched": [
+    "https://assistantbench-leaderboard.hf.space/gradio_api/call/refresh",
+    "https://huggingface.co/spaces/AssistantBench/leaderboard/raw/main/app.py"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": null,
+  "snapshot": "sources/assistantbench/board_test.json",
+  "paper": "https://arxiv.org/abs/2407.15711",
+  "repo": "https://github.com/oriyor/assistantbench",
+  "notes_ja": "日付列は無い。rank は正答率順の表示位置。テスト名や版違いの投稿が多数並ぶ。ボードのコードが1行だけ名前・組織・URLを書き換えて表示しており、表示後の値を採った。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Autobot ChatGPT-HQ + GPT-5.6 Sol Ultra",
+      "agent": null,
+      "model_raw": [
+        "GPT-5.6 Sol"
+      ],
+      "model_ids": [
+        "gpt-5.6-sol"
+      ],
+      "model_config": null,
+      "score": 50.7,
+      "score_extra": {
+        "answer_rate": 100.0,
+        "precision": 50.7,
+        "em": 27.1,
+        "accuracy_easy": 88.0,
+        "accuracy_medium": 67.7,
+        "accuracy_hard": 39.7
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "Autonomous Production",
+      "row_url": "https://autoprod.ai"
+    },
+    {
+      "rank": 2,
+      "system": "Jina + Claude Code",
+      "agent": null,
+      "model_raw": [
+        "claude-opus-4-7",
+        "gpt-5.4-nano-2026-03-17"
+      ],
+      "model_ids": [
+        "claude-opus-4.7",
+        "gpt-5.4-nano"
+      ],
+      "model_config": null,
+      "score": 42.1,
+      "score_extra": {
+        "answer_rate": 100.0,
+        "precision": 42.1,
+        "em": 22.7,
+        "accuracy_easy": 87.6,
+        "accuracy_medium": 62.9,
+        "accuracy_hard": 28.6
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "Om Labs",
+      "row_url": "https://github.com/omxyz/assistantbench"
+    },
+    {
+      "rank": 3,
+      "system": "Distyl Button",
+      "agent": null,
+      "model_raw": [
+        "Claude-Opus-4-6"
+      ],
+      "model_ids": [
+        "claude-opus-4.6"
+      ],
+      "model_config": null,
+      "score": 38.0,
+      "score_extra": {
+        "answer_rate": 100.0,
+        "precision": 38.0,
+        "em": 19.9,
+        "accuracy_easy": 79.1,
+        "accuracy_medium": 58.2,
+        "accuracy_hard": 25.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "Distyl AI Inc.",
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "TongAgents",
+      "agent": null,
+      "model_raw": [
+        "gpt5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": null,
+      "score": 37.6,
+      "score_extra": {
+        "answer_rate": 98.9,
+        "precision": 38.0,
+        "em": 18.2,
+        "accuracy_easy": 64.3,
+        "accuracy_medium": 59.4,
+        "accuracy_hard": 25.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "BIGAI",
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "test_Agent",
+      "agent": null,
+      "model_raw": [
+        "gpt5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": null,
+      "score": 36.7,
+      "score_extra": {
+        "answer_rate": 98.9,
+        "precision": 37.2,
+        "em": 18.2,
+        "accuracy_easy": 64.3,
+        "accuracy_medium": 57.7,
+        "accuracy_hard": 24.5
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 6,
+      "system": "Claude+phantomwright",
+      "agent": null,
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 36.4,
+      "score_extra": {
+        "answer_rate": 100.0,
+        "precision": 36.4,
+        "em": 20.4,
+        "accuracy_easy": 69.4,
+        "accuracy_medium": 53.0,
+        "accuracy_hard": 25.8
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "MS",
+      "row_url": null
+    },
+    {
+      "rank": 7,
+      "system": "Distyl",
+      "agent": null,
+      "model_raw": [
+        "Claude-Opus"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 35.5,
+      "score_extra": {
+        "answer_rate": 100.0,
+        "precision": 35.5,
+        "em": 17.7,
+        "accuracy_easy": 70.9,
+        "accuracy_medium": 54.6,
+        "accuracy_hard": 23.5
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "Distyl AI Inc.",
+      "row_url": null
+    },
+    {
+      "rank": 8,
+      "system": "SO_R3_Testing_websearch",
+      "agent": null,
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 34.4,
+      "score_extra": {
+        "answer_rate": 100.0,
+        "precision": 34.4,
+        "em": 13.8,
+        "accuracy_easy": 69.0,
+        "accuracy_medium": 55.6,
+        "accuracy_hard": 21.5
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 9,
+      "system": "wsg_v1",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 32.3,
+      "score_extra": {
+        "answer_rate": 100.0,
+        "precision": 32.3,
+        "em": 15.5,
+        "accuracy_easy": 93.6,
+        "accuracy_medium": 56.5,
+        "accuracy_hard": 15.9
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 10,
+      "system": "Jina (headless)",
+      "agent": null,
+      "model_raw": [
+        "claude-opus-4-7",
+        "gpt-5.4-nano-2026-03-17"
+      ],
+      "model_ids": [
+        "claude-opus-4.7",
+        "gpt-5.4-nano"
+      ],
+      "model_config": null,
+      "score": 32.1,
+      "score_extra": {
+        "answer_rate": 99.4,
+        "precision": 32.2,
+        "em": 18.8,
+        "accuracy_easy": 76.9,
+        "accuracy_medium": 56.2,
+        "accuracy_hard": 16.9
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "Om Labs",
+      "row_url": "https://github.com/omxyz/assistantbench"
+    },
+    {
+      "rank": 11,
+      "system": "SDP",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 31.8,
+      "score_extra": {
+        "answer_rate": 99.4,
+        "precision": 32.0,
+        "em": 14.9,
+        "accuracy_easy": 92.8,
+        "accuracy_medium": 54.9,
+        "accuracy_hard": 16.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "BIASLAB",
+      "row_url": null
+    },
+    {
+      "rank": 12,
+      "system": "reb_1",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 31.7,
+      "score_extra": {
+        "answer_rate": 99.4,
+        "precision": 31.9,
+        "em": 14.9,
+        "accuracy_easy": 93.6,
+        "accuracy_medium": 54.3,
+        "accuracy_hard": 16.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 13,
+      "system": "Button",
+      "agent": null,
+      "model_raw": [
+        "Claude-Sonnet-4-5"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": null,
+      "score": 31.2,
+      "score_extra": {
+        "answer_rate": 100.0,
+        "precision": 31.2,
+        "em": 14.9,
+        "accuracy_easy": 66.5,
+        "accuracy_medium": 50.6,
+        "accuracy_hard": 19.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 14,
+      "system": "SO_R3_Testing_ddg",
+      "agent": null,
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 30.9,
+      "score_extra": {
+        "answer_rate": 100.0,
+        "precision": 30.9,
+        "em": 14.4,
+        "accuracy_easy": 81.8,
+        "accuracy_medium": 51.1,
+        "accuracy_hard": 17.3
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 15,
+      "system": "RO_light_Testing",
+      "agent": null,
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 30.3,
+      "score_extra": {
+        "answer_rate": 100.0,
+        "precision": 30.3,
+        "em": 11.6,
+        "accuracy_easy": 85.5,
+        "accuracy_medium": 48.1,
+        "accuracy_hard": 17.4
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 16,
+      "system": "SO_R1_Testing_agentic",
+      "agent": null,
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 30.0,
+      "score_extra": {
+        "answer_rate": 100.0,
+        "precision": 30.0,
+        "em": 13.8,
+        "accuracy_easy": 76.1,
+        "accuracy_medium": 50.0,
+        "accuracy_hard": 16.8
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 17,
+      "system": "reb3",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 29.9,
+      "score_extra": {
+        "answer_rate": 94.5,
+        "precision": 31.7,
+        "em": 13.8,
+        "accuracy_easy": 91.5,
+        "accuracy_medium": 51.9,
+        "accuracy_hard": 14.5
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 18,
+      "system": "SO_R3_Testing_hybrid",
+      "agent": null,
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 29.7,
+      "score_extra": {
+        "answer_rate": 100.0,
+        "precision": 29.7,
+        "em": 12.2,
+        "accuracy_easy": 68.5,
+        "accuracy_medium": 43.6,
+        "accuracy_hard": 20.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 19,
+      "system": "check_state",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 29.4,
+      "score_extra": {
+        "answer_rate": 98.9,
+        "precision": 29.7,
+        "em": 12.7,
+        "accuracy_easy": 76.2,
+        "accuracy_medium": 52.1,
+        "accuracy_hard": 14.8
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 20,
+      "system": "reb4",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 29.2,
+      "score_extra": {
+        "answer_rate": 96.7,
+        "precision": 30.2,
+        "em": 11.0,
+        "accuracy_easy": 91.5,
+        "accuracy_medium": 50.1,
+        "accuracy_hard": 14.2
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 21,
+      "system": "reb_12",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 29.1,
+      "score_extra": {
+        "answer_rate": 96.7,
+        "precision": 30.0,
+        "em": 13.3,
+        "accuracy_easy": 75.6,
+        "accuracy_medium": 51.6,
+        "accuracy_hard": 14.5
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 22,
+      "system": "check_1",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 28.3,
+      "score_extra": {
+        "answer_rate": 98.3,
+        "precision": 28.8,
+        "em": 11.0,
+        "accuracy_easy": 67.8,
+        "accuracy_medium": 48.5,
+        "accuracy_hard": 15.5
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 23,
+      "system": "Agent Context Protocols",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 28.3,
+      "score_extra": {
+        "answer_rate": 98.3,
+        "precision": 28.8,
+        "em": 11.0,
+        "accuracy_easy": 67.8,
+        "accuracy_medium": 48.5,
+        "accuracy_hard": 15.5
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 24,
+      "system": "tt_api_1",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 28.3,
+      "score_extra": {
+        "answer_rate": 94.5,
+        "precision": 30.0,
+        "em": 11.0,
+        "accuracy_easy": 67.8,
+        "accuracy_medium": 48.5,
+        "accuracy_hard": 15.5
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 25,
+      "system": "reb5",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 28.0,
+      "score_extra": {
+        "answer_rate": 96.7,
+        "precision": 29.0,
+        "em": 11.0,
+        "accuracy_easy": 79.3,
+        "accuracy_medium": 50.9,
+        "accuracy_hard": 13.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 26,
+      "system": "re3",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 27.7,
+      "score_extra": {
+        "answer_rate": 84.5,
+        "precision": 32.8,
+        "em": 13.3,
+        "accuracy_easy": 76.9,
+        "accuracy_medium": 48.4,
+        "accuracy_hard": 13.9
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 27,
+      "system": "tt_api",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 27.7,
+      "score_extra": {
+        "answer_rate": 92.8,
+        "precision": 29.8,
+        "em": 10.5,
+        "accuracy_easy": 67.8,
+        "accuracy_medium": 46.5,
+        "accuracy_hard": 15.5
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 28,
+      "system": "Magentic-o1",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o",
+        "o1-preview"
+      ],
+      "model_ids": [
+        "gpt-4o",
+        "o1-preview"
+      ],
+      "model_config": null,
+      "score": 27.7,
+      "score_extra": {
+        "answer_rate": 95.6,
+        "precision": 29.0,
+        "em": 13.3,
+        "accuracy_easy": 73.4,
+        "accuracy_medium": 47.1,
+        "accuracy_hard": 14.8
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "MSR AI Frontiers",
+      "row_url": null
+    },
+    {
+      "rank": 29,
+      "system": "Magentic-UI (fix none answers)",
+      "agent": null,
+      "model_raw": [
+        "o4-mini"
+      ],
+      "model_ids": [
+        "o4-mini"
+      ],
+      "model_config": null,
+      "score": 27.6,
+      "score_extra": {
+        "answer_rate": 83.4,
+        "precision": 33.1,
+        "em": 9.4,
+        "accuracy_easy": 60.7,
+        "accuracy_medium": 43.8,
+        "accuracy_hard": 17.3
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "MSR AI Frontiers",
+      "row_url": "https://github.com/microsoft/magentic-ui"
+    },
+    {
+      "rank": 30,
+      "system": "tt_api_2",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 27.5,
+      "score_extra": {
+        "answer_rate": 91.2,
+        "precision": 30.2,
+        "em": 12.7,
+        "accuracy_easy": 75.3,
+        "accuracy_medium": 45.1,
+        "accuracy_hard": 15.4
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 31,
+      "system": "reb_11",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 27.5,
+      "score_extra": {
+        "answer_rate": 96.1,
+        "precision": 28.6,
+        "em": 12.7,
+        "accuracy_easy": 81.2,
+        "accuracy_medium": 45.7,
+        "accuracy_hard": 14.5
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 32,
+      "system": "test-a2",
+      "agent": null,
+      "model_raw": [
+        "gpt5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": null,
+      "score": 27.0,
+      "score_extra": {
+        "answer_rate": 98.3,
+        "precision": 27.4,
+        "em": 12.7,
+        "accuracy_easy": 55.6,
+        "accuracy_medium": 35.2,
+        "accuracy_hard": 20.7
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 33,
+      "system": "SO_R1_Testing_decomposition",
+      "agent": null,
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 26.9,
+      "score_extra": {
+        "answer_rate": 100.0,
+        "precision": 26.9,
+        "em": 11.0,
+        "accuracy_easy": 83.7,
+        "accuracy_medium": 47.7,
+        "accuracy_hard": 12.5
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 34,
+      "system": "showact",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 26.8,
+      "score_extra": {
+        "answer_rate": 99.4,
+        "precision": 27.0,
+        "em": 12.2,
+        "accuracy_easy": 81.7,
+        "accuracy_medium": 43.5,
+        "accuracy_hard": 14.6
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 35,
+      "system": "Magentic-Ui",
+      "agent": null,
+      "model_raw": [
+        "o4-mini"
+      ],
+      "model_ids": [
+        "o4-mini"
+      ],
+      "model_config": null,
+      "score": 26.8,
+      "score_extra": {
+        "answer_rate": 100.0,
+        "precision": 26.8,
+        "em": 9.9,
+        "accuracy_easy": 63.3,
+        "accuracy_medium": 40.1,
+        "accuracy_hard": 17.6
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "MSR AI Frontiers",
+      "row_url": "https://github.com/microsoft/magentic-ui"
+    },
+    {
+      "rank": 36,
+      "system": "LossLessRAG",
+      "agent": null,
+      "model_raw": [
+        "Claude-Opus-4-6"
+      ],
+      "model_ids": [
+        "claude-opus-4.6"
+      ],
+      "model_config": null,
+      "score": 26.8,
+      "score_extra": {
+        "answer_rate": 100.0,
+        "precision": 26.8,
+        "em": 11.0,
+        "accuracy_easy": 74.0,
+        "accuracy_medium": 45.8,
+        "accuracy_hard": 14.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "Haize Labs",
+      "row_url": "https://www.notion.so/LosslessRAG-from-Haize-Labs-319c7cf65c5b80fcb203dc5d927ae827"
+    },
+    {
+      "rank": 37,
+      "system": "mdp_v7",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 26.7,
+      "score_extra": {
+        "answer_rate": 96.7,
+        "precision": 27.6,
+        "em": 11.0,
+        "accuracy_easy": 89.6,
+        "accuracy_medium": 41.3,
+        "accuracy_hard": 14.7
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "UCI",
+      "row_url": null
+    },
+    {
+      "rank": 38,
+      "system": "test-a1",
+      "agent": null,
+      "model_raw": [
+        "gpt5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": null,
+      "score": 26.7,
+      "score_extra": {
+        "answer_rate": 98.9,
+        "precision": 27.0,
+        "em": 13.8,
+        "accuracy_easy": 61.0,
+        "accuracy_medium": 35.1,
+        "accuracy_hard": 20.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 39,
+      "system": "re9",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 26.4,
+      "score_extra": {
+        "answer_rate": 95.6,
+        "precision": 27.6,
+        "em": 12.2,
+        "accuracy_easy": 74.9,
+        "accuracy_medium": 48.4,
+        "accuracy_hard": 12.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 40,
+      "system": "SPA→CB (Claude)",
+      "agent": null,
+      "model_raw": [
+        "Claude-3.5-Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 26.4,
+      "score_extra": {
+        "answer_rate": 81.8,
+        "precision": 32.2,
+        "em": 13.8,
+        "accuracy_easy": 81.0,
+        "accuracy_medium": 44.6,
+        "accuracy_hard": 13.3
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "TAU NLP",
+      "row_url": null
+    },
+    {
+      "rank": 41,
+      "system": "reb_10",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 26.4,
+      "score_extra": {
+        "answer_rate": 93.4,
+        "precision": 28.3,
+        "em": 12.2,
+        "accuracy_easy": 85.4,
+        "accuracy_medium": 45.3,
+        "accuracy_hard": 12.7
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 42,
+      "system": "mdp_v9",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 26.2,
+      "score_extra": {
+        "answer_rate": 91.7,
+        "precision": 28.5,
+        "em": 11.0,
+        "accuracy_easy": 84.1,
+        "accuracy_medium": 38.0,
+        "accuracy_hard": 16.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "UCI",
+      "row_url": null
+    },
+    {
+      "rank": 43,
+      "system": "SO_R1_Testing",
+      "agent": null,
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 26.2,
+      "score_extra": {
+        "answer_rate": 100.0,
+        "precision": 26.2,
+        "em": 9.9,
+        "accuracy_easy": 77.8,
+        "accuracy_medium": 40.8,
+        "accuracy_hard": 15.1
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 44,
+      "system": "mdp_v6",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 26.2,
+      "score_extra": {
+        "answer_rate": 96.1,
+        "precision": 27.3,
+        "em": 10.5,
+        "accuracy_easy": 89.6,
+        "accuracy_medium": 39.9,
+        "accuracy_hard": 14.7
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "UCI",
+      "row_url": null
+    },
+    {
+      "rank": 45,
+      "system": "test-a3",
+      "agent": null,
+      "model_raw": [
+        "gpt5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": null,
+      "score": 26.1,
+      "score_extra": {
+        "answer_rate": 97.8,
+        "precision": 26.7,
+        "em": 15.5,
+        "accuracy_easy": 68.9,
+        "accuracy_medium": 39.8,
+        "accuracy_hard": 16.2
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 46,
+      "system": "reb_13",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 26.0,
+      "score_extra": {
+        "answer_rate": 96.1,
+        "precision": 27.0,
+        "em": 10.5,
+        "accuracy_easy": 83.8,
+        "accuracy_medium": 39.7,
+        "accuracy_hard": 14.9
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 47,
+      "system": "baseline_3",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 25.9,
+      "score_extra": {
+        "answer_rate": 98.9,
+        "precision": 26.2,
+        "em": 9.9,
+        "accuracy_easy": 70.2,
+        "accuracy_medium": 34.1,
+        "accuracy_hard": 18.5
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 48,
+      "system": "m1-llm-vmem",
+      "agent": null,
+      "model_raw": [
+        "gpt5.1"
+      ],
+      "model_ids": [
+        "gpt-5.1"
+      ],
+      "model_config": null,
+      "score": 25.7,
+      "score_extra": {
+        "answer_rate": 98.9,
+        "precision": 26.0,
+        "em": 12.7,
+        "accuracy_easy": 57.8,
+        "accuracy_medium": 37.9,
+        "accuracy_hard": 17.3
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 49,
+      "system": "mdp_final",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 25.5,
+      "score_extra": {
+        "answer_rate": 92.8,
+        "precision": 27.5,
+        "em": 11.0,
+        "accuracy_easy": 84.1,
+        "accuracy_medium": 37.6,
+        "accuracy_hard": 15.1
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "UCI",
+      "row_url": null
+    },
+    {
+      "rank": 50,
+      "system": "reb7",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 25.5,
+      "score_extra": {
+        "answer_rate": 96.7,
+        "precision": 26.4,
+        "em": 9.9,
+        "accuracy_easy": 84.6,
+        "accuracy_medium": 45.3,
+        "accuracy_hard": 11.4
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 51,
+      "system": "mdp_v5",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 25.4,
+      "score_extra": {
+        "answer_rate": 95.6,
+        "precision": 26.5,
+        "em": 9.9,
+        "accuracy_easy": 93.2,
+        "accuracy_medium": 37.4,
+        "accuracy_hard": 14.3
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "UCI",
+      "row_url": null
+    },
+    {
+      "rank": 52,
+      "system": "Magentic-1",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 25.3,
+      "score_extra": {
+        "answer_rate": 100.0,
+        "precision": 25.3,
+        "em": 11.0,
+        "accuracy_easy": 69.9,
+        "accuracy_medium": 35.6,
+        "accuracy_hard": 16.9
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "MSR AI Frontiers",
+      "row_url": "https://github.com/microsoft/autogen/tree/main/python/packages/autogen-magentic-one"
+    },
+    {
+      "rank": 53,
+      "system": "SMV_TESTING",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 25.3,
+      "score_extra": {
+        "answer_rate": 86.7,
+        "precision": 29.2,
+        "em": 10.5,
+        "accuracy_easy": 71.4,
+        "accuracy_medium": 37.2,
+        "accuracy_hard": 16.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 54,
+      "system": "reb6",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 25.3,
+      "score_extra": {
+        "answer_rate": 94.5,
+        "precision": 26.8,
+        "em": 13.3,
+        "accuracy_easy": 79.3,
+        "accuracy_medium": 38.8,
+        "accuracy_hard": 14.6
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 55,
+      "system": "flow_check",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 25.3,
+      "score_extra": {
+        "answer_rate": 91.7,
+        "precision": 27.6,
+        "em": 9.4,
+        "accuracy_easy": 78.4,
+        "accuracy_medium": 37.0,
+        "accuracy_hard": 15.6
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 56,
+      "system": "SPA→CB",
+      "agent": null,
+      "model_raw": [
+        "GPT4-T"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 25.2,
+      "score_extra": {
+        "answer_rate": 91.7,
+        "precision": 27.5,
+        "em": 9.9,
+        "accuracy_easy": 80.7,
+        "accuracy_medium": 42.7,
+        "accuracy_hard": 12.4
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "TAU NLP",
+      "row_url": null
+    },
+    {
+      "rank": 57,
+      "system": "smp_v5",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 25.0,
+      "score_extra": {
+        "answer_rate": 86.2,
+        "precision": 29.0,
+        "em": 11.0,
+        "accuracy_easy": 71.4,
+        "accuracy_medium": 39.3,
+        "accuracy_hard": 14.5
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 58,
+      "system": "reb2",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 25.0,
+      "score_extra": {
+        "answer_rate": 93.9,
+        "precision": 26.6,
+        "em": 9.9,
+        "accuracy_easy": 74.9,
+        "accuracy_medium": 43.0,
+        "accuracy_hard": 12.4
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 59,
+      "system": "mdp_v8",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 25.0,
+      "score_extra": {
+        "answer_rate": 90.6,
+        "precision": 27.6,
+        "em": 9.9,
+        "accuracy_easy": 84.1,
+        "accuracy_medium": 37.7,
+        "accuracy_hard": 14.2
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "UCI",
+      "row_url": null
+    },
+    {
+      "rank": 60,
+      "system": "smp_v3_submissionerror",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 24.8,
+      "score_extra": {
+        "answer_rate": 86.7,
+        "precision": 28.6,
+        "em": 10.5,
+        "accuracy_easy": 71.4,
+        "accuracy_medium": 37.9,
+        "accuracy_hard": 14.8
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 61,
+      "system": "test_submission_3",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 24.8,
+      "score_extra": {
+        "answer_rate": 93.4,
+        "precision": 26.5,
+        "em": 9.4,
+        "accuracy_easy": 81.6,
+        "accuracy_medium": 38.9,
+        "accuracy_hard": 13.5
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 62,
+      "system": "smpv1",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 24.8,
+      "score_extra": {
+        "answer_rate": 91.2,
+        "precision": 27.2,
+        "em": 7.7,
+        "accuracy_easy": 80.3,
+        "accuracy_medium": 34.9,
+        "accuracy_hard": 15.6
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "UCI",
+      "row_url": null
+    },
+    {
+      "rank": 63,
+      "system": "sf_med",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 24.8,
+      "score_extra": {
+        "answer_rate": 95.2,
+        "precision": 26.1,
+        "em": 10.3,
+        "accuracy_easy": 90.0,
+        "accuracy_medium": 27.6,
+        "accuracy_hard": 18.4
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 64,
+      "system": "flow",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 24.7,
+      "score_extra": {
+        "answer_rate": 91.2,
+        "precision": 27.1,
+        "em": 8.8,
+        "accuracy_easy": 78.4,
+        "accuracy_medium": 34.1,
+        "accuracy_hard": 16.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 65,
+      "system": "tt_api_3",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 24.7,
+      "score_extra": {
+        "answer_rate": 95.6,
+        "precision": 25.8,
+        "em": 9.4,
+        "accuracy_easy": 82.9,
+        "accuracy_medium": 33.7,
+        "accuracy_hard": 15.8
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 66,
+      "system": "reb_8",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 24.4,
+      "score_extra": {
+        "answer_rate": 95.6,
+        "precision": 25.5,
+        "em": 9.9,
+        "accuracy_easy": 79.3,
+        "accuracy_medium": 40.4,
+        "accuracy_hard": 12.4
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 67,
+      "system": "mdp_v4",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 24.2,
+      "score_extra": {
+        "answer_rate": 93.9,
+        "precision": 25.8,
+        "em": 8.3,
+        "accuracy_easy": 92.3,
+        "accuracy_medium": 38.3,
+        "accuracy_hard": 12.1
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "UCI",
+      "row_url": null
+    },
+    {
+      "rank": 68,
+      "system": "Swarm",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 24.2,
+      "score_extra": {
+        "answer_rate": 95.0,
+        "precision": 25.5,
+        "em": 9.4,
+        "accuracy_easy": 82.9,
+        "accuracy_medium": 32.0,
+        "accuracy_hard": 15.9
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 69,
+      "system": "reb_9",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 24.1,
+      "score_extra": {
+        "answer_rate": 95.0,
+        "precision": 25.4,
+        "em": 11.0,
+        "accuracy_easy": 81.2,
+        "accuracy_medium": 43.3,
+        "accuracy_hard": 10.4
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 70,
+      "system": "smp_v6",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 24.1,
+      "score_extra": {
+        "answer_rate": 85.1,
+        "precision": 28.3,
+        "em": 10.5,
+        "accuracy_easy": 71.4,
+        "accuracy_medium": 38.4,
+        "accuracy_hard": 13.5
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 71,
+      "system": "tt2",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 24.0,
+      "score_extra": {
+        "answer_rate": 96.1,
+        "precision": 25.0,
+        "em": 9.9,
+        "accuracy_easy": 41.8,
+        "accuracy_medium": 40.7,
+        "accuracy_hard": 14.6
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 72,
+      "system": "m1-pa",
+      "agent": null,
+      "model_raw": [
+        "gpt5.1"
+      ],
+      "model_ids": [
+        "gpt-5.1"
+      ],
+      "model_config": null,
+      "score": 24.0,
+      "score_extra": {
+        "answer_rate": 98.3,
+        "precision": 24.4,
+        "em": 11.0,
+        "accuracy_easy": 57.3,
+        "accuracy_medium": 35.2,
+        "accuracy_hard": 16.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 73,
+      "system": "gpt4o_agent4",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 24.0,
+      "score_extra": {
+        "answer_rate": 89.5,
+        "precision": 26.8,
+        "em": 8.3,
+        "accuracy_easy": 86.8,
+        "accuracy_medium": 35.0,
+        "accuracy_hard": 13.8
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 74,
+      "system": "gpt4o_agent3",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 24.0,
+      "score_extra": {
+        "answer_rate": 89.5,
+        "precision": 26.8,
+        "em": 8.3,
+        "accuracy_easy": 86.8,
+        "accuracy_medium": 35.0,
+        "accuracy_hard": 13.8
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 75,
+      "system": "find_submission_error2",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 23.9,
+      "score_extra": {
+        "answer_rate": 89.0,
+        "precision": 26.9,
+        "em": 8.3,
+        "accuracy_easy": 86.8,
+        "accuracy_medium": 35.0,
+        "accuracy_hard": 13.7
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 76,
+      "system": "gpt4o_agent",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 23.9,
+      "score_extra": {
+        "answer_rate": 89.0,
+        "precision": 26.9,
+        "em": 8.3,
+        "accuracy_easy": 86.8,
+        "accuracy_medium": 35.0,
+        "accuracy_hard": 13.7
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 77,
+      "system": "re6",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 23.8,
+      "score_extra": {
+        "answer_rate": 92.8,
+        "precision": 25.7,
+        "em": 9.4,
+        "accuracy_easy": 78.0,
+        "accuracy_medium": 39.4,
+        "accuracy_hard": 12.1
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 78,
+      "system": "gpt4o_agent2",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 23.8,
+      "score_extra": {
+        "answer_rate": 89.0,
+        "precision": 26.8,
+        "em": 8.3,
+        "accuracy_easy": 86.8,
+        "accuracy_medium": 35.0,
+        "accuracy_hard": 13.6
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 79,
+      "system": "s_model_v4",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 23.7,
+      "score_extra": {
+        "answer_rate": 89.0,
+        "precision": 26.6,
+        "em": 8.3,
+        "accuracy_easy": 86.8,
+        "accuracy_medium": 35.0,
+        "accuracy_hard": 13.4
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "UCI",
+      "row_url": null
+    },
+    {
+      "rank": 80,
+      "system": "state_module",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 23.7,
+      "score_extra": {
+        "answer_rate": 89.0,
+        "precision": 26.6,
+        "em": 8.3,
+        "accuracy_easy": 86.8,
+        "accuracy_medium": 35.0,
+        "accuracy_hard": 13.4
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 81,
+      "system": "testing_re12",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 23.7,
+      "score_extra": {
+        "answer_rate": 76.8,
+        "precision": 30.8,
+        "em": 11.0,
+        "accuracy_easy": 76.2,
+        "accuracy_medium": 42.0,
+        "accuracy_hard": 10.8
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 82,
+      "system": "find_submission_error",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 23.7,
+      "score_extra": {
+        "answer_rate": 89.0,
+        "precision": 26.6,
+        "em": 8.3,
+        "accuracy_easy": 86.8,
+        "accuracy_medium": 35.0,
+        "accuracy_hard": 13.4
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 83,
+      "system": "re10",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 23.6,
+      "score_extra": {
+        "answer_rate": 94.5,
+        "precision": 25.0,
+        "em": 9.9,
+        "accuracy_easy": 74.3,
+        "accuracy_medium": 40.3,
+        "accuracy_hard": 11.6
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 84,
+      "system": "sf_wiki",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 23.5,
+      "score_extra": {
+        "answer_rate": 96.7,
+        "precision": 24.4,
+        "em": 9.4,
+        "accuracy_easy": 63.7,
+        "accuracy_medium": 36.8,
+        "accuracy_hard": 14.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 85,
+      "system": "SeeAct→CB",
+      "agent": null,
+      "model_raw": [
+        "GPT4-T"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 23.4,
+      "score_extra": {
+        "answer_rate": 89.5,
+        "precision": 26.1,
+        "em": 9.4,
+        "accuracy_easy": 82.0,
+        "accuracy_medium": 47.7,
+        "accuracy_hard": 7.1
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "TAU NLP",
+      "row_url": null
+    },
+    {
+      "rank": 86,
+      "system": "test_submission_2",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 23.4,
+      "score_extra": {
+        "answer_rate": 93.9,
+        "precision": 24.9,
+        "em": 9.4,
+        "accuracy_easy": 62.2,
+        "accuracy_medium": 29.3,
+        "accuracy_hard": 17.5
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 87,
+      "system": "sf_wiki_1",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 23.3,
+      "score_extra": {
+        "answer_rate": 96.1,
+        "precision": 24.2,
+        "em": 8.8,
+        "accuracy_easy": 67.9,
+        "accuracy_medium": 35.8,
+        "accuracy_hard": 13.8
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 88,
+      "system": "re7",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 23.3,
+      "score_extra": {
+        "answer_rate": 91.7,
+        "precision": 25.4,
+        "em": 9.9,
+        "accuracy_easy": 78.9,
+        "accuracy_medium": 39.0,
+        "accuracy_hard": 11.4
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 89,
+      "system": "mdp_v1",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 23.2,
+      "score_extra": {
+        "answer_rate": 90.6,
+        "precision": 25.6,
+        "em": 7.7,
+        "accuracy_easy": 86.8,
+        "accuracy_medium": 34.9,
+        "accuracy_hard": 12.7
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 90,
+      "system": "o3-mini",
+      "agent": null,
+      "model_raw": [
+        "tt_o3"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 23.2,
+      "score_extra": {
+        "answer_rate": 99.4,
+        "precision": 23.3,
+        "em": 10.5,
+        "accuracy_easy": 60.8,
+        "accuracy_medium": 38.3,
+        "accuracy_hard": 12.9
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 91,
+      "system": "bs1",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 23.2,
+      "score_extra": {
+        "answer_rate": 99.4,
+        "precision": 23.3,
+        "em": 10.5,
+        "accuracy_easy": 60.8,
+        "accuracy_medium": 38.3,
+        "accuracy_hard": 12.9
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 92,
+      "system": "testing_re1",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 23.1,
+      "score_extra": {
+        "answer_rate": 76.8,
+        "precision": 30.1,
+        "em": 10.5,
+        "accuracy_easy": 76.2,
+        "accuracy_medium": 39.0,
+        "accuracy_hard": 11.4
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 93,
+      "system": "testing_re7",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 23.1,
+      "score_extra": {
+        "answer_rate": 75.7,
+        "precision": 30.5,
+        "em": 10.5,
+        "accuracy_easy": 65.9,
+        "accuracy_medium": 39.4,
+        "accuracy_hard": 11.9
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 94,
+      "system": "mdp_v3",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 23.1,
+      "score_extra": {
+        "answer_rate": 93.4,
+        "precision": 24.8,
+        "em": 7.2,
+        "accuracy_easy": 86.8,
+        "accuracy_medium": 37.4,
+        "accuracy_hard": 11.3
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 95,
+      "system": "m1-mem-pa",
+      "agent": null,
+      "model_raw": [
+        "gpt5.1"
+      ],
+      "model_ids": [
+        "gpt-5.1"
+      ],
+      "model_config": null,
+      "score": 23.0,
+      "score_extra": {
+        "answer_rate": 98.3,
+        "precision": 23.4,
+        "em": 11.6,
+        "accuracy_easy": 65.8,
+        "accuracy_medium": 34.2,
+        "accuracy_hard": 14.4
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 96,
+      "system": "testing_re22",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 23.0,
+      "score_extra": {
+        "answer_rate": 76.2,
+        "precision": 30.2,
+        "em": 11.0,
+        "accuracy_easy": 54.8,
+        "accuracy_medium": 42.0,
+        "accuracy_hard": 11.4
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 97,
+      "system": "smp_v7",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 22.9,
+      "score_extra": {
+        "answer_rate": 85.6,
+        "precision": 26.7,
+        "em": 7.7,
+        "accuracy_easy": 80.3,
+        "accuracy_medium": 30.8,
+        "accuracy_hard": 14.6
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 98,
+      "system": "testing_re2",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 22.6,
+      "score_extra": {
+        "answer_rate": 74.0,
+        "precision": 30.5,
+        "em": 10.5,
+        "accuracy_easy": 65.8,
+        "accuracy_medium": 38.4,
+        "accuracy_hard": 11.6
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 99,
+      "system": "mdp_v2",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 22.6,
+      "score_extra": {
+        "answer_rate": 92.3,
+        "precision": 24.5,
+        "em": 6.6,
+        "accuracy_easy": 86.8,
+        "accuracy_medium": 34.5,
+        "accuracy_hard": 11.8
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 100,
+      "system": "testing_re17",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 22.6,
+      "score_extra": {
+        "answer_rate": 75.7,
+        "precision": 29.9,
+        "em": 11.0,
+        "accuracy_easy": 76.2,
+        "accuracy_medium": 38.2,
+        "accuracy_hard": 10.9
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 101,
+      "system": "RALM-Inst→CB (Claude)",
+      "agent": null,
+      "model_raw": [
+        "Claude-3.5-Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 22.5,
+      "score_extra": {
+        "answer_rate": 79.6,
+        "precision": 28.3,
+        "em": 8.3,
+        "accuracy_easy": 65.2,
+        "accuracy_medium": 40.1,
+        "accuracy_hard": 10.7
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "TAU NLP",
+      "row_url": null
+    },
+    {
+      "rank": 102,
+      "system": "tt_o1",
+      "agent": null,
+      "model_raw": [
+        "o1"
+      ],
+      "model_ids": [
+        "o1"
+      ],
+      "model_config": null,
+      "score": 22.5,
+      "score_extra": {
+        "answer_rate": 92.8,
+        "precision": 24.2,
+        "em": 9.9,
+        "accuracy_easy": 51.6,
+        "accuracy_medium": 34.6,
+        "accuracy_hard": 14.4
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 103,
+      "system": "testing_re4",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 22.5,
+      "score_extra": {
+        "answer_rate": 73.5,
+        "precision": 30.7,
+        "em": 9.9,
+        "accuracy_easy": 60.3,
+        "accuracy_medium": 40.5,
+        "accuracy_hard": 11.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 104,
+      "system": "testing_re5",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 22.4,
+      "score_extra": {
+        "answer_rate": 74.6,
+        "precision": 30.0,
+        "em": 10.5,
+        "accuracy_easy": 65.8,
+        "accuracy_medium": 38.1,
+        "accuracy_hard": 11.4
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 105,
+      "system": "re4",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 22.4,
+      "score_extra": {
+        "answer_rate": 74.6,
+        "precision": 30.1,
+        "em": 10.5,
+        "accuracy_easy": 65.8,
+        "accuracy_medium": 39.6,
+        "accuracy_hard": 10.8
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 106,
+      "system": "testing_re14",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 22.3,
+      "score_extra": {
+        "answer_rate": 74.6,
+        "precision": 29.9,
+        "em": 9.9,
+        "accuracy_easy": 65.1,
+        "accuracy_medium": 38.3,
+        "accuracy_hard": 11.3
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 107,
+      "system": "SeeAct→CB (Claude)",
+      "agent": null,
+      "model_raw": [
+        "Claude-3.5-Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 22.3,
+      "score_extra": {
+        "answer_rate": 76.2,
+        "precision": 29.3,
+        "em": 7.7,
+        "accuracy_easy": 87.4,
+        "accuracy_medium": 46.0,
+        "accuracy_hard": 5.8
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "TAU NLP",
+      "row_url": null
+    },
+    {
+      "rank": 108,
+      "system": "CB-1S",
+      "agent": null,
+      "model_raw": [
+        "GPT4-T"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 22.2,
+      "score_extra": {
+        "answer_rate": 89.5,
+        "precision": 24.8,
+        "em": 8.3,
+        "accuracy_easy": 82.1,
+        "accuracy_medium": 49.7,
+        "accuracy_hard": 4.2
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "TAU NLP",
+      "row_url": null
+    },
+    {
+      "rank": 109,
+      "system": "testing_re18",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 21.9,
+      "score_extra": {
+        "answer_rate": 72.9,
+        "precision": 30.0,
+        "em": 10.5,
+        "accuracy_easy": 65.8,
+        "accuracy_medium": 36.4,
+        "accuracy_hard": 11.4
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 110,
+      "system": "CB-1S (Claude)",
+      "agent": null,
+      "model_raw": [
+        "Claude-3.5-Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 21.9,
+      "score_extra": {
+        "answer_rate": 76.2,
+        "precision": 28.8,
+        "em": 6.6,
+        "accuracy_easy": 86.6,
+        "accuracy_medium": 47.9,
+        "accuracy_hard": 4.4
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "TAU NLP",
+      "row_url": null
+    },
+    {
+      "rank": 111,
+      "system": "testing_re13",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 21.7,
+      "score_extra": {
+        "answer_rate": 74.6,
+        "precision": 29.1,
+        "em": 9.4,
+        "accuracy_easy": 65.8,
+        "accuracy_medium": 35.3,
+        "accuracy_hard": 11.8
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 112,
+      "system": "m1",
+      "agent": null,
+      "model_raw": [
+        "gpt5.1"
+      ],
+      "model_ids": [
+        "gpt-5.1"
+      ],
+      "model_config": null,
+      "score": 21.7,
+      "score_extra": {
+        "answer_rate": 98.9,
+        "precision": 22.0,
+        "em": 10.5,
+        "accuracy_easy": 43.6,
+        "accuracy_medium": 31.5,
+        "accuracy_hard": 15.3
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "University of Central Florida",
+      "row_url": null
+    },
+    {
+      "rank": 113,
+      "system": "RALM-1S→CB (Claude)",
+      "agent": null,
+      "model_raw": [
+        "Claude-3.5-Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 21.6,
+      "score_extra": {
+        "answer_rate": 82.3,
+        "precision": 26.3,
+        "em": 6.6,
+        "accuracy_easy": 63.3,
+        "accuracy_medium": 40.0,
+        "accuracy_hard": 9.5
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "TAU NLP",
+      "row_url": null
+    },
+    {
+      "rank": 114,
+      "system": "testing_re16",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 21.6,
+      "score_extra": {
+        "answer_rate": 73.5,
+        "precision": 29.3,
+        "em": 9.4,
+        "accuracy_easy": 65.8,
+        "accuracy_medium": 35.3,
+        "accuracy_hard": 11.5
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 115,
+      "system": "testing_re21",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 21.5,
+      "score_extra": {
+        "answer_rate": 74.6,
+        "precision": 28.9,
+        "em": 10.5,
+        "accuracy_easy": 65.8,
+        "accuracy_medium": 35.4,
+        "accuracy_hard": 11.4
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 116,
+      "system": "testing_re15",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 21.5,
+      "score_extra": {
+        "answer_rate": 74.0,
+        "precision": 29.0,
+        "em": 9.4,
+        "accuracy_easy": 65.8,
+        "accuracy_medium": 35.6,
+        "accuracy_hard": 11.2
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 117,
+      "system": "testing_re11",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 21.4,
+      "score_extra": {
+        "answer_rate": 74.0,
+        "precision": 28.9,
+        "em": 9.9,
+        "accuracy_easy": 65.8,
+        "accuracy_medium": 36.3,
+        "accuracy_hard": 10.7
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 118,
+      "system": "testing_re9",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 21.4,
+      "score_extra": {
+        "answer_rate": 72.9,
+        "precision": 29.3,
+        "em": 8.3,
+        "accuracy_easy": 54.0,
+        "accuracy_medium": 35.1,
+        "accuracy_hard": 12.2
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 119,
+      "system": "test_submission_5",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 21.3,
+      "score_extra": {
+        "answer_rate": 95.0,
+        "precision": 22.4,
+        "em": 8.8,
+        "accuracy_easy": 61.8,
+        "accuracy_medium": 33.4,
+        "accuracy_hard": 12.4
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 120,
+      "system": "baseline_2",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 21.2,
+      "score_extra": {
+        "answer_rate": 100.0,
+        "precision": 21.2,
+        "em": 7.2,
+        "accuracy_easy": 69.5,
+        "accuracy_medium": 30.4,
+        "accuracy_hard": 13.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 121,
+      "system": "test_1",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 21.2,
+      "score_extra": {
+        "answer_rate": 93.9,
+        "precision": 22.5,
+        "em": 9.9,
+        "accuracy_easy": 61.4,
+        "accuracy_medium": 38.7,
+        "accuracy_hard": 9.6
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 122,
+      "system": "tt1",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 21.2,
+      "score_extra": {
+        "answer_rate": 93.9,
+        "precision": 22.5,
+        "em": 9.9,
+        "accuracy_easy": 61.4,
+        "accuracy_medium": 38.7,
+        "accuracy_hard": 9.6
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 123,
+      "system": "re8",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 21.0,
+      "score_extra": {
+        "answer_rate": 93.4,
+        "precision": 22.5,
+        "em": 7.2,
+        "accuracy_easy": 68.4,
+        "accuracy_medium": 36.1,
+        "accuracy_hard": 10.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 124,
+      "system": "tt3",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 21.0,
+      "score_extra": {
+        "answer_rate": 96.7,
+        "precision": 21.8,
+        "em": 7.2,
+        "accuracy_easy": 51.3,
+        "accuracy_medium": 29.1,
+        "accuracy_hard": 14.8
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 125,
+      "system": "test_submission_1",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 20.9,
+      "score_extra": {
+        "answer_rate": 83.4,
+        "precision": 25.0,
+        "em": 8.3,
+        "accuracy_easy": 56.7,
+        "accuracy_medium": 24.9,
+        "accuracy_hard": 16.1
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 126,
+      "system": "testing_re19",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 20.8,
+      "score_extra": {
+        "answer_rate": 74.0,
+        "precision": 28.1,
+        "em": 9.9,
+        "accuracy_easy": 71.4,
+        "accuracy_medium": 35.3,
+        "accuracy_hard": 9.9
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 127,
+      "system": "testing_re20",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 20.7,
+      "score_extra": {
+        "answer_rate": 72.4,
+        "precision": 28.6,
+        "em": 9.4,
+        "accuracy_easy": 54.7,
+        "accuracy_medium": 36.8,
+        "accuracy_hard": 10.2
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 128,
+      "system": "baseline",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 20.6,
+      "score_extra": {
+        "answer_rate": 100.0,
+        "precision": 20.6,
+        "em": 7.2,
+        "accuracy_easy": 68.9,
+        "accuracy_medium": 30.8,
+        "accuracy_hard": 12.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 129,
+      "system": "testing_re6",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 20.5,
+      "score_extra": {
+        "answer_rate": 69.6,
+        "precision": 29.5,
+        "em": 9.4,
+        "accuracy_easy": 76.2,
+        "accuracy_medium": 35.2,
+        "accuracy_hard": 9.1
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 130,
+      "system": "testing_re8",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 20.5,
+      "score_extra": {
+        "answer_rate": 74.6,
+        "precision": 27.5,
+        "em": 9.4,
+        "accuracy_easy": 71.4,
+        "accuracy_medium": 31.4,
+        "accuracy_hard": 11.3
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 131,
+      "system": "test-qwen-a2",
+      "agent": null,
+      "model_raw": [
+        "Qwen3-32B"
+      ],
+      "model_ids": [
+        "qwen3-32b"
+      ],
+      "model_config": null,
+      "score": 20.3,
+      "score_extra": {
+        "answer_rate": 97.8,
+        "precision": 20.7,
+        "em": 7.2,
+        "accuracy_easy": 65.8,
+        "accuracy_medium": 25.2,
+        "accuracy_hard": 14.4
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 132,
+      "system": "smpv2",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 20.3,
+      "score_extra": {
+        "answer_rate": 82.9,
+        "precision": 24.5,
+        "em": 8.8,
+        "accuracy_easy": 76.9,
+        "accuracy_medium": 30.0,
+        "accuracy_hard": 11.2
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 133,
+      "system": "re2",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 20.0,
+      "score_extra": {
+        "answer_rate": 69.6,
+        "precision": 28.8,
+        "em": 8.8,
+        "accuracy_easy": 65.8,
+        "accuracy_medium": 32.0,
+        "accuracy_hard": 10.7
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 134,
+      "system": "sf-2",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 19.9,
+      "score_extra": {
+        "answer_rate": 94.5,
+        "precision": 21.1,
+        "em": 7.2,
+        "accuracy_easy": 60.3,
+        "accuracy_medium": 32.2,
+        "accuracy_hard": 10.9
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 135,
+      "system": "testing_re3",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 19.9,
+      "score_extra": {
+        "answer_rate": 70.7,
+        "precision": 28.1,
+        "em": 9.4,
+        "accuracy_easy": 54.7,
+        "accuracy_medium": 32.3,
+        "accuracy_hard": 11.2
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 136,
+      "system": "sf",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 19.6,
+      "score_extra": {
+        "answer_rate": 94.5,
+        "precision": 20.7,
+        "em": 7.2,
+        "accuracy_easy": 60.3,
+        "accuracy_medium": 31.0,
+        "accuracy_hard": 10.9
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 137,
+      "system": "RALM-1S→CB",
+      "agent": null,
+      "model_raw": [
+        "GPT4-T"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 19.5,
+      "score_extra": {
+        "answer_rate": 92.8,
+        "precision": 21.0,
+        "em": 6.1,
+        "accuracy_easy": 81.3,
+        "accuracy_medium": 35.0,
+        "accuracy_hard": 7.3
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "TAU NLP",
+      "row_url": null
+    },
+    {
+      "rank": 138,
+      "system": "test_single_panel",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 19.5,
+      "score_extra": {
+        "answer_rate": 92.3,
+        "precision": 21.2,
+        "em": 6.1,
+        "accuracy_easy": 57.4,
+        "accuracy_medium": 33.7,
+        "accuracy_hard": 9.8
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 139,
+      "system": "re5",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 19.4,
+      "score_extra": {
+        "answer_rate": 95.0,
+        "precision": 20.4,
+        "em": 6.6,
+        "accuracy_easy": 63.7,
+        "accuracy_medium": 33.6,
+        "accuracy_hard": 9.2
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 140,
+      "system": "m1-llm-vmem (Qwen)",
+      "agent": null,
+      "model_raw": [
+        "Qwen3-32B"
+      ],
+      "model_ids": [
+        "qwen3-32b"
+      ],
+      "model_config": null,
+      "score": 19.1,
+      "score_extra": {
+        "answer_rate": 98.3,
+        "precision": 19.4,
+        "em": 7.2,
+        "accuracy_easy": 54.7,
+        "accuracy_medium": 24.8,
+        "accuracy_hard": 13.6
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 141,
+      "system": "test_submission_4",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 19.0,
+      "score_extra": {
+        "answer_rate": 89.5,
+        "precision": 21.2,
+        "em": 6.6,
+        "accuracy_easy": 62.2,
+        "accuracy_medium": 26.0,
+        "accuracy_hard": 12.3
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 142,
+      "system": "RALM-Inst→CB",
+      "agent": null,
+      "model_raw": [
+        "GPT4-T"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 18.7,
+      "score_extra": {
+        "answer_rate": 93.9,
+        "precision": 19.9,
+        "em": 6.6,
+        "accuracy_easy": 57.8,
+        "accuracy_medium": 34.7,
+        "accuracy_hard": 8.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "TAU NLP",
+      "row_url": null
+    },
+    {
+      "rank": 143,
+      "system": "re1",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 18.6,
+      "score_extra": {
+        "answer_rate": 70.2,
+        "precision": 26.6,
+        "em": 7.7,
+        "accuracy_easy": 49.3,
+        "accuracy_medium": 28.9,
+        "accuracy_hard": 11.3
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 144,
+      "system": "Gemma 4 31B M1",
+      "agent": null,
+      "model_raw": [
+        "Gemma 4 31B"
+      ],
+      "model_ids": [
+        "gemma-4-31b"
+      ],
+      "model_config": null,
+      "score": 18.5,
+      "score_extra": {
+        "answer_rate": 97.2,
+        "precision": 19.1,
+        "em": 6.1,
+        "accuracy_easy": 22.2,
+        "accuracy_medium": 31.0,
+        "accuracy_hard": 12.2
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 145,
+      "system": "m1-mem-pa (Qwen)",
+      "agent": null,
+      "model_raw": [
+        "Qwen3-32B"
+      ],
+      "model_ids": [
+        "qwen3-32b"
+      ],
+      "model_config": null,
+      "score": 18.5,
+      "score_extra": {
+        "answer_rate": 98.9,
+        "precision": 18.7,
+        "em": 6.6,
+        "accuracy_easy": 65.8,
+        "accuracy_medium": 27.4,
+        "accuracy_hard": 10.6
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 146,
+      "system": "SO_R1_Testing_agentic_claude",
+      "agent": null,
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 18.2,
+      "score_extra": {
+        "answer_rate": 100.0,
+        "precision": 18.2,
+        "em": 9.9,
+        "accuracy_easy": 34.4,
+        "accuracy_medium": 34.5,
+        "accuracy_hard": 9.1
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 147,
+      "system": "tt_o3",
+      "agent": null,
+      "model_raw": [
+        "o3-mini"
+      ],
+      "model_ids": [
+        "o3-mini"
+      ],
+      "model_config": null,
+      "score": 18.0,
+      "score_extra": {
+        "answer_rate": 87.3,
+        "precision": 20.6,
+        "em": 9.9,
+        "accuracy_easy": 46.3,
+        "accuracy_medium": 28.2,
+        "accuracy_hard": 10.9
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 148,
+      "system": "CB-Inst (Claude)",
+      "agent": null,
+      "model_raw": [
+        "Claude-3.5-Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 17.7,
+      "score_extra": {
+        "answer_rate": 69.1,
+        "precision": 25.6,
+        "em": 6.1,
+        "accuracy_easy": 82.2,
+        "accuracy_medium": 37.4,
+        "accuracy_hard": 3.2
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "TAU NLP",
+      "row_url": null
+    },
+    {
+      "rank": 149,
+      "system": "testing_re10",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 17.5,
+      "score_extra": {
+        "answer_rate": 70.2,
+        "precision": 25.0,
+        "em": 7.7,
+        "accuracy_easy": 44.4,
+        "accuracy_medium": 29.0,
+        "accuracy_hard": 9.9
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 150,
+      "system": "Gemma 4 Push",
+      "agent": null,
+      "model_raw": [
+        "Gemma 4"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 17.1,
+      "score_extra": {
+        "answer_rate": 95.6,
+        "precision": 17.9,
+        "em": 5.5,
+        "accuracy_easy": 20.8,
+        "accuracy_medium": 32.6,
+        "accuracy_hard": 9.3
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 151,
+      "system": "qwen3-32b-no-share-memory-team",
+      "agent": null,
+      "model_raw": [
+        "qwen/qwen3-32b"
+      ],
+      "model_ids": [
+        "qwen3-32b"
+      ],
+      "model_config": null,
+      "score": 16.8,
+      "score_extra": {
+        "answer_rate": 92.3,
+        "precision": 18.2,
+        "em": 5.5,
+        "accuracy_easy": 33.3,
+        "accuracy_medium": 29.0,
+        "accuracy_hard": 9.6
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://openrouter.ai/qwen/qwen3-32b"
+    },
+    {
+      "rank": 152,
+      "system": "Qwen3-32B-LTS",
+      "agent": null,
+      "model_raw": [
+        "Qwen3-32B"
+      ],
+      "model_ids": [
+        "qwen3-32b"
+      ],
+      "model_config": null,
+      "score": 16.6,
+      "score_extra": {
+        "answer_rate": 98.3,
+        "precision": 16.9,
+        "em": 4.4,
+        "accuracy_easy": 63.4,
+        "accuracy_medium": 24.0,
+        "accuracy_hard": 9.5
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 153,
+      "system": "lts-qwen3-32b",
+      "agent": null,
+      "model_raw": [
+        "Qwen3-32B"
+      ],
+      "model_ids": [
+        "qwen3-32b"
+      ],
+      "model_config": null,
+      "score": 16.6,
+      "score_extra": {
+        "answer_rate": 98.3,
+        "precision": 16.9,
+        "em": 4.4,
+        "accuracy_easy": 63.4,
+        "accuracy_medium": 24.0,
+        "accuracy_hard": 9.5
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 154,
+      "system": "CB-Inst",
+      "agent": null,
+      "model_raw": [
+        "GPT4-T"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 16.5,
+      "score_extra": {
+        "answer_rate": 53.6,
+        "precision": 30.7,
+        "em": 6.1,
+        "accuracy_easy": 51.2,
+        "accuracy_medium": 40.2,
+        "accuracy_hard": 2.3
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "TAU NLP",
+      "row_url": null
+    },
+    {
+      "rank": 155,
+      "system": "Gemma 4 push memory jun 30",
+      "agent": null,
+      "model_raw": [
+        "gemma4"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 16.2,
+      "score_extra": {
+        "answer_rate": 96.7,
+        "precision": 16.8,
+        "em": 7.2,
+        "accuracy_easy": 32.5,
+        "accuracy_medium": 29.1,
+        "accuracy_hard": 8.8
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 156,
+      "system": "qwen3-32b-share-memory-team",
+      "agent": null,
+      "model_raw": [
+        "qwen/qwen3-32b"
+      ],
+      "model_ids": [
+        "qwen3-32b"
+      ],
+      "model_config": null,
+      "score": 16.2,
+      "score_extra": {
+        "answer_rate": 93.4,
+        "precision": 17.3,
+        "em": 3.3,
+        "accuracy_easy": 37.2,
+        "accuracy_medium": 32.2,
+        "accuracy_hard": 6.8
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://openrouter.ai/qwen/qwen3-32b"
+    },
+    {
+      "rank": 157,
+      "system": "test-qwen-a1",
+      "agent": null,
+      "model_raw": [
+        "Qwen3-32B"
+      ],
+      "model_ids": [
+        "qwen3-32b"
+      ],
+      "model_config": null,
+      "score": 14.9,
+      "score_extra": {
+        "answer_rate": 98.3,
+        "precision": 15.2,
+        "em": 4.4,
+        "accuracy_easy": 49.1,
+        "accuracy_medium": 19.1,
+        "accuracy_hard": 10.2
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 158,
+      "system": "Gemma 4 LTS",
+      "agent": null,
+      "model_raw": [
+        "Gemma 4"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 14.8,
+      "score_extra": {
+        "answer_rate": 96.7,
+        "precision": 15.3,
+        "em": 5.5,
+        "accuracy_easy": 42.4,
+        "accuracy_medium": 22.7,
+        "accuracy_hard": 8.8
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 159,
+      "system": "gemma 4 push memory july 5",
+      "agent": null,
+      "model_raw": [
+        "gemma 4"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 14.7,
+      "score_extra": {
+        "answer_rate": 96.7,
+        "precision": 15.2,
+        "em": 7.2,
+        "accuracy_easy": 27.8,
+        "accuracy_medium": 28.5,
+        "accuracy_hard": 7.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 160,
+      "system": "m1-pa (Qwen)",
+      "agent": null,
+      "model_raw": [
+        "Qwen3-32B"
+      ],
+      "model_ids": [
+        "qwen3-32b"
+      ],
+      "model_config": null,
+      "score": 14.7,
+      "score_extra": {
+        "answer_rate": 99.4,
+        "precision": 14.8,
+        "em": 4.4,
+        "accuracy_easy": 52.6,
+        "accuracy_medium": 21.4,
+        "accuracy_hard": 8.5
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 161,
+      "system": "Infogent",
+      "agent": null,
+      "model_raw": [
+        "GPT4O"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 14.5,
+      "score_extra": {
+        "answer_rate": 71.3,
+        "precision": 20.4,
+        "em": 5.5,
+        "accuracy_easy": 63.9,
+        "accuracy_medium": 19.3,
+        "accuracy_hard": 8.4
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 162,
+      "system": "InfoGent-GPT4O",
+      "agent": null,
+      "model_raw": [
+        "GPT4O"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 14.5,
+      "score_extra": {
+        "answer_rate": 71.3,
+        "precision": 20.4,
+        "em": 5.5,
+        "accuracy_easy": 63.9,
+        "accuracy_medium": 19.3,
+        "accuracy_hard": 8.4
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 163,
+      "system": "ACP",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 14.2,
+      "score_extra": {
+        "answer_rate": 49.2,
+        "precision": 28.8,
+        "em": 5.5,
+        "accuracy_easy": 33.9,
+        "accuracy_medium": 24.3,
+        "accuracy_hard": 7.8
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 164,
+      "system": "m1 (Qwen)",
+      "agent": null,
+      "model_raw": [
+        "Qwen3-32B"
+      ],
+      "model_ids": [
+        "qwen3-32b"
+      ],
+      "model_config": null,
+      "score": 13.4,
+      "score_extra": {
+        "answer_rate": 98.3,
+        "precision": 13.7,
+        "em": 3.3,
+        "accuracy_easy": 53.1,
+        "accuracy_medium": 17.4,
+        "accuracy_hard": 8.5
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 165,
+      "system": "LTS repro v2",
+      "agent": null,
+      "model_raw": [
+        "Qwen3-32B"
+      ],
+      "model_ids": [
+        "qwen3-32b"
+      ],
+      "model_config": null,
+      "score": 13.1,
+      "score_extra": {
+        "answer_rate": 100.0,
+        "precision": 13.1,
+        "em": 5.5,
+        "accuracy_easy": 54.8,
+        "accuracy_medium": 20.4,
+        "accuracy_hard": 6.4
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 166,
+      "system": "SPA (Claude)",
+      "agent": null,
+      "model_raw": [
+        "Claude-3.5-Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 12.9,
+      "score_extra": {
+        "answer_rate": 34.3,
+        "precision": 37.7,
+        "em": 8.8,
+        "accuracy_easy": 11.1,
+        "accuracy_medium": 18.4,
+        "accuracy_hard": 10.4
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "TAU NLP",
+      "row_url": null
+    },
+    {
+      "rank": 167,
+      "system": "LTS repro",
+      "agent": null,
+      "model_raw": [
+        "Qwen3-32B"
+      ],
+      "model_ids": [
+        "qwen3-32b"
+      ],
+      "model_config": null,
+      "score": 12.8,
+      "score_extra": {
+        "answer_rate": 92.8,
+        "precision": 13.8,
+        "em": 5.5,
+        "accuracy_easy": 54.8,
+        "accuracy_medium": 20.4,
+        "accuracy_hard": 5.9
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 168,
+      "system": "Gemma 4 Push Memory",
+      "agent": null,
+      "model_raw": [
+        "Gemma 4"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 12.7,
+      "score_extra": {
+        "answer_rate": 97.2,
+        "precision": 13.0,
+        "em": 5.5,
+        "accuracy_easy": 16.7,
+        "accuracy_medium": 22.6,
+        "accuracy_hard": 7.6
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 169,
+      "system": "RALM-Inst",
+      "agent": null,
+      "model_raw": [
+        "GPT4-T"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 11.8,
+      "score_extra": {
+        "answer_rate": 60.2,
+        "precision": 19.5,
+        "em": 5.5,
+        "accuracy_easy": 50.2,
+        "accuracy_medium": 17.0,
+        "accuracy_hard": 6.2
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "TAU NLP",
+      "row_url": null
+    },
+    {
+      "rank": 170,
+      "system": "RALM-Inst (Claude)",
+      "agent": null,
+      "model_raw": [
+        "Claude-3.5-Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 11.5,
+      "score_extra": {
+        "answer_rate": 43.1,
+        "precision": 26.7,
+        "em": 5.0,
+        "accuracy_easy": 50.0,
+        "accuracy_medium": 11.2,
+        "accuracy_hard": 8.7
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "TAU NLP",
+      "row_url": null
+    },
+    {
+      "rank": 171,
+      "system": "GPT-4o test",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 11.3,
+      "score_extra": {
+        "answer_rate": 100.0,
+        "precision": 11.3,
+        "em": 3.3,
+        "accuracy_easy": 36.0,
+        "accuracy_medium": 24.7,
+        "accuracy_hard": 3.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 172,
+      "system": "GPT-4o",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 11.3,
+      "score_extra": {
+        "answer_rate": 100.0,
+        "precision": 11.3,
+        "em": 3.3,
+        "accuracy_easy": 36.0,
+        "accuracy_medium": 24.7,
+        "accuracy_hard": 3.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 173,
+      "system": "SPA",
+      "agent": null,
+      "model_raw": [
+        "GPT4-T"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 11.1,
+      "score_extra": {
+        "answer_rate": 35.9,
+        "precision": 30.9,
+        "em": 5.5,
+        "accuracy_easy": 29.5,
+        "accuracy_medium": 12.3,
+        "accuracy_hard": 9.1
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "TAU NLP",
+      "row_url": null
+    },
+    {
+      "rank": 174,
+      "system": "RALM-1S (Claude)",
+      "agent": null,
+      "model_raw": [
+        "Claude-3.5-Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 11.0,
+      "score_extra": {
+        "answer_rate": 42.5,
+        "precision": 25.9,
+        "em": 3.3,
+        "accuracy_easy": 35.5,
+        "accuracy_medium": 15.5,
+        "accuracy_hard": 6.9
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "TAU NLP",
+      "row_url": null
+    },
+    {
+      "rank": 175,
+      "system": "RALM-1S",
+      "agent": null,
+      "model_raw": [
+        "GPT4-T"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 10.7,
+      "score_extra": {
+        "answer_rate": 48.1,
+        "precision": 22.4,
+        "em": 3.9,
+        "accuracy_easy": 80.0,
+        "accuracy_medium": 10.5,
+        "accuracy_hard": 5.5
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "TAU NLP",
+      "row_url": null
+    },
+    {
+      "rank": 176,
+      "system": "AgentLab GenericAgent",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 4.8,
+      "score_extra": {
+        "answer_rate": 47.5,
+        "precision": 10.1,
+        "em": 1.1,
+        "accuracy_easy": 10.7,
+        "accuracy_medium": 9.8,
+        "accuracy_hard": 1.9
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "ServiceNow",
+      "row_url": "https://github.com/ServiceNow/AgentLab"
+    },
+    {
+      "rank": 177,
+      "system": "TestAgentLab",
+      "agent": null,
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 4.1,
+      "score_extra": {
+        "answer_rate": 10.5,
+        "precision": 38.8,
+        "em": 2.2,
+        "accuracy_easy": 8.1,
+        "accuracy_medium": 5.4,
+        "accuracy_hard": 3.1
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 178,
+      "system": "SeeAct",
+      "agent": null,
+      "model_raw": [
+        "GPT4-T"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 4.1,
+      "score_extra": {
+        "answer_rate": 15.5,
+        "precision": 26.3,
+        "em": 2.2,
+        "accuracy_easy": 28.9,
+        "accuracy_medium": 2.5,
+        "accuracy_hard": 2.9
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "TAU NLP",
+      "row_url": null
+    },
+    {
+      "rank": 179,
+      "system": "TestSeeAct2",
+      "agent": null,
+      "model_raw": [
+        "claude"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 2.7,
+      "score_extra": {
+        "answer_rate": 6.6,
+        "precision": 40.6,
+        "em": 1.7,
+        "accuracy_easy": 0.0,
+        "accuracy_medium": 3.6,
+        "accuracy_hard": 2.5
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 180,
+      "system": "SeeAct (Claude)",
+      "agent": null,
+      "model_raw": [
+        "Claude-3.5-Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 2.2,
+      "score_extra": {
+        "answer_rate": 13.8,
+        "precision": 15.8,
+        "em": 1.7,
+        "accuracy_easy": 11.1,
+        "accuracy_medium": 1.8,
+        "accuracy_hard": 1.7
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "TAU NLP",
+      "row_url": null
+    },
+    {
+      "rank": 181,
+      "system": "tt_claude",
+      "agent": null,
+      "model_raw": [
+        "claude-mega"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 1.2,
+      "score_extra": {
+        "answer_rate": 4.4,
+        "precision": 26.7,
+        "em": 0.6,
+        "accuracy_easy": 0.0,
+        "accuracy_medium": 1.8,
+        "accuracy_hard": 1.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 182,
+      "system": "tt_claude_new",
+      "agent": null,
+      "model_raw": [
+        "claude-mega"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 1.2,
+      "score_extra": {
+        "answer_rate": 4.4,
+        "precision": 26.7,
+        "em": 0.6,
+        "accuracy_easy": 0.0,
+        "accuracy_medium": 1.8,
+        "accuracy_hard": 1.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 183,
+      "system": "tt_new",
+      "agent": null,
+      "model_raw": [
+        "new"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 1.2,
+      "score_extra": {
+        "answer_rate": 5.0,
+        "precision": 23.7,
+        "em": 0.6,
+        "accuracy_easy": 0.0,
+        "accuracy_medium": 1.8,
+        "accuracy_hard": 1.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 184,
+      "system": "TestSeeAct",
+      "agent": null,
+      "model_raw": [
+        "claude"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 1.0,
+      "score_extra": {
+        "answer_rate": 1.7,
+        "precision": 60.0,
+        "em": 0.6,
+        "accuracy_easy": 0.0,
+        "accuracy_medium": 1.8,
+        "accuracy_hard": 0.7
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    }
+  ]
+}

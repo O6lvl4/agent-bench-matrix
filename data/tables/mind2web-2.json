@@ -1,0 +1,306 @@
+{
+  "id": "mind2web-2",
+  "family": "mind2web-2",
+  "name": "Mind2Web 2",
+  "board": "osu-nlp-group.github.io/Mind2Web-2",
+  "category": "research",
+  "measures_ja": "リアルタイムのウェブ検索と情報統合が必要な長い調査課題に、出典付きで正しく答えられるか(Agent-as-a-Judge で採点)。",
+  "tasks": 120,
+  "tasks_note": "全130タスクのうち、ボードは非公開テストセット120タスクの結果。",
+  "metric": "Success Rate",
+  "unit": "ratio",
+  "higher_is_better": true,
+  "harness_ja": "各社の Deep Research 製品などを運営または提出者が走らせ、課題ごとのルーブリックを持つ審査エージェントが自動採点する。",
+  "source": "https://osu-nlp-group.github.io/Mind2Web-2/",
+  "fetched": [
+    "https://osu-nlp-group.github.io/Mind2Web-2/leaderboard_data.json",
+    "https://osu-nlp-group.github.io/Mind2Web-2/static/js/leaderboard.js"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-05-17",
+  "snapshot": "sources/mind2web-2/leaderboard_data.json",
+  "paper": "https://arxiv.org/abs/2506.21506",
+  "repo": "https://github.com/OSU-NLP-Group/Mind2Web-2",
+  "notes_ja": "値は0〜1の比率。人間の参照行(成功率0.54)は含めていない。ボードは人間行を先頭に置いて番号を振るため、表示上の順位はここの rank より1大きい。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "QUEST-35B",
+      "agent": null,
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 0.305,
+      "score_extra": {
+        "partial_completion": 0.548,
+        "pass3": 0.454,
+        "answer_length": 968,
+        "type": "deep_research"
+      },
+      "date": "2026-05-17",
+      "verified": null,
+      "open_source": true,
+      "org": "OSU NLP Group",
+      "row_url": "https://osu-nlp-group.github.io/QUEST/"
+    },
+    {
+      "rank": 2,
+      "system": "OpenAI Deep Research",
+      "agent": null,
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 0.28,
+      "score_extra": {
+        "partial_completion": 0.54,
+        "pass3": 0.4,
+        "time_min": 8.4,
+        "answer_length": 559,
+        "type": "deep_research"
+      },
+      "date": "2025-06-26",
+      "verified": null,
+      "open_source": false,
+      "org": "OpenAI",
+      "row_url": "https://openai.com/index/introducing-deep-research/"
+    },
+    {
+      "rank": 3,
+      "system": "Tencent Youtu Deep Research",
+      "agent": null,
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 0.27,
+      "score_extra": {
+        "partial_completion": 0.6,
+        "answer_length": 805,
+        "type": "deep_research"
+      },
+      "date": "2025-10-23",
+      "verified": null,
+      "open_source": false,
+      "org": "Tencent Youtu",
+      "row_url": "https://open.youtu.qq.com/"
+    },
+    {
+      "rank": 4,
+      "system": "Grok DeeperSearch",
+      "agent": null,
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 0.27,
+      "score_extra": {
+        "partial_completion": 0.52,
+        "pass3": 0.4,
+        "time_min": 5.72,
+        "answer_length": 1362,
+        "type": "deep_research"
+      },
+      "date": "2025-06-26",
+      "verified": null,
+      "open_source": false,
+      "org": "xAI",
+      "row_url": "https://x.ai/news/grok-3"
+    },
+    {
+      "rank": 5,
+      "system": "TongAgents",
+      "agent": null,
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 0.2501,
+      "score_extra": {
+        "partial_completion": 0.5274,
+        "pass3": 0.3782,
+        "answer_length": 217,
+        "type": "interactive_agent"
+      },
+      "date": "2026-02-11",
+      "verified": null,
+      "open_source": null,
+      "org": "BIGAI",
+      "row_url": "https://tongagents.mybigai.ac.cn/docs/Tong-Agent/"
+    },
+    {
+      "rank": 6,
+      "system": "Gemini Deep Research",
+      "agent": null,
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 0.18,
+      "score_extra": {
+        "partial_completion": 0.45,
+        "pass3": 0.3,
+        "time_min": 7.38,
+        "answer_length": 3357,
+        "type": "deep_research"
+      },
+      "date": "2025-06-26",
+      "verified": null,
+      "open_source": false,
+      "org": "Google DeepMind",
+      "row_url": "https://gemini.google/overview/deep-research/"
+    },
+    {
+      "rank": 7,
+      "system": "Grok DeepSearch",
+      "agent": null,
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 0.18,
+      "score_extra": {
+        "partial_completion": 0.4,
+        "pass3": 0.36,
+        "time_min": 2.58,
+        "answer_length": 1428,
+        "type": "deep_research"
+      },
+      "date": "2025-06-26",
+      "verified": null,
+      "open_source": false,
+      "org": "xAI",
+      "row_url": "https://x.ai/news/grok-3"
+    },
+    {
+      "rank": 8,
+      "system": "Perplexity Deep Research",
+      "agent": null,
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 0.15,
+      "score_extra": {
+        "partial_completion": 0.42,
+        "pass3": 0.26,
+        "time_min": 5.67,
+        "answer_length": 585,
+        "type": "deep_research"
+      },
+      "date": "2025-06-26",
+      "verified": null,
+      "open_source": false,
+      "org": "Perplexity AI",
+      "row_url": "https://www.perplexity.ai/hub/blog/introducing-perplexity-deep-research"
+    },
+    {
+      "rank": 9,
+      "system": "HF Open Deep Research (w/ o3)",
+      "agent": null,
+      "model_raw": [
+        "o3"
+      ],
+      "model_ids": [
+        "o3"
+      ],
+      "model_config": null,
+      "score": 0.11,
+      "score_extra": {
+        "partial_completion": 0.26,
+        "pass3": 0.18,
+        "time_min": 13.65,
+        "answer_length": 209,
+        "type": "deep_research"
+      },
+      "date": "2025-06-26",
+      "verified": null,
+      "open_source": true,
+      "org": "Hugging Face",
+      "row_url": "https://huggingface.co/blog/open-deep-research"
+    },
+    {
+      "rank": 10,
+      "system": "OpenAI Operator",
+      "agent": null,
+      "model_raw": [
+        "CUA"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 0.1,
+      "score_extra": {
+        "partial_completion": 0.26,
+        "pass3": 0.17,
+        "time_min": 9.74,
+        "answer_length": 160,
+        "type": "interactive_agent"
+      },
+      "date": "2025-06-26",
+      "verified": null,
+      "open_source": false,
+      "org": "OpenAI",
+      "row_url": "https://openai.com/index/introducing-operator/"
+    },
+    {
+      "rank": 11,
+      "system": "Claude Research",
+      "agent": null,
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 0.1,
+      "score_extra": {
+        "partial_completion": 0.32,
+        "pass3": 0.19,
+        "time_min": 7.39,
+        "answer_length": 742,
+        "type": "deep_research"
+      },
+      "date": "2025-07-03",
+      "verified": null,
+      "open_source": false,
+      "org": "Anthropic",
+      "row_url": "https://www.anthropic.com/news/research"
+    },
+    {
+      "rank": 12,
+      "system": "Perplexity Pro Search",
+      "agent": null,
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 0.08,
+      "score_extra": {
+        "partial_completion": 0.28,
+        "pass3": 0.12,
+        "answer_length": 408,
+        "type": "search_llm",
+        "time_min_text": "<1"
+      },
+      "date": "2025-06-26",
+      "verified": null,
+      "open_source": false,
+      "org": "Perplexity AI",
+      "row_url": "https://www.perplexity.ai/hub/blog/pro-search-upgraded-for-more-advanced-problem-solving"
+    },
+    {
+      "rank": 13,
+      "system": "ChatGPT Search",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 0.06,
+      "score_extra": {
+        "partial_completion": 0.26,
+        "pass3": 0.11,
+        "answer_length": 314,
+        "type": "search_llm",
+        "time_min_text": "<1"
+      },
+      "date": "2025-06-26",
+      "verified": null,
+      "open_source": false,
+      "org": "OpenAI",
+      "row_url": "https://openai.com/index/introducing-chatgpt-search/"
+    }
+  ]
+}

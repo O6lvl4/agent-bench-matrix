@@ -1,0 +1,2666 @@
+{
+ "headers": [
+  {
+   "benchmarkVersion": {
+    "id": 35,
+    "benchmarkId": 49,
+    "versionNumber": 1,
+    "name": "BrowseComp",
+    "description": "A benchmark for measuring the ability of agents on tasks that benefit from browsing the web.",
+    "citation": {
+     "authors": "Jason Wei, Zhiqing Sun, Spencer Papay, Scott McKinney, Jeffrey Han, Isa Fulford, Hyung Won Chung, Alex Tachard Passos, William Fedus, Amelia Glaese",
+     "title": "BrowseComp: A Simple Yet Challenging Benchmark for Browsing Agents",
+     "url": "https://arxiv.org/abs/2504.12516",
+     "year": "2025",
+     "organizations": "OpenAI"
+    },
+    "published": true,
+    "taskVersion": {
+     "id": 26,
+     "taskId": 40,
+     "versionNumber": 1,
+     "name": "Score",
+     "ownerUser": {
+      "displayName": "aminmohamedmohami",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/aminmohamedmohami",
+      "userName": "aminmohamedmohami",
+      "tier": "STAFF",
+      "id": 17259418,
+      "profileUrl": "/aminmohamedmohami",
+      "performanceTier": "STAFF",
+      "userId": 17259418,
+      "progressionOptOut": false
+     },
+     "type": "BENCHMARK_TASK_TYPE_BENCHMARK",
+     "isPublic": true,
+     "displayType": "PERCENTAGES",
+     "createTime": "2025-06-04T19:35:05.393333300Z",
+     "precision": 1,
+     "sortOrder": "DESCENDING",
+     "source": "WEB",
+     "runAggregation": "BENCHMARK_TASK_RUN_AGGREGATION_LATEST",
+     "candidateType": "BENCHMARK_CANDIDATE_TYPE_MODEL_VERSIONS"
+    },
+    "publishTime": "2025-07-15T14:25:30.827974100Z",
+    "updateTime": "2026-03-26T07:00:41.089714400Z",
+    "benchmarkModelVersionMappingsCount": 45,
+    "type": "INDIVIDUAL",
+    "organization": {
+     "name": "OpenAI",
+     "id": 5089,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/5089/thumbnail.png?t=2025-08-14-19-21-59",
+     "slug": "openai"
+    },
+    "url": "/benchmarks/openai/browsecomp/versions/1",
+    "childTaskVersionMappingsCount": 0,
+    "slug": "browsecomp",
+    "ownerUser": {
+     "displayName": "aminmohamedmohami",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/aminmohamedmohami",
+     "userName": "aminmohamedmohami",
+     "tier": "STAFF",
+     "id": 17259418,
+     "profileUrl": "/aminmohamedmohami",
+     "performanceTier": "STAFF",
+     "userId": 17259418,
+     "progressionOptOut": false
+    },
+    "createTime": "2025-06-04T19:35:05.396666700Z",
+    "maintenanceLevel": "KAGGLE_MAINTAINED",
+    "leaderboardModelVersionsCount": 42
+   },
+   "taskVersion": {
+    "id": 26,
+    "taskId": 40,
+    "versionNumber": 1,
+    "name": "Score",
+    "ownerUser": {
+     "displayName": "aminmohamedmohami",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/aminmohamedmohami",
+     "userName": "aminmohamedmohami",
+     "tier": "STAFF",
+     "id": 17259418,
+     "profileUrl": "/aminmohamedmohami",
+     "performanceTier": "STAFF",
+     "userId": 17259418,
+     "progressionOptOut": false
+    },
+    "type": "BENCHMARK_TASK_TYPE_BENCHMARK",
+    "isPublic": true,
+    "displayType": "PERCENTAGES",
+    "createTime": "2025-06-04T19:35:05.393333300Z",
+    "precision": 1,
+    "sortOrder": "DESCENDING",
+    "source": "WEB",
+    "runAggregation": "BENCHMARK_TASK_RUN_AGGREGATION_LATEST",
+    "candidateType": "BENCHMARK_CANDIDATE_TYPE_MODEL_VERSIONS"
+   },
+   "taskVersionMapping": {
+    "parentTaskVersionId": 26,
+    "childTaskVersionId": 26,
+    "type": "BENCHMARK_TASK_VERSION_MAPPING_TYPE_PRINCIPAL",
+    "priority": 2147483647,
+    "displayType": "PERCENTAGES",
+    "precision": 1,
+    "sortOrder": "DESCENDING"
+   }
+  }
+ ],
+ "rows": [
+  {
+   "modelVersion": {
+    "id": 100,
+    "benchmarkModelId": 102,
+    "slug": "gemini-3.1-pro-preview",
+    "externalUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/",
+    "knowledgeCutoff": "2025-01-31T08:00:00Z",
+    "isDefault": true,
+    "published": true,
+    "allowModelProxy": true,
+    "modelProxySlug": "google/gemini-3.1-pro-preview",
+    "displayName": "Gemini 3.1 Pro Preview",
+    "organization": {
+     "name": "Google",
+     "id": 855,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/855/thumbnail.png",
+     "slug": "google"
+    },
+    "name": "Gemini 3.1 Pro Preview",
+    "license": {
+     "id": 50,
+     "name": "Proprietary",
+     "agreementRequired": false
+    },
+    "importanceLevel": "CORE",
+    "inputModalities": [
+     "MODALITY_TEXT",
+     "MODALITY_IMAGE",
+     "MODALITY_VIDEO",
+     "MODALITY_AUDIO"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "Google",
+    "id": 855,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/855/thumbnail.png",
+    "slug": "google"
+   },
+   "modelLicense": {
+    "id": 50,
+    "name": "Proprietary",
+    "agreementRequired": false
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.3118536197295147,
+      "confidenceInterval": 0.0256092147347973
+     },
+     "evaluationDate": "2026-03-25T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 11263,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 100,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2026-03-26T07:00:14.750Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 64,
+    "benchmarkModelId": 59,
+    "slug": "gpt-5-2025-08-07",
+    "externalUrl": "https://platform.openai.com/docs/models/gpt-5",
+    "knowledgeCutoff": "2024-09-30T22:00:00Z",
+    "isDefault": true,
+    "published": true,
+    "allowModelProxy": true,
+    "modelProxySlug": "openai/gpt-5-2025-08-07",
+    "displayName": "GPT-5",
+    "organization": {
+     "name": "OpenAI",
+     "id": 5089,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/5089/thumbnail.png?t=2025-08-14-19-21-59",
+     "slug": "openai"
+    },
+    "name": "GPT-5",
+    "license": {
+     "id": 50,
+     "name": "Proprietary",
+     "agreementRequired": false
+    },
+    "inputModalities": [
+     "MODALITY_TEXT",
+     "MODALITY_IMAGE"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "OpenAI",
+    "id": 5089,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/5089/thumbnail.png?t=2025-08-14-19-21-59",
+    "slug": "openai"
+   },
+   "modelLicense": {
+    "id": 50,
+    "name": "Proprietary",
+    "agreementRequired": false
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.2006319115323854,
+      "confidenceInterval": 0.0220599562632808
+     },
+     "evaluationDate": "2025-08-26T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 3515,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 64,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2025-08-27T17:19:31.210Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 87,
+    "benchmarkModelId": 83,
+    "slug": "gemini-3-flash-preview",
+    "externalUrl": "https://blog.google/products-and-platforms/products/gemini/gemini-3-flash/",
+    "isDefault": true,
+    "published": true,
+    "allowModelProxy": true,
+    "modelProxySlug": "google/gemini-3-flash-preview",
+    "displayName": "Gemini 3 Flash Preview",
+    "organization": {
+     "name": "Google",
+     "id": 855,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/855/thumbnail.png",
+     "slug": "google"
+    },
+    "name": "Gemini 3 Flash Preview",
+    "license": {
+     "id": 50,
+     "name": "Proprietary",
+     "agreementRequired": false
+    },
+    "inputModalities": [
+     "MODALITY_TEXT",
+     "MODALITY_IMAGE",
+     "MODALITY_VIDEO",
+     "MODALITY_AUDIO"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "Google",
+    "id": 855,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/855/thumbnail.png",
+    "slug": "google"
+   },
+   "modelLicense": {
+    "id": 50,
+    "name": "Proprietary",
+    "agreementRequired": false
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.1691699604743083,
+      "confidenceInterval": 0.0206595352448205
+     },
+     "evaluationDate": "2026-03-23T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 11265,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 87,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2026-03-26T07:00:14.770Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 47,
+    "benchmarkModelId": 7,
+    "slug": "gemini-2.5-pro-preview-06-05",
+    "externalUrl": "https://www.kaggle.com/models/google/gemini-2.5-pro-api",
+    "knowledgeCutoff": "2025-01-01T00:00:00Z",
+    "isDefault": true,
+    "published": true,
+    "displayName": "Gemini 2.5 Pro Preview",
+    "organization": {
+     "name": "Google",
+     "id": 855,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/855/thumbnail.png",
+     "slug": "google"
+    },
+    "name": "Gemini 2.5 Pro Preview",
+    "license": {
+     "id": 50,
+     "name": "Proprietary",
+     "agreementRequired": false
+    },
+    "inputModalities": [
+     "MODALITY_TEXT",
+     "MODALITY_IMAGE",
+     "MODALITY_VIDEO",
+     "MODALITY_AUDIO"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "Google",
+    "id": 855,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/855/thumbnail.png",
+    "slug": "google"
+   },
+   "modelLicense": {
+    "id": 50,
+    "name": "Proprietary",
+    "agreementRequired": false
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.0781990521327014,
+      "confidenceInterval": 0.0147894000891353
+     },
+     "evaluationDate": "2025-06-13T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 862,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 47,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2025-06-13T13:21:14.600Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 11,
+    "benchmarkModelId": 11,
+    "slug": "o1-2024-12-17",
+    "externalUrl": "https://platform.openai.com/docs/models/o1",
+    "knowledgeCutoff": "2023-09-30T04:00:00Z",
+    "isDefault": true,
+    "published": true,
+    "displayName": "o1",
+    "organization": {
+     "name": "OpenAI",
+     "id": 5089,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/5089/thumbnail.png?t=2025-08-14-19-21-59",
+     "slug": "openai"
+    },
+    "name": "o1",
+    "license": {
+     "id": 50,
+     "name": "Proprietary",
+     "agreementRequired": false
+    },
+    "inputModalities": [
+     "MODALITY_TEXT",
+     "MODALITY_IMAGE"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "OpenAI",
+    "id": 5089,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/5089/thumbnail.png?t=2025-08-14-19-21-59",
+    "slug": "openai"
+   },
+   "modelLicense": {
+    "id": 50,
+    "name": "Proprietary",
+    "agreementRequired": false
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.0631911532385466,
+      "confidenceInterval": 0.0134024708249485
+     },
+     "evaluationDate": "2025-06-13T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 770,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 11,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2025-06-11T17:27:58.763333300Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 33,
+    "benchmarkModelId": 33,
+    "slug": "gpt-4.1-2025-04-14",
+    "externalUrl": "https://platform.openai.com/docs/models/gpt-4.1",
+    "knowledgeCutoff": "2024-05-31T04:00:00Z",
+    "isDefault": true,
+    "published": true,
+    "allowModelProxy": true,
+    "modelProxySlug": "openai/gpt-4.1-2025-04-14",
+    "displayName": "GPT-4.1",
+    "organization": {
+     "name": "OpenAI",
+     "id": 5089,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/5089/thumbnail.png?t=2025-08-14-19-21-59",
+     "slug": "openai"
+    },
+    "name": "GPT-4.1",
+    "license": {
+     "id": 50,
+     "name": "Proprietary",
+     "agreementRequired": false
+    },
+    "inputModalities": [
+     "MODALITY_TEXT",
+     "MODALITY_IMAGE"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "OpenAI",
+    "id": 5089,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/5089/thumbnail.png?t=2025-08-14-19-21-59",
+    "slug": "openai"
+   },
+   "modelLicense": {
+    "id": 50,
+    "name": "Proprietary",
+    "agreementRequired": false
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.0355450236966824,
+      "confidenceInterval": 0.0101990946312181
+     },
+     "evaluationDate": "2025-06-13T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 745,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 33,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2025-06-11T17:27:58.743333300Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 31,
+    "benchmarkModelId": 31,
+    "slug": "o4-mini-2025-04-16",
+    "externalUrl": "https://platform.openai.com/docs/models/o4-mini",
+    "knowledgeCutoff": "2024-05-31T04:00:00Z",
+    "isDefault": true,
+    "published": true,
+    "allowModelProxy": true,
+    "modelProxySlug": "openai/o4-mini-2025-04-16",
+    "displayName": "o4 mini",
+    "organization": {
+     "name": "OpenAI",
+     "id": 5089,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/5089/thumbnail.png?t=2025-08-14-19-21-59",
+     "slug": "openai"
+    },
+    "name": "o4 mini",
+    "license": {
+     "id": 50,
+     "name": "Proprietary",
+     "agreementRequired": false
+    },
+    "inputModalities": [
+     "MODALITY_TEXT",
+     "MODALITY_IMAGE"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "OpenAI",
+    "id": 5089,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/5089/thumbnail.png?t=2025-08-14-19-21-59",
+    "slug": "openai"
+   },
+   "modelLicense": {
+    "id": 50,
+    "name": "Proprietary",
+    "agreementRequired": false
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.0331753554502369,
+      "confidenceInterval": 0.0098653588357216
+     },
+     "evaluationDate": "2025-06-13T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 747,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 31,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2025-06-11T17:27:58.746666700Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 48,
+    "benchmarkModelId": 26,
+    "slug": "deepseek-r1-0528",
+    "externalUrl": "https://api-docs.deepseek.com/news/news250528",
+    "knowledgeCutoff": "2025-01-01T00:00:00Z",
+    "isDefault": true,
+    "published": true,
+    "allowModelProxy": true,
+    "modelProxySlug": "deepseek-ai/deepseek-r1-0528",
+    "displayName": "DeepSeek-R1",
+    "organization": {
+     "name": "DeepSeek",
+     "id": 4582,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/4582/thumbnail.png",
+     "slug": "deepseek-ai"
+    },
+    "name": "DeepSeek-R1",
+    "license": {
+     "id": 48,
+     "name": "DeepSeek License Agreement",
+     "url": "https://github.com/deepseek-ai/DeepSeek-V3/blob/main/LICENSE-MODEL",
+     "agreementRequired": false
+    },
+    "importanceLevel": "CORE",
+    "inputModalities": [
+     "MODALITY_TEXT"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "DeepSeek",
+    "id": 4582,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/4582/thumbnail.png",
+    "slug": "deepseek-ai"
+   },
+   "modelLicense": {
+    "id": 48,
+    "name": "DeepSeek License Agreement",
+    "url": "https://github.com/deepseek-ai/DeepSeek-V3/blob/main/LICENSE-MODEL",
+    "agreementRequired": false
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.0308056872037914,
+      "confidenceInterval": 0.009518140634117
+     },
+     "evaluationDate": "2025-07-02T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 2647,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 48,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2025-07-02T16:08:37.473333300Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 70,
+    "benchmarkModelId": 65,
+    "slug": "deepseek-v3.1",
+    "externalUrl": "https://api-docs.deepseek.com/news/news250821",
+    "knowledgeCutoff": "2025-07-01T04:00:00Z",
+    "isDefault": true,
+    "published": true,
+    "allowModelProxy": true,
+    "modelProxySlug": "deepseek-ai/deepseek-v3.1",
+    "displayName": "",
+    "organization": {
+     "name": "DeepSeek",
+     "id": 4582,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/4582/thumbnail.png",
+     "slug": "deepseek-ai"
+    },
+    "name": "Deepseek V3.1",
+    "license": {
+     "id": 48,
+     "name": "DeepSeek License Agreement",
+     "url": "https://github.com/deepseek-ai/DeepSeek-V3/blob/main/LICENSE-MODEL",
+     "agreementRequired": false
+    },
+    "inputModalities": [
+     "MODALITY_TEXT"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "DeepSeek",
+    "id": 4582,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/4582/thumbnail.png",
+    "slug": "deepseek-ai"
+   },
+   "modelLicense": {
+    "id": 48,
+    "name": "DeepSeek License Agreement",
+    "url": "https://github.com/deepseek-ai/DeepSeek-V3/blob/main/LICENSE-MODEL",
+    "agreementRequired": false
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.026066350710900472,
+      "confidenceInterval": 0.008776796739938603
+     },
+     "evaluationDate": "2025-08-27T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 3354,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 70,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2025-08-27T15:43:16.563333300Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 30,
+    "benchmarkModelId": 30,
+    "slug": "gemini-2.5-flash-preview-05-20",
+    "externalUrl": "https://www.kaggle.com/models/google/gemini-2.5-flash-api",
+    "knowledgeCutoff": "2025-01-01T05:00:00Z",
+    "isDefault": true,
+    "published": true,
+    "displayName": "Gemini 2.5 Flash Preview",
+    "organization": {
+     "name": "Google",
+     "id": 855,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/855/thumbnail.png",
+     "slug": "google"
+    },
+    "name": "Gemini 2.5 Flash Preview",
+    "license": {
+     "id": 50,
+     "name": "Proprietary",
+     "agreementRequired": false
+    },
+    "inputModalities": [
+     "MODALITY_TEXT",
+     "MODALITY_IMAGE",
+     "MODALITY_VIDEO",
+     "MODALITY_AUDIO"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "Google",
+    "id": 855,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/855/thumbnail.png",
+    "slug": "google"
+   },
+   "modelLicense": {
+    "id": 50,
+    "name": "Proprietary",
+    "agreementRequired": false
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.0252764612954186,
+      "confidenceInterval": 0.0086462960454222
+     },
+     "evaluationDate": "2025-06-13T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 748,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 30,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2025-06-11T17:27:58.746666700Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 46,
+    "benchmarkModelId": 46,
+    "slug": "grok-3-mini",
+    "externalUrl": "https://x.ai/api",
+    "knowledgeCutoff": "2024-11-17T05:00:00Z",
+    "isDefault": true,
+    "published": true,
+    "displayName": "Grok 3 Mini",
+    "organization": {
+     "name": "xAI",
+     "id": 3986,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/3986/thumbnail.png?t=2025-02-25-17-16-11",
+     "slug": "xai"
+    },
+    "name": "Grok 3 Mini",
+    "license": {
+     "id": 50,
+     "name": "Proprietary",
+     "agreementRequired": false
+    },
+    "inputModalities": [
+     "MODALITY_TEXT"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "xAI",
+    "id": 3986,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/3986/thumbnail.png?t=2025-02-25-17-16-11",
+    "slug": "xai"
+   },
+   "modelLicense": {
+    "id": 50,
+    "name": "Proprietary",
+    "agreementRequired": false
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.0173775671406003,
+      "confidenceInterval": 0.0071981196780867
+     },
+     "evaluationDate": "2025-06-13T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 864,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 46,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2025-06-13T13:21:14.600Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 65,
+    "benchmarkModelId": 60,
+    "slug": "gpt-oss-120b",
+    "externalUrl": "https://openai.com/index/introducing-gpt-oss/",
+    "knowledgeCutoff": "2024-06-01T04:00:00Z",
+    "isDefault": true,
+    "published": true,
+    "allowModelProxy": true,
+    "modelProxySlug": "openai/gpt-oss-120b",
+    "displayName": "gpt-oss-120b",
+    "description": "state-of-the-art open-weight language models that deliver strong real-world performance at low cost.",
+    "organization": {
+     "name": "OpenAI",
+     "id": 5089,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/5089/thumbnail.png?t=2025-08-14-19-21-59",
+     "slug": "openai"
+    },
+    "name": "gpt-oss-120b",
+    "license": {
+     "id": 30,
+     "name": "Apache 2.0",
+     "url": "https://www.apache.org/licenses/LICENSE-2.0",
+     "agreementRequired": false
+    },
+    "importanceLevel": "CORE",
+    "inputModalities": [
+     "MODALITY_TEXT"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "OpenAI",
+    "id": 5089,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/5089/thumbnail.png?t=2025-08-14-19-21-59",
+    "slug": "openai"
+   },
+   "modelLicense": {
+    "id": 30,
+    "name": "Apache 2.0",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "agreementRequired": false
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.0157977883096366,
+      "confidenceInterval": 0.00686865260213
+     },
+     "evaluationDate": "2025-08-21T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 3269,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 65,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2025-08-25T21:55:03.916666700Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 9,
+    "benchmarkModelId": 9,
+    "slug": "o3-mini-2025-01-31",
+    "externalUrl": "https://platform.openai.com/docs/models/o3-mini",
+    "knowledgeCutoff": "2023-09-30T04:00:00Z",
+    "isDefault": true,
+    "published": true,
+    "displayName": "o3 mini",
+    "organization": {
+     "name": "OpenAI",
+     "id": 5089,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/5089/thumbnail.png?t=2025-08-14-19-21-59",
+     "slug": "openai"
+    },
+    "name": "o3 mini",
+    "license": {
+     "id": 50,
+     "name": "Proprietary",
+     "agreementRequired": false
+    },
+    "inputModalities": [
+     "MODALITY_TEXT"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "OpenAI",
+    "id": 5089,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/5089/thumbnail.png?t=2025-08-14-19-21-59",
+    "slug": "openai"
+   },
+   "modelLicense": {
+    "id": 50,
+    "name": "Proprietary",
+    "agreementRequired": false
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.0150078988941548,
+      "confidenceInterval": 0.0066974203856263
+     },
+     "evaluationDate": "2025-06-13T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 744,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 9,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2025-06-11T17:27:58.730Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 25,
+    "benchmarkModelId": 25,
+    "slug": "deepseek-v3",
+    "externalUrl": "https://www.kaggle.com/models/deepseek-ai/deepseek-v3",
+    "knowledgeCutoff": "2024-06-01T04:00:00Z",
+    "isDefault": true,
+    "published": true,
+    "displayName": "DeepSeek-V3",
+    "organization": {
+     "name": "DeepSeek",
+     "id": 4582,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/4582/thumbnail.png",
+     "slug": "deepseek-ai"
+    },
+    "name": "DeepSeek-V3",
+    "license": {
+     "id": 48,
+     "name": "DeepSeek License Agreement",
+     "url": "https://github.com/deepseek-ai/DeepSeek-V3/blob/main/LICENSE-MODEL",
+     "agreementRequired": false
+    },
+    "inputModalities": [
+     "MODALITY_TEXT"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "DeepSeek",
+    "id": 4582,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/4582/thumbnail.png",
+    "slug": "deepseek-ai"
+   },
+   "modelLicense": {
+    "id": 48,
+    "name": "DeepSeek License Agreement",
+    "url": "https://github.com/deepseek-ai/DeepSeek-V3/blob/main/LICENSE-MODEL",
+    "agreementRequired": false
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.0126382306477093,
+      "confidenceInterval": 0.0061533629224853
+     },
+     "evaluationDate": "2025-06-13T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 2646,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 25,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2025-07-02T14:44:46.326666700Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 45,
+    "benchmarkModelId": 45,
+    "slug": "grok-3",
+    "externalUrl": "https://x.ai/api",
+    "knowledgeCutoff": "2024-11-17T05:00:00Z",
+    "isDefault": true,
+    "published": true,
+    "displayName": "Grok 3",
+    "organization": {
+     "name": "xAI",
+     "id": 3986,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/3986/thumbnail.png?t=2025-02-25-17-16-11",
+     "slug": "xai"
+    },
+    "name": "Grok 3",
+    "license": {
+     "id": 50,
+     "name": "Proprietary",
+     "agreementRequired": false
+    },
+    "inputModalities": [
+     "MODALITY_TEXT"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "xAI",
+    "id": 3986,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/3986/thumbnail.png?t=2025-02-25-17-16-11",
+    "slug": "xai"
+   },
+   "modelLicense": {
+    "id": 50,
+    "name": "Proprietary",
+    "agreementRequired": false
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.0126382306477093,
+      "confidenceInterval": 0.0061533629224853
+     },
+     "evaluationDate": "2025-06-13T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 863,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 45,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2025-06-13T13:21:14.600Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 66,
+    "benchmarkModelId": 61,
+    "slug": "gpt-oss-20b",
+    "externalUrl": "https://platform.openai.com/docs/models/gpt-oss-20b",
+    "knowledgeCutoff": "2024-06-01T04:00:00Z",
+    "isDefault": true,
+    "published": true,
+    "allowModelProxy": true,
+    "modelProxySlug": "openai/gpt-oss-20b",
+    "displayName": "",
+    "organization": {
+     "name": "OpenAI",
+     "id": 5089,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/5089/thumbnail.png?t=2025-08-14-19-21-59",
+     "slug": "openai"
+    },
+    "name": "gpt-oss-20b",
+    "license": {
+     "id": 30,
+     "name": "Apache 2.0",
+     "url": "https://www.apache.org/licenses/LICENSE-2.0",
+     "agreementRequired": false
+    },
+    "importanceLevel": "CORE",
+    "inputModalities": [
+     "MODALITY_TEXT"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "OpenAI",
+    "id": 5089,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/5089/thumbnail.png?t=2025-08-14-19-21-59",
+    "slug": "openai"
+   },
+   "modelLicense": {
+    "id": 30,
+    "name": "Apache 2.0",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "agreementRequired": false
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.0126382306477093,
+      "confidenceInterval": 0.0061533629224853
+     },
+     "evaluationDate": "2025-08-21T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 3270,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 66,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2025-08-25T21:55:03.920Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 135,
+    "benchmarkModelId": 137,
+    "slug": "gemini-3.1-flash-lite-preview",
+    "externalUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-lite/",
+    "knowledgeCutoff": "2025-01-01T08:00:00Z",
+    "isDefault": true,
+    "published": true,
+    "allowModelProxy": true,
+    "modelProxySlug": "google/gemini-3.1-flash-lite-preview",
+    "displayName": "Gemini 3.1 Flash-Lite Preview",
+    "organization": {
+     "name": "Google",
+     "id": 855,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/855/thumbnail.png",
+     "slug": "google"
+    },
+    "name": "Gemini 3.1 Flash-Lite Preview",
+    "license": {
+     "id": 50,
+     "name": "Proprietary",
+     "agreementRequired": false
+    },
+    "inputModalities": [
+     "MODALITY_TEXT",
+     "MODALITY_IMAGE",
+     "MODALITY_VIDEO",
+     "MODALITY_AUDIO"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "Google",
+    "id": 855,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/855/thumbnail.png",
+    "slug": "google"
+   },
+   "modelLicense": {
+    "id": 50,
+    "name": "Proprietary",
+    "agreementRequired": false
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.0110584518167456,
+      "confidenceInterval": 0.0057605468728409
+     },
+     "evaluationDate": "2026-03-23T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 11264,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 135,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2026-03-26T07:00:14.760Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 8,
+    "benchmarkModelId": 8,
+    "slug": "grok-2-1212",
+    "externalUrl": "https://x.ai/news/grok-1212",
+    "knowledgeCutoff": "2024-07-17T04:00:00Z",
+    "isDefault": true,
+    "published": true,
+    "displayName": "Grok 2",
+    "organization": {
+     "name": "xAI",
+     "id": 3986,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/3986/thumbnail.png?t=2025-02-25-17-16-11",
+     "slug": "xai"
+    },
+    "name": "Grok 2",
+    "license": {
+     "id": 50,
+     "name": "Proprietary",
+     "agreementRequired": false
+    },
+    "inputModalities": [
+     "MODALITY_TEXT"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "xAI",
+    "id": 3986,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/3986/thumbnail.png?t=2025-02-25-17-16-11",
+    "slug": "xai"
+   },
+   "modelLicense": {
+    "id": 50,
+    "name": "Proprietary",
+    "agreementRequired": false
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.0102685624012638,
+      "confidenceInterval": 0.0055532182743072
+     },
+     "evaluationDate": "2025-06-13T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 755,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 8,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2025-06-11T17:27:58.753333300Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 43,
+    "benchmarkModelId": 43,
+    "slug": "claude-opus-4-20250514",
+    "externalUrl": "https://www.anthropic.com/news/claude-4",
+    "knowledgeCutoff": "2025-03-01T05:00:00Z",
+    "isDefault": true,
+    "published": true,
+    "allowModelProxy": true,
+    "modelProxySlug": "anthropic/claude-opus-4@20250514",
+    "displayName": "Claude Opus 4",
+    "organization": {
+     "name": "Anthropic",
+     "id": 5088,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/5088/thumbnail.jpg?t=2025-02-25-19-08-55",
+     "slug": "anthropic"
+    },
+    "name": "Claude Opus 4",
+    "license": {
+     "id": 50,
+     "name": "Proprietary",
+     "agreementRequired": false
+    },
+    "inputModalities": [
+     "MODALITY_TEXT",
+     "MODALITY_IMAGE"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "Anthropic",
+    "id": 5088,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/5088/thumbnail.jpg?t=2025-02-25-19-08-55",
+    "slug": "anthropic"
+   },
+   "modelLicense": {
+    "id": 50,
+    "name": "Proprietary",
+    "agreementRequired": false
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.0102685624012638,
+      "confidenceInterval": 0.0055532182743072
+     },
+     "evaluationDate": "2025-06-13T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 866,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 43,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2025-06-13T13:21:14.600Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 68,
+    "benchmarkModelId": 63,
+    "slug": "claude-opus-4-1-20250805",
+    "externalUrl": "https://www.anthropic.com/news/claude-opus-4-1",
+    "knowledgeCutoff": "2025-03-05T05:00:00Z",
+    "isDefault": true,
+    "published": true,
+    "allowModelProxy": true,
+    "modelProxySlug": "anthropic/claude-opus-4-1@20250805",
+    "displayName": "Claude Opus 4.1",
+    "organization": {
+     "name": "Anthropic",
+     "id": 5088,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/5088/thumbnail.jpg?t=2025-02-25-19-08-55",
+     "slug": "anthropic"
+    },
+    "name": "Claude Opus 4.1",
+    "license": {
+     "id": 50,
+     "name": "Proprietary",
+     "agreementRequired": false
+    },
+    "inputModalities": [
+     "MODALITY_TEXT",
+     "MODALITY_IMAGE"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "Anthropic",
+    "id": 5088,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/5088/thumbnail.jpg?t=2025-02-25-19-08-55",
+    "slug": "anthropic"
+   },
+   "modelLicense": {
+    "id": 50,
+    "name": "Proprietary",
+    "agreementRequired": false
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.0102685624012638,
+      "confidenceInterval": 0.0055532182743072
+     },
+     "evaluationDate": "2025-09-03T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 3563,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 68,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2025-09-03T18:48:56.940Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 1,
+    "benchmarkModelId": 1,
+    "slug": "claude-3-5-sonnet-20241022",
+    "externalUrl": "https://www.anthropic.com/claude/sonnet",
+    "knowledgeCutoff": "2024-04-01T00:00:00Z",
+    "isDefault": true,
+    "published": true,
+    "modelProxySlug": "anthropic/claude-3-5-sonnet-v2@20241022",
+    "displayName": "Claude 3.5 Sonnet",
+    "organization": {
+     "name": "Anthropic",
+     "id": 5088,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/5088/thumbnail.jpg?t=2025-02-25-19-08-55",
+     "slug": "anthropic"
+    },
+    "name": "Claude 3.5 Sonnet",
+    "license": {
+     "id": 50,
+     "name": "Proprietary",
+     "agreementRequired": false
+    },
+    "inputModalities": [
+     "MODALITY_TEXT",
+     "MODALITY_IMAGE"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "Anthropic",
+    "id": 5088,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/5088/thumbnail.jpg?t=2025-02-25-19-08-55",
+    "slug": "anthropic"
+   },
+   "modelLicense": {
+    "id": 50,
+    "name": "Proprietary",
+    "agreementRequired": false
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.0094786729857819,
+      "confidenceInterval": 0.0053374881491649
+     },
+     "evaluationDate": "2025-06-13T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 752,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 1,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2025-06-11T17:27:58.753333300Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 10,
+    "benchmarkModelId": 10,
+    "slug": "o1-mini-2024-09-12",
+    "externalUrl": "https://platform.openai.com/docs/models/o1-mini",
+    "knowledgeCutoff": "2023-09-30T04:00:00Z",
+    "isDefault": true,
+    "published": true,
+    "displayName": "o1 mini",
+    "organization": {
+     "name": "OpenAI",
+     "id": 5089,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/5089/thumbnail.png?t=2025-08-14-19-21-59",
+     "slug": "openai"
+    },
+    "name": "o1 mini",
+    "license": {
+     "id": 50,
+     "name": "Proprietary",
+     "agreementRequired": false
+    },
+    "inputModalities": [
+     "MODALITY_TEXT"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "OpenAI",
+    "id": 5089,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/5089/thumbnail.png?t=2025-08-14-19-21-59",
+    "slug": "openai"
+   },
+   "modelLicense": {
+    "id": 50,
+    "name": "Proprietary",
+    "agreementRequired": false
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.0094786729857819,
+      "confidenceInterval": 0.0053374881491649
+     },
+     "evaluationDate": "2025-06-13T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 758,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 10,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2025-06-11T17:27:58.753333300Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 16,
+    "benchmarkModelId": 16,
+    "slug": "claude-3-7-sonnet-20250219",
+    "externalUrl": "https://www.anthropic.com/news/claude-3-7-sonnet",
+    "knowledgeCutoff": "2024-11-01T04:00:00Z",
+    "isDefault": true,
+    "published": true,
+    "displayName": "Claude 3.7 Sonnet",
+    "organization": {
+     "name": "Anthropic",
+     "id": 5088,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/5088/thumbnail.jpg?t=2025-02-25-19-08-55",
+     "slug": "anthropic"
+    },
+    "name": "Claude 3.7 Sonnet",
+    "license": {
+     "id": 50,
+     "name": "Proprietary",
+     "agreementRequired": false
+    },
+    "inputModalities": [
+     "MODALITY_TEXT",
+     "MODALITY_IMAGE"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "Anthropic",
+    "id": 5088,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/5088/thumbnail.jpg?t=2025-02-25-19-08-55",
+    "slug": "anthropic"
+   },
+   "modelLicense": {
+    "id": 50,
+    "name": "Proprietary",
+    "agreementRequired": false
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.0086887835703001,
+      "confidenceInterval": 0.005112293017358
+     },
+     "evaluationDate": "2025-06-13T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 754,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 16,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2025-06-11T17:27:58.753333300Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 3,
+    "benchmarkModelId": 3,
+    "slug": "gpt-4o-2024-08-06",
+    "externalUrl": "https://help.openai.com/en/articles/9624314-model-release-notes",
+    "knowledgeCutoff": "2023-10-01T00:00:00Z",
+    "isDefault": true,
+    "published": true,
+    "allowModelProxy": true,
+    "modelProxySlug": "openai/gpt-4o-2024-08-06",
+    "displayName": "GPT-4o",
+    "organization": {
+     "name": "OpenAI",
+     "id": 5089,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/5089/thumbnail.png?t=2025-08-14-19-21-59",
+     "slug": "openai"
+    },
+    "name": "GPT-4o",
+    "license": {
+     "id": 50,
+     "name": "Proprietary",
+     "agreementRequired": false
+    },
+    "inputModalities": [
+     "MODALITY_TEXT",
+     "MODALITY_IMAGE"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "OpenAI",
+    "id": 5089,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/5089/thumbnail.png?t=2025-08-14-19-21-59",
+    "slug": "openai"
+   },
+   "modelLicense": {
+    "id": 50,
+    "name": "Proprietary",
+    "agreementRequired": false
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.0071090047393364,
+      "confidenceInterval": 0.004627926213592
+     },
+     "evaluationDate": "2025-06-13T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 735,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 3,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2025-06-11T17:27:58.716666700Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 13,
+    "benchmarkModelId": 13,
+    "slug": "gpt-4o-mini-2024-07-18",
+    "externalUrl": "https://platform.openai.com/docs/models/gpt-4o-mini",
+    "knowledgeCutoff": "2023-09-30T04:00:00Z",
+    "isDefault": true,
+    "published": true,
+    "displayName": "GPT-4o mini",
+    "organization": {
+     "name": "OpenAI",
+     "id": 5089,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/5089/thumbnail.png?t=2025-08-14-19-21-59",
+     "slug": "openai"
+    },
+    "name": "GPT-4o mini",
+    "license": {
+     "id": 50,
+     "name": "Proprietary",
+     "agreementRequired": false
+    },
+    "inputModalities": [
+     "MODALITY_TEXT",
+     "MODALITY_IMAGE"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "OpenAI",
+    "id": 5089,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/5089/thumbnail.png?t=2025-08-14-19-21-59",
+    "slug": "openai"
+   },
+   "modelLicense": {
+    "id": 50,
+    "name": "Proprietary",
+    "agreementRequired": false
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.0063191153238546,
+      "confidenceInterval": 0.0043649859139208
+     },
+     "evaluationDate": "2025-06-13T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 741,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 13,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2025-06-11T17:27:58.730Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 14,
+    "benchmarkModelId": 14,
+    "slug": "gpt-3.5-turbo-1106",
+    "externalUrl": "https://platform.openai.com/docs/models/gpt-3.5-turbo",
+    "knowledgeCutoff": "2021-08-31T04:00:00Z",
+    "isDefault": true,
+    "published": true,
+    "displayName": "GPT-3.5 Turbo",
+    "organization": {
+     "name": "OpenAI",
+     "id": 5089,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/5089/thumbnail.png?t=2025-08-14-19-21-59",
+     "slug": "openai"
+    },
+    "name": "GPT-3.5 Turbo",
+    "license": {
+     "id": 50,
+     "name": "Proprietary",
+     "agreementRequired": false
+    },
+    "inputModalities": [
+     "MODALITY_TEXT"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "OpenAI",
+    "id": 5089,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/5089/thumbnail.png?t=2025-08-14-19-21-59",
+    "slug": "openai"
+   },
+   "modelLicense": {
+    "id": 50,
+    "name": "Proprietary",
+    "agreementRequired": false
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.0063191153238546,
+      "confidenceInterval": 0.0043649859139208
+     },
+     "evaluationDate": "2025-06-13T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 736,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 14,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2025-06-11T17:27:58.716666700Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 20,
+    "benchmarkModelId": 20,
+    "slug": "codestral-2501",
+    "externalUrl": "https://mistral.ai/news/codestral-2501",
+    "isDefault": true,
+    "published": true,
+    "displayName": "Codestral",
+    "organization": {
+     "name": "Mistral AI",
+     "id": 3875,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/3875/thumbnail.jpg",
+     "slug": "mistral-ai"
+    },
+    "name": "Codestral",
+    "license": {
+     "id": 49,
+     "name": "Mistral AI Research License",
+     "url": "https://mistral.ai/static/licenses/MRL-0.1.md",
+     "agreementRequired": false
+    },
+    "inputModalities": [
+     "MODALITY_TEXT"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "Mistral AI",
+    "id": 3875,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/3875/thumbnail.jpg",
+    "slug": "mistral-ai"
+   },
+   "modelLicense": {
+    "id": 49,
+    "name": "Mistral AI Research License",
+    "url": "https://mistral.ai/static/licenses/MRL-0.1.md",
+    "agreementRequired": false
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.0063191153238546,
+      "confidenceInterval": 0.0043649859139208
+     },
+     "evaluationDate": "2025-07-02T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 2658,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 20,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2025-07-02T23:52:13.356666700Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 44,
+    "benchmarkModelId": 44,
+    "slug": "claude-sonnet-4-20250514",
+    "externalUrl": "https://www.anthropic.com/news/claude-4",
+    "knowledgeCutoff": "2025-03-01T05:00:00Z",
+    "isDefault": true,
+    "published": true,
+    "allowModelProxy": true,
+    "modelProxySlug": "anthropic/claude-sonnet-4@20250514",
+    "displayName": "Claude Sonnet 4",
+    "organization": {
+     "name": "Anthropic",
+     "id": 5088,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/5088/thumbnail.jpg?t=2025-02-25-19-08-55",
+     "slug": "anthropic"
+    },
+    "name": "Claude Sonnet 4",
+    "license": {
+     "id": 50,
+     "name": "Proprietary",
+     "agreementRequired": false
+    },
+    "inputModalities": [
+     "MODALITY_TEXT",
+     "MODALITY_IMAGE"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "Anthropic",
+    "id": 5088,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/5088/thumbnail.jpg?t=2025-02-25-19-08-55",
+    "slug": "anthropic"
+   },
+   "modelLicense": {
+    "id": 50,
+    "name": "Proprietary",
+    "agreementRequired": false
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.0063191153238546,
+      "confidenceInterval": 0.0043649859139208
+     },
+     "evaluationDate": "2025-06-13T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 861,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 44,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2025-06-13T13:21:14.600Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 6,
+    "benchmarkModelId": 6,
+    "slug": "gemini-2.0-flash-001",
+    "externalUrl": "https://www.kaggle.com/models/google/gemini-2.0-flash-api",
+    "knowledgeCutoff": "2024-06-01T04:00:00Z",
+    "isDefault": true,
+    "published": true,
+    "modelProxySlug": "google/gemini-2.0-flash",
+    "displayName": "Gemini 2.0 Flash",
+    "organization": {
+     "name": "Google",
+     "id": 855,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/855/thumbnail.png",
+     "slug": "google"
+    },
+    "name": "Gemini 2.0 Flash",
+    "license": {
+     "id": 50,
+     "name": "Proprietary",
+     "agreementRequired": false
+    },
+    "inputModalities": [
+     "MODALITY_TEXT",
+     "MODALITY_IMAGE",
+     "MODALITY_VIDEO",
+     "MODALITY_AUDIO"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "Google",
+    "id": 855,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/855/thumbnail.png",
+    "slug": "google"
+   },
+   "modelLicense": {
+    "id": 50,
+    "name": "Proprietary",
+    "agreementRequired": false
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.0055292259083728,
+      "confidenceInterval": 0.0040846929666103
+     },
+     "evaluationDate": "2025-06-13T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 757,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 6,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2025-06-11T17:27:58.753333300Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 19,
+    "benchmarkModelId": 19,
+    "slug": "mistral-large-2411",
+    "externalUrl": "https://mistral.ai/news/mistral-large-2407",
+    "knowledgeCutoff": "2024-10-01T04:00:00Z",
+    "isDefault": true,
+    "published": true,
+    "displayName": "Mistral Large 2",
+    "organization": {
+     "name": "Mistral AI",
+     "id": 3875,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/3875/thumbnail.jpg",
+     "slug": "mistral-ai"
+    },
+    "name": "Mistral Large 2",
+    "license": {
+     "id": 49,
+     "name": "Mistral AI Research License",
+     "url": "https://mistral.ai/static/licenses/MRL-0.1.md",
+     "agreementRequired": false
+    },
+    "inputModalities": [
+     "MODALITY_TEXT",
+     "MODALITY_IMAGE"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "Mistral AI",
+    "id": 3875,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/3875/thumbnail.jpg",
+    "slug": "mistral-ai"
+   },
+   "modelLicense": {
+    "id": 49,
+    "name": "Mistral AI Research License",
+    "url": "https://mistral.ai/static/licenses/MRL-0.1.md",
+    "agreementRequired": false
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.0055292259083728,
+      "confidenceInterval": 0.0040846929666103
+     },
+     "evaluationDate": "2025-07-02T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 2655,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 19,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2025-07-02T23:51:15.730Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 28,
+    "benchmarkModelId": 28,
+    "slug": "gemma-3-27b-it",
+    "externalUrl": "https://www.kaggle.com/models/google/gemma-3/transformers/gemma-3-27b-it",
+    "isDefault": true,
+    "published": true,
+    "modelProxySlug": "google/gemma-3-27b",
+    "displayName": "Gemma 3 27B",
+    "organization": {
+     "name": "Google",
+     "id": 855,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/855/thumbnail.png",
+     "slug": "google"
+    },
+    "name": "Gemma 3 27B",
+    "license": {
+     "id": 34,
+     "name": "Gemma",
+     "url": "",
+     "agreementRequired": true,
+     "currentRevisionNumber": 3
+    },
+    "inputModalities": [
+     "MODALITY_TEXT",
+     "MODALITY_IMAGE"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "Google",
+    "id": 855,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/855/thumbnail.png",
+    "slug": "google"
+   },
+   "modelLicense": {
+    "id": 34,
+    "name": "Gemma",
+    "url": "",
+    "agreementRequired": true,
+    "currentRevisionNumber": 3
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.0055292259083728,
+      "confidenceInterval": 0.0040846929666103
+     },
+     "evaluationDate": "2025-06-13T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 740,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 28,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2025-06-11T17:27:58.720Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 21,
+    "benchmarkModelId": 21,
+    "slug": "open-mixtral-8x22b-2404",
+    "externalUrl": "https://mistral.ai/news/mixtral-8x22b",
+    "isDefault": true,
+    "published": true,
+    "displayName": "Mixtral 8x22B",
+    "organization": {
+     "name": "Mistral AI",
+     "id": 3875,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/3875/thumbnail.jpg",
+     "slug": "mistral-ai"
+    },
+    "name": "Mixtral 8x22B",
+    "license": {
+     "id": 30,
+     "name": "Apache 2.0",
+     "url": "https://www.apache.org/licenses/LICENSE-2.0",
+     "agreementRequired": false
+    },
+    "inputModalities": [
+     "MODALITY_TEXT"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "Mistral AI",
+    "id": 3875,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/3875/thumbnail.jpg",
+    "slug": "mistral-ai"
+   },
+   "modelLicense": {
+    "id": 30,
+    "name": "Apache 2.0",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "agreementRequired": false
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.0047393364928909,
+      "confidenceInterval": 0.0037831924147072
+     },
+     "evaluationDate": "2025-07-02T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 2656,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 21,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2025-07-02T23:51:15.730Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 29,
+    "benchmarkModelId": 29,
+    "slug": "gemma-3-12b-it",
+    "externalUrl": "https://www.kaggle.com/models/google/gemma-3/transformers/gemma-3-12b-it",
+    "isDefault": true,
+    "published": true,
+    "modelProxySlug": "google/gemma-3-12b",
+    "displayName": "Gemma 3 12B",
+    "organization": {
+     "name": "Google",
+     "id": 855,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/855/thumbnail.png",
+     "slug": "google"
+    },
+    "name": "Gemma 3 12B",
+    "license": {
+     "id": 34,
+     "name": "Gemma",
+     "url": "",
+     "agreementRequired": true,
+     "currentRevisionNumber": 3
+    },
+    "inputModalities": [
+     "MODALITY_TEXT",
+     "MODALITY_IMAGE"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "Google",
+    "id": 855,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/855/thumbnail.png",
+    "slug": "google"
+   },
+   "modelLicense": {
+    "id": 34,
+    "name": "Gemma",
+    "url": "",
+    "agreementRequired": true,
+    "currentRevisionNumber": 3
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.0047393364928909,
+      "confidenceInterval": 0.0037831924147072
+     },
+     "evaluationDate": "2025-06-13T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 768,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 29,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2025-06-11T17:27:58.763333300Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 58,
+    "benchmarkModelId": 56,
+    "slug": "qwen3-235b-a22b-thinking-2507",
+    "externalUrl": "https://github.com/QwenLM/Qwen3",
+    "isDefault": true,
+    "published": true,
+    "modelProxySlug": "",
+    "displayName": "Qwen 3 235B A22B Thinking",
+    "organization": {
+     "name": "QwenLM",
+     "id": 3878,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/3878/thumbnail.jpg",
+     "slug": "qwen-lm"
+    },
+    "name": "Qwen 3 235B A22B Thinking",
+    "license": {
+     "id": 30,
+     "name": "Apache 2.0",
+     "url": "https://www.apache.org/licenses/LICENSE-2.0",
+     "agreementRequired": false
+    },
+    "inputModalities": [
+     "MODALITY_TEXT"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "QwenLM",
+    "id": 3878,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/3878/thumbnail.jpg",
+    "slug": "qwen-lm"
+   },
+   "modelLicense": {
+    "id": 30,
+    "name": "Apache 2.0",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "agreementRequired": false
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.0047393364928909,
+      "confidenceInterval": 0.0037831924147072
+     },
+     "evaluationDate": "2025-08-21T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 3271,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 58,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2025-08-25T21:55:09.093333300Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 2,
+    "benchmarkModelId": 2,
+    "slug": "gemini-1.5-pro-002",
+    "externalUrl": "https://www.kaggle.com/models/google/gemini-1.5-pro-api",
+    "knowledgeCutoff": "2023-11-01T00:00:00Z",
+    "isDefault": true,
+    "published": true,
+    "modelProxySlug": "",
+    "displayName": "Gemini 1.5 Pro",
+    "organization": {
+     "name": "Google",
+     "id": 855,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/855/thumbnail.png",
+     "slug": "google"
+    },
+    "name": "Gemini 1.5 Pro",
+    "license": {
+     "id": 50,
+     "name": "Proprietary",
+     "agreementRequired": false
+    },
+    "inputModalities": [
+     "MODALITY_TEXT",
+     "MODALITY_IMAGE",
+     "MODALITY_VIDEO",
+     "MODALITY_AUDIO"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "Google",
+    "id": 855,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/855/thumbnail.png",
+    "slug": "google"
+   },
+   "modelLicense": {
+    "id": 50,
+    "name": "Proprietary",
+    "agreementRequired": false
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.0039494470774091,
+      "confidenceInterval": 0.0034549365659004
+     },
+     "evaluationDate": "2025-06-13T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 739,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 2,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2025-06-11T17:27:58.720Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 4,
+    "benchmarkModelId": 4,
+    "slug": "gemini-1.5-flash-002",
+    "externalUrl": "https://www.kaggle.com/models/google/gemini-1.5-flash-api",
+    "knowledgeCutoff": "2023-11-01T04:00:00Z",
+    "isDefault": true,
+    "published": true,
+    "modelProxySlug": "",
+    "displayName": "Gemini 1.5 Flash",
+    "organization": {
+     "name": "Google",
+     "id": 855,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/855/thumbnail.png",
+     "slug": "google"
+    },
+    "name": "Gemini 1.5 Flash",
+    "license": {
+     "id": 50,
+     "name": "Proprietary",
+     "agreementRequired": false
+    },
+    "inputModalities": [
+     "MODALITY_TEXT",
+     "MODALITY_IMAGE",
+     "MODALITY_VIDEO",
+     "MODALITY_AUDIO"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "Google",
+    "id": 855,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/855/thumbnail.png",
+    "slug": "google"
+   },
+   "modelLicense": {
+    "id": 50,
+    "name": "Proprietary",
+    "agreementRequired": false
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.0039494470774091,
+      "confidenceInterval": 0.0034549365659004
+     },
+     "evaluationDate": "2025-06-13T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 738,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 4,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2025-06-11T17:27:58.716666700Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 27,
+    "benchmarkModelId": 27,
+    "slug": "gemma-3-4b-it",
+    "externalUrl": "https://www.kaggle.com/models/google/gemma-3/transformers/gemma-3-4b-it",
+    "isDefault": true,
+    "published": true,
+    "modelProxySlug": "google/gemma-3-4b",
+    "displayName": "Gemma 3 4B",
+    "organization": {
+     "name": "Google",
+     "id": 855,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/855/thumbnail.png",
+     "slug": "google"
+    },
+    "name": "Gemma 3 4B",
+    "license": {
+     "id": 34,
+     "name": "Gemma",
+     "url": "",
+     "agreementRequired": true,
+     "currentRevisionNumber": 3
+    },
+    "inputModalities": [
+     "MODALITY_TEXT",
+     "MODALITY_IMAGE"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "Google",
+    "id": 855,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/855/thumbnail.png",
+    "slug": "google"
+   },
+   "modelLicense": {
+    "id": 34,
+    "name": "Gemma",
+    "url": "",
+    "agreementRequired": true,
+    "currentRevisionNumber": 3
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.0039494470774091,
+      "confidenceInterval": 0.0034549365659004
+     },
+     "evaluationDate": "2025-06-13T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 749,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 27,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2025-06-11T17:27:58.750Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 74,
+    "benchmarkModelId": 70,
+    "slug": "granite-4.0-h-small",
+    "externalUrl": "https://www.kaggle.com/models/ibm-research/granite-4.0",
+    "isDefault": true,
+    "published": true,
+    "allowModelProxy": true,
+    "modelProxySlug": "ibm/granite-4.0-h-small",
+    "displayName": "Granite 4.0 Small",
+    "organization": {
+     "name": "IBM Research",
+     "id": 5164,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/5164/thumbnail.png?t=2026-01-30-17-48-24",
+     "slug": "ibm-research"
+    },
+    "name": "Granite 4.0 Small",
+    "license": {
+     "id": 30,
+     "name": "Apache 2.0",
+     "url": "https://www.apache.org/licenses/LICENSE-2.0",
+     "agreementRequired": false
+    },
+    "inputModalities": [
+     "MODALITY_TEXT"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "IBM Research",
+    "id": 5164,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/5164/thumbnail.png?t=2026-01-30-17-48-24",
+    "slug": "ibm-research"
+   },
+   "modelLicense": {
+    "id": 30,
+    "name": "Apache 2.0",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "agreementRequired": false
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.0039494470774091,
+      "confidenceInterval": 0.0034549365659004
+     },
+     "evaluationDate": "2025-09-30T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 4066,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 74,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2025-10-01T17:47:36.023333300Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 15,
+    "benchmarkModelId": 15,
+    "slug": "claude-3-5-haiku-20241022",
+    "externalUrl": "https://www.anthropic.com/news/3-5-models-and-computer-use",
+    "knowledgeCutoff": "2024-04-01T04:00:00Z",
+    "isDefault": true,
+    "published": true,
+    "modelProxySlug": "anthropic/claude-3-5-haiku@20241022",
+    "displayName": "Claude 3.5 Haiku",
+    "organization": {
+     "name": "Anthropic",
+     "id": 5088,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/5088/thumbnail.jpg?t=2025-02-25-19-08-55",
+     "slug": "anthropic"
+    },
+    "name": "Claude 3.5 Haiku",
+    "license": {
+     "id": 50,
+     "name": "Proprietary",
+     "agreementRequired": false
+    },
+    "inputModalities": [
+     "MODALITY_TEXT",
+     "MODALITY_IMAGE"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ],
+    "deprecationTime": "2026-07-05T00:00:00Z"
+   },
+   "publisherOrganization": {
+    "name": "Anthropic",
+    "id": 5088,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/5088/thumbnail.jpg?t=2025-02-25-19-08-55",
+    "slug": "anthropic"
+   },
+   "modelLicense": {
+    "id": 50,
+    "name": "Proprietary",
+    "agreementRequired": false
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.0031595576619273,
+      "confidenceInterval": 0.0030914142580004
+     },
+     "evaluationDate": "2025-06-13T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 753,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 15,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2025-06-11T17:27:58.753333300Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 18,
+    "benchmarkModelId": 18,
+    "slug": "ministral-8b-2410",
+    "externalUrl": "https://mistral.ai/news/ministraux",
+    "knowledgeCutoff": "2024-09-01T04:00:00Z",
+    "isDefault": true,
+    "published": true,
+    "displayName": "Ministral 8B",
+    "organization": {
+     "name": "Mistral AI",
+     "id": 3875,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/3875/thumbnail.jpg",
+     "slug": "mistral-ai"
+    },
+    "name": "Ministral 8B",
+    "license": {
+     "id": 49,
+     "name": "Mistral AI Research License",
+     "url": "https://mistral.ai/static/licenses/MRL-0.1.md",
+     "agreementRequired": false
+    },
+    "inputModalities": [
+     "MODALITY_TEXT"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "Mistral AI",
+    "id": 3875,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/3875/thumbnail.jpg",
+    "slug": "mistral-ai"
+   },
+   "modelLicense": {
+    "id": 49,
+    "name": "Mistral AI Research License",
+    "url": "https://mistral.ai/static/licenses/MRL-0.1.md",
+    "agreementRequired": false
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.0031595576619273,
+      "confidenceInterval": 0.0030914142580004
+     },
+     "evaluationDate": "2025-07-02T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 2657,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 18,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2025-07-02T23:51:15.730Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 17,
+    "benchmarkModelId": 17,
+    "slug": "ministral-3b-2410",
+    "externalUrl": "https://mistral.ai/news/ministraux",
+    "knowledgeCutoff": "2024-09-01T04:00:00Z",
+    "isDefault": true,
+    "published": true,
+    "displayName": "Ministral 3B",
+    "organization": {
+     "name": "Mistral AI",
+     "id": 3875,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/3875/thumbnail.jpg",
+     "slug": "mistral-ai"
+    },
+    "name": "Ministral 3B",
+    "license": {
+     "id": 49,
+     "name": "Mistral AI Research License",
+     "url": "https://mistral.ai/static/licenses/MRL-0.1.md",
+     "agreementRequired": false
+    },
+    "inputModalities": [
+     "MODALITY_TEXT"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "Mistral AI",
+    "id": 3875,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/3875/thumbnail.jpg",
+    "slug": "mistral-ai"
+   },
+   "modelLicense": {
+    "id": 49,
+    "name": "Mistral AI Research License",
+    "url": "https://mistral.ai/static/licenses/MRL-0.1.md",
+    "agreementRequired": false
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.0015797788309636,
+      "confidenceInterval": 0.002187691439014
+     },
+     "evaluationDate": "2025-07-02T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 2654,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 17,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2025-07-02T23:51:15.730Z"
+   }
+  },
+  {
+   "modelVersion": {
+    "id": 5,
+    "benchmarkModelId": 5,
+    "slug": "gemini-1.5-flash-8b-001",
+    "externalUrl": "https://www.kaggle.com/models/google/gemini-1.5-flash-8b-api",
+    "knowledgeCutoff": "2024-08-01T04:00:00Z",
+    "isDefault": true,
+    "published": true,
+    "displayName": "Gemini 1.5 Flash 8B",
+    "organization": {
+     "name": "Google",
+     "id": 855,
+     "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/855/thumbnail.png",
+     "slug": "google"
+    },
+    "name": "Gemini 1.5 Flash 8B",
+    "license": {
+     "id": 50,
+     "name": "Proprietary",
+     "agreementRequired": false
+    },
+    "inputModalities": [
+     "MODALITY_TEXT",
+     "MODALITY_IMAGE",
+     "MODALITY_VIDEO",
+     "MODALITY_AUDIO"
+    ],
+    "outputModalities": [
+     "MODALITY_TEXT"
+    ]
+   },
+   "publisherOrganization": {
+    "name": "Google",
+    "id": 855,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-organizations/855/thumbnail.png",
+    "slug": "google"
+   },
+   "modelLicense": {
+    "id": 50,
+    "name": "Proprietary",
+    "agreementRequired": false
+   },
+   "results": [
+    {
+     "numericResult": {
+      "value": 0.0007898894154818,
+      "confidenceInterval": 0.001547543249777
+     },
+     "evaluationDate": "2025-06-13T00:00:00Z",
+     "taskVersionId": 26
+    }
+   ],
+   "modelVersionMapping": {
+    "id": 765,
+    "parentBenchmarkVersionId": 35,
+    "childBenchmarkModelVersionId": 5,
+    "type": "BENCHMARK_VERSION_MODEL_MAPPING_TYPE_PRINCIPAL",
+    "createTime": "2025-06-11T17:27:58.763333300Z"
+   }
+  }
+ ]
+}

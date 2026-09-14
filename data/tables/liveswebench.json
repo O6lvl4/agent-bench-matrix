@@ -1,0 +1,225 @@
+{
+  "id": "liveswebench",
+  "family": "liveswebench",
+  "name": "LiveSWEBench (Agentic Programming)",
+  "board": "liveswebench.ai",
+  "category": "coding",
+  "measures_ja": "実在 GitHub リポジトリの issue を、AI コーディングツール(IDE・CLI エージェント)が自律的に解決できるか。",
+  "tasks": 53,
+  "tasks_note": "レポートでは agent タスク 53 件(edit・autocomplete を含む 3 種で計 126 件)。score は agent 列。",
+  "metric": "Agentic Programming resolve rate (%)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "運営が市販ツールを既定設定で走らせた(Amazon Q 以外は Claude 3.7 Sonnet に固定)。ツール(足場)の比較が目的。",
+  "source": "https://liveswebench.ai/",
+  "fetched": [
+    "https://liveswebench.ai/assets/index-YIuWjCzP.js",
+    "https://raw.githubusercontent.com/LiveBench/liveswebench-site/main/src/assets/agent_results.csv",
+    "https://raw.githubusercontent.com/LiveBench/liveswebench-site/main/src/assets/edit_results.csv",
+    "https://raw.githubusercontent.com/LiveBench/liveswebench-site/main/src/assets/autocomplete_results.csv"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": null,
+  "snapshot": "sources/liveswebench/results_csv.json",
+  "paper": null,
+  "repo": "https://github.com/LiveBench/liveswebench-site",
+  "notes_ja": "ボードの既定の並びは 3 種の平均だが、ここでは agent 列を score にし、その順で順位を付けた(平均・edit・autocomplete は score_extra)。2025-03 時点の評価で以後更新なし。行ごとの日付は無い。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Github Copilot",
+      "agent": "Github Copilot",
+      "model_raw": [
+        "Claude 3.7 Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": "VS Code Insiders pre-release (agent mode)",
+      "score": 43.4,
+      "score_extra": {
+        "agent_resolve_rate": 0.4339622641509434,
+        "edit_resolve_rate": 0.4090909090909091,
+        "autocomplete_resolve_rate": 0.4482758620689655,
+        "edit_pct": 40.91,
+        "autocomplete_pct": 44.83,
+        "global_average_pct": 43.04
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 1,
+      "system": "SWE-Agent",
+      "agent": "SWE-Agent",
+      "model_raw": [
+        "Claude 3.7 Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": null,
+      "score": 43.4,
+      "score_extra": {
+        "agent_resolve_rate": 0.4339622641509434,
+        "edit_resolve_rate": 0.5227272727272727,
+        "edit_pct": 52.27,
+        "global_average_pct": 47.83
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 1,
+      "system": "Windsurf",
+      "agent": "Windsurf",
+      "model_raw": [
+        "Claude 3.7 Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": null,
+      "score": 43.4,
+      "score_extra": {
+        "agent_resolve_rate": 0.4339622641509434,
+        "edit_resolve_rate": 0.4772727272727273,
+        "autocomplete_resolve_rate": 0.3793103448275862,
+        "edit_pct": 47.73,
+        "autocomplete_pct": 37.93,
+        "global_average_pct": 43.02
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "OpenHands",
+      "agent": "OpenHands",
+      "model_raw": [
+        "Claude 3.7 Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": null,
+      "score": 41.51,
+      "score_extra": {
+        "agent_resolve_rate": 0.41509433962264153,
+        "edit_resolve_rate": 0.5227272727272727,
+        "edit_pct": 52.27,
+        "global_average_pct": 46.89
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "Cursor",
+      "agent": "Cursor",
+      "model_raw": [
+        "Claude 3.7 Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": null,
+      "score": 39.62,
+      "score_extra": {
+        "agent_resolve_rate": 0.39622641509433965,
+        "edit_resolve_rate": 0.5,
+        "autocomplete_resolve_rate": 0.41379310344827586,
+        "edit_pct": 50,
+        "autocomplete_pct": 41.38,
+        "global_average_pct": 43.67
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 6,
+      "system": "Claude Code",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Claude 3.7 Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": null,
+      "score": 37.74,
+      "score_extra": {
+        "agent_resolve_rate": 0.37735849056603776,
+        "edit_resolve_rate": 0.4090909090909091,
+        "edit_pct": 40.91,
+        "global_average_pct": 39.32
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 7,
+      "system": "Aider",
+      "agent": "Aider",
+      "model_raw": [
+        "Claude 3.7 Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": null,
+      "score": 28.3,
+      "score_extra": {
+        "agent_resolve_rate": 0.2830188679245283,
+        "edit_resolve_rate": 0.38636363636363635,
+        "edit_pct": 38.64,
+        "global_average_pct": 33.47
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 8,
+      "system": "Amazon Q",
+      "agent": "Amazon Q",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 24.53,
+      "score_extra": {
+        "agent_resolve_rate": 0.24528301886792453,
+        "edit_resolve_rate": 0.25,
+        "autocomplete_resolve_rate": 0.41379310344827586,
+        "edit_pct": 25,
+        "autocomplete_pct": 41.38,
+        "global_average_pct": 30.3
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    }
+  ]
+}

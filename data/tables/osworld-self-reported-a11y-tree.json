@@ -1,0 +1,309 @@
+{
+  "id": "osworld-self-reported-a11y-tree",
+  "family": "osworld",
+  "name": "OSWorld (self-reported, A11y tree)",
+  "board": "os-world.github.io (osworld-v1.xlang.ai)",
+  "category": "computer-use",
+  "measures_ja": "実機の Ubuntu デスクトップ上で、Chrome・LibreOffice・GIMP・VS Code などを使う実タスクを最後までこなせるか。",
+  "tasks": 369,
+  "tasks_note": "サイト記載は369タスク(Google Drive 系8タスクを除く361でも可)。自己申告のため各行が何タスクで測ったかは行ごとに異なりうる。",
+  "metric": "Success rate (%)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "提出者の自己申告(アクセシビリティツリーのみを入力)。環境・ステップ上限・足場は提出者任せで、OSWorld-Verified 以前の版の結果を多く含む。",
+  "source": "https://os-world.github.io/",
+  "fetched": [
+    "http://osworld-v1.xlang.ai/static/data/self_reported_results.xlsx"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2024-12-20",
+  "snapshot": "sources/osworld-self-reported-a11y-tree/self_reported_results.A11y_tree.json",
+  "paper": "https://arxiv.org/abs/2404.07972",
+  "repo": "https://github.com/xlang-ai/OSWorld",
+  "notes_ja": "ボード上では「self-reported results」リンクから開く旧タブ。順位はシートの並び順(ボードの表示どおり)。「~ 28」のような概算値は score_extra.approximate=true とした。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "learn-by-interact w/ Claude-3.5-sonnet",
+      "agent": "learn-by-interact",
+      "model_raw": [
+        "Claude-3.5-sonnet"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": "t=0",
+      "score": 22.5,
+      "score_extra": {},
+      "date": "2024-10-12",
+      "verified": false,
+      "open_source": null,
+      "org": "Google Cloud & The University of Hong Kong",
+      "row_url": "https://arxiv.org/abs/2501.10893"
+    },
+    {
+      "rank": 2,
+      "system": "R-MCTS w/ GPT-4o (max 60 tree nodes)",
+      "agent": "R-MCTS",
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": "max 60 tree nodes",
+      "score": 16.6,
+      "score_extra": {},
+      "date": "2024-12-20",
+      "verified": false,
+      "open_source": null,
+      "org": "Columbia University & Microsoft Research",
+      "row_url": "https://arxiv.org/abs/2410.02052"
+    },
+    {
+      "rank": 3,
+      "system": "GPT-4",
+      "agent": null,
+      "model_raw": [
+        "GPT-4"
+      ],
+      "model_ids": [
+        "gpt-4"
+      ],
+      "model_config": "t=1.0, top-p=0.9",
+      "score": 12.24,
+      "score_extra": {},
+      "date": "2024-03-20",
+      "verified": false,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://arxiv.org/abs/2303.08774"
+    },
+    {
+      "rank": 4,
+      "system": "GPT-4o",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": "t=1.0, top-p=0.9",
+      "score": 11.36,
+      "score_extra": {},
+      "date": "2024-05-20",
+      "verified": false,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://openai.com/index/hello-gpt-4o/"
+    },
+    {
+      "rank": 5,
+      "system": "GPT-4 Vision (0409)",
+      "agent": null,
+      "model_raw": [
+        "GPT-4 Vision (0409)"
+      ],
+      "model_ids": [
+        "gpt-4-vision-0409"
+      ],
+      "model_config": "t=1.0, top-p=0.9",
+      "score": 10.82,
+      "score_extra": {},
+      "date": "2024-04-23",
+      "verified": false,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://openai.com/research/gpt-4v-system-card"
+    },
+    {
+      "rank": 6,
+      "system": "learn-by-interact w. Gemini-1.5-pro",
+      "agent": "learn-by-interact",
+      "model_raw": [
+        "Gemini-1.5-pro"
+      ],
+      "model_ids": [
+        "gemini-1.5-pro"
+      ],
+      "model_config": "t=0",
+      "score": 10.3,
+      "score_extra": {},
+      "date": "2024-10-12",
+      "verified": false,
+      "open_source": null,
+      "org": "Google Cloud & The University of Hong Kong authors",
+      "row_url": "https://arxiv.org/abs/2501.10893"
+    },
+    {
+      "rank": 7,
+      "system": "Qwen-Max",
+      "agent": null,
+      "model_raw": [
+        "Qwen-Max"
+      ],
+      "model_ids": [
+        "qwen-max"
+      ],
+      "model_config": "t=1.0, top-p=0.9",
+      "score": 6.87,
+      "score_extra": {},
+      "date": "2024-05-22",
+      "verified": false,
+      "open_source": null,
+      "org": "Alibaba Cloud, Qwen Team",
+      "row_url": "https://github.com/QwenLM/Qwen-VL"
+    },
+    {
+      "rank": 8,
+      "system": "GPT-4o-mini",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o-mini"
+      ],
+      "model_ids": [
+        "gpt-4o-mini"
+      ],
+      "model_config": "t=1.0, top-p=0.9",
+      "score": 6.21,
+      "score_extra": {},
+      "date": "2024-08-17",
+      "verified": false,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/"
+    },
+    {
+      "rank": 9,
+      "system": "Gemini-Pro-1.5",
+      "agent": null,
+      "model_raw": [
+        "Gemini-Pro-1.5"
+      ],
+      "model_ids": [
+        "gemini-1.5-pro"
+      ],
+      "model_config": "t=1.0, top-p=0.9",
+      "score": 4.81,
+      "score_extra": {},
+      "date": "2024-05-03",
+      "verified": false,
+      "open_source": null,
+      "org": "Google",
+      "row_url": "https://arxiv.org/abs/2403.05530"
+    },
+    {
+      "rank": 10,
+      "system": "Qwen-vl-Max-0809",
+      "agent": null,
+      "model_raw": [
+        "Qwen-vl-Max-0809"
+      ],
+      "model_ids": [
+        "qwen-vl-max-0809"
+      ],
+      "model_config": "t=1.0, top-p=0.9",
+      "score": 4.32,
+      "score_extra": {},
+      "date": "2024-09-10",
+      "verified": false,
+      "open_source": null,
+      "org": "Qwen",
+      "row_url": "https://github.com/QwenLM/Qwen2-VL"
+    },
+    {
+      "rank": 11,
+      "system": "Mixtral-8x7B",
+      "agent": null,
+      "model_raw": [
+        "Mixtral-8x7B"
+      ],
+      "model_ids": [
+        "mixtral-8x7b"
+      ],
+      "model_config": "t=1.0, top-p=0.9",
+      "score": 2.98,
+      "score_extra": {},
+      "date": "2024-03-20",
+      "verified": false,
+      "open_source": null,
+      "org": "MistralAI",
+      "row_url": "https://arxiv.org/abs/2401.04088"
+    },
+    {
+      "rank": 12,
+      "system": "Llava-OneVision",
+      "agent": null,
+      "model_raw": [
+        "Llava-OneVision"
+      ],
+      "model_ids": [],
+      "model_config": "t=1.0, top-p=0.9",
+      "score": 2.7,
+      "score_extra": {},
+      "date": "2024-08-17",
+      "verified": false,
+      "open_source": null,
+      "org": "ByteDance & NTU & CUHK & HKUST",
+      "row_url": "https://arxiv.org/abs/2408.03326"
+    },
+    {
+      "rank": 13,
+      "system": "GPT-3.5",
+      "agent": null,
+      "model_raw": [
+        "GPT-3.5"
+      ],
+      "model_ids": [
+        "gpt-3.5"
+      ],
+      "model_config": "t=1.0, top-p=0.9",
+      "score": 2.69,
+      "score_extra": {},
+      "date": "2024-03-20",
+      "verified": false,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://platform.openai.com/docs/models/gpt-3-5-turbo"
+    },
+    {
+      "rank": 14,
+      "system": "Gemini-Pro",
+      "agent": null,
+      "model_raw": [
+        "Gemini-Pro"
+      ],
+      "model_ids": [
+        "gemini-pro"
+      ],
+      "model_config": "t=1.0, top-p=0.9",
+      "score": 2.37,
+      "score_extra": {},
+      "date": "2024-03-20",
+      "verified": false,
+      "open_source": null,
+      "org": "Google",
+      "row_url": "https://arxiv.org/abs/2312.11805"
+    },
+    {
+      "rank": 15,
+      "system": "Llama-3-70B",
+      "agent": null,
+      "model_raw": [
+        "Llama-3-70B"
+      ],
+      "model_ids": [
+        "llama-3-70b"
+      ],
+      "model_config": "t=1.0, top-p=0.9",
+      "score": 1.61,
+      "score_extra": {},
+      "date": "2024-05-16",
+      "verified": false,
+      "open_source": null,
+      "org": "Meta",
+      "row_url": "https://llama.meta.com/llama3"
+    }
+  ]
+}

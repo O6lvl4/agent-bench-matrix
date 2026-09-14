@@ -1,0 +1,485 @@
+{
+  "id": "real-v1-models",
+  "family": "real",
+  "name": "REAL v1 (Models)",
+  "board": "realevals.xyz",
+  "category": "web",
+  "measures_ja": "Amazon・DoorDash・Airbnb などを模した決定的な複製サイト上で、買い物・予約・情報取得などの目標を達成できるか。",
+  "tasks": 112,
+  "tasks_note": "ボードのデータ上、各エントリの v1 タスクは112件。",
+  "metric": "REAL Score",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "Models タブ(モデル単位のエントリ)。誰がどの足場で走らせたかは行ごとに示されない。採点は複製サイトの状態と回答の自動評価。",
+  "source": "https://www.realevals.xyz/",
+  "fetched": [
+    "https://www.realevals.xyz/api/getVerifiedModelData",
+    "https://www.realevals.xyz/_next/static/chunks/app/(main)/page-89fe682a64228531.js"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": null,
+  "snapshot": "sources/real-v1-models/getVerifiedModelData_v1_models.json",
+  "paper": "https://arxiv.org/abs/2504.11543",
+  "repo": "https://github.com/agi-inc/REAL",
+  "notes_ja": "スコアはボードが公開する課題ごとの合否データから、ページ自身の計算式(合格数/タスク数×100、小数1桁)を再現して出した。日付は無い。system はボードの表示名そのままで、同名が別エントリとして並ぶことがある。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "amazon/nova-act-v1.0",
+      "agent": null,
+      "model_raw": [
+        "amazon/nova-act-v1.0"
+      ],
+      "model_ids": [
+        "nova-act-v1.0"
+      ],
+      "model_config": null,
+      "score": 52.7,
+      "score_extra": {
+        "tasks_passed": 59,
+        "tasks_total": 112
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "Claude-Opus-4:Thinking",
+      "agent": null,
+      "model_raw": [
+        "Claude-Opus-4:Thinking"
+      ],
+      "model_ids": [
+        "claude-opus-4"
+      ],
+      "model_config": "thinking",
+      "score": 41.1,
+      "score_extra": {
+        "tasks_passed": 46,
+        "tasks_total": 112
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "Claude 3.7 Sonnet:thinking",
+      "agent": null,
+      "model_raw": [
+        "Claude 3.7 Sonnet:thinking"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": "thinking",
+      "score": 41.1,
+      "score_extra": {
+        "tasks_passed": 46,
+        "tasks_total": 112
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "Sonnet-4:thinking",
+      "agent": null,
+      "model_raw": [
+        "Sonnet-4:thinking"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": "thinking",
+      "score": 39.3,
+      "score_extra": {
+        "tasks_passed": 44,
+        "tasks_total": 112
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "Anthropic computer use",
+      "agent": null,
+      "model_raw": [
+        "Anthropic computer use"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 39.3,
+      "score_extra": {
+        "tasks_passed": 44,
+        "tasks_total": 112
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 6,
+      "system": "Gemini 2.5 pro",
+      "agent": null,
+      "model_raw": [
+        "Gemini 2.5 pro"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": null,
+      "score": 38.4,
+      "score_extra": {
+        "tasks_passed": 43,
+        "tasks_total": 112
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 7,
+      "system": "o3",
+      "agent": null,
+      "model_raw": [
+        "o3"
+      ],
+      "model_ids": [
+        "o3"
+      ],
+      "model_config": null,
+      "score": 34.8,
+      "score_extra": {
+        "tasks_passed": 39,
+        "tasks_total": 112
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 8,
+      "system": "Claude 3.7 Sonnet",
+      "agent": null,
+      "model_raw": [
+        "Claude 3.7 Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": null,
+      "score": 33.9,
+      "score_extra": {
+        "tasks_passed": 38,
+        "tasks_total": 112
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 9,
+      "system": "o3 mini",
+      "agent": null,
+      "model_raw": [
+        "o3 mini"
+      ],
+      "model_ids": [
+        "o3-mini"
+      ],
+      "model_config": null,
+      "score": 25.0,
+      "score_extra": {
+        "tasks_passed": 28,
+        "tasks_total": 112
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 10,
+      "system": "Deepseek chat v3 0324",
+      "agent": null,
+      "model_raw": [
+        "Deepseek chat v3 0324"
+      ],
+      "model_ids": [
+        "deepseek-v3-0324"
+      ],
+      "model_config": null,
+      "score": 19.6,
+      "score_extra": {
+        "tasks_passed": 22,
+        "tasks_total": 112
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 11,
+      "system": "GPT 4.1",
+      "agent": null,
+      "model_raw": [
+        "GPT 4.1"
+      ],
+      "model_ids": [
+        "gpt-4.1"
+      ],
+      "model_config": null,
+      "score": 16.1,
+      "score_extra": {
+        "tasks_passed": 18,
+        "tasks_total": 112
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 12,
+      "system": "o1",
+      "agent": null,
+      "model_raw": [
+        "o1"
+      ],
+      "model_ids": [
+        "o1"
+      ],
+      "model_config": null,
+      "score": 16.1,
+      "score_extra": {
+        "tasks_passed": 18,
+        "tasks_total": 112
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 13,
+      "system": "o1 mini",
+      "agent": null,
+      "model_raw": [
+        "o1 mini"
+      ],
+      "model_ids": [
+        "o1-mini"
+      ],
+      "model_config": null,
+      "score": 15.2,
+      "score_extra": {
+        "tasks_passed": 17,
+        "tasks_total": 112
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 14,
+      "system": "GPT 4o",
+      "agent": null,
+      "model_raw": [
+        "GPT 4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 13.4,
+      "score_extra": {
+        "tasks_passed": 15,
+        "tasks_total": 112
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 15,
+      "system": "Grok 3",
+      "agent": null,
+      "model_raw": [
+        "Grok 3"
+      ],
+      "model_ids": [
+        "grok-3"
+      ],
+      "model_config": null,
+      "score": 12.5,
+      "score_extra": {
+        "tasks_passed": 14,
+        "tasks_total": 112
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 16,
+      "system": "Llama 4 maverick",
+      "agent": null,
+      "model_raw": [
+        "Llama 4 maverick"
+      ],
+      "model_ids": [
+        "llama-4-maverick"
+      ],
+      "model_config": null,
+      "score": 12.5,
+      "score_extra": {
+        "tasks_passed": 14,
+        "tasks_total": 112
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 17,
+      "system": "Llama 3.3 70b instruct",
+      "agent": null,
+      "model_raw": [
+        "Llama 3.3 70b instruct"
+      ],
+      "model_ids": [
+        "llama-3.3-70b-instruct"
+      ],
+      "model_config": null,
+      "score": 10.7,
+      "score_extra": {
+        "tasks_passed": 12,
+        "tasks_total": 112
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 18,
+      "system": "Gemma 3 27b it",
+      "agent": null,
+      "model_raw": [
+        "Gemma 3 27b it"
+      ],
+      "model_ids": [
+        "gemma-3-27b"
+      ],
+      "model_config": null,
+      "score": 9.8,
+      "score_extra": {
+        "tasks_passed": 11,
+        "tasks_total": 112
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 19,
+      "system": "OpenAI CUA",
+      "agent": null,
+      "model_raw": [
+        "OpenAI CUA"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 8.0,
+      "score_extra": {
+        "tasks_passed": 9,
+        "tasks_total": 112
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 20,
+      "system": "Qwen2.5 vl 32b instruct",
+      "agent": null,
+      "model_raw": [
+        "Qwen2.5 vl 32b instruct"
+      ],
+      "model_ids": [
+        "qwen2.5-vl-32b-instruct"
+      ],
+      "model_config": null,
+      "score": 2.7,
+      "score_extra": {
+        "tasks_passed": 3,
+        "tasks_total": 112
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 21,
+      "system": "Llama 3.1 8b instruct",
+      "agent": null,
+      "model_raw": [
+        "Llama 3.1 8b instruct"
+      ],
+      "model_ids": [
+        "llama-3.1-8b-instruct"
+      ],
+      "model_config": null,
+      "score": 1.8,
+      "score_extra": {
+        "tasks_passed": 2,
+        "tasks_total": 112
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    }
+  ]
+}

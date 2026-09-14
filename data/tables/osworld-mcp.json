@@ -1,0 +1,558 @@
+{
+  "id": "osworld-mcp",
+  "family": "osworld-mcp",
+  "name": "OSWorld-MCP",
+  "board": "osworld-mcp.github.io",
+  "category": "computer-use",
+  "measures_ja": "OSWorld の環境で、GUI 操作に加えて MCP ツールを適切に呼び出してタスクを完了できるか。",
+  "tasks": null,
+  "tasks_note": "README は「250 のツールが有効なタスク(全体の69%)」とだけ書き、総タスク数を明記していないため null。",
+  "metric": "Task Accuracy (Acc, %)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "作成チームが評価。多くは GUI-Owl のエージェント設定に揃えた統一プロンプトで、一部はモデル固有プロンプト(model_config の prompt)。",
+  "source": "https://osworld-mcp.github.io/",
+  "fetched": [
+    "https://osworld-mcp.github.io/"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": null,
+  "snapshot": "sources/osworld-mcp/leaderboard_table.html",
+  "paper": "https://arxiv.org/abs/2510.24563",
+  "repo": "https://github.com/X-PLUG/OSWorld-MCP",
+  "notes_ja": "静的HTMLの表。ボード既定(全ステップ・全プロンプト)で Acc 降順に並べ直す JS を再現した。TIR はツール呼び出し率、ACS は平均完了ステップ(低いほど良い)。行の日付は無く、サイトのリポジトリ(osworld-mcp/osworld-mcp.github.io)の最終コミットは 2026-05-10。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Kimi-K2.5",
+      "agent": null,
+      "model_raw": [
+        "kimi-k2.5"
+      ],
+      "model_ids": [
+        "kimi-k2.5"
+      ],
+      "model_config": "type=General model; max_steps=50; prompt=specific prompt",
+      "score": 56.6,
+      "score_extra": {
+        "tir": 18.8,
+        "acs": 21.2,
+        "max_steps": 50,
+        "runs": 1
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "Moonshot AI",
+      "row_url": "https://www.kimi.com/ai-models/kimi-k2-5"
+    },
+    {
+      "rank": 2,
+      "system": "Agent-S2.5",
+      "agent": "Agent-S2.5",
+      "model_raw": [
+        "OpenAI o3",
+        "UI-TARS-1.5-72B"
+      ],
+      "model_ids": [
+        "o3",
+        "ui-tars-1.5-72b"
+      ],
+      "model_config": "type=Agentic framework; max_steps=50; prompt=unified prompt",
+      "score": 49.5,
+      "score_extra": {
+        "tir": 35.3,
+        "acs": 17.0,
+        "max_steps": 50,
+        "runs": 3
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "Simular Research",
+      "row_url": "https://github.com/simular-ai/Agent-S"
+    },
+    {
+      "rank": 3,
+      "system": "Claude-4-5-Sonnet",
+      "agent": null,
+      "model_raw": [
+        "claude-sonnet-4-5-20250929"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": "type=General model; max_steps=50; prompt=unified prompt",
+      "score": 49.5,
+      "score_extra": {
+        "tir": 36.6,
+        "acs": 19.8,
+        "max_steps": 50,
+        "runs": 1
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://www.anthropic.com/news/claude-4.5-sonnet"
+    },
+    {
+      "rank": 4,
+      "system": "Claude 4 Sonnet",
+      "agent": null,
+      "model_raw": [
+        "claude-sonnet-4-20250514-thinking"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": "type=General model; max_steps=50; prompt=unified prompt; thinking",
+      "score": 45.0,
+      "score_extra": {
+        "tir": 33.3,
+        "acs": 20.0,
+        "max_steps": 50,
+        "runs": 3
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://www.anthropic.com/news/claude-4"
+    },
+    {
+      "rank": 5,
+      "system": "Gemini 3.1 Pro",
+      "agent": null,
+      "model_raw": [
+        "gemini-3.1-pro"
+      ],
+      "model_ids": [
+        "gemini-3.1-pro"
+      ],
+      "model_config": "type=General model; max_steps=50; prompt=unified prompt",
+      "score": 44.2,
+      "score_extra": {
+        "tir": 31.0,
+        "acs": 27.6,
+        "max_steps": 50,
+        "runs": 1
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "Google DeepMind",
+      "row_url": "https://deepmind.google/models/gemini/pro/"
+    },
+    {
+      "rank": 6,
+      "system": "Kimi-K2.5",
+      "agent": null,
+      "model_raw": [
+        "kimi-k2.5"
+      ],
+      "model_ids": [
+        "kimi-k2.5"
+      ],
+      "model_config": "type=General model; max_steps=15; prompt=specific prompt",
+      "score": 42.8,
+      "score_extra": {
+        "tir": 11.9,
+        "acs": 10.9,
+        "max_steps": 15,
+        "runs": 1
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "Moonshot AI",
+      "row_url": "https://www.kimi.com/ai-models/kimi-k2-5"
+    },
+    {
+      "rank": 7,
+      "system": "Agent-S2.5",
+      "agent": "Agent-S2.5",
+      "model_raw": [
+        "OpenAI o3",
+        "UI-TARS-1.5-72B"
+      ],
+      "model_ids": [
+        "o3",
+        "ui-tars-1.5-72b"
+      ],
+      "model_config": "type=Agentic framework; max_steps=15; prompt=unified prompt",
+      "score": 42.1,
+      "score_extra": {
+        "tir": 30.0,
+        "acs": 10.0,
+        "max_steps": 15,
+        "runs": 3
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "Simular Research",
+      "row_url": "https://github.com/simular-ai/Agent-S"
+    },
+    {
+      "rank": 8,
+      "system": "Qwen3-VL",
+      "agent": null,
+      "model_raw": [
+        "qwen3-vl-235b-a22b-thinking"
+      ],
+      "model_ids": [
+        "qwen3-vl-235b-a22b"
+      ],
+      "model_config": "type=General model; max_steps=50; prompt=unified prompt; thinking",
+      "score": 39.5,
+      "score_extra": {
+        "tir": 26.1,
+        "acs": 18.6,
+        "max_steps": 50,
+        "runs": 3
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "Alibaba Cloud, Qwen Team",
+      "row_url": "https://qwen.ai/blog?id=99f0335c4ad9ff6153e517418d48535ab6d8afef&from=research.latest-advancements-list"
+    },
+    {
+      "rank": 9,
+      "system": "Claude-4-5-Sonnet",
+      "agent": null,
+      "model_raw": [
+        "claude-sonnet-4-5-20250929"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": "type=General model; max_steps=15; prompt=unified prompt",
+      "score": 38.9,
+      "score_extra": {
+        "tir": 30.9,
+        "acs": 10.0,
+        "max_steps": 15,
+        "runs": 1
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://www.anthropic.com/news/claude-4.5-sonnet"
+    },
+    {
+      "rank": 10,
+      "system": "Seed1.5-VL",
+      "agent": null,
+      "model_raw": [
+        "doubao-1-5-thinking-vision-pro-250428"
+      ],
+      "model_ids": [
+        "doubao-1.5-thinking-vision-pro-250428"
+      ],
+      "model_config": "type=General model; max_steps=50; prompt=unified prompt",
+      "score": 38.2,
+      "score_extra": {
+        "tir": 25.1,
+        "acs": 22.3,
+        "max_steps": 50,
+        "runs": 3
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "ByteDance Seed",
+      "row_url": "https://arxiv.org/abs/2505.07062"
+    },
+    {
+      "rank": 11,
+      "system": "Qwen3.5-Plus",
+      "agent": null,
+      "model_raw": [
+        "qwen3.5-plus"
+      ],
+      "model_ids": [
+        "qwen3.5-plus"
+      ],
+      "model_config": "type=General model; max_steps=50; prompt=specific prompt",
+      "score": 37.6,
+      "score_extra": {
+        "tir": 10.2,
+        "acs": 24.9,
+        "max_steps": 50,
+        "runs": 1
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "Alibaba Cloud, Qwen Team",
+      "row_url": "https://qwen.ai/blog?id=qwen3.5"
+    },
+    {
+      "rank": 12,
+      "system": "Claude 4 Sonnet",
+      "agent": null,
+      "model_raw": [
+        "claude-sonnet-4-20250514-thinking"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": "type=General model; max_steps=15; prompt=unified prompt; thinking",
+      "score": 36.1,
+      "score_extra": {
+        "tir": 27.4,
+        "acs": 10.5,
+        "max_steps": 15,
+        "runs": 3
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://www.anthropic.com/news/claude-4"
+    },
+    {
+      "rank": 13,
+      "system": "Gemini 3.1 Pro",
+      "agent": null,
+      "model_raw": [
+        "gemini-3.1-pro"
+      ],
+      "model_ids": [
+        "gemini-3.1-pro"
+      ],
+      "model_config": "type=General model; max_steps=15; prompt=unified prompt",
+      "score": 34.1,
+      "score_extra": {
+        "tir": 25.8,
+        "acs": 10.8,
+        "max_steps": 15,
+        "runs": 1
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "Google DeepMind",
+      "row_url": "https://deepmind.google/models/gemini/pro/"
+    },
+    {
+      "rank": 14,
+      "system": "Qwen3-VL",
+      "agent": null,
+      "model_raw": [
+        "qwen3-vl-235b-a22b-thinking"
+      ],
+      "model_ids": [
+        "qwen3-vl-235b-a22b"
+      ],
+      "model_config": "type=General model; max_steps=15; prompt=unified prompt; thinking",
+      "score": 32.8,
+      "score_extra": {
+        "tir": 21.5,
+        "acs": 10.0,
+        "max_steps": 15,
+        "runs": 3
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "Alibaba Cloud, Qwen Team",
+      "row_url": "https://qwen.ai/blog?id=99f0335c4ad9ff6153e517418d48535ab6d8afef&from=research.latest-advancements-list"
+    },
+    {
+      "rank": 15,
+      "system": "Qwen3.5-Plus",
+      "agent": null,
+      "model_raw": [
+        "qwen3.5-plus"
+      ],
+      "model_ids": [
+        "qwen3.5-plus"
+      ],
+      "model_config": "type=General model; max_steps=15; prompt=specific prompt",
+      "score": 31.5,
+      "score_extra": {
+        "tir": 8.9,
+        "acs": 11.5,
+        "max_steps": 15,
+        "runs": 1
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "Alibaba Cloud, Qwen Team",
+      "row_url": "https://qwen.ai/blog?id=qwen3.5"
+    },
+    {
+      "rank": 16,
+      "system": "Seed1.5-VL",
+      "agent": null,
+      "model_raw": [
+        "doubao-1-5-thinking-vision-pro-250428"
+      ],
+      "model_ids": [
+        "doubao-1.5-thinking-vision-pro-250428"
+      ],
+      "model_config": "type=General model; max_steps=15; prompt=unified prompt",
+      "score": 30.7,
+      "score_extra": {
+        "tir": 21.0,
+        "acs": 10.1,
+        "max_steps": 15,
+        "runs": 3
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "ByteDance Seed",
+      "row_url": "https://arxiv.org/abs/2505.07062"
+    },
+    {
+      "rank": 17,
+      "system": "Gemini-2.5-Pro",
+      "agent": null,
+      "model_raw": [
+        "gemini-2.5-pro"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": "type=General model; max_steps=50; prompt=unified prompt",
+      "score": 25.7,
+      "score_extra": {
+        "tir": 16.8,
+        "acs": 31.0,
+        "max_steps": 50,
+        "runs": 3
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "Google DeepMind",
+      "row_url": "https://deepmind.google/models/gemini/pro"
+    },
+    {
+      "rank": 18,
+      "system": "OpenAI o3",
+      "agent": null,
+      "model_raw": [
+        "o3-2025-04-16"
+      ],
+      "model_ids": [
+        "o3"
+      ],
+      "model_config": "type=General model; max_steps=50; prompt=unified prompt",
+      "score": 24.1,
+      "score_extra": {
+        "tir": 16.0,
+        "acs": 33.0,
+        "max_steps": 50,
+        "runs": 3
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://openai.com/index/introducing-o3-and-o4-mini"
+    },
+    {
+      "rank": 19,
+      "system": "OpenAI o3",
+      "agent": null,
+      "model_raw": [
+        "o3-2025-04-16"
+      ],
+      "model_ids": [
+        "o3"
+      ],
+      "model_config": "type=General model; max_steps=15; prompt=unified prompt",
+      "score": 17.6,
+      "score_extra": {
+        "tir": 11.6,
+        "acs": 11.9,
+        "max_steps": 15,
+        "runs": 3
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://openai.com/index/introducing-o3-and-o4-mini"
+    },
+    {
+      "rank": 20,
+      "system": "Gemini-2.5-Pro",
+      "agent": null,
+      "model_raw": [
+        "gemini-2.5-pro"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": "type=General model; max_steps=15; prompt=unified prompt",
+      "score": 17.4,
+      "score_extra": {
+        "tir": 12.2,
+        "acs": 11.6,
+        "max_steps": 15,
+        "runs": 3
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "Google DeepMind",
+      "row_url": "https://deepmind.google/models/gemini/pro"
+    },
+    {
+      "rank": 21,
+      "system": "Qwen2.5-VL",
+      "agent": null,
+      "model_raw": [
+        "qwen2.5-vl-72b-instruct"
+      ],
+      "model_ids": [
+        "qwen2.5-vl-72b-instruct"
+      ],
+      "model_config": "type=General model; max_steps=50; prompt=unified prompt",
+      "score": 15.6,
+      "score_extra": {
+        "tir": 9.3,
+        "acs": 39.0,
+        "max_steps": 50,
+        "runs": 3
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "Alibaba Cloud, Qwen Team",
+      "row_url": "https://qwenlm.github.io/blog/qwen2.5-vl"
+    },
+    {
+      "rank": 22,
+      "system": "Qwen2.5-VL",
+      "agent": null,
+      "model_raw": [
+        "qwen2.5-vl-72b-instruct"
+      ],
+      "model_ids": [
+        "qwen2.5-vl-72b-instruct"
+      ],
+      "model_config": "type=General model; max_steps=15; prompt=unified prompt",
+      "score": 14.5,
+      "score_extra": {
+        "tir": 10.1,
+        "acs": 14.0,
+        "max_steps": 15,
+        "runs": 3
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "Alibaba Cloud, Qwen Team",
+      "row_url": "https://qwenlm.github.io/blog/qwen2.5-vl"
+    }
+  ]
+}

@@ -1,0 +1,358 @@
+{
+  "id": "bearcubs",
+  "family": "bearcubs",
+  "name": "BearCubs",
+  "board": "bear-cubs.github.io",
+  "category": "web",
+  "measures_ja": "動画・地図・3D・ウェブゲームなど、実際に画面を操作しないと答えが得られない情報探索の質問に正答できるか。",
+  "tasks": 111,
+  "tasks_note": null,
+  "metric": "Accuracy (All)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "運営が掲載する結果で、評価の依頼はサイトのフォームから受け付ける。回答は正解・誤り・不確か・無回答に分類して集計される。",
+  "source": "https://bear-cubs.github.io/",
+  "fetched": [
+    "https://raw.githubusercontent.com/bear-cubs/bear-cubs.github.io/main/src/data/bear_cubs_leaderboard.ts",
+    "https://bear-cubs.github.io/"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": null,
+  "snapshot": "sources/bearcubs/bear_cubs_leaderboard.json",
+  "paper": "https://arxiv.org/abs/2503.07919",
+  "repo": "https://github.com/bear-cubs/bear-cubs.github.io",
+  "notes_ja": "サイトのデータは2025年7月22日の更新が最後で、行に日付は無い。人間(84.7%)の行は含めていない。system は製品名や「モデル + 条件」の表記そのまま。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "ChatGPT Agent",
+      "agent": null,
+      "model_raw": [
+        "ChatGPT Agent"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 65.8,
+      "score_extra": {
+        "text_only": 76.8,
+        "multimodal": 54.5,
+        "category": "CU agents",
+        "correct": 73,
+        "wrong": 30,
+        "uncertain": 3,
+        "none": 5,
+        "avg_time_correct": "9:16",
+        "avg_time_wrong": "16:14",
+        "avg_time_uncertain": "25:55"
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "OpenAI Deep Research",
+      "agent": null,
+      "model_raw": [
+        "OpenAI Deep Research"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 36.0,
+      "score_extra": {
+        "text_only": 60.7,
+        "multimodal": 10.9,
+        "category": "Non-CU agents",
+        "correct": 40,
+        "wrong": 69,
+        "uncertain": 1,
+        "none": 1,
+        "avg_time_correct": "4:37",
+        "avg_time_wrong": "9:00",
+        "avg_time_uncertain": "3:58"
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "Google Deep Research",
+      "agent": null,
+      "model_raw": [
+        "Google Deep Research"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 23.4,
+      "score_extra": {
+        "text_only": 42.9,
+        "multimodal": 3.6,
+        "category": "Non-CU agents",
+        "correct": 26,
+        "wrong": 39,
+        "uncertain": 46,
+        "none": 0,
+        "avg_time_correct": "4:21",
+        "avg_time_wrong": "4:00",
+        "avg_time_uncertain": "4:39"
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "OpenAI Operator",
+      "agent": null,
+      "model_raw": [
+        "OpenAI Operator"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 23.4,
+      "score_extra": {
+        "text_only": 33.9,
+        "multimodal": 12.7,
+        "category": "CU agents",
+        "correct": 26,
+        "wrong": 43,
+        "uncertain": 13,
+        "none": 29,
+        "avg_time_correct": "2:59",
+        "avg_time_wrong": "3:58",
+        "avg_time_uncertain": "8:06"
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "Anthropic Computer Use",
+      "agent": null,
+      "model_raw": [
+        "Anthropic Computer Use"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 14.4,
+      "score_extra": {
+        "text_only": 19.6,
+        "multimodal": 9.1,
+        "category": "CU agents",
+        "correct": 16,
+        "wrong": 22,
+        "uncertain": 73,
+        "none": 0,
+        "avg_time_correct": "2:24",
+        "avg_time_wrong": "2:35",
+        "avg_time_uncertain": "3:35"
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 6,
+      "system": "Convergence AI Proxy",
+      "agent": null,
+      "model_raw": [
+        "Convergence AI Proxy"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 12.6,
+      "score_extra": {
+        "text_only": 16.1,
+        "multimodal": 9.1,
+        "category": "CU agents",
+        "correct": 14,
+        "wrong": 44,
+        "uncertain": 34,
+        "none": 19,
+        "avg_time_correct": "1:52",
+        "avg_time_wrong": "2:41",
+        "avg_time_uncertain": "5:24"
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 7,
+      "system": "Grok3 DeepSearch",
+      "agent": null,
+      "model_raw": [
+        "Grok3 DeepSearch"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 11.7,
+      "score_extra": {
+        "text_only": 21.4,
+        "multimodal": 1.8,
+        "category": "Non-CU agents",
+        "correct": 13,
+        "wrong": 95,
+        "uncertain": 2,
+        "none": 1,
+        "avg_time_correct": "1:09",
+        "avg_time_wrong": "1:24",
+        "avg_time_uncertain": "2:05"
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 8,
+      "system": "DeepSeek R1 zero-shot",
+      "agent": null,
+      "model_raw": [
+        "DeepSeek R1 zero-shot"
+      ],
+      "model_ids": [
+        "deepseek-r1"
+      ],
+      "model_config": null,
+      "score": 8.1,
+      "score_extra": {
+        "text_only": 10.7,
+        "multimodal": 5.5,
+        "category": "LLM baselines",
+        "correct": 9,
+        "wrong": 82,
+        "uncertain": 19,
+        "none": 1
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 9,
+      "system": "Perplexity sonar-pro",
+      "agent": null,
+      "model_raw": [
+        "Perplexity sonar-pro"
+      ],
+      "model_ids": [
+        "sonar-pro"
+      ],
+      "model_config": null,
+      "score": 5.4,
+      "score_extra": {
+        "text_only": 8.9,
+        "multimodal": 1.8,
+        "category": "LLM baselines",
+        "correct": 6,
+        "wrong": 30,
+        "uncertain": 58,
+        "none": 17
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 10,
+      "system": "GPT-4o zero-shot",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o zero-shot"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 2.7,
+      "score_extra": {
+        "text_only": 5.4,
+        "multimodal": 0.0,
+        "category": "LLM baselines",
+        "correct": 3,
+        "wrong": 53,
+        "uncertain": 55,
+        "none": 0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 11,
+      "system": "DeepSeek R1 + Google Search",
+      "agent": null,
+      "model_raw": [
+        "DeepSeek R1 + Google Search"
+      ],
+      "model_ids": [
+        "deepseek-r1"
+      ],
+      "model_config": null,
+      "score": 1.8,
+      "score_extra": {
+        "text_only": 3.6,
+        "multimodal": 0.0,
+        "category": "LLM baselines",
+        "correct": 2,
+        "wrong": 16,
+        "uncertain": 0,
+        "none": 93
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 12,
+      "system": "GPT-4o + Google Search",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o + Google Search"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 0.0,
+      "score_extra": {
+        "text_only": 0.0,
+        "multimodal": 0.0,
+        "category": "LLM baselines",
+        "correct": 0,
+        "wrong": 4,
+        "uncertain": 0,
+        "none": 107
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    }
+  ]
+}

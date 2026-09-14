@@ -1,0 +1,1008 @@
+{
+  "id": "webarena",
+  "family": "webarena",
+  "name": "WebArena",
+  "board": "webarena.dev (Google Sheets leaderboard)",
+  "category": "web",
+  "measures_ja": "自前ホストした通販・掲示板・GitLab・CMS・地図などのサイト上で、指示されたウェブ操作をやり遂げられるか。",
+  "tasks": 812,
+  "tasks_note": null,
+  "metric": "Success Rate (%)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "提出者がそれぞれ自前のエージェントで走らせ、結果を運営にメールで報告する(自己申告を含む)。2024年9月以降は軌跡の提出が必須。",
+  "source": "https://webarena.dev/",
+  "fetched": [
+    "https://docs.google.com/spreadsheets/d/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ/export?format=csv&gid=0",
+    "https://docs.google.com/spreadsheets/d/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ/htmlview/sheet?headers=true&gid=0"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-06",
+  "snapshot": "sources/webarena/sheet_webarena_tab.json",
+  "paper": "https://arxiv.org/abs/2307.13854",
+  "repo": "https://github.com/web-arena-x/webarena",
+  "notes_ja": "日付は月単位(YYYY-MM)。Model 列にはモデル名だけでなくエージェント名が入る行も多い。表の下にある Reddit サブセットの2行と人間の成績(78.24%)は別枠なので行に含めていない。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Deepseek v3.2",
+      "agent": null,
+      "model_raw": [
+        "Deepseek v3.2"
+      ],
+      "model_ids": [
+        "deepseek-v3.2"
+      ],
+      "model_config": null,
+      "score": 74.3,
+      "score_extra": {
+        "result_source": "WebTactix"
+      },
+      "date": "2026-02",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://paper-submission-anoymous.github.io/webtactix_introduction/"
+    },
+    {
+      "rank": 2,
+      "system": "OpAgent",
+      "agent": null,
+      "model_raw": [
+        "OpAgent"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 71.6,
+      "score_extra": {
+        "result_source": "OpAgent"
+      },
+      "date": "2026-01",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/codefuse-ai/OpAgent"
+    },
+    {
+      "rank": 3,
+      "system": "ColorBrowserAgent",
+      "agent": null,
+      "model_raw": [
+        "ColorBrowserAgent"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 71.2,
+      "score_extra": {
+        "result_source": "ColorBrowserAgent",
+        "note": "ite-specific knowledge adaptation & progressive summarization for long-horizon tasks."
+      },
+      "date": "2025-12",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2601.07262"
+    },
+    {
+      "rank": 4,
+      "system": "Claude Code + GBOX MCP",
+      "agent": null,
+      "model_raw": [
+        "Claude Code + GBOX MCP"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 68,
+      "score_extra": {
+        "result_source": "GBOX AI"
+      },
+      "date": "2025-10",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/babelcloud/webarena/blob/main/gbox/report.md"
+    },
+    {
+      "rank": 5,
+      "system": "DeepSky Agent",
+      "agent": null,
+      "model_raw": [
+        "DeepSky Agent"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 66.9,
+      "score_extra": {
+        "result_source": "Self-reported"
+      },
+      "date": "2025-09",
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 6,
+      "system": "Narada AI",
+      "agent": null,
+      "model_raw": [
+        "Narada AI"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 64.2,
+      "score_extra": {
+        "result_source": "Self-reported"
+      },
+      "date": "2025-10",
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://narada.ai/blog/narada-ai-web-agent-operator"
+    },
+    {
+      "rank": 7,
+      "system": "IBM CUGA",
+      "agent": null,
+      "model_raw": [
+        "IBM CUGA"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 61.7,
+      "score_extra": {
+        "result_source": "IBM CUGA"
+      },
+      "date": "2025-02",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://www.arxiv.org/abs/2503.01861"
+    },
+    {
+      "rank": 8,
+      "system": "OpenAI Operator",
+      "agent": null,
+      "model_raw": [
+        "OpenAI Operator"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 58.1,
+      "score_extra": {
+        "result_source": "OpenAI CUA",
+        "note": "System card"
+      },
+      "date": "2025-01",
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://openai.com/index/computer-using-agent/"
+    },
+    {
+      "rank": 9,
+      "system": "Jace.AI",
+      "agent": null,
+      "model_raw": [
+        "Jace.AI"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 57.1,
+      "score_extra": {
+        "result_source": "Reported by zetalabs.ai",
+        "note": "Note from the developer of the work, see the comment of the cell"
+      },
+      "date": "2024-08",
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://www.jace.ai/"
+    },
+    {
+      "rank": 10,
+      "system": "GLM-4-32B + Qwen2.5-VL-7B",
+      "agent": null,
+      "model_raw": [
+        "GLM-4-32B + Qwen2.5-VL-7B"
+      ],
+      "model_ids": [
+        "glm-4-32b",
+        "qwen2.5-vl-7b"
+      ],
+      "model_config": null,
+      "score": 56.3,
+      "score_extra": {
+        "model_size_b": "32 + 7",
+        "result_source": "WebChallenger"
+      },
+      "date": "2026-06",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://jayoohwang1.github.io/webchallenger-site/"
+    },
+    {
+      "rank": 11,
+      "system": "WebOperator + GPT-4o",
+      "agent": null,
+      "model_raw": [
+        "WebOperator + GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 54.6,
+      "score_extra": {
+        "result_source": "WebOperator"
+      },
+      "date": "2025-12",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://kagnlp.github.io/WebOperator/"
+    },
+    {
+      "rank": 12,
+      "system": "ScribeAgent + GPT-4o",
+      "agent": null,
+      "model_raw": [
+        "ScribeAgent + GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 53,
+      "score_extra": {
+        "result_source": "ScribeAgent",
+        "note": "ScribeAgent is finetuned with proprietary data"
+      },
+      "date": "2024-12",
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2411.15004"
+    },
+    {
+      "rank": 13,
+      "system": "AgentSymbiotic",
+      "agent": null,
+      "model_raw": [
+        "AgentSymbiotic"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 52.1,
+      "score_extra": {
+        "result_source": "AgentSymbiotic",
+        "note": "Code"
+      },
+      "date": "2025-01",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://www.arxiv.org/abs/2502.07942"
+    },
+    {
+      "rank": 14,
+      "system": "Learn-by-Interact",
+      "agent": null,
+      "model_raw": [
+        "Learn-by-Interact"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 48,
+      "score_extra": {
+        "result_source": "Learn-by-interact"
+      },
+      "date": "2025-01",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/hongjin-su/hongjin-su.github.io/blob/main/learn-by-interact.pdf"
+    },
+    {
+      "rank": 15,
+      "system": "AgentOccam-Judge",
+      "agent": null,
+      "model_raw": [
+        "AgentOccam-Judge"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 45.7,
+      "score_extra": {
+        "result_source": "AgentOccam-Judge"
+      },
+      "date": "2024-10",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2410.13825"
+    },
+    {
+      "rank": 16,
+      "system": "A3-Qwen3.5-9B",
+      "agent": null,
+      "model_raw": [
+        "A3-Qwen3.5-9B"
+      ],
+      "model_ids": [
+        "a3-qwen3.5-9b"
+      ],
+      "model_config": null,
+      "score": 42.1,
+      "score_extra": {
+        "model_size_b": "9",
+        "result_source": "Agent-as-Annotators",
+        "note": "Multimodal (AXTree + screenshots). SFT on 2,322 synthetic trajectories from Gemini 3 Pro. Evaluated using GenericAgent/BrowserGym."
+      },
+      "date": "2026-04",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2604.07776"
+    },
+    {
+      "rank": 17,
+      "system": "WebPilot",
+      "agent": null,
+      "model_raw": [
+        "WebPilot"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 37.2,
+      "score_extra": {
+        "result_source": "WebPilot",
+        "note": "No open source code or trajectory released from the work"
+      },
+      "date": "2024-08",
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://www.arxiv.org/pdf/2408.15978"
+    },
+    {
+      "rank": 18,
+      "system": "GUI-API Hybrid Agent",
+      "agent": null,
+      "model_raw": [
+        "GUI-API Hybrid Agent"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 35.8,
+      "score_extra": {
+        "result_source": "Beyond Browsing",
+        "note": "Using both API and GUI"
+      },
+      "date": "2024-10",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://arxiv.org/pdf/2410.16464"
+    },
+    {
+      "rank": 19,
+      "system": "Agent Workflow Memory",
+      "agent": null,
+      "model_raw": [
+        "Agent Workflow Memory"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 35.5,
+      "score_extra": {
+        "result_source": "AWM"
+      },
+      "date": "2024-09",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://arxiv.org/pdf/2409.07429"
+    },
+    {
+      "rank": 20,
+      "system": "SteP",
+      "agent": null,
+      "model_raw": [
+        "SteP"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 33.5,
+      "score_extra": {
+        "result_source": "SteP",
+        "note": "High-level plans are derived by human"
+      },
+      "date": "2024-04",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2310.03720"
+    },
+    {
+      "rank": 21,
+      "system": "TTI",
+      "agent": null,
+      "model_raw": [
+        "TTI"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 26.1,
+      "score_extra": {
+        "model_size_b": "12",
+        "result_source": "TTI"
+      },
+      "date": "2025-06",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2506.07976"
+    },
+    {
+      "rank": 22,
+      "system": "BrowserGym + GPT-4",
+      "agent": null,
+      "model_raw": [
+        "BrowserGym + GPT-4"
+      ],
+      "model_ids": [
+        "gpt-4"
+      ],
+      "model_config": null,
+      "score": 23.5,
+      "score_extra": {
+        "result_source": "WorkArena",
+        "note": "different observation representation"
+      },
+      "date": "2024-04",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/ServiceNow/BrowserGym"
+    },
+    {
+      "rank": 23,
+      "system": "AgentTrek-1.0-32B",
+      "agent": null,
+      "model_raw": [
+        "AgentTrek-1.0-32B"
+      ],
+      "model_ids": [
+        "agenttrek-1.0-32b"
+      ],
+      "model_config": null,
+      "score": 22.4,
+      "score_extra": {
+        "model_size_b": "32",
+        "result_source": "AgentTrek"
+      },
+      "date": "2025-01",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://agenttrek.github.io/"
+    },
+    {
+      "rank": 24,
+      "system": "GPT-4 + Auto Eval",
+      "agent": null,
+      "model_raw": [
+        "GPT-4 + Auto Eval"
+      ],
+      "model_ids": [
+        "gpt-4"
+      ],
+      "model_config": null,
+      "score": 20.2,
+      "score_extra": {
+        "result_source": "Auto Eval & Refine"
+      },
+      "date": "2024-04",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2404.06474"
+    },
+    {
+      "rank": 25,
+      "system": "GPT-4o + Tree Search",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o + Tree Search"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 19.2,
+      "score_extra": {
+        "result_source": "Tree Search for LM Agents"
+      },
+      "date": "2024-06",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://jykoh.com/search-agents"
+    },
+    {
+      "rank": 26,
+      "system": "AutoWebGLM",
+      "agent": null,
+      "model_raw": [
+        "AutoWebGLM"
+      ],
+      "model_ids": [
+        "autowebglm"
+      ],
+      "model_config": null,
+      "score": 18.2,
+      "score_extra": {
+        "model_size_b": "7",
+        "result_source": "AutoWebGLM"
+      },
+      "date": "2024-04",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2404.03648"
+    },
+    {
+      "rank": 27,
+      "system": "NNetNav",
+      "agent": null,
+      "model_raw": [
+        "NNetNav"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 16.3,
+      "score_extra": {
+        "model_size_b": "8",
+        "result_source": "NNetscape",
+        "note": "LLama 3.1-8B-instruct fine-tuned on NNetNav6k (a newer version of the dataset where the work keeps the best of 3 trajectories for each instruction, where we use a llama 3.1 70b as the reward model). \nThe model is available here: https://huggingface.co/stanfordnlp/llama8b-nnetnav-wa"
+      },
+      "date": "2025-01",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2410.02907"
+    },
+    {
+      "rank": 28,
+      "system": "gpt-4-0613",
+      "agent": null,
+      "model_raw": [
+        "gpt-4-0613"
+      ],
+      "model_ids": [
+        "gpt-4"
+      ],
+      "model_config": null,
+      "score": 14.9,
+      "score_extra": {
+        "result_source": "WebArena",
+        "note": "when \"not achievable\" hint is not provided"
+      },
+      "date": "2023-06",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2307.13854"
+    },
+    {
+      "rank": 29,
+      "system": "gpt-4o-2024-05-13",
+      "agent": null,
+      "model_raw": [
+        "gpt-4o-2024-05-13"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 13.1,
+      "score_extra": {
+        "result_source": "WebArena Team",
+        "note": "when \"not achievable\" hint is provided"
+      },
+      "date": "2024-05",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 30,
+      "system": "gpt-4-0613",
+      "agent": null,
+      "model_raw": [
+        "gpt-4-0613"
+      ],
+      "model_ids": [
+        "gpt-4"
+      ],
+      "model_config": null,
+      "score": 11.7,
+      "score_extra": {
+        "result_source": "WebArena",
+        "note": "when \"not achievable\" hint is provided"
+      },
+      "date": "2023-06",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2307.13854"
+    },
+    {
+      "rank": 31,
+      "system": "Patel et al + 2024",
+      "agent": null,
+      "model_raw": [
+        "Patel et al + 2024"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 9.36,
+      "score_extra": {
+        "model_size_b": "72",
+        "result_source": "Patel et al + 2024"
+      },
+      "date": "2024-05",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2405.20309"
+    },
+    {
+      "rank": 32,
+      "system": "gpt-3.5-turbo-16k-0613",
+      "agent": null,
+      "model_raw": [
+        "gpt-3.5-turbo-16k-0613"
+      ],
+      "model_ids": [
+        "gpt-3.5-turbo-16k"
+      ],
+      "model_config": null,
+      "score": 8.87,
+      "score_extra": {
+        "result_source": "WebArena"
+      },
+      "date": "2023-03",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2307.13854"
+    },
+    {
+      "rank": 33,
+      "system": "Qwen-1.5-chat-72b",
+      "agent": null,
+      "model_raw": [
+        "Qwen-1.5-chat-72b"
+      ],
+      "model_ids": [
+        "qwen-1.5-chat-72b"
+      ],
+      "model_config": null,
+      "score": 7.14,
+      "score_extra": {
+        "model_size_b": "72",
+        "result_source": "Patel et al + 2024"
+      },
+      "date": "2023-09",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2309.16609"
+    },
+    {
+      "rank": 34,
+      "system": "Gemini Pro",
+      "agent": null,
+      "model_raw": [
+        "Gemini Pro"
+      ],
+      "model_ids": [
+        "gemini-pro"
+      ],
+      "model_config": null,
+      "score": 7.12,
+      "score_extra": {
+        "result_source": "WebArena"
+      },
+      "date": "2023-12",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2307.13854"
+    },
+    {
+      "rank": 35,
+      "system": "Llama3-chat-70b",
+      "agent": null,
+      "model_raw": [
+        "Llama3-chat-70b"
+      ],
+      "model_ids": [
+        "llama3-chat-70b"
+      ],
+      "model_config": null,
+      "score": 7.02,
+      "score_extra": {
+        "model_size_b": "70",
+        "result_source": "WebArena Team"
+      },
+      "date": "2024-04",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 36,
+      "system": "Synatra-CodeLLama7b",
+      "agent": null,
+      "model_raw": [
+        "Synatra-CodeLLama7b"
+      ],
+      "model_ids": [
+        "synatra-codellama7b"
+      ],
+      "model_config": null,
+      "score": 6.28,
+      "score_extra": {
+        "model_size_b": "7",
+        "result_source": "Synatra"
+      },
+      "date": "2024-10",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://arxiv.org/pdf/2409.15637"
+    },
+    {
+      "rank": 37,
+      "system": "Lemur-chat-70b",
+      "agent": null,
+      "model_raw": [
+        "Lemur-chat-70b"
+      ],
+      "model_ids": [
+        "lemur-chat-70b"
+      ],
+      "model_config": null,
+      "score": 5.3,
+      "score_extra": {
+        "model_size_b": "70",
+        "result_source": "Lemur"
+      },
+      "date": "2023-10",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2310.06830"
+    },
+    {
+      "rank": 38,
+      "system": "Agent Flan",
+      "agent": null,
+      "model_raw": [
+        "Agent Flan"
+      ],
+      "model_ids": [
+        "agent-flan"
+      ],
+      "model_config": null,
+      "score": 4.68,
+      "score_extra": {
+        "model_size_b": "7",
+        "result_source": "Agent Flan"
+      },
+      "date": "2024-03",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2403.12881"
+    },
+    {
+      "rank": 39,
+      "system": "CodeLlama-instruct-34b",
+      "agent": null,
+      "model_raw": [
+        "CodeLlama-instruct-34b"
+      ],
+      "model_ids": [
+        "codellama-instruct-34b"
+      ],
+      "model_config": null,
+      "score": 4.06,
+      "score_extra": {
+        "model_size_b": "34",
+        "result_source": "Lemur"
+      },
+      "date": "2023-08",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2310.06830"
+    },
+    {
+      "rank": 40,
+      "system": "AgentLM-70b",
+      "agent": null,
+      "model_raw": [
+        "AgentLM-70b"
+      ],
+      "model_ids": [
+        "agentlm-70b"
+      ],
+      "model_config": null,
+      "score": 3.81,
+      "score_extra": {
+        "model_size_b": "70",
+        "result_source": "Agent Tuning"
+      },
+      "date": "2023-10",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2310.12823"
+    },
+    {
+      "rank": 41,
+      "system": "Llama3-chat-8b",
+      "agent": null,
+      "model_raw": [
+        "Llama3-chat-8b"
+      ],
+      "model_ids": [
+        "llama3-chat-8b"
+      ],
+      "model_config": null,
+      "score": 3.32,
+      "score_extra": {
+        "model_size_b": "8",
+        "result_source": "WebArena Team"
+      },
+      "date": "2024-04",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 42,
+      "system": "CodeAct Agent",
+      "agent": null,
+      "model_raw": [
+        "CodeAct Agent"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 2.3,
+      "score_extra": {
+        "model_size_b": "7",
+        "result_source": "WebArena Team"
+      },
+      "date": "2024-02",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2402.01030"
+    },
+    {
+      "rank": 43,
+      "system": "AgentLM-13b",
+      "agent": null,
+      "model_raw": [
+        "AgentLM-13b"
+      ],
+      "model_ids": [
+        "agentlm-13b"
+      ],
+      "model_config": null,
+      "score": 1.6,
+      "score_extra": {
+        "model_size_b": "13",
+        "result_source": "Agent Tuning"
+      },
+      "date": "2023-10",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2310.12823"
+    },
+    {
+      "rank": 44,
+      "system": "Mixtral",
+      "agent": null,
+      "model_raw": [
+        "Mixtral"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 1.39,
+      "score_extra": {
+        "model_size_b": "8x7",
+        "result_source": "Gemini In-depth look"
+      },
+      "date": "2024-01",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2307.13854"
+    },
+    {
+      "rank": 45,
+      "system": "AgentLM-7b",
+      "agent": null,
+      "model_raw": [
+        "AgentLM-7b"
+      ],
+      "model_ids": [
+        "agentlm-7b"
+      ],
+      "model_config": null,
+      "score": 0.74,
+      "score_extra": {
+        "model_size_b": "7",
+        "result_source": "Agent Tuning"
+      },
+      "date": "2023-10",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2310.12823"
+    },
+    {
+      "rank": 46,
+      "system": "FireAct",
+      "agent": null,
+      "model_raw": [
+        "FireAct"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 0.25,
+      "score_extra": {
+        "model_size_b": "7",
+        "result_source": "Agent Flan"
+      },
+      "date": "2023-10",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2310.05915"
+    },
+    {
+      "rank": 47,
+      "system": "CodeLlama-instruct-7b",
+      "agent": null,
+      "model_raw": [
+        "CodeLlama-instruct-7b"
+      ],
+      "model_ids": [
+        "codellama-instruct-7b"
+      ],
+      "model_config": null,
+      "score": 0,
+      "score_extra": {
+        "model_size_b": "7",
+        "result_source": "WebArena Team"
+      },
+      "date": "2023-08",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    }
+  ]
+}

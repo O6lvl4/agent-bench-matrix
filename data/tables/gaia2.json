@@ -1,0 +1,474 @@
+{
+  "id": "gaia2",
+  "family": "gaia2",
+  "name": "Gaia2 (Vanilla)",
+  "board": "huggingface.co/spaces/meta-agents-research-environments/leaderboard",
+  "category": "general",
+  "measures_ja": "メール・カレンダー・連絡先などのアプリが動く模擬環境で、検索・実行・曖昧さ対応・状況変化への適応・時間制約をこなせるか。",
+  "tasks": 800,
+  "tasks_note": "ボード説明の検証分割800シナリオ。Noise と A2A 列は小規模な追加分割の値。",
+  "metric": "pass@1",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "ARE 環境で各モデルを走らせた結果で、Submitter はすべて Meta。ボードの注記では全スコアが提出チームの申告。",
+  "source": "https://huggingface.co/spaces/meta-agents-research-environments/leaderboard",
+  "fetched": [
+    "https://meta-agents-research-environments-leaderboard.hf.space/gradio_api/call/refresh_legacy"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2025-09-30",
+  "snapshot": "sources/gaia2/board_vanilla_gaia2.json",
+  "paper": "https://arxiv.org/abs/2602.11964",
+  "repo": "https://github.com/facebookresearch/meta-agents-research-environments",
+  "notes_ja": "現行の Gaia2-CLI 表の下にある旧版(Vanilla Gaia2)の表。2025年9月の結果で止まっている。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "GPT-5 (high)",
+      "agent": null,
+      "model_raw": [
+        "GPT-5 (high)"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": "high",
+      "score": 42.1,
+      "score_extra": {
+        "execution": 69.2,
+        "search": 79.6,
+        "ambiguity": 51.9,
+        "adaptability": 40.4,
+        "time": 0.0,
+        "noise": 35.4,
+        "a2a": 17.9,
+        "provider": "OpenAI"
+      },
+      "date": "2025-09-09",
+      "verified": null,
+      "open_source": null,
+      "org": "Meta",
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "Claude-4-Sonnet Thinking",
+      "agent": null,
+      "model_raw": [
+        "Claude-4-Sonnet Thinking"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": "thinking",
+      "score": 37.8,
+      "score_extra": {
+        "execution": 62.1,
+        "search": 60.6,
+        "ambiguity": 27.3,
+        "adaptability": 42.1,
+        "time": 8.5,
+        "noise": 31.2,
+        "a2a": 32.5,
+        "provider": "Anthropic"
+      },
+      "date": "2025-09-29",
+      "verified": null,
+      "open_source": null,
+      "org": "Meta",
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "Claude-4-Sonnet",
+      "agent": null,
+      "model_raw": [
+        "Claude-4-Sonnet"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": null,
+      "score": 34.8,
+      "score_extra": {
+        "execution": 57.9,
+        "search": 59.8,
+        "ambiguity": 24.2,
+        "adaptability": 38.1,
+        "time": 8.1,
+        "noise": 27.7,
+        "a2a": 27.9,
+        "provider": "Anthropic"
+      },
+      "date": "2025-09-09",
+      "verified": null,
+      "open_source": null,
+      "org": "Meta",
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "GPT-5 (low)",
+      "agent": null,
+      "model_raw": [
+        "GPT-5 (low)"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": "low",
+      "score": 34.6,
+      "score_extra": {
+        "execution": 52.7,
+        "search": 64.2,
+        "ambiguity": 39.6,
+        "adaptability": 30.2,
+        "time": 2.3,
+        "noise": 28.3,
+        "a2a": 24.6,
+        "provider": "OpenAI"
+      },
+      "date": "2025-09-09",
+      "verified": null,
+      "open_source": null,
+      "org": "Meta",
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "Gemini-2.5-Pro",
+      "agent": null,
+      "model_raw": [
+        "Gemini-2.5-Pro"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": null,
+      "score": 25.8,
+      "score_extra": {
+        "execution": 39.2,
+        "search": 57.7,
+        "ambiguity": 18.1,
+        "adaptability": 17.5,
+        "time": 7.3,
+        "noise": 20.4,
+        "a2a": 20.4,
+        "provider": "Google"
+      },
+      "date": "2025-09-09",
+      "verified": null,
+      "open_source": null,
+      "org": "Meta",
+      "row_url": null
+    },
+    {
+      "rank": 6,
+      "system": "DeepSeek-v3.1 Terminus",
+      "agent": null,
+      "model_raw": [
+        "DeepSeek-v3.1 Terminus"
+      ],
+      "model_ids": [
+        "deepseek-v3.1-terminus"
+      ],
+      "model_config": null,
+      "score": 23.1,
+      "score_extra": {
+        "execution": 43.1,
+        "search": 34.4,
+        "ambiguity": 13.1,
+        "adaptability": 32.5,
+        "time": 1.9,
+        "noise": 17.5,
+        "a2a": 19.4,
+        "provider": "DeepSeek"
+      },
+      "date": "2025-09-30",
+      "verified": null,
+      "open_source": null,
+      "org": "Meta",
+      "row_url": null
+    },
+    {
+      "rank": 7,
+      "system": "DeepSeek-v3.1",
+      "agent": null,
+      "model_raw": [
+        "DeepSeek-v3.1"
+      ],
+      "model_ids": [
+        "deepseek-v3.1"
+      ],
+      "model_config": null,
+      "score": 21.9,
+      "score_extra": {
+        "execution": 39.8,
+        "search": 36.2,
+        "ambiguity": 11.2,
+        "adaptability": 31.2,
+        "time": 1.7,
+        "noise": 17.3,
+        "a2a": 16.0,
+        "provider": "DeepSeek"
+      },
+      "date": "2025-09-29",
+      "verified": null,
+      "open_source": null,
+      "org": "Meta",
+      "row_url": null
+    },
+    {
+      "rank": 8,
+      "system": "Kimi-K2",
+      "agent": null,
+      "model_raw": [
+        "Kimi-K2"
+      ],
+      "model_ids": [
+        "kimi-k2"
+      ],
+      "model_config": null,
+      "score": 20.1,
+      "score_extra": {
+        "execution": 34.2,
+        "search": 36.0,
+        "ambiguity": 8.3,
+        "adaptability": 24.0,
+        "time": 0.8,
+        "noise": 18.8,
+        "a2a": 18.3,
+        "provider": "Moonshot"
+      },
+      "date": "2025-09-09",
+      "verified": null,
+      "open_source": null,
+      "org": "Meta",
+      "row_url": null
+    },
+    {
+      "rank": 9,
+      "system": "GPT-5 (minimal)",
+      "agent": null,
+      "model_raw": [
+        "GPT-5 (minimal)"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": "minimal",
+      "score": 18.2,
+      "score_extra": {
+        "execution": 31.9,
+        "search": 26.2,
+        "ambiguity": 20.6,
+        "adaptability": 19.2,
+        "time": 5.2,
+        "noise": 13.1,
+        "a2a": 11.5,
+        "provider": "OpenAI"
+      },
+      "date": "2025-09-09",
+      "verified": null,
+      "open_source": null,
+      "org": "Meta",
+      "row_url": null
+    },
+    {
+      "rank": 10,
+      "system": "Grok-4",
+      "agent": null,
+      "model_raw": [
+        "Grok-4"
+      ],
+      "model_ids": [
+        "grok-4"
+      ],
+      "model_config": null,
+      "score": 15.7,
+      "score_extra": {
+        "execution": 8.8,
+        "search": 57.5,
+        "ambiguity": 9.4,
+        "adaptability": 4.4,
+        "time": 0.0,
+        "noise": 15.6,
+        "a2a": 14.4,
+        "provider": "xAI"
+      },
+      "date": "2025-09-09",
+      "verified": null,
+      "open_source": null,
+      "org": "Meta",
+      "row_url": null
+    },
+    {
+      "rank": 11,
+      "system": "Qwen3-235B-thinking",
+      "agent": null,
+      "model_raw": [
+        "Qwen3-235B-thinking"
+      ],
+      "model_ids": [
+        "qwen3-235b"
+      ],
+      "model_config": "thinking",
+      "score": 15.7,
+      "score_extra": {
+        "execution": 28.1,
+        "search": 36.2,
+        "ambiguity": 10.0,
+        "adaptability": 16.2,
+        "time": 0.0,
+        "noise": 6.9,
+        "a2a": 12.5,
+        "provider": "Alibaba"
+      },
+      "date": "2025-09-29",
+      "verified": null,
+      "open_source": null,
+      "org": "Meta",
+      "row_url": null
+    },
+    {
+      "rank": 12,
+      "system": "GPT-OSS 120B (high)",
+      "agent": null,
+      "model_raw": [
+        "GPT-OSS 120B (high)"
+      ],
+      "model_ids": [
+        "gpt-oss-120b"
+      ],
+      "model_config": "high",
+      "score": 13.7,
+      "score_extra": {
+        "execution": 17.9,
+        "search": 33.1,
+        "ambiguity": 8.3,
+        "adaptability": 10.6,
+        "time": 0.6,
+        "noise": 14.6,
+        "a2a": 10.6,
+        "provider": "OpenAI"
+      },
+      "date": "2025-09-29",
+      "verified": null,
+      "open_source": null,
+      "org": "Meta",
+      "row_url": null
+    },
+    {
+      "rank": 13,
+      "system": "Qwen3-235B",
+      "agent": null,
+      "model_raw": [
+        "Qwen3-235B"
+      ],
+      "model_ids": [
+        "qwen3-235b"
+      ],
+      "model_config": null,
+      "score": 11.6,
+      "score_extra": {
+        "execution": 22.7,
+        "search": 22.3,
+        "ambiguity": 6.5,
+        "adaptability": 8.1,
+        "time": 1.2,
+        "noise": 10.8,
+        "a2a": 9.4,
+        "provider": "Alibaba"
+      },
+      "date": "2025-09-09",
+      "verified": null,
+      "open_source": null,
+      "org": "Meta",
+      "row_url": null
+    },
+    {
+      "rank": 14,
+      "system": "GPT-4o",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 7.4,
+      "score_extra": {
+        "execution": 8.3,
+        "search": 17.5,
+        "ambiguity": 4.4,
+        "adaptability": 6.2,
+        "time": 5.8,
+        "noise": 4.6,
+        "a2a": 5.2,
+        "provider": "OpenAI"
+      },
+      "date": "2025-09-09",
+      "verified": null,
+      "open_source": null,
+      "org": "Meta",
+      "row_url": null
+    },
+    {
+      "rank": 15,
+      "system": "Llama 4 Maverick",
+      "agent": null,
+      "model_raw": [
+        "Llama 4 Maverick"
+      ],
+      "model_ids": [
+        "llama-4-maverick"
+      ],
+      "model_config": null,
+      "score": 7.4,
+      "score_extra": {
+        "execution": 13.8,
+        "search": 14.4,
+        "ambiguity": 2.1,
+        "adaptability": 5.0,
+        "time": 1.2,
+        "noise": 6.2,
+        "a2a": 9.2,
+        "provider": "Meta"
+      },
+      "date": "2025-09-09",
+      "verified": null,
+      "open_source": null,
+      "org": "Meta",
+      "row_url": null
+    },
+    {
+      "rank": 16,
+      "system": "Llama 3.3 70B Instruct",
+      "agent": null,
+      "model_raw": [
+        "Llama 3.3 70B Instruct"
+      ],
+      "model_ids": [
+        "llama-3.3-70b-instruct"
+      ],
+      "model_config": null,
+      "score": 4.4,
+      "score_extra": {
+        "execution": 7.1,
+        "search": 11.5,
+        "ambiguity": 1.7,
+        "adaptability": 1.9,
+        "time": 0.4,
+        "noise": 3.8,
+        "a2a": 4.6,
+        "provider": "Meta"
+      },
+      "date": "2025-09-09",
+      "verified": null,
+      "open_source": null,
+      "org": "Meta",
+      "row_url": null
+    }
+  ]
+}

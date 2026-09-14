@@ -1,0 +1,711 @@
+{
+ "source": "https://ecbench.github.io/showcase_data.json (models trimmed to leaderboard fields; curves/traces dropped)",
+ "data": {
+  "bench": {
+   "stores": 4,
+   "store_types": 12,
+   "categories": 60,
+   "products": 6886,
+   "suppliers": 576,
+   "good": 424,
+   "bad": 152,
+   "days": 365
+  },
+  "num_days": 366,
+  "models": [
+   {
+    "id": "gpt56sol",
+    "name": "GPT-5.6 Sol (max)",
+    "tier": "proprietary",
+    "family": "OpenAI",
+    "hero": false,
+    "partial": false,
+    "partial_day": null,
+    "final_balance": 1431425.128,
+    "final_balance_summary": {
+     "mean": 1431425.128,
+     "std": 313565.7539,
+     "n": 5
+    },
+    "bankrupt_count": 0,
+    "terms": {
+     "SE+": 0.671,
+     "CSE+": 0.6725,
+     "AGR+": 0.9978,
+     "%Oracle": 66.996,
+     "FAGR-": 0.9965,
+     "CritViol": 0
+    },
+    "avg_rounds_to_deal": 3.75,
+    "finance": {
+     "drawdown_over_peak": 0.278,
+     "drawdown_yuan": 416344.2,
+     "bankrupt_runs": 0,
+     "stores_opened": 9,
+     "store_reopens": 3.8,
+     "final_day": 365
+    }
+   },
+   {
+    "id": "fable5",
+    "name": "Fable5 (max)",
+    "tier": "proprietary",
+    "family": "Anthropic",
+    "hero": false,
+    "partial": false,
+    "partial_day": null,
+    "final_balance": 804540.868,
+    "final_balance_summary": {
+     "mean": 804540.868,
+     "std": 187821.3263,
+     "n": 5
+    },
+    "bankrupt_count": 0,
+    "terms": {
+     "SE+": 0.7641,
+     "CSE+": 0.7722,
+     "AGR+": 0.9896,
+     "%Oracle": 77.078,
+     "FAGR-": 0.9877,
+     "CritViol": 0
+    },
+    "avg_rounds_to_deal": 3.9,
+    "finance": {
+     "drawdown_over_peak": 0.144,
+     "drawdown_yuan": 117013.6,
+     "bankrupt_runs": 0,
+     "stores_opened": 5.2,
+     "store_reopens": 1.4,
+     "final_day": 365
+    }
+   },
+   {
+    "id": "gpt55",
+    "name": "GPT-5.5",
+    "tier": "proprietary",
+    "family": "OpenAI",
+    "hero": false,
+    "partial": false,
+    "partial_day": null,
+    "final_balance": 702168.674,
+    "final_balance_summary": {
+     "mean": 702168.674,
+     "std": 616050.0137,
+     "n": 5
+    },
+    "bankrupt_count": 2,
+    "terms": {
+     "SE+": 0.6933,
+     "CSE+": 0.7002,
+     "AGR+": 0.9899,
+     "%Oracle": 69.166,
+     "FAGR-": 0.9904,
+     "CritViol": 0
+    },
+    "avg_rounds_to_deal": 3.48,
+    "finance": {
+     "drawdown_over_peak": 0.593,
+     "drawdown_yuan": 210686.9,
+     "bankrupt_runs": 2,
+     "stores_opened": 6,
+     "store_reopens": 3,
+     "final_day": 225.8
+    }
+   },
+   {
+    "id": "claude_opus48",
+    "name": "Claude Opus 4.8 (max)",
+    "tier": "proprietary",
+    "family": "Anthropic",
+    "hero": false,
+    "partial": false,
+    "partial_day": null,
+    "final_balance": 498033.998,
+    "final_balance_summary": {
+     "mean": 498033.998,
+     "std": 231176.5728,
+     "n": 5
+    },
+    "bankrupt_count": 0,
+    "terms": {
+     "SE+": 0.6562,
+     "CSE+": 0.6616,
+     "AGR+": 0.9916,
+     "%Oracle": 67.19,
+     "FAGR-": 0.9902,
+     "CritViol": 0
+    },
+    "avg_rounds_to_deal": 3.37,
+    "finance": {
+     "drawdown_over_peak": 0.163,
+     "drawdown_yuan": 73279.8,
+     "bankrupt_runs": 0,
+     "stores_opened": 3.8,
+     "store_reopens": 0.4,
+     "final_day": 365
+    }
+   },
+   {
+    "id": "qwen38official",
+    "name": "Qwen3.8-Max",
+    "tier": "proprietary",
+    "family": "Qwen",
+    "hero": false,
+    "partial": false,
+    "partial_day": null,
+    "final_balance": 471768.916,
+    "final_balance_summary": {
+     "mean": 471768.916,
+     "std": 164580.4534,
+     "n": 5
+    },
+    "bankrupt_count": 0,
+    "terms": {
+     "SE+": 0.66,
+     "CSE+": 0.66,
+     "AGR+": 1.0,
+     "%Oracle": 64.928,
+     "FAGR-": 0.9977,
+     "CritViol": 0
+    },
+    "avg_rounds_to_deal": 3.48,
+    "finance": {
+     "drawdown_over_peak": 0.172,
+     "drawdown_yuan": 78426.3,
+     "bankrupt_runs": 0,
+     "stores_opened": 4.2,
+     "store_reopens": 0.4,
+     "final_day": 365.0
+    }
+   },
+   {
+    "id": "qwen38",
+    "name": "Qwen3.8-Max-Preview",
+    "tier": "open",
+    "family": "Qwen",
+    "hero": true,
+    "partial": false,
+    "partial_day": null,
+    "final_balance": 416252.416,
+    "final_balance_summary": {
+     "mean": 416252.416,
+     "std": 110504.9191,
+     "n": 5
+    },
+    "bankrupt_count": 0,
+    "terms": {
+     "SE+": 0.7132,
+     "CSE+": 0.7132,
+     "AGR+": 1,
+     "%Oracle": 71.584,
+     "FAGR-": 1,
+     "CritViol": 0
+    },
+    "avg_rounds_to_deal": 3.53,
+    "finance": {
+     "drawdown_over_peak": 0.244,
+     "drawdown_yuan": 99501.5,
+     "bankrupt_runs": 0,
+     "stores_opened": 5.4,
+     "store_reopens": 1.4,
+     "final_day": 365
+    }
+   },
+   {
+    "id": "glm53max",
+    "name": "GLM-5.3 (max)",
+    "tier": "open",
+    "family": "GLM",
+    "hero": false,
+    "partial": false,
+    "partial_day": null,
+    "final_balance": 391107.02,
+    "final_balance_summary": {
+     "mean": 391107.02,
+     "std": 167294.7419,
+     "n": 5
+    },
+    "bankrupt_count": 0,
+    "terms": {
+     "SE+": 0.6664,
+     "CSE+": 0.6684,
+     "AGR+": 0.9969,
+     "%Oracle": 66.896,
+     "FAGR-": 0.9606,
+     "CritViol": 0.4
+    },
+    "avg_rounds_to_deal": 3.754,
+    "finance": {
+     "drawdown_over_peak": 0.7795,
+     "drawdown_yuan": 93216.86,
+     "bankrupt_runs": 0,
+     "stores_opened": 4.8,
+     "store_reopens": 0.8,
+     "final_day": 365
+    }
+   },
+   {
+    "id": "glm52high",
+    "name": "GLM 5.2 (high)",
+    "tier": "open",
+    "family": "GLM",
+    "hero": false,
+    "partial": false,
+    "partial_day": null,
+    "final_balance": 300771.87,
+    "final_balance_summary": {
+     "mean": 300771.87,
+     "std": 123859.6596,
+     "n": 5
+    },
+    "bankrupt_count": 0,
+    "terms": {
+     "SE+": 0.6924,
+     "CSE+": 0.6929,
+     "AGR+": 0.9992,
+     "%Oracle": 68.942,
+     "FAGR-": 0.9978,
+     "CritViol": 0
+    },
+    "avg_rounds_to_deal": 3.48,
+    "finance": {
+     "drawdown_over_peak": 0.132,
+     "drawdown_yuan": 41603.7,
+     "bankrupt_runs": 0,
+     "stores_opened": 4,
+     "store_reopens": 0,
+     "final_day": 365
+    }
+   },
+   {
+    "id": "kimik3",
+    "name": "Kimi K3",
+    "tier": "open",
+    "family": "Kimi",
+    "hero": false,
+    "partial": false,
+    "partial_day": null,
+    "final_balance": 264539.186,
+    "final_balance_summary": {
+     "mean": 264539.186,
+     "std": 109565.9364,
+     "n": 5
+    },
+    "bankrupt_count": 0,
+    "terms": {
+     "SE+": 0.6325,
+     "CSE+": 0.6325,
+     "AGR+": 1,
+     "%Oracle": 63.102,
+     "FAGR-": 0.995,
+     "CritViol": 0
+    },
+    "avg_rounds_to_deal": 3.32,
+    "finance": {
+     "drawdown_over_peak": 0.247,
+     "drawdown_yuan": 55361.7,
+     "bankrupt_runs": 0,
+     "stores_opened": 4.2,
+     "store_reopens": 0.6,
+     "final_day": 365
+    }
+   },
+   {
+    "id": "claude_opus47",
+    "name": "Claude Opus 4.7 (max)",
+    "tier": "proprietary",
+    "family": "Anthropic",
+    "hero": false,
+    "partial": false,
+    "partial_day": null,
+    "final_balance": 259284.302,
+    "final_balance_summary": {
+     "mean": 259284.302,
+     "std": 111379.0587,
+     "n": 5
+    },
+    "bankrupt_count": 0,
+    "terms": {
+     "SE+": 0.7772,
+     "CSE+": 0.8107,
+     "AGR+": 0.96,
+     "%Oracle": 77.414,
+     "FAGR-": 0.9538,
+     "CritViol": 0
+    },
+    "avg_rounds_to_deal": 3.81,
+    "finance": {
+     "drawdown_over_peak": 0.196,
+     "drawdown_yuan": 47388.3,
+     "bankrupt_runs": 0,
+     "stores_opened": 3.6,
+     "store_reopens": 0,
+     "final_day": 365
+    }
+   },
+   {
+    "id": "claude_opus46",
+    "name": "Claude Opus 4.6 (max)",
+    "tier": "proprietary",
+    "family": "Anthropic",
+    "hero": false,
+    "partial": false,
+    "partial_day": null,
+    "final_balance": 258097.278,
+    "final_balance_summary": {
+     "mean": 258097.278,
+     "std": 266335.9885,
+     "n": 5
+    },
+    "bankrupt_count": 2,
+    "terms": {
+     "SE+": 0.6491,
+     "CSE+": 0.6491,
+     "AGR+": 1,
+     "%Oracle": 64.944,
+     "FAGR-": 0.9983,
+     "CritViol": 0
+    },
+    "avg_rounds_to_deal": 3.54,
+    "finance": {
+     "drawdown_over_peak": 0.592,
+     "drawdown_yuan": 120339.2,
+     "bankrupt_runs": 2,
+     "stores_opened": 3.4,
+     "store_reopens": 0.6,
+     "final_day": 337.2
+    }
+   },
+   {
+    "id": "glm53flashmax",
+    "name": "GLM-5.3-Flash (max)",
+    "tier": "open",
+    "family": "GLM",
+    "hero": false,
+    "partial": false,
+    "partial_day": null,
+    "final_balance": 257588.67,
+    "final_balance_summary": {
+     "mean": 257588.67,
+     "std": 88119.1855,
+     "n": 5
+    },
+    "bankrupt_count": 0,
+    "terms": {
+     "SE+": 0.7235,
+     "CSE+": 0.7294,
+     "AGR+": 0.9923,
+     "%Oracle": 73.246,
+     "FAGR-": 0.975,
+     "CritViol": 0
+    },
+    "avg_rounds_to_deal": 4.196,
+    "finance": {
+     "drawdown_over_peak": 0.533,
+     "drawdown_yuan": 55365.73,
+     "bankrupt_runs": 0,
+     "stores_opened": 3,
+     "store_reopens": 0,
+     "final_day": 365
+    }
+   },
+   {
+    "id": "glm51",
+    "name": "GLM 5.1",
+    "tier": "open",
+    "family": "GLM",
+    "hero": false,
+    "partial": false,
+    "partial_day": null,
+    "final_balance": 225839.152,
+    "final_balance_summary": {
+     "mean": 225839.152,
+     "std": 191801.6449,
+     "n": 5
+    },
+    "bankrupt_count": 0,
+    "terms": {
+     "SE+": 0.6572,
+     "CSE+": 0.6625,
+     "AGR+": 0.992,
+     "%Oracle": 65.368,
+     "FAGR-": 0.9909,
+     "CritViol": 0
+    },
+    "avg_rounds_to_deal": 3.36,
+    "finance": {
+     "drawdown_over_peak": 0.242,
+     "drawdown_yuan": 40407.8,
+     "bankrupt_runs": 0,
+     "stores_opened": 3.6,
+     "store_reopens": 0.2,
+     "final_day": 365
+    }
+   },
+   {
+    "id": "deepseek",
+    "name": "DeepSeek-V4-Pro-Preview (max)",
+    "tier": "open",
+    "family": "DeepSeek",
+    "hero": false,
+    "partial": false,
+    "partial_day": null,
+    "final_balance": 190433.558,
+    "final_balance_summary": {
+     "mean": 190433.558,
+     "std": 99536.0147,
+     "n": 5
+    },
+    "bankrupt_count": 0,
+    "terms": {
+     "SE+": 0.6511,
+     "CSE+": 0.6536,
+     "AGR+": 0.9965,
+     "%Oracle": 65.408,
+     "FAGR-": 0.9969,
+     "CritViol": 0
+    },
+    "avg_rounds_to_deal": 3.38,
+    "finance": {
+     "drawdown_over_peak": 0.174,
+     "drawdown_yuan": 31301.7,
+     "bankrupt_runs": 0,
+     "stores_opened": 3.2,
+     "store_reopens": 0,
+     "final_day": 365
+    }
+   },
+   {
+    "id": "gemini35f",
+    "name": "Gemini 3.5 Flash",
+    "tier": "proprietary",
+    "family": "Google",
+    "hero": false,
+    "partial": false,
+    "partial_day": null,
+    "final_balance": 189973.672,
+    "final_balance_summary": {
+     "mean": 189973.672,
+     "std": 78893.0498,
+     "n": 5
+    },
+    "bankrupt_count": 0,
+    "terms": {
+     "SE+": 0.7633,
+     "CSE+": 0.7766,
+     "AGR+": 0.9833,
+     "%Oracle": 76.58,
+     "FAGR-": 0.9643,
+     "CritViol": 0
+    },
+    "avg_rounds_to_deal": 3.94,
+    "finance": {
+     "drawdown_over_peak": 0.502,
+     "drawdown_yuan": 99042.1,
+     "bankrupt_runs": 0,
+     "stores_opened": 5.6,
+     "store_reopens": 2.2,
+     "final_day": 365
+    }
+   },
+   {
+    "id": "qwen37",
+    "name": "Qwen3.7-Max",
+    "tier": "open",
+    "family": "Qwen",
+    "hero": false,
+    "partial": false,
+    "partial_day": null,
+    "final_balance": 165224.322,
+    "final_balance_summary": {
+     "mean": 165224.322,
+     "std": 134477.9365,
+     "n": 5
+    },
+    "bankrupt_count": 0,
+    "terms": {
+     "SE+": 0.616,
+     "CSE+": 0.616,
+     "AGR+": 1,
+     "%Oracle": 60.434,
+     "FAGR-": 1,
+     "CritViol": 0
+    },
+    "avg_rounds_to_deal": 3.37,
+    "finance": {
+     "drawdown_over_peak": 0.454,
+     "drawdown_yuan": 73591.6,
+     "bankrupt_runs": 0,
+     "stores_opened": 3,
+     "store_reopens": 0,
+     "final_day": 365
+    }
+   },
+   {
+    "id": "gemini31p",
+    "name": "Gemini 3.1 Pro",
+    "tier": "proprietary",
+    "family": "Google",
+    "hero": false,
+    "partial": false,
+    "partial_day": null,
+    "final_balance": 130189.786,
+    "final_balance_summary": {
+     "mean": 130189.786,
+     "std": 130447.4541,
+     "n": 5
+    },
+    "bankrupt_count": 2,
+    "terms": {
+     "SE+": 0.6573,
+     "CSE+": 0.6597,
+     "AGR+": 0.9963,
+     "%Oracle": 67.37,
+     "FAGR-": 0.9974,
+     "CritViol": 0
+    },
+    "avg_rounds_to_deal": 3.77,
+    "finance": {
+     "drawdown_over_peak": 0.708,
+     "drawdown_yuan": 101753.7,
+     "bankrupt_runs": 2,
+     "stores_opened": 4.4,
+     "store_reopens": 0.4,
+     "final_day": 327.4
+    }
+   },
+   {
+    "id": "glm52max",
+    "name": "GLM 5.2 (max)",
+    "tier": "open",
+    "family": "GLM",
+    "hero": false,
+    "partial": false,
+    "partial_day": null,
+    "final_balance": 114624.612,
+    "final_balance_summary": {
+     "mean": 114624.612,
+     "std": 71413.099,
+     "n": 5
+    },
+    "bankrupt_count": 0,
+    "terms": {
+     "SE+": 0.63,
+     "CSE+": 0.6321,
+     "AGR+": 0.9967,
+     "%Oracle": 63.266,
+     "FAGR-": 0.996,
+     "CritViol": 0
+    },
+    "avg_rounds_to_deal": 3.38,
+    "finance": {
+     "drawdown_over_peak": 0.387,
+     "drawdown_yuan": 45123.8,
+     "bankrupt_runs": 0,
+     "stores_opened": 4.4,
+     "store_reopens": 0.6,
+     "final_day": 365
+    }
+   },
+   {
+    "id": "kimi",
+    "name": "Kimi K2.6",
+    "tier": "open",
+    "family": "Kimi",
+    "hero": false,
+    "partial": false,
+    "partial_day": null,
+    "final_balance": 70314.496,
+    "final_balance_summary": {
+     "mean": 70314.496,
+     "std": 13755.3329,
+     "n": 5
+    },
+    "bankrupt_count": 0,
+    "terms": {
+     "SE+": 0.5957,
+     "CSE+": 0.5957,
+     "AGR+": 1,
+     "%Oracle": 60.1,
+     "FAGR-": 1,
+     "CritViol": 0
+    },
+    "avg_rounds_to_deal": 3.3,
+    "finance": {
+     "drawdown_over_peak": 0.415,
+     "drawdown_yuan": 46948.8,
+     "bankrupt_runs": 0,
+     "stores_opened": 4,
+     "store_reopens": 0.4,
+     "final_day": 365
+    }
+   },
+   {
+    "id": "qwen36",
+    "name": "Qwen3.6-Plus",
+    "tier": "open",
+    "family": "Qwen",
+    "hero": false,
+    "partial": false,
+    "partial_day": null,
+    "final_balance": 46677.93,
+    "final_balance_summary": {
+     "mean": 46677.93,
+     "std": 28069.4216,
+     "n": 5
+    },
+    "bankrupt_count": 0,
+    "terms": {
+     "SE+": 0.625,
+     "CSE+": 0.625,
+     "AGR+": 1,
+     "%Oracle": 61.37,
+     "FAGR-": 1,
+     "CritViol": 0
+    },
+    "avg_rounds_to_deal": 3.34,
+    "finance": {
+     "drawdown_over_peak": 0.632,
+     "drawdown_yuan": 63199.6,
+     "bankrupt_runs": 0,
+     "stores_opened": 3,
+     "store_reopens": 0,
+     "final_day": 365
+    }
+   },
+   {
+    "id": "qwen35",
+    "name": "Qwen3.5-Plus",
+    "tier": "open",
+    "family": "Qwen",
+    "hero": false,
+    "partial": false,
+    "partial_day": null,
+    "final_balance": 1132.774,
+    "final_balance_summary": {
+     "mean": 1132.774,
+     "std": 10759.7336,
+     "n": 5
+    },
+    "bankrupt_count": 4,
+    "terms": {
+     "SE+": 0.6176,
+     "CSE+": 0.6246,
+     "AGR+": 0.9879,
+     "%Oracle": 61.36,
+     "FAGR-": 0.9812,
+     "CritViol": 0
+    },
+    "avg_rounds_to_deal": 3.4,
+    "finance": {
+     "drawdown_over_peak": 0.995,
+     "drawdown_yuan": 99489.7,
+     "bankrupt_runs": 4,
+     "stores_opened": 4.6,
+     "store_reopens": 1,
+     "final_day": 223
+    }
+   }
+  ]
+ }
+}

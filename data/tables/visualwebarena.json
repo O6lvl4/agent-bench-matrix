@@ -1,0 +1,904 @@
+{
+  "id": "visualwebarena",
+  "family": "visualwebarena",
+  "name": "VisualWebArena",
+  "board": "jykoh.com/vwa (Google Sheets leaderboard, VisualWebArena tab)",
+  "category": "web",
+  "measures_ja": "画像の理解が必要なウェブ課題(クラシファイド・買い物・掲示板)を、画面を見ながらやり遂げられるか。",
+  "tasks": 910,
+  "tasks_note": null,
+  "metric": "Success Rate (%)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "提出者が自前のエージェントで走らせて報告する。入力形式(SoM・キャプション・画像など)は行ごとに違う。",
+  "source": "https://jykoh.com/vwa",
+  "fetched": [
+    "https://docs.google.com/spreadsheets/d/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ/export?format=csv&gid=2044883967",
+    "https://docs.google.com/spreadsheets/d/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ/htmlview/sheet?headers=true&gid=2044883967"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-06",
+  "snapshot": "sources/visualwebarena/sheet_visualwebarena_tab.json",
+  "paper": "https://arxiv.org/abs/2401.13649",
+  "repo": "https://github.com/web-arena-x/visualwebarena",
+  "notes_ja": "WebArena と同じスプレッドシートの別タブ。日付は月単位(YYYY-MM)。人間のベースライン(88.70%)の行は含めていない。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Gemini 2.5 Flash",
+      "agent": null,
+      "model_raw": [
+        "Gemini 2.5 Flash"
+      ],
+      "model_ids": [
+        "gemini-2.5-flash"
+      ],
+      "model_config": null,
+      "score": 54.0,
+      "score_extra": {
+        "model_type": "Multimodal (SoM)",
+        "inputs": "SoM",
+        "result_source": "SGV"
+      },
+      "date": "2025-07",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2507.11662"
+    },
+    {
+      "rank": 2,
+      "system": "GPT-5",
+      "agent": null,
+      "model_raw": [
+        "GPT-5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": null,
+      "score": 52.9,
+      "score_extra": {
+        "model_type": "Multimodal (SoM)",
+        "inputs": "SoM",
+        "result_source": "WALT"
+      },
+      "date": "2025-10",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2510.01524"
+    },
+    {
+      "rank": 3,
+      "system": "GLM-4-32B",
+      "agent": null,
+      "model_raw": [
+        "GLM-4-32B"
+      ],
+      "model_ids": [
+        "glm-4-32b"
+      ],
+      "model_config": null,
+      "score": 48.7,
+      "score_extra": {
+        "model_type": "Caption-augmented",
+        "inputs": "Structured DOM Representation",
+        "result_source": "WebChallenger"
+      },
+      "date": "2026-06",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2606.10423"
+    },
+    {
+      "rank": 4,
+      "system": "GPT-5",
+      "agent": null,
+      "model_raw": [
+        "GPT-5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": null,
+      "score": 36.5,
+      "score_extra": {
+        "model_type": "Multimodal (SoM)",
+        "inputs": "SoM + Caption + Image",
+        "result_source": "AWorld"
+      },
+      "date": "2025-09",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://github.com/inclusionAI/AWorld/tree/main/examples/visualwebarena"
+    },
+    {
+      "rank": 5,
+      "system": "A3-Qwen3.5-9B",
+      "agent": null,
+      "model_raw": [
+        "A3-Qwen3.5-9B"
+      ],
+      "model_ids": [
+        "a3-qwen3.5-9b"
+      ],
+      "model_config": null,
+      "score": 33.7,
+      "score_extra": {
+        "model_type": "Multimodal",
+        "inputs": "AXTree + Image",
+        "result_source": "Agent-as-Annotators"
+      },
+      "date": "2026-04",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2604.07776"
+    },
+    {
+      "rank": 6,
+      "system": "GPT-4o + R-MCTS",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o + R-MCTS"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 33.7,
+      "score_extra": {
+        "model_type": "Multimodal (SoM)",
+        "inputs": "SoM + Caption + Image",
+        "result_source": "ExACT"
+      },
+      "date": "2024-10",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://agent-e3.github.io/ExACT/"
+    },
+    {
+      "rank": 7,
+      "system": "GPT-4o + Search",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o + Search"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 26.4,
+      "score_extra": {
+        "model_type": "Multimodal (SoM)",
+        "inputs": "SoM + Caption + Image",
+        "result_source": "Tree Search for LM Agents"
+      },
+      "date": "2024-06",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://jykoh.com/search-agents"
+    },
+    {
+      "rank": 8,
+      "system": "GPT-4o + WebDreamer",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o + WebDreamer"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 23.6,
+      "score_extra": {
+        "model_type": "Multimodal (SoM)",
+        "inputs": "SoM + Caption + Image",
+        "result_source": "WebDreamer"
+      },
+      "date": "2024-11",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2411.06559"
+    },
+    {
+      "rank": 9,
+      "system": "GPT-4o + ICAL",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o + ICAL"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 23.4,
+      "score_extra": {
+        "model_type": "Multimodal (SoM)",
+        "inputs": "SoM + Caption + Image",
+        "result_source": "ICAL"
+      },
+      "date": "2024-06",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2406.14596"
+    },
+    {
+      "rank": 10,
+      "system": "GPT-4o",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 19.78,
+      "score_extra": {
+        "model_type": "Multimodal (SoM)",
+        "inputs": "SoM + Caption + Image",
+        "result_source": "VisualWebArena"
+      },
+      "date": "2024-06",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2401.13649"
+    },
+    {
+      "rank": 11,
+      "system": "Llama-3-70B + Search",
+      "agent": null,
+      "model_raw": [
+        "Llama-3-70B + Search"
+      ],
+      "model_ids": [
+        "llama-3-70b"
+      ],
+      "model_config": null,
+      "score": 16.7,
+      "score_extra": {
+        "model_type": "Caption-augmented",
+        "inputs": "AxTree + Caption",
+        "result_source": "Tree Search for LM Agents"
+      },
+      "date": "2024-06",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://jykoh.com/search-agents"
+    },
+    {
+      "rank": 12,
+      "system": "GPT-4V",
+      "agent": null,
+      "model_raw": [
+        "GPT-4V"
+      ],
+      "model_ids": [
+        "gpt-4v"
+      ],
+      "model_config": null,
+      "score": 16.37,
+      "score_extra": {
+        "model_type": "Multimodal (SoM)",
+        "inputs": "SoM + Caption + Image",
+        "result_source": "VisualWebArena"
+      },
+      "date": "2024-01",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2401.13649"
+    },
+    {
+      "rank": 13,
+      "system": "GPT-4V",
+      "agent": null,
+      "model_raw": [
+        "GPT-4V"
+      ],
+      "model_ids": [
+        "gpt-4v"
+      ],
+      "model_config": null,
+      "score": 15.05,
+      "score_extra": {
+        "model_type": "Multimodal",
+        "inputs": "AXTree + Caption + Image",
+        "result_source": "VisualWebArena"
+      },
+      "date": "2024-01",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2401.13649"
+    },
+    {
+      "rank": 14,
+      "system": "GPT-4 + BLIP-2-T5XL",
+      "agent": null,
+      "model_raw": [
+        "GPT-4 + BLIP-2-T5XL"
+      ],
+      "model_ids": [
+        "gpt-4",
+        "blip-2-t5xl"
+      ],
+      "model_config": null,
+      "score": 12.75,
+      "score_extra": {
+        "model_type": "Caption-augmented",
+        "inputs": "AxTree + Caption",
+        "result_source": "VisualWebArena"
+      },
+      "date": "2024-01",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2401.13649"
+    },
+    {
+      "rank": 15,
+      "system": "Gemini-Pro-1.5",
+      "agent": null,
+      "model_raw": [
+        "Gemini-Pro-1.5"
+      ],
+      "model_ids": [
+        "gemini-1.5-pro"
+      ],
+      "model_config": null,
+      "score": 11.98,
+      "score_extra": {
+        "model_type": "Multimodal (SoM)",
+        "inputs": "SoM + Caption + Image",
+        "result_source": "VisualWebArena"
+      },
+      "date": "2024-06",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2401.13649"
+    },
+    {
+      "rank": 16,
+      "system": "ViGoRL-7B",
+      "agent": null,
+      "model_raw": [
+        "ViGoRL-7B"
+      ],
+      "model_ids": [
+        "vigorl-7b"
+      ],
+      "model_config": null,
+      "score": 11.2,
+      "score_extra": {
+        "model_type": "Image-only",
+        "inputs": "Image",
+        "result_source": "ViGoRL"
+      },
+      "date": "2025-05",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2505.23678"
+    },
+    {
+      "rank": 17,
+      "system": "Llama-3-70B-Instruct + BLIP-2-T5XL",
+      "agent": null,
+      "model_raw": [
+        "Llama-3-70B-Instruct + BLIP-2-T5XL"
+      ],
+      "model_ids": [
+        "llama-3-70b-instruct",
+        "blip-2-t5xl"
+      ],
+      "model_config": null,
+      "score": 9.78,
+      "score_extra": {
+        "model_type": "Caption-augmented",
+        "inputs": "AxTree + Caption",
+        "result_source": "VisualWebArena"
+      },
+      "date": "2024-06",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2401.13649"
+    },
+    {
+      "rank": 18,
+      "system": "Qwen2-VL + ICAL",
+      "agent": null,
+      "model_raw": [
+        "Qwen2-VL + ICAL"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 8.2,
+      "score_extra": {
+        "model_type": "Multimodal (SoM)",
+        "inputs": "SoM + Caption + Image",
+        "result_source": "ICAL"
+      },
+      "date": "2025-01",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2406.14596"
+    },
+    {
+      "rank": 19,
+      "system": "GPT-4",
+      "agent": null,
+      "model_raw": [
+        "GPT-4"
+      ],
+      "model_ids": [
+        "gpt-4"
+      ],
+      "model_config": null,
+      "score": 7.25,
+      "score_extra": {
+        "model_type": "Text-only",
+        "inputs": "AXTree",
+        "result_source": "VisualWebArena"
+      },
+      "date": "2024-01",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2401.13649"
+    },
+    {
+      "rank": 20,
+      "system": "Gemini-Flash-1.5",
+      "agent": null,
+      "model_raw": [
+        "Gemini-Flash-1.5"
+      ],
+      "model_ids": [
+        "gemini-1.5-flash"
+      ],
+      "model_config": null,
+      "score": 6.59,
+      "score_extra": {
+        "model_type": "Multimodal (SoM)",
+        "inputs": "SoM + Caption + Image",
+        "result_source": "VisualWebArena"
+      },
+      "date": "2024-06",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2401.13649"
+    },
+    {
+      "rank": 21,
+      "system": "ViGoRL-3B",
+      "agent": null,
+      "model_raw": [
+        "ViGoRL-3B"
+      ],
+      "model_ids": [
+        "vigorl-3b"
+      ],
+      "model_config": null,
+      "score": 6.4,
+      "score_extra": {
+        "model_type": "Image-only",
+        "inputs": "Image",
+        "result_source": "ViGoRL"
+      },
+      "date": "2025-05",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2505.23678"
+    },
+    {
+      "rank": 22,
+      "system": "Gemini-Pro",
+      "agent": null,
+      "model_raw": [
+        "Gemini-Pro"
+      ],
+      "model_ids": [
+        "gemini-pro"
+      ],
+      "model_config": null,
+      "score": 6.04,
+      "score_extra": {
+        "model_type": "Multimodal",
+        "inputs": "AXTree + Caption + Image",
+        "result_source": "VisualWebArena"
+      },
+      "date": "2024-01",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2401.13649"
+    },
+    {
+      "rank": 23,
+      "system": "Gemini-Pro",
+      "agent": null,
+      "model_raw": [
+        "Gemini-Pro"
+      ],
+      "model_ids": [
+        "gemini-pro"
+      ],
+      "model_config": null,
+      "score": 5.71,
+      "score_extra": {
+        "model_type": "Multimodal (SoM)",
+        "inputs": "SoM + Caption + Image",
+        "result_source": "VisualWebArena"
+      },
+      "date": "2024-01",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2401.13649"
+    },
+    {
+      "rank": 24,
+      "system": "Qwen-VL-7B",
+      "agent": null,
+      "model_raw": [
+        "Qwen-VL-7B"
+      ],
+      "model_ids": [
+        "qwen-vl-7b"
+      ],
+      "model_config": null,
+      "score": 5.5,
+      "score_extra": {
+        "model_type": "Image-only",
+        "inputs": "Image",
+        "result_source": "ViGoRL"
+      },
+      "date": "2025-05",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2505.23678"
+    },
+    {
+      "rank": 25,
+      "system": "Gemini-Pro + BLIP-2-T5XL",
+      "agent": null,
+      "model_raw": [
+        "Gemini-Pro + BLIP-2-T5XL"
+      ],
+      "model_ids": [
+        "gemini-pro",
+        "blip-2-t5xl"
+      ],
+      "model_config": null,
+      "score": 3.85,
+      "score_extra": {
+        "model_type": "Caption-augmented",
+        "inputs": "AxTree + Caption",
+        "result_source": "VisualWebArena"
+      },
+      "date": "2024-01",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2401.13649"
+    },
+    {
+      "rank": 26,
+      "system": "GPT-3.5 + BLIP-2-T5XL",
+      "agent": null,
+      "model_raw": [
+        "GPT-3.5 + BLIP-2-T5XL"
+      ],
+      "model_ids": [
+        "gpt-3.5",
+        "blip-2-t5xl"
+      ],
+      "model_config": null,
+      "score": 2.97,
+      "score_extra": {
+        "model_type": "Caption-augmented",
+        "inputs": "AxTree + Caption",
+        "result_source": "VisualWebArena"
+      },
+      "date": "2024-01",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2401.13649"
+    },
+    {
+      "rank": 27,
+      "system": "Qwen2-VL",
+      "agent": null,
+      "model_raw": [
+        "Qwen2-VL"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 2.9,
+      "score_extra": {
+        "model_type": "Multimodal (SoM)",
+        "inputs": "SoM + Caption + Image",
+        "result_source": "ICAL"
+      },
+      "date": "2025-01",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2406.14596"
+    },
+    {
+      "rank": 28,
+      "system": "GPT-3.5 + LLaVa-7B",
+      "agent": null,
+      "model_raw": [
+        "GPT-3.5 + LLaVa-7B"
+      ],
+      "model_ids": [
+        "gpt-3.5",
+        "llava-7b"
+      ],
+      "model_config": null,
+      "score": 2.75,
+      "score_extra": {
+        "model_type": "Caption-augmented",
+        "inputs": "AxTree + Caption",
+        "result_source": "VisualWebArena"
+      },
+      "date": "2024-01",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2401.13649"
+    },
+    {
+      "rank": 29,
+      "system": "GPT-3.5",
+      "agent": null,
+      "model_raw": [
+        "GPT-3.5"
+      ],
+      "model_ids": [
+        "gpt-3.5"
+      ],
+      "model_config": null,
+      "score": 2.2,
+      "score_extra": {
+        "model_type": "Text-only",
+        "inputs": "AXTree",
+        "result_source": "VisualWebArena"
+      },
+      "date": "2024-01",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2401.13649"
+    },
+    {
+      "rank": 30,
+      "system": "Gemini-Pro",
+      "agent": null,
+      "model_raw": [
+        "Gemini-Pro"
+      ],
+      "model_ids": [
+        "gemini-pro"
+      ],
+      "model_config": null,
+      "score": 2.2,
+      "score_extra": {
+        "model_type": "Text-only",
+        "inputs": "AXTree",
+        "result_source": "VisualWebArena"
+      },
+      "date": "2024-01",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2401.13649"
+    },
+    {
+      "rank": 31,
+      "system": "Mixtral-8x7b + BLIP-2-T5XL",
+      "agent": null,
+      "model_raw": [
+        "Mixtral-8x7b + BLIP-2-T5XL"
+      ],
+      "model_ids": [
+        "mixtral-8x7b",
+        "blip-2-t5xl"
+      ],
+      "model_config": null,
+      "score": 1.87,
+      "score_extra": {
+        "model_type": "Caption-augmented",
+        "inputs": "AxTree + Caption",
+        "result_source": "VisualWebArena"
+      },
+      "date": "2024-01",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2401.13649"
+    },
+    {
+      "rank": 32,
+      "system": "Mixtral-8x7B",
+      "agent": null,
+      "model_raw": [
+        "Mixtral-8x7B"
+      ],
+      "model_ids": [
+        "mixtral-8x7b"
+      ],
+      "model_config": null,
+      "score": 1.76,
+      "score_extra": {
+        "model_type": "Text-only",
+        "inputs": "AXTree",
+        "result_source": "VisualWebArena"
+      },
+      "date": "2024-01",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2401.13649"
+    },
+    {
+      "rank": 33,
+      "system": "Llama-2-70B",
+      "agent": null,
+      "model_raw": [
+        "Llama-2-70B"
+      ],
+      "model_ids": [
+        "llama-2-70b"
+      ],
+      "model_config": null,
+      "score": 1.1,
+      "score_extra": {
+        "model_type": "Text-only",
+        "inputs": "AXTree",
+        "result_source": "VisualWebArena"
+      },
+      "date": "2024-01",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2401.13649"
+    },
+    {
+      "rank": 34,
+      "system": "IDEFICS-80B-Instruct",
+      "agent": null,
+      "model_raw": [
+        "IDEFICS-80B-Instruct"
+      ],
+      "model_ids": [
+        "idefics-80b-instruct"
+      ],
+      "model_config": null,
+      "score": 0.99,
+      "score_extra": {
+        "model_type": "Multimodal (SoM)",
+        "inputs": "SoM + Caption + Image",
+        "result_source": "VisualWebArena"
+      },
+      "date": "2024-01",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2401.13649"
+    },
+    {
+      "rank": 35,
+      "system": "IDEFICS-80B-Instruct",
+      "agent": null,
+      "model_raw": [
+        "IDEFICS-80B-Instruct"
+      ],
+      "model_ids": [
+        "idefics-80b-instruct"
+      ],
+      "model_config": null,
+      "score": 0.77,
+      "score_extra": {
+        "model_type": "Multimodal",
+        "inputs": "AXTree + Caption + Image",
+        "result_source": "VisualWebArena"
+      },
+      "date": "2024-01",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2401.13649"
+    },
+    {
+      "rank": 36,
+      "system": "Llama-2-70B + BLIP-2-T5XL",
+      "agent": null,
+      "model_raw": [
+        "Llama-2-70B + BLIP-2-T5XL"
+      ],
+      "model_ids": [
+        "llama-2-70b",
+        "blip-2-t5xl"
+      ],
+      "model_config": null,
+      "score": 0.66,
+      "score_extra": {
+        "model_type": "Caption-augmented",
+        "inputs": "AxTree + Caption",
+        "result_source": "VisualWebArena"
+      },
+      "date": "2024-01",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2401.13649"
+    },
+    {
+      "rank": 37,
+      "system": "CogVLM",
+      "agent": null,
+      "model_raw": [
+        "CogVLM"
+      ],
+      "model_ids": [
+        "cogvlm"
+      ],
+      "model_config": null,
+      "score": 0.33,
+      "score_extra": {
+        "model_type": "Multimodal (SoM)",
+        "inputs": "SoM + Caption + Image",
+        "result_source": "VisualWebArena"
+      },
+      "date": "2024-01",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2401.13649"
+    },
+    {
+      "rank": 38,
+      "system": "CogVLM",
+      "agent": null,
+      "model_raw": [
+        "CogVLM"
+      ],
+      "model_ids": [
+        "cogvlm"
+      ],
+      "model_config": null,
+      "score": 0.33,
+      "score_extra": {
+        "model_type": "Multimodal",
+        "inputs": "AXTree + Caption + Image",
+        "result_source": "VisualWebArena"
+      },
+      "date": "2024-01",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2401.13649"
+    }
+  ]
+}

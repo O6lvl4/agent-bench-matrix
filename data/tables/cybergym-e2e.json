@@ -1,0 +1,252 @@
+{
+  "id": "cybergym-e2e",
+  "family": "cybergym-e2e",
+  "name": "CyberGym-E2E",
+  "board": "cybergym.io",
+  "category": "security",
+  "measures_ja": "脆弱性の発見・PoC 作成・既存機能を壊さないパッチ作成までの防御の一連の流れを、エージェントが通しでこなせるか。",
+  "tasks": 920,
+  "tasks_note": "† の行は以前の 615 タスク版で評価(score_extra.task_set)。",
+  "metric": "S3 (cumulative stage success)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "CyberGym-E2E チームが既成の CLI エージェント(Claude Code・Codex・Gemini CLI・OpenHands)を費用と時間の上限つきで実行。",
+  "source": "https://www.cybergym.io/cybergym-e2e/",
+  "fetched": [
+    "https://www.cybergym.io/assets/data/cybergym-e2e.json",
+    "https://www.cybergym.io/cybergym-e2e/"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": null,
+  "snapshot": "sources/cybergym-e2e/cybergym-e2e.json",
+  "paper": "https://arxiv.org/abs/2606.04460",
+  "repo": "https://github.com/sunblaze-ucb/cybergym-e2e",
+  "notes_ja": "S1〜S4 は前段をすべて通過したうえでの累積成功率で、ボードの既定の並びは S3。S1〜S3 通過が「発見して修正」成功、S4 は正解の脆弱性との一致。ボードに行ごとの日付は無い(920タスク版は2026年時点の最新スナップショット)。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "GPT-5.4 · Codex",
+      "agent": "Codex",
+      "model_raw": [
+        "GPT-5.4"
+      ],
+      "model_ids": [
+        "gpt-5.4"
+      ],
+      "model_config": "Budget: $10 / 90 min",
+      "score": 65.9,
+      "score_extra": {
+        "patch_only_pct": 87.1,
+        "s1_pct": 67.9,
+        "s2_pct": 66.2,
+        "s4_pct": 22.2,
+        "task_set": 920
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "CyberGym-E2E Team",
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "Claude Opus 4.6 · Claude Code",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Claude Opus 4.6"
+      ],
+      "model_ids": [
+        "claude-opus-4.6"
+      ],
+      "model_config": "Budget: No cost cap / 90 min",
+      "score": 62.6,
+      "score_extra": {
+        "patch_only_pct": 85.8,
+        "s1_pct": 66.3,
+        "s2_pct": 65.0,
+        "s4_pct": 26.2,
+        "task_set": 920
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "CyberGym-E2E Team",
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "Gemini 3.1 Pro · Gemini CLI",
+      "agent": "Gemini CLI",
+      "model_raw": [
+        "Gemini 3.1 Pro"
+      ],
+      "model_ids": [
+        "gemini-3.1-pro"
+      ],
+      "model_config": "Budget: $10 / 90 min",
+      "score": 43.8,
+      "score_extra": {
+        "patch_only_pct": 83.0,
+        "s1_pct": 47.4,
+        "s2_pct": 44.3,
+        "s4_pct": 20.5,
+        "task_set": 920
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "CyberGym-E2E Team",
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "Claude Opus 4.6 · Claude Code",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Claude Opus 4.6"
+      ],
+      "model_ids": [
+        "claude-opus-4.6"
+      ],
+      "model_config": "Budget: $10 / 90 min",
+      "score": 37.9,
+      "score_extra": {
+        "patch_only_pct": 84.1,
+        "s1_pct": 39.7,
+        "s2_pct": 39.5,
+        "s4_pct": 15.7,
+        "task_set": 920
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "CyberGym-E2E Team",
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "Gemini 3 Pro · Gemini CLI",
+      "agent": "Gemini CLI",
+      "model_raw": [
+        "Gemini 3 Pro"
+      ],
+      "model_ids": [
+        "gemini-3-pro"
+      ],
+      "model_config": "Budget: $10 / 90 min",
+      "score": 22.6,
+      "score_extra": {
+        "patch_only_pct": 77.6,
+        "s1_pct": 29.6,
+        "s2_pct": 23.6,
+        "s4_pct": 5.0,
+        "task_set": 615
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "CyberGym-E2E Team",
+      "row_url": null
+    },
+    {
+      "rank": 6,
+      "system": "GPT-5.2 · Codex",
+      "agent": "Codex",
+      "model_raw": [
+        "GPT-5.2"
+      ],
+      "model_ids": [
+        "gpt-5.2"
+      ],
+      "model_config": "Budget: $10 / 90 min",
+      "score": 20.7,
+      "score_extra": {
+        "patch_only_pct": 58.5,
+        "s1_pct": 30.2,
+        "s2_pct": 22.0,
+        "s4_pct": 6.5,
+        "task_set": 615
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "CyberGym-E2E Team",
+      "row_url": null
+    },
+    {
+      "rank": 7,
+      "system": "Claude Opus 4.5 · Claude Code",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Claude Opus 4.5"
+      ],
+      "model_ids": [
+        "claude-opus-4.5"
+      ],
+      "model_config": "Budget: $10 / 90 min",
+      "score": 19.2,
+      "score_extra": {
+        "patch_only_pct": 82.3,
+        "s1_pct": 24.9,
+        "s2_pct": 21.9,
+        "s4_pct": 7.6,
+        "task_set": 615
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "CyberGym-E2E Team",
+      "row_url": null
+    },
+    {
+      "rank": 8,
+      "system": "Claude Sonnet 4.5 · Claude Code",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Claude Sonnet 4.5"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": "Budget: $10 / 90 min",
+      "score": 10.6,
+      "score_extra": {
+        "patch_only_pct": 77.4,
+        "s1_pct": 18.1,
+        "s2_pct": 12.1,
+        "s4_pct": 3.4,
+        "task_set": 615
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "CyberGym-E2E Team",
+      "row_url": null
+    },
+    {
+      "rank": 9,
+      "system": "Claude Sonnet 4.5 · OpenHands",
+      "agent": "OpenHands",
+      "model_raw": [
+        "Claude Sonnet 4.5"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": "Budget: $10 / 90 min",
+      "score": 5.4,
+      "score_extra": {
+        "patch_only_pct": 68.9,
+        "s1_pct": 9.3,
+        "s2_pct": 7.2,
+        "s4_pct": 2.3,
+        "task_set": 615
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "CyberGym-E2E Team",
+      "row_url": null
+    }
+  ]
+}

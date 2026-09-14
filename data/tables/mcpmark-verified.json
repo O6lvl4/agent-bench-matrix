@@ -1,0 +1,240 @@
+{
+  "id": "mcpmark-verified",
+  "family": "mcpmark",
+  "name": "MCPMark Verified",
+  "board": "mcpmark.ai",
+  "category": "tool-use",
+  "measures_ja": "Notion・GitHub・ファイルシステム・Postgres・Playwright の実MCPサーバー環境で、現実的な操作タスクを最後までやり切れるか。",
+  "tasks": 127,
+  "tasks_note": "ページのサービス別タスク数(filesystem 30 / github 23 / notion 28 / playwright 25 / postgres 21)の合計。",
+  "metric": "Pass@1",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "MCPMark の評価基盤で、標準タスクの版固定サブセットを各モデル設定につき1回実行した結果(実行者の明記は無い)。",
+  "source": "https://mcpmark.ai/leaderboard/verified",
+  "fetched": [
+    "https://mcpmark.ai/leaderboard/verified"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": null,
+  "snapshot": "sources/mcpmark-verified/leaderboard_data.json",
+  "paper": "https://arxiv.org/abs/2509.24002",
+  "repo": "https://github.com/eval-sys/mcpmark",
+  "notes_ja": "行ごとの日付は無く、ページの表示は「Updated at 07/20/2026 16:05:27」。値は0〜1の比率を100倍して%にした。system はボードのモデル設定名、model_raw は actualModelName。open_source はボードのデータの is_open_source_model による。ページ注記: 1回実行(run-1)のみで Pass@4/Pass^4 は無い。kimi-k2-7-code の filesystem は2回目の実行、claude-opus-4-8-max と kimi-k2-6 はスコアのみの掲載。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "kimi-k3-max",
+      "agent": null,
+      "model_raw": [
+        "kimi-k3"
+      ],
+      "model_ids": [
+        "kimi-k3"
+      ],
+      "model_config": "max",
+      "score": 96.06,
+      "score_extra": {
+        "pass_at_1_std": 0,
+        "avg_time_s": 793.8786,
+        "filesystem_pass_at_1": 93.33,
+        "github_pass_at_1": 95.65,
+        "notion_pass_at_1": 92.86,
+        "playwright_pass_at_1": 100,
+        "postgres_pass_at_1": 100
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "gpt-5-5-xhigh",
+      "agent": null,
+      "model_raw": [
+        "gpt-5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": "xhigh",
+      "score": 92.91,
+      "score_extra": {
+        "pass_at_1_std": 0,
+        "avg_time_s": 582.0796,
+        "filesystem_pass_at_1": 86.67,
+        "github_pass_at_1": 95.65,
+        "notion_pass_at_1": 89.29,
+        "playwright_pass_at_1": 96.0,
+        "postgres_pass_at_1": 100
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "gpt-5-6-sol-max",
+      "agent": null,
+      "model_raw": [
+        "gpt-5.6-sol"
+      ],
+      "model_ids": [
+        "gpt-5.6-sol"
+      ],
+      "model_config": "max",
+      "score": 92.91,
+      "score_extra": {
+        "pass_at_1_std": 0,
+        "avg_time_s": 557.7371,
+        "filesystem_pass_at_1": 90.0,
+        "github_pass_at_1": 95.65,
+        "notion_pass_at_1": 85.71,
+        "playwright_pass_at_1": 100,
+        "postgres_pass_at_1": 95.24
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "claude-fable-5-max",
+      "agent": null,
+      "model_raw": [
+        "claude-fable-5"
+      ],
+      "model_ids": [
+        "claude-fable-5"
+      ],
+      "model_config": "max",
+      "score": 86.61,
+      "score_extra": {
+        "pass_at_1_std": 0,
+        "avg_time_s": 311.8711,
+        "filesystem_pass_at_1": 90.0,
+        "github_pass_at_1": 82.61,
+        "notion_pass_at_1": 82.14,
+        "playwright_pass_at_1": 92.0,
+        "postgres_pass_at_1": 85.71
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "kimi-k2-7-code",
+      "agent": null,
+      "model_raw": [
+        "kimi-k2.7-code"
+      ],
+      "model_ids": [
+        "kimi-k2.7-code"
+      ],
+      "model_config": null,
+      "score": 81.89,
+      "score_extra": {
+        "pass_at_1_std": 0,
+        "avg_time_s": 403.8857,
+        "filesystem_pass_at_1": 76.67,
+        "github_pass_at_1": 73.91,
+        "notion_pass_at_1": 85.71,
+        "playwright_pass_at_1": 84.0,
+        "postgres_pass_at_1": 90.48
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 6,
+      "system": "claude-opus-4-8-max",
+      "agent": null,
+      "model_raw": [
+        "claude-opus-4.8"
+      ],
+      "model_ids": [
+        "claude-opus-4.8"
+      ],
+      "model_config": "max",
+      "score": 76.38,
+      "score_extra": {
+        "pass_at_1_std": 0,
+        "filesystem_pass_at_1": 86.67,
+        "github_pass_at_1": 56.52,
+        "notion_pass_at_1": 78.57,
+        "playwright_pass_at_1": 68.0,
+        "postgres_pass_at_1": 90.48
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 7,
+      "system": "kimi-k2-6",
+      "agent": null,
+      "model_raw": [
+        "kimi-k2.6"
+      ],
+      "model_ids": [
+        "kimi-k2.6"
+      ],
+      "model_config": null,
+      "score": 72.83,
+      "score_extra": {
+        "pass_at_1_std": 0,
+        "filesystem_pass_at_1": 70.0,
+        "github_pass_at_1": 60.87,
+        "notion_pass_at_1": 73.21,
+        "playwright_pass_at_1": 76.0,
+        "postgres_pass_at_1": 85.71
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 8,
+      "system": "deepseek-v4-pro-max",
+      "agent": null,
+      "model_raw": [
+        "deepseek-v4-pro"
+      ],
+      "model_ids": [
+        "deepseek-v4-pro"
+      ],
+      "model_config": "max",
+      "score": 71.65,
+      "score_extra": {
+        "pass_at_1_std": 0,
+        "avg_time_s": 147.9836,
+        "filesystem_pass_at_1": 76.67,
+        "github_pass_at_1": 47.83,
+        "notion_pass_at_1": 71.43,
+        "playwright_pass_at_1": 72.0,
+        "postgres_pass_at_1": 90.48
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    }
+  ]
+}

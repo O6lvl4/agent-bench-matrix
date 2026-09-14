@@ -1,0 +1,48 @@
+{
+  "id": "paperbench-code-dev",
+  "family": "paperbench",
+  "name": "PaperBench Code-Dev",
+  "board": "github.com/openai/preparedness",
+  "category": "research",
+  "measures_ja": "PaperBench の Code-Dev 版。コード開発要件のみを採点し、実行・結果一致は問わない。",
+  "tasks": 20,
+  "tasks_note": "ICML 2024 の Spotlight/Oral 論文20本。採点ルーブリックは合計8,316個の採点項目に分解される(論文の記載)。",
+  "metric": "Replication Score (%)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "OpenAI が BasicAgent / IterativeAgent の足場でモデルを実行し、著者と作ったルーブリックで LLM 判定して採点。",
+  "source": "https://github.com/openai/preparedness/tree/main/project/paperbench",
+  "fetched": [
+    "https://raw.githubusercontent.com/openai/preparedness/main/project/paperbench/README.md"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2025-04-02",
+  "snapshot": "sources/paperbench-code-dev/README.md",
+  "paper": "https://arxiv.org/abs/2504.01848",
+  "repo": "https://github.com/openai/preparedness",
+  "notes_ja": "Code-Dev 版はコード開発要件だけを判定し、実行や結果一致の要件は採点しない簡易版。 値は3回の平均±標準誤差(score_extra.score_std)。system は「足場 + モデル」で agent に足場、model_raw にモデルを分けた。o1-high などの推論量と時間上限は model_config へ。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "IterativeAgent o1-high",
+      "agent": "IterativeAgent",
+      "model_raw": [
+        "o1-high"
+      ],
+      "model_ids": [
+        "o1"
+      ],
+      "model_config": "high",
+      "score": 43.4,
+      "score_extra": {
+        "score_std": 0.8,
+        "runs": 3
+      },
+      "date": "2025-04-02",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": null
+    }
+  ]
+}

@@ -1,0 +1,2963 @@
+{
+  "id": "osworld-verified",
+  "family": "osworld",
+  "name": "OSWorld-Verified",
+  "board": "os-world.github.io (osworld-v1.xlang.ai)",
+  "category": "computer-use",
+  "measures_ja": "実機の Ubuntu デスクトップ上で、Chrome・LibreOffice・GIMP・VS Code などを使う実タスクを最後までこなせるか。",
+  "tasks": 369,
+  "tasks_note": "サイト記載は369タスク。Google Drive 系8タスクを除く361タスクでの評価も公式に認められている。",
+  "metric": "Success rate (%)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "OSWorld 側のチームが統一した環境・設定で再実行した結果。足場は行ごとに異なる(素のモデル/専用モデル/エージェント枠組み)。",
+  "source": "https://os-world.github.io/",
+  "fetched": [
+    "http://osworld-v1.xlang.ai/static/data/osworld_verified_results.xlsx"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-08-01",
+  "snapshot": "sources/osworld-verified/osworld_verified_results.sheet.json",
+  "paper": "https://arxiv.org/abs/2404.07972",
+  "repo": "https://github.com/xlang-ai/OSWorld",
+  "notes_ja": "ボードの「All」表示(Model×Max steps で複数ランを平均し平均値の降順)を再現した。既定表示の「Foundation E2E GUI」は score_extra.foundation_e2e_gui が true の行だけ。スコア未記入(🚧・-)の行は表示されないので含めない。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Intelligence-Indeed Agent",
+      "agent": "Intelligence-Indeed Agent",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": "max_steps=100; approach=Agentic framework; additional coding-based action",
+      "score": 90.19,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": false,
+        "additional_coding_action": true,
+        "multiple_rollout": false
+      },
+      "date": "2026-07-25",
+      "verified": true,
+      "open_source": null,
+      "org": "Intelligence Indeed",
+      "row_url": "https://github.com/intelligence-indeed/intelligence-indeed"
+    },
+    {
+      "rank": 2,
+      "system": "claude-fable-5[1m]",
+      "agent": null,
+      "model_raw": [
+        "claude-fable-5[1m]"
+      ],
+      "model_ids": [
+        "claude-fable-5"
+      ],
+      "model_config": "max_steps=100; approach=General model; [1m]",
+      "score": 85.96,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2026-08-01",
+      "verified": true,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://www.anthropic.com/claude/fable"
+    },
+    {
+      "rank": 3,
+      "system": "Pointer Agent w/ Opus 4.7",
+      "agent": "Pointer Agent",
+      "model_raw": [
+        "Opus 4.7"
+      ],
+      "model_ids": [
+        "claude-opus-4.7"
+      ],
+      "model_config": "max_steps=100; approach=Agentic framework; additional coding-based action",
+      "score": 83.64,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": false,
+        "additional_coding_action": true,
+        "multiple_rollout": false
+      },
+      "date": "2026-05-21",
+      "verified": true,
+      "open_source": null,
+      "org": "Pointer",
+      "row_url": "https://pointer.ai/blog/sota?utm_source=osworld&utm_medium=leaderboard&utm_campaign=sota"
+    },
+    {
+      "rank": 4,
+      "system": "claude-opus-5[1m]",
+      "agent": null,
+      "model_raw": [
+        "claude-opus-5[1m]"
+      ],
+      "model_ids": [
+        "claude-opus-5"
+      ],
+      "model_config": "max_steps=100; approach=General model; [1m]",
+      "score": 83.39,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2026-08-01",
+      "verified": true,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://www.anthropic.com/news/claude-opus-5"
+    },
+    {
+      "rank": 5,
+      "system": "Coasty CUA v1",
+      "agent": "Coasty CUA v1",
+      "model_raw": [
+        "Coasty CUA v1"
+      ],
+      "model_ids": [],
+      "model_config": "max_steps=100; approach=General model; additional coding-based action",
+      "score": 82.81,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": false,
+        "additional_coding_action": true,
+        "multiple_rollout": false
+      },
+      "date": "2026-07-01",
+      "verified": true,
+      "open_source": null,
+      "org": "Coasty Team",
+      "row_url": "https://coasty.ai"
+    },
+    {
+      "rank": 6,
+      "system": "Pointer Agent w/ Sonnet 4.6",
+      "agent": "Pointer Agent",
+      "model_raw": [
+        "Sonnet 4.6"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.6"
+      ],
+      "model_config": "max_steps=100; approach=Agentic framework; additional coding-based action",
+      "score": 81.45,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": false,
+        "additional_coding_action": true,
+        "multiple_rollout": false
+      },
+      "date": "2026-05-21",
+      "verified": true,
+      "open_source": null,
+      "org": "Pointer",
+      "row_url": "https://pointer.ai/blog/sota?utm_source=osworld&utm_medium=leaderboard&utm_campaign=sota"
+    },
+    {
+      "rank": 7,
+      "system": "Muse Spark 1.1",
+      "agent": null,
+      "model_raw": [
+        "Muse Spark 1.1"
+      ],
+      "model_ids": [
+        "muse-spark-1.1"
+      ],
+      "model_config": "max_steps=100; approach=General model",
+      "score": 80.67,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2026-07-09",
+      "verified": true,
+      "open_source": null,
+      "org": "Meta Superintelligence Labs",
+      "row_url": "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/"
+    },
+    {
+      "rank": 8,
+      "system": "Holo3-35B-A3B",
+      "agent": null,
+      "model_raw": [
+        "Holo3-35B-A3B"
+      ],
+      "model_ids": [
+        "holo3-35b-a3b"
+      ],
+      "model_config": "max_steps=100; approach=Specialized model",
+      "score": 80.36,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 2,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false,
+        "success_rate_std": 2.2,
+        "run_scores": [
+          82.56,
+          78.15
+        ]
+      },
+      "date": "2026-04-20",
+      "verified": true,
+      "open_source": null,
+      "org": "H Company",
+      "row_url": "https://hcompany.ai/holo3"
+    },
+    {
+      "rank": 9,
+      "system": "OpenAPA w/ gemini-3.1-pro",
+      "agent": "OpenAPA",
+      "model_raw": [
+        "gemini-3.1-pro"
+      ],
+      "model_ids": [
+        "gemini-3.1-pro"
+      ],
+      "model_config": "max_steps=100; approach=Agentic framework; additional coding-based action",
+      "score": 78.34,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": false,
+        "additional_coding_action": true,
+        "multiple_rollout": false
+      },
+      "date": "2026-04-17",
+      "verified": true,
+      "open_source": null,
+      "org": "Laiye",
+      "row_url": "https://github.com/laiye-ai/open-apa"
+    },
+    {
+      "rank": 10,
+      "system": "VLAA-GUI w/ Opus 4.5",
+      "agent": "VLAA-GUI",
+      "model_raw": [
+        "Opus 4.5"
+      ],
+      "model_ids": [
+        "claude-opus-4.5"
+      ],
+      "model_config": "max_steps=100; approach=Agentic framework; additional coding-based action",
+      "score": 76.26,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": false,
+        "additional_coding_action": true,
+        "multiple_rollout": false
+      },
+      "date": "2026-04-20",
+      "verified": true,
+      "open_source": null,
+      "org": "UCSC VLAA Lab",
+      "row_url": "https://ucsc-vlaa.github.io/VLAA-GUI/"
+    },
+    {
+      "rank": 11,
+      "system": "MiniMax M3",
+      "agent": null,
+      "model_raw": [
+        "MiniMax M3"
+      ],
+      "model_ids": [
+        "minimax-m3"
+      ],
+      "model_config": "max_steps=100; approach=General model",
+      "score": 75.19,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2026-06-08",
+      "verified": true,
+      "open_source": null,
+      "org": "MiniMax",
+      "row_url": "https://www.minimaxi.com/blog/minimax-m3"
+    },
+    {
+      "rank": 12,
+      "system": "HIPPO Agent w/ Opus 4.5",
+      "agent": "HIPPO Agent",
+      "model_raw": [
+        "Opus 4.5"
+      ],
+      "model_ids": [
+        "claude-opus-4.5"
+      ],
+      "model_config": "max_steps=100; approach=Agentic framework; additional coding-based action",
+      "score": 74.48,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": false,
+        "additional_coding_action": true,
+        "multiple_rollout": false
+      },
+      "date": "2026-02-25",
+      "verified": true,
+      "open_source": null,
+      "org": "Lenovo",
+      "row_url": "https://github.com/wadang/muscle-mem-agent"
+    },
+    {
+      "rank": 13,
+      "system": "Qwen 3.7 Plus",
+      "agent": null,
+      "model_raw": [
+        "Qwen 3.7 Plus"
+      ],
+      "model_ids": [
+        "qwen3.7-plus"
+      ],
+      "model_config": "max_steps=100; approach=General model",
+      "score": 73.3,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2026-05-25",
+      "verified": true,
+      "open_source": null,
+      "org": "Qwen Team, Alibaba Group",
+      "row_url": "https://qwen.ai/blog?id=qwen3.7"
+    },
+    {
+      "rank": 14,
+      "system": "Kimi K2.6",
+      "agent": null,
+      "model_raw": [
+        "Kimi K2.6"
+      ],
+      "model_ids": [
+        "kimi-k2.6"
+      ],
+      "model_config": "max_steps=100; approach=General model",
+      "score": 73.06,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2026-04-20",
+      "verified": true,
+      "open_source": null,
+      "org": "Moonshot AI",
+      "row_url": "https://www.kimi.com/blog/kimi-k2-6"
+    },
+    {
+      "rank": 15,
+      "system": "agent s3 w/ Opus 4.5 + GPT-5 bBoN (N=10)",
+      "agent": "Agent S3",
+      "model_raw": [
+        "Opus 4.5",
+        "GPT-5"
+      ],
+      "model_ids": [
+        "claude-opus-4.5",
+        "gpt-5"
+      ],
+      "model_config": "max_steps=100; approach=Agentic framework; bBoN (N=10); additional coding-based action; multiple rollout",
+      "score": 72.58,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": false,
+        "additional_coding_action": true,
+        "multiple_rollout": true
+      },
+      "date": "2025-12-11",
+      "verified": true,
+      "open_source": null,
+      "org": "Simular",
+      "row_url": "https://arxiv.org/abs/2510.02250"
+    },
+    {
+      "rank": 16,
+      "system": "claude-sonnet-4-6",
+      "agent": null,
+      "model_raw": [
+        "claude-sonnet-4-6"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.6"
+      ],
+      "model_config": "max_steps=100; approach=General model",
+      "score": 72.11,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2026-03-08",
+      "verified": true,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://www.anthropic.com/news/claude-sonnet-4-6"
+    },
+    {
+      "rank": 17,
+      "system": "agent s3 w/ GPT-5 bBoN (N=10)",
+      "agent": "Agent S3",
+      "model_raw": [
+        "GPT-5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": "max_steps=100; approach=Agentic framework; bBoN (N=10); additional coding-based action; multiple rollout",
+      "score": 69.9,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": false,
+        "additional_coding_action": true,
+        "multiple_rollout": true
+      },
+      "date": "2025-10-04",
+      "verified": true,
+      "open_source": null,
+      "org": "Simular",
+      "row_url": "https://arxiv.org/abs/2510.02250"
+    },
+    {
+      "rank": 18,
+      "system": "UiPath Screen Agent w/ Opus 4.5",
+      "agent": "UiPath Screen Agent",
+      "model_raw": [
+        "Opus 4.5"
+      ],
+      "model_ids": [
+        "claude-opus-4.5"
+      ],
+      "model_config": "max_steps=100; approach=Agentic framework",
+      "score": 67.14,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-12-24",
+      "verified": true,
+      "open_source": null,
+      "org": "UiPath",
+      "row_url": "https://github.com/xlang-ai/OSWorld/tree/main/mm_agents/uipath"
+    },
+    {
+      "rank": 19,
+      "system": "agent s3 w/ Opus 4.5 bBoN (N=1)",
+      "agent": "Agent S3",
+      "model_raw": [
+        "Opus 4.5"
+      ],
+      "model_ids": [
+        "claude-opus-4.5"
+      ],
+      "model_config": "max_steps=100; approach=Agentic framework; bBoN (N=1); additional coding-based action",
+      "score": 66.0,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 5,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": false,
+        "additional_coding_action": true,
+        "multiple_rollout": false,
+        "success_rate_std": 1.1,
+        "run_scores": [
+          67.46,
+          64.35,
+          66.48,
+          66.54,
+          65.16
+        ]
+      },
+      "date": "2025-12-11",
+      "verified": true,
+      "open_source": null,
+      "org": "Simular",
+      "row_url": "https://arxiv.org/abs/2510.02250"
+    },
+    {
+      "rank": 20,
+      "system": "OS-Symphony w/ GPT-5",
+      "agent": "OS-Symphony",
+      "model_raw": [
+        "GPT-5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": "max_steps=50; approach=Agentic framework; additional coding-based action",
+      "score": 65.77,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 1,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": false,
+        "additional_coding_action": true,
+        "multiple_rollout": false
+      },
+      "date": "2026-01-04",
+      "verified": true,
+      "open_source": null,
+      "org": "Shanghai AI Laboratory",
+      "row_url": "https://github.com/xlang-ai/OSWorld/tree/main/mm_agents/os_symphony"
+    },
+    {
+      "rank": 21,
+      "system": "UiPath Screen Agent w/ Opus 4.5",
+      "agent": "UiPath Screen Agent",
+      "model_raw": [
+        "Opus 4.5"
+      ],
+      "model_ids": [
+        "claude-opus-4.5"
+      ],
+      "model_config": "max_steps=50; approach=Agentic framework",
+      "score": 64.4,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 1,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-12-24",
+      "verified": true,
+      "open_source": null,
+      "org": "UiPath",
+      "row_url": "https://github.com/xlang-ai/OSWorld/tree/main/mm_agents/uipath"
+    },
+    {
+      "rank": 22,
+      "system": "GBOX Agent",
+      "agent": "GBOX Agent",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": "max_steps=15; approach=Agentic framework",
+      "score": 64.22,
+      "score_extra": {
+        "max_steps": 15,
+        "runs": 1,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-11-25",
+      "verified": true,
+      "open_source": null,
+      "org": "GBOX.AI",
+      "row_url": "https://github.com/babelcloud/GBOXBlog/blob/main/From_Vision_to_Action.md"
+    },
+    {
+      "rank": 23,
+      "system": "GTA1 w/ GPT-5",
+      "agent": "GTA1",
+      "model_raw": [
+        "GTA1",
+        "GPT-5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": "max_steps=100; approach=Agentic framework; additional coding-based action",
+      "score": 63.41,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": false,
+        "additional_coding_action": true,
+        "multiple_rollout": false
+      },
+      "date": "2025-10-03",
+      "verified": true,
+      "open_source": null,
+      "org": "Salesforce & The Australian National University & The University of Hong Kong",
+      "row_url": "https://arxiv.org/pdf/2507.05791"
+    },
+    {
+      "rank": 24,
+      "system": "Kimi K2.5",
+      "agent": null,
+      "model_raw": [
+        "Kimi K2.5"
+      ],
+      "model_ids": [
+        "kimi-k2.5"
+      ],
+      "model_config": "max_steps=100; approach=General model",
+      "score": 63.3,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2026-01-31",
+      "verified": true,
+      "open_source": null,
+      "org": "Moonshot AI",
+      "row_url": "https://github.com/MoonshotAI/Kimi-K2.5/blob/master/tech_report.pdf"
+    },
+    {
+      "rank": 25,
+      "system": "claude-sonnet-4-5-20250929",
+      "agent": null,
+      "model_raw": [
+        "claude-sonnet-4-5-20250929"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": "max_steps=100; approach=General model",
+      "score": 62.88,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-10-31",
+      "verified": true,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://www.anthropic.com/news/claude-sonnet-4-5"
+    },
+    {
+      "rank": 26,
+      "system": "agent s3 w/ GPT-5 bBoN (N=1)",
+      "agent": "Agent S3",
+      "model_raw": [
+        "GPT-5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": "max_steps=100; approach=Agentic framework; bBoN (N=1); additional coding-based action",
+      "score": 62.6,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 10,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": false,
+        "additional_coding_action": true,
+        "multiple_rollout": false,
+        "success_rate_std": 1.48,
+        "run_scores": [
+          63.52,
+          61.71,
+          61.88,
+          61.78,
+          65.58,
+          64.38,
+          61.71,
+          60.67,
+          61.26,
+          63.52
+        ]
+      },
+      "date": "2025-10-04",
+      "verified": true,
+      "open_source": null,
+      "org": "Simular",
+      "row_url": "https://arxiv.org/abs/2510.02250"
+    },
+    {
+      "rank": 27,
+      "system": "Agentic-Lybic-Maestro",
+      "agent": "Agentic-Lybic-Maestro",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": "max_steps=100; approach=Agentic framework; additional coding-based action",
+      "score": 61.93,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": false,
+        "additional_coding_action": true,
+        "multiple_rollout": false
+      },
+      "date": "2025-10-17",
+      "verified": true,
+      "open_source": null,
+      "org": "Lybic",
+      "row_url": "https://arxiv.org/abs/2509.11067"
+    },
+    {
+      "rank": 28,
+      "system": "Seed-1.8",
+      "agent": null,
+      "model_raw": [
+        "Seed-1.8"
+      ],
+      "model_ids": [
+        "seed-1.8"
+      ],
+      "model_config": "max_steps=100; approach=General model",
+      "score": 61.87,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-12-18",
+      "verified": true,
+      "open_source": null,
+      "org": "ByteDance Seed",
+      "row_url": "https://seed.bytedance.com/en/seed1_8"
+    },
+    {
+      "rank": 29,
+      "system": "CoACT-1",
+      "agent": "CoACT-1",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": "max_steps=150; approach=Agentic framework; additional coding-based action",
+      "score": 60.76,
+      "score_extra": {
+        "max_steps": 150,
+        "runs": 1,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": false,
+        "additional_coding_action": true,
+        "multiple_rollout": false
+      },
+      "date": "2025-08-04",
+      "verified": true,
+      "open_source": null,
+      "org": "Salesforce & University of Southern California & University of Washington",
+      "row_url": "https://arxiv.org/abs/2508.03923"
+    },
+    {
+      "rank": 30,
+      "system": "CoACT-1",
+      "agent": "CoACT-1",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": "max_steps=100; approach=Agentic framework; additional coding-based action",
+      "score": 59.93,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": false,
+        "additional_coding_action": true,
+        "multiple_rollout": false
+      },
+      "date": "2025-08-04",
+      "verified": true,
+      "open_source": null,
+      "org": "Salesforce & University of Southern California & University of Washington",
+      "row_url": "https://arxiv.org/abs/2508.03923"
+    },
+    {
+      "rank": 31,
+      "system": "claude-sonnet-4-5-20250929",
+      "agent": null,
+      "model_raw": [
+        "claude-sonnet-4-5-20250929"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": "max_steps=50; approach=General model",
+      "score": 58.08,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-10-31",
+      "verified": true,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://www.anthropic.com/news/claude-sonnet-4-5"
+    },
+    {
+      "rank": 32,
+      "system": "aworldGUIAgent-v1",
+      "agent": "aworldGUIAgent-v1",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": "max_steps=50; approach=Agentic framework; additional coding-based action",
+      "score": 58.04,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 1,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": false,
+        "additional_coding_action": true,
+        "multiple_rollout": false
+      },
+      "date": "2025-09-18",
+      "verified": true,
+      "open_source": null,
+      "org": "inclusionAI",
+      "row_url": "https://github.com/inclusionAI/AWorld/tree/main/examples/osworld"
+    },
+    {
+      "rank": 33,
+      "system": "Agentic-Lybic-Maestro",
+      "agent": "Agentic-Lybic-Maestro",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": "max_steps=50; approach=Agentic framework; additional coding-based action",
+      "score": 56.9,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 2,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": false,
+        "additional_coding_action": true,
+        "multiple_rollout": false,
+        "success_rate_std": 0.17,
+        "run_scores": [
+          57.07,
+          56.73
+        ]
+      },
+      "date": "2025-10-17",
+      "verified": true,
+      "open_source": null,
+      "org": "Lybic",
+      "row_url": "https://arxiv.org/abs/2509.11067"
+    },
+    {
+      "rank": 34,
+      "system": "EvoCUA-20260105",
+      "agent": null,
+      "model_raw": [
+        "EvoCUA-20260105"
+      ],
+      "model_ids": [
+        "evocua-20260105"
+      ],
+      "model_config": "max_steps=50; approach=General model",
+      "score": 56.73,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2026-01-06",
+      "verified": true,
+      "open_source": null,
+      "org": "Meituan LongCat Team",
+      "row_url": "https://arxiv.org/abs/2601.15876"
+    },
+    {
+      "rank": 35,
+      "system": "CoACT-1",
+      "agent": "CoACT-1",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": "max_steps=50; approach=Agentic framework; additional coding-based action",
+      "score": 56.39,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 1,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": false,
+        "additional_coding_action": true,
+        "multiple_rollout": false
+      },
+      "date": "2025-08-04",
+      "verified": true,
+      "open_source": null,
+      "org": "Salesforce & University of Southern California & University of Washington",
+      "row_url": "https://arxiv.org/abs/2508.03923"
+    },
+    {
+      "rank": 36,
+      "system": "agent s2.5 w/ o3",
+      "agent": "Agent S2.5",
+      "model_raw": [
+        "o3"
+      ],
+      "model_ids": [
+        "o3"
+      ],
+      "model_config": "max_steps=100; approach=Agentic framework",
+      "score": 56.0,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-31",
+      "verified": true,
+      "open_source": null,
+      "org": "Simular Research",
+      "row_url": "https://github.com/simular-ai/Agent-S"
+    },
+    {
+      "rank": 37,
+      "system": "GUI-Owl-1.5 32B",
+      "agent": null,
+      "model_raw": [
+        "GUI-Owl-1.5 32B"
+      ],
+      "model_ids": [
+        "gui-owl-1.5-32b"
+      ],
+      "model_config": "max_steps=50; approach=Specialized model",
+      "score": 55.44,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2026-03-27",
+      "verified": true,
+      "open_source": null,
+      "org": "Tongyi Lab, Alibaba Group",
+      "row_url": "https://arxiv.org/abs/2602.16855"
+    },
+    {
+      "rank": 38,
+      "system": "agent s2.5 w/ o3",
+      "agent": "Agent S2.5",
+      "model_raw": [
+        "o3"
+      ],
+      "model_ids": [
+        "o3"
+      ],
+      "model_config": "max_steps=50; approach=Agentic framework",
+      "score": 54.2,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 1,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-31",
+      "verified": true,
+      "open_source": null,
+      "org": "Simular Research",
+      "row_url": "https://github.com/simular-ai/Agent-S"
+    },
+    {
+      "rank": 39,
+      "system": "DeepMiner-Mano-72B",
+      "agent": null,
+      "model_raw": [
+        "DeepMiner-Mano-72B"
+      ],
+      "model_ids": [
+        "deepminer-mano-72b"
+      ],
+      "model_config": "max_steps=100; approach=Specialized model",
+      "score": 53.91,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-10-31",
+      "verified": true,
+      "open_source": null,
+      "org": "Mininglamp Technology",
+      "row_url": "https://arxiv.org/abs/2509.17336"
+    },
+    {
+      "rank": 40,
+      "system": "UiPath Screen Agent w/ GPT-5",
+      "agent": "UiPath Screen Agent",
+      "model_raw": [
+        "GPT-5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": "max_steps=50; approach=Agentic framework",
+      "score": 53.63,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 1,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-09-14",
+      "verified": true,
+      "open_source": null,
+      "org": "UiPath",
+      "row_url": "#"
+    },
+    {
+      "rank": 41,
+      "system": "GTA1 w/ o3",
+      "agent": "GTA1",
+      "model_raw": [
+        "GTA1",
+        "o3"
+      ],
+      "model_ids": [
+        "o3"
+      ],
+      "model_config": "max_steps=100; approach=Agentic framework; additional coding-based action",
+      "score": 53.1,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": false,
+        "additional_coding_action": true,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "Salesforce & The Australian National University & The University of Hong Kong",
+      "row_url": "https://arxiv.org/abs/2507.05791"
+    },
+    {
+      "rank": 42,
+      "system": "UI-TARS-2-2509",
+      "agent": null,
+      "model_raw": [
+        "UI-TARS-2-2509"
+      ],
+      "model_ids": [
+        "ui-tars-2-2509"
+      ],
+      "model_config": "max_steps=100; approach=Specialized model",
+      "score": 53.1,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-10-14",
+      "verified": true,
+      "open_source": null,
+      "org": "ByteDance Seed",
+      "row_url": "https://arxiv.org/pdf/2509.02544"
+    },
+    {
+      "rank": 43,
+      "system": "Jedi-7B w/ o3",
+      "agent": "Jedi-7B",
+      "model_raw": [
+        "Jedi-7B",
+        "o3"
+      ],
+      "model_ids": [
+        "jedi-7b",
+        "o3"
+      ],
+      "model_config": "max_steps=100; approach=Agentic framework",
+      "score": 51.0,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "Salesforce & The University of Hong Kong",
+      "row_url": "https://osworld-grounding.github.io/"
+    },
+    {
+      "rank": 44,
+      "system": "Jedi-7B w/ o3",
+      "agent": "Jedi-7B",
+      "model_raw": [
+        "Jedi-7B",
+        "o3"
+      ],
+      "model_ids": [
+        "jedi-7b",
+        "o3"
+      ],
+      "model_config": "max_steps=50; approach=Agentic framework",
+      "score": 50.6,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 1,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "Salesforce & The University of Hong Kong",
+      "row_url": "https://osworld-grounding.github.io/"
+    },
+    {
+      "rank": 45,
+      "system": "EvoCUA",
+      "agent": null,
+      "model_raw": [
+        "EvoCUA"
+      ],
+      "model_ids": [
+        "evocua"
+      ],
+      "model_config": "max_steps=50; approach=General model",
+      "score": 50.3,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-12-24",
+      "verified": true,
+      "open_source": null,
+      "org": "Meituan LongCat Team",
+      "row_url": "https://arxiv.org/abs/2601.15876"
+    },
+    {
+      "rank": 46,
+      "system": "GTA1 w/ o3",
+      "agent": "GTA1",
+      "model_raw": [
+        "GTA1",
+        "o3"
+      ],
+      "model_ids": [
+        "o3"
+      ],
+      "model_config": "max_steps=50; approach=Agentic framework; additional coding-based action",
+      "score": 48.59,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 1,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": false,
+        "additional_coding_action": true,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "Salesforce & The Australian National University & The University of Hong Kong",
+      "row_url": "https://arxiv.org/abs/2507.05791"
+    },
+    {
+      "rank": 47,
+      "system": "autoglm-os-9b-20250925",
+      "agent": null,
+      "model_raw": [
+        "autoglm-os-9b-20250925"
+      ],
+      "model_ids": [
+        "autoglm-os-9b-20250925"
+      ],
+      "model_config": "max_steps=50; approach=Specialized model; additional coding-based action",
+      "score": 48.03,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 1,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": false,
+        "additional_coding_action": true,
+        "multiple_rollout": false
+      },
+      "date": "2025-09-25",
+      "verified": true,
+      "open_source": null,
+      "org": "Tsinghua University & Zhipu AI",
+      "row_url": "https://arxiv.org/pdf/2508.14040"
+    },
+    {
+      "rank": 48,
+      "system": "autoglm-os-9b",
+      "agent": null,
+      "model_raw": [
+        "autoglm-os-9b"
+      ],
+      "model_ids": [
+        "autoglm-os-9b"
+      ],
+      "model_config": "max_steps=50; approach=Specialized model; additional a11y tree; additional coding-based action",
+      "score": 47.26,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 1,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": true,
+        "additional_coding_action": true,
+        "multiple_rollout": false
+      },
+      "date": "2025-08-18",
+      "verified": true,
+      "open_source": null,
+      "org": "Tsinghua University & Zhipu AI",
+      "row_url": "https://arxiv.org/pdf/2508.14040"
+    },
+    {
+      "rank": 49,
+      "system": "autoglm-os-9b-20250925",
+      "agent": null,
+      "model_raw": [
+        "autoglm-os-9b-20250925"
+      ],
+      "model_ids": [
+        "autoglm-os-9b-20250925"
+      ],
+      "model_config": "max_steps=15; approach=Specialized model; additional coding-based action",
+      "score": 46.88,
+      "score_extra": {
+        "max_steps": 15,
+        "runs": 1,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": false,
+        "additional_coding_action": true,
+        "multiple_rollout": false
+      },
+      "date": "2025-09-25",
+      "verified": true,
+      "open_source": null,
+      "org": "Tsinghua University & Zhipu AI",
+      "row_url": "https://arxiv.org/pdf/2508.14040"
+    },
+    {
+      "rank": 50,
+      "system": "autoglm-os-9b",
+      "agent": null,
+      "model_raw": [
+        "autoglm-os-9b"
+      ],
+      "model_ids": [
+        "autoglm-os-9b"
+      ],
+      "model_config": "max_steps=15; approach=Specialized model; additional a11y tree; additional coding-based action",
+      "score": 46.26,
+      "score_extra": {
+        "max_steps": 15,
+        "runs": 1,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": true,
+        "additional_coding_action": true,
+        "multiple_rollout": false
+      },
+      "date": "2025-08-18",
+      "verified": true,
+      "open_source": null,
+      "org": "Tsinghua University & Zhipu AI",
+      "row_url": "https://arxiv.org/pdf/2508.14040"
+    },
+    {
+      "rank": 51,
+      "system": "EvoCUA-8B-20260105",
+      "agent": null,
+      "model_raw": [
+        "EvoCUA-8B-20260105"
+      ],
+      "model_ids": [
+        "evocua-8b-20260105"
+      ],
+      "model_config": "max_steps=50; approach=General model",
+      "score": 46.06,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2026-01-13",
+      "verified": true,
+      "open_source": null,
+      "org": "Meituan LongCat Team",
+      "row_url": "https://arxiv.org/abs/2601.15876"
+    },
+    {
+      "rank": 52,
+      "system": "agent s2 w/ gemini-2.5-pro",
+      "agent": "Agent S2",
+      "model_raw": [
+        "gemini-2.5-pro"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": "max_steps=50; approach=Agentic framework",
+      "score": 45.76,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 1,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "Simular Research",
+      "row_url": "https://github.com/simular-ai/Agent-S"
+    },
+    {
+      "rank": 53,
+      "system": "opencua-72b-preview",
+      "agent": null,
+      "model_raw": [
+        "opencua-72b-preview"
+      ],
+      "model_ids": [
+        "opencua-72b-preview"
+      ],
+      "model_config": "max_steps=100; approach=Specialized model",
+      "score": 45.0,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 3,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false,
+        "success_rate_std": 0.94,
+        "run_scores": [
+          46.1,
+          43.8,
+          45.1
+        ]
+      },
+      "date": "2025-10-01",
+      "verified": true,
+      "open_source": null,
+      "org": "The University of Hong Kong & Moonshot AI",
+      "row_url": "https://opencua.xlang.ai/"
+    },
+    {
+      "rank": 54,
+      "system": "opencua-72b-preview",
+      "agent": null,
+      "model_raw": [
+        "opencua-72b-preview"
+      ],
+      "model_ids": [
+        "opencua-72b-preview"
+      ],
+      "model_config": "max_steps=50; approach=Specialized model",
+      "score": 44.9,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-10-01",
+      "verified": true,
+      "open_source": null,
+      "org": "The University of Hong Kong & Moonshot AI",
+      "row_url": "https://opencua.xlang.ai/"
+    },
+    {
+      "rank": 55,
+      "system": "claude-4-sonnet-20250514",
+      "agent": null,
+      "model_raw": [
+        "claude-4-sonnet-20250514"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": "max_steps=50; approach=General model",
+      "score": 43.9,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://www.anthropic.com/news/claude-4"
+    },
+    {
+      "rank": 56,
+      "system": "claude-sonnet-4-5-20250929",
+      "agent": null,
+      "model_raw": [
+        "claude-sonnet-4-5-20250929"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": "max_steps=15; approach=General model",
+      "score": 42.88,
+      "score_extra": {
+        "max_steps": 15,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-10-31",
+      "verified": true,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://www.anthropic.com/news/claude-sonnet-4-5"
+    },
+    {
+      "rank": 57,
+      "system": "Jedi-7B w/ o3",
+      "agent": "Jedi-7B",
+      "model_raw": [
+        "Jedi-7B",
+        "o3"
+      ],
+      "model_ids": [
+        "jedi-7b",
+        "o3"
+      ],
+      "model_config": "max_steps=15; approach=Agentic framework",
+      "score": 42.4,
+      "score_extra": {
+        "max_steps": 15,
+        "runs": 1,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "Salesforce & The University of Hong Kong",
+      "row_url": "https://osworld-grounding.github.io/"
+    },
+    {
+      "rank": 58,
+      "system": "UI-TARS-250705",
+      "agent": null,
+      "model_raw": [
+        "UI-TARS-250705"
+      ],
+      "model_ids": [
+        "ui-tars-250705"
+      ],
+      "model_config": "max_steps=100; approach=General model",
+      "score": 41.84,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-09-16",
+      "verified": true,
+      "open_source": null,
+      "org": "ByteDance Seed",
+      "row_url": "https://arxiv.org/pdf/2509.02544"
+    },
+    {
+      "rank": 59,
+      "system": "qwen3-vl-flash-2025-10-25",
+      "agent": null,
+      "model_raw": [
+        "qwen3-vl-flash-2025-10-25"
+      ],
+      "model_ids": [
+        "qwen3-vl-flash"
+      ],
+      "model_config": "max_steps=100; approach=General model",
+      "score": 41.57,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-10-23",
+      "verified": true,
+      "open_source": null,
+      "org": "Qwen Team, Alibaba Group",
+      "row_url": "https://qwen.ai/blog?id=99f0335c4ad9ff6153e517418d48535ab6d8afef&from=research.latest-advancements-list"
+    },
+    {
+      "rank": 60,
+      "system": "claude-4-sonnet-20250514",
+      "agent": null,
+      "model_raw": [
+        "claude-4-sonnet-20250514"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": "max_steps=100; approach=General model",
+      "score": 41.4,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://www.anthropic.com/news/claude-4"
+    },
+    {
+      "rank": 61,
+      "system": "DART-GUI-7B-0924",
+      "agent": null,
+      "model_raw": [
+        "DART-GUI-7B-0924"
+      ],
+      "model_ids": [
+        "dart-gui-7b-0924"
+      ],
+      "model_config": "max_steps=30; approach=Specialized model",
+      "score": 40.47,
+      "score_extra": {
+        "max_steps": 30,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2026-01-23",
+      "verified": true,
+      "open_source": null,
+      "org": "BIGAI & BIT & DataCanvas",
+      "row_url": "https://arxiv.org/pdf/2509.23866"
+    },
+    {
+      "rank": 62,
+      "system": "DeepMiner-Mano-7B",
+      "agent": null,
+      "model_raw": [
+        "DeepMiner-Mano-7B"
+      ],
+      "model_ids": [
+        "deepminer-mano-7b"
+      ],
+      "model_config": "max_steps=100; approach=Specialized model",
+      "score": 40.15,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-09-18",
+      "verified": true,
+      "open_source": null,
+      "org": "Mininglamp Technology",
+      "row_url": "https://arxiv.org/abs/2509.17336"
+    },
+    {
+      "rank": 63,
+      "system": "doubao-1-5-thinking-vision-pro-250717",
+      "agent": null,
+      "model_raw": [
+        "doubao-1-5-thinking-vision-pro-250717"
+      ],
+      "model_ids": [
+        "doubao-1.5-thinking-vision-pro-250717"
+      ],
+      "model_config": "max_steps=100; approach=General model",
+      "score": 40.0,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "ByteDance Seed",
+      "row_url": "https://arxiv.org/abs/2505.07062"
+    },
+    {
+      "rank": 64,
+      "system": "CoACT-1",
+      "agent": "CoACT-1",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": "max_steps=15; approach=Agentic framework; additional coding-based action",
+      "score": 39.81,
+      "score_extra": {
+        "max_steps": 15,
+        "runs": 1,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": false,
+        "additional_coding_action": true,
+        "multiple_rollout": false
+      },
+      "date": "2025-08-04",
+      "verified": true,
+      "open_source": null,
+      "org": "Salesforce & University of Southern California & University of Washington",
+      "row_url": "https://arxiv.org/abs/2508.03923"
+    },
+    {
+      "rank": 65,
+      "system": "opencua-72b-preview",
+      "agent": null,
+      "model_raw": [
+        "opencua-72b-preview"
+      ],
+      "model_ids": [
+        "opencua-72b-preview"
+      ],
+      "model_config": "max_steps=15; approach=Specialized model",
+      "score": 39.0,
+      "score_extra": {
+        "max_steps": 15,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-10-01",
+      "verified": true,
+      "open_source": null,
+      "org": "The University of Hong Kong & Moonshot AI",
+      "row_url": "https://opencua.xlang.ai/"
+    },
+    {
+      "rank": 66,
+      "system": "agent s2.5 w/ o3",
+      "agent": "Agent S2.5",
+      "model_raw": [
+        "o3"
+      ],
+      "model_ids": [
+        "o3"
+      ],
+      "model_config": "max_steps=15; approach=Agentic framework",
+      "score": 39.0,
+      "score_extra": {
+        "max_steps": 15,
+        "runs": 1,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-31",
+      "verified": true,
+      "open_source": null,
+      "org": "Simular Research",
+      "row_url": "https://github.com/simular-ai/Agent-S"
+    },
+    {
+      "rank": 67,
+      "system": "mobile-agent-v3 w/ gui-owl-32b",
+      "agent": "Mobile-Agent-v3",
+      "model_raw": [
+        "gui-owl-32b"
+      ],
+      "model_ids": [
+        "gui-owl-32b"
+      ],
+      "model_config": "max_steps=50; approach=Agentic framework",
+      "score": 38.91,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 1,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-09-03",
+      "verified": true,
+      "open_source": null,
+      "org": "Tongyi Lab, Alibaba Group",
+      "row_url": "https://arxiv.org/abs/2508.15144"
+    },
+    {
+      "rank": 68,
+      "system": "claude-3-7-sonnet-20250219",
+      "agent": null,
+      "model_raw": [
+        "claude-3-7-sonnet-20250219"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": "max_steps=50; approach=General model",
+      "score": 35.8,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://www.anthropic.com/news/claude-3-7-sonnet"
+    },
+    {
+      "rank": 69,
+      "system": "claude-3-7-sonnet-20250219",
+      "agent": null,
+      "model_raw": [
+        "claude-3-7-sonnet-20250219"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": "max_steps=100; approach=General model",
+      "score": 35.6,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://www.anthropic.com/news/claude-3-7-sonnet"
+    },
+    {
+      "rank": 70,
+      "system": "opencua-32b",
+      "agent": null,
+      "model_raw": [
+        "opencua-32b"
+      ],
+      "model_ids": [
+        "opencua-32b"
+      ],
+      "model_config": "max_steps=100; approach=Specialized model",
+      "score": 34.77,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 3,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false,
+        "success_rate_std": 0.78,
+        "run_scores": [
+          33.8,
+          35.7,
+          34.8
+        ]
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "The University of Hong Kong & Moonshot AI",
+      "row_url": "https://opencua.xlang.ai/"
+    },
+    {
+      "rank": 71,
+      "system": "agent s2 w/ gemini-2.5-pro",
+      "agent": "Agent S2",
+      "model_raw": [
+        "gemini-2.5-pro"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": "max_steps=15; approach=Agentic framework",
+      "score": 34.64,
+      "score_extra": {
+        "max_steps": 15,
+        "runs": 1,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-31",
+      "verified": true,
+      "open_source": null,
+      "org": "Simular Research",
+      "row_url": "https://github.com/simular-ai/Agent-S"
+    },
+    {
+      "rank": 72,
+      "system": "opencua-32b",
+      "agent": null,
+      "model_raw": [
+        "opencua-32b"
+      ],
+      "model_ids": [
+        "opencua-32b"
+      ],
+      "model_config": "max_steps=50; approach=Specialized model",
+      "score": 34.13,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 3,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false,
+        "success_rate_std": 0.69,
+        "run_scores": [
+          33.8,
+          33.5,
+          35.1
+        ]
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "The University of Hong Kong & Moonshot AI",
+      "row_url": "https://opencua.xlang.ai/"
+    },
+    {
+      "rank": 73,
+      "system": "doubao-1-5-thinking-vision-pro-250428",
+      "agent": null,
+      "model_raw": [
+        "doubao-1-5-thinking-vision-pro-250428"
+      ],
+      "model_ids": [
+        "doubao-1.5-thinking-vision-pro-250428"
+      ],
+      "model_config": "max_steps=100; approach=General model",
+      "score": 33.8,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "ByteDance Seed",
+      "row_url": "https://arxiv.org/abs/2505.07062"
+    },
+    {
+      "rank": 74,
+      "system": "gui-owl-7b",
+      "agent": null,
+      "model_raw": [
+        "gui-owl-7b"
+      ],
+      "model_ids": [
+        "gui-owl-7b"
+      ],
+      "model_config": "max_steps=15; approach=Specialized model",
+      "score": 32.11,
+      "score_extra": {
+        "max_steps": 15,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-09-03",
+      "verified": true,
+      "open_source": null,
+      "org": "Tongyi Lab, Alibaba Group",
+      "row_url": "https://arxiv.org/abs/2508.15144"
+    },
+    {
+      "rank": 75,
+      "system": "doubao-1-5-thinking-vision-pro-250717",
+      "agent": null,
+      "model_raw": [
+        "doubao-1-5-thinking-vision-pro-250717"
+      ],
+      "model_ids": [
+        "doubao-1.5-thinking-vision-pro-250717"
+      ],
+      "model_config": "max_steps=15; approach=General model",
+      "score": 31.9,
+      "score_extra": {
+        "max_steps": 15,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "ByteDance Seed",
+      "row_url": "https://arxiv.org/abs/2505.07062"
+    },
+    {
+      "rank": 76,
+      "system": "computer-use-preview",
+      "agent": null,
+      "model_raw": [
+        "computer-use-preview"
+      ],
+      "model_ids": [
+        "computer-use-preview"
+      ],
+      "model_config": "max_steps=50; approach=Specialized model",
+      "score": 31.3,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://openai.com/index/computer-using-agent/"
+    },
+    {
+      "rank": 77,
+      "system": "claude-4-sonnet-20250514",
+      "agent": null,
+      "model_raw": [
+        "claude-4-sonnet-20250514"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": "max_steps=15; approach=General model",
+      "score": 31.2,
+      "score_extra": {
+        "max_steps": 15,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://www.anthropic.com/news/claude-4"
+    },
+    {
+      "rank": 78,
+      "system": "computer-use-preview",
+      "agent": null,
+      "model_raw": [
+        "computer-use-preview"
+      ],
+      "model_ids": [
+        "computer-use-preview"
+      ],
+      "model_config": "max_steps=100; approach=Specialized model",
+      "score": 30.52,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 2,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false,
+        "success_rate_std": 0.88,
+        "run_scores": [
+          31.4,
+          29.63
+        ]
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://openai.com/index/computer-using-agent/"
+    },
+    {
+      "rank": 79,
+      "system": "TianXi-Action-7B",
+      "agent": null,
+      "model_raw": [
+        "TianXi-Action-7B"
+      ],
+      "model_ids": [
+        "tianxi-action-7b"
+      ],
+      "model_config": "max_steps=50; approach=Specialized model",
+      "score": 29.81,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 2,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false,
+        "success_rate_std": 0.57,
+        "run_scores": [
+          29.24,
+          30.38
+        ]
+      },
+      "date": "2025-08-11",
+      "verified": true,
+      "open_source": null,
+      "org": "Lenovo",
+      "row_url": "http://arxiv.org/abs/2508.04037"
+    },
+    {
+      "rank": 80,
+      "system": "opencua-32b",
+      "agent": null,
+      "model_raw": [
+        "opencua-32b"
+      ],
+      "model_ids": [
+        "opencua-32b"
+      ],
+      "model_config": "max_steps=15; approach=Specialized model",
+      "score": 29.67,
+      "score_extra": {
+        "max_steps": 15,
+        "runs": 3,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false,
+        "success_rate_std": 1.11,
+        "run_scores": [
+          28.1,
+          30.5,
+          30.4
+        ]
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "The University of Hong Kong & Moonshot AI",
+      "row_url": "https://opencua.xlang.ai/"
+    },
+    {
+      "rank": 81,
+      "system": "Jedi-7B w/ gpt-4o",
+      "agent": "Jedi-7B",
+      "model_raw": [
+        "Jedi-7B",
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "jedi-7b",
+        "gpt-4o"
+      ],
+      "model_config": "max_steps=100; approach=Agentic framework",
+      "score": 29.3,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "Salesforce & The University of Hong Kong",
+      "row_url": "https://osworld-grounding.github.io/"
+    },
+    {
+      "rank": 82,
+      "system": "opencua-7b",
+      "agent": null,
+      "model_raw": [
+        "opencua-7b"
+      ],
+      "model_ids": [
+        "opencua-7b"
+      ],
+      "model_config": "max_steps=50; approach=Specialized model",
+      "score": 28.17,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 3,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false,
+        "success_rate_std": 0.46,
+        "run_scores": [
+          28.8,
+          27.7,
+          28.0
+        ]
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "The University of Hong Kong & Moonshot AI",
+      "row_url": "https://opencua.xlang.ai/"
+    },
+    {
+      "rank": 83,
+      "system": "doubao-1-5-thinking-vision-pro-250428",
+      "agent": null,
+      "model_raw": [
+        "doubao-1-5-thinking-vision-pro-250428"
+      ],
+      "model_ids": [
+        "doubao-1.5-thinking-vision-pro-250428"
+      ],
+      "model_config": "max_steps=15; approach=General model",
+      "score": 27.8,
+      "score_extra": {
+        "max_steps": 15,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "ByteDance Seed",
+      "row_url": "https://arxiv.org/abs/2505.07062"
+    },
+    {
+      "rank": 84,
+      "system": "uitars-1.5-7b",
+      "agent": null,
+      "model_raw": [
+        "uitars-1.5-7b"
+      ],
+      "model_ids": [
+        "ui-tars-1.5-7b"
+      ],
+      "model_config": "max_steps=100; approach=Specialized model",
+      "score": 27.4,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 2,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false,
+        "success_rate_std": 2.2,
+        "run_scores": [
+          25.2,
+          29.6
+        ]
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "ByteDance Seed & Tsinghua University",
+      "row_url": "https://seed-tars.com/1.5"
+    },
+    {
+      "rank": 85,
+      "system": "uitars-1.5-7b",
+      "agent": null,
+      "model_raw": [
+        "uitars-1.5-7b"
+      ],
+      "model_ids": [
+        "ui-tars-1.5-7b"
+      ],
+      "model_config": "max_steps=50; approach=Specialized model",
+      "score": 27.25,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 2,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false,
+        "success_rate_std": 2.15,
+        "run_scores": [
+          25.1,
+          29.4
+        ]
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "ByteDance Seed & Tsinghua University",
+      "row_url": "https://seed-tars.com/1.5"
+    },
+    {
+      "rank": 86,
+      "system": "claude-3-7-sonnet-20250219",
+      "agent": null,
+      "model_raw": [
+        "claude-3-7-sonnet-20250219"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": "max_steps=15; approach=General model",
+      "score": 27.1,
+      "score_extra": {
+        "max_steps": 15,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://www.anthropic.com/news/claude-3-7-sonnet"
+    },
+    {
+      "rank": 87,
+      "system": "uitars-72b-dpo",
+      "agent": null,
+      "model_raw": [
+        "uitars-72b-dpo"
+      ],
+      "model_ids": [
+        "ui-tars-72b-dpo"
+      ],
+      "model_config": "max_steps=100; approach=Specialized model",
+      "score": 27.1,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "ByteDance Seed & Tsinghua University",
+      "row_url": "https://github.com/bytedance/UI-TARS"
+    },
+    {
+      "rank": 88,
+      "system": "Jedi-7B w/ gpt-4o",
+      "agent": "Jedi-7B",
+      "model_raw": [
+        "Jedi-7B",
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "jedi-7b",
+        "gpt-4o"
+      ],
+      "model_config": "max_steps=50; approach=Agentic framework",
+      "score": 27.0,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 1,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "Salesforce & The University of Hong Kong",
+      "row_url": "https://osworld-grounding.github.io/"
+    },
+    {
+      "rank": 89,
+      "system": "Jedi-7B w/ gpt-4o",
+      "agent": "Jedi-7B",
+      "model_raw": [
+        "Jedi-7B",
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "jedi-7b",
+        "gpt-4o"
+      ],
+      "model_config": "max_steps=15; approach=Agentic framework",
+      "score": 26.8,
+      "score_extra": {
+        "max_steps": 15,
+        "runs": 1,
+        "foundation_e2e_gui": false,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "Salesforce & The University of Hong Kong",
+      "row_url": "https://osworld-grounding.github.io/"
+    },
+    {
+      "rank": 90,
+      "system": "opencua-7b",
+      "agent": null,
+      "model_raw": [
+        "opencua-7b"
+      ],
+      "model_ids": [
+        "opencua-7b"
+      ],
+      "model_config": "max_steps=100; approach=Specialized model",
+      "score": 26.63,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 3,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false,
+        "success_rate_std": 0.45,
+        "run_scores": [
+          27.2,
+          26.1,
+          26.6
+        ]
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "The University of Hong Kong & Moonshot AI",
+      "row_url": "https://opencua.xlang.ai/"
+    },
+    {
+      "rank": 91,
+      "system": "computer-use-preview",
+      "agent": null,
+      "model_raw": [
+        "computer-use-preview"
+      ],
+      "model_ids": [
+        "computer-use-preview"
+      ],
+      "model_config": "max_steps=15; approach=Specialized model",
+      "score": 26.0,
+      "score_extra": {
+        "max_steps": 15,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://openai.com/index/computer-using-agent/"
+    },
+    {
+      "rank": 92,
+      "system": "uitars-72b-dpo",
+      "agent": null,
+      "model_raw": [
+        "uitars-72b-dpo"
+      ],
+      "model_ids": [
+        "ui-tars-72b-dpo"
+      ],
+      "model_config": "max_steps=50; approach=Specialized model",
+      "score": 25.8,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "ByteDance Seed & Tsinghua University",
+      "row_url": "https://github.com/bytedance/UI-TARS"
+    },
+    {
+      "rank": 93,
+      "system": "uitars-1.5-7b",
+      "agent": null,
+      "model_raw": [
+        "uitars-1.5-7b"
+      ],
+      "model_ids": [
+        "ui-tars-1.5-7b"
+      ],
+      "model_config": "max_steps=15; approach=Specialized model",
+      "score": 24.5,
+      "score_extra": {
+        "max_steps": 15,
+        "runs": 2,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false,
+        "success_rate_std": 1.2,
+        "run_scores": [
+          25.7,
+          23.3
+        ]
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "ByteDance Seed & Tsinghua University",
+      "row_url": "https://seed-tars.com/1.5"
+    },
+    {
+      "rank": 94,
+      "system": "opencua-7b",
+      "agent": null,
+      "model_raw": [
+        "opencua-7b"
+      ],
+      "model_ids": [
+        "opencua-7b"
+      ],
+      "model_config": "max_steps=15; approach=Specialized model",
+      "score": 24.27,
+      "score_extra": {
+        "max_steps": 15,
+        "runs": 3,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false,
+        "success_rate_std": 1.39,
+        "run_scores": [
+          26.2,
+          23.6,
+          23.0
+        ]
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "The University of Hong Kong & Moonshot AI",
+      "row_url": "https://opencua.xlang.ai/"
+    },
+    {
+      "rank": 95,
+      "system": "uitars-72b-dpo",
+      "agent": null,
+      "model_raw": [
+        "uitars-72b-dpo"
+      ],
+      "model_ids": [
+        "ui-tars-72b-dpo"
+      ],
+      "model_config": "max_steps=15; approach=Specialized model",
+      "score": 24.0,
+      "score_extra": {
+        "max_steps": 15,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "ByteDance Seed & Tsinghua University",
+      "row_url": "https://github.com/bytedance/UI-TARS"
+    },
+    {
+      "rank": 96,
+      "system": "opencua-qwen2-7b",
+      "agent": null,
+      "model_raw": [
+        "opencua-qwen2-7b"
+      ],
+      "model_ids": [
+        "opencua-qwen2-7b"
+      ],
+      "model_config": "max_steps=100; approach=Specialized model",
+      "score": 23.1,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "The University of Hong Kong & Moonshot AI",
+      "row_url": "https://opencua.xlang.ai/"
+    },
+    {
+      "rank": 97,
+      "system": "o3",
+      "agent": null,
+      "model_raw": [
+        "o3"
+      ],
+      "model_ids": [
+        "o3"
+      ],
+      "model_config": "max_steps=100; approach=General model",
+      "score": 23.0,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://openai.com/index/introducing-o3-and-o4-mini/"
+    },
+    {
+      "rank": 98,
+      "system": "opencua-qwen2-7b",
+      "agent": null,
+      "model_raw": [
+        "opencua-qwen2-7b"
+      ],
+      "model_ids": [
+        "opencua-qwen2-7b"
+      ],
+      "model_config": "max_steps=50; approach=Specialized model",
+      "score": 20.6,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "The University of Hong Kong & Moonshot AI",
+      "row_url": "https://opencua.xlang.ai/"
+    },
+    {
+      "rank": 99,
+      "system": "opencua-a3b",
+      "agent": null,
+      "model_raw": [
+        "opencua-a3b"
+      ],
+      "model_ids": [
+        "opencua-a3b"
+      ],
+      "model_config": "max_steps=50; approach=Specialized model",
+      "score": 19.9,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "The University of Hong Kong & Moonshot AI",
+      "row_url": "https://opencua.xlang.ai/"
+    },
+    {
+      "rank": 100,
+      "system": "opencua-qwen2-7b",
+      "agent": null,
+      "model_raw": [
+        "opencua-qwen2-7b"
+      ],
+      "model_ids": [
+        "opencua-qwen2-7b"
+      ],
+      "model_config": "max_steps=15; approach=Specialized model",
+      "score": 19.9,
+      "score_extra": {
+        "max_steps": 15,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "The University of Hong Kong & Moonshot AI",
+      "row_url": "https://opencua.xlang.ai/"
+    },
+    {
+      "rank": 101,
+      "system": "opencua-a3b",
+      "agent": null,
+      "model_raw": [
+        "opencua-a3b"
+      ],
+      "model_ids": [
+        "opencua-a3b"
+      ],
+      "model_config": "max_steps=100; approach=Specialized model",
+      "score": 17.7,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "The University of Hong Kong & Moonshot AI",
+      "row_url": "https://opencua.xlang.ai/"
+    },
+    {
+      "rank": 102,
+      "system": "o3",
+      "agent": null,
+      "model_raw": [
+        "o3"
+      ],
+      "model_ids": [
+        "o3"
+      ],
+      "model_config": "max_steps=50; approach=General model",
+      "score": 17.17,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://openai.com/index/introducing-o3-and-o4-mini/"
+    },
+    {
+      "rank": 103,
+      "system": "opencua-a3b",
+      "agent": null,
+      "model_raw": [
+        "opencua-a3b"
+      ],
+      "model_ids": [
+        "opencua-a3b"
+      ],
+      "model_config": "max_steps=15; approach=Specialized model",
+      "score": 16.9,
+      "score_extra": {
+        "max_steps": 15,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "The University of Hong Kong & Moonshot AI",
+      "row_url": "https://opencua.xlang.ai/"
+    },
+    {
+      "rank": 104,
+      "system": "kimi-vl-a3b",
+      "agent": null,
+      "model_raw": [
+        "kimi-vl-a3b"
+      ],
+      "model_ids": [
+        "kimi-vl-a3b"
+      ],
+      "model_config": "max_steps=100; approach=General model",
+      "score": 10.3,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "Moonshot AI",
+      "row_url": "https://arxiv.org/abs/2504.07491"
+    },
+    {
+      "rank": 105,
+      "system": "kimi-vl-a3b",
+      "agent": null,
+      "model_raw": [
+        "kimi-vl-a3b"
+      ],
+      "model_ids": [
+        "kimi-vl-a3b"
+      ],
+      "model_config": "max_steps=15; approach=General model",
+      "score": 9.7,
+      "score_extra": {
+        "max_steps": 15,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "Moonshot AI",
+      "row_url": "https://arxiv.org/abs/2504.07491"
+    },
+    {
+      "rank": 106,
+      "system": "o3",
+      "agent": null,
+      "model_raw": [
+        "o3"
+      ],
+      "model_ids": [
+        "o3"
+      ],
+      "model_config": "max_steps=15; approach=General model",
+      "score": 9.1,
+      "score_extra": {
+        "max_steps": 15,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://openai.com/index/introducing-o3-and-o4-mini/"
+    },
+    {
+      "rank": 107,
+      "system": "qwen2.5-vl-72b-instruct",
+      "agent": null,
+      "model_raw": [
+        "qwen2.5-vl-72b-instruct"
+      ],
+      "model_ids": [
+        "qwen2.5-vl-72b-instruct"
+      ],
+      "model_config": "max_steps=100; approach=General model",
+      "score": 5.0,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "Alibaba Cloud, Qwen Team",
+      "row_url": "https://qwenlm.github.io/blog/qwen2.5-vl/"
+    },
+    {
+      "rank": 108,
+      "system": "qwen2.5-vl-72b-instruct",
+      "agent": null,
+      "model_raw": [
+        "qwen2.5-vl-72b-instruct"
+      ],
+      "model_ids": [
+        "qwen2.5-vl-72b-instruct"
+      ],
+      "model_config": "max_steps=15; approach=General model",
+      "score": 4.43,
+      "score_extra": {
+        "max_steps": 15,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "Alibaba Cloud, Qwen Team",
+      "row_url": "https://qwenlm.github.io/blog/qwen2.5-vl/"
+    },
+    {
+      "rank": 109,
+      "system": "qwen2.5-vl-32b-instruct",
+      "agent": null,
+      "model_raw": [
+        "qwen2.5-vl-32b-instruct"
+      ],
+      "model_ids": [
+        "qwen2.5-vl-32b-instruct"
+      ],
+      "model_config": "max_steps=100; approach=General model",
+      "score": 3.88,
+      "score_extra": {
+        "max_steps": 100,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "Alibaba Cloud, Qwen Team",
+      "row_url": "https://qwenlm.github.io/blog/qwen2.5-vl/"
+    },
+    {
+      "rank": 110,
+      "system": "qwen2.5-vl-32b-instruct",
+      "agent": null,
+      "model_raw": [
+        "qwen2.5-vl-32b-instruct"
+      ],
+      "model_ids": [
+        "qwen2.5-vl-32b-instruct"
+      ],
+      "model_config": "max_steps=15; approach=General model",
+      "score": 3.04,
+      "score_extra": {
+        "max_steps": 15,
+        "runs": 1,
+        "foundation_e2e_gui": true,
+        "additional_a11y_tree": false,
+        "additional_coding_action": false,
+        "multiple_rollout": false
+      },
+      "date": "2025-07-28",
+      "verified": true,
+      "open_source": null,
+      "org": "Alibaba Cloud, Qwen Team",
+      "row_url": "https://qwenlm.github.io/blog/qwen2.5-vl/"
+    }
+  ]
+}

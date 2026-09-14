@@ -1,0 +1,47 @@
+{
+  "id": "real-v2-frameworks",
+  "family": "real",
+  "name": "REAL v2 (Frameworks)",
+  "board": "realevals.xyz",
+  "category": "web",
+  "measures_ja": "Amazon・DoorDash・Airbnb などを模した決定的な複製サイト上で、買い物・予約・情報取得などの目標を達成できるか。",
+  "tasks": null,
+  "tasks_note": "ボードのデータ上、各エントリの v2 タスクは121件。サイト・論文に v2 のタスク数の記載は見当たらない。",
+  "metric": "REAL Score",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "Frameworks タブ(エージェント製品・フレームワーク単位のエントリ)。誰がどの足場で走らせたかは行ごとに示されない。採点は複製サイトの状態と回答の自動評価。",
+  "source": "https://www.realevals.xyz/",
+  "fetched": [
+    "https://www.realevals.xyz/api/getVerifiedModelData",
+    "https://www.realevals.xyz/_next/static/chunks/app/(main)/page-89fe682a64228531.js"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": null,
+  "snapshot": "sources/real-v2-frameworks/getVerifiedModelData_v2_frameworks.json",
+  "paper": "https://arxiv.org/abs/2504.11543",
+  "repo": "https://github.com/agi-inc/REAL",
+  "notes_ja": "スコアはボードが公開する課題ごとの合否データから、ページ自身の計算式(合格数/タスク数×100、小数1桁)を再現して出した。日付は無い。system はボードの表示名そのままで、同名が別エントリとして並ぶことがある。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "anthropic-computer_use",
+      "agent": null,
+      "model_raw": [
+        "anthropic-computer_use"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 72.7,
+      "score_extra": {
+        "tasks_passed": 88,
+        "tasks_total": 121
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    }
+  ]
+}

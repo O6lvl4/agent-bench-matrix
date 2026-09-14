@@ -1,0 +1,339 @@
+{
+  "id": "online-mind2web-human",
+  "family": "online-mind2web",
+  "name": "Online-Mind2Web (Human Evaluation)",
+  "board": "huggingface.co/spaces/osunlp/Online_Mind2Web_Leaderboard",
+  "category": "web",
+  "measures_ja": "136の実在する人気サイト上で、利用者が頼みそうな300の作業を実際のブラウザでやり遂げられるか。",
+  "tasks": 300,
+  "tasks_note": null,
+  "metric": "Average SR",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "エージェントは提出者が走らせ、成否は人手で判定する。OSU NLP か第三者の評価機関が判定し、ボードは運営の検証済みとしている。",
+  "source": "https://huggingface.co/spaces/osunlp/Online_Mind2Web_Leaderboard",
+  "fetched": [
+    "https://huggingface.co/spaces/osunlp/Online_Mind2Web_Leaderboard/resolve/main/human_Mind2Web-Online%20-%20Leaderboard_data.csv",
+    "https://huggingface.co/spaces/osunlp/Online_Mind2Web_Leaderboard/raw/main/app.py"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-08-04",
+  "snapshot": "sources/online-mind2web-human/human.csv",
+  "paper": "https://arxiv.org/abs/2504.01382",
+  "repo": "https://github.com/OSU-NLP-Group/Online-Mind2Web",
+  "notes_ja": "人手評価タブ。タブ全体に「Online-Mind2Web チームが検証済み」と表示されているので verified は全行 true。Source 列は評価者で、score_extra.source に入れた。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Hark",
+      "agent": "Hark",
+      "model_raw": [
+        "Hark Handoff"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 97.7,
+      "score_extra": {
+        "easy": 100.0,
+        "medium": 95.0,
+        "hard": 100.0,
+        "source": "Careerflow.ai"
+      },
+      "date": "2026-08-04",
+      "verified": true,
+      "open_source": null,
+      "org": "Hark",
+      "row_url": "https://hark.com/"
+    },
+    {
+      "rank": 2,
+      "system": "Navigator",
+      "agent": "Navigator",
+      "model_raw": [
+        "n1.5-latest"
+      ],
+      "model_ids": [
+        "n1.5"
+      ],
+      "model_config": null,
+      "score": 97.3,
+      "score_extra": {
+        "easy": 100.0,
+        "medium": 96.5,
+        "hard": 96.1,
+        "source": "Careerflow.ai"
+      },
+      "date": "2026-06-28",
+      "verified": true,
+      "open_source": null,
+      "org": "Yutori",
+      "row_url": "https://yutori.com/blog/introducing-n1-5"
+    },
+    {
+      "rank": 3,
+      "system": "ACT-2",
+      "agent": "ACT-2",
+      "model_raw": [
+        "GPT-5.4"
+      ],
+      "model_ids": [
+        "gpt-5.4"
+      ],
+      "model_config": null,
+      "score": 92.7,
+      "score_extra": {
+        "easy": 93.0,
+        "medium": 94.3,
+        "hard": 89.9,
+        "source": "Careerflow.ai"
+      },
+      "date": "2026-08-04",
+      "verified": true,
+      "open_source": null,
+      "org": "Enhans",
+      "row_url": "https://www.enhans.ai/act-2"
+    },
+    {
+      "rank": 4,
+      "system": "Navigator",
+      "agent": "Navigator",
+      "model_raw": [
+        "n1-preview-11-2025"
+      ],
+      "model_ids": [
+        "n1"
+      ],
+      "model_config": null,
+      "score": 78.7,
+      "score_extra": {
+        "easy": 90.1,
+        "medium": 76.2,
+        "hard": 71.1,
+        "source": "Halluminate"
+      },
+      "date": "2025-11-18",
+      "verified": true,
+      "open_source": null,
+      "org": "Yutori",
+      "row_url": "https://yutori.com/blog/introducing-navigator"
+    },
+    {
+      "rank": 5,
+      "system": "Google Computer Use (09-2025)",
+      "agent": "Google Computer Use (09-2025)",
+      "model_raw": [
+        "Gemini 2.5 Computer Use"
+      ],
+      "model_ids": [
+        "gemini-2.5-computer-use"
+      ],
+      "model_config": null,
+      "score": 69.0,
+      "score_extra": {
+        "easy": 77.1,
+        "medium": 71.3,
+        "hard": 55.4,
+        "source": "Google DeepMind"
+      },
+      "date": "2025-09-29",
+      "verified": true,
+      "open_source": null,
+      "org": "Google DeepMind",
+      "row_url": null
+    },
+    {
+      "rank": 6,
+      "system": "Operator",
+      "agent": "Operator",
+      "model_raw": [
+        "OpenAI Computer-Using Agent"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 61.3,
+      "score_extra": {
+        "easy": 83.1,
+        "medium": 58.0,
+        "hard": 43.2,
+        "source": "OSU NLP"
+      },
+      "date": "2025-03-22",
+      "verified": true,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": null
+    },
+    {
+      "rank": 7,
+      "system": "ACT-1-20250814",
+      "agent": "ACT-1-20250814",
+      "model_raw": [
+        "o3-2025-04-16",
+        "Claude-sonnet-4-20250514"
+      ],
+      "model_ids": [
+        "o3",
+        "claude-sonnet-4"
+      ],
+      "model_config": null,
+      "score": 57.3,
+      "score_extra": {
+        "easy": 81.9,
+        "medium": 54.5,
+        "hard": 35.1,
+        "source": "Enhans"
+      },
+      "date": "2025-08-23",
+      "verified": true,
+      "open_source": null,
+      "org": "Enhans",
+      "row_url": null
+    },
+    {
+      "rank": 8,
+      "system": "Claude Computer Use 3.7 (w/o thinking)",
+      "agent": "Claude Computer Use 3.7 (w/o thinking)",
+      "model_raw": [
+        "Claude-3-7-sonnet-20250219"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": null,
+      "score": 56.3,
+      "score_extra": {
+        "easy": 90.4,
+        "medium": 49.0,
+        "hard": 32.4,
+        "source": "OSU NLP"
+      },
+      "date": "2025-04-20",
+      "verified": true,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 9,
+      "system": "ACT-1-20250703",
+      "agent": "ACT-1-20250703",
+      "model_raw": [
+        "o3-2025-04-16",
+        "Claude-sonnet-4-20250514"
+      ],
+      "model_ids": [
+        "o3",
+        "claude-sonnet-4"
+      ],
+      "model_config": null,
+      "score": 45.7,
+      "score_extra": {
+        "easy": 65.1,
+        "medium": 46.2,
+        "hard": 23.0,
+        "source": "Enhans"
+      },
+      "date": "2025-07-16",
+      "verified": true,
+      "open_source": null,
+      "org": "Enhans",
+      "row_url": null
+    },
+    {
+      "rank": 10,
+      "system": "SeeAct",
+      "agent": "SeeAct",
+      "model_raw": [
+        "gpt-4o-2024-08-06"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 30.7,
+      "score_extra": {
+        "easy": 60.2,
+        "medium": 25.2,
+        "hard": 8.1,
+        "source": "OSU NLP"
+      },
+      "date": "2025-03-22",
+      "verified": true,
+      "open_source": null,
+      "org": "OSU",
+      "row_url": null
+    },
+    {
+      "rank": 11,
+      "system": "Browser Use",
+      "agent": "Browser Use",
+      "model_raw": [
+        "gpt-4o-2024-08-06"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 30.0,
+      "score_extra": {
+        "easy": 55.4,
+        "medium": 26.6,
+        "hard": 8.1,
+        "source": "OSU NLP"
+      },
+      "date": "2025-03-22",
+      "verified": true,
+      "open_source": null,
+      "org": "Browser Use",
+      "row_url": null
+    },
+    {
+      "rank": 12,
+      "system": "Claude Computer Use 3.5",
+      "agent": "Claude Computer Use 3.5",
+      "model_raw": [
+        "claude-3-5-sonnet-20241022"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 29.0,
+      "score_extra": {
+        "easy": 56.6,
+        "medium": 20.3,
+        "hard": 14.9,
+        "source": "OSU NLP"
+      },
+      "date": "2025-03-22",
+      "verified": true,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 13,
+      "system": "Agent-E",
+      "agent": "Agent-E",
+      "model_raw": [
+        "gpt-4o-2024-08-06"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 28.0,
+      "score_extra": {
+        "easy": 49.4,
+        "medium": 26.6,
+        "hard": 6.8,
+        "source": "OSU NLP"
+      },
+      "date": "2025-03-22",
+      "verified": true,
+      "open_source": null,
+      "org": "Emergence AI",
+      "row_url": null
+    }
+  ]
+}

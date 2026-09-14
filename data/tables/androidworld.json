@@ -1,0 +1,1003 @@
+{
+  "id": "androidworld",
+  "family": "androidworld",
+  "name": "AndroidWorld",
+  "board": "AndroidWorld leaderboard (Google Sheet)",
+  "category": "computer-use",
+  "measures_ja": "Android エミュレータ上の実アプリ20種で、毎回パラメータが変わるタスクを GUI 操作で完了できるか。",
+  "tasks": 116,
+  "tasks_note": null,
+  "metric": "Success Rate (pass@1, %)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "提出者の自己申告。足場・画面表現(スクリーンショット / A11y tree)・モデルは提出者任せで、ボードは独立検証をしないと明記している。",
+  "source": "https://docs.google.com/spreadsheets/d/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo/edit?gid=0#gid=0",
+  "fetched": [
+    "https://docs.google.com/spreadsheets/d/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo/export?format=csv&gid=0"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-08",
+  "snapshot": "sources/androidworld/androidworld_gid0.csv",
+  "paper": "https://arxiv.org/abs/2405.14573",
+  "repo": "https://github.com/google-research/android_world",
+  "notes_ja": "日付は月単位(YYYY-MM)。OSCAR は pass@1 が空で pass@k(k=4)だけなので score は null。シート下部の人間の成績(80.0)は行に含めない。90%超が並び飽和気味。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "FluizAI",
+      "agent": "FluizAI",
+      "model_raw": [
+        "gpt-4o",
+        "gpt-5.6-sol"
+      ],
+      "model_ids": [
+        "gpt-4o",
+        "gpt-5.6-sol"
+      ],
+      "model_config": "type=AI agent; screen=Screenshot + A11y tree",
+      "score": 100.0,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2026-08",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://android-world.fluiz.ai/"
+    },
+    {
+      "rank": 2,
+      "system": "Artemis",
+      "agent": "Artemis",
+      "model_raw": [
+        "Gemini 3.7 Flash",
+        "Gemini Robotics ER 2"
+      ],
+      "model_ids": [
+        "gemini-3.7-flash",
+        "gemini-robotics-er-2"
+      ],
+      "model_config": "type=AI agent; screen=Screenshot + A11y tree",
+      "score": 99.1,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2026-08",
+      "verified": false,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "AGI-0",
+      "agent": "AGI-0",
+      "model_raw": [
+        "AGI-0"
+      ],
+      "model_ids": [],
+      "model_config": "type=AI agent; screen=Screenshot",
+      "score": 97.4,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2025-10",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "MobileUseAgent",
+      "agent": "MobileUseAgent",
+      "model_raw": [
+        "Seed1.8-GUI"
+      ],
+      "model_ids": [
+        "seed1.8-gui"
+      ],
+      "model_config": "type=AI agent; screen=Screenshot",
+      "score": 97.4,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2026-02",
+      "verified": false,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "Finalrun",
+      "agent": "Finalrun",
+      "model_raw": [
+        "Gemini 3 flash",
+        "Gemini 3 flash lite"
+      ],
+      "model_ids": [
+        "gemini-3-flash",
+        "gemini-3-flash-lite"
+      ],
+      "model_config": "type=AI agent; screen=Screenshot + A11y tree",
+      "score": 97.4,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2026-03",
+      "verified": false,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://drive.google.com/file/d/1NITEkiYb3itSq46I8BYsmzefEddzYbqm/view?usp=sharing"
+    },
+    {
+      "rank": 6,
+      "system": "askui AndroidVisionAgent",
+      "agent": "askui AndroidVisionAgent",
+      "model_raw": [
+        "askui AndroidVisionAgent",
+        "Claude 4.5 Sonnet",
+        "Claude 4.0 Sonnet"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5",
+        "claude-sonnet-4"
+      ],
+      "model_config": "type=AI agent; screen=Screenshot",
+      "score": 94.8,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2025-10",
+      "verified": false,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 6,
+      "system": "AutoDevice",
+      "agent": "AutoDevice",
+      "model_raw": [
+        "gemini 3 pro",
+        "sonnet 4.5"
+      ],
+      "model_ids": [
+        "gemini-3-pro",
+        "claude-sonnet-4.5"
+      ],
+      "model_config": "type=AI agent; screen=Screenshot",
+      "score": 94.8,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2026-01",
+      "verified": false,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://autodevice.io/benchmark/"
+    },
+    {
+      "rank": 8,
+      "system": "Midscene.js",
+      "agent": "Midscene.js",
+      "model_raw": [
+        "Gemini-3.5-Flash"
+      ],
+      "model_ids": [
+        "gemini-3.5-flash"
+      ],
+      "model_config": "type=AI agent; screen=Screenshot",
+      "score": 93.1,
+      "score_extra": {
+        "trials": 1,
+        "pass_at_2": 95.69,
+        "pass_at_3": 97.41
+      },
+      "date": "2026-06",
+      "verified": false,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 9,
+      "system": "DroidRun",
+      "agent": "DroidRun",
+      "model_raw": [
+        "GPT5",
+        "Gemini 2.5 Pro"
+      ],
+      "model_ids": [
+        "gpt-5",
+        "gemini-2.5-pro"
+      ],
+      "model_config": "type=AI agent; screen=Screenshot + A11y tree",
+      "score": 91.4,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2025-10",
+      "verified": false,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 9,
+      "system": "mobile-use",
+      "agent": "mobile-use",
+      "model_raw": [
+        "Llama 4-scout",
+        "Gemini 2.5 pro",
+        "GPT-5 nano"
+      ],
+      "model_ids": [
+        "llama-4-scout",
+        "gemini-2.5-pro",
+        "gpt-5-nano"
+      ],
+      "model_config": "type=AI agent; screen=Screenshot + A11y tree",
+      "score": 91.4,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2025-09",
+      "verified": false,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://minitap.ai/benchmark"
+    },
+    {
+      "rank": 11,
+      "system": "Agent-Visco",
+      "agent": "Agent-Visco",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": "type=AI agent; screen=Screenshot",
+      "score": 88.8,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2025-12",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://work.aliyun.com/alimail/openLinks/downloadMimeMetaDiskBigAttach?id=netdiskid%3Av001%3Afile%3ADzzzzzzNqZy%3BG8EhE7UV7U9nk2t2O6opysa%2BgRf5Zm6eTqXqtVApm1nDD8W%2BxnLAgdDsJsOSlxfXTx44NU7qRM%2BkJMuIA0smltxGWspXGX2Ox228yqp07rNX%2FIm2QehcGJBgHwUs0f81cz2sX76WNxvxnhpZnqmxiYxHNHRd2hybrPLi2DRQ8bM5ORhI%2BtGG%2B7n%2BcxdY1Ji0"
+    },
+    {
+      "rank": 12,
+      "system": "Surfer 2",
+      "agent": "Surfer 2",
+      "model_raw": [
+        "o3",
+        "holo1.5-72b"
+      ],
+      "model_ids": [
+        "o3",
+        "holo1.5-72b"
+      ],
+      "model_config": "type=AI agent; screen=Screenshot",
+      "score": 87.1,
+      "score_extra": {
+        "trials": 1,
+        "pass_at_3": 93.1
+      },
+      "date": "2025-10",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://hcompai.github.io/android-world-traces/"
+    },
+    {
+      "rank": 13,
+      "system": "gbox.ai",
+      "agent": "gbox.ai",
+      "model_raw": [
+        "Sonnet 4.5",
+        "Sonnet 4"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5",
+        "claude-sonnet-4"
+      ],
+      "model_config": "type=AI agent; screen=Screenshot",
+      "score": 86.2,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2025-10",
+      "verified": false,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/babelcloud/android_world_benchmark/tree/main/GBOX/trajectory"
+    },
+    {
+      "rank": 14,
+      "system": "AutoGLM-Mobile",
+      "agent": null,
+      "model_raw": [
+        "AutoGLM-Mobile"
+      ],
+      "model_ids": [
+        "autoglm-mobile"
+      ],
+      "model_config": "type=Model; screen=Screenshot + A11y tree; size=9B",
+      "score": 80.2,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2025-08",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 15,
+      "system": "LX-GUIAgent",
+      "agent": "LX-GUIAgent",
+      "model_raw": [
+        "LX-GUIAgent"
+      ],
+      "model_ids": [],
+      "model_config": "type=AI agent; screen=Screenshot + A11y tree",
+      "score": 79.3,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2025-09",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 16,
+      "system": "AgentProg",
+      "agent": "AgentProg",
+      "model_raw": [
+        "Gemini-2.5-Pro",
+        "UI-TARS-1.5"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro",
+        "ui-tars-1.5"
+      ],
+      "model_config": "type=AI agent; screen=Screenshot",
+      "score": 78.0,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2025-12",
+      "verified": false,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 17,
+      "system": "K²-Agent",
+      "agent": "K²-Agent",
+      "model_raw": [
+        "Qwen2.5-VL-72B",
+        "Qwen2.5-VL-7B"
+      ],
+      "model_ids": [
+        "qwen2.5-vl-72b",
+        "qwen2.5-vl-7b"
+      ],
+      "model_config": "type=AI agent; screen=Screenshot; size=72B + 7B",
+      "score": 76.7,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2025-09",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://github.com/k2-agent/k2-agent/blob/main/androidworld-trajectories.zip"
+    },
+    {
+      "rank": 17,
+      "system": "MAI-UI",
+      "agent": null,
+      "model_raw": [
+        "MAI-UI-235B-A22B"
+      ],
+      "model_ids": [
+        "mai-ui-235b-a22b"
+      ],
+      "model_config": "type=Model; screen=Screenshot; size=235B",
+      "score": 76.7,
+      "score_extra": {},
+      "date": "2026-01",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 19,
+      "system": "MobileUse-v2",
+      "agent": "MobileUse-v2",
+      "model_raw": [
+        "Hammer-UI-32B"
+      ],
+      "model_ids": [
+        "hammer-ui-32b"
+      ],
+      "model_config": "type=AI agent; screen=Screenshot; size=32B",
+      "score": 75.0,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2025-09",
+      "verified": false,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 20,
+      "system": "Mobile-Agent-v3",
+      "agent": "Mobile-Agent-v3",
+      "model_raw": [
+        "GUI-Owl-32B"
+      ],
+      "model_ids": [
+        "gui-owl-32b"
+      ],
+      "model_config": "type=AI agent; screen=Screenshot; size=32B",
+      "score": 73.3,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2025-08",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 20,
+      "system": "MAI-UI",
+      "agent": null,
+      "model_raw": [
+        "MAI-UI-32B"
+      ],
+      "model_ids": [
+        "mai-ui-32b"
+      ],
+      "model_config": "type=Model; screen=Screenshot; size=32B",
+      "score": 73.3,
+      "score_extra": {},
+      "date": "2026-01",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 22,
+      "system": "MAI-UI",
+      "agent": null,
+      "model_raw": [
+        "MAI-UI-8B"
+      ],
+      "model_ids": [
+        "mai-ui-8b"
+      ],
+      "model_config": "type=Model; screen=Screenshot; size=8B",
+      "score": 70.7,
+      "score_extra": {},
+      "date": "2026-01",
+      "verified": false,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 23,
+      "system": "Gemini 2.5 Computer Use",
+      "agent": null,
+      "model_raw": [
+        "Gemini 2.5 Computer Use"
+      ],
+      "model_ids": [
+        "gemini-2.5-computer-use"
+      ],
+      "model_config": "type=Model; screen=Screenshot",
+      "score": 69.7,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2025-10",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 24,
+      "system": "JT-GUIAgent-V2",
+      "agent": "JT-GUIAgent-V2",
+      "model_raw": [
+        "JT-GUIAgent-V2"
+      ],
+      "model_ids": [],
+      "model_config": "type=AI agent; screen=Screenshot",
+      "score": 67.2,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2025-06",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 25,
+      "system": "GUI-Owl-7B",
+      "agent": null,
+      "model_raw": [
+        "GUI-Owl-7B"
+      ],
+      "model_ids": [
+        "gui-owl-7b"
+      ],
+      "model_config": "type=Model; screen=Screenshot; size=7B",
+      "score": 66.4,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2025-08",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 26,
+      "system": "UI-Venus",
+      "agent": null,
+      "model_raw": [
+        "UI-Venus-Navi-72B"
+      ],
+      "model_ids": [
+        "ui-venus-navi-72b"
+      ],
+      "model_config": "type=Model; screen=Screenshot; size=72B",
+      "score": 65.9,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2025-08",
+      "verified": false,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/inclusionAI/UI-Venus/blob/main/vis_androidworld/UI-Venus-androidworld.zip"
+    },
+    {
+      "rank": 27,
+      "system": "MobileUse",
+      "agent": "MobileUse",
+      "model_raw": [
+        "Qwen2.5-VL-72B"
+      ],
+      "model_ids": [
+        "qwen2.5-vl-72b"
+      ],
+      "model_config": "type=AI agent; screen=Screenshot; size=72B",
+      "score": 62.9,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2025-07",
+      "verified": false,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 28,
+      "system": "Seed1.5-VL",
+      "agent": null,
+      "model_raw": [
+        "Seed1.5-VL"
+      ],
+      "model_ids": [
+        "seed1.5-vl"
+      ],
+      "model_config": "type=Model; screen=Screenshot + A11y tree; size=20.B",
+      "score": 62.1,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2025-05",
+      "verified": false,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 29,
+      "system": "JT-GUIAgent-V1",
+      "agent": "JT-GUIAgent-V1",
+      "model_raw": [
+        "JT-GUIAgent-V1"
+      ],
+      "model_ids": [],
+      "model_config": "type=AI agent; screen=Screenshot",
+      "score": 60.0,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2025-06",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 30,
+      "system": "V-Droid Paper",
+      "agent": "V-Droid Paper",
+      "model_raw": [
+        "V-Droid (Llama8B)"
+      ],
+      "model_ids": [],
+      "model_config": "type=AI agent; screen=A11y tree; size=8B",
+      "score": 59.5,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2025-03",
+      "verified": false,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 31,
+      "system": "Agent S2",
+      "agent": "Agent S2",
+      "model_raw": [
+        "Agent S2"
+      ],
+      "model_ids": [],
+      "model_config": "type=AI agent; screen=Screenshot",
+      "score": 54.3,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2025-04",
+      "verified": false,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 32,
+      "system": "UI-Venus",
+      "agent": null,
+      "model_raw": [
+        "Venus-Navi-7B"
+      ],
+      "model_ids": [
+        "ui-venus-navi-7b"
+      ],
+      "model_config": "type=Model; screen=Screenshot; size=7B",
+      "score": 49.1,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2025-08",
+      "verified": false,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://github.com/inclusionAI/UI-Venus/blob/main/vis_androidworld/UI-Venus-androidworld.zip"
+    },
+    {
+      "rank": 32,
+      "system": "MAI-UI",
+      "agent": null,
+      "model_raw": [
+        "MAI-UI-2B"
+      ],
+      "model_ids": [
+        "mai-ui-2b"
+      ],
+      "model_config": "type=Model; screen=Screenshot; size=2B",
+      "score": 49.1,
+      "score_extra": {},
+      "date": "2026-01",
+      "verified": false,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 34,
+      "system": "GUI-Explorer",
+      "agent": "GUI-Explorer",
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": "type=AI agent; screen=Screenshot + A11y tree",
+      "score": 47.4,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2025-05",
+      "verified": false,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 35,
+      "system": "AndroidGen",
+      "agent": "AndroidGen",
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": "type=AI agent; screen=A11y tree",
+      "score": 46.8,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2025-04",
+      "verified": false,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 36,
+      "system": "UI-TARS",
+      "agent": null,
+      "model_raw": [
+        "UI-TARS"
+      ],
+      "model_ids": [
+        "ui-tars-72b"
+      ],
+      "model_config": "type=Model; screen=Screenshot; size=72B",
+      "score": 46.6,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2025-01",
+      "verified": false,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 37,
+      "system": "Aria-UI",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o",
+        "Aria-UI"
+      ],
+      "model_ids": [
+        "gpt-4o",
+        "aria-ui"
+      ],
+      "model_config": "type=Model; screen=Screenshot",
+      "score": 44.8,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2024-12",
+      "verified": false,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 38,
+      "system": "ScaleTrack",
+      "agent": null,
+      "model_raw": [
+        "ScaleTrack-7B"
+      ],
+      "model_ids": [
+        "scaletrack-7b"
+      ],
+      "model_config": "type=Model; screen=A11y tree; size=8B",
+      "score": 44.0,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2025-04",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 38,
+      "system": "UGround",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o",
+        "UGround"
+      ],
+      "model_ids": [
+        "gpt-4o",
+        "uground"
+      ],
+      "model_config": "type=Model; screen=Screenshot",
+      "score": 44.0,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2025-01",
+      "verified": false,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 40,
+      "system": "Mirage-1",
+      "agent": "Mirage-1",
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": "type=AI agent; screen=Screenshot",
+      "score": 42.2,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2025-06",
+      "verified": false,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 41,
+      "system": "Ponder & Press",
+      "agent": "Ponder & Press",
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": "type=AI agent; screen=Screenshot",
+      "score": 34.5,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2024-12",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 42,
+      "system": "AndroidWorld",
+      "agent": "AndroidWorld",
+      "model_raw": [
+        "GPT-4 Turbo"
+      ],
+      "model_ids": [
+        "gpt-4-turbo"
+      ],
+      "model_config": "type=AI agent; screen=A11y tree",
+      "score": 30.6,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2024-05",
+      "verified": false,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 43,
+      "system": "GUI-Critic-R1",
+      "agent": null,
+      "model_raw": [
+        "Qwen-2.5-VL-7B"
+      ],
+      "model_ids": [
+        "qwen2.5-vl-7b"
+      ],
+      "model_config": "type=Model; screen=Screenshot + A11y tree; size=7B",
+      "score": 27.6,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2025-06",
+      "verified": false,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 43,
+      "system": "EcoAgent",
+      "agent": "EcoAgent",
+      "model_raw": [
+        "GPT-4o",
+        "OS-Atlas-Pro 4B",
+        "Qwen2-VL-2B-Instruct"
+      ],
+      "model_ids": [
+        "gpt-4o",
+        "os-atlas-pro-4b",
+        "qwen2-vl-2b-instruct"
+      ],
+      "model_config": "type=AI agent; screen=Screenshot",
+      "score": 27.6,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2024-05",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 45,
+      "system": "InfiGUIAgent",
+      "agent": null,
+      "model_raw": [
+        "Qwen2-VL-2B (fine-tuned)"
+      ],
+      "model_ids": [],
+      "model_config": "type=Model; screen=Screenshot; size=2B",
+      "score": 9.0,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2025-01",
+      "verified": false,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "OSCAR",
+      "agent": "OSCAR",
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": "type=AI agent; screen=Screenshot",
+      "score": null,
+      "score_extra": {
+        "trials": 1,
+        "pass_at_4": 61.6
+      },
+      "date": "2024-10",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    }
+  ]
+}

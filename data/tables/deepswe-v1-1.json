@@ -1,0 +1,2267 @@
+{
+  "id": "deepswe-v1-1",
+  "family": "deepswe",
+  "name": "DeepSWE v1.1",
+  "board": "deepswe.datacurve.ai",
+  "category": "coding",
+  "measures_ja": "91 の OSS リポジトリから作った新規の長丁場な実装タスク(TS/Go/Python/JS/Rust)を、エージェントが完遂できるか。",
+  "tasks": 113,
+  "tasks_note": "サイトの表示「tasks 113」と artifact の n_tasks_in_set。",
+  "metric": "Pass@1 (%)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "Datacurve が全モデルを mini-swe-agent(Pier で実行)で推論量別に 4 回ずつ走らせる。足場は共通なので行どうし比べやすい。",
+  "source": "https://deepswe.datacurve.ai/",
+  "fetched": [
+    "https://deepswe.datacurve.ai/artifacts/v1.1/leaderboard-live.json",
+    "https://deepswe.datacurve.ai/assets/index-C8-z8dCr.js"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": null,
+  "snapshot": "sources/deepswe-v1-1/leaderboard-live.json",
+  "paper": "https://arxiv.org/abs/2607.07946",
+  "repo": "https://github.com/datacurve-ai/deep-swe",
+  "notes_ja": "行は「足場+モデル+推論量」の組ごと(既定表示はモデルごとの最良のみで一部モデルを隠す)。行ごとの日付は無い。費用はサイトが価格改定を反映して再計算した値に合わせた。 データ生成日 (generated_at): 2026-09-03。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "mini-swe-agent / gpt-6-astra [xhigh]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gpt-6-astra"
+      ],
+      "model_ids": [
+        "gpt-6-astra"
+      ],
+      "model_config": "reasoning_effort=xhigh",
+      "score": 74.11504424778761,
+      "score_extra": {
+        "pass_at_4": 0.8053097345132744,
+        "ci95_half_width_pct": 2.865396174075141,
+        "n_passed": 335,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 91,
+        "n_runs": 4,
+        "mean_cost_usd": 6.52377356460177,
+        "median_cost_usd": 5.6717151,
+        "mean_output_tokens": 29557.327433628318,
+        "mean_agent_steps": 28.754424778761063,
+        "mean_duration_seconds": 1132.4004424778761
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "mini-swe-agent / gemini-3.8-flash [high]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gemini-3.8-flash"
+      ],
+      "model_ids": [
+        "gemini-3.8-flash"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 73.8255033557047,
+      "score_extra": {
+        "pass_at_4": 0.8584070796460177,
+        "ci95_half_width_pct": 1.4173132066358782,
+        "n_passed": 330,
+        "n_attempted": 447,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 97,
+        "n_runs": 4,
+        "mean_cost_usd": 2.362349413758389,
+        "median_cost_usd": 2.1098912999999997,
+        "mean_output_tokens": 143242.6644295302,
+        "mean_agent_steps": 166.3131991051454,
+        "mean_duration_seconds": 686.7691519843399
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "mini-swe-agent / claude-opus-5 [max]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "claude-opus-5"
+      ],
+      "model_ids": [
+        "claude-opus-5"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 73.64864864864865,
+      "score_extra": {
+        "pass_at_4": 0.8849557522123894,
+        "ci95_half_width_pct": 3.872310426371729,
+        "n_passed": 327,
+        "n_attempted": 444,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 100,
+        "n_runs": 4,
+        "mean_cost_usd": 11.837583271396396,
+        "median_cost_usd": 10.4281505,
+        "mean_output_tokens": 117565.6936936937,
+        "mean_agent_steps": 99.0427927927928,
+        "mean_duration_seconds": 1911.819866231982
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "mini-swe-agent / gpt-6-astra [high]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gpt-6-astra"
+      ],
+      "model_ids": [
+        "gpt-6-astra"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 73.23008849557522,
+      "score_extra": {
+        "pass_at_4": 0.8230088495575221,
+        "ci95_half_width_pct": 3.423496057873005,
+        "n_passed": 331,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 93,
+        "n_runs": 4,
+        "mean_cost_usd": 5.723721956194691,
+        "median_cost_usd": 4.9622669,
+        "mean_output_tokens": 26505.853982300883,
+        "mean_agent_steps": 27.424778761061948,
+        "mean_duration_seconds": 1038.6858407079646
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "mini-swe-agent / gpt-6-astra [max]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gpt-6-astra"
+      ],
+      "model_ids": [
+        "gpt-6-astra"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 73.23008849557522,
+      "score_extra": {
+        "pass_at_4": 0.7964601769911505,
+        "ci95_half_width_pct": 0.8303197562056527,
+        "n_passed": 331,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 90,
+        "n_runs": 4,
+        "mean_cost_usd": 12.369032401327434,
+        "median_cost_usd": 11.036936,
+        "mean_output_tokens": 61148.50663716814,
+        "mean_agent_steps": 28.45353982300885,
+        "mean_duration_seconds": 1982.966814159292
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": 6,
+      "system": "mini-swe-agent / claude-opus-5 [xhigh]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "claude-opus-5"
+      ],
+      "model_ids": [
+        "claude-opus-5"
+      ],
+      "model_config": "reasoning_effort=xhigh",
+      "score": 73.15436241610739,
+      "score_extra": {
+        "pass_at_4": 0.8584070796460177,
+        "ci95_half_width_pct": 3.0609818216384643,
+        "n_passed": 327,
+        "n_attempted": 447,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 97,
+        "n_runs": 4,
+        "mean_cost_usd": 9.07220232326622,
+        "median_cost_usd": 7.928816750000001,
+        "mean_output_tokens": 91672.01565995526,
+        "mean_agent_steps": 88.7248322147651,
+        "mean_duration_seconds": 1559.5597273221476
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 7,
+      "system": "mini-swe-agent / claude-opus-5 [high]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "claude-opus-5"
+      ],
+      "model_ids": [
+        "claude-opus-5"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 72.82850779510022,
+      "score_extra": {
+        "pass_at_4": 0.8761061946902655,
+        "ci95_half_width_pct": 1.9454321571601496,
+        "n_passed": 327,
+        "n_attempted": 449,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 99,
+        "n_runs": 4,
+        "mean_cost_usd": 6.076084489977728,
+        "median_cost_usd": 4.96882375,
+        "mean_output_tokens": 64207.43429844098,
+        "mean_agent_steps": 72.92204899777283,
+        "mean_duration_seconds": 1163.8627881514476
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 8,
+      "system": "mini-swe-agent / gpt-6-astra [medium]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gpt-6-astra"
+      ],
+      "model_ids": [
+        "gpt-6-astra"
+      ],
+      "model_config": "reasoning_effort=medium",
+      "score": 72.78761061946902,
+      "score_extra": {
+        "pass_at_4": 0.8230088495575221,
+        "ci95_half_width_pct": 2.5896490818318694,
+        "n_passed": 329,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 93,
+        "n_runs": 4,
+        "mean_cost_usd": 4.379527705752213,
+        "median_cost_usd": 3.7133415999999997,
+        "mean_output_tokens": 20361.809734513274,
+        "mean_agent_steps": 26.030973451327434,
+        "mean_duration_seconds": 883.9358407079646
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": 9,
+      "system": "mini-swe-agent / gpt-5.6-sol [max]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gpt-5.6-sol"
+      ],
+      "model_ids": [
+        "gpt-5.6-sol"
+      ],
+      "model_config": "reasoning_effort=max; cost rescaled by site x0.769809 (raw mean_cost_usd=8.386436346666667)",
+      "score": 72.66666666666667,
+      "score_extra": {
+        "pass_at_4": 0.8584070796460177,
+        "ci95_half_width_pct": 2.829822249837175,
+        "n_passed": 327,
+        "n_attempted": 450,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 97,
+        "n_runs": 4,
+        "mean_cost_usd": 6.455954682467823,
+        "median_cost_usd": 5.266626745810881,
+        "mean_output_tokens": 60013.64444444444,
+        "mean_agent_steps": 61.25333333333333,
+        "mean_duration_seconds": 1128.624910331111
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 10,
+      "system": "mini-swe-agent / gemini-3.8-flash [medium]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gemini-3.8-flash"
+      ],
+      "model_ids": [
+        "gemini-3.8-flash"
+      ],
+      "model_config": "reasoning_effort=medium",
+      "score": 71.01769911504425,
+      "score_extra": {
+        "pass_at_4": 0.831858407079646,
+        "ci95_half_width_pct": 2.280804572877925,
+        "n_passed": 321,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 94,
+        "n_runs": 4,
+        "mean_cost_usd": 1.9671024789823006,
+        "median_cost_usd": 1.7342966249999998,
+        "mean_output_tokens": 124684.36283185841,
+        "mean_agent_steps": 147.30088495575222,
+        "mean_duration_seconds": 826.5496385464602
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 11,
+      "system": "mini-swe-agent / gpt-5.6-sol [xhigh]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gpt-5.6-sol"
+      ],
+      "model_ids": [
+        "gpt-5.6-sol"
+      ],
+      "model_config": "reasoning_effort=xhigh; cost rescaled by site x0.765072 (raw mean_cost_usd=4.703663860310422)",
+      "score": 70.73170731707317,
+      "score_extra": {
+        "pass_at_4": 0.8584070796460177,
+        "ci95_half_width_pct": 0.8191117217343103,
+        "n_passed": 319,
+        "n_attempted": 451,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 97,
+        "n_runs": 4,
+        "mean_cost_usd": 3.5986416572286237,
+        "median_cost_usd": 3.1498313846043198,
+        "mean_output_tokens": 40744.59201773836,
+        "mean_agent_steps": 44,
+        "mean_duration_seconds": 800.5459875388026
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 12,
+      "system": "mini-swe-agent / claude-fable-5 [xhigh]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "claude-fable-5"
+      ],
+      "model_ids": [
+        "claude-fable-5"
+      ],
+      "model_config": "reasoning_effort=xhigh",
+      "score": 69.91150442477876,
+      "score_extra": {
+        "pass_at_4": 0.8849557522123894,
+        "ci95_half_width_pct": 3.244917575471319,
+        "n_passed": 316,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 100,
+        "n_runs": 4,
+        "mean_cost_usd": 13.414521495535714,
+        "median_cost_usd": 11.341082999999998,
+        "mean_output_tokens": 80352.1703539823,
+        "mean_agent_steps": 68.40044247787611,
+        "mean_duration_seconds": 1411.5830643938054
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 13,
+      "system": "mini-swe-agent / claude-fable-5 [max]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "claude-fable-5"
+      ],
+      "model_ids": [
+        "claude-fable-5"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 69.72477064220183,
+      "score_extra": {
+        "pass_at_4": 0.8407079646017699,
+        "ci95_half_width_pct": 4.033474250807936,
+        "n_passed": 304,
+        "n_attempted": 436,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 95,
+        "n_runs": 4,
+        "mean_cost_usd": 21.634702092592594,
+        "median_cost_usd": 19.23457225,
+        "mean_output_tokens": 118592.77293577982,
+        "mean_agent_steps": 88.4288990825688,
+        "mean_duration_seconds": 2092.0106240022938
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 14,
+      "system": "mini-swe-agent / gpt-5.6-terra [max]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gpt-5.6-terra"
+      ],
+      "model_ids": [
+        "gpt-5.6-terra"
+      ],
+      "model_config": "reasoning_effort=max; cost rescaled by site x0.8 (raw mean_cost_usd=4.945847263858093); hidden in default view",
+      "score": 69.62305986696231,
+      "score_extra": {
+        "pass_at_4": 0.8849557522123894,
+        "ci95_half_width_pct": 2.5569389504458404,
+        "n_passed": 314,
+        "n_attempted": 451,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 100,
+        "n_runs": 4,
+        "mean_cost_usd": 3.956677811086475,
+        "median_cost_usd": 3.2916456,
+        "mean_output_tokens": 71938.62527716186,
+        "mean_agent_steps": 75.9290465631929,
+        "mean_duration_seconds": 1016.6698429312638
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 15,
+      "system": "mini-swe-agent / gpt-5.6-sol [high]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gpt-5.6-sol"
+      ],
+      "model_ids": [
+        "gpt-5.6-sol"
+      ],
+      "model_config": "reasoning_effort=high; cost rescaled by site x0.767135 (raw mean_cost_usd=3.4698331108647453)",
+      "score": 69.40133037694012,
+      "score_extra": {
+        "pass_at_4": 0.8672566371681416,
+        "ci95_half_width_pct": 1.4321452203772356,
+        "n_passed": 313,
+        "n_attempted": 451,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 98,
+        "n_runs": 4,
+        "mean_cost_usd": 2.661832088842267,
+        "median_cost_usd": 2.285619558801788,
+        "mean_output_tokens": 28450.31929046563,
+        "mean_agent_steps": 36.889135254988915,
+        "mean_duration_seconds": 594.230510789357
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 16,
+      "system": "mini-swe-agent / glm-5.3 [max]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "glm-5.3"
+      ],
+      "model_ids": [
+        "glm-5.3"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 68.95787139689578,
+      "score_extra": {
+        "pass_at_4": 0.8761061946902655,
+        "ci95_half_width_pct": 3.0186512715587,
+        "n_passed": 311,
+        "n_attempted": 451,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 99,
+        "n_runs": 4,
+        "mean_cost_usd": 3.9933584893126386,
+        "median_cost_usd": 3.1315945999999992,
+        "mean_output_tokens": 80435.60975609756,
+        "mean_agent_steps": 124.47228381374723,
+        "mean_duration_seconds": 2116.1784804168515
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 17,
+      "system": "mini-swe-agent / claude-opus-5 [medium]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "claude-opus-5"
+      ],
+      "model_ids": [
+        "claude-opus-5"
+      ],
+      "model_config": "reasoning_effort=medium",
+      "score": 68.90380313199105,
+      "score_extra": {
+        "pass_at_4": 0.8938053097345132,
+        "ci95_half_width_pct": 1.1725586658930944,
+        "n_passed": 308,
+        "n_attempted": 447,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 101,
+        "n_runs": 4,
+        "mean_cost_usd": 3.28978764541387,
+        "median_cost_usd": 2.4819885000000004,
+        "mean_output_tokens": 36981.530201342284,
+        "mean_agent_steps": 52.29530201342282,
+        "mean_duration_seconds": 759.2254874630873
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 18,
+      "system": "mini-swe-agent / claude-fable-5 [high]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "claude-fable-5"
+      ],
+      "model_ids": [
+        "claude-fable-5"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 68.6046511627907,
+      "score_extra": {
+        "pass_at_4": 0.8672566371681416,
+        "ci95_half_width_pct": 1.1208427174303877,
+        "n_passed": 295,
+        "n_attempted": 430,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 98,
+        "n_runs": 4,
+        "mean_cost_usd": 9.177638214788733,
+        "median_cost_usd": 7.322686000000002,
+        "mean_output_tokens": 57287.06976744186,
+        "mean_agent_steps": 58.73720930232558,
+        "mean_duration_seconds": 1062.3037221116278
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 19,
+      "system": "mini-swe-agent / kimi-k3 [max]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "kimi-k3"
+      ],
+      "model_ids": [
+        "kimi-k3"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 68.51441241685144,
+      "score_extra": {
+        "pass_at_4": 0.8938053097345132,
+        "ci95_half_width_pct": 4.53701407928232,
+        "n_passed": 309,
+        "n_attempted": 451,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 101,
+        "n_runs": 4,
+        "mean_cost_usd": 4.654682129933482,
+        "median_cost_usd": 3.6024987,
+        "mean_output_tokens": 81499.84257206209,
+        "mean_agent_steps": 97.58758314855876,
+        "mean_duration_seconds": 4541.447376412417
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 20,
+      "system": "mini-swe-agent / grok-4.6 [medium]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "grok-4.6"
+      ],
+      "model_ids": [
+        "grok-4.6"
+      ],
+      "model_config": "reasoning_effort=medium",
+      "score": 67.47787610619469,
+      "score_extra": {
+        "pass_at_4": 0.8407079646017699,
+        "ci95_half_width_pct": 2.28080457287792,
+        "n_passed": 305,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 95,
+        "n_runs": 4,
+        "mean_cost_usd": 3.4489837522123894,
+        "median_cost_usd": 2.945834,
+        "mean_output_tokens": 49763.99778761062,
+        "mean_agent_steps": 70.28982300884955,
+        "mean_duration_seconds": 895.5380579646018
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 21,
+      "system": "mini-swe-agent / gpt-5.6-luna [max]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gpt-5.6-luna"
+      ],
+      "model_ids": [
+        "gpt-5.6-luna"
+      ],
+      "model_config": "reasoning_effort=max; cost rescaled by site x0.2 (raw mean_cost_usd=3.028116810267857)",
+      "score": 67.1875,
+      "score_extra": {
+        "pass_at_4": 0.9026548672566371,
+        "ci95_half_width_pct": 3.992001235671055,
+        "n_passed": 301,
+        "n_attempted": 448,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 102,
+        "n_runs": 4,
+        "mean_cost_usd": 0.6056233620535714,
+        "median_cost_usd": 0.4584183599999999,
+        "mean_output_tokens": 73399.70758928571,
+        "mean_agent_steps": 101.68080357142857,
+        "mean_duration_seconds": 1122.9470243995536
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 22,
+      "system": "mini-swe-agent / gpt-5.5 [xhigh]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gpt-5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": "reasoning_effort=xhigh",
+      "score": 67.03539823008849,
+      "score_extra": {
+        "pass_at_4": 0.8849557522123894,
+        "ci95_half_width_pct": 6.465646340908863,
+        "n_passed": 303,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 100,
+        "n_runs": 4,
+        "mean_cost_usd": 7.226236674778761,
+        "median_cost_usd": 6.110482499999999,
+        "mean_output_tokens": 46294.72345132743,
+        "mean_agent_steps": 82.01548672566372,
+        "mean_duration_seconds": 1806.3251869889382
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 22,
+      "system": "mini-swe-agent / gpt-6-astra [low]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gpt-6-astra"
+      ],
+      "model_ids": [
+        "gpt-6-astra"
+      ],
+      "model_config": "reasoning_effort=low",
+      "score": 67.03539823008849,
+      "score_extra": {
+        "pass_at_4": 0.7964601769911505,
+        "ci95_half_width_pct": 1.3008610516858732,
+        "n_passed": 303,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 90,
+        "n_runs": 4,
+        "mean_cost_usd": 2.188762706637168,
+        "median_cost_usd": 1.7209886,
+        "mean_output_tokens": 10579.53982300885,
+        "mean_agent_steps": 19.537610619469028,
+        "mean_duration_seconds": 613.4247787610619
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "openai",
+      "row_url": null
+    },
+    {
+      "rank": 24,
+      "system": "mini-swe-agent / grok-4.6 [xhigh]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "grok-4.6"
+      ],
+      "model_ids": [
+        "grok-4.6"
+      ],
+      "model_config": "reasoning_effort=xhigh",
+      "score": 66.74057649667405,
+      "score_extra": {
+        "pass_at_4": 0.8495575221238938,
+        "ci95_half_width_pct": 2.175684224405049,
+        "n_passed": 301,
+        "n_attempted": 451,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 96,
+        "n_runs": 4,
+        "mean_cost_usd": 5.497668745011087,
+        "median_cost_usd": 4.63937,
+        "mean_output_tokens": 71403.54323725056,
+        "mean_agent_steps": 87.21951219512195,
+        "mean_duration_seconds": 1272.3478393858093
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 25,
+      "system": "mini-swe-agent / gemini-3.7-flash [medium]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gemini-3.7-flash"
+      ],
+      "model_ids": [
+        "gemini-3.7-flash"
+      ],
+      "model_config": "reasoning_effort=medium",
+      "score": 65.48672566371681,
+      "score_extra": {
+        "pass_at_4": 0.831858407079646,
+        "ci95_half_width_pct": 3.086532276415522,
+        "n_passed": 296,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 94,
+        "n_runs": 4,
+        "mean_cost_usd": 2.0251351826880533,
+        "median_cost_usd": 1.65422055,
+        "mean_output_tokens": 93990.8517699115,
+        "mean_agent_steps": 117.36946902654867,
+        "mean_duration_seconds": 1240.376194079646
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 26,
+      "system": "mini-swe-agent / claude-fable-5 [medium]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "claude-fable-5"
+      ],
+      "model_ids": [
+        "claude-fable-5"
+      ],
+      "model_config": "reasoning_effort=medium",
+      "score": 65.36697247706422,
+      "score_extra": {
+        "pass_at_4": 0.831858407079646,
+        "ci95_half_width_pct": 4.421928879238165,
+        "n_passed": 285,
+        "n_attempted": 436,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 94,
+        "n_runs": 4,
+        "mean_cost_usd": 6.088186528935186,
+        "median_cost_usd": 4.62221125,
+        "mean_output_tokens": 40201.35321100918,
+        "mean_agent_steps": 48.36697247706422,
+        "mean_duration_seconds": 810.8967150733945
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 27,
+      "system": "mini-swe-agent / gemini-3.7-flash [high]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gemini-3.7-flash"
+      ],
+      "model_ids": [
+        "gemini-3.7-flash"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 65.2654867256637,
+      "score_extra": {
+        "pass_at_4": 0.8230088495575221,
+        "ci95_half_width_pct": 1.7878625067843175,
+        "n_passed": 295,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 93,
+        "n_runs": 4,
+        "mean_cost_usd": 2.1762860351216813,
+        "median_cost_usd": 1.9044440625,
+        "mean_output_tokens": 107248.30309734514,
+        "mean_agent_steps": 124.51548672566372,
+        "mean_duration_seconds": 1244.9565387986725
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 28,
+      "system": "mini-swe-agent / grok-4.6 [high]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "grok-4.6"
+      ],
+      "model_ids": [
+        "grok-4.6"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 65.18847006651885,
+      "score_extra": {
+        "pass_at_4": 0.8495575221238938,
+        "ci95_half_width_pct": 1.5336008186572951,
+        "n_passed": 294,
+        "n_attempted": 451,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 96,
+        "n_runs": 4,
+        "mean_cost_usd": 4.3848732239467845,
+        "median_cost_usd": 3.693604,
+        "mean_output_tokens": 61160.94456762749,
+        "mean_agent_steps": 78.960088691796,
+        "mean_duration_seconds": 1083.6365204833703
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 29,
+      "system": "mini-swe-agent / gpt-5.5 [high]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gpt-5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 64.38053097345133,
+      "score_extra": {
+        "pass_at_4": 0.9026548672566371,
+        "ci95_half_width_pct": 3.1168426495054677,
+        "n_passed": 291,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 102,
+        "n_runs": 4,
+        "mean_cost_usd": 5.100437004424779,
+        "median_cost_usd": 4.582879500000001,
+        "mean_output_tokens": 31159.49778761062,
+        "mean_agent_steps": 61.924778761061944,
+        "mean_duration_seconds": 2048.0589126172567
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 30,
+      "system": "mini-swe-agent / glm-5.3-flash [max]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "glm-5.3-flash"
+      ],
+      "model_ids": [
+        "glm-5.3-flash"
+      ],
+      "model_config": "reasoning_effort=max; cost rescaled by site x0.5 (raw mean_cost_usd=0.48196371245535713)",
+      "score": 63.39285714285714,
+      "score_extra": {
+        "pass_at_4": 0.8495575221238938,
+        "ci95_half_width_pct": 4.377970751693644,
+        "n_passed": 284,
+        "n_attempted": 448,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 96,
+        "n_runs": 4,
+        "mean_cost_usd": 0.24098185622767856,
+        "median_cost_usd": 0.1949875625,
+        "mean_output_tokens": 72829.77008928571,
+        "mean_agent_steps": 122.890625,
+        "mean_duration_seconds": 1537.7995419129463
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 31,
+      "system": "mini-swe-agent / deepseek-v4-pro [max]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "deepseek-v4-pro"
+      ],
+      "model_ids": [
+        "deepseek-v4-pro"
+      ],
+      "model_config": "reasoning_effort=max; cost rescaled by site x6.90188 (raw mean_cost_usd=0.24138687892256638)",
+      "score": 62.83185840707964,
+      "score_extra": {
+        "pass_at_4": 0.8849557522123894,
+        "ci95_half_width_pct": 6.333430597228876,
+        "n_passed": 284,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 100,
+        "n_runs": 4,
+        "mean_cost_usd": 1.6660232187256647,
+        "median_cost_usd": 1.5408664051949994,
+        "mean_output_tokens": 105998.91814159292,
+        "mean_agent_steps": 154.71238938053096,
+        "mean_duration_seconds": 2212.510104011062
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 32,
+      "system": "mini-swe-agent / gpt-5.6-sol [medium]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gpt-5.6-sol"
+      ],
+      "model_ids": [
+        "gpt-5.6-sol"
+      ],
+      "model_config": "reasoning_effort=medium; cost rescaled by site x0.760342 (raw mean_cost_usd=1.8620318075221238)",
+      "score": 61.06194690265486,
+      "score_extra": {
+        "pass_at_4": 0.8053097345132744,
+        "ci95_half_width_pct": 1.583357649307215,
+        "n_passed": 276,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 91,
+        "n_runs": 4,
+        "mean_cost_usd": 1.4157802656590275,
+        "median_cost_usd": 1.1750425715792634,
+        "mean_output_tokens": 18425.216814159292,
+        "mean_agent_steps": 30.913716814159294,
+        "mean_duration_seconds": 423.3752944181416
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 33,
+      "system": "mini-swe-agent / gpt-5.6-terra [xhigh]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gpt-5.6-terra"
+      ],
+      "model_ids": [
+        "gpt-5.6-terra"
+      ],
+      "model_config": "reasoning_effort=xhigh; cost rescaled by site x0.8 (raw mean_cost_usd=2.127191725663717); hidden in default view",
+      "score": 60.17699115044248,
+      "score_extra": {
+        "pass_at_4": 0.8053097345132744,
+        "ci95_half_width_pct": 2.1242972019271256,
+        "n_passed": 272,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 91,
+        "n_runs": 4,
+        "mean_cost_usd": 1.7017533805309735,
+        "median_cost_usd": 1.4936081999999997,
+        "mean_output_tokens": 39616.53982300885,
+        "mean_agent_steps": 43.06637168141593,
+        "mean_duration_seconds": 584.0832282876107
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 34,
+      "system": "mini-swe-agent / claude-fable-5 [low]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "claude-fable-5"
+      ],
+      "model_ids": [
+        "claude-fable-5"
+      ],
+      "model_config": "reasoning_effort=low",
+      "score": 59.58429561200924,
+      "score_extra": {
+        "pass_at_4": 0.8141592920353983,
+        "ci95_half_width_pct": 2.7940054451297294,
+        "n_passed": 258,
+        "n_attempted": 433,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 92,
+        "n_runs": 4,
+        "mean_cost_usd": 3.757873125874126,
+        "median_cost_usd": 2.7559204999999998,
+        "mean_output_tokens": 25242.833718244805,
+        "mean_agent_steps": 37.79907621247113,
+        "mean_duration_seconds": 634.7057336951501
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 35,
+      "system": "mini-swe-agent / claude-opus-4.8 [max]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "claude-opus-4.8"
+      ],
+      "model_ids": [
+        "claude-opus-4.8"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 58.97435897435898,
+      "score_extra": {
+        "pass_at_4": 0.7927927927927928,
+        "ci95_half_width_pct": 1.7648153474292538,
+        "n_passed": 253,
+        "n_attempted": 429,
+        "n_tasks_attempted": 111,
+        "n_tasks_passed_any": 88,
+        "n_runs": 4,
+        "mean_cost_usd": 13.222583593240094,
+        "median_cost_usd": 12.353505999999996,
+        "mean_output_tokens": 135031.67132867133,
+        "mean_agent_steps": 120,
+        "mean_duration_seconds": 3492.740812641026
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 36,
+      "system": "mini-swe-agent / claude-opus-5 [low]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "claude-opus-5"
+      ],
+      "model_ids": [
+        "claude-opus-5"
+      ],
+      "model_config": "reasoning_effort=low",
+      "score": 58.12917594654788,
+      "score_extra": {
+        "pass_at_4": 0.8495575221238938,
+        "ci95_half_width_pct": 2.3306879466842725,
+        "n_passed": 261,
+        "n_attempted": 449,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 96,
+        "n_runs": 4,
+        "mean_cost_usd": 1.6626223919821828,
+        "median_cost_usd": 1.2162672499999996,
+        "mean_output_tokens": 19884.3140311804,
+        "mean_agent_steps": 35.641425389755014,
+        "mean_duration_seconds": 468.87542417149217
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 37,
+      "system": "mini-swe-agent / qwen3.8-max [xhigh]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "qwen3.8-max"
+      ],
+      "model_ids": [
+        "qwen3.8-max"
+      ],
+      "model_config": "reasoning_effort=xhigh",
+      "score": 57.46102449888642,
+      "score_extra": {
+        "pass_at_4": 0.831858407079646,
+        "ci95_half_width_pct": 2.6627926725075453,
+        "n_passed": 258,
+        "n_attempted": 449,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 94,
+        "n_runs": 4,
+        "mean_cost_usd": 3.7290646500445437,
+        "median_cost_usd": 3.132689060000001,
+        "mean_output_tokens": 95075.18262806236,
+        "mean_agent_steps": 111.33853006681514,
+        "mean_duration_seconds": 2567.2746634654786
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 38,
+      "system": "mini-swe-agent / gpt-5.6-luna [xhigh]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gpt-5.6-luna"
+      ],
+      "model_ids": [
+        "gpt-5.6-luna"
+      ],
+      "model_config": "reasoning_effort=xhigh; cost rescaled by site x0.2 (raw mean_cost_usd=1.5356192685840708)",
+      "score": 56.85840707964602,
+      "score_extra": {
+        "pass_at_4": 0.7876106194690266,
+        "ci95_half_width_pct": 2.1681017528097977,
+        "n_passed": 257,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 89,
+        "n_runs": 4,
+        "mean_cost_usd": 0.30712385371681417,
+        "median_cost_usd": 0.24898664,
+        "mean_output_tokens": 44677.900442477876,
+        "mean_agent_steps": 71.09955752212389,
+        "mean_duration_seconds": 731.6846703871681
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 39,
+      "system": "mini-swe-agent / muse-spark-1.2 [xhigh]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "muse-spark-1.2"
+      ],
+      "model_ids": [
+        "muse-spark-1.2"
+      ],
+      "model_config": "reasoning_effort=xhigh",
+      "score": 54.86725663716814,
+      "score_extra": {
+        "pass_at_4": 0.8141592920353983,
+        "ci95_half_width_pct": 2.124297201927127,
+        "n_passed": 248,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 92,
+        "n_runs": 4,
+        "mean_cost_usd": 3.6955048180309733,
+        "median_cost_usd": 2.6840506,
+        "mean_output_tokens": 99226.38053097345,
+        "mean_agent_steps": 100.75884955752213,
+        "mean_duration_seconds": 927.8692516349557
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 40,
+      "system": "mini-swe-agent / claude-opus-4.8 [xhigh]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "claude-opus-4.8"
+      ],
+      "model_ids": [
+        "claude-opus-4.8"
+      ],
+      "model_config": "reasoning_effort=xhigh",
+      "score": 54.36241610738255,
+      "score_extra": {
+        "pass_at_4": 0.8053097345132744,
+        "ci95_half_width_pct": 3.7134306280944758,
+        "n_passed": 243,
+        "n_attempted": 447,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 91,
+        "n_runs": 4,
+        "mean_cost_usd": 8.006355704138702,
+        "median_cost_usd": 7.049357750000001,
+        "mean_output_tokens": 86088.7874720358,
+        "mean_agent_steps": 94.64429530201342,
+        "mean_duration_seconds": 2198.774075261745
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 41,
+      "system": "mini-swe-agent / gpt-5.5 [medium]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gpt-5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": "reasoning_effort=medium",
+      "score": 53.98230088495575,
+      "score_extra": {
+        "pass_at_4": 0.7787610619469026,
+        "ci95_half_width_pct": 2.553087495290979,
+        "n_passed": 244,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 88,
+        "n_runs": 4,
+        "mean_cost_usd": 2.749342734513274,
+        "median_cost_usd": 2.436942,
+        "mean_output_tokens": 19625.433628318584,
+        "mean_agent_steps": 45.982300884955755,
+        "mean_duration_seconds": 1288.995063800885
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 42,
+      "system": "mini-swe-agent / claude-sonnet-5 [max]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "claude-sonnet-5"
+      ],
+      "model_ids": [
+        "claude-sonnet-5"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 53.84615384615385,
+      "score_extra": {
+        "pass_at_4": 0.7876106194690266,
+        "ci95_half_width_pct": 4.2369164701743856,
+        "n_passed": 238,
+        "n_attempted": 442,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 89,
+        "n_runs": 4,
+        "mean_cost_usd": 26.399858950791852,
+        "median_cost_usd": 23.277376725000003,
+        "mean_output_tokens": 214117.54977375566,
+        "mean_agent_steps": 268.4547511312217,
+        "mean_duration_seconds": 4803.543157789592
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 43,
+      "system": "mini-swe-agent / gemini-3.7-flash [low]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gemini-3.7-flash"
+      ],
+      "model_ids": [
+        "gemini-3.7-flash"
+      ],
+      "model_config": "reasoning_effort=low",
+      "score": 53.76106194690266,
+      "score_extra": {
+        "pass_at_4": 0.7787610619469026,
+        "ci95_half_width_pct": 2.589649081831869,
+        "n_passed": 243,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 88,
+        "n_runs": 4,
+        "mean_cost_usd": 1.8322645629424779,
+        "median_cost_usd": 1.3913454375,
+        "mean_output_tokens": 73364.9557522124,
+        "mean_agent_steps": 130.37610619469027,
+        "mean_duration_seconds": 1252.0731730707964
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 43,
+      "system": "mini-swe-agent / gpt-5.6-terra [high]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gpt-5.6-terra"
+      ],
+      "model_ids": [
+        "gpt-5.6-terra"
+      ],
+      "model_config": "reasoning_effort=high; cost rescaled by site x0.8 (raw mean_cost_usd=1.1343762765486725); hidden in default view",
+      "score": 53.76106194690266,
+      "score_extra": {
+        "pass_at_4": 0.8053097345132744,
+        "ci95_half_width_pct": 4.328970467213552,
+        "n_passed": 243,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 91,
+        "n_runs": 4,
+        "mean_cost_usd": 0.9075010212389382,
+        "median_cost_usd": 0.8253672000000002,
+        "mean_output_tokens": 21517.03982300885,
+        "mean_agent_steps": 33.51327433628319,
+        "mean_duration_seconds": 364.2859819269911
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 43,
+      "system": "mini-swe-agent / grok-4.5 [high]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "grok-4.5"
+      ],
+      "model_ids": [
+        "grok-4.5"
+      ],
+      "model_config": "reasoning_effort=high; hidden in default view",
+      "score": 53.76106194690266,
+      "score_extra": {
+        "pass_at_4": 0.7787610619469026,
+        "ci95_half_width_pct": 2.28080457287792,
+        "n_passed": 243,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 88,
+        "n_runs": 4,
+        "mean_cost_usd": 2.4157481725663716,
+        "median_cost_usd": 2.02311,
+        "mean_output_tokens": 35525.33185840708,
+        "mean_agent_steps": 61.33185840707964,
+        "mean_duration_seconds": 484.7029359800885
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 46,
+      "system": "mini-swe-agent / deepseek-v4-flash [max]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "deepseek-v4-flash"
+      ],
+      "model_ids": [
+        "deepseek-v4-flash"
+      ],
+      "model_config": "reasoning_effort=max; cost rescaled by site x4.629831 (raw mean_cost_usd=0.10023560370265487)",
+      "score": 53.31858407079646,
+      "score_extra": {
+        "pass_at_4": 0.8053097345132744,
+        "ci95_half_width_pct": 3.5669502150324286,
+        "n_passed": 241,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 91,
+        "n_runs": 4,
+        "mean_cost_usd": 0.46407388012739975,
+        "median_cost_usd": 0.4224673667174992,
+        "mean_output_tokens": 107687.02212389381,
+        "mean_agent_steps": 152.87610619469027,
+        "mean_duration_seconds": 1438.9961937522125
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 46,
+      "system": "mini-swe-agent / muse-spark-1.1 [xhigh]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "muse-spark-1.1"
+      ],
+      "model_ids": [
+        "muse-spark-1.1"
+      ],
+      "model_config": "reasoning_effort=xhigh; hidden in default view",
+      "score": 53.31858407079646,
+      "score_extra": {
+        "pass_at_4": 0.7964601769911505,
+        "ci95_half_width_pct": 3.0353424539337115,
+        "n_passed": 241,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 90,
+        "n_runs": 4,
+        "mean_cost_usd": 2.361142644469026,
+        "median_cost_usd": 1.7171158,
+        "mean_output_tokens": 74008.4203539823,
+        "mean_agent_steps": 95.82522123893806,
+        "mean_duration_seconds": 897.5133296747788
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 48,
+      "system": "mini-swe-agent / claude-opus-4.8 [high]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "claude-opus-4.8"
+      ],
+      "model_ids": [
+        "claude-opus-4.8"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 51.76991150442478,
+      "score_extra": {
+        "pass_at_4": 0.7787610619469026,
+        "ci95_half_width_pct": 4.561609145755844,
+        "n_passed": 234,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 88,
+        "n_runs": 4,
+        "mean_cost_usd": 4.281940017699115,
+        "median_cost_usd": 3.6635345,
+        "mean_output_tokens": 50063.52654867257,
+        "mean_agent_steps": 72.5,
+        "mean_duration_seconds": 1066.903783732301
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 48,
+      "system": "mini-swe-agent / gpt-5.4 [xhigh]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gpt-5.4"
+      ],
+      "model_ids": [
+        "gpt-5.4"
+      ],
+      "model_config": "reasoning_effort=xhigh; hidden in default view",
+      "score": 51.76991150442478,
+      "score_extra": {
+        "pass_at_4": 0.7787610619469026,
+        "ci95_half_width_pct": 1.5021049567382834,
+        "n_passed": 234,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 88,
+        "n_runs": 4,
+        "mean_cost_usd": 5.6524577245575225,
+        "median_cost_usd": 4.3528565,
+        "mean_output_tokens": 71408.87389380531,
+        "mean_agent_steps": 70.47123893805309,
+        "mean_duration_seconds": 1368.707164818584
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 50,
+      "system": "mini-swe-agent / claude-sonnet-5 [xhigh]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "claude-sonnet-5"
+      ],
+      "model_ids": [
+        "claude-sonnet-5"
+      ],
+      "model_config": "reasoning_effort=xhigh",
+      "score": 49.667405764966745,
+      "score_extra": {
+        "pass_at_4": 0.7522123893805309,
+        "ci95_half_width_pct": 3.4545489916778647,
+        "n_passed": 224,
+        "n_attempted": 451,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 85,
+        "n_runs": 4,
+        "mean_cost_usd": 11.890634540022173,
+        "median_cost_usd": 9.965361750000001,
+        "mean_output_tokens": 120698.59201773835,
+        "mean_agent_steps": 185.53215077605321,
+        "mean_duration_seconds": 2414.4529098159646
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 51,
+      "system": "mini-swe-agent / claude-opus-4.8 [medium]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "claude-opus-4.8"
+      ],
+      "model_ids": [
+        "claude-opus-4.8"
+      ],
+      "model_config": "reasoning_effort=medium",
+      "score": 48.67256637168141,
+      "score_extra": {
+        "pass_at_4": 0.7610619469026548,
+        "ci95_half_width_pct": 2.2392058617374517,
+        "n_passed": 220,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 86,
+        "n_runs": 4,
+        "mean_cost_usd": 3.4438571028761062,
+        "median_cost_usd": 2.84043425,
+        "mean_output_tokens": 41313.45132743363,
+        "mean_agent_steps": 65.57300884955752,
+        "mean_duration_seconds": 880.0083837986726
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 52,
+      "system": "mini-swe-agent / claude-sonnet-5 [high]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "claude-sonnet-5"
+      ],
+      "model_ids": [
+        "claude-sonnet-5"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 48.23008849557522,
+      "score_extra": {
+        "pass_at_4": 0.7964601769911505,
+        "ci95_half_width_pct": 4.50631487021484,
+        "n_passed": 218,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 90,
+        "n_runs": 4,
+        "mean_cost_usd": 7.425560161197339,
+        "median_cost_usd": 5.833649100000001,
+        "mean_output_tokens": 87294.75609756098,
+        "mean_agent_steps": 146.57649667405764,
+        "mean_duration_seconds": 1728.2193087920355
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 53,
+      "system": "mini-swe-agent / gemini-3.6-flash [high]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gemini-3.6-flash"
+      ],
+      "model_ids": [
+        "gemini-3.6-flash"
+      ],
+      "model_config": "reasoning_effort=high; cost rescaled by site x0.5 (raw mean_cost_usd=4.419013277333334)",
+      "score": 46.68141592920354,
+      "score_extra": {
+        "pass_at_4": 0.7522123893805309,
+        "ci95_half_width_pct": 3.7048538992472775,
+        "n_passed": 211,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 85,
+        "n_runs": 4,
+        "mean_cost_usd": 2.209506638666667,
+        "median_cost_usd": 1.7223476625000005,
+        "mean_output_tokens": 95844.86222222222,
+        "mean_agent_steps": 116.73333333333333,
+        "mean_duration_seconds": 1477.8607510707964
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 54,
+      "system": "mini-swe-agent / gpt-5.6-sol [low]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gpt-5.6-sol"
+      ],
+      "model_ids": [
+        "gpt-5.6-sol"
+      ],
+      "model_config": "reasoning_effort=low; cost rescaled by site x0.760524 (raw mean_cost_usd=1.0742664646017699)",
+      "score": 45.35398230088495,
+      "score_extra": {
+        "pass_at_4": 0.7168141592920354,
+        "ci95_half_width_pct": 2.38819467145892,
+        "n_passed": 205,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 81,
+        "n_runs": 4,
+        "mean_cost_usd": 0.8170052734939612,
+        "median_cost_usd": 0.7183581313801017,
+        "mean_output_tokens": 10579.141592920354,
+        "mean_agent_steps": 23.358407079646017,
+        "mean_duration_seconds": 262.2510164579646
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 55,
+      "system": "mini-swe-agent / gpt-5.6-luna [high]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gpt-5.6-luna"
+      ],
+      "model_ids": [
+        "gpt-5.6-luna"
+      ],
+      "model_config": "reasoning_effort=high; cost rescaled by site x0.2 (raw mean_cost_usd=0.7779007499999999)",
+      "score": 44.24778761061947,
+      "score_extra": {
+        "pass_at_4": 0.7522123893805309,
+        "ci95_half_width_pct": 2.9195672479165315,
+        "n_passed": 200,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 85,
+        "n_runs": 4,
+        "mean_cost_usd": 0.15558014999999997,
+        "median_cost_usd": 0.13271085999999999,
+        "mean_output_tokens": 25778.274336283186,
+        "mean_agent_steps": 49.02212389380531,
+        "mean_duration_seconds": 473.83880740929203
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 56,
+      "system": "mini-swe-agent / glm-5.2 [max]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "glm-5.2"
+      ],
+      "model_ids": [
+        "glm-5.2"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 43.77777777777778,
+      "score_extra": {
+        "pass_at_4": 0.7699115044247787,
+        "ci95_half_width_pct": 1.725629620580811,
+        "n_passed": 197,
+        "n_attempted": 450,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 87,
+        "n_runs": 4,
+        "mean_cost_usd": 3.9199075743111114,
+        "median_cost_usd": 3.4637479200000003,
+        "mean_output_tokens": 78175.30666666667,
+        "mean_agent_steps": 129.12666666666667,
+        "mean_duration_seconds": 2629.2083211311115
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 57,
+      "system": "mini-swe-agent / grok-4.6 [low]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "grok-4.6"
+      ],
+      "model_ids": [
+        "grok-4.6"
+      ],
+      "model_config": "reasoning_effort=low",
+      "score": 41.648106904231625,
+      "score_extra": {
+        "pass_at_4": 0.6902654867256637,
+        "ci95_half_width_pct": 2.318651764429901,
+        "n_passed": 187,
+        "n_attempted": 449,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 78,
+        "n_runs": 4,
+        "mean_cost_usd": 1.0423604231625836,
+        "median_cost_usd": 0.742614,
+        "mean_output_tokens": 16458.3429844098,
+        "mean_agent_steps": 44.18708240534521,
+        "mean_duration_seconds": 325.05958362360803
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 58,
+      "system": "mini-swe-agent / claude-opus-4.8 [low]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "claude-opus-4.8"
+      ],
+      "model_ids": [
+        "claude-opus-4.8"
+      ],
+      "model_config": "reasoning_effort=low",
+      "score": 40.79822616407982,
+      "score_extra": {
+        "pass_at_4": 0.6814159292035398,
+        "ci95_half_width_pct": 1.4635847585691517,
+        "n_passed": 184,
+        "n_attempted": 451,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 77,
+        "n_runs": 4,
+        "mean_cost_usd": 2.293369216740577,
+        "median_cost_usd": 1.8240152500000004,
+        "mean_output_tokens": 28922.736141906873,
+        "mean_agent_steps": 53.97782705099778,
+        "mean_duration_seconds": 651.8271712993347
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 59,
+      "system": "mini-swe-agent / claude-sonnet-5 [medium]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "claude-sonnet-5"
+      ],
+      "model_ids": [
+        "claude-sonnet-5"
+      ],
+      "model_config": "reasoning_effort=medium",
+      "score": 39.77777777777778,
+      "score_extra": {
+        "pass_at_4": 0.6460176991150443,
+        "ci95_half_width_pct": 3.127576206329727,
+        "n_passed": 179,
+        "n_attempted": 450,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 73,
+        "n_runs": 4,
+        "mean_cost_usd": 4.079036229,
+        "median_cost_usd": 3.3573110999999995,
+        "mean_output_tokens": 56816.753333333334,
+        "mean_agent_steps": 107.61111111111111,
+        "mean_duration_seconds": 1121.270593551111
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 60,
+      "system": "mini-swe-agent / glm-5.2 [high]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "glm-5.2"
+      ],
+      "model_ids": [
+        "glm-5.2"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 36.283185840707965,
+      "score_extra": {
+        "pass_at_4": 0.6814159292035398,
+        "ci95_half_width_pct": 4.750072947921655,
+        "n_passed": 164,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 77,
+        "n_runs": 4,
+        "mean_cost_usd": 2.8355164725663715,
+        "median_cost_usd": 2.25012998,
+        "mean_output_tokens": 54245.50442477876,
+        "mean_agent_steps": 121.88274336283186,
+        "mean_duration_seconds": 1794.4733617809734
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 61,
+      "system": "mini-swe-agent / gemini-3.5-flash [high]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gemini-3.5-flash"
+      ],
+      "model_ids": [
+        "gemini-3.5-flash"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 36.06194690265487,
+      "score_extra": {
+        "pass_at_4": 0.6371681415929203,
+        "ci95_half_width_pct": 3.9663030105204387,
+        "n_passed": 163,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 72,
+        "n_runs": 4,
+        "mean_cost_usd": 3.4467114588691796,
+        "median_cost_usd": 2.8624087500000015,
+        "mean_output_tokens": 75730.19290465632,
+        "mean_agent_steps": 105.30376940133037,
+        "mean_duration_seconds": 1125.1601607057523
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 62,
+      "system": "mini-swe-agent / gpt-5.6-terra [medium]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gpt-5.6-terra"
+      ],
+      "model_ids": [
+        "gpt-5.6-terra"
+      ],
+      "model_config": "reasoning_effort=medium; cost rescaled by site x0.8 (raw mean_cost_usd=0.5832493688888889); hidden in default view",
+      "score": 35.11111111111111,
+      "score_extra": {
+        "pass_at_4": 0.6017699115044248,
+        "ci95_half_width_pct": 3.3819643034066322,
+        "n_passed": 158,
+        "n_attempted": 450,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 68,
+        "n_runs": 4,
+        "mean_cost_usd": 0.46659949511111115,
+        "median_cost_usd": 0.4368792,
+        "mean_output_tokens": 11746.56,
+        "mean_agent_steps": 25.14666666666667,
+        "mean_duration_seconds": 229.60274282444442
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 63,
+      "system": "mini-swe-agent / kimi-k2.7-code",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "kimi-k2.7-code"
+      ],
+      "model_ids": [
+        "kimi-k2.7-code"
+      ],
+      "model_config": "hidden in default view",
+      "score": 30.53097345132743,
+      "score_extra": {
+        "pass_at_4": 0.6106194690265486,
+        "ci95_half_width_pct": 0.5007016522460913,
+        "n_passed": 138,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 69,
+        "n_runs": 4,
+        "mean_cost_usd": 2.815536243274336,
+        "median_cost_usd": 2.1955079100000003,
+        "mean_output_tokens": 59297.24778761062,
+        "mean_agent_steps": 149.1150442477876,
+        "mean_duration_seconds": 2163.7950712809734
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 64,
+      "system": "mini-swe-agent / claude-sonnet-5 [low]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "claude-sonnet-5"
+      ],
+      "model_ids": [
+        "claude-sonnet-5"
+      ],
+      "model_config": "reasoning_effort=low",
+      "score": 30.51224944320713,
+      "score_extra": {
+        "pass_at_4": 0.5752212389380531,
+        "ci95_half_width_pct": 1.1260175414427496,
+        "n_passed": 137,
+        "n_attempted": 449,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 65,
+        "n_runs": 4,
+        "mean_cost_usd": 2.1865550832962137,
+        "median_cost_usd": 1.6764955500000003,
+        "mean_output_tokens": 35595.08240534521,
+        "mean_agent_steps": 76.88864142538975,
+        "mean_duration_seconds": 734.9105084298441
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 65,
+      "system": "mini-swe-agent / claude-sonnet-4.6 [high]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "claude-sonnet-4.6"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.6"
+      ],
+      "model_config": "reasoning_effort=high; hidden in default view",
+      "score": 29.933481152993345,
+      "score_extra": {
+        "pass_at_4": 0.5663716814159292,
+        "ci95_half_width_pct": 4.092141269189136,
+        "n_passed": 135,
+        "n_attempted": 451,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 64,
+        "n_runs": 4,
+        "mean_cost_usd": 5.5223517987804875,
+        "median_cost_usd": 4.867440150000001,
+        "mean_output_tokens": 76160.31263858093,
+        "mean_agent_steps": 133.65853658536585,
+        "mean_duration_seconds": 2815.01307943459
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 66,
+      "system": "mini-swe-agent / gpt-5.5 [low]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gpt-5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": "reasoning_effort=low",
+      "score": 26.991150442477874,
+      "score_extra": {
+        "pass_at_4": 0.4778761061946903,
+        "ci95_half_width_pct": 2.294503222007181,
+        "n_passed": 122,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 54,
+        "n_runs": 4,
+        "mean_cost_usd": 1.2002025442477877,
+        "median_cost_usd": 1.108106,
+        "mean_output_tokens": 9442.774336283186,
+        "mean_agent_steps": 28.06637168141593,
+        "mean_duration_seconds": 569.9958436615044
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 67,
+      "system": "mini-swe-agent / gpt-5.6-terra [low]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gpt-5.6-terra"
+      ],
+      "model_ids": [
+        "gpt-5.6-terra"
+      ],
+      "model_config": "reasoning_effort=low; cost rescaled by site x0.8 (raw mean_cost_usd=0.4277452605790646); hidden in default view",
+      "score": 24.053452115812917,
+      "score_extra": {
+        "pass_at_4": 0.4424778761061947,
+        "ci95_half_width_pct": 0.7767613669447833,
+        "n_passed": 108,
+        "n_attempted": 449,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 50,
+        "n_runs": 4,
+        "mean_cost_usd": 0.3421962084632517,
+        "median_cost_usd": 0.3191916,
+        "mean_output_tokens": 8572.26280623608,
+        "mean_agent_steps": 21.456570155902003,
+        "mean_duration_seconds": 176.52513473942093
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 68,
+      "system": "mini-swe-agent / gemini-3.1-pro [high]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gemini-3.1-pro"
+      ],
+      "model_ids": [
+        "gemini-3.1-pro"
+      ],
+      "model_config": "reasoning_effort=high; hidden in default view",
+      "score": 11.725663716814159,
+      "score_extra": {
+        "pass_at_4": 0.2831858407079646,
+        "ci95_half_width_pct": 1.481095461108845,
+        "n_passed": 53,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 32,
+        "n_runs": 4,
+        "mean_cost_usd": 2.1434045568888886,
+        "median_cost_usd": 1.7235064000000002,
+        "mean_output_tokens": 28368.884444444444,
+        "mean_agent_steps": 75.56444444444445,
+        "mean_duration_seconds": 867.7979107013274
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 69,
+      "system": "mini-swe-agent / gpt-5.6-luna [medium]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gpt-5.6-luna"
+      ],
+      "model_ids": [
+        "gpt-5.6-luna"
+      ],
+      "model_config": "reasoning_effort=medium; cost rescaled by site x0.2 (raw mean_cost_usd=0.21630978982300886)",
+      "score": 11.283185840707963,
+      "score_extra": {
+        "pass_at_4": 0.2743362831858407,
+        "ci95_half_width_pct": 0.8303197562056515,
+        "n_passed": 51,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 31,
+        "n_runs": 4,
+        "mean_cost_usd": 0.04326195796460178,
+        "median_cost_usd": 0.03989404,
+        "mean_output_tokens": 8179.570796460177,
+        "mean_agent_steps": 23.67699115044248,
+        "mean_duration_seconds": 181.5252541438053
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 70,
+      "system": "mini-swe-agent / gpt-5.6-luna [low]",
+      "agent": "mini-swe-agent",
+      "model_raw": [
+        "gpt-5.6-luna"
+      ],
+      "model_ids": [
+        "gpt-5.6-luna"
+      ],
+      "model_config": "reasoning_effort=low; cost rescaled by site x0.2 (raw mean_cost_usd=0.07240623938053097)",
+      "score": 1.5486725663716814,
+      "score_extra": {
+        "pass_at_4": 0.04424778761061947,
+        "ci95_half_width_pct": 0.8303197562056515,
+        "n_passed": 7,
+        "n_attempted": 452,
+        "n_tasks_attempted": 113,
+        "n_tasks_passed_any": 5,
+        "n_runs": 4,
+        "mean_cost_usd": 0.014481247876106192,
+        "median_cost_usd": 0.013957019999999999,
+        "mean_output_tokens": 3127.754424778761,
+        "mean_agent_steps": 12.464601769911505,
+        "mean_duration_seconds": 77.14656007522123
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    }
+  ]
+}

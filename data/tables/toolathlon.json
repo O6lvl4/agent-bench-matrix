@@ -1,0 +1,1173 @@
+{
+  "id": "toolathlon",
+  "family": "toolathlon",
+  "name": "Toolathlon (previous leaderboard, before Verified)",
+  "board": "toolathlon.xyz",
+  "category": "tool-use",
+  "measures_ja": "32のアプリ(MCPサーバー604ツール)と実環境を使う長い手順のタスクを、ツールを選び組み合わせて完遂できるか。",
+  "tasks": null,
+  "tasks_note": "旧版のタスク数は旧表の側に明記されていないため null。",
+  "metric": "Pass@1",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "✓ の行は運営が評価した結果、それ以外は各社の発表などから転記した値(リンク付き)。",
+  "source": "https://toolathlon.xyz/docs/leaderboard",
+  "fetched": [
+    "https://toolathlon.xyz/docs/leaderboard",
+    "https://toolathlon.xyz/docs/leaderboard.md"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-05-19",
+  "snapshot": "sources/toolathlon/leaderboard.md",
+  "paper": "https://arxiv.org/abs/2510.25726",
+  "repo": "https://github.com/hkust-nlp/Toolathlon",
+  "notes_ja": "Toolathlon-Verified 公開直前の旧リーダーボードを、ボードが履歴として折りたたみ表示しているもの(51モデル)。更新はされない。† や ‡ の注記は model_config に写した。verified は ✓ の行だけ true。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Gemini-3.5-Flash",
+      "agent": "Default",
+      "model_raw": [
+        "Gemini-3.5-Flash"
+      ],
+      "model_ids": [
+        "gemini-3.5-flash"
+      ],
+      "model_config": null,
+      "score": 56.5,
+      "score_extra": {
+        "pass_at_1_pm": 2.7,
+        "pass_at_3": 68.5,
+        "pass_hat_3": 43.5,
+        "avg_turns": 44.7
+      },
+      "date": "2026-05-19",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "GPT-5.5-xhigh",
+      "agent": "Default",
+      "model_raw": [
+        "GPT-5.5-xhigh"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": "xhigh",
+      "score": 55.6,
+      "score_extra": {},
+      "date": "2026-04-24",
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://openai.com/index/introducing-gpt-5-5/"
+    },
+    {
+      "rank": 3,
+      "system": "GPT-5.4-xhigh",
+      "agent": "Default",
+      "model_raw": [
+        "GPT-5.4-xhigh"
+      ],
+      "model_ids": [
+        "gpt-5.4"
+      ],
+      "model_config": "xhigh",
+      "score": 54.6,
+      "score_extra": {},
+      "date": "2026-03-06",
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://openai.com/index/introducing-gpt-5-4/"
+    },
+    {
+      "rank": 4,
+      "system": "DeepSeek-V4-Pro Max",
+      "agent": "Default",
+      "model_raw": [
+        "DeepSeek-V4-Pro Max"
+      ],
+      "model_ids": [
+        "deepseek-v4-pro"
+      ],
+      "model_config": "Max",
+      "score": 52.8,
+      "score_extra": {
+        "pass_at_1_pm": 1.9,
+        "pass_at_3": 63.9,
+        "pass_hat_3": 38.9,
+        "avg_turns": 24.1
+      },
+      "date": "2026-04-25",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "Claude-Opus-4.7",
+      "agent": "Default",
+      "model_raw": [
+        "Claude-Opus-4.7"
+      ],
+      "model_ids": [
+        "claude-opus-4.7"
+      ],
+      "model_config": "† Claude-Opus は予算の都合で1回だけ評価(ボード注記)",
+      "score": 52.8,
+      "score_extra": {
+        "avg_turns": 16.2
+      },
+      "date": "2026-04-25",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 6,
+      "system": "GPT-5.3-Codex-xhigh",
+      "agent": "Default",
+      "model_raw": [
+        "GPT-5.3-Codex-xhigh"
+      ],
+      "model_ids": [
+        "gpt-5.3-codex"
+      ],
+      "model_config": "xhigh",
+      "score": 51.9,
+      "score_extra": {},
+      "date": "2026-03-06",
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://openai.com/index/introducing-gpt-5-4/"
+    },
+    {
+      "rank": 7,
+      "system": "Kimi-K2.6",
+      "agent": "Default",
+      "model_raw": [
+        "Kimi-K2.6"
+      ],
+      "model_ids": [
+        "kimi-k2.6"
+      ],
+      "model_config": null,
+      "score": 50.0,
+      "score_extra": {},
+      "date": "2026-04-21",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://huggingface.co/moonshotai/Kimi-K2.6"
+    },
+    {
+      "rank": 8,
+      "system": "Gemini-3-Flash",
+      "agent": "Default",
+      "model_raw": [
+        "Gemini-3-Flash"
+      ],
+      "model_ids": [
+        "gemini-3-flash"
+      ],
+      "model_config": null,
+      "score": 49.4,
+      "score_extra": {
+        "pass_at_1_pm": 0.4,
+        "pass_at_3": 59.3,
+        "pass_hat_3": 36.1,
+        "avg_turns": 28.6
+      },
+      "date": "2025-12-18",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 9,
+      "system": "Gemini-3.1-Pro",
+      "agent": "Default",
+      "model_raw": [
+        "Gemini-3.1-Pro"
+      ],
+      "model_ids": [
+        "gemini-3.1-pro"
+      ],
+      "model_config": null,
+      "score": 48.8,
+      "score_extra": {
+        "pass_at_1_pm": 2.3,
+        "pass_at_3": 62.0,
+        "pass_hat_3": 34.3,
+        "avg_turns": 27.9
+      },
+      "date": "2026-03-13",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 10,
+      "system": "DeepSeek-V4-Flash Max",
+      "agent": "Default",
+      "model_raw": [
+        "DeepSeek-V4-Flash Max"
+      ],
+      "model_ids": [
+        "deepseek-v4-flash"
+      ],
+      "model_config": "Max",
+      "score": 48.2,
+      "score_extra": {
+        "pass_at_1_pm": 0.9,
+        "pass_at_3": 57.4,
+        "pass_hat_3": 37.0,
+        "avg_turns": 26.1
+      },
+      "date": "2026-04-25",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 11,
+      "system": "Claude-Opus-4.6",
+      "agent": "Claude Agent SDK",
+      "model_raw": [
+        "Claude-Opus-4.6"
+      ],
+      "model_ids": [
+        "claude-opus-4.6"
+      ],
+      "model_config": "† Claude-Opus は予算の都合で1回だけ評価(ボード注記)",
+      "score": 47.2,
+      "score_extra": {},
+      "date": "2026-03-06",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 12,
+      "system": "MiniMax-M2.7",
+      "agent": "Default",
+      "model_raw": [
+        "MiniMax-M2.7"
+      ],
+      "model_ids": [
+        "minimax-m2.7"
+      ],
+      "model_config": null,
+      "score": 46.3,
+      "score_extra": {},
+      "date": "2026-03-18",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://www.minimax.io/news/minimax-m27-en"
+    },
+    {
+      "rank": 13,
+      "system": "Claude-Sonnet-4.6",
+      "agent": "Default",
+      "model_raw": [
+        "Claude-Sonnet-4.6"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.6"
+      ],
+      "model_config": null,
+      "score": 44.8,
+      "score_extra": {
+        "pass_at_1_pm": 2.9,
+        "pass_at_3": 59.3,
+        "pass_hat_3": 30.6,
+        "avg_turns": 23.4
+      },
+      "date": "2026-02-23",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 14,
+      "system": "GPT-5.2-xhigh",
+      "agent": "Default",
+      "model_raw": [
+        "GPT-5.2-xhigh"
+      ],
+      "model_ids": [
+        "gpt-5.2"
+      ],
+      "model_config": "xhigh; ‡ Responses API 対応に改修したコードで評価(ボード注記)",
+      "score": 43.8,
+      "score_extra": {
+        "pass_at_1_pm": 1.2,
+        "pass_at_3": 50.9,
+        "pass_hat_3": 33.3,
+        "avg_turns": 28.2
+      },
+      "date": "2025-12-18",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 15,
+      "system": "Claude-Opus-4.5",
+      "agent": "Default",
+      "model_raw": [
+        "Claude-Opus-4.5"
+      ],
+      "model_ids": [
+        "claude-opus-4.5"
+      ],
+      "model_config": null,
+      "score": 43.5,
+      "score_extra": {
+        "pass_at_1_pm": 0.8,
+        "pass_at_3": 57.4,
+        "pass_hat_3": 30.6,
+        "avg_turns": 18.7
+      },
+      "date": "2025-11-27",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 16,
+      "system": "GPT-5.4-mini-xhigh",
+      "agent": "Default",
+      "model_raw": [
+        "GPT-5.4-mini-xhigh"
+      ],
+      "model_ids": [
+        "gpt-5.4-mini"
+      ],
+      "model_config": "xhigh",
+      "score": 42.9,
+      "score_extra": {},
+      "date": "2026-03-17",
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/"
+    },
+    {
+      "rank": 17,
+      "system": "GPT-5.2-high",
+      "agent": "Default",
+      "model_raw": [
+        "GPT-5.2-high"
+      ],
+      "model_ids": [
+        "gpt-5.2"
+      ],
+      "model_config": "high; ‡ Responses API 対応に改修したコードで評価(ボード注記)",
+      "score": 41.7,
+      "score_extra": {
+        "pass_at_1_pm": 1.3,
+        "pass_at_3": 54.6,
+        "pass_hat_3": 28.7,
+        "avg_turns": 23.9
+      },
+      "date": "2025-12-17",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 18,
+      "system": "MiniMax-M2.1",
+      "agent": "Default",
+      "model_raw": [
+        "MiniMax-M2.1"
+      ],
+      "model_ids": [
+        "minimax-m2.1"
+      ],
+      "model_config": null,
+      "score": 40.7,
+      "score_extra": {
+        "pass_at_1_pm": 0.8,
+        "pass_at_3": 51.9,
+        "pass_hat_3": 27.8,
+        "avg_turns": 17.8
+      },
+      "date": "2025-12-25",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 19,
+      "system": "GLM-5.1",
+      "agent": "Default",
+      "model_raw": [
+        "GLM-5.1"
+      ],
+      "model_ids": [
+        "glm-5.1"
+      ],
+      "model_config": null,
+      "score": 40.7,
+      "score_extra": {},
+      "date": "2026-04-07",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://z.ai/blog/glm-5.1"
+    },
+    {
+      "rank": 20,
+      "system": "Qwen3.6-Plus",
+      "agent": "Default",
+      "model_raw": [
+        "Qwen3.6-Plus"
+      ],
+      "model_ids": [
+        "qwen3.6-plus"
+      ],
+      "model_config": null,
+      "score": 39.8,
+      "score_extra": {},
+      "date": "2026-04-02",
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://qwen.ai/blog?id=qwen3.6"
+    },
+    {
+      "rank": 21,
+      "system": "GLM-5",
+      "agent": "Default",
+      "model_raw": [
+        "GLM-5"
+      ],
+      "model_ids": [
+        "glm-5"
+      ],
+      "model_config": null,
+      "score": 39.2,
+      "score_extra": {
+        "pass_at_1_pm": 1.2,
+        "pass_at_3": 51.9,
+        "pass_hat_3": 25.9,
+        "avg_turns": 16.5
+      },
+      "date": "2026-02-13",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 22,
+      "system": "Claude-Sonnet-4.5",
+      "agent": "Default",
+      "model_raw": [
+        "Claude-Sonnet-4.5"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": null,
+      "score": 38.9,
+      "score_extra": {
+        "pass_at_1_pm": 3.0,
+        "pass_at_3": 52.8,
+        "pass_hat_3": 20.4,
+        "avg_turns": 20.2
+      },
+      "date": "2025-10-28",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 23,
+      "system": "MiniMax-M2.5",
+      "agent": "Default",
+      "model_raw": [
+        "MiniMax-M2.5"
+      ],
+      "model_ids": [
+        "minimax-m2.5"
+      ],
+      "model_config": null,
+      "score": 38.3,
+      "score_extra": {},
+      "date": "2026-03-18",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://www.minimax.io/news/minimax-m27-en"
+    },
+    {
+      "rank": 24,
+      "system": "Qwen3.5-397B-A17B",
+      "agent": "Default",
+      "model_raw": [
+        "Qwen3.5-397B-A17B"
+      ],
+      "model_ids": [
+        "qwen3.5-397b-a17b"
+      ],
+      "model_config": null,
+      "score": 38.3,
+      "score_extra": {},
+      "date": "2026-04-02",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://qwen.ai/blog?id=qwen3.6"
+    },
+    {
+      "rank": 25,
+      "system": "GPT-5-high",
+      "agent": "Default",
+      "model_raw": [
+        "GPT-5-high"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": "high; ‡ Responses API 対応に改修したコードで評価(ボード注記)",
+      "score": 37.7,
+      "score_extra": {
+        "pass_at_1_pm": 1.2,
+        "pass_at_3": 50.9,
+        "pass_hat_3": 19.4,
+        "avg_turns": 25.7
+      },
+      "date": "2025-12-17",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 26,
+      "system": "Qwen3.5-Plus",
+      "agent": "Default",
+      "model_raw": [
+        "Qwen3.5-Plus"
+      ],
+      "model_ids": [
+        "qwen3.5-plus"
+      ],
+      "model_config": null,
+      "score": 37.7,
+      "score_extra": {
+        "pass_at_1_pm": 1.2,
+        "pass_at_3": 49.1,
+        "pass_hat_3": 25.9,
+        "avg_turns": 17.4
+      },
+      "date": "2026-02-21",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 27,
+      "system": "GPT-5.1-high",
+      "agent": "Default",
+      "model_raw": [
+        "GPT-5.1-high"
+      ],
+      "model_ids": [
+        "gpt-5.1"
+      ],
+      "model_config": "high; ‡ Responses API 対応に改修したコードで評価(ボード注記)",
+      "score": 37.0,
+      "score_extra": {
+        "pass_at_1_pm": 2.7,
+        "pass_at_3": 50.0,
+        "pass_hat_3": 20.4,
+        "avg_turns": 19.0
+      },
+      "date": "2025-12-17",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 28,
+      "system": "Gemini-3-Pro",
+      "agent": "Default",
+      "model_raw": [
+        "Gemini-3-Pro"
+      ],
+      "model_ids": [
+        "gemini-3-pro"
+      ],
+      "model_config": null,
+      "score": 36.4,
+      "score_extra": {
+        "pass_at_1_pm": 0.4,
+        "pass_at_3": 48.1,
+        "pass_hat_3": 23.1,
+        "avg_turns": 19.0
+      },
+      "date": "2025-11-22",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 29,
+      "system": "GPT-5.4-nano-xhigh",
+      "agent": "Default",
+      "model_raw": [
+        "GPT-5.4-nano-xhigh"
+      ],
+      "model_ids": [
+        "gpt-5.4-nano"
+      ],
+      "model_config": "xhigh",
+      "score": 35.5,
+      "score_extra": {},
+      "date": "2026-03-17",
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/"
+    },
+    {
+      "rank": 30,
+      "system": "DeepSeek-V3.2-Thinking",
+      "agent": "Default",
+      "model_raw": [
+        "DeepSeek-V3.2-Thinking"
+      ],
+      "model_ids": [
+        "deepseek-v3.2"
+      ],
+      "model_config": "Thinking",
+      "score": 35.2,
+      "score_extra": {
+        "pass_at_1_pm": 0.8,
+        "pass_at_3": 54.6,
+        "pass_hat_3": 16.7,
+        "avg_turns": 43.7
+      },
+      "date": "2025-12-01",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 31,
+      "system": "Qwen3.5-27B",
+      "agent": "Default",
+      "model_raw": [
+        "Qwen3.5-27B"
+      ],
+      "model_ids": [
+        "qwen3.5-27b"
+      ],
+      "model_config": null,
+      "score": 31.5,
+      "score_extra": {},
+      "date": "2026-04-17",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://qwen.ai/blog?id=qwen3.6-35b-a3b"
+    },
+    {
+      "rank": 32,
+      "system": "Claude-Sonnet-4",
+      "agent": "Default",
+      "model_raw": [
+        "Claude-Sonnet-4"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": null,
+      "score": 29.9,
+      "score_extra": {
+        "pass_at_1_pm": 1.6,
+        "pass_at_3": 41.7,
+        "pass_hat_3": 17.6,
+        "avg_turns": 27.3
+      },
+      "date": "2025-10-28",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 33,
+      "system": "Qwen3.5-35BA3B",
+      "agent": "Default",
+      "model_raw": [
+        "Qwen3.5-35BA3B"
+      ],
+      "model_ids": [
+        "qwen3.5-35b-a3b"
+      ],
+      "model_config": null,
+      "score": 28.7,
+      "score_extra": {},
+      "date": "2026-04-17",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://qwen.ai/blog?id=qwen3.6-35b-a3b"
+    },
+    {
+      "rank": 34,
+      "system": "Kimi-K2.5",
+      "agent": "Default",
+      "model_raw": [
+        "Kimi-K2.5"
+      ],
+      "model_ids": [
+        "kimi-k2.5"
+      ],
+      "model_config": null,
+      "score": 27.8,
+      "score_extra": {
+        "pass_at_1_pm": 0.8,
+        "pass_at_3": 38.9,
+        "pass_hat_3": 14.8,
+        "avg_turns": 17.2
+      },
+      "date": "2026-02-04",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 35,
+      "system": "Grok-4",
+      "agent": "Default",
+      "model_raw": [
+        "Grok-4"
+      ],
+      "model_ids": [
+        "grok-4"
+      ],
+      "model_config": null,
+      "score": 27.5,
+      "score_extra": {
+        "pass_at_1_pm": 1.7,
+        "pass_at_3": 38.9,
+        "pass_hat_3": 16.7,
+        "avg_turns": 20.3
+      },
+      "date": "2025-10-28",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 36,
+      "system": "Qwen3.6-35BA3B",
+      "agent": "Default",
+      "model_raw": [
+        "Qwen3.6-35BA3B"
+      ],
+      "model_ids": [
+        "qwen3.6-35b-a3b"
+      ],
+      "model_config": null,
+      "score": 26.9,
+      "score_extra": {},
+      "date": "2026-04-17",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://qwen.ai/blog?id=qwen3.6-35b-a3b"
+    },
+    {
+      "rank": 37,
+      "system": "Claude-Haiku-4.5",
+      "agent": "Default",
+      "model_raw": [
+        "Claude-Haiku-4.5"
+      ],
+      "model_ids": [
+        "claude-haiku-4.5"
+      ],
+      "model_config": null,
+      "score": 26.2,
+      "score_extra": {
+        "pass_at_1_pm": 1.9,
+        "pass_at_3": 39.8,
+        "pass_hat_3": 13.0,
+        "avg_turns": 21.9
+      },
+      "date": "2025-10-28",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 38,
+      "system": "GLM-4.7",
+      "agent": "Default",
+      "model_raw": [
+        "GLM-4.7"
+      ],
+      "model_ids": [
+        "glm-4.7"
+      ],
+      "model_config": null,
+      "score": 23.8,
+      "score_extra": {
+        "pass_at_1_pm": 1.2,
+        "pass_at_3": 36.1,
+        "pass_hat_3": 10.2,
+        "avg_turns": 27.8
+      },
+      "date": "2025-12-25",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 39,
+      "system": "DeepSeek-V3.2-Exp",
+      "agent": "Default",
+      "model_raw": [
+        "DeepSeek-V3.2-Exp"
+      ],
+      "model_ids": [
+        "deepseek-v3.2-exp"
+      ],
+      "model_config": null,
+      "score": 20.1,
+      "score_extra": {
+        "pass_at_1_pm": 1.2,
+        "pass_at_3": 27.8,
+        "pass_hat_3": 12.0,
+        "avg_turns": 26.0
+      },
+      "date": "2025-10-28",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 40,
+      "system": "GLM-4.6",
+      "agent": "Default",
+      "model_raw": [
+        "GLM-4.6"
+      ],
+      "model_ids": [
+        "glm-4.6"
+      ],
+      "model_config": null,
+      "score": 18.8,
+      "score_extra": {
+        "pass_at_1_pm": 2.2,
+        "pass_at_3": 29.6,
+        "pass_hat_3": 9.3,
+        "avg_turns": 27.9
+      },
+      "date": "2025-10-28",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 41,
+      "system": "Grok-Code-Fast-1",
+      "agent": "Default",
+      "model_raw": [
+        "Grok-Code-Fast-1"
+      ],
+      "model_ids": [
+        "grok-code-fast-1"
+      ],
+      "model_config": null,
+      "score": 18.5,
+      "score_extra": {
+        "pass_at_1_pm": 2.0,
+        "pass_at_3": 30.6,
+        "pass_hat_3": 9.3,
+        "avg_turns": 20.2
+      },
+      "date": "2025-10-28",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 42,
+      "system": "Grok-4-Fast",
+      "agent": "Default",
+      "model_raw": [
+        "Grok-4-Fast"
+      ],
+      "model_ids": [
+        "grok-4-fast"
+      ],
+      "model_config": null,
+      "score": 18.5,
+      "score_extra": {
+        "pass_at_1_pm": 2.0,
+        "pass_at_3": 32.4,
+        "pass_hat_3": 5.6,
+        "avg_turns": 15.9
+      },
+      "date": "2025-10-28",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 43,
+      "system": "Kimi-K2-thinking",
+      "agent": "Default",
+      "model_raw": [
+        "Kimi-K2-thinking"
+      ],
+      "model_ids": [
+        "kimi-k2-thinking"
+      ],
+      "model_config": null,
+      "score": 17.6,
+      "score_extra": {
+        "pass_at_1_pm": 2.0,
+        "pass_at_3": 29.6,
+        "pass_hat_3": 4.6,
+        "avg_turns": 24.4
+      },
+      "date": "2025-11-22",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 44,
+      "system": "o3",
+      "agent": "Default",
+      "model_raw": [
+        "o3"
+      ],
+      "model_ids": [
+        "o3"
+      ],
+      "model_config": null,
+      "score": 17.0,
+      "score_extra": {
+        "pass_at_1_pm": 0.9,
+        "pass_at_3": 25.0,
+        "pass_hat_3": 9.3,
+        "avg_turns": 19.4
+      },
+      "date": "2025-10-28",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 45,
+      "system": "o4-mini",
+      "agent": "Default",
+      "model_raw": [
+        "o4-mini"
+      ],
+      "model_ids": [
+        "o4-mini"
+      ],
+      "model_config": null,
+      "score": 14.8,
+      "score_extra": {
+        "pass_at_1_pm": 0.8,
+        "pass_at_3": 26.9,
+        "pass_hat_3": 3.7,
+        "avg_turns": 16.6
+      },
+      "date": "2025-10-28",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 46,
+      "system": "GPT-5-mini",
+      "agent": "Default",
+      "model_raw": [
+        "GPT-5-mini"
+      ],
+      "model_ids": [
+        "gpt-5-mini"
+      ],
+      "model_config": null,
+      "score": 14.5,
+      "score_extra": {
+        "pass_at_1_pm": 1.2,
+        "pass_at_3": 23.1,
+        "pass_hat_3": 5.6,
+        "avg_turns": 19.7
+      },
+      "date": "2025-10-28",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 47,
+      "system": "Qwen-3-Coder",
+      "agent": "Default",
+      "model_raw": [
+        "Qwen-3-Coder"
+      ],
+      "model_ids": [
+        "qwen3-coder"
+      ],
+      "model_config": null,
+      "score": 14.5,
+      "score_extra": {
+        "pass_at_1_pm": 1.9,
+        "pass_at_3": 21.3,
+        "pass_hat_3": 6.5,
+        "avg_turns": 28.5
+      },
+      "date": "2025-10-28",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 48,
+      "system": "Gemini-3.1-Flash-Lite",
+      "agent": "Default",
+      "model_raw": [
+        "Gemini-3.1-Flash-Lite"
+      ],
+      "model_ids": [
+        "gemini-3.1-flash-lite"
+      ],
+      "model_config": null,
+      "score": 14.2,
+      "score_extra": {
+        "pass_at_1_pm": 1.2,
+        "pass_at_3": 20.4,
+        "pass_hat_3": 7.4,
+        "avg_turns": 31.2
+      },
+      "date": "2026-03-13",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 49,
+      "system": "Kimi-K2-0905",
+      "agent": "Default",
+      "model_raw": [
+        "Kimi-K2-0905"
+      ],
+      "model_ids": [
+        "kimi-k2-0905"
+      ],
+      "model_config": null,
+      "score": 13.0,
+      "score_extra": {
+        "pass_at_1_pm": 2.0,
+        "pass_at_3": 22.2,
+        "pass_hat_3": 5.6,
+        "avg_turns": 26.6
+      },
+      "date": "2025-10-28",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 50,
+      "system": "Gemini-2.5-Pro",
+      "agent": "Default",
+      "model_raw": [
+        "Gemini-2.5-Pro"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": null,
+      "score": 10.5,
+      "score_extra": {
+        "pass_at_1_pm": 1.9,
+        "pass_at_3": 21.3,
+        "pass_hat_3": 2.8,
+        "avg_turns": 26.5
+      },
+      "date": "2025-10-28",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 51,
+      "system": "Gemini-2.5-Flash",
+      "agent": "Default",
+      "model_raw": [
+        "Gemini-2.5-Flash"
+      ],
+      "model_ids": [
+        "gemini-2.5-flash"
+      ],
+      "model_config": null,
+      "score": 3.7,
+      "score_extra": {
+        "pass_at_1_pm": 1.5,
+        "pass_at_3": 8.3,
+        "pass_hat_3": 0.0,
+        "avg_turns": 8.3
+      },
+      "date": "2025-10-28",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    }
+  ]
+}

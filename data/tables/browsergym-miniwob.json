@@ -1,0 +1,460 @@
+{
+  "id": "browsergym-miniwob",
+  "family": "miniwob",
+  "name": "MiniWoB (BrowserGym)",
+  "board": "huggingface.co/spaces/ServiceNow/browsergym-leaderboard",
+  "category": "web",
+  "measures_ja": "ボタン押下や入力欄の操作など、小さな合成ウェブ画面での短い操作課題をこなせるか。",
+  "tasks": null,
+  "tasks_note": "BrowserGym で使うタスク数・シード数はボードに記載なし。",
+  "metric": "Score",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "BrowserGym 環境で走らせた結果を提出者が JSON で登録する。多くの行は AgentLab の GenericAgent に各モデルを載せたもので、独自エージェントの行も混ざる。",
+  "source": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard",
+  "fetched": [
+    "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+    "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/<agent>/miniwob.json",
+    "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/raw/main/app.py"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-03-16",
+  "snapshot": "sources/browsergym-miniwob/results_miniwob.json",
+  "paper": "https://arxiv.org/abs/2412.05467",
+  "repo": "https://github.com/ServiceNow/BrowserGym",
+  "notes_ja": "ボードの MiniWoB タブ。結果の無いエージェントはボードでは「-」行として並ぶが、ここでは除いた。system はエージェント名で、「足場-モデル」の形を agent と model_raw に分けた。score_extra の真偽系列(benchmark_specific など)は提出者の自己申告。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "OrbyAgent-Claude-3.5-Sonnet",
+      "agent": "OrbyAgent",
+      "model_raw": [
+        "Claude-3.5-Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 74.9,
+      "score_extra": {
+        "std_err": 1.2,
+        "benchmark_specific": "No",
+        "benchmark_tuned": "No",
+        "followed_evaluation_protocol": "Yes",
+        "reproducible": "Yes",
+        "study_id": "orby-agent-v0-claude-3.5-miniwob",
+        "comments": "NA"
+      },
+      "date": "2025-02-21",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/main/results/OrbyAgent-Claude-3.5-Sonnet/README.md"
+    },
+    {
+      "rank": 2,
+      "system": "GenericAgent-GPT-5",
+      "agent": "GenericAgent",
+      "model_raw": [
+        "GPT-5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": null,
+      "score": 71.5,
+      "score_extra": {
+        "std_err": 1.8,
+        "benchmark_specific": "No",
+        "benchmark_tuned": "No",
+        "followed_evaluation_protocol": "Yes",
+        "reproducible": "Yes",
+        "study_id": "2025-08-07_21-09-16",
+        "comments": "NA"
+      },
+      "date": "2025-08-07",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/main/results/GenericAgent-GPT-5/README.md"
+    },
+    {
+      "rank": 3,
+      "system": "GenericAgent-GPT-5-mini",
+      "agent": "GenericAgent",
+      "model_raw": [
+        "GPT-5-mini"
+      ],
+      "model_ids": [
+        "gpt-5-mini"
+      ],
+      "model_config": null,
+      "score": 71,
+      "score_extra": {
+        "std_err": 1.8,
+        "benchmark_specific": "No",
+        "benchmark_tuned": "No",
+        "followed_evaluation_protocol": "Yes",
+        "reproducible": "Yes",
+        "study_id": "2025-08-07_21-09-16",
+        "comments": "NA"
+      },
+      "date": "2025-08-07",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/main/results/GenericAgent-GPT-5-mini/README.md"
+    },
+    {
+      "rank": 4,
+      "system": "GenericAgent-Claude-4-Sonnet",
+      "agent": "GenericAgent",
+      "model_raw": [
+        "Claude-4-Sonnet"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": null,
+      "score": 70.7,
+      "score_extra": {
+        "std_err": 1.8,
+        "benchmark_specific": "No",
+        "benchmark_tuned": "No",
+        "followed_evaluation_protocol": "Yes",
+        "reproducible": "Yes",
+        "study_id": "2025-08-07_21-09-16",
+        "comments": "NA"
+      },
+      "date": "2025-08-07",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/main/results/GenericAgent-Claude-4-Sonnet/README.md"
+    },
+    {
+      "rank": 5,
+      "system": "GenericAgent-Claude-3.5-Sonnet",
+      "agent": "GenericAgent",
+      "model_raw": [
+        "Claude-3.5-Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 69.8,
+      "score_extra": {
+        "std_err": 1.8,
+        "benchmark_specific": "No",
+        "benchmark_tuned": "No",
+        "followed_evaluation_protocol": "Yes",
+        "reproducible": "Yes",
+        "study_id": "2024-10-25_06-08-16",
+        "comments": "NA"
+      },
+      "date": "2021-01-01",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/main/results/GenericAgent-Claude-3.5-Sonnet/README.md"
+    },
+    {
+      "rank": 6,
+      "system": "A3-Qwen3.5-9B",
+      "agent": null,
+      "model_raw": [
+        "A3-Qwen3.5-9B"
+      ],
+      "model_ids": [
+        "a3-qwen3.5-9b"
+      ],
+      "model_config": null,
+      "score": 69.0,
+      "score_extra": {
+        "std_err": 1.9,
+        "benchmark_specific": "No",
+        "benchmark_tuned": "No",
+        "followed_evaluation_protocol": "Yes",
+        "reproducible": "Yes",
+        "study_id": "2026-03-16_16-50-10_genericagent-checkpoints-qwen-qwen3-5-9b-web-pro-low-8903051-checkpoint-latest-on-miniwob",
+        "comments": "625 tasks. Fine-tuned on A3-Synth trajectories via the Agent-as-Annotators framework."
+      },
+      "date": "2026-03-16",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/main/results/A3-Qwen3.5-9B/README.md"
+    },
+    {
+      "rank": 7,
+      "system": "GenericAgent-GPT-o1-mini",
+      "agent": "GenericAgent",
+      "model_raw": [
+        "GPT-o1-mini"
+      ],
+      "model_ids": [
+        "o1-mini"
+      ],
+      "model_config": null,
+      "score": 67.8,
+      "score_extra": {
+        "std_err": 1.9,
+        "benchmark_specific": "No",
+        "benchmark_tuned": "No",
+        "followed_evaluation_protocol": "Yes",
+        "reproducible": "Yes",
+        "study_id": "2024-10-25_06-08-16",
+        "comments": "NA"
+      },
+      "date": "2024-10-25",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/main/results/GenericAgent-GPT-o1-mini/README.md"
+    },
+    {
+      "rank": 8,
+      "system": "GenericAgent-GPT-oss-120b",
+      "agent": "GenericAgent",
+      "model_raw": [
+        "GPT-oss-120b"
+      ],
+      "model_ids": [
+        "gpt-oss-120b"
+      ],
+      "model_config": null,
+      "score": 66.4,
+      "score_extra": {
+        "std_err": 1.9,
+        "benchmark_specific": "No",
+        "benchmark_tuned": "No",
+        "followed_evaluation_protocol": "Yes",
+        "reproducible": "Yes",
+        "study_id": "2025-08-07_21-09-16",
+        "comments": "NA"
+      },
+      "date": "2025-08-07",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/main/results/GenericAgent-GPT-oss-120b/README.md"
+    },
+    {
+      "rank": 9,
+      "system": "GenericAgent-GPT-5-nano",
+      "agent": "GenericAgent",
+      "model_raw": [
+        "GPT-5-nano"
+      ],
+      "model_ids": [
+        "gpt-5-nano"
+      ],
+      "model_config": null,
+      "score": 64.8,
+      "score_extra": {
+        "std_err": 1.9,
+        "benchmark_specific": "No",
+        "benchmark_tuned": "No",
+        "followed_evaluation_protocol": "Yes",
+        "reproducible": "Yes",
+        "study_id": "2025-08-07_21-09-16",
+        "comments": "NA"
+      },
+      "date": "2025-08-07",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/main/results/GenericAgent-GPT-5-nano/README.md"
+    },
+    {
+      "rank": 10,
+      "system": "GenericAgent-Llama-3.1-405b",
+      "agent": "GenericAgent",
+      "model_raw": [
+        "Llama-3.1-405b"
+      ],
+      "model_ids": [
+        "llama-3.1-405b"
+      ],
+      "model_config": null,
+      "score": 64.6,
+      "score_extra": {
+        "std_err": 1.9,
+        "benchmark_specific": "No",
+        "benchmark_tuned": "No",
+        "followed_evaluation_protocol": "Yes",
+        "reproducible": "Yes",
+        "study_id": "4d748972-6d35-4489-a197-138b656a7db3",
+        "comments": "NA"
+      },
+      "date": "2024-11-29",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/main/results/GenericAgent-Llama-3.1-405b/README.md"
+    },
+    {
+      "rank": 11,
+      "system": "OrbyAgent-ActIO-72b",
+      "agent": "OrbyAgent",
+      "model_raw": [
+        "ActIO-72b"
+      ],
+      "model_ids": [
+        "actio-72b"
+      ],
+      "model_config": null,
+      "score": 64.2,
+      "score_extra": {
+        "std_err": 1.4,
+        "benchmark_specific": "No",
+        "benchmark_tuned": "No",
+        "followed_evaluation_protocol": "Yes",
+        "reproducible": "Yes",
+        "study_id": "orby-agent-v0-actio-v0-miniwob",
+        "comments": "NA"
+      },
+      "date": "2025-02-21",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/main/results/OrbyAgent-ActIO-72b/README.md"
+    },
+    {
+      "rank": 12,
+      "system": "GenericAgent-GPT-oss-20b",
+      "agent": "GenericAgent",
+      "model_raw": [
+        "GPT-oss-20b"
+      ],
+      "model_ids": [
+        "gpt-oss-20b"
+      ],
+      "model_config": null,
+      "score": 64,
+      "score_extra": {
+        "std_err": 1.9,
+        "benchmark_specific": "No",
+        "benchmark_tuned": "No",
+        "followed_evaluation_protocol": "Yes",
+        "reproducible": "Yes",
+        "study_id": "2025-08-07_21-09-16",
+        "comments": "NA"
+      },
+      "date": "2025-08-07",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/main/results/GenericAgent-GPT-oss-20b/README.md"
+    },
+    {
+      "rank": 13,
+      "system": "GenericAgent-GPT-4o",
+      "agent": "GenericAgent",
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 63.8,
+      "score_extra": {
+        "std_err": 1.9,
+        "benchmark_specific": "No",
+        "benchmark_tuned": "No",
+        "followed_evaluation_protocol": "Yes",
+        "reproducible": "Yes",
+        "study_id": "2024-10-25_06-08-16",
+        "comments": "NA"
+      },
+      "date": "2021-01-01",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/main/results/GenericAgent-GPT-4o/README.md"
+    },
+    {
+      "rank": 14,
+      "system": "GenericAgent-AgentTrek-1.0-32b",
+      "agent": "GenericAgent",
+      "model_raw": [
+        "AgentTrek-1.0-32b"
+      ],
+      "model_ids": [
+        "agenttrek-1.0-32b"
+      ],
+      "model_config": null,
+      "score": 60.0,
+      "score_extra": {
+        "std_err": 2.0,
+        "benchmark_specific": "No",
+        "benchmark_tuned": "No",
+        "followed_evaluation_protocol": "Yes",
+        "reproducible": "Yes",
+        "study_id": "4c636aa0-ea52-429d-9d7e-301b7bf0ac74",
+        "comments": "Additional details"
+      },
+      "date": "2025-01-22",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/main/results/GenericAgent-AgentTrek-1.0-32b/README.md"
+    },
+    {
+      "rank": 15,
+      "system": "GenericAgent-Llama-3.1-70b",
+      "agent": "GenericAgent",
+      "model_raw": [
+        "Llama-3.1-70b"
+      ],
+      "model_ids": [
+        "llama-3.1-70b"
+      ],
+      "model_config": null,
+      "score": 57.6,
+      "score_extra": {
+        "std_err": 2.0,
+        "benchmark_specific": "No",
+        "benchmark_tuned": "No",
+        "followed_evaluation_protocol": "Yes",
+        "reproducible": "Yes",
+        "study_id": "2024-10-25_06-08-16",
+        "comments": "NA"
+      },
+      "date": "2024-10-25",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/main/results/GenericAgent-Llama-3.1-70b/README.md"
+    },
+    {
+      "rank": 16,
+      "system": "GenericAgent-GPT-4o-mini",
+      "agent": "GenericAgent",
+      "model_raw": [
+        "GPT-4o-mini"
+      ],
+      "model_ids": [
+        "gpt-4o-mini"
+      ],
+      "model_config": null,
+      "score": 56.6,
+      "score_extra": {
+        "std_err": 2.0,
+        "benchmark_specific": "No",
+        "benchmark_tuned": "No",
+        "followed_evaluation_protocol": "Yes",
+        "reproducible": "Yes",
+        "study_id": "2024-10-25_06-08-16",
+        "comments": "NA"
+      },
+      "date": "2021-01-01",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/main/results/GenericAgent-GPT-4o-mini/README.md"
+    }
+  ]
+}

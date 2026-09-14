@@ -1,0 +1,424 @@
+{
+  "id": "swe-bench-live-rust",
+  "family": "swe-bench-live",
+  "name": "SWE-bench-Live Rust",
+  "board": "swe-bench-live.github.io",
+  "category": "coding",
+  "measures_ja": "SWE-bench-Live/MultiLang の Rust タスクで、テストを通すパッチを作れるか。",
+  "tasks": null,
+  "tasks_note": "行ごとに total(評価したインスタンス数)が異なる: 45, 64, 94。データセットが月次で増えるため固定の件数が無い。",
+  "metric": "Resolved (%)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "提出者がそれぞれの足場で走らせた結果を載せる。メンテナ(Microsoft)が OpenHands・SWE-agent・Claude Code 等で走らせた参照行も含む。",
+  "source": "https://swe-bench-live.github.io/",
+  "fetched": [
+    "https://swe-bench-live.github.io/reports-0605.jsonl",
+    "https://swe-bench-live.github.io/leaderboard.js",
+    "https://swe-bench-live.github.io/"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-06-25",
+  "snapshot": "sources/swe-bench-live-rust/reports-0605_rust.json",
+  "paper": "https://arxiv.org/abs/2505.23419",
+  "repo": "https://github.com/microsoft/SWE-bench-Live",
+  "notes_ja": "score はボードと同じく resolved / total を小数1桁に丸めた値。total が行ごとに違う表では分母が揃っていない。verified は 2026-08 以降の検証済み提出に付く Verified タグ。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "AMI Agent + Claude-4.6-Opus",
+      "agent": "AMI Agent",
+      "model_raw": [
+        "Claude-4.6-Opus"
+      ],
+      "model_ids": [
+        "claude-opus-4.6"
+      ],
+      "model_config": null,
+      "score": 48.9,
+      "score_extra": {
+        "resolved_count": 46,
+        "num_valid_inst": 94
+      },
+      "date": "2026-06-25",
+      "verified": false,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://github.com/SWE-bench-Live/submission/tree/main/submissions/multilang/rust/ami-agent/20260625-claude-opus-4-6"
+    },
+    {
+      "rank": 2,
+      "system": "SWE-agent + Gemini3-Flash",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "Gemini3-Flash"
+      ],
+      "model_ids": [
+        "gemini-3-flash"
+      ],
+      "model_config": null,
+      "score": 37.8,
+      "score_extra": {
+        "resolved_count": 17,
+        "num_valid_inst": 45
+      },
+      "date": "2026-01-08",
+      "verified": false,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "OpenHands + Gemini3-Flash",
+      "agent": "OpenHands",
+      "model_raw": [
+        "Gemini3-Flash"
+      ],
+      "model_ids": [
+        "gemini-3-flash"
+      ],
+      "model_config": null,
+      "score": 35.6,
+      "score_extra": {
+        "resolved_count": 16,
+        "num_valid_inst": 45
+      },
+      "date": "2026-01-08",
+      "verified": false,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "SWE-agent + Deepseek-v4-Pro",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "Deepseek-v4-Pro"
+      ],
+      "model_ids": [
+        "deepseek-v4-pro"
+      ],
+      "model_config": null,
+      "score": 34.4,
+      "score_extra": {
+        "resolved_count": 22,
+        "num_valid_inst": 64
+      },
+      "date": "2026-06-05",
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://github.com/SWE-bench-Live/submission/tree/main/submissions/multilang/all_languages/sweagent/deepseek-v4-pro"
+    },
+    {
+      "rank": 5,
+      "system": "Claude Code + GPT5.2-Thinking (Medium)",
+      "agent": "Claude Code",
+      "model_raw": [
+        "GPT5.2-Thinking (Medium)"
+      ],
+      "model_ids": [
+        "gpt-5.2"
+      ],
+      "model_config": "Thinking Medium",
+      "score": 33.3,
+      "score_extra": {
+        "resolved_count": 15,
+        "num_valid_inst": 45
+      },
+      "date": "2026-01-08",
+      "verified": false,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 6,
+      "system": "Claude Code + GPT-5.5 (Medium)",
+      "agent": "Claude Code",
+      "model_raw": [
+        "GPT-5.5 (Medium)"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": "Medium",
+      "score": 32.8,
+      "score_extra": {
+        "resolved_count": 21,
+        "num_valid_inst": 64
+      },
+      "date": "2026-06-05",
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://github.com/SWE-bench-Live/submission/tree/main/submissions/multilang/all_languages/claudecode/gpt-5.5-medium"
+    },
+    {
+      "rank": 7,
+      "system": "Claude Code + Deepseek-v4-Pro",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Deepseek-v4-Pro"
+      ],
+      "model_ids": [
+        "deepseek-v4-pro"
+      ],
+      "model_config": null,
+      "score": 29.7,
+      "score_extra": {
+        "resolved_count": 19,
+        "num_valid_inst": 64
+      },
+      "date": "2026-06-05",
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://github.com/SWE-bench-Live/submission/tree/main/submissions/multilang/all_languages/claudecode/deepseek-v4-pro"
+    },
+    {
+      "rank": 8,
+      "system": "OpenHands + GPT-5.5 (Medium)",
+      "agent": "OpenHands",
+      "model_raw": [
+        "GPT-5.5 (Medium)"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": "Medium",
+      "score": 29.7,
+      "score_extra": {
+        "resolved_count": 19,
+        "num_valid_inst": 64
+      },
+      "date": "2026-06-05",
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://github.com/SWE-bench-Live/submission/tree/main/submissions/multilang/all_languages/openhands/gpt-5.5-medium"
+    },
+    {
+      "rank": 9,
+      "system": "SWE-agent + DeepSeek-V3.1-Terminus",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "DeepSeek-V3.1-Terminus"
+      ],
+      "model_ids": [
+        "deepseek-v3.1-terminus"
+      ],
+      "model_config": null,
+      "score": 28.9,
+      "score_extra": {
+        "resolved_count": 13,
+        "num_valid_inst": 45
+      },
+      "date": "2026-01-08",
+      "verified": false,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 10,
+      "system": "SWE-agent + Claude-4.5-Sonnet",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "Claude-4.5-Sonnet"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": null,
+      "score": 28.9,
+      "score_extra": {
+        "resolved_count": 13,
+        "num_valid_inst": 45
+      },
+      "date": "2026-01-08",
+      "verified": false,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 11,
+      "system": "SWE-agent + GPT5.2-Thinking (Medium)",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "GPT5.2-Thinking (Medium)"
+      ],
+      "model_ids": [
+        "gpt-5.2"
+      ],
+      "model_config": "Thinking Medium",
+      "score": 28.9,
+      "score_extra": {
+        "resolved_count": 13,
+        "num_valid_inst": 45
+      },
+      "date": "2026-01-08",
+      "verified": false,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 12,
+      "system": "OpenHands + Deepseek-v4-Pro",
+      "agent": "OpenHands",
+      "model_raw": [
+        "Deepseek-v4-Pro"
+      ],
+      "model_ids": [
+        "deepseek-v4-pro"
+      ],
+      "model_config": null,
+      "score": 28.1,
+      "score_extra": {
+        "resolved_count": 18,
+        "num_valid_inst": 64
+      },
+      "date": "2026-06-05",
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://github.com/SWE-bench-Live/submission/tree/main/submissions/multilang/all_languages/openhands/deepseek-v4-pro"
+    },
+    {
+      "rank": 13,
+      "system": "SWE-agent + GPT-5.5 (Medium)",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "GPT-5.5 (Medium)"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": "Medium",
+      "score": 28.1,
+      "score_extra": {
+        "resolved_count": 18,
+        "num_valid_inst": 64
+      },
+      "date": "2026-06-05",
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://github.com/SWE-bench-Live/submission/tree/main/submissions/multilang/all_languages/sweagent/gpt-5.5-medium"
+    },
+    {
+      "rank": 14,
+      "system": "OpenHands + DeepSeek-V3.1-Terminus",
+      "agent": "OpenHands",
+      "model_raw": [
+        "DeepSeek-V3.1-Terminus"
+      ],
+      "model_ids": [
+        "deepseek-v3.1-terminus"
+      ],
+      "model_config": null,
+      "score": 26.7,
+      "score_extra": {
+        "resolved_count": 12,
+        "num_valid_inst": 45
+      },
+      "date": "2026-01-08",
+      "verified": false,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 15,
+      "system": "OpenHands + Claude-4.5-Sonnet",
+      "agent": "OpenHands",
+      "model_raw": [
+        "Claude-4.5-Sonnet"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": null,
+      "score": 26.7,
+      "score_extra": {
+        "resolved_count": 12,
+        "num_valid_inst": 45
+      },
+      "date": "2026-01-08",
+      "verified": false,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 16,
+      "system": "OpenHands + GPT5.2-Thinking (Medium)",
+      "agent": "OpenHands",
+      "model_raw": [
+        "GPT5.2-Thinking (Medium)"
+      ],
+      "model_ids": [
+        "gpt-5.2"
+      ],
+      "model_config": "Thinking Medium",
+      "score": 26.7,
+      "score_extra": {
+        "resolved_count": 12,
+        "num_valid_inst": 45
+      },
+      "date": "2026-01-08",
+      "verified": false,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 17,
+      "system": "Claude Code + Claude-4.5-Sonnet",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Claude-4.5-Sonnet"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": null,
+      "score": 22.2,
+      "score_extra": {
+        "resolved_count": 10,
+        "num_valid_inst": 45
+      },
+      "date": "2026-01-08",
+      "verified": false,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 18,
+      "system": "Claude Code + DeepSeek-V3.1-Terminus",
+      "agent": "Claude Code",
+      "model_raw": [
+        "DeepSeek-V3.1-Terminus"
+      ],
+      "model_ids": [
+        "deepseek-v3.1-terminus"
+      ],
+      "model_config": null,
+      "score": 17.8,
+      "score_extra": {
+        "resolved_count": 8,
+        "num_valid_inst": 45
+      },
+      "date": "2026-01-08",
+      "verified": false,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    }
+  ]
+}

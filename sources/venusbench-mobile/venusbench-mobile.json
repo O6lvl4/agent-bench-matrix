@@ -1,0 +1,473 @@
+{
+  "metadata": {
+    "benchmark": "VenusBench-Mobile",
+    "title": "VenusBench-Mobile Leaderboard",
+    "subtitle": "A Challenging and User-Centric Benchmark for Mobile GUI Agents with Capability Diagnostics",
+    "team": "Venus Team, Ant Group",
+    "lastUpdated": "May 11, 2026",
+    "source": "VenusBench-Mobile paper tables and latest submitted results",
+    "primaryMetric": "total",
+    "taskColumns": [
+      { "key": "fa", "label": "FA", "description": "Function Assistance" },
+      { "key": "cf", "label": "CF", "description": "Conflict Handling" },
+      { "key": "va", "label": "VA", "description": "Vague Instructions" },
+      { "key": "mr", "label": "MR", "description": "Multi-round Interaction" },
+      { "key": "gsa", "label": "GSA", "description": "GUI State Awareness" },
+      { "key": "guim", "label": "GUIM", "description": "Visual Manipulation" },
+      { "key": "hgb", "label": "HGB", "description": "Hard GUI Browsing" },
+      { "key": "nr", "label": "NR", "description": "Noise Resistance" },
+      { "key": "bc", "label": "BC", "description": "Browsecomp-like" }
+    ],
+    "stabilityColumns": [
+      { "key": "original", "label": "Original" },
+      { "key": "chinese", "label": "Chinese" },
+      { "key": "variation", "label": "Variation" },
+      { "key": "dark", "label": "Dark" },
+      { "key": "pad", "label": "Pad" },
+      { "key": "min", "label": "Min" },
+      { "key": "max", "label": "Max" },
+      { "key": "spr", "label": "SPR" }
+    ],
+    "diagnosticColumns": [
+      { "group": "Perception", "short": "P", "keys": ["p_l12", "p_l34"] },
+      { "group": "Understanding", "short": "U", "keys": ["u_l12", "u_l34"] },
+      { "group": "Decision", "short": "D", "keys": ["d_l12", "d_l34"] },
+      { "group": "Action", "short": "A", "keys": ["a_l12", "a_l34"] },
+      { "group": "Memory", "short": "M", "keys": ["m_l12", "m_l34"] }
+    ]
+  },
+  "models": [
+    {
+      "name": "Gemini-3-Pro + UI-Venus-72B",
+      "type": "Closed-source",
+      "setup": "Planner-executor",
+      "link": "",
+      "scores": {
+        "fa": 54.6,
+        "cf": 4.6,
+        "va": 56.3,
+        "mr": 20.0,
+        "gsa": 0.0,
+        "guim": 11.1,
+        "hgb": 41.2,
+        "nr": 75.0,
+        "bc": 40.0,
+        "total": 36.9
+      },
+      "stability": {
+        "original": 35,
+        "chinese": 35,
+        "variation": 25,
+        "dark": 35,
+        "pad": 30,
+        "min": 25,
+        "max": 35,
+        "spr": 15
+      },
+      "cost": {
+        "tt_k": 259.7,
+        "pt": 86.3
+      },
+      "diagnostics": {
+        "p_l12": 43,
+        "p_l34": 24,
+        "u_l12": 37,
+        "u_l34": 37,
+        "d_l12": 40,
+        "d_l34": 35,
+        "a_l12": 38,
+        "a_l34": 27,
+        "m_l12": 41,
+        "m_l34": 31
+      }
+    },
+    {
+      "name": "GPT-5.1 + UI-Venus-72B",
+      "type": "Closed-source",
+      "setup": "Planner-executor",
+      "link": "",
+      "scores": {
+        "fa": 54.6,
+        "cf": 0.0,
+        "va": 31.3,
+        "mr": 0.0,
+        "gsa": 0.0,
+        "guim": 11.1,
+        "hgb": 26.5,
+        "nr": 56.3,
+        "bc": 40.0,
+        "total": 26.9
+      },
+      "stability": {
+        "original": 40,
+        "chinese": 15,
+        "variation": 35,
+        "dark": 30,
+        "pad": 20,
+        "min": 15,
+        "max": 40,
+        "spr": 5
+      },
+      "cost": {
+        "tt_k": 167.5,
+        "pt": 54.6
+      },
+      "diagnostics": {
+        "p_l12": 30,
+        "p_l34": 20,
+        "u_l12": 28,
+        "u_l34": 25,
+        "d_l12": 28,
+        "d_l34": 26,
+        "a_l12": 26,
+        "a_l34": 33,
+        "m_l12": 27,
+        "m_l34": 27
+      }
+    },
+    {
+      "name": "Kimi K2.5",
+      "type": "Open-source",
+      "setup": "End-to-end standalone agent",
+      "link": "",
+      "scores": {
+        "fa": 40.9,
+        "cf": 0.0,
+        "va": 50.0,
+        "mr": 10.0,
+        "gsa": 0.0,
+        "guim": 0.0,
+        "hgb": 20.6,
+        "nr": 43.8,
+        "bc": 50.0,
+        "total": 24.8
+      }
+    },
+    {
+      "name": "Seed 2.0",
+      "type": "Closed-source",
+      "setup": "End-to-end standalone agent",
+      "link": "",
+      "scores": {
+        "fa": 18.2,
+        "cf": 4.6,
+        "va": 43.8,
+        "mr": 10.0,
+        "gsa": 0.0,
+        "guim": 11.1,
+        "hgb": 17.7,
+        "nr": 31.3,
+        "bc": 20.0,
+        "total": 18.1
+      }
+    },
+    {
+      "name": "UI-Venus-72B",
+      "type": "Open-source",
+      "setup": "End-to-end agent",
+      "link": "https://github.com/inclusionAI/UI-Venus",
+      "scores": {
+        "fa": 22.7,
+        "cf": 4.6,
+        "va": 12.5,
+        "mr": 0.0,
+        "gsa": 10.0,
+        "guim": 0.0,
+        "hgb": 17.7,
+        "nr": 50.0,
+        "bc": 0.0,
+        "total": 15.4
+      },
+      "stability": {
+        "original": 15,
+        "chinese": 15,
+        "variation": 20,
+        "dark": 15,
+        "pad": 5,
+        "min": 5,
+        "max": 20,
+        "spr": 0
+      },
+      "cost": {
+        "tt_k": 850.0,
+        "pt": 153.2
+      },
+      "diagnostics": {
+        "p_l12": 17,
+        "p_l34": 12,
+        "u_l12": 20,
+        "u_l34": 10,
+        "d_l12": 11,
+        "d_l34": 18,
+        "a_l12": 15,
+        "a_l34": 20,
+        "m_l12": 20,
+        "m_l34": 10
+      }
+    },
+    {
+      "name": "MAI-UI-8B",
+      "type": "Open-source",
+      "setup": "End-to-end agent",
+      "link": "",
+      "scores": {
+        "fa": 9.1,
+        "cf": 13.6,
+        "va": 25.0,
+        "mr": 0.0,
+        "gsa": 10.0,
+        "guim": 11.1,
+        "hgb": 5.9,
+        "nr": 31.3,
+        "bc": 10.0,
+        "total": 12.8
+      },
+      "stability": {
+        "original": 25,
+        "chinese": 20,
+        "variation": 30,
+        "dark": 30,
+        "pad": 15,
+        "min": 15,
+        "max": 30,
+        "spr": 0
+      },
+      "cost": {
+        "tt_k": 601.6,
+        "pt": 102.9
+      },
+      "diagnostics": {
+        "p_l12": 15,
+        "p_l34": 8,
+        "u_l12": 16,
+        "u_l34": 9,
+        "d_l12": 15,
+        "d_l34": 11,
+        "a_l12": 12,
+        "a_l34": 20,
+        "m_l12": 21,
+        "m_l34": 3
+      }
+    },
+    {
+      "name": "MA3 (GUI-Owl-7B)",
+      "type": "Open-source",
+      "setup": "Multi-agent framework",
+      "link": "",
+      "scores": {
+        "fa": 18.2,
+        "cf": 9.1,
+        "va": 6.3,
+        "mr": 0.0,
+        "gsa": 0.0,
+        "guim": 0.0,
+        "hgb": 11.8,
+        "nr": 31.3,
+        "bc": 20.0,
+        "total": 12.1
+      },
+      "stability": {
+        "original": 10,
+        "chinese": 15,
+        "variation": 15,
+        "dark": 20,
+        "pad": 10,
+        "min": 10,
+        "max": 20,
+        "spr": 0
+      },
+      "cost": {
+        "tt_k": 1640.0,
+        "pt": 438.7
+      },
+      "diagnostics": {
+        "p_l12": 12,
+        "p_l34": 12,
+        "u_l12": 13,
+        "u_l34": 10,
+        "d_l12": 11,
+        "d_l34": 13,
+        "a_l12": 12,
+        "a_l34": 13,
+        "m_l12": 13,
+        "m_l34": 10
+      }
+    },
+    {
+      "name": "Qwen3-VL-30B-A3B",
+      "type": "Open-source",
+      "setup": "End-to-end agent",
+      "link": "",
+      "scores": {
+        "fa": 22.7,
+        "cf": 4.6,
+        "va": 18.8,
+        "mr": 0.0,
+        "gsa": 0.0,
+        "guim": 0.0,
+        "hgb": 5.9,
+        "nr": 6.3,
+        "bc": 10.0,
+        "total": 8.7
+      },
+      "stability": {
+        "original": 10,
+        "chinese": 10,
+        "variation": 15,
+        "dark": 10,
+        "pad": 5,
+        "min": 5,
+        "max": 15,
+        "spr": 0
+      },
+      "cost": {
+        "tt_k": 463.2,
+        "pt": 138.9
+      },
+      "diagnostics": {
+        "p_l12": 10,
+        "p_l34": 6,
+        "u_l12": 9,
+        "u_l34": 9,
+        "d_l12": 17,
+        "d_l34": 4,
+        "a_l12": 8,
+        "a_l34": 13,
+        "m_l12": 12,
+        "m_l34": 4
+      }
+    },
+    {
+      "name": "UI-Venus-7B",
+      "type": "Open-source",
+      "setup": "End-to-end agent",
+      "link": "https://github.com/inclusionAI/UI-Venus",
+      "scores": {
+        "fa": 13.6,
+        "cf": 4.6,
+        "va": 25.0,
+        "mr": 0.0,
+        "gsa": 10.0,
+        "guim": 0.0,
+        "hgb": 0.0,
+        "nr": 18.8,
+        "bc": 0.0,
+        "total": 8.1
+      },
+      "stability": {
+        "original": 15,
+        "chinese": 20,
+        "variation": 15,
+        "dark": 10,
+        "pad": 5,
+        "min": 5,
+        "max": 20,
+        "spr": 5
+      },
+      "cost": {
+        "tt_k": 447.4,
+        "pt": 101.5
+      },
+      "diagnostics": {
+        "p_l12": 11,
+        "p_l34": 2,
+        "u_l12": 10,
+        "u_l34": 6,
+        "d_l12": 11,
+        "d_l34": 6,
+        "a_l12": 8,
+        "a_l34": 7,
+        "m_l12": 13,
+        "m_l34": 1
+      }
+    },
+    {
+      "name": "Qwen3-VL-8B",
+      "type": "Open-source",
+      "setup": "End-to-end agent",
+      "link": "",
+      "scores": {
+        "fa": 18.2,
+        "cf": 4.6,
+        "va": 18.8,
+        "mr": 0.0,
+        "gsa": 0.0,
+        "guim": 0.0,
+        "hgb": 0.0,
+        "nr": 6.3,
+        "bc": 10.0,
+        "total": 6.7
+      },
+      "stability": {
+        "original": 10,
+        "chinese": 20,
+        "variation": 15,
+        "dark": 10,
+        "pad": 10,
+        "min": 10,
+        "max": 20,
+        "spr": 0
+      },
+      "cost": {
+        "tt_k": 357.7,
+        "pt": 132.4
+      },
+      "diagnostics": {
+        "p_l12": 9,
+        "p_l34": 2,
+        "u_l12": 7,
+        "u_l34": 6,
+        "d_l12": 13,
+        "d_l34": 3,
+        "a_l12": 7,
+        "a_l34": 7,
+        "m_l12": 10,
+        "m_l34": 3
+      }
+    },
+    {
+      "name": "GUI-Owl-7B",
+      "type": "Open-source",
+      "setup": "End-to-end agent",
+      "link": "",
+      "scores": {
+        "fa": 13.6,
+        "cf": 0.0,
+        "va": 18.8,
+        "mr": 0.0,
+        "gsa": 0.0,
+        "guim": 11.1,
+        "hgb": 2.9,
+        "nr": 12.5,
+        "bc": 0.0,
+        "total": 6.7
+      },
+      "stability": {
+        "original": 15,
+        "chinese": 20,
+        "variation": 10,
+        "dark": 15,
+        "pad": 0,
+        "min": 0,
+        "max": 20,
+        "spr": 0
+      },
+      "cost": {
+        "tt_k": 373.7,
+        "pt": 146.5
+      },
+      "diagnostics": {
+        "p_l12": 8,
+        "p_l34": 4,
+        "u_l12": 7,
+        "u_l34": 6,
+        "d_l12": 13,
+        "d_l34": 3,
+        "a_l12": 6,
+        "a_l34": 13,
+        "m_l12": 11,
+        "m_l34": 1
+      }
+    }
+  ]
+}

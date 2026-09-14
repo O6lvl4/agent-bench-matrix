@@ -1,0 +1,2137 @@
+{
+  "id": "browsecomp-plus",
+  "family": "browsecomp-plus",
+  "name": "BrowseComp-Plus",
+  "board": "huggingface.co/spaces/Tevatron/BrowseComp-Plus",
+  "category": "research",
+  "measures_ja": "BrowseComp の難問を、固定された文書コーパスだけを検索して解けるか(検索器とエージェントを切り分けて比べる)。",
+  "tasks": 830,
+  "tasks_note": null,
+  "metric": "Accuracy (%)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "運営の標準足場(検索ツールが上位5文書を返す)で走らせた行と、提出者独自の足場の行が混在する。検索器(Retriever)も行ごとに違う。",
+  "source": "https://huggingface.co/spaces/Tevatron/BrowseComp-Plus",
+  "fetched": [
+    "https://tevatron-browsecomp-plus.hf.space/data/leaderboard.json",
+    "https://huggingface.co/datasets/Tevatron/BrowseComp-Plus-results/resolve/main/agent_results.csv"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-07-23",
+  "snapshot": "sources/browsecomp-plus/leaderboard.json",
+  "paper": "https://arxiv.org/abs/2508.06600",
+  "repo": "https://github.com/texttron/BrowseComp-Plus",
+  "notes_ja": "system は「LLM + Retriever」を連結したもの。agent は Scaffold 欄の名前で、空欄はボードの表示どおり Standard。校正誤差が「-」の行はボードでは0と表示されるが、元CSVに従い値を入れていない。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "GPT-5 + Hybrid Qwen2-7B + Reason-ModernColBERT",
+      "agent": "AI21 custom scaffold",
+      "model_raw": [
+        "GPT-5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": null,
+      "score": 95.18,
+      "score_extra": {
+        "recall": 93.17,
+        "search_calls": 209.27,
+        "calibration_error": 2.35,
+        "retriever": "Hybrid Qwen2-7B + Reason-ModernColBERT"
+      },
+      "date": "2026-04-28",
+      "verified": null,
+      "open_source": false,
+      "org": "AI21",
+      "row_url": "https://www.ai21.com/"
+    },
+    {
+      "rank": 2,
+      "system": "GLM-5.1-FP8 + Hybrid BM25 + Qwen3-Embed-8B",
+      "agent": "Sail Research custom scaffold",
+      "model_raw": [
+        "GLM-5.1-FP8"
+      ],
+      "model_ids": [
+        "glm-5.1"
+      ],
+      "model_config": "FP8",
+      "score": 90.72,
+      "score_extra": {
+        "recall": 84.31,
+        "search_calls": 12.53,
+        "calibration_error": 7.23,
+        "retriever": "Hybrid BM25 + Qwen3-Embed-8B",
+        "model_size_b": 754
+      },
+      "date": "2026-04-17",
+      "verified": null,
+      "open_source": true,
+      "org": "Sail Research",
+      "row_url": "https://www.sailresearch.com/"
+    },
+    {
+      "rank": 3,
+      "system": "GPT-5 + Mixedbread Search (v3)",
+      "agent": "Search with get_doc",
+      "model_raw": [
+        "GPT-5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": null,
+      "score": 90.48,
+      "score_extra": {
+        "recall": 83.03,
+        "search_calls": 11.53,
+        "calibration_error": 3.14,
+        "retriever": "Mixedbread Search (v3)"
+      },
+      "date": "2026-03-19",
+      "verified": null,
+      "open_source": false,
+      "org": "Mixedbread",
+      "row_url": "https://mixedbread.com"
+    },
+    {
+      "rank": 4,
+      "system": "GPT-5 + Reason-ModernColBERT",
+      "agent": "Search with get_doc",
+      "model_raw": [
+        "GPT-5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": null,
+      "score": 87.59,
+      "score_extra": {
+        "recall": 81.55,
+        "search_calls": 13.27,
+        "calibration_error": 6.07,
+        "retriever": "Reason-ModernColBERT"
+      },
+      "date": "2026-03-16",
+      "verified": null,
+      "open_source": false,
+      "org": "LightOn",
+      "row_url": "https://lighton.ai/lighton-api"
+    },
+    {
+      "rank": 5,
+      "system": "GPT-5 + LightOn Console",
+      "agent": "Search with get_doc",
+      "model_raw": [
+        "GPT-5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": null,
+      "score": 86.27,
+      "score_extra": {
+        "recall": 79.25,
+        "search_calls": 9.7,
+        "calibration_error": 6.08,
+        "retriever": "LightOn Console"
+      },
+      "date": "2026-07-20",
+      "verified": null,
+      "open_source": false,
+      "org": "LightOn",
+      "row_url": "https://console.lighton.ai"
+    },
+    {
+      "rank": 6,
+      "system": "GPT-5 + Iso-ModernColBERT",
+      "agent": "Search with get_doc",
+      "model_raw": [
+        "GPT-5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": null,
+      "score": 80.48,
+      "score_extra": {
+        "recall": 77.82,
+        "search_calls": 14.1,
+        "calibration_error": 5.51,
+        "retriever": "Iso-ModernColBERT"
+      },
+      "date": "2026-06-11",
+      "verified": null,
+      "open_source": false,
+      "org": "TopK",
+      "row_url": "https://www.topk.io/"
+    },
+    {
+      "rank": 7,
+      "system": "GPT-5-mini + openJiuwen-deepsearch",
+      "agent": "openJiuwen custom setup",
+      "model_raw": [
+        "GPT-5-mini"
+      ],
+      "model_ids": [
+        "gpt-5-mini"
+      ],
+      "model_config": null,
+      "score": 80.0,
+      "score_extra": {
+        "recall": 54.51,
+        "search_calls": 6.05,
+        "calibration_error": 18.82,
+        "retriever": "openJiuwen-deepsearch"
+      },
+      "date": "2025-11-26",
+      "verified": null,
+      "open_source": false,
+      "org": "openJiuwen",
+      "row_url": "https://openjiuwen.com/en/"
+    },
+    {
+      "rank": 8,
+      "system": "GPT-5 + Mixedbread Search (v3)",
+      "agent": "Standard",
+      "model_raw": [
+        "GPT-5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": null,
+      "score": 80.0,
+      "score_extra": {
+        "recall": 85.29,
+        "search_calls": 16.24,
+        "calibration_error": 8.47,
+        "retriever": "Mixedbread Search (v3)"
+      },
+      "date": "2026-03-19",
+      "verified": null,
+      "open_source": false,
+      "org": "Mixedbread",
+      "row_url": "https://mixedbread.com"
+    },
+    {
+      "rank": 9,
+      "system": "GPT-5 + Reason-ModernColBERT",
+      "agent": "Standard",
+      "model_raw": [
+        "GPT-5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": null,
+      "score": 79.52,
+      "score_extra": {
+        "recall": 83.52,
+        "search_calls": 19.31,
+        "calibration_error": 7.46,
+        "retriever": "Reason-ModernColBERT"
+      },
+      "date": "2026-03-16",
+      "verified": null,
+      "open_source": false,
+      "org": "LightOn",
+      "row_url": "https://lighton.ai/lighton-api"
+    },
+    {
+      "rank": 10,
+      "system": "GPT-5 + Mixedbread Search",
+      "agent": "Agentica custom scaffold",
+      "model_raw": [
+        "GPT-5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": null,
+      "score": 78.41,
+      "score_extra": {
+        "recall": 48.85,
+        "search_calls": 44.67,
+        "calibration_error": 7.92,
+        "accuracy_gpt41_judge": 77.11,
+        "retriever": "Mixedbread Search"
+      },
+      "date": "2025-12-11",
+      "verified": null,
+      "open_source": false,
+      "org": "Agentica",
+      "row_url": "https://www.symbolica.ai/agentica"
+    },
+    {
+      "rank": 11,
+      "system": "GPT-5 + Mixedbread Search",
+      "agent": "Standard",
+      "model_raw": [
+        "GPT-5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": null,
+      "score": 74.1,
+      "score_extra": {
+        "recall": 80.29,
+        "search_calls": 21.22,
+        "calibration_error": 11,
+        "accuracy_gpt41_judge": 73.25,
+        "retriever": "Mixedbread Search"
+      },
+      "date": "2025-10-22",
+      "verified": null,
+      "open_source": false,
+      "org": "Mixedbread",
+      "row_url": "https://www.mixedbread.com/"
+    },
+    {
+      "rank": 12,
+      "system": "oss-120b-high + Agent-ModernColBERT",
+      "agent": "Search with get_doc",
+      "model_raw": [
+        "oss-120b-high"
+      ],
+      "model_ids": [
+        "gpt-oss-120b"
+      ],
+      "model_config": "high",
+      "score": 72.53,
+      "score_extra": {
+        "recall": 72.84,
+        "search_calls": 15.85,
+        "calibration_error": 22.07,
+        "retriever": "Agent-ModernColBERT",
+        "model_size_b": 120
+      },
+      "date": "2026-04-28",
+      "verified": null,
+      "open_source": true,
+      "org": "LightOn",
+      "row_url": "https://lighton.ai/lighton-api"
+    },
+    {
+      "rank": 13,
+      "system": "GPT-5 + Qwen3-Embed-8B",
+      "agent": "Standard",
+      "model_raw": [
+        "GPT-5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": null,
+      "score": 71.69,
+      "score_extra": {
+        "recall": 78.98,
+        "search_calls": 21.74,
+        "calibration_error": 9.58,
+        "accuracy_gpt41_judge": 70.12,
+        "retriever": "Qwen3-Embed-8B"
+      },
+      "date": "2025-08-08",
+      "verified": null,
+      "open_source": false,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://openai.com/index/introducing-gpt-5/"
+    },
+    {
+      "rank": 14,
+      "system": "oss-20b-high + Passage Corpus BM25 + monoT5-3B Rerank",
+      "agent": "Custom passage corpus",
+      "model_raw": [
+        "oss-20b-high"
+      ],
+      "model_ids": [
+        "gpt-oss-20b"
+      ],
+      "model_config": "high",
+      "score": 68.92,
+      "score_extra": {
+        "recall": 71.62,
+        "search_calls": 27.57,
+        "calibration_error": 19.82,
+        "retriever": "Passage Corpus BM25 + monoT5-3B Rerank",
+        "model_size_b": 20
+      },
+      "date": "2026-02-04",
+      "verified": null,
+      "open_source": true,
+      "org": "Meng et. al (University of Edinburgh)",
+      "row_url": "https://arxiv.org/pdf/2602.21456"
+    },
+    {
+      "rank": 15,
+      "system": "Tongyi-DeepResearch-30B-A3B + AgentIR-4B",
+      "agent": "Tongyi-DeepResearch native toolset",
+      "model_raw": [
+        "Tongyi-DeepResearch-30B-A3B"
+      ],
+      "model_ids": [
+        "tongyi-deepresearch-30b-a3b"
+      ],
+      "model_config": null,
+      "score": 68.07,
+      "score_extra": {
+        "recall": 76.58,
+        "search_calls": 24.49,
+        "retriever": "AgentIR-4B",
+        "model_size_b": 30
+      },
+      "date": "2026-03-04",
+      "verified": null,
+      "open_source": true,
+      "org": "AgentIR",
+      "row_url": "https://texttron.github.io/AgentIR/"
+    },
+    {
+      "rank": 16,
+      "system": "oss-120b-high + AgentIR-4B",
+      "agent": "Standard",
+      "model_raw": [
+        "oss-120b-high"
+      ],
+      "model_ids": [
+        "gpt-oss-120b"
+      ],
+      "model_config": "high",
+      "score": 66.99,
+      "score_extra": {
+        "recall": 78.13,
+        "search_calls": 24.08,
+        "calibration_error": 22.55,
+        "retriever": "AgentIR-4B",
+        "model_size_b": 120
+      },
+      "date": "2026-03-04",
+      "verified": null,
+      "open_source": true,
+      "org": "AgentIR",
+      "row_url": "https://texttron.github.io/AgentIR/"
+    },
+    {
+      "rank": 17,
+      "system": "Tongyi-DeepResearch-30B-A3B + AgentIR-4B",
+      "agent": "Standard",
+      "model_raw": [
+        "Tongyi-DeepResearch-30B-A3B"
+      ],
+      "model_ids": [
+        "tongyi-deepresearch-30b-a3b"
+      ],
+      "model_config": null,
+      "score": 66.27,
+      "score_extra": {
+        "recall": 78.86,
+        "search_calls": 25.91,
+        "retriever": "AgentIR-4B",
+        "model_size_b": 30
+      },
+      "date": "2026-03-04",
+      "verified": null,
+      "open_source": true,
+      "org": "AgentIR",
+      "row_url": "https://texttron.github.io/AgentIR/"
+    },
+    {
+      "rank": 18,
+      "system": "o3 + Qwen3-Embed-8B",
+      "agent": "Standard",
+      "model_raw": [
+        "o3"
+      ],
+      "model_ids": [
+        "o3"
+      ],
+      "model_config": null,
+      "score": 65.9,
+      "score_extra": {
+        "recall": 73.24,
+        "search_calls": 23.97,
+        "calibration_error": 19.68,
+        "accuracy_gpt41_judge": 63.49,
+        "retriever": "Qwen3-Embed-8B"
+      },
+      "date": "2025-08-08",
+      "verified": null,
+      "open_source": false,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://openai.com/index/introducing-o3-and-o4-mini/"
+    },
+    {
+      "rank": 19,
+      "system": "GLM-4.7 + AgentIR-4B",
+      "agent": "Standard",
+      "model_raw": [
+        "GLM-4.7"
+      ],
+      "model_ids": [
+        "glm-4.7"
+      ],
+      "model_config": null,
+      "score": 64.66,
+      "score_extra": {
+        "recall": 79.21,
+        "search_calls": 29.85,
+        "calibration_error": 29.85,
+        "retriever": "AgentIR-4B",
+        "model_size_b": 358
+      },
+      "date": "2026-03-04",
+      "verified": null,
+      "open_source": true,
+      "org": "AgentIR",
+      "row_url": "https://texttron.github.io/AgentIR/"
+    },
+    {
+      "rank": 20,
+      "system": "oss-120b-high + Agent-ModernColBERT",
+      "agent": "Standard",
+      "model_raw": [
+        "oss-120b-high"
+      ],
+      "model_ids": [
+        "gpt-oss-120b"
+      ],
+      "model_config": "high",
+      "score": 63.86,
+      "score_extra": {
+        "recall": 74.84,
+        "search_calls": 21.49,
+        "calibration_error": 25.55,
+        "retriever": "Agent-ModernColBERT",
+        "model_size_b": 120
+      },
+      "date": "2026-05-04",
+      "verified": null,
+      "open_source": true,
+      "org": "LightOn",
+      "row_url": "https://lighton.ai/lighton-api"
+    },
+    {
+      "rank": 21,
+      "system": "oss-120b-high + Reason-ModernColBERT",
+      "agent": "Search with get_doc",
+      "model_raw": [
+        "oss-120b-high"
+      ],
+      "model_ids": [
+        "gpt-oss-120b"
+      ],
+      "model_config": "high",
+      "score": 61.2,
+      "score_extra": {
+        "recall": 60.84,
+        "search_calls": 13.87,
+        "calibration_error": 32.45,
+        "retriever": "Reason-ModernColBERT",
+        "model_size_b": 120
+      },
+      "date": "2026-03-11",
+      "verified": null,
+      "open_source": true,
+      "org": "LightOn",
+      "row_url": "https://lighton.ai/lighton-api"
+    },
+    {
+      "rank": 22,
+      "system": "OpenResearcher + Qwen3-Embed-8B",
+      "agent": "OpenResearcher toolset",
+      "model_raw": [
+        "OpenResearcher"
+      ],
+      "model_ids": [
+        "openresearcher"
+      ],
+      "model_config": null,
+      "score": 60.92,
+      "score_extra": {
+        "recall": 75.77,
+        "search_calls": 41,
+        "calibration_error": 27.59,
+        "retriever": "Qwen3-Embed-8B",
+        "model_size_b": 30
+      },
+      "date": "2026-02-12",
+      "verified": null,
+      "open_source": true,
+      "org": "OpenResearcher",
+      "row_url": "https://github.com/TIGER-AI-Lab/OpenResearcher"
+    },
+    {
+      "rank": 23,
+      "system": "oss-120b-high + Reason-ModernColBERT",
+      "agent": "Standard",
+      "model_raw": [
+        "oss-120b-high"
+      ],
+      "model_ids": [
+        "gpt-oss-120b"
+      ],
+      "model_config": "high",
+      "score": 59.04,
+      "score_extra": {
+        "recall": 68.64,
+        "search_calls": 18.87,
+        "calibration_error": 30.07,
+        "retriever": "Reason-ModernColBERT",
+        "model_size_b": 120
+      },
+      "date": "2026-03-16",
+      "verified": null,
+      "open_source": true,
+      "org": "LightOn",
+      "row_url": "https://lighton.ai/lighton-api"
+    },
+    {
+      "rank": 24,
+      "system": "oss-120b-high + GTE-ModernColBERT-v1",
+      "agent": "Search with get_doc",
+      "model_raw": [
+        "oss-120b-high"
+      ],
+      "model_ids": [
+        "gpt-oss-120b"
+      ],
+      "model_config": "high",
+      "score": 58.92,
+      "score_extra": {
+        "recall": 57.99,
+        "search_calls": 13.29,
+        "calibration_error": 32.84,
+        "retriever": "GTE-ModernColBERT-v1",
+        "model_size_b": 120
+      },
+      "date": "2026-03-11",
+      "verified": null,
+      "open_source": true,
+      "org": "LightOn",
+      "row_url": "https://lighton.ai/lighton-api"
+    },
+    {
+      "rank": 25,
+      "system": "GPT-5 + BM25",
+      "agent": "Standard",
+      "model_raw": [
+        "GPT-5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": null,
+      "score": 57.59,
+      "score_extra": {
+        "recall": 61.7,
+        "search_calls": 23.23,
+        "calibration_error": 12.63,
+        "accuracy_gpt41_judge": 55.9,
+        "retriever": "BM25"
+      },
+      "date": "2025-08-08",
+      "verified": null,
+      "open_source": false,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://openai.com/index/introducing-gpt-5/"
+    },
+    {
+      "rank": 26,
+      "system": "oss-20b-high + Passage Corpus BM25",
+      "agent": "Custom passage corpus",
+      "model_raw": [
+        "oss-20b-high"
+      ],
+      "model_ids": [
+        "gpt-oss-20b"
+      ],
+      "model_config": "high",
+      "score": 57.23,
+      "score_extra": {
+        "recall": 61.62,
+        "search_calls": 30.97,
+        "calibration_error": 27.59,
+        "retriever": "Passage Corpus BM25",
+        "model_size_b": 20
+      },
+      "date": "2026-01-31",
+      "verified": null,
+      "open_source": true,
+      "org": "Meng et. al (University of Edinburgh)",
+      "row_url": "https://arxiv.org/pdf/2602.21456"
+    },
+    {
+      "rank": 27,
+      "system": "oss-120b-high + Qwen3-Embed-8B",
+      "agent": "gpt-oss native toolset",
+      "model_raw": [
+        "oss-120b-high"
+      ],
+      "model_ids": [
+        "gpt-oss-120b"
+      ],
+      "model_config": "high",
+      "score": 56.99,
+      "score_extra": {
+        "recall": 74.7,
+        "search_calls": 41.86,
+        "calibration_error": 29.05,
+        "retriever": "Qwen3-Embed-8B",
+        "model_size_b": 120
+      },
+      "date": "2025-12-31",
+      "verified": null,
+      "open_source": true,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://openai.com/index/introducing-gpt-oss/"
+    },
+    {
+      "rank": 28,
+      "system": "oss-120b-high + GTE-ModernColBERT-v1",
+      "agent": "Standard",
+      "model_raw": [
+        "oss-120b-high"
+      ],
+      "model_ids": [
+        "gpt-oss-120b"
+      ],
+      "model_config": "high",
+      "score": 55.66,
+      "score_extra": {
+        "recall": 66.94,
+        "search_calls": 17.51,
+        "calibration_error": 31.02,
+        "retriever": "GTE-ModernColBERT-v1",
+        "model_size_b": 120
+      },
+      "date": "2026-03-17",
+      "verified": null,
+      "open_source": true,
+      "org": "LightOn",
+      "row_url": "https://lighton.ai/lighton-api"
+    },
+    {
+      "rank": 29,
+      "system": "OpenResearcher + LRAT-Qwen3-Embed-0.6B",
+      "agent": "OpenResearcher toolset",
+      "model_raw": [
+        "OpenResearcher"
+      ],
+      "model_ids": [
+        "openresearcher"
+      ],
+      "model_config": null,
+      "score": 53.73,
+      "score_extra": {
+        "recall": 70.31,
+        "search_calls": 44.4,
+        "calibration_error": 31.28,
+        "retriever": "LRAT-Qwen3-Embed-0.6B",
+        "model_size_b": 30
+      },
+      "date": "2026-03-06",
+      "verified": null,
+      "open_source": true,
+      "org": "LRAT",
+      "row_url": "https://arxiv.org/abs/2604.04949"
+    },
+    {
+      "rank": 30,
+      "system": "Tongyi-DeepResearch-30B-A3B + Qwen3-Embed-8B",
+      "agent": "Tongyi-DeepResearch native toolset",
+      "model_raw": [
+        "Tongyi-DeepResearch-30B-A3B"
+      ],
+      "model_ids": [
+        "tongyi-deepresearch-30b-a3b"
+      ],
+      "model_config": null,
+      "score": 51.93,
+      "score_extra": {
+        "recall": 60.51,
+        "search_calls": 17.14,
+        "retriever": "Qwen3-Embed-8B",
+        "model_size_b": 30
+      },
+      "date": "2025-12-27",
+      "verified": null,
+      "open_source": true,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://tongyi-agent.github.io/blog/introducing-tongyi-deep-research/"
+    },
+    {
+      "rank": 31,
+      "system": "oss-20b-high + BM25 (k1=10, b=1)",
+      "agent": "Standard",
+      "model_raw": [
+        "oss-20b-high"
+      ],
+      "model_ids": [
+        "gpt-oss-20b"
+      ],
+      "model_config": "high",
+      "score": 50.6,
+      "score_extra": {
+        "recall": 64.67,
+        "search_calls": 28.73,
+        "calibration_error": 18.48,
+        "retriever": "BM25 (k1=10, b=1)",
+        "model_size_b": 20
+      },
+      "date": "2026-02-10",
+      "verified": null,
+      "open_source": true,
+      "org": "Meng et. al (University of Edinburgh)",
+      "row_url": "https://arxiv.org/pdf/2602.21456"
+    },
+    {
+      "rank": 32,
+      "system": "o3 + BM25",
+      "agent": "Standard",
+      "model_raw": [
+        "o3"
+      ],
+      "model_ids": [
+        "o3"
+      ],
+      "model_config": null,
+      "score": 50.48,
+      "score_extra": {
+        "recall": 56.64,
+        "search_calls": 25.93,
+        "calibration_error": 14.48,
+        "accuracy_gpt41_judge": 49.28,
+        "retriever": "BM25"
+      },
+      "date": "2025-08-08",
+      "verified": null,
+      "open_source": false,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://openai.com/index/introducing-o3-and-o4-mini/"
+    },
+    {
+      "rank": 33,
+      "system": "GLM-4.7 + Qwen3-Embed-8B",
+      "agent": "Standard",
+      "model_raw": [
+        "GLM-4.7"
+      ],
+      "model_ids": [
+        "glm-4.7"
+      ],
+      "model_config": null,
+      "score": 50.18,
+      "score_extra": {
+        "recall": 68.69,
+        "search_calls": 35.32,
+        "calibration_error": 13.2,
+        "retriever": "Qwen3-Embed-8B",
+        "model_size_b": 358
+      },
+      "date": "2025-12-26",
+      "verified": null,
+      "open_source": true,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://z.ai/blog/glm-4.7"
+    },
+    {
+      "rank": 34,
+      "system": "GLM-4.6 + Qwen3-Embed-8B",
+      "agent": "Standard",
+      "model_raw": [
+        "GLM-4.6"
+      ],
+      "model_ids": [
+        "glm-4.6"
+      ],
+      "model_config": null,
+      "score": 48.19,
+      "score_extra": {
+        "recall": 57.72,
+        "search_calls": 25.6,
+        "calibration_error": 26.3,
+        "retriever": "Qwen3-Embed-8B",
+        "model_size_b": 357
+      },
+      "date": "2025-10-13",
+      "verified": null,
+      "open_source": true,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://docs.z.ai/guides/llm/glm-4.6"
+    },
+    {
+      "rank": 35,
+      "system": "Tongyi-DeepResearch-30B-A3B + Qwen3-Embed-8B",
+      "agent": "Standard",
+      "model_raw": [
+        "Tongyi-DeepResearch-30B-A3B"
+      ],
+      "model_ids": [
+        "tongyi-deepresearch-30b-a3b"
+      ],
+      "model_config": null,
+      "score": 44.46,
+      "score_extra": {
+        "recall": 62.32,
+        "search_calls": 30.37,
+        "accuracy_gpt41_judge": 44.1,
+        "retriever": "Qwen3-Embed-8B",
+        "model_size_b": 30
+      },
+      "date": "2025-09-28",
+      "verified": null,
+      "open_source": true,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://tongyi-agent.github.io/blog/introducing-tongyi-deep-research/"
+    },
+    {
+      "rank": 36,
+      "system": "OpenResearcher + Qwen3-Embed-0.6B",
+      "agent": "OpenResearcher toolset",
+      "model_raw": [
+        "OpenResearcher"
+      ],
+      "model_ids": [
+        "openresearcher"
+      ],
+      "model_config": null,
+      "score": 44.34,
+      "score_extra": {
+        "recall": 60.48,
+        "search_calls": 49.54,
+        "calibration_error": 33.21,
+        "retriever": "Qwen3-Embed-0.6B",
+        "model_size_b": 30
+      },
+      "date": "2026-03-06",
+      "verified": null,
+      "open_source": true,
+      "org": "LRAT",
+      "row_url": "https://arxiv.org/abs/2604.04949"
+    },
+    {
+      "rank": 37,
+      "system": "oss-120b-high + Qwen3-Embed-8B",
+      "agent": "Standard",
+      "model_raw": [
+        "oss-120b-high"
+      ],
+      "model_ids": [
+        "gpt-oss-120b"
+      ],
+      "model_config": "high",
+      "score": 44.1,
+      "score_extra": {
+        "recall": 52.63,
+        "search_calls": 18.35,
+        "calibration_error": 39.32,
+        "accuracy_gpt41_judge": 42.89,
+        "retriever": "Qwen3-Embed-8B",
+        "model_size_b": 120
+      },
+      "date": "2025-08-08",
+      "verified": null,
+      "open_source": true,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://openai.com/index/introducing-gpt-oss/"
+    },
+    {
+      "rank": 38,
+      "system": "oss-120b-high + BM25",
+      "agent": "gpt-oss native toolset",
+      "model_raw": [
+        "oss-120b-high"
+      ],
+      "model_ids": [
+        "gpt-oss-120b"
+      ],
+      "model_config": "high",
+      "score": 43.61,
+      "score_extra": {
+        "recall": 58.38,
+        "search_calls": 46.51,
+        "calibration_error": 36.82,
+        "retriever": "BM25",
+        "model_size_b": 120
+      },
+      "date": "2025-12-31",
+      "verified": null,
+      "open_source": true,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://openai.com/index/introducing-gpt-oss/"
+    },
+    {
+      "rank": 39,
+      "system": "Atom-Electron-1.0 + (BM25 + Qwen3-8B) + Qwen3-8B-ReRanker",
+      "agent": "Standard",
+      "model_raw": [
+        "Atom-Electron-1.0"
+      ],
+      "model_ids": [
+        "atom-electron-1.0"
+      ],
+      "model_config": null,
+      "score": 41.08,
+      "score_extra": {
+        "recall": 57.26,
+        "search_calls": 18.28,
+        "calibration_error": 38.45,
+        "retriever": "(BM25 + Qwen3-8B) + Qwen3-8B-ReRanker",
+        "model_size_b": 20
+      },
+      "date": "2026-07-23",
+      "verified": null,
+      "open_source": true,
+      "org": "Crowther",
+      "row_url": "https://huggingface.co/CrowtherLabs/Atom-Electron-1.0"
+    },
+    {
+      "rank": 40,
+      "system": "Gemini 2.5 Flash + Mixedbread Search",
+      "agent": "Standard",
+      "model_raw": [
+        "Gemini 2.5 Flash"
+      ],
+      "model_ids": [
+        "gemini-2.5-flash"
+      ],
+      "model_config": null,
+      "score": 39.88,
+      "score_extra": {
+        "recall": 42.78,
+        "search_calls": 8.3,
+        "calibration_error": 24.61,
+        "accuracy_gpt41_judge": 38.19,
+        "retriever": "Mixedbread Search"
+      },
+      "date": "2025-10-22",
+      "verified": null,
+      "open_source": false,
+      "org": "Mixedbread",
+      "row_url": "https://www.mixedbread.com/"
+    },
+    {
+      "rank": 41,
+      "system": "oss-120b-medium + Qwen3-Embed-8B",
+      "agent": "Standard",
+      "model_raw": [
+        "oss-120b-medium"
+      ],
+      "model_ids": [
+        "gpt-oss-120b"
+      ],
+      "model_config": "medium",
+      "score": 38.55,
+      "score_extra": {
+        "recall": 43.45,
+        "search_calls": 9.64,
+        "calibration_error": 41.63,
+        "accuracy_gpt41_judge": 37.59,
+        "retriever": "Qwen3-Embed-8B",
+        "model_size_b": 120
+      },
+      "date": "2025-08-08",
+      "verified": null,
+      "open_source": true,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://openai.com/index/introducing-gpt-oss/"
+    },
+    {
+      "rank": 42,
+      "system": "SearchAgent-Zero + Qwen3-Embed-8B",
+      "agent": "Standard",
+      "model_raw": [
+        "SearchAgent-Zero"
+      ],
+      "model_ids": [
+        "searchagent-zero"
+      ],
+      "model_config": null,
+      "score": 37.95,
+      "score_extra": {
+        "recall": 50.87,
+        "search_calls": 38.47,
+        "calibration_error": 58.06,
+        "retriever": "Qwen3-Embed-8B",
+        "model_size_b": 8
+      },
+      "date": "2026-02-24",
+      "verified": null,
+      "open_source": true,
+      "org": "SearchAgent-Zero",
+      "row_url": "https://github.com/NLPJCL/SearchAgent-Zero"
+    },
+    {
+      "rank": 43,
+      "system": "Sonnet 4 + Qwen3-Embed-8B",
+      "agent": "Standard",
+      "model_raw": [
+        "Sonnet 4"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": null,
+      "score": 37.35,
+      "score_extra": {
+        "recall": 47.33,
+        "search_calls": 9.03,
+        "calibration_error": 24.84,
+        "accuracy_gpt41_judge": 36.75,
+        "retriever": "Qwen3-Embed-8B"
+      },
+      "date": "2025-08-08",
+      "verified": null,
+      "open_source": false,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://www.anthropic.com/news/claude-4"
+    },
+    {
+      "rank": 44,
+      "system": "Tongyi-DeepResearch-30B-A3B + BM25",
+      "agent": "Tongyi-DeepResearch native toolset",
+      "model_raw": [
+        "Tongyi-DeepResearch-30B-A3B"
+      ],
+      "model_ids": [
+        "tongyi-deepresearch-30b-a3b"
+      ],
+      "model_config": null,
+      "score": 36.87,
+      "score_extra": {
+        "recall": 43.02,
+        "search_calls": 17.91,
+        "retriever": "BM25",
+        "model_size_b": 30
+      },
+      "date": "2025-12-27",
+      "verified": null,
+      "open_source": true,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://tongyi-agent.github.io/blog/introducing-tongyi-deep-research/"
+    },
+    {
+      "rank": 45,
+      "system": "Opus 4 + Qwen3-Embed-8B",
+      "agent": "Standard",
+      "model_raw": [
+        "Opus 4"
+      ],
+      "model_ids": [
+        "claude-opus-4"
+      ],
+      "model_config": null,
+      "score": 36.75,
+      "score_extra": {
+        "recall": 50.84,
+        "search_calls": 10.24,
+        "calibration_error": 12.33,
+        "accuracy_gpt41_judge": 36.14,
+        "retriever": "Qwen3-Embed-8B"
+      },
+      "date": "2025-08-08",
+      "verified": null,
+      "open_source": false,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://www.anthropic.com/news/claude-4"
+    },
+    {
+      "rank": 46,
+      "system": "GPT-4.1 + Qwen3-Embed-8B",
+      "agent": "Standard",
+      "model_raw": [
+        "GPT-4.1"
+      ],
+      "model_ids": [
+        "gpt-4.1"
+      ],
+      "model_config": null,
+      "score": 36.39,
+      "score_extra": {
+        "recall": 36.89,
+        "search_calls": 8.67,
+        "calibration_error": 53.79,
+        "accuracy_gpt41_judge": 35.42,
+        "retriever": "Qwen3-Embed-8B"
+      },
+      "date": "2025-08-08",
+      "verified": null,
+      "open_source": false,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://openai.com/index/gpt-4-1/"
+    },
+    {
+      "rank": 47,
+      "system": "kimi-k2-0711-preview + Qwen3-Embed-8B",
+      "agent": "Standard",
+      "model_raw": [
+        "kimi-k2-0711-preview"
+      ],
+      "model_ids": [
+        "kimi-k2-0711"
+      ],
+      "model_config": null,
+      "score": 35.42,
+      "score_extra": {
+        "recall": 38.38,
+        "search_calls": 11.22,
+        "calibration_error": 53.51,
+        "accuracy_gpt41_judge": 34.22,
+        "retriever": "Qwen3-Embed-8B",
+        "model_size_b": 1000
+      },
+      "date": "2025-08-16",
+      "verified": null,
+      "open_source": true,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://moonshotai.github.io/Kimi-K2/"
+    },
+    {
+      "rank": 48,
+      "system": "oss-20b-high + Qwen3-Embed-8B",
+      "agent": "Standard",
+      "model_raw": [
+        "oss-20b-high"
+      ],
+      "model_ids": [
+        "gpt-oss-20b"
+      ],
+      "model_config": "high",
+      "score": 35.06,
+      "score_extra": {
+        "recall": 49.29,
+        "search_calls": 23.87,
+        "calibration_error": 27.69,
+        "accuracy_gpt41_judge": 34.58,
+        "retriever": "Qwen3-Embed-8B",
+        "model_size_b": 20
+      },
+      "date": "2025-08-08",
+      "verified": null,
+      "open_source": true,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://openai.com/index/introducing-gpt-oss/"
+    },
+    {
+      "rank": 49,
+      "system": "Gemini 2.5 Flash + Qwen3-Embed-8B",
+      "agent": "Standard",
+      "model_raw": [
+        "Gemini 2.5 Flash"
+      ],
+      "model_ids": [
+        "gemini-2.5-flash"
+      ],
+      "model_config": null,
+      "score": 34.58,
+      "score_extra": {
+        "recall": 40.19,
+        "search_calls": 9.77,
+        "calibration_error": 20.42,
+        "accuracy_gpt41_judge": 33.01,
+        "retriever": "Qwen3-Embed-8B"
+      },
+      "date": "2025-08-08",
+      "verified": null,
+      "open_source": false,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://arxiv.org/abs/2507.06261"
+    },
+    {
+      "rank": 50,
+      "system": "Tongyi-DeepResearch-30B-A3B + BM25",
+      "agent": "Standard",
+      "model_raw": [
+        "Tongyi-DeepResearch-30B-A3B"
+      ],
+      "model_ids": [
+        "tongyi-deepresearch-30b-a3b"
+      ],
+      "model_config": null,
+      "score": 33.98,
+      "score_extra": {
+        "recall": 46.83,
+        "search_calls": 32.92,
+        "accuracy_gpt41_judge": 33.37,
+        "retriever": "BM25",
+        "model_size_b": 30
+      },
+      "date": "2025-09-28",
+      "verified": null,
+      "open_source": true,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://tongyi-agent.github.io/blog/introducing-tongyi-deep-research/"
+    },
+    {
+      "rank": 51,
+      "system": "GLM-4.7 + BM25",
+      "agent": "Standard",
+      "model_raw": [
+        "GLM-4.7"
+      ],
+      "model_ids": [
+        "glm-4.7"
+      ],
+      "model_config": null,
+      "score": 33.25,
+      "score_extra": {
+        "recall": 45.97,
+        "search_calls": 41.55,
+        "calibration_error": 16.9,
+        "retriever": "BM25",
+        "model_size_b": 358
+      },
+      "date": "2025-12-26",
+      "verified": null,
+      "open_source": true,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://z.ai/blog/glm-4.7"
+    },
+    {
+      "rank": 52,
+      "system": "oss-20b-medium + Qwen3-Embed-8B",
+      "agent": "Standard",
+      "model_raw": [
+        "oss-20b-medium"
+      ],
+      "model_ids": [
+        "gpt-oss-20b"
+      ],
+      "model_config": "medium",
+      "score": 30.48,
+      "score_extra": {
+        "recall": 41.31,
+        "search_calls": 13.64,
+        "calibration_error": 35.49,
+        "accuracy_gpt41_judge": 29.88,
+        "retriever": "Qwen3-Embed-8B",
+        "model_size_b": 20
+      },
+      "date": "2025-08-08",
+      "verified": null,
+      "open_source": true,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://openai.com/index/introducing-gpt-oss/"
+    },
+    {
+      "rank": 53,
+      "system": "Gemini 2.5 Pro + Qwen3-Embed-8B",
+      "agent": "Standard",
+      "model_raw": [
+        "Gemini 2.5 Pro"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": null,
+      "score": 29.52,
+      "score_extra": {
+        "recall": 35.31,
+        "search_calls": 6.04,
+        "calibration_error": 44.25,
+        "accuracy_gpt41_judge": 28.67,
+        "retriever": "Qwen3-Embed-8B"
+      },
+      "date": "2025-08-08",
+      "verified": null,
+      "open_source": false,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://arxiv.org/abs/2507.06261"
+    },
+    {
+      "rank": 54,
+      "system": "oss-120b-high + BM25",
+      "agent": "Standard",
+      "model_raw": [
+        "oss-120b-high"
+      ],
+      "model_ids": [
+        "gpt-oss-120b"
+      ],
+      "model_config": "high",
+      "score": 29.16,
+      "score_extra": {
+        "recall": 35.5,
+        "search_calls": 19.45,
+        "calibration_error": 45.92,
+        "accuracy_gpt41_judge": 28.67,
+        "retriever": "BM25",
+        "model_size_b": 120
+      },
+      "date": "2025-08-08",
+      "verified": null,
+      "open_source": true,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://openai.com/index/introducing-gpt-oss/"
+    },
+    {
+      "rank": 55,
+      "system": "oss-120b-high + BM25",
+      "agent": "Standard",
+      "model_raw": [
+        "oss-120b-high"
+      ],
+      "model_ids": [
+        "gpt-oss-120b"
+      ],
+      "model_config": "high",
+      "score": 29.16,
+      "score_extra": {
+        "recall": 35.5,
+        "search_calls": 19.45,
+        "calibration_error": 45.92,
+        "accuracy_gpt41_judge": 28.67,
+        "retriever": "BM25",
+        "model_size_b": 120
+      },
+      "date": "2025-08-08",
+      "verified": null,
+      "open_source": true,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://openai.com/index/introducing-gpt-oss/"
+    },
+    {
+      "rank": 56,
+      "system": "GLM-4.6 + BM25",
+      "agent": "Standard",
+      "model_raw": [
+        "GLM-4.6"
+      ],
+      "model_ids": [
+        "glm-4.6"
+      ],
+      "model_config": null,
+      "score": 27.74,
+      "score_extra": {
+        "recall": 34.98,
+        "search_calls": 29.71,
+        "calibration_error": 37.12,
+        "retriever": "BM25",
+        "model_size_b": 357
+      },
+      "date": "2025-10-13",
+      "verified": null,
+      "open_source": true,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://docs.z.ai/guides/llm/glm-4.6"
+    },
+    {
+      "rank": 57,
+      "system": "WebSailor-32B + Qwen3-Embed-8B",
+      "agent": "Standard",
+      "model_raw": [
+        "WebSailor-32B"
+      ],
+      "model_ids": [
+        "websailor-32b"
+      ],
+      "model_config": null,
+      "score": 27.59,
+      "score_extra": {
+        "recall": 29.3,
+        "search_calls": 8.0,
+        "accuracy_gpt41_judge": 25.78,
+        "retriever": "Qwen3-Embed-8B",
+        "model_size_b": 32
+      },
+      "date": "2025-09-28",
+      "verified": null,
+      "open_source": true,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://arxiv.org/pdf/2507.02592"
+    },
+    {
+      "rank": 58,
+      "system": "oss-120b-low + Qwen3-Embed-8B",
+      "agent": "Standard",
+      "model_raw": [
+        "oss-120b-low"
+      ],
+      "model_ids": [
+        "gpt-oss-120b"
+      ],
+      "model_config": "low",
+      "score": 25.54,
+      "score_extra": {
+        "recall": 22.5,
+        "search_calls": 2.21,
+        "calibration_error": 40.37,
+        "accuracy_gpt41_judge": 24.94,
+        "retriever": "Qwen3-Embed-8B",
+        "model_size_b": 120
+      },
+      "date": "2025-08-08",
+      "verified": null,
+      "open_source": true,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://openai.com/index/introducing-gpt-oss/"
+    },
+    {
+      "rank": 59,
+      "system": "oss-120b-medium + BM25",
+      "agent": "Standard",
+      "model_raw": [
+        "oss-120b-medium"
+      ],
+      "model_ids": [
+        "gpt-oss-120b"
+      ],
+      "model_config": "medium",
+      "score": 24.58,
+      "score_extra": {
+        "recall": 27.02,
+        "search_calls": 9.73,
+        "calibration_error": 45.7,
+        "accuracy_gpt41_judge": 23.73,
+        "retriever": "BM25",
+        "model_size_b": 120
+      },
+      "date": "2025-08-08",
+      "verified": null,
+      "open_source": true,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://openai.com/index/introducing-gpt-oss/"
+    },
+    {
+      "rank": 60,
+      "system": "oss-20b-high + BM25",
+      "agent": "Standard",
+      "model_raw": [
+        "oss-20b-high"
+      ],
+      "model_ids": [
+        "gpt-oss-20b"
+      ],
+      "model_config": "high",
+      "score": 21.45,
+      "score_extra": {
+        "recall": 31.98,
+        "search_calls": 26.87,
+        "calibration_error": 33.08,
+        "accuracy_gpt41_judge": 21.08,
+        "retriever": "BM25",
+        "model_size_b": 20
+      },
+      "date": "2025-08-08",
+      "verified": null,
+      "open_source": true,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://openai.com/index/introducing-gpt-oss/"
+    },
+    {
+      "rank": 61,
+      "system": "FrugalRAG-Qwen7B + Qwen3-Embed-8B",
+      "agent": "Standard",
+      "model_raw": [
+        "FrugalRAG-Qwen7B"
+      ],
+      "model_ids": [
+        "frugalrag-qwen7b"
+      ],
+      "model_config": null,
+      "score": 20.46,
+      "score_extra": {
+        "recall": 23.57,
+        "search_calls": 7.95,
+        "calibration_error": 73.67,
+        "retriever": "Qwen3-Embed-8B",
+        "model_size_b": 7
+      },
+      "date": "2025-09-22",
+      "verified": null,
+      "open_source": false,
+      "org": "FrugalRAG",
+      "row_url": "https://arxiv.org/abs/2507.07634"
+    },
+    {
+      "rank": 62,
+      "system": "Gemini 2.5 Pro + BM25",
+      "agent": "Standard",
+      "model_raw": [
+        "Gemini 2.5 Pro"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": null,
+      "score": 19.88,
+      "score_extra": {
+        "recall": 22.81,
+        "search_calls": 7.44,
+        "calibration_error": 52.45,
+        "accuracy_gpt41_judge": 19.04,
+        "retriever": "BM25"
+      },
+      "date": "2025-08-08",
+      "verified": null,
+      "open_source": false,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://arxiv.org/abs/2507.06261"
+    },
+    {
+      "rank": 63,
+      "system": "oss-20b-medium + BM25",
+      "agent": "Standard",
+      "model_raw": [
+        "oss-20b-medium"
+      ],
+      "model_ids": [
+        "gpt-oss-20b"
+      ],
+      "model_config": "medium",
+      "score": 16.87,
+      "score_extra": {
+        "recall": 21.96,
+        "search_calls": 13.72,
+        "calibration_error": 41.19,
+        "accuracy_gpt41_judge": 16.39,
+        "retriever": "BM25",
+        "model_size_b": 20
+      },
+      "date": "2025-08-08",
+      "verified": null,
+      "open_source": true,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://openai.com/index/introducing-gpt-oss/"
+    },
+    {
+      "rank": 64,
+      "system": "DeepSeek-R1-0528 + Qwen3-Embed-8B",
+      "agent": "Standard",
+      "model_raw": [
+        "DeepSeek-R1-0528"
+      ],
+      "model_ids": [
+        "deepseek-r1-0528"
+      ],
+      "model_config": null,
+      "score": 16.39,
+      "score_extra": {
+        "recall": 16.32,
+        "search_calls": 2.72,
+        "calibration_error": 57.66,
+        "accuracy_gpt41_judge": 16.02,
+        "retriever": "Qwen3-Embed-8B",
+        "model_size_b": 685
+      },
+      "date": "2025-08-16",
+      "verified": null,
+      "open_source": true,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://api-docs.deepseek.com/news/news250528"
+    },
+    {
+      "rank": 65,
+      "system": "Gemini 2.5 Flash + BM25",
+      "agent": "Standard",
+      "model_raw": [
+        "Gemini 2.5 Flash"
+      ],
+      "model_ids": [
+        "gemini-2.5-flash"
+      ],
+      "model_config": null,
+      "score": 16.27,
+      "score_extra": {
+        "recall": 21.45,
+        "search_calls": 10.56,
+        "calibration_error": 28.51,
+        "accuracy_gpt41_judge": 15.54,
+        "retriever": "BM25"
+      },
+      "date": "2025-08-08",
+      "verified": null,
+      "open_source": false,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://arxiv.org/abs/2507.06261"
+    },
+    {
+      "rank": 66,
+      "system": "Opus 4 + BM25",
+      "agent": "Standard",
+      "model_raw": [
+        "Opus 4"
+      ],
+      "model_ids": [
+        "claude-opus-4"
+      ],
+      "model_config": null,
+      "score": 15.54,
+      "score_extra": {
+        "recall": 22.96,
+        "search_calls": 11.22,
+        "calibration_error": 22.3,
+        "accuracy_gpt41_judge": 15.54,
+        "retriever": "BM25"
+      },
+      "date": "2025-08-08",
+      "verified": null,
+      "open_source": false,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://www.anthropic.com/news/claude-4"
+    },
+    {
+      "rank": 67,
+      "system": "GPT-4.1 + BM25",
+      "agent": "Standard",
+      "model_raw": [
+        "GPT-4.1"
+      ],
+      "model_ids": [
+        "gpt-4.1"
+      ],
+      "model_config": null,
+      "score": 15.3,
+      "score_extra": {
+        "recall": 16.42,
+        "search_calls": 10.35,
+        "calibration_error": 68.52,
+        "accuracy_gpt41_judge": 14.58,
+        "retriever": "BM25"
+      },
+      "date": "2025-08-08",
+      "verified": null,
+      "open_source": false,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://openai.com/index/gpt-4-1/"
+    },
+    {
+      "rank": 68,
+      "system": "Sonnet 4 + BM25",
+      "agent": "Standard",
+      "model_raw": [
+        "Sonnet 4"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": null,
+      "score": 14.7,
+      "score_extra": {
+        "recall": 21.31,
+        "search_calls": 9.95,
+        "calibration_error": 28.78,
+        "accuracy_gpt41_judge": 14.34,
+        "retriever": "BM25"
+      },
+      "date": "2025-08-08",
+      "verified": null,
+      "open_source": false,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://www.anthropic.com/news/claude-4"
+    },
+    {
+      "rank": 69,
+      "system": "kimi-k2-0711-preview + BM25",
+      "agent": "Standard",
+      "model_raw": [
+        "kimi-k2-0711-preview"
+      ],
+      "model_ids": [
+        "kimi-k2-0711"
+      ],
+      "model_config": null,
+      "score": 14.58,
+      "score_extra": {
+        "recall": 15.43,
+        "search_calls": 14.9,
+        "calibration_error": 69.41,
+        "accuracy_gpt41_judge": 13.49,
+        "retriever": "BM25",
+        "model_size_b": 1000
+      },
+      "date": "2025-08-16",
+      "verified": null,
+      "open_source": true,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://moonshotai.github.io/Kimi-K2/"
+    },
+    {
+      "rank": 70,
+      "system": "oss-20b-low + Qwen3-Embed-8B",
+      "agent": "Standard",
+      "model_raw": [
+        "oss-20b-low"
+      ],
+      "model_ids": [
+        "gpt-oss-20b"
+      ],
+      "model_config": "low",
+      "score": 14.1,
+      "score_extra": {
+        "recall": 17.37,
+        "search_calls": 1.87,
+        "calibration_error": 36.17,
+        "accuracy_gpt41_judge": 13.37,
+        "retriever": "Qwen3-Embed-8B",
+        "model_size_b": 20
+      },
+      "date": "2025-08-08",
+      "verified": null,
+      "open_source": true,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://openai.com/index/introducing-gpt-oss/"
+    },
+    {
+      "rank": 71,
+      "system": "WebSailor-32B + BM25",
+      "agent": "Standard",
+      "model_raw": [
+        "WebSailor-32B"
+      ],
+      "model_ids": [
+        "websailor-32b"
+      ],
+      "model_config": null,
+      "score": 12.05,
+      "score_extra": {
+        "recall": 12.0,
+        "search_calls": 8.76,
+        "accuracy_gpt41_judge": 11.2,
+        "retriever": "BM25",
+        "model_size_b": 32
+      },
+      "date": "2025-09-28",
+      "verified": null,
+      "open_source": true,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://arxiv.org/pdf/2507.02592"
+    },
+    {
+      "rank": 72,
+      "system": "SearchR1-32B + Qwen3-Embed-8B",
+      "agent": "Standard",
+      "model_raw": [
+        "SearchR1-32B"
+      ],
+      "model_ids": [
+        "searchr1-32b"
+      ],
+      "model_config": null,
+      "score": 11.08,
+      "score_extra": {
+        "recall": 10.17,
+        "search_calls": 1.69,
+        "accuracy_gpt41_judge": 10.36,
+        "retriever": "Qwen3-Embed-8B",
+        "model_size_b": 32
+      },
+      "date": "2025-08-08",
+      "verified": null,
+      "open_source": true,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://arxiv.org/abs/2505.15117"
+    },
+    {
+      "rank": 73,
+      "system": "Qwen3-32B + Qwen3-Embed-8B",
+      "agent": "Standard",
+      "model_raw": [
+        "Qwen3-32B"
+      ],
+      "model_ids": [
+        "qwen3-32b"
+      ],
+      "model_config": null,
+      "score": 10.72,
+      "score_extra": {
+        "recall": 7.8,
+        "search_calls": 0.94,
+        "calibration_error": 58.88,
+        "accuracy_gpt41_judge": 10.36,
+        "retriever": "Qwen3-Embed-8B",
+        "model_size_b": 32
+      },
+      "date": "2025-08-08",
+      "verified": null,
+      "open_source": true,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://arxiv.org/abs/2505.09388"
+    },
+    {
+      "rank": 74,
+      "system": "oss-120b-low + BM25",
+      "agent": "Standard",
+      "model_raw": [
+        "oss-120b-low"
+      ],
+      "model_ids": [
+        "gpt-oss-120b"
+      ],
+      "model_config": "low",
+      "score": 9.76,
+      "score_extra": {
+        "recall": 8.54,
+        "search_calls": 2.06,
+        "calibration_error": 43.7,
+        "accuracy_gpt41_judge": 9.52,
+        "retriever": "BM25",
+        "model_size_b": 120
+      },
+      "date": "2025-08-08",
+      "verified": null,
+      "open_source": true,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://openai.com/index/introducing-gpt-oss/"
+    },
+    {
+      "rank": 75,
+      "system": "SearchR1-32B + ReasonIR",
+      "agent": "Standard",
+      "model_raw": [
+        "SearchR1-32B"
+      ],
+      "model_ids": [
+        "searchr1-32b"
+      ],
+      "model_config": null,
+      "score": 9.31,
+      "score_extra": {
+        "recall": 8.37,
+        "search_calls": 1.74,
+        "accuracy_gpt41_judge": 9.43,
+        "retriever": "ReasonIR",
+        "model_size_b": 32
+      },
+      "date": "2025-08-08",
+      "verified": null,
+      "open_source": true,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://arxiv.org/abs/2505.15117"
+    },
+    {
+      "rank": 76,
+      "system": "Qwen3-32B + ReasonIR",
+      "agent": "Standard",
+      "model_raw": [
+        "Qwen3-32B"
+      ],
+      "model_ids": [
+        "qwen3-32b"
+      ],
+      "model_config": null,
+      "score": 9.28,
+      "score_extra": {
+        "recall": 7.59,
+        "search_calls": 0.91,
+        "calibration_error": 56.08,
+        "accuracy_gpt41_judge": 9.16,
+        "retriever": "ReasonIR",
+        "model_size_b": 32
+      },
+      "date": "2025-08-08",
+      "verified": null,
+      "open_source": true,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://arxiv.org/abs/2505.09388"
+    },
+    {
+      "rank": 77,
+      "system": "SearchR1-32B + Qwen3-Embed-4B",
+      "agent": "Standard",
+      "model_raw": [
+        "SearchR1-32B"
+      ],
+      "model_ids": [
+        "searchr1-32b"
+      ],
+      "model_config": null,
+      "score": 9.28,
+      "score_extra": {
+        "recall": 7.9,
+        "search_calls": 1.68,
+        "accuracy_gpt41_judge": 9.4,
+        "retriever": "Qwen3-Embed-4B",
+        "model_size_b": 32
+      },
+      "date": "2025-08-08",
+      "verified": null,
+      "open_source": true,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://arxiv.org/abs/2505.15117"
+    },
+    {
+      "rank": 78,
+      "system": "DeepSeek-R1-0528 + BM25",
+      "agent": "Standard",
+      "model_raw": [
+        "DeepSeek-R1-0528"
+      ],
+      "model_ids": [
+        "deepseek-r1-0528"
+      ],
+      "model_config": null,
+      "score": 8.56,
+      "score_extra": {
+        "recall": 7.58,
+        "search_calls": 2.71,
+        "calibration_error": 62.47,
+        "accuracy_gpt41_judge": 8.44,
+        "retriever": "BM25",
+        "model_size_b": 685
+      },
+      "date": "2025-08-16",
+      "verified": null,
+      "open_source": true,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://api-docs.deepseek.com/news/news250528"
+    },
+    {
+      "rank": 79,
+      "system": "Qwen3-32B + Qwen3-Embed-4B",
+      "agent": "Standard",
+      "model_raw": [
+        "Qwen3-32B"
+      ],
+      "model_ids": [
+        "qwen3-32b"
+      ],
+      "model_config": null,
+      "score": 8.07,
+      "score_extra": {
+        "recall": 6.2,
+        "search_calls": 0.89,
+        "calibration_error": 61.17,
+        "accuracy_gpt41_judge": 7.83,
+        "retriever": "Qwen3-Embed-4B",
+        "model_size_b": 32
+      },
+      "date": "2025-08-08",
+      "verified": null,
+      "open_source": true,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://arxiv.org/abs/2505.09388"
+    },
+    {
+      "rank": 80,
+      "system": "SearchR1-32B + Qwen3-Embed-0.6B",
+      "agent": "Standard",
+      "model_raw": [
+        "SearchR1-32B"
+      ],
+      "model_ids": [
+        "searchr1-32b"
+      ],
+      "model_config": null,
+      "score": 6.02,
+      "score_extra": {
+        "recall": 5.3,
+        "search_calls": 1.73,
+        "accuracy_gpt41_judge": 5.66,
+        "retriever": "Qwen3-Embed-0.6B",
+        "model_size_b": 32
+      },
+      "date": "2025-08-08",
+      "verified": null,
+      "open_source": true,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://arxiv.org/abs/2505.15117"
+    },
+    {
+      "rank": 81,
+      "system": "Qwen3-32B + Qwen3-Embed-0.6B",
+      "agent": "Standard",
+      "model_raw": [
+        "Qwen3-32B"
+      ],
+      "model_ids": [
+        "qwen3-32b"
+      ],
+      "model_config": null,
+      "score": 4.22,
+      "score_extra": {
+        "recall": 3.45,
+        "search_calls": 0.91,
+        "calibration_error": 61.2,
+        "accuracy_gpt41_judge": 4.1,
+        "retriever": "Qwen3-Embed-0.6B",
+        "model_size_b": 32
+      },
+      "date": "2025-08-08",
+      "verified": null,
+      "open_source": true,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://arxiv.org/abs/2505.09388"
+    },
+    {
+      "rank": 82,
+      "system": "SearchR1-32B + BM25",
+      "agent": "Standard",
+      "model_raw": [
+        "SearchR1-32B"
+      ],
+      "model_ids": [
+        "searchr1-32b"
+      ],
+      "model_config": null,
+      "score": 4.11,
+      "score_extra": {
+        "recall": 2.61,
+        "search_calls": 1.78,
+        "accuracy_gpt41_judge": 3.86,
+        "retriever": "BM25",
+        "model_size_b": 32
+      },
+      "date": "2025-08-08",
+      "verified": null,
+      "open_source": true,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://arxiv.org/abs/2505.15117"
+    },
+    {
+      "rank": 83,
+      "system": "oss-20b-low + BM25",
+      "agent": "Standard",
+      "model_raw": [
+        "oss-20b-low"
+      ],
+      "model_ids": [
+        "gpt-oss-20b"
+      ],
+      "model_config": "low",
+      "score": 3.99,
+      "score_extra": {
+        "recall": 5.36,
+        "search_calls": 1.89,
+        "calibration_error": 41.56,
+        "accuracy_gpt41_judge": 4.11,
+        "retriever": "BM25",
+        "model_size_b": 20
+      },
+      "date": "2025-08-08",
+      "verified": null,
+      "open_source": true,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://openai.com/index/introducing-gpt-oss/"
+    },
+    {
+      "rank": 84,
+      "system": "Qwen3-32B + BM25",
+      "agent": "Standard",
+      "model_raw": [
+        "Qwen3-32B"
+      ],
+      "model_ids": [
+        "qwen3-32b"
+      ],
+      "model_config": null,
+      "score": 3.61,
+      "score_extra": {
+        "recall": 3.12,
+        "search_calls": 0.92,
+        "calibration_error": 58.17,
+        "accuracy_gpt41_judge": 3.49,
+        "retriever": "BM25",
+        "model_size_b": 32
+      },
+      "date": "2025-08-08",
+      "verified": null,
+      "open_source": true,
+      "org": "BrowseComp-Plus",
+      "row_url": "https://arxiv.org/abs/2505.09388"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "id": "swe-bench-live-verified",
+  "family": "swe-bench-live",
+  "name": "SWE-bench-Live Verified",
+  "board": "swe-bench-live.github.io",
+  "category": "coding",
+  "measures_ja": "SWE-bench-Live の Python タスクのうち検証済みの 500 件(固定)で、テストを通すパッチを作れるか。",
+  "tasks": 500,
+  "tasks_note": null,
+  "metric": "Resolved (%)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "提出者がそれぞれの足場で走らせた結果を載せる。メンテナ(Microsoft)が OpenHands・SWE-agent・Claude Code 等で走らせた参照行も含む。",
+  "source": "https://swe-bench-live.github.io/",
+  "fetched": [
+    "https://swe-bench-live.github.io/reports-0605.jsonl",
+    "https://swe-bench-live.github.io/leaderboard.js",
+    "https://swe-bench-live.github.io/"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2025-12-31",
+  "snapshot": "sources/swe-bench-live-verified/reports-0605_verified.json",
+  "paper": "https://arxiv.org/abs/2505.23419",
+  "repo": "https://github.com/microsoft/SWE-bench-Live",
+  "notes_ja": "score はボードと同じく resolved / total を小数1桁に丸めた値。total が行ごとに違う表では分母が揃っていない。verified は 2026-08 以降の検証済み提出に付く Verified タグ。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "SWE-agent + Claude-4.5-Sonnet",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "Claude-4.5-Sonnet"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": null,
+      "score": 40.0,
+      "score_extra": {
+        "resolved_count": 200,
+        "num_valid_inst": 500
+      },
+      "date": "2025-12-31",
+      "verified": false,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "SWE-agent + GPT5-Thinking (Medium)",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "GPT5-Thinking (Medium)"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": "Thinking Medium",
+      "score": 30.4,
+      "score_extra": {
+        "resolved_count": 152,
+        "num_valid_inst": 500
+      },
+      "date": "2025-12-31",
+      "verified": false,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    }
+  ]
+}

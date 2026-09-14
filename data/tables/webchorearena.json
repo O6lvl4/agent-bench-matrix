@@ -1,0 +1,195 @@
+{
+  "id": "webchorearena",
+  "family": "webchorearena",
+  "name": "WebChoreArena",
+  "board": "webchorearena.github.io (Google Sheets leaderboard)",
+  "category": "web",
+  "measures_ja": "WebArena の環境で、大量の情報の記憶・計算・複数ページにまたがる長期記憶が要る面倒な作業をやり遂げられるか。",
+  "tasks": 532,
+  "tasks_note": null,
+  "metric": "Success Rate (%)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "論文の著者実験と、提出者が自前で走らせた結果をメールで受け付けて載せる。",
+  "source": "https://webchorearena.github.io/",
+  "fetched": [
+    "https://docs.google.com/spreadsheets/d/1RGyJ0QOxGj196KTfUK0SZeVl5IkM928_38wzIkQVxCs/export?format=csv&gid=0"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-02-25",
+  "snapshot": "sources/webchorearena/sheet_leaderboard.json",
+  "paper": "https://arxiv.org/abs/2506.01952",
+  "repo": "https://github.com/WebChoreArena/WebChoreArena",
+  "notes_ja": "シートは日付順で成績順ではないため rank は付けていない。Model 列の「足場 + モデル」を agent と model_raw に分けた。",
+  "rows": [
+    {
+      "rank": null,
+      "system": "ColorBrowserAgent + gpt-5",
+      "agent": "ColorBrowserAgent",
+      "model_raw": [
+        "gpt-5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": null,
+      "score": 47.4,
+      "score_extra": {
+        "full_or_subset": "Full",
+        "trajectory_url": "https://github.com/MadeAgents/browser-agent/tree/main/trajectories"
+      },
+      "date": "2026-02-25",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2601.07262"
+    },
+    {
+      "rank": null,
+      "system": "WEBDART + gpt-5",
+      "agent": "WEBDART",
+      "model_raw": [
+        "gpt-5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": null,
+      "score": 31.1,
+      "score_extra": {
+        "full_or_subset": "Full"
+      },
+      "date": "2025-10-09",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://openreview.net/pdf?id=RmZuzuOu9g"
+    },
+    {
+      "rank": null,
+      "system": "BrowserGym + gemini-2.5-pro-preview-03-25",
+      "agent": "BrowserGym",
+      "model_raw": [
+        "gemini-2.5-pro-preview-03-25"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": null,
+      "score": 44.9,
+      "score_extra": {
+        "full_or_subset": "Full"
+      },
+      "date": "2025-06-02",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2506.01952"
+    },
+    {
+      "rank": null,
+      "system": "AgentOccam + gemini-2.5-pro-preview-03-25",
+      "agent": "AgentOccam",
+      "model_raw": [
+        "gemini-2.5-pro-preview-03-25"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": null,
+      "score": 37.8,
+      "score_extra": {
+        "full_or_subset": "Full"
+      },
+      "date": "2025-06-02",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2506.01952"
+    },
+    {
+      "rank": null,
+      "system": "AgentOccam + claude-3-7-sonnet-20250219",
+      "agent": "AgentOccam",
+      "model_raw": [
+        "claude-3-7-sonnet-20250219"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": null,
+      "score": 23.5,
+      "score_extra": {
+        "full_or_subset": "Full"
+      },
+      "date": "2025-06-02",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2506.01952"
+    },
+    {
+      "rank": null,
+      "system": "BrowserGym + claude-3-7-sonnet-20250219",
+      "agent": "BrowserGym",
+      "model_raw": [
+        "claude-3-7-sonnet-20250219"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": null,
+      "score": 23.1,
+      "score_extra": {
+        "full_or_subset": "Full"
+      },
+      "date": "2025-06-02",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2506.01952"
+    },
+    {
+      "rank": null,
+      "system": "AgentOccam + gpt-4-2024-05-13",
+      "agent": "AgentOccam",
+      "model_raw": [
+        "gpt-4-2024-05-13"
+      ],
+      "model_ids": [
+        "gpt-4"
+      ],
+      "model_config": null,
+      "score": 6.8,
+      "score_extra": {
+        "full_or_subset": "Full"
+      },
+      "date": "2025-06-02",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2506.01952"
+    },
+    {
+      "rank": null,
+      "system": "BrowserGym + gpt-4-2024-05-13",
+      "agent": "BrowserGym",
+      "model_raw": [
+        "gpt-4-2024-05-13"
+      ],
+      "model_ids": [
+        "gpt-4"
+      ],
+      "model_config": null,
+      "score": 2.6,
+      "score_extra": {
+        "full_or_subset": "Full"
+      },
+      "date": "2025-06-02",
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://arxiv.org/abs/2506.01952"
+    }
+  ]
+}

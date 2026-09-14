@@ -1,0 +1,614 @@
+{
+  "id": "mcp-universe-fc",
+  "family": "mcp-universe",
+  "name": "MCP-Universe LLM (w/ Function Calls) Track",
+  "board": "mcp-universe.github.io",
+  "category": "tool-use",
+  "measures_ja": "実在のMCPサーバー(地図・GitHub・金融データ・3Dモデリング・ブラウザ・検索)を使い、6領域の実タスクを長い手順で解けるか。",
+  "tasks": null,
+  "tasks_note": "サイト上にタスク総数の記載が無いため null。",
+  "metric": "Overall Success Rate",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "モデルのネイティブ関数呼び出しで動かした結果。結果は運営に連絡して掲載する方式で、実行者は行ごとに明記されていない。",
+  "source": "https://mcp-universe.github.io/#results",
+  "fetched": [
+    "https://mcp-universe.github.io/"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": null,
+  "snapshot": "sources/mcp-universe-fc/leaderboard_panel.html",
+  "paper": "https://arxiv.org/abs/2508.14704",
+  "repo": "https://github.com/SalesforceAIResearch/MCP-Universe",
+  "notes_ja": "行ごとの日付は無く、掲載モデルは2025年秋頃までのもの。領域別の成功率・平均評価スコア・平均ステップ数は score_extra。open_source はボードの鍵/オープンのアイコン表示による。既定表示の Overall Track は ReAct と関数呼び出しの良い方を JS で合成したもので、ここには含めていない。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Gemini-3-Pro-Preview",
+      "agent": null,
+      "model_raw": [
+        "Gemini-3-Pro-Preview"
+      ],
+      "model_ids": [
+        "gemini-3-pro-preview"
+      ],
+      "model_config": null,
+      "score": 44.59,
+      "score_extra": {
+        "location_navigation": 35.56,
+        "repository_management": 18.18,
+        "financial_analysis": 82.5,
+        "3d_designing": 52.63,
+        "browser_automation": 38.46,
+        "web_searching": 41.82,
+        "average_evaluator_score": 61.67,
+        "average_steps": 7.8
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://blog.google/products/gemini/gemini-3/"
+    },
+    {
+      "rank": 2,
+      "system": "GPT-5-Medium",
+      "agent": null,
+      "model_raw": [
+        "GPT-5-Medium"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": "Medium",
+      "score": 41.99,
+      "score_extra": {
+        "location_navigation": 35.56,
+        "repository_management": 30.3,
+        "financial_analysis": 60.0,
+        "3d_designing": 52.63,
+        "browser_automation": 43.59,
+        "web_searching": 36.36,
+        "average_evaluator_score": 59.29,
+        "average_steps": 7.85
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://platform.openai.com/docs/models/gpt-5"
+    },
+    {
+      "rank": 3,
+      "system": "Grok-4.1-Fast",
+      "agent": null,
+      "model_raw": [
+        "Grok-4.1-Fast"
+      ],
+      "model_ids": [
+        "grok-4.1-fast"
+      ],
+      "model_config": null,
+      "score": 40.69,
+      "score_extra": {
+        "location_navigation": 28.89,
+        "repository_management": 15.15,
+        "financial_analysis": 85.0,
+        "3d_designing": 26.32,
+        "browser_automation": 33.33,
+        "web_searching": 43.64,
+        "average_evaluator_score": 60.58,
+        "average_steps": 6.32
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://x.ai/news/grok-4-1-fast"
+    },
+    {
+      "rank": 4,
+      "system": "Claude-4.5-Sonnet",
+      "agent": null,
+      "model_raw": [
+        "Claude-4.5-Sonnet"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": null,
+      "score": 35.06,
+      "score_extra": {
+        "location_navigation": 26.67,
+        "repository_management": 12.12,
+        "financial_analysis": 80.0,
+        "3d_designing": 52.63,
+        "browser_automation": 28.21,
+        "web_searching": 21.82,
+        "average_evaluator_score": 54.38,
+        "average_steps": 9.54
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://www.anthropic.com/news/claude-sonnet-4-5"
+    },
+    {
+      "rank": 5,
+      "system": "Claude-4.0-Sonnet",
+      "agent": null,
+      "model_raw": [
+        "Claude-4.0-Sonnet"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": null,
+      "score": 32.9,
+      "score_extra": {
+        "location_navigation": 22.22,
+        "repository_management": 6.06,
+        "financial_analysis": 77.5,
+        "3d_designing": 36.84,
+        "browser_automation": 35.9,
+        "web_searching": 21.82,
+        "average_evaluator_score": 52.61,
+        "average_steps": 9.78
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://www.anthropic.com/news/claude-4"
+    },
+    {
+      "rank": 6,
+      "system": "Grok-4-Fast",
+      "agent": null,
+      "model_raw": [
+        "Grok-4-Fast"
+      ],
+      "model_ids": [
+        "grok-4-fast"
+      ],
+      "model_config": null,
+      "score": 32.47,
+      "score_extra": {
+        "location_navigation": 22.22,
+        "repository_management": 6.06,
+        "financial_analysis": 80.0,
+        "3d_designing": 21.05,
+        "browser_automation": 23.08,
+        "web_searching": 32.73,
+        "average_evaluator_score": 52.2,
+        "average_steps": 7.25
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://x.ai/news/grok-4-fast"
+    },
+    {
+      "rank": 7,
+      "system": "Claude-4.0-Sonnet-Thinking",
+      "agent": null,
+      "model_raw": [
+        "Claude-4.0-Sonnet-Thinking"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": "Thinking",
+      "score": 31.6,
+      "score_extra": {
+        "location_navigation": 24.44,
+        "repository_management": 6.06,
+        "financial_analysis": 72.5,
+        "3d_designing": 47.37,
+        "browser_automation": 35.9,
+        "web_searching": 14.55,
+        "average_evaluator_score": 50.83,
+        "average_steps": 9.12
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://www.anthropic.com/news/claude-4"
+    },
+    {
+      "rank": 8,
+      "system": "Kimi-K2-Thinking",
+      "agent": null,
+      "model_raw": [
+        "Kimi-K2-Thinking"
+      ],
+      "model_ids": [
+        "kimi-k2-thinking"
+      ],
+      "model_config": null,
+      "score": 26.41,
+      "score_extra": {
+        "location_navigation": 20.0,
+        "repository_management": 12.12,
+        "financial_analysis": 60.0,
+        "3d_designing": 15.79,
+        "browser_automation": 20.51,
+        "web_searching": 23.64,
+        "average_evaluator_score": 45.23,
+        "average_steps": 8.15
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://moonshotai.github.io/Kimi-K2/thinking.html"
+    },
+    {
+      "rank": 9,
+      "system": "Claude-4.5-Haiku",
+      "agent": null,
+      "model_raw": [
+        "Claude-4.5-Haiku"
+      ],
+      "model_ids": [
+        "claude-haiku-4.5"
+      ],
+      "model_config": null,
+      "score": 26.41,
+      "score_extra": {
+        "location_navigation": 22.22,
+        "repository_management": 12.12,
+        "financial_analysis": 60.0,
+        "3d_designing": 21.05,
+        "browser_automation": 20.51,
+        "web_searching": 20.0,
+        "average_evaluator_score": 44.63,
+        "average_steps": 8.41
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://www.anthropic.com/news/claude-haiku-4-5"
+    },
+    {
+      "rank": 10,
+      "system": "GPT-OSS-120B",
+      "agent": null,
+      "model_raw": [
+        "GPT-OSS-120B"
+      ],
+      "model_ids": [
+        "gpt-oss-120b"
+      ],
+      "model_config": null,
+      "score": 25.54,
+      "score_extra": {
+        "location_navigation": 24.44,
+        "repository_management": 15.15,
+        "financial_analysis": 42.5,
+        "3d_designing": 36.84,
+        "browser_automation": 20.51,
+        "web_searching": 20.0,
+        "average_evaluator_score": 39.78,
+        "average_steps": 7.53
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://huggingface.co/openai/gpt-oss-120b"
+    },
+    {
+      "rank": 11,
+      "system": "Grok-Code-Fast-1",
+      "agent": null,
+      "model_raw": [
+        "Grok-Code-Fast-1"
+      ],
+      "model_ids": [
+        "grok-code-fast-1"
+      ],
+      "model_config": null,
+      "score": 24.68,
+      "score_extra": {
+        "location_navigation": 17.78,
+        "repository_management": 12.12,
+        "financial_analysis": 57.5,
+        "3d_designing": 26.32,
+        "browser_automation": 15.38,
+        "web_searching": 20.0,
+        "average_evaluator_score": 43.89,
+        "average_steps": 7.61
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://x.ai/news/grok-code-fast-1"
+    },
+    {
+      "rank": 12,
+      "system": "GLM-4.6",
+      "agent": null,
+      "model_raw": [
+        "GLM-4.6"
+      ],
+      "model_ids": [
+        "glm-4.6"
+      ],
+      "model_config": null,
+      "score": 20.78,
+      "score_extra": {
+        "location_navigation": 8.89,
+        "repository_management": 12.12,
+        "financial_analysis": 47.5,
+        "3d_designing": 26.32,
+        "browser_automation": 17.95,
+        "web_searching": 16.36,
+        "average_evaluator_score": 35.87,
+        "average_steps": 11.79
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://z.ai/blog/glm-4.6"
+    },
+    {
+      "rank": 13,
+      "system": "GPT-4.1",
+      "agent": null,
+      "model_raw": [
+        "GPT-4.1"
+      ],
+      "model_ids": [
+        "gpt-4.1"
+      ],
+      "model_config": null,
+      "score": 19.91,
+      "score_extra": {
+        "location_navigation": 15.56,
+        "repository_management": 6.06,
+        "financial_analysis": 45.0,
+        "3d_designing": 26.32,
+        "browser_automation": 28.21,
+        "web_searching": 5.45,
+        "average_evaluator_score": 39.58,
+        "average_steps": 6.83
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://platform.openai.com/docs/models/gpt-4.1"
+    },
+    {
+      "rank": 14,
+      "system": "GLM-4.5",
+      "agent": null,
+      "model_raw": [
+        "GLM-4.5"
+      ],
+      "model_ids": [
+        "glm-4.5"
+      ],
+      "model_config": null,
+      "score": 19.91,
+      "score_extra": {
+        "location_navigation": 22.22,
+        "repository_management": 9.09,
+        "financial_analysis": 37.5,
+        "3d_designing": 26.32,
+        "browser_automation": 10.26,
+        "web_searching": 16.36,
+        "average_evaluator_score": 37.58,
+        "average_steps": 10.17
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://z.ai/blog/glm-4.5"
+    },
+    {
+      "rank": 15,
+      "system": "DeepSeek-V3.1",
+      "agent": null,
+      "model_raw": [
+        "DeepSeek-V3.1"
+      ],
+      "model_ids": [
+        "deepseek-v3.1"
+      ],
+      "model_config": null,
+      "score": 19.91,
+      "score_extra": {
+        "location_navigation": 11.11,
+        "repository_management": 6.06,
+        "financial_analysis": 45.0,
+        "3d_designing": 26.32,
+        "browser_automation": 23.08,
+        "web_searching": 12.73,
+        "average_evaluator_score": 38.88,
+        "average_steps": 10.74
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1"
+    },
+    {
+      "rank": 16,
+      "system": "Kimi-K2-0905",
+      "agent": null,
+      "model_raw": [
+        "Kimi-K2-0905"
+      ],
+      "model_ids": [
+        "kimi-k2-0905"
+      ],
+      "model_config": null,
+      "score": 19.48,
+      "score_extra": {
+        "location_navigation": 17.78,
+        "repository_management": 6.06,
+        "financial_analysis": 42.5,
+        "3d_designing": 15.79,
+        "browser_automation": 23.08,
+        "web_searching": 10.91,
+        "average_evaluator_score": 38.52,
+        "average_steps": 10.2
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://moonshotai.github.io/Kimi-K2/"
+    },
+    {
+      "rank": 17,
+      "system": "DeepSeek-V3.1-Terminus",
+      "agent": null,
+      "model_raw": [
+        "DeepSeek-V3.1-Terminus"
+      ],
+      "model_ids": [
+        "deepseek-v3.1-terminus"
+      ],
+      "model_config": null,
+      "score": 18.61,
+      "score_extra": {
+        "location_navigation": 11.11,
+        "repository_management": 6.06,
+        "financial_analysis": 45.0,
+        "3d_designing": 10.53,
+        "browser_automation": 17.95,
+        "web_searching": 16.36,
+        "average_evaluator_score": 34.55,
+        "average_steps": 11.33
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus"
+    },
+    {
+      "rank": 18,
+      "system": "Qwen3-Max-Preview (Instruct)",
+      "agent": null,
+      "model_raw": [
+        "Qwen3-Max-Preview (Instruct)"
+      ],
+      "model_ids": [
+        "qwen3-max-preview"
+      ],
+      "model_config": "Instruct",
+      "score": 17.32,
+      "score_extra": {
+        "location_navigation": 13.33,
+        "repository_management": 15.15,
+        "financial_analysis": 40.0,
+        "3d_designing": 21.05,
+        "browser_automation": 15.38,
+        "web_searching": 5.45,
+        "average_evaluator_score": 36.71,
+        "average_steps": 8.57
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://modelstudio.console.alibabacloud.com/?tab=doc#/doc/?type=model&url=2840914_2&modelId=qwen3-max-preview"
+    },
+    {
+      "rank": 19,
+      "system": "DeepSeek-V3.2-Exp",
+      "agent": null,
+      "model_raw": [
+        "DeepSeek-V3.2-Exp"
+      ],
+      "model_ids": [
+        "deepseek-v3.2-exp"
+      ],
+      "model_config": null,
+      "score": 15.58,
+      "score_extra": {
+        "location_navigation": 6.67,
+        "repository_management": 9.09,
+        "financial_analysis": 32.5,
+        "3d_designing": 15.79,
+        "browser_automation": 20.51,
+        "web_searching": 10.91,
+        "average_evaluator_score": 34.08,
+        "average_steps": 10.56
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Exp"
+    },
+    {
+      "rank": 20,
+      "system": "GPT-4o-2024-08-06",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o-2024-08-06"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 13.42,
+      "score_extra": {
+        "location_navigation": 8.89,
+        "repository_management": 6.06,
+        "financial_analysis": 35.0,
+        "3d_designing": 10.53,
+        "browser_automation": 12.82,
+        "web_searching": 7.27,
+        "average_evaluator_score": 32.43,
+        "average_steps": 6.65
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://platform.openai.com/docs/models/gpt-4o"
+    },
+    {
+      "rank": 21,
+      "system": "GLM-4.5-Air",
+      "agent": null,
+      "model_raw": [
+        "GLM-4.5-Air"
+      ],
+      "model_ids": [
+        "glm-4.5-air"
+      ],
+      "model_config": null,
+      "score": 12.12,
+      "score_extra": {
+        "location_navigation": 8.89,
+        "repository_management": 3.03,
+        "financial_analysis": 25.0,
+        "3d_designing": 10.53,
+        "browser_automation": 7.69,
+        "web_searching": 14.55,
+        "average_evaluator_score": 26.47,
+        "average_steps": 12.21
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": null,
+      "row_url": "https://z.ai/blog/glm-4.5"
+    }
+  ]
+}

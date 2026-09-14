@@ -1,0 +1,624 @@
+{
+ "source": "taubench.com leaderboard data (S3 manifest.json + per-submission submission.json)",
+ "manifest_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+ "manifest": {
+  "submissions": [
+   "claude-opus-4-5_sierra_2026-02-26",
+   "claude-sonnet-4-5_sierra_2026-02-26",
+   "gpt-5-2_sierra_2026-02-26",
+   "gpt-5-2-none_sierra_2026-02-26",
+   "glm-5-think_sierra_2026-03-02",
+   "qwen3.5-397b-a17b-think_sierra_2026-03-02",
+   "gemini-3-flash_sierra_2026-03-02",
+   "gemini-3-pro_sierra_2026-03-02",
+   "distyl-buttonagent_distyl_2026-03-25",
+   "gpt-5-4_sierra_2026-03-25",
+   "raft-30b-a3b_neu_2026-04-29",
+   "gpt-5-5_sierra_2026-05-05",
+   "claude-opus-4-6_sierra_2026-05-05",
+   "claude-opus-4-7_sierra_2026-05-05",
+   "gemini-2-5-pro_sierra_2026-05-05",
+   "gemini-3-1-pro-preview_sierra_2026-05-05",
+   "grok-4-fast_sierra_2026-05-05",
+   "grok-4-1-fast_sierra_2026-05-05",
+   "grok-4-2_sierra_2026-05-05",
+   "gpt-5-6-sol_sierra_2026-08-04",
+   "claude-opus-4-8_sierra_2026-08-04",
+   "claude-fable-5_sierra_2026-08-04",
+   "muse-spark-1-1_sierra_2026-08-04",
+   "kimi-k3_sierra_2026-08-04",
+   "glm-5-2_sierra_2026-08-04",
+   "grok-4-5_sierra_2026-08-04",
+   "inkling_sierra_2026-08-04",
+   "claude-opus-5_sierra_2026-08-04",
+   "qwen3-8-max_sierra_2026-08-04"
+  ],
+  "voice_submissions": [
+   "gpt-realtime-1.5_sierra_2026-03-03",
+   "gemini-live-2.5-flash_sierra_2026-03-03",
+   "xai-realtime_sierra_2026-03-03",
+   "grok-voice-think-fast-1-0_xai_2026-04-21",
+   "gemini-3-1-flash-live-preview-thinking-high_google_2026-04-02",
+   "gemini-3-1-flash-live-preview-thinking-minimal_google_2026-04-13",
+   "gpt-realtime-1-0_openai_2026-04-13",
+   "livekit-cascaded_livekit_2026-05-19",
+   "gpt-realtime-2_openai_2026-06-24",
+   "gpt-realtime-2_openai_2026-06-29",
+   "gpt-realtime-2-minimal_openai_2026-07-01",
+   "grok-voice-think-fast-1-0-tool-mentor_pickle_2026-07-07",
+   "gpt-realtime-2-banking_openai_2026-07-12",
+   "gemini-3-1-flash-live-preview-thinking-high-banking_google_2026-07-13",
+   "xai-realtime-banking_xai_2026-07-13",
+   "qwen3-5-omni-plus-realtime_qwen_2026-08-06",
+   "grok-voice-think-fast-2-0_xai_2026-08-06",
+   "pine-voice-preview-user-sim-v1-0_pineai_2026-08-17",
+   "pine-voice-preview-user-sim-gpt-5-5_pineai_2026-08-17",
+   "gpt-live-1-diamond-alpha_openai_2026-09-09",
+   "gpt-live-1-diamond-alpha-user-sim-gpt-5-5_openai_2026-09-09"
+  ],
+  "legacy_submissions": [
+   "claude-3-7-sonnet_anthropic_2024-06-20",
+   "claude-opus-4_anthropic_2025-05-22",
+   "claude-opus-4-1_anthropic_2025-01-15",
+   "claude-sonnet-4_anthropic_2025-05-22",
+   "claude-sonnet-4-5_anthropic_2025-10-02",
+   "gpt-4-1_openai_2024-06-20",
+   "gpt-4-1-mini_openai_2024-06-20",
+   "kimi-k2_moonshot-ai_2025-07-11",
+   "o3_openai_2025-01-15",
+   "o4-mini_openai_2024-06-20",
+   "gpt-5_sierra_2025-08-09",
+   "qwen3-max_qwen_2024_09_23",
+   "gemini-3-pro_google_2025-11-18",
+   "deepseek-v3.2_deepseek_2025-12-01",
+   "toolorchestra_nvidia_2025-12-02",
+   "qwen3-max_qwen_2026-01-23"
+  ]
+ },
+ "submissions": {
+  "qwen3.5-397b-a17b-think_sierra_2026-03-02": {
+   "model_name": "Qwen3.5-397B-A17B",
+   "model_organization": "Alibaba Cloud",
+   "submitting_organization": "Sierra",
+   "submission_date": "2026-03-02",
+   "contact_info": {
+    "email": "victor@sierra.ai, ben.s@sierra.ai",
+    "name": "Sierra Research Team"
+   },
+   "is_new": false,
+   "submission_type": "standard",
+   "trajectories_available": true,
+   "trajectory_files": {
+    "airline": "qwen3.5-397b-a17b_enabled_airline_gpt-5.2_4trials.json",
+    "retail": "qwen3.5-397b-a17b_enabled_retail_gpt-5.2_4trials.json",
+    "telecom": "qwen3.5-397b-a17b_enabled_telecom_gpt-5.2_4trials.json",
+    "banking_knowledge": "qwen3.5-397b-a17b_enabled_banking_knowledge_gpt-5.2_4trials.json"
+   },
+   "references": [],
+   "results": {
+    "airline": {
+     "pass_1": 81.5,
+     "pass_2": 75.67,
+     "pass_3": 71.5,
+     "pass_4": 68.0,
+     "cost": null
+    },
+    "retail": {
+     "pass_1": 84.43,
+     "pass_2": 74.42,
+     "pass_3": 66.45,
+     "pass_4": 59.65,
+     "cost": null
+    },
+    "telecom": {
+     "pass_1": 97.81,
+     "pass_2": 95.76,
+     "pass_3": 93.86,
+     "pass_4": 92.11,
+     "cost": null
+    },
+    "banking_knowledge": {
+     "pass_1": 9.79,
+     "pass_2": 6.36,
+     "pass_3": 5.41,
+     "pass_4": 5.15,
+     "cost": null,
+     "retrieval_config": "text-emb-3-large"
+    }
+   },
+   "reasoning_effort": "enabled",
+   "methodology": {
+    "evaluation_date": "2026-02-27",
+    "tau2_bench_version": "1.0.1",
+    "user_simulator": "gpt-5.2",
+    "notes": "Evaluated using Qwen3.5-397B-A17B with thinking enabled. User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Seed: 300. Temperature: 1.0, top_p: 0.95. Self-hosted via vLLM. banking_knowledge re-graded under tau2-bench v1.0.1 grading fixes on 2026-07-15 (extra-read logging #329, numeric-argument normalization #397, T077-T086 gold trajectories #402); scores prior to v1.0.1 are not comparable.",
+    "verification": {
+     "modified_prompts": false,
+     "omitted_questions": false,
+     "details": "Standard tau-bench scaffold. Clean 4-trial runs with no infrastructure errors across all domains."
+    }
+   },
+   "model_release": {
+    "release_date": "2026-02-16",
+    "announcement_url": "https://www.alibabacloud.com/blog/qwen3-5-towards-native-multimodal-agents_602894",
+    "announcement_title": "Qwen3.5: Towards Native Multimodal Agents"
+   }
+  },
+  "claude-opus-4-5_sierra_2026-02-26": {
+   "model_name": "Claude Opus 4.5",
+   "model_organization": "Anthropic",
+   "submitting_organization": "Sierra",
+   "submission_date": "2026-02-26",
+   "contact_info": {
+    "email": "victor@sierra.ai, ben.s@sierra.ai",
+    "name": "Sierra Research Team"
+   },
+   "is_new": false,
+   "submission_type": "standard",
+   "trajectories_available": true,
+   "trajectory_files": {
+    "airline": "claude-opus-4-5_high_airline_gpt-5.2_4trials.json",
+    "retail": "claude-opus-4-5_high_retail_gpt-5.2_4trials.json",
+    "telecom": "claude-opus-4-5_high_telecom_gpt-5.2_4trials.json",
+    "banking_knowledge": "claude-opus-4-5_high_banking_knowledge_gpt-5.2_4trials.json"
+   },
+   "references": [],
+   "results": {
+    "airline": {
+     "pass_1": 84.0,
+     "pass_2": 77.67,
+     "pass_3": 73.5,
+     "pass_4": 70.0,
+     "cost": 0.39919
+    },
+    "retail": {
+     "pass_1": 79.61,
+     "pass_2": 67.4,
+     "pass_3": 58.77,
+     "pass_4": 51.75,
+     "cost": 0.38695
+    },
+    "telecom": {
+     "pass_1": 92.32,
+     "pass_2": 86.11,
+     "pass_3": 81.36,
+     "pass_4": 78.07,
+     "cost": 0.71992
+    },
+    "banking_knowledge": {
+     "pass_1": 24.74,
+     "pass_2": 17.18,
+     "pass_3": 13.66,
+     "pass_4": 11.34,
+     "cost": null,
+     "retrieval_config": "alltools"
+    }
+   },
+   "reasoning_effort": "high",
+   "methodology": {
+    "evaluation_date": "2026-05-05",
+    "tau2_bench_version": "1.0.1",
+    "user_simulator": "gpt-5.2",
+    "notes": "Evaluated using AllTools retrieval (BM25 + dense OpenAI text-embedding-3-large + sandboxed shell). User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Seed: 300. Banking_knowledge domain only — other domains intentionally excluded from this comparison; the AllTools setting standardizes retrieval across models. banking_knowledge re-graded under tau2-bench v1.0.1 grading fixes on 2026-07-15 (extra-read logging #329, numeric-argument normalization #397, T077-T086 gold trajectories #402); scores prior to v1.0.1 are not comparable.",
+    "verification": {
+     "modified_prompts": false,
+     "omitted_questions": false,
+     "details": "Verified evaluation with full trajectory data available. Standard tau-bench scaffold."
+    }
+   },
+   "model_release": {
+    "release_date": "2025-11-24",
+    "announcement_url": "https://www.anthropic.com/news/claude-opus-4-5",
+    "announcement_title": "Introducing Claude Opus 4.5"
+   }
+  },
+  "gpt-5-2_sierra_2026-02-26": {
+   "model_name": "GPT-5.2",
+   "model_organization": "OpenAI",
+   "submitting_organization": "Sierra",
+   "submission_date": "2026-02-26",
+   "contact_info": {
+    "email": "victor@sierra.ai, ben.s@sierra.ai",
+    "name": "Sierra Research Team"
+   },
+   "is_new": false,
+   "submission_type": "standard",
+   "trajectories_available": true,
+   "trajectory_files": {
+    "airline": "gpt-5.2_high_airline_gpt-5.2_4trials.json",
+    "retail": "gpt-5.2_high_retail_gpt-5.2_4trials.json",
+    "telecom": "gpt-5.2_high_telecom_gpt-5.2_4trials.json",
+    "banking_knowledge": "gpt-5.2_high_banking_knowledge_gpt-5.2_4trials.json"
+   },
+   "references": [],
+   "results": {
+    "airline": {
+     "pass_1": 83.0,
+     "pass_2": 78.33,
+     "pass_3": 75.0,
+     "pass_4": 72.0,
+     "cost": 0.11379
+    },
+    "retail": {
+     "pass_1": 81.58,
+     "pass_2": 69.59,
+     "pass_3": 59.87,
+     "pass_4": 51.75,
+     "cost": 0.07156
+    },
+    "telecom": {
+     "pass_1": 89.69,
+     "pass_2": 82.46,
+     "pass_3": 76.75,
+     "pass_4": 71.93,
+     "cost": 0.09312
+    },
+    "banking_knowledge": {
+     "pass_1": 32.22,
+     "pass_2": 23.88,
+     "pass_3": 20.62,
+     "pass_4": 18.56,
+     "cost": null,
+     "retrieval_config": "alltools"
+    }
+   },
+   "reasoning_effort": "high",
+   "methodology": {
+    "evaluation_date": "2026-05-05",
+    "tau2_bench_version": "1.0.1",
+    "user_simulator": "gpt-5.2",
+    "notes": "Evaluated using AllTools retrieval (BM25 + dense OpenAI text-embedding-3-large + sandboxed shell). User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Seed: 300. Banking_knowledge domain only — other domains intentionally excluded from this comparison; the AllTools setting standardizes retrieval across models. banking_knowledge re-graded under tau2-bench v1.0.1 grading fixes on 2026-07-15 (extra-read logging #329, numeric-argument normalization #397, T077-T086 gold trajectories #402); scores prior to v1.0.1 are not comparable.",
+    "verification": {
+     "modified_prompts": false,
+     "omitted_questions": false,
+     "details": "Verified evaluation with full trajectory data available. Standard tau-bench scaffold."
+    }
+   },
+   "model_release": {
+    "release_date": "2025-12-11",
+    "announcement_url": "https://openai.com/index/introducing-gpt-5-2/",
+    "announcement_title": "Introducing GPT-5.2"
+   }
+  },
+  "gemini-3-flash_sierra_2026-03-02": {
+   "model_name": "Gemini 3 Flash",
+   "model_organization": "Google",
+   "submitting_organization": "Sierra",
+   "submission_date": "2026-03-02",
+   "contact_info": {
+    "email": "victor@sierra.ai, ben.s@sierra.ai",
+    "name": "Sierra Research Team"
+   },
+   "is_new": false,
+   "submission_type": "standard",
+   "trajectories_available": true,
+   "trajectory_files": {
+    "airline": "geminiflash-airline.json",
+    "retail": "geminiflash-retail.json",
+    "telecom": "geminiflash-telecom.json",
+    "banking_knowledge": "geminiflash-terminal.json"
+   },
+   "references": [],
+   "results": {
+    "airline": {
+     "pass_1": 82.5,
+     "pass_2": 76.33,
+     "pass_3": 72.0,
+     "pass_4": 68.0,
+     "cost": null
+    },
+    "retail": {
+     "pass_1": 76.75,
+     "pass_2": 65.94,
+     "pass_3": 57.89,
+     "pass_4": 51.75,
+     "cost": null
+    },
+    "telecom": {
+     "pass_1": 91.23,
+     "pass_2": 83.48,
+     "pass_3": 76.54,
+     "pass_4": 70.18,
+     "cost": null
+    },
+    "banking_knowledge": {
+     "pass_1": 27.32,
+     "pass_2": 15.46,
+     "pass_3": 10.31,
+     "pass_4": 7.22,
+     "cost": null,
+     "retrieval_config": "terminal"
+    }
+   },
+   "reasoning_effort": "high",
+   "methodology": {
+    "evaluation_date": "2026-03-02",
+    "tau2_bench_version": "1.0.1",
+    "user_simulator": "gpt-5.2",
+    "notes": "Evaluated using vertex_ai/gemini-3-flash-preview with reasoning_effort: high. User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Seed: 123. Telecom domain had 20 simulations terminated due to too_many_errors (all scored as 0). Banking domain had 52 simulations terminated due to max_steps (all scored as 0). Banking domain evaluated with terminal-based agentic search retrieval (terminal_use). banking_knowledge re-graded under tau2-bench v1.0.1 grading fixes on 2026-07-15 (extra-read logging #329, numeric-argument normalization #397, T077-T086 gold trajectories #402); scores prior to v1.0.1 are not comparable.",
+    "verification": {
+     "modified_prompts": false,
+     "omitted_questions": false,
+     "details": "Standard tau-bench scaffold."
+    }
+   },
+   "model_release": {
+    "release_date": "2025-12-17",
+    "announcement_url": "https://blog.google/products/gemini/gemini-3-flash/",
+    "announcement_title": "Gemini 3 Flash: frontier intelligence built for speed"
+   }
+  },
+  "gemini-3-pro_sierra_2026-03-02": {
+   "model_name": "Gemini 3 Pro",
+   "model_organization": "Google",
+   "submitting_organization": "Sierra",
+   "submission_date": "2026-03-02",
+   "contact_info": {
+    "email": "victor@sierra.ai, ben.s@sierra.ai",
+    "name": "Sierra Research Team"
+   },
+   "is_new": false,
+   "submission_type": "standard",
+   "trajectories_available": true,
+   "trajectory_files": {
+    "airline": "geminipro-airline.json",
+    "retail": "geminipro-retail.json",
+    "telecom": "geminipro-telecom.json",
+    "banking_knowledge": "geminipro-terminal.json"
+   },
+   "references": [],
+   "results": {
+    "airline": {
+     "pass_1": 80.5,
+     "pass_2": 74.67,
+     "pass_3": 70.0,
+     "pass_4": 66.0,
+     "cost": null
+    },
+    "retail": {
+     "pass_1": 75.88,
+     "pass_2": 63.45,
+     "pass_3": 54.39,
+     "pass_4": 47.37,
+     "cost": null
+    },
+    "telecom": {
+     "pass_1": 91.01,
+     "pass_2": 84.5,
+     "pass_3": 79.17,
+     "pass_4": 74.56,
+     "cost": null
+    },
+    "banking_knowledge": {
+     "pass_1": 18.04,
+     "pass_2": 9.28,
+     "pass_3": 5.67,
+     "pass_4": 4.12,
+     "cost": null,
+     "retrieval_config": "terminal"
+    }
+   },
+   "reasoning_effort": "high",
+   "methodology": {
+    "evaluation_date": "2026-03-02",
+    "tau2_bench_version": "1.0.1",
+    "user_simulator": "gpt-5.2",
+    "notes": "Evaluated using vertex_ai/gemini-3-pro-preview with reasoning_effort: high. User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Infrastructure errors treated as failures (reward 0): 3 in airline, 20 in retail, 2 in telecom. Banking domain had 42 simulations terminated due to max_steps (all scored as 0). Banking domain evaluated with terminal-based agentic search retrieval (terminal_use). banking_knowledge re-graded under tau2-bench v1.0.1 grading fixes on 2026-07-15 (extra-read logging #329, numeric-argument normalization #397, T077-T086 gold trajectories #402); scores prior to v1.0.1 are not comparable.",
+    "verification": {
+     "modified_prompts": false,
+     "omitted_questions": false,
+     "details": "Standard tau-bench scaffold."
+    }
+   },
+   "model_release": {
+    "release_date": "2025-11-18",
+    "announcement_url": "https://blog.google/products/gemini/gemini-3/",
+    "announcement_title": "Gemini 3: Introducing the latest Gemini AI model from Google"
+   }
+  },
+  "glm-5-think_sierra_2026-03-02": {
+   "model_name": "GLM-5",
+   "model_organization": "Zhipu AI",
+   "submitting_organization": "Sierra",
+   "submission_date": "2026-03-02",
+   "contact_info": {
+    "email": "victor@sierra.ai, ben.s@sierra.ai",
+    "name": "Sierra Research Team"
+   },
+   "is_new": false,
+   "submission_type": "standard",
+   "trajectories_available": true,
+   "trajectory_files": {
+    "airline": "glm-5_enabled_airline_gpt-5.2_4trials.json",
+    "retail": "glm-5_enabled_retail_gpt-5.2_4trials.json",
+    "telecom": "glm-5_enabled_telecom_gpt-5.2_4trials.json",
+    "banking_knowledge": "glm-5_enabled_banking_knowledge_gpt-5.2_4trials.json"
+   },
+   "references": [],
+   "results": {
+    "airline": {
+     "pass_1": 82.5,
+     "pass_2": 76.0,
+     "pass_3": 72.0,
+     "pass_4": 70.0,
+     "cost": null
+    },
+    "retail": {
+     "pass_1": 73.68,
+     "pass_2": 60.38,
+     "pass_3": 51.1,
+     "pass_4": 43.86,
+     "cost": null
+    },
+    "telecom": {
+     "pass_1": 86.84,
+     "pass_2": 76.32,
+     "pass_3": 68.2,
+     "pass_4": 62.28,
+     "cost": null
+    },
+    "banking_knowledge": {
+     "pass_1": 9.79,
+     "pass_2": 7.22,
+     "pass_3": 5.67,
+     "pass_4": 3.09,
+     "cost": null,
+     "retrieval_config": "text-emb-3-large"
+    }
+   },
+   "reasoning_effort": "enabled",
+   "methodology": {
+    "evaluation_date": "2026-02-27",
+    "tau2_bench_version": "1.0.1",
+    "user_simulator": "gpt-5.2",
+    "notes": "Evaluated using GLM-5 with thinking enabled. User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Seed: 300. Temperature: 1.0, top_p: 0.95. Infrastructure errors treated as failures. banking_knowledge re-graded under tau2-bench v1.0.1 grading fixes on 2026-07-15 (extra-read logging #329, numeric-argument normalization #397, T077-T086 gold trajectories #402); scores prior to v1.0.1 are not comparable.",
+    "verification": {
+     "modified_prompts": false,
+     "omitted_questions": false,
+     "details": "Standard tau-bench scaffold."
+    }
+   },
+   "model_release": {
+    "release_date": "2026-02-11",
+    "announcement_url": "https://docs.z.ai/guides/llm/glm-5",
+    "announcement_title": "GLM-5 - Overview - Z.AI Developer Document"
+   }
+  },
+  "claude-sonnet-4-5_sierra_2026-02-26": {
+   "model_name": "Claude Sonnet 4.5",
+   "model_organization": "Anthropic",
+   "submitting_organization": "Sierra",
+   "submission_date": "2026-02-26",
+   "contact_info": {
+    "email": "victor@sierra.ai, ben.s@sierra.ai",
+    "name": "Sierra Research Team"
+   },
+   "is_new": false,
+   "submission_type": "standard",
+   "trajectories_available": true,
+   "trajectory_files": {
+    "airline": "claude-sonnet-4-5_enabled_airline_gpt-5.2_4trials.json",
+    "retail": "claude-sonnet-4-5_enabled_retail_gpt-5.2_4trials.json",
+    "telecom": "claude-sonnet-4-5_enabled_telecom_gpt-5.2_4trials.json",
+    "banking_knowledge": "claude-sonnet-4-5_enabled_banking_knowledge_gpt-5.2_4trials.json"
+   },
+   "references": [],
+   "results": {
+    "airline": {
+     "pass_1": 72.0,
+     "pass_2": 62.0,
+     "pass_3": 54.5,
+     "pass_4": 48.0,
+     "cost": 0.29646
+    },
+    "retail": {
+     "pass_1": 72.37,
+     "pass_2": 57.46,
+     "pass_3": 47.37,
+     "pass_4": 39.47,
+     "cost": 0.25494
+    },
+    "telecom": {
+     "pass_1": 84.87,
+     "pass_2": 75.44,
+     "pass_3": 68.86,
+     "pass_4": 64.04,
+     "cost": 0.48769
+    },
+    "banking_knowledge": {
+     "pass_1": 25.26,
+     "pass_2": 15.81,
+     "pass_3": 12.63,
+     "pass_4": 10.31,
+     "cost": 4.04814,
+     "retrieval_config": "terminal"
+    }
+   },
+   "reasoning_effort": "enabled",
+   "methodology": {
+    "evaluation_date": "2026-02-24",
+    "tau2_bench_version": "1.0.1",
+    "user_simulator": "gpt-5.2",
+    "notes": "Evaluated using Claude Sonnet 4.5 (claude-sonnet-4-5-20250929) with extended thinking enabled. User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Seed: 300. Banking domain evaluated with terminal-based agentic search retrieval. banking_knowledge re-graded under tau2-bench v1.0.1 grading fixes on 2026-07-15 (extra-read logging #329, numeric-argument normalization #397, T077-T086 gold trajectories #402); scores prior to v1.0.1 are not comparable.",
+    "verification": {
+     "modified_prompts": false,
+     "omitted_questions": false,
+     "details": "Verified evaluation with full trajectory data available. Standard tau-bench scaffold."
+    }
+   },
+   "model_release": {
+    "release_date": "2025-09-29",
+    "announcement_url": "https://www.anthropic.com/news/claude-sonnet-4-5",
+    "announcement_title": "Introducing Claude Sonnet 4.5"
+   }
+  },
+  "gpt-5-2-none_sierra_2026-02-26": {
+   "model_name": "GPT-5.2",
+   "model_organization": "OpenAI",
+   "submitting_organization": "Sierra",
+   "submission_date": "2026-02-26",
+   "contact_info": {
+    "email": "victor@sierra.ai, ben.s@sierra.ai",
+    "name": "Sierra Research Team"
+   },
+   "is_new": false,
+   "submission_type": "standard",
+   "trajectories_available": true,
+   "trajectory_files": {
+    "airline": "gpt-5.2_none_airline_gpt-5.2_4trials.json",
+    "retail": "gpt-5.2_none_retail_gpt-5.2_4trials.json",
+    "telecom": "gpt-5.2_none_telecom_gpt-5.2_4trials.json",
+    "banking_knowledge": "gpt-5.2_none_banking_knowledge_gpt-5.2_4trials.json"
+   },
+   "references": [],
+   "results": {
+    "airline": {
+     "pass_1": 52.5,
+     "pass_2": 35.66666666666667,
+     "pass_3": 27.0,
+     "pass_4": 22.0,
+     "cost": 0.053692803500000004
+    },
+    "retail": {
+     "pass_1": 75.0,
+     "pass_2": 62.13450292397662,
+     "pass_3": 53.07017543859649,
+     "pass_4": 45.614035087719294,
+     "cost": 0.048219267434210525
+    },
+    "telecom": {
+     "pass_1": 57.23684210526315,
+     "pass_2": 42.83625730994152,
+     "pass_3": 35.526315789473685,
+     "pass_4": 30.701754385964914,
+     "cost": 0.04937742280701755
+    },
+    "banking_knowledge": {
+     "pass_1": 12.63,
+     "pass_2": 7.22,
+     "pass_3": 5.15,
+     "pass_4": 4.12,
+     "cost": 0.2433424974226804,
+     "retrieval_config": "qwen_embeddings"
+    }
+   },
+   "reasoning_effort": "none",
+   "methodology": {
+    "evaluation_date": "2026-05-26",
+    "tau2_bench_version": "1.0.1",
+    "user_simulator": "gpt-5.2",
+    "notes": "Evaluated using GPT-5.2 with reasoning_effort: none. User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Seed: 300. Banking domain evaluated with retrieval_config: qwen_embeddings. banking_knowledge re-graded under tau2-bench v1.0.1 grading fixes on 2026-07-15 (extra-read logging #329, numeric-argument normalization #397, T077-T086 gold trajectories #402); scores prior to v1.0.1 are not comparable.",
+    "verification": {
+     "modified_prompts": false,
+     "omitted_questions": false,
+     "details": "Verified evaluation with full trajectory data available. Standard tau-bench scaffold."
+    }
+   },
+   "model_release": {
+    "release_date": "2025-12-11",
+    "announcement_url": "https://openai.com/index/introducing-gpt-5-2/",
+    "announcement_title": "Introducing GPT-5.2"
+   }
+  }
+ }
+}

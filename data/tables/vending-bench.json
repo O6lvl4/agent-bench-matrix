@@ -1,0 +1,698 @@
+{
+  "id": "vending-bench",
+  "family": "vending-bench",
+  "name": "Vending-Bench (v1, deprecated)",
+  "board": "andonlabs.com",
+  "category": "long-horizon",
+  "measures_ja": "模擬の自動販売機ビジネスを長期間運営し、発注・在庫・価格設定・日々の手数料を破綻なくこなし続けられるか。",
+  "tasks": null,
+  "tasks_note": "単一の長期シミュレーションを複数回走らせる形式で、タスク数という単位が無い。",
+  "metric": "Net worth (min)",
+  "unit": "usd",
+  "higher_is_better": true,
+  "harness_ja": "Andon Labs が共通の足場で各モデルを5回走らせる(人間ベースラインは1回)。",
+  "source": "https://andonlabs.com/evals/vending-bench",
+  "fetched": [
+    "https://andonlabs.com/evals/vending-bench",
+    "https://andonlabs.com/_app/immutable/nodes/25.CJLlmIs9.js"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": null,
+  "snapshot": "sources/vending-bench/leaderboard.tsv",
+  "paper": "https://arxiv.org/abs/2502.15840",
+  "repo": null,
+  "notes_ja": "2025-11-18 に Vending-Bench 2 へ移行して非推奨になった旧版の表。ボードは Net worth (min)(5回中の最低値)の降順で並べているので score もそれにした。平均値などは score_extra。Human 行は人間ベースライン(1サンプル)。ボードは units sold 等を整数に切り捨てて表示するが、ここにはデータ上の値を入れた。行ごとの日付は無い。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Gemini 3 Pro",
+      "agent": null,
+      "model_raw": [
+        "Gemini 3 Pro"
+      ],
+      "model_ids": [
+        "gemini-3-pro"
+      ],
+      "model_config": null,
+      "score": 3769.7,
+      "score_extra": {
+        "net_worth_mean": 4387.93,
+        "units_sold_mean": 4199.6,
+        "units_sold_min": 3165.0,
+        "days_until_sales_stop_mean": 239.0,
+        "days_until_sales_stop_pct": 94.6
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "Grok 4",
+      "agent": null,
+      "model_raw": [
+        "Grok 4"
+      ],
+      "model_ids": [
+        "grok-4"
+      ],
+      "model_config": null,
+      "score": 3333.28,
+      "score_extra": {
+        "net_worth_mean": 4694.15,
+        "units_sold_mean": 4569.0,
+        "units_sold_min": 3515.0,
+        "days_until_sales_stop_mean": 324.0,
+        "days_until_sales_stop_pct": 99.5
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "GPT-5",
+      "agent": null,
+      "model_raw": [
+        "GPT-5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": null,
+      "score": 2690.29,
+      "score_extra": {
+        "net_worth_mean": 3578.9,
+        "units_sold_mean": 2471.0,
+        "units_sold_min": 1798.0,
+        "days_until_sales_stop_mean": 363.0,
+        "days_until_sales_stop_pct": 100.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "GPT-5.1",
+      "agent": null,
+      "model_raw": [
+        "GPT-5.1"
+      ],
+      "model_ids": [
+        "gpt-5.1"
+      ],
+      "model_config": null,
+      "score": 1424.9,
+      "score_extra": {
+        "net_worth_mean": 2379.88,
+        "units_sold_mean": 2104.8,
+        "units_sold_min": 1166.0,
+        "days_until_sales_stop_mean": 136.0,
+        "days_until_sales_stop_pct": 100.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "Claude Opus 4",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 4"
+      ],
+      "model_ids": [
+        "claude-opus-4"
+      ],
+      "model_config": null,
+      "score": 1249.56,
+      "score_extra": {
+        "net_worth_mean": 2077.41,
+        "units_sold_mean": 1412.0,
+        "units_sold_min": 1218.0,
+        "days_until_sales_stop_mean": 132.0,
+        "days_until_sales_stop_pct": 99.5
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 6,
+      "system": "Claude Sonnet 4.5",
+      "agent": null,
+      "model_raw": [
+        "Claude Sonnet 4.5"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": null,
+      "score": 1095.25,
+      "score_extra": {
+        "net_worth_mean": 2465.02,
+        "units_sold_mean": 3099.4,
+        "units_sold_min": 1907.0,
+        "days_until_sales_stop_mean": 350.0,
+        "days_until_sales_stop_pct": 77.8
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 7,
+      "system": "Human",
+      "agent": null,
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": "human baseline (1 sample)",
+      "score": 844.05,
+      "score_extra": {
+        "net_worth_mean": 844.05,
+        "units_sold_mean": 344.0,
+        "units_sold_min": 344.0,
+        "days_until_sales_stop_mean": 67.0,
+        "days_until_sales_stop_pct": 100.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 8,
+      "system": "Gemini 2.5 Pro (preview-03-25)",
+      "agent": null,
+      "model_raw": [
+        "Gemini 2.5 Pro (preview-03-25)"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": "preview-03-25",
+      "score": 691.68,
+      "score_extra": {
+        "net_worth_mean": 789.34,
+        "units_sold_mean": 356.0,
+        "units_sold_min": 313.0,
+        "days_until_sales_stop_mean": 68.0,
+        "days_until_sales_stop_pct": 89.0
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 9,
+      "system": "o3",
+      "agent": null,
+      "model_raw": [
+        "o3"
+      ],
+      "model_ids": [
+        "o3"
+      ],
+      "model_config": null,
+      "score": 569.0,
+      "score_extra": {
+        "net_worth_mean": 1843.11,
+        "units_sold_mean": 1363.0,
+        "units_sold_min": 331.0,
+        "days_until_sales_stop_mean": 112.0,
+        "days_until_sales_stop_pct": 86.9
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 10,
+      "system": "Claude 3.5 Sonnet",
+      "agent": null,
+      "model_raw": [
+        "Claude 3.5 Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 476.0,
+      "score_extra": {
+        "net_worth_mean": 2217.93,
+        "units_sold_mean": 1560.0,
+        "units_sold_min": 0.0,
+        "days_until_sales_stop_mean": 102.0,
+        "days_until_sales_stop_pct": 82.2
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 11,
+      "system": "Gemini 1.5 Flash",
+      "agent": null,
+      "model_raw": [
+        "Gemini 1.5 Flash"
+      ],
+      "model_ids": [
+        "gemini-1.5-flash"
+      ],
+      "model_config": null,
+      "score": 476.0,
+      "score_extra": {
+        "net_worth_mean": 571.85,
+        "units_sold_mean": 89.0,
+        "units_sold_min": 0.0,
+        "days_until_sales_stop_mean": 15.0,
+        "days_until_sales_stop_pct": 42.4
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 12,
+      "system": "Qwen3-235B-A22B",
+      "agent": null,
+      "model_raw": [
+        "Qwen3-235B-A22B"
+      ],
+      "model_ids": [
+        "qwen3-235b-a22b"
+      ],
+      "model_config": null,
+      "score": 452.52,
+      "score_extra": {
+        "net_worth_mean": 615.52,
+        "units_sold_mean": 385.0,
+        "units_sold_min": 0.0,
+        "days_until_sales_stop_mean": 120.0,
+        "days_until_sales_stop_pct": 73.2
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 13,
+      "system": "Claude Sonnet 4",
+      "agent": null,
+      "model_raw": [
+        "Claude Sonnet 4"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": null,
+      "score": 444.0,
+      "score_extra": {
+        "net_worth_mean": 968.31,
+        "units_sold_mean": 538.0,
+        "units_sold_min": 0.0,
+        "days_until_sales_stop_mean": 80.0,
+        "days_until_sales_stop_pct": 80.6
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 14,
+      "system": "Gemini 1.5 Pro",
+      "agent": null,
+      "model_raw": [
+        "Gemini 1.5 Pro"
+      ],
+      "model_ids": [
+        "gemini-1.5-pro"
+      ],
+      "model_config": null,
+      "score": 439.2,
+      "score_extra": {
+        "net_worth_mean": 594.02,
+        "units_sold_mean": 375.0,
+        "units_sold_min": 0.0,
+        "days_until_sales_stop_mean": 35.0,
+        "days_until_sales_stop_pct": 43.8
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 15,
+      "system": "GPT-5-mini",
+      "agent": null,
+      "model_raw": [
+        "GPT-5-mini"
+      ],
+      "model_ids": [
+        "gpt-5-mini"
+      ],
+      "model_config": null,
+      "score": 422.4,
+      "score_extra": {
+        "net_worth_mean": 580.77,
+        "units_sold_mean": 277.0,
+        "units_sold_min": 72.0,
+        "days_until_sales_stop_mean": 96.0,
+        "days_until_sales_stop_pct": 92.8
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 16,
+      "system": "GPT-4o mini",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o mini"
+      ],
+      "model_ids": [
+        "gpt-4o-mini"
+      ],
+      "model_config": null,
+      "score": 420.5,
+      "score_extra": {
+        "net_worth_mean": 582.33,
+        "units_sold_mean": 473.0,
+        "units_sold_min": 65.0,
+        "days_until_sales_stop_mean": 71.0,
+        "days_until_sales_stop_pct": 73.2
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 17,
+      "system": "Kimi K2 Thinking (3rd party API)",
+      "agent": null,
+      "model_raw": [
+        "Kimi K2 Thinking (3rd party API)"
+      ],
+      "model_ids": [
+        "kimi-k2-thinking"
+      ],
+      "model_config": "3rd party API",
+      "score": 418.54,
+      "score_extra": {
+        "net_worth_mean": 648.93,
+        "units_sold_mean": 270.4,
+        "units_sold_min": 0.0,
+        "days_until_sales_stop_mean": 46.0,
+        "days_until_sales_stop_pct": 59.8
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 18,
+      "system": "o3-mini",
+      "agent": null,
+      "model_raw": [
+        "o3-mini"
+      ],
+      "model_ids": [
+        "o3-mini"
+      ],
+      "model_config": null,
+      "score": 369.05,
+      "score_extra": {
+        "net_worth_mean": 906.86,
+        "units_sold_mean": 831.0,
+        "units_sold_min": 0.0,
+        "days_until_sales_stop_mean": 86.0,
+        "days_until_sales_stop_pct": 80.3
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 19,
+      "system": "Kimi K2 Thinking (Moonshot API)",
+      "agent": null,
+      "model_raw": [
+        "Kimi K2 Thinking (Moonshot API)"
+      ],
+      "model_ids": [
+        "kimi-k2-thinking"
+      ],
+      "model_config": "Moonshot API",
+      "score": 354.0,
+      "score_extra": {
+        "net_worth_mean": 1295.8,
+        "units_sold_mean": 1105.6,
+        "units_sold_min": 0.0,
+        "days_until_sales_stop_mean": 190.0,
+        "days_until_sales_stop_pct": 75.4
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 20,
+      "system": "Gemini Robotics-ER 1.5",
+      "agent": null,
+      "model_raw": [
+        "Gemini Robotics-ER 1.5"
+      ],
+      "model_ids": [
+        "gemini-robotics-er-1.5"
+      ],
+      "model_config": null,
+      "score": 337.2,
+      "score_extra": {
+        "net_worth_mean": 975.68,
+        "units_sold_mean": 536.8,
+        "units_sold_min": 75.0,
+        "days_until_sales_stop_mean": 165.0,
+        "days_until_sales_stop_pct": 91.1
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 21,
+      "system": "gpt-oss-120b",
+      "agent": null,
+      "model_raw": [
+        "gpt-oss-120b"
+      ],
+      "model_ids": [
+        "gpt-oss-120b"
+      ],
+      "model_config": null,
+      "score": 278.8,
+      "score_extra": {
+        "net_worth_mean": 607.97,
+        "units_sold_mean": 698.0,
+        "units_sold_min": 338.0,
+        "days_until_sales_stop_mean": 187.0,
+        "days_until_sales_stop_pct": 92.7
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 22,
+      "system": "Claude 3.7 Sonnet",
+      "agent": null,
+      "model_raw": [
+        "Claude 3.7 Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": null,
+      "score": 276.0,
+      "score_extra": {
+        "net_worth_mean": 1567.9,
+        "units_sold_mean": 1050.0,
+        "units_sold_min": 0.0,
+        "days_until_sales_stop_mean": 112.0,
+        "days_until_sales_stop_pct": 80.3
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 23,
+      "system": "Gemini 2.0 Pro",
+      "agent": null,
+      "model_raw": [
+        "Gemini 2.0 Pro"
+      ],
+      "model_ids": [
+        "gemini-2.0-pro"
+      ],
+      "model_config": null,
+      "score": 273.7,
+      "score_extra": {
+        "net_worth_mean": 273.7,
+        "units_sold_mean": 118.0,
+        "units_sold_min": 118.0,
+        "days_until_sales_stop_mean": 25.0,
+        "days_until_sales_stop_pct": 15.8
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 24,
+      "system": "GPT-4o",
+      "agent": null,
+      "model_raw": [
+        "GPT-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 265.65,
+      "score_extra": {
+        "net_worth_mean": 335.46,
+        "units_sold_mean": 258.0,
+        "units_sold_min": 108.0,
+        "days_until_sales_stop_mean": 65.0,
+        "days_until_sales_stop_pct": 50.3
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 25,
+      "system": "Claude 3.5 Haiku",
+      "agent": null,
+      "model_raw": [
+        "Claude 3.5 Haiku"
+      ],
+      "model_ids": [
+        "claude-3.5-haiku"
+      ],
+      "model_config": null,
+      "score": 264.0,
+      "score_extra": {
+        "net_worth_mean": 373.36,
+        "units_sold_mean": 23.0,
+        "units_sold_min": 0.0,
+        "days_until_sales_stop_mean": 8.0,
+        "days_until_sales_stop_pct": 12.9
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 26,
+      "system": "Gemini 2.0 Flash",
+      "agent": null,
+      "model_raw": [
+        "Gemini 2.0 Flash"
+      ],
+      "model_ids": [
+        "gemini-2.0-flash"
+      ],
+      "model_config": null,
+      "score": 157.25,
+      "score_extra": {
+        "net_worth_mean": 338.08,
+        "units_sold_mean": 104.0,
+        "units_sold_min": 0.0,
+        "days_until_sales_stop_mean": 50.0,
+        "days_until_sales_stop_pct": 55.7
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 27,
+      "system": "Llama 4 Maverick",
+      "agent": null,
+      "model_raw": [
+        "Llama 4 Maverick"
+      ],
+      "model_ids": [
+        "llama-4-maverick"
+      ],
+      "model_config": null,
+      "score": -24.0,
+      "score_extra": {
+        "net_worth_mean": 157.33,
+        "units_sold_mean": 0.0,
+        "units_sold_min": 0.0,
+        "days_until_sales_stop_mean": 1.0,
+        "days_until_sales_stop_pct": 1.2
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "id": "paperbench",
+  "family": "paperbench",
+  "name": "PaperBench",
+  "board": "github.com/openai/preparedness",
+  "category": "research",
+  "measures_ja": "AI 研究論文20本を、コードを一から書いて実験まで再現できるか(ルーブリック採点)。",
+  "tasks": 20,
+  "tasks_note": "ICML 2024 の Spotlight/Oral 論文20本。採点ルーブリックは合計8,316個の採点項目に分解される(論文の記載)。",
+  "metric": "Replication Score (%)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "OpenAI が BasicAgent / IterativeAgent の足場でモデルを実行し、著者と作ったルーブリックで LLM 判定して採点。",
+  "source": "https://github.com/openai/preparedness/tree/main/project/paperbench",
+  "fetched": [
+    "https://raw.githubusercontent.com/openai/preparedness/main/project/paperbench/README.md"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2025-04-02",
+  "snapshot": "sources/paperbench/README.md",
+  "paper": "https://arxiv.org/abs/2504.01848",
+  "repo": "https://github.com/openai/preparedness",
+  "notes_ja": "PaperBench 本体(再現の完全性をルーブリックで採点)。 値は3回の平均±標準誤差(score_extra.score_std)。system は「足場 + モデル」で agent に足場、model_raw にモデルを分けた。o1-high などの推論量と時間上限は model_config へ。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "IterativeAgent o1-high (36h limit)",
+      "agent": "IterativeAgent",
+      "model_raw": [
+        "o1-high"
+      ],
+      "model_ids": [
+        "o1"
+      ],
+      "model_config": "high; 36h limit",
+      "score": 26.0,
+      "score_extra": {
+        "score_std": 0.3,
+        "runs": 3
+      },
+      "date": "2025-04-02",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "IterativeAgent o1-high (24h limit)",
+      "agent": "IterativeAgent",
+      "model_raw": [
+        "o1-high"
+      ],
+      "model_ids": [
+        "o1"
+      ],
+      "model_config": "high; 24h limit",
+      "score": 24.4,
+      "score_extra": {
+        "score_std": 0.7,
+        "runs": 3
+      },
+      "date": "2025-04-02",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "BasicAgent claude-3.5-sonnet",
+      "agent": "BasicAgent",
+      "model_raw": [
+        "claude-3.5-sonnet"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 21.0,
+      "score_extra": {
+        "score_std": 0.8,
+        "runs": 3
+      },
+      "date": "2025-04-02",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "IterativeAgent claude-3.5-sonnet",
+      "agent": "IterativeAgent",
+      "model_raw": [
+        "claude-3.5-sonnet"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 16.1,
+      "score_extra": {
+        "score_std": 0.1,
+        "runs": 3
+      },
+      "date": "2025-04-02",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "BasicAgent o1-high",
+      "agent": "BasicAgent",
+      "model_raw": [
+        "o1-high"
+      ],
+      "model_ids": [
+        "o1"
+      ],
+      "model_config": "high",
+      "score": 13.2,
+      "score_extra": {
+        "score_std": 0.3,
+        "runs": 3
+      },
+      "date": "2025-04-02",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": null
+    },
+    {
+      "rank": 6,
+      "system": "IterativeAgent o3-mini-high",
+      "agent": "IterativeAgent",
+      "model_raw": [
+        "o3-mini-high"
+      ],
+      "model_ids": [
+        "o3-mini"
+      ],
+      "model_config": "high",
+      "score": 8.5,
+      "score_extra": {
+        "score_std": 0.8,
+        "runs": 3
+      },
+      "date": "2025-04-02",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": null
+    },
+    {
+      "rank": 7,
+      "system": "BasicAgent deepseek-r1",
+      "agent": "BasicAgent",
+      "model_raw": [
+        "deepseek-r1"
+      ],
+      "model_ids": [
+        "deepseek-r1"
+      ],
+      "model_config": null,
+      "score": 6.0,
+      "score_extra": {
+        "score_std": 0.3,
+        "runs": 3
+      },
+      "date": "2025-04-02",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": null
+    },
+    {
+      "rank": 8,
+      "system": "BasicAgent gpt-4o",
+      "agent": "BasicAgent",
+      "model_raw": [
+        "gpt-4o"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 4.1,
+      "score_extra": {
+        "score_std": 0.1,
+        "runs": 3
+      },
+      "date": "2025-04-02",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": null
+    },
+    {
+      "rank": 9,
+      "system": "BasicAgent gemini-2.0-flash",
+      "agent": "BasicAgent",
+      "model_raw": [
+        "gemini-2.0-flash"
+      ],
+      "model_ids": [
+        "gemini-2.0-flash"
+      ],
+      "model_config": null,
+      "score": 3.2,
+      "score_extra": {
+        "score_std": 0.2,
+        "runs": 3
+      },
+      "date": "2025-04-02",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": null
+    },
+    {
+      "rank": 10,
+      "system": "BasicAgent o3-mini-high",
+      "agent": "BasicAgent",
+      "model_raw": [
+        "o3-mini-high"
+      ],
+      "model_ids": [
+        "o3-mini"
+      ],
+      "model_config": "high",
+      "score": 2.6,
+      "score_extra": {
+        "score_std": 0.2,
+        "runs": 3
+      },
+      "date": "2025-04-02",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": null
+    }
+  ]
+}

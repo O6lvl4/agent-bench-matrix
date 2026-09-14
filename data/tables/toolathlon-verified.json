@@ -1,0 +1,644 @@
+{
+  "id": "toolathlon-verified",
+  "family": "toolathlon",
+  "name": "Toolathlon-Verified",
+  "board": "toolathlon.xyz",
+  "category": "tool-use",
+  "measures_ja": "32のアプリ(MCPサーバー604ツール)と実環境を使う長い手順のタスクを、ツールを選び組み合わせて完遂できるか。",
+  "tasks": 108,
+  "tasks_note": "リーダーボードの「# Tasks 108」表示による。",
+  "metric": "Pass@1",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "✓ の行は運営が独自に評価した結果。Agent 列は既定の足場(Default)か Claude Agent SDK など。",
+  "source": "https://toolathlon.xyz/docs/leaderboard",
+  "fetched": [
+    "https://toolathlon.xyz/docs/leaderboard",
+    "https://toolathlon.xyz/docs/leaderboard.md"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-08-30",
+  "snapshot": "sources/toolathlon-verified/leaderboard.md",
+  "paper": "https://arxiv.org/abs/2510.25726",
+  "repo": "https://github.com/hkust-nlp/Toolathlon",
+  "notes_ja": "2026-06-30 公開の Toolathlon-Verified(タスク・採点・環境を改訂)の表で、旧 Toolathlon とは直接比較できないとボード自身が注記。verified は ✓(Evaluated by us)がある行だけ true、無い行は null。open_source は Type 列(Open-Weights/Open-Source/Proprietary)による。ページ上部の「Best Pass@1 76.2%」表示は表の最高値(78.4)と食い違っている。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "GLM 5.3 Flash (max)",
+      "agent": "Default",
+      "model_raw": [
+        "GLM 5.3 Flash (max)"
+      ],
+      "model_ids": [
+        "glm-5.3-flash"
+      ],
+      "model_config": "max",
+      "score": 78.4,
+      "score_extra": {
+        "pass_at_1_pm": 1.9
+      },
+      "date": "2026-08-30",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "Kimi K3 (max)",
+      "agent": "Default",
+      "model_raw": [
+        "Kimi K3 (max)"
+      ],
+      "model_ids": [
+        "kimi-k3"
+      ],
+      "model_config": "max",
+      "score": 76.5,
+      "score_extra": {
+        "pass_at_1_pm": 1.9,
+        "pass_at_3": 83.3,
+        "pass_hat_3": 68.5,
+        "avg_turns": 22.8,
+        "avg_tool_calls": 39.1
+      },
+      "date": "2026-07-16",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "Claude Opus 4.8 (max)",
+      "agent": "Default",
+      "model_raw": [
+        "Claude Opus 4.8 (max)"
+      ],
+      "model_ids": [
+        "claude-opus-4.8"
+      ],
+      "model_config": "max",
+      "score": 76.2,
+      "score_extra": {
+        "pass_at_1_pm": 3.4,
+        "pass_at_3": 84.3,
+        "pass_hat_3": 66.7,
+        "avg_turns": 19.9,
+        "avg_tool_calls": 36.3
+      },
+      "date": "2026-06-30",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "Muse Spark 1.2 (xhigh)",
+      "agent": "Default",
+      "model_raw": [
+        "Muse Spark 1.2 (xhigh)"
+      ],
+      "model_ids": [
+        "muse-spark-1.2"
+      ],
+      "model_config": "xhigh",
+      "score": 75.9,
+      "score_extra": {
+        "pass_at_1_pm": 1.3,
+        "pass_at_3": 87.0,
+        "pass_hat_3": 63.0,
+        "avg_turns": 44.2,
+        "avg_tool_calls": 48.6
+      },
+      "date": "2026-08-05",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "Muse Spark 1.1 (xhigh)",
+      "agent": "Default",
+      "model_raw": [
+        "Muse Spark 1.1 (xhigh)"
+      ],
+      "model_ids": [
+        "muse-spark-1.1"
+      ],
+      "model_config": "xhigh",
+      "score": 75.6,
+      "score_extra": {
+        "pass_at_1_pm": 0.4,
+        "pass_at_3": 86.1,
+        "pass_hat_3": 63.9,
+        "avg_turns": 28.9,
+        "avg_tool_calls": 42.7
+      },
+      "date": "2026-07-09",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 6,
+      "system": "DeepSeek V4 Pro 0813 (max)",
+      "agent": "Default",
+      "model_raw": [
+        "DeepSeek V4 Pro 0813 (max)"
+      ],
+      "model_ids": [
+        "deepseek-v4-pro-0813"
+      ],
+      "model_config": "max",
+      "score": 74.4,
+      "score_extra": {
+        "pass_at_1_pm": 1.2
+      },
+      "date": "2026-08-13",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 7,
+      "system": "GPT-5.5 (xhigh)",
+      "agent": "Default",
+      "model_raw": [
+        "GPT-5.5 (xhigh)"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": "xhigh",
+      "score": 73.5,
+      "score_extra": {
+        "pass_at_1_pm": 1.2,
+        "pass_at_3": 82.4,
+        "pass_hat_3": 62.0,
+        "avg_turns": 24.4,
+        "avg_tool_calls": 37.8
+      },
+      "date": "2026-06-30",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 8,
+      "system": "Claude Sonnet 5 (max)",
+      "agent": "Default",
+      "model_raw": [
+        "Claude Sonnet 5 (max)"
+      ],
+      "model_ids": [
+        "claude-sonnet-5"
+      ],
+      "model_config": "max",
+      "score": 71.6,
+      "score_extra": {
+        "pass_at_1_pm": 1.2,
+        "pass_at_3": 83.3,
+        "pass_hat_3": 53.7,
+        "avg_turns": 27.1,
+        "avg_tool_calls": 51.5
+      },
+      "date": "2026-07-01",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 9,
+      "system": "DeepSeek V4 Flash 0731 (max)",
+      "agent": "Default",
+      "model_raw": [
+        "DeepSeek V4 Flash 0731 (max)"
+      ],
+      "model_ids": [
+        "deepseek-v4-flash-0731"
+      ],
+      "model_config": "max",
+      "score": 70.7,
+      "score_extra": {
+        "pass_at_1_pm": 0.9,
+        "pass_at_3": 81.5,
+        "pass_hat_3": 58.3,
+        "avg_turns": 26.3,
+        "avg_tool_calls": 49.0
+      },
+      "date": "2026-07-31",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 10,
+      "system": "Gemini 3.5 Flash (high)",
+      "agent": "Default",
+      "model_raw": [
+        "Gemini 3.5 Flash (high)"
+      ],
+      "model_ids": [
+        "gemini-3.5-flash"
+      ],
+      "model_config": "high",
+      "score": 67.3,
+      "score_extra": {
+        "pass_at_1_pm": 1.2,
+        "pass_at_3": 79.6,
+        "pass_hat_3": 53.7,
+        "avg_turns": 45.3,
+        "avg_tool_calls": 45.6
+      },
+      "date": "2026-06-30",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 11,
+      "system": "Gemini 3.1 Pro (high)",
+      "agent": "Default",
+      "model_raw": [
+        "Gemini 3.1 Pro (high)"
+      ],
+      "model_ids": [
+        "gemini-3.1-pro"
+      ],
+      "model_config": "high",
+      "score": 61.1,
+      "score_extra": {
+        "pass_at_1_pm": 1.3,
+        "pass_at_3": 72.2,
+        "pass_hat_3": 48.1,
+        "avg_turns": 26.2,
+        "avg_tool_calls": 32.2
+      },
+      "date": "2026-07-01",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 12,
+      "system": "GLM 5.2 (max)",
+      "agent": "Default",
+      "model_raw": [
+        "GLM 5.2 (max)"
+      ],
+      "model_ids": [
+        "glm-5.2"
+      ],
+      "model_config": "max",
+      "score": 59.9,
+      "score_extra": {
+        "pass_at_1_pm": 1.9,
+        "pass_at_3": 78.7,
+        "pass_hat_3": 41.7,
+        "avg_turns": 23.3,
+        "avg_tool_calls": 41.9
+      },
+      "date": "2026-06-30",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 13,
+      "system": "Kimi K2.6",
+      "agent": "Default",
+      "model_raw": [
+        "Kimi K2.6"
+      ],
+      "model_ids": [
+        "kimi-k2.6"
+      ],
+      "model_config": null,
+      "score": 58.0,
+      "score_extra": {
+        "pass_at_1_pm": 4.9,
+        "pass_at_3": 72.2,
+        "pass_hat_3": 41.7,
+        "avg_turns": 30.8,
+        "avg_tool_calls": 42.3
+      },
+      "date": "2026-07-15",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 14,
+      "system": "Kimi K2.7 Code",
+      "agent": "Default",
+      "model_raw": [
+        "Kimi K2.7 Code"
+      ],
+      "model_ids": [
+        "kimi-k2.7-code"
+      ],
+      "model_config": null,
+      "score": 58.0,
+      "score_extra": {
+        "pass_at_1_pm": 4.3,
+        "pass_at_3": 74.1,
+        "pass_hat_3": 41.7,
+        "avg_turns": 23.1,
+        "avg_tool_calls": 37.6
+      },
+      "date": "2026-06-30",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 15,
+      "system": "Gemini 3.5 Flash-Lite (high)",
+      "agent": "Default",
+      "model_raw": [
+        "Gemini 3.5 Flash-Lite (high)"
+      ],
+      "model_ids": [
+        "gemini-3.5-flash-lite"
+      ],
+      "model_config": "high",
+      "score": 57.1,
+      "score_extra": {
+        "pass_at_1_pm": 3.6,
+        "pass_at_3": 71.3,
+        "pass_hat_3": 41.7,
+        "avg_turns": 37.9,
+        "avg_tool_calls": 38.3
+      },
+      "date": "2026-07-30",
+      "verified": true,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 16,
+      "system": "Hy3 (high)",
+      "agent": "Default",
+      "model_raw": [
+        "Hy3 (high)"
+      ],
+      "model_ids": [
+        "hy3"
+      ],
+      "model_config": "high",
+      "score": 56.8,
+      "score_extra": {
+        "pass_at_1_pm": 3.7,
+        "pass_at_3": 72.2,
+        "pass_hat_3": 40.7,
+        "avg_turns": 20.5,
+        "avg_tool_calls": 37.9
+      },
+      "date": "2026-07-30",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 17,
+      "system": "DeepSeek V4 Pro (max)",
+      "agent": "Default",
+      "model_raw": [
+        "DeepSeek V4 Pro (max)"
+      ],
+      "model_ids": [
+        "deepseek-v4-pro"
+      ],
+      "model_config": "max",
+      "score": 55.9,
+      "score_extra": {
+        "pass_at_1_pm": 1.2,
+        "pass_at_3": 68.5,
+        "pass_hat_3": 41.7,
+        "avg_turns": 23.6,
+        "avg_tool_calls": 39.1
+      },
+      "date": "2026-06-30",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 18,
+      "system": "Inkling-Small (xhigh)",
+      "agent": "Default",
+      "model_raw": [
+        "Inkling-Small (xhigh)"
+      ],
+      "model_ids": [
+        "inkling-small"
+      ],
+      "model_config": "xhigh",
+      "score": 54.4,
+      "score_extra": {
+        "pass_at_1_pm": 3.2,
+        "pass_at_3": 66.9,
+        "pass_hat_3": 38.4,
+        "avg_turns": 48.4,
+        "avg_tool_calls": 46.9
+      },
+      "date": "2026-07-30",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 19,
+      "system": "DeepSeek V4 Flash (max)",
+      "agent": "Default",
+      "model_raw": [
+        "DeepSeek V4 Flash (max)"
+      ],
+      "model_ids": [
+        "deepseek-v4-flash"
+      ],
+      "model_config": "max",
+      "score": 50.9,
+      "score_extra": {
+        "pass_at_1_pm": 1.5,
+        "pass_at_3": 63.9,
+        "pass_hat_3": 35.2,
+        "avg_turns": 28.6,
+        "avg_tool_calls": 47.1
+      },
+      "date": "2026-07-30",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 20,
+      "system": "MiMo V2.5",
+      "agent": "Default",
+      "model_raw": [
+        "MiMo V2.5"
+      ],
+      "model_ids": [
+        "mimo-v2.5"
+      ],
+      "model_config": null,
+      "score": 49.1,
+      "score_extra": {
+        "pass_at_1_pm": 3.9,
+        "pass_at_3": 65.7,
+        "pass_hat_3": 30.6,
+        "avg_turns": 23.2,
+        "avg_tool_calls": 38.5
+      },
+      "date": "2026-07-30",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 21,
+      "system": "MiniMax M2.7",
+      "agent": "Default",
+      "model_raw": [
+        "MiniMax M2.7"
+      ],
+      "model_ids": [
+        "minimax-m2.7"
+      ],
+      "model_config": null,
+      "score": 47.5,
+      "score_extra": {
+        "pass_at_1_pm": 3.8,
+        "pass_at_3": 62.0,
+        "pass_hat_3": 32.4,
+        "avg_turns": 24.6,
+        "avg_tool_calls": 43.2
+      },
+      "date": "2026-07-30",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 22,
+      "system": "Inkling (xhigh)",
+      "agent": "Default",
+      "model_raw": [
+        "Inkling (xhigh)"
+      ],
+      "model_ids": [
+        "inkling"
+      ],
+      "model_config": "xhigh",
+      "score": 45.5,
+      "score_extra": {
+        "pass_at_1_pm": 3.7,
+        "pass_at_3": 63.8,
+        "pass_hat_3": 25.5,
+        "avg_turns": 47.3,
+        "avg_tool_calls": 50.2
+      },
+      "date": "2026-07-15",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 23,
+      "system": "Qwen3.5 397B-A17B",
+      "agent": "Default",
+      "model_raw": [
+        "Qwen3.5 397B-A17B"
+      ],
+      "model_ids": [
+        "qwen3.5-397b-a17b"
+      ],
+      "model_config": null,
+      "score": 40.7,
+      "score_extra": {
+        "pass_at_1_pm": 2.0,
+        "pass_at_3": 51.9,
+        "pass_hat_3": 27.8,
+        "avg_turns": 19.5,
+        "avg_tool_calls": 35.7
+      },
+      "date": "2026-07-30",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 24,
+      "system": "Nemotron 3 Ultra",
+      "agent": "Default",
+      "model_raw": [
+        "Nemotron 3 Ultra"
+      ],
+      "model_ids": [
+        "nemotron-3-ultra"
+      ],
+      "model_config": null,
+      "score": 34.3,
+      "score_extra": {
+        "pass_at_1_pm": 1.5,
+        "pass_at_3": 50.0,
+        "pass_hat_3": 19.4,
+        "avg_turns": 28.6,
+        "avg_tool_calls": 31.9
+      },
+      "date": "2026-07-15",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 25,
+      "system": "Kimi K2.5",
+      "agent": "Default",
+      "model_raw": [
+        "Kimi K2.5"
+      ],
+      "model_ids": [
+        "kimi-k2.5"
+      ],
+      "model_config": null,
+      "score": 33.0,
+      "score_extra": {
+        "pass_at_1_pm": 1.2,
+        "pass_at_3": 50.9,
+        "pass_hat_3": 15.7,
+        "avg_turns": 20.3,
+        "avg_tool_calls": 31.3
+      },
+      "date": "2026-07-15",
+      "verified": true,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    }
+  ]
+}

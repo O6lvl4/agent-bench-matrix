@@ -1,0 +1,68 @@
+{
+  "id": "gso-opt10",
+  "family": "gso",
+  "name": "GSO (Opt@10)",
+  "board": "gso-bench.github.io",
+  "category": "coding",
+  "measures_ja": "実在リポジトリで性能テストを渡され、専門家のコミットに匹敵する高速化を実装できるか。",
+  "tasks": 102,
+  "tasks_note": "leaderboard.json の metadata.total_tasks。",
+  "metric": "Opt@10 (%)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "GSO チームが全モデルを OpenHands で走らせる。足場が共通なので行どうし比べやすい。",
+  "source": "https://gso-bench.github.io/",
+  "fetched": [
+    "https://gso-bench.github.io/assets/leaderboard.json"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2025-05-30",
+  "snapshot": "sources/gso-opt10/leaderboard.json",
+  "paper": "https://arxiv.org/abs/2505.23671",
+  "repo": "https://github.com/gso-bench/gso",
+  "notes_ja": "Opt@10 の行だけを別表にした(同じ JSON の setting=Opt@10)。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Claude Sonnet 3.5 V2 / OpenHands",
+      "agent": "OpenHands",
+      "model_raw": [
+        "Claude Sonnet 3.5 V2"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": "V2",
+      "score": 15.7,
+      "score_extra": {
+        "score_hack_control": 15.7
+      },
+      "date": "2025-05-30",
+      "verified": null,
+      "open_source": null,
+      "org": "GSO",
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "O4 Mini (high) / OpenHands",
+      "agent": "OpenHands",
+      "model_raw": [
+        "O4 Mini"
+      ],
+      "model_ids": [
+        "o4-mini"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 12.7,
+      "score_extra": {
+        "score_hack_control": 12.7
+      },
+      "date": "2025-05-30",
+      "verified": null,
+      "open_source": null,
+      "org": "GSO",
+      "row_url": null
+    }
+  ]
+}

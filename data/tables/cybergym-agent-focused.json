@@ -1,0 +1,757 @@
+{
+  "id": "cybergym-agent-focused",
+  "family": "cybergym",
+  "name": "CyberGym Level 1 (Agent-focused)",
+  "board": "cybergym.io",
+  "category": "security",
+  "measures_ja": "脆弱性の説明と修正前のコードベースを渡され、その脆弱性を実際に発火させる PoC を作れるか(Level 1)。",
+  "tasks": 1507,
+  "tasks_note": "188 のソフトウェアプロジェクトから集めた 1,507 件(サイトの記載)。",
+  "metric": "Success Rate (Level 1, 1 trial)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "各チームが自分で評価して提出する。独自のエージェントシステムでの提出で、動的実行や実行時メモリなど評価方式が行ごとに違う。",
+  "source": "https://www.cybergym.io/cybergym/",
+  "fetched": [
+    "https://www.cybergym.io/assets/data/cybergym.json",
+    "https://www.cybergym.io/cybergym/",
+    "https://www.cybergym.io/assets/js/leaderboard.js"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-09-07",
+  "snapshot": "sources/cybergym-agent-focused/cybergym.json",
+  "paper": "https://arxiv.org/abs/2506.02548",
+  "repo": "https://github.com/sunblaze-ucb/cybergym",
+  "notes_ja": "ボードの Type フィルタで分けた表(trials=1 の行のみ表示される)。90% を超える行はランダム順のカードとして表示され順位が無いため rank は null(score_extra.lead_card_unranked)。以前の版の結果(subRows)も rank null の行として入れた。score は score_10 を百分率にした値。",
+  "rows": [
+    {
+      "rank": null,
+      "system": "Creation (天工)",
+      "agent": "Creation (天工)",
+      "model_raw": [
+        "Creation Model",
+        "DeepSeek-V4-Pro",
+        "Qwen 3.8 Max"
+      ],
+      "model_ids": [
+        "deepseek-v4-pro",
+        "qwen-3.8-max"
+      ],
+      "model_config": "Multi-model",
+      "score": 98.47,
+      "score_extra": {
+        "trials": 1,
+        "dynamic": true,
+        "lead_card_unranked": true
+      },
+      "date": "2026-09-07",
+      "verified": null,
+      "open_source": null,
+      "org": "Creation Lab",
+      "row_url": "https://github.com/AntAISecurityLab/Creation"
+    },
+    {
+      "rank": null,
+      "system": "Creation (天工)",
+      "agent": "Creation (天工)",
+      "model_raw": [
+        "DeepSeek-V4-Pro",
+        "Creation Model",
+        "Qwen 3.8 Max"
+      ],
+      "model_ids": [
+        "deepseek-v4-pro",
+        "qwen-3.8-max"
+      ],
+      "model_config": "Multi-model",
+      "score": 95.35,
+      "score_extra": {
+        "trials": 1,
+        "dynamic": true
+      },
+      "date": "2026-08-30",
+      "verified": null,
+      "open_source": null,
+      "org": "Creation Lab",
+      "row_url": "https://github.com/AntAISecurityLab/Creation"
+    },
+    {
+      "rank": null,
+      "system": "Sangfor AI",
+      "agent": "Sangfor AI",
+      "model_raw": [
+        "GLM-5.3"
+      ],
+      "model_ids": [
+        "glm-5.3"
+      ],
+      "model_config": null,
+      "score": 97.21,
+      "score_extra": {
+        "trials": 1,
+        "dynamic": true,
+        "lead_card_unranked": true
+      },
+      "date": "2026-09-02",
+      "verified": null,
+      "open_source": null,
+      "org": "Sangfor AI",
+      "row_url": "https://github.com/Sangfor-AI/cybergym-submission-sangfor-ai-v2"
+    },
+    {
+      "rank": null,
+      "system": "Sangfor AI",
+      "agent": "Sangfor AI",
+      "model_raw": [
+        "DeepSeek-V4-Flash"
+      ],
+      "model_ids": [
+        "deepseek-v4-flash"
+      ],
+      "model_config": null,
+      "score": 93.17,
+      "score_extra": {
+        "trials": 1,
+        "dynamic": true
+      },
+      "date": "2026-08-08",
+      "verified": null,
+      "open_source": null,
+      "org": "Sangfor AI",
+      "row_url": "https://github.com/Sangfor-AI/cybergym-submission-sangfor-ai-v2"
+    },
+    {
+      "rank": null,
+      "system": "Sangfor AI",
+      "agent": "Sangfor AI",
+      "model_raw": [
+        "GLM-5.2"
+      ],
+      "model_ids": [
+        "glm-5.2"
+      ],
+      "model_config": null,
+      "score": 86.33,
+      "score_extra": {
+        "trials": 1,
+        "dynamic": true
+      },
+      "date": "2026-07-21",
+      "verified": null,
+      "open_source": null,
+      "org": "Sangfor AI",
+      "row_url": "https://www.sangfor.com/news-and-press-release/sangfor-ai-ranked-4-on-cybergym-2026"
+    },
+    {
+      "rank": null,
+      "system": "Alipay AI4SDL",
+      "agent": "Alipay AI4SDL",
+      "model_raw": [
+        "GLM-5.3"
+      ],
+      "model_ids": [
+        "glm-5.3"
+      ],
+      "model_config": null,
+      "score": 96.75,
+      "score_extra": {
+        "trials": 1,
+        "dynamic": true,
+        "lead_card_unranked": true
+      },
+      "date": "2026-09-06",
+      "verified": null,
+      "open_source": null,
+      "org": "Alipay",
+      "row_url": "https://github.com/Alipay-Risk-Tech/CyberGym-Writeup"
+    },
+    {
+      "rank": null,
+      "system": "Hero Agent",
+      "agent": "Hero Agent",
+      "model_raw": [
+        "Hero (finetuned from GLM-5.2)"
+      ],
+      "model_ids": [],
+      "model_config": "finetuned from GLM-5.2",
+      "score": 96.62,
+      "score_extra": {
+        "trials": 1,
+        "dynamic": true,
+        "test_time_memory": true,
+        "lead_card_unranked": true
+      },
+      "date": "2026-09-03",
+      "verified": null,
+      "open_source": null,
+      "org": "Dream",
+      "row_url": "https://www.dreamgroup.com/blog/hercules-on-premises-ai-vulnerability-model-ranked-1-on-cybergym"
+    },
+    {
+      "rank": null,
+      "system": "NSFOCUS AI",
+      "agent": "NSFOCUS AI",
+      "model_raw": [
+        "GLM-5.3"
+      ],
+      "model_ids": [
+        "glm-5.3"
+      ],
+      "model_config": null,
+      "score": 95.02,
+      "score_extra": {
+        "trials": 1,
+        "dynamic": true,
+        "lead_card_unranked": true
+      },
+      "date": "2026-08-13",
+      "verified": null,
+      "open_source": null,
+      "org": "NSFOCUS",
+      "row_url": "https://nsfocusglobal.com/nsfocus-ai-cybergym-level-1-technical-report/"
+    },
+    {
+      "rank": null,
+      "system": "DoGNAVY",
+      "agent": "DoGNAVY",
+      "model_raw": [
+        "GLM-5.3"
+      ],
+      "model_ids": [
+        "glm-5.3"
+      ],
+      "model_config": null,
+      "score": 94.96,
+      "score_extra": {
+        "trials": 1,
+        "dynamic": true,
+        "lead_card_unranked": true
+      },
+      "date": "2026-08-17",
+      "verified": null,
+      "open_source": null,
+      "org": "deepsec@DARKNAVY",
+      "row_url": "https://deepsec.darknavy.net/blog/cybergym"
+    },
+    {
+      "rank": null,
+      "system": "DoGNAVY",
+      "agent": "DoGNAVY",
+      "model_raw": [
+        "GLM-5.2"
+      ],
+      "model_ids": [
+        "glm-5.2"
+      ],
+      "model_config": null,
+      "score": 90.84,
+      "score_extra": {
+        "trials": 1,
+        "dynamic": true
+      },
+      "date": "2026-08-03",
+      "verified": null,
+      "open_source": null,
+      "org": "deepsec@DARKNAVY",
+      "row_url": "https://deepsec.darknavy.net/blog/cybergym"
+    },
+    {
+      "rank": null,
+      "system": "RO0T Agent",
+      "agent": "RO0T Agent",
+      "model_raw": [
+        "DeepSeek-V4-Flash"
+      ],
+      "model_ids": [
+        "deepseek-v4-flash"
+      ],
+      "model_config": null,
+      "score": 94.16,
+      "score_extra": {
+        "trials": 1,
+        "dynamic": true,
+        "lead_card_unranked": true
+      },
+      "date": "2026-08-26",
+      "verified": null,
+      "open_source": null,
+      "org": "RO0T Lab",
+      "row_url": "https://github.com/RO0TLab/RO0T-Agent/blob/main/README.md"
+    },
+    {
+      "rank": null,
+      "system": "Spur",
+      "agent": "Spur",
+      "model_raw": [
+        "Qwen-Internal"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 91.8381,
+      "score_extra": {
+        "trials": 1,
+        "lead_card_unranked": true
+      },
+      "date": "2026-09-03",
+      "verified": null,
+      "open_source": null,
+      "org": "Alibaba Cloud Security",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Gcsa Agent",
+      "agent": "Gcsa Agent",
+      "model_raw": [
+        "Grok 4.5",
+        "Grok 4.6"
+      ],
+      "model_ids": [
+        "grok-4.5",
+        "grok-4.6"
+      ],
+      "model_config": "Multi-model",
+      "score": 91.31,
+      "score_extra": {
+        "trials": 1,
+        "dynamic": true,
+        "lead_card_unranked": true
+      },
+      "date": "2026-08-25",
+      "verified": null,
+      "open_source": null,
+      "org": "Gcsa",
+      "row_url": "https://gcsa.org/cybergym/l1-writeup-v2.0.html"
+    },
+    {
+      "rank": null,
+      "system": "FangcunCyber",
+      "agent": "FangcunCyber",
+      "model_raw": [
+        "DeepSeek-V4-Flash"
+      ],
+      "model_ids": [
+        "deepseek-v4-flash"
+      ],
+      "model_config": null,
+      "score": 91.31,
+      "score_extra": {
+        "trials": 1,
+        "test_time_memory": true,
+        "lead_card_unranked": true
+      },
+      "date": "2026-08-16",
+      "verified": null,
+      "open_source": null,
+      "org": "Fangcun AI",
+      "row_url": "https://github.com/Fangcun-AI/FangcunCyber"
+    },
+    {
+      "rank": null,
+      "system": "Whitzard (白泽)",
+      "agent": "Whitzard (白泽)",
+      "model_raw": [
+        "DeepSeek-V4-Flash"
+      ],
+      "model_ids": [
+        "deepseek-v4-flash"
+      ],
+      "model_config": null,
+      "score": 91.2,
+      "score_extra": {
+        "trials": 1,
+        "dynamic": true,
+        "lead_card_unranked": true
+      },
+      "date": "2026-08-07",
+      "verified": null,
+      "open_source": null,
+      "org": "Fudan Whitzard",
+      "row_url": "https://github.com/WhitzardAgent/Whitzard"
+    },
+    {
+      "rank": null,
+      "system": "Whitzard (白泽)",
+      "agent": "Whitzard (白泽)",
+      "model_raw": [
+        "GLM-5.1-FP8"
+      ],
+      "model_ids": [
+        "glm-5.1"
+      ],
+      "model_config": "FP8",
+      "score": 68.9,
+      "score_extra": {
+        "trials": 1,
+        "dynamic": true
+      },
+      "date": "2026-07-21",
+      "verified": null,
+      "open_source": null,
+      "org": "Fudan Whitzard",
+      "row_url": "https://github.com/WhitzardAgent/Whitzard"
+    },
+    {
+      "rank": null,
+      "system": "mneme",
+      "agent": "mneme",
+      "model_raw": [
+        "Claude Opus 4.6"
+      ],
+      "model_ids": [
+        "claude-opus-4.6"
+      ],
+      "model_config": null,
+      "score": 91.04,
+      "score_extra": {
+        "trials": 1,
+        "dynamic": true,
+        "lead_card_unranked": true
+      },
+      "date": "2026-07-13",
+      "verified": null,
+      "open_source": null,
+      "org": "Soongsil AISC",
+      "row_url": "https://aisc-ssu.github.io/mneme/"
+    },
+    {
+      "rank": null,
+      "system": "MDASH",
+      "agent": "MDASH",
+      "model_raw": [
+        "GPT-5.4",
+        "Claude Opus 4.6",
+        "Claude Sonnet 4.6"
+      ],
+      "model_ids": [
+        "gpt-5.4",
+        "claude-opus-4.6",
+        "claude-sonnet-4.6"
+      ],
+      "model_config": "Multi-model",
+      "score": 90.97,
+      "score_extra": {
+        "trials": 1,
+        "lead_card_unranked": true
+      },
+      "date": "2026-06-17",
+      "verified": null,
+      "open_source": null,
+      "org": "Microsoft",
+      "row_url": "https://www.microsoft.com/en-us/security/blog/2026/06/17/beyond-the-benchmark-advancing-security-at-ai-speed/"
+    },
+    {
+      "rank": null,
+      "system": "MDASH",
+      "agent": "MDASH",
+      "model_raw": [
+        "MAI-Cyber-1-Flash",
+        "GPT-5.4",
+        "Claude Opus 4.6"
+      ],
+      "model_ids": [
+        "mai-cyber-1-flash",
+        "gpt-5.4",
+        "claude-opus-4.6"
+      ],
+      "model_config": "Multi-model",
+      "score": 86.26,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2026-07-27",
+      "verified": null,
+      "open_source": null,
+      "org": "Microsoft",
+      "row_url": "https://microsoft.ai/news/introducing-mai-cyber-1-flash-inside-mdash/"
+    },
+    {
+      "rank": null,
+      "system": "MDASH",
+      "agent": "MDASH",
+      "model_raw": [
+        "GPT-5.4",
+        "Claude Opus 4.6",
+        "Claude Sonnet 4.6"
+      ],
+      "model_ids": [
+        "gpt-5.4",
+        "claude-opus-4.6",
+        "claude-sonnet-4.6"
+      ],
+      "model_config": "Multi-model",
+      "score": 88.45,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2026-05-12",
+      "verified": null,
+      "open_source": null,
+      "org": "Microsoft",
+      "row_url": "https://www.microsoft.com/en-us/security/blog/2026/05/12/defense-at-ai-speed-microsofts-new-multi-model-agentic-security-system-tops-leading-industry-benchmark/"
+    },
+    {
+      "rank": null,
+      "system": "Wiz Atlas",
+      "agent": "Wiz Atlas",
+      "model_raw": [
+        "GPT-5.5",
+        "Claude Opus 4.6"
+      ],
+      "model_ids": [
+        "gpt-5.5",
+        "claude-opus-4.6"
+      ],
+      "model_config": "Multi-model",
+      "score": 90.9,
+      "score_extra": {
+        "trials": 1,
+        "lead_card_unranked": true
+      },
+      "date": "2026-07-27",
+      "verified": null,
+      "open_source": null,
+      "org": "Wiz",
+      "row_url": "https://www.wiz.io/blog/atlas-ai-vulnerability-researcher"
+    },
+    {
+      "rank": 15,
+      "system": "Crystalline",
+      "agent": "Crystalline",
+      "model_raw": [
+        "Claude Opus 4.6"
+      ],
+      "model_ids": [
+        "claude-opus-4.6"
+      ],
+      "model_config": null,
+      "score": 89.6,
+      "score_extra": {
+        "trials": 1,
+        "test_time_memory": true
+      },
+      "date": "2026-06-08",
+      "verified": null,
+      "open_source": null,
+      "org": "Independent researcher",
+      "row_url": "https://github.com/synchopate/cybergym-logos"
+    },
+    {
+      "rank": 16,
+      "system": "Gusion",
+      "agent": "Gusion",
+      "model_raw": [
+        "DeepSeek-V4-Flash"
+      ],
+      "model_ids": [
+        "deepseek-v4-flash"
+      ],
+      "model_config": null,
+      "score": 87.06,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2026-08-16",
+      "verified": null,
+      "open_source": null,
+      "org": "Gusion",
+      "row_url": "https://github.com/EBWi11/Gusion/blob/add-level1-technical-report/README.md"
+    },
+    {
+      "rank": 17,
+      "system": "RedbudAI",
+      "agent": "RedbudAI",
+      "model_raw": [
+        "GLM-5.2"
+      ],
+      "model_ids": [
+        "glm-5.2"
+      ],
+      "model_config": null,
+      "score": 86.264,
+      "score_extra": {
+        "trials": 1,
+        "dynamic": true,
+        "test_time_memory": true
+      },
+      "date": "2026-08-10",
+      "verified": null,
+      "open_source": null,
+      "org": "Redbud",
+      "row_url": "https://redbud.tsinghua.edu.cn/posts/cybergym.html"
+    },
+    {
+      "rank": 18,
+      "system": "Velldepth Agent",
+      "agent": "Velldepth Agent",
+      "model_raw": [
+        "XekRung"
+      ],
+      "model_ids": [
+        "xekrung"
+      ],
+      "model_config": null,
+      "score": 85.34,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2026-08-03",
+      "verified": null,
+      "open_source": null,
+      "org": "Alibaba Security",
+      "row_url": "https://alibaba-velldepth.github.io/writeups/"
+    },
+    {
+      "rank": 19,
+      "system": "Xuanwu Atuin AI",
+      "agent": "Xuanwu Atuin AI",
+      "model_raw": [
+        "GLM-5.2"
+      ],
+      "model_ids": [
+        "glm-5.2"
+      ],
+      "model_config": null,
+      "score": 84.8,
+      "score_extra": {
+        "trials": 1,
+        "dynamic": true
+      },
+      "date": "2026-07-22",
+      "verified": null,
+      "open_source": null,
+      "org": "Tencent Xuanwu Lab",
+      "row_url": "https://xlab.tencent.com/en/2026/07/17/xuanwu-atuin-cybergym-glm52/"
+    },
+    {
+      "rank": null,
+      "system": "Xuanwu Atuin AI",
+      "agent": "Xuanwu Atuin AI",
+      "model_raw": [
+        "GLM-5.1"
+      ],
+      "model_ids": [
+        "glm-5.1"
+      ],
+      "model_config": null,
+      "score": 84.0,
+      "score_extra": {
+        "trials": 1,
+        "dynamic": true
+      },
+      "date": "2026-07-02",
+      "verified": null,
+      "open_source": null,
+      "org": "Tencent Xuanwu Lab",
+      "row_url": "https://xlab.tencent.com/en/2026/07/02/xuanwu-atuin-cybergym/"
+    },
+    {
+      "rank": 20,
+      "system": "VARAS-OneMind",
+      "agent": "VARAS-OneMind",
+      "model_raw": [
+        "GPT-5.4"
+      ],
+      "model_ids": [
+        "gpt-5.4"
+      ],
+      "model_config": null,
+      "score": 73.79,
+      "score_extra": {
+        "trials": 1,
+        "test_time_memory": true
+      },
+      "date": "2026-08-14",
+      "verified": null,
+      "open_source": null,
+      "org": "VARAS",
+      "row_url": "https://varas-onemind.github.io/posts/cybergym/"
+    },
+    {
+      "rank": 21,
+      "system": "MopMonk Agent",
+      "agent": "MopMonk Agent",
+      "model_raw": [
+        "MiniMax M3"
+      ],
+      "model_ids": [
+        "minimax-m3"
+      ],
+      "model_config": null,
+      "score": 73.1,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2026-06-28",
+      "verified": null,
+      "open_source": null,
+      "org": "MopMonk AI",
+      "row_url": "https://github.com/MopMonkAI/MopMonkAgent"
+    },
+    {
+      "rank": 22,
+      "system": "JiuXuan (九玄)",
+      "agent": "JiuXuan (九玄)",
+      "model_raw": [
+        "GLM-5.1"
+      ],
+      "model_ids": [
+        "glm-5.1"
+      ],
+      "model_config": null,
+      "score": 72.86,
+      "score_extra": {
+        "trials": 1,
+        "dynamic": true
+      },
+      "date": "2026-08-03",
+      "verified": null,
+      "open_source": null,
+      "org": "China Mobile Jiutian AI",
+      "row_url": "https://github.com/as837430732/JiuXuan"
+    },
+    {
+      "rank": 23,
+      "system": "XD Agent",
+      "agent": "XD Agent",
+      "model_raw": [
+        "DeepSeek-V4-Pro Preview"
+      ],
+      "model_ids": [
+        "deepseek-v4-pro-preview"
+      ],
+      "model_config": null,
+      "score": 64.1,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2026-08-11",
+      "verified": null,
+      "open_source": null,
+      "org": "XDxAI",
+      "row_url": "https://github.com/XDxAI/XD-Agent/blob/main/CyberGym_submission_XDagent.md"
+    },
+    {
+      "rank": 24,
+      "system": "SageAgent",
+      "agent": "SageAgent",
+      "model_raw": [
+        "GPT-5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": null,
+      "score": 60.2,
+      "score_extra": {
+        "trials": 1,
+        "dynamic": true
+      },
+      "date": "2026-02-09",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenSage Team",
+      "row_url": "https://www.opensage-agent.ai/"
+    }
+  ]
+}

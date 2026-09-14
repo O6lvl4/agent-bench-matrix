@@ -1,0 +1,553 @@
+{
+  "id": "ecommerce-bench",
+  "family": "ecommerce-bench",
+  "name": "E-Commerce Bench",
+  "board": "ecbench.github.io",
+  "category": "long-horizon",
+  "measures_ja": "ネット通販の店主として365日間、出店・仕入れ交渉・詐欺業者の見極め・価格設定・返品対応をこなし、年末の総資産をどれだけ増やせるか。",
+  "tasks": null,
+  "tasks_note": "固定の1つの世界での1年間シミュレーションを各モデル5エピソード走らせる形式で、タスク数という単位が無い。",
+  "metric": "Final Balance (year-end total assets, mean of 5 runs)",
+  "unit": "cny",
+  "higher_is_better": true,
+  "harness_ja": "著者(Qwen チーム)が同じエージェントループと18種の通販ツール、決定的な交渉エンジンを持つ固定の世界で、各モデル設定を5エピソードずつ実行した。",
+  "source": "https://ecbench.github.io/#balance",
+  "fetched": [
+    "https://ecbench.github.io/",
+    "https://ecbench.github.io/showcase_data.json",
+    "https://ecbench.github.io/assets/js/app.min.js"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": null,
+  "snapshot": "sources/ecommerce-bench/showcase_data_models.json",
+  "paper": "https://arxiv.org/abs/2608.30730",
+  "repo": "https://github.com/QwenLM/E-CommerceBench",
+  "notes_ja": "開始資金は ¥100,000。ページの Balance 表(Final Balance 平均・標準偏差・破産回数/5)の順で rank を振った。CSE+ と %Oracle は交渉指標表の値。open_source はボードの tier(open/proprietary)による。Qwen3.8-Max と GLM 5.3 は論文公開後に同じ手順で追加評価したとページに記載。行ごとの日付は無い。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "GPT-5.6 Sol (max)",
+      "agent": null,
+      "model_raw": [
+        "GPT-5.6 Sol (max)"
+      ],
+      "model_ids": [
+        "gpt-5.6-sol"
+      ],
+      "model_config": "max",
+      "score": 1431425.128,
+      "score_extra": {
+        "final_balance_std": 313565.7539,
+        "num_runs": 5,
+        "bankrupt_runs": 0,
+        "cse_plus": 0.6725,
+        "pct_oracle": 66.996
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": "OpenAI",
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "Fable5 (max)",
+      "agent": null,
+      "model_raw": [
+        "Fable5 (max)"
+      ],
+      "model_ids": [
+        "claude-fable-5"
+      ],
+      "model_config": "max",
+      "score": 804540.868,
+      "score_extra": {
+        "final_balance_std": 187821.3263,
+        "num_runs": 5,
+        "bankrupt_runs": 0,
+        "cse_plus": 0.7722,
+        "pct_oracle": 77.078
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "GPT-5.5",
+      "agent": null,
+      "model_raw": [
+        "GPT-5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": null,
+      "score": 702168.674,
+      "score_extra": {
+        "final_balance_std": 616050.0137,
+        "num_runs": 5,
+        "bankrupt_runs": 2,
+        "cse_plus": 0.7002,
+        "pct_oracle": 69.166
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": "OpenAI",
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "Claude Opus 4.8 (max)",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 4.8 (max)"
+      ],
+      "model_ids": [
+        "claude-opus-4.8"
+      ],
+      "model_config": "max",
+      "score": 498033.998,
+      "score_extra": {
+        "final_balance_std": 231176.5728,
+        "num_runs": 5,
+        "bankrupt_runs": 0,
+        "cse_plus": 0.6616,
+        "pct_oracle": 67.19
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "Qwen3.8-Max",
+      "agent": null,
+      "model_raw": [
+        "Qwen3.8-Max"
+      ],
+      "model_ids": [
+        "qwen3.8-max"
+      ],
+      "model_config": null,
+      "score": 471768.916,
+      "score_extra": {
+        "final_balance_std": 164580.4534,
+        "num_runs": 5,
+        "bankrupt_runs": 0,
+        "cse_plus": 0.66,
+        "pct_oracle": 64.928
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": "Qwen",
+      "row_url": null
+    },
+    {
+      "rank": 6,
+      "system": "Qwen3.8-Max-Preview",
+      "agent": null,
+      "model_raw": [
+        "Qwen3.8-Max-Preview"
+      ],
+      "model_ids": [
+        "qwen3.8-max-preview"
+      ],
+      "model_config": null,
+      "score": 416252.416,
+      "score_extra": {
+        "final_balance_std": 110504.9191,
+        "num_runs": 5,
+        "bankrupt_runs": 0,
+        "cse_plus": 0.7132,
+        "pct_oracle": 71.584
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": "Qwen",
+      "row_url": null
+    },
+    {
+      "rank": 7,
+      "system": "GLM-5.3 (max)",
+      "agent": null,
+      "model_raw": [
+        "GLM-5.3 (max)"
+      ],
+      "model_ids": [
+        "glm-5.3"
+      ],
+      "model_config": "max",
+      "score": 391107.02,
+      "score_extra": {
+        "final_balance_std": 167294.7419,
+        "num_runs": 5,
+        "bankrupt_runs": 0,
+        "cse_plus": 0.6684,
+        "pct_oracle": 66.896
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": "GLM",
+      "row_url": null
+    },
+    {
+      "rank": 8,
+      "system": "GLM 5.2 (high)",
+      "agent": null,
+      "model_raw": [
+        "GLM 5.2 (high)"
+      ],
+      "model_ids": [
+        "glm-5.2"
+      ],
+      "model_config": "high",
+      "score": 300771.87,
+      "score_extra": {
+        "final_balance_std": 123859.6596,
+        "num_runs": 5,
+        "bankrupt_runs": 0,
+        "cse_plus": 0.6929,
+        "pct_oracle": 68.942
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": "GLM",
+      "row_url": null
+    },
+    {
+      "rank": 9,
+      "system": "Kimi K3",
+      "agent": null,
+      "model_raw": [
+        "Kimi K3"
+      ],
+      "model_ids": [
+        "kimi-k3"
+      ],
+      "model_config": null,
+      "score": 264539.186,
+      "score_extra": {
+        "final_balance_std": 109565.9364,
+        "num_runs": 5,
+        "bankrupt_runs": 0,
+        "cse_plus": 0.6325,
+        "pct_oracle": 63.102
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": "Kimi",
+      "row_url": null
+    },
+    {
+      "rank": 10,
+      "system": "Claude Opus 4.7 (max)",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 4.7 (max)"
+      ],
+      "model_ids": [
+        "claude-opus-4.7"
+      ],
+      "model_config": "max",
+      "score": 259284.302,
+      "score_extra": {
+        "final_balance_std": 111379.0587,
+        "num_runs": 5,
+        "bankrupt_runs": 0,
+        "cse_plus": 0.8107,
+        "pct_oracle": 77.414
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 11,
+      "system": "Claude Opus 4.6 (max)",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 4.6 (max)"
+      ],
+      "model_ids": [
+        "claude-opus-4.6"
+      ],
+      "model_config": "max",
+      "score": 258097.278,
+      "score_extra": {
+        "final_balance_std": 266335.9885,
+        "num_runs": 5,
+        "bankrupt_runs": 2,
+        "cse_plus": 0.6491,
+        "pct_oracle": 64.944
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 12,
+      "system": "GLM-5.3-Flash (max)",
+      "agent": null,
+      "model_raw": [
+        "GLM-5.3-Flash (max)"
+      ],
+      "model_ids": [
+        "glm-5.3-flash"
+      ],
+      "model_config": "max",
+      "score": 257588.67,
+      "score_extra": {
+        "final_balance_std": 88119.1855,
+        "num_runs": 5,
+        "bankrupt_runs": 0,
+        "cse_plus": 0.7294,
+        "pct_oracle": 73.246
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": "GLM",
+      "row_url": null
+    },
+    {
+      "rank": 13,
+      "system": "GLM 5.1",
+      "agent": null,
+      "model_raw": [
+        "GLM 5.1"
+      ],
+      "model_ids": [
+        "glm-5.1"
+      ],
+      "model_config": null,
+      "score": 225839.152,
+      "score_extra": {
+        "final_balance_std": 191801.6449,
+        "num_runs": 5,
+        "bankrupt_runs": 0,
+        "cse_plus": 0.6625,
+        "pct_oracle": 65.368
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": "GLM",
+      "row_url": null
+    },
+    {
+      "rank": 14,
+      "system": "DeepSeek-V4-Pro-Preview (max)",
+      "agent": null,
+      "model_raw": [
+        "DeepSeek-V4-Pro-Preview (max)"
+      ],
+      "model_ids": [
+        "deepseek-v4-pro-preview"
+      ],
+      "model_config": "max",
+      "score": 190433.558,
+      "score_extra": {
+        "final_balance_std": 99536.0147,
+        "num_runs": 5,
+        "bankrupt_runs": 0,
+        "cse_plus": 0.6536,
+        "pct_oracle": 65.408
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": "DeepSeek",
+      "row_url": null
+    },
+    {
+      "rank": 15,
+      "system": "Gemini 3.5 Flash",
+      "agent": null,
+      "model_raw": [
+        "Gemini 3.5 Flash"
+      ],
+      "model_ids": [
+        "gemini-3.5-flash"
+      ],
+      "model_config": null,
+      "score": 189973.672,
+      "score_extra": {
+        "final_balance_std": 78893.0498,
+        "num_runs": 5,
+        "bankrupt_runs": 0,
+        "cse_plus": 0.7766,
+        "pct_oracle": 76.58
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": "Google",
+      "row_url": null
+    },
+    {
+      "rank": 16,
+      "system": "Qwen3.7-Max",
+      "agent": null,
+      "model_raw": [
+        "Qwen3.7-Max"
+      ],
+      "model_ids": [
+        "qwen3.7-max"
+      ],
+      "model_config": null,
+      "score": 165224.322,
+      "score_extra": {
+        "final_balance_std": 134477.9365,
+        "num_runs": 5,
+        "bankrupt_runs": 0,
+        "cse_plus": 0.616,
+        "pct_oracle": 60.434
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": "Qwen",
+      "row_url": null
+    },
+    {
+      "rank": 17,
+      "system": "Gemini 3.1 Pro",
+      "agent": null,
+      "model_raw": [
+        "Gemini 3.1 Pro"
+      ],
+      "model_ids": [
+        "gemini-3.1-pro"
+      ],
+      "model_config": null,
+      "score": 130189.786,
+      "score_extra": {
+        "final_balance_std": 130447.4541,
+        "num_runs": 5,
+        "bankrupt_runs": 2,
+        "cse_plus": 0.6597,
+        "pct_oracle": 67.37
+      },
+      "date": null,
+      "verified": null,
+      "open_source": false,
+      "org": "Google",
+      "row_url": null
+    },
+    {
+      "rank": 18,
+      "system": "GLM 5.2 (max)",
+      "agent": null,
+      "model_raw": [
+        "GLM 5.2 (max)"
+      ],
+      "model_ids": [
+        "glm-5.2"
+      ],
+      "model_config": "max",
+      "score": 114624.612,
+      "score_extra": {
+        "final_balance_std": 71413.099,
+        "num_runs": 5,
+        "bankrupt_runs": 0,
+        "cse_plus": 0.6321,
+        "pct_oracle": 63.266
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": "GLM",
+      "row_url": null
+    },
+    {
+      "rank": 19,
+      "system": "Kimi K2.6",
+      "agent": null,
+      "model_raw": [
+        "Kimi K2.6"
+      ],
+      "model_ids": [
+        "kimi-k2.6"
+      ],
+      "model_config": null,
+      "score": 70314.496,
+      "score_extra": {
+        "final_balance_std": 13755.3329,
+        "num_runs": 5,
+        "bankrupt_runs": 0,
+        "cse_plus": 0.5957,
+        "pct_oracle": 60.1
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": "Kimi",
+      "row_url": null
+    },
+    {
+      "rank": 20,
+      "system": "Qwen3.6-Plus",
+      "agent": null,
+      "model_raw": [
+        "Qwen3.6-Plus"
+      ],
+      "model_ids": [
+        "qwen3.6-plus"
+      ],
+      "model_config": null,
+      "score": 46677.93,
+      "score_extra": {
+        "final_balance_std": 28069.4216,
+        "num_runs": 5,
+        "bankrupt_runs": 0,
+        "cse_plus": 0.625,
+        "pct_oracle": 61.37
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": "Qwen",
+      "row_url": null
+    },
+    {
+      "rank": 21,
+      "system": "Qwen3.5-Plus",
+      "agent": null,
+      "model_raw": [
+        "Qwen3.5-Plus"
+      ],
+      "model_ids": [
+        "qwen3.5-plus"
+      ],
+      "model_config": null,
+      "score": 1132.774,
+      "score_extra": {
+        "final_balance_std": 10759.7336,
+        "num_runs": 5,
+        "bankrupt_runs": 4,
+        "cse_plus": 0.6246,
+        "pct_oracle": 61.36
+      },
+      "date": null,
+      "verified": null,
+      "open_source": true,
+      "org": "Qwen",
+      "row_url": null
+    }
+  ]
+}

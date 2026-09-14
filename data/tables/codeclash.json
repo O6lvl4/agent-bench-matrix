@@ -1,0 +1,336 @@
+{
+  "id": "codeclash",
+  "family": "codeclash",
+  "name": "CodeClash",
+  "board": "codeclash.ai",
+  "category": "coding",
+  "measures_ja": "目標だけを与えられたモデルが自分のコードベースを何ラウンドも改良し、対戦アリーナで他モデルに勝てるか。",
+  "tasks": 6,
+  "tasks_note": "サイトの「8 models on 6 arenas across 1680 tournaments」。task はアリーナ数として数えた。",
+  "metric": "Elo (all arenas)",
+  "unit": "elo",
+  "higher_is_better": true,
+  "harness_ja": "運営が 8 モデルを同じ条件で総当たりのトーナメント(各 15 ラウンド)に出し、勝敗から Elo を出す。",
+  "source": "https://codeclash.ai/",
+  "fetched": [
+    "https://codeclash.ai/"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": null,
+  "snapshot": "sources/codeclash/fullLeaderboardData.json",
+  "paper": "https://arxiv.org/abs/2511.00839",
+  "repo": "https://github.com/CodeClash-ai/CodeClash",
+  "notes_ja": "ページ内の fullLeaderboardData(JSON)を取り出した。アリーナ別の Elo は score_extra。行ごとの日付は無く、ボードの更新日は 2025-11-03。Grok Code Fast は grok-code-fast-1、Qwen3 Coder はサイズ不明で空にした。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Claude Sonnet 4.5",
+      "agent": null,
+      "model_raw": [
+        "Claude Sonnet 4.5"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": null,
+      "score": 1385,
+      "score_extra": {
+        "elo_std": 18,
+        "battlesnake_elo": 1470,
+        "battlesnake_elo_std": 52,
+        "battlesnake_rank": 1,
+        "corewar_elo": 1641,
+        "corewar_elo_std": 73,
+        "corewar_rank": 1,
+        "halite_elo": 1413,
+        "halite_elo_std": 43,
+        "halite_rank": 3,
+        "poker_elo": 1256,
+        "poker_elo_std": 45,
+        "poker_rank": 4,
+        "robocode_elo": 1361,
+        "robocode_elo_std": 44,
+        "robocode_rank": 2,
+        "robotrumble_elo": 1423,
+        "robotrumble_elo_std": 47,
+        "robotrumble_rank": 1
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "GPT-5",
+      "agent": null,
+      "model_raw": [
+        "GPT-5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": null,
+      "score": 1366,
+      "score_extra": {
+        "elo_std": 17,
+        "battlesnake_elo": 1339,
+        "battlesnake_elo_std": 44,
+        "battlesnake_rank": 4,
+        "corewar_elo": 1200,
+        "corewar_elo_std": 43,
+        "corewar_rank": 4,
+        "halite_elo": 1521,
+        "halite_elo_std": 47,
+        "halite_rank": 2,
+        "poker_elo": 1599,
+        "poker_elo_std": 65,
+        "poker_rank": 1,
+        "robocode_elo": 1409,
+        "robocode_elo_std": 46,
+        "robocode_rank": 1,
+        "robotrumble_elo": 1294,
+        "robotrumble_elo_std": 42,
+        "robotrumble_rank": 4
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "o3",
+      "agent": null,
+      "model_raw": [
+        "o3"
+      ],
+      "model_ids": [
+        "o3"
+      ],
+      "model_config": null,
+      "score": 1343,
+      "score_extra": {
+        "elo_std": 17,
+        "battlesnake_elo": 1358,
+        "battlesnake_elo_std": 45,
+        "battlesnake_rank": 3,
+        "corewar_elo": 1349,
+        "corewar_elo_std": 47,
+        "corewar_rank": 2,
+        "halite_elo": 1577,
+        "halite_elo_std": 60,
+        "halite_rank": 1,
+        "poker_elo": 1278,
+        "poker_elo_std": 46,
+        "poker_rank": 3,
+        "robocode_elo": 1338,
+        "robocode_elo_std": 43,
+        "robocode_rank": 3,
+        "robotrumble_elo": 1309,
+        "robotrumble_elo_std": 43,
+        "robotrumble_rank": 3
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "Claude Sonnet 4",
+      "agent": null,
+      "model_raw": [
+        "Claude Sonnet 4"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": null,
+      "score": 1224,
+      "score_extra": {
+        "elo_std": 17,
+        "battlesnake_elo": 1254,
+        "battlesnake_elo_std": 46,
+        "battlesnake_rank": 5,
+        "corewar_elo": 1340,
+        "corewar_elo_std": 46,
+        "corewar_rank": 3,
+        "halite_elo": 1112,
+        "halite_elo_std": 49,
+        "halite_rank": 6,
+        "poker_elo": 1234,
+        "poker_elo_std": 45,
+        "poker_rank": 5,
+        "robocode_elo": 1034,
+        "robocode_elo_std": 46,
+        "robocode_rank": 7,
+        "robotrumble_elo": 1361,
+        "robotrumble_elo_std": 44,
+        "robotrumble_rank": 2
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "GPT-5 Mini",
+      "agent": null,
+      "model_raw": [
+        "GPT-5 Mini"
+      ],
+      "model_ids": [
+        "gpt-5-mini"
+      ],
+      "model_config": null,
+      "score": 1199,
+      "score_extra": {
+        "elo_std": 16,
+        "battlesnake_elo": 1370,
+        "battlesnake_elo_std": 46,
+        "battlesnake_rank": 2,
+        "corewar_elo": 927,
+        "corewar_elo_std": 51,
+        "corewar_rank": 8,
+        "halite_elo": 1185,
+        "halite_elo_std": 47,
+        "halite_rank": 4,
+        "poker_elo": 1428,
+        "poker_elo_std": 51,
+        "poker_rank": 2,
+        "robocode_elo": 1217,
+        "robocode_elo_std": 42,
+        "robocode_rank": 5,
+        "robotrumble_elo": 1092,
+        "robotrumble_elo_std": 41,
+        "robotrumble_rank": 5
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 6,
+      "system": "Gemini 2.5 Pro",
+      "agent": null,
+      "model_raw": [
+        "Gemini 2.5 Pro"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": null,
+      "score": 1124,
+      "score_extra": {
+        "elo_std": 16,
+        "battlesnake_elo": 1116,
+        "battlesnake_elo_std": 45,
+        "battlesnake_rank": 6,
+        "corewar_elo": 1044,
+        "corewar_elo_std": 45,
+        "corewar_rank": 6,
+        "halite_elo": 1184,
+        "halite_elo_std": 41,
+        "halite_rank": 5,
+        "poker_elo": 961,
+        "poker_elo_std": 51,
+        "poker_rank": 6,
+        "robocode_elo": 1316,
+        "robocode_elo_std": 43,
+        "robocode_rank": 4,
+        "robotrumble_elo": 1045,
+        "robotrumble_elo_std": 45,
+        "robotrumble_rank": 7
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 7,
+      "system": "Grok Code Fast",
+      "agent": null,
+      "model_raw": [
+        "Grok Code Fast"
+      ],
+      "model_ids": [
+        "grok-code-fast-1"
+      ],
+      "model_config": null,
+      "score": 1006,
+      "score_extra": {
+        "elo_std": 19,
+        "battlesnake_elo": 833,
+        "battlesnake_elo_std": 64,
+        "battlesnake_rank": 8,
+        "corewar_elo": 1170,
+        "corewar_elo_std": 43,
+        "corewar_rank": 5,
+        "halite_elo": 824,
+        "halite_elo_std": 64,
+        "halite_rank": 7,
+        "poker_elo": 898,
+        "poker_elo_std": 55,
+        "poker_rank": 8,
+        "robocode_elo": 1034,
+        "robocode_elo_std": 46,
+        "robocode_rank": 6,
+        "robotrumble_elo": 1017,
+        "robotrumble_elo_std": 47,
+        "robotrumble_rank": 8
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 8,
+      "system": "Qwen3 Coder",
+      "agent": null,
+      "model_raw": [
+        "Qwen3 Coder"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 952,
+      "score_extra": {
+        "elo_std": 20,
+        "battlesnake_elo": 860,
+        "battlesnake_elo_std": 59,
+        "battlesnake_rank": 7,
+        "corewar_elo": 929,
+        "corewar_elo_std": 51,
+        "corewar_rank": 7,
+        "halite_elo": 784,
+        "halite_elo_std": 67,
+        "halite_rank": 8,
+        "poker_elo": 945,
+        "poker_elo_std": 54,
+        "poker_rank": 7,
+        "robocode_elo": 891,
+        "robocode_elo_std": 55,
+        "robocode_rank": 8,
+        "robotrumble_elo": 1058,
+        "robotrumble_elo_std": 44,
+        "robotrumble_rank": 6
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    }
+  ]
+}

@@ -1,0 +1,974 @@
+{
+  "id": "mobileworld",
+  "family": "mobileworld",
+  "name": "MobileWorld (GUI-Only)",
+  "board": "tongyi-mai.github.io/MobileWorld",
+  "category": "computer-use",
+  "measures_ja": "Android 上の20アプリで、複数アプリをまたぐ長い手順・ユーザーへの確認・MCP ツール併用を含むタスクを完了できるか。",
+  "tasks": 201,
+  "tasks_note": "全201タスク。score は GUI-Only(117)の成功率で、User-Int.(44)と MCP(40)は score_extra。",
+  "metric": "Success rate on GUI-Only tasks (%)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "max steps=50 で統一。結果はチームの評価と、軌跡を添えたコミュニティ提出(GitHub issue 経由)。足場は agent_type ごとに異なる。",
+  "source": "https://tongyi-mai.github.io/MobileWorld/#leaderboard",
+  "fetched": [
+    "https://tongyi-mai.github.io/MobileWorld/leaderboard.json"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-07-30",
+  "snapshot": "sources/mobileworld/leaderboard.json",
+  "paper": "https://arxiv.org/abs/2512.19432",
+  "repo": "https://github.com/Tongyi-MAI/MobileWorld",
+  "notes_ja": "ボードの既定表示は Type=General+Specialized・Tasks=GUI-Only(Agentic は非表示)。ここでは3種すべてを含め GUI-Only 降順で順位を付けた。日付はJSONのまま(2024年表記など明らかに怪しいものも直していない)。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Qwen-UI-Agent",
+      "agent": "mai_ui_agent",
+      "model_raw": [
+        "Qwen-UI-Agent"
+      ],
+      "model_ids": [
+        "qwen-ui-agent"
+      ],
+      "model_config": "category=Specialized; model_type=End-to-End Model; agent_type=mai_ui_agent",
+      "score": 82.1,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 1,
+        "num_images_in_history": 3
+      },
+      "date": "2026-07-30",
+      "verified": null,
+      "open_source": null,
+      "org": "Alibaba",
+      "row_url": "https://tongyi-mai.github.io/Qwen-UI-Agent/"
+    },
+    {
+      "rank": 2,
+      "system": "Kimi-K3",
+      "agent": "general_e2e",
+      "model_raw": [
+        "Kimi-K3"
+      ],
+      "model_ids": [
+        "kimi-k3"
+      ],
+      "model_config": "category=General; model_type=End-to-End Model; agent_type=general_e2e",
+      "score": 74.4,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 1,
+        "num_images_in_history": 3
+      },
+      "date": "2026-07-16",
+      "verified": null,
+      "open_source": null,
+      "org": "Moonshot AI",
+      "row_url": "https://www.kimi.com/blog/kimi-k3"
+    },
+    {
+      "rank": 3,
+      "system": "GPT-5.6-Sol",
+      "agent": "general_e2e",
+      "model_raw": [
+        "GPT-5.6-Sol"
+      ],
+      "model_ids": [
+        "gpt-5.6-sol"
+      ],
+      "model_config": "category=General; model_type=End-to-End Model; agent_type=general_e2e",
+      "score": 70.1,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 1,
+        "num_images_in_history": 3
+      },
+      "date": "2026-07-09",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://openai.com/index/gpt-5-6/"
+    },
+    {
+      "rank": 4,
+      "system": "MagicGUI-Agent (GPT-5.4 + Seed-1.8)",
+      "agent": "MagicGUI-Agent",
+      "model_raw": [
+        "GPT-5.4",
+        "Seed-1.8"
+      ],
+      "model_ids": [
+        "gpt-5.4",
+        "seed-1.8"
+      ],
+      "model_config": "category=Agentic; model_type=Agentic Framework; agent_type=None",
+      "score": 66.7,
+      "score_extra": {
+        "user_int": 65.9,
+        "max_steps": 50,
+        "runs": 1
+      },
+      "date": "2026-06-29",
+      "verified": null,
+      "open_source": null,
+      "org": "Honor",
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "KnowAct-GUIClaw",
+      "agent": "KnowAct-GUIClaw",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": "category=Agentic; model_type=Agentic Framework; agent_type=guiclaw",
+      "score": 64.1,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 1,
+        "num_images_in_history": 3
+      },
+      "date": "2026-07-17",
+      "verified": null,
+      "open_source": null,
+      "org": "Lychee",
+      "row_url": "https://github.com/HITsz-TMG/KnowAct"
+    },
+    {
+      "rank": 6,
+      "system": "Seed-2.0-Pro",
+      "agent": "seed_agent",
+      "model_raw": [
+        "Seed-2.0-Pro"
+      ],
+      "model_ids": [
+        "seed-2.0-pro"
+      ],
+      "model_config": "category=General; model_type=End-to-End Model; agent_type=seed_agent",
+      "score": 63.2,
+      "score_extra": {
+        "user_int": 61.4,
+        "max_steps": 50,
+        "runs": 1,
+        "num_images_in_history": 3
+      },
+      "date": "2026-02-14",
+      "verified": null,
+      "open_source": null,
+      "org": "ByteDance Seed",
+      "row_url": "https://seed.bytedance.com/en/seed2"
+    },
+    {
+      "rank": 7,
+      "system": "GPT-5.5",
+      "agent": "general_e2e",
+      "model_raw": [
+        "GPT-5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": "category=General; model_type=End-to-End Model; agent_type=general_e2e",
+      "score": 62.4,
+      "score_extra": {
+        "user_int": 34.1,
+        "max_steps": 50,
+        "runs": 1,
+        "num_images_in_history": 3
+      },
+      "date": "2026-04-23",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://openai.com/index/introducing-gpt-5-5/"
+    },
+    {
+      "rank": 8,
+      "system": "Gemini-3.1-Pro-Preview",
+      "agent": "general_e2e",
+      "model_raw": [
+        "Gemini-3.1-Pro-Preview"
+      ],
+      "model_ids": [
+        "gemini-3.1-pro-preview"
+      ],
+      "model_config": "category=General; model_type=End-to-End Model; agent_type=general_e2e",
+      "score": 58.1,
+      "score_extra": {
+        "user_int": 22.7,
+        "max_steps": 50,
+        "runs": 1,
+        "num_images_in_history": 3
+      },
+      "date": "2026-02-19",
+      "verified": null,
+      "open_source": null,
+      "org": "Google",
+      "row_url": "https://deepmind.google/models/gemini/pro/"
+    },
+    {
+      "rank": 9,
+      "system": "Claude-Opus-4.7",
+      "agent": "general_e2e",
+      "model_raw": [
+        "Claude-Opus-4.7"
+      ],
+      "model_ids": [
+        "claude-opus-4.7"
+      ],
+      "model_config": "category=General; model_type=End-to-End Model; agent_type=general_e2e",
+      "score": 56.4,
+      "score_extra": {
+        "user_int": 59.1,
+        "max_steps": 50,
+        "runs": 1,
+        "num_images_in_history": 1
+      },
+      "date": "2026-04-22",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://www.anthropic.com/news/claude-opus-4-7"
+    },
+    {
+      "rank": 10,
+      "system": "Kimi-K2.6",
+      "agent": "general_e2e",
+      "model_raw": [
+        "Kimi-K2.6"
+      ],
+      "model_ids": [
+        "kimi-k2.6"
+      ],
+      "model_config": "category=General; model_type=End-to-End Model; agent_type=general_e2e",
+      "score": 55.6,
+      "score_extra": {
+        "user_int": 56.8,
+        "max_steps": 50,
+        "runs": 1,
+        "num_images_in_history": 3
+      },
+      "date": "2026-04-22",
+      "verified": null,
+      "open_source": null,
+      "org": "Moonshot AI",
+      "row_url": "https://www.kimi.com/blog/kimi-k2-6"
+    },
+    {
+      "rank": 11,
+      "system": "Gemini-3-Pro + UI-Ins-7B",
+      "agent": "planner_executor",
+      "model_raw": [
+        "Gemini-3-Pro",
+        "UI-Ins-7B"
+      ],
+      "model_ids": [
+        "gemini-3-pro",
+        "ui-ins-7b"
+      ],
+      "model_config": "category=Agentic; model_type=Agentic Framework; agent_type=planner_executor",
+      "score": 55.6,
+      "score_extra": {
+        "user_int": 24.4,
+        "mcp": 48.6,
+        "max_steps": 50,
+        "runs": 1,
+        "num_images_in_history": 3
+      },
+      "date": "2025-11-18",
+      "verified": null,
+      "open_source": null,
+      "org": "Google",
+      "row_url": "https://deepmind.google/models/gemini/pro/"
+    },
+    {
+      "rank": 12,
+      "system": "GPT-5 + UI-Ins-7B",
+      "agent": "planner_executor",
+      "model_raw": [
+        "GPT-5",
+        "UI-Ins-7B"
+      ],
+      "model_ids": [
+        "gpt-5",
+        "ui-ins-7b"
+      ],
+      "model_config": "category=Agentic; model_type=Agentic Framework; agent_type=planner_executor",
+      "score": 54,
+      "score_extra": {
+        "user_int": 62.2,
+        "mcp": 51.6,
+        "max_steps": 50,
+        "runs": 1,
+        "num_images_in_history": 3
+      },
+      "date": "2025-08-07",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://openai.com/zh-Hans-CN/gpt-5/"
+    },
+    {
+      "rank": 13,
+      "system": "Seed-1.8",
+      "agent": "seed_agent",
+      "model_raw": [
+        "Seed-1.8"
+      ],
+      "model_ids": [
+        "seed-1.8"
+      ],
+      "model_config": "category=General; model_type=End-to-End Model; agent_type=seed_agent",
+      "score": 52.1,
+      "score_extra": {
+        "user_int": 29.5,
+        "max_steps": 50,
+        "runs": 1,
+        "num_images_in_history": 3
+      },
+      "date": "2025-12-18",
+      "verified": null,
+      "open_source": null,
+      "org": "ByteDance Seed",
+      "row_url": "https://seed.bytedance.com/en/seed1_8"
+    },
+    {
+      "rank": 14,
+      "system": "Gemini-3-Pro",
+      "agent": "general_e2e",
+      "model_raw": [
+        "Gemini-3-Pro"
+      ],
+      "model_ids": [
+        "gemini-3-pro"
+      ],
+      "model_config": "category=General; model_type=End-to-End Model; agent_type=general_e2e",
+      "score": 51.3,
+      "score_extra": {
+        "user_int": 29.5,
+        "max_steps": 50,
+        "runs": 1,
+        "num_images_in_history": 3
+      },
+      "date": "2025-11-18",
+      "verified": null,
+      "open_source": null,
+      "org": "Google",
+      "row_url": "https://deepmind.google/models/gemini/pro/"
+    },
+    {
+      "rank": 15,
+      "system": "Kimi-K2.5",
+      "agent": "general_e2e",
+      "model_raw": [
+        "Kimi-K2.5"
+      ],
+      "model_ids": [
+        "kimi-k2.5"
+      ],
+      "model_config": "category=General; model_type=End-to-End Model; agent_type=general_e2e",
+      "score": 49.6,
+      "score_extra": {
+        "user_int": 51.2,
+        "max_steps": 50,
+        "runs": 1,
+        "num_images_in_history": 3
+      },
+      "date": "2026-01-31",
+      "verified": null,
+      "open_source": null,
+      "org": "Moonshot AI",
+      "row_url": "https://github.com/MoonshotAI/Kimi-K2.5/blob/master/tech_report.pdf"
+    },
+    {
+      "rank": 16,
+      "system": "Claude-4.5-Sonnet + UI-Ins-7B",
+      "agent": "planner_executor",
+      "model_raw": [
+        "Claude-4.5-Sonnet",
+        "UI-Ins-7B"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5",
+        "ui-ins-7b"
+      ],
+      "model_config": "category=Agentic; model_type=Agentic Framework; agent_type=planner_executor",
+      "score": 47.8,
+      "score_extra": {
+        "user_int": 37.8,
+        "mcp": 50,
+        "max_steps": 50,
+        "runs": 1,
+        "num_images_in_history": 3
+      },
+      "date": "2025-09-30",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://www.anthropic.com/news/claude-sonnet-4-5"
+    },
+    {
+      "rank": 17,
+      "system": "Claude-Sonnet-4.5",
+      "agent": "general_e2e",
+      "model_raw": [
+        "Claude-Sonnet-4.5"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": "category=General; model_type=End-to-End Model; agent_type=general_e2e",
+      "score": 47.8,
+      "score_extra": {
+        "user_int": 38.6,
+        "max_steps": 50,
+        "runs": 1,
+        "num_images_in_history": 3
+      },
+      "date": "2025-09-30",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://www.anthropic.com/news/claude-sonnet-4-5"
+    },
+    {
+      "rank": 18,
+      "system": "Claude-Opus-4.6",
+      "agent": "general_e2e",
+      "model_raw": [
+        "Claude-Opus-4.6"
+      ],
+      "model_ids": [
+        "claude-opus-4.6"
+      ],
+      "model_config": "category=General; model_type=End-to-End Model; agent_type=general_e2e",
+      "score": 44.5,
+      "score_extra": {
+        "user_int": 34.1,
+        "max_steps": 50,
+        "runs": 1,
+        "num_images_in_history": 1
+      },
+      "date": "2026-02-05",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://www.anthropic.com/news/claude-opus-4-6"
+    },
+    {
+      "rank": 19,
+      "system": "GUI-Owl-1.5-32B-Instruct",
+      "agent": "gui_owl_1_5",
+      "model_raw": [
+        "GUI-Owl-1.5-32B-Instruct"
+      ],
+      "model_ids": [
+        "gui-owl-1.5-32b-instruct"
+      ],
+      "model_config": "category=Specialized; model_type=End-to-End Model; agent_type=gui_owl_1_5",
+      "score": 43.9,
+      "score_extra": {
+        "user_int": 56.1,
+        "mcp": 42.5,
+        "max_steps": 50,
+        "runs": 3
+      },
+      "date": "2026-02-14",
+      "verified": null,
+      "open_source": null,
+      "org": "Alibaba",
+      "row_url": "https://arxiv.org/pdf/2602.16855"
+    },
+    {
+      "rank": 20,
+      "system": "Qwen3.5-397B-A17B",
+      "agent": "general_e2e",
+      "model_raw": [
+        "Qwen3.5-397B-A17B"
+      ],
+      "model_ids": [
+        "qwen3.5-397b-a17b"
+      ],
+      "model_config": "category=General; model_type=End-to-End Model; agent_type=general_e2e",
+      "score": 42.7,
+      "score_extra": {
+        "user_int": 54.4,
+        "max_steps": 50,
+        "runs": 1,
+        "num_images_in_history": 3
+      },
+      "date": "2026-02-16",
+      "verified": null,
+      "open_source": null,
+      "org": "Alibaba",
+      "row_url": "https://qwen.ai/blog?id=qwen3.5"
+    },
+    {
+      "rank": 21,
+      "system": "ForgeOwl-8B",
+      "agent": "gui_owl_1_5",
+      "model_raw": [
+        "ForgeOwl-8B"
+      ],
+      "model_ids": [
+        "forgeowl-8b"
+      ],
+      "model_config": "category=Specialized; model_type=End-to-End Model; agent_type=gui_owl_1_5",
+      "score": 41.0,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 1
+      },
+      "date": "2026-06-18",
+      "verified": null,
+      "open_source": null,
+      "org": "Kuaishou",
+      "row_url": "https://arxiv.org/abs/2606.19930"
+    },
+    {
+      "rank": 22,
+      "system": "MAI-UI-235B-A22B",
+      "agent": "mai_ui_agent",
+      "model_raw": [
+        "MAI-UI-235B-A22B"
+      ],
+      "model_ids": [
+        "mai-ui-235b-a22b"
+      ],
+      "model_config": "category=Specialized; model_type=End-to-End Model; agent_type=mai_ui_agent",
+      "score": 39.7,
+      "score_extra": {
+        "user_int": 51.1,
+        "mcp": 37.5,
+        "max_steps": 50,
+        "runs": 1,
+        "num_images_in_history": 3
+      },
+      "date": "2025-12-29",
+      "verified": null,
+      "open_source": null,
+      "org": "Alibaba",
+      "row_url": "https://tongyi-mai.github.io/MAI-UI/"
+    },
+    {
+      "rank": 23,
+      "system": "GUI-Owl-1.5-8B-Instruct",
+      "agent": "gui_owl_1_5",
+      "model_raw": [
+        "GUI-Owl-1.5-8B-Instruct"
+      ],
+      "model_ids": [
+        "gui-owl-1.5-8b-instruct"
+      ],
+      "model_config": "category=Specialized; model_type=End-to-End Model; agent_type=gui_owl_1_5",
+      "score": 38.2,
+      "score_extra": {
+        "user_int": 53.8,
+        "mcp": 37.5,
+        "max_steps": 50,
+        "runs": 3
+      },
+      "date": "2026-02-14",
+      "verified": null,
+      "open_source": null,
+      "org": "Alibaba",
+      "row_url": "https://arxiv.org/pdf/2602.16855"
+    },
+    {
+      "rank": 24,
+      "system": "MAI-UI-32B",
+      "agent": "mai_ui_agent",
+      "model_raw": [
+        "MAI-UI-32B"
+      ],
+      "model_ids": [
+        "mai-ui-32b"
+      ],
+      "model_config": "category=Specialized; model_type=End-to-End Model; agent_type=mai_ui_agent",
+      "score": 36.2,
+      "score_extra": {
+        "user_int": 46.7,
+        "mcp": 30,
+        "max_steps": 50,
+        "runs": 1,
+        "num_images_in_history": 3
+      },
+      "date": "2025-12-29",
+      "verified": null,
+      "open_source": null,
+      "org": "Alibaba",
+      "row_url": "https://tongyi-mai.github.io/MAI-UI/"
+    },
+    {
+      "rank": 25,
+      "system": "Qwen3.5-122B-A10B",
+      "agent": "general_e2e",
+      "model_raw": [
+        "Qwen3.5-122B-A10B"
+      ],
+      "model_ids": [
+        "qwen3.5-122b-a10b"
+      ],
+      "model_config": "category=General; model_type=End-to-End Model; agent_type=general_e2e",
+      "score": 35,
+      "score_extra": {
+        "user_int": 40.9,
+        "max_steps": 50,
+        "runs": 1,
+        "num_images_in_history": 3
+      },
+      "date": "2026-02-16",
+      "verified": null,
+      "open_source": null,
+      "org": "Alibaba",
+      "row_url": "https://qwen.ai/blog?id=qwen3.5"
+    },
+    {
+      "rank": 26,
+      "system": "GUI-Owl-1.5-2B-Instruct",
+      "agent": "gui_owl_1_5",
+      "model_raw": [
+        "GUI-Owl-1.5-2B-Instruct"
+      ],
+      "model_ids": [
+        "gui-owl-1.5-2b-instruct"
+      ],
+      "model_config": "category=Specialized; model_type=End-to-End Model; agent_type=gui_owl_1_5",
+      "score": 32.2,
+      "score_extra": {
+        "user_int": 25.8,
+        "mcp": 30.0,
+        "max_steps": 50,
+        "runs": 3
+      },
+      "date": "2026-02-14",
+      "verified": null,
+      "open_source": null,
+      "org": "Alibaba",
+      "row_url": "https://arxiv.org/pdf/2602.16855"
+    },
+    {
+      "rank": 27,
+      "system": "MemGUI-Agent-235B",
+      "agent": "memgui",
+      "model_raw": [
+        "MemGUI-Agent-235B"
+      ],
+      "model_ids": [
+        "memgui-agent-235b"
+      ],
+      "model_config": "category=Specialized; model_type=End-to-End Model; agent_type=memgui",
+      "score": 29.1,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 1
+      },
+      "date": "2026-06-18",
+      "verified": null,
+      "open_source": null,
+      "org": "Kuaishou",
+      "row_url": "https://memgui-agent.github.io/"
+    },
+    {
+      "rank": 28,
+      "system": "MAI-UI-8B",
+      "agent": "mai_ui_agent",
+      "model_raw": [
+        "MAI-UI-8B"
+      ],
+      "model_ids": [
+        "mai-ui-8b"
+      ],
+      "model_config": "category=Specialized; model_type=End-to-End Model; agent_type=mai_ui_agent",
+      "score": 27.5,
+      "score_extra": {
+        "user_int": 22.2,
+        "mcp": 20,
+        "max_steps": 50,
+        "runs": 1,
+        "num_images_in_history": 3
+      },
+      "date": "2025-12-29",
+      "verified": null,
+      "open_source": null,
+      "org": "Alibaba",
+      "row_url": "https://tongyi-mai.github.io/MAI-UI/"
+    },
+    {
+      "rank": 29,
+      "system": "Doubao-1.5-UI-TARS",
+      "agent": null,
+      "model_raw": [
+        "Doubao-1.5-UI-TARS"
+      ],
+      "model_ids": [
+        "doubao-1.5-ui-tars"
+      ],
+      "model_config": "category=Specialized; model_type=End-to-End Model; agent_type=None",
+      "score": 26.3,
+      "score_extra": {
+        "user_int": 32.4,
+        "max_steps": 50,
+        "runs": 1
+      },
+      "date": "2025-04-17",
+      "verified": null,
+      "open_source": null,
+      "org": "ByteDance",
+      "row_url": "https://seed.bytedance.com/zh/ui-tars"
+    },
+    {
+      "rank": 30,
+      "system": "MemGUI-8B-SFT",
+      "agent": "memgui",
+      "model_raw": [
+        "MemGUI-8B-SFT"
+      ],
+      "model_ids": [
+        "memgui-8b-sft"
+      ],
+      "model_config": "category=Specialized; model_type=End-to-End Model; agent_type=memgui",
+      "score": 17.9,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 1
+      },
+      "date": "2026-06-18",
+      "verified": null,
+      "open_source": null,
+      "org": "Kuaishou",
+      "row_url": "https://memgui-agent.github.io/"
+    },
+    {
+      "rank": 31,
+      "system": "UI-Venus-1.5-30B-A3B",
+      "agent": "ui_venus_agent",
+      "model_raw": [
+        "UI-Venus-1.5-30B-A3B"
+      ],
+      "model_ids": [
+        "ui-venus-1.5-30b-a3b"
+      ],
+      "model_config": "category=Specialized; model_type=End-to-End Model; agent_type=ui_venus_agent",
+      "score": 17.1,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 1
+      },
+      "date": "2026-02-10",
+      "verified": null,
+      "open_source": null,
+      "org": "Ant Group",
+      "row_url": "https://github.com/inclusionAI/UI-Venus/tree/UI-Venus-1.5"
+    },
+    {
+      "rank": 32,
+      "system": "UI-Venus-72B",
+      "agent": "ui_venus_agent",
+      "model_raw": [
+        "UI-Venus-72B"
+      ],
+      "model_ids": [
+        "ui-venus-72b"
+      ],
+      "model_config": "category=Specialized; model_type=End-to-End Model; agent_type=ui_venus_agent",
+      "score": 16.4,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 1
+      },
+      "date": "2024-08-15",
+      "verified": null,
+      "open_source": null,
+      "org": "Ant Group",
+      "row_url": "https://arxiv.org/abs/2508.10833"
+    },
+    {
+      "rank": 33,
+      "system": "GELab-Zero-4B",
+      "agent": "gelab_agent",
+      "model_raw": [
+        "GELab-Zero-4B"
+      ],
+      "model_ids": [
+        "gelab-zero-4b"
+      ],
+      "model_config": "category=Specialized; model_type=End-to-End Model; agent_type=gelab_agent",
+      "score": 16.1,
+      "score_extra": {
+        "user_int": 6.7,
+        "max_steps": 50,
+        "runs": 1
+      },
+      "date": "2025-11-28",
+      "verified": null,
+      "open_source": null,
+      "org": "StepFun-AI",
+      "row_url": "https://arxiv.org/abs/2512.15431"
+    },
+    {
+      "rank": 34,
+      "system": "Qwen3-VL-235B-A22B",
+      "agent": "qwen3vl",
+      "model_raw": [
+        "Qwen3-VL-235B-A22B"
+      ],
+      "model_ids": [
+        "qwen3-vl-235b-a22b"
+      ],
+      "model_config": "category=General; model_type=End-to-End Model; agent_type=qwen3vl",
+      "score": 12.8,
+      "score_extra": {
+        "user_int": 4.4,
+        "mcp": 5.4,
+        "max_steps": 50,
+        "runs": 1,
+        "num_images_in_history": 1
+      },
+      "date": "2024-11-27",
+      "verified": null,
+      "open_source": null,
+      "org": "Alibaba",
+      "row_url": "https://arxiv.org/abs/2511.21631"
+    },
+    {
+      "rank": 35,
+      "system": "Qwen3-VL-32B",
+      "agent": "qwen3vl",
+      "model_raw": [
+        "Qwen3-VL-32B"
+      ],
+      "model_ids": [
+        "qwen3-vl-32b"
+      ],
+      "model_config": "category=General; model_type=End-to-End Model; agent_type=qwen3vl",
+      "score": 11.9,
+      "score_extra": {
+        "user_int": 6.7,
+        "mcp": 2.7,
+        "max_steps": 50,
+        "runs": 1,
+        "num_images_in_history": 1
+      },
+      "date": "2025-11-27",
+      "verified": null,
+      "open_source": null,
+      "org": "Alibaba",
+      "row_url": "https://arxiv.org/abs/2511.21631"
+    },
+    {
+      "rank": 36,
+      "system": "ForgeQwen3-8B",
+      "agent": "qwen3vl",
+      "model_raw": [
+        "ForgeQwen3-8B"
+      ],
+      "model_ids": [
+        "forgeqwen3-8b"
+      ],
+      "model_config": "category=Specialized; model_type=End-to-End Model; agent_type=qwen3vl",
+      "score": 10.3,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 1
+      },
+      "date": "2026-06-18",
+      "verified": null,
+      "open_source": null,
+      "org": "Kuaishou",
+      "row_url": "https://arxiv.org/abs/2606.19930"
+    },
+    {
+      "rank": 37,
+      "system": "Qwen3-VL-8B",
+      "agent": "qwen3vl",
+      "model_raw": [
+        "Qwen3-VL-8B"
+      ],
+      "model_ids": [
+        "qwen3-vl-8b"
+      ],
+      "model_config": "category=General; model_type=End-to-End Model; agent_type=qwen3vl",
+      "score": 9.4,
+      "score_extra": {
+        "user_int": 0,
+        "mcp": 0,
+        "max_steps": 50,
+        "runs": 1,
+        "num_images_in_history": 1
+      },
+      "date": "2024-11-27",
+      "verified": null,
+      "open_source": null,
+      "org": "Alibaba",
+      "row_url": "https://arxiv.org/abs/2511.21631"
+    },
+    {
+      "rank": 38,
+      "system": "UI-Venus-7B",
+      "agent": "ui_venus_agent",
+      "model_raw": [
+        "UI-Venus-7B"
+      ],
+      "model_ids": [
+        "ui-venus-7b"
+      ],
+      "model_config": "category=Specialized; model_type=End-to-End Model; agent_type=ui_venus_agent",
+      "score": 8.5,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 1
+      },
+      "date": "2025-08-15",
+      "verified": null,
+      "open_source": null,
+      "org": "Ant Group",
+      "row_url": "https://arxiv.org/abs/2508.10833"
+    },
+    {
+      "rank": 39,
+      "system": "GUI-Owl-32B",
+      "agent": "gui_owl_1_5",
+      "model_raw": [
+        "GUI-Owl-32B"
+      ],
+      "model_ids": [
+        "gui-owl-32b"
+      ],
+      "model_config": "category=Specialized; model_type=End-to-End Model; agent_type=gui_owl_1_5",
+      "score": 8.5,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 1
+      },
+      "date": "2025-09-01",
+      "verified": null,
+      "open_source": null,
+      "org": "Alibaba",
+      "row_url": "https://arxiv.org/abs/2508.15144"
+    },
+    {
+      "rank": 40,
+      "system": "GUI-Owl-7B",
+      "agent": "gui_owl_1_5",
+      "model_raw": [
+        "GUI-Owl-7B"
+      ],
+      "model_ids": [
+        "gui-owl-7b"
+      ],
+      "model_config": "category=Specialized; model_type=End-to-End Model; agent_type=gui_owl_1_5",
+      "score": 7.7,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 1
+      },
+      "date": "2025-09-01",
+      "verified": null,
+      "open_source": null,
+      "org": "Alibaba",
+      "row_url": "https://arxiv.org/abs/2508.15144"
+    }
+  ]
+}

@@ -1,0 +1,494 @@
+{
+  "id": "online-mind2web-auto",
+  "family": "online-mind2web",
+  "name": "Online-Mind2Web (Auto Evaluation, WebJudge o4-mini)",
+  "board": "huggingface.co/spaces/osunlp/Online_Mind2Web_Leaderboard",
+  "category": "web",
+  "measures_ja": "136の実在する人気サイト上で、利用者が頼みそうな300の作業を実際のブラウザでやり遂げられるか。",
+  "tasks": 300,
+  "tasks_note": null,
+  "metric": "Average SR",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "エージェントは提出者が走らせ、成否は WebJudge(o4-mini)の自動判定。未検証の自己申告行も混ざる。",
+  "source": "https://huggingface.co/spaces/osunlp/Online_Mind2Web_Leaderboard",
+  "fetched": [
+    "https://huggingface.co/spaces/osunlp/Online_Mind2Web_Leaderboard/resolve/main/auto_o4-mini_Mind2Web-Online%20-%20Leaderboard_data.csv",
+    "https://huggingface.co/spaces/osunlp/Online_Mind2Web_Leaderboard/raw/main/app.py"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-08-04",
+  "snapshot": "sources/online-mind2web-auto/auto_o4-mini.csv",
+  "paper": "https://arxiv.org/abs/2504.01382",
+  "repo": "https://github.com/OSU-NLP-Group/Online-Mind2Web",
+  "notes_ja": "自動評価タブ。ボードは検証済みを先に、その中で平均成功率順に並べるので rank もその順。verified=false の行はボードで赤く表示され、参考扱い。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Hark",
+      "agent": "Hark",
+      "model_raw": [
+        "Hark Handoff"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 95.3,
+      "score_extra": {
+        "easy": 98.8,
+        "medium": 94.3,
+        "hard": 93.7,
+        "source": "Careerflow.ai",
+        "note": "Include a concise final response in the judge; verified for factual consistency and without hallucinations."
+      },
+      "date": "2026-08-04",
+      "verified": true,
+      "open_source": null,
+      "org": "Hark",
+      "row_url": "https://hark.com/"
+    },
+    {
+      "rank": 2,
+      "system": "ACT-2",
+      "agent": "ACT-2",
+      "model_raw": [
+        "GPT-5.4"
+      ],
+      "model_ids": [
+        "gpt-5.4"
+      ],
+      "model_config": null,
+      "score": 92.3,
+      "score_extra": {
+        "easy": 95.0,
+        "medium": 91.5,
+        "hard": 91.1,
+        "source": "Careerflow.ai"
+      },
+      "date": "2026-08-04",
+      "verified": true,
+      "open_source": null,
+      "org": "Enhans",
+      "row_url": "https://www.enhans.ai/act-2"
+    },
+    {
+      "rank": 3,
+      "system": "Navigator",
+      "agent": "Navigator",
+      "model_raw": [
+        "n1.5-latest"
+      ],
+      "model_ids": [
+        "n1.5"
+      ],
+      "model_config": null,
+      "score": 87.9,
+      "score_extra": {
+        "easy": 97.5,
+        "medium": 84.4,
+        "hard": 84.4,
+        "source": "Careerflow.ai",
+        "note": "Include a concise final response in the judge; verified for factual consistency and without hallucinations."
+      },
+      "date": "2026-06-28",
+      "verified": true,
+      "open_source": null,
+      "org": "Yutori",
+      "row_url": "https://yutori.com/blog/introducing-n1-5"
+    },
+    {
+      "rank": 4,
+      "system": "Webwright",
+      "agent": "Webwright",
+      "model_raw": [
+        "GPT‑5.4"
+      ],
+      "model_ids": [
+        "gpt-5.4"
+      ],
+      "model_config": null,
+      "score": 86.7,
+      "score_extra": {
+        "easy": 93.8,
+        "medium": 88.1,
+        "hard": 76.6,
+        "source": "Microsoft"
+      },
+      "date": "2026-05-04",
+      "verified": true,
+      "open_source": null,
+      "org": "Microsoft",
+      "row_url": "https://www.microsoft.com/en-us/research/articles/webwright-a-terminal-is-all-you-need-for-web-agents/"
+    },
+    {
+      "rank": 5,
+      "system": "Navigator",
+      "agent": "Navigator",
+      "model_raw": [
+        "n1-preview-11-2025"
+      ],
+      "model_ids": [
+        "n1"
+      ],
+      "model_config": null,
+      "score": 64.7,
+      "score_extra": {
+        "easy": 84.0,
+        "medium": 62.2,
+        "hard": 48.7,
+        "source": "Yutori"
+      },
+      "date": "2025-11-18",
+      "verified": true,
+      "open_source": null,
+      "org": "Yutori",
+      "row_url": "https://yutori.com/blog/introducing-navigator"
+    },
+    {
+      "rank": 6,
+      "system": "Operator",
+      "agent": "Operator",
+      "model_raw": [
+        "OpenAI Computer-Using Agent"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 58.3,
+      "score_extra": {
+        "easy": 73.5,
+        "medium": 59.4,
+        "hard": 39.2,
+        "source": "OSU NLP"
+      },
+      "date": "2025-05-11",
+      "verified": true,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://arxiv.org/abs/2504.01382"
+    },
+    {
+      "rank": 7,
+      "system": "Google Computer Use (09-2025)",
+      "agent": "Google Computer Use (09-2025)",
+      "model_raw": [
+        "Gemini 2.5 Computer Use"
+      ],
+      "model_ids": [
+        "gemini-2.5-computer-use"
+      ],
+      "model_config": null,
+      "score": 57.3,
+      "score_extra": {
+        "easy": 77.1,
+        "medium": 55.2,
+        "hard": 45.9,
+        "source": "Google DeepMind"
+      },
+      "date": "2025-09-29",
+      "verified": true,
+      "open_source": null,
+      "org": "Google DeepMind",
+      "row_url": "https://blog.google/technology/google-deepmind/gemini-computer-use-model/"
+    },
+    {
+      "rank": 8,
+      "system": "ACT-1-20250814",
+      "agent": "ACT-1-20250814",
+      "model_raw": [
+        "o3-2025-04-16",
+        "Claude-sonnet-4-20250514"
+      ],
+      "model_ids": [
+        "o3",
+        "claude-sonnet-4"
+      ],
+      "model_config": null,
+      "score": 52.7,
+      "score_extra": {
+        "easy": 71.1,
+        "medium": 52.4,
+        "hard": 32.4,
+        "source": "Enhans"
+      },
+      "date": "2025-08-23",
+      "verified": true,
+      "open_source": null,
+      "org": "Enhans",
+      "row_url": "https://www.enhans.ai/"
+    },
+    {
+      "rank": 9,
+      "system": "Claude Computer Use 3.7 (w/o thinking)",
+      "agent": "Claude Computer Use 3.7 (w/o thinking)",
+      "model_raw": [
+        "Claude-3-7-sonnet-20250219"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": null,
+      "score": 47.3,
+      "score_extra": {
+        "easy": 75.9,
+        "medium": 41.3,
+        "hard": 27,
+        "source": "OSU NLP"
+      },
+      "date": "2025-05-11",
+      "verified": true,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://arxiv.org/abs/2504.01382"
+    },
+    {
+      "rank": 10,
+      "system": "ACT-1-20250703",
+      "agent": "ACT-1-20250703",
+      "model_raw": [
+        "o3-2025-04-16",
+        "Claude-sonnet-4-20250514"
+      ],
+      "model_ids": [
+        "o3",
+        "claude-sonnet-4"
+      ],
+      "model_config": null,
+      "score": 39.5,
+      "score_extra": {
+        "easy": 53.7,
+        "medium": 39.2,
+        "hard": 24.3,
+        "source": "Enhans"
+      },
+      "date": "2025-07-16",
+      "verified": true,
+      "open_source": null,
+      "org": "Enhans",
+      "row_url": "https://www.enhans.ai/"
+    },
+    {
+      "rank": 11,
+      "system": "MolmoWeb",
+      "agent": "MolmoWeb",
+      "model_raw": [
+        "MolmoWeb-8B"
+      ],
+      "model_ids": [
+        "molmoweb-8b"
+      ],
+      "model_config": null,
+      "score": 36.3,
+      "score_extra": {
+        "easy": 59.0,
+        "medium": 36.4,
+        "hard": 10.8,
+        "source": "Allen AI"
+      },
+      "date": "2026-03-24",
+      "verified": true,
+      "open_source": null,
+      "org": "Allen AI",
+      "row_url": "https://allenai.org/blog/molmoweb"
+    },
+    {
+      "rank": 12,
+      "system": "SeeAct",
+      "agent": "SeeAct",
+      "model_raw": [
+        "gpt-4o-2024-08-06"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 30.0,
+      "score_extra": {
+        "easy": 51.8,
+        "medium": 28,
+        "hard": 9.5,
+        "source": "OSU NLP"
+      },
+      "date": "2025-05-11",
+      "verified": true,
+      "open_source": null,
+      "org": "OSU",
+      "row_url": "https://arxiv.org/abs/2504.01382"
+    },
+    {
+      "rank": 13,
+      "system": "Agent-E",
+      "agent": "Agent-E",
+      "model_raw": [
+        "gpt-4o-2024-08-06"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 27.0,
+      "score_extra": {
+        "easy": 51.8,
+        "medium": 23.1,
+        "hard": 6.8,
+        "source": "OSU NLP"
+      },
+      "date": "2025-05-11",
+      "verified": true,
+      "open_source": null,
+      "org": "Emergence AI",
+      "row_url": "https://arxiv.org/abs/2504.01382"
+    },
+    {
+      "rank": 14,
+      "system": "Browser Use",
+      "agent": "Browser Use",
+      "model_raw": [
+        "gpt-4o-2024-08-06"
+      ],
+      "model_ids": [
+        "gpt-4o"
+      ],
+      "model_config": null,
+      "score": 26.0,
+      "score_extra": {
+        "easy": 44.6,
+        "medium": 23.1,
+        "hard": 10.8,
+        "source": "OSU NLP"
+      },
+      "date": "2025-05-11",
+      "verified": true,
+      "open_source": null,
+      "org": "Browser Use",
+      "row_url": "https://arxiv.org/abs/2504.01382"
+    },
+    {
+      "rank": 15,
+      "system": "Claude Computer Use 3.5",
+      "agent": "Claude Computer Use 3.5",
+      "model_raw": [
+        "Claude-3-5-sonnet-20241022"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 24.0,
+      "score_extra": {
+        "easy": 51.8,
+        "medium": 16.1,
+        "hard": 8.1,
+        "source": "OSU NLP"
+      },
+      "date": "2025-05-11",
+      "verified": true,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://arxiv.org/abs/2504.01382"
+    },
+    {
+      "rank": 16,
+      "system": "GPT‑5.4",
+      "agent": "GPT‑5.4",
+      "model_raw": [
+        "GPT‑5.4"
+      ],
+      "model_ids": [
+        "gpt-5.4"
+      ],
+      "model_config": null,
+      "score": 92.8,
+      "score_extra": {
+        "source": "OpenAI"
+      },
+      "date": "2026-03-05",
+      "verified": false,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://openai.com/index/introducing-gpt-5-4/"
+    },
+    {
+      "rank": 17,
+      "system": "Eko-V2",
+      "agent": "Eko-V2",
+      "model_raw": [
+        "Unknown"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 78.0,
+      "score_extra": {
+        "easy": 95.0,
+        "medium": 76.0,
+        "hard": 70.0,
+        "source": "Fellou",
+        "note": "Unknown evaluation method"
+      },
+      "date": "2025-05-24",
+      "verified": false,
+      "open_source": null,
+      "org": "Fellou",
+      "row_url": "https://fellou.ai/blog/post/eko20-launch/"
+    },
+    {
+      "rank": 18,
+      "system": "Seed1.5-VL",
+      "agent": "Seed1.5-VL",
+      "model_raw": [
+        "Seed1.5-VL"
+      ],
+      "model_ids": [
+        "seed1.5-vl"
+      ],
+      "model_config": null,
+      "score": 76.4,
+      "score_extra": {
+        "source": "ByteDance",
+        "note": "Evaluated by WebJudge(GPT-4o)"
+      },
+      "date": "2025-05-11",
+      "verified": false,
+      "open_source": null,
+      "org": "ByteDance",
+      "row_url": "https://arxiv.org/pdf/2505.07062"
+    },
+    {
+      "rank": 19,
+      "system": "ChatGPT Atlas",
+      "agent": "ChatGPT Atlas",
+      "model_raw": [
+        "ChatGPT Atlas"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 70.9,
+      "score_extra": {
+        "source": "OpenAI"
+      },
+      "date": "2026-03-05",
+      "verified": false,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://openai.com/index/introducing-gpt-5-4/"
+    },
+    {
+      "rank": 20,
+      "system": "Eko-V1",
+      "agent": "Eko-V1",
+      "model_raw": [
+        "Unknown"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 31.0,
+      "score_extra": {
+        "source": "Fellou",
+        "note": "Unknown evaluation method"
+      },
+      "date": "2025-05-24",
+      "verified": false,
+      "open_source": null,
+      "org": "Fellou",
+      "row_url": "https://fellou.ai/blog/post/eko20-launch/"
+    }
+  ]
+}

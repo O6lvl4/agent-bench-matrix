@@ -1,0 +1,385 @@
+{
+  "id": "osworld-2-full-500steps",
+  "family": "osworld-2",
+  "name": "OSWorld 2.0 (full set, 500 steps)",
+  "board": "osworld-v2.xlang.ai",
+  "category": "computer-use",
+  "measures_ja": "熟練者でも1時間以上かかる長い実務ワークフロー(自前ホストのWebサイト・オフィスソフト・複数アプリ連携)を端から端まで完遂できるか。",
+  "tasks": 108,
+  "tasks_note": null,
+  "metric": "Binary accuracy (%)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "OSWorld 2.0 チームが公式に実行した結果(official)。ステップ上限・推論量・ツール設定(standard / batch tool)は行ごとに異なる。",
+  "source": "https://osworld-v2.xlang.ai/",
+  "fetched": [
+    "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": null,
+  "snapshot": "sources/osworld-2-full-500steps/official-results.json",
+  "paper": "https://arxiv.org/abs/2606.29537",
+  "repo": "https://github.com/xlang-ai/OSWorld-V2",
+  "notes_ja": "ボードはステップ上限と full/offline を切り替えて別々に順位付けするので表を分けた。行に日付は無く、データの updatedAt は 2026-09-03。費用はJSONの総額(estimatedCostUsd)で、ボードは108で割った1タスクあたりを表示する。v2026.08.08 の結果は Claude Opus 5 が7回、GPT-5.6 Sol が2回の平均とボードに注記あり。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Claude Opus 5",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 5"
+      ],
+      "model_ids": [
+        "claude-opus-5"
+      ],
+      "model_config": "reasoning=max; tool_setting=batch tool; step_budget=500; release=v2026.08.08",
+      "score": 31.43,
+      "score_extra": {
+        "partial_score": 68.31,
+        "step_budget": 500
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "Claude Opus 5",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 5"
+      ],
+      "model_ids": [
+        "claude-opus-5"
+      ],
+      "model_config": "reasoning=xhigh; tool_setting=batch tool; step_budget=500; release=v2026.08.08",
+      "score": 30.21,
+      "score_extra": {
+        "partial_score": 67.67,
+        "step_budget": 500
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "Claude Opus 5",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 5"
+      ],
+      "model_ids": [
+        "claude-opus-5"
+      ],
+      "model_config": "reasoning=high; tool_setting=batch tool; step_budget=500; release=v2026.08.08",
+      "score": 28.98,
+      "score_extra": {
+        "partial_score": 63.79,
+        "step_budget": 500
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "GPT-5.6 Sol",
+      "agent": null,
+      "model_raw": [
+        "GPT-5.6 Sol"
+      ],
+      "model_ids": [
+        "gpt-5.6-sol"
+      ],
+      "model_config": "reasoning=max; tool_setting=batch tool; step_budget=500; release=v2026.08.08",
+      "score": 27.34,
+      "score_extra": {
+        "partial_score": 62.72,
+        "step_budget": 500
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "Claude Opus 5",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 5"
+      ],
+      "model_ids": [
+        "claude-opus-5"
+      ],
+      "model_config": "reasoning=medium; tool_setting=batch tool; step_budget=500; release=v2026.08.08",
+      "score": 25.33,
+      "score_extra": {
+        "partial_score": 60.49,
+        "step_budget": 500
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 6,
+      "system": "Claude Opus 5",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 5"
+      ],
+      "model_ids": [
+        "claude-opus-5"
+      ],
+      "model_config": "reasoning=low; tool_setting=batch tool; step_budget=500; release=v2026.08.08",
+      "score": 22.32,
+      "score_extra": {
+        "partial_score": 54.89,
+        "step_budget": 500
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 7,
+      "system": "Claude Opus 4.8",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 4.8"
+      ],
+      "model_ids": [
+        "claude-opus-4.8"
+      ],
+      "model_config": "reasoning=max; tool_setting=batched tool; step_budget=500; release=v2026.06.24",
+      "score": 20.6,
+      "score_extra": {
+        "partial_score": 54.8,
+        "step_budget": 500
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 8,
+      "system": "Claude Opus 4.8",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 4.8"
+      ],
+      "model_ids": [
+        "claude-opus-4.8"
+      ],
+      "model_config": "reasoning=max; tool_setting=standard; step_budget=500; release=v2026.06.24",
+      "score": 18.52,
+      "score_extra": {
+        "partial_score": 49.33,
+        "step_budget": 500
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 9,
+      "system": "Claude Opus 4.7",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 4.7"
+      ],
+      "model_ids": [
+        "claude-opus-4.7"
+      ],
+      "model_config": "reasoning=max; tool_setting=batched tool; step_budget=500; release=v2026.06.24",
+      "score": 18.2,
+      "score_extra": {
+        "partial_score": 48.91,
+        "step_budget": 500
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 10,
+      "system": "Claude Opus 4.7",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 4.7"
+      ],
+      "model_ids": [
+        "claude-opus-4.7"
+      ],
+      "model_config": "reasoning=max; tool_setting=standard; step_budget=500; release=v2026.06.24",
+      "score": 13.9,
+      "score_extra": {
+        "partial_score": 49.1,
+        "step_budget": 500,
+        "estimated_cost_usd_total": 3870
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 11,
+      "system": "GPT-5.5",
+      "agent": null,
+      "model_raw": [
+        "GPT-5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": "reasoning=xhigh; tool_setting=batch tool; step_budget=500; release=v2026.06.24",
+      "score": 13.0,
+      "score_extra": {
+        "partial_score": 49.5,
+        "step_budget": 500,
+        "estimated_cost_usd_total": 2750
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": null
+    },
+    {
+      "rank": 12,
+      "system": "Claude Sonnet 4.6",
+      "agent": null,
+      "model_raw": [
+        "Claude Sonnet 4.6"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.6"
+      ],
+      "model_config": "reasoning=medium; tool_setting=standard; step_budget=500; release=v2026.06.24",
+      "score": 9.3,
+      "score_extra": {
+        "partial_score": 33.9,
+        "step_budget": 500,
+        "estimated_cost_usd_total": 1550
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 13,
+      "system": "Claude Sonnet 4.6",
+      "agent": null,
+      "model_raw": [
+        "Claude Sonnet 4.6"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.6"
+      ],
+      "model_config": "reasoning=max; tool_setting=standard; step_budget=500; release=v2026.06.24",
+      "score": 8.3,
+      "score_extra": {
+        "partial_score": 41.5,
+        "step_budget": 500,
+        "estimated_cost_usd_total": 2410
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 14,
+      "system": "MiniMax M3",
+      "agent": null,
+      "model_raw": [
+        "MiniMax M3"
+      ],
+      "model_ids": [
+        "minimax-m3"
+      ],
+      "model_config": "reasoning=enabled; tool_setting=standard; step_budget=500; release=v2026.06.24",
+      "score": 4.6,
+      "score_extra": {
+        "partial_score": 22.3,
+        "step_budget": 500,
+        "estimated_cost_usd_total": 258.78
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": "MiniMax",
+      "row_url": null
+    },
+    {
+      "rank": 15,
+      "system": "Kimi 2.6",
+      "agent": null,
+      "model_raw": [
+        "Kimi 2.6"
+      ],
+      "model_ids": [
+        "kimi-k2.6"
+      ],
+      "model_config": "reasoning=enabled; tool_setting=standard; step_budget=500; release=v2026.06.24",
+      "score": 4.6,
+      "score_extra": {
+        "partial_score": 22.1,
+        "step_budget": 500,
+        "estimated_cost_usd_total": 708
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": "Moonshot AI",
+      "row_url": null
+    },
+    {
+      "rank": 16,
+      "system": "Qwen 3.7-Plus",
+      "agent": null,
+      "model_raw": [
+        "Qwen 3.7-Plus"
+      ],
+      "model_ids": [
+        "qwen3.7-plus"
+      ],
+      "model_config": "reasoning=thinking; tool_setting=standard; step_budget=500; release=v2026.06.24",
+      "score": 2.8,
+      "score_extra": {
+        "partial_score": 21.5,
+        "step_budget": 500,
+        "estimated_cost_usd_total": 411.56
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": "Alibaba",
+      "row_url": null
+    }
+  ]
+}

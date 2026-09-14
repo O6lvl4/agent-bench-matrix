@@ -1,0 +1,444 @@
+{
+  "id": "swe-bench-live-csharp",
+  "family": "swe-bench-live",
+  "name": "SWE-bench-Live C#",
+  "board": "swe-bench-live.github.io",
+  "category": "coding",
+  "measures_ja": "SWE-bench-Live/MultiLang の C# タスクで、テストを通すパッチを作れるか。",
+  "tasks": null,
+  "tasks_note": "行ごとに total(評価したインスタンス数)が異なる: 20, 28, 78。データセットが月次で増えるため固定の件数が無い。",
+  "metric": "Resolved (%)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "提出者がそれぞれの足場で走らせた結果を載せる。メンテナ(Microsoft)が OpenHands・SWE-agent・Claude Code 等で走らせた参照行も含む。",
+  "source": "https://swe-bench-live.github.io/",
+  "fetched": [
+    "https://swe-bench-live.github.io/reports-0605.jsonl",
+    "https://swe-bench-live.github.io/leaderboard.js",
+    "https://swe-bench-live.github.io/"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-06-05",
+  "snapshot": "sources/swe-bench-live-csharp/reports-0605_csharp.json",
+  "paper": "https://arxiv.org/abs/2505.23419",
+  "repo": "https://github.com/microsoft/SWE-bench-Live",
+  "notes_ja": "score はボードと同じく resolved / total を小数1桁に丸めた値。total が行ごとに違う表では分母が揃っていない。verified は 2026-08 以降の検証済み提出に付く Verified タグ。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Brokk + Sonnet4.5 (Standard) + Flash3 (Minimal)",
+      "agent": "Brokk",
+      "model_raw": [
+        "Sonnet4.5 (Standard)",
+        "Flash3 (Minimal)"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 45.0,
+      "score_extra": {
+        "resolved_count": 9,
+        "num_valid_inst": 20
+      },
+      "date": "2026-02-25",
+      "verified": false,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://github.com/SWE-bench-Live/submission/tree/main/submissions/multilang/cs/20260225-brokk-sonnet45-flash3"
+    },
+    {
+      "rank": 2,
+      "system": "Brokk + GPT5.2 (Medium) + Flash3 (Minimal)",
+      "agent": "Brokk",
+      "model_raw": [
+        "GPT5.2 (Medium)",
+        "Flash3 (Minimal)"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 45.0,
+      "score_extra": {
+        "resolved_count": 9,
+        "num_valid_inst": 20
+      },
+      "date": "2026-02-23",
+      "verified": false,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://github.com/SWE-bench-Live/submission/tree/main/submissions/multilang/cs/20260223-brokk-gpt52-flash3"
+    },
+    {
+      "rank": 3,
+      "system": "SWE-agent + Deepseek-v4-Pro",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "Deepseek-v4-Pro"
+      ],
+      "model_ids": [
+        "deepseek-v4-pro"
+      ],
+      "model_config": null,
+      "score": 44.9,
+      "score_extra": {
+        "resolved_count": 35,
+        "num_valid_inst": 78
+      },
+      "date": "2026-06-05",
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://github.com/SWE-bench-Live/submission/tree/main/submissions/multilang/all_languages/sweagent/deepseek-v4-pro"
+    },
+    {
+      "rank": 4,
+      "system": "SWE-agent + GPT-5.5 (Medium)",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "GPT-5.5 (Medium)"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": "Medium",
+      "score": 44.9,
+      "score_extra": {
+        "resolved_count": 35,
+        "num_valid_inst": 78
+      },
+      "date": "2026-06-05",
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://github.com/SWE-bench-Live/submission/tree/main/submissions/multilang/all_languages/sweagent/gpt-5.5-medium"
+    },
+    {
+      "rank": 5,
+      "system": "OpenHands + GPT-5.5 (Medium)",
+      "agent": "OpenHands",
+      "model_raw": [
+        "GPT-5.5 (Medium)"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": "Medium",
+      "score": 42.3,
+      "score_extra": {
+        "resolved_count": 33,
+        "num_valid_inst": 78
+      },
+      "date": "2026-06-05",
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://github.com/SWE-bench-Live/submission/tree/main/submissions/multilang/all_languages/openhands/gpt-5.5-medium"
+    },
+    {
+      "rank": 6,
+      "system": "Claude Code + GPT-5.5 (Medium)",
+      "agent": "Claude Code",
+      "model_raw": [
+        "GPT-5.5 (Medium)"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": "Medium",
+      "score": 39.7,
+      "score_extra": {
+        "resolved_count": 31,
+        "num_valid_inst": 78
+      },
+      "date": "2026-06-05",
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://github.com/SWE-bench-Live/submission/tree/main/submissions/multilang/all_languages/claudecode/gpt-5.5-medium"
+    },
+    {
+      "rank": 7,
+      "system": "OpenHands + Deepseek-v4-Pro",
+      "agent": "OpenHands",
+      "model_raw": [
+        "Deepseek-v4-Pro"
+      ],
+      "model_ids": [
+        "deepseek-v4-pro"
+      ],
+      "model_config": null,
+      "score": 38.5,
+      "score_extra": {
+        "resolved_count": 30,
+        "num_valid_inst": 78
+      },
+      "date": "2026-06-05",
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://github.com/SWE-bench-Live/submission/tree/main/submissions/multilang/all_languages/openhands/deepseek-v4-pro"
+    },
+    {
+      "rank": 8,
+      "system": "Claude Code + Deepseek-v4-Pro",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Deepseek-v4-Pro"
+      ],
+      "model_ids": [
+        "deepseek-v4-pro"
+      ],
+      "model_config": null,
+      "score": 37.2,
+      "score_extra": {
+        "resolved_count": 29,
+        "num_valid_inst": 78
+      },
+      "date": "2026-06-05",
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://github.com/SWE-bench-Live/submission/tree/main/submissions/multilang/all_languages/claudecode/deepseek-v4-pro"
+    },
+    {
+      "rank": 9,
+      "system": "SWE-agent + DeepSeek-V3.1-Terminus",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "DeepSeek-V3.1-Terminus"
+      ],
+      "model_ids": [
+        "deepseek-v3.1-terminus"
+      ],
+      "model_config": null,
+      "score": 21.4,
+      "score_extra": {
+        "resolved_count": 6,
+        "num_valid_inst": 28
+      },
+      "date": "2026-01-08",
+      "verified": false,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 10,
+      "system": "SWE-agent + Claude-4.5-Sonnet",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "Claude-4.5-Sonnet"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": null,
+      "score": 21.4,
+      "score_extra": {
+        "resolved_count": 6,
+        "num_valid_inst": 28
+      },
+      "date": "2026-01-08",
+      "verified": false,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 11,
+      "system": "OpenHands + GPT5.2-Thinking (Medium)",
+      "agent": "OpenHands",
+      "model_raw": [
+        "GPT5.2-Thinking (Medium)"
+      ],
+      "model_ids": [
+        "gpt-5.2"
+      ],
+      "model_config": "Thinking Medium",
+      "score": 21.4,
+      "score_extra": {
+        "resolved_count": 6,
+        "num_valid_inst": 28
+      },
+      "date": "2026-01-08",
+      "verified": false,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 12,
+      "system": "SWE-agent + GPT5.2-Thinking (Medium)",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "GPT5.2-Thinking (Medium)"
+      ],
+      "model_ids": [
+        "gpt-5.2"
+      ],
+      "model_config": "Thinking Medium",
+      "score": 21.4,
+      "score_extra": {
+        "resolved_count": 6,
+        "num_valid_inst": 28
+      },
+      "date": "2026-01-08",
+      "verified": false,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 13,
+      "system": "OpenHands + DeepSeek-V3.1-Terminus",
+      "agent": "OpenHands",
+      "model_raw": [
+        "DeepSeek-V3.1-Terminus"
+      ],
+      "model_ids": [
+        "deepseek-v3.1-terminus"
+      ],
+      "model_config": null,
+      "score": 17.9,
+      "score_extra": {
+        "resolved_count": 5,
+        "num_valid_inst": 28
+      },
+      "date": "2026-01-08",
+      "verified": false,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 14,
+      "system": "OpenHands + Gemini3-Flash",
+      "agent": "OpenHands",
+      "model_raw": [
+        "Gemini3-Flash"
+      ],
+      "model_ids": [
+        "gemini-3-flash"
+      ],
+      "model_config": null,
+      "score": 17.9,
+      "score_extra": {
+        "resolved_count": 5,
+        "num_valid_inst": 28
+      },
+      "date": "2026-01-08",
+      "verified": false,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 15,
+      "system": "OpenHands + Claude-4.5-Sonnet",
+      "agent": "OpenHands",
+      "model_raw": [
+        "Claude-4.5-Sonnet"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": null,
+      "score": 17.9,
+      "score_extra": {
+        "resolved_count": 5,
+        "num_valid_inst": 28
+      },
+      "date": "2026-01-08",
+      "verified": false,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 16,
+      "system": "Claude Code + DeepSeek-V3.1-Terminus",
+      "agent": "Claude Code",
+      "model_raw": [
+        "DeepSeek-V3.1-Terminus"
+      ],
+      "model_ids": [
+        "deepseek-v3.1-terminus"
+      ],
+      "model_config": null,
+      "score": 14.3,
+      "score_extra": {
+        "resolved_count": 4,
+        "num_valid_inst": 28
+      },
+      "date": "2026-01-08",
+      "verified": false,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 17,
+      "system": "SWE-agent + Gemini3-Flash",
+      "agent": "SWE-agent",
+      "model_raw": [
+        "Gemini3-Flash"
+      ],
+      "model_ids": [
+        "gemini-3-flash"
+      ],
+      "model_config": null,
+      "score": 14.3,
+      "score_extra": {
+        "resolved_count": 4,
+        "num_valid_inst": 28
+      },
+      "date": "2026-01-08",
+      "verified": false,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 18,
+      "system": "Claude Code + Claude-4.5-Sonnet",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Claude-4.5-Sonnet"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": null,
+      "score": 14.3,
+      "score_extra": {
+        "resolved_count": 4,
+        "num_valid_inst": 28
+      },
+      "date": "2026-01-08",
+      "verified": false,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 19,
+      "system": "Claude Code + GPT5.2-Thinking (Medium)",
+      "agent": "Claude Code",
+      "model_raw": [
+        "GPT5.2-Thinking (Medium)"
+      ],
+      "model_ids": [
+        "gpt-5.2"
+      ],
+      "model_config": "Thinking Medium",
+      "score": 14.3,
+      "score_extra": {
+        "resolved_count": 4,
+        "num_valid_inst": 28
+      },
+      "date": "2026-01-08",
+      "verified": false,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    }
+  ]
+}

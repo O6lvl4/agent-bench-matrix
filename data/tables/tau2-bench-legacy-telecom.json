@@ -1,0 +1,296 @@
+{
+  "id": "tau2-bench-legacy-telecom",
+  "family": "tau-bench",
+  "name": "τ²-bench Legacy v1 Telecom",
+  "board": "taubench.com",
+  "category": "tool-use",
+  "measures_ja": "旧タスク集合(v1)で、通信の接続トラブル対応・支払い・プラン管理をツールとポリシーに従って解決できるか。",
+  "tasks": null,
+  "tasks_note": "旧タスク集合のタスク数はボード上に記載が無い。",
+  "metric": "Pass^1",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "提出者が各自で走らせた結果を含み、軌跡が無い未検証の提出もある。",
+  "source": "https://taubench.com/leaderboard?benchmark=core",
+  "fetched": [
+    "https://taubench.com/",
+    "https://taubench.com/assets/index-QtX8yEBE.js",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2026-01-23/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_anthropic_2025-10-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_google_2025-11-18/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/deepseek-v3.2_deepseek_2025-12-01/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5_sierra_2025-08-09/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/toolorchestra_nvidia_2025-12-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2024_09_23/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/kimi-k2_moonshot-ai_2025-07-11/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/o4-mini_openai_2024-06-20/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-3-7-sonnet_anthropic_2024-06-20/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1-mini_openai_2024-06-20/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1_openai_2024-06-20/submission.json"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-01-26",
+  "snapshot": "sources/tau2-bench-legacy-telecom/submissions.json",
+  "paper": "https://arxiv.org/abs/2506.07982",
+  "repo": "https://github.com/sierra-research/tau2-bench",
+  "notes_ja": "ボードの「Legacy (v1)」トグルでだけ表示される旧タスク集合の提出。現行の τ²-bench とは航空・小売のタスク修正前で直接比較できないとボード自身が注記している。rank は Legacy 行のうち Standard 扱いの提出(種別未記載を含む。ボードも Standard 扱い)だけを Pass^1 順に並べた位置で、Custom は null。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Qwen3-Max-Thinking",
+      "agent": null,
+      "model_raw": [
+        "Qwen3-Max-Thinking"
+      ],
+      "model_ids": [
+        "qwen3-max-thinking"
+      ],
+      "model_config": "user sim: gpt-4.1-2025-04-14; submission type: standard; legacy (v1)",
+      "score": 98.24561403508771,
+      "score_extra": {
+        "pass_hat_2": 96.63742690058479,
+        "pass_hat_3": 95.17543859649122,
+        "pass_hat_4": 93.85964912280701
+      },
+      "date": "2026-01-26",
+      "verified": false,
+      "open_source": null,
+      "org": "Qwen",
+      "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2026-01-23/submission.json"
+    },
+    {
+      "rank": 2,
+      "system": "Claude-Sonnet-4.5",
+      "agent": null,
+      "model_raw": [
+        "Claude-Sonnet-4.5"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": "submission type: not stated (board treats as standard); legacy (v1)",
+      "score": 98.0,
+      "score_extra": {},
+      "date": "2025-09-29",
+      "verified": false,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_anthropic_2025-10-02/submission.json"
+    },
+    {
+      "rank": 3,
+      "system": "Gemini 3.0 Pro",
+      "agent": null,
+      "model_raw": [
+        "Gemini 3.0 Pro"
+      ],
+      "model_ids": [
+        "gemini-3-pro"
+      ],
+      "model_config": "user sim: Gemini-3.0-Pro; submission type: not stated (board treats as standard); legacy (v1)",
+      "score": 98.0,
+      "score_extra": {},
+      "date": "2025-11-18",
+      "verified": false,
+      "open_source": null,
+      "org": "Sierra",
+      "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_google_2025-11-18/submission.json"
+    },
+    {
+      "rank": 4,
+      "system": "DeepSeek-V3.2",
+      "agent": null,
+      "model_raw": [
+        "DeepSeek-V3.2"
+      ],
+      "model_ids": [
+        "deepseek-v3.2"
+      ],
+      "model_config": "user sim: DeepSeek-V3.2; submission type: not stated (board treats as standard); legacy (v1)",
+      "score": 96.2,
+      "score_extra": {},
+      "date": "2025-12-01",
+      "verified": false,
+      "open_source": null,
+      "org": "DeepSeek",
+      "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/deepseek-v3.2_deepseek_2025-12-01/submission.json"
+    },
+    {
+      "rank": 5,
+      "system": "GPT-5",
+      "agent": null,
+      "model_raw": [
+        "GPT-5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": "user sim: gpt-4.1-2025-04-14; submission type: not stated (board treats as standard); legacy (v1)",
+      "score": 95.83333333333334,
+      "score_extra": {
+        "pass_hat_2": 91.95906432748538,
+        "pass_hat_3": 88.37719298245614,
+        "pass_hat_4": 85.08771929824562,
+        "cost": 0.16471152192982458
+      },
+      "date": "2025-10-02",
+      "verified": false,
+      "open_source": null,
+      "org": "Sierra",
+      "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5_sierra_2025-08-09/submission.json"
+    },
+    {
+      "rank": null,
+      "system": "Nemotron-Orchestrator-8B",
+      "agent": null,
+      "model_raw": [
+        "Nemotron-Orchestrator-8B"
+      ],
+      "model_ids": [
+        "nemotron-orchestrator-8b"
+      ],
+      "model_config": "user sim: gpt-5; submission type: custom; legacy (v1)",
+      "score": 88.6,
+      "score_extra": {},
+      "date": "2025-12-18",
+      "verified": false,
+      "open_source": null,
+      "org": "NVIDIA",
+      "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/toolorchestra_nvidia_2025-12-02/submission.json"
+    },
+    {
+      "rank": 6,
+      "system": "Qwen3-Max",
+      "agent": null,
+      "model_raw": [
+        "Qwen3-Max"
+      ],
+      "model_ids": [
+        "qwen3-max"
+      ],
+      "model_config": "submission type: not stated (board treats as standard); legacy (v1)",
+      "score": 84.2,
+      "score_extra": {
+        "pass_hat_2": 77.6,
+        "pass_hat_4": 61.4
+      },
+      "date": "2024-09-23",
+      "verified": false,
+      "open_source": null,
+      "org": "Alibaba",
+      "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2024_09_23/submission.json"
+    },
+    {
+      "rank": 7,
+      "system": "Kimi-k2",
+      "agent": null,
+      "model_raw": [
+        "Kimi-k2"
+      ],
+      "model_ids": [
+        "kimi-k2"
+      ],
+      "model_config": "submission type: not stated (board treats as standard); legacy (v1)",
+      "score": 65.8,
+      "score_extra": {},
+      "date": "2025-07-28",
+      "verified": false,
+      "open_source": null,
+      "org": "Moonshot AI",
+      "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/kimi-k2_moonshot-ai_2025-07-11/submission.json"
+    },
+    {
+      "rank": 8,
+      "system": "o4-mini",
+      "agent": null,
+      "model_raw": [
+        "o4-mini"
+      ],
+      "model_ids": [
+        "o4-mini"
+      ],
+      "model_config": "user sim: gpt-4.1-2025-04-14; submission type: not stated (board treats as standard); legacy (v1)",
+      "score": 50.2,
+      "score_extra": {
+        "pass_hat_2": 42.1,
+        "pass_hat_3": 36.8,
+        "pass_hat_4": 32.4
+      },
+      "date": "2025-06-09",
+      "verified": false,
+      "open_source": null,
+      "org": "Sierra",
+      "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/o4-mini_openai_2024-06-20/submission.json"
+    },
+    {
+      "rank": 9,
+      "system": "Claude-3.7-Sonnet",
+      "agent": null,
+      "model_raw": [
+        "Claude-3.7-Sonnet"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": "user sim: gpt-4.1-2025-04-14; submission type: not stated (board treats as standard); legacy (v1)",
+      "score": 49.0,
+      "score_extra": {
+        "pass_hat_2": 43.7,
+        "pass_hat_3": 40.1,
+        "pass_hat_4": 37.2
+      },
+      "date": "2025-06-09",
+      "verified": false,
+      "open_source": null,
+      "org": "Sierra",
+      "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-3-7-sonnet_anthropic_2024-06-20/submission.json"
+    },
+    {
+      "rank": 10,
+      "system": "GPT-4.1-mini",
+      "agent": null,
+      "model_raw": [
+        "GPT-4.1-mini"
+      ],
+      "model_ids": [
+        "gpt-4.1-mini"
+      ],
+      "model_config": "user sim: gpt-4.1-2025-04-14; submission type: not stated (board treats as standard); legacy (v1)",
+      "score": 48.9,
+      "score_extra": {
+        "pass_hat_2": 38.7,
+        "pass_hat_3": 31.2,
+        "pass_hat_4": 26.1
+      },
+      "date": "2025-06-09",
+      "verified": false,
+      "open_source": null,
+      "org": "Sierra",
+      "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1-mini_openai_2024-06-20/submission.json"
+    },
+    {
+      "rank": 11,
+      "system": "GPT-4.1",
+      "agent": null,
+      "model_raw": [
+        "GPT-4.1"
+      ],
+      "model_ids": [
+        "gpt-4.1"
+      ],
+      "model_config": "user sim: gpt-4.1-2025-04-14; submission type: not stated (board treats as standard); legacy (v1)",
+      "score": 34.0,
+      "score_extra": {
+        "pass_hat_2": 27.6,
+        "pass_hat_3": 23.8,
+        "pass_hat_4": 20.4
+      },
+      "date": "2025-06-09",
+      "verified": false,
+      "open_source": null,
+      "org": "Sierra",
+      "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1_openai_2024-06-20/submission.json"
+    }
+  ]
+}

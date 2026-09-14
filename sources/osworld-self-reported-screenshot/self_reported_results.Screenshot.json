@@ -1,0 +1,566 @@
+{
+ "fetched": "http://osworld-v1.xlang.ai/static/data/self_reported_results.xlsx",
+ "note": "sheet 'Screenshot' of the xlsx converted to JSON rows (blank rows dropped); values untouched",
+ "rows": [
+  {
+   "Model": "AskUI VisionAgent",
+   "Institution": "AskUI",
+   "PaperLink": "https://www.askui.com/",
+   "PaperAuthors": "AskUI, '25",
+   "Details": "General Model, Max Steps 100, Runs: 1",
+   "TrajectoryLink": "—",
+   "Score": 66.2,
+   "Date": "Nov 5, 2025"
+  },
+  {
+   "Model": "Turix (computer_13, 50 steps)",
+   "Institution": "New Generation Technology",
+   "PaperLink": "https://github.com/xlang-ai/OSWorld",
+   "PaperAuthors": "Pei et al., '26",
+   "Details": "Provider: VMware; Observation type: screenshot; Action space: computer_13; Max steps: 50; Parallel environments: 3; Run date: 2026-03-23; Repository: xlang-ai/OSWorld (fork); Commit: 3afe772dc54e5c47ef6916f0de27f7c2b5c34d2b; Test set: evaluation_examples/test_nogdrive_turix.json (no Google Drive).",
+   "TrajectoryLink": "self_report_osworld_turix_2026-03-23.zip",
+   "Score": 57.99,
+   "Date": "Mar 23, 2026"
+  },
+  {
+   "Model": "GTA1  w/ o3 (100 steps)",
+   "Institution": "Salesforce & The Australian National University & The University of Hong Kong",
+   "PaperLink": "https://arxiv.org/abs/2507.05791",
+   "PaperAuthors": "Yang et al., '25",
+   "Details": "—",
+   "TrajectoryLink": "https://drive.google.com/drive/folders/1GvNXwDt5_U-ned49urVlOFj1FBi86ddT?usp=sharing",
+   "Score": 45.2,
+   "Date": "July 7, 2025"
+  },
+  {
+   "Model": "OpenAI CUA o3 (200 steps)",
+   "Institution": "OpenAI",
+   "PaperLink": "https://help.openai.com/en/articles/10561834-operator-release-notes",
+   "PaperAuthors": "OpenAI, '25",
+   "Details": "—",
+   "TrajectoryLink": "—",
+   "Score": 42.9,
+   "Date": "May 23, 2025"
+  },
+  {
+   "Model": "UI-TARS-1.5 (100 steps)",
+   "Institution": "ByteDance Seed & Tsinghua University",
+   "PaperLink": "https://seed-tars.com/1.5",
+   "PaperAuthors": "Seed-TARS, '25",
+   "Details": "Active parameter >20B?",
+   "TrajectoryLink": "https://drive.google.com/file/d/1e7SCYqpxFX2FCGEOhf6jcVvwkx3leIKf/view?usp=drive_link",
+   "Score": 42.5,
+   "Date": "Apr 17, 2025"
+  },
+  {
+   "Model": "Agent S2 w/ Gemini 2.5 (50 steps)",
+   "Institution": "Simular Research",
+   "PaperLink": "https://github.com/simular-ai/Agent-S",
+   "PaperAuthors": "Simular Research, '25",
+   "Details": "—",
+   "TrajectoryLink": "https://drive.google.com/drive/folders/18PTnMwgyhxIWTVNLMwf0sbzhvh9AlVqE?usp=drive_link",
+   "Score": 41.4,
+   "Date": "Apr 18, 2025"
+  },
+  {
+   "Model": "OpenAI CUA 4o (200 steps)",
+   "Institution": "OpenAI",
+   "PaperLink": "https://openai.com/index/computer-using-agent/",
+   "PaperAuthors": "OpenAI, '25",
+   "Details": "—",
+   "TrajectoryLink": "—",
+   "Score": 38.1,
+   "Date": "Jan 24, 2025"
+  },
+  {
+   "Model": "InfantAgent (50 steps)",
+   "Institution": "Evolution intelligence & University of Minnesota",
+   "PaperLink": "https://arxiv.org/abs/2505.10887",
+   "PaperAuthors": "Lei et al., '25",
+   "Details": "Planner: Claude-3.7 Sonnet，Grounder: UI-TARS-1.5-7B",
+   "TrajectoryLink": "https://drive.google.com/file/d/1M-PAz9S7cvYR8T6-VIEZKMbw7yVTN5je/view?usp=drive_link",
+   "Score": 35.27,
+   "Date": "Apr 30, 2025"
+  },
+  {
+   "Model": "Agent S2 w/ Claude 3.7 (50 steps)",
+   "Institution": "Simular Research",
+   "PaperLink": "https://www.simular.ai/agent-s",
+   "PaperAuthors": "Simular Research, '25",
+   "Details": "—",
+   "TrajectoryLink": "https://drive.google.com/drive/folders/18PTnMwgyhxIWTVNLMwf0sbzhvh9AlVqE?usp=drive_link",
+   "Score": 34.5,
+   "Date": "Mar 13, 2025"
+  },
+  {
+   "Model": "UI-TARS-7B-1.5 + ARPO (w. gold reward)",
+   "Institution": "CUHK, SmartMore, HKUST",
+   "PaperLink": "https://arxiv.org/abs/2505.16282",
+   "PaperAuthors": "Lu, '25",
+   "Details": "—",
+   "TrajectoryLink": "—",
+   "Score": 29.9,
+   "Date": "May 22, 2025"
+  },
+  {
+   "Model": "Claude 3.7 Sonnet (100 steps)",
+   "Institution": "Anthropic",
+   "PaperLink": "https://www.anthropic.com/research/visible-extended-thinking",
+   "PaperAuthors": "Anthropic, '25",
+   "Details": "—",
+   "TrajectoryLink": "—",
+   "Score": "~ 28",
+   "Date": "Feb 24, 2025"
+  },
+  {
+   "Model": "Jedi-7B w/ GPT-4o (100 steps)",
+   "Institution": "Salesforce & The University of Hong Kong",
+   "PaperLink": "https://osworld-grounding.github.io/",
+   "PaperAuthors": "Xie et al., '25",
+   "Details": "avg 27.04, std 1.81",
+   "TrajectoryLink": "—",
+   "Score": 27.04,
+   "Date": "May 9, 2025"
+  },
+  {
+   "Model": "Simular Agent S2 (15 steps)",
+   "Institution": "Simular Research",
+   "PaperLink": "https://www.simular.ai/agent-s",
+   "PaperAuthors": "Simular Research, '25",
+   "Details": "—",
+   "TrajectoryLink": "https://drive.google.com/drive/folders/18PTnMwgyhxIWTVNLMwf0sbzhvh9AlVqE?usp=drive_link",
+   "Score": 27,
+   "Date": "Mar 13, 2025"
+  },
+  {
+   "Model": "UI-TARS-1.5 7B (100 steps)",
+   "Institution": "ByteDance Seed & Tsinghua University",
+   "PaperLink": "https://seed-tars.com/1.5",
+   "PaperAuthors": "Seed-TARS, '25",
+   "Details": "—",
+   "TrajectoryLink": "https://drive.google.com/file/d/1t-w6OAQHfmRplHbi93aWXZlOBwOQkwY2/view?usp=drive_link",
+   "Score": 26.92,
+   "Date": "Apr 17, 2025"
+  },
+  {
+   "Model": "Claude 3.7 Sonnet (50 steps)",
+   "Institution": "Anthropic",
+   "PaperLink": "https://www.anthropic.com/research/visible-extended-thinking",
+   "PaperAuthors": "Anthropic, '25",
+   "Details": "—",
+   "TrajectoryLink": "—",
+   "Score": "~ 26",
+   "Date": "Feb 24, 2025"
+  },
+  {
+   "Model": "Jedi-7B w/ GPT-4o (50 steps)",
+   "Institution": "Salesforce & The University of Hong Kong",
+   "PaperLink": "https://osworld-grounding.github.io/",
+   "PaperAuthors": "Xie et al., '25",
+   "Details": "avg 25.02, std 1.30",
+   "TrajectoryLink": "—",
+   "Score": 25.02,
+   "Date": "May 9, 2025"
+  },
+  {
+   "Model": "UI-TARS-72B-DPO (50 steps)",
+   "Institution": "ByteDance Seed & Tsinghua University",
+   "PaperLink": "https://github.com/bytedance/UI-TARS",
+   "PaperAuthors": "Qin et al., '24",
+   "Details": "—",
+   "TrajectoryLink": "https://drive.google.com/file/d/1vUWlXVenkOc5F1s-z8DdpfU4Y5fUMssr/view?usp=drive_link",
+   "Score": 24.6,
+   "Date": "Jan 21, 2025"
+  },
+  {
+   "Model": "Jedi-7B w/ GPT-4o (15 steps)",
+   "Institution": "Salesforce & The University of Hong Kong",
+   "PaperLink": "https://osworld-grounding.github.io/",
+   "PaperAuthors": "Xie et al., '25",
+   "Details": "avg 22.74, std 0.51",
+   "TrajectoryLink": "—",
+   "Score": 22.74,
+   "Date": "May 9, 2025"
+  },
+  {
+   "Model": "UI-TARS-72B-DPO (15 steps)",
+   "Institution": "ByteDance Seed & Tsinghua University",
+   "PaperLink": "https://github.com/bytedance/UI-TARS",
+   "PaperAuthors": "Qin et al., '24",
+   "Details": "—",
+   "TrajectoryLink": "—",
+   "Score": 22.7,
+   "Date": "Jan 21, 2025"
+  },
+  {
+   "Model": "Claude 3.5 Sonnet (50 steps)",
+   "Institution": "Anthropic",
+   "PaperLink": "https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf",
+   "PaperAuthors": "Anthropic, '24",
+   "Details": "—",
+   "TrajectoryLink": "—",
+   "Score": 22,
+   "Date": "Oct 22, 2024"
+  },
+  {
+   "Model": "Jedi-3B w/ GPT-4o (15 steps)",
+   "Institution": "Salesforce & The University of Hong Kong",
+   "PaperLink": "https://osworld-grounding.github.io/",
+   "PaperAuthors": "Xie et al., '25",
+   "Details": "avg 21.8, std 0.19",
+   "TrajectoryLink": "—",
+   "Score": 21.8,
+   "Date": "May 9, 2025"
+  },
+  {
+   "Model": "Claude 3.5 Sonnet (new) (100 steps)",
+   "Institution": "Anthropic",
+   "PaperLink": "https://www.anthropic.com/research/visible-extended-thinking",
+   "PaperAuthors": "Anthropic, '25",
+   "Details": "—",
+   "TrajectoryLink": "—",
+   "Score": "~ 21",
+   "Date": "Feb 24, 2025"
+  },
+  {
+   "Model": "UI-TARS-7B-DPO + ZeroGUI",
+   "Institution": "Shanghai AI Lab",
+   "PaperLink": "https://arxiv.org/abs/2505.23762",
+   "PaperAuthors": "Yang et al., '25",
+   "Details": "—",
+   "TrajectoryLink": "—",
+   "Score": 20.2,
+   "Date": "May 30, 2025"
+  },
+  {
+   "Model": "OpenAI CUA 4o (15 steps)",
+   "Institution": "OpenAI",
+   "PaperLink": "https://openai.com/index/computer-using-agent/",
+   "PaperAuthors": "OpenAI, '25",
+   "Details": "—",
+   "TrajectoryLink": "—",
+   "Score": 19.7,
+   "Date": "Jan 24, 2025"
+  },
+  {
+   "Model": "Claude 3.5 Sonnet (new) (50 steps)",
+   "Institution": "Anthropic",
+   "PaperLink": "https://www.anthropic.com/research/visible-extended-thinking",
+   "PaperAuthors": "Anthropic, '25",
+   "Details": "—",
+   "TrajectoryLink": "—",
+   "Score": "~ 19.5",
+   "Date": "Feb 24, 2025"
+  },
+  {
+   "Model": "UI-TARS-72B-SFT (15 steps)",
+   "Institution": "ByteDance Seed & Tsinghua University",
+   "PaperLink": "https://github.com/bytedance/UI-TARS",
+   "PaperAuthors": "Qin et al., '24",
+   "Details": "—",
+   "TrajectoryLink": "—",
+   "Score": 18.8,
+   "Date": "Jan 21, 2025"
+  },
+  {
+   "Model": "UI-TARS-7B-DPO (15 steps)",
+   "Institution": "ByteDance Seed & Tsinghua University",
+   "PaperLink": "https://github.com/bytedance/UI-TARS",
+   "PaperAuthors": "Qin et al., '24",
+   "Details": "—",
+   "TrajectoryLink": "—",
+   "Score": 18.7,
+   "Date": "Jan 21, 2025"
+  },
+  {
+   "Model": "UI-TARS-7B-SFT (15 steps)",
+   "Institution": "ByteDance Seed & Tsinghua University",
+   "PaperLink": "https://github.com/bytedance/UI-TARS",
+   "PaperAuthors": "Qin et al., '24",
+   "Details": "—",
+   "TrajectoryLink": "—",
+   "Score": 17.7,
+   "Date": "Jan 21, 2025"
+  },
+  {
+   "Model": "Aguvis-72B w/ GPT-4o",
+   "Institution": "Salesforce & The University of Hong Kong",
+   "PaperLink": "https://aguvis-project.github.io/",
+   "PaperAuthors": "Xu et al., '24",
+   "Details": "—",
+   "TrajectoryLink": "—",
+   "Score": 17.04,
+   "Date": "Nov 22, 2024"
+  },
+  {
+   "Model": "Claude 3.7 Sonnet (15 steps)",
+   "Institution": "Anthropic",
+   "PaperLink": "https://www.anthropic.com/research/visible-extended-thinking",
+   "PaperAuthors": "Anthropic, '25",
+   "Details": "—",
+   "TrajectoryLink": "—",
+   "Score": "~ 15.5",
+   "Date": "Feb 24, 2025"
+  },
+  {
+   "Model": "Aria-UI w/ GPT-4o",
+   "Institution": "University of Hong Kong & Rhymes AI",
+   "PaperLink": "https://arxiv.org/abs/2412.16256",
+   "PaperAuthors": "Yang et al., '24",
+   "Details": "—",
+   "TrajectoryLink": "—",
+   "Score": 15.15,
+   "Date": "Dec 24, 2024"
+  },
+  {
+   "Model": "PC Agent-E",
+   "Institution": "GAIR, Shanghai Jiao Tong University",
+   "PaperLink": "https://arxiv.org/abs/2505.13909",
+   "PaperAuthors": "He et al., '25",
+   "Details": "—",
+   "TrajectoryLink": "—",
+   "Score": 14.9,
+   "Date": "May 20, 2025"
+  },
+  {
+   "Model": "Claude 3.5 Sonnet (15 steps)",
+   "Institution": "Anthropic",
+   "PaperLink": "https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf",
+   "PaperAuthors": "Anthropic, '24",
+   "Details": "—",
+   "TrajectoryLink": "—",
+   "Score": 14.9,
+   "Date": "Oct 22, 2024"
+  },
+  {
+   "Model": "Aguvis-7B w/ GPT-4o",
+   "Institution": "Salesforce & The University of Hong Kong",
+   "PaperLink": "https://aguvis-project.github.io/",
+   "PaperAuthors": "Xu et al., '24",
+   "Details": "—",
+   "TrajectoryLink": "—",
+   "Score": 14.79,
+   "Date": "Nov 22, 2024"
+  },
+  {
+   "Model": "OS-Atlas-Base-7B w/ GPT-4o",
+   "Institution": "Shanghai AI Lab",
+   "PaperLink": "https://osatlas.github.io/",
+   "PaperAuthors": "Wu et al., '24",
+   "Details": "—",
+   "TrajectoryLink": "—",
+   "Score": 14.63,
+   "Date": "Oct 30, 2024"
+  },
+  {
+   "Model": "OS-Atlas-Base-4B w/ GPT-4o",
+   "Institution": "Shanghai AI Lab",
+   "PaperLink": "https://osatlas.github.io/",
+   "PaperAuthors": "Wu et al., '24",
+   "Details": "—",
+   "TrajectoryLink": "—",
+   "Score": 11.65,
+   "Date": "Oct 30, 2024"
+  },
+  {
+   "Model": "Aguvis-72B",
+   "Institution": "Salesforce & The University of Hong Kong",
+   "PaperLink": "https://aguvis-project.github.io/",
+   "PaperAuthors": "Xu et al., '24",
+   "Details": "—",
+   "TrajectoryLink": "—",
+   "Score": 10.26,
+   "Date": "Nov 22, 2024"
+  },
+  {
+   "Model": "SeeClick w/ GPT-4o",
+   "Institution": "Nanjing University & Shanghai AI Lab",
+   "PaperLink": "https://arxiv.org/abs/2401.10935",
+   "PaperAuthors": "Cheng et al., '24",
+   "Details": "—",
+   "TrajectoryLink": "—",
+   "Score": 9.21,
+   "Date": "Oct 30, 2024"
+  },
+  {
+   "Model": "Qwen2.5-vl-72B",
+   "Institution": "Alibaba Cloud, Qwen Team",
+   "PaperLink": "https://qwenlm.github.io/blog/qwen2.5-vl/",
+   "PaperAuthors": "Qwen Team, '25",
+   "Details": "t=1.0, top-p=0.9",
+   "TrajectoryLink": "—",
+   "Score": 8.8,
+   "Date": "Jan 26, 2025"
+  },
+  {
+   "Model": "Ponder&Press w/ GPT-4o",
+   "Institution": "Shenzhen International Graduate School, Tsinghua University",
+   "PaperLink": "https://arxiv.org/abs/2412.01268",
+   "PaperAuthors": "Wang et al., '24",
+   "Details": "—",
+   "TrajectoryLink": "—",
+   "Score": 8.7,
+   "Date": "Dec 2, 2024"
+  },
+  {
+   "Model": "Kimi-VL",
+   "Institution": "Kimi & The University of Hong Kong",
+   "PaperLink": "https://arxiv.org/abs/2504.07491",
+   "PaperAuthors": "Kimi Team, '25",
+   "Details": "—",
+   "TrajectoryLink": "—",
+   "Score": 8.22,
+   "Date": "April 10, 2025"
+  },
+  {
+   "Model": "CogAgent-9B-20241220",
+   "Institution": "Tsinghua University & Zhipu AI",
+   "PaperLink": "https://cogagent.aminer.cn/blog#/articles/cogagent-9b-20241220-technical-report-en",
+   "PaperAuthors": "Hong et al., '24",
+   "Details": "t=1.0, top-p=0.9",
+   "TrajectoryLink": "—",
+   "Score": 8.12,
+   "Date": "Dec 24, 2024"
+  },
+  {
+   "Model": "CRADLE w/ GPT-4o",
+   "Institution": "BAAI",
+   "PaperLink": "https://baai-agents.github.io/Cradle/",
+   "PaperAuthors": "BAAI, '24",
+   "Details": "t=1.0, top-p=0.9",
+   "TrajectoryLink": "https://drive.google.com/drive/folders/14_xlL-e0-0INq2O1THbhFKi6Z0bgfwR4?usp=drive_link",
+   "Score": 7.81,
+   "Date": "Jun 14, 2024"
+  },
+  {
+   "Model": "GPT-4 Vision",
+   "Institution": "OpenAI",
+   "PaperLink": "https://openai.com/research/gpt-4v-system-card",
+   "PaperAuthors": "OpenAI, '23",
+   "Details": "t=1.0, top-p=0.9",
+   "TrajectoryLink": "https://drive.google.com/file/d/1miMp-AR_hOfLUWszGb_aZG2f_Nd66Ntt/view?usp=drive_link",
+   "Score": 7.69,
+   "Date": "May 24, 2024"
+  },
+  {
+   "Model": "Gemini-Pro Vision",
+   "Institution": "Google",
+   "PaperLink": "https://arxiv.org/abs/2312.11805",
+   "PaperAuthors": "Gemini Team, Google, '23",
+   "Details": "t=1.0, top-p=0.9",
+   "TrajectoryLink": "https://drive.google.com/file/d/17jgZEjslxIZPC5kuzOq6oTK5EuDiJ-_l/view?usp=drive_link",
+   "Score": 5.8,
+   "Date": "Mar 20, 2024"
+  },
+  {
+   "Model": "GPT-4 Vision (0409)",
+   "Institution": "OpenAI",
+   "PaperLink": "https://openai.com/research/gpt-4v-system-card",
+   "PaperAuthors": "OpenAI, '23",
+   "Details": "t=1.0, top-p=0.9",
+   "TrajectoryLink": "https://drive.google.com/drive/folders/1NLsHdLUNZOHsEC5xNZ4e4PHkDC5IELjj?usp=drive_link",
+   "Score": 5.4,
+   "Date": "April 23, 2024"
+  },
+  {
+   "Model": "Gemini-Pro-1.5",
+   "Institution": "Google",
+   "PaperLink": "https://arxiv.org/abs/2403.05530",
+   "PaperAuthors": "Gemini Team, Google, '24",
+   "Details": "t=1.0, top-p=0.9",
+   "TrajectoryLink": "https://drive.google.com/drive/folders/1j-YVzEGAGWxXgse75MCnhUCTVuejM76A?usp=drive_link",
+   "Score": 5.4,
+   "Date": "May 3, 2024"
+  },
+  {
+   "Model": "GPT-4 Vision",
+   "Institution": "OpenAI",
+   "PaperLink": "https://openai.com/research/gpt-4v-system-card",
+   "PaperAuthors": "OpenAI, '23",
+   "Details": "t=1.0, top-p=0.9",
+   "TrajectoryLink": "—",
+   "Score": 5.26,
+   "Date": "Mar 20, 2024"
+  },
+  {
+   "Model": "GPT-4o",
+   "Institution": "OpenAI",
+   "PaperLink": "https://openai.com/index/hello-gpt-4o/",
+   "PaperAuthors": "OpenAI, '24",
+   "Details": "t=1.0, top-p=0.9",
+   "TrajectoryLink": "https://drive.google.com/file/d/1mN12zjCiawfU4k1ifPsLW-hcuzPV7Voz/view?usp=drive_link",
+   "Score": 5.03,
+   "Date": "May 20, 2024"
+  },
+  {
+   "Model": "GPT-4o-mini",
+   "Institution": "OpenAI",
+   "PaperLink": "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/",
+   "PaperAuthors": "OpenAI, '24",
+   "Details": "t=1.0, top-p=0.9",
+   "TrajectoryLink": "https://drive.google.com/file/d/1Skq_uMcAR08LMDnIpOswjxm5ntbVXm5M/view?usp=drive_link",
+   "Score": 3.77,
+   "Date": "Aug 17, 2024"
+  },
+  {
+   "Model": "InternVL2",
+   "Institution": "OpenGVLab",
+   "PaperLink": "https://internvl.github.io/blog/2024-07-02-InternVL-2.0/",
+   "PaperAuthors": "OpenGVLab Team, '24",
+   "Details": "t=1.0, top-p=0.9",
+   "TrajectoryLink": "https://drive.google.com/file/d/1KSYs7ZOhEkjBQX5UnMpLkbxZZ6BLhbDm/view?usp=drive_link",
+   "Score": 3.33,
+   "Date": "Aug 17, 2024"
+  },
+  {
+   "Model": "Claude-3-Opus",
+   "Institution": "AnthropicAI",
+   "PaperLink": "https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf",
+   "PaperAuthors": "Anthropic, '24",
+   "Details": "t=1.0, top-p=0.9",
+   "TrajectoryLink": "—",
+   "Score": 2.42,
+   "Date": "Mar 20, 2024"
+  },
+  {
+   "Model": "Llava-OneVision",
+   "Institution": "ByteDance & NTU & CUHK & HKUST",
+   "PaperLink": "https://arxiv.org/abs/2408.03326",
+   "PaperAuthors": "Li et al., '24",
+   "Details": "t=1.0, top-p=0.9",
+   "TrajectoryLink": "https://drive.google.com/file/d/1geppLqwV80p66bXdffVBbLayjCkIQ9mk/view?usp=drive_link",
+   "Score": 2.42,
+   "Date": "Aug 17, 2024"
+  },
+  {
+   "Model": "Qwen-vl-Max-0809",
+   "Institution": "Alibaba Cloud, Qwen Team",
+   "PaperLink": "https://github.com/QwenLM/Qwen2-VL",
+   "PaperAuthors": "Qwen Team, '24",
+   "Details": "t=1.0, top-p=0.9",
+   "TrajectoryLink": "https://drive.google.com/drive/folders/1iBOXZpknCi1Fqzg0fQMG6CZc9NWrwdkf?usp=drive_link",
+   "Score": 2.42,
+   "Date": "Sep 10, 2024"
+  },
+  {
+   "Model": "MiniCPM-V 2.6",
+   "Institution": "MiniCPM-V Team & OpenBMB",
+   "PaperLink": "https://arxiv.org/abs/2408.03326",
+   "PaperAuthors": "Yuan et al., '24",
+   "Details": "t=1.0, top-p=0.9",
+   "TrajectoryLink": "https://drive.google.com/file/d/1T58G_EIr4pWZYJ8plXEWspFHr35g-Nsy/view?usp=drive_link",
+   "Score": 1.88,
+   "Date": "Aug 17, 2024"
+  },
+  {
+   "Model": "CogAgent",
+   "Institution": "Tsinghua University & Zhipu AI",
+   "PaperLink": "https://arxiv.org/abs/2312.08914",
+   "PaperAuthors": "Hong et al., '23",
+   "Details": "t=1.0, top-p=0.9",
+   "TrajectoryLink": "—",
+   "Score": 1.11,
+   "Date": "Mar 20, 2024"
+  }
+ ]
+}

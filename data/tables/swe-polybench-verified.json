@@ -1,0 +1,397 @@
+{
+  "id": "swe-polybench-verified",
+  "family": "swe-polybench",
+  "name": "SWE-PolyBench Verified",
+  "board": "amazon-science.github.io/SWE-PolyBench",
+  "category": "coding",
+  "measures_ja": "SWE-PolyBench のうち人手で検証した 382 件で、テストを通すパッチを作れるか。",
+  "tasks": 382,
+  "tasks_note": "リポジトリ README の記載(Java 72・JS 100・Python 113・TS 100)。その後 Java の重複 2 件を除いたと追記あり。",
+  "metric": "Resolve Rate (Overall)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "提出者がそれぞれ自前の足場で走らせた結果を載せる(-PB 付きは論文著者が既存エージェントを移植して走らせたもの)。",
+  "source": "https://amazon-science.github.io/SWE-PolyBench/",
+  "fetched": [
+    "https://raw.githubusercontent.com/amazon-science/SWE-PolyBench/gh-pages/template/polybench_data.json",
+    "https://amazon-science.github.io/SWE-PolyBench/"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-08-05",
+  "snapshot": "sources/swe-polybench-verified/polybench_data_verified.json",
+  "paper": "https://arxiv.org/abs/2504.08703",
+  "repo": "https://github.com/amazon-science/SWE-PolyBench",
+  "notes_ja": "ボードのタブ名は Verified。Overall が N/A(一部の言語だけ提出)の行は score を null にし、言語別の値を score_extra に入れた。score_extra には検索(file/node retrieval)指標も含む。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "HMigBot (Claude Opus 4.8)",
+      "agent": "HMigBot",
+      "model_raw": [
+        "Claude Opus 4.8"
+      ],
+      "model_ids": [
+        "claude-opus-4.8"
+      ],
+      "model_config": null,
+      "score": 51.31,
+      "score_extra": {
+        "python": 61.95,
+        "java": 43.48,
+        "javascript": 43.0,
+        "typescript": 53.0,
+        "file_retrieval_recall": 70.17,
+        "file_retrieval_precision": 87.36,
+        "node_retrieval_recall": 63.17,
+        "node_retrieval_precision": 75.25
+      },
+      "date": "2026-08-05",
+      "verified": null,
+      "open_source": null,
+      "org": "HMigBot",
+      "row_url": "https://github.com/binbinxiaoge/HMigBot"
+    },
+    {
+      "rank": 2,
+      "system": "Atlassian Rovo Dev",
+      "agent": "Atlassian Rovo Dev",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 48.95,
+      "score_extra": {
+        "python": 54.87,
+        "java": 46.38,
+        "javascript": 50.0,
+        "typescript": 43.0,
+        "file_retrieval_recall": 68.75,
+        "file_retrieval_precision": 77.11,
+        "node_retrieval_recall": 60.68,
+        "node_retrieval_precision": 69.64
+      },
+      "date": "2025-12-17",
+      "verified": null,
+      "open_source": null,
+      "org": "Atlassian",
+      "row_url": "https://www.atlassian.com/software/rovo-dev"
+    },
+    {
+      "rank": 3,
+      "system": "PrometheusV1.2 + GPT-5",
+      "agent": "PrometheusV1.2",
+      "model_raw": [
+        "GPT-5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": null,
+      "score": 33.77,
+      "score_extra": {
+        "python": 36.28,
+        "java": 33.33,
+        "javascript": 30.0,
+        "typescript": 35.0,
+        "file_retrieval_recall": 61.25,
+        "file_retrieval_precision": 66.43,
+        "node_retrieval_recall": 50.46,
+        "node_retrieval_precision": 57.6
+      },
+      "date": "2025-12-02",
+      "verified": null,
+      "open_source": null,
+      "org": "EuniAI",
+      "row_url": "https://euni.ai/"
+    },
+    {
+      "rank": 4,
+      "system": "Amazon Q Developer Agent (v20240402)",
+      "agent": "Amazon Q Developer Agent",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 28.8,
+      "score_extra": {
+        "python": 35.4,
+        "java": 37.68,
+        "javascript": 20.0,
+        "typescript": 24.0,
+        "file_retrieval_recall": 62.82,
+        "file_retrieval_precision": 60.57,
+        "node_retrieval_recall": 51.46,
+        "node_retrieval_precision": 50.39
+      },
+      "date": "2025-09-18",
+      "verified": null,
+      "open_source": null,
+      "org": "aws",
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "Kodah (gpt-5-mini)",
+      "agent": "Kodah",
+      "model_raw": [
+        "gpt-5-mini"
+      ],
+      "model_ids": [
+        "gpt-5-mini"
+      ],
+      "model_config": null,
+      "score": 28.27,
+      "score_extra": {
+        "python": 32.74,
+        "java": 28.99,
+        "javascript": 25.0,
+        "typescript": 26.0,
+        "file_retrieval_recall": 53.89,
+        "file_retrieval_precision": 73.04,
+        "node_retrieval_recall": 43.75,
+        "node_retrieval_precision": 61.6
+      },
+      "date": "2026-04-30",
+      "verified": null,
+      "open_source": null,
+      "org": "Kodah",
+      "row_url": "https://kodah.io/"
+    },
+    {
+      "rank": 6,
+      "system": "Aider-PB (Sonnet 3.5)",
+      "agent": "Aider-PB",
+      "model_raw": [
+        "Sonnet 3.5"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 16.23,
+      "score_extra": {
+        "python": 20.35,
+        "java": 20.29,
+        "javascript": 11.0,
+        "typescript": 14.0,
+        "file_retrieval_recall": 45.77,
+        "file_retrieval_precision": 63.18,
+        "node_retrieval_recall": 33.74,
+        "node_retrieval_precision": 47.5
+      },
+      "date": "2025-09-18",
+      "verified": null,
+      "open_source": null,
+      "org": "aider",
+      "row_url": null
+    },
+    {
+      "rank": 7,
+      "system": "SWE-agent-PB (Sonnet 3.5)",
+      "agent": "SWE-agent-PB",
+      "model_raw": [
+        "Sonnet 3.5"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 14.4,
+      "score_extra": {
+        "python": 22.12,
+        "java": 18.84,
+        "javascript": 5.0,
+        "typescript": 12.0,
+        "file_retrieval_recall": 41.92,
+        "file_retrieval_precision": 36.49,
+        "node_retrieval_recall": 32.33,
+        "node_retrieval_precision": 37.77
+      },
+      "date": "2025-09-18",
+      "verified": null,
+      "open_source": null,
+      "org": "sweagent",
+      "row_url": null
+    },
+    {
+      "rank": 8,
+      "system": "Aider-PB (Deepseek R1)",
+      "agent": "Aider-PB",
+      "model_raw": [
+        "Deepseek R1"
+      ],
+      "model_ids": [
+        "deepseek-r1"
+      ],
+      "model_config": null,
+      "score": 13.87,
+      "score_extra": {
+        "python": 18.58,
+        "java": 8.7,
+        "javascript": 14.0,
+        "typescript": 12.0,
+        "file_retrieval_recall": 43.99,
+        "file_retrieval_precision": 54.5,
+        "node_retrieval_recall": 31.59,
+        "node_retrieval_precision": 40.43
+      },
+      "date": "2025-09-18",
+      "verified": null,
+      "open_source": null,
+      "org": "aider",
+      "row_url": null
+    },
+    {
+      "rank": 9,
+      "system": "Agentless-PB (Sonnet 3.5)",
+      "agent": "Agentless-PB",
+      "model_raw": [
+        "Sonnet 3.5"
+      ],
+      "model_ids": [
+        "claude-3.5-sonnet"
+      ],
+      "model_config": null,
+      "score": 13.35,
+      "score_extra": {
+        "python": 23.01,
+        "java": 17.39,
+        "javascript": 7.0,
+        "typescript": 6.0,
+        "file_retrieval_recall": 36.53,
+        "file_retrieval_precision": 48.82,
+        "node_retrieval_recall": 28.79,
+        "node_retrieval_precision": 42.28
+      },
+      "date": "2025-09-18",
+      "verified": null,
+      "open_source": null,
+      "org": "agentless",
+      "row_url": null
+    },
+    {
+      "rank": 10,
+      "system": "Aider-PB (Haiku)",
+      "agent": "Aider-PB",
+      "model_raw": [
+        "Haiku"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 13.09,
+      "score_extra": {
+        "python": 17.7,
+        "java": 14.49,
+        "javascript": 9.0,
+        "typescript": 11.0,
+        "file_retrieval_recall": 40.85,
+        "file_retrieval_precision": 54.91,
+        "node_retrieval_recall": 29.19,
+        "node_retrieval_precision": 41.54
+      },
+      "date": "2025-09-18",
+      "verified": null,
+      "open_source": null,
+      "org": "aider",
+      "row_url": null
+    },
+    {
+      "rank": 11,
+      "system": "Aider-PB (Llama3.3 70B)",
+      "agent": "Aider-PB",
+      "model_raw": [
+        "Llama3.3 70B"
+      ],
+      "model_ids": [
+        "llama-3.3-70b"
+      ],
+      "model_config": null,
+      "score": 8.64,
+      "score_extra": {
+        "python": 11.5,
+        "java": 10.14,
+        "javascript": 5.0,
+        "typescript": 8.0,
+        "file_retrieval_recall": 30.94,
+        "file_retrieval_precision": 41.88,
+        "node_retrieval_recall": 20.46,
+        "node_retrieval_precision": 28.88
+      },
+      "date": "2025-09-18",
+      "verified": null,
+      "open_source": null,
+      "org": "aider",
+      "row_url": null
+    },
+    {
+      "rank": 12,
+      "system": "Aider-PB (Mistral-Large)",
+      "agent": "Aider-PB",
+      "model_raw": [
+        "Mistral-Large"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 8.38,
+      "score_extra": {
+        "python": 9.73,
+        "java": 10.14,
+        "javascript": 5.0,
+        "typescript": 9.0,
+        "file_retrieval_recall": 35.94,
+        "file_retrieval_precision": 45.66,
+        "node_retrieval_recall": 27.05,
+        "node_retrieval_precision": 18.0
+      },
+      "date": "2025-09-18",
+      "verified": null,
+      "open_source": null,
+      "org": "aider",
+      "row_url": null
+    },
+    {
+      "rank": 13,
+      "system": "Aider-PB (Deepseek-R1-Distill Llama 70B)",
+      "agent": "Aider-PB",
+      "model_raw": [
+        "Deepseek-R1-Distill Llama 70B"
+      ],
+      "model_ids": [
+        "deepseek-r1-distill-llama-70b"
+      ],
+      "model_config": null,
+      "score": 7.59,
+      "score_extra": {
+        "python": 13.27,
+        "java": 5.8,
+        "javascript": 5.0,
+        "typescript": 5.0,
+        "file_retrieval_recall": 35.27,
+        "file_retrieval_precision": 44.59,
+        "node_retrieval_recall": 24.73,
+        "node_retrieval_precision": 32.67
+      },
+      "date": "2025-09-18",
+      "verified": null,
+      "open_source": null,
+      "org": "aider",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "iSWE-Agent",
+      "agent": "iSWE-Agent",
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": null,
+      "score_extra": {
+        "python": 58.41,
+        "java": 46.38
+      },
+      "date": "2026-06-16",
+      "verified": null,
+      "open_source": null,
+      "org": "IBM",
+      "row_url": "https://arxiv.org/abs/2603.11356"
+    }
+  ]
+}

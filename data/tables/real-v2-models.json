@@ -1,0 +1,289 @@
+{
+  "id": "real-v2-models",
+  "family": "real",
+  "name": "REAL v2 (Models)",
+  "board": "realevals.xyz",
+  "category": "web",
+  "measures_ja": "Amazon・DoorDash・Airbnb などを模した決定的な複製サイト上で、買い物・予約・情報取得などの目標を達成できるか。",
+  "tasks": null,
+  "tasks_note": "ボードのデータ上、各エントリの v2 タスクは121件。サイト・論文に v2 のタスク数の記載は見当たらない。",
+  "metric": "REAL Score",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "Models タブ(モデル単位のエントリ)。誰がどの足場で走らせたかは行ごとに示されない。採点は複製サイトの状態と回答の自動評価。",
+  "source": "https://www.realevals.xyz/",
+  "fetched": [
+    "https://www.realevals.xyz/api/getVerifiedModelData",
+    "https://www.realevals.xyz/_next/static/chunks/app/(main)/page-89fe682a64228531.js"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": null,
+  "snapshot": "sources/real-v2-models/getVerifiedModelData_v2_models.json",
+  "paper": "https://arxiv.org/abs/2504.11543",
+  "repo": "https://github.com/agi-inc/REAL",
+  "notes_ja": "スコアはボードが公開する課題ごとの合否データから、ページ自身の計算式(合格数/タスク数×100、小数1桁)を再現して出した。日付は無い。system はボードの表示名そのままで、同名が別エントリとして並ぶことがある。 v2 の Open Arena タブは現在空。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "amazon/nova-act-v1.0",
+      "agent": null,
+      "model_raw": [
+        "amazon/nova-act-v1.0"
+      ],
+      "model_ids": [
+        "nova-act-v1.0"
+      ],
+      "model_config": null,
+      "score": 73.6,
+      "score_extra": {
+        "tasks_passed": 89,
+        "tasks_total": 121
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "anthropic-computer_use",
+      "agent": null,
+      "model_raw": [
+        "anthropic-computer_use"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 72.7,
+      "score_extra": {
+        "tasks_passed": 88,
+        "tasks_total": 121
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "google/gemini-2.5-flash",
+      "agent": null,
+      "model_raw": [
+        "google/gemini-2.5-flash"
+      ],
+      "model_ids": [
+        "gemini-2.5-flash"
+      ],
+      "model_config": null,
+      "score": 57.9,
+      "score_extra": {
+        "tasks_passed": 70,
+        "tasks_total": 121
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "anthropic/claude-sonnet-4.5",
+      "agent": null,
+      "model_raw": [
+        "anthropic/claude-sonnet-4.5"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": null,
+      "score": 56.2,
+      "score_extra": {
+        "tasks_passed": 68,
+        "tasks_total": 121
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "google/gemini-2.5-pro",
+      "agent": null,
+      "model_raw": [
+        "google/gemini-2.5-pro"
+      ],
+      "model_ids": [
+        "gemini-2.5-pro"
+      ],
+      "model_config": null,
+      "score": 48.8,
+      "score_extra": {
+        "tasks_passed": 59,
+        "tasks_total": 121
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 6,
+      "system": "anthropic/claude-3.7-sonnet:thinking",
+      "agent": null,
+      "model_raw": [
+        "anthropic/claude-3.7-sonnet:thinking"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": "thinking",
+      "score": 46.3,
+      "score_extra": {
+        "tasks_passed": 56,
+        "tasks_total": 121
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 7,
+      "system": "anthropic/claude-sonnet-4",
+      "agent": null,
+      "model_raw": [
+        "anthropic/claude-sonnet-4"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": null,
+      "score": 46.3,
+      "score_extra": {
+        "tasks_passed": 56,
+        "tasks_total": 121
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 8,
+      "system": "openai/gpt-5",
+      "agent": null,
+      "model_raw": [
+        "openai/gpt-5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": null,
+      "score": 45.5,
+      "score_extra": {
+        "tasks_passed": 55,
+        "tasks_total": 121
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 9,
+      "system": "x-ai/grok-4-fast",
+      "agent": null,
+      "model_raw": [
+        "x-ai/grok-4-fast"
+      ],
+      "model_ids": [
+        "grok-4-fast"
+      ],
+      "model_config": null,
+      "score": 37.2,
+      "score_extra": {
+        "tasks_passed": 45,
+        "tasks_total": 121
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 10,
+      "system": "deepseek/deepseek-v3.2-exp",
+      "agent": null,
+      "model_raw": [
+        "deepseek/deepseek-v3.2-exp"
+      ],
+      "model_ids": [
+        "deepseek-v3.2-exp"
+      ],
+      "model_config": null,
+      "score": 24.0,
+      "score_extra": {
+        "tasks_passed": 29,
+        "tasks_total": 121
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 11,
+      "system": "openai/gpt-5-nano",
+      "agent": null,
+      "model_raw": [
+        "openai/gpt-5-nano"
+      ],
+      "model_ids": [
+        "gpt-5-nano"
+      ],
+      "model_config": null,
+      "score": 19.0,
+      "score_extra": {
+        "tasks_passed": 23,
+        "tasks_total": 121
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 12,
+      "system": "meta-llama/llama-4-maverick",
+      "agent": null,
+      "model_raw": [
+        "meta-llama/llama-4-maverick"
+      ],
+      "model_ids": [
+        "llama-4-maverick"
+      ],
+      "model_config": null,
+      "score": 13.2,
+      "score_extra": {
+        "tasks_passed": 16,
+        "tasks_total": 121
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    }
+  ]
+}

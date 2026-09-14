@@ -1,0 +1,10 @@
+{
+  "id": "re-bench",
+  "name": "RE-Bench (METR)",
+  "tried": [
+    "https://raw.githubusercontent.com/METR/RE-Bench/main/README.md",
+    "https://metr.org/time-horizons/"
+  ],
+  "reason_ja": "METR/RE-Bench の README は7つの環境ごとの基準値(Starting score / Official solution score / 人間専門家スコア)を示すのみで、モデル別に順位付けする公開ボードは無い。モデル別の結果は論文(arXiv:2411.15114)に載るが機械可読な保守中ボードではない。RE-Bench のタスクは METR Time Horizon の課題群の一部として使われており、そちらは data/tables/metr-time-horizon.json に収録済み。",
+  "retrieved": "2026-09-14"
+}

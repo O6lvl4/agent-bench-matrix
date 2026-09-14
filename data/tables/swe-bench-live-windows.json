@@ -1,0 +1,160 @@
+{
+  "id": "swe-bench-live-windows",
+  "family": "swe-bench-live",
+  "name": "SWE-bench-Live Windows",
+  "board": "swe-bench-live.github.io",
+  "category": "coding",
+  "measures_ja": "Windows コンテナ上の PowerShell 操作や Windows 固有の実装が要る issue を解決できるか。",
+  "tasks": null,
+  "tasks_note": "行ごとに total(評価したインスタンス数)が異なる: 50, 60。データセットが月次で増えるため固定の件数が無い。",
+  "metric": "Resolved (%)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "Windows 用の最小エージェント Win-agent でモデルを走らせた結果を載せる。",
+  "source": "https://swe-bench-live.github.io/",
+  "fetched": [
+    "https://swe-bench-live.github.io/reports-0605.jsonl",
+    "https://swe-bench-live.github.io/leaderboard.js",
+    "https://swe-bench-live.github.io/"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-06-06",
+  "snapshot": "sources/swe-bench-live-windows/reports-0605_windows.json",
+  "paper": "https://arxiv.org/abs/2505.23419",
+  "repo": "https://github.com/microsoft/SWE-bench-Live",
+  "notes_ja": "score はボードと同じく resolved / total を小数1桁に丸めた値。total が行ごとに違う表では分母が揃っていない。verified は 2026-08 以降の検証済み提出に付く Verified タグ。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Win-agent + Claude-4.5-Sonnet",
+      "agent": "Win-agent",
+      "model_raw": [
+        "Claude-4.5-Sonnet"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": null,
+      "score": 30.0,
+      "score_extra": {
+        "resolved_count": 15,
+        "num_valid_inst": 50
+      },
+      "date": "2026-01-08",
+      "verified": false,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "Win-agent + GPT-5.5 (Medium)",
+      "agent": "Win-agent",
+      "model_raw": [
+        "GPT-5.5 (Medium)"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": "Medium",
+      "score": 26.7,
+      "score_extra": {
+        "resolved_count": 16,
+        "num_valid_inst": 60
+      },
+      "date": "2026-06-06",
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://github.com/SWE-bench-Live/submission/tree/main/submissions/windows/win-agent/gpt-5.5-medium"
+    },
+    {
+      "rank": 3,
+      "system": "Win-agent + Deepseek-v4-Pro",
+      "agent": "Win-agent",
+      "model_raw": [
+        "Deepseek-v4-Pro"
+      ],
+      "model_ids": [
+        "deepseek-v4-pro"
+      ],
+      "model_config": null,
+      "score": 21.7,
+      "score_extra": {
+        "resolved_count": 13,
+        "num_valid_inst": 60
+      },
+      "date": "2026-06-06",
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://github.com/SWE-bench-Live/submission/tree/main/submissions/windows/win-agent/deepseek-v4-pro"
+    },
+    {
+      "rank": 4,
+      "system": "Win-agent + GPT-5.2-Thinking-Medium",
+      "agent": "Win-agent",
+      "model_raw": [
+        "GPT-5.2-Thinking-Medium"
+      ],
+      "model_ids": [
+        "gpt-5.2"
+      ],
+      "model_config": "Thinking Medium",
+      "score": 20.0,
+      "score_extra": {
+        "resolved_count": 10,
+        "num_valid_inst": 50
+      },
+      "date": "2026-01-08",
+      "verified": false,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "Win-agent + DeepSeek-V3.1-Terminus",
+      "agent": "Win-agent",
+      "model_raw": [
+        "DeepSeek-V3.1-Terminus"
+      ],
+      "model_ids": [
+        "deepseek-v3.1-terminus"
+      ],
+      "model_config": null,
+      "score": 20.0,
+      "score_extra": {
+        "resolved_count": 10,
+        "num_valid_inst": 50
+      },
+      "date": "2026-01-08",
+      "verified": false,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 6,
+      "system": "Win-agent + Gemini-3-Flash",
+      "agent": "Win-agent",
+      "model_raw": [
+        "Gemini-3-Flash"
+      ],
+      "model_ids": [
+        "gemini-3-flash"
+      ],
+      "model_config": null,
+      "score": 16.0,
+      "score_extra": {
+        "resolved_count": 8,
+        "num_valid_inst": 50
+      },
+      "date": "2026-01-08",
+      "verified": false,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    }
+  ]
+}

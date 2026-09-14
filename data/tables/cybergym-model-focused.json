@@ -1,0 +1,923 @@
+{
+  "id": "cybergym-model-focused",
+  "family": "cybergym",
+  "name": "CyberGym Level 1 (Model-focused)",
+  "board": "cybergym.io",
+  "category": "security",
+  "measures_ja": "脆弱性の説明と修正前のコードベースを渡され、その脆弱性を実際に発火させる PoC を作れるか(Level 1)。",
+  "tasks": 1507,
+  "tasks_note": "188 のソフトウェアプロジェクトから集めた 1,507 件(サイトの記載)。",
+  "metric": "Success Rate (Level 1, 1 trial)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "各チームが自分で評価して提出する。モデル提供元などがモデル中心に既成の足場で走らせた行。",
+  "source": "https://www.cybergym.io/cybergym/",
+  "fetched": [
+    "https://www.cybergym.io/assets/data/cybergym.json",
+    "https://www.cybergym.io/cybergym/",
+    "https://www.cybergym.io/assets/js/leaderboard.js"
+  ],
+  "retrieved": "2026-09-14",
+  "newest_row_date": "2026-09-08",
+  "snapshot": "sources/cybergym-model-focused/cybergym.json",
+  "paper": "https://arxiv.org/abs/2506.02548",
+  "repo": "https://github.com/sunblaze-ucb/cybergym",
+  "notes_ja": "ボードの Type フィルタで分けた表(trials=1 の行のみ表示される)。90% を超える行はランダム順のカードとして表示され順位が無いため rank は null(score_extra.lead_card_unranked)。以前の版の結果(subRows)も rank null の行として入れた。score は score_10 を百分率にした値。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "GPT-5.5-Cyber",
+      "agent": "OpenAI Agent",
+      "model_raw": [
+        "GPT-5.5-Cyber"
+      ],
+      "model_ids": [
+        "gpt-5.5-cyber"
+      ],
+      "model_config": null,
+      "score": 85.6,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2026-06-22",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://openai.com/index/daybreak-securing-the-world/"
+    },
+    {
+      "rank": 2,
+      "system": "GLM-5.3",
+      "agent": "Claude Code",
+      "model_raw": [
+        "GLM-5.3"
+      ],
+      "model_ids": [
+        "glm-5.3"
+      ],
+      "model_config": null,
+      "score": 84.5,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2026-08-14",
+      "verified": null,
+      "open_source": null,
+      "org": "Zhipu AI",
+      "row_url": "https://z.ai/blog/glm-5.3"
+    },
+    {
+      "rank": 3,
+      "system": "DeepSeek-V4-Pro",
+      "agent": "DeepSeek Agent",
+      "model_raw": [
+        "DeepSeek-V4-Pro"
+      ],
+      "model_ids": [
+        "deepseek-v4-pro"
+      ],
+      "model_config": null,
+      "score": 83.3,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2026-08-13",
+      "verified": null,
+      "open_source": null,
+      "org": "DeepSeek",
+      "row_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813"
+    },
+    {
+      "rank": 4,
+      "system": "Claude Mythos Preview",
+      "agent": "Anthropic Agent",
+      "model_raw": [
+        "Claude Mythos Preview"
+      ],
+      "model_ids": [
+        "claude-mythos-preview"
+      ],
+      "model_config": null,
+      "score": 83.1,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2026-04-07",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://www.anthropic.com/claude-mythos-preview-system-card"
+    },
+    {
+      "rank": 5,
+      "system": "GPT-5.5",
+      "agent": "OpenAI Agent",
+      "model_raw": [
+        "GPT-5.5"
+      ],
+      "model_ids": [
+        "gpt-5.5"
+      ],
+      "model_config": null,
+      "score": 81.8,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2026-04-23",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://openai.com/index/introducing-gpt-5-5"
+    },
+    {
+      "rank": 6,
+      "system": "Grok 4.6",
+      "agent": "Grok Build",
+      "model_raw": [
+        "Grok 4.6"
+      ],
+      "model_ids": [
+        "grok-4.6"
+      ],
+      "model_config": null,
+      "score": 79.7,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2026-08-12",
+      "verified": null,
+      "open_source": null,
+      "org": "xAI",
+      "row_url": "https://media.x.ai/v1/website/card-4p6-4cd2dc57.pdf"
+    },
+    {
+      "rank": 7,
+      "system": "Grok 4.5",
+      "agent": "Grok Build",
+      "model_raw": [
+        "Grok 4.5"
+      ],
+      "model_ids": [
+        "grok-4.5"
+      ],
+      "model_config": null,
+      "score": 79.0,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2026-07-14",
+      "verified": null,
+      "open_source": null,
+      "org": "xAI",
+      "row_url": "https://cursor.com/resources/grok-4-5-model-card.pdf"
+    },
+    {
+      "rank": 8,
+      "system": "GPT-5.4",
+      "agent": "OpenAI Agent",
+      "model_raw": [
+        "GPT-5.4"
+      ],
+      "model_ids": [
+        "gpt-5.4"
+      ],
+      "model_config": null,
+      "score": 79.0,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2026-04-23",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": "https://openai.com/index/introducing-gpt-5-5"
+    },
+    {
+      "rank": 9,
+      "system": "GLM-5.2",
+      "agent": "Claude Code",
+      "model_raw": [
+        "GLM-5.2"
+      ],
+      "model_ids": [
+        "glm-5.2"
+      ],
+      "model_config": null,
+      "score": 77.2,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2026-07-21",
+      "verified": null,
+      "open_source": null,
+      "org": "Zhipu AI",
+      "row_url": "https://z.ai/blog/glm-5.3"
+    },
+    {
+      "rank": 10,
+      "system": "DeepSeek-V4-Flash",
+      "agent": "DeepSeek Agent",
+      "model_raw": [
+        "DeepSeek-V4-Flash"
+      ],
+      "model_ids": [
+        "deepseek-v4-flash"
+      ],
+      "model_config": null,
+      "score": 76.7,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2026-07-31",
+      "verified": null,
+      "open_source": null,
+      "org": "DeepSeek",
+      "row_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731"
+    },
+    {
+      "rank": 11,
+      "system": "GLM-5.1",
+      "agent": "Claude Code",
+      "model_raw": [
+        "GLM-5.1"
+      ],
+      "model_ids": [
+        "glm-5.1"
+      ],
+      "model_config": null,
+      "score": 68.7,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2026-04-07",
+      "verified": null,
+      "open_source": null,
+      "org": "Zhipu AI",
+      "row_url": "https://z.ai/blog/glm-5.1"
+    },
+    {
+      "rank": 12,
+      "system": "Claude Opus 4.6",
+      "agent": "Anthropic Agent",
+      "model_raw": [
+        "Claude Opus 4.6"
+      ],
+      "model_ids": [
+        "claude-opus-4.6"
+      ],
+      "model_config": null,
+      "score": 66.6,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2026-02-05",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://www.anthropic.com/claude-opus-4-6-system-card"
+    },
+    {
+      "rank": 13,
+      "system": "GPT-5.4",
+      "agent": "Codex CLI",
+      "model_raw": [
+        "GPT-5.4"
+      ],
+      "model_ids": [
+        "gpt-5.4"
+      ],
+      "model_config": null,
+      "score": 66.3,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2026-04-07",
+      "verified": null,
+      "open_source": null,
+      "org": "Zhipu AI",
+      "row_url": "https://z.ai/blog/glm-5.1"
+    },
+    {
+      "rank": 14,
+      "system": "Claude Sonnet 4.6",
+      "agent": "Anthropic Agent",
+      "model_raw": [
+        "Claude Sonnet 4.6"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.6"
+      ],
+      "model_config": null,
+      "score": 65.2,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2026-02-17",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://www.anthropic.com/claude-sonnet-4-6-system-card"
+    },
+    {
+      "rank": 15,
+      "system": "Feyospace-v1",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Feyospace-v1"
+      ],
+      "model_ids": [
+        "feyospace-v1"
+      ],
+      "model_config": null,
+      "score": 63.04,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2026-09-08",
+      "verified": null,
+      "open_source": null,
+      "org": "Vera Praxis Lab",
+      "row_url": "https://arxiv.org/abs/2609.08418"
+    },
+    {
+      "rank": 16,
+      "system": "Muse Spark 1.1",
+      "agent": "Meta Agent",
+      "model_raw": [
+        "Muse Spark 1.1"
+      ],
+      "model_ids": [
+        "muse-spark-1.1"
+      ],
+      "model_config": "helpful-only",
+      "score": 59.0,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2026-07-09",
+      "verified": null,
+      "open_source": null,
+      "org": "Meta AI",
+      "row_url": "https://ai.meta.com/static-resource/muse-spark-1-1-evaluation-report"
+    },
+    {
+      "rank": 17,
+      "system": "DeepSeek-V4-Pro Preview",
+      "agent": "Claude Code",
+      "model_raw": [
+        "DeepSeek-V4-Pro Preview"
+      ],
+      "model_ids": [
+        "deepseek-v4-pro-preview"
+      ],
+      "model_config": null,
+      "score": 57.7,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2026-07-13",
+      "verified": null,
+      "open_source": null,
+      "org": "XDxAI",
+      "row_url": "https://github.com/XDxAI/cybergym-deepseek-submission-2026"
+    },
+    {
+      "rank": 18,
+      "system": "Feyospace-v0",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Feyospace-v0"
+      ],
+      "model_ids": [
+        "feyospace-v0"
+      ],
+      "model_config": null,
+      "score": 51.16,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2026-09-08",
+      "verified": null,
+      "open_source": null,
+      "org": "Vera Praxis Lab",
+      "row_url": "https://arxiv.org/abs/2609.08418"
+    },
+    {
+      "rank": 19,
+      "system": "Claude Opus 4.5",
+      "agent": "Anthropic Agent",
+      "model_raw": [
+        "Claude Opus 4.5"
+      ],
+      "model_ids": [
+        "claude-opus-4.5"
+      ],
+      "model_config": null,
+      "score": 50.63,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2026-02-05",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://www.anthropic.com/claude-opus-4-5-system-card"
+    },
+    {
+      "rank": 20,
+      "system": "Muse Spark",
+      "agent": "Meta Agent",
+      "model_raw": [
+        "Muse Spark"
+      ],
+      "model_ids": [
+        "muse-spark"
+      ],
+      "model_config": null,
+      "score": 43.5,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2026-04-14",
+      "verified": null,
+      "open_source": null,
+      "org": "Meta AI",
+      "row_url": "https://ai.meta.com/static-resource/muse-spark-safety-and-preparedness-report"
+    },
+    {
+      "rank": 21,
+      "system": "GLM-5",
+      "agent": "Claude Code",
+      "model_raw": [
+        "GLM-5"
+      ],
+      "model_ids": [
+        "glm-5"
+      ],
+      "model_config": null,
+      "score": 43.2,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2026-02-12",
+      "verified": null,
+      "open_source": null,
+      "org": "Zhipu AI",
+      "row_url": "https://z.ai/blog/glm-5"
+    },
+    {
+      "rank": 22,
+      "system": "Kimi K2.5",
+      "agent": "Kimi Agent",
+      "model_raw": [
+        "Kimi K2.5"
+      ],
+      "model_ids": [
+        "kimi-k2.5"
+      ],
+      "model_config": null,
+      "score": 41.3,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2026-02-02",
+      "verified": null,
+      "open_source": null,
+      "org": "Kimi",
+      "row_url": "https://arxiv.org/abs/2602.02276"
+    },
+    {
+      "rank": 23,
+      "system": "GPT-5",
+      "agent": "OpenHands",
+      "model_raw": [
+        "GPT-5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": null,
+      "score": 39.4,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2025-12-05",
+      "verified": null,
+      "open_source": null,
+      "org": "CyberGym Team",
+      "row_url": null
+    },
+    {
+      "rank": 24,
+      "system": "Gemini 3.1 Pro",
+      "agent": "Gemini CLI",
+      "model_raw": [
+        "Gemini 3.1 Pro"
+      ],
+      "model_ids": [
+        "gemini-3.1-pro"
+      ],
+      "model_config": null,
+      "score": 38.8,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2026-04-07",
+      "verified": null,
+      "open_source": null,
+      "org": "Zhipu AI",
+      "row_url": "https://z.ai/blog/glm-5.1"
+    },
+    {
+      "rank": 25,
+      "system": "Claude Sonnet 4.5",
+      "agent": "Anthropic Agent",
+      "model_raw": [
+        "Claude Sonnet 4.5"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.5"
+      ],
+      "model_config": null,
+      "score": 28.9,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2025-09-29",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://www.anthropic.com/claude-sonnet-4-5-system-card"
+    },
+    {
+      "rank": 26,
+      "system": "Claude Opus 4.1",
+      "agent": "Anthropic Agent",
+      "model_raw": [
+        "Claude Opus 4.1"
+      ],
+      "model_ids": [
+        "claude-opus-4.1"
+      ],
+      "model_config": null,
+      "score": 25.0,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2025-09-29",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://www.anthropic.com/claude-sonnet-4-5-system-card"
+    },
+    {
+      "rank": 27,
+      "system": "GLM-4.7",
+      "agent": "Claude Code",
+      "model_raw": [
+        "GLM-4.7"
+      ],
+      "model_ids": [
+        "glm-4.7"
+      ],
+      "model_config": null,
+      "score": 23.5,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2026-02-12",
+      "verified": null,
+      "open_source": null,
+      "org": "Zhipu AI",
+      "row_url": "https://z.ai/blog/glm-5"
+    },
+    {
+      "rank": 28,
+      "system": "Claude Sonnet 4",
+      "agent": "Anthropic Agent",
+      "model_raw": [
+        "Claude Sonnet 4"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": null,
+      "score": 22.6,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2025-09-29",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://www.anthropic.com/claude-sonnet-4-5-system-card"
+    },
+    {
+      "rank": 29,
+      "system": "Claude Sonnet 4",
+      "agent": "OpenHands",
+      "model_raw": [
+        "Claude Sonnet 4"
+      ],
+      "model_ids": [
+        "claude-sonnet-4"
+      ],
+      "model_config": null,
+      "score": 17.85,
+      "score_extra": {
+        "trials": 1,
+        "score_x1_pct": 1.9907
+      },
+      "date": "2025-05-23",
+      "verified": null,
+      "open_source": null,
+      "org": "CyberGym Team",
+      "row_url": null
+    },
+    {
+      "rank": 30,
+      "system": "Claude Sonnet 3.7",
+      "agent": "Anthropic Agent",
+      "model_raw": [
+        "Claude Sonnet 3.7"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": null,
+      "score": 14.5,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2025-09-29",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": "https://www.anthropic.com/claude-sonnet-4-5-system-card"
+    },
+    {
+      "rank": 31,
+      "system": "Claude Sonnet 3.7",
+      "agent": "OpenHands",
+      "model_raw": [
+        "Claude Sonnet 3.7"
+      ],
+      "model_ids": [
+        "claude-3.7-sonnet"
+      ],
+      "model_config": null,
+      "score": 11.9443,
+      "score_extra": {
+        "trials": 1,
+        "score_x1_pct": 2.1898
+      },
+      "date": "2025-05-15",
+      "verified": null,
+      "open_source": null,
+      "org": "CyberGym Team",
+      "row_url": null
+    },
+    {
+      "rank": 32,
+      "system": "GPT-4.1",
+      "agent": "OpenHands",
+      "model_raw": [
+        "GPT-4.1"
+      ],
+      "model_ids": [
+        "gpt-4.1"
+      ],
+      "model_config": null,
+      "score": 9.3563,
+      "score_extra": {
+        "trials": 1,
+        "score_x1_pct": 1.2608
+      },
+      "date": "2025-05-15",
+      "verified": null,
+      "open_source": null,
+      "org": "CyberGym Team",
+      "row_url": null
+    },
+    {
+      "rank": 33,
+      "system": "GPT-4.1",
+      "agent": "Cybench",
+      "model_raw": [
+        "GPT-4.1"
+      ],
+      "model_ids": [
+        "gpt-4.1"
+      ],
+      "model_config": null,
+      "score": 8.9582,
+      "score_extra": {
+        "trials": 1,
+        "score_x1_pct": 2.2561
+      },
+      "date": "2025-05-15",
+      "verified": null,
+      "open_source": null,
+      "org": "CyberGym Team",
+      "row_url": null
+    },
+    {
+      "rank": 34,
+      "system": "GPT-4.1",
+      "agent": "Codex CLI",
+      "model_raw": [
+        "GPT-4.1"
+      ],
+      "model_ids": [
+        "gpt-4.1"
+      ],
+      "model_config": null,
+      "score": 7.3656,
+      "score_extra": {
+        "trials": 1,
+        "score_x1_pct": 1.1944
+      },
+      "date": "2025-05-15",
+      "verified": null,
+      "open_source": null,
+      "org": "CyberGym Team",
+      "row_url": null
+    },
+    {
+      "rank": 35,
+      "system": "GPT-4.1",
+      "agent": "ENiGMA",
+      "model_raw": [
+        "GPT-4.1"
+      ],
+      "model_ids": [
+        "gpt-4.1"
+      ],
+      "model_config": null,
+      "score": 7.2329,
+      "score_extra": {
+        "trials": 1,
+        "score_x1_pct": 1.9244
+      },
+      "date": "2025-05-15",
+      "verified": null,
+      "open_source": null,
+      "org": "CyberGym Team",
+      "row_url": null
+    },
+    {
+      "rank": 36,
+      "system": "Gemini 2.5 Flash Preview",
+      "agent": "OpenHands",
+      "model_raw": [
+        "Gemini 2.5 Flash Preview"
+      ],
+      "model_ids": [
+        "gemini-2.5-flash-preview"
+      ],
+      "model_config": null,
+      "score": 4.8441,
+      "score_extra": {
+        "trials": 1,
+        "score_x1_pct": 0.7963
+      },
+      "date": "2025-05-15",
+      "verified": null,
+      "open_source": null,
+      "org": "CyberGym Team",
+      "row_url": null
+    },
+    {
+      "rank": 37,
+      "system": "DeepSeek-V3",
+      "agent": "OpenHands",
+      "model_raw": [
+        "DeepSeek-V3"
+      ],
+      "model_ids": [
+        "deepseek-v3"
+      ],
+      "model_config": null,
+      "score": 3.5833,
+      "score_extra": {
+        "trials": 1,
+        "score_x1_pct": 0.6636
+      },
+      "date": "2025-05-15",
+      "verified": null,
+      "open_source": null,
+      "org": "CyberGym Team",
+      "row_url": null
+    },
+    {
+      "rank": 38,
+      "system": "o4-mini",
+      "agent": "OpenHands",
+      "model_raw": [
+        "o4-mini"
+      ],
+      "model_ids": [
+        "o4-mini"
+      ],
+      "model_config": null,
+      "score": 2.4552,
+      "score_extra": {
+        "trials": 1,
+        "score_x1_pct": 0.0664
+      },
+      "date": "2025-05-15",
+      "verified": null,
+      "open_source": null,
+      "org": "CyberGym Team",
+      "row_url": null
+    },
+    {
+      "rank": 39,
+      "system": "R2E-Gym-32B",
+      "agent": "OpenHands",
+      "model_raw": [
+        "R2E-Gym-32B"
+      ],
+      "model_ids": [
+        "r2e-gym-32b"
+      ],
+      "model_config": null,
+      "score": 1.9907,
+      "score_extra": {
+        "trials": 1,
+        "score_x1_pct": 0.5972
+      },
+      "date": "2025-05-15",
+      "verified": null,
+      "open_source": null,
+      "org": "CyberGym Team",
+      "row_url": null
+    },
+    {
+      "rank": 40,
+      "system": "Qwen3-235B-A22B",
+      "agent": "OpenHands",
+      "model_raw": [
+        "Qwen3-235B-A22B"
+      ],
+      "model_ids": [
+        "qwen3-235b-a22b"
+      ],
+      "model_config": null,
+      "score": 1.858,
+      "score_extra": {
+        "trials": 1,
+        "score_x1_pct": 0.3318
+      },
+      "date": "2025-05-15",
+      "verified": null,
+      "open_source": null,
+      "org": "CyberGym Team",
+      "row_url": null
+    },
+    {
+      "rank": 41,
+      "system": "OpenHands-LM-32B",
+      "agent": "OpenHands",
+      "model_raw": [
+        "OpenHands-LM-32B"
+      ],
+      "model_ids": [
+        "openhands-lm-32b"
+      ],
+      "model_config": null,
+      "score": 1.6589,
+      "score_extra": {
+        "trials": 1,
+        "score_x1_pct": 0.3318
+      },
+      "date": "2025-05-15",
+      "verified": null,
+      "open_source": null,
+      "org": "CyberGym Team",
+      "row_url": null
+    },
+    {
+      "rank": 42,
+      "system": "SWE-Gym-32B",
+      "agent": "OpenHands",
+      "model_raw": [
+        "SWE-Gym-32B"
+      ],
+      "model_ids": [
+        "swe-gym-32b"
+      ],
+      "model_config": null,
+      "score": 0.0664,
+      "score_extra": {
+        "trials": 1,
+        "score_x1_pct": 0.0664
+      },
+      "date": "2025-05-15",
+      "verified": null,
+      "open_source": null,
+      "org": "CyberGym Team",
+      "row_url": null
+    }
+  ]
+}
