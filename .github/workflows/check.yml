@@ -29,8 +29,10 @@ jobs:
         run: cargo build --release --locked --bin almide --manifest-path .ci/almide/Cargo.toml
       # Every table must pass the checks, under --strict so a model the registry
       # does not know cannot slip into the matrix unnamed.
+      - name: Fit tests
+        run: .ci/almide/target/release/almide test src/fit.almd
       - name: Check data and rebuild the bundle
-        run: .ci/almide/target/release/almide run tools/build.almd -- --strict
+        run: .ci/almide/target/release/almide run src/build.almd -- --strict
       # The page serves the committed bundle, so it must be the one the data builds.
       - name: The committed bundle is the one the data builds
         run: git diff --exit-code -- docs/data.json

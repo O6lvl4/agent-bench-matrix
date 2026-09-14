@@ -176,3 +176,16 @@ table.plain { border-collapse: collapse; width: 100%; font-size: 13px; }
 .entry dd { margin: 0; overflow-wrap: anywhere; }
 
 .foot { color: var(--ink-3); font-size: 12px; padding-block: 16px 32px; border-top: 1px solid var(--line); }
+
+/* estimates — always visually apart from measured values */
+.matrix td.guess { color: var(--ink-3); font-style: italic; }
+.matrix td.guess button { opacity: 0.85; }
+.guess-text { color: var(--ink-2); font-style: italic; }
+.matrix tbody th .rating {
+  display: inline-block; min-width: 2.2em; margin-right: 6px; padding: 0 4px; border-radius: 4px;
+  background: var(--surface-2); color: var(--ink-2); font: 600 11px/1.6 var(--mono); text-align: center;
+}
+table.ability td { vertical-align: middle; }
+.bar { display: block; width: 120px; height: 6px; background: var(--surface-2); border-radius: 3px; overflow: hidden; }
+.bar-fill { display: block; height: 100%; background: var(--heat); }
+.vendor { color: var(--ink-3); font-weight: 400; font-size: 11px; margin-left: 6px; }

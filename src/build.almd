@@ -1,9 +1,12 @@
 import env
 import fs
+import map
 import json
 import process
 import regex
 import value
+
+import self.fit
 
 // build — data/ にある表をすべて検査し、ページが読む docs/data.json を書く。
 //
@@ -11,8 +14,11 @@ import value
 // できるようにしているもの(出典・スナップショット・形の正しい日付)が欠けた表は、
 // ページに届く前にここで止める。
 //
-//   almide run tools/build.almd            検査して書く。問題があれば終了コード 1
-//   almide run tools/build.almd -- --strict  models.json に無いモデルIDも問題として扱う
+//   almide run src/build.almd            検査して書く。問題があれば終了コード 1
+//   almide run src/build.almd -- --strict  models.json に無いモデルIDも問題として扱う
+//
+// 検査のあと、実測されたセルから戦闘力(src/fit.almd)を当てはめ、bundle の "fit" に
+// 入れる。これは推定なので、実測の表とは別の場所に置く。
 
 let CATEGORIES = ["coding", "terminal", "tool-use", "web", "computer-use", "research", "security", "long-horizon", "general"]
 // A board that dates a row by month is saying something less precise, not
@@ -195,6 +201,93 @@ fn check_model(m: Value, i: Int) -> List[Problem] = {
   out
 }
 
+// ── 戦闘力 ─────────────────────────────────────────────────────────────────
+//
+// The measured cells, in the direction where more is better: one per (table,
+// model) pair, the best the model did there. A row that ran several models
+// together says nothing about one model, so it is not a cell.
+fn cells_of(tables: List[Value]) -> List[fit.Cell] = {
+  var best: Map[String, Float] = map.new()
+  var order: List[String] = []
+  var ids: Map[String, (String, String)] = map.new()
+  for t in tables {
+    let tid = text_of(t, "id") ?? ""
+    let higher = value.as_bool(or_null(value.field(t, "higher_is_better"))) ?? true
+    for row in value.as_array(or_null(value.field(t, "rows"))) ?? [] {
+      let mids = strings_of(or_null(value.field(row, "model_ids"))) ?? []
+      let score = or_null(value.field(row, "score"))
+      if list.len(mids) == 1 and not is_null(score) then match value.as_float(score) {
+        ok(raw) => {
+          let mid = list.first(mids) ?? ""
+          let v = if higher then raw else 0.0 - raw
+          let key = tid + "\t" + mid
+          if not map.contains(best, key) then {
+            list.push(order, key)
+            map.insert(ids, key, (tid, mid))
+            map.insert(best, key, v)
+          } else if v > map.get_or(best, key, v) then map.insert(best, key, v)
+        },
+        err(_) => (),
+      }
+    }
+  }
+  list.map(order, (key) => {
+    let (tid, mid) = map.get_or(ids, key, ("", ""))
+    fit.Cell { t: tid, m: mid, v: map.get_or(best, key, 0.0) }
+  })
+}
+
+fn fit_value(f: fit.Fit, models: List[String]) -> Value = {
+  let ts: List[(String, Value)] = list.map(map.keys(f.tables), (t) => {
+    let st = map.get_or(f.tables, t, fit.TStat { mean: 0.0, sd: 1.0, lo: 0.0, hi: 0.0, n: 0, b: 0.0, s: 1.0, alo: 0.0, ahi: 0.0 })
+    let fields: List[(String, Value)] = [
+      ("mean", value.float(st.mean)), ("sd", value.float(st.sd)),
+      ("lo", value.float(st.lo)), ("hi", value.float(st.hi)),
+      ("n", value.int(st.n)), ("b", value.float(st.b)), ("s", value.float(st.s)),
+      ("alo", value.float(st.alo)), ("ahi", value.float(st.ahi)),
+    ]
+    (t, value.object(fields))
+  })
+  let ms: List[(String, Value)] = list.filter_map(models, (m) =>
+    if map.contains(f.ability, m) then {
+      let fields: List[(String, Value)] = [
+        ("rating", value.float(fit.rating(map.get_or(f.ability, m, 0.0)))),
+        ("se", value.float(10.0 * map.get_or(f.se, m, 0.0))),
+        ("n", value.int(map.get_or(f.counts, m, 0))),
+      ]
+      some((m, value.object(fields)))
+    } else none)
+  let body: List[(String, Value)] = [
+    ("tables", value.object(ts)),
+    ("models", value.object(ms)),
+    ("sigma", value.float(f.sigma)),
+  ]
+  value.object(body)
+}
+
+// The overall axis, plus one per category: a model can be strong at terminal
+// work and weak at GUI work, and a single number hides that.
+fn fitted(tables: List[Value]) -> Value = {
+  let cells = cells_of(tables)
+  let all_models = distinct_strings(list.map(cells, (c) => c.m))
+  var out: List[(String, Value)] = [("overall", fit_value(fit.fit_cells(cells), all_models))]
+  for c in CATEGORIES {
+    let ids = list.filter_map(tables, (t) => if (text_of(t, "category") ?? "") == c then text_of(t, "id") else none)
+    let sub = list.filter(cells, (cell) => list.contains(ids, cell.t))
+    if not list.is_empty(sub) then list.push(out, (c, fit_value(fit.fit_cells(sub), distinct_strings(list.map(sub, (x) => x.m)))))
+  }
+  value.object(out)
+}
+
+fn distinct_strings(xs: List[String]) -> List[String] = {
+  var seen: Map[String, Bool] = map.new()
+  var out: List[String] = []
+  for x in xs {
+    if not map.contains(seen, x) then { map.insert(seen, x, true); list.push(out, x) }
+  }
+  out
+}
+
 fn stem_of(name: String) -> String = string.replace(name, ".json", "")
 
 effect fn json_files(dir: String) -> List[String] = {
@@ -282,6 +375,7 @@ effect fn main() -> Unit = {
     ("tables", value.array(tables)),
     ("gaps", value.array(gaps)),
     ("models", value.array(models)),
+    ("fit", fitted(tables)),
   ]
   fs.write("docs/data.json", json.stringify(value.object(bundle)))!
   println("docs/data.json を書いた")

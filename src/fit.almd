@@ -1,0 +1,298 @@
+import map
+
+// fit — 実測されたセルから、モデルごとの「実力」を1つの数に当てはめる。
+//
+// 表は互いに違うものを、違う尺度で測っている。それでも、どの表でも上位に来る
+// モデルと、どの表でも下位に来るモデルがいる。その「どの表でも効いている 1 本の
+// 軸」を、実測された値だけから最小二乗で取り出す。
+//
+//   z(表t, モデルm) ≈ b(t) + s(t) * a(m)
+//
+// z は表ごとに標準化した実測値(高いほど良い向きに揃えたもの)、a(m) がモデルの
+// 実力、s(t) はその表が実力の差をどれだけ拡大して見せるか、b(t) はその表の水準。
+// a と (b, s) を交互に解く。これは推定であって実測ではない。空のセルに入る値も、
+// ここから計算した予測で、ボードが出した数字ではない。
+
+type Cell = { t: String, m: String, v: Float }
+
+// A table as the fit sees it: where its measured values sit (mean, sd, range,
+// count) and how the ability axis maps into it (b, s).
+// `alo`/`ahi` are the abilities of the models this table actually measured: a
+// prediction outside that span is extrapolation, and the page says so instead of
+// printing a number as if it were interpolated.
+type TStat = { mean: Float, sd: Float, lo: Float, hi: Float, n: Int, b: Float, s: Float, alo: Float, ahi: Float }
+
+type Fit = {
+  tables: Map[String, TStat],
+  ability: Map[String, Float],
+  se: Map[String, Float],
+  counts: Map[String, Int],
+  sigma: Float,
+  rounds: Int,
+}
+
+let MIN_CELLS = 3      // a table with fewer measured models says nothing about an axis
+let MIN_SLOPE = 0.05   // a table that does not order models is kept, but barely weighted
+let ROUNDS = 30
+
+fn fmean(xs: List[Float]) -> Float =
+  if list.is_empty(xs) then 0.0
+  else list.fold(xs, 0.0, (a, x) => a + x) / float.from_int(list.len(xs))
+
+fn fsd(xs: List[Float], m: Float) -> Float = {
+  let n = list.len(xs)
+  if n < 2 then 0.0 else float.sqrt(list.fold(xs, 0.0, (a, x) => a + (x - m) * (x - m)) / float.from_int(n - 1))
+}
+
+fn add_to(mut m: Map[String, Float], k: String, v: Float) -> Unit =
+  map.insert(m, k, map.get_or(m, k, 0.0) + v)
+
+fn distinct(xs: List[String]) -> List[String] = {
+  var seen: Map[String, Bool] = map.new()
+  var out: List[String] = []
+  for x in xs {
+    if not map.contains(seen, x) then {
+      map.insert(seen, x, true)
+      list.push(out, x)
+    }
+  }
+  out
+}
+
+// The tables the fit can use, with their standardising statistics.
+fn table_stats(cells: List[Cell]) -> Map[String, TStat] = {
+  var out: Map[String, TStat] = map.new()
+  for t in distinct(list.map(cells, (c) => c.t)) {
+    let vs = list.map(list.filter(cells, (c) => c.t == t), (c) => c.v)
+    let m = fmean(vs)
+    let sd = fsd(vs, m)
+    if list.len(vs) >= MIN_CELLS and sd > 0.0 then
+      map.insert(out, t, TStat { mean: m, sd: sd, lo: list.min(vs) ?? m, hi: list.max(vs) ?? m, n: list.len(vs), b: 0.0, s: 1.0, alo: 0.0, ahi: 0.0 })
+  }
+  out
+}
+
+// Standardised, in the direction where more is better. Cells from tables the fit
+// dropped are not part of it.
+fn z_cells(cells: List[Cell], stats: Map[String, TStat]) -> List[Cell] =
+  list.filter_map(cells, (c) => match map.get(stats, c.t) {
+    some(st) => some(Cell { t: c.t, m: c.m, v: (c.v - st.mean) / st.sd }),
+    none => none,
+  })
+
+// What the current fit leaves unexplained, per cell. Ability is standardised to
+// sd 1, so this variance is also the weight the prior gets: noisy data pulls
+// harder toward the middle than clean data does.
+fn residual_var(zs: List[Cell], base: Map[String, Float], slope: Map[String, Float], a: Map[String, Float], n_models: Int, n_tables: Int) -> Float = {
+  var ss = 0.0
+  for c in zs {
+    let r = c.v - (map.get_or(base, c.t, 0.0) + map.get_or(slope, c.t, 1.0) * map.get_or(a, c.m, 0.0))
+    ss = ss + r * r
+  }
+  let df = list.len(zs) - (n_models + 2 * n_tables)
+  let denom = if df > 0 then df else list.len(zs)
+  if denom > 0 then ss / float.from_int(denom) else 1.0
+}
+
+fn fit_cells(raw: List[Cell]) -> Fit = {
+  let stats = table_stats(raw)
+  let zs = z_cells(raw, stats)
+  let models = distinct(list.map(zs, (c) => c.m))
+
+  var a: Map[String, Float] = map.new()
+  var counts: Map[String, Int] = map.new()
+  for c in zs {
+    map.insert(counts, c.m, map.get_or(counts, c.m, 0) + 1)
+    add_to(a, c.m, c.v)
+  }
+  // Start from each model's mean standing, then let the tables disagree.
+  for m in models { map.insert(a, m, map.get_or(a, m, 0.0) / float.from_int(map.get_or(counts, m, 1))) }
+
+  var slope: Map[String, Float] = map.new()
+  var base: Map[String, Float] = map.new()
+  var round = 0
+  while round < ROUNDS {
+    // Recentre the axis each round: only differences between models mean anything,
+    // so mean 0 and sd 1 is the convention that makes b and s identifiable.
+    let avals = list.map(models, (m) => map.get_or(a, m, 0.0))
+    let am = fmean(avals)
+    let asd = fsd(avals, am)
+    let scale = if asd > 0.0 then asd else 1.0
+    for m in models { map.insert(a, m, (map.get_or(a, m, 0.0) - am) / scale) }
+
+    // Each table: least squares of its z on the current ability.
+    var n_t: Map[String, Float] = map.new()
+    var sum_a: Map[String, Float] = map.new()
+    var sum_z: Map[String, Float] = map.new()
+    var sum_aa: Map[String, Float] = map.new()
+    var sum_az: Map[String, Float] = map.new()
+    for c in zs {
+      let av = map.get_or(a, c.m, 0.0)
+      add_to(n_t, c.t, 1.0)
+      add_to(sum_a, c.t, av)
+      add_to(sum_z, c.t, c.v)
+      add_to(sum_aa, c.t, av * av)
+      add_to(sum_az, c.t, av * c.v)
+    }
+    for t in map.keys(stats) {
+      let n = map.get_or(n_t, t, 0.0)
+      if n > 0.0 then {
+        let abar = map.get_or(sum_a, t, 0.0) / n
+        let zbar = map.get_or(sum_z, t, 0.0) / n
+        let vaa = map.get_or(sum_aa, t, 0.0) - n * abar * abar
+        let vaz = map.get_or(sum_az, t, 0.0) - n * abar * zbar
+        let s0 = if vaa > 0.0 then vaz / vaa else 1.0
+        let s = if s0 < MIN_SLOPE then MIN_SLOPE else s0
+        map.insert(slope, t, s)
+        map.insert(base, t, zbar - s * abar)
+      }
+    }
+
+    // Each model: least squares of its (z - b) on the tables' slopes, pulled
+    // toward the middle by how much the fit cannot explain. A model measured
+    // once, on one table, has thin evidence, and the number says so instead of
+    // letting a single lucky row put it at the top.
+    var num: Map[String, Float] = map.new()
+    var den: Map[String, Float] = map.new()
+    for c in zs {
+      let s = map.get_or(slope, c.t, 1.0)
+      let b = map.get_or(base, c.t, 0.0)
+      add_to(num, c.m, s * (c.v - b))
+      add_to(den, c.m, s * s)
+    }
+    let lambda = residual_var(zs, base, slope, a, list.len(models), map.len(stats))
+    for m in models {
+      let d = map.get_or(den, m, 0.0) + lambda
+      if d > 0.0 then map.insert(a, m, map.get_or(num, m, 0.0) / d)
+    }
+    round = round + 1
+  }
+
+  // What the fit could not explain, and what that means for one model's number.
+  var ss = 0.0
+  for c in zs {
+    let r = c.v - (map.get_or(base, c.t, 0.0) + map.get_or(slope, c.t, 1.0) * map.get_or(a, c.m, 0.0))
+    ss = ss + r * r
+  }
+  let params = list.len(models) + 2 * map.len(stats)
+  let df = list.len(zs) - params
+  let sigma = if df > 0 then float.sqrt(ss / float.from_int(df)) else float.sqrt(ss / float.from_int(list.len(zs)))
+
+  var se: Map[String, Float] = map.new()
+  var info: Map[String, Float] = map.new()
+  for c in zs {
+    let s = map.get_or(slope, c.t, 1.0)
+    add_to(info, c.m, s * s)
+  }
+  let lambda = sigma * sigma
+  for m in models {
+    let i = map.get_or(info, m, 0.0) + lambda
+    // A model measured on one weak table gets a number and a wide error bar.
+    map.insert(se, m, if i > 0.0 then sigma / float.sqrt(i) else 0.0)
+  }
+
+  // The span of ability each table has actually seen.
+  var alo: Map[String, Float] = map.new()
+  var ahi: Map[String, Float] = map.new()
+  for c in zs {
+    let av = map.get_or(a, c.m, 0.0)
+    if not map.contains(alo, c.t) then { map.insert(alo, c.t, av); map.insert(ahi, c.t, av) }
+    if av < map.get_or(alo, c.t, av) then map.insert(alo, c.t, av)
+    if av > map.get_or(ahi, c.t, av) then map.insert(ahi, c.t, av)
+  }
+
+  var tables: Map[String, TStat] = map.new()
+  for (t, st) in map.entries(stats) {
+    map.insert(tables, t, TStat { mean: st.mean, sd: st.sd, lo: st.lo, hi: st.hi, n: st.n,
+      b: map.get_or(base, t, 0.0), s: map.get_or(slope, t, 1.0),
+      alo: map.get_or(alo, t, 0.0), ahi: map.get_or(ahi, t, 0.0) })
+  }
+  Fit { tables: tables, ability: a, se: se, counts: counts, sigma: sigma, rounds: ROUNDS }
+}
+
+// The reported number: mean 50, sd 10 across the models in this fit.
+fn rating(a: Float) -> Float = 50.0 + 10.0 * a
+
+test "the fit recovers abilities it was given, through tables of different scale" {
+  // Three tables read the same ability on different scales and offsets, and one
+  // model is missing from each — the case the whole thing exists for.
+  let truth = [("m1", -1.2), ("m2", -0.4), ("m3", 0.3), ("m4", 1.3)]
+  var cells: List[Cell] = []
+  for (t, k, off) in [("easy", 4.0, 80.0), ("hard", 12.0, 30.0), ("mid", 8.0, 55.0)] {
+    for (m, a) in truth {
+      if not (t == "easy" and m == "m4") and not (t == "hard" and m == "m1") then
+        list.push(cells, Cell { t: t, m: m, v: off + k * a })
+    }
+  }
+  let f = fit_cells(cells)
+  assert_eq(map.len(f.tables), 3)
+  // Ability comes back in the same order and roughly the same spacing.
+  let a1 = map.get_or(f.ability, "m1", 0.0)
+  let a4 = map.get_or(f.ability, "m4", 0.0)
+  assert(a1 < map.get_or(f.ability, "m2", 0.0))
+  assert(map.get_or(f.ability, "m3", 0.0) < a4)
+  assert(float.abs(a1 - (-1.2)) < 0.15)
+  assert(float.abs(a4 - 1.3) < 0.15)
+  // Noiseless data, so nothing is left over.
+  assert(f.sigma < 0.01)
+  // The steeper table gets the larger slope.
+  let easy = map.get_or(f.tables, "easy", TStat { mean: 0.0, sd: 1.0, lo: 0.0, hi: 0.0, n: 0, b: 0.0, s: 0.0, alo: 0.0, ahi: 0.0 })
+  let hard = map.get_or(f.tables, "hard", TStat { mean: 0.0, sd: 1.0, lo: 0.0, hi: 0.0, n: 0, b: 0.0, s: 0.0, alo: 0.0, ahi: 0.0 })
+  assert(easy.sd > 0.0 and hard.sd > 0.0)
+}
+
+test "a table too small to order anyone is left out of the fit" {
+  var cells: List[Cell] = [
+    Cell { t: "tiny", m: "m1", v: 1.0 },
+    Cell { t: "tiny", m: "m2", v: 2.0 },
+    Cell { t: "flat", m: "m1", v: 5.0 },
+    Cell { t: "flat", m: "m2", v: 5.0 },
+    Cell { t: "flat", m: "m3", v: 5.0 },
+    Cell { t: "real", m: "m1", v: 10.0 },
+    Cell { t: "real", m: "m2", v: 20.0 },
+    Cell { t: "real", m: "m3", v: 30.0 },
+  ]
+  let f = fit_cells(cells)
+  // tiny has too few models; flat orders no one.
+  assert(not map.contains(f.tables, "tiny"))
+  assert(not map.contains(f.tables, "flat"))
+  assert(map.contains(f.tables, "real"))
+  assert_eq(map.get_or(f.counts, "m1", 0), 1)
+}
+
+test "one noisy measurement is pulled toward the middle; many are not" {
+  // Two tables that disagree with each other, so the fit has real residual, and
+  // two models standing equally high: one measured five times, one measured once.
+  var cells: List[Cell] = []
+  // The five tables agree on the broad order and disagree in the details, which
+  // is what leaves a residual for the prior to weigh against.
+  let boards = [
+    ("t1", [62.0, 55.0, 50.0, 45.0, 40.0]),
+    ("t2", [60.0, 56.0, 51.0, 44.0, 39.0]),
+    ("t3", [63.0, 53.0, 52.0, 46.0, 38.0]),
+    ("t4", [61.0, 57.0, 49.0, 43.0, 41.0]),
+    ("t5", [59.0, 54.0, 53.0, 47.0, 37.0]),
+  ]
+  for (t, vs) in boards {
+    for (m, v) in list.zip(["a", "b", "c", "d", "e"], vs) { list.push(cells, Cell { t: t, m: m, v: v }) }
+  }
+  // "solo" appears once, matching the top model's own value on that table.
+  list.push(cells, Cell { t: "t1", m: "solo", v: 62.0 })
+  let f = fit_cells(cells)
+  let a_solo = map.get_or(f.ability, "solo", 0.0)
+  assert_eq(map.get_or(f.counts, "solo", 0), 1)
+  assert(a_solo > 0.0)
+  // Its one cell, taken at face value, would put it here:
+  let t1 = map.get_or(f.tables, "t1", TStat { mean: 0.0, sd: 1.0, lo: 0.0, hi: 0.0, n: 0, b: 0.0, s: 1.0, alo: 0.0, ahi: 0.0 })
+  let face_value = ((62.0 - t1.mean) / t1.sd - t1.b) / t1.s
+  // The fit puts it lower, because one cell is not five.
+  assert(a_solo < face_value)
+  assert(f.sigma > 0.0)
+  // And its error bar is the wider one.
+  assert(map.get_or(f.se, "solo", 0.0) > map.get_or(f.se, "a", 0.0))
+}
+
+test "the reported number is centred at 50" {
+  assert(float.abs(rating(0.0) - 50.0) < 0.0001)
+  assert(float.abs(rating(1.0) - 60.0) < 0.0001)
+}
