@@ -371,9 +371,9 @@
         "openai/chatgpt-4o-latest"
       ],
       "model_ids": [
-        "chatgpt-4o-latest"
+        "chatgpt-4o"
       ],
-      "model_config": "edit_format=diff; command=aider --model openai/chatgpt-4o-latest",
+      "model_config": "edit_format=diff; command=aider --model openai/chatgpt-4o-latest, latest",
       "score": 72.2,
       "score_extra": {
         "pass_rate_1": 56.4,
@@ -2009,7 +2009,7 @@
         "Nova Pro"
       ],
       "model_ids": [
-        "nova-pro"
+        "amazon-nova-pro"
       ],
       "model_config": "edit_format=whole; command=aider --model bedrock/us.amazon.nova-pro-v1:0",
       "score": 54.1,
@@ -2317,7 +2317,7 @@
         "codestral:22b-v0.1-q8_0"
       ],
       "model_ids": [
-        "codestral-22b-v0.1"
+        "codestral-2405"
       ],
       "model_config": "ollama q8_0; edit_format=whole; command=aider --model ollama/codestral:22b-v0.1-q8_0",
       "score": 48.1,
@@ -2351,7 +2351,7 @@
         "Codestral-22B-v0.1-Q4_K_M"
       ],
       "model_ids": [
-        "codestral-22b-v0.1"
+        "codestral-2405"
       ],
       "model_config": "Q4_K_M; edit_format=whole; command=aider --model Codestral-22B-v0.1-Q4_K_M",
       "score": 48.1,
@@ -2982,7 +2982,7 @@
         "ollama/codegeex4"
       ],
       "model_ids": [
-        "codegeex4"
+        "codegeex4-all-9b"
       ],
       "model_config": "ollama; edit_format=whole; command=aider --model ollama/codegeex4",
       "score": 32.3,
@@ -3084,7 +3084,7 @@
         "ollama/wojtek/opencodeinterpreter:6.7b"
       ],
       "model_ids": [
-        "opencodeinterpreter-6.7b"
+        "opencodeinterpreter-ds-6.7b"
       ],
       "model_config": "ollama; edit_format=whole; command=aider --model ollama/wojtek/opencodeinterpreter:6.7b",
       "score": 30.1,
@@ -3268,7 +3268,7 @@
         "ollama/granite3-dense:8b"
       ],
       "model_ids": [
-        "granite-3-dense-8b"
+        "granite-3.0-8b-instruct"
       ],
       "model_config": "ollama; edit_format=whole; command=aider --model ollama/granite3-dense:8b",
       "score": 20.3,

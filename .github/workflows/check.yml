@@ -27,10 +27,10 @@ jobs:
           key: almide-${{ runner.os }}-e706ba8c4e32eb39983bd125cec1890d17094300-rust1.94.0
       - if: steps.compiler.outputs.cache-hit != 'true'
         run: cargo build --release --locked --bin almide --manifest-path .ci/almide/Cargo.toml
-      # Every table must pass the checks. The model registry is not written yet, so
-      # unregistered model ids are not an error until it is (then: -- --strict).
+      # Every table must pass the checks, under --strict so a model the registry
+      # does not know cannot slip into the matrix unnamed.
       - name: Check data and rebuild the bundle
-        run: .ci/almide/target/release/almide run tools/build.almd
+        run: .ci/almide/target/release/almide run tools/build.almd -- --strict
       # The page serves the committed bundle, so it must be the one the data builds.
       - name: The committed bundle is the one the data builds
         run: git diff --exit-code -- docs/data.json
