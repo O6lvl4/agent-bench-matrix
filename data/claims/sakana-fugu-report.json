@@ -1,0 +1,33 @@
+{
+  "id": "sakana-fugu-report",
+  "vendor": "Sakana AI",
+  "title": "Sakana Fugu Technical Report (v2) Table 1",
+  "source": "https://arxiv.org/abs/2606.21228",
+  "fetched": [
+    "https://arxiv.org/html/2606.21228v2"
+  ],
+  "retrieved": "2026-09-14",
+  "published": "2026-06-23",
+  "snapshot": "sources/claims/sakana-fugu-report/table1.html",
+  "harness_ja": "Sakana 自身が走らせた結果。SWE Bench Pro は mini-SWE-agent、Terminal Bench 2.1 は Terminus 2 を使い、比較対象のモデルも同じ最大推論量で走らせたと報告にある。試行回数、実行日、SWE Bench Pro の集合(公開/非公開)は書かれていない。",
+  "notes_ja": "Fugu は他社のフロンティアモデルに仕事を振り分けるオーケストレータで、単体のモデルではない。数字は 2026-06 の v1.0 のもの(その後 v1.1、v2.0、Fugu Max が出ているが、数字は画像でしか公開されていない)。2026-09-14 時点で、どの公式リーダーボードにも載っておらず、第三者の再現もない。",
+  "figures": [
+    { "model_raw": "Fugu-Ultra", "model_ids": ["sakana-fugu-ultra"], "model_config": "v1.0", "benchmark_raw": "SWE Bench Pro", "table": null, "metric": "% resolved", "value": 73.7, "note_ja": "公開集合か非公開集合かが書かれていないので、どの表にも対応づけない" },
+    { "model_raw": "Fugu", "model_ids": ["sakana-fugu"], "model_config": "v1.0", "benchmark_raw": "SWE Bench Pro", "table": null, "metric": "% resolved", "value": 59.0, "note_ja": "同上" },
+    { "model_raw": "Claude Opus 4.8", "model_ids": ["claude-opus-4.8"], "model_config": "Sakana の実行、最大推論量", "benchmark_raw": "SWE Bench Pro", "table": null, "metric": "% resolved", "value": 69.2, "note_ja": "Sakana が比較のために走らせた値" },
+    { "model_raw": "Gemini 3.1", "model_ids": [], "model_config": "Sakana の実行、最大推論量", "benchmark_raw": "SWE Bench Pro", "table": null, "metric": "% resolved", "value": 54.2, "note_ja": "Pro か Flash かが書かれていない" },
+    { "model_raw": "GPT-5.5", "model_ids": ["gpt-5.5"], "model_config": "Sakana の実行、最大推論量", "benchmark_raw": "SWE Bench Pro", "table": null, "metric": "% resolved", "value": 58.6, "note_ja": "Sakana が比較のために走らせた値" },
+    { "model_raw": "Fugu-Ultra", "model_ids": ["sakana-fugu-ultra"], "model_config": "v1.0", "benchmark_raw": "Terminal Bench 2.1", "table": "terminal-bench-2-1", "metric": "% accuracy", "value": 82.1, "note_ja": "Terminus 2 で実行。tbench.ai のボードには載っていない" },
+    { "model_raw": "Fugu", "model_ids": ["sakana-fugu"], "model_config": "v1.0", "benchmark_raw": "Terminal Bench 2.1", "table": "terminal-bench-2-1", "metric": "% accuracy", "value": 80.2, "note_ja": "同上" },
+    { "model_raw": "Claude Opus 4.8", "model_ids": ["claude-opus-4.8"], "model_config": "Sakana の実行、最大推論量", "benchmark_raw": "Terminal Bench 2.1", "table": "terminal-bench-2-1", "metric": "% accuracy", "value": 74.6, "note_ja": "Sakana が比較のために走らせた値" },
+    { "model_raw": "Gemini 3.1", "model_ids": [], "model_config": "Sakana の実行、最大推論量", "benchmark_raw": "Terminal Bench 2.1", "table": "terminal-bench-2-1", "metric": "% accuracy", "value": 70.3, "note_ja": "Pro か Flash かが書かれていない" },
+    { "model_raw": "GPT-5.5", "model_ids": ["gpt-5.5"], "model_config": "Sakana の実行、最大推論量", "benchmark_raw": "Terminal Bench 2.1", "table": "terminal-bench-2-1", "metric": "% accuracy", "value": 78.2, "note_ja": "Sakana が比較のために走らせた値" },
+    { "model_raw": "Fugu-Ultra", "model_ids": ["sakana-fugu-ultra"], "model_config": "v1.0", "benchmark_raw": "τ³ Banking", "table": "tau3-banking", "metric": "%", "value": 20.6, "note_ja": "taubench.com のボードには載っていない" },
+    { "model_raw": "Fugu", "model_ids": ["sakana-fugu"], "model_config": "v1.0", "benchmark_raw": "τ³ Banking", "table": "tau3-banking", "metric": "%", "value": 21.7, "note_ja": "同上" },
+    { "model_raw": "Claude Opus 4.8", "model_ids": ["claude-opus-4.8"], "model_config": "Sakana の実行、最大推論量", "benchmark_raw": "τ³ Banking", "table": "tau3-banking", "metric": "%", "value": 20.6, "note_ja": "Sakana が比較のために走らせた値" },
+    { "model_raw": "Gemini 3.1", "model_ids": [], "model_config": "Sakana の実行、最大推論量", "benchmark_raw": "τ³ Banking", "table": "tau3-banking", "metric": "%", "value": 8.4, "note_ja": "Pro か Flash かが書かれていない" },
+    { "model_raw": "GPT-5.5", "model_ids": ["gpt-5.5"], "model_config": "Sakana の実行、最大推論量", "benchmark_raw": "τ³ Banking", "table": "tau3-banking", "metric": "%", "value": 20.6, "note_ja": "Sakana が比較のために走らせた値" },
+    { "model_raw": "Fugu-Ultra", "model_ids": ["sakana-fugu-ultra"], "model_config": "v1.0", "benchmark_raw": "SciCode", "table": null, "metric": "%", "value": 58.7, "note_ja": "この repo の SciCode は HAL の走らせ方によるものなので、対応づけない" },
+    { "model_raw": "Fugu", "model_ids": ["sakana-fugu"], "model_config": "v1.0", "benchmark_raw": "SciCode", "table": null, "metric": "%", "value": 60.1, "note_ja": "同上" }
+  ]
+}

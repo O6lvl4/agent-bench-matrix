@@ -179,6 +179,58 @@ fn check_gap(g: Value, stem: String) -> List[Problem] = {
   out
 }
 
+// A vendor's own figures. They are held to the same discipline as a board
+// (fetched bytes, a snapshot, a date) and to one more: every figure says which
+// table, if any, it may sit next to, and a table it names must exist.
+effect fn check_claim(c: Value, stem: String, table_ids: List[String], known: List[String], strict: Bool) -> List[Problem] = {
+  let at = "data/claims/" + stem + ".json"
+  var out = required_text(c, ["id", "vendor", "title", "source", "retrieved", "snapshot", "harness_ja"], at)
+  if (text_of(c, "id") ?? "") != stem then list.push(out, problem(at, "id がファイル名と違う"))
+  if not is_link(text_of(c, "source") ?? "") then list.push(out, problem(at, "source がURLでない"))
+  if not regex.is_match(DATE, text_of(c, "retrieved") ?? "") then list.push(out, problem(at, "retrieved は YYYY-MM-DD"))
+  let snapshot = text_of(c, "snapshot") ?? ""
+  if snapshot != "" and not fs.exists(snapshot) then list.push(out, problem(at, "snapshot のファイルが無い: " + snapshot))
+  match strings_of(or_null(value.field(c, "fetched"))) {
+    some(urls) => if list.is_empty(urls) then list.push(out, problem(at, "fetched が空")),
+    none => list.push(out, problem(at, "fetched は文字列の配列")),
+  }
+  out = out + nullable(c, "published", "date", at)
+  out = out + nullable(c, "notes_ja", "text", at)
+  match value.as_array(or_null(value.field(c, "figures"))) {
+    ok(figs) => {
+      if list.is_empty(figs) then list.push(out, problem(at, "figures が空"))
+      var i = 0
+      for f in figs {
+        let here = at + " figures[" + int.to_string(i) + "]"
+        out = out + required_text(f, ["model_raw", "benchmark_raw", "metric"], here)
+        out = out + nullable(f, "model_config", "text", here)
+        out = out + nullable(f, "note_ja", "text", here)
+        match value.field(f, "value") {
+          ok(v) => match value.as_float(v) { ok(_) => (), err(_) => list.push(out, problem(here, "value が数値でない")) },
+          err(_) => list.push(out, problem(here, "value がない")),
+        }
+        match strings_of(or_null(value.field(f, "model_ids"))) {
+          some(ids) => for id in ids {
+            if not regex.is_match(SLUG, id) then list.push(out, problem(here, "model_ids の形が規則に合わない: " + id))
+            if strict and not list.contains(known, id) then list.push(out, problem(here, "登録されていないモデルID: " + id))
+          },
+          none => list.push(out, problem(here, "model_ids は文字列の配列")),
+        }
+        match value.field(f, "table") {
+          ok(t) => if not is_null(t) then match value.as_string(t) {
+            ok(id) => if not list.contains(table_ids, id) then list.push(out, problem(here, "table が data/tables に無い: " + id)),
+            err(_) => list.push(out, problem(here, "table は表のIDか null")),
+          },
+          err(_) => list.push(out, problem(here, "table がない(対応する表が無いなら null)")),
+        }
+        i = i + 1
+      }
+    },
+    err(_) => list.push(out, problem(at, "figures は配列")),
+  }
+  out
+}
+
 fn check_model(m: Value, i: Int) -> List[Problem] = {
   let at = "data/models.json models[" + int.to_string(i) + "]"
   var out = required_text(m, ["id", "name", "vendor"], at)
@@ -363,8 +415,24 @@ effect fn main() -> Unit = {
     for id in unknown { list.push(problems, problem("data/models.json", "表が使うモデルIDが登録されていない: " + id)) }
   }
 
+  // Vendor claims come last: they may point at tables and models, so both must
+  // already be known.
+  var claims: List[Value] = []
+  let table_ids = list.map(tables, (t) => text_of(t, "id") ?? "")
+  if fs.exists("data/claims") then {
+    for name in json_files("data/claims")! {
+      match load("data/claims/" + name) {
+        ok(c) => {
+          problems = problems + check_claim(c, stem_of(name), table_ids, known, strict)
+          list.push(claims, c)
+        },
+        err(e) => list.push(problems, problem("data/claims/" + name, e)),
+      }
+    }
+  }
+
   for p in problems { eprintln(p.at + ": " + p.what) }
-  println(int.to_string(list.len(tables)) + " 表 / " + int.to_string(row_count) + " 行 / 取れなかった表 " + int.to_string(list.len(gaps)) + " / モデル " + int.to_string(list.len(models)) + " / 未登録のモデルID " + int.to_string(list.len(unknown)))
+  println(int.to_string(list.len(tables)) + " 表 / " + int.to_string(row_count) + " 行 / 取れなかった表 " + int.to_string(list.len(gaps)) + " / モデル " + int.to_string(list.len(models)) + " / 未登録のモデルID " + int.to_string(list.len(unknown)) + " / 自己申告 " + int.to_string(list.len(claims)))
   if not list.is_empty(problems) then {
     eprintln(int.to_string(list.len(problems)) + " 件の問題。docs/data.json は書かない")
     process.exit(1)
@@ -375,7 +443,9 @@ effect fn main() -> Unit = {
     ("tables", value.array(tables)),
     ("gaps", value.array(gaps)),
     ("models", value.array(models)),
+    // The fit reads the tables only. A vendor's own figure never moves a rating.
     ("fit", fitted(tables)),
+    ("claims", value.array(claims)),
   ]
   fs.write("docs/data.json", json.stringify(value.object(bundle)))!
   println("docs/data.json を書いた")

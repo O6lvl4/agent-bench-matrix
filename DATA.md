@@ -107,6 +107,41 @@
 推論量・thinking・コンテキスト長などは表の `model_config` に移します。サイズ・`mini`/`flash`/`codex` のような
 別の製品は別のIDです。
 
+## 自己申告: `data/claims/<id>.json`
+
+どのボードにも載っていないモデルについて、出した側(ベンダー)が自分で公表した数字を置く層です。
+ボードの数字と同じ規律(取得した元文書、保存した抜粋、取得日)で扱い、ページでは `†` 付きの別の色で出し、
+戦闘力の当てはめには入れません。1ファイル = 1つの文書(技術報告・発表記事)の1つの表です。
+
+```json
+{
+  "id": "sakana-fugu-report",
+  "vendor": "Sakana AI",
+  "title": "Sakana Fugu Technical Report (v2) Table 1",
+  "source": "https://arxiv.org/abs/2606.21228",
+  "fetched": ["https://arxiv.org/html/2606.21228v2"],
+  "retrieved": "2026-09-14",
+  "published": "2026-06-23",
+  "snapshot": "sources/claims/sakana-fugu-report/table1.html",
+  "harness_ja": "出した側がどう走らせたか(文書に書かれている範囲で)",
+  "notes_ja": "…",
+  "figures": [
+    { "model_raw": "Fugu-Ultra", "model_ids": ["sakana-fugu-ultra"], "model_config": "v1.0",
+      "benchmark_raw": "Terminal Bench 2.1", "table": "terminal-bench-2-1",
+      "metric": "% accuracy", "value": 82.1, "note_ja": "…" }
+  ]
+}
+```
+
+| フィールド | 意味 |
+|---|---|
+| `figures[].model_raw` / `benchmark_raw` | 文書の表記そのまま |
+| `figures[].model_ids` | 正規化したID(登録簿に要る)。文書が版を書いていない(例: "Gemini 3.1")なら `[]` |
+| `figures[].table` | この値を並べてよい `data/tables` の表のID。同じベンチでも集合や版が分からなければ `null`(表には出ず、自己申告の一覧にだけ出る) |
+| `figures[].value` | 文書の数値そのまま。`snapshot` にその数字が含まれていること |
+
+数字は文書から機械的に取り出したものだけを入れます。画像でしか公開されていない数字は入れません。
+
 ## 取れなかった表: `data/gaps/<id>.json`
 
 ```json
