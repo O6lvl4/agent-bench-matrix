@@ -364,7 +364,7 @@ effect fn main() -> Unit = {
   for name in json_files("data/tables")! {
     match load("data/tables/" + name) {
       ok(t) => {
-        problems = problems + check_table(t, stem_of(name))
+        problems = problems + check_table(t, stem_of(name))!
         let r = text_of(t, "retrieved") ?? ""
         if r > generated then { generated = r }
         row_count = row_count + list.len(value.as_array(or_null(value.field(t, "rows"))) ?? [])
@@ -423,7 +423,7 @@ effect fn main() -> Unit = {
     for name in json_files("data/claims")! {
       match load("data/claims/" + name) {
         ok(c) => {
-          problems = problems + check_claim(c, stem_of(name), table_ids, known, strict)
+          problems = problems + check_claim(c, stem_of(name), table_ids, known, strict)!
           list.push(claims, c)
         },
         err(e) => list.push(problems, problem("data/claims/" + name, e)),
