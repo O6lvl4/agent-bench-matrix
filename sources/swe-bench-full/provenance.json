@@ -1,0 +1,32 @@
+{
+  "retrieved": "2026-10-05",
+  "table": "swe-bench-full",
+  "status": "comparable-source-extracted",
+  "source_data_changed": false,
+  "old_rows": 24,
+  "new_rows": 24,
+  "rows_changed": false,
+  "snapshot": "sources/swe-bench-full/leaderboards_test.json",
+  "snapshot_sha256": "ebcebd9c8d7f1d622aafa08e637d1ce427fbda7b52a8225d9416c61b6f092041",
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/SWE-bench/swe-bench.github.io/master/data/leaderboards.json",
+      "request_description": "https://raw.githubusercontent.com/SWE-bench/swe-bench.github.io/master/data/leaderboards.json",
+      "tables": [
+        "swe-bench-bash-only",
+        "swe-bench-multimodal",
+        "swe-bench-full",
+        "swe-bench-lite",
+        "swe-bench-verified",
+        "swe-bench-multilingual"
+      ],
+      "file": "6d948e330daab1a8",
+      "retrieved": "2026-10-05",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/SWE-bench/swe-bench.github.io/master/data/leaderboards.json",
+      "bytes": 4091442,
+      "sha256": "83cd949a9582f4dd68b0a07148cd86ff0eae6a05b0f2d2298a8f3717baf89d2d"
+    }
+  ],
+  "method": "Complete native JSON/YAML/CSV/HTML/RSC table projection compared against the prior snapshot; supported changed rows mechanically regenerated; other source changes fail closed."
+}

@@ -17,8 +17,8 @@
     "https://www.cybergym.io/cybergym/",
     "https://www.cybergym.io/assets/js/leaderboard.js"
   ],
-  "retrieved": "2026-09-14",
-  "newest_row_date": "2026-09-08",
+  "retrieved": "2026-10-05",
+  "newest_row_date": "2026-09-13",
   "snapshot": "sources/cybergym-model-focused/cybergym.json",
   "paper": "https://arxiv.org/abs/2506.02548",
   "repo": "https://github.com/sunblaze-ucb/cybergym",
@@ -26,6 +26,70 @@
   "rows": [
     {
       "rank": 1,
+      "system": "XekRung-1.5-27B-Preview (finetuned from Qwen3.8-27B)",
+      "agent": "XekRung Agent",
+      "model_raw": [
+        "XekRung-1.5-27B-Preview (finetuned from Qwen3.8-27B)"
+      ],
+      "model_ids": [
+        "xekrung-1.5-27b"
+      ],
+      "model_config": "preview; finetuned from Qwen3.8-27B",
+      "score": 88.92,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2026-09-13",
+      "verified": null,
+      "open_source": null,
+      "org": "Alibaba Security",
+      "row_url": "https://alibaba-velldepth.github.io/writeups/model-track.html"
+    },
+    {
+      "rank": 2,
+      "system": "Gemini 3.8 Flash Cyber",
+      "agent": "Google Antigravity",
+      "model_raw": [
+        "Gemini 3.8 Flash Cyber"
+      ],
+      "model_ids": [
+        "gemini-3.8-flash-cyber"
+      ],
+      "model_config": null,
+      "score": 86.26,
+      "score_extra": {
+        "trials": 1
+      },
+      "date": "2026-09-10",
+      "verified": null,
+      "open_source": null,
+      "org": "Google",
+      "row_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/"
+    },
+    {
+      "rank": 3,
+      "system": "ASL-Cyber-Flash (finetuned from DeepSeek-V4-Flash)",
+      "agent": "Claude Code",
+      "model_raw": [
+        "ASL-Cyber-Flash (finetuned from DeepSeek-V4-Flash)"
+      ],
+      "model_ids": [
+        "asl-cyber-flash"
+      ],
+      "model_config": "finetuned from DeepSeek-V4-Flash",
+      "score": 85.87,
+      "score_extra": {
+        "trials": 1,
+        "dynamic": true
+      },
+      "date": "2026-09-03",
+      "verified": null,
+      "open_source": null,
+      "org": "Aeye Security Lab",
+      "row_url": "https://github.com/aeyesec/asl-cyber-flash-submission/"
+    },
+    {
+      "rank": 4,
       "system": "GPT-5.5-Cyber",
       "agent": "OpenAI Agent",
       "model_raw": [
@@ -46,7 +110,7 @@
       "row_url": "https://openai.com/index/daybreak-securing-the-world/"
     },
     {
-      "rank": 2,
+      "rank": 5,
       "system": "GLM-5.3",
       "agent": "Claude Code",
       "model_raw": [
@@ -67,7 +131,7 @@
       "row_url": "https://z.ai/blog/glm-5.3"
     },
     {
-      "rank": 3,
+      "rank": 6,
       "system": "DeepSeek-V4-Pro",
       "agent": "DeepSeek Agent",
       "model_raw": [
@@ -88,7 +152,7 @@
       "row_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813"
     },
     {
-      "rank": 4,
+      "rank": 7,
       "system": "Claude Mythos Preview",
       "agent": "Anthropic Agent",
       "model_raw": [
@@ -109,7 +173,7 @@
       "row_url": "https://www.anthropic.com/claude-mythos-preview-system-card"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "system": "GPT-5.5",
       "agent": "OpenAI Agent",
       "model_raw": [
@@ -130,7 +194,7 @@
       "row_url": "https://openai.com/index/introducing-gpt-5-5"
     },
     {
-      "rank": 6,
+      "rank": 9,
       "system": "Grok 4.6",
       "agent": "Grok Build",
       "model_raw": [
@@ -151,7 +215,7 @@
       "row_url": "https://media.x.ai/v1/website/card-4p6-4cd2dc57.pdf"
     },
     {
-      "rank": 7,
+      "rank": 10,
       "system": "Grok 4.5",
       "agent": "Grok Build",
       "model_raw": [
@@ -172,7 +236,7 @@
       "row_url": "https://cursor.com/resources/grok-4-5-model-card.pdf"
     },
     {
-      "rank": 8,
+      "rank": 11,
       "system": "GPT-5.4",
       "agent": "OpenAI Agent",
       "model_raw": [
@@ -193,7 +257,7 @@
       "row_url": "https://openai.com/index/introducing-gpt-5-5"
     },
     {
-      "rank": 9,
+      "rank": 12,
       "system": "GLM-5.2",
       "agent": "Claude Code",
       "model_raw": [
@@ -214,7 +278,7 @@
       "row_url": "https://z.ai/blog/glm-5.3"
     },
     {
-      "rank": 10,
+      "rank": 13,
       "system": "DeepSeek-V4-Flash",
       "agent": "DeepSeek Agent",
       "model_raw": [
@@ -235,7 +299,7 @@
       "row_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731"
     },
     {
-      "rank": 11,
+      "rank": 14,
       "system": "GLM-5.1",
       "agent": "Claude Code",
       "model_raw": [
@@ -256,7 +320,7 @@
       "row_url": "https://z.ai/blog/glm-5.1"
     },
     {
-      "rank": 12,
+      "rank": 15,
       "system": "Claude Opus 4.6",
       "agent": "Anthropic Agent",
       "model_raw": [
@@ -277,7 +341,7 @@
       "row_url": "https://www.anthropic.com/claude-opus-4-6-system-card"
     },
     {
-      "rank": 13,
+      "rank": 16,
       "system": "GPT-5.4",
       "agent": "Codex CLI",
       "model_raw": [
@@ -298,7 +362,7 @@
       "row_url": "https://z.ai/blog/glm-5.1"
     },
     {
-      "rank": 14,
+      "rank": 17,
       "system": "Claude Sonnet 4.6",
       "agent": "Anthropic Agent",
       "model_raw": [
@@ -319,7 +383,7 @@
       "row_url": "https://www.anthropic.com/claude-sonnet-4-6-system-card"
     },
     {
-      "rank": 15,
+      "rank": 18,
       "system": "Feyospace-v1",
       "agent": "Claude Code",
       "model_raw": [
@@ -340,7 +404,7 @@
       "row_url": "https://arxiv.org/abs/2609.08418"
     },
     {
-      "rank": 16,
+      "rank": 19,
       "system": "Muse Spark 1.1",
       "agent": "Meta Agent",
       "model_raw": [
@@ -361,7 +425,7 @@
       "row_url": "https://ai.meta.com/static-resource/muse-spark-1-1-evaluation-report"
     },
     {
-      "rank": 17,
+      "rank": 20,
       "system": "DeepSeek-V4-Pro Preview",
       "agent": "Claude Code",
       "model_raw": [
@@ -382,7 +446,7 @@
       "row_url": "https://github.com/XDxAI/cybergym-deepseek-submission-2026"
     },
     {
-      "rank": 18,
+      "rank": 21,
       "system": "Feyospace-v0",
       "agent": "Claude Code",
       "model_raw": [
@@ -403,7 +467,7 @@
       "row_url": "https://arxiv.org/abs/2609.08418"
     },
     {
-      "rank": 19,
+      "rank": 22,
       "system": "Claude Opus 4.5",
       "agent": "Anthropic Agent",
       "model_raw": [
@@ -424,7 +488,7 @@
       "row_url": "https://www.anthropic.com/claude-opus-4-5-system-card"
     },
     {
-      "rank": 20,
+      "rank": 23,
       "system": "Muse Spark",
       "agent": "Meta Agent",
       "model_raw": [
@@ -445,7 +509,7 @@
       "row_url": "https://ai.meta.com/static-resource/muse-spark-safety-and-preparedness-report"
     },
     {
-      "rank": 21,
+      "rank": 24,
       "system": "GLM-5",
       "agent": "Claude Code",
       "model_raw": [
@@ -466,7 +530,7 @@
       "row_url": "https://z.ai/blog/glm-5"
     },
     {
-      "rank": 22,
+      "rank": 25,
       "system": "Kimi K2.5",
       "agent": "Kimi Agent",
       "model_raw": [
@@ -487,7 +551,7 @@
       "row_url": "https://arxiv.org/abs/2602.02276"
     },
     {
-      "rank": 23,
+      "rank": 26,
       "system": "GPT-5",
       "agent": "OpenHands",
       "model_raw": [
@@ -508,7 +572,7 @@
       "row_url": null
     },
     {
-      "rank": 24,
+      "rank": 27,
       "system": "Gemini 3.1 Pro",
       "agent": "Gemini CLI",
       "model_raw": [
@@ -529,7 +593,7 @@
       "row_url": "https://z.ai/blog/glm-5.1"
     },
     {
-      "rank": 25,
+      "rank": 28,
       "system": "Claude Sonnet 4.5",
       "agent": "Anthropic Agent",
       "model_raw": [
@@ -550,7 +614,7 @@
       "row_url": "https://www.anthropic.com/claude-sonnet-4-5-system-card"
     },
     {
-      "rank": 26,
+      "rank": 29,
       "system": "Claude Opus 4.1",
       "agent": "Anthropic Agent",
       "model_raw": [
@@ -571,7 +635,7 @@
       "row_url": "https://www.anthropic.com/claude-sonnet-4-5-system-card"
     },
     {
-      "rank": 27,
+      "rank": 30,
       "system": "GLM-4.7",
       "agent": "Claude Code",
       "model_raw": [
@@ -592,7 +656,7 @@
       "row_url": "https://z.ai/blog/glm-5"
     },
     {
-      "rank": 28,
+      "rank": 31,
       "system": "Claude Sonnet 4",
       "agent": "Anthropic Agent",
       "model_raw": [
@@ -613,7 +677,7 @@
       "row_url": "https://www.anthropic.com/claude-sonnet-4-5-system-card"
     },
     {
-      "rank": 29,
+      "rank": 32,
       "system": "Claude Sonnet 4",
       "agent": "OpenHands",
       "model_raw": [
@@ -635,7 +699,7 @@
       "row_url": null
     },
     {
-      "rank": 30,
+      "rank": 33,
       "system": "Claude Sonnet 3.7",
       "agent": "Anthropic Agent",
       "model_raw": [
@@ -656,7 +720,7 @@
       "row_url": "https://www.anthropic.com/claude-sonnet-4-5-system-card"
     },
     {
-      "rank": 31,
+      "rank": 34,
       "system": "Claude Sonnet 3.7",
       "agent": "OpenHands",
       "model_raw": [
@@ -678,7 +742,7 @@
       "row_url": null
     },
     {
-      "rank": 32,
+      "rank": 35,
       "system": "GPT-4.1",
       "agent": "OpenHands",
       "model_raw": [
@@ -700,7 +764,7 @@
       "row_url": null
     },
     {
-      "rank": 33,
+      "rank": 36,
       "system": "GPT-4.1",
       "agent": "Cybench",
       "model_raw": [
@@ -722,7 +786,7 @@
       "row_url": null
     },
     {
-      "rank": 34,
+      "rank": 37,
       "system": "GPT-4.1",
       "agent": "Codex CLI",
       "model_raw": [
@@ -744,7 +808,7 @@
       "row_url": null
     },
     {
-      "rank": 35,
+      "rank": 38,
       "system": "GPT-4.1",
       "agent": "ENiGMA",
       "model_raw": [
@@ -766,7 +830,7 @@
       "row_url": null
     },
     {
-      "rank": 36,
+      "rank": 39,
       "system": "Gemini 2.5 Flash Preview",
       "agent": "OpenHands",
       "model_raw": [
@@ -788,7 +852,7 @@
       "row_url": null
     },
     {
-      "rank": 37,
+      "rank": 40,
       "system": "DeepSeek-V3",
       "agent": "OpenHands",
       "model_raw": [
@@ -810,7 +874,7 @@
       "row_url": null
     },
     {
-      "rank": 38,
+      "rank": 41,
       "system": "o4-mini",
       "agent": "OpenHands",
       "model_raw": [
@@ -832,7 +896,7 @@
       "row_url": null
     },
     {
-      "rank": 39,
+      "rank": 42,
       "system": "R2E-Gym-32B",
       "agent": "OpenHands",
       "model_raw": [
@@ -854,7 +918,7 @@
       "row_url": null
     },
     {
-      "rank": 40,
+      "rank": 43,
       "system": "Qwen3-235B-A22B",
       "agent": "OpenHands",
       "model_raw": [
@@ -876,7 +940,7 @@
       "row_url": null
     },
     {
-      "rank": 41,
+      "rank": 44,
       "system": "OpenHands-LM-32B",
       "agent": "OpenHands",
       "model_raw": [
@@ -898,7 +962,7 @@
       "row_url": null
     },
     {
-      "rank": 42,
+      "rank": 45,
       "system": "SWE-Gym-32B",
       "agent": "OpenHands",
       "model_raw": [

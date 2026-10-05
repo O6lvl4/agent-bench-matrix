@@ -1,0 +1,729 @@
+{
+  "retrieved": "2026-10-05",
+  "tables": [
+    {
+      "id": "browsecomp-plus",
+      "status": "refreshed_changed",
+      "rows_before": 84,
+      "rows_after": 85,
+      "rows_changed_or_added": 85,
+      "rows_removed_or_changed": 84,
+      "sources": [
+        {
+          "url": "https://tevatron-browsecomp-plus.hf.space/data/leaderboard.json",
+          "status": "200",
+          "error": "",
+          "bytes": 48681,
+          "sha256": "9b7742492e752c22a4bdb7d8b5ce2844167b4ae12026b74ffe89c92e02f26324"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Tevatron/BrowseComp-Plus-results/resolve/main/agent_results.csv",
+          "status": "200",
+          "error": "",
+          "bytes": 18975,
+          "sha256": "7b68ade4b54260902d3ef353b8f217087ecbe1a432a442479e59e3c214bfaf12"
+        }
+      ],
+      "snapshot": "sources/browsecomp-plus/leaderboard.json",
+      "snapshot_sha256": "f351fc9555d22d3014d71b03f14d2e479707b12c11622ee77ac0868e5e74d116"
+    },
+    {
+      "id": "cve-bench-one-day",
+      "status": "refreshed_unchanged",
+      "rows_before": 2,
+      "rows_after": 2,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://cvebench.com/index-wf61xq3j.js",
+          "status": "200",
+          "error": "",
+          "bytes": 3992,
+          "sha256": "3ea79483ba2c9201b5bbcf89e64e39bf774a4b67eb03b5fc305732f00d6a0fc1"
+        }
+      ],
+      "snapshot": "sources/cve-bench-one-day/leaderboard-entries.json",
+      "snapshot_sha256": "11ab91c1b0762104c0c224cc20b6d7dcd14b1781e46fa42abbe70bfdcf0ccf64"
+    },
+    {
+      "id": "cve-bench-zero-day",
+      "status": "refreshed_unchanged",
+      "rows_before": 2,
+      "rows_after": 2,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://cvebench.com/index-wf61xq3j.js",
+          "status": "200",
+          "error": "",
+          "bytes": 3992,
+          "sha256": "3ea79483ba2c9201b5bbcf89e64e39bf774a4b67eb03b5fc305732f00d6a0fc1"
+        }
+      ],
+      "snapshot": "sources/cve-bench-zero-day/leaderboard-entries.json",
+      "snapshot_sha256": "11ab91c1b0762104c0c224cc20b6d7dcd14b1781e46fa42abbe70bfdcf0ccf64"
+    },
+    {
+      "id": "cybench",
+      "status": "refreshed_unchanged",
+      "rows_before": 24,
+      "rows_after": 24,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://cybench.github.io/data/leaderboard.csv",
+          "status": "200",
+          "error": "",
+          "bytes": 1179,
+          "sha256": "846bb17951ec9f7c103486d7c0344974decd2d57f1039df26f9e84986704da45"
+        }
+      ],
+      "snapshot": "sources/cybench/leaderboard.csv",
+      "snapshot_sha256": "846bb17951ec9f7c103486d7c0344974decd2d57f1039df26f9e84986704da45"
+    },
+    {
+      "id": "cybergym-agent-focused",
+      "status": "refreshed_changed",
+      "rows_before": 32,
+      "rows_after": 35,
+      "rows_changed_or_added": 13,
+      "rows_removed_or_changed": 10,
+      "sources": [
+        {
+          "url": "https://www.cybergym.io/assets/data/cybergym.json",
+          "status": "200",
+          "error": "",
+          "bytes": 33495,
+          "sha256": "6a354b2ed20dc168fc0987ba2a80c9cbcab180f8e6706c94b970a27a39b91c0c"
+        }
+      ],
+      "snapshot": "sources/cybergym-agent-focused/cybergym.json",
+      "snapshot_sha256": "7719dbaa1203a4ac67cf20f8a4c8c4ea2d35c43d6a3d4ccbd0c318db390048e6"
+    },
+    {
+      "id": "cybergym-e2e",
+      "status": "refreshed_unchanged",
+      "rows_before": 9,
+      "rows_after": 9,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://www.cybergym.io/assets/data/cybergym-e2e.json",
+          "status": "200",
+          "error": "",
+          "bytes": 2402,
+          "sha256": "55c242382d818c8149faf09a7b32ff983176fa00d0259c7e09dcba076d6a175d"
+        }
+      ],
+      "snapshot": "sources/cybergym-e2e/cybergym-e2e.json",
+      "snapshot_sha256": "55c242382d818c8149faf09a7b32ff983176fa00d0259c7e09dcba076d6a175d"
+    },
+    {
+      "id": "cybergym-model-focused",
+      "status": "refreshed_changed",
+      "rows_before": 42,
+      "rows_after": 45,
+      "rows_changed_or_added": 45,
+      "rows_removed_or_changed": 42,
+      "sources": [
+        {
+          "url": "https://www.cybergym.io/assets/data/cybergym.json",
+          "status": "200",
+          "error": "",
+          "bytes": 33495,
+          "sha256": "6a354b2ed20dc168fc0987ba2a80c9cbcab180f8e6706c94b970a27a39b91c0c"
+        }
+      ],
+      "snapshot": "sources/cybergym-model-focused/cybergym.json",
+      "snapshot_sha256": "7719dbaa1203a4ac67cf20f8a4c8c4ea2d35c43d6a3d4ccbd0c318db390048e6"
+    },
+    {
+      "id": "ecommerce-bench",
+      "status": "refreshed_unchanged",
+      "rows_before": 21,
+      "rows_after": 21,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://ecbench.github.io/showcase_data.json",
+          "status": "200",
+          "error": "",
+          "bytes": 389797,
+          "sha256": "92f5a96c47517afb176efaf87778b720c11ebc4c329663646c55f18b1fbfc33f"
+        }
+      ],
+      "snapshot": "sources/ecommerce-bench/showcase_data_models.json",
+      "snapshot_sha256": "b4de26fc16469afe5200ec495ffe4879a9dddffe6eef38e7c3483d9b67a61f5b"
+    },
+    {
+      "id": "exploitgym",
+      "status": "refreshed_unchanged",
+      "rows_before": 20,
+      "rows_after": 20,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://www.cybergym.io/assets/data/exploitgym.json",
+          "status": "200",
+          "error": "",
+          "bytes": 9303,
+          "sha256": "1cf3b94633364a7cb76c35dc502f21fbf889ee02b639f3a20042960a0a9b2533"
+        }
+      ],
+      "snapshot": "sources/exploitgym/exploitgym.json",
+      "snapshot_sha256": "1cf3b94633364a7cb76c35dc502f21fbf889ee02b639f3a20042960a0a9b2533"
+    },
+    {
+      "id": "hal-core-bench-hard",
+      "status": "refreshed_unchanged",
+      "rows_before": 49,
+      "rows_after": 49,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://hal.cs.princeton.edu/corebench_hard",
+          "status": "200",
+          "error": "",
+          "bytes": 358032,
+          "sha256": "4a5daeb577821900a36d4a0802add7d997a3c06eceedf13c1b3ea5db206eb648"
+        }
+      ],
+      "snapshot": "sources/hal-core-bench-hard/leaderboard-table.html",
+      "snapshot_sha256": "158c725b5628663215ce87d850afc65c590664569953e8a862af5b88f26a462a"
+    },
+    {
+      "id": "hal-scicode",
+      "status": "refreshed_unchanged",
+      "rows_before": 33,
+      "rows_after": 33,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://hal.cs.princeton.edu/scicode",
+          "status": "200",
+          "error": "",
+          "bytes": 291810,
+          "sha256": "1004265cf3a21120ea7a7d70c4a073364b9f0a740984e193513b7049f0f7aead"
+        }
+      ],
+      "snapshot": "sources/hal-scicode/leaderboard-table.html",
+      "snapshot_sha256": "06f6fc28a3c103ab7997d8e1722ccee1ce134bf8657106fdd1ad6c32e9fcb22a"
+    },
+    {
+      "id": "hal-scienceagentbench",
+      "status": "refreshed_unchanged",
+      "rows_before": 23,
+      "rows_after": 23,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://hal.cs.princeton.edu/scienceagentbench",
+          "status": "200",
+          "error": "",
+          "bytes": 196575,
+          "sha256": "2fddd1653787e3e364c623ff8a182a968ee1fb5f3fa4f9a53fb35274d0c7d767"
+        }
+      ],
+      "snapshot": "sources/hal-scienceagentbench/leaderboard-table.html",
+      "snapshot_sha256": "a3c629b6d214900921646bd0e6d30c90489cb6a6ab9a3cb9eb8c1e8370c16af0"
+    },
+    {
+      "id": "metr-time-horizon-1.0",
+      "status": "refreshed_unchanged",
+      "rows_before": 33,
+      "rows_after": 33,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://metr.org/assets/benchmark_results_1_0.yaml",
+          "status": "200",
+          "error": "",
+          "bytes": 14328,
+          "sha256": "f15fd2f13cd8d28f06f5430fabf21dcd1284193ec152bdedc34e11dcc525df66"
+        }
+      ],
+      "snapshot": "sources/metr-time-horizon-1.0/benchmark_results_1_0.yaml",
+      "snapshot_sha256": "f15fd2f13cd8d28f06f5430fabf21dcd1284193ec152bdedc34e11dcc525df66"
+    },
+    {
+      "id": "metr-time-horizon",
+      "status": "refreshed_unchanged",
+      "rows_before": 26,
+      "rows_after": 26,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://metr.org/assets/benchmark_results_1_1.yaml",
+          "status": "200",
+          "error": "",
+          "bytes": 16255,
+          "sha256": "aae31902b0519a4da73e16643915e5e8aca13cd3315c3aac893ce3d6dfe92ad9"
+        }
+      ],
+      "snapshot": "sources/metr-time-horizon/benchmark_results_1_1.yaml",
+      "snapshot_sha256": "aae31902b0519a4da73e16643915e5e8aca13cd3315c3aac893ce3d6dfe92ad9"
+    },
+    {
+      "id": "mind2web-2",
+      "status": "refreshed_unchanged",
+      "rows_before": 13,
+      "rows_after": 13,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://osu-nlp-group.github.io/Mind2Web-2/leaderboard_data.json",
+          "status": "200",
+          "error": "",
+          "bytes": 7783,
+          "sha256": "ed954c3b30c7e32c26eb58d7a6612b21537db82fa6c51462455937036cb08702"
+        }
+      ],
+      "snapshot": "sources/mind2web-2/leaderboard_data.json",
+      "snapshot_sha256": "2f3370afc3b20e7f0c1964cc915f433561258ba3588525412bc6f89d45507504"
+    },
+    {
+      "id": "mle-bench-additional",
+      "status": "refreshed_unchanged",
+      "rows_before": 2,
+      "rows_after": 2,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/openai/mle-bench/main/README.md",
+          "status": "200",
+          "error": "",
+          "bytes": 20988,
+          "sha256": "586bbc19cb2a3e11be61021866ef6436cf4b4d935bb1db088984b567b76595bb"
+        }
+      ],
+      "snapshot": "sources/mle-bench-additional/README.md",
+      "snapshot_sha256": "586bbc19cb2a3e11be61021866ef6436cf4b4d935bb1db088984b567b76595bb"
+    },
+    {
+      "id": "mle-bench",
+      "status": "refreshed_unchanged",
+      "rows_before": 28,
+      "rows_after": 28,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/openai/mle-bench/main/README.md",
+          "status": "200",
+          "error": "",
+          "bytes": 20988,
+          "sha256": "586bbc19cb2a3e11be61021866ef6436cf4b4d935bb1db088984b567b76595bb"
+        }
+      ],
+      "snapshot": "sources/mle-bench/README.md",
+      "snapshot_sha256": "586bbc19cb2a3e11be61021866ef6436cf4b4d935bb1db088984b567b76595bb"
+    },
+    {
+      "id": "paperbench-code-dev",
+      "status": "refreshed_unchanged",
+      "rows_before": 1,
+      "rows_after": 1,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/openai/preparedness/main/project/paperbench/README.md",
+          "status": "200",
+          "error": "",
+          "bytes": 20104,
+          "sha256": "b50041ce9329b4a5a779c7114b8c21f6eab93cae91d309f5924f6ebe06f470cb"
+        }
+      ],
+      "snapshot": "sources/paperbench-code-dev/README.md",
+      "snapshot_sha256": "b50041ce9329b4a5a779c7114b8c21f6eab93cae91d309f5924f6ebe06f470cb"
+    },
+    {
+      "id": "paperbench",
+      "status": "refreshed_unchanged",
+      "rows_before": 10,
+      "rows_after": 10,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/openai/preparedness/main/project/paperbench/README.md",
+          "status": "200",
+          "error": "",
+          "bytes": 20104,
+          "sha256": "b50041ce9329b4a5a779c7114b8c21f6eab93cae91d309f5924f6ebe06f470cb"
+        }
+      ],
+      "snapshot": "sources/paperbench/README.md",
+      "snapshot_sha256": "b50041ce9329b4a5a779c7114b8c21f6eab93cae91d309f5924f6ebe06f470cb"
+    },
+    {
+      "id": "sec-bench-poc-generation",
+      "status": "refreshed_unchanged",
+      "rows_before": 3,
+      "rows_after": 3,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://sec-bench.github.io/",
+          "status": "200",
+          "error": "",
+          "bytes": 219225,
+          "sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5"
+        }
+      ],
+      "snapshot": "sources/sec-bench-poc-generation/leaderboard-table.html",
+      "snapshot_sha256": "dfad75302168ae0f56a92abf31724b200954bbe8c2749e29cc5fe30a50ab0fd4"
+    },
+    {
+      "id": "sec-bench-pro-firefox",
+      "status": "refreshed_unchanged",
+      "rows_before": 6,
+      "rows_after": 6,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://sec-bench.github.io/",
+          "status": "200",
+          "error": "",
+          "bytes": 219225,
+          "sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5"
+        }
+      ],
+      "snapshot": "sources/sec-bench-pro-firefox/leaderboard-table.html",
+      "snapshot_sha256": "b6ea0cd5c55c8dce9e92d7b1d0775e6f2348946e57a85453c4da8415634a091b"
+    },
+    {
+      "id": "sec-bench-pro-linux",
+      "status": "refreshed_unchanged",
+      "rows_before": 6,
+      "rows_after": 6,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://sec-bench.github.io/",
+          "status": "200",
+          "error": "",
+          "bytes": 219225,
+          "sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5"
+        }
+      ],
+      "snapshot": "sources/sec-bench-pro-linux/leaderboard-table.html",
+      "snapshot_sha256": "ba74fded0bbac0c9787540f25b8e3b9049ea03aec783dee44f7203c70c76c70a"
+    },
+    {
+      "id": "sec-bench-pro-overall",
+      "status": "refreshed_unchanged",
+      "rows_before": 6,
+      "rows_after": 6,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://sec-bench.github.io/",
+          "status": "200",
+          "error": "",
+          "bytes": 219225,
+          "sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5"
+        }
+      ],
+      "snapshot": "sources/sec-bench-pro-overall/leaderboard-table.html",
+      "snapshot_sha256": "c6dc359c547b526dd924cbce7f8fe9d50f8a12144f37ab40072949e6a619b035"
+    },
+    {
+      "id": "sec-bench-pro-v8",
+      "status": "refreshed_unchanged",
+      "rows_before": 6,
+      "rows_after": 6,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://sec-bench.github.io/",
+          "status": "200",
+          "error": "",
+          "bytes": 219225,
+          "sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5"
+        }
+      ],
+      "snapshot": "sources/sec-bench-pro-v8/leaderboard-table.html",
+      "snapshot_sha256": "312106428ac7308e21d496db029efa9601eef48c99ba25388985616fb6beff08"
+    },
+    {
+      "id": "sec-bench-vulnerability-patching",
+      "status": "refreshed_unchanged",
+      "rows_before": 5,
+      "rows_after": 5,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://sec-bench.github.io/",
+          "status": "200",
+          "error": "",
+          "bytes": 219225,
+          "sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5"
+        }
+      ],
+      "snapshot": "sources/sec-bench-vulnerability-patching/leaderboard-table.html",
+      "snapshot_sha256": "175afb4cfbc17758d115624aa7f3ca770fc67747a20d0a4f5a1abf32cd934b3c"
+    },
+    {
+      "id": "swe-marathon-v1-0",
+      "status": "refreshed_unchanged",
+      "rows_before": 16,
+      "rows_after": 16,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://www.swe-marathon.org/",
+          "status": "200",
+          "error": "",
+          "bytes": 4714,
+          "sha256": "a320a7d2c803329cf4ff749bcd231cd5d5c82bd555ec7e4d9863e90a219d6560"
+        },
+        {
+          "url": "https://www.swe-marathon.org/assets/index-BqKcRchL.js",
+          "status": "200",
+          "error": "",
+          "bytes": 5669111,
+          "sha256": "6336c4e9781372d1d1dd2be4c4ab5bdbb9e0c95340479bb582ad8979e29e2593"
+        }
+      ],
+      "snapshot": "sources/swe-marathon-v1-0/leaderboard_v1_0.json",
+      "snapshot_sha256": "20e05de9291b96039d2b66bbf4700e817ae79d995fde3a8dd501ee15569ce839"
+    },
+    {
+      "id": "swe-marathon-v1-1",
+      "status": "refreshed_changed",
+      "rows_before": 18,
+      "rows_after": 24,
+      "rows_changed_or_added": 24,
+      "rows_removed_or_changed": 18,
+      "sources": [
+        {
+          "url": "https://www.swe-marathon.org/",
+          "status": "200",
+          "error": "",
+          "bytes": 4714,
+          "sha256": "a320a7d2c803329cf4ff749bcd231cd5d5c82bd555ec7e4d9863e90a219d6560"
+        },
+        {
+          "url": "https://www.swe-marathon.org/assets/index-BqKcRchL.js",
+          "status": "200",
+          "error": "",
+          "bytes": 5669111,
+          "sha256": "6336c4e9781372d1d1dd2be4c4ab5bdbb9e0c95340479bb582ad8979e29e2593"
+        }
+      ],
+      "snapshot": "sources/swe-marathon-v1-1/task_results_trimmed.json",
+      "snapshot_sha256": "de3494f7893d1bf2ca27692048da0a33746740fbdfe3a44a2c67e3f633542b04"
+    },
+    {
+      "id": "vending-bench-2",
+      "status": "refreshed_changed",
+      "rows_before": 63,
+      "rows_after": 67,
+      "rows_changed_or_added": 66,
+      "rows_removed_or_changed": 62,
+      "sources": [
+        {
+          "url": "https://andonlabs.com/evals/vending-bench-2",
+          "status": "200",
+          "error": "",
+          "bytes": 82749,
+          "sha256": "87f89a1e764aa0c213b1cad7075a2ea37879c19c7582d63ae6df785b52c00ca5"
+        },
+        {
+          "url": "https://andonlabs.com/_app/immutable/nodes/27.CdaLjywI.js",
+          "status": "200",
+          "error": "",
+          "bytes": 46916,
+          "sha256": "5f9bbbc4ae620fb5728d1a7416adb02f96d95a5d984e5f399a52131892617b5a"
+        },
+        {
+          "url": "https://andonlabs.com/_app/immutable/chunks/DVaUlUWR.js",
+          "status": "200",
+          "error": "",
+          "bytes": 699237,
+          "sha256": "3ac7fe5d258aba67f19cc4cdfb86669c948725d77f6e515cfe408120c990c7f1"
+        },
+        {
+          "url": "https://andonlabs.com/_app/immutable/chunks/D6mQEJpA.js",
+          "status": "200",
+          "error": "",
+          "bytes": 4898,
+          "sha256": "7c13b9e41f27436e251bbc18204f13cb358ea9ba1579e0d0445315fa40551623"
+        }
+      ],
+      "snapshot": "sources/vending-bench-2/vb2_data.json",
+      "snapshot_sha256": "0287be89a8b0b88ca3e56313cded373f3409225d5178bcd8bc76921d36d6bdd7"
+    },
+    {
+      "id": "vending-bench",
+      "status": "refreshed_unchanged",
+      "rows_before": 27,
+      "rows_after": 27,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://andonlabs.com/evals/vending-bench",
+          "status": "200",
+          "error": "",
+          "bytes": 63339,
+          "sha256": "5bee0df1d11adbc0cea90f902e7681d4a1c53ffd5d98ed74cd10a98f5c3557db"
+        },
+        {
+          "url": "https://andonlabs.com/_app/immutable/nodes/26.zOFxseIK.js",
+          "status": "200",
+          "error": "",
+          "bytes": 20273,
+          "sha256": "6e30e598d28ce9b91bf310cc9857856d4e8ef88231ddbaa797238b45fc6e41f8"
+        }
+      ],
+      "snapshot": "sources/vending-bench/leaderboard.tsv",
+      "snapshot_sha256": "78f189e1ad5457e8a087559c23ab4acb7ac7171eafe689130252325484917c95"
+    }
+  ],
+  "gaps": [
+    {
+      "id": "re-bench",
+      "status": "rechecked",
+      "sources": [
+        "https://raw.githubusercontent.com/METR/RE-Bench/main/README.md"
+      ],
+      "snapshots": [
+        "sources/research-audit-2026-10-05/gaps/re-bench-0.md"
+      ],
+      "note": "2026-10-05 に公式 README を再取得。7つの環境ごとの基準値が示されるが、モデル別に順位付けする公開ボードは README に無い。METR Time Horizon の 1.0 / 1.1 は別表として収録済み。"
+    },
+    {
+      "id": "core-bench",
+      "status": "rechecked",
+      "sources": [
+        "https://raw.githubusercontent.com/siegelz/core-bench/main/README.md"
+      ],
+      "snapshots": [
+        "sources/research-audit-2026-10-05/gaps/core-bench-0.md"
+      ],
+      "note": "2026-10-05 に公式 README を再取得。推奨ハーネスと公式ボードは Holistic Agent Leaderboard (HAL) と明記されている。独立ボードではなく、HAL 版を hal-core-bench-hard に収録済み。"
+    },
+    {
+      "id": "browsecomp-zh",
+      "status": "rechecked",
+      "sources": [
+        "https://raw.githubusercontent.com/PALIN2018/BrowseComp-ZH/main/README.md"
+      ],
+      "snapshots": [
+        "sources/research-audit-2026-10-05/gaps/browsecomp-zh-0.md"
+      ],
+      "note": "2026-10-05 に公式 README を再取得。論文時点の結果とデータ・評価手順は掲載されるが、継続更新のリーダーボードへの案内が無い。"
+    },
+    {
+      "id": "bountybench",
+      "status": "rechecked",
+      "sources": [
+        "https://bountybench.github.io/",
+        "https://raw.githubusercontent.com/bountybench/bountybench/main/README.md"
+      ],
+      "snapshots": [
+        "sources/research-audit-2026-10-05/gaps/bountybench-0.html",
+        "sources/research-audit-2026-10-05/gaps/bountybench-1.md"
+      ],
+      "note": "2026-10-05 に再試行。bountybench.github.io は GitHub Pages の HTTP 404 を返す。公式リポジトリの README にも公開リーダーボードの機械可読な結果データへの案内が無いため、現行ボードは取得不可。"
+    },
+    {
+      "id": "vending-bench-arena",
+      "status": "rechecked",
+      "sources": [
+        "https://andonlabs.com/evals/vending-bench-arena"
+      ],
+      "snapshots": [
+        "sources/research-audit-2026-10-05/gaps/vending-bench-arena-0.html"
+      ],
+      "note": "2026-10-05 に再取得。最新 Round #13 を含む対戦ラウンド別の結果で、1ラウンドの参加モデルは2〜3件、相手もラウンドごとに異なる。全モデルを同条件で並べる単一順位表が無いため、Vending-Bench 2 と混合していない。"
+    },
+    {
+      "id": "browsecomp",
+      "status": "partial_recheck",
+      "sources": [
+        "https://raw.githubusercontent.com/openai/simple-evals/main/README.md"
+      ],
+      "snapshots": [
+        "sources/research-audit-2026-10-05/gaps/browsecomp-0.md"
+      ],
+      "note": "simple-evals deprecation reconfirmed; other BrowseComp gap endpoints not independently rechecked"
+    }
+  ],
+  "claims": {
+    "status": "refreshed_unchanged_separate_layer",
+    "claim_id": "sakana-fugu-report",
+    "numeric_cells_checked": 55,
+    "claim_figures_checked": 17,
+    "latest_report_version": "v2",
+    "provenance": "sources/claims/sakana-fugu-report/audit-2026-10-05.json",
+    "notes": "Exact version checked against stored HTML/JSON; no numeric differences. Claims remain excluded from measured tables and fitting."
+  },
+  "failed_old_asset_urls": [
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/DAnYm5vA.js",
+      "status": "404",
+      "error": "",
+      "bytes": 9,
+      "sha256": "e3ebaa16dd9d9b9fc107c42183fb6cf9d22927e1af03dbbdfa0ccc38e4e4ac31"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/nodes/25.CJLlmIs9.js",
+      "status": "404",
+      "error": "",
+      "bytes": 9,
+      "sha256": "e3ebaa16dd9d9b9fc107c42183fb6cf9d22927e1af03dbbdfa0ccc38e4e4ac31"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/nodes/26.kUxgg4v0.js",
+      "status": "404",
+      "error": "",
+      "bytes": 9,
+      "sha256": "e3ebaa16dd9d9b9fc107c42183fb6cf9d22927e1af03dbbdfa0ccc38e4e4ac31"
+    },
+    {
+      "url": "https://www.swe-marathon.org/assets/index-r_3Fj-TG.js",
+      "status": "404",
+      "error": "",
+      "bytes": 79,
+      "sha256": "f68b948039d644fce22f08ebdc0d2b283e225f1aa0362026cb1238dae4cea7f4"
+    }
+  ],
+  "validation": {
+    "tables": 29,
+    "rows": 627,
+    "new_rows": 17,
+    "changed_table_ids": [
+      "browsecomp-plus",
+      "cybergym-agent-focused",
+      "cybergym-model-focused",
+      "swe-marathon-v1-1",
+      "vending-bench-2"
+    ],
+    "date_checks_passed": true,
+    "numeric_checks_passed": true,
+    "notes": "Same source populations and existing baseline/hidden-row exclusions retained. Hashes refer to saved snapshots before any formatting-only normalization."
+  }
+}

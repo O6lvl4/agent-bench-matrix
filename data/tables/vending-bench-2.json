@@ -14,15 +14,16 @@
   "source": "https://andonlabs.com/evals/vending-bench-2",
   "fetched": [
     "https://andonlabs.com/evals/vending-bench-2",
-    "https://andonlabs.com/_app/immutable/chunks/DAnYm5vA.js",
-    "https://andonlabs.com/_app/immutable/nodes/26.kUxgg4v0.js"
+    "https://andonlabs.com/_app/immutable/nodes/27.CdaLjywI.js",
+    "https://andonlabs.com/_app/immutable/chunks/DVaUlUWR.js",
+    "https://andonlabs.com/_app/immutable/chunks/D6mQEJpA.js"
   ],
-  "retrieved": "2026-09-14",
-  "newest_row_date": "2026-09-04",
+  "retrieved": "2026-10-05",
+  "newest_row_date": "2026-09-30",
   "snapshot": "sources/vending-bench-2/vb2_data.json",
   "paper": "https://arxiv.org/abs/2502.15840",
   "repo": null,
-  "notes_ja": "score は開始資金 $500 からの1年後の所持金(複数回の算術平均)、± はボードと同じく標準誤差(std_error)。date はボードの「性能 vs リリース日」グラフが使うモデルのリリース日で、評価日ではない(Grok 4.6 など4件は日付なし)。org と mean_cost_usd はボードの「費用 vs スコア」データの provider と平均費用。New バッジは Claude Fable 5.1 / Gemini 3.8 Flash / GPT-6 Astra。paper は初代 Vending-Bench の論文。",
+  "notes_ja": "score は開始資金 $500 からの1年後の所持金(複数回の算術平均)、± はボードと同じく標準誤差(std_error)。date はボードの「性能 vs リリース日」グラフが使うモデルのリリース日で、評価日ではない(日付が公表されていない3件は null)。org と mean_cost_usd はボードの「費用 vs スコア」データの provider と平均費用。paper は初代 Vending-Bench の論文。",
   "rows": [
     {
       "rank": 1,
@@ -51,6 +52,56 @@
     },
     {
       "rank": 2,
+      "system": "GPT-6 Sol",
+      "agent": null,
+      "model_raw": [
+        "GPT-6 Sol"
+      ],
+      "model_ids": [
+        "gpt-6-sol"
+      ],
+      "model_config": null,
+      "score": 14427.848333333333,
+      "score_extra": {
+        "std_error": 1050.6840635903725,
+        "num_runs": 6,
+        "geomean_money_balance": 14208.638578110926,
+        "geomean_num_runs": 6,
+        "mean_cost_usd": 103.79
+      },
+      "date": "2026-09-22",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "Gemini 4 Argon",
+      "agent": null,
+      "model_raw": [
+        "Gemini 4 Argon"
+      ],
+      "model_ids": [
+        "gemini-4-argon"
+      ],
+      "model_config": null,
+      "score": 13718.158333333333,
+      "score_extra": {
+        "std_error": 3100.0118277133693,
+        "num_runs": 6,
+        "geomean_money_balance": 11726.45551442005,
+        "geomean_num_runs": 6,
+        "mean_cost_usd": 249.14
+      },
+      "date": "2026-09-30",
+      "verified": null,
+      "open_source": null,
+      "org": "Google",
+      "row_url": null
+    },
+    {
+      "rank": 4,
       "system": "Claude Opus 5",
       "agent": null,
       "model_raw": [
@@ -75,7 +126,7 @@
       "row_url": null
     },
     {
-      "rank": 3,
+      "rank": 5,
       "system": "Claude Opus 4.7",
       "agent": null,
       "model_raw": [
@@ -100,7 +151,32 @@
       "row_url": null
     },
     {
-      "rank": 4,
+      "rank": 6,
+      "system": "Grok 4.7",
+      "agent": null,
+      "model_raw": [
+        "Grok 4.7"
+      ],
+      "model_ids": [
+        "grok-4.7"
+      ],
+      "model_config": null,
+      "score": 10536.831666666667,
+      "score_extra": {
+        "std_error": 651.7335705404807,
+        "num_runs": 6,
+        "geomean_money_balance": 10433.20063133981,
+        "geomean_num_runs": 6,
+        "mean_cost_usd": 247.77
+      },
+      "date": "2026-09-21",
+      "verified": null,
+      "open_source": null,
+      "org": "xAI",
+      "row_url": null
+    },
+    {
+      "rank": 7,
       "system": "GPT-5.6 Sol",
       "agent": null,
       "model_raw": [
@@ -125,7 +201,32 @@
       "row_url": null
     },
     {
-      "rank": 5,
+      "rank": 8,
+      "system": "Claude Opus 5.5",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 5.5"
+      ],
+      "model_ids": [
+        "claude-opus-5.5"
+      ],
+      "model_config": null,
+      "score": 9235.248333333331,
+      "score_extra": {
+        "std_error": 784.7233909874087,
+        "num_runs": 6,
+        "geomean_money_balance": 9070.9344824782,
+        "geomean_num_runs": 6,
+        "mean_cost_usd": 475.93
+      },
+      "date": "2026-09-22",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 9,
       "system": "Grok 4.6",
       "agent": null,
       "model_raw": [
@@ -143,14 +244,14 @@
         "geomean_num_runs": 4,
         "mean_cost_usd": 223.22
       },
-      "date": null,
+      "date": "2026-08-07",
       "verified": null,
       "open_source": null,
       "org": "xAI",
       "row_url": null
     },
     {
-      "rank": 6,
+      "rank": 10,
       "system": "GLM-5.2",
       "agent": null,
       "model_raw": [
@@ -175,7 +276,7 @@
       "row_url": null
     },
     {
-      "rank": 7,
+      "rank": 11,
       "system": "GLM-5.3",
       "agent": null,
       "model_raw": [
@@ -200,7 +301,7 @@
       "row_url": null
     },
     {
-      "rank": 8,
+      "rank": 12,
       "system": "Claude Opus 4.6",
       "agent": null,
       "model_raw": [
@@ -225,7 +326,7 @@
       "row_url": null
     },
     {
-      "rank": 9,
+      "rank": 13,
       "system": "GPT-5.5",
       "agent": null,
       "model_raw": [
@@ -250,7 +351,7 @@
       "row_url": null
     },
     {
-      "rank": 10,
+      "rank": 14,
       "system": "GPT-5.6 Terra",
       "agent": null,
       "model_raw": [
@@ -275,7 +376,7 @@
       "row_url": null
     },
     {
-      "rank": 11,
+      "rank": 15,
       "system": "Claude Sonnet 4.6",
       "agent": null,
       "model_raw": [
@@ -300,7 +401,7 @@
       "row_url": null
     },
     {
-      "rank": 12,
+      "rank": 16,
       "system": "Muse Spark 1.1",
       "agent": null,
       "model_raw": [
@@ -325,7 +426,7 @@
       "row_url": null
     },
     {
-      "rank": 13,
+      "rank": 17,
       "system": "Claude Sonnet 5",
       "agent": null,
       "model_raw": [
@@ -350,7 +451,7 @@
       "row_url": null
     },
     {
-      "rank": 14,
+      "rank": 18,
       "system": "Kimi K2.6",
       "agent": null,
       "model_raw": [
@@ -375,7 +476,7 @@
       "row_url": null
     },
     {
-      "rank": 15,
+      "rank": 19,
       "system": "GPT-5.4",
       "agent": null,
       "model_raw": [
@@ -400,7 +501,7 @@
       "row_url": null
     },
     {
-      "rank": 16,
+      "rank": 20,
       "system": "GPT-5.3-Codex",
       "agent": null,
       "model_raw": [
@@ -425,7 +526,7 @@
       "row_url": null
     },
     {
-      "rank": 17,
+      "rank": 21,
       "system": "Claude Opus 4.8 - High",
       "agent": null,
       "model_raw": [
@@ -450,7 +551,7 @@
       "row_url": null
     },
     {
-      "rank": 18,
+      "rank": 22,
       "system": "Claude Fable 5 - High",
       "agent": null,
       "model_raw": [
@@ -475,7 +576,7 @@
       "row_url": null
     },
     {
-      "rank": 19,
+      "rank": 23,
       "system": "GLM-5.1",
       "agent": null,
       "model_raw": [
@@ -500,7 +601,7 @@
       "row_url": null
     },
     {
-      "rank": 20,
+      "rank": 24,
       "system": "Gemini 3 Pro",
       "agent": null,
       "model_raw": [
@@ -525,7 +626,7 @@
       "row_url": null
     },
     {
-      "rank": 21,
+      "rank": 25,
       "system": "Claude Fable 5.1",
       "agent": null,
       "model_raw": [
@@ -550,7 +651,7 @@
       "row_url": null
     },
     {
-      "rank": 22,
+      "rank": 26,
       "system": "Gemini 3.5 Flash",
       "agent": null,
       "model_raw": [
@@ -575,7 +676,7 @@
       "row_url": null
     },
     {
-      "rank": 23,
+      "rank": 27,
       "system": "Kimi K3 (Moonshot)",
       "agent": null,
       "model_raw": [
@@ -600,7 +701,7 @@
       "row_url": null
     },
     {
-      "rank": 24,
+      "rank": 28,
       "system": "Qwen 3.6 Plus",
       "agent": null,
       "model_raw": [
@@ -625,7 +726,7 @@
       "row_url": null
     },
     {
-      "rank": 25,
+      "rank": 29,
       "system": "Gemini 3.8 Flash",
       "agent": null,
       "model_raw": [
@@ -650,7 +751,7 @@
       "row_url": null
     },
     {
-      "rank": 26,
+      "rank": 30,
       "system": "Kimi K2.7 Code",
       "agent": null,
       "model_raw": [
@@ -674,7 +775,7 @@
       "row_url": null
     },
     {
-      "rank": 27,
+      "rank": 31,
       "system": "Claude Fable 5 - Low",
       "agent": null,
       "model_raw": [
@@ -699,7 +800,7 @@
       "row_url": null
     },
     {
-      "rank": 28,
+      "rank": 32,
       "system": "Claude Opus 4.5",
       "agent": null,
       "model_raw": [
@@ -724,7 +825,7 @@
       "row_url": null
     },
     {
-      "rank": 29,
+      "rank": 33,
       "system": "Claude Fable 5 - Max",
       "agent": null,
       "model_raw": [
@@ -749,7 +850,7 @@
       "row_url": null
     },
     {
-      "rank": 30,
+      "rank": 34,
       "system": "Kimi K3 (Fireworks)",
       "agent": null,
       "model_raw": [
@@ -773,7 +874,7 @@
       "row_url": null
     },
     {
-      "rank": 31,
+      "rank": 35,
       "system": "Grok 4.20",
       "agent": null,
       "model_raw": [
@@ -798,7 +899,7 @@
       "row_url": null
     },
     {
-      "rank": 32,
+      "rank": 36,
       "system": "Claude Fable 5 - None",
       "agent": null,
       "model_raw": [
@@ -823,7 +924,7 @@
       "row_url": null
     },
     {
-      "rank": 33,
+      "rank": 37,
       "system": "GLM-5",
       "agent": null,
       "model_raw": [
@@ -848,7 +949,7 @@
       "row_url": null
     },
     {
-      "rank": 34,
+      "rank": 38,
       "system": "Claude Fable 5 - Medium",
       "agent": null,
       "model_raw": [
@@ -873,7 +974,7 @@
       "row_url": null
     },
     {
-      "rank": 35,
+      "rank": 39,
       "system": "Qwen 3.6 Max",
       "agent": null,
       "model_raw": [
@@ -898,7 +999,7 @@
       "row_url": null
     },
     {
-      "rank": 36,
+      "rank": 40,
       "system": "GPT-5.6 Luna",
       "agent": null,
       "model_raw": [
@@ -923,7 +1024,7 @@
       "row_url": null
     },
     {
-      "rank": 37,
+      "rank": 41,
       "system": "Grok 4.5",
       "agent": null,
       "model_raw": [
@@ -948,7 +1049,7 @@
       "row_url": null
     },
     {
-      "rank": 38,
+      "rank": 42,
       "system": "Claude Sonnet 4.5",
       "agent": null,
       "model_raw": [
@@ -973,7 +1074,7 @@
       "row_url": null
     },
     {
-      "rank": 39,
+      "rank": 43,
       "system": "Gemini 3.1 Pro Custom Tools",
       "agent": null,
       "model_raw": [
@@ -998,7 +1099,7 @@
       "row_url": null
     },
     {
-      "rank": 40,
+      "rank": 44,
       "system": "Gemini 3 Flash",
       "agent": null,
       "model_raw": [
@@ -1023,7 +1124,7 @@
       "row_url": null
     },
     {
-      "rank": 41,
+      "rank": 45,
       "system": "GPT-5.2",
       "agent": null,
       "model_raw": [
@@ -1048,7 +1149,7 @@
       "row_url": null
     },
     {
-      "rank": 42,
+      "rank": 46,
       "system": "Deepseek V4 Pro",
       "agent": null,
       "model_raw": [
@@ -1073,7 +1174,7 @@
       "row_url": null
     },
     {
-      "rank": 43,
+      "rank": 47,
       "system": "Claude Opus 4.8 - Max",
       "agent": null,
       "model_raw": [
@@ -1098,7 +1199,7 @@
       "row_url": null
     },
     {
-      "rank": 44,
+      "rank": 48,
       "system": "GLM-4.7",
       "agent": null,
       "model_raw": [
@@ -1123,7 +1224,7 @@
       "row_url": null
     },
     {
-      "rank": 45,
+      "rank": 49,
       "system": "MiniMax-M3",
       "agent": null,
       "model_raw": [
@@ -1147,7 +1248,7 @@
       "row_url": null
     },
     {
-      "rank": 46,
+      "rank": 50,
       "system": "GPT-5.1",
       "agent": null,
       "model_raw": [
@@ -1172,7 +1273,7 @@
       "row_url": null
     },
     {
-      "rank": 47,
+      "rank": 51,
       "system": "Kimi K2.5",
       "agent": null,
       "model_raw": [
@@ -1197,7 +1298,7 @@
       "row_url": null
     },
     {
-      "rank": 48,
+      "rank": 52,
       "system": "Grok 4.1 Fast",
       "agent": null,
       "model_raw": [
@@ -1222,7 +1323,7 @@
       "row_url": null
     },
     {
-      "rank": 49,
+      "rank": 53,
       "system": "DeepSeek-V3.2",
       "agent": null,
       "model_raw": [
@@ -1247,7 +1348,7 @@
       "row_url": null
     },
     {
-      "rank": 50,
+      "rank": 54,
       "system": "Gemini 3.1 Pro",
       "agent": null,
       "model_raw": [
@@ -1272,7 +1373,7 @@
       "row_url": null
     },
     {
-      "rank": 51,
+      "rank": 55,
       "system": "Gemini 2.5 Pro",
       "agent": null,
       "model_raw": [
@@ -1297,7 +1398,7 @@
       "row_url": null
     },
     {
-      "rank": 52,
+      "rank": 56,
       "system": "Gemini 2.5 Flash",
       "agent": null,
       "model_raw": [
@@ -1322,7 +1423,7 @@
       "row_url": null
     },
     {
-      "rank": 53,
+      "rank": 57,
       "system": "Qwen 3.5 35B A3B",
       "agent": null,
       "model_raw": [
@@ -1347,7 +1448,7 @@
       "row_url": null
     },
     {
-      "rank": 54,
+      "rank": 58,
       "system": "Claude Haiku 4.5",
       "agent": null,
       "model_raw": [
@@ -1372,7 +1473,7 @@
       "row_url": null
     },
     {
-      "rank": 55,
+      "rank": 59,
       "system": "Qwen 3.5 27B",
       "agent": null,
       "model_raw": [
@@ -1397,7 +1498,7 @@
       "row_url": null
     },
     {
-      "rank": 56,
+      "rank": 60,
       "system": "MiniMax-M2",
       "agent": null,
       "model_raw": [
@@ -1422,7 +1523,7 @@
       "row_url": null
     },
     {
-      "rank": 57,
+      "rank": 61,
       "system": "Qwen3 Max",
       "agent": null,
       "model_raw": [
@@ -1447,7 +1548,7 @@
       "row_url": null
     },
     {
-      "rank": 58,
+      "rank": 62,
       "system": "Grok 4.3",
       "agent": null,
       "model_raw": [
@@ -1472,7 +1573,7 @@
       "row_url": null
     },
     {
-      "rank": 59,
+      "rank": 63,
       "system": "Qwen 3.5 Plus",
       "agent": null,
       "model_raw": [
@@ -1497,7 +1598,7 @@
       "row_url": null
     },
     {
-      "rank": 60,
+      "rank": 64,
       "system": "Qwen3 235B A22B Thinking",
       "agent": null,
       "model_raw": [
@@ -1522,7 +1623,7 @@
       "row_url": null
     },
     {
-      "rank": 61,
+      "rank": 65,
       "system": "GPT-OSS-120b",
       "agent": null,
       "model_raw": [
@@ -1546,7 +1647,7 @@
       "row_url": null
     },
     {
-      "rank": 62,
+      "rank": 66,
       "system": "MiniMax-M2.5",
       "agent": null,
       "model_raw": [
@@ -1570,7 +1671,7 @@
       "row_url": null
     },
     {
-      "rank": 63,
+      "rank": 67,
       "system": "GPT-5 mini",
       "agent": null,
       "model_raw": [

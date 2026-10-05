@@ -1,7 +1,8 @@
 {
  "source": {
-  "runs": "https://andonlabs.com/_app/immutable/chunks/DAnYm5vA.js (object m.vb2; time_series arrays removed to keep the snapshot small)",
-  "release_dates_costs_new": "https://andonlabs.com/_app/immutable/nodes/26.kUxgg4v0.js (objects I, ct and array so)"
+  "runs": "https://andonlabs.com/_app/immutable/chunks/DVaUlUWR.js (vb2; time_series removed)",
+  "release_dates": "https://andonlabs.com/_app/immutable/chunks/D6mQEJpA.js",
+  "costs": "https://andonlabs.com/_app/immutable/nodes/27.CdaLjywI.js"
  },
  "runs_vb2": {
   "Claude Fable 5 - High": {
@@ -144,6 +145,17 @@
    "final_value_sem": 2093.5784609159264,
    "final_value_ci95": 4103.413783395215,
    "final_value_geomean": 10370.04806441597,
+   "final_value_geomean_n": 6,
+   "time_series_len": 365
+  },
+  "Claude Opus 5.5": {
+   "num_epochs": 6,
+   "num_final_values": 6,
+   "final_value": 9235.248333333331,
+   "final_value_std": 1922.171897145691,
+   "final_value_sem": 784.7233909874087,
+   "final_value_ci95": 1538.057846335321,
+   "final_value_geomean": 9070.9344824782,
    "final_value_geomean_n": 6,
    "time_series_len": 365
   },
@@ -367,6 +379,17 @@
    "final_value_geomean_n": 6,
    "time_series_len": 365
   },
+  "GPT-6 Sol": {
+   "num_epochs": 6,
+   "num_final_values": 6,
+   "final_value": 14427.848333333333,
+   "final_value_std": 2573.6398366703656,
+   "final_value_sem": 1050.6840635903725,
+   "final_value_ci95": 2059.34076463713,
+   "final_value_geomean": 14208.638578110926,
+   "final_value_geomean_n": 6,
+   "time_series_len": 365
+  },
   "GPT-OSS-120b": {
    "num_epochs": 5,
    "num_final_values": 5,
@@ -466,6 +489,17 @@
    "final_value_geomean_n": 6,
    "time_series_len": 365
   },
+  "Gemini 4 Argon": {
+   "num_epochs": 6,
+   "num_final_values": 6,
+   "final_value": 13718.158333333333,
+   "final_value_std": 7593.4471744904295,
+   "final_value_sem": 3100.0118277133693,
+   "final_value_ci95": 6076.023182318204,
+   "final_value_geomean": 11726.45551442005,
+   "final_value_geomean_n": 6,
+   "time_series_len": 365
+  },
   "Grok 4.1 Fast": {
    "num_epochs": 5,
    "num_final_values": 5,
@@ -519,6 +553,17 @@
    "final_value_ci95": 3143.757181031412,
    "final_value_geomean": 8693.095282222388,
    "final_value_geomean_n": 4,
+   "time_series_len": 365
+  },
+  "Grok 4.7": {
+   "num_epochs": 6,
+   "num_final_values": 6,
+   "final_value": 10536.831666666667,
+   "final_value_std": 1596.4146960663643,
+   "final_value_sem": 651.7335705404807,
+   "final_value_ci95": 1277.3977982593422,
+   "final_value_geomean": 10433.20063133981,
+   "final_value_geomean_n": 6,
    "time_series_len": 365
   },
   "Kimi K2.5": {
@@ -717,47 +762,59 @@
   "GLM-4.7": "2025-12-22",
   "Kimi K2.5": "2026-01-27",
   "Claude Opus 4.6": "2026-02-05",
-  "Claude Sonnet 4.6": "2026-02-17",
+  "GPT-5.3-Codex": "2026-02-05",
   "GLM-5": "2026-02-11",
+  "MiniMax-M2.5": "2026-02-12",
   "Qwen 3.5 Plus": "2026-02-16",
+  "Claude Sonnet 4.6": "2026-02-17",
   "Gemini 3.1 Pro": "2026-02-19",
   "Gemini 3.1 Pro Custom Tools": "2026-02-19",
-  "MiniMax-M2.5": "2026-02-12",
-  "GPT-5.3-Codex": "2026-02-05",
   "GPT-5.4": "2026-03-05",
   "Grok 4.20": "2026-03-10",
+  "Grok 4.20 Reasoning": "2026-03-10",
   "Qwen 3.6 Plus": "2026-04-02",
   "GLM-5.1": "2026-04-07",
+  "Gemini Robotics-ER 1.6": "2026-04-14",
   "Claude Opus 4.7": "2026-04-16",
-  "Qwen 3.6 Max": "2026-04-22",
   "Kimi K2.6": "2026-04-20",
+  "Qwen 3.6 Max": "2026-04-22",
   "GPT-5.5": "2026-04-23",
   "Deepseek V4 Pro": "2026-04-24",
   "Grok 4.3": "2026-04-30",
   "Gemini 3.5 Flash": "2026-05-19",
-  "Claude Opus 4.8 - Max": "2026-05-28",
+  "Claude Opus 4.8": "2026-05-28",
   "Claude Opus 4.8 - High": "2026-05-28",
-  "Claude Fable 5 - Max": "2026-06-09",
+  "Claude Opus 4.8 - Max": "2026-05-28",
+  "Claude Fable 5": "2026-06-09",
   "Claude Fable 5 - High": "2026-06-09",
-  "Claude Fable 5 - Medium": "2026-06-09",
   "Claude Fable 5 - Low": "2026-06-09",
+  "Claude Fable 5 - Max": "2026-06-09",
+  "Claude Fable 5 - Medium": "2026-06-09",
   "Claude Fable 5 - None": "2026-06-09",
   "MiniMax-M3": "2026-06-11",
   "Kimi K2.7 Code": "2026-06-12",
   "GLM-5.2": "2026-06-16",
   "Claude Sonnet 5": "2026-06-30",
   "Grok 4.5": "2026-07-08",
+  "GPT-5.6 Luna": "2026-07-09",
   "GPT-5.6 Sol": "2026-07-09",
   "GPT-5.6 Terra": "2026-07-09",
-  "GPT-5.6 Luna": "2026-07-09",
   "Muse Spark 1.1": "2026-07-09",
-  "Kimi K3 (Moonshot)": "2026-07-16",
+  "Kimi K3": "2026-07-16",
   "Kimi K3 (Fireworks)": "2026-07-16",
+  "Kimi K3 (Moonshot)": "2026-07-16",
+  "Gemini 3.6 Flash": "2026-07-21",
   "Claude Opus 5": "2026-07-24",
+  "Grok 4.6": "2026-08-07",
   "GLM-5.3": "2026-08-14",
   "Claude Fable 5.1": "2026-09-01",
   "Gemini 3.8 Flash": "2026-09-02",
-  "GPT-6 Astra": "2026-09-04"
+  "GPT-6 Astra": "2026-09-04",
+  "Grok 4.7": "2026-09-21",
+  "Claude Opus 5.5": "2026-09-22",
+  "GPT-6 Luna": "2026-09-22",
+  "GPT-6 Sol": "2026-09-22",
+  "Gemini 4 Argon": "2026-09-30"
  },
  "costs": {
   "Claude Fable 5 - High": {
@@ -902,6 +959,17 @@
    "avg_output_tokens": 439900,
    "price_per_mtok_in": 5,
    "price_per_mtok_out": 25
+  },
+  "Claude Opus 5.5": {
+   "provider": "Anthropic",
+   "n": 6,
+   "mean_cost": 475.93,
+   "min_cost": 373.1,
+   "max_cost": 544.45,
+   "avg_input_tokens": 114838283,
+   "avg_output_tokens": 828727,
+   "price_per_mtok_in": 4,
+   "price_per_mtok_out": 20
   },
   "Claude Sonnet 4.5": {
    "provider": "Anthropic",
@@ -1123,6 +1191,17 @@
    "price_per_mtok_in": 10,
    "price_per_mtok_out": 50
   },
+  "GPT-6 Sol": {
+   "provider": "OpenAI",
+   "n": 6,
+   "mean_cost": 103.79,
+   "min_cost": 57.34,
+   "max_cost": 140.5,
+   "avg_input_tokens": 49917784,
+   "avg_output_tokens": 395654,
+   "price_per_mtok_in": 2,
+   "price_per_mtok_out": 10
+  },
   "GPT-OSS-120b": {
    "provider": "Fireworks",
    "n": 5,
@@ -1222,6 +1301,17 @@
    "price_per_mtok_in": 0.75,
    "price_per_mtok_out": 3.75
   },
+  "Gemini 4 Argon": {
+   "provider": "Google",
+   "n": 6,
+   "mean_cost": 249.14,
+   "min_cost": 170.68,
+   "max_cost": 354.25,
+   "avg_input_tokens": 61317114,
+   "avg_output_tokens": 193483,
+   "price_per_mtok_in": 4,
+   "price_per_mtok_out": 20
+  },
   "Grok 4.1 Fast": {
    "provider": "xAI",
    "n": 5,
@@ -1274,6 +1364,17 @@
    "max_cost": 230.06,
    "avg_input_tokens": 107935401,
    "avg_output_tokens": 1224076,
+   "price_per_mtok_in": 2,
+   "price_per_mtok_out": 6
+  },
+  "Grok 4.7": {
+   "provider": "xAI",
+   "n": 6,
+   "mean_cost": 247.77,
+   "min_cost": 218.02,
+   "max_cost": 258,
+   "avg_input_tokens": 123131210,
+   "avg_output_tokens": 251745,
    "price_per_mtok_in": 2,
    "price_per_mtok_out": 6
   },
@@ -1420,10 +1521,5 @@
    "price_per_mtok_in": 1.2,
    "price_per_mtok_out": 6
   }
- },
- "new_models": [
-  "Claude Fable 5.1",
-  "Gemini 3.8 Flash",
-  "GPT-6 Astra"
- ]
+ }
 }

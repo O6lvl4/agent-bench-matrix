@@ -17,8 +17,8 @@
     "https://swe-bench-live.github.io/leaderboard.js",
     "https://swe-bench-live.github.io/"
   ],
-  "retrieved": "2026-09-14",
-  "newest_row_date": "2026-09-09",
+  "retrieved": "2026-10-05",
+  "newest_row_date": "2026-09-27",
   "snapshot": "sources/swe-bench-live-lite/reports-0605_lite.json",
   "paper": "https://arxiv.org/abs/2505.23419",
   "repo": "https://github.com/microsoft/SWE-bench-Live",
@@ -26,6 +26,50 @@
   "rows": [
     {
       "rank": 1,
+      "system": "Slingshot-v3.4.0 + GPT-5.6-Sol",
+      "agent": "Slingshot-v3.4.0",
+      "model_raw": [
+        "GPT-5.6-Sol"
+      ],
+      "model_ids": [
+        "gpt-5.6-sol"
+      ],
+      "model_config": null,
+      "score": 70.3,
+      "score_extra": {
+        "resolved_count": 211,
+        "num_valid_inst": 300
+      },
+      "date": "2026-09-26",
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://github.com/SWE-bench-Live/submission/tree/main/submissions/lite/sapient-slingshot-agent/v3.4.0/gpt-5.6-sol"
+    },
+    {
+      "rank": 2,
+      "system": "TianxiCode + Deepseek-v4.1-Flash",
+      "agent": "TianxiCode",
+      "model_raw": [
+        "Deepseek-v4.1-Flash"
+      ],
+      "model_ids": [
+        "deepseek-v4.1-flash"
+      ],
+      "model_config": null,
+      "score": 68.0,
+      "score_extra": {
+        "resolved_count": 204,
+        "num_valid_inst": 300
+      },
+      "date": "2026-09-27",
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://github.com/SWE-bench-Live/submission/tree/main/submissions/lite/tianxicode/deepseek-flash"
+    },
+    {
+      "rank": 3,
       "system": "AMI Agent + Claude-4.6-Opus",
       "agent": "AMI Agent",
       "model_raw": [
@@ -47,7 +91,7 @@
       "row_url": "https://github.com/SWE-bench-Live/submission/tree/main/submissions/lite/ami-agent"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "system": "agav-agent + GPT-5.5 (Medium)",
       "agent": "agav-agent",
       "model_raw": [
@@ -69,7 +113,7 @@
       "row_url": "https://github.com/SWE-bench-Live/submission/blob/main/submissions/lite/agav/gpt-5.5"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "system": "Slingshot-v3.3.0 + GPT-5.6-Sol",
       "agent": "Slingshot-v3.3.0",
       "model_raw": [
@@ -91,7 +135,7 @@
       "row_url": "https://github.com/SWE-bench-Live/submission/tree/main/submissions/lite/sapient-slingshot-agent/v3.3.0/20260831-gpt-5.6-sol"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "system": "SWE-agent + Claude-4.5-Sonnet",
       "agent": "SWE-agent",
       "model_raw": [
@@ -113,7 +157,7 @@
       "row_url": null
     },
     {
-      "rank": 5,
+      "rank": 7,
       "system": "AiWork.Code + Claude-4.8-Opus (xhigh)",
       "agent": "AiWork.Code",
       "model_raw": [
@@ -135,7 +179,7 @@
       "row_url": "https://github.com/SWE-bench-Live/submission/tree/main/submissions/lite/aiwork-code/20260909-opus-4-8-xhigh"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "system": "Slingshot-v3.1.0 + Claude-4.6-Opus",
       "agent": "Slingshot-v3.1.0",
       "model_raw": [
@@ -157,7 +201,7 @@
       "row_url": "https://github.com/SWE-bench-Live/submission/tree/main/submissions/lite/sapient-slingshot-agent/v3.1.0/20260817-opus-4-6"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "system": "OpenHands + Qwen3-Coder-480B-A35B",
       "agent": "OpenHands",
       "model_raw": [
@@ -179,7 +223,7 @@
       "row_url": null
     },
     {
-      "rank": 8,
+      "rank": 10,
       "system": "SWE-agent + GPT5-Thinking (Medium)",
       "agent": "SWE-agent",
       "model_raw": [
@@ -201,7 +245,7 @@
       "row_url": null
     },
     {
-      "rank": 9,
+      "rank": 11,
       "system": "MIT-IBM Agent (BOAD) + SWE-Agent + Seed-OSS-36B",
       "agent": "MIT-IBM Agent (BOAD) + SWE-Agent",
       "model_raw": [
@@ -223,7 +267,7 @@
       "row_url": "https://github.com/SWE-bench-Live/submission/tree/main/submissions/lite/20251221-MITIBM-agent-seedoss36b"
     },
     {
-      "rank": 10,
+      "rank": 12,
       "system": "SWE-agent + Claude 3.7 Sonnet",
       "agent": "SWE-agent",
       "model_raw": [
@@ -245,7 +289,7 @@
       "row_url": null
     },
     {
-      "rank": 11,
+      "rank": 13,
       "system": "OpenHands + Claude 3.7 Sonnet",
       "agent": "OpenHands",
       "model_raw": [
@@ -267,7 +311,7 @@
       "row_url": null
     },
     {
-      "rank": 12,
+      "rank": 14,
       "system": "SWE-agent + GPT 4.1",
       "agent": "SWE-agent",
       "model_raw": [
@@ -289,7 +333,7 @@
       "row_url": null
     },
     {
-      "rank": 13,
+      "rank": 15,
       "system": "SWE-agent + DeepSeek V3",
       "agent": "SWE-agent",
       "model_raw": [
@@ -311,7 +355,7 @@
       "row_url": null
     },
     {
-      "rank": 14,
+      "rank": 16,
       "system": "Agentless + DeepSeek V3",
       "agent": "Agentless",
       "model_raw": [
@@ -333,7 +377,7 @@
       "row_url": null
     },
     {
-      "rank": 15,
+      "rank": 17,
       "system": "OpenHands + DeepSeek V3",
       "agent": "OpenHands",
       "model_raw": [
@@ -355,7 +399,7 @@
       "row_url": null
     },
     {
-      "rank": 16,
+      "rank": 18,
       "system": "Slingshot-v2.6.0 + Claude-4.5-Sonnet",
       "agent": "Slingshot-v2.6.0",
       "model_raw": [
@@ -377,7 +421,7 @@
       "row_url": "https://github.com/SWE-bench-Live/submission/tree/main/submissions/lite/sapient-slingshot-agent/v2.6.0/20260629-claude-4.5"
     },
     {
-      "rank": 17,
+      "rank": 19,
       "system": "Agentless + GPT 4.1",
       "agent": "Agentless",
       "model_raw": [
@@ -399,7 +443,7 @@
       "row_url": null
     },
     {
-      "rank": 18,
+      "rank": 20,
       "system": "Agentless + GPT 4o",
       "agent": "Agentless",
       "model_raw": [
@@ -421,7 +465,7 @@
       "row_url": null
     },
     {
-      "rank": 19,
+      "rank": 21,
       "system": "Agentless + Claude 3.7 Sonnet",
       "agent": "Agentless",
       "model_raw": [
@@ -443,7 +487,7 @@
       "row_url": null
     },
     {
-      "rank": 20,
+      "rank": 22,
       "system": "OpenHands + GPT 4.1",
       "agent": "OpenHands",
       "model_raw": [
@@ -465,7 +509,7 @@
       "row_url": null
     },
     {
-      "rank": 21,
+      "rank": 23,
       "system": "SWE-agent + GPT 4o",
       "agent": "SWE-agent",
       "model_raw": [
@@ -487,7 +531,7 @@
       "row_url": null
     },
     {
-      "rank": 22,
+      "rank": 24,
       "system": "OpenHands + GPT 4o",
       "agent": "OpenHands",
       "model_raw": [

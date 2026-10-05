@@ -1,11 +1,13 @@
 {
- "source": "https://www.mercor.com/apex/apex-agents-leaderboard/management-consultant-agent/ (__NEXT_DATA__ props.pageProps.leaderboardData; per-task grade_results/trajectory fields dropped)",
+ "source": "https://www.mercor.com/apex/apex-agents-leaderboard/management-consultant-agent/ (__NEXT_DATA__ props.pageProps; task trajectories omitted)",
  "domain": {
   "title": "Management Consultant",
-  "slug": "management-consultant-agent",
-  "numTasks": 160,
+  "category": "Consulting",
   "date": "Jan 2026",
-  "description": "Analyzes industries, evaluates markets, and builds strategic or financial models to guide client decisions. Work often includes preparing presentations, drafting reports, and synthesizing research into actionable recommendations."
+  "slug": "management-consultant-agent",
+  "leaderboard": "apex-agents-leaderboard",
+  "benchmarkDisplayName": "APEX-Agents",
+  "numTasks": 80
  },
  "leaderboardData": [
   {
@@ -88,10 +90,10 @@
    "model_display_name": "Gemini 3.8 Flash",
    "overall_score": {
     "pass-1": {
-     "loop_truncated_tools_agent": 77.5
+     "loop_truncated_tools_agent": 74.7
     },
     "mean-score": {
-     "loop_truncated_tools_agent": 84.2
+     "loop_truncated_tools_agent": 83.7
     }
    },
    "company": "google",
@@ -361,12 +363,440 @@
      "loop_truncated_tools_agent": 57.8
     },
     "mean-score": {
-     "loop_truncated_tools_agent": 70.5
+     "loop_truncated_tools_agent": 70.4
     }
    },
    "company": "meta",
    "effort": "xhigh",
    "release_date": "2026-09-02"
+  },
+  {
+   "model_name": "openai/gpt-oss-120b",
+   "model_display_name": "GPT-OSS-120B",
+   "overall_score": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 0
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 0.2
+    }
+   },
+   "company": "gpt",
+   "effort": "high",
+   "release_date": "2025-08-05"
+  },
+  {
+   "model_name": "Qwen3.5-397B-A17B",
+   "model_display_name": "Qwen3.5",
+   "overall_score": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 20
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 35.1
+    }
+   },
+   "company": "alibaba",
+   "release_date": "2026-02-16"
+  },
+  {
+   "model_name": "claude-fable-5.1-high",
+   "model_display_name": "Fable 5.1",
+   "overall_score": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 51.9
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 67.1
+    }
+   },
+   "company": "claude",
+   "effort": "high",
+   "release_date": "2026-09-01"
+  },
+  {
+   "model_name": "gemini-3.1-pro-preview-high",
+   "model_display_name": "Gemini 3.1 Pro",
+   "overall_score": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 28.7
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 47.8
+    }
+   },
+   "company": "google",
+   "effort": "high",
+   "release_date": "2026-02-19"
+  },
+  {
+   "model_name": "inkling",
+   "model_display_name": "Inkling",
+   "overall_score": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 25.5
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 40.8
+    }
+   },
+   "company": "thinking-machines",
+   "effort": "high",
+   "release_date": "2026-07-15"
+  },
+  {
+   "model_name": "minimax-m3",
+   "model_display_name": "MiniMax-M3",
+   "overall_score": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 28.5
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 45.3
+    }
+   },
+   "company": "minimax",
+   "effort": "high"
+  },
+  {
+   "model_name": "kimi-k2-7-code-high",
+   "model_display_name": "Kimi K2.7 Code",
+   "overall_score": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 28.9
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 46.5
+    }
+   },
+   "company": "kimi",
+   "effort": "high"
+  },
+  {
+   "model_name": "claude-sonnet-4-6-high",
+   "model_display_name": "Sonnet 4.6",
+   "overall_score": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 30.3
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 46.3
+    }
+   },
+   "company": "claude",
+   "effort": "high",
+   "release_date": "2026-02-17"
+  },
+  {
+   "model_name": "glm-5-1",
+   "model_display_name": "GLM-5.1",
+   "overall_score": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 24.6
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 45.4
+    }
+   },
+   "company": "zhipu",
+   "release_date": "2026-03-27"
+  },
+  {
+   "model_name": "grok-4.7",
+   "model_display_name": "Grok 4.7",
+   "overall_score": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 63.1
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 74.4
+    }
+   },
+   "company": "xai",
+   "effort": "xhigh",
+   "release_date": "2026-09-21"
+  },
+  {
+   "model_name": "deepseek-ai/DeepSeek-V3.2",
+   "model_display_name": "DeepSeek-V3.2",
+   "overall_score": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 8.4
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 19.9
+    }
+   },
+   "company": "deepseek",
+   "release_date": "2025-12-01"
+  },
+  {
+   "model_name": "gpt-5.6-luna-max",
+   "model_display_name": "GPT-5.6 Luna",
+   "overall_score": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 35.1
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 52.7
+    }
+   },
+   "company": "gpt",
+   "effort": "max",
+   "release_date": "2026-07-09"
+  },
+  {
+   "model_name": "deepseek-v4-flash",
+   "model_display_name": "DeepSeek-V4-Flash",
+   "overall_score": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 56.7
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 67.8
+    }
+   },
+   "company": "deepseek",
+   "effort": "max",
+   "release_date": "2026-07-31"
+  },
+  {
+   "model_name": "glm-5-2",
+   "model_display_name": "GLM-5.2",
+   "overall_score": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 23.8
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 44.9
+    }
+   },
+   "company": "zhipu",
+   "effort": "max",
+   "release_date": "2026-06-16"
+  },
+  {
+   "model_name": "qwen-3-8-max-xhigh",
+   "model_display_name": "Qwen3.8-Max",
+   "overall_score": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 59.7
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 72.4
+    }
+   },
+   "company": "alibaba",
+   "effort": "xhigh",
+   "release_date": "2026-08-02"
+  },
+  {
+   "model_name": "nemotron-3-ultra-nvfp4",
+   "model_display_name": "Nemotron 3 Ultra",
+   "overall_score": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 11
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 27.3
+    }
+   },
+   "company": "nvidia",
+   "effort": "high",
+   "release_date": "2026-06-04"
+  },
+  {
+   "model_name": "opus-5.5",
+   "model_display_name": "Opus 5.5",
+   "overall_score": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 41.4
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 59
+    }
+   },
+   "company": "claude",
+   "effort": "medium",
+   "release_date": "2026-09-22"
+  },
+  {
+   "model_name": "claude-opus-5-5",
+   "model_display_name": "Opus 5.5",
+   "overall_score": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 80
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 84.7
+    }
+   },
+   "company": "claude",
+   "effort": "max",
+   "release_date": "2026-09-22"
+  },
+  {
+   "model_name": "gpt-6-luna",
+   "model_display_name": "GPT-6 Luna",
+   "overall_score": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 38.5
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 54.5
+    }
+   },
+   "company": "gpt",
+   "effort": "max",
+   "release_date": "2026-09-22"
+  },
+  {
+   "model_name": "gpt-6-sol",
+   "model_display_name": "GPT-6 Sol",
+   "overall_score": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 51.6
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 66
+    }
+   },
+   "company": "gpt",
+   "effort": "max",
+   "release_date": "2026-09-22"
+  },
+  {
+   "model_name": "deepseek-v4-1-flash",
+   "model_display_name": "DeepSeek-V4.1-Flash",
+   "overall_score": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 20
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 29.6
+    }
+   },
+   "company": "deepseek",
+   "effort": "max",
+   "release_date": "2026-09-09"
+  },
+  {
+   "model_name": "gemini-3-5-flash-lite",
+   "model_display_name": "Gemini 3.5 Flash Lite",
+   "overall_score": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 15
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 32.9
+    }
+   },
+   "company": "google",
+   "effort": "high",
+   "release_date": "2026-08-31"
+  },
+  {
+   "model_name": "qwen-3-8-27b",
+   "model_display_name": "Qwen 3.8 27B",
+   "overall_score": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 40
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 57.3
+    }
+   },
+   "company": "alibaba",
+   "effort": "xhigh",
+   "release_date": "2026-08-03"
+  },
+  {
+   "model_name": "muse-spark-1-1",
+   "model_display_name": "Muse Spark 1.1",
+   "overall_score": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 17.9
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 37.4
+    }
+   },
+   "company": "meta",
+   "effort": "xhigh",
+   "release_date": "2026-07-09"
+  },
+  {
+   "model_name": "claude-sonnet-5-5",
+   "model_display_name": "Sonnet 5.5",
+   "overall_score": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 79.7
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 86.8
+    }
+   },
+   "company": "claude",
+   "effort": "max"
+  },
+  {
+   "model_name": "claude-sonnet-5-5-medium",
+   "model_display_name": "Sonnet 5.5",
+   "overall_score": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 26.6
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 46
+    }
+   },
+   "company": "claude",
+   "effort": "medium",
+   "release_date": "2026-09-28"
+  },
+  {
+   "model_name": "gpt-6-1-sol",
+   "model_display_name": "GPT-6.1 Sol",
+   "overall_score": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 58.4
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 70.6
+    }
+   },
+   "company": "gpt",
+   "effort": "max",
+   "release_date": "2026-09-29"
+  },
+  {
+   "model_name": "gemini-4-argon",
+   "model_display_name": "Gemini 4 Argon",
+   "overall_score": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 90.3
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 92.7
+    }
+   },
+   "company": "google",
+   "effort": "high",
+   "release_date": "2026-09-30"
+  },
+  {
+   "model_name": "mimo-v2.6-pro",
+   "model_display_name": "MiMo V2.6 Pro",
+   "overall_score": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 56.2
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 68.9
+    }
+   },
+   "company": "xiaomi",
+   "effort": "none"
   }
  ]
 }

@@ -2,10 +2,9 @@
   "id": "hud-osworld-verified",
   "name": "OSWorld-Verified on HUD",
   "tried": [
-    "https://www.hud.ai/leaderboards (HTTP 429, Vercel Security Checkpoint)",
-    "https://hud.so/leaderboards (HTTP 429)",
-    "https://api.hud.ai/v2/leaderboards (404)"
+    "https://www.hud.ai/leaderboards",
+    "https://www.hud.ai/"
   ],
-  "reason_ja": "HUD のリーダーボードはボット検査(Vercel Security Checkpoint)でブラウザ以外を弾き、認証不要の公開APIも見つからない。",
-  "retrieved": "2026-09-14"
+  "reason_ja": "旧リーダーボード URL は今回 HTTP 404（前回の429ボット検査とは異なる）。公式トップページは取得できたが、OSWorld-Verified の現行ボードや結果データへのリンクは見つからず、既存の欠測扱いを維持。",
+  "retrieved": "2026-10-05"
 }

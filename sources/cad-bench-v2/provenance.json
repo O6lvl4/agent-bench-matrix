@@ -1,0 +1,27 @@
+{
+  "retrieved": "2026-10-05",
+  "table": "cad-bench-v2",
+  "status": "comparable-source-extracted",
+  "source_data_changed": false,
+  "old_rows": 10,
+  "new_rows": 10,
+  "rows_changed": false,
+  "snapshot": "sources/cad-bench-v2/leaderboard.json",
+  "snapshot_sha256": "00eeb4dcbde17fdca1c29a88f4144f7d7b909ba7ee26fa54c0d44418b256a7f5",
+  "sources": [
+    {
+      "url": "https://ofhuhcpkvzjlejydnvyd.supabase.co/functions/v1/leaderboard-read",
+      "request_description": "https://ofhuhcpkvzjlejydnvyd.supabase.co/functions/v1/leaderboard-read (POST {\"package\":\"gnucleus-ai/cad-bench\",\"name\":\"v2\"})",
+      "tables": [
+        "cad-bench-v2"
+      ],
+      "file": "82c890d1b2f4a4d2",
+      "retrieved": "2026-10-05",
+      "status": 200,
+      "final_url": "https://ofhuhcpkvzjlejydnvyd.supabase.co/functions/v1/leaderboard-read",
+      "bytes": 18302,
+      "sha256": "00eeb4dcbde17fdca1c29a88f4144f7d7b909ba7ee26fa54c0d44418b256a7f5"
+    }
+  ],
+  "method": "Complete native JSON/YAML/CSV/HTML/RSC table projection compared against the prior snapshot; supported changed rows mechanically regenerated; other source changes fail closed."
+}

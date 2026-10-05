@@ -40,7 +40,8 @@
      "sortOrder": "DESCENDING",
      "source": "WEB",
      "runAggregation": "BENCHMARK_TASK_RUN_AGGREGATION_LATEST",
-     "candidateType": "BENCHMARK_CANDIDATE_TYPE_MODEL_VERSIONS"
+     "candidateType": "BENCHMARK_CANDIDATE_TYPE_MODEL_VERSIONS",
+     "numAttempts": 1
     },
     "publishTime": "2025-07-15T14:25:30.827974100Z",
     "updateTime": "2026-03-26T07:00:41.089714400Z",
@@ -96,7 +97,8 @@
     "sortOrder": "DESCENDING",
     "source": "WEB",
     "runAggregation": "BENCHMARK_TASK_RUN_AGGREGATION_LATEST",
-    "candidateType": "BENCHMARK_CANDIDATE_TYPE_MODEL_VERSIONS"
+    "candidateType": "BENCHMARK_CANDIDATE_TYPE_MODEL_VERSIONS",
+    "numAttempts": 1
    },
    "taskVersionMapping": {
     "parentTaskVersionId": 26,
@@ -143,7 +145,9 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "benchmarkModelSlug": "gemini-3.1-pro-preview",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "Google",
@@ -204,7 +208,9 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "benchmarkModelSlug": "gpt-5",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "OpenAI",
@@ -266,7 +272,9 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "benchmarkModelSlug": "gemini-3-flash-preview",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "Google",
@@ -327,7 +335,9 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "benchmarkModelSlug": "gemini-2.5-pro-preview",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "Google",
@@ -386,7 +396,9 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "benchmarkModelSlug": "o1",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "OpenAI",
@@ -447,7 +459,9 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "benchmarkModelSlug": "gpt-4.1",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "OpenAI",
@@ -508,7 +522,9 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "benchmarkModelSlug": "o4-mini",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "OpenAI",
@@ -570,7 +586,9 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "benchmarkModelSlug": "deepseek-r1",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "DeepSeek",
@@ -611,7 +629,6 @@
     "knowledgeCutoff": "2025-07-01T04:00:00Z",
     "isDefault": true,
     "published": true,
-    "allowModelProxy": true,
     "modelProxySlug": "deepseek-ai/deepseek-v3.1",
     "displayName": "",
     "organization": {
@@ -632,7 +649,10 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "deprecationTime": "2026-09-18T00:00:00Z",
+    "benchmarkModelSlug": "deepseek-v3.1",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "DeepSeek",
@@ -694,7 +714,9 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "benchmarkModelSlug": "gemini-2.5-flash-preview",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "Google",
@@ -752,7 +774,9 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "benchmarkModelSlug": "grok-3-mini",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "xAI",
@@ -815,7 +839,9 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "benchmarkModelSlug": "gpt-oss-120b",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "OpenAI",
@@ -874,7 +900,9 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "benchmarkModelSlug": "o3-mini",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "OpenAI",
@@ -933,7 +961,9 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "benchmarkModelSlug": "deepseek-v3",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "DeepSeek",
@@ -992,7 +1022,9 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "benchmarkModelSlug": "grok-3",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "xAI",
@@ -1054,7 +1086,9 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "benchmarkModelSlug": "gpt-oss-20b",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "OpenAI",
@@ -1118,7 +1152,9 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "benchmarkModelSlug": "gemini-3.1-flash-lite-preview",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "Google",
@@ -1176,7 +1212,9 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "benchmarkModelSlug": "grok-2",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "xAI",
@@ -1216,7 +1254,6 @@
     "knowledgeCutoff": "2025-03-01T05:00:00Z",
     "isDefault": true,
     "published": true,
-    "allowModelProxy": true,
     "modelProxySlug": "anthropic/claude-opus-4@20250514",
     "displayName": "Claude Opus 4",
     "organization": {
@@ -1237,7 +1274,10 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "deprecationTime": "2026-09-29T00:00:00Z",
+    "benchmarkModelSlug": "claude-opus-4",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "Anthropic",
@@ -1277,7 +1317,6 @@
     "knowledgeCutoff": "2025-03-05T05:00:00Z",
     "isDefault": true,
     "published": true,
-    "allowModelProxy": true,
     "modelProxySlug": "anthropic/claude-opus-4-1@20250805",
     "displayName": "Claude Opus 4.1",
     "organization": {
@@ -1298,7 +1337,10 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "deprecationTime": "2026-09-29T00:00:00Z",
+    "benchmarkModelSlug": "claude-opus-4-1",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "Anthropic",
@@ -1358,7 +1400,9 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "benchmarkModelSlug": "claude-3-5-sonnet",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "Anthropic",
@@ -1416,7 +1460,9 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "benchmarkModelSlug": "o1-mini",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "OpenAI",
@@ -1475,7 +1521,9 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "benchmarkModelSlug": "claude-3-7-sonnet",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "Anthropic",
@@ -1536,7 +1584,9 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "benchmarkModelSlug": "gpt-4o",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "OpenAI",
@@ -1595,7 +1645,9 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "benchmarkModelSlug": "gpt-4o-mini",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "OpenAI",
@@ -1653,7 +1705,9 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "benchmarkModelSlug": "gpt-3.5-turbo",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "OpenAI",
@@ -1711,7 +1765,9 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "benchmarkModelSlug": "codestral",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "Mistral AI",
@@ -1752,7 +1808,6 @@
     "knowledgeCutoff": "2025-03-01T05:00:00Z",
     "isDefault": true,
     "published": true,
-    "allowModelProxy": true,
     "modelProxySlug": "anthropic/claude-sonnet-4@20250514",
     "displayName": "Claude Sonnet 4",
     "organization": {
@@ -1773,7 +1828,10 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "deprecationTime": "2026-09-29T00:00:00Z",
+    "benchmarkModelSlug": "claude-sonnet-4",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "Anthropic",
@@ -1835,7 +1893,9 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "benchmarkModelSlug": "gemini-2.0-flash",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "Google",
@@ -1895,7 +1955,9 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "benchmarkModelSlug": "mistral-large",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "Mistral AI",
@@ -1957,7 +2019,9 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "benchmarkModelSlug": "gemma-3-27b-it",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "Google",
@@ -2017,7 +2081,9 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "benchmarkModelSlug": "open-mixtral-8x22b",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "Mistral AI",
@@ -2079,7 +2145,9 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "benchmarkModelSlug": "gemma-3-12b-it",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "Google",
@@ -2140,7 +2208,9 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "benchmarkModelSlug": "qwen3-235b-a22b-thinking",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "QwenLM",
@@ -2203,7 +2273,9 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "benchmarkModelSlug": "gemini-1.5-pro",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "Google",
@@ -2265,7 +2337,9 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "benchmarkModelSlug": "gemini-1.5-flash",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "Google",
@@ -2326,7 +2400,9 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "benchmarkModelSlug": "gemma-3-4b-it",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "Google",
@@ -2388,7 +2464,9 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "benchmarkModelSlug": "granite-4.0-h-small",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "IBM Research",
@@ -2450,7 +2528,9 @@
     "outputModalities": [
      "MODALITY_TEXT"
     ],
-    "deprecationTime": "2026-07-05T00:00:00Z"
+    "deprecationTime": "2026-07-05T00:00:00Z",
+    "benchmarkModelSlug": "claude-3-5-haiku",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "Anthropic",
@@ -2509,7 +2589,9 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "benchmarkModelSlug": "ministral-8b",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "Mistral AI",
@@ -2569,7 +2651,9 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "benchmarkModelSlug": "ministral-3b",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "Mistral AI",
@@ -2631,7 +2715,9 @@
     ],
     "outputModalities": [
      "MODALITY_TEXT"
-    ]
+    ],
+    "benchmarkModelSlug": "gemini-1.5-flash-8b",
+    "supportsReasoningEffort": true
    },
    "publisherOrganization": {
     "name": "Google",

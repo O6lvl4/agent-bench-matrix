@@ -1,0 +1,2276 @@
+{
+ "retrieved": "2026-10-05",
+ "base_commit": "ddbc61d98dbe484078655f129086acc30ca8fa8d",
+ "existing_tables_audited": 161,
+ "new_tables": 2,
+ "tables": 163,
+ "rows_before": 4201,
+ "rows_after": 4369,
+ "model_count": 501,
+ "new_models": 15,
+ "gap_count": 22,
+ "categories": {
+  "coding": 50,
+  "computer-use": 19,
+  "tool-use": 32,
+  "web": 23,
+  "research": 9,
+  "security": 13,
+  "long-horizon": 7,
+  "general": 5,
+  "terminal": 5
+ },
+ "shared_source_groups": [
+  {
+   "source": "https://agentsea.github.io/osuniverse/",
+   "tables": [
+    "osuniverse"
+   ]
+  },
+  {
+   "source": "https://algotune.io/",
+   "tables": [
+    "algotune"
+   ]
+  },
+  {
+   "source": "https://andonlabs.com/evals/vending-bench",
+   "tables": [
+    "vending-bench"
+   ]
+  },
+  {
+   "source": "https://andonlabs.com/evals/vending-bench-2",
+   "tables": [
+    "vending-bench-2"
+   ]
+  },
+  {
+   "source": "https://appworld.dev/appworld/leaderboard",
+   "tables": [
+    "appworld-test-challenge",
+    "appworld-test-normal"
+   ]
+  },
+  {
+   "source": "https://assistantbench-leaderboard.hf.space/config",
+   "tables": [
+    "assistantbench"
+   ]
+  },
+  {
+   "source": "https://codeclash.ai/",
+   "tables": [
+    "codeclash"
+   ]
+  },
+  {
+   "source": "https://commit-0.github.io/analysis/",
+   "tables": [
+    "commit0-all",
+    "commit0-lite"
+   ]
+  },
+  {
+   "source": "https://cua.ai/cuabench/leaderboard",
+   "tables": [
+    "cua-bench-eda-kicad"
+   ]
+  },
+  {
+   "source": "https://cvebench.com/",
+   "tables": [
+    "cve-bench-one-day",
+    "cve-bench-zero-day"
+   ]
+  },
+  {
+   "source": "https://cybench.github.io/data/leaderboard.csv",
+   "tables": [
+    "cybench"
+   ]
+  },
+  {
+   "source": "https://deepswe.datacurve.ai/artifacts/v1.1/leaderboard-live.json",
+   "tables": [
+    "deepswe-v1-1"
+   ]
+  },
+  {
+   "source": "https://deepswe.datacurve.ai/artifacts/v1/leaderboard-live.json",
+   "tables": [
+    "deepswe-v1"
+   ]
+  },
+  {
+   "source": "https://docs.google.com/spreadsheets/d/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ/export?format=csv&gid=0",
+   "tables": [
+    "webarena"
+   ]
+  },
+  {
+   "source": "https://docs.google.com/spreadsheets/d/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ/export?format=csv&gid=2044883967",
+   "tables": [
+    "visualwebarena"
+   ]
+  },
+  {
+   "source": "https://docs.google.com/spreadsheets/d/1RGyJ0QOxGj196KTfUK0SZeVl5IkM928_38wzIkQVxCs/export?format=csv&gid=0",
+   "tables": [
+    "webchorearena"
+   ]
+  },
+  {
+   "source": "https://docs.google.com/spreadsheets/d/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo/export?format=csv&gid=0",
+   "tables": [
+    "androidworld"
+   ]
+  },
+  {
+   "source": "https://docs.google.com/spreadsheets/d/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo/export?format=csv&gid=1078963525",
+   "tables": [
+    "androidworld-mobileminiwob"
+   ]
+  },
+  {
+   "source": "https://ecbench.github.io/",
+   "tables": [
+    "ecommerce-bench"
+   ]
+  },
+  {
+   "source": "https://gaia-benchmark-leaderboard.hf.space/gradio_api/call/refresh",
+   "tables": [
+    "gaia"
+   ]
+  },
+  {
+   "source": "https://gorilla.cs.berkeley.edu/leaderboard.html",
+   "tables": [
+    "bfcl-v4"
+   ]
+  },
+  {
+   "source": "https://gso-bench.github.io/assets/leaderboard.json",
+   "tables": [
+    "gso-opt10",
+    "gso"
+   ]
+  },
+  {
+   "source": "https://hal.cs.princeton.edu/assistantbench",
+   "tables": [
+    "hal-assistantbench"
+   ]
+  },
+  {
+   "source": "https://hal.cs.princeton.edu/corebench_hard",
+   "tables": [
+    "hal-core-bench-hard"
+   ]
+  },
+  {
+   "source": "https://hal.cs.princeton.edu/gaia",
+   "tables": [
+    "hal-gaia"
+   ]
+  },
+  {
+   "source": "https://hal.cs.princeton.edu/online_mind2web",
+   "tables": [
+    "hal-online-mind2web"
+   ]
+  },
+  {
+   "source": "https://hal.cs.princeton.edu/scicode",
+   "tables": [
+    "hal-scicode"
+   ]
+  },
+  {
+   "source": "https://hal.cs.princeton.edu/scienceagentbench",
+   "tables": [
+    "hal-scienceagentbench"
+   ]
+  },
+  {
+   "source": "https://hal.cs.princeton.edu/swebench_verified_mini",
+   "tables": [
+    "hal-swe-bench-verified-mini"
+   ]
+  },
+  {
+   "source": "https://hal.cs.princeton.edu/taubench_airline",
+   "tables": [
+    "hal-tau-bench-airline"
+   ]
+  },
+  {
+   "source": "https://hal.cs.princeton.edu/usaco",
+   "tables": [
+    "hal-usaco"
+   ]
+  },
+  {
+   "source": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+   "tables": [
+    "browsergym-assistantbench",
+    "browsergym-miniwob",
+    "browsergym-visualwebarena",
+    "browsergym-webarena",
+    "browsergym-weblinx",
+    "browsergym-workarena-l1",
+    "browsergym-workarena-l2",
+    "browsergym-workarena-l3"
+   ]
+  },
+  {
+   "source": "https://huggingface.co/spaces/mcpbench/mcp-bench",
+   "tables": [
+    "mcp-bench"
+   ]
+  },
+  {
+   "source": "https://huggingface.co/spaces/meta-agents-research-environments/leaderboard/raw/main/app.py",
+   "tables": [
+    "gaia2-cli"
+   ]
+  },
+  {
+   "source": "https://huggingface.co/spaces/osunlp/Online_Mind2Web_Leaderboard/resolve/main/auto_o4-mini_Mind2Web-Online%20-%20Leaderboard_data.csv",
+   "tables": [
+    "online-mind2web-auto"
+   ]
+  },
+  {
+   "source": "https://huggingface.co/spaces/osunlp/Online_Mind2Web_Leaderboard/resolve/main/human_Mind2Web-Online%20-%20Leaderboard_data.csv",
+   "tables": [
+    "online-mind2web-human"
+   ]
+  },
+  {
+   "source": "https://jetastra.github.io/MacAgentBench/data/models/index.json",
+   "tables": [
+    "macagentbench"
+   ]
+  },
+  {
+   "source": "https://labs.scale.com/leaderboard/mcp_atlas",
+   "tables": [
+    "mcp-atlas"
+   ]
+  },
+  {
+   "source": "https://labs.scale.com/leaderboard/swe_bench_pro_private",
+   "tables": [
+    "swe-bench-pro-private"
+   ]
+  },
+  {
+   "source": "https://labs.scale.com/leaderboard/swe_bench_pro_public",
+   "tables": [
+    "swe-bench-pro-public"
+   ]
+  },
+  {
+   "source": "https://liveswebench.ai/assets/index-YIuWjCzP.js",
+   "tables": [
+    "liveswebench"
+   ]
+  },
+  {
+   "source": "https://mcp-universe.github.io/",
+   "tables": [
+    "mcp-universe-agent",
+    "mcp-universe-fc",
+    "mcp-universe-react"
+   ]
+  },
+  {
+   "source": "https://mcpmark.ai/leaderboard",
+   "tables": [
+    "mcpmark-legacy"
+   ]
+  },
+  {
+   "source": "https://mcpmark.ai/leaderboard/verified",
+   "tables": [
+    "mcpmark-verified"
+   ]
+  },
+  {
+   "source": "https://meta-agents-research-environments-leaderboard.hf.space/gradio_api/call/refresh_legacy",
+   "tables": [
+    "gaia2"
+   ]
+  },
+  {
+   "source": "https://metr.org/assets/benchmark_results_1_0.yaml",
+   "tables": [
+    "metr-time-horizon-1.0"
+   ]
+  },
+  {
+   "source": "https://metr.org/assets/benchmark_results_1_1.yaml",
+   "tables": [
+    "metr-time-horizon"
+   ]
+  },
+  {
+   "source": "https://ofhuhcpkvzjlejydnvyd.supabase.co/functions/v1/leaderboard-read (POST {\"package\":\"gnucleus-ai/cad-bench\",\"name\":\"v2\"})",
+   "tables": [
+    "cad-bench-v2"
+   ]
+  },
+  {
+   "source": "https://ofhuhcpkvzjlejydnvyd.supabase.co/functions/v1/leaderboard-read (POST {\"package\":\"terminal-bench/terminal-bench\",\"name\":\"3-0-0\"})",
+   "tables": [
+    "terminal-bench-3-0"
+   ]
+  },
+  {
+   "source": "https://ofhuhcpkvzjlejydnvyd.supabase.co/functions/v1/leaderboard-read (POST {\"package\":\"terminal-bench/terminal-bench\",\"name\":\"4-0-0\"})",
+   "tables": [
+    "terminal-bench-4-0"
+   ]
+  },
+  {
+   "source": "https://ofhuhcpkvzjlejydnvyd.supabase.co/functions/v1/leaderboard-read (POST {\"package\":\"terminal-bench/terminal-bench-2\",\"name\":\"2-0\"})",
+   "tables": [
+    "terminal-bench-2-0"
+   ]
+  },
+  {
+   "source": "https://ofhuhcpkvzjlejydnvyd.supabase.co/functions/v1/leaderboard-read (POST {\"package\":\"terminal-bench/terminal-bench-2-1\",\"name\":\"main\"})",
+   "tables": [
+    "terminal-bench-2-1"
+   ]
+  },
+  {
+   "source": "https://osu-nlp-group.github.io/Mind2Web-2/leaderboard_data.json",
+   "tables": [
+    "mind2web-2"
+   ]
+  },
+  {
+   "source": "https://osworld-mcp.github.io/",
+   "tables": [
+    "osworld-mcp"
+   ]
+  },
+  {
+   "source": "https://osworld-v1.xlang.ai/static/data/osworld_verified_results.xlsx",
+   "tables": [
+    "osworld-verified"
+   ]
+  },
+  {
+   "source": "https://osworld-v1.xlang.ai/static/data/self_reported_results.xlsx",
+   "tables": [
+    "osworld-self-reported-a11y-tree",
+    "osworld-self-reported-screenshot-a11y-tree",
+    "osworld-self-reported-screenshot",
+    "osworld-self-reported-set-of-mark"
+   ]
+  },
+  {
+   "source": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+   "tables": [
+    "osworld-2-1-full-500steps",
+    "osworld-2-1-offline-500steps",
+    "osworld-2-full-150steps",
+    "osworld-2-full-300steps",
+    "osworld-2-full-500steps",
+    "osworld-2-offline-500steps"
+   ]
+  },
+  {
+   "source": "https://raw.githubusercontent.com/Aider-AI/aider/main/aider/website/_data/edit_leaderboard.yml",
+   "tables": [
+    "aider-code-editing"
+   ]
+  },
+  {
+   "source": "https://raw.githubusercontent.com/Aider-AI/aider/main/aider/website/_data/polyglot_leaderboard.yml",
+   "tables": [
+    "aider-polyglot"
+   ]
+  },
+  {
+   "source": "https://raw.githubusercontent.com/Aider-AI/aider/main/aider/website/_data/refactor_leaderboard.yml",
+   "tables": [
+    "aider-refactoring"
+   ]
+  },
+  {
+   "source": "https://raw.githubusercontent.com/SWE-bench/swe-bench.github.io/master/data/leaderboards.json",
+   "tables": [
+    "swe-bench-bash-only",
+    "swe-bench-full",
+    "swe-bench-lite",
+    "swe-bench-multilingual",
+    "swe-bench-multimodal",
+    "swe-bench-verified"
+   ]
+  },
+  {
+   "source": "https://raw.githubusercontent.com/amazon-science/SWE-PolyBench/gh-pages/template/polybench_data.json",
+   "tables": [
+    "swe-polybench-500",
+    "swe-polybench-verified",
+    "swe-polybench"
+   ]
+  },
+  {
+   "source": "https://raw.githubusercontent.com/bear-cubs/bear-cubs.github.io/main/src/data/bear_cubs_leaderboard.ts",
+   "tables": [
+    "bearcubs"
+   ]
+  },
+  {
+   "source": "https://raw.githubusercontent.com/multi-swe-bench/experiments/refs/heads/dist/leaderboard-flash.json",
+   "tables": [
+    "multi-swe-bench-flash"
+   ]
+  },
+  {
+   "source": "https://raw.githubusercontent.com/multi-swe-bench/experiments/refs/heads/dist/leaderboard-mini.json",
+   "tables": [
+    "multi-swe-bench-mini"
+   ]
+  },
+  {
+   "source": "https://raw.githubusercontent.com/multi-swe-bench/experiments/refs/heads/dist/leaderboard.json",
+   "tables": [
+    "multi-swe-bench-c",
+    "multi-swe-bench-cpp",
+    "multi-swe-bench-go",
+    "multi-swe-bench-java",
+    "multi-swe-bench-javascript",
+    "multi-swe-bench-python",
+    "multi-swe-bench-rust",
+    "multi-swe-bench-typescript",
+    "multi-swe-bench"
+   ]
+  },
+  {
+   "source": "https://raw.githubusercontent.com/openai/mle-bench/main/README.md",
+   "tables": [
+    "mle-bench-additional",
+    "mle-bench"
+   ]
+  },
+  {
+   "source": "https://raw.githubusercontent.com/openai/preparedness/main/project/paperbench/README.md",
+   "tables": [
+    "paperbench-code-dev",
+    "paperbench"
+   ]
+  },
+  {
+   "source": "https://raw.githubusercontent.com/swelancer/leaderboard/main/data/results.csv",
+   "tables": [
+    "swe-lancer-diamond"
+   ]
+  },
+  {
+   "source": "https://sec-bench.github.io/",
+   "tables": [
+    "sec-bench-poc-generation",
+    "sec-bench-pro-firefox",
+    "sec-bench-pro-linux",
+    "sec-bench-pro-overall",
+    "sec-bench-pro-v8",
+    "sec-bench-vulnerability-patching"
+   ]
+  },
+  {
+   "source": "https://swe-bench-live.github.io/reports-0605.jsonl",
+   "tables": [
+    "swe-bench-live-c-cpp",
+    "swe-bench-live-csharp",
+    "swe-bench-live-full",
+    "swe-bench-live-go",
+    "swe-bench-live-java",
+    "swe-bench-live-lite",
+    "swe-bench-live-rust",
+    "swe-bench-live-ts-js",
+    "swe-bench-live-verified",
+    "swe-bench-live-windows"
+   ]
+  },
+  {
+   "source": "https://swe-rebench.com/",
+   "tables": [
+    "swe-rebench"
+   ]
+  },
+  {
+   "source": "https://taubench.com/",
+   "tables": [
+    "tau2-bench-airline",
+    "tau2-bench-legacy-airline",
+    "tau2-bench-legacy-retail",
+    "tau2-bench-legacy-telecom",
+    "tau2-bench-legacy",
+    "tau2-bench-retail",
+    "tau2-bench-telecom",
+    "tau2-bench",
+    "tau3-banking",
+    "tau3-voice-airline",
+    "tau3-voice-banking",
+    "tau3-voice-retail",
+    "tau3-voice-telecom",
+    "tau3-voice"
+   ]
+  },
+  {
+   "source": "https://tevatron-browsecomp-plus.hf.space/data/leaderboard.json",
+   "tables": [
+    "browsecomp-plus"
+   ]
+  },
+  {
+   "source": "https://the-agent-company.com/",
+   "tables": [
+    "theagentcompany"
+   ]
+  },
+  {
+   "source": "https://tongyi-mai.github.io/MobileWorld/leaderboard.json",
+   "tables": [
+    "mobileworld"
+   ]
+  },
+  {
+   "source": "https://toolathlon.xyz/docs/leaderboard",
+   "tables": [
+    "toolathlon-verified",
+    "toolathlon"
+   ]
+  },
+  {
+   "source": "https://ui-venus.github.io/VenusBench-Mobile-Leaderboard/results/venusbench-mobile.json",
+   "tables": [
+    "venusbench-mobile"
+   ]
+  },
+  {
+   "source": "https://www.cybergym.io/assets/data/cybergym-e2e.json",
+   "tables": [
+    "cybergym-e2e"
+   ]
+  },
+  {
+   "source": "https://www.cybergym.io/assets/data/cybergym.json",
+   "tables": [
+    "cybergym-agent-focused",
+    "cybergym-model-focused"
+   ]
+  },
+  {
+   "source": "https://www.cybergym.io/assets/data/exploitgym.json",
+   "tables": [
+    "exploitgym"
+   ]
+  },
+  {
+   "source": "https://www.kaggle.com/api/i/benchmarks.BenchmarkService/GetBenchmarkLeaderboard",
+   "tables": [
+    "browsecomp-kaggle"
+   ]
+  },
+  {
+   "source": "https://www.mercor.com/apex/apex-agents-leaderboard/",
+   "tables": [
+    "apex-agents"
+   ]
+  },
+  {
+   "source": "https://www.mercor.com/apex/apex-agents-leaderboard/corporate-lawyer-agent/",
+   "tables": [
+    "apex-agents-corporate-lawyer"
+   ]
+  },
+  {
+   "source": "https://www.mercor.com/apex/apex-agents-leaderboard/investment-banking-analyst-agent/",
+   "tables": [
+    "apex-agents-investment-banking"
+   ]
+  },
+  {
+   "source": "https://www.mercor.com/apex/apex-agents-leaderboard/management-consultant-agent/",
+   "tables": [
+    "apex-agents-management-consultant"
+   ]
+  },
+  {
+   "source": "https://www.realevals.xyz/api/getVerifiedModelData",
+   "tables": [
+    "real-v1-frameworks",
+    "real-v1-models",
+    "real-v1-open-arena",
+    "real-v2-frameworks",
+    "real-v2-models"
+   ]
+  },
+  {
+   "source": "https://www.scbench.ai/leaderboard",
+   "tables": [
+    "slopcodebench"
+   ]
+  },
+  {
+   "source": "https://www.skillsbench.ai/leaderboard",
+   "tables": [
+    "skillsbench"
+   ]
+  },
+  {
+   "source": "https://www.swe-marathon.org/",
+   "tables": [
+    "swe-marathon-v1-0",
+    "swe-marathon-v1-1"
+   ]
+  },
+  {
+   "source": "https://www.terminal-bench-science.ai/api/leaderboard?package=terminal-bench-science%2Fterminal-bench-science&name=v0-1-eval",
+   "tables": [
+    "terminal-bench-science-0-1"
+   ]
+  }
+ ],
+ "table_audit": [
+  {
+   "id": "aider-code-editing",
+   "category": "coding",
+   "source": "https://aider.chat/docs/leaderboards/edit.html",
+   "status": "unchanged_rows",
+   "rows_before": 98,
+   "rows_after": 98,
+   "snapshot": "sources/aider-code-editing/edit_leaderboard.yml",
+   "snapshot_sha256": "4c437c9e22c7fff8b0d61cb8fd4bf9bdf44370783ac9b00a840a80c81319d36e"
+  },
+  {
+   "id": "aider-polyglot",
+   "category": "coding",
+   "source": "https://aider.chat/docs/leaderboards/",
+   "status": "unchanged_rows",
+   "rows_before": 69,
+   "rows_after": 69,
+   "snapshot": "sources/aider-polyglot/polyglot_leaderboard.yml",
+   "snapshot_sha256": "85a50b25953512d18ba4bb0c23c0b8e626fcf9a5b52d287644b8a0b44b9535de"
+  },
+  {
+   "id": "aider-refactoring",
+   "category": "coding",
+   "source": "https://aider.chat/docs/leaderboards/refactor.html",
+   "status": "unchanged_rows",
+   "rows_before": 14,
+   "rows_after": 14,
+   "snapshot": "sources/aider-refactoring/refactor_leaderboard.yml",
+   "snapshot_sha256": "e01b88adf869b88501d48f9b041dbbb37e77e464e1bed886bb62f6b335c60561"
+  },
+  {
+   "id": "algotune",
+   "category": "coding",
+   "source": "https://algotune.io/",
+   "status": "unchanged_rows",
+   "rows_before": 18,
+   "rows_after": 18,
+   "snapshot": "sources/algotune/leaderboard_table.html",
+   "snapshot_sha256": "f259f681a94fdef8c3b242d9c5622d78e02cc25086b70201399ff136696d726c"
+  },
+  {
+   "id": "androidworld-mobileminiwob",
+   "category": "computer-use",
+   "source": "https://docs.google.com/spreadsheets/d/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo/edit?gid=1078963525#gid=1078963525",
+   "status": "unchanged_rows",
+   "rows_before": 4,
+   "rows_after": 4,
+   "snapshot": "sources/androidworld-mobileminiwob/androidworld_gid1078963525.csv",
+   "snapshot_sha256": "d022affe1a8ec99cfc940bf645e85a089b2aa3afc123d59dafc3d8fa021c0b22"
+  },
+  {
+   "id": "androidworld",
+   "category": "computer-use",
+   "source": "https://docs.google.com/spreadsheets/d/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo/edit?gid=0#gid=0",
+   "status": "rows_changed",
+   "rows_before": 46,
+   "rows_after": 47,
+   "snapshot": "sources/androidworld/androidworld_gid0.csv",
+   "snapshot_sha256": "06fb59466fdc53d5a87eabfe9c62ad2141bbc92f40b2142f79088c33d8026563"
+  },
+  {
+   "id": "apex-agents-corporate-lawyer",
+   "category": "tool-use",
+   "source": "https://www.mercor.com/apex/apex-agents-leaderboard/corporate-lawyer-agent/",
+   "status": "rows_changed",
+   "rows_before": 24,
+   "rows_after": 53,
+   "snapshot": "sources/apex-agents-corporate-lawyer/leaderboard_data.json",
+   "snapshot_sha256": "3e1ec6cf0efd5bbf299d6d74da8baf3ca3d8e55142c80715da4cbca74408b260"
+  },
+  {
+   "id": "apex-agents-investment-banking",
+   "category": "tool-use",
+   "source": "https://www.mercor.com/apex/apex-agents-leaderboard/investment-banking-analyst-agent/",
+   "status": "rows_changed",
+   "rows_before": 24,
+   "rows_after": 53,
+   "snapshot": "sources/apex-agents-investment-banking/leaderboard_data.json",
+   "snapshot_sha256": "87e2de6046b740b62cf8e5185f643371fd654597eb49d4eb278e511d154f6f06"
+  },
+  {
+   "id": "apex-agents-management-consultant",
+   "category": "tool-use",
+   "source": "https://www.mercor.com/apex/apex-agents-leaderboard/management-consultant-agent/",
+   "status": "rows_changed",
+   "rows_before": 24,
+   "rows_after": 53,
+   "snapshot": "sources/apex-agents-management-consultant/leaderboard_data.json",
+   "snapshot_sha256": "40c94e667433c27cdcf4f8a409eec254c9d204c5efa95b793877e7fa8ec9526c"
+  },
+  {
+   "id": "apex-agents",
+   "category": "tool-use",
+   "source": "https://www.mercor.com/apex/apex-agents-leaderboard/",
+   "status": "rows_changed",
+   "rows_before": 24,
+   "rows_after": 53,
+   "snapshot": "sources/apex-agents/leaderboard_data.json",
+   "snapshot_sha256": "176b0251db8f8e17d90fc805654aefd0e0dae6a34b7b3791c2237d8eab2a15de"
+  },
+  {
+   "id": "appworld-test-challenge",
+   "category": "tool-use",
+   "source": "https://appworld.dev/appworld/leaderboard",
+   "status": "unchanged_rows",
+   "rows_before": 23,
+   "rows_after": 23,
+   "snapshot": "sources/appworld-test-challenge/leaderboard.json",
+   "snapshot_sha256": "5dc72e48e619f483af9035413bccb50e68f63446b6f84371f6e2989e595dc49d"
+  },
+  {
+   "id": "appworld-test-normal",
+   "category": "tool-use",
+   "source": "https://appworld.dev/appworld/leaderboard",
+   "status": "unchanged_rows",
+   "rows_before": 23,
+   "rows_after": 23,
+   "snapshot": "sources/appworld-test-normal/leaderboard.json",
+   "snapshot_sha256": "5dc72e48e619f483af9035413bccb50e68f63446b6f84371f6e2989e595dc49d"
+  },
+  {
+   "id": "assistantbench",
+   "category": "web",
+   "source": "https://huggingface.co/spaces/AssistantBench/leaderboard",
+   "status": "unchanged_rows",
+   "rows_before": 184,
+   "rows_after": 184,
+   "snapshot": "sources/assistantbench/board_test.json",
+   "snapshot_sha256": "5c9570475c21aa4fe10a412a2430560b32687c18bc2a75265957b2aa25a5c4d3"
+  },
+  {
+   "id": "bearcubs",
+   "category": "web",
+   "source": "https://bear-cubs.github.io/",
+   "status": "unchanged_rows",
+   "rows_before": 12,
+   "rows_after": 12,
+   "snapshot": "sources/bearcubs/bear_cubs_leaderboard.json",
+   "snapshot_sha256": "7d9455bc007bf667a66515f9f1ef9c70ea018376e8d5c7d90d9abcefa121a250"
+  },
+  {
+   "id": "bfcl-v4",
+   "category": "tool-use",
+   "source": "https://gorilla.cs.berkeley.edu/leaderboard.html",
+   "status": "unchanged_rows",
+   "rows_before": 109,
+   "rows_after": 109,
+   "snapshot": "sources/bfcl-v4/data_overall.csv",
+   "snapshot_sha256": "ede5081a24bc5ac7f9b3b09a52af6bcfcd35aa0f1709239fed979db77a8159a6"
+  },
+  {
+   "id": "browsecomp-kaggle",
+   "category": "web",
+   "source": "https://www.kaggle.com/benchmarks/openai/browsecomp",
+   "status": "unchanged_rows",
+   "rows_before": 42,
+   "rows_after": 42,
+   "snapshot": "sources/browsecomp-kaggle/GetBenchmarkLeaderboard.json",
+   "snapshot_sha256": "8ae67337cd1d7195b9b2a84115cbc737205431329a490123b5fa581383e47dd2"
+  },
+  {
+   "id": "browsecomp-plus",
+   "category": "research",
+   "source": "https://huggingface.co/spaces/Tevatron/BrowseComp-Plus",
+   "status": "rows_changed",
+   "rows_before": 84,
+   "rows_after": 85,
+   "snapshot": "sources/browsecomp-plus/leaderboard.json",
+   "snapshot_sha256": "f351fc9555d22d3014d71b03f14d2e479707b12c11622ee77ac0868e5e74d116"
+  },
+  {
+   "id": "browsergym-assistantbench",
+   "category": "web",
+   "source": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard",
+   "status": "unchanged_rows",
+   "rows_before": 6,
+   "rows_after": 6,
+   "snapshot": "sources/browsergym-assistantbench/results_assistantbench.json",
+   "snapshot_sha256": "66e6aa0bd9cea4416e460b0e5784ef9745ad61f71d3bbf17c709961a6d64b1b6"
+  },
+  {
+   "id": "browsergym-miniwob",
+   "category": "web",
+   "source": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard",
+   "status": "unchanged_rows",
+   "rows_before": 16,
+   "rows_after": 16,
+   "snapshot": "sources/browsergym-miniwob/results_miniwob.json",
+   "snapshot_sha256": "c74b5535b85351a204ecb22eeb777d1c4428d3301db0679c20c9b697cf7d3e88"
+  },
+  {
+   "id": "browsergym-visualwebarena",
+   "category": "web",
+   "source": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard",
+   "status": "unchanged_rows",
+   "rows_before": 4,
+   "rows_after": 4,
+   "snapshot": "sources/browsergym-visualwebarena/results_visualwebarena.json",
+   "snapshot_sha256": "0a13af207a9e87976907b52947f90db46f82382aac07e1e3f113a5a8d898b6dc"
+  },
+  {
+   "id": "browsergym-webarena",
+   "category": "web",
+   "source": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard",
+   "status": "unchanged_rows",
+   "rows_before": 12,
+   "rows_after": 12,
+   "snapshot": "sources/browsergym-webarena/results_webarena.json",
+   "snapshot_sha256": "d9b567c3564a78f00c425e4f0f967e6279f5a17188861424940d423ac2d5487b"
+  },
+  {
+   "id": "browsergym-weblinx",
+   "category": "web",
+   "source": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard",
+   "status": "unchanged_rows",
+   "rows_before": 6,
+   "rows_after": 6,
+   "snapshot": "sources/browsergym-weblinx/results_weblinx.json",
+   "snapshot_sha256": "7d3404018d737e90e5b925beb80971ed5ae5adda1a5fba1db81c892bd01ee4f6"
+  },
+  {
+   "id": "browsergym-workarena-l1",
+   "category": "web",
+   "source": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard",
+   "status": "unchanged_rows",
+   "rows_before": 16,
+   "rows_after": 16,
+   "snapshot": "sources/browsergym-workarena-l1/results_workarena-l1.json",
+   "snapshot_sha256": "7e7f06934c0ce79051ec8ba928d34ebdd228f005436209335940f2c3f42369c6"
+  },
+  {
+   "id": "browsergym-workarena-l2",
+   "category": "web",
+   "source": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard",
+   "status": "unchanged_rows",
+   "rows_before": 14,
+   "rows_after": 14,
+   "snapshot": "sources/browsergym-workarena-l2/results_workarena-l2.json",
+   "snapshot_sha256": "eda864ede05026f850cbc3802763bc9bf51f86ffd2abc2c5572e49584375f086"
+  },
+  {
+   "id": "browsergym-workarena-l3",
+   "category": "web",
+   "source": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard",
+   "status": "unchanged_rows",
+   "rows_before": 8,
+   "rows_after": 8,
+   "snapshot": "sources/browsergym-workarena-l3/results_workarena-l3.json",
+   "snapshot_sha256": "1958bf5b6105c480905f8a93b6c89dead871fd4c2dc319c98daf4a7dddb18601"
+  },
+  {
+   "id": "cad-bench-v2",
+   "category": "coding",
+   "source": "https://hub.harborframework.com/datasets/gnucleus-ai/cad-bench/latest?tab=leaderboard",
+   "status": "unchanged_rows",
+   "rows_before": 10,
+   "rows_after": 10,
+   "snapshot": "sources/cad-bench-v2/leaderboard.json",
+   "snapshot_sha256": "00eeb4dcbde17fdca1c29a88f4144f7d7b909ba7ee26fa54c0d44418b256a7f5"
+  },
+  {
+   "id": "codeclash",
+   "category": "coding",
+   "source": "https://codeclash.ai/",
+   "status": "unchanged_rows",
+   "rows_before": 8,
+   "rows_after": 8,
+   "snapshot": "sources/codeclash/fullLeaderboardData.json",
+   "snapshot_sha256": "5679d86f6bc031af156af20b6d1b4963c632c1fb34356d90fd612ac0cb8a81b6"
+  },
+  {
+   "id": "commit0-all",
+   "category": "coding",
+   "source": "https://commit-0.github.io/analysis/",
+   "status": "unchanged_rows",
+   "rows_before": 4,
+   "rows_after": 4,
+   "snapshot": "sources/commit0-all/leaderboard_tables.html",
+   "snapshot_sha256": "c483e7d76047c368b1a22c945d3f94ff70a11229fe410c08b54abd7e57faf3bb"
+  },
+  {
+   "id": "commit0-lite",
+   "category": "coding",
+   "source": "https://commit-0.github.io/analysis/",
+   "status": "unchanged_rows",
+   "rows_before": 7,
+   "rows_after": 7,
+   "snapshot": "sources/commit0-lite/leaderboard_tables.html",
+   "snapshot_sha256": "c483e7d76047c368b1a22c945d3f94ff70a11229fe410c08b54abd7e57faf3bb"
+  },
+  {
+   "id": "cua-bench-eda-kicad",
+   "category": "computer-use",
+   "source": "https://cua.ai/cuabench/leaderboard",
+   "status": "unchanged_rows",
+   "rows_before": 10,
+   "rows_after": 10,
+   "snapshot": "sources/cua-bench-eda-kicad/leaderboard_table.html",
+   "snapshot_sha256": "fb235ea8420ea25588e5bcaffca5a6015ccf80399903f4c38842f8646ab88e8a"
+  },
+  {
+   "id": "cve-bench-one-day",
+   "category": "security",
+   "source": "https://cvebench.com/",
+   "status": "unchanged_rows",
+   "rows_before": 2,
+   "rows_after": 2,
+   "snapshot": "sources/cve-bench-one-day/leaderboard-entries.json",
+   "snapshot_sha256": "11ab91c1b0762104c0c224cc20b6d7dcd14b1781e46fa42abbe70bfdcf0ccf64"
+  },
+  {
+   "id": "cve-bench-zero-day",
+   "category": "security",
+   "source": "https://cvebench.com/",
+   "status": "unchanged_rows",
+   "rows_before": 2,
+   "rows_after": 2,
+   "snapshot": "sources/cve-bench-zero-day/leaderboard-entries.json",
+   "snapshot_sha256": "11ab91c1b0762104c0c224cc20b6d7dcd14b1781e46fa42abbe70bfdcf0ccf64"
+  },
+  {
+   "id": "cybench",
+   "category": "security",
+   "source": "https://cybench.github.io/",
+   "status": "unchanged_rows",
+   "rows_before": 24,
+   "rows_after": 24,
+   "snapshot": "sources/cybench/leaderboard.csv",
+   "snapshot_sha256": "846bb17951ec9f7c103486d7c0344974decd2d57f1039df26f9e84986704da45"
+  },
+  {
+   "id": "cybergym-agent-focused",
+   "category": "security",
+   "source": "https://www.cybergym.io/cybergym/",
+   "status": "rows_changed",
+   "rows_before": 32,
+   "rows_after": 35,
+   "snapshot": "sources/cybergym-agent-focused/cybergym.json",
+   "snapshot_sha256": "7719dbaa1203a4ac67cf20f8a4c8c4ea2d35c43d6a3d4ccbd0c318db390048e6"
+  },
+  {
+   "id": "cybergym-e2e",
+   "category": "security",
+   "source": "https://www.cybergym.io/cybergym-e2e/",
+   "status": "unchanged_rows",
+   "rows_before": 9,
+   "rows_after": 9,
+   "snapshot": "sources/cybergym-e2e/cybergym-e2e.json",
+   "snapshot_sha256": "55c242382d818c8149faf09a7b32ff983176fa00d0259c7e09dcba076d6a175d"
+  },
+  {
+   "id": "cybergym-model-focused",
+   "category": "security",
+   "source": "https://www.cybergym.io/cybergym/",
+   "status": "rows_changed",
+   "rows_before": 42,
+   "rows_after": 45,
+   "snapshot": "sources/cybergym-model-focused/cybergym.json",
+   "snapshot_sha256": "7719dbaa1203a4ac67cf20f8a4c8c4ea2d35c43d6a3d4ccbd0c318db390048e6"
+  },
+  {
+   "id": "deepswe-v1-1",
+   "category": "coding",
+   "source": "https://deepswe.datacurve.ai/",
+   "status": "rows_changed",
+   "rows_before": 70,
+   "rows_after": 70,
+   "snapshot": "sources/deepswe-v1-1/leaderboard-live.json",
+   "snapshot_sha256": "a7c15d66288fd249c020b9931c017b92d1a3b90e480b3ff34974b752bd030019"
+  },
+  {
+   "id": "deepswe-v1",
+   "category": "coding",
+   "source": "https://deepswe.datacurve.ai/",
+   "status": "unchanged_rows",
+   "rows_before": 29,
+   "rows_after": 29,
+   "snapshot": "sources/deepswe-v1/leaderboard-live.json",
+   "snapshot_sha256": "6fc4a40007a7db1647b2661bed7f3c61f698ea08cb13d60de1707e108e9c2964"
+  },
+  {
+   "id": "ecommerce-bench",
+   "category": "long-horizon",
+   "source": "https://ecbench.github.io/#balance",
+   "status": "unchanged_rows",
+   "rows_before": 21,
+   "rows_after": 21,
+   "snapshot": "sources/ecommerce-bench/showcase_data_models.json",
+   "snapshot_sha256": "b4de26fc16469afe5200ec495ffe4879a9dddffe6eef38e7c3483d9b67a61f5b"
+  },
+  {
+   "id": "exploitgym",
+   "category": "security",
+   "source": "https://www.cybergym.io/exploitgym/",
+   "status": "unchanged_rows",
+   "rows_before": 20,
+   "rows_after": 20,
+   "snapshot": "sources/exploitgym/exploitgym.json",
+   "snapshot_sha256": "1cf3b94633364a7cb76c35dc502f21fbf889ee02b639f3a20042960a0a9b2533"
+  },
+  {
+   "id": "gaia",
+   "category": "general",
+   "source": "https://huggingface.co/spaces/gaia-benchmark/leaderboard",
+   "status": "rows_changed",
+   "rows_before": 100,
+   "rows_after": 100,
+   "snapshot": "sources/gaia/board_test_top100.json",
+   "snapshot_sha256": "b5883827c4815594630203d58ecd3913862a78ed4096dd2b76899faeff7a09c4"
+  },
+  {
+   "id": "gaia2-cli",
+   "category": "general",
+   "source": "https://huggingface.co/spaces/meta-agents-research-environments/leaderboard",
+   "status": "unchanged_rows",
+   "rows_before": 7,
+   "rows_after": 7,
+   "snapshot": "sources/gaia2-cli/gaia2_cli_data_from_app_py.json",
+   "snapshot_sha256": "682849a2fdf1798d16617f2d0c8531d814b33382d10e338b95622a437147bc86"
+  },
+  {
+   "id": "gaia2",
+   "category": "general",
+   "source": "https://huggingface.co/spaces/meta-agents-research-environments/leaderboard",
+   "status": "unchanged_rows",
+   "rows_before": 16,
+   "rows_after": 16,
+   "snapshot": "sources/gaia2/board_vanilla_gaia2.json",
+   "snapshot_sha256": "d979294f9d0cad4760e49bbb3dde0cc8da6d657ff2f290699262a4d68270a71c"
+  },
+  {
+   "id": "gso-opt10",
+   "category": "coding",
+   "source": "https://gso-bench.github.io/",
+   "status": "unchanged_rows",
+   "rows_before": 2,
+   "rows_after": 2,
+   "snapshot": "sources/gso-opt10/leaderboard.json",
+   "snapshot_sha256": "ea360f34a526d772ea3877d2b80ba4f4eebefc484e82b0abdd27ff9fe70b3b55"
+  },
+  {
+   "id": "gso",
+   "category": "coding",
+   "source": "https://gso-bench.github.io/",
+   "status": "rows_changed",
+   "rows_before": 28,
+   "rows_after": 32,
+   "snapshot": "sources/gso/leaderboard.json",
+   "snapshot_sha256": "ea360f34a526d772ea3877d2b80ba4f4eebefc484e82b0abdd27ff9fe70b3b55"
+  },
+  {
+   "id": "hal-assistantbench",
+   "category": "web",
+   "source": "https://hal.cs.princeton.edu/assistantbench",
+   "status": "unchanged_rows",
+   "rows_before": 15,
+   "rows_after": 15,
+   "snapshot": "sources/hal-assistantbench/leaderboard-table.html",
+   "snapshot_sha256": "963d5302c61009eed281c4567b0717afff7fa7e8bd3d44592236d8314eb480eb"
+  },
+  {
+   "id": "hal-core-bench-hard",
+   "category": "research",
+   "source": "https://hal.cs.princeton.edu/corebench_hard",
+   "status": "unchanged_rows",
+   "rows_before": 49,
+   "rows_after": 49,
+   "snapshot": "sources/hal-core-bench-hard/leaderboard-table.html",
+   "snapshot_sha256": "158c725b5628663215ce87d850afc65c590664569953e8a862af5b88f26a462a"
+  },
+  {
+   "id": "hal-gaia",
+   "category": "general",
+   "source": "https://hal.cs.princeton.edu/gaia",
+   "status": "unchanged_rows",
+   "rows_before": 32,
+   "rows_after": 32,
+   "snapshot": "sources/hal-gaia/leaderboard-table.html",
+   "snapshot_sha256": "f9497d5350637a02469f9885a69438f3be86fa638d1971b4699e00c33b75364c"
+  },
+  {
+   "id": "hal-online-mind2web",
+   "category": "web",
+   "source": "https://hal.cs.princeton.edu/online_mind2web",
+   "status": "unchanged_rows",
+   "rows_before": 22,
+   "rows_after": 22,
+   "snapshot": "sources/hal-online-mind2web/leaderboard-table.html",
+   "snapshot_sha256": "f578ff747e48db2cba29d9b06331aa375fcb82a7debb40a30e525f91add87b05"
+  },
+  {
+   "id": "hal-scicode",
+   "category": "research",
+   "source": "https://hal.cs.princeton.edu/scicode",
+   "status": "unchanged_rows",
+   "rows_before": 33,
+   "rows_after": 33,
+   "snapshot": "sources/hal-scicode/leaderboard-table.html",
+   "snapshot_sha256": "06f6fc28a3c103ab7997d8e1722ccee1ce134bf8657106fdd1ad6c32e9fcb22a"
+  },
+  {
+   "id": "hal-scienceagentbench",
+   "category": "research",
+   "source": "https://hal.cs.princeton.edu/scienceagentbench",
+   "status": "unchanged_rows",
+   "rows_before": 23,
+   "rows_after": 23,
+   "snapshot": "sources/hal-scienceagentbench/leaderboard-table.html",
+   "snapshot_sha256": "a3c629b6d214900921646bd0e6d30c90489cb6a6ab9a3cb9eb8c1e8370c16af0"
+  },
+  {
+   "id": "hal-swe-bench-verified-mini",
+   "category": "coding",
+   "source": "https://hal.cs.princeton.edu/swebench_verified_mini",
+   "status": "unchanged_rows",
+   "rows_before": 33,
+   "rows_after": 33,
+   "snapshot": "sources/hal-swe-bench-verified-mini/leaderboard-table.html",
+   "snapshot_sha256": "7c762ea1ea03676c4fe8387d2ba483895bf6356ffcc1452c199ab582013e3f48"
+  },
+  {
+   "id": "hal-tau-bench-airline",
+   "category": "tool-use",
+   "source": "https://hal.cs.princeton.edu/taubench_airline",
+   "status": "unchanged_rows",
+   "rows_before": 26,
+   "rows_after": 26,
+   "snapshot": "sources/hal-tau-bench-airline/leaderboard-table.html",
+   "snapshot_sha256": "702a0e2470e8134f36d82e365272243f439c088aa57c6edafacae1544de792a5"
+  },
+  {
+   "id": "hal-usaco",
+   "category": "coding",
+   "source": "https://hal.cs.princeton.edu/usaco",
+   "status": "unchanged_rows",
+   "rows_before": 13,
+   "rows_after": 13,
+   "snapshot": "sources/hal-usaco/leaderboard-table.html",
+   "snapshot_sha256": "07e811380dd596407571118e1b1fcb98eaff9b967272c242087b2859881dde00"
+  },
+  {
+   "id": "liveswebench",
+   "category": "coding",
+   "source": "https://liveswebench.ai/",
+   "status": "unchanged_rows",
+   "rows_before": 8,
+   "rows_after": 8,
+   "snapshot": "sources/liveswebench/results_csv.json",
+   "snapshot_sha256": "1fe13b2d2d5cbe065461693761b28a110de69c106a06b9db37b65d6f17727643"
+  },
+  {
+   "id": "macagentbench",
+   "category": "computer-use",
+   "source": "https://jetastra.github.io/MacAgentBench/",
+   "status": "unchanged_rows",
+   "rows_before": 30,
+   "rows_after": 30,
+   "snapshot": "sources/macagentbench/index.json",
+   "snapshot_sha256": "20d9e2f8ede68266a3e60f2f20c4ff5644a4bb06bd9a46af8688413c7b3ca9e0"
+  },
+  {
+   "id": "mcp-atlas",
+   "category": "tool-use",
+   "source": "https://labs.scale.com/leaderboard/mcp_atlas",
+   "status": "rows_changed",
+   "rows_before": 31,
+   "rows_after": 34,
+   "snapshot": "sources/mcp-atlas/leaderboard_entries.json",
+   "snapshot_sha256": "04ac43a397032d8f38b2c01949c9011e34db628c8adb56fc3ae64986b94bffe8"
+  },
+  {
+   "id": "mcp-bench",
+   "category": "tool-use",
+   "source": "https://huggingface.co/spaces/mcpbench/mcp-bench",
+   "status": "unchanged_rows",
+   "rows_before": 20,
+   "rows_after": 20,
+   "snapshot": "sources/mcp-bench/leaderboard_data.json",
+   "snapshot_sha256": "755d6f1807359278268a0ebf5a83117e9fcc5284aa8096801255459c695b593c"
+  },
+  {
+   "id": "mcp-universe-agent",
+   "category": "tool-use",
+   "source": "https://mcp-universe.github.io/#results",
+   "status": "unchanged_rows",
+   "rows_before": 8,
+   "rows_after": 8,
+   "snapshot": "sources/mcp-universe-agent/leaderboard_panel.html",
+   "snapshot_sha256": "7031d9286e070d17d31315c4e4aff0ecab04ffdbbf2947753846ff18c378c569"
+  },
+  {
+   "id": "mcp-universe-fc",
+   "category": "tool-use",
+   "source": "https://mcp-universe.github.io/#results",
+   "status": "unchanged_rows",
+   "rows_before": 21,
+   "rows_after": 21,
+   "snapshot": "sources/mcp-universe-fc/leaderboard_panel.html",
+   "snapshot_sha256": "a030b5dd3cea9ea6a209d7d9a8bc481680328a751be27a81e6ff7e7c919cbc29"
+  },
+  {
+   "id": "mcp-universe-react",
+   "category": "tool-use",
+   "source": "https://mcp-universe.github.io/#results",
+   "status": "unchanged_rows",
+   "rows_before": 28,
+   "rows_after": 28,
+   "snapshot": "sources/mcp-universe-react/leaderboard_panel.html",
+   "snapshot_sha256": "635bed5955df6c147d91479686f3cacca788f7e6e0666fac2157d7c5d052d0bd"
+  },
+  {
+   "id": "mcpmark-legacy",
+   "category": "tool-use",
+   "source": "https://mcpmark.ai/leaderboard",
+   "status": "unchanged_rows",
+   "rows_before": 39,
+   "rows_after": 39,
+   "snapshot": "sources/mcpmark-legacy/leaderboard_data.json",
+   "snapshot_sha256": "1bfedb17704527f49ac569e2ec1b9fb2a019e1f74a7006bc97133e8d215641c3"
+  },
+  {
+   "id": "mcpmark-verified",
+   "category": "tool-use",
+   "source": "https://mcpmark.ai/leaderboard/verified",
+   "status": "unchanged_rows",
+   "rows_before": 8,
+   "rows_after": 8,
+   "snapshot": "sources/mcpmark-verified/leaderboard_data.json",
+   "snapshot_sha256": "5e7d384a2493cb76f5cd85b7227182b41c4d1c177b11a348d8dd41cc9861197a"
+  },
+  {
+   "id": "metr-time-horizon-1.0",
+   "category": "long-horizon",
+   "source": "https://metr.org/time-horizons/",
+   "status": "unchanged_rows",
+   "rows_before": 33,
+   "rows_after": 33,
+   "snapshot": "sources/metr-time-horizon-1.0/benchmark_results_1_0.yaml",
+   "snapshot_sha256": "f15fd2f13cd8d28f06f5430fabf21dcd1284193ec152bdedc34e11dcc525df66"
+  },
+  {
+   "id": "metr-time-horizon",
+   "category": "long-horizon",
+   "source": "https://metr.org/time-horizons/",
+   "status": "unchanged_rows",
+   "rows_before": 26,
+   "rows_after": 26,
+   "snapshot": "sources/metr-time-horizon/benchmark_results_1_1.yaml",
+   "snapshot_sha256": "aae31902b0519a4da73e16643915e5e8aca13cd3315c3aac893ce3d6dfe92ad9"
+  },
+  {
+   "id": "mind2web-2",
+   "category": "research",
+   "source": "https://osu-nlp-group.github.io/Mind2Web-2/",
+   "status": "unchanged_rows",
+   "rows_before": 13,
+   "rows_after": 13,
+   "snapshot": "sources/mind2web-2/leaderboard_data.json",
+   "snapshot_sha256": "2f3370afc3b20e7f0c1964cc915f433561258ba3588525412bc6f89d45507504"
+  },
+  {
+   "id": "mle-bench-additional",
+   "category": "research",
+   "source": "https://github.com/openai/mle-bench#leaderboard",
+   "status": "unchanged_rows",
+   "rows_before": 2,
+   "rows_after": 2,
+   "snapshot": "sources/mle-bench-additional/README.md",
+   "snapshot_sha256": "586bbc19cb2a3e11be61021866ef6436cf4b4d935bb1db088984b567b76595bb"
+  },
+  {
+   "id": "mle-bench",
+   "category": "research",
+   "source": "https://github.com/openai/mle-bench#leaderboard",
+   "status": "unchanged_rows",
+   "rows_before": 28,
+   "rows_after": 28,
+   "snapshot": "sources/mle-bench/README.md",
+   "snapshot_sha256": "586bbc19cb2a3e11be61021866ef6436cf4b4d935bb1db088984b567b76595bb"
+  },
+  {
+   "id": "mobileworld",
+   "category": "computer-use",
+   "source": "https://tongyi-mai.github.io/MobileWorld/#leaderboard",
+   "status": "rows_changed",
+   "rows_before": 40,
+   "rows_after": 41,
+   "snapshot": "sources/mobileworld/leaderboard.json",
+   "snapshot_sha256": "27c069757ef8c8cf120623a285a81f3fb7c9df4dc3ae6ae93f04957d803c3458"
+  },
+  {
+   "id": "multi-swe-bench-c",
+   "category": "coding",
+   "source": "https://multi-swe-bench.github.io/",
+   "status": "unchanged_rows",
+   "rows_before": 38,
+   "rows_after": 38,
+   "snapshot": "sources/multi-swe-bench-c/leaderboard_c.json",
+   "snapshot_sha256": "16efd00cd3507db19f729e8cedd1104800d54b8ae6a38ddba55d04b47653efda"
+  },
+  {
+   "id": "multi-swe-bench-cpp",
+   "category": "coding",
+   "source": "https://multi-swe-bench.github.io/",
+   "status": "unchanged_rows",
+   "rows_before": 38,
+   "rows_after": 38,
+   "snapshot": "sources/multi-swe-bench-cpp/leaderboard_cpp.json",
+   "snapshot_sha256": "7f97fa113393af7a1b185bcd5d5d6f7b981f1606496f9860d22b997c7b099ff3"
+  },
+  {
+   "id": "multi-swe-bench-flash",
+   "category": "coding",
+   "source": "https://multi-swe-bench.github.io/",
+   "status": "unchanged_rows",
+   "rows_before": 9,
+   "rows_after": 9,
+   "snapshot": "sources/multi-swe-bench-flash/leaderboard-flash.json",
+   "snapshot_sha256": "6131348c971565d5a5163dc5f1344faafbb0a754f5d08e12e6e15df94a63789a"
+  },
+  {
+   "id": "multi-swe-bench-go",
+   "category": "coding",
+   "source": "https://multi-swe-bench.github.io/",
+   "status": "unchanged_rows",
+   "rows_before": 36,
+   "rows_after": 36,
+   "snapshot": "sources/multi-swe-bench-go/leaderboard_go.json",
+   "snapshot_sha256": "b41094e1350019f7223493f03f8c59315d14b7a5e5a3f7e87609efc1e6211137"
+  },
+  {
+   "id": "multi-swe-bench-java",
+   "category": "coding",
+   "source": "https://multi-swe-bench.github.io/",
+   "status": "unchanged_rows",
+   "rows_before": 41,
+   "rows_after": 41,
+   "snapshot": "sources/multi-swe-bench-java/leaderboard_java.json",
+   "snapshot_sha256": "52fcaf496a6ba9c0d1b4b47b6addb74afbaf920448044a19c64ac306a7fd161c"
+  },
+  {
+   "id": "multi-swe-bench-javascript",
+   "category": "coding",
+   "source": "https://multi-swe-bench.github.io/",
+   "status": "unchanged_rows",
+   "rows_before": 37,
+   "rows_after": 37,
+   "snapshot": "sources/multi-swe-bench-javascript/leaderboard_javascript.json",
+   "snapshot_sha256": "20e814299d022c1676d08060ef36d175e270da605b7822d57d9983be39495157"
+  },
+  {
+   "id": "multi-swe-bench-mini",
+   "category": "coding",
+   "source": "https://multi-swe-bench.github.io/",
+   "status": "unchanged_rows",
+   "rows_before": 37,
+   "rows_after": 37,
+   "snapshot": "sources/multi-swe-bench-mini/leaderboard-mini.json",
+   "snapshot_sha256": "47495a1bb2abd3551b0ad5423a9e05f960b777b19e642a2ad0839f8f23abad18"
+  },
+  {
+   "id": "multi-swe-bench-python",
+   "category": "coding",
+   "source": "https://multi-swe-bench.github.io/",
+   "status": "unchanged_rows",
+   "rows_before": 36,
+   "rows_after": 36,
+   "snapshot": "sources/multi-swe-bench-python/leaderboard_python.json",
+   "snapshot_sha256": "2dafb0d9b884c58209de27f8ebde228d9e79eda931b6eaeddf9d6a3500b8fa9e"
+  },
+  {
+   "id": "multi-swe-bench-rust",
+   "category": "coding",
+   "source": "https://multi-swe-bench.github.io/",
+   "status": "unchanged_rows",
+   "rows_before": 36,
+   "rows_after": 36,
+   "snapshot": "sources/multi-swe-bench-rust/leaderboard_rust.json",
+   "snapshot_sha256": "600932e5fceb1682dd6a5cb1df17f050814500ae58401336d7400015cdffd83d"
+  },
+  {
+   "id": "multi-swe-bench-typescript",
+   "category": "coding",
+   "source": "https://multi-swe-bench.github.io/",
+   "status": "unchanged_rows",
+   "rows_before": 37,
+   "rows_after": 37,
+   "snapshot": "sources/multi-swe-bench-typescript/leaderboard_typescript.json",
+   "snapshot_sha256": "e26859eaad1705a9690476d80c7449a31014aa70aed8525a4d3f9dc3d4544740"
+  },
+  {
+   "id": "multi-swe-bench",
+   "category": "coding",
+   "source": "https://multi-swe-bench.github.io/",
+   "status": "unchanged_rows",
+   "rows_before": 36,
+   "rows_after": 36,
+   "snapshot": "sources/multi-swe-bench/leaderboard.json",
+   "snapshot_sha256": "49c1a3808b633e0239639126e885a14e5807e6a65d7dccfe4d6be6fb728d85fa"
+  },
+  {
+   "id": "online-mind2web-auto",
+   "category": "web",
+   "source": "https://huggingface.co/spaces/osunlp/Online_Mind2Web_Leaderboard",
+   "status": "unchanged_rows",
+   "rows_before": 20,
+   "rows_after": 20,
+   "snapshot": "sources/online-mind2web-auto/auto_o4-mini.csv",
+   "snapshot_sha256": "1cea02f3f4218afd8f4c83df456bbf6b0dbfa248f0d538fc2cfa4200742c8f38"
+  },
+  {
+   "id": "online-mind2web-human",
+   "category": "web",
+   "source": "https://huggingface.co/spaces/osunlp/Online_Mind2Web_Leaderboard",
+   "status": "unchanged_rows",
+   "rows_before": 13,
+   "rows_after": 13,
+   "snapshot": "sources/online-mind2web-human/human.csv",
+   "snapshot_sha256": "64f3c169115a9037d9055831d7362e635e06b1fd92a7aea6e8a80f3bf0bb40c1"
+  },
+  {
+   "id": "osuniverse",
+   "category": "computer-use",
+   "source": "https://agentsea.github.io/osuniverse/",
+   "status": "unchanged_rows",
+   "rows_before": 8,
+   "rows_after": 8,
+   "snapshot": "sources/osuniverse/agent_performance_table.html",
+   "snapshot_sha256": "6c1e6e496558266f0f22f12a0eb645dc62aceb1d92ce6ec6b1ff9916525734a3"
+  },
+  {
+   "id": "osworld-2-1-full-500steps",
+   "category": "computer-use",
+   "source": "https://osworld-v2.xlang.ai/",
+   "status": "new_table",
+   "rows_before": 0,
+   "rows_after": 5,
+   "snapshot": "sources/osworld-2-1-full-500steps/official-results.json",
+   "snapshot_sha256": "676a8bb4ab6e91da4191e879af79f33451ed99a84e0c3fc8958726b6aa33617c"
+  },
+  {
+   "id": "osworld-2-1-offline-500steps",
+   "category": "computer-use",
+   "source": "https://osworld-v2.xlang.ai/",
+   "status": "new_table",
+   "rows_before": 0,
+   "rows_after": 5,
+   "snapshot": "sources/osworld-2-1-offline-500steps/official-results.json",
+   "snapshot_sha256": "676a8bb4ab6e91da4191e879af79f33451ed99a84e0c3fc8958726b6aa33617c"
+  },
+  {
+   "id": "osworld-2-full-150steps",
+   "category": "computer-use",
+   "source": "https://osworld-v2.xlang.ai/",
+   "status": "unchanged_rows",
+   "rows_before": 6,
+   "rows_after": 6,
+   "snapshot": "sources/osworld-2-full-150steps/official-results.json",
+   "snapshot_sha256": "676a8bb4ab6e91da4191e879af79f33451ed99a84e0c3fc8958726b6aa33617c"
+  },
+  {
+   "id": "osworld-2-full-300steps",
+   "category": "computer-use",
+   "source": "https://osworld-v2.xlang.ai/",
+   "status": "unchanged_rows",
+   "rows_before": 7,
+   "rows_after": 7,
+   "snapshot": "sources/osworld-2-full-300steps/official-results.json",
+   "snapshot_sha256": "676a8bb4ab6e91da4191e879af79f33451ed99a84e0c3fc8958726b6aa33617c"
+  },
+  {
+   "id": "osworld-2-full-500steps",
+   "category": "computer-use",
+   "source": "https://osworld-v2.xlang.ai/",
+   "status": "unchanged_rows",
+   "rows_before": 16,
+   "rows_after": 16,
+   "snapshot": "sources/osworld-2-full-500steps/official-results.json",
+   "snapshot_sha256": "676a8bb4ab6e91da4191e879af79f33451ed99a84e0c3fc8958726b6aa33617c"
+  },
+  {
+   "id": "osworld-2-offline-500steps",
+   "category": "computer-use",
+   "source": "https://osworld-v2.xlang.ai/",
+   "status": "unchanged_rows",
+   "rows_before": 11,
+   "rows_after": 11,
+   "snapshot": "sources/osworld-2-offline-500steps/official-results.json",
+   "snapshot_sha256": "676a8bb4ab6e91da4191e879af79f33451ed99a84e0c3fc8958726b6aa33617c"
+  },
+  {
+   "id": "osworld-mcp",
+   "category": "computer-use",
+   "source": "https://osworld-mcp.github.io/",
+   "status": "unchanged_rows",
+   "rows_before": 22,
+   "rows_after": 22,
+   "snapshot": "sources/osworld-mcp/leaderboard_table.html",
+   "snapshot_sha256": "c6c16c38966cf96bad1f7a8d4aac39ccd9a40161a28a68c8b71e84fffa264b13"
+  },
+  {
+   "id": "osworld-self-reported-a11y-tree",
+   "category": "computer-use",
+   "source": "https://os-world.github.io/",
+   "status": "unchanged_rows",
+   "rows_before": 15,
+   "rows_after": 15,
+   "snapshot": "sources/osworld-self-reported-a11y-tree/self_reported_results.A11y_tree.json",
+   "snapshot_sha256": "1b55130cf672f862b536bb0e67664a91edb59966017adbfc47ce8daf5d857578"
+  },
+  {
+   "id": "osworld-self-reported-screenshot-a11y-tree",
+   "category": "computer-use",
+   "source": "https://os-world.github.io/",
+   "status": "unchanged_rows",
+   "rows_before": 18,
+   "rows_after": 18,
+   "snapshot": "sources/osworld-self-reported-screenshot-a11y-tree/self_reported_results.Screenshot_A11y_tree.json",
+   "snapshot_sha256": "0286551d9f3c58e899fd022c29a96678c43137ba58f07de4f825b1fa11e79c81"
+  },
+  {
+   "id": "osworld-self-reported-screenshot",
+   "category": "computer-use",
+   "source": "https://os-world.github.io/",
+   "status": "unchanged_rows",
+   "rows_before": 56,
+   "rows_after": 56,
+   "snapshot": "sources/osworld-self-reported-screenshot/self_reported_results.Screenshot.json",
+   "snapshot_sha256": "1c4907fd316bd286870cb016c97c118e21a263dc41f99bd651ae1ef7b4c12851"
+  },
+  {
+   "id": "osworld-self-reported-set-of-mark",
+   "category": "computer-use",
+   "source": "https://os-world.github.io/",
+   "status": "unchanged_rows",
+   "rows_before": 11,
+   "rows_after": 11,
+   "snapshot": "sources/osworld-self-reported-set-of-mark/self_reported_results.Set-of-Mark.json",
+   "snapshot_sha256": "8b171f33ba7a9e6b41573212e9375ee1eb0c5bfbe6e11a0c30cabbfd91314698"
+  },
+  {
+   "id": "osworld-verified",
+   "category": "computer-use",
+   "source": "https://os-world.github.io/",
+   "status": "unchanged_rows",
+   "rows_before": 110,
+   "rows_after": 110,
+   "snapshot": "sources/osworld-verified/osworld_verified_results.sheet.json",
+   "snapshot_sha256": "92304352bbee7cf4e5309611d39360c3af8f2b7b61973aad16bdeb4180b2bab9"
+  },
+  {
+   "id": "paperbench-code-dev",
+   "category": "research",
+   "source": "https://github.com/openai/preparedness/tree/main/project/paperbench",
+   "status": "unchanged_rows",
+   "rows_before": 1,
+   "rows_after": 1,
+   "snapshot": "sources/paperbench-code-dev/README.md",
+   "snapshot_sha256": "b50041ce9329b4a5a779c7114b8c21f6eab93cae91d309f5924f6ebe06f470cb"
+  },
+  {
+   "id": "paperbench",
+   "category": "research",
+   "source": "https://github.com/openai/preparedness/tree/main/project/paperbench",
+   "status": "unchanged_rows",
+   "rows_before": 10,
+   "rows_after": 10,
+   "snapshot": "sources/paperbench/README.md",
+   "snapshot_sha256": "b50041ce9329b4a5a779c7114b8c21f6eab93cae91d309f5924f6ebe06f470cb"
+  },
+  {
+   "id": "real-v1-frameworks",
+   "category": "web",
+   "source": "https://www.realevals.xyz/",
+   "status": "unchanged_rows",
+   "rows_before": 5,
+   "rows_after": 5,
+   "snapshot": "sources/real-v1-frameworks/getVerifiedModelData_v1_frameworks.json",
+   "snapshot_sha256": "1077bb05e2483747436028bd40d898acfbcc5bfb3a016e1dddeab88d88799dfe"
+  },
+  {
+   "id": "real-v1-models",
+   "category": "web",
+   "source": "https://www.realevals.xyz/",
+   "status": "unchanged_rows",
+   "rows_before": 21,
+   "rows_after": 21,
+   "snapshot": "sources/real-v1-models/getVerifiedModelData_v1_models.json",
+   "snapshot_sha256": "3a28fdde480f3f3aed5540363ceaf976839416a9121c99fd0d3c66504c5d8679"
+  },
+  {
+   "id": "real-v1-open-arena",
+   "category": "web",
+   "source": "https://www.realevals.xyz/",
+   "status": "unchanged_rows",
+   "rows_before": 7,
+   "rows_after": 7,
+   "snapshot": "sources/real-v1-open-arena/getVerifiedModelData_v1_open-arena.json",
+   "snapshot_sha256": "2914f66c3db6f23b766a0aa0e280912bad4f6ae068e5044d6787e7029453e536"
+  },
+  {
+   "id": "real-v2-frameworks",
+   "category": "web",
+   "source": "https://www.realevals.xyz/",
+   "status": "unchanged_rows",
+   "rows_before": 1,
+   "rows_after": 1,
+   "snapshot": "sources/real-v2-frameworks/getVerifiedModelData_v2_frameworks.json",
+   "snapshot_sha256": "8993d2315f39dcb0fde5e94b795bd5ef4d462e908febfeffef5b5c09d3db157f"
+  },
+  {
+   "id": "real-v2-models",
+   "category": "web",
+   "source": "https://www.realevals.xyz/",
+   "status": "unchanged_rows",
+   "rows_before": 12,
+   "rows_after": 12,
+   "snapshot": "sources/real-v2-models/getVerifiedModelData_v2_models.json",
+   "snapshot_sha256": "ff57fcc99ff27a08d6b7b9fbfac2f132eb4ede874d0576824707345314fd96d9"
+  },
+  {
+   "id": "sec-bench-poc-generation",
+   "category": "security",
+   "source": "https://sec-bench.github.io/",
+   "status": "unchanged_rows",
+   "rows_before": 3,
+   "rows_after": 3,
+   "snapshot": "sources/sec-bench-poc-generation/leaderboard-table.html",
+   "snapshot_sha256": "dfad75302168ae0f56a92abf31724b200954bbe8c2749e29cc5fe30a50ab0fd4"
+  },
+  {
+   "id": "sec-bench-pro-firefox",
+   "category": "security",
+   "source": "https://sec-bench.github.io/",
+   "status": "unchanged_rows",
+   "rows_before": 6,
+   "rows_after": 6,
+   "snapshot": "sources/sec-bench-pro-firefox/leaderboard-table.html",
+   "snapshot_sha256": "b6ea0cd5c55c8dce9e92d7b1d0775e6f2348946e57a85453c4da8415634a091b"
+  },
+  {
+   "id": "sec-bench-pro-linux",
+   "category": "security",
+   "source": "https://sec-bench.github.io/",
+   "status": "unchanged_rows",
+   "rows_before": 6,
+   "rows_after": 6,
+   "snapshot": "sources/sec-bench-pro-linux/leaderboard-table.html",
+   "snapshot_sha256": "ba74fded0bbac0c9787540f25b8e3b9049ea03aec783dee44f7203c70c76c70a"
+  },
+  {
+   "id": "sec-bench-pro-overall",
+   "category": "security",
+   "source": "https://sec-bench.github.io/",
+   "status": "unchanged_rows",
+   "rows_before": 6,
+   "rows_after": 6,
+   "snapshot": "sources/sec-bench-pro-overall/leaderboard-table.html",
+   "snapshot_sha256": "c6dc359c547b526dd924cbce7f8fe9d50f8a12144f37ab40072949e6a619b035"
+  },
+  {
+   "id": "sec-bench-pro-v8",
+   "category": "security",
+   "source": "https://sec-bench.github.io/",
+   "status": "unchanged_rows",
+   "rows_before": 6,
+   "rows_after": 6,
+   "snapshot": "sources/sec-bench-pro-v8/leaderboard-table.html",
+   "snapshot_sha256": "312106428ac7308e21d496db029efa9601eef48c99ba25388985616fb6beff08"
+  },
+  {
+   "id": "sec-bench-vulnerability-patching",
+   "category": "security",
+   "source": "https://sec-bench.github.io/",
+   "status": "unchanged_rows",
+   "rows_before": 5,
+   "rows_after": 5,
+   "snapshot": "sources/sec-bench-vulnerability-patching/leaderboard-table.html",
+   "snapshot_sha256": "175afb4cfbc17758d115624aa7f3ca770fc67747a20d0a4f5a1abf32cd934b3c"
+  },
+  {
+   "id": "skillsbench",
+   "category": "general",
+   "source": "https://www.skillsbench.ai/leaderboard",
+   "status": "unchanged_rows",
+   "rows_before": 25,
+   "rows_after": 25,
+   "snapshot": "sources/skillsbench/leaderboardData.json",
+   "snapshot_sha256": "12779b8ccfc160fcf29514f2d4dbca2c3844a4a2c42fad835b8b12b94c346d09"
+  },
+  {
+   "id": "slopcodebench",
+   "category": "coding",
+   "source": "https://www.scbench.ai/leaderboard",
+   "status": "unchanged_rows",
+   "rows_before": 24,
+   "rows_after": 24,
+   "snapshot": "sources/slopcodebench/leaderboard_data.json",
+   "snapshot_sha256": "b5f2079200cc2c1f736aaf9766d2a301c980cc3bac37d5faa4c7e0f083cfda3b"
+  },
+  {
+   "id": "swe-bench-bash-only",
+   "category": "coding",
+   "source": "https://www.swebench.com/verified.html",
+   "status": "rows_changed",
+   "rows_before": 47,
+   "rows_after": 47,
+   "snapshot": "sources/swe-bench-bash-only/leaderboards_verified_mini-swe-agent.json",
+   "snapshot_sha256": "211f5154ead68f0e2c5b9ad6445ac71a9b59dba8f878685ebf9e91c7caebf682"
+  },
+  {
+   "id": "swe-bench-full",
+   "category": "coding",
+   "source": "https://www.swebench.com/original.html",
+   "status": "unchanged_rows",
+   "rows_before": 24,
+   "rows_after": 24,
+   "snapshot": "sources/swe-bench-full/leaderboards_test.json",
+   "snapshot_sha256": "ebcebd9c8d7f1d622aafa08e637d1ce427fbda7b52a8225d9416c61b6f092041"
+  },
+  {
+   "id": "swe-bench-lite",
+   "category": "coding",
+   "source": "https://www.swebench.com/lite.html",
+   "status": "rows_changed",
+   "rows_before": 84,
+   "rows_after": 84,
+   "snapshot": "sources/swe-bench-lite/leaderboards_lite.json",
+   "snapshot_sha256": "b8368d81cb52fbcb089e6b16bb68de3ec85fefb649cede562eb7f14416bfc65b"
+  },
+  {
+   "id": "swe-bench-live-c-cpp",
+   "category": "coding",
+   "source": "https://swe-bench-live.github.io/",
+   "status": "unchanged_rows",
+   "rows_before": 17,
+   "rows_after": 17,
+   "snapshot": "sources/swe-bench-live-c-cpp/reports-0605_ccpp.json",
+   "snapshot_sha256": "c89bf0cb3bdf3ab6b01049f50b12a4db345b67f7a0811222690d2fb16b3214c2"
+  },
+  {
+   "id": "swe-bench-live-csharp",
+   "category": "coding",
+   "source": "https://swe-bench-live.github.io/",
+   "status": "unchanged_rows",
+   "rows_before": 19,
+   "rows_after": 19,
+   "snapshot": "sources/swe-bench-live-csharp/reports-0605_csharp.json",
+   "snapshot_sha256": "378e875a3c83696b52d29ea81ebc0bb0e5037fbfa8f39529334c80ee430dfe91"
+  },
+  {
+   "id": "swe-bench-live-full",
+   "category": "coding",
+   "source": "https://swe-bench-live.github.io/",
+   "status": "unchanged_rows",
+   "rows_before": 4,
+   "rows_after": 4,
+   "snapshot": "sources/swe-bench-live-full/reports-0605_full.json",
+   "snapshot_sha256": "7ce488d95fb31b840e7503751695c06504d1985e14825d90c7547993ee8535ea"
+  },
+  {
+   "id": "swe-bench-live-go",
+   "category": "coding",
+   "source": "https://swe-bench-live.github.io/",
+   "status": "unchanged_rows",
+   "rows_before": 22,
+   "rows_after": 22,
+   "snapshot": "sources/swe-bench-live-go/reports-0605_go.json",
+   "snapshot_sha256": "9243041a9ad797a991789e7dcb74156bb4497bdd0b40c5d2b5724844c2895081"
+  },
+  {
+   "id": "swe-bench-live-java",
+   "category": "coding",
+   "source": "https://swe-bench-live.github.io/",
+   "status": "unchanged_rows",
+   "rows_before": 23,
+   "rows_after": 23,
+   "snapshot": "sources/swe-bench-live-java/reports-0605_java.json",
+   "snapshot_sha256": "295f0150ba413374c7b14e7431c1602a5574be61227eea44bc8d84f0f68aaeb4"
+  },
+  {
+   "id": "swe-bench-live-lite",
+   "category": "coding",
+   "source": "https://swe-bench-live.github.io/",
+   "status": "rows_changed",
+   "rows_before": 22,
+   "rows_after": 24,
+   "snapshot": "sources/swe-bench-live-lite/reports-0605_lite.json",
+   "snapshot_sha256": "0977633215eb08f6c27da574df6ab91a7a22b565542536dbedec1776b52202b3"
+  },
+  {
+   "id": "swe-bench-live-rust",
+   "category": "coding",
+   "source": "https://swe-bench-live.github.io/",
+   "status": "unchanged_rows",
+   "rows_before": 18,
+   "rows_after": 18,
+   "snapshot": "sources/swe-bench-live-rust/reports-0605_rust.json",
+   "snapshot_sha256": "f35613b310d794f129ece87f563aac3ed86e8b8835fd95489fb84286caaa479c"
+  },
+  {
+   "id": "swe-bench-live-ts-js",
+   "category": "coding",
+   "source": "https://swe-bench-live.github.io/",
+   "status": "rows_changed",
+   "rows_before": 21,
+   "rows_after": 22,
+   "snapshot": "sources/swe-bench-live-ts-js/reports-0605_tsjs.json",
+   "snapshot_sha256": "b9d96b8ad8e1223e7f2532b6994cd5eaa2d6a612ecafb30b628727fd9e7c769f"
+  },
+  {
+   "id": "swe-bench-live-verified",
+   "category": "coding",
+   "source": "https://swe-bench-live.github.io/",
+   "status": "unchanged_rows",
+   "rows_before": 2,
+   "rows_after": 2,
+   "snapshot": "sources/swe-bench-live-verified/reports-0605_verified.json",
+   "snapshot_sha256": "8ef2c4ff4db34302ee1273cba50f910d5154688d925fb6be75e1197968c24b00"
+  },
+  {
+   "id": "swe-bench-live-windows",
+   "category": "coding",
+   "source": "https://swe-bench-live.github.io/",
+   "status": "unchanged_rows",
+   "rows_before": 6,
+   "rows_after": 6,
+   "snapshot": "sources/swe-bench-live-windows/reports-0605_windows.json",
+   "snapshot_sha256": "e9e4d1ae9dbc2b20f62abe2db3b0d86ef3c35d61e57256206d8121f8dfb1d8bb"
+  },
+  {
+   "id": "swe-bench-multilingual",
+   "category": "coding",
+   "source": "https://www.swebench.com/multilingual.html",
+   "status": "rows_changed",
+   "rows_before": 13,
+   "rows_after": 13,
+   "snapshot": "sources/swe-bench-multilingual/leaderboards_multilingual.json",
+   "snapshot_sha256": "80e583114e81feed9939ade83410eb9dc6d7b8f2d717125506ce35b467dc02a7"
+  },
+  {
+   "id": "swe-bench-multimodal",
+   "category": "coding",
+   "source": "https://www.swebench.com/multimodal.html",
+   "status": "unchanged_rows",
+   "rows_before": 22,
+   "rows_after": 22,
+   "snapshot": "sources/swe-bench-multimodal/leaderboards_multimodal.json",
+   "snapshot_sha256": "c9694ef2cede7385e57089d277d6f1602a427ee20fdc6cd5b677681060faedda"
+  },
+  {
+   "id": "swe-bench-pro-private",
+   "category": "coding",
+   "source": "https://labs.scale.com/leaderboard/swe_bench_pro_private",
+   "status": "unchanged_rows",
+   "rows_before": 14,
+   "rows_after": 14,
+   "snapshot": "sources/swe-bench-pro-private/entries.json",
+   "snapshot_sha256": "f51b7b15e7969014699a8ea14e6f411be40d7a86fcbf8c8c2bb7d64cb4a62440"
+  },
+  {
+   "id": "swe-bench-pro-public",
+   "category": "coding",
+   "source": "https://labs.scale.com/leaderboard/swe_bench_pro_public",
+   "status": "unchanged_rows",
+   "rows_before": 25,
+   "rows_after": 25,
+   "snapshot": "sources/swe-bench-pro-public/entries.json",
+   "snapshot_sha256": "e5142c861a733769a4c6231b9b234d324a72918df03b8495ca1f9f0a245b2d2b"
+  },
+  {
+   "id": "swe-bench-verified",
+   "category": "coding",
+   "source": "https://www.swebench.com/verified.html",
+   "status": "rows_changed",
+   "rows_before": 180,
+   "rows_after": 180,
+   "snapshot": "sources/swe-bench-verified/leaderboards_verified.json",
+   "snapshot_sha256": "294a9ba56a8463efd3e79dbe84b2840cef81201785e64dd56644a4c996d861c7"
+  },
+  {
+   "id": "swe-lancer-diamond",
+   "category": "coding",
+   "source": "https://swelancer.github.io/leaderboard/",
+   "status": "unchanged_rows",
+   "rows_before": 5,
+   "rows_after": 5,
+   "snapshot": "sources/swe-lancer-diamond/results.csv",
+   "snapshot_sha256": "7bc06635827610f9f35c5e5327fa669c332783448ca5cbec0c516d60b0903efd"
+  },
+  {
+   "id": "swe-marathon-v1-0",
+   "category": "long-horizon",
+   "source": "https://www.swe-marathon.org/",
+   "status": "unchanged_rows",
+   "rows_before": 16,
+   "rows_after": 16,
+   "snapshot": "sources/swe-marathon-v1-0/leaderboard_v1_0.json",
+   "snapshot_sha256": "20e05de9291b96039d2b66bbf4700e817ae79d995fde3a8dd501ee15569ce839"
+  },
+  {
+   "id": "swe-marathon-v1-1",
+   "category": "long-horizon",
+   "source": "https://www.swe-marathon.org/",
+   "status": "rows_changed",
+   "rows_before": 18,
+   "rows_after": 24,
+   "snapshot": "sources/swe-marathon-v1-1/task_results_trimmed.json",
+   "snapshot_sha256": "de3494f7893d1bf2ca27692048da0a33746740fbdfe3a44a2c67e3f633542b04"
+  },
+  {
+   "id": "swe-polybench-500",
+   "category": "coding",
+   "source": "https://amazon-science.github.io/SWE-PolyBench/",
+   "status": "unchanged_rows",
+   "rows_before": 10,
+   "rows_after": 10,
+   "snapshot": "sources/swe-polybench-500/polybench_data_polybench500.json",
+   "snapshot_sha256": "439132903728d3ae811fa25ab7417805bd172800f408125bba485e2e438275f2"
+  },
+  {
+   "id": "swe-polybench-verified",
+   "category": "coding",
+   "source": "https://amazon-science.github.io/SWE-PolyBench/",
+   "status": "unchanged_rows",
+   "rows_before": 14,
+   "rows_after": 14,
+   "snapshot": "sources/swe-polybench-verified/polybench_data_verified.json",
+   "snapshot_sha256": "42b6cbcdd4004165668d68437ca717bdcb362512e14c438dab9555c94369e20d"
+  },
+  {
+   "id": "swe-polybench",
+   "category": "coding",
+   "source": "https://amazon-science.github.io/SWE-PolyBench/",
+   "status": "unchanged_rows",
+   "rows_before": 10,
+   "rows_after": 10,
+   "snapshot": "sources/swe-polybench/polybench_data_full.json",
+   "snapshot_sha256": "e2091ed264c8949b9517d5013a749d5155cc899bb361e3cd3fd6b63da4da3265"
+  },
+  {
+   "id": "swe-rebench",
+   "category": "coding",
+   "source": "https://swe-rebench.com/",
+   "status": "unchanged_rows",
+   "rows_before": 117,
+   "rows_after": 117,
+   "snapshot": "sources/swe-rebench/leaderboard_props.json",
+   "snapshot_sha256": "4d9b50926d8321eebdfe8d75b4be38fa9b5cc56f3d0393aee7d222c688c13f55"
+  },
+  {
+   "id": "tau2-bench-airline",
+   "category": "tool-use",
+   "source": "https://taubench.com/leaderboard?benchmark=core",
+   "status": "unchanged_rows",
+   "rows_before": 8,
+   "rows_after": 8,
+   "snapshot": "sources/tau2-bench-airline/submissions.json",
+   "snapshot_sha256": "a661caa90aebc29e37b97d71c61af011bb2c313994d520e0263acc5cd0dde510"
+  },
+  {
+   "id": "tau2-bench-legacy-airline",
+   "category": "tool-use",
+   "source": "https://taubench.com/leaderboard?benchmark=core",
+   "status": "unchanged_rows",
+   "rows_before": 16,
+   "rows_after": 16,
+   "snapshot": "sources/tau2-bench-legacy-airline/submissions.json",
+   "snapshot_sha256": "85612ce632847923dc194a2023f2d5829c3d43e246f6752f72553bc88f4fa7a1"
+  },
+  {
+   "id": "tau2-bench-legacy-retail",
+   "category": "tool-use",
+   "source": "https://taubench.com/leaderboard?benchmark=core",
+   "status": "unchanged_rows",
+   "rows_before": 16,
+   "rows_after": 16,
+   "snapshot": "sources/tau2-bench-legacy-retail/submissions.json",
+   "snapshot_sha256": "b88125288a2ca67e8d160d1be9da8d71d05b50160d0c02ce3ebc5943c64813aa"
+  },
+  {
+   "id": "tau2-bench-legacy-telecom",
+   "category": "tool-use",
+   "source": "https://taubench.com/leaderboard?benchmark=core",
+   "status": "unchanged_rows",
+   "rows_before": 12,
+   "rows_after": 12,
+   "snapshot": "sources/tau2-bench-legacy-telecom/submissions.json",
+   "snapshot_sha256": "4e6a9d9104e0376e35b07d4d033fe5d607b0e73336046246ca4ef14e6b4bab3a"
+  },
+  {
+   "id": "tau2-bench-legacy",
+   "category": "tool-use",
+   "source": "https://taubench.com/leaderboard?benchmark=core",
+   "status": "unchanged_rows",
+   "rows_before": 12,
+   "rows_after": 12,
+   "snapshot": "sources/tau2-bench-legacy/submissions.json",
+   "snapshot_sha256": "7e93440f26588d6adf5dece9397cf4c90030055cf433432c54551da6dbeec9cd"
+  },
+  {
+   "id": "tau2-bench-retail",
+   "category": "tool-use",
+   "source": "https://taubench.com/leaderboard?benchmark=core",
+   "status": "unchanged_rows",
+   "rows_before": 9,
+   "rows_after": 9,
+   "snapshot": "sources/tau2-bench-retail/submissions.json",
+   "snapshot_sha256": "32f132a5d3be3776afa08212232aae8c1901f2e06083044b3d560fda0c29c0a6"
+  },
+  {
+   "id": "tau2-bench-telecom",
+   "category": "tool-use",
+   "source": "https://taubench.com/leaderboard?benchmark=core",
+   "status": "unchanged_rows",
+   "rows_before": 8,
+   "rows_after": 8,
+   "snapshot": "sources/tau2-bench-telecom/submissions.json",
+   "snapshot_sha256": "82cfdba24acf91fcaf1862decc492deec81053e850f6aace8b73493606325f8c"
+  },
+  {
+   "id": "tau2-bench",
+   "category": "tool-use",
+   "source": "https://taubench.com/leaderboard?benchmark=core",
+   "status": "unchanged_rows",
+   "rows_before": 8,
+   "rows_after": 8,
+   "snapshot": "sources/tau2-bench/submissions.json",
+   "snapshot_sha256": "e5ba65dedd6c6f72d7427d19cd8154d84cfff8f1779370af875d20be5c614dba"
+  },
+  {
+   "id": "tau3-banking",
+   "category": "tool-use",
+   "source": "https://taubench.com/leaderboard?benchmark=knowledge",
+   "status": "unchanged_rows",
+   "rows_before": 28,
+   "rows_after": 28,
+   "snapshot": "sources/tau3-banking/submissions.json",
+   "snapshot_sha256": "419a95ca960778e50462e546320b378c789c494e4f8bf00e15cf48d5cf618e90"
+  },
+  {
+   "id": "tau3-voice-airline",
+   "category": "tool-use",
+   "source": "https://taubench.com/leaderboard?benchmark=voice",
+   "status": "rows_changed",
+   "rows_before": 18,
+   "rows_after": 18,
+   "snapshot": "sources/tau3-voice-airline/submissions.json",
+   "snapshot_sha256": "a69e8d7e4a3f0284c7a39136f52669e0107d3c89b0799024d1fe0c71eee9b5a1"
+  },
+  {
+   "id": "tau3-voice-banking",
+   "category": "tool-use",
+   "source": "https://taubench.com/leaderboard?benchmark=voice",
+   "status": "rows_changed",
+   "rows_before": 4,
+   "rows_after": 5,
+   "snapshot": "sources/tau3-voice-banking/submissions.json",
+   "snapshot_sha256": "a188ea28bfdce4a0cdd5e9e190f2752890070f71874464e33c20acaf32cab735"
+  },
+  {
+   "id": "tau3-voice-retail",
+   "category": "tool-use",
+   "source": "https://taubench.com/leaderboard?benchmark=voice",
+   "status": "rows_changed",
+   "rows_before": 18,
+   "rows_after": 18,
+   "snapshot": "sources/tau3-voice-retail/submissions.json",
+   "snapshot_sha256": "aff54bcd02a5d06c29d4bbeaa748b0a63d24c24920c6d265f8e31d9d5ed49d49"
+  },
+  {
+   "id": "tau3-voice-telecom",
+   "category": "tool-use",
+   "source": "https://taubench.com/leaderboard?benchmark=voice",
+   "status": "rows_changed",
+   "rows_before": 18,
+   "rows_after": 18,
+   "snapshot": "sources/tau3-voice-telecom/submissions.json",
+   "snapshot_sha256": "575928ab76188fbc99ad65f0bae222ae93cd831fba5a5a78e33ea4f3b8ac6d8b"
+  },
+  {
+   "id": "tau3-voice",
+   "category": "tool-use",
+   "source": "https://taubench.com/leaderboard?benchmark=voice",
+   "status": "rows_changed",
+   "rows_before": 18,
+   "rows_after": 18,
+   "snapshot": "sources/tau3-voice/submissions.json",
+   "snapshot_sha256": "f0efae397e0064df359f74b2dc09557da97db13994f210735652f05a6e795056"
+  },
+  {
+   "id": "terminal-bench-2-0",
+   "category": "terminal",
+   "source": "https://www.tbench.ai/?version=2.0",
+   "status": "unchanged_rows",
+   "rows_before": 142,
+   "rows_after": 142,
+   "snapshot": "sources/terminal-bench-2-0/leaderboard.json",
+   "snapshot_sha256": "3cbf87d1d3c6ee8528a70bbf653724f89ed66f1adf25d335b0e1f47e388f704b"
+  },
+  {
+   "id": "terminal-bench-2-1",
+   "category": "terminal",
+   "source": "https://www.tbench.ai/?version=2.1",
+   "status": "unchanged_rows",
+   "rows_before": 22,
+   "rows_after": 22,
+   "snapshot": "sources/terminal-bench-2-1/leaderboard.json",
+   "snapshot_sha256": "63b2d2c51476de6b9c8821def8ccb2705cffae62898d0c70959491f4e7cd7300"
+  },
+  {
+   "id": "terminal-bench-3-0",
+   "category": "terminal",
+   "source": "https://www.tbench.ai/?version=3.0",
+   "status": "unchanged_rows",
+   "rows_before": 12,
+   "rows_after": 12,
+   "snapshot": "sources/terminal-bench-3-0/leaderboard.json",
+   "snapshot_sha256": "83a420d2efc0b5cc6b2ec7689066bcc477650cdb3336ef1fc0ea40632e4e3786"
+  },
+  {
+   "id": "terminal-bench-4-0",
+   "category": "terminal",
+   "source": "https://www.tbench.ai/",
+   "status": "rows_changed",
+   "rows_before": 18,
+   "rows_after": 27,
+   "snapshot": "sources/terminal-bench-4-0/leaderboard.json",
+   "snapshot_sha256": "b178edd93316b2a8ea4f75c000ea0ea5a97fd4b4aad938643ef5aaae0b1580c4"
+  },
+  {
+   "id": "terminal-bench-science-0-1",
+   "category": "terminal",
+   "source": "https://www.terminal-bench-science.ai/",
+   "status": "rows_changed",
+   "rows_before": 14,
+   "rows_after": 17,
+   "snapshot": "sources/terminal-bench-science-0-1/leaderboard.json",
+   "snapshot_sha256": "1984c45eab608b74492eee98c383267a6e7a51a9581fa01d3db28892485f6946"
+  },
+  {
+   "id": "theagentcompany",
+   "category": "tool-use",
+   "source": "https://the-agent-company.com/leaderboard",
+   "status": "unchanged_rows",
+   "rows_before": 17,
+   "rows_after": 17,
+   "snapshot": "sources/theagentcompany/leaderboard.json",
+   "snapshot_sha256": "9e12abe430f0f93c1a088f1f510ab05da5d0f312b3c8de2a329d0c3fedbf79c9"
+  },
+  {
+   "id": "toolathlon-verified",
+   "category": "tool-use",
+   "source": "https://toolathlon.xyz/docs/leaderboard",
+   "status": "unchanged_rows",
+   "rows_before": 25,
+   "rows_after": 25,
+   "snapshot": "sources/toolathlon-verified/leaderboard.md",
+   "snapshot_sha256": "87dd9d87290142c468c32ad966f12e13c8d6fc4481b09971ce28f43c0bc58e0c"
+  },
+  {
+   "id": "toolathlon",
+   "category": "tool-use",
+   "source": "https://toolathlon.xyz/docs/leaderboard",
+   "status": "unchanged_rows",
+   "rows_before": 51,
+   "rows_after": 51,
+   "snapshot": "sources/toolathlon/leaderboard.md",
+   "snapshot_sha256": "87dd9d87290142c468c32ad966f12e13c8d6fc4481b09971ce28f43c0bc58e0c"
+  },
+  {
+   "id": "vending-bench-2",
+   "category": "long-horizon",
+   "source": "https://andonlabs.com/evals/vending-bench-2",
+   "status": "rows_changed",
+   "rows_before": 63,
+   "rows_after": 67,
+   "snapshot": "sources/vending-bench-2/vb2_data.json",
+   "snapshot_sha256": "0287be89a8b0b88ca3e56313cded373f3409225d5178bcd8bc76921d36d6bdd7"
+  },
+  {
+   "id": "vending-bench",
+   "category": "long-horizon",
+   "source": "https://andonlabs.com/evals/vending-bench",
+   "status": "unchanged_rows",
+   "rows_before": 27,
+   "rows_after": 27,
+   "snapshot": "sources/vending-bench/leaderboard.tsv",
+   "snapshot_sha256": "78f189e1ad5457e8a087559c23ab4acb7ac7171eafe689130252325484917c95"
+  },
+  {
+   "id": "venusbench-mobile",
+   "category": "computer-use",
+   "source": "https://ui-venus.github.io/VenusBench-Mobile-Leaderboard/",
+   "status": "unchanged_rows",
+   "rows_before": 11,
+   "rows_after": 11,
+   "snapshot": "sources/venusbench-mobile/venusbench-mobile.json",
+   "snapshot_sha256": "078ec9962b1ff73db9836f8f24ecf90cfd85598336219a41e660e4d0082cf9de"
+  },
+  {
+   "id": "visualwebarena",
+   "category": "web",
+   "source": "https://jykoh.com/vwa",
+   "status": "unchanged_rows",
+   "rows_before": 38,
+   "rows_after": 38,
+   "snapshot": "sources/visualwebarena/sheet_visualwebarena_tab.json",
+   "snapshot_sha256": "b8b2dc3817732cdc20934132f5f0cd3a0d395bf7de116bc43dffed67cd4f24ba"
+  },
+  {
+   "id": "webarena",
+   "category": "web",
+   "source": "https://webarena.dev/",
+   "status": "unchanged_rows",
+   "rows_before": 47,
+   "rows_after": 47,
+   "snapshot": "sources/webarena/sheet_webarena_tab.json",
+   "snapshot_sha256": "31c477bd5b91ea4cd7be592fc027af81ea76f11346b5dae088cd5246565e0cda"
+  },
+  {
+   "id": "webchorearena",
+   "category": "web",
+   "source": "https://webchorearena.github.io/",
+   "status": "unchanged_rows",
+   "rows_before": 8,
+   "rows_after": 8,
+   "snapshot": "sources/webchorearena/sheet_leaderboard.json",
+   "snapshot_sha256": "5e62896379bb5e8abf4111e39111c0c687c8a7fec6d15d2df0905c23c7b70b45"
+  }
+ ],
+ "claims_note": "All 55 source-table numbers and 17 retained figures verified unchanged at arXiv v2. Claims remain separate and outside the fit."
+}

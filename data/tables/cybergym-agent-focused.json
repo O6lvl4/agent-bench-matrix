@@ -17,13 +17,38 @@
     "https://www.cybergym.io/cybergym/",
     "https://www.cybergym.io/assets/js/leaderboard.js"
   ],
-  "retrieved": "2026-09-14",
-  "newest_row_date": "2026-09-07",
+  "retrieved": "2026-10-05",
+  "newest_row_date": "2026-09-15",
   "snapshot": "sources/cybergym-agent-focused/cybergym.json",
   "paper": "https://arxiv.org/abs/2506.02548",
   "repo": "https://github.com/sunblaze-ucb/cybergym",
   "notes_ja": "ボードの Type フィルタで分けた表(trials=1 の行のみ表示される)。90% を超える行はランダム順のカードとして表示され順位が無いため rank は null(score_extra.lead_card_unranked)。以前の版の結果(subRows)も rank null の行として入れた。score は score_10 を百分率にした値。",
   "rows": [
+    {
+      "rank": null,
+      "system": "Lyrie Agent",
+      "agent": "Lyrie Agent",
+      "model_raw": [
+        "DeepSeek-V4.1-Flash",
+        "Abliterated GLM-5.2"
+      ],
+      "model_ids": [
+        "deepseek-v4.1-flash",
+        "abliterated-glm-5.2"
+      ],
+      "model_config": "Multi-model",
+      "score": 99.2,
+      "score_extra": {
+        "trials": 1,
+        "dynamic": true,
+        "lead_card_unranked": true
+      },
+      "date": "2026-09-15",
+      "verified": null,
+      "open_source": null,
+      "org": "Lyrie",
+      "row_url": "https://lyrie.ai/cybergym"
+    },
     {
       "rank": null,
       "system": "Creation (天工)",
@@ -189,6 +214,29 @@
     },
     {
       "rank": null,
+      "system": "Panshi (磐石)",
+      "agent": "Panshi (磐石)",
+      "model_raw": [
+        "DeepSeek-V4-Pro"
+      ],
+      "model_ids": [
+        "deepseek-v4-pro"
+      ],
+      "model_config": null,
+      "score": 95.42,
+      "score_extra": {
+        "trials": 1,
+        "dynamic": true,
+        "lead_card_unranked": true
+      },
+      "date": "2026-09-04",
+      "verified": null,
+      "open_source": null,
+      "org": "Huawei Cloud",
+      "row_url": "https://github.com/PanshiAgent/Panshi-Security-Agent"
+    },
+    {
+      "rank": null,
       "system": "NSFOCUS AI",
       "agent": "NSFOCUS AI",
       "model_raw": [
@@ -297,6 +345,29 @@
       "open_source": null,
       "org": "Alibaba Cloud Security",
       "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "NASH",
+      "agent": "NASH",
+      "model_raw": [
+        "DeepSeek-V4-Flash"
+      ],
+      "model_ids": [
+        "deepseek-v4-flash"
+      ],
+      "model_config": null,
+      "score": 91.37,
+      "score_extra": {
+        "trials": 1,
+        "dynamic": true,
+        "lead_card_unranked": true
+      },
+      "date": "2026-09-01",
+      "verified": null,
+      "open_source": null,
+      "org": "NASH Team",
+      "row_url": "https://github.com/NASH-nrxt/NASH"
     },
     {
       "rank": null,
@@ -515,7 +586,7 @@
       "row_url": "https://www.wiz.io/blog/atlas-ai-vulnerability-researcher"
     },
     {
-      "rank": 15,
+      "rank": 1,
       "system": "Crystalline",
       "agent": "Crystalline",
       "model_raw": [
@@ -537,7 +608,7 @@
       "row_url": "https://github.com/synchopate/cybergym-logos"
     },
     {
-      "rank": 16,
+      "rank": 2,
       "system": "Gusion",
       "agent": "Gusion",
       "model_raw": [
@@ -558,7 +629,7 @@
       "row_url": "https://github.com/EBWi11/Gusion/blob/add-level1-technical-report/README.md"
     },
     {
-      "rank": 17,
+      "rank": 3,
       "system": "RedbudAI",
       "agent": "RedbudAI",
       "model_raw": [
@@ -581,7 +652,7 @@
       "row_url": "https://redbud.tsinghua.edu.cn/posts/cybergym.html"
     },
     {
-      "rank": 18,
+      "rank": 4,
       "system": "Velldepth Agent",
       "agent": "Velldepth Agent",
       "model_raw": [
@@ -602,7 +673,7 @@
       "row_url": "https://alibaba-velldepth.github.io/writeups/"
     },
     {
-      "rank": 19,
+      "rank": 5,
       "system": "Xuanwu Atuin AI",
       "agent": "Xuanwu Atuin AI",
       "model_raw": [
@@ -646,9 +717,9 @@
       "row_url": "https://xlab.tencent.com/en/2026/07/02/xuanwu-atuin-cybergym/"
     },
     {
-      "rank": 20,
-      "system": "VARAS-OneMind",
-      "agent": "VARAS-OneMind",
+      "rank": 6,
+      "system": "VARAS-OneMind (智安·宇盾)",
+      "agent": "VARAS-OneMind (智安·宇盾)",
       "model_raw": [
         "GPT-5.4"
       ],
@@ -668,7 +739,7 @@
       "row_url": "https://varas-onemind.github.io/posts/cybergym/"
     },
     {
-      "rank": 21,
+      "rank": 7,
       "system": "MopMonk Agent",
       "agent": "MopMonk Agent",
       "model_raw": [
@@ -689,7 +760,7 @@
       "row_url": "https://github.com/MopMonkAI/MopMonkAgent"
     },
     {
-      "rank": 22,
+      "rank": 8,
       "system": "JiuXuan (九玄)",
       "agent": "JiuXuan (九玄)",
       "model_raw": [
@@ -711,7 +782,7 @@
       "row_url": "https://github.com/as837430732/JiuXuan"
     },
     {
-      "rank": 23,
+      "rank": 9,
       "system": "XD Agent",
       "agent": "XD Agent",
       "model_raw": [
@@ -732,7 +803,7 @@
       "row_url": "https://github.com/XDxAI/XD-Agent/blob/main/CyberGym_submission_XDagent.md"
     },
     {
-      "rank": 24,
+      "rank": 10,
       "system": "SageAgent",
       "agent": "SageAgent",
       "model_raw": [
