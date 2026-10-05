@@ -2,11 +2,11 @@
   "id": "st-webagentbench",
   "name": "ST-WebAgentBench",
   "tried": [
-    "https://huggingface.co/spaces/ST-WebAgentBench/st-webagentbench-leaderboard",
     "https://huggingface.co/api/spaces/ST-WebAgentBench/st-webagentbench-leaderboard",
     "https://st-webagentbench-st-webagentbench-leaderboard.hf.space/config",
-    "https://huggingface.co/spaces/ST-WebAgentBench/st-webagentbench-leaderboard/raw/main/app.py"
+    "https://huggingface.co/spaces/ST-WebAgentBench/st-webagentbench-leaderboard/raw/main/app.py",
+    "https://huggingface.co/api/datasets/ST-WebAgentBench/st-webagentbench-data"
   ],
-  "reason_ja": "公式ボードの HF スペースが RUNTIME_ERROR で応答せず(503)、提出データはスペースから非公開のデータセット(ST-WebAgentBench/st-webagentbench-data)に同期されるため、ログイン無しで取れない。",
-  "retrieved": "2026-09-14"
+  "reason_ja": "HF Space API は引き続き RUNTIME_ERROR。実行中ボードの config は HTTP 503。公式 app.py が結果を同期する ST-WebAgentBench/st-webagentbench-data の API は HTTP 401 で、認証無しの結果抽出はできない。",
+  "retrieved": "2026-10-05"
 }

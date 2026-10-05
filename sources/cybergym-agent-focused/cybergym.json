@@ -87,6 +87,92 @@
       "focus": "model"
     },
     {
+      "agent": "Claude Code",
+      "model": "ASL-Cyber-Flash (finetuned from DeepSeek-V4-Flash)",
+      "model_release_date": "2026-09-03",
+      "include_in_plot": true,
+      "icon": "/assets/images/cybergym/aeye.png",
+      "features": [
+        "dynamic (uses cleaned vulnerable Docker image)"
+      ],
+      "score_10": 0.8587,
+      "date": "2026-09-03",
+      "source": "Aeye Security Lab",
+      "source_url": "https://github.com/aeyesec/asl-cyber-flash-submission/",
+      "trials": 1,
+      "focus": "model"
+    },
+    {
+      "agent": "Google Antigravity",
+      "model": "Gemini 3.8 Flash Cyber",
+      "model_release_date": "2026-09-02",
+      "include_in_plot": true,
+      "score_10": 0.8626,
+      "date": "2026-09-10",
+      "source": "Google",
+      "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+      "trials": 1,
+      "focus": "model"
+    },
+    {
+      "agent": "Panshi \\(磐石\\)",
+      "model": "DeepSeek-V4-Pro",
+      "model_release_date": "2026-08-13",
+      "include_in_plot": true,
+      "plot_links": [
+        "DeepSeek-V4-Pro"
+      ],
+      "icon": "/assets/images/cybergym/panshi.png",
+      "features": [
+        "dynamic (uses cleaned vulnerable Docker image)"
+      ],
+      "score_10": 0.9542,
+      "date": "2026-09-04",
+      "source": "Huawei Cloud",
+      "source_url": "https://github.com/PanshiAgent/Panshi-Security-Agent",
+      "trials": 1,
+      "focus": "agent"
+    },
+    {
+      "agent": "NASH",
+      "model": "DeepSeek-V4-Flash",
+      "model_release_date": "2026-07-31",
+      "include_in_plot": true,
+      "plot_links": [
+        "DeepSeek-V4-Flash"
+      ],
+      "icon": "/assets/images/cybergym/nash.png",
+      "features": [
+        "dynamic (uses cleaned vulnerable Docker image)"
+      ],
+      "score_10": 0.9137,
+      "date": "2026-09-01",
+      "source": "NASH Team",
+      "source_url": "https://github.com/NASH-nrxt/NASH",
+      "trials": 1,
+      "focus": "agent"
+    },
+    {
+      "agent": "Lyrie Agent",
+      "model": "Multi-model (DeepSeek-V4.1-Flash, Abliterated GLM-5.2)",
+      "model_release_date": "2026-09-15",
+      "include_in_plot": true,
+      "plot_links": [
+        "GLM-5.2"
+      ],
+      "icon": "/assets/images/cybergym/lyrie.png",
+      "features": [
+        "Multi-model",
+        "dynamic (uses cleaned vulnerable Docker image)"
+      ],
+      "score_10": 0.992,
+      "date": "2026-09-15",
+      "source": "Lyrie",
+      "source_url": "https://lyrie.ai/cybergym",
+      "trials": 1,
+      "focus": "agent"
+    },
+    {
       "agent": "RedbudAI",
       "model": "GLM-5.2",
       "model_release_date": "2026-08-10",
@@ -121,7 +207,11 @@
       "trials": 1,
       "focus": "agent",
       "subRows": [
-        { "model": "GLM-5.2", "score_10": 0.9084, "date": "2026-08-03" }
+        {
+          "model": "GLM-5.2",
+          "score_10": 0.9084,
+          "date": "2026-08-03"
+        }
       ]
     },
     {
@@ -130,7 +220,9 @@
       "model_release_date": "2026-08-14",
       "include_in_plot": true,
       "icon": "/assets/images/cybergym/nsfocus.png",
-      "features": ["dynamic (uses cleaned vulnerable Docker image)"],
+      "features": [
+        "dynamic (uses cleaned vulnerable Docker image)"
+      ],
       "score_10": 0.9502,
       "date": "2026-08-13",
       "source": "NSFOCUS",
@@ -179,7 +271,7 @@
       "focus": "agent"
     },
     {
-      "agent": "VARAS-OneMind",
+      "agent": "VARAS-OneMind \\(智安·宇盾\\)",
       "model": "GPT-5.4",
       "model_release_date": "2026-03-05",
       "include_in_plot": true,
@@ -354,6 +446,19 @@
       "source_url": "https://alibaba-velldepth.github.io/writeups/",
       "trials": 1,
       "focus": "agent"
+    },
+    {
+      "agent": "XekRung Agent",
+      "model": "XekRung-1.5-27B-Preview (finetuned from Qwen3.8-27B)",
+      "model_release_date": "2026-09-13",
+      "include_in_plot": true,
+      "icon": "/assets/images/cybergym/velldepth.png",
+      "score_10": 0.8892,
+      "date": "2026-09-13",
+      "source": "Alibaba Security",
+      "source_url": "https://alibaba-velldepth.github.io/writeups/model-track.html",
+      "trials": 1,
+      "focus": "model"
     },
     {
       "agent": "JiuXuan \\(九玄\\)",

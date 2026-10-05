@@ -5,8 +5,8 @@
   "board": "mercor.com",
   "category": "tool-use",
   "measures_ja": "APEX-Agents のうち経営コンサルタントの実務タスクを、複数アプリを横断して長時間かけて仕上げられるか。",
-  "tasks": null,
-  "tasks_note": "職種別ページの numTasks は 160 だが、v1.1 告知ブログは「80 tasks per domain」としており食い違うため null。",
+  "tasks": 80,
+  "tasks_note": "職種別ページの現在のnumTasks=80。v1.1告知ブログの80 tasks per domainと一致する。",
   "metric": "Mean Score",
   "unit": "%",
   "higher_is_better": true,
@@ -16,8 +16,8 @@
     "https://www.mercor.com/apex/apex-agents-leaderboard/management-consultant-agent/",
     "https://www.mercor.com/blog/introducing-apex-agents-1-1"
   ],
-  "retrieved": "2026-09-14",
-  "newest_row_date": "2026-09-03",
+  "retrieved": "2026-10-05",
+  "newest_row_date": "2026-09-30",
   "snapshot": "sources/apex-agents-management-consultant/leaderboard_data.json",
   "paper": "https://arxiv.org/abs/2601.14242",
   "repo": "https://github.com/Mercor-Intelligence/apex_loop_truncated_tools_agent",
@@ -25,6 +25,69 @@
   "rows": [
     {
       "rank": 1,
+      "system": "Gemini 4 Argon",
+      "agent": "Loop",
+      "model_raw": [
+        "Gemini 4 Argon"
+      ],
+      "model_ids": [
+        "gemini-4-argon"
+      ],
+      "model_config": "effort: high; model_id: gemini-4-argon",
+      "score": 92.7,
+      "score_extra": {
+        "pass_at_1": 90.3
+      },
+      "date": "2026-09-30",
+      "verified": null,
+      "open_source": null,
+      "org": "Google",
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "Sonnet 5.5",
+      "agent": "Loop",
+      "model_raw": [
+        "Sonnet 5.5"
+      ],
+      "model_ids": [
+        "claude-sonnet-5.5"
+      ],
+      "model_config": "effort: max; model_id: claude-sonnet-5-5",
+      "score": 86.8,
+      "score_extra": {
+        "pass_at_1": 79.7
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "Opus 5.5",
+      "agent": "Loop",
+      "model_raw": [
+        "Opus 5.5"
+      ],
+      "model_ids": [
+        "claude-opus-5.5"
+      ],
+      "model_config": "effort: max; model_id: claude-opus-5-5",
+      "score": 84.7,
+      "score_extra": {
+        "pass_at_1": 80
+      },
+      "date": "2026-09-22",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 4,
       "system": "Gemini 3.8 Flash",
       "agent": "Loop",
       "model_raw": [
@@ -34,18 +97,18 @@
         "gemini-3.8-flash"
       ],
       "model_config": "effort: high; model_id: gemini-3.8-flash",
-      "score": 84.2,
+      "score": 83.7,
       "score_extra": {
-        "pass_at_1": 77.5
+        "pass_at_1": 74.7
       },
       "date": "2026-09-02",
       "verified": null,
       "open_source": null,
-      "org": null,
+      "org": "Google",
       "row_url": null
     },
     {
-      "rank": 2,
+      "rank": 5,
       "system": "Fable 5.1",
       "agent": "Loop",
       "model_raw": [
@@ -62,11 +125,11 @@
       "date": "2026-09-01",
       "verified": null,
       "open_source": null,
-      "org": null,
+      "org": "Anthropic",
       "row_url": null
     },
     {
-      "rank": 3,
+      "rank": 6,
       "system": "Grok 4.6",
       "agent": "Loop",
       "model_raw": [
@@ -83,11 +146,11 @@
       "date": "2026-08-12",
       "verified": null,
       "open_source": null,
-      "org": null,
+      "org": "xAI",
       "row_url": null
     },
     {
-      "rank": 4,
+      "rank": 7,
       "system": "Gemini 3.7 Flash",
       "agent": "Loop",
       "model_raw": [
@@ -104,11 +167,11 @@
       "date": "2026-08-13",
       "verified": null,
       "open_source": null,
-      "org": null,
+      "org": "Google",
       "row_url": null
     },
     {
-      "rank": 5,
+      "rank": 8,
       "system": "GPT-6 Astra",
       "agent": "Loop",
       "model_raw": [
@@ -125,11 +188,11 @@
       "date": "2026-09-03",
       "verified": null,
       "open_source": null,
-      "org": null,
+      "org": "OpenAI",
       "row_url": null
     },
     {
-      "rank": 6,
+      "rank": 9,
       "system": "Opus 5",
       "agent": "Loop",
       "model_raw": [
@@ -146,11 +209,53 @@
       "date": "2026-07-24",
       "verified": null,
       "open_source": null,
-      "org": null,
+      "org": "Anthropic",
       "row_url": null
     },
     {
-      "rank": 7,
+      "rank": 10,
+      "system": "Grok 4.7",
+      "agent": "Loop",
+      "model_raw": [
+        "Grok 4.7"
+      ],
+      "model_ids": [
+        "grok-4.7"
+      ],
+      "model_config": "effort: xhigh; model_id: grok-4.7",
+      "score": 74.4,
+      "score_extra": {
+        "pass_at_1": 63.1
+      },
+      "date": "2026-09-21",
+      "verified": null,
+      "open_source": null,
+      "org": "xAI",
+      "row_url": null
+    },
+    {
+      "rank": 11,
+      "system": "Qwen3.8-Max",
+      "agent": "Loop",
+      "model_raw": [
+        "Qwen3.8-Max"
+      ],
+      "model_ids": [
+        "qwen3.8-max"
+      ],
+      "model_config": "effort: xhigh; model_id: qwen-3-8-max-xhigh",
+      "score": 72.4,
+      "score_extra": {
+        "pass_at_1": 59.7
+      },
+      "date": "2026-08-02",
+      "verified": null,
+      "open_source": null,
+      "org": "Alibaba",
+      "row_url": null
+    },
+    {
+      "rank": 12,
       "system": "Fable 5",
       "agent": "Loop",
       "model_raw": [
@@ -167,11 +272,11 @@
       "date": "2026-06-09",
       "verified": null,
       "open_source": null,
-      "org": null,
+      "org": "Anthropic",
       "row_url": null
     },
     {
-      "rank": 8,
+      "rank": 13,
       "system": "Grok 4.5",
       "agent": "Loop",
       "model_raw": [
@@ -188,11 +293,32 @@
       "date": "2026-07-08",
       "verified": null,
       "open_source": null,
-      "org": null,
+      "org": "xAI",
       "row_url": null
     },
     {
-      "rank": 9,
+      "rank": 14,
+      "system": "GPT-6.1 Sol",
+      "agent": "Loop",
+      "model_raw": [
+        "GPT-6.1 Sol"
+      ],
+      "model_ids": [
+        "gpt-6.1-sol"
+      ],
+      "model_config": "effort: max; model_id: gpt-6-1-sol",
+      "score": 70.6,
+      "score_extra": {
+        "pass_at_1": 58.4
+      },
+      "date": "2026-09-29",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": null
+    },
+    {
+      "rank": 15,
       "system": "Muse Spark 1.3",
       "agent": "Loop",
       "model_raw": [
@@ -202,18 +328,18 @@
         "muse-spark-1.3"
       ],
       "model_config": "effort: xhigh; model_id: muse-spark-1-3",
-      "score": 70.5,
+      "score": 70.4,
       "score_extra": {
         "pass_at_1": 57.8
       },
       "date": "2026-09-02",
       "verified": null,
       "open_source": null,
-      "org": null,
+      "org": "Meta",
       "row_url": null
     },
     {
-      "rank": 10,
+      "rank": 16,
       "system": "GPT-5.6 Terra",
       "agent": "Loop",
       "model_raw": [
@@ -230,11 +356,32 @@
       "date": "2026-07-09",
       "verified": null,
       "open_source": null,
-      "org": null,
+      "org": "OpenAI",
       "row_url": null
     },
     {
-      "rank": 11,
+      "rank": 17,
+      "system": "MiMo V2.6 Pro",
+      "agent": "Loop",
+      "model_raw": [
+        "MiMo V2.6 Pro"
+      ],
+      "model_ids": [
+        "mimo-v2.6-pro"
+      ],
+      "model_config": "effort: none; model_id: mimo-v2.6-pro",
+      "score": 68.9,
+      "score_extra": {
+        "pass_at_1": 56.2
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "Xiaomi",
+      "row_url": null
+    },
+    {
+      "rank": 18,
       "system": "GPT-5.5",
       "agent": "Loop",
       "model_raw": [
@@ -251,11 +398,74 @@
       "date": "2026-04-23",
       "verified": null,
       "open_source": null,
-      "org": null,
+      "org": "OpenAI",
       "row_url": null
     },
     {
-      "rank": 12,
+      "rank": 19,
+      "system": "DeepSeek-V4-Flash",
+      "agent": "Loop",
+      "model_raw": [
+        "DeepSeek-V4-Flash"
+      ],
+      "model_ids": [
+        "deepseek-v4-flash"
+      ],
+      "model_config": "effort: max; model_id: deepseek-v4-flash",
+      "score": 67.8,
+      "score_extra": {
+        "pass_at_1": 56.7
+      },
+      "date": "2026-07-31",
+      "verified": null,
+      "open_source": null,
+      "org": "DeepSeek",
+      "row_url": null
+    },
+    {
+      "rank": 20,
+      "system": "Fable 5.1",
+      "agent": "Loop",
+      "model_raw": [
+        "Fable 5.1"
+      ],
+      "model_ids": [
+        "claude-fable-5.1"
+      ],
+      "model_config": "effort: high; model_id: claude-fable-5.1-high",
+      "score": 67.1,
+      "score_extra": {
+        "pass_at_1": 51.9
+      },
+      "date": "2026-09-01",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 21,
+      "system": "GPT-6 Sol",
+      "agent": "Loop",
+      "model_raw": [
+        "GPT-6 Sol"
+      ],
+      "model_ids": [
+        "gpt-6-sol"
+      ],
+      "model_config": "effort: max; model_id: gpt-6-sol",
+      "score": 66,
+      "score_extra": {
+        "pass_at_1": 51.6
+      },
+      "date": "2026-09-22",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": null
+    },
+    {
+      "rank": 22,
       "system": "Sonnet 5",
       "agent": "Loop",
       "model_raw": [
@@ -272,11 +482,11 @@
       "date": "2026-06-30",
       "verified": null,
       "open_source": null,
-      "org": null,
+      "org": "Anthropic",
       "row_url": null
     },
     {
-      "rank": 13,
+      "rank": 23,
       "system": "GPT-5.4",
       "agent": "Loop",
       "model_raw": [
@@ -293,11 +503,11 @@
       "date": "2026-03-05",
       "verified": null,
       "open_source": null,
-      "org": null,
+      "org": "OpenAI",
       "row_url": null
     },
     {
-      "rank": 14,
+      "rank": 24,
       "system": "GLM-5.3-Flash",
       "agent": "Loop",
       "model_raw": [
@@ -314,11 +524,32 @@
       "date": "2026-08-26",
       "verified": null,
       "open_source": null,
-      "org": null,
+      "org": "Zhipu",
       "row_url": null
     },
     {
-      "rank": 15,
+      "rank": 25,
+      "system": "Opus 5.5",
+      "agent": "Loop",
+      "model_raw": [
+        "Opus 5.5"
+      ],
+      "model_ids": [
+        "claude-opus-5.5"
+      ],
+      "model_config": "effort: medium; model_id: opus-5.5",
+      "score": 59,
+      "score_extra": {
+        "pass_at_1": 41.4
+      },
+      "date": "2026-09-22",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 26,
       "system": "Opus 4.6",
       "agent": "Loop",
       "model_raw": [
@@ -335,11 +566,11 @@
       "date": "2026-02-05",
       "verified": null,
       "open_source": null,
-      "org": null,
+      "org": "Anthropic",
       "row_url": null
     },
     {
-      "rank": 16,
+      "rank": 27,
       "system": "GPT-5.6 Sol",
       "agent": "Loop",
       "model_raw": [
@@ -356,11 +587,32 @@
       "date": "2026-07-09",
       "verified": null,
       "open_source": null,
-      "org": null,
+      "org": "OpenAI",
       "row_url": null
     },
     {
-      "rank": 17,
+      "rank": 28,
+      "system": "Qwen 3.8 27B",
+      "agent": "Loop",
+      "model_raw": [
+        "Qwen 3.8 27B"
+      ],
+      "model_ids": [
+        "qwen3.8-27b"
+      ],
+      "model_config": "effort: xhigh; model_id: qwen-3-8-27b",
+      "score": 57.3,
+      "score_extra": {
+        "pass_at_1": 40
+      },
+      "date": "2026-08-03",
+      "verified": null,
+      "open_source": null,
+      "org": "Alibaba",
+      "row_url": null
+    },
+    {
+      "rank": 29,
       "system": "Kimi K3",
       "agent": "Loop",
       "model_raw": [
@@ -377,11 +629,11 @@
       "date": "2026-07-27",
       "verified": null,
       "open_source": null,
-      "org": null,
+      "org": "Kimi",
       "row_url": null
     },
     {
-      "rank": 18,
+      "rank": 30,
       "system": "GLM-5.3",
       "agent": "Loop",
       "model_raw": [
@@ -398,11 +650,11 @@
       "date": "2026-08-14",
       "verified": null,
       "open_source": null,
-      "org": null,
+      "org": "Zhipu",
       "row_url": null
     },
     {
-      "rank": 19,
+      "rank": 31,
       "system": "Gemini 3.6 Flash",
       "agent": "Loop",
       "model_raw": [
@@ -419,11 +671,11 @@
       "date": "2026-07-21",
       "verified": null,
       "open_source": null,
-      "org": null,
+      "org": "Google",
       "row_url": null
     },
     {
-      "rank": 20,
+      "rank": 32,
       "system": "Opus 4.7",
       "agent": "Loop",
       "model_raw": [
@@ -440,11 +692,32 @@
       "date": "2026-04-16",
       "verified": null,
       "open_source": null,
-      "org": null,
+      "org": "Anthropic",
       "row_url": null
     },
     {
-      "rank": 21,
+      "rank": 33,
+      "system": "GPT-6 Luna",
+      "agent": "Loop",
+      "model_raw": [
+        "GPT-6 Luna"
+      ],
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "model_config": "effort: max; model_id: gpt-6-luna",
+      "score": 54.5,
+      "score_extra": {
+        "pass_at_1": 38.5
+      },
+      "date": "2026-09-22",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": null
+    },
+    {
+      "rank": 34,
       "system": "DeepSeek-V4-Pro-0813",
       "agent": "Loop",
       "model_raw": [
@@ -461,11 +734,32 @@
       "date": "2026-08-13",
       "verified": null,
       "open_source": null,
-      "org": null,
+      "org": "DeepSeek",
       "row_url": null
     },
     {
-      "rank": 22,
+      "rank": 35,
+      "system": "GPT-5.6 Luna",
+      "agent": "Loop",
+      "model_raw": [
+        "GPT-5.6 Luna"
+      ],
+      "model_ids": [
+        "gpt-5.6-luna"
+      ],
+      "model_config": "effort: max; model_id: gpt-5.6-luna-max",
+      "score": 52.7,
+      "score_extra": {
+        "pass_at_1": 35.1
+      },
+      "date": "2026-07-09",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
+      "row_url": null
+    },
+    {
+      "rank": 36,
       "system": "Opus 4.8",
       "agent": "Loop",
       "model_raw": [
@@ -482,11 +776,158 @@
       "date": "2026-05-28",
       "verified": null,
       "open_source": null,
-      "org": null,
+      "org": "Anthropic",
       "row_url": null
     },
     {
-      "rank": 23,
+      "rank": 37,
+      "system": "Gemini 3.1 Pro",
+      "agent": "Loop",
+      "model_raw": [
+        "Gemini 3.1 Pro"
+      ],
+      "model_ids": [
+        "gemini-3.1-pro"
+      ],
+      "model_config": "effort: high; model_id: gemini-3.1-pro-preview-high",
+      "score": 47.8,
+      "score_extra": {
+        "pass_at_1": 28.7
+      },
+      "date": "2026-02-19",
+      "verified": null,
+      "open_source": null,
+      "org": "Google",
+      "row_url": null
+    },
+    {
+      "rank": 38,
+      "system": "Kimi K2.7 Code",
+      "agent": "Loop",
+      "model_raw": [
+        "Kimi K2.7 Code"
+      ],
+      "model_ids": [
+        "kimi-k2.7-code"
+      ],
+      "model_config": "effort: high; model_id: kimi-k2-7-code-high",
+      "score": 46.5,
+      "score_extra": {
+        "pass_at_1": 28.9
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "Kimi",
+      "row_url": null
+    },
+    {
+      "rank": 39,
+      "system": "Sonnet 4.6",
+      "agent": "Loop",
+      "model_raw": [
+        "Sonnet 4.6"
+      ],
+      "model_ids": [
+        "claude-sonnet-4.6"
+      ],
+      "model_config": "effort: high; model_id: claude-sonnet-4-6-high",
+      "score": 46.3,
+      "score_extra": {
+        "pass_at_1": 30.3
+      },
+      "date": "2026-02-17",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 40,
+      "system": "Sonnet 5.5",
+      "agent": "Loop",
+      "model_raw": [
+        "Sonnet 5.5"
+      ],
+      "model_ids": [
+        "claude-sonnet-5.5"
+      ],
+      "model_config": "effort: medium; model_id: claude-sonnet-5-5-medium",
+      "score": 46,
+      "score_extra": {
+        "pass_at_1": 26.6
+      },
+      "date": "2026-09-28",
+      "verified": null,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 41,
+      "system": "GLM-5.1",
+      "agent": "Loop",
+      "model_raw": [
+        "GLM-5.1"
+      ],
+      "model_ids": [
+        "glm-5.1"
+      ],
+      "model_config": "model_id: glm-5-1",
+      "score": 45.4,
+      "score_extra": {
+        "pass_at_1": 24.6
+      },
+      "date": "2026-03-27",
+      "verified": null,
+      "open_source": null,
+      "org": "Zhipu",
+      "row_url": null
+    },
+    {
+      "rank": 42,
+      "system": "MiniMax-M3",
+      "agent": "Loop",
+      "model_raw": [
+        "MiniMax-M3"
+      ],
+      "model_ids": [
+        "minimax-m3"
+      ],
+      "model_config": "effort: high; model_id: minimax-m3",
+      "score": 45.3,
+      "score_extra": {
+        "pass_at_1": 28.5
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "MiniMax",
+      "row_url": null
+    },
+    {
+      "rank": 43,
+      "system": "GLM-5.2",
+      "agent": "Loop",
+      "model_raw": [
+        "GLM-5.2"
+      ],
+      "model_ids": [
+        "glm-5.2"
+      ],
+      "model_config": "effort: max; model_id: glm-5-2",
+      "score": 44.9,
+      "score_extra": {
+        "pass_at_1": 23.8
+      },
+      "date": "2026-06-16",
+      "verified": null,
+      "open_source": null,
+      "org": "Zhipu",
+      "row_url": null
+    },
+    {
+      "rank": 44,
       "system": "Muse Spark 1.2",
       "agent": "Loop",
       "model_raw": [
@@ -503,11 +944,32 @@
       "date": "2026-08-05",
       "verified": null,
       "open_source": null,
-      "org": null,
+      "org": "Meta",
       "row_url": null
     },
     {
-      "rank": 24,
+      "rank": 45,
+      "system": "Inkling",
+      "agent": "Loop",
+      "model_raw": [
+        "Inkling"
+      ],
+      "model_ids": [
+        "inkling"
+      ],
+      "model_config": "effort: high; model_id: inkling",
+      "score": 40.8,
+      "score_extra": {
+        "pass_at_1": 25.5
+      },
+      "date": "2026-07-15",
+      "verified": null,
+      "open_source": null,
+      "org": "Thinking Machines",
+      "row_url": null
+    },
+    {
+      "rank": 46,
       "system": "Gemini 3.5 Flash",
       "agent": "Loop",
       "model_raw": [
@@ -524,7 +986,154 @@
       "date": "2026-05-19",
       "verified": null,
       "open_source": null,
-      "org": null,
+      "org": "Google",
+      "row_url": null
+    },
+    {
+      "rank": 47,
+      "system": "Muse Spark 1.1",
+      "agent": "Loop",
+      "model_raw": [
+        "Muse Spark 1.1"
+      ],
+      "model_ids": [
+        "muse-spark-1.1"
+      ],
+      "model_config": "effort: xhigh; model_id: muse-spark-1-1",
+      "score": 37.4,
+      "score_extra": {
+        "pass_at_1": 17.9
+      },
+      "date": "2026-07-09",
+      "verified": null,
+      "open_source": null,
+      "org": "Meta",
+      "row_url": null
+    },
+    {
+      "rank": 48,
+      "system": "Qwen3.5",
+      "agent": "Loop",
+      "model_raw": [
+        "Qwen3.5"
+      ],
+      "model_ids": [
+        "qwen3.5-397b-a17b"
+      ],
+      "model_config": "model_id: Qwen3.5-397B-A17B",
+      "score": 35.1,
+      "score_extra": {
+        "pass_at_1": 20
+      },
+      "date": "2026-02-16",
+      "verified": null,
+      "open_source": null,
+      "org": "Alibaba",
+      "row_url": null
+    },
+    {
+      "rank": 49,
+      "system": "Gemini 3.5 Flash Lite",
+      "agent": "Loop",
+      "model_raw": [
+        "Gemini 3.5 Flash Lite"
+      ],
+      "model_ids": [
+        "gemini-3.5-flash-lite"
+      ],
+      "model_config": "effort: high; model_id: gemini-3-5-flash-lite",
+      "score": 32.9,
+      "score_extra": {
+        "pass_at_1": 15
+      },
+      "date": "2026-08-31",
+      "verified": null,
+      "open_source": null,
+      "org": "Google",
+      "row_url": null
+    },
+    {
+      "rank": 50,
+      "system": "DeepSeek-V4.1-Flash",
+      "agent": "Loop",
+      "model_raw": [
+        "DeepSeek-V4.1-Flash"
+      ],
+      "model_ids": [
+        "deepseek-v4.1-flash"
+      ],
+      "model_config": "effort: max; model_id: deepseek-v4-1-flash",
+      "score": 29.6,
+      "score_extra": {
+        "pass_at_1": 20
+      },
+      "date": "2026-09-09",
+      "verified": null,
+      "open_source": null,
+      "org": "DeepSeek",
+      "row_url": null
+    },
+    {
+      "rank": 51,
+      "system": "Nemotron 3 Ultra",
+      "agent": "Loop",
+      "model_raw": [
+        "Nemotron 3 Ultra"
+      ],
+      "model_ids": [
+        "nemotron-3-ultra"
+      ],
+      "model_config": "effort: high; model_id: nemotron-3-ultra-nvfp4",
+      "score": 27.3,
+      "score_extra": {
+        "pass_at_1": 11
+      },
+      "date": "2026-06-04",
+      "verified": null,
+      "open_source": null,
+      "org": "NVIDIA",
+      "row_url": null
+    },
+    {
+      "rank": 52,
+      "system": "DeepSeek-V3.2",
+      "agent": "Loop",
+      "model_raw": [
+        "DeepSeek-V3.2"
+      ],
+      "model_ids": [
+        "deepseek-v3.2"
+      ],
+      "model_config": "model_id: deepseek-ai/DeepSeek-V3.2",
+      "score": 19.9,
+      "score_extra": {
+        "pass_at_1": 8.4
+      },
+      "date": "2025-12-01",
+      "verified": null,
+      "open_source": null,
+      "org": "DeepSeek",
+      "row_url": null
+    },
+    {
+      "rank": 53,
+      "system": "GPT-OSS-120B",
+      "agent": "Loop",
+      "model_raw": [
+        "GPT-OSS-120B"
+      ],
+      "model_ids": [
+        "gpt-oss-120b"
+      ],
+      "model_config": "effort: high; model_id: openai/gpt-oss-120b",
+      "score": 0.2,
+      "score_extra": {
+        "pass_at_1": 0
+      },
+      "date": "2025-08-05",
+      "verified": null,
+      "open_source": null,
+      "org": "OpenAI",
       "row_url": null
     }
   ]

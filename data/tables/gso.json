@@ -15,15 +15,99 @@
   "fetched": [
     "https://gso-bench.github.io/assets/leaderboard.json"
   ],
-  "retrieved": "2026-09-14",
-  "newest_row_date": "2026-07-12",
+  "retrieved": "2026-10-05",
+  "newest_row_date": "2026-09-27",
   "snapshot": "sources/gso/leaderboard.json",
   "paper": "https://arxiv.org/abs/2505.23671",
   "repo": "https://github.com/gso-bench/gso",
-  "notes_ja": "ボード既定の表示 (Opt@1)。score_hack_control は報酬ハック検出後の値。Qwen3 Coder はサイズ不明のため model_ids を空にした。metadata.last_updated は 2026-03-10 だが行の日付はそれより新しい。",
+  "notes_ja": "ボード既定の表示 (Opt@1)。score_hack_control は報酬ハック検出後の値。Qwen3 Coder はサイズ不明のため model_ids を空にした。",
   "rows": [
     {
       "rank": 1,
+      "system": "Claude Fable 5.1 (xhigh) / OpenHands",
+      "agent": "OpenHands",
+      "model_raw": [
+        "Claude Fable 5.1"
+      ],
+      "model_ids": [
+        "claude-fable-5.1"
+      ],
+      "model_config": "reasoning_effort=xhigh",
+      "score": 88.24,
+      "score_extra": {
+        "score_hack_control": 87.25
+      },
+      "date": "2026-09-27",
+      "verified": null,
+      "open_source": null,
+      "org": "GSO",
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "GPT-6 Astra (xhigh) / OpenHands",
+      "agent": "OpenHands",
+      "model_raw": [
+        "GPT-6 Astra"
+      ],
+      "model_ids": [
+        "gpt-6-astra"
+      ],
+      "model_config": "reasoning_effort=xhigh",
+      "score": 79.41,
+      "score_extra": {
+        "score_hack_control": 77.45
+      },
+      "date": "2026-09-27",
+      "verified": null,
+      "open_source": null,
+      "org": "GSO",
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "Claude Fable 5 (xhigh) / OpenHands",
+      "agent": "OpenHands",
+      "model_raw": [
+        "Claude Fable 5"
+      ],
+      "model_ids": [
+        "claude-fable-5"
+      ],
+      "model_config": "reasoning_effort=xhigh",
+      "score": 78.43,
+      "score_extra": {
+        "score_hack_control": 76.47
+      },
+      "date": "2026-09-27",
+      "verified": null,
+      "open_source": null,
+      "org": "GSO",
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "GPT-5.6 Sol (xhigh) / OpenHands",
+      "agent": "OpenHands",
+      "model_raw": [
+        "GPT-5.6 Sol"
+      ],
+      "model_ids": [
+        "gpt-5.6-sol"
+      ],
+      "model_config": "reasoning_effort=xhigh",
+      "score": 76.47,
+      "score_extra": {
+        "score_hack_control": 70.59
+      },
+      "date": "2026-09-27",
+      "verified": null,
+      "open_source": null,
+      "org": "GSO",
+      "row_url": null
+    },
+    {
+      "rank": 5,
       "system": "Claude Opus 4.8 (xhigh) / OpenHands",
       "agent": "OpenHands",
       "model_raw": [
@@ -44,7 +128,7 @@
       "row_url": null
     },
     {
-      "rank": 2,
+      "rank": 6,
       "system": "Claude Opus 4.7 (high) / OpenHands",
       "agent": "OpenHands",
       "model_raw": [
@@ -65,7 +149,7 @@
       "row_url": null
     },
     {
-      "rank": 3,
+      "rank": 7,
       "system": "Claude Opus 4.6 (high) / OpenHands",
       "agent": "OpenHands",
       "model_raw": [
@@ -86,7 +170,7 @@
       "row_url": null
     },
     {
-      "rank": 4,
+      "rank": 8,
       "system": "GPT 5.5 (xhigh) / OpenHands",
       "agent": "OpenHands",
       "model_raw": [
@@ -107,7 +191,7 @@
       "row_url": null
     },
     {
-      "rank": 5,
+      "rank": 9,
       "system": "Claude Sonnet 5 (xhigh) / OpenHands",
       "agent": "OpenHands",
       "model_raw": [
@@ -128,7 +212,7 @@
       "row_url": null
     },
     {
-      "rank": 6,
+      "rank": 10,
       "system": "Claude Opus 4.6 / OpenHands",
       "agent": "OpenHands",
       "model_raw": [
@@ -149,7 +233,7 @@
       "row_url": null
     },
     {
-      "rank": 7,
+      "rank": 11,
       "system": "GPT 5.4 (xhigh) / OpenHands",
       "agent": "OpenHands",
       "model_raw": [
@@ -170,7 +254,7 @@
       "row_url": null
     },
     {
-      "rank": 8,
+      "rank": 12,
       "system": "GPT 5.2 (high) / OpenHands",
       "agent": "OpenHands",
       "model_raw": [
@@ -191,7 +275,7 @@
       "row_url": null
     },
     {
-      "rank": 9,
+      "rank": 13,
       "system": "Claude Opus 4.5 / OpenHands",
       "agent": "OpenHands",
       "model_raw": [
@@ -212,7 +296,7 @@
       "row_url": null
     },
     {
-      "rank": 10,
+      "rank": 14,
       "system": "GPT 5.4 (high) / OpenHands",
       "agent": "OpenHands",
       "model_raw": [
@@ -233,7 +317,7 @@
       "row_url": null
     },
     {
-      "rank": 11,
+      "rank": 15,
       "system": "Gemini 3.1 Pro / OpenHands",
       "agent": "OpenHands",
       "model_raw": [
@@ -254,7 +338,7 @@
       "row_url": null
     },
     {
-      "rank": 12,
+      "rank": 16,
       "system": "Gemini 3 Pro / OpenHands",
       "agent": "OpenHands",
       "model_raw": [
@@ -275,7 +359,7 @@
       "row_url": null
     },
     {
-      "rank": 13,
+      "rank": 17,
       "system": "Claude Sonnet 4.5 / OpenHands",
       "agent": "OpenHands",
       "model_raw": [
@@ -296,7 +380,7 @@
       "row_url": null
     },
     {
-      "rank": 14,
+      "rank": 18,
       "system": "GPT 5.1 (high) / OpenHands",
       "agent": "OpenHands",
       "model_raw": [
@@ -317,7 +401,7 @@
       "row_url": null
     },
     {
-      "rank": 15,
+      "rank": 19,
       "system": "Gemini 3 Flash / OpenHands",
       "agent": "OpenHands",
       "model_raw": [
@@ -338,7 +422,7 @@
       "row_url": null
     },
     {
-      "rank": 16,
+      "rank": 20,
       "system": "O3 (high) / OpenHands",
       "agent": "OpenHands",
       "model_raw": [
@@ -359,7 +443,7 @@
       "row_url": null
     },
     {
-      "rank": 17,
+      "rank": 21,
       "system": "GPT 5 (high) / OpenHands",
       "agent": "OpenHands",
       "model_raw": [
@@ -380,7 +464,7 @@
       "row_url": null
     },
     {
-      "rank": 17,
+      "rank": 22,
       "system": "Claude Opus 4 / OpenHands",
       "agent": "OpenHands",
       "model_raw": [
@@ -401,7 +485,7 @@
       "row_url": null
     },
     {
-      "rank": 19,
+      "rank": 23,
       "system": "Qwen3 Coder / OpenHands",
       "agent": "OpenHands",
       "model_raw": [
@@ -420,7 +504,7 @@
       "row_url": null
     },
     {
-      "rank": 19,
+      "rank": 24,
       "system": "Kimi K2 Instruct / OpenHands",
       "agent": "OpenHands",
       "model_raw": [
@@ -441,7 +525,7 @@
       "row_url": null
     },
     {
-      "rank": 19,
+      "rank": 25,
       "system": "Claude Sonnet 4 / OpenHands",
       "agent": "OpenHands",
       "model_raw": [
@@ -462,7 +546,7 @@
       "row_url": null
     },
     {
-      "rank": 22,
+      "rank": 26,
       "system": "Claude Sonnet 3.5 V2 / OpenHands",
       "agent": "OpenHands",
       "model_raw": [
@@ -483,7 +567,7 @@
       "row_url": null
     },
     {
-      "rank": 23,
+      "rank": 27,
       "system": "Gemini 2.5 Pro / OpenHands",
       "agent": "OpenHands",
       "model_raw": [
@@ -495,7 +579,7 @@
       "model_config": null,
       "score": 3.92,
       "score_extra": {
-        "score_hack_control": 0
+        "score_hack_control": 0.0
       },
       "date": "2025-10-10",
       "verified": null,
@@ -504,7 +588,7 @@
       "row_url": null
     },
     {
-      "rank": 24,
+      "rank": 28,
       "system": "Claude Sonnet 3.7 / OpenHands",
       "agent": "OpenHands",
       "model_raw": [
@@ -525,7 +609,7 @@
       "row_url": null
     },
     {
-      "rank": 25,
+      "rank": 29,
       "system": "O4 Mini (high) / OpenHands",
       "agent": "OpenHands",
       "model_raw": [
@@ -546,7 +630,7 @@
       "row_url": null
     },
     {
-      "rank": 26,
+      "rank": 30,
       "system": "GLM 4.5 Air / OpenHands",
       "agent": "OpenHands",
       "model_raw": [
@@ -567,7 +651,7 @@
       "row_url": null
     },
     {
-      "rank": 27,
+      "rank": 31,
       "system": "O3 Mini (high) / OpenHands",
       "agent": "OpenHands",
       "model_raw": [
@@ -588,7 +672,7 @@
       "row_url": null
     },
     {
-      "rank": 28,
+      "rank": 32,
       "system": "GPT 4o / OpenHands",
       "agent": "OpenHands",
       "model_raw": [
@@ -598,9 +682,9 @@
         "gpt-4o"
       ],
       "model_config": null,
-      "score": 0,
+      "score": 0.0,
       "score_extra": {
-        "score_hack_control": 0
+        "score_hack_control": 0.0
       },
       "date": "2025-05-30",
       "verified": null,

@@ -15,8 +15,8 @@
   "fetched": [
     "https://labs.scale.com/leaderboard/mcp_atlas"
   ],
-  "retrieved": "2026-09-14",
-  "newest_row_date": "2026-09-04",
+  "retrieved": "2026-10-05",
+  "newest_row_date": "2026-09-17",
   "snapshot": "sources/mcp-atlas/leaderboard_entries.json",
   "paper": "https://arxiv.org/abs/2602.00933",
   "repo": "https://github.com/scaleapi/mcp-atlas",
@@ -45,10 +45,10 @@
     },
     {
       "rank": 1,
-      "system": "claude-fable-5-1",
+      "system": "Fable 5.1",
       "agent": null,
       "model_raw": [
-        "claude-fable-5-1"
+        "Fable 5.1"
       ],
       "model_ids": [
         "claude-fable-5.1"
@@ -87,10 +87,52 @@
     },
     {
       "rank": 2,
-      "system": "gemini-3.5-flash (high)",
+      "system": "Qwen3.8-2.4T-A95B (xHigh)",
       "agent": null,
       "model_raw": [
-        "gemini-3.5-flash (high)"
+        "Qwen3.8-2.4T-A95B (xHigh)"
+      ],
+      "model_ids": [
+        "qwen3.8-2.4t-a95b"
+      ],
+      "model_config": "xHigh",
+      "score": 84.5,
+      "score_extra": {
+        "ci_plus_minus": 2.25
+      },
+      "date": "2026-09-17",
+      "verified": null,
+      "open_source": null,
+      "org": "alibaba",
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "GLM 5.3",
+      "agent": null,
+      "model_raw": [
+        "GLM 5.3"
+      ],
+      "model_ids": [
+        "glm-5.3"
+      ],
+      "model_config": null,
+      "score": 84.2,
+      "score_extra": {
+        "ci_plus_minus": 2.15
+      },
+      "date": "2026-09-17",
+      "verified": null,
+      "open_source": null,
+      "org": "zai",
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "Gemini 3.5 Flash (high)",
+      "agent": null,
+      "model_raw": [
+        "Gemini 3.5 Flash (high)"
       ],
       "model_ids": [
         "gemini-3.5-flash"
@@ -503,6 +545,27 @@
       "verified": null,
       "open_source": null,
       "org": "kimi",
+      "row_url": null
+    },
+    {
+      "rank": 18,
+      "system": "Nemotron 3 Ultra (thinking)",
+      "agent": null,
+      "model_raw": [
+        "Nemotron 3 Ultra (thinking)"
+      ],
+      "model_ids": [
+        "nemotron-3-ultra"
+      ],
+      "model_config": "thinking",
+      "score": 63.1,
+      "score_extra": {
+        "ci_plus_minus": 3
+      },
+      "date": "2026-09-17",
+      "verified": null,
+      "open_source": null,
+      "org": "nvidia",
       "row_url": null
     },
     {

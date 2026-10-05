@@ -1,0 +1,174 @@
+[
+  {
+    "id": "computer-agent-arena",
+    "retrieved": "2026-10-05",
+    "status": "gap-rechecked",
+    "reason_ja": "現行の leaderboard URL は HTTP 404、サイトのルートは HTTP 403。公開リーダーボードを再取得できなかったため既存の欠測扱いを維持。旧リポジトリの固定 CSV を現行値として代用しない。",
+    "sources": [
+      {
+        "url": "https://arena.xlang.ai/leaderboard",
+        "http_status": 404,
+        "error": "HTTP Error 404: Not Found"
+      },
+      {
+        "url": "https://arena.xlang.ai/",
+        "http_status": 403,
+        "error": "HTTP Error 403: Forbidden"
+      }
+    ]
+  },
+  {
+    "id": "webvoyager",
+    "retrieved": "2026-10-05",
+    "status": "gap-rechecked",
+    "reason_ja": "公式 README を再取得。実装・タスク・評価方法はあるが、継続更新の公式リーダーボードへのリンクやモデル別の現行結果データは確認できない。",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/MinorJerry/WebVoyager/main/README.md",
+        "http_status": 200,
+        "error": null,
+        "bytes": 10723,
+        "sha256": "b5523941b2773634fdcf359b5b89bf0aca589f33ad9db30692c8b1912ed5dda5"
+      }
+    ]
+  },
+  {
+    "id": "browsecomp",
+    "retrieved": "2026-10-05",
+    "status": "gap-rechecked",
+    "reason_ja": "simple-evals の公式 README は2025年7月に新モデル・結果の更新を終了したと引き続き明記。OpenAI 紹介ページは今回 HTTP 403 で再取得できない。Kaggle の公開 API は取得成功し、別表 browsecomp-kaggle の全42行を照合済み。ブラウジング用ツール付きエージェントの公式ボードと同一視しない。",
+    "sources": [
+      {
+        "url": "https://openai.com/index/browsecomp/",
+        "http_status": 403,
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openai/simple-evals/main/README.md",
+        "http_status": 200,
+        "error": null,
+        "bytes": 13160,
+        "sha256": "d9647c4a0e34cd9b2b528ff6986141734aac6f5f2f18a068eeadb2af0b29786f"
+      },
+      {
+        "url": "https://www.kaggle.com/api/i/benchmarks.BenchmarkService/GetBenchmarkLeaderboard",
+        "http_status": 200,
+        "error": null,
+        "bytes": 59286,
+        "sha256": "f8a99de1f11262ad67012fa94d52cdb0d60b8fe78dcacbfc9b6e70da9399873d"
+      }
+    ]
+  },
+  {
+    "id": "browsecomp-zh",
+    "retrieved": "2026-10-05",
+    "status": "gap-rechecked",
+    "reason_ja": "公式 README を再取得。Model Performance Overview は論文の固定結果表で、継続更新される公開リーダーボードは確認できない。論文の固定表を現行ボードとして取り込まない。",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/PALIN2018/BrowseComp-ZH/main/README.md",
+        "http_status": 200,
+        "error": null,
+        "bytes": 8238,
+        "sha256": "bd8d592e740bd1d1bd4af1a7f8f68ce0ea7eb3479d60e84b2e76810650d69a33"
+      }
+    ]
+  },
+  {
+    "id": "windows-agent-arena",
+    "retrieved": "2026-10-05",
+    "status": "gap-rechecked",
+    "reason_ja": "公式サイトを再取得。研究紹介・論文時点の結果はあるが、継続更新のモデル別リーダーボードや結果データは確認できない。",
+    "sources": [
+      {
+        "url": "https://microsoft.github.io/WindowsAgentArena/",
+        "http_status": 200,
+        "error": null,
+        "bytes": 23885,
+        "sha256": "10cd8fca042d2b9ebac114913e40598ca8bb0b50bf0df89f1306cc505f02ee6c"
+      }
+    ]
+  },
+  {
+    "id": "screensuite",
+    "retrieved": "2026-10-05",
+    "status": "gap-rechecked",
+    "reason_ja": "公式 README を再取得。評価ツール群と対象データセットの一覧はあるが、公開の公式リーダーボードや保守中のモデル別結果データへの案内は確認できない。",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/huggingface/screensuite/main/README.md",
+        "http_status": 200,
+        "error": null,
+        "bytes": 9359,
+        "sha256": "edcaa6f8355be6a8774ebeeb9bdb67648e8eeddb813d6be0fa2433116d9def36"
+      }
+    ]
+  },
+  {
+    "id": "hud-osworld-verified",
+    "retrieved": "2026-10-05",
+    "status": "gap-rechecked",
+    "reason_ja": "旧リーダーボード URL は今回 HTTP 404（前回の429ボット検査とは異なる）。公式トップページは取得できたが、OSWorld-Verified の現行ボードや結果データへのリンクは見つからず、既存の欠測扱いを維持。",
+    "sources": [
+      {
+        "url": "https://www.hud.ai/leaderboards",
+        "http_status": 404,
+        "error": "HTTP Error 404: Not Found"
+      },
+      {
+        "url": "https://www.hud.ai/",
+        "http_status": 200,
+        "error": null,
+        "bytes": 148534,
+        "sha256": "f56b2c13b1e70590ca98b177a7e2e0e47015ed9dafeb720dd4ace962913d9e2a"
+      }
+    ]
+  },
+  {
+    "id": "macosworld",
+    "retrieved": "2026-10-05",
+    "status": "gap-rechecked",
+    "reason_ja": "公式サイトを再取得。主なベンチマーク成績は images/results.png の画像で示され、機械可読な公開リーダーボードは確認できない。画像の値を転記しない。",
+    "sources": [
+      {
+        "url": "https://macos-world.github.io/",
+        "http_status": 200,
+        "error": null,
+        "bytes": 18988,
+        "sha256": "634111c7fe4a8833a6d117f87def535dc8e2ca263b2f7fb0b839b73cb957e00c"
+      }
+    ]
+  },
+  {
+    "id": "st-webagentbench",
+    "retrieved": "2026-10-05",
+    "status": "gap-rechecked",
+    "reason_ja": "HF Space API は引き続き RUNTIME_ERROR。実行中ボードの config は HTTP 503。公式 app.py が結果を同期する ST-WebAgentBench/st-webagentbench-data の API は HTTP 401 で、認証無しの結果抽出はできない。",
+    "sources": [
+      {
+        "url": "https://huggingface.co/api/spaces/ST-WebAgentBench/st-webagentbench-leaderboard",
+        "http_status": 200,
+        "error": null,
+        "bytes": 3315,
+        "sha256": "0e134a3619178722d22f3efb361b16cee04fb537c250ce7d2871b3eb0ca45e09"
+      },
+      {
+        "url": "https://st-webagentbench-st-webagentbench-leaderboard.hf.space/config",
+        "http_status": 503,
+        "error": "HTTP Error 503: Service Unavailable"
+      },
+      {
+        "url": "https://huggingface.co/spaces/ST-WebAgentBench/st-webagentbench-leaderboard/raw/main/app.py",
+        "http_status": 200,
+        "error": null,
+        "bytes": 143859,
+        "sha256": "20537065ccf1e15a61708fc73e40c77d7f05e2e4d0ad6ead05801cf390320e26"
+      },
+      {
+        "url": "https://huggingface.co/api/datasets/ST-WebAgentBench/st-webagentbench-data",
+        "http_status": 401,
+        "error": "HTTP Error 401: Unauthorized"
+      }
+    ]
+  }
+]

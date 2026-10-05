@@ -1,0 +1,64 @@
+{
+  "retrieved": "2026-10-05",
+  "table": "deepswe-v1-1",
+  "status": "comparable-source-extracted",
+  "source_data_changed": true,
+  "old_rows": 70,
+  "new_rows": 70,
+  "rows_changed": true,
+  "snapshot": "sources/deepswe-v1-1/leaderboard-live.json",
+  "snapshot_sha256": "a7c15d66288fd249c020b9931c017b92d1a3b90e480b3ff34974b752bd030019",
+  "sources": [
+    {
+      "url": "https://deepswe.datacurve.ai/artifacts/v1.1/leaderboard-live.json",
+      "request_description": "https://deepswe.datacurve.ai/artifacts/v1.1/leaderboard-live.json",
+      "tables": [
+        "deepswe-v1-1"
+      ],
+      "file": "bde5b7d99156bfc5",
+      "retrieved": "2026-10-05",
+      "status": 200,
+      "final_url": "https://deepswe.datacurve.ai/artifacts/v1.1/leaderboard-live.json",
+      "bytes": 94758,
+      "sha256": "a7c15d66288fd249c020b9931c017b92d1a3b90e480b3ff34974b752bd030019"
+    },
+    {
+      "url": "https://deepswe.datacurve.ai/",
+      "request_description": "https://deepswe.datacurve.ai/",
+      "tables": [
+        "deepswe-v1",
+        "deepswe-v1-1"
+      ],
+      "file": "d404253d104c9262",
+      "retrieved": "2026-10-05",
+      "status": 200,
+      "final_url": "https://deepswe.datacurve.ai/",
+      "bytes": 268036,
+      "sha256": "14436c31be1e50a0b62171e4aee4dd0ae0ce66b1e390af89c7e6e095ad59f1f1",
+      "purpose": "homepage"
+    },
+    {
+      "url": "https://deepswe.datacurve.ai/assets/index-Dl-MwHZr.js",
+      "request_description": "https://deepswe.datacurve.ai/assets/index-Dl-MwHZr.js",
+      "tables": [
+        "deepswe-v1",
+        "deepswe-v1-1"
+      ],
+      "file": "897dc55094f8a907",
+      "retrieved": "2026-10-05",
+      "status": 200,
+      "final_url": "https://deepswe.datacurve.ai/assets/index-Dl-MwHZr.js",
+      "bytes": 1837405,
+      "sha256": "92c0b7c55446f4510f91c3f25e671becc51e422d9e18868324b896d7a0513699",
+      "purpose": "frontend_pricing"
+    }
+  ],
+  "method": "Complete native JSON/YAML/CSV/HTML/RSC table projection compared against the prior snapshot; supported changed rows mechanically regenerated; other source changes fail closed.",
+  "supporting_snapshots": [
+    {
+      "path": "sources/deepswe-v1-1/frontend-pricing.js",
+      "sha256": "d5402a8a86393cdf6f7eedd3ba753777a7c7499e4a35658d66983d9307de77de",
+      "description": "Current official frontend price table and token-weighted correction functions; parsed without executing fetched JavaScript."
+    }
+  ]
+}

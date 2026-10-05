@@ -35,12 +35,12 @@
     "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/livekit-cascaded_livekit_2026-05-19/submission.json",
     "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-minimal_google_2026-04-13/submission.json"
   ],
-  "retrieved": "2026-09-14",
+  "retrieved": "2026-10-05",
   "newest_row_date": "2026-09-09",
   "snapshot": "sources/tau3-voice-retail/submissions.json",
   "paper": "https://arxiv.org/abs/2603.13686",
   "repo": "https://github.com/sierra-research/tau2-bench",
-  "notes_ja": "rank はボード既定表示(Standard のみ)での順位で、Custom 提出は rank を null にした。",
+  "notes_ja": "rank はボード既定表示(Standard のみ)での順位で、Custom 提出は rank を null にした。 GPT Liveが別モデルGPT-6 Astraへ委譲する構成は複数モデルとして記録し、単一モデルのマトリクスと当てはめから除外する。",
   "rows": [
     {
       "rank": null,
@@ -66,10 +66,12 @@
       "system": "gpt-live-1",
       "agent": null,
       "model_raw": [
-        "gpt-live-1"
+        "gpt-live-1",
+        "GPT-6 Astra"
       ],
       "model_ids": [
-        "gpt-live-1"
+        "gpt-live-1",
+        "gpt-6-astra"
       ],
       "model_config": "reasoning: Backend: GPT-6 Astra (medium); user sim: gpt-5.5-2026-04-23 (xhigh); voice model: gpt-live-1-diamond-alpha; submission type: custom",
       "score": 84.21052631578947,
@@ -85,10 +87,12 @@
       "system": "gpt-live-1",
       "agent": null,
       "model_raw": [
-        "gpt-live-1"
+        "gpt-live-1",
+        "GPT-6 Astra"
       ],
       "model_ids": [
-        "gpt-live-1"
+        "gpt-live-1",
+        "gpt-6-astra"
       ],
       "model_config": "reasoning: Backend: GPT-6 Astra (medium); user sim: v1.0; voice model: gpt-live-1-diamond-alpha; submission type: standard",
       "score": 78.94736842105263,

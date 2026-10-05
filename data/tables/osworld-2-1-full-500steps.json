@@ -1,0 +1,142 @@
+{
+  "id": "osworld-2-1-full-500steps",
+  "family": "osworld-2",
+  "name": "OSWorld 2.0 (release v2.1, full set, 500 steps)",
+  "board": "osworld-v2.xlang.ai",
+  "category": "computer-use",
+  "measures_ja": "熟練者でも1時間以上かかる長い実務ワークフロー(自前ホストのWebサイト・オフィスソフト・複数アプリ連携)を端から端まで完遂できるか。",
+  "tasks": 108,
+  "tasks_note": null,
+  "metric": "Binary accuracy (%)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "OSWorld 2.0 チームが公式に実行した結果(official)。ステップ上限・推論量・ツール設定(standard / batch tool)は行ごとに異なる。",
+  "source": "https://osworld-v2.xlang.ai/",
+  "fetched": [
+    "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+    "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1"
+  ],
+  "retrieved": "2026-10-05",
+  "newest_row_date": null,
+  "snapshot": "sources/osworld-2-1-full-500steps/official-results.json",
+  "paper": "https://arxiv.org/abs/2606.29537",
+  "repo": "https://github.com/xlang-ai/OSWorld-V2",
+  "notes_ja": "公式JSONの releaseVersion=v2.1 の行だけ。2.0 の行と混在させない。行の日付は無く、updatedAt は 2026-09-17。output_tokens_per_task は1タスクあたりの出力トークン数。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Claude Opus 5",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 5"
+      ],
+      "model_ids": [
+        "claude-opus-5"
+      ],
+      "model_config": "reasoning=max; tool_setting=batch tool; step_budget=500; release=v2.1",
+      "score": 44.33,
+      "score_extra": {
+        "partial_score": 77.67,
+        "step_budget": 500,
+        "output_tokens_per_task": 107919
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "Claude Opus 5",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 5"
+      ],
+      "model_ids": [
+        "claude-opus-5"
+      ],
+      "model_config": "reasoning=high; tool_setting=batch tool; step_budget=500; release=v2.1",
+      "score": 36.89,
+      "score_extra": {
+        "partial_score": 68.92,
+        "step_budget": 500,
+        "output_tokens_per_task": 65555
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 3,
+      "system": "Claude Opus 5",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 5"
+      ],
+      "model_ids": [
+        "claude-opus-5"
+      ],
+      "model_config": "reasoning=xhigh; tool_setting=batch tool; step_budget=500; release=v2.1",
+      "score": 33.33,
+      "score_extra": {
+        "partial_score": 73.11,
+        "step_budget": 500,
+        "output_tokens_per_task": 88387
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "Claude Opus 5",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 5"
+      ],
+      "model_ids": [
+        "claude-opus-5"
+      ],
+      "model_config": "reasoning=medium; tool_setting=batch tool; step_budget=500; release=v2.1",
+      "score": 33.01,
+      "score_extra": {
+        "partial_score": 64.85,
+        "step_budget": 500,
+        "output_tokens_per_task": 48645
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    },
+    {
+      "rank": 5,
+      "system": "Claude Opus 5",
+      "agent": null,
+      "model_raw": [
+        "Claude Opus 5"
+      ],
+      "model_ids": [
+        "claude-opus-5"
+      ],
+      "model_config": "reasoning=low; tool_setting=batch tool; step_budget=500; release=v2.1",
+      "score": 18.81,
+      "score_extra": {
+        "partial_score": 59.09,
+        "step_budget": 500,
+        "output_tokens_per_task": 29242
+      },
+      "date": null,
+      "verified": true,
+      "open_source": null,
+      "org": "Anthropic",
+      "row_url": null
+    }
+  ]
+}

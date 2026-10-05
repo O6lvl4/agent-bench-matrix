@@ -15,8 +15,8 @@
   "fetched": [
     "https://docs.google.com/spreadsheets/d/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo/export?format=csv&gid=0"
   ],
-  "retrieved": "2026-09-14",
-  "newest_row_date": "2026-08",
+  "retrieved": "2026-10-05",
+  "newest_row_date": "2026-09",
   "snapshot": "sources/androidworld/androidworld_gid0.csv",
   "paper": "https://arxiv.org/abs/2405.14573",
   "repo": "https://github.com/google-research/android_world",
@@ -37,7 +37,8 @@
       "model_config": "type=AI agent; screen=Screenshot + A11y tree",
       "score": 100.0,
       "score_extra": {
-        "trials": 1
+        "trials": 1,
+        "note": "Code is not open-sourced yet."
       },
       "date": "2026-08",
       "verified": false,
@@ -46,7 +47,53 @@
       "row_url": "https://android-world.fluiz.ai/"
     },
     {
-      "rank": 2,
+      "rank": 1,
+      "system": "Kirk Engine",
+      "agent": "Kirk Engine",
+      "model_raw": [
+        "gpt-4o",
+        "gpt-5.4"
+      ],
+      "model_ids": [
+        "gpt-4o",
+        "gpt-5.4"
+      ],
+      "model_config": "type=AI agent; screen=Screenshot + A11y tree",
+      "score": 100.0,
+      "score_extra": {
+        "trials": 1,
+        "note": "Code is not open-sourced yet."
+      },
+      "date": "2026-08",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": "https://abhishekdh.github.io/kirk-engine/"
+    },
+    {
+      "rank": 1,
+      "system": "MobileRun",
+      "agent": "MobileRun",
+      "model_raw": [
+        "GPT6 Astra"
+      ],
+      "model_ids": [
+        "gpt-6-astra"
+      ],
+      "model_config": "type=AI agent; screen=Screenshot + A11y tree",
+      "score": 100.0,
+      "score_extra": {
+        "trials": 1,
+        "note": "[09/30/2026] 91.4 --> Updated harness and using GPT-6 Astra\n[10/6/2025]: 78.4 --> 91.4; details here\n[09/19/2025]: Updated score from 63.0 --> 78.4. For this run, we used GPT-5 for reasoning in combination with Gemini-2.5-Pro for acting, while continuing to rely on a hybrid method of the Accessibility (A11y) tree plus corresponding screenshots to provide both structural and visual context to the agent."
+      },
+      "date": "2026-09",
+      "verified": false,
+      "open_source": true,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 4,
       "system": "Artemis",
       "agent": "Artemis",
       "model_raw": [
@@ -60,7 +107,8 @@
       "model_config": "type=AI agent; screen=Screenshot + A11y tree",
       "score": 99.1,
       "score_extra": {
-        "trials": 1
+        "trials": 1,
+        "note": "Open-source project available at https://github.com/google/artemis"
       },
       "date": "2026-08",
       "verified": false,
@@ -69,7 +117,7 @@
       "row_url": null
     },
     {
-      "rank": 3,
+      "rank": 5,
       "system": "AGI-0",
       "agent": "AGI-0",
       "model_raw": [
@@ -79,7 +127,8 @@
       "model_config": "type=AI agent; screen=Screenshot",
       "score": 97.4,
       "score_extra": {
-        "trials": 1
+        "trials": 1,
+        "note": "10/14/2025. Changed from model --> agent, based on description in blog post. https://www.theagi.company/blog/android-world"
       },
       "date": "2025-10",
       "verified": false,
@@ -88,7 +137,7 @@
       "row_url": null
     },
     {
-      "rank": 3,
+      "rank": 5,
       "system": "MobileUseAgent",
       "agent": "MobileUseAgent",
       "model_raw": [
@@ -109,7 +158,7 @@
       "row_url": null
     },
     {
-      "rank": 3,
+      "rank": 5,
       "system": "Finalrun",
       "agent": "Finalrun",
       "model_raw": [
@@ -123,7 +172,8 @@
       "model_config": "type=AI agent; screen=Screenshot + A11y tree",
       "score": 97.4,
       "score_extra": {
-        "trials": 1
+        "trials": 1,
+        "note": "04/2026: Project is open-source at https://github.com/final-run/finalrun-agent\n03/2026: Updated results: https://blogs.finalrun.app/finalrun-achieves-the-new-1-sota-mobile-agent-eclipsing-benchmarks-at-97-4\n08/2025: The technical doc/approach can be found here: https://github.com/final-run/finalrun-android-world-benchmark"
       },
       "date": "2026-03",
       "verified": false,
@@ -132,7 +182,7 @@
       "row_url": "https://drive.google.com/file/d/1NITEkiYb3itSq46I8BYsmzefEddzYbqm/view?usp=sharing"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "system": "askui AndroidVisionAgent",
       "agent": "askui AndroidVisionAgent",
       "model_raw": [
@@ -156,7 +206,7 @@
       "row_url": null
     },
     {
-      "rank": 6,
+      "rank": 8,
       "system": "AutoDevice",
       "agent": "AutoDevice",
       "model_raw": [
@@ -170,7 +220,8 @@
       "model_config": "type=AI agent; screen=Screenshot",
       "score": 94.8,
       "score_extra": {
-        "trials": 1
+        "trials": 1,
+        "note": "Agent code is available on https://github.com/autodevice/android_world"
       },
       "date": "2026-01",
       "verified": false,
@@ -179,7 +230,7 @@
       "row_url": "https://autodevice.io/benchmark/"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "system": "Midscene.js",
       "agent": "Midscene.js",
       "model_raw": [
@@ -191,9 +242,9 @@
       "model_config": "type=AI agent; screen=Screenshot",
       "score": 93.1,
       "score_extra": {
-        "trials": 1,
         "pass_at_2": 95.69,
-        "pass_at_3": 97.41
+        "pass_at_3": 97.41,
+        "trials": 1
       },
       "date": "2026-06",
       "verified": false,
@@ -202,30 +253,7 @@
       "row_url": null
     },
     {
-      "rank": 9,
-      "system": "DroidRun",
-      "agent": "DroidRun",
-      "model_raw": [
-        "GPT5",
-        "Gemini 2.5 Pro"
-      ],
-      "model_ids": [
-        "gpt-5",
-        "gemini-2.5-pro"
-      ],
-      "model_config": "type=AI agent; screen=Screenshot + A11y tree",
-      "score": 91.4,
-      "score_extra": {
-        "trials": 1
-      },
-      "date": "2025-10",
-      "verified": false,
-      "open_source": true,
-      "org": null,
-      "row_url": null
-    },
-    {
-      "rank": 9,
+      "rank": 11,
       "system": "mobile-use",
       "agent": "mobile-use",
       "model_raw": [
@@ -241,7 +269,8 @@
       "model_config": "type=AI agent; screen=Screenshot + A11y tree",
       "score": 91.4,
       "score_extra": {
-        "trials": 1
+        "trials": 1,
+        "note": "[12/16/2025] 84.5% -> 91.4%\n[10/1/2025]: 77.6% -> 84.5%\n[09/12/2025]: Updated score from 74.1% --> 77.6%\n[08/19/2025]: Initial trajectory labeling issue (MarkorCreateNoteFromClipboard) has been corrected by the authors. They provide Discord support for setup issues.\n[08/18/2025]: Repo has been reported broken by some users (not independently verified). Some trajectories (e.g., MarkorCreateNoteFromClipboard, BrowserMaze) are labeled as successful by the authors but contain incorrect actions"
       },
       "date": "2025-09",
       "verified": false,
@@ -250,7 +279,7 @@
       "row_url": "https://minitap.ai/benchmark"
     },
     {
-      "rank": 11,
+      "rank": 12,
       "system": "Agent-Visco",
       "agent": "Agent-Visco",
       "model_raw": [],
@@ -258,7 +287,8 @@
       "model_config": "type=AI agent; screen=Screenshot",
       "score": 88.8,
       "score_extra": {
-        "trials": 1
+        "trials": 1,
+        "note": "Research paper and codes will be open-source in early months."
       },
       "date": "2025-12",
       "verified": false,
@@ -267,7 +297,7 @@
       "row_url": "https://work.aliyun.com/alimail/openLinks/downloadMimeMetaDiskBigAttach?id=netdiskid%3Av001%3Afile%3ADzzzzzzNqZy%3BG8EhE7UV7U9nk2t2O6opysa%2BgRf5Zm6eTqXqtVApm1nDD8W%2BxnLAgdDsJsOSlxfXTx44NU7qRM%2BkJMuIA0smltxGWspXGX2Ox228yqp07rNX%2FIm2QehcGJBgHwUs0f81cz2sX76WNxvxnhpZnqmxiYxHNHRd2hybrPLi2DRQ8bM5ORhI%2BtGG%2B7n%2BcxdY1Ji0"
     },
     {
-      "rank": 12,
+      "rank": 13,
       "system": "Surfer 2",
       "agent": "Surfer 2",
       "model_raw": [
@@ -281,8 +311,9 @@
       "model_config": "type=AI agent; screen=Screenshot",
       "score": 87.1,
       "score_extra": {
+        "pass_at_3": 93.1,
         "trials": 1,
-        "pass_at_3": 93.1
+        "note": "Agent is based on https://github.com/hcompai/surfer-h-cli - same architecture, but with modifications to prompt and action space"
       },
       "date": "2025-10",
       "verified": false,
@@ -291,7 +322,7 @@
       "row_url": "https://hcompai.github.io/android-world-traces/"
     },
     {
-      "rank": 13,
+      "rank": 14,
       "system": "gbox.ai",
       "agent": "gbox.ai",
       "model_raw": [
@@ -305,7 +336,8 @@
       "model_config": "type=AI agent; screen=Screenshot",
       "score": 86.2,
       "score_extra": {
-        "trials": 1
+        "trials": 1,
+        "note": "GBOX uses Claude code as the agent with GBOX mcp. Link to report -> https://github.com/babelcloud/android_world_benchmark/blob/main/GBOX/report.md"
       },
       "date": "2025-10",
       "verified": false,
@@ -314,7 +346,7 @@
       "row_url": "https://github.com/babelcloud/android_world_benchmark/tree/main/GBOX/trajectory"
     },
     {
-      "rank": 14,
+      "rank": 15,
       "system": "AutoGLM-Mobile",
       "agent": null,
       "model_raw": [
@@ -326,7 +358,8 @@
       "model_config": "type=Model; screen=Screenshot + A11y tree; size=9B",
       "score": 80.2,
       "score_extra": {
-        "trials": 1
+        "trials": 1,
+        "note": "[9/26/2025]: Updated score from 75.8 --> 80.2 This is an updated version of AutoGLM-Mobile. In this version, we added more pretraining data and trained the VLM at full image resolution."
       },
       "date": "2025-08",
       "verified": false,
@@ -335,7 +368,7 @@
       "row_url": null
     },
     {
-      "rank": 15,
+      "rank": 16,
       "system": "LX-GUIAgent",
       "agent": "LX-GUIAgent",
       "model_raw": [
@@ -345,7 +378,8 @@
       "model_config": "type=AI agent; screen=Screenshot + A11y tree",
       "score": 79.3,
       "score_extra": {
-        "trials": 1
+        "trials": 1,
+        "note": "[9/23/2025]: Updated score from 75.0 --> 79.3. Added trajectories."
       },
       "date": "2025-09",
       "verified": false,
@@ -354,7 +388,7 @@
       "row_url": null
     },
     {
-      "rank": 16,
+      "rank": 17,
       "system": "AgentProg",
       "agent": "AgentProg",
       "model_raw": [
@@ -368,7 +402,8 @@
       "model_config": "type=AI agent; screen=Screenshot",
       "score": 78.0,
       "score_extra": {
-        "trials": 1
+        "trials": 1,
+        "note": "Paper: https://arxiv.org/pdf/2512.10371; Code: https://github.com/MobileLLM/AgentProg"
       },
       "date": "2025-12",
       "verified": false,
@@ -377,7 +412,7 @@
       "row_url": null
     },
     {
-      "rank": 17,
+      "rank": 18,
       "system": "K²-Agent",
       "agent": "K²-Agent",
       "model_raw": [
@@ -391,7 +426,8 @@
       "model_config": "type=AI agent; screen=Screenshot; size=72B + 7B",
       "score": 76.7,
       "score_extra": {
-        "trials": 1
+        "trials": 1,
+        "note": "K²-Agent, a hierarchical approach that self-evolves a Qwen2.5-VL-72B for high-level planning and post-trains a Qwen2.5-VL-7B for low-level execution.\nOur GitHub repository, which contains a detailed description of our approach, can be found here: https://github.com/k2-agent/k2-agent."
       },
       "date": "2025-09",
       "verified": false,
@@ -400,7 +436,7 @@
       "row_url": "https://github.com/k2-agent/k2-agent/blob/main/androidworld-trajectories.zip"
     },
     {
-      "rank": 17,
+      "rank": 18,
       "system": "MAI-UI",
       "agent": null,
       "model_raw": [
@@ -419,7 +455,7 @@
       "row_url": null
     },
     {
-      "rank": 19,
+      "rank": 20,
       "system": "MobileUse-v2",
       "agent": "MobileUse-v2",
       "model_raw": [
@@ -431,7 +467,8 @@
       "model_config": "type=AI agent; screen=Screenshot; size=32B",
       "score": 75.0,
       "score_extra": {
-        "trials": 1
+        "trials": 1,
+        "note": "Make further post-training based on the GUI-Owl-32b model. Optimize the memory and knowledge module of the MobileUse framework."
       },
       "date": "2025-09",
       "verified": false,
@@ -440,7 +477,7 @@
       "row_url": null
     },
     {
-      "rank": 20,
+      "rank": 21,
       "system": "Mobile-Agent-v3",
       "agent": "Mobile-Agent-v3",
       "model_raw": [
@@ -452,7 +489,8 @@
       "model_config": "type=AI agent; screen=Screenshot; size=32B",
       "score": 73.3,
       "score_extra": {
-        "trials": 1
+        "trials": 1,
+        "note": "https://github.com/X-PLUG/MobileAgent/tree/main"
       },
       "date": "2025-08",
       "verified": false,
@@ -461,7 +499,7 @@
       "row_url": null
     },
     {
-      "rank": 20,
+      "rank": 21,
       "system": "MAI-UI",
       "agent": null,
       "model_raw": [
@@ -480,7 +518,7 @@
       "row_url": null
     },
     {
-      "rank": 22,
+      "rank": 23,
       "system": "MAI-UI",
       "agent": null,
       "model_raw": [
@@ -499,7 +537,7 @@
       "row_url": null
     },
     {
-      "rank": 23,
+      "rank": 24,
       "system": "Gemini 2.5 Computer Use",
       "agent": null,
       "model_raw": [
@@ -520,7 +558,7 @@
       "row_url": null
     },
     {
-      "rank": 24,
+      "rank": 25,
       "system": "JT-GUIAgent-V2",
       "agent": "JT-GUIAgent-V2",
       "model_raw": [
@@ -539,7 +577,7 @@
       "row_url": null
     },
     {
-      "rank": 25,
+      "rank": 26,
       "system": "GUI-Owl-7B",
       "agent": null,
       "model_raw": [
@@ -551,7 +589,8 @@
       "model_config": "type=Model; screen=Screenshot; size=7B",
       "score": 66.4,
       "score_extra": {
-        "trials": 1
+        "trials": 1,
+        "note": "https://github.com/X-PLUG/MobileAgent/tree/main"
       },
       "date": "2025-08",
       "verified": false,
@@ -560,7 +599,7 @@
       "row_url": null
     },
     {
-      "rank": 26,
+      "rank": 27,
       "system": "UI-Venus",
       "agent": null,
       "model_raw": [
@@ -572,7 +611,8 @@
       "model_config": "type=Model; screen=Screenshot; size=72B",
       "score": 65.9,
       "score_extra": {
-        "trials": 1
+        "trials": 1,
+        "note": "https://huggingface.co/inclusionAI/UI-Venus-Navi-72B"
       },
       "date": "2025-08",
       "verified": false,
@@ -581,7 +621,7 @@
       "row_url": "https://github.com/inclusionAI/UI-Venus/blob/main/vis_androidworld/UI-Venus-androidworld.zip"
     },
     {
-      "rank": 27,
+      "rank": 28,
       "system": "MobileUse",
       "agent": "MobileUse",
       "model_raw": [
@@ -602,7 +642,7 @@
       "row_url": null
     },
     {
-      "rank": 28,
+      "rank": 29,
       "system": "Seed1.5-VL",
       "agent": null,
       "model_raw": [
@@ -623,7 +663,7 @@
       "row_url": null
     },
     {
-      "rank": 29,
+      "rank": 30,
       "system": "JT-GUIAgent-V1",
       "agent": "JT-GUIAgent-V1",
       "model_raw": [
@@ -642,7 +682,7 @@
       "row_url": null
     },
     {
-      "rank": 30,
+      "rank": 31,
       "system": "V-Droid Paper",
       "agent": "V-Droid Paper",
       "model_raw": [
@@ -652,7 +692,8 @@
       "model_config": "type=AI agent; screen=A11y tree; size=8B",
       "score": 59.5,
       "score_extra": {
-        "trials": 1
+        "trials": 1,
+        "note": "Training data consists of apps and tasks from the AndroidWorld benchmark. Code."
       },
       "date": "2025-03",
       "verified": false,
@@ -661,7 +702,7 @@
       "row_url": null
     },
     {
-      "rank": 31,
+      "rank": 32,
       "system": "Agent S2",
       "agent": "Agent S2",
       "model_raw": [
@@ -680,7 +721,7 @@
       "row_url": null
     },
     {
-      "rank": 32,
+      "rank": 33,
       "system": "UI-Venus",
       "agent": null,
       "model_raw": [
@@ -692,7 +733,8 @@
       "model_config": "type=Model; screen=Screenshot; size=7B",
       "score": 49.1,
       "score_extra": {
-        "trials": 1
+        "trials": 1,
+        "note": "https://huggingface.co/inclusionAI/UI-Venus-Navi-7B"
       },
       "date": "2025-08",
       "verified": false,
@@ -701,7 +743,7 @@
       "row_url": "https://github.com/inclusionAI/UI-Venus/blob/main/vis_androidworld/UI-Venus-androidworld.zip"
     },
     {
-      "rank": 32,
+      "rank": 33,
       "system": "MAI-UI",
       "agent": null,
       "model_raw": [
@@ -720,7 +762,7 @@
       "row_url": null
     },
     {
-      "rank": 34,
+      "rank": 35,
       "system": "GUI-Explorer",
       "agent": "GUI-Explorer",
       "model_raw": [
@@ -741,7 +783,7 @@
       "row_url": null
     },
     {
-      "rank": 35,
+      "rank": 36,
       "system": "AndroidGen",
       "agent": "AndroidGen",
       "model_raw": [
@@ -762,7 +804,7 @@
       "row_url": null
     },
     {
-      "rank": 36,
+      "rank": 37,
       "system": "UI-TARS",
       "agent": null,
       "model_raw": [
@@ -783,7 +825,7 @@
       "row_url": null
     },
     {
-      "rank": 37,
+      "rank": 38,
       "system": "Aria-UI",
       "agent": null,
       "model_raw": [
@@ -806,7 +848,7 @@
       "row_url": null
     },
     {
-      "rank": 38,
+      "rank": 39,
       "system": "ScaleTrack",
       "agent": null,
       "model_raw": [
@@ -827,7 +869,7 @@
       "row_url": null
     },
     {
-      "rank": 38,
+      "rank": 39,
       "system": "UGround",
       "agent": null,
       "model_raw": [
@@ -841,7 +883,8 @@
       "model_config": "type=Model; screen=Screenshot",
       "score": 44.0,
       "score_extra": {
-        "trials": 1
+        "trials": 1,
+        "note": "Code for reproduction"
       },
       "date": "2025-01",
       "verified": false,
@@ -850,7 +893,7 @@
       "row_url": null
     },
     {
-      "rank": 40,
+      "rank": 41,
       "system": "Mirage-1",
       "agent": "Mirage-1",
       "model_raw": [
@@ -862,7 +905,8 @@
       "model_config": "type=AI agent; screen=Screenshot",
       "score": 42.2,
       "score_extra": {
-        "trials": 1
+        "trials": 1,
+        "note": "With Mirage-1-O; uses OS-Atlas grounder"
       },
       "date": "2025-06",
       "verified": false,
@@ -871,7 +915,7 @@
       "row_url": null
     },
     {
-      "rank": 41,
+      "rank": 42,
       "system": "Ponder & Press",
       "agent": "Ponder & Press",
       "model_raw": [
@@ -883,7 +927,8 @@
       "model_config": "type=AI agent; screen=Screenshot",
       "score": 34.5,
       "score_extra": {
-        "trials": 1
+        "trials": 1,
+        "note": "Code is not yet open-sourced"
       },
       "date": "2024-12",
       "verified": false,
@@ -892,7 +937,7 @@
       "row_url": null
     },
     {
-      "rank": 42,
+      "rank": 43,
       "system": "AndroidWorld",
       "agent": "AndroidWorld",
       "model_raw": [
@@ -913,7 +958,7 @@
       "row_url": null
     },
     {
-      "rank": 43,
+      "rank": 44,
       "system": "GUI-Critic-R1",
       "agent": null,
       "model_raw": [
@@ -934,7 +979,7 @@
       "row_url": null
     },
     {
-      "rank": 43,
+      "rank": 44,
       "system": "EcoAgent",
       "agent": "EcoAgent",
       "model_raw": [
@@ -959,7 +1004,7 @@
       "row_url": null
     },
     {
-      "rank": 45,
+      "rank": 46,
       "system": "InfiGUIAgent",
       "agent": null,
       "model_raw": [
@@ -990,8 +1035,9 @@
       "model_config": "type=AI agent; screen=Screenshot",
       "score": null,
       "score_extra": {
+        "pass_at_4": 61.6,
         "trials": 1,
-        "pass_at_4": 61.6
+        "note": "Code will be open-source upon publication."
       },
       "date": "2024-10",
       "verified": false,
