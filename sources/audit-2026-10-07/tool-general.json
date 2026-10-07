@@ -1,0 +1,648 @@
+{
+  "retrieved": "2026-10-07",
+  "fetch_session": "cancelled; not retried",
+  "tables": [
+    {
+      "id": "apex-agents",
+      "status": "preserved-gap",
+      "error": "Required source set incomplete after cancelled execution. Partial landing-page/app source bytes are insufficient to certify leaderboard rows; existing table and retrieval date preserved.",
+      "retained_retrieval_date": "2026-10-05",
+      "tried": [
+        "https://www.mercor.com/apex/apex-agents-leaderboard/",
+        "https://www.mercor.com/blog/introducing-apex-agents-1-1"
+      ]
+    },
+    {
+      "id": "apex-agents-corporate-lawyer",
+      "status": "preserved-gap",
+      "error": "Required source set incomplete after cancelled execution. Partial landing-page/app source bytes are insufficient to certify leaderboard rows; existing table and retrieval date preserved.",
+      "retained_retrieval_date": "2026-10-05",
+      "tried": [
+        "https://www.mercor.com/apex/apex-agents-leaderboard/corporate-lawyer-agent/",
+        "https://www.mercor.com/blog/introducing-apex-agents-1-1"
+      ]
+    },
+    {
+      "id": "apex-agents-investment-banking",
+      "status": "preserved-gap",
+      "error": "Required source set incomplete after cancelled execution. Partial landing-page/app source bytes are insufficient to certify leaderboard rows; existing table and retrieval date preserved.",
+      "retained_retrieval_date": "2026-10-05",
+      "tried": [
+        "https://www.mercor.com/apex/apex-agents-leaderboard/investment-banking-analyst-agent/",
+        "https://www.mercor.com/blog/introducing-apex-agents-1-1"
+      ]
+    },
+    {
+      "id": "apex-agents-management-consultant",
+      "status": "preserved-gap",
+      "error": "Required source set incomplete after cancelled execution. Partial landing-page/app source bytes are insufficient to certify leaderboard rows; existing table and retrieval date preserved.",
+      "retained_retrieval_date": "2026-10-05",
+      "tried": [
+        "https://www.mercor.com/apex/apex-agents-leaderboard/management-consultant-agent/",
+        "https://www.mercor.com/blog/introducing-apex-agents-1-1"
+      ]
+    },
+    {
+      "id": "appworld-test-challenge",
+      "status": "unchanged",
+      "rows": 23,
+      "sources": [
+        {
+          "url": "https://appworld.dev/appworld/leaderboard.json",
+          "sha256": "5dc72e48e619f483af9035413bccb50e68f63446b6f84371f6e2989e595dc49d",
+          "http_status": null,
+          "collector_completed": false
+        }
+      ]
+    },
+    {
+      "id": "appworld-test-normal",
+      "status": "unchanged",
+      "rows": 23,
+      "sources": [
+        {
+          "url": "https://appworld.dev/appworld/leaderboard.json",
+          "sha256": "5dc72e48e619f483af9035413bccb50e68f63446b6f84371f6e2989e595dc49d",
+          "http_status": null,
+          "collector_completed": false
+        }
+      ]
+    },
+    {
+      "id": "bfcl-v4",
+      "status": "unchanged",
+      "rows": 109,
+      "sources": [
+        {
+          "url": "https://gorilla.cs.berkeley.edu/data_overall.csv",
+          "sha256": "ede5081a24bc5ac7f9b3b09a52af6bcfcd35aa0f1709239fed979db77a8159a6",
+          "http_status": null,
+          "collector_completed": false
+        }
+      ]
+    },
+    {
+      "id": "gaia",
+      "status": "preserved-gap",
+      "error": "Required source set incomplete after cancelled execution. Partial landing-page/app source bytes are insufficient to certify leaderboard rows; existing table and retrieval date preserved.",
+      "retained_retrieval_date": "2026-10-05",
+      "tried": [
+        "https://gaia-benchmark-leaderboard.hf.space/gradio_api/call/refresh",
+        "https://huggingface.co/spaces/gaia-benchmark/leaderboard/raw/main/app.py",
+        "https://huggingface.co/datasets/gaia-benchmark/results_public/resolve/main/2023/test-00000-of-00001.parquet"
+      ]
+    },
+    {
+      "id": "gaia2",
+      "status": "preserved-gap",
+      "error": "Required source set incomplete after cancelled execution. Partial landing-page/app source bytes are insufficient to certify leaderboard rows; existing table and retrieval date preserved.",
+      "retained_retrieval_date": "2026-10-05",
+      "tried": [
+        "https://meta-agents-research-environments-leaderboard.hf.space/gradio_api/call/refresh_legacy"
+      ]
+    },
+    {
+      "id": "gaia2-cli",
+      "status": "unchanged",
+      "rows": 7,
+      "sources": [
+        {
+          "url": "https://huggingface.co/spaces/meta-agents-research-environments/leaderboard/raw/main/app.py",
+          "sha256": "c7e686b548945dc8bf0556dccf39f3a9d3e1cd5cfec7b71432efaab7227b6c3a",
+          "http_status": null,
+          "collector_completed": false
+        }
+      ]
+    },
+    {
+      "id": "hal-gaia",
+      "status": "unchanged",
+      "rows": 32,
+      "sources": [
+        {
+          "url": "https://hal.cs.princeton.edu/gaia",
+          "sha256": "13b86e4923d4af416ee11fd9764fdb131dd13be4d49e961a999be44bf6723884",
+          "http_status": null,
+          "collector_completed": false
+        }
+      ]
+    },
+    {
+      "id": "hal-tau-bench-airline",
+      "status": "unchanged",
+      "rows": 26,
+      "sources": [
+        {
+          "url": "https://hal.cs.princeton.edu/taubench_airline",
+          "sha256": "70b7a20db0a9acb4007ec4b7f8dc47b177894dad3faa5875b06d80b148386f5e",
+          "http_status": null,
+          "collector_completed": false
+        }
+      ]
+    },
+    {
+      "id": "mcp-atlas",
+      "status": "unchanged",
+      "rows": 34,
+      "sources": [
+        {
+          "url": "https://labs.scale.com/leaderboard/mcp_atlas",
+          "sha256": "174e3fd2451d22d97b7f7f7c1ebbf232c871a9d941c88ac73c090fa2df82b55e",
+          "http_status": null,
+          "collector_completed": false
+        }
+      ]
+    },
+    {
+      "id": "mcp-bench",
+      "status": "preserved-gap",
+      "error": "Required source set incomplete after cancelled execution. Partial landing-page/app source bytes are insufficient to certify leaderboard rows; existing table and retrieval date preserved.",
+      "retained_retrieval_date": "2026-10-05",
+      "tried": [
+        "https://huggingface.co/spaces/mcpbench/mcp-bench",
+        "https://mcpbench-mcp-bench.static.hf.space/index.html",
+        "https://mcpbench-mcp-bench.static.hf.space/script.js"
+      ]
+    },
+    {
+      "id": "mcp-universe-agent",
+      "status": "preserved-gap",
+      "error": "Required source set incomplete after cancelled execution. Partial landing-page/app source bytes are insufficient to certify leaderboard rows; existing table and retrieval date preserved.",
+      "retained_retrieval_date": "2026-10-05",
+      "tried": [
+        "https://mcp-universe.github.io/"
+      ]
+    },
+    {
+      "id": "mcp-universe-fc",
+      "status": "preserved-gap",
+      "error": "Required source set incomplete after cancelled execution. Partial landing-page/app source bytes are insufficient to certify leaderboard rows; existing table and retrieval date preserved.",
+      "retained_retrieval_date": "2026-10-05",
+      "tried": [
+        "https://mcp-universe.github.io/"
+      ]
+    },
+    {
+      "id": "mcp-universe-react",
+      "status": "preserved-gap",
+      "error": "Required source set incomplete after cancelled execution. Partial landing-page/app source bytes are insufficient to certify leaderboard rows; existing table and retrieval date preserved.",
+      "retained_retrieval_date": "2026-10-05",
+      "tried": [
+        "https://mcp-universe.github.io/"
+      ]
+    },
+    {
+      "id": "mcpmark-legacy",
+      "status": "preserved-gap",
+      "error": "Required source set incomplete after cancelled execution. Partial landing-page/app source bytes are insufficient to certify leaderboard rows; existing table and retrieval date preserved.",
+      "retained_retrieval_date": "2026-10-05",
+      "tried": [
+        "https://mcpmark.ai/leaderboard"
+      ]
+    },
+    {
+      "id": "mcpmark-verified",
+      "status": "preserved-gap",
+      "error": "Required source set incomplete after cancelled execution. Partial landing-page/app source bytes are insufficient to certify leaderboard rows; existing table and retrieval date preserved.",
+      "retained_retrieval_date": "2026-10-05",
+      "tried": [
+        "https://mcpmark.ai/leaderboard/verified"
+      ]
+    },
+    {
+      "id": "skillsbench",
+      "status": "preserved-gap",
+      "error": "Required source set incomplete after cancelled execution. Partial landing-page/app source bytes are insufficient to certify leaderboard rows; existing table and retrieval date preserved.",
+      "retained_retrieval_date": "2026-10-05",
+      "tried": [
+        "https://www.skillsbench.ai/leaderboard",
+        "https://www.skillsbench.ai/_next/static/chunks/8e836c7a01322d0f.js"
+      ]
+    },
+    {
+      "id": "tau2-bench",
+      "status": "preserved-gap",
+      "error": "Required source set incomplete after cancelled execution. Partial landing-page/app source bytes are insufficient to certify leaderboard rows; existing table and retrieval date preserved.",
+      "retained_retrieval_date": "2026-10-05",
+      "tried": [
+        "https://taubench.com/",
+        "https://taubench.com/assets/index-QtX8yEBE.js",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3.5-397b-a17b-think_sierra_2026-03-02/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-5_sierra_2026-02-26/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2_sierra_2026-02-26/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-flash_sierra_2026-03-02/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_sierra_2026-03-02/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/glm-5-think_sierra_2026-03-02/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_sierra_2026-02-26/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2-none_sierra_2026-02-26/submission.json"
+      ]
+    },
+    {
+      "id": "tau2-bench-airline",
+      "status": "preserved-gap",
+      "error": "Required source set incomplete after cancelled execution. Partial landing-page/app source bytes are insufficient to certify leaderboard rows; existing table and retrieval date preserved.",
+      "retained_retrieval_date": "2026-10-05",
+      "tried": [
+        "https://taubench.com/",
+        "https://taubench.com/assets/index-QtX8yEBE.js",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-5_sierra_2026-02-26/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2_sierra_2026-02-26/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/glm-5-think_sierra_2026-03-02/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-flash_sierra_2026-03-02/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3.5-397b-a17b-think_sierra_2026-03-02/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_sierra_2026-03-02/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_sierra_2026-02-26/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2-none_sierra_2026-02-26/submission.json"
+      ]
+    },
+    {
+      "id": "tau2-bench-legacy",
+      "status": "preserved-gap",
+      "error": "Required source set incomplete after cancelled execution. Partial landing-page/app source bytes are insufficient to certify leaderboard rows; existing table and retrieval date preserved.",
+      "retained_retrieval_date": "2026-10-05",
+      "tried": [
+        "https://taubench.com/",
+        "https://taubench.com/assets/index-QtX8yEBE.js",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_google_2025-11-18/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_anthropic_2025-10-02/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2026-01-23/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/deepseek-v3.2_deepseek_2025-12-01/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5_sierra_2025-08-09/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/toolorchestra_nvidia_2025-12-02/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2024_09_23/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/kimi-k2_moonshot-ai_2025-07-11/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-3-7-sonnet_anthropic_2024-06-20/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/o4-mini_openai_2024-06-20/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1_openai_2024-06-20/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1-mini_openai_2024-06-20/submission.json"
+      ]
+    },
+    {
+      "id": "tau2-bench-legacy-airline",
+      "status": "preserved-gap",
+      "error": "Required source set incomplete after cancelled execution. Partial landing-page/app source bytes are insufficient to certify leaderboard rows; existing table and retrieval date preserved.",
+      "retained_retrieval_date": "2026-10-05",
+      "tried": [
+        "https://taubench.com/",
+        "https://taubench.com/assets/index-QtX8yEBE.js",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_google_2025-11-18/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_anthropic_2025-10-02/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2026-01-23/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-3-7-sonnet_anthropic_2024-06-20/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/deepseek-v3.2_deepseek_2025-12-01/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5_sierra_2025-08-09/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4_anthropic_2025-05-22/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4_anthropic_2025-05-22/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2024_09_23/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/kimi-k2_moonshot-ai_2025-07-11/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-1_anthropic_2025-01-15/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1_openai_2024-06-20/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/toolorchestra_nvidia_2025-12-02/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/o4-mini_openai_2024-06-20/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/o3_openai_2025-01-15/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1-mini_openai_2024-06-20/submission.json"
+      ]
+    },
+    {
+      "id": "tau2-bench-legacy-retail",
+      "status": "preserved-gap",
+      "error": "Required source set incomplete after cancelled execution. Partial landing-page/app source bytes are insufficient to certify leaderboard rows; existing table and retrieval date preserved.",
+      "retained_retrieval_date": "2026-10-05",
+      "tried": [
+        "https://taubench.com/",
+        "https://taubench.com/assets/index-QtX8yEBE.js",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_anthropic_2025-10-02/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_google_2025-11-18/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/toolorchestra_nvidia_2025-12-02/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-1_anthropic_2025-01-15/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5_sierra_2025-08-09/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4_anthropic_2025-05-22/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/deepseek-v3.2_deepseek_2025-12-01/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4_anthropic_2025-05-22/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2026-01-23/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1_openai_2024-06-20/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/o3_openai_2025-01-15/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2024_09_23/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-3-7-sonnet_anthropic_2024-06-20/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/kimi-k2_moonshot-ai_2025-07-11/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/o4-mini_openai_2024-06-20/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1-mini_openai_2024-06-20/submission.json"
+      ]
+    },
+    {
+      "id": "tau2-bench-legacy-telecom",
+      "status": "preserved-gap",
+      "error": "Required source set incomplete after cancelled execution. Partial landing-page/app source bytes are insufficient to certify leaderboard rows; existing table and retrieval date preserved.",
+      "retained_retrieval_date": "2026-10-05",
+      "tried": [
+        "https://taubench.com/",
+        "https://taubench.com/assets/index-QtX8yEBE.js",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2026-01-23/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_anthropic_2025-10-02/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_google_2025-11-18/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/deepseek-v3.2_deepseek_2025-12-01/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5_sierra_2025-08-09/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/toolorchestra_nvidia_2025-12-02/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2024_09_23/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/kimi-k2_moonshot-ai_2025-07-11/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/o4-mini_openai_2024-06-20/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-3-7-sonnet_anthropic_2024-06-20/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1-mini_openai_2024-06-20/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1_openai_2024-06-20/submission.json"
+      ]
+    },
+    {
+      "id": "tau2-bench-retail",
+      "status": "preserved-gap",
+      "error": "Required source set incomplete after cancelled execution. Partial landing-page/app source bytes are insufficient to certify leaderboard rows; existing table and retrieval date preserved.",
+      "retained_retrieval_date": "2026-10-05",
+      "tried": [
+        "https://taubench.com/",
+        "https://taubench.com/assets/index-QtX8yEBE.js",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3.5-397b-a17b-think_sierra_2026-03-02/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/raft-30b-a3b_neu_2026-04-29/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2_sierra_2026-02-26/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-5_sierra_2026-02-26/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-flash_sierra_2026-03-02/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_sierra_2026-03-02/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2-none_sierra_2026-02-26/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/glm-5-think_sierra_2026-03-02/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_sierra_2026-02-26/submission.json"
+      ]
+    },
+    {
+      "id": "tau2-bench-telecom",
+      "status": "preserved-gap",
+      "error": "Required source set incomplete after cancelled execution. Partial landing-page/app source bytes are insufficient to certify leaderboard rows; existing table and retrieval date preserved.",
+      "retained_retrieval_date": "2026-10-05",
+      "tried": [
+        "https://taubench.com/",
+        "https://taubench.com/assets/index-QtX8yEBE.js",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3.5-397b-a17b-think_sierra_2026-03-02/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-5_sierra_2026-02-26/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-flash_sierra_2026-03-02/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_sierra_2026-03-02/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2_sierra_2026-02-26/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/glm-5-think_sierra_2026-03-02/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_sierra_2026-02-26/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2-none_sierra_2026-02-26/submission.json"
+      ]
+    },
+    {
+      "id": "tau3-banking",
+      "status": "preserved-gap",
+      "error": "Required source set incomplete after cancelled execution. Partial landing-page/app source bytes are insufficient to certify leaderboard rows; existing table and retrieval date preserved.",
+      "retained_retrieval_date": "2026-10-05",
+      "tried": [
+        "https://taubench.com/",
+        "https://taubench.com/assets/index-QtX8yEBE.js",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-8-max_sierra_2026-08-04/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-5_sierra_2026-08-04/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-4-5_sierra_2026-08-04/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-6-sol_sierra_2026-08-04/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-5_sierra_2026-05-05/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/muse-spark-1-1_sierra_2026-08-04/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-7_sierra_2026-05-05/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-8_sierra_2026-08-04/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-fable-5_sierra_2026-08-04/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-4_sierra_2026-03-25/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/kimi-k3_sierra_2026-08-04/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/glm-5-2_sierra_2026-08-04/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2_sierra_2026-02-26/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/distyl-buttonagent_distyl_2026-03-25/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-flash_sierra_2026-03-02/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-6_sierra_2026-05-05/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-pro-preview_sierra_2026-05-05/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_sierra_2026-02-26/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/inkling_sierra_2026-08-04/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-5_sierra_2026-02-26/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_sierra_2026-03-02/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-4-2_sierra_2026-05-05/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-4-fast_sierra_2026-05-05/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-2-5-pro_sierra_2026-05-05/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-4-1-fast_sierra_2026-05-05/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2-none_sierra_2026-02-26/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/glm-5-think_sierra_2026-03-02/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3.5-397b-a17b-think_sierra_2026-03-02/submission.json"
+      ]
+    },
+    {
+      "id": "tau3-voice",
+      "status": "preserved-gap",
+      "error": "Required source set incomplete after cancelled execution. Partial landing-page/app source bytes are insufficient to certify leaderboard rows; existing table and retrieval date preserved.",
+      "retained_retrieval_date": "2026-10-05",
+      "tried": [
+        "https://taubench.com/",
+        "https://taubench.com/assets/index-QtX8yEBE.js",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha-user-sim-gpt-5-5_openai_2026-09-09/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha_openai_2026-09-09/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-gpt-5-5_pineai_2026-08-17/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-v1-0_pineai_2026-08-17/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0-tool-mentor_pickle_2026-07-07/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0_xai_2026-04-21/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-08-06/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-5-omni-plus-realtime_qwen_2026-08-06/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-24/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-high_google_2026-04-02/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-29/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-minimal_openai_2026-07-01/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime_sierra_2026-03-03/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1.5_sierra_2026-03-03/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/livekit-cascaded_livekit_2026-05-19/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1-0_openai_2026-04-13/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-minimal_google_2026-04-13/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-live-2.5-flash_sierra_2026-03-03/submission.json"
+      ]
+    },
+    {
+      "id": "tau3-voice-airline",
+      "status": "preserved-gap",
+      "error": "Required source set incomplete after cancelled execution. Partial landing-page/app source bytes are insufficient to certify leaderboard rows; existing table and retrieval date preserved.",
+      "retained_retrieval_date": "2026-10-05",
+      "tried": [
+        "https://taubench.com/",
+        "https://taubench.com/assets/index-QtX8yEBE.js",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha_openai_2026-09-09/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-gpt-5-5_pineai_2026-08-17/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha-user-sim-gpt-5-5_openai_2026-09-09/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0-tool-mentor_pickle_2026-07-07/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-v1-0_pineai_2026-08-17/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0_xai_2026-04-21/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-24/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-high_google_2026-04-02/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-29/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-minimal_openai_2026-07-01/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-08-06/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-5-omni-plus-realtime_qwen_2026-08-06/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/livekit-cascaded_livekit_2026-05-19/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-minimal_google_2026-04-13/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1.5_sierra_2026-03-03/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime_sierra_2026-03-03/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1-0_openai_2026-04-13/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-live-2.5-flash_sierra_2026-03-03/submission.json"
+      ]
+    },
+    {
+      "id": "tau3-voice-banking",
+      "status": "preserved-gap",
+      "error": "Required source set incomplete after cancelled execution. Partial landing-page/app source bytes are insufficient to certify leaderboard rows; existing table and retrieval date preserved.",
+      "retained_retrieval_date": "2026-10-05",
+      "tried": [
+        "https://taubench.com/",
+        "https://taubench.com/assets/index-QtX8yEBE.js",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha-user-sim-gpt-5-5_openai_2026-09-09/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime-banking_xai_2026-07-13/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-high-banking_google_2026-07-13/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-banking_openai_2026-07-12/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-astra-high-banking_openai_2026-09-16/submission.json"
+      ]
+    },
+    {
+      "id": "tau3-voice-retail",
+      "status": "preserved-gap",
+      "error": "Required source set incomplete after cancelled execution. Partial landing-page/app source bytes are insufficient to certify leaderboard rows; existing table and retrieval date preserved.",
+      "retained_retrieval_date": "2026-10-05",
+      "tried": [
+        "https://taubench.com/",
+        "https://taubench.com/assets/index-QtX8yEBE.js",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-gpt-5-5_pineai_2026-08-17/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha-user-sim-gpt-5-5_openai_2026-09-09/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha_openai_2026-09-09/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0-tool-mentor_pickle_2026-07-07/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-v1-0_pineai_2026-08-17/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0_xai_2026-04-21/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-08-06/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-24/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-29/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-5-omni-plus-realtime_qwen_2026-08-06/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-high_google_2026-04-02/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1.5_sierra_2026-03-03/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-minimal_openai_2026-07-01/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime_sierra_2026-03-03/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1-0_openai_2026-04-13/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-live-2.5-flash_sierra_2026-03-03/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/livekit-cascaded_livekit_2026-05-19/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-minimal_google_2026-04-13/submission.json"
+      ]
+    },
+    {
+      "id": "tau3-voice-telecom",
+      "status": "preserved-gap",
+      "error": "Required source set incomplete after cancelled execution. Partial landing-page/app source bytes are insufficient to certify leaderboard rows; existing table and retrieval date preserved.",
+      "retained_retrieval_date": "2026-10-05",
+      "tried": [
+        "https://taubench.com/",
+        "https://taubench.com/assets/index-QtX8yEBE.js",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha-user-sim-gpt-5-5_openai_2026-09-09/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-v1-0_pineai_2026-08-17/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha_openai_2026-09-09/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0-tool-mentor_pickle_2026-07-07/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-gpt-5-5_pineai_2026-08-17/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0_xai_2026-04-21/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-08-06/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-5-omni-plus-realtime_qwen_2026-08-06/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime_sierra_2026-03-03/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-24/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-high_google_2026-04-02/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-29/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1.5_sierra_2026-03-03/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-minimal_openai_2026-07-01/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1-0_openai_2026-04-13/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-minimal_google_2026-04-13/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-live-2.5-flash_sierra_2026-03-03/submission.json",
+        "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/livekit-cascaded_livekit_2026-05-19/submission.json"
+      ]
+    },
+    {
+      "id": "terminal-bench-2-0",
+      "status": "preserved-gap",
+      "error": "Required source set incomplete after cancelled execution. Partial landing-page/app source bytes are insufficient to certify leaderboard rows; existing table and retrieval date preserved.",
+      "retained_retrieval_date": "2026-10-05",
+      "tried": [
+        "https://ofhuhcpkvzjlejydnvyd.supabase.co/functions/v1/leaderboard-read (POST {\"package\":\"terminal-bench/terminal-bench-2\",\"name\":\"2-0\"})"
+      ]
+    },
+    {
+      "id": "terminal-bench-2-1",
+      "status": "preserved-gap",
+      "error": "Required source set incomplete after cancelled execution. Partial landing-page/app source bytes are insufficient to certify leaderboard rows; existing table and retrieval date preserved.",
+      "retained_retrieval_date": "2026-10-05",
+      "tried": [
+        "https://ofhuhcpkvzjlejydnvyd.supabase.co/functions/v1/leaderboard-read (POST {\"package\":\"terminal-bench/terminal-bench-2-1\",\"name\":\"main\"})"
+      ]
+    },
+    {
+      "id": "terminal-bench-3-0",
+      "status": "preserved-gap",
+      "error": "Required source set incomplete after cancelled execution. Partial landing-page/app source bytes are insufficient to certify leaderboard rows; existing table and retrieval date preserved.",
+      "retained_retrieval_date": "2026-10-05",
+      "tried": [
+        "https://ofhuhcpkvzjlejydnvyd.supabase.co/functions/v1/leaderboard-read (POST {\"package\":\"terminal-bench/terminal-bench\",\"name\":\"3-0-0\"})"
+      ]
+    },
+    {
+      "id": "terminal-bench-4-0",
+      "status": "preserved-gap",
+      "error": "Required source set incomplete after cancelled execution. Partial landing-page/app source bytes are insufficient to certify leaderboard rows; existing table and retrieval date preserved.",
+      "retained_retrieval_date": "2026-10-05",
+      "tried": [
+        "https://ofhuhcpkvzjlejydnvyd.supabase.co/functions/v1/leaderboard-read (POST {\"package\":\"terminal-bench/terminal-bench\",\"name\":\"4-0-0\"})",
+        "https://www.tbench.ai/"
+      ]
+    },
+    {
+      "id": "terminal-bench-science-0-1",
+      "status": "preserved-gap",
+      "error": "Required source set incomplete after cancelled execution. Partial landing-page/app source bytes are insufficient to certify leaderboard rows; existing table and retrieval date preserved.",
+      "retained_retrieval_date": "2026-10-05",
+      "tried": [
+        "https://www.terminal-bench-science.ai/api/leaderboard?package=terminal-bench-science%2Fterminal-bench-science&name=v0-1-eval",
+        "https://ofhuhcpkvzjlejydnvyd.supabase.co/functions/v1/leaderboard-read (POST {\"package\":\"terminal-bench-science/terminal-bench-science\",\"name\":\"v0-1-eval\"})"
+      ]
+    },
+    {
+      "id": "theagentcompany",
+      "status": "preserved-gap",
+      "error": "Required source set incomplete after cancelled execution. Partial landing-page/app source bytes are insufficient to certify leaderboard rows; existing table and retrieval date preserved.",
+      "retained_retrieval_date": "2026-10-05",
+      "tried": [
+        "https://the-agent-company.com/",
+        "https://the-agent-company.com/static/js/main.6a1ea1e4.js"
+      ]
+    },
+    {
+      "id": "toolathlon",
+      "status": "preserved-gap",
+      "error": "Required source set incomplete after cancelled execution. Partial landing-page/app source bytes are insufficient to certify leaderboard rows; existing table and retrieval date preserved.",
+      "retained_retrieval_date": "2026-10-05",
+      "tried": [
+        "https://toolathlon.xyz/docs/leaderboard",
+        "https://toolathlon.xyz/docs/leaderboard.md"
+      ]
+    },
+    {
+      "id": "toolathlon-verified",
+      "status": "preserved-gap",
+      "error": "Required source set incomplete after cancelled execution. Partial landing-page/app source bytes are insufficient to certify leaderboard rows; existing table and retrieval date preserved.",
+      "retained_retrieval_date": "2026-10-05",
+      "tried": [
+        "https://toolathlon.xyz/docs/leaderboard",
+        "https://toolathlon.xyz/docs/leaderboard.md"
+      ]
+    }
+  ]
+}

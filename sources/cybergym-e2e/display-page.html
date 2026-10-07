@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en" data-benchmark="cybergym-e2e">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script>(function(){try{var t=localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
+  <title>CyberGym-E2E: Scalable Real-World Benchmark for AI Agents' End-to-End Cybersecurity Capabilities</title>
+  <meta name="description"
+    content="CyberGym-E2E is a large-scale, end-to-end cybersecurity benchmark of 920 real-world vulnerabilities across 139 open-source projects, evaluating AI agents on the full defensive lifecycle: discover, prove, and patch." />
+
+  <meta property="og:title" content="CyberGym-E2E: End-to-End Cybersecurity Evaluation for AI Agents" />
+  <meta property="og:description"
+    content="920 real-world vulnerabilities across 139 open-source projects — can AI agents discover, prove, and patch vulnerabilities end to end?" />
+  <meta property="og:url" content="https://www.cybergym.io/cybergym-e2e/" />
+  <meta property="og:image" content="https://www.cybergym.io/assets/images/cybergym-e2e/overview.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CyberGym-E2E: End-to-End Cybersecurity Evaluation for AI Agents" />
+  <meta name="twitter:description"
+    content="920 real-world vulnerabilities across 139 open-source projects — can AI agents discover, prove, and patch vulnerabilities end to end?" />
+  <meta name="twitter:image" content="https://www.cybergym.io/assets/images/cybergym-e2e/overview.png" />
+  <meta name="keywords" content="cybersecurity, CyberGym-E2E, AI agent, LLM, vulnerability, end-to-end, patching, benchmark" />
+
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/app.css" />
+
+  <script src="/assets/js/site.js" defer></script>
+  <script src="/assets/js/leaderboard.js" defer></script>
+  <script src="/assets/js/copy-bibtex.js" defer></script>
+</head>
+
+<body>
+  <div id="site-header"></div>
+
+  <!-- Hero -->
+  <header class="hero-mesh">
+    <div class="container-page pb-12 pt-8 text-center sm:pb-16 sm:pt-10">
+      <h1 class="mx-auto mt-6 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">CyberGym-E2E</h1>
+      <p class="mx-auto mt-3 max-w-3xl text-xl font-medium text-slate-700 sm:text-2xl">
+        Scalable Real-World Benchmark for AI Agents' End-to-End Cybersecurity Capabilities
+      </p>
+
+      <!-- Authors -->
+      <div class="mx-auto mt-6 max-w-4xl text-base leading-relaxed text-slate-700">
+        <a class="email-author" href="mailto:stneng@berkeley.edu" title="Email Tianneng Shi">Tianneng Shi<svg viewBox="0 0 24 24" class="email-ico" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a><sup>1*</sup>,
+        <a class="email-author" href="mailto:roundrobin@berkeley.edu" title="Email Robin Rheem">Robin Rheem<svg viewBox="0 0 24 24" class="email-ico" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a><sup>1*</sup>,
+        <a class="email-author" href="mailto:jiangdongwei0@gmail.com" title="Email Dongwei Jiang">Dongwei Jiang<svg viewBox="0 0 24 24" class="email-ico" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a><sup>2</sup>,
+        <a class="email-author" href="mailto:monaw@berkeley.edu" title="Email Mona Wang">Mona Wang<svg viewBox="0 0 24 24" class="email-ico" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a><sup>1</sup>,
+        Francisco De La Riega<sup>1</sup>,
+        <br>
+        Zhun Wang<sup>1</sup>,
+        Jingzhi Jiang<sup>1</sup>,
+        Alexander Cheung<sup>1</sup>,
+        Sean Tai<sup>1</sup>,
+        Jonah Cha<sup>1</sup>,
+        Jianhong Tu<sup>3</sup>,
+        <br>
+        Gabriel Han<sup>1</sup>,
+        <a class="email-author" href="mailto:chenguangwang@ucsc.edu" title="Email Chenguang Wang">Chenguang Wang<svg viewBox="0 0 24 24" class="email-ico" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a><sup>3</sup>,
+        <a class="email-author" href="mailto:jingxuan.he@berkeley.edu" title="Email Jingxuan He">Jingxuan He<svg viewBox="0 0 24 24" class="email-ico" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a><sup>1</sup>,
+        <a class="email-author" href="mailto:henrygwb@ucsb.edu" title="Email Wenbo Guo">Wenbo Guo<svg viewBox="0 0 24 24" class="email-ico" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a><sup>4</sup>,
+        <a class="email-author" href="mailto:dawnsong@cs.berkeley.edu" title="Email Dawn Song">Dawn Song<svg viewBox="0 0 24 24" class="email-ico" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a><sup>1</sup>
+      </div>
+      <div class="mx-auto mt-2 max-w-3xl text-sm text-slate-500">
+        <sup>1</sup>UC Berkeley · <sup>2</sup>Johns Hopkins University ·
+        <sup>3</sup>UC Santa Cruz · <sup>4</sup>UC Santa Barbara
+        &nbsp;·&nbsp; <sup>*</sup>Equal contribution
+      </div>
+
+      <p class="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-slate-600">
+        A large-scale, end-to-end cybersecurity benchmark of
+        <strong class="font-semibold text-slate-900">920 real-world vulnerabilities</strong> across
+        <strong class="font-semibold text-slate-900">139 widely used open-source projects</strong>.
+        Each task asks an agent to do the whole job: discover the vulnerability, generate a proof-of-concept,
+        and write a patch that fixes it without breaking anything else.
+      </p>
+
+      <!-- Links -->
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+        <a href="https://arxiv.org/abs/2606.04460" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor"><path d="M3 4h18v2H3zm0 7h18v2H3zm0 7h18v2H3z"/></svg>
+          Paper
+        </a>
+        <a href="https://github.com/sunblaze-ucb/cybergym-e2e" target="_blank" rel="noopener" class="btn btn-ghost">
+          <svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+          Code
+        </a>
+        <a href="https://rdi.berkeley.edu/blog/cybergym-e2e/" target="_blank" rel="noopener" class="btn btn-ghost">
+          <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5a2 2 0 0 1 2-2h9l5 5v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M14 3v6h6"/></svg>
+          Blog
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Leaderboard -->
+  <section class="section">
+    <div class="container-wide">
+      <div class="mx-auto max-w-2xl text-center">
+        <h2 class="section-title">Leaderboard</h2>
+      </div>
+      <div id="leaderboard" class="mt-10"></div>
+
+      <div class="content mt-8 text-sm text-slate-500">
+        <p>
+          The leaderboard ranks agents on their end-to-end cybersecurity capability. Each stage is
+          cumulative — S<sub>n</sub> requires passing all prior stages.
+        </p>
+        <p>
+          <strong>Patch-only:</strong> Agent receives the ground-truth PoC and crash log; measures patching ability alone.
+          <br>
+          <strong>S1:</strong> Agent's PoC crashes the unpatched build.
+          <strong>S2:</strong> Agent's patch fixes that crash.
+          <strong>S3:</strong> Patched project passes functionality tests.
+          <strong>S4:</strong> Patch fixes the specific ground-truth vulnerability.
+        </p>
+        <p>
+          <strong>†</strong> Evaluated on an earlier 615-task set; all other rows use the full 920-task benchmark.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section class="section bg-slate-50">
+    <div class="container-page">
+      <div class="mx-auto max-w-2xl text-center">
+        <h2 class="section-title">What Is CyberGym-E2E?</h2>
+      </div>
+      <div class="content mx-auto mt-8 max-w-3xl">
+        <p>
+          Most cybersecurity benchmarks cover only part of the vulnerability lifecycle — detection, or PoC
+          generation, or patching — often in isolation. CyberGym-E2E is the first benchmark to combine
+          vulnerability detection, PoC generation, patch generation, post-patch functionality testing,
+          a realistic agentic environment, and end-to-end evaluation at this scale.
+        </p>
+      </div>
+
+      <figure class="mx-auto mt-8 max-w-4xl">
+        <img src="/assets/images/cybergym-e2e/overview.png" alt="Overview of CyberGym-E2E" class="fig-shot w-full" />
+        <figcaption class="mt-3 text-sm text-slate-500">
+          <strong>Figure.</strong> Overview of benchmark task settings and agent evaluation. In the end-to-end
+          setting, the agent discovers the vulnerability, crafts a PoC, and writes a patch. Four validation
+          stages (S1–S4) measure cumulative success.
+        </figcaption>
+      </figure>
+
+      <div class="mx-auto mt-10 grid max-w-3xl grid-cols-3 gap-4">
+        <div class="card text-center"><div class="stat-num">920</div><div class="stat-label">tasks</div></div>
+        <div class="card text-center"><div class="stat-num">139</div><div class="stat-label">OSS projects</div></div>
+        <div class="card text-center"><div class="stat-num">4</div><div class="stat-label">validation stages</div></div>
+      </div>
+
+      <div class="content mx-auto mt-8 max-w-3xl">
+        <p>
+          <strong>The task.</strong>
+          Each instance gives the agent a vulnerable codebase, build scripts, and test scripts. In the
+          <em>end-to-end</em> setting, all ground-truth data is withheld: the agent must discover the
+          vulnerability, craft an input that triggers a sanitizer crash, and produce a patch. In the
+          <em>patch-only</em> setting, the agent receives the ground-truth PoC and crash log, isolating
+          the task to root-cause analysis and patching.
+        </p>
+        <p>
+          <strong>A realistic environment.</strong>
+          Rather than handing the agent read-only access to a single vulnerable function, CyberGym-E2E
+          places it directly inside the project's build environment — the way a coding agent is actually
+          deployed by an engineer.
+        </p>
+        <p>
+          <strong>How success is measured.</strong>
+          Outputs pass through four validation stages:
+          <strong>(S1)</strong> the agent's PoC crashes the unpatched build;
+          <strong>(S2)</strong> the patch fixes that crash;
+          <strong>(S3)</strong> the patched project still passes its developer-written functionality tests;
+          and a diagnostic <strong>(S4)</strong> that checks whether the patch also fixes the target
+          ground-truth vulnerability. Passing S1–S3 counts as a successful discover-and-patch; S4 tells
+          us whether the agent fixed the intended vulnerability or a different one.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Interesting Bits -->
+  <section class="section">
+    <div class="container-wide">
+      <div class="mx-auto max-w-2xl text-center">
+        <h2 class="section-title">The Interesting Bits</h2>
+      </div>
+
+      <div class="mt-12 space-y-6">
+        <!-- Agents find alternative vulns -->
+        <div class="card">
+          <h3 class="text-center text-xl font-bold text-slate-900">The S3–S4 gap: agents discover alternative vulnerabilities</h3>
+          <p class="mt-6 leading-relaxed text-slate-700">
+            There's a consistent gap between S3 (tests pass) and S4 (the patch fixes the original
+            ground-truth vulnerability). This isn't the agent doing anything wrong — the task never specifies
+            which vulnerability to find, and real projects contain multiple vulnerabilities. While exploring,
+            agents frequently discover and patch a perfectly valid vulnerability that simply isn't the one in
+            our ground-truth data. S3 counts those as the successes they are; S4 is a finer-grained diagnostic
+            that tells us how often the agent converged on the specific intended vulnerability, which is the
+            harder target. One promising direction: instruct agents to keep searching after fixing their first
+            vulnerability — enumerating and patching all discoverable vulnerabilities rather than stopping at
+            the first success.
+          </p>
+        </div>
+
+        <!-- Shallow patches -->
+        <div class="card">
+          <h3 class="text-center text-xl font-bold text-slate-900">Alternative and shallow patches</h3>
+          <p class="mt-6 leading-relaxed text-slate-700">
+            A vulnerability can often be fixed in many different ways, and we observe that many successful
+            agent patches address the same root cause as the ground-truth patch but at a different location.
+            This justifies grading behaviorally rather than by patch similarity, which would falsely reject
+            most legitimate fixes. However, we also observe a small fraction of patches are shallow, inserting
+            a defensive guard at the sanitizer-reported crash frame while leaving the underlying defect
+            untouched. This suggests that agent-produced patches should be treated as candidates for further
+            review rather than drop-in fixes. In this work we focus on verifiable, execution-based judging,
+            so shallow patches that pass all validation stages are still counted as successful; incorporating
+            an additional LLM-based judge to analyze patch quality would be a useful complement.
+          </p>
+        </div>
+
+        <!-- Budget matters -->
+        <div class="card">
+          <h3 class="text-center text-xl font-bold text-slate-900">Budget matters</h3>
+          <div class="mt-6 grid grid-cols-1 items-center gap-8 md:grid-cols-2">
+            <img src="/assets/images/cybergym-e2e/cost_scaling_frontier.png" alt="Pass rate vs cost across frontier models" class="fig-shot mx-auto max-h-72 w-auto" />
+            <p class="leading-relaxed text-slate-700">
+              Success rates rise steadily with the cost budget before flattening out. Patch-only performance
+              plateaus early (most models are near their ceiling by a few dollars), but end-to-end discovery
+              keeps benefiting from more runway. The $10 cap is an evaluation choice for fair cross-model
+              comparison, not a property of the dataset — researchers with more resources can push further.
+            </p>
+          </div>
+        </div>
+
+        <!-- Uncapped scaling -->
+        <div class="card">
+          <h3 class="text-center text-xl font-bold text-slate-900">Lifting the cost cap</h3>
+          <div class="mt-6 grid grid-cols-1 items-center gap-8 md:grid-cols-2">
+            <p class="order-2 leading-relaxed text-slate-700 md:order-1">
+              That last point is most visible when we lift Opus 4.6's cap entirely. Its patch-only curve
+              plateaus near 86% almost immediately, but its end-to-end curve keeps rising out to ~$30+,
+              eventually reaching ~63% — strong evidence that the strongest agents are capable of sustained,
+              multi-stage reasoning that a tight budget undercounts.
+            </p>
+            <img src="/assets/images/cybergym-e2e/cost_scaling_opus_uncapped.png" alt="Opus 4.6 uncapped cost scaling" class="fig-shot order-1 mx-auto max-h-72 w-auto md:order-2" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case study -->
+  <section class="section bg-slate-50">
+    <div class="container-page">
+      <div class="mx-auto max-w-2xl text-center">
+        <h2 class="section-title">Example: From a Browse to a Fix in GraphicsMagick</h2>
+      </div>
+      <div class="content mx-auto mt-8 max-w-3xl">
+        <p>
+          Given only the GraphicsMagick codebase, the agent parses the task, browses the source tree, and uses
+          targeted search to home in on <code>ReadMNGImage()</code> in <code>coders/png.c</code>. It examines
+          the code around <code>mng_LOOP</code> chunk handling, inspects a sample MNG file's byte layout, and
+          constructs a minimal malformed MNG input that triggers a heap-buffer-overflow.
+        </p>
+        <p>
+          The validation script confirms the crash (S1). The agent then writes a bounds-check patch, but its
+          first attempt fails to fully stop the crash; it iterates, mutating the fix until the patched build
+          eliminates the crash and passes the project's functionality tests (S2 and S3). The whole
+          discover-prove-fix loop unfolds in a couple dozen execution steps.
+        </p>
+      </div>
+      <figure class="mx-auto mt-6 max-w-5xl">
+        <img src="/assets/images/cybergym-e2e/trajectory.png" alt="Agent trajectory on GraphicsMagick" class="fig-shot w-full" />
+        <figcaption class="mt-3 text-sm text-slate-500">
+          <strong>Figure.</strong> An end-to-end trajectory on GraphicsMagick — locating the vulnerability in
+          <code>ReadMNGImage()</code>, building a minimal MNG proof-of-concept, and iteratively refining a
+          patch until all validation stages pass.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Why this matters -->
+  <section class="section">
+    <div class="container-page">
+      <div class="mx-auto max-w-2xl text-center">
+        <h2 class="section-title">Why This Matters</h2>
+      </div>
+      <div class="content mx-auto mt-8 max-w-3xl">
+        <p>
+          CyberGym-E2E makes one thing measurable and concrete: today's frontier agents are frequently able to
+          produce a passing fix once the vulnerability is localized, and the larger gap is about autonomous
+          discovery — a gap the newest models are closing quickly. For defenders, that's an actionable signal:
+          automated end-to-end remediation could accelerate triage and patching, with human review still in the
+          loop, since not every passing patch is a clean fix.
+        </p>
+        <p>
+          The benchmark contributes to both sides of the responsible-development equation: it gives defenders a
+          realistic, execution-grounded way to measure how much an AI agent can do across the full lifecycle,
+          and it gives model developers a way to track these capabilities where the stakes are unusually high.
+          Because the construction pipeline is automated and continues to ingest new OSS-Fuzz vulnerabilities,
+          the benchmark can scale alongside both the models and the evolving vulnerability landscape.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Citation -->
+  <section id="bibtex" class="section bg-slate-50">
+    <div class="container-page">
+      <h2 class="section-title">Citation</h2>
+      <p class="mt-3 text-slate-600">If you use this work in your research, please cite the following:</p>
+      <div class="bibtex-box mt-5">
+        <pre><code id="bibtex-code">@inproceedings{shi2026cybergyme2e,
+  title={CyberGym-E2E: Scalable Real-World Benchmark for {AI} Agents' End-to-End Cybersecurity Capabilities},
+  author={Shi, Tianneng and Rheem, Robin and Jiang, Dongwei and Wang, Mona and De La Riega, Francisco and Wang, Zhun and Jiang, Jingzhi and Cheung, Alexander and Tai, Sean and Cha, Jonah and Tu, Jianhong and Han, Gabriel and Wang, Chenguang and He, Jingxuan and Guo, Wenbo and Song, Dawn},
+  booktitle={Proceedings of the 43rd International Conference on Machine Learning},
+  year={2026},
+  url={https://arxiv.org/abs/2606.04460},
+}</code></pre>
+        <button class="copy-btn" title="Copy BibTeX" onclick="copyBibtex(this)">Copy</button>
+      </div>
+
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const C = window.CyberGymLeaderboard;
+      const esc = C.esc;
+
+      // Submitted rows may report only some stages (a team that ran end-to-end
+      // but not patch-only, say). A missing stage renders as a dash rather than
+      // a zero, so "not evaluated" never reads as "scored 0%".
+      const NA = '<span class="text-slate-400">—</span>';
+      const stageBar = (value) => {
+        if (value == null) return NA;
+        const pct = value.toFixed(1);
+        return '<div class="lb-score">' + pct + '%</div><div class="lb-bar"><span style="width:' + pct + '%"></span></div>';
+      };
+      // Unreported stages sort below every real score instead of poisoning the
+      // comparator with NaN.
+      const stageSort = (value) => (value == null ? -1 : value);
+
+      const agentCell = (r) => {
+        const dagger = r.task_set === 615 ? '<sup>†</sup>' : '';
+        const modelName = r.model
+          ? (r.note ? '<span class="note-cue" data-note="' + esc(r.note) + '">' + esc(r.model) + '</span>' : esc(r.model))
+          : '';
+        const harnessName = r.harness ? esc(r.harness) : '';
+        // An agent-focused row leads with the harness - the system the submitting
+        // team built - and mutes the base model beside it; a model-focused row does
+        // the reverse. Either part may be absent, in which case the other stands
+        // alone rather than leaving a dangling separator. The dagger trails the
+        // whole name, since the task set is a property of the run, not of a name.
+        const isAgent = (r.focus || 'model') === 'agent';
+        const parts = (isAgent ? [harnessName, modelName] : [modelName, harnessName]).filter(Boolean);
+        const name = (parts.length > 1
+          ? parts[0] + ' <span class="font-normal">·</span> <span class="font-normal">' + parts[1] + '</span>'
+          : (parts[0] || '—')) + dagger;
+        // Budget plus who reported the result; C.cells.source renders a link when
+        // the submission has a write-up and muted plain text when it doesn't.
+        const meta = ['Budget: ' + esc(r.budget), C.cells.source(r)].filter(Boolean).join(' · ');
+        return '<div class="lb-entry"><span class="lb-entry-name">' + name + '</span><span class="lb-entry-meta">' + meta + '</span></div>';
+      };
+
+      C.render({
+        dataUrl: "/assets/data/cybergym-e2e.json",
+        rootId: "leaderboard",
+        // `hidden: true` parks a row without deleting it from the data file.
+        rows: (j) => (j.results || []).filter((r) => !r.hidden),
+        sort: (a, b) => stageSort(b.s3) - stageSort(a.s3), // fallback if the S3 column ever loses defaultSort
+        maxHeight: "675px", // header + 10 rows; the rest scrolls
+        columns: [
+          { header: "#", cell: (r, rank) => C.cells.rank(r, rank) },
+          { header: "Agent", cell: (r) => agentCell(r) },
+          { header: "Patch-only", thClass: "min-w-28", sortBy: (r) => stageSort(r.patch_only), cell: (r) => stageBar(r.patch_only) },
+          { header: "S1", thClass: "min-w-28", sortBy: (r) => stageSort(r.s1), cell: (r) => stageBar(r.s1) },
+          { header: "S2", thClass: "min-w-28", sortBy: (r) => stageSort(r.s2), cell: (r) => stageBar(r.s2) },
+          { header: "S3", thClass: "min-w-28", defaultSort: true, sortBy: (r) => stageSort(r.s3), cell: (r) => stageBar(r.s3) },
+          { header: "S4", thClass: "min-w-28", sortBy: (r) => stageSort(r.s4), cell: (r) => stageBar(r.s4) },
+          { header: "Date", thClass: "min-w-28", sortBy: (r) => Date.parse(r.date) || 0, cell: (r) => (r.date ? '<span class="text-slate-500">' + esc(r.date) + '</span>' : NA) },
+        ],
+      });
+    });
+  </script>
+</body>
+
+</html>

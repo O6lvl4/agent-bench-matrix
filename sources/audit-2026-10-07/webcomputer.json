@@ -1,0 +1,1467 @@
+{
+  "retrieved": "2026-10-07",
+  "tables": [
+    {
+      "id": "macagentbench",
+      "retrieved": "2026-10-07",
+      "status": "unchanged",
+      "old_rows": 30,
+      "rows": 30,
+      "method": "Parsed entire JSON artifact and compared every record/value with previous mechanically extracted snapshot",
+      "sources": [
+        {
+          "url": "https://jetastra.github.io/MacAgentBench/data/models/index.json",
+          "http_status": 200,
+          "bytes": 8538,
+          "sha256": "20d9e2f8ede68266a3e60f2f20c4ff5644a4bb06bd9a46af8688413c7b3ca9e0",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "venusbench-mobile",
+      "retrieved": "2026-10-07",
+      "status": "unchanged",
+      "old_rows": 11,
+      "rows": 11,
+      "method": "Parsed entire JSON artifact and compared every record/value with previous mechanically extracted snapshot",
+      "sources": [
+        {
+          "url": "https://ui-venus.github.io/VenusBench-Mobile-Leaderboard/results/venusbench-mobile.json",
+          "http_status": 200,
+          "bytes": 10426,
+          "sha256": "078ec9962b1ff73db9836f8f24ecf90cfd85598336219a41e660e4d0082cf9de",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "online-mind2web-auto",
+      "retrieved": "2026-10-07",
+      "status": "unchanged",
+      "old_rows": 20,
+      "rows": 20,
+      "method": "Parsed all CSV cells; exact record/value equality with previous snapshot",
+      "sources": [
+        {
+          "url": "https://huggingface.co/spaces/osunlp/Online_Mind2Web_Leaderboard/resolve/main/auto_o4-mini_Mind2Web-Online%20-%20Leaderboard_data.csv",
+          "http_status": 200,
+          "bytes": 3708,
+          "sha256": "1cea02f3f4218afd8f4c83df456bbf6b0dbfa248f0d538fc2cfa4200742c8f38",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "online-mind2web-human",
+      "retrieved": "2026-10-07",
+      "status": "unchanged",
+      "old_rows": 13,
+      "rows": 13,
+      "method": "Parsed all CSV cells; exact record/value equality with previous snapshot",
+      "sources": [
+        {
+          "url": "https://huggingface.co/spaces/osunlp/Online_Mind2Web_Leaderboard/resolve/main/human_Mind2Web-Online%20-%20Leaderboard_data.csv",
+          "http_status": 200,
+          "bytes": 1573,
+          "sha256": "64f3c169115a9037d9055831d7362e635e06b1fd92a7aea6e8a80f3bf0bb40c1",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "androidworld-mobileminiwob",
+      "retrieved": "2026-10-07",
+      "status": "unchanged",
+      "old_rows": 4,
+      "rows": 4,
+      "method": "Parsed all CSV cells; exact record/value equality with previous snapshot",
+      "sources": [
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo/export?format=csv&gid=1078963525",
+          "http_status": 200,
+          "bytes": 457,
+          "sha256": "d022affe1a8ec99cfc940bf645e85a089b2aa3afc123d59dafc3d8fa021c0b22",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "osuniverse",
+      "retrieved": "2026-10-07",
+      "status": "unchanged",
+      "old_rows": 8,
+      "rows": 8,
+      "method": "Extracted live HTML table; every row text, numeric cell and hyperlink matches previous snapshot",
+      "sources": [
+        {
+          "url": "https://agentsea.github.io/osuniverse/",
+          "http_status": 200,
+          "bytes": 22800,
+          "sha256": "15a1befde1c86308d65975b01495d0718e2598589994e8ffc83e585c1f0922b3",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "osworld-mcp",
+      "retrieved": "2026-10-07",
+      "status": "unchanged",
+      "old_rows": 22,
+      "rows": 22,
+      "method": "Extracted live HTML table; every row text, numeric cell and hyperlink matches previous snapshot",
+      "sources": [
+        {
+          "url": "https://osworld-mcp.github.io/",
+          "http_status": 200,
+          "bytes": 42986,
+          "sha256": "181cb1fa9d2c373fec67db088dfd380b52d4d323fa9cc380cc44b15e4ceaa4b4",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "hal-online-mind2web",
+      "retrieved": "2026-10-07",
+      "status": "unchanged",
+      "old_rows": 22,
+      "rows": 22,
+      "method": "Extracted live HTML table; every row text, numeric cell and hyperlink matches previous snapshot",
+      "sources": [
+        {
+          "url": "https://hal.cs.princeton.edu/online_mind2web",
+          "http_status": 200,
+          "bytes": 265276,
+          "sha256": "684156733c0d1a7046bbf2cad7a508da544b707daa72ff063dde1c507da63e34",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "hal-assistantbench",
+      "retrieved": "2026-10-07",
+      "status": "unchanged",
+      "old_rows": 15,
+      "rows": 15,
+      "method": "Extracted live HTML table; every row text, numeric cell and hyperlink matches previous snapshot",
+      "sources": [
+        {
+          "url": "https://hal.cs.princeton.edu/assistantbench",
+          "http_status": 200,
+          "bytes": 199219,
+          "sha256": "aa8fe6a4068d6cb459ee237989f81441c0aaf8af6cf408a2423e97bb7346fb95",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "cua-bench-eda-kicad",
+      "retrieved": "2026-10-07",
+      "status": "unchanged",
+      "old_rows": 10,
+      "rows": 10,
+      "method": "Extracted live HTML table; every row text, numeric cell and hyperlink matches previous snapshot",
+      "sources": [
+        {
+          "url": "https://cua.ai/cuabench/leaderboard",
+          "http_status": 200,
+          "bytes": 58015,
+          "sha256": "639ddfce6353c70c41510def26e08264a6aeb403fd4f258fd83cf0dbd007b36b",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "mobileworld",
+      "retrieved": "2026-10-07",
+      "status": "unchanged",
+      "old_rows": 41,
+      "rows": 41,
+      "method": "Parsed all result records; retained reviewed normalization for exact old records; mechanically ingested new model and all numeric/configuration fields",
+      "sources": [
+        {
+          "url": "https://tongyi-mai.github.io/MobileWorld/leaderboard.json",
+          "http_status": 200,
+          "bytes": 19516,
+          "sha256": "27c069757ef8c8cf120623a285a81f3fb7c9df4dc3ae6ae93f04957d803c3458",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "osworld-verified",
+      "retrieved": "2026-10-07",
+      "status": "unchanged",
+      "old_rows": 110,
+      "rows": 110,
+      "method": "Parsed every workbook sheet cell and compared all values (blank and absent cells equivalent); prior aggregation unchanged",
+      "sources": [
+        {
+          "url": "https://osworld-v1.xlang.ai/static/data/osworld_verified_results.xlsx",
+          "http_status": 200,
+          "bytes": 113066,
+          "sha256": "cf6b4b67eed566ddcd5a8b7ad2d89013157978dad0eea76ea12d2377471efc09",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "osworld-self-reported-a11y-tree",
+      "retrieved": "2026-10-07",
+      "status": "unchanged",
+      "old_rows": 15,
+      "rows": 15,
+      "method": "Parsed every workbook sheet cell and compared all values (blank and absent cells equivalent); prior aggregation unchanged",
+      "sources": [
+        {
+          "url": "https://osworld-v1.xlang.ai/static/data/self_reported_results.xlsx",
+          "http_status": 200,
+          "bytes": 24115,
+          "sha256": "3016a0665f7c4527f235cd72f2217d759461253c488ba03991f36ea44968f731",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "osworld-self-reported-screenshot-a11y-tree",
+      "retrieved": "2026-10-07",
+      "status": "unchanged",
+      "old_rows": 18,
+      "rows": 18,
+      "method": "Parsed every workbook sheet cell and compared all values (blank and absent cells equivalent); prior aggregation unchanged",
+      "sources": [
+        {
+          "url": "https://osworld-v1.xlang.ai/static/data/self_reported_results.xlsx",
+          "http_status": 200,
+          "bytes": 24115,
+          "sha256": "3016a0665f7c4527f235cd72f2217d759461253c488ba03991f36ea44968f731",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "osworld-self-reported-screenshot",
+      "retrieved": "2026-10-07",
+      "status": "unchanged",
+      "old_rows": 56,
+      "rows": 56,
+      "method": "Parsed every workbook sheet cell and compared all values (blank and absent cells equivalent); prior aggregation unchanged",
+      "sources": [
+        {
+          "url": "https://osworld-v1.xlang.ai/static/data/self_reported_results.xlsx",
+          "http_status": 200,
+          "bytes": 24115,
+          "sha256": "3016a0665f7c4527f235cd72f2217d759461253c488ba03991f36ea44968f731",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "osworld-self-reported-set-of-mark",
+      "retrieved": "2026-10-07",
+      "status": "unchanged",
+      "old_rows": 11,
+      "rows": 11,
+      "method": "Parsed every workbook sheet cell and compared all values (blank and absent cells equivalent); prior aggregation unchanged",
+      "sources": [
+        {
+          "url": "https://osworld-v1.xlang.ai/static/data/self_reported_results.xlsx",
+          "http_status": 200,
+          "bytes": 24115,
+          "sha256": "3016a0665f7c4527f235cd72f2217d759461253c488ba03991f36ea44968f731",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "browsergym-assistantbench",
+      "retrieved": "2026-10-07",
+      "status": "unchanged",
+      "old_rows": 6,
+      "rows": 6,
+      "method": "Enumerated live HF manifest and parsed every benchmark result at immutable commit 294ebe1dc36ba83c6916c64c64fb870af3dc8cee; all source records match",
+      "sources": [
+        {
+          "url": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+          "http_status": 200,
+          "bytes": 7753,
+          "sha256": "82cc7387c7fb54b807c75745e1c055bb9d69d5dd9e1cdd5505b57dad45d8e737",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/assistantbench.json",
+          "http_status": 200,
+          "bytes": 521,
+          "sha256": "ea237141c5f61093376fc94d7f24bf59cb0398b16f53e85f3d2e05769602c4fa",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o-mini/assistantbench.json",
+          "http_status": 200,
+          "bytes": 515,
+          "sha256": "2f1b913da62be0a89c42482938d7fdec1b89e8314d0a4f316e7965b4d915ae52",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/assistantbench.json",
+          "http_status": 200,
+          "bytes": 510,
+          "sha256": "0f9c42a83145f7cb6e758eb100cb46e6a9ebcf2d4c9aa7ead829425810b28e8a",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/assistantbench.json",
+          "http_status": 200,
+          "bytes": 515,
+          "sha256": "36d37ed6d6b71616daf2cc7769b0545a03ef849fbed7d9b6c076340f9dd5c61d",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/assistantbench.json",
+          "http_status": 200,
+          "bytes": 518,
+          "sha256": "8547a296b15db00cd6989cb7613f94cb880aed83b79c999f9fe9a2313d39fd13",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-70b/assistantbench.json",
+          "http_status": 200,
+          "bytes": 517,
+          "sha256": "c6217e1b4108d2d5249cc22199b503618ee6b4559d2a46e083f9345bd61463fb",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "browsergym-miniwob",
+      "retrieved": "2026-10-07",
+      "status": "unchanged",
+      "old_rows": 16,
+      "rows": 16,
+      "method": "Enumerated live HF manifest and parsed every benchmark result at immutable commit 294ebe1dc36ba83c6916c64c64fb870af3dc8cee; all source records match",
+      "sources": [
+        {
+          "url": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+          "http_status": 200,
+          "bytes": 7753,
+          "sha256": "82cc7387c7fb54b807c75745e1c055bb9d69d5dd9e1cdd5505b57dad45d8e737",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/A3-Qwen3.5-9B/miniwob.json",
+          "http_status": 200,
+          "bytes": 612,
+          "sha256": "65cb35a202fae743edd5f1ac2e12c9c22016b0158393120eb3099e3762b3daa8",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-AgentTrek-1.0-32b/miniwob.json",
+          "http_status": 200,
+          "bytes": 490,
+          "sha256": "7e254d4cfe35b89032057578dc1f730885b9a4f77964275a6696c717fe60b2aa",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/miniwob.json",
+          "http_status": 200,
+          "bytes": 455,
+          "sha256": "b1a9684e5882c90c53c570d3c82377f6a322a1baa2d7de7f2a413853077f9755",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-4-Sonnet/miniwob.json",
+          "http_status": 200,
+          "bytes": 406,
+          "sha256": "dc36399fba1308f30640a9d91969624fcdac403e111f27775084c16939dc981f",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o-mini/miniwob.json",
+          "http_status": 200,
+          "bytes": 449,
+          "sha256": "b07b68c9de7842569d2ae3c239ef770a959d9ed7a04227d97565642c9fae7ded",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/miniwob.json",
+          "http_status": 200,
+          "bytes": 444,
+          "sha256": "7ffd4815baa1ef666a72df8e321fce75188bc9b1d5a59e36467bb0aa0c1553d8",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-mini/miniwob.json",
+          "http_status": 200,
+          "bytes": 394,
+          "sha256": "674f35fac26ea43ed604e296eab4487d9c020ef985fece4a7f07a91123e36f1b",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-nano/miniwob.json",
+          "http_status": 200,
+          "bytes": 395,
+          "sha256": "276d9bdfaf58522c485fe133fde58655b4069258b760e3728f4e20d74b0608a7",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5/miniwob.json",
+          "http_status": 200,
+          "bytes": 391,
+          "sha256": "0bf72cd8c8aa580a852fc9dfaee6f74153b1c0ffb756fe8fb605d97af322dddc",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/miniwob.json",
+          "http_status": 200,
+          "bytes": 449,
+          "sha256": "9465e9d2899a21c02877901d46257e0dc74dbf263c9e434bfd6642657cdd5deb",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-oss-120b/miniwob.json",
+          "http_status": 200,
+          "bytes": 398,
+          "sha256": "64ae5bbef12fd7b49c10f50be7b04394e17c05930f975a2204e8398efa80d374",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-oss-20b/miniwob.json",
+          "http_status": 200,
+          "bytes": 395,
+          "sha256": "d54cfcf07b6366ad021f52a804e5e4251158bb382fd1edff6b94d2ccedf3e60a",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/miniwob.json",
+          "http_status": 200,
+          "bytes": 469,
+          "sha256": "bccee3c64d4c9b6375494606344a89694ba9373a2cfec723ab1f87456ff9c7e2",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-70b/miniwob.json",
+          "http_status": 200,
+          "bytes": 451,
+          "sha256": "9f52ae6c1a79181a8e4edc13287b1ca70aea0c74275d3af644bf8029a90bab64",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/OrbyAgent-ActIO-72b/miniwob.json",
+          "http_status": 200,
+          "bytes": 455,
+          "sha256": "0e7f4c191a92e559b678e4a7b41f1222684c33c3d57d28786fc178e4eab6a9ad",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/OrbyAgent-Claude-3.5-Sonnet/miniwob.json",
+          "http_status": 200,
+          "bytes": 465,
+          "sha256": "d5a7c771819b37bbaecd666ae9ff53d4d279a4e2748f03c80e2b8e5ae0611c89",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "browsergym-visualwebarena",
+      "retrieved": "2026-10-07",
+      "status": "unchanged",
+      "old_rows": 4,
+      "rows": 4,
+      "method": "Enumerated live HF manifest and parsed every benchmark result at immutable commit 294ebe1dc36ba83c6916c64c64fb870af3dc8cee; all source records match",
+      "sources": [
+        {
+          "url": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+          "http_status": 200,
+          "bytes": 7753,
+          "sha256": "82cc7387c7fb54b807c75745e1c055bb9d69d5dd9e1cdd5505b57dad45d8e737",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/A3-Qwen3.5-9B/visualwebarena.json",
+          "http_status": 200,
+          "bytes": 807,
+          "sha256": "5c57f9505b9ea8cc865a220ac624790452cb74b39f8fecf8b9d4120be62a1cc8",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/visualwebarena.json",
+          "http_status": 200,
+          "bytes": 479,
+          "sha256": "ca920c35139cebd9e2aceefe1cf0c0bc4b812d6187662e4d370eceb0cf2f6945",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o-mini/visualwebarena.json",
+          "http_status": 200,
+          "bytes": 473,
+          "sha256": "ba420442e2b2c76df8bbcafc91947eed0f8d930a76c9b757b659859d5bd50494",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/visualwebarena.json",
+          "http_status": 200,
+          "bytes": 468,
+          "sha256": "0069033938ccba77f3a38be40bd5ca07ebabab0be172120a73d4e7789faa0d48",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "browsergym-webarena",
+      "retrieved": "2026-10-07",
+      "status": "unchanged",
+      "old_rows": 12,
+      "rows": 12,
+      "method": "Enumerated live HF manifest and parsed every benchmark result at immutable commit 294ebe1dc36ba83c6916c64c64fb870af3dc8cee; all source records match",
+      "sources": [
+        {
+          "url": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+          "http_status": 200,
+          "bytes": 7753,
+          "sha256": "82cc7387c7fb54b807c75745e1c055bb9d69d5dd9e1cdd5505b57dad45d8e737",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/A3-Qwen3.5-9B/webarena.json",
+          "http_status": 200,
+          "bytes": 749,
+          "sha256": "bcea3d0bfe45f043b4fe0eb6ec61c219c4c6b5e35472660a2d4f7456eb74b250",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-AgentTrek-1.0-32b/webarena.json",
+          "http_status": 200,
+          "bytes": 491,
+          "sha256": "7b9dac29a6efa888c5d9e2aa817d549c1ee7df537074081845d35b64fb54385d",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/webarena.json",
+          "http_status": 200,
+          "bytes": 473,
+          "sha256": "de4f970b77b83f1e09b8c98a957654149c0d91b23bd8fff170b6869dd8d195f0",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.7-Sonnet/webarena.json",
+          "http_status": 200,
+          "bytes": 406,
+          "sha256": "fe715ea246b3a178c845720558fe154546c63d69b1223f2087addd82171fc9dd",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4.1-Mini/webarena.json",
+          "http_status": 200,
+          "bytes": 399,
+          "sha256": "27863f95494366fedfeea0dac063a76c8293d3a64b8ec13c9793f5440eaa5d14",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o-mini/webarena.json",
+          "http_status": 200,
+          "bytes": 467,
+          "sha256": "642a18bc81d6eed67f12ea5f3b92f6e187335a9c63f6c751f19a03b66d6fc018",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/webarena.json",
+          "http_status": 200,
+          "bytes": 462,
+          "sha256": "621fddaf8ee04bab7cfccf75b9dd454e468d757aeb2aa4ccd11c57dcff4c09c5",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/webarena.json",
+          "http_status": 200,
+          "bytes": 467,
+          "sha256": "2d7cb22e24172461136ec603830a2f56ab60904c621432903053209ad58d412b",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/webarena.json",
+          "http_status": 200,
+          "bytes": 470,
+          "sha256": "968638a31fe54315197bf9f6e0bf169182dd01c9ec5875ce7b67fb4146db1815",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-70b/webarena.json",
+          "http_status": 200,
+          "bytes": 469,
+          "sha256": "98e564f6cc04bf8614e457e1f0b94a7fb8df1221a75ed4d98afdb757022d30b7",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/OrbyAgent-ActIO-72b/webarena.json",
+          "http_status": 200,
+          "bytes": 517,
+          "sha256": "6caac10fd3d012558eefd8a71dd39b807be61c4edf88bfe341330671eae29e8a",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/OrbyAgent-Claude-3.5-Sonnet/webarena.json",
+          "http_status": 200,
+          "bytes": 519,
+          "sha256": "79a29ea899bd2e238234893685c7ba5cc192c79e4ec66f827ce6e27067bdf101",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "browsergym-weblinx",
+      "retrieved": "2026-10-07",
+      "status": "unchanged",
+      "old_rows": 6,
+      "rows": 6,
+      "method": "Enumerated live HF manifest and parsed every benchmark result at immutable commit 294ebe1dc36ba83c6916c64c64fb870af3dc8cee; all source records match",
+      "sources": [
+        {
+          "url": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+          "http_status": 200,
+          "bytes": 7753,
+          "sha256": "82cc7387c7fb54b807c75745e1c055bb9d69d5dd9e1cdd5505b57dad45d8e737",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/weblinx.json",
+          "http_status": 200,
+          "bytes": 472,
+          "sha256": "f8972acf77dfaa591267ce44fda3e7a86d783ba6cc5f3eb14de388a473dc8b58",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o-mini/weblinx.json",
+          "http_status": 200,
+          "bytes": 466,
+          "sha256": "a4d871bfb78f22a867613d7c3f8d4cc0840a7b1573809e479f48282cb3150e47",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/weblinx.json",
+          "http_status": 200,
+          "bytes": 461,
+          "sha256": "525ceb7c5be75ea76b62a3f12e88999118705e2063b79ccd1a50538949042339",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/weblinx.json",
+          "http_status": 200,
+          "bytes": 466,
+          "sha256": "4eb598dc951a09717364c53f1b99ab2f354262d93101b685fe0743ade64c2b87",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/weblinx.json",
+          "http_status": 200,
+          "bytes": 468,
+          "sha256": "47674e6ad4bda4e96f0fd0b99a8d832dc2b77f5edcc0dceacf58a708095b5bf2",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-70b/weblinx.json",
+          "http_status": 200,
+          "bytes": 467,
+          "sha256": "8a9824a9302e82f6ca026f518731f635a37750e5529aad8eb4652ddd45764c4c",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "browsergym-workarena-l1",
+      "retrieved": "2026-10-07",
+      "status": "unchanged",
+      "old_rows": 16,
+      "rows": 16,
+      "method": "Enumerated live HF manifest and parsed every benchmark result at immutable commit 294ebe1dc36ba83c6916c64c64fb870af3dc8cee; all source records match",
+      "sources": [
+        {
+          "url": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+          "http_status": 200,
+          "bytes": 7753,
+          "sha256": "82cc7387c7fb54b807c75745e1c055bb9d69d5dd9e1cdd5505b57dad45d8e737",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/A3-Qwen3.5-9B/workarena-l1.json",
+          "http_status": 200,
+          "bytes": 627,
+          "sha256": "c6569b12464c4bd0c00ae31ebed4b4ccedb8b1dcb483464d8ab9879e995be824",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-AgentTrek-1.0-32b/workarena-l1.json",
+          "http_status": 200,
+          "bytes": 497,
+          "sha256": "74a6394fa902cb4b7e18f4d772dfc536d7a611fc53975ed5e3233956907859ae",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/workarena-l1.json",
+          "http_status": 200,
+          "bytes": 460,
+          "sha256": "a33de4c34c4bd63884c91dcea1c64a551be01330be0897a253fe19960403534d",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-4-Sonnet/workarena-l1.json",
+          "http_status": 200,
+          "bytes": 408,
+          "sha256": "fead207233b57beeb9e0b475d113ba439875537d4d2edd86232f8381366a1ed2",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o-mini/workarena-l1.json",
+          "http_status": 200,
+          "bytes": 452,
+          "sha256": "a2135d21629550f960ce9aefcbcb7a7a2b11940471f3a2339722360cbdb173d5",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/workarena-l1.json",
+          "http_status": 200,
+          "bytes": 449,
+          "sha256": "08be6a487c83b24aa52adaae00c53b8e20095be1ed84747280219f3251134670",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-mini/workarena-l1.json",
+          "http_status": 200,
+          "bytes": 401,
+          "sha256": "f7c887c8af41cbda87abbf20ccf8c859ad75d7798af524f106bc92b12067ec5e",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-nano/workarena-l1.json",
+          "http_status": 200,
+          "bytes": 401,
+          "sha256": "1a66b4656f2781b582fb7284ab7a1103ac23b3f9a7b7258653b40dd050ea901f",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5/workarena-l1.json",
+          "http_status": 200,
+          "bytes": 430,
+          "sha256": "7ea81bbfd5ce9a8a101bb7d1dea185d514cdb72dee8f2fdbf9a3660a6f8cd2fc",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/workarena-l1.json",
+          "http_status": 200,
+          "bytes": 944,
+          "sha256": "1c75ff75b2ad720a9655f776f7e408b3386a4bea1863bb43de4c063fa61a6584",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-oss-120b/workarena-l1.json",
+          "http_status": 200,
+          "bytes": 403,
+          "sha256": "2bb00d97edb3cdc0a30fcc998fdea19b1f2f9c302a693362e5a2329d5cb38951",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-oss-20b/workarena-l1.json",
+          "http_status": 200,
+          "bytes": 402,
+          "sha256": "cc23870c0a148a840ce4183db58bfd48f7d62ddc031d34d45be7faba19d091d7",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/workarena-l1.json",
+          "http_status": 200,
+          "bytes": 457,
+          "sha256": "cf57301f5cc66d17bc4b07e2caa40534b4703b3134a5336b035da670026b7a82",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-70b/workarena-l1.json",
+          "http_status": 200,
+          "bytes": 456,
+          "sha256": "3ec1bc65128a349bfd21370cc8ea276a4f41fcdbc108c242b106a08556260a4f",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-o3-mini/workarena-l1.json",
+          "http_status": 200,
+          "bytes": 486,
+          "sha256": "75e5ab9eab52d9e4aaf97f9cf5856fe5099dff9b1ac9cc9d8d68847d0c83806c",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/IpaziaHPA-Gemini-3-flash-preview/workarena-l1.json",
+          "http_status": 200,
+          "bytes": 494,
+          "sha256": "424cf76d2d3a4ddc619e0c2e27d7fd380032f84662435b9f847630490474c89b",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "browsergym-workarena-l2",
+      "retrieved": "2026-10-07",
+      "status": "unchanged",
+      "old_rows": 14,
+      "rows": 14,
+      "method": "Enumerated live HF manifest and parsed every benchmark result at immutable commit 294ebe1dc36ba83c6916c64c64fb870af3dc8cee; all source records match",
+      "sources": [
+        {
+          "url": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+          "http_status": 200,
+          "bytes": 7753,
+          "sha256": "82cc7387c7fb54b807c75745e1c055bb9d69d5dd9e1cdd5505b57dad45d8e737",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/A3-Qwen3.5-9B/workarena-l2.json",
+          "http_status": 200,
+          "bytes": 649,
+          "sha256": "fa7ddf1120884e43aff2cec3480db65d10920de312b71e46cae89e2011c2c95a",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-AgentTrek-1.0-32b/workarena-l2.json",
+          "http_status": 200,
+          "bytes": 496,
+          "sha256": "855fcede12daad9cb6315bdfe5fb2ebaf1af6b730d8d78ac45e2496bb77c0717",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/workarena-l2.json",
+          "http_status": 200,
+          "bytes": 460,
+          "sha256": "34f9128e7aa9f8e01bae65eaceb94cc2314bb82899e5113b9476ea4c4b510b2e",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-4-Sonnet/workarena-l2.json",
+          "http_status": 200,
+          "bytes": 408,
+          "sha256": "5fb56137adef3ed7c249ecc78642cd7323170b8e9f4dd920395524abad7db39b",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o-mini/workarena-l2.json",
+          "http_status": 200,
+          "bytes": 453,
+          "sha256": "a7e7c9f98bbb0a4d8041dbfc046fea06cf67c5efeb6fd4b58098a6c2c6082aa3",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/workarena-l2.json",
+          "http_status": 200,
+          "bytes": 448,
+          "sha256": "1a3be6550ce29c3c8936d13d14be23f9d8c0ca14a42372700579d14a5322f9a6",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-mini/workarena-l2.json",
+          "http_status": 200,
+          "bytes": 401,
+          "sha256": "7ca101ac6bb4970547e6188a18ae14d0191f5659e6fad01b2d567d595dead633",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-nano/workarena-l2.json",
+          "http_status": 200,
+          "bytes": 400,
+          "sha256": "f72981c3dcd60e2ebb40e590977c980179461fca8ab28300d76924c3ea6635fe",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5/workarena-l2.json",
+          "http_status": 200,
+          "bytes": 396,
+          "sha256": "c414dfd4b25be3268be8f82bc919416c544e5a36e44ef65c0013a06423499dc4",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/workarena-l2.json",
+          "http_status": 200,
+          "bytes": 454,
+          "sha256": "bc17322f1a54b4339f8f5a79131245b3ea012cf226b5b5caecb54de7774ef518",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-oss-120b/workarena-l2.json",
+          "http_status": 200,
+          "bytes": 403,
+          "sha256": "30f6d49a050903b66b790f76dc63db02f5dd97279234a6aeb891a5ba354795c4",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-oss-20b/workarena-l2.json",
+          "http_status": 200,
+          "bytes": 401,
+          "sha256": "91eb4981a7ae5dc0749deec209a25aa8ba5d9cbb23e931ee212c7804a8d2a72f",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/workarena-l2.json",
+          "http_status": 200,
+          "bytes": 473,
+          "sha256": "3b4c47354c96735fe3e7b27a209e65d5a6272e99489b3cf81745245e95dc3c21",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-70b/workarena-l2.json",
+          "http_status": 200,
+          "bytes": 455,
+          "sha256": "8fa434995294d08fdc27e09973e327a28951fe64034550b962a9c30d0d8288f2",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "browsergym-workarena-l3",
+      "retrieved": "2026-10-07",
+      "status": "unchanged",
+      "old_rows": 8,
+      "rows": 8,
+      "method": "Enumerated live HF manifest and parsed every benchmark result at immutable commit 294ebe1dc36ba83c6916c64c64fb870af3dc8cee; all source records match",
+      "sources": [
+        {
+          "url": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+          "http_status": 200,
+          "bytes": 7753,
+          "sha256": "82cc7387c7fb54b807c75745e1c055bb9d69d5dd9e1cdd5505b57dad45d8e737",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-AgentTrek-1.0-32b/workarena-l3.json",
+          "http_status": 200,
+          "bytes": 494,
+          "sha256": "a4833791b84344fa444ab93257a568a41ee424a20716146abb7527985882f7fa",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/workarena-l3.json",
+          "http_status": 200,
+          "bytes": 459,
+          "sha256": "e417a592179b53523cf2b22f31aee050b9fb0ca7ed3735cf6136431c45fdb944",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o-mini/workarena-l3.json",
+          "http_status": 200,
+          "bytes": 435,
+          "sha256": "bc5f2f366a091933d81b5cf31d993273dea57fceed327448f297c25e039dd0ee",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/workarena-l3.json",
+          "http_status": 200,
+          "bytes": 430,
+          "sha256": "659f7caaf898e5e08df5d19223c8e850956282ecdb7060f6810df4e2f5fc23b0",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5/workarena-l3.json",
+          "http_status": 200,
+          "bytes": 429,
+          "sha256": "f448e30ef4d816a4f68692fcfbf12d51ed35c50bff4341d7dab2f88143ea5945",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/workarena-l3.json",
+          "http_status": 200,
+          "bytes": 435,
+          "sha256": "9b9343bc23580734b483f7b645e366c4db6c237b4f34feb9dc272ad13155d6f3",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/workarena-l3.json",
+          "http_status": 200,
+          "bytes": 438,
+          "sha256": "2a3918313197e5b829547e6f3ee4a7b2b865c0e7b5ac1017d79f4b8ed6638e65",
+          "request_json": null
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-70b/workarena-l3.json",
+          "http_status": 200,
+          "bytes": 437,
+          "sha256": "856ebe4e16d9d71dab0d66c4d460c58e6abbb751c85da853738426ad50c0cf07",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "real-v1-frameworks",
+      "retrieved": "2026-10-07",
+      "status": "unchanged",
+      "old_rows": 5,
+      "rows": 5,
+      "method": "Flattened all task-level records; selected version and tab, recomputed v1 pass as nonempty evalsPassed and empty evalsFailed; v2 pass as points>0; passed/tasks ×100 rounded to 1 decimal; all records and scores match",
+      "sources": [
+        {
+          "url": "https://www.realevals.xyz/api/getVerifiedModelData",
+          "http_status": 200,
+          "bytes": 3421090,
+          "sha256": "904366e9daf872b8ca250fac5e413248e80d61209aa7db055c213efb695b0683",
+          "request_json": null
+        },
+        {
+          "url": "https://www.realevals.xyz/_next/static/chunks/app/(main)/page-89fe682a64228531.js",
+          "http_status": 200,
+          "bytes": 24818,
+          "sha256": "ed5f6ff9986b67f6f4fcf7f2a08e97bcb598edbbca15277007289ab033dd71a4",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "real-v1-models",
+      "retrieved": "2026-10-07",
+      "status": "unchanged",
+      "old_rows": 21,
+      "rows": 21,
+      "method": "Flattened all task-level records; selected version and tab, recomputed v1 pass as nonempty evalsPassed and empty evalsFailed; v2 pass as points>0; passed/tasks ×100 rounded to 1 decimal; all records and scores match",
+      "sources": [
+        {
+          "url": "https://www.realevals.xyz/api/getVerifiedModelData",
+          "http_status": 200,
+          "bytes": 3421090,
+          "sha256": "904366e9daf872b8ca250fac5e413248e80d61209aa7db055c213efb695b0683",
+          "request_json": null
+        },
+        {
+          "url": "https://www.realevals.xyz/_next/static/chunks/app/(main)/page-89fe682a64228531.js",
+          "http_status": 200,
+          "bytes": 24818,
+          "sha256": "ed5f6ff9986b67f6f4fcf7f2a08e97bcb598edbbca15277007289ab033dd71a4",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "real-v1-open-arena",
+      "retrieved": "2026-10-07",
+      "status": "unchanged",
+      "old_rows": 7,
+      "rows": 7,
+      "method": "Flattened all task-level records; selected version and tab, recomputed v1 pass as nonempty evalsPassed and empty evalsFailed; v2 pass as points>0; passed/tasks ×100 rounded to 1 decimal; all records and scores match",
+      "sources": [
+        {
+          "url": "https://www.realevals.xyz/api/getVerifiedModelData",
+          "http_status": 200,
+          "bytes": 3421090,
+          "sha256": "904366e9daf872b8ca250fac5e413248e80d61209aa7db055c213efb695b0683",
+          "request_json": null
+        },
+        {
+          "url": "https://www.realevals.xyz/_next/static/chunks/app/(main)/page-89fe682a64228531.js",
+          "http_status": 200,
+          "bytes": 24818,
+          "sha256": "ed5f6ff9986b67f6f4fcf7f2a08e97bcb598edbbca15277007289ab033dd71a4",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "real-v2-frameworks",
+      "retrieved": "2026-10-07",
+      "status": "unchanged",
+      "old_rows": 1,
+      "rows": 1,
+      "method": "Flattened all task-level records; selected version and tab, recomputed v1 pass as nonempty evalsPassed and empty evalsFailed; v2 pass as points>0; passed/tasks ×100 rounded to 1 decimal; all records and scores match",
+      "sources": [
+        {
+          "url": "https://www.realevals.xyz/api/getVerifiedModelData",
+          "http_status": 200,
+          "bytes": 3421090,
+          "sha256": "904366e9daf872b8ca250fac5e413248e80d61209aa7db055c213efb695b0683",
+          "request_json": null
+        },
+        {
+          "url": "https://www.realevals.xyz/_next/static/chunks/app/(main)/page-89fe682a64228531.js",
+          "http_status": 200,
+          "bytes": 24818,
+          "sha256": "ed5f6ff9986b67f6f4fcf7f2a08e97bcb598edbbca15277007289ab033dd71a4",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "real-v2-models",
+      "retrieved": "2026-10-07",
+      "status": "unchanged",
+      "old_rows": 12,
+      "rows": 12,
+      "method": "Flattened all task-level records; selected version and tab, recomputed v1 pass as nonempty evalsPassed and empty evalsFailed; v2 pass as points>0; passed/tasks ×100 rounded to 1 decimal; all records and scores match",
+      "sources": [
+        {
+          "url": "https://www.realevals.xyz/api/getVerifiedModelData",
+          "http_status": 200,
+          "bytes": 3421090,
+          "sha256": "904366e9daf872b8ca250fac5e413248e80d61209aa7db055c213efb695b0683",
+          "request_json": null
+        },
+        {
+          "url": "https://www.realevals.xyz/_next/static/chunks/app/(main)/page-89fe682a64228531.js",
+          "http_status": 200,
+          "bytes": 24818,
+          "sha256": "ed5f6ff9986b67f6f4fcf7f2a08e97bcb598edbbca15277007289ab033dd71a4",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "assistantbench",
+      "retrieved": "2026-10-07",
+      "status": "unchanged",
+      "old_rows": 184,
+      "rows": 184,
+      "method": "Extracted initialized Gradio dataframe with all 184 numeric rows; full equality with prior test board",
+      "sources": [
+        {
+          "url": "https://assistantbench-leaderboard.hf.space/config",
+          "http_status": 200,
+          "bytes": 38193,
+          "sha256": "701b088cf5bca5280b76819bee3d36396839ca9f18595bed78b070f748ec018f",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "bearcubs",
+      "retrieved": "2026-10-07",
+      "status": "unchanged",
+      "old_rows": 12,
+      "rows": 12,
+      "method": "Parsed published Typescript JSON array; compared every numeric field and row",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/bear-cubs/bear-cubs.github.io/main/src/data/bear_cubs_leaderboard.ts",
+          "http_status": 200,
+          "bytes": 5156,
+          "sha256": "f631d30ebe218c2794ca90330fe238f6653db2a4aee187c2987be8aeb64b149d",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "webchorearena",
+      "retrieved": "2026-10-07",
+      "status": "unchanged",
+      "old_rows": 8,
+      "rows": 8,
+      "method": "Parsed every CSV cell including main/subset metadata; exact equality",
+      "sources": [
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1RGyJ0QOxGj196KTfUK0SZeVl5IkM928_38wzIkQVxCs/export?format=csv&gid=0",
+          "http_status": 200,
+          "bytes": 1797,
+          "sha256": "648674ee1b6c44d4de45e29a8ca9aced00ac4b96fd5f0184e68640f51f644d6e",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "webarena",
+      "retrieved": "2026-10-07",
+      "status": "unchanged",
+      "old_rows": 47,
+      "rows": 47,
+      "method": "Parsed all current CSV rows; exact main-board rows equality; verified subset/human boundaries and retained separate full CSV/HTML artifacts",
+      "sources": [
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ/export?format=csv&gid=0",
+          "http_status": 200,
+          "bytes": 4592,
+          "sha256": "94979863e58fa36104c2c1fc060fa580c1022a2fc26be37d1dcc722fc7e5866f",
+          "request_json": null
+        },
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ/htmlview/sheet?headers=true&gid=0",
+          "http_status": 200,
+          "bytes": 97637,
+          "sha256": "066f9c01800520ddb1c5f235efb4c116b0ebede681747ae8ed0a7f67e9e4706d",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "visualwebarena",
+      "retrieved": "2026-10-07",
+      "status": "unchanged",
+      "old_rows": 38,
+      "rows": 38,
+      "method": "Parsed all current CSV rows; exact main-board rows equality; verified subset/human boundaries and retained separate full CSV/HTML artifacts",
+      "sources": [
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ/export?format=csv&gid=2044883967",
+          "http_status": 200,
+          "bytes": 3209,
+          "sha256": "be851ca44c7141bf0f4acfb6e1844955f4d82c331df3b603f3531e3f0c7a74ee",
+          "request_json": null
+        },
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ/htmlview/sheet?headers=true&gid=2044883967",
+          "http_status": 200,
+          "bytes": 75215,
+          "sha256": "7c89c5d0461c323825f4a74425e6a65c4187ae5063d28a6b0260ab28bfe28ff8",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "androidworld",
+      "retrieved": "2026-10-07",
+      "status": "changed",
+      "old_rows": 47,
+      "rows": 47,
+      "method": "Parsed all main-board CSV rows/ranks/months and notes; preserved exact known model identity mappings; retained self-reported verification=false",
+      "sources": [
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo/export?format=csv&gid=0",
+          "http_status": 200,
+          "bytes": 8990,
+          "sha256": "d8364afa273b33164fd01e95fa2de4698c7ce9d18a14067ad4d3a0d28904d97c",
+          "last_modified": null,
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "browsecomp-kaggle",
+      "retrieved": "2026-10-07",
+      "status": "unchanged",
+      "old_rows": 42,
+      "rows": 42,
+      "method": "POST versionIdentifier.versionIdSelector.id=35; mechanically extracted/compared all 42 scores, confidence intervals, row dates, model identities and links; API metadata additions retained",
+      "sources": [
+        {
+          "url": "https://www.kaggle.com/api/i/benchmarks.BenchmarkService/GetBenchmarkLeaderboard",
+          "http_status": 200,
+          "bytes": 59378,
+          "sha256": "4e3971559f8f24522b19e1992c3d782fc67e6aeb8d71b81f9c473f8e71e93ae1",
+          "request_json": {
+            "versionIdentifier": {
+              "versionIdSelector": {
+                "id": 35
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "osworld-2-1-full-500steps",
+      "retrieved": "2026-10-07",
+      "status": "changed",
+      "change_type": "source-schema-and-scope-clarification",
+      "rows_changed": false,
+      "old_rows": 5,
+      "rows": 5,
+      "method": "Completed standalone extraction: explicit modelType=e2e and official=true; dataset scope, step budget and release boundary preserved. All old source fields match after removing newly explicit modelType; scores, extra metrics, ranks and identities reproduced exactly. Updated source date and scope labels only.",
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "response_url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "http_status": 200,
+          "bytes": 18545,
+          "sha256": "35a0ed7cfe2e9981c4976ea326ee3a21d77e4a80b7e44adcad55316d83cc2cec",
+          "snapshot": "sources/osworld-2-1-public-agents-full-500steps/official-results.json",
+          "response_date": "Wed, 07 Oct 2026 00:09:17 GMT"
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+          "response_url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+          "http_status": 200,
+          "bytes": 18065,
+          "sha256": "51230893f487601bd26fd072ce13fb538e0d770a9aaec519f2fe08c802cdf141",
+          "snapshot": "sources/osworld-2-1-public-agents-full-500steps/leaderboard.js",
+          "response_date": "Wed, 07 Oct 2026 00:09:17 GMT"
+        }
+      ]
+    },
+    {
+      "id": "osworld-2-1-offline-500steps",
+      "retrieved": "2026-10-07",
+      "status": "changed",
+      "change_type": "source-schema-and-scope-clarification",
+      "rows_changed": false,
+      "old_rows": 5,
+      "rows": 5,
+      "method": "Completed standalone extraction: explicit modelType=e2e and official=true; dataset scope, step budget and release boundary preserved. All old source fields match after removing newly explicit modelType; scores, extra metrics, ranks and identities reproduced exactly. Updated source date and scope labels only.",
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "response_url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "http_status": 200,
+          "bytes": 18545,
+          "sha256": "35a0ed7cfe2e9981c4976ea326ee3a21d77e4a80b7e44adcad55316d83cc2cec",
+          "snapshot": "sources/osworld-2-1-public-agents-full-500steps/official-results.json",
+          "response_date": "Wed, 07 Oct 2026 00:09:17 GMT"
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+          "response_url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+          "http_status": 200,
+          "bytes": 18065,
+          "sha256": "51230893f487601bd26fd072ce13fb538e0d770a9aaec519f2fe08c802cdf141",
+          "snapshot": "sources/osworld-2-1-public-agents-full-500steps/leaderboard.js",
+          "response_date": "Wed, 07 Oct 2026 00:09:17 GMT"
+        }
+      ]
+    },
+    {
+      "id": "osworld-2-full-150steps",
+      "retrieved": "2026-10-07",
+      "status": "changed",
+      "change_type": "source-schema-and-scope-clarification",
+      "rows_changed": false,
+      "old_rows": 6,
+      "rows": 6,
+      "method": "Completed standalone extraction: explicit modelType=e2e and official=true; dataset scope, step budget and release boundary preserved. All old source fields match after removing newly explicit modelType; scores, extra metrics, ranks and identities reproduced exactly. Updated source date and scope labels only.",
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "response_url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "http_status": 200,
+          "bytes": 18545,
+          "sha256": "35a0ed7cfe2e9981c4976ea326ee3a21d77e4a80b7e44adcad55316d83cc2cec",
+          "snapshot": "sources/osworld-2-1-public-agents-full-500steps/official-results.json",
+          "response_date": "Wed, 07 Oct 2026 00:09:17 GMT"
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+          "response_url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+          "http_status": 200,
+          "bytes": 18065,
+          "sha256": "51230893f487601bd26fd072ce13fb538e0d770a9aaec519f2fe08c802cdf141",
+          "snapshot": "sources/osworld-2-1-public-agents-full-500steps/leaderboard.js",
+          "response_date": "Wed, 07 Oct 2026 00:09:17 GMT"
+        }
+      ]
+    },
+    {
+      "id": "osworld-2-full-300steps",
+      "retrieved": "2026-10-07",
+      "status": "changed",
+      "change_type": "source-schema-and-scope-clarification",
+      "rows_changed": false,
+      "old_rows": 7,
+      "rows": 7,
+      "method": "Completed standalone extraction: explicit modelType=e2e and official=true; dataset scope, step budget and release boundary preserved. All old source fields match after removing newly explicit modelType; scores, extra metrics, ranks and identities reproduced exactly. Updated source date and scope labels only.",
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "response_url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "http_status": 200,
+          "bytes": 18545,
+          "sha256": "35a0ed7cfe2e9981c4976ea326ee3a21d77e4a80b7e44adcad55316d83cc2cec",
+          "snapshot": "sources/osworld-2-1-public-agents-full-500steps/official-results.json",
+          "response_date": "Wed, 07 Oct 2026 00:09:17 GMT"
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+          "response_url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+          "http_status": 200,
+          "bytes": 18065,
+          "sha256": "51230893f487601bd26fd072ce13fb538e0d770a9aaec519f2fe08c802cdf141",
+          "snapshot": "sources/osworld-2-1-public-agents-full-500steps/leaderboard.js",
+          "response_date": "Wed, 07 Oct 2026 00:09:17 GMT"
+        }
+      ]
+    },
+    {
+      "id": "osworld-2-full-500steps",
+      "retrieved": "2026-10-07",
+      "status": "changed",
+      "change_type": "source-schema-and-scope-clarification",
+      "rows_changed": false,
+      "old_rows": 16,
+      "rows": 16,
+      "method": "Completed standalone extraction: explicit modelType=e2e and official=true; dataset scope, step budget and release boundary preserved. All old source fields match after removing newly explicit modelType; scores, extra metrics, ranks and identities reproduced exactly. Updated source date and scope labels only.",
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "response_url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "http_status": 200,
+          "bytes": 18545,
+          "sha256": "35a0ed7cfe2e9981c4976ea326ee3a21d77e4a80b7e44adcad55316d83cc2cec",
+          "snapshot": "sources/osworld-2-1-public-agents-full-500steps/official-results.json",
+          "response_date": "Wed, 07 Oct 2026 00:09:17 GMT"
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+          "response_url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+          "http_status": 200,
+          "bytes": 18065,
+          "sha256": "51230893f487601bd26fd072ce13fb538e0d770a9aaec519f2fe08c802cdf141",
+          "snapshot": "sources/osworld-2-1-public-agents-full-500steps/leaderboard.js",
+          "response_date": "Wed, 07 Oct 2026 00:09:17 GMT"
+        }
+      ]
+    },
+    {
+      "id": "osworld-2-offline-500steps",
+      "retrieved": "2026-10-07",
+      "status": "changed",
+      "change_type": "source-schema-and-scope-clarification",
+      "rows_changed": false,
+      "old_rows": 11,
+      "rows": 11,
+      "method": "Completed standalone extraction: explicit modelType=e2e and official=true; dataset scope, step budget and release boundary preserved. All old source fields match after removing newly explicit modelType; scores, extra metrics, ranks and identities reproduced exactly. Updated source date and scope labels only.",
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "response_url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "http_status": 200,
+          "bytes": 18545,
+          "sha256": "35a0ed7cfe2e9981c4976ea326ee3a21d77e4a80b7e44adcad55316d83cc2cec",
+          "snapshot": "sources/osworld-2-1-public-agents-full-500steps/official-results.json",
+          "response_date": "Wed, 07 Oct 2026 00:09:17 GMT"
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+          "response_url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+          "http_status": 200,
+          "bytes": 18065,
+          "sha256": "51230893f487601bd26fd072ce13fb538e0d770a9aaec519f2fe08c802cdf141",
+          "snapshot": "sources/osworld-2-1-public-agents-full-500steps/leaderboard.js",
+          "response_date": "Wed, 07 Oct 2026 00:09:17 GMT"
+        }
+      ]
+    },
+    {
+      "id": "osworld-2-1-public-agents-full-500steps",
+      "retrieved": "2026-10-07",
+      "status": "new",
+      "old_rows": 0,
+      "rows": 1,
+      "rows_changed": true,
+      "method": "Mechanically extracted modelType=agent from the public All tab, v2.1/full/500-step conditions. Preserved All-tab rank, source taskCount, binary/partial scores and both cost fields. No official flag is inferred; planner-only disclosure is not attributed to a single normalized model.",
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "response_url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "http_status": 200,
+          "bytes": 18545,
+          "sha256": "35a0ed7cfe2e9981c4976ea326ee3a21d77e4a80b7e44adcad55316d83cc2cec",
+          "snapshot": "sources/osworld-2-1-public-agents-full-500steps/official-results.json",
+          "response_date": "Wed, 07 Oct 2026 00:09:17 GMT"
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+          "response_url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+          "http_status": 200,
+          "bytes": 18065,
+          "sha256": "51230893f487601bd26fd072ce13fb538e0d770a9aaec519f2fe08c802cdf141",
+          "snapshot": "sources/osworld-2-1-public-agents-full-500steps/leaderboard.js",
+          "response_date": "Wed, 07 Oct 2026 00:09:17 GMT"
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/",
+          "response_url": "https://osworld-v2.xlang.ai/",
+          "http_status": 200,
+          "bytes": 88325,
+          "sha256": "91138b5d752d7d5242bfc147c6a1bd6430e81f89f36eb9ffe0af3a40feca6b5b",
+          "snapshot": "sources/osworld-2-1-public-agents-full-500steps/display-page.html",
+          "response_date": "Wed, 07 Oct 2026 00:09:17 GMT"
+        }
+      ]
+    }
+  ],
+  "parser_errors": [],
+  "model_proposals": []
+}

@@ -17,12 +17,12 @@
     "https://www.cybergym.io/cybergym/",
     "https://www.cybergym.io/assets/js/leaderboard.js"
   ],
-  "retrieved": "2026-10-05",
-  "newest_row_date": "2026-09-15",
+  "retrieved": "2026-10-07",
+  "newest_row_date": "2026-09-27",
   "snapshot": "sources/cybergym-agent-focused/cybergym.json",
   "paper": "https://arxiv.org/abs/2506.02548",
   "repo": "https://github.com/sunblaze-ucb/cybergym",
-  "notes_ja": "ボードの Type フィルタで分けた表(trials=1 の行のみ表示される)。90% を超える行はランダム順のカードとして表示され順位が無いため rank は null(score_extra.lead_card_unranked)。以前の版の結果(subRows)も rank null の行として入れた。score は score_10 を百分率にした値。",
+  "notes_ja": "ボードの Type フィルタで分けた表(trials=1、dynamic と test-time mem. の両方を含む)。90% を超える行はランダム順のカードとして表示され順位が無いため rank は null(score_extra.lead_card_unranked)。以前の版の結果(subRows)も rank null の行として入れた。score は score_10 を百分率にした値。通常の表の rank は、先頭に表示されるカード数を含めた順位。",
   "rows": [
     {
       "rank": null,
@@ -102,6 +102,76 @@
     },
     {
       "rank": null,
+      "system": "OrcaCyber",
+      "agent": "OrcaCyber",
+      "model_raw": [
+        "DeepSeek-V4-Flash",
+        "OrcaCyber-Zero-1.0"
+      ],
+      "model_ids": [
+        "deepseek-v4-flash",
+        "orcacyber-zero-1.0"
+      ],
+      "model_config": "Multi-model",
+      "score": 98.01,
+      "score_extra": {
+        "trials": 1,
+        "dynamic": true,
+        "lead_card_unranked": true
+      },
+      "date": "2026-09-14",
+      "verified": null,
+      "open_source": null,
+      "org": "Continuum AI",
+      "row_url": "https://github.com/Continuum-AI-Corp/OrcaCyber-Harness-CyberGym-Technical-Report"
+    },
+    {
+      "rank": null,
+      "system": "RO0T Agent",
+      "agent": "RO0T Agent",
+      "model_raw": [
+        "DeepSeek-V4.1-Flash"
+      ],
+      "model_ids": [
+        "deepseek-v4.1-flash"
+      ],
+      "model_config": null,
+      "score": 97.7,
+      "score_extra": {
+        "trials": 1,
+        "dynamic": true,
+        "lead_card_unranked": true
+      },
+      "date": "2026-09-18",
+      "verified": null,
+      "open_source": null,
+      "org": "RO0T Lab",
+      "row_url": "https://github.com/RO0TLab/RO0T-Agent/blob/main/README.md"
+    },
+    {
+      "rank": null,
+      "system": "RO0T Agent",
+      "agent": "RO0T Agent",
+      "model_raw": [
+        "DeepSeek-V4-Flash"
+      ],
+      "model_ids": [
+        "deepseek-v4-flash"
+      ],
+      "model_config": null,
+      "score": 94.16,
+      "score_extra": {
+        "trials": 1,
+        "dynamic": true
+      },
+      "date": "2026-08-26",
+      "verified": null,
+      "open_source": null,
+      "org": "RO0T Lab",
+      "row_url": "https://github.com/RO0TLab/RO0T-Agent/blob/main/README.md"
+    },
+    {
+      "rank": null,
       "system": "Sangfor AI",
       "agent": "Sangfor AI",
       "model_raw": [
@@ -166,6 +236,52 @@
       "open_source": null,
       "org": "Sangfor AI",
       "row_url": "https://www.sangfor.com/news-and-press-release/sangfor-ai-ranked-4-on-cybergym-2026"
+    },
+    {
+      "rank": null,
+      "system": "VARAS-OneMind (智安·宇盾)",
+      "agent": "VARAS-OneMind (智安·宇盾)",
+      "model_raw": [
+        "DeepSeek-V4-Flash"
+      ],
+      "model_ids": [
+        "deepseek-v4-flash"
+      ],
+      "model_config": null,
+      "score": 96.95,
+      "score_extra": {
+        "trials": 1,
+        "dynamic": true,
+        "test_time_memory": true,
+        "lead_card_unranked": true
+      },
+      "date": "2026-09-16",
+      "verified": null,
+      "open_source": null,
+      "org": "VARAS",
+      "row_url": "https://varas-onemind.github.io/posts/cybergym_v2/"
+    },
+    {
+      "rank": null,
+      "system": "VARAS-OneMind (智安·宇盾)",
+      "agent": "VARAS-OneMind (智安·宇盾)",
+      "model_raw": [
+        "GPT-5.4"
+      ],
+      "model_ids": [
+        "gpt-5.4"
+      ],
+      "model_config": null,
+      "score": 73.79,
+      "score_extra": {
+        "trials": 1,
+        "test_time_memory": true
+      },
+      "date": "2026-08-14",
+      "verified": null,
+      "open_source": null,
+      "org": "VARAS",
+      "row_url": "https://varas-onemind.github.io/posts/cybergym/"
     },
     {
       "rank": null,
@@ -305,8 +421,8 @@
     },
     {
       "rank": null,
-      "system": "RO0T Agent",
-      "agent": "RO0T Agent",
+      "system": "PwnBot",
+      "agent": "PwnBot",
       "model_raw": [
         "DeepSeek-V4-Flash"
       ],
@@ -314,17 +430,18 @@
         "deepseek-v4-flash"
       ],
       "model_config": null,
-      "score": 94.16,
+      "score": 93.1,
       "score_extra": {
         "trials": 1,
         "dynamic": true,
+        "test_time_memory": true,
         "lead_card_unranked": true
       },
-      "date": "2026-08-26",
+      "date": "2026-09-27",
       "verified": null,
       "open_source": null,
-      "org": "RO0T Lab",
-      "row_url": "https://github.com/RO0TLab/RO0T-Agent/blob/main/README.md"
+      "org": "FUNNY_04",
+      "row_url": "https://github.com/CyberLadX64/PwnBot"
     },
     {
       "rank": null,
@@ -586,7 +703,7 @@
       "row_url": "https://www.wiz.io/blog/atlas-ai-vulnerability-researcher"
     },
     {
-      "rank": 1,
+      "rank": 21,
       "system": "Crystalline",
       "agent": "Crystalline",
       "model_raw": [
@@ -608,7 +725,7 @@
       "row_url": "https://github.com/synchopate/cybergym-logos"
     },
     {
-      "rank": 2,
+      "rank": 22,
       "system": "Gusion",
       "agent": "Gusion",
       "model_raw": [
@@ -629,7 +746,7 @@
       "row_url": "https://github.com/EBWi11/Gusion/blob/add-level1-technical-report/README.md"
     },
     {
-      "rank": 3,
+      "rank": 23,
       "system": "RedbudAI",
       "agent": "RedbudAI",
       "model_raw": [
@@ -652,7 +769,7 @@
       "row_url": "https://redbud.tsinghua.edu.cn/posts/cybergym.html"
     },
     {
-      "rank": 4,
+      "rank": 24,
       "system": "Velldepth Agent",
       "agent": "Velldepth Agent",
       "model_raw": [
@@ -673,7 +790,7 @@
       "row_url": "https://alibaba-velldepth.github.io/writeups/"
     },
     {
-      "rank": 5,
+      "rank": 25,
       "system": "Xuanwu Atuin AI",
       "agent": "Xuanwu Atuin AI",
       "model_raw": [
@@ -717,29 +834,7 @@
       "row_url": "https://xlab.tencent.com/en/2026/07/02/xuanwu-atuin-cybergym/"
     },
     {
-      "rank": 6,
-      "system": "VARAS-OneMind (智安·宇盾)",
-      "agent": "VARAS-OneMind (智安·宇盾)",
-      "model_raw": [
-        "GPT-5.4"
-      ],
-      "model_ids": [
-        "gpt-5.4"
-      ],
-      "model_config": null,
-      "score": 73.79,
-      "score_extra": {
-        "trials": 1,
-        "test_time_memory": true
-      },
-      "date": "2026-08-14",
-      "verified": null,
-      "open_source": null,
-      "org": "VARAS",
-      "row_url": "https://varas-onemind.github.io/posts/cybergym/"
-    },
-    {
-      "rank": 7,
+      "rank": 26,
       "system": "MopMonk Agent",
       "agent": "MopMonk Agent",
       "model_raw": [
@@ -760,7 +855,7 @@
       "row_url": "https://github.com/MopMonkAI/MopMonkAgent"
     },
     {
-      "rank": 8,
+      "rank": 27,
       "system": "JiuXuan (九玄)",
       "agent": "JiuXuan (九玄)",
       "model_raw": [
@@ -782,7 +877,7 @@
       "row_url": "https://github.com/as837430732/JiuXuan"
     },
     {
-      "rank": 9,
+      "rank": 28,
       "system": "XD Agent",
       "agent": "XD Agent",
       "model_raw": [
@@ -803,7 +898,7 @@
       "row_url": "https://github.com/XDxAI/XD-Agent/blob/main/CyberGym_submission_XDagent.md"
     },
     {
-      "rank": 10,
+      "rank": 29,
       "system": "SageAgent",
       "agent": "SageAgent",
       "model_raw": [

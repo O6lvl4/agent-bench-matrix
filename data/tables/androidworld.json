@@ -15,7 +15,7 @@
   "fetched": [
     "https://docs.google.com/spreadsheets/d/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo/export?format=csv&gid=0"
   ],
-  "retrieved": "2026-10-05",
+  "retrieved": "2026-10-07",
   "newest_row_date": "2026-09",
   "snapshot": "sources/androidworld/androidworld_gid0.csv",
   "paper": "https://arxiv.org/abs/2405.14573",
@@ -93,7 +93,27 @@
       "row_url": null
     },
     {
-      "rank": 4,
+      "rank": 1,
+      "system": "AGI-0",
+      "agent": "AGI-0",
+      "model_raw": [
+        "AGI-0"
+      ],
+      "model_ids": [],
+      "model_config": "type=AI agent; screen=Screenshot",
+      "score": 100.0,
+      "score_extra": {
+        "trials": 1,
+        "note": "[09/2026]: 97.4 --> 100. Qwen3.5-27B trained with using our novel training technique on AndroidWorld tasks. Code and model will be open-sourced upon publication.\n[10/14/2025] Changed from model --> agent, based on description in blog post. https://www.theagi.company/blog/android-world"
+      },
+      "date": "2025-10",
+      "verified": false,
+      "open_source": false,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 5,
       "system": "Artemis",
       "agent": "Artemis",
       "model_raw": [
@@ -117,27 +137,7 @@
       "row_url": null
     },
     {
-      "rank": 5,
-      "system": "AGI-0",
-      "agent": "AGI-0",
-      "model_raw": [
-        "AGI-0"
-      ],
-      "model_ids": [],
-      "model_config": "type=AI agent; screen=Screenshot",
-      "score": 97.4,
-      "score_extra": {
-        "trials": 1,
-        "note": "10/14/2025. Changed from model --> agent, based on description in blog post. https://www.theagi.company/blog/android-world"
-      },
-      "date": "2025-10",
-      "verified": false,
-      "open_source": false,
-      "org": null,
-      "row_url": null
-    },
-    {
-      "rank": 5,
+      "rank": 6,
       "system": "MobileUseAgent",
       "agent": "MobileUseAgent",
       "model_raw": [
@@ -158,7 +158,7 @@
       "row_url": null
     },
     {
-      "rank": 5,
+      "rank": 6,
       "system": "Finalrun",
       "agent": "Finalrun",
       "model_raw": [

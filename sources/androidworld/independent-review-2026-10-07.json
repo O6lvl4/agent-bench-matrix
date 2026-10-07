@@ -1,0 +1,19 @@
+{
+  "retrieved": "2026-10-07",
+  "source": "https://docs.google.com/spreadsheets/d/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo/export?format=csv&gid=0",
+  "sha256": "d8364afa273b33164fd01e95fa2de4698c7ce9d18a14067ad4d3a0d28904d97c",
+  "rows_checked": 47,
+  "status": "passed",
+  "checks": "All main-board row names, ranks, pass@1 values, release months, self-report flags, open flags, notes and trial counts match the fresh CSV; existing table unchanged by this review.",
+  "agi_0": {
+    "previous_score": 97.4,
+    "current_score": 100.0,
+    "source_release_month": "10/2025",
+    "normalized_row_date": "2025-10",
+    "source_note_exact": "[09/2026]: 97.4 --> 100. Qwen3.5-27B trained with using our novel training technique on AndroidWorld tasks. Code and model will be open-sourced upon publication.\n[10/14/2025] Changed from model --> agent, based on description in blog post. https://www.theagi.company/blog/android-world",
+    "model_ids": [],
+    "verified": false
+  },
+  "interpretation": "The September 2026 note revises the score and explicitly discloses Qwen3.5-27B training on AndroidWorld tasks. It does not replace the row's separately published Release Date (10/2025) or establish independent verification, held-out generalization, or a single-model agent identity.",
+  "extractor": "scripts/refresh_osworld_scope_20261007.py"
+}

@@ -1,0 +1,85 @@
+{
+  "retrieved": "2026-10-07",
+  "baseline_commit": "b02f0c0",
+  "previous_updated_at": "2026-09-17",
+  "source_updated_at": "2026-10-05",
+  "e2e_source_rows": 50,
+  "agent_source_rows": 1,
+  "e2e_rows_identical_except_new_model_type": true,
+  "renderer_checks": [
+    "modelScope: \"e2e\"",
+    "state.modelScope === \"all\" || (row.modelType || \"e2e\") === \"e2e\"",
+    "Foundation E2E GUI",
+    "data-model-scope=\"all\"",
+    "row.costPerTaskUsd.toFixed(2)",
+    "Offline set: 82 tasks"
+  ],
+  "agent_source_rows_exact": [
+    {
+      "model": "Sai w/ Claude Opus 5",
+      "company": "Simular",
+      "modelFamily": "Claude",
+      "modelType": "agent",
+      "basePlannerModel": "anthropic/claude-opus-5",
+      "reasoning": "max",
+      "toolSetting": "",
+      "stepBudget": 500,
+      "releaseVersion": "v2.1",
+      "datasetScope": "full",
+      "taskCount": 108,
+      "binaryAccuracy": 41.67,
+      "partialScore": 79.38,
+      "costPerTaskUsd": 14.34,
+      "estimatedCostUsd": 1548.72,
+      "trajectoryUrl": "https://huggingface.co/datasets/simular-ai/sai-osworld-v21-reference-runs",
+      "reproductionUrl": "https://platform.simular.ai/",
+      "reproductionGuideUrl": "https://platform.simular.ai/documentation/quickstart"
+    }
+  ],
+  "all_tab_v21_full_500_order": [
+    {
+      "rank": 1,
+      "model": "Claude Opus 5",
+      "reasoning": "max",
+      "binaryAccuracy": 44.33,
+      "modelType": "e2e"
+    },
+    {
+      "rank": 2,
+      "model": "Sai w/ Claude Opus 5",
+      "reasoning": "max",
+      "binaryAccuracy": 41.67,
+      "modelType": "agent"
+    },
+    {
+      "rank": 3,
+      "model": "Claude Opus 5",
+      "reasoning": "high",
+      "binaryAccuracy": 36.89,
+      "modelType": "e2e"
+    },
+    {
+      "rank": 4,
+      "model": "Claude Opus 5",
+      "reasoning": "xhigh",
+      "binaryAccuracy": 33.33,
+      "modelType": "e2e"
+    },
+    {
+      "rank": 5,
+      "model": "Claude Opus 5",
+      "reasoning": "medium",
+      "binaryAccuracy": 33.01,
+      "modelType": "e2e"
+    },
+    {
+      "rank": 6,
+      "model": "Claude Opus 5",
+      "reasoning": "low",
+      "binaryAccuracy": 18.81,
+      "modelType": "e2e"
+    }
+  ],
+  "decision": "Preserve all six official Foundation E2E GUI tables; separately expose only public agent rows from All. Do not duplicate E2E observations into another matrix column. Keep model_ids empty because basePlannerModel identifies only the planner, and leave absent verification/date/open-source metadata null.",
+  "extractor": "scripts/refresh_osworld_scope_20261007.py"
+}
