@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+    content="OSWorld 2.0: Benchmarking computer-use agents on long-horizon real-world tasks">
+  <meta name="keywords"
+    content="Computer Use Agent, GUI Agent, Long-Horizon Tasks, Multimodal Agent, Benchmark">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OSWorld 2.0: Benchmarking computer-use agents on long-horizon real-world tasks</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css?v=palatino-fonts-v1">
+  <link rel="stylesheet" href="./stylesheets/index.css?v=leaderboard-filters-v1">
+  <link rel="stylesheet" href="./static/css/failure-cases.css?v=failure-heading-unified-v1">
+  <link rel="stylesheet" href="./static/css/benchmark-sweep.css?v=main-figure-sweep-v34-cost">
+  <link rel="stylesheet" href="./static/css/osworld-official-match.css?v=leaderboard-sai-v4">
+  <link rel="icon" href="static/images/favicon.png">
+
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script defer src="./static/js/leaderboard.js?v=leaderboard-sai-v4"></script>
+  <script defer src="./static/js/taskShowcaseData.js?v=hide-task055-v1"></script>
+  <script defer src="./static/js/domainInteraction.js?v=label-case-v2"></script>
+  <script defer src="./static/js/economicCoverage.js?v=economic-coverage-v7"></script>
+  <script defer src="./static/js/failureCases.js?v=home-failure-cases-v1"></script>
+  <script defer src="./static/js/pipelineInteraction.js?v=pipeline-examples-v1"></script>
+  <script defer src="./static/js/benchmarkSweep.js?v=benchmark-hide-full-gpt-plot-v1"></script>
+  <script defer src="./static/js/mainFigureProgressive.js?v=main-figure-progressive-v1"></script>
+  <script defer src="./static/js/findingsCarousel.js?v=findings-carousel-v2"></script>
+</head>
+
+<body class="minimal-home">
+  <main id="top">
+    <section class="hero osworld-hero" id="home">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <p class="hero-overline" aria-hidden="true"></p>
+
+          <div class="osworld-hero-grid">
+            <div class="osworld-hero-copy">
+              <h1 class="title is-1 publication-title">
+                <span class="hero-title-line hero-title-main">OSWorld 2.0: Benchmarking Computer-Use</span>
+                <span class="hero-title-line hero-title-subtitle">
+                  Agents on
+                  <span class="hero-summary-highlight">Long-Horizon Real-World Tasks</span>
+                </span>
+              </h1>
+
+              <div class="is-size-5 publication-authors">
+                <div class="author-list" aria-label="Paper authors">
+                  <span class="author-entry"><a class="author-block" href="https://yuanmengqi.github.io/" target="_blank" rel="noopener noreferrer">Mengqi Yuan</a><sup class="author-affiliation-mark">1</sup><sup class="equal-contribution-mark">*</sup></span>
+                  <span class="author-entry"><a class="author-block" href="https://github.com/adlsdztony" target="_blank" rel="noopener noreferrer">Zilong Zhou</a><sup class="author-affiliation-mark">1</sup><sup class="equal-contribution-mark">*</sup></span>
+                  <span class="author-entry"><a class="author-block" href="https://github.com/ThisisXXZ" target="_blank" rel="noopener noreferrer">Xinzhuang Xiong</a><sup class="author-affiliation-mark">1</sup><sup class="equal-contribution-mark">*</sup></span>
+                  <span class="author-entry"><a class="author-block" href="https://wuwm109.github.io/" target="_blank" rel="noopener noreferrer">Weiming Wu</a><sup class="author-affiliation-mark">1</sup></span>
+                  <span class="author-entry"><a class="author-block" href="https://aurorajy1108.github.io/" target="_blank" rel="noopener noreferrer">Jiayang Sun</a><sup class="author-affiliation-mark">1</sup></span>
+                  <span class="author-entry"><a class="author-block" href="https://github.com/jiamin0630" target="_blank" rel="noopener noreferrer">Jiamin Song</a><sup class="author-affiliation-mark">1</sup></span>
+                  <span class="author-entry"><a class="author-block" href="https://github.com/kaiqiancui" target="_blank" rel="noopener noreferrer">Kaiqian Cui</a><sup class="author-affiliation-mark">1</sup></span>
+                  <span class="author-entry"><a class="author-block" href="https://bowenbryanwang.github.io/" target="_blank" rel="noopener noreferrer">Bowen Wang</a><sup class="author-affiliation-mark">1</sup></span>
+                  <span class="author-entry"><a class="author-block" href="https://fredwucz.github.io/" target="_blank" rel="noopener noreferrer">Haoyuan Wu</a><sup class="author-affiliation-mark">1</sup></span>
+                  <span class="author-entry"><a class="author-block" href="https://yitongli14.com/" target="_blank" rel="noopener noreferrer">Yitong Li</a><sup class="author-affiliation-mark">1</sup></span>
+                  <span class="author-entry"><a class="author-block" href="https://scholar.google.com/citations?user=Etp3Eb8AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Dunjie Lu</a><sup class="author-affiliation-mark">1</sup></span>
+                  <span class="author-entry"><a class="author-block" href="https://github.com/Haikong-Lu1206" target="_blank" rel="noopener noreferrer">Haikong Lu</a><sup class="author-affiliation-mark">1</sup></span>
+                  <span class="author-entry"><a class="author-block" href="https://github.com/qiiizhen" target="_blank" rel="noopener noreferrer">Qi Zhen</a><sup class="author-affiliation-mark">1</sup></span>
+                  <span class="author-entry"><a class="author-block" href="https://xinyuanwangcs.github.io/" target="_blank" rel="noopener noreferrer">Xinyuan Wang</a><sup class="author-affiliation-mark">1</sup></span>
+                  <span class="author-entry"><a class="author-block" href="https://millank0817.github.io/" target="_blank" rel="noopener noreferrer">Jiaqi Deng</a><sup class="author-affiliation-mark">1</sup></span>
+                  <span class="author-entry"><a class="author-block" href="https://yuhao.page/" target="_blank" rel="noopener noreferrer">Yuhao Yang</a><sup class="author-affiliation-mark">1</sup></span>
+                  <span class="author-entry"><span class="author-block">Cheng Chen</span><sup class="author-affiliation-mark">2</sup></span>
+                  <span class="author-entry"><a class="author-block" href="https://scholar.google.com/citations?user=v8xE6eIAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Boyuan Zheng</a><sup class="author-affiliation-mark">1</sup></span>
+                  <span class="author-entry"><a class="author-block" href="https://scholar.google.com/citations?user=ipgbwj0AAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener noreferrer">Alex Su</a><sup class="author-affiliation-mark">1</sup></span>
+                  <span class="author-entry"><a class="author-block" href="https://jasonyux.com/" target="_blank" rel="noopener noreferrer">Xiao Yu</a><sup class="author-affiliation-mark">3</sup></span>
+                  <span class="author-entry"><a class="author-block" href="https://haozou-official.github.io/" target="_blank" rel="noopener noreferrer">Hao Zou</a><sup class="author-affiliation-mark">3</sup></span>
+                  <span class="author-entry"><a class="author-block" href="https://saa1605.github.io/" target="_blank" rel="noopener noreferrer">Saaket Agashe</a><sup class="author-affiliation-mark">4</sup></span>
+                  <span class="author-entry"><a class="author-block" href="https://xinghanlu.com/" target="_blank" rel="noopener noreferrer">Xing Han Lu</a><sup class="author-affiliation-mark">5</sup></span>
+                  <span class="author-entry"><a class="author-block" href="https://www.linkedin.com/in/manpreet-kaur-644b6353/" target="_blank" rel="noopener noreferrer">Manpreet Kaur</a><sup class="author-affiliation-mark">6</sup></span>
+                  <span class="author-entry"><a class="author-block" href="https://snorkel.ai/author/zhengyang-jason-qi/" target="_blank" rel="noopener noreferrer">Zhengyang Qi</a><sup class="author-affiliation-mark">7</sup></span>
+                  <span class="author-entry"><a class="author-block" href="https://vincentsc.com/" target="_blank" rel="noopener noreferrer">Vincent Sunn Chen</a><sup class="author-affiliation-mark">7</sup></span>
+                  <span class="author-entry"><a class="author-block" href="https://pages.cs.wisc.edu/~fredsala/" target="_blank" rel="noopener noreferrer">Frederic Sala</a><sup class="author-affiliation-mark">7,8</sup></span>
+                  <span class="author-entry"><a class="author-block" href="https://liudayiheng.github.io/" target="_blank" rel="noopener noreferrer">Dayiheng Liu</a><sup class="author-affiliation-mark">9</sup></span>
+                  <span class="author-entry"><a class="author-block" href="https://justinlin610.github.io/" target="_blank" rel="noopener noreferrer">Junyang Lin</a></span>
+                  <span class="author-entry"><a class="author-block" href="https://www.cs.columbia.edu/~zhouyu/" target="_blank" rel="noopener noreferrer">Zhou Yu</a><sup class="author-affiliation-mark">3</sup></span>
+                  <span class="author-entry"><a class="author-block" href="https://ysu1989.github.io/" target="_blank" rel="noopener noreferrer">Yu Su</a><sup class="author-affiliation-mark">10,12</sup></span>
+                  <span class="author-entry"><a class="author-block" href="https://sivareddy.in/" target="_blank" rel="noopener noreferrer">Siva Reddy</a><sup class="author-affiliation-mark">5</sup></span>
+                  <span class="author-entry"><a class="author-block" href="https://eric-xw.github.io/" target="_blank" rel="noopener noreferrer">Xin Eric Wang</a><sup class="author-affiliation-mark">4,11</sup></span>
+                  <span class="author-entry"><a class="author-block" href="https://qipeng.me/" target="_blank" rel="noopener noreferrer">Peng Qi</a><sup class="author-affiliation-mark">6</sup></span>
+                  <span class="author-entry"><a class="author-block" href="https://scholar.google.com/citations?user=8sdGK_0AAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener noreferrer">Tianbao Xie</a><sup class="author-affiliation-mark">1</sup></span>
+                  <span class="author-entry"><a class="author-block" href="https://taoyds.github.io/" target="_blank" rel="noopener noreferrer">Tao Yu</a><sup class="author-affiliation-mark">1</sup></span>
+                </div>
+
+                <div class="author-affiliation-list" aria-label="Author affiliations">
+                  <span class="affiliation-entry"><sup>1</sup><a href="https://xlang.ai/" target="_blank" rel="noopener noreferrer">XLANG Lab, University of Hong Kong</a></span>
+                  <span class="affiliation-entry"><sup>2</sup><a href="https://ucsd.edu/" target="_blank" rel="noopener noreferrer">University of California, San Diego</a></span>
+                  <span class="affiliation-entry"><sup>3</sup><a href="https://www.columbia.edu/" target="_blank" rel="noopener noreferrer">Columbia University</a></span>
+                  <span class="affiliation-entry"><sup>4</sup><a href="https://www.ucsb.edu/" target="_blank" rel="noopener noreferrer">University of California, Santa Barbara</a></span>
+                  <br class="affiliation-line-break" aria-hidden="true">
+                  <span class="affiliation-entry"><sup>5</sup><a href="https://mila.quebec/en" target="_blank" rel="noopener noreferrer">Mila - Quebec AI Institute</a></span>
+                  <span class="affiliation-entry"><sup>6</sup><a href="https://www.uniphore.com/" target="_blank" rel="noopener noreferrer">Uniphore</a></span>
+                  <span class="affiliation-entry"><sup>7</sup><a href="https://snorkel.ai/" target="_blank" rel="noopener noreferrer">Snorkel AI</a></span>
+                  <span class="affiliation-entry"><sup>8</sup><a href="https://www.wisc.edu/" target="_blank" rel="noopener noreferrer">University of Wisconsin - Madison</a></span>
+                  <span class="affiliation-entry"><sup>9</sup><a href="https://qwen.ai/" target="_blank" rel="noopener noreferrer">Alibaba Qwen</a></span>
+                  <span class="affiliation-entry"><sup>10</sup><a href="https://www.osu.edu/" target="_blank" rel="noopener noreferrer">The Ohio State University</a></span>
+                  <span class="affiliation-entry"><sup>11</sup><a href="https://www.simular.ai/" target="_blank" rel="noopener noreferrer">Simular</a></span>
+                  <span class="affiliation-entry"><sup>12</sup><a href="https://neocognition.io/" target="_blank" rel="noopener noreferrer">NeoCognition</a></span>
+                </div>
+
+                <div class="author-equal-note"><sup>*</sup> Equal contribution</div>
+              </div>
+
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2606.29537" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="ai ai-arxiv"></i></span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://github.com/xlang-ai/OSWorld-V2" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fab fa-github"></i></span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://huggingface.co/datasets/xlangai/osworld_v2_tasks" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon huggingface-icon-wrap">
+                      <img class="huggingface-icon" src="static/images/huggingface_logo-noborder.svg" alt="" aria-hidden="true">
+                    </span>
+                    <span>Data</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="task-showcase/" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fas fa-images"></i></span>
+                    <span>Task showcase</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="task-trajectories/" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fas fa-route"></i></span>
+                    <span>Explore all task trajectories</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://x.com/XLangNLP/status/2070517498974253269" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fab fa-twitter"></i></span>
+                    <span>Twitter</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://discord.com/invite/4Gnw7eTEZR" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fab fa-discord"></i></span>
+                    <span>Discord</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+
+            <figure class="osworld-hero-figure osworld-hero-video">
+              <video autoplay muted loop playsinline controls preload="metadata" poster="static/images/osworld2/osworld2-overview-no-intro-first-frame.png?v=demo-first-frame-v1">
+                <source src="static/videos/osworld2-overview-no-cover.mp4?v=demo-no-cover-v1" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </figure>
+          </div>
+
+          <div class="hero-metrics" aria-label="OSWorld 2.0 headline statistics">
+            <div class="metric-card">
+              <span class="metric-value" data-count-to="108">108</span>
+              <span class="metric-label">Long-horizon tasks</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-value" data-count-to="31">31</span>
+              <span class="metric-label">Self-hosted websites</span>
+            </div>
+            <div class="metric-card has-compact-label">
+              <span class="metric-value" data-count-to="69.6" data-count-decimals="1" data-count-suffix="%">69.6%</span>
+              <span class="metric-label metric-label-nowrap">Tasks &gt;1h</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-value" data-count-to="250" data-count-prefix="&gt;">&gt;250</span>
+              <span class="metric-label">Average agent steps</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-value" data-count-to="27.25" data-count-decimals="2">27.25</span>
+              <span class="metric-label">Avg. scoring checkpoints</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section" id="overview">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered section-heading visual-heading">
+          <div class="column is-four-fifths">
+            <h2 class="title is-2">Abstract</h2>
+          </div>
+        </div>
+
+        <div class="content abstract-copy">
+          <p>Existing computer-use benchmarks fail to capture the realism, complexity, and long-horizon demands of real-world computer use, limiting their ability to reveal the limitations of frontier agents. We introduce OSWorld 2.0, a benchmark of 108 long-horizon computer-use workflows spanning everyday and professional tasks. Each task represents a realistic end-to-end workflow that takes human users a median of about 1.6 hours to complete and requires an average of 318 tool calls with Claude Opus 4.7 using maximum thinking, compared with about 30 in OSWorld 1.0. OSWorld 2.0 targets challenge phenomena that are common in real workflows yet underrepresented in prior benchmarks, spanning interaction-design challenges such as streaming interaction and dynamic environments, as well as agent-pattern challenges such as cross-source reasoning, implicit-state inference, and visual-spatial precision. Tasks are grounded in authentic input artifacts and cross-referenced against realistic stateful user profile data, and include separate safety reports auditing safety-sensitive execution. Under our primary binary-completion metric at 500 steps, Claude Opus 4.8 with maximum thinking and batched tool calls scores best but still completes only 20.6% of tasks at a 54.8% partial score; GPT-5.5 is far more token-efficient yet plateaus near 14%. These results show that current agents are still far from professional-level computer use: rather than stumbling on basic GUI control or coding, they lose track of constraints, miss information that arrives mid-task, guess rather than ask the user, and skip verification, struggling most when a task hinges on hidden state they must recover.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section main-figure-section" aria-label="OSWorld 2.0 main figure">
+      <div class="container is-max-desktop">
+        <figure class="paper-figure">
+          <img src="static/images/osworld2/osworldv2_figure_main_latest.png?v=main-fig-latest-v1"
+            width="960"
+            height="540"
+            decoding="async"
+            fetchpriority="high"
+            alt="Representative OSWorld 2.0 long-horizon workflows and challenge categories">
+          <figcaption>
+            A representative OSWorld 2.0 workflow: submitting an ExpenseFlow reimbursement claim. The agent must follow
+            a tutorial PDF, operate a legacy reimbursement portal, extract the correct amount from noisy receipt
+            artifacts, trace order evidence across GMail and ChaseBank, react to a new email that changes the task
+            state, recover hidden employee information from a prior report, gather supporting documents across
+            applications, identify an inconsistency that requires user clarification, and complete final review and
+            submission.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section benchmark-sweep-section" aria-label="Interactive OSWorld 2.0 benchmark sweep">
+      <div class="container is-max-desktop benchmark-sweep-container">
+        <div class="benchmark-sweep" id="benchmark-sweep">
+          <div class="benchmark-plot-row">
+            <div class="benchmark-plot-column">
+              <div class="benchmark-sweep-controls">
+                <div class="benchmark-axis-controls">
+                  <div class="benchmark-control-group">
+                    <span class="benchmark-control-label">X</span>
+                    <div class="benchmark-segmented" role="group" aria-label="X-axis metric">
+                      <button class="benchmark-metric-btn" type="button" data-benchmark-x-metric="tokens" aria-pressed="true">Output tokens</button>
+                      <button class="benchmark-metric-btn" type="button" data-benchmark-x-metric="turns" aria-pressed="false">Turns</button>
+                      <button class="benchmark-metric-btn" type="button" data-benchmark-x-metric="actions" aria-pressed="false">Actions</button>
+                      <button class="benchmark-metric-btn" type="button" data-benchmark-x-metric="cost" aria-pressed="false">Cost</button>
+                    </div>
+                  </div>
+                  <div class="benchmark-control-group">
+                    <span class="benchmark-control-label">Y</span>
+                    <div class="benchmark-segmented is-y-axis" role="group" aria-label="Y-axis reward metric">
+                      <button class="benchmark-metric-btn" type="button" data-benchmark-y-metric="mean" aria-pressed="false">Partial reward</button>
+                      <button class="benchmark-metric-btn" type="button" data-benchmark-y-metric="binary" aria-pressed="true">Binary reward</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="benchmark-chart-switches">
+                  <div class="benchmark-scope-switch benchmark-segmented" role="group" aria-label="Dataset set">
+                    <button class="benchmark-metric-btn" type="button" data-benchmark-scope="full" aria-pressed="true">Full set</button>
+                    <button class="benchmark-metric-btn" type="button" data-benchmark-scope="offline" aria-pressed="false">Offline set</button>
+                  </div>
+                  <label class="benchmark-release-filter" data-benchmark-release-filter>
+                    <span>Release</span>
+                    <select data-benchmark-release-version aria-label="Release version"></select>
+                  </label>
+                  <button class="benchmark-toggle" type="button" id="benchmarkSweepV1ReferenceToggle" aria-pressed="true" hidden>
+                    <svg viewBox="0 0 16 16" aria-hidden="true">
+                      <path d="M2.5 11.5h11"></path>
+                      <path d="M3 10c2.2-5.8 4.7-5.8 6.5-3.2 1.1 1.6 2.2 2.6 3.8.5"></path>
+                    </svg>
+                    OSWorld v1 ref
+                  </button>
+                </div>
+              </div>
+
+              <div class="benchmark-chart-wrap" id="benchmarkSweepChartWrap">
+                <svg id="benchmarkSweepChart" viewBox="0 0 720 418" role="img" aria-label="Interactive OSWorld 2.0 sweep chart" aria-describedby="benchmarkSweepCaption"></svg>
+                <div class="benchmark-tooltip" id="benchmarkSweepTooltip" role="status" aria-live="polite"></div>
+              </div>
+              <p class="benchmark-chart-caption" id="benchmarkSweepCaption">Compare model performance against output tokens, turns, actions, or cost.</p>
+            </div>
+
+            <section class="benchmark-table-section" aria-label="OSWorld 2.0 benchmark result table">
+              <div class="benchmark-data-table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th data-benchmark-sort="model">Model</th>
+                      <th data-benchmark-sort="effort">Effort</th>
+                      <th data-benchmark-sort="version">Version</th>
+                      <th data-benchmark-sort="x">X metric</th>
+                      <th data-benchmark-sort="score" id="benchmarkSweepScoreHeader">Partial reward</th>
+                      <th data-benchmark-sort="other" id="benchmarkSweepOtherHeader">Binary reward</th>
+                    </tr>
+                  </thead>
+                  <tbody id="benchmarkSweepRows"></tbody>
+                </table>
+              </div>
+            </section>
+          </div>
+
+          <aside class="benchmark-model-panel" aria-label="Model visibility">
+            <p class="benchmark-panel-title">Models</p>
+            <div class="benchmark-model-toggles" id="benchmarkModelToggles"></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="statistics">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered section-heading visual-heading">
+          <div class="column is-four-fifths">
+            <h2 class="title is-2">Task Statistics</h2>
+          </div>
+        </div>
+
+        <div class="statistics-visual-grid statistics-four-grid">
+          <div class="statistics-story">
+            <div class="statistics-time-copy">
+              <h3>Human Operation Time</h3>
+              <p>
+                OSWorld 2.0 tasks require substantially longer human operation time, with a median of about 1.6 hours
+                and 69.6% of tasks taking skilled users more than one hour.
+              </p>
+            </div>
+            <figure class="paper-figure statistics-time-figure compact-time-figure">
+              <img src="static/images/osworld2/osworld_human_time_v1_v2_comparison.png?v=figure3-no-title-v1"
+                alt="Human operation time comparison between OSWorld 1.0 and OSWorld 2.0">
+            </figure>
+          </div>
+
+          <div class="domain-stat-section">
+            <div class="domain-stat-copy">
+              <h3>Task Domain Distribution</h3>
+              <p>
+                The 108 tasks span seven professional domains and 21 sub-categories, covering research, creative
+                production, engineering, personal services, business and finance, administration and compliance, and
+                healthcare workflows.
+              </p>
+            </div>
+            <div class="domain-stat-layout">
+              <div class="domain-explorer" id="domain-explorer">
+                <div class="domain-chart-shell" aria-label="Interactive OSWorld 2.0 task domain distribution">
+                  <svg id="domain-donut" class="domain-donut" viewBox="0 0 520 520" role="img"
+                    aria-label="OSWorld 2.0 task domain distribution"></svg>
+                  <div class="domain-center-card" aria-hidden="true">
+                    <span id="domain-center-value">100%</span>
+                    <strong id="domain-center-label">OSWorld 2.0</strong>
+                    <small>Task domains</small>
+                  </div>
+                  <div class="domain-tooltip" id="domain-tooltip" hidden></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="economic-coverage" id="economic-coverage">
+          <div class="economic-copy">
+            <h3>Economic Value Coverage</h3>
+            <p>
+              We map tasks to occupation families and SOC major groups, using a wage-bill-based GDP proxy to estimate
+              economic coverage. The largest shares come from document preparation, software and databases, and
+              finance and operations analysis, with a long tail of additional professional activities.
+            </p>
+          </div>
+
+          <div class="economic-chart-wrap" aria-label="Interactive OSWorld 2.0 economic coverage proxy">
+            <svg id="economic-donut" class="economic-donut" viewBox="-80 -55 760 650" role="img"
+              aria-label="Economic coverage proxy. Inner ring shows GDP proxy share and outer ring shows task count."></svg>
+            <div class="economic-center-card" aria-hidden="true">
+              <strong id="economic-center-value">$1.64T</strong>
+              <span id="economic-center-label">GDP proxy</span>
+            </div>
+            <div class="economic-ring-legend" aria-hidden="true">
+              <span><i></i> Inner Ring: GDP Proxy Share</span>
+              <span><i></i> Outer Ring: Task Count</span>
+            </div>
+            <div class="economic-tooltip" id="economic-tooltip" hidden></div>
+          </div>
+
+          <div class="economic-table-wrap">
+            <div class="economic-table-body" id="economic-table-body"></div>
+          </div>
+          </div>
+
+          <div class="challenge-phenomena-panel" id="challenge-phenomena">
+            <div class="challenge-phenomena-copy">
+              <h3>Challenge Phenomena</h3>
+              <p>
+                OSWorld 2.0 annotates tasks with recurring, non-exclusive challenge tags that expose where long-horizon
+                computer-use agents tend to break down.
+              </p>
+            </div>
+            <div class="challenge-phenomena-table-wrap">
+              <table class="challenge-phenomena-table">
+                <caption>
+                  Counts are over 108 tasks. A task can carry multiple phenomenon tags, so percentages can overlap.
+                </caption>
+                <thead>
+                  <tr>
+                    <th>Phenomenon</th>
+                    <th>Tasks</th>
+                    <th>Share</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td><span class="challenge-term" tabindex="0">Cross-source Reasoning<span class="challenge-definition">Reconciling task-relevant facts across multiple independent sources, such as emails, documents, websites, records, or prior messages.</span></span></td><td>46</td><td>42.6%</td></tr>
+                  <tr><td><span class="challenge-term" tabindex="0">Visual-spatial Precision<span class="challenge-definition">Executing tasks that require precise visual localization, geometry, placement, timing, alignment, or pixel- or layout-level verification.</span></span></td><td>45</td><td>41.7%</td></tr>
+                  <tr><td><span class="challenge-term" tabindex="0">Implicit-state Inference<span class="challenge-definition">Inferring required state that is not stated in the instruction and is not available from a single obvious source, such as prior submissions, logs, saved records, or hidden environment state.</span></span></td><td>43</td><td>39.8%</td></tr>
+                  <tr><td><span class="challenge-term" tabindex="0">Multi-item State Tracking<span class="challenge-definition">Maintaining correct state across a large set of structured items, such as rows, records, events, candidates, annotations, or document edits.</span></span></td><td>43</td><td>39.8%</td></tr>
+                  <tr><td><span class="challenge-term" tabindex="0">Conflict Disambiguation<span class="challenge-definition">Resolving stale, noisy, contradictory, or distracting information by identifying which source is authoritative and which should be ignored or overridden.</span></span></td><td>39</td><td>36.1%</td></tr>
+                  <tr><td><span class="challenge-term" tabindex="0">Multimodal Editing<span class="challenge-definition">Producing, modifying, or verifying substantive non-text media artifacts, including images, video, audio, CAD or 3D objects, or medical-image segmentations.</span></span></td><td>30</td><td>27.8%</td></tr>
+                  <tr><td><span class="challenge-term" tabindex="0">Tutorial Following<span class="challenge-definition">Extracting procedures from external guidance, such as PDF or web guides, video walkthroughs, or prior completed work, and adapting them to the current task.</span></span></td><td>22</td><td>20.4%</td></tr>
+                  <tr><td><span class="challenge-term" tabindex="0">Dynamic Environment<span class="challenge-definition">Revising plans when new task-relevant information arrives during execution, such as emails or team-chat messages that change requirements.</span></span></td><td>10</td><td>9.3%</td></tr>
+                  <tr><td><span class="challenge-term" tabindex="0">Streaming Interaction<span class="challenge-definition">Acting in environments whose visual state changes between observation and action, making discrete screenshot-based interaction insufficient.</span></span></td><td>6</td><td>5.6%</td></tr>
+                  <tr><td><span class="challenge-term" tabindex="0">Proactive Interaction<span class="challenge-definition">Detecting incomplete, ambiguous, or invalid task conditions and proactively asking the simulated user for clarification or additional evidence before proceeding.</span></span></td><td>6</td><td>5.6%</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="leaderboard">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered section-heading visual-heading">
+          <div class="column is-four-fifths">
+            <h2 class="title is-2">Leaderboard</h2>
+          </div>
+        </div>
+        <div id="leaderboard-root" class="leaderboard-root" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section" id="analysis" data-findings-carousel>
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered section-heading visual-heading">
+          <div class="column is-four-fifths">
+            <h2 class="title is-2">Key Findings</h2>
+            <div class="findings-heading-row">
+              <button class="findings-heading-arrow" type="button" data-findings-prev aria-label="Previous finding" title="Previous finding">
+                <span aria-hidden="true">&lt;</span>
+              </button>
+              <p class="findings-current-title" data-findings-title-target>Task Horizon and Performance Collapse</p>
+              <button class="findings-heading-arrow" type="button" data-findings-next aria-label="Next finding" title="Next finding">
+                <span aria-hidden="true">&gt;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="findings-carousel">
+          <div class="findings-viewport">
+            <article class="findings-slide" data-findings-slide
+              data-findings-title="Capability-Efficiency Tradeoff" hidden>
+              <figure class="findings-figure">
+                <div class="findings-image-frame findings-image-frame-sweep">
+                  <div class="benchmark-sweep benchmark-sweep-embed is-findings-sweep" aria-label="Interactive capability-efficiency benchmark sweep">
+                    <div class="benchmark-plot-column">
+                      <div class="benchmark-chart-wrap" data-benchmark-chart-wrap>
+                        <div class="benchmark-sweep-controls">
+                          <div class="benchmark-axis-controls">
+                            <div class="benchmark-control-group">
+                              <span class="benchmark-control-label">X</span>
+                              <div class="benchmark-segmented" role="group" aria-label="Finding X-axis metric">
+                                <button class="benchmark-metric-btn" type="button" data-benchmark-x-metric="tokens" aria-pressed="true">Output tokens</button>
+                                <button class="benchmark-metric-btn" type="button" data-benchmark-x-metric="turns" aria-pressed="false">Turns</button>
+                                <button class="benchmark-metric-btn" type="button" data-benchmark-x-metric="actions" aria-pressed="false">Actions</button>
+                                <button class="benchmark-metric-btn" type="button" data-benchmark-x-metric="cost" aria-pressed="false">Cost</button>
+                              </div>
+                            </div>
+                            <div class="benchmark-control-group">
+                              <span class="benchmark-control-label">Y</span>
+                              <div class="benchmark-segmented is-y-axis" role="group" aria-label="Finding Y-axis reward metric">
+                                <button class="benchmark-metric-btn" type="button" data-benchmark-y-metric="mean" aria-pressed="false">Partial reward</button>
+                                <button class="benchmark-metric-btn" type="button" data-benchmark-y-metric="binary" aria-pressed="true">Binary reward</button>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="benchmark-chart-switches">
+                            <div class="benchmark-scope-switch benchmark-segmented" role="group" aria-label="Finding dataset set">
+                              <button class="benchmark-metric-btn" type="button" data-benchmark-scope="full" aria-pressed="true">Full set</button>
+                              <button class="benchmark-metric-btn" type="button" data-benchmark-scope="offline" aria-pressed="false">Offline set</button>
+                            </div>
+                            <label class="benchmark-release-filter" data-benchmark-release-filter>
+                              <span>Release</span>
+                              <select data-benchmark-release-version aria-label="Finding release version"></select>
+                            </label>
+                            <button class="benchmark-toggle" type="button" data-benchmark-v1-reference-toggle aria-pressed="false" hidden>
+                              <svg viewBox="0 0 16 16" aria-hidden="true">
+                                <path d="M2.5 11.5h11"></path>
+                                <path d="M3 10c2.2-5.8 4.7-5.8 6.5-3.2 1.1 1.6 2.2 2.6 3.8.5"></path>
+                              </svg>
+                              OSWorld v1 ref
+                            </button>
+                          </div>
+                        </div>
+                        <svg class="benchmark-sweep-chart" data-benchmark-chart viewBox="0 0 720 418" role="img"
+                          aria-label="Interactive OSWorld 2.0 sweep chart for the finding"></svg>
+                        <div class="benchmark-tooltip" data-benchmark-tooltip role="status" aria-live="polite"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </figure>
+              <div class="findings-copy">
+                <h3>Higher Scores Require Disproportionately More Tokens</h3>
+                <p>
+                  Claude Opus 4.8 scores highest, while GPT-5.5 is the most token-efficient agent.
+                </p>
+                <ul class="findings-points">
+                  <li>GPT-5.5 reaches about 14% binary reward with only 39K output tokens, but plateaus near that level.</li>
+                  <li>Claude uses much larger budgets to climb higher: Opus 4.7 reaches 18.2% at 150K tokens, and Opus 4.8 reaches 20.6% at 244K.</li>
+                  <li>The frontier shows a sharp tradeoff: small budgets favor GPT-5.5, while maximizing completion favors Claude Opus.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="findings-slide is-active" data-findings-slide
+              data-findings-title="Task Horizon and Performance Collapse">
+              <figure class="findings-figure">
+                <div class="findings-image-frame">
+                  <img src="static/images/osworld2/task_length_binary.png?v=task-length-binary-v2"
+                    alt="Binary completion accuracy decreases as human-annotated task time increases">
+                </div>
+              </figure>
+              <div class="findings-copy">
+                <h3>Task Horizon Remains a Hard Limit</h3>
+                <p>
+                  Agent performance exhibits a severe downward trend as task length increases.
+                </p>
+                <ul class="findings-points">
+                  <li>GPT-5.5 and Claude Opus 4.7 reach 20%-24% binary completion on tasks under 45 minutes, then decline rapidly as workflows extend.</li>
+                  <li>By the 137-163 minute bin, no model exceeds 10%; above 163 minutes, binary completion falls to zero for every model retained in the plot.</li>
+                  <li>Longer horizons compound execution load and state-management errors beyond isolated short-horizon subtasks.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="findings-slide" data-findings-slide
+              data-findings-title="Challenge-Phenomena Performance Analysis" hidden>
+              <figure class="findings-figure">
+                <div class="findings-image-frame findings-image-frame-tall">
+                  <img src="static/images/osworld2/unified_domain_exposure_right_panel_new.png"
+                    alt="Exposure outcomes by challenge domain across Claude Opus 4.7, GPT-5.5, and MiniMax M3">
+                </div>
+              </figure>
+              <div class="findings-copy">
+                <h3>Agents Are Weak at Recovering and Maintaining Hidden State</h3>
+                <p>
+                  We use trajectory-level exposure attribution to diagnose ten challenge phenomena, because raw phenomenon scores alone do not establish why an agent failed.
+                </p>
+                <ul class="findings-points">
+                  <li>Each trajectory is labeled as handled, blocked, or untested after checking whether the agent reaches the challenge.</li>
+                  <li>The lowest-scoring phenomena demand state the instruction does not provide directly: implicit-state inference, multi-item tracking, conflict disambiguation, and dynamic environment.</li>
+                  <li>GPT-5.5 is stronger on visual and media phenomena, while Opus 4.7 is stronger on interaction judgment such as proactive interaction.</li>
+                </ul>
+              </div>
+            </article>
+
+          </div>
+
+          <span class="findings-status" data-findings-status aria-live="polite">1 / 3</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section failure-analysis-section" id="failure-analysis">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered section-heading visual-heading">
+          <div class="column is-four-fifths">
+            <h2 class="title is-2">Failure Cases</h2>
+            <p class="section-deck">Three representative trajectories show how agents drift from the intended workflow across long, stateful tasks.</p>
+          </div>
+        </div>
+
+        <div class="analysis-failure-showcase" aria-label="Representative failure case trajectories">
+          <div class="story-tabs" role="tablist" aria-label="Choose failure case">
+            <button class="story-tab is-active" type="button" role="tab" aria-selected="true" data-case-target="task035">
+              <span>Task035</span>
+              <strong>Purchase Sheet Misses Approved Requests</strong>
+            </button>
+            <button class="story-tab" type="button" role="tab" aria-selected="false" data-case-target="task103">
+              <span>Task103</span>
+              <strong>STEP Model Does Not Match Drawing</strong>
+            </button>
+            <button class="story-tab" type="button" role="tab" aria-selected="false" data-case-target="task008">
+              <span>Task008</span>
+              <strong>Evidence Gathered, Claim Not Submitted</strong>
+            </button>
+          </div>
+
+        <article class="story-case is-active" data-case-panel="task035" aria-labelledby="task035-title">
+          <div class="story-case-head">
+            <div>
+              <p class="case-kicker">Task035 - Purchase Requests</p>
+              <h2 id="task035-title">The Agent Sees Late Slack Approvals but Submits a Purchase-Order Sheet Missing Approved Requests.</h2>
+            </div>
+          </div>
+
+          <div class="story-layout">
+            <div class="story-stage">
+              <a class="story-image-button" href="#" data-frame-action="next"
+                aria-label="Show next Task035 evidence frame">
+                <div class="story-frame is-active" data-frame="0">
+                  <img src="static/images/failure-cases/task035-step05.png"
+                    alt="Task035 step 05 screenshot showing initial finance policy rules">
+                  <div class="story-frame-caption">
+                    <span>Step 05 - Agent trace</span>
+                    <strong>Budget: Max $1,000 per hardware item. Vendors: IT hardware = "TechMax" only.</strong>
+                  </div>
+                </div>
+
+                <div class="story-frame" data-frame="1">
+                  <img src="static/images/failure-cases/task035-step06.png"
+                    alt="Task035 step 06 screenshot showing early request framing from direct messages">
+                  <div class="story-frame-caption">
+                    <span>Step 06 - Agent trace</span>
+                    <strong>I can see Alex Chen's DM with two purchase requests.</strong>
+                  </div>
+                </div>
+
+                <div class="story-frame" data-frame="2">
+                  <img src="static/images/failure-cases/task035-step13.png"
+                    alt="Task035 step 13 screenshot showing finance approval channel context">
+                  <div class="story-frame-caption">
+                    <span>Step 13 - Agent trace</span>
+                    <strong>I can see a notification about John in #finance-approvals.</strong>
+                  </div>
+                </div>
+
+                <div class="story-frame" data-frame="3">
+                  <img src="static/images/failure-cases/task035-step23.png"
+                    alt="Task035 step 23 screenshot showing spreadsheet reconstruction">
+                  <div class="story-frame-caption">
+                    <span>Step 23 - Agent trace</span>
+                    <strong>The spreadsheet currently only shows one entry. But based on the DMs, there are multiple purchase requests.</strong>
+                  </div>
+                </div>
+
+                <div class="story-frame" data-frame="4">
+                  <img src="static/images/failure-cases/task035-step44.png"
+                    alt="Task035 step 44 screenshot showing Sarah's late camera update">
+                  <div class="story-frame-caption">
+                    <span>Step 44 - Agent trace</span>
+                    <strong>There's a NEW message from Sarah! This is important!</strong>
+                  </div>
+                </div>
+
+                <div class="story-frame" data-frame="5">
+                  <img src="static/images/failure-cases/task035-step48.png"
+                    alt="Task035 step 48 screenshot showing the agent closing information gathering">
+                  <div class="story-frame-caption">
+                    <span>Step 48 - Agent trace</span>
+                    <strong>Now I have all the information I need. Let me summarize all the purchase requests and their approval statuses.</strong>
+                  </div>
+                </div>
+
+                <div class="story-frame" data-frame="6">
+                  <img src="static/images/failure-cases/task035-step51.png"
+                    alt="Task035 step 51 screenshot showing execution from stale decision table">
+                  <div class="story-frame-caption">
+                    <span>Step 51 - Agent trace</span>
+                    <strong>That's not relevant to our purchasing task. Now I'm in H2.</strong>
+                  </div>
+                </div>
+
+                <div class="story-frame" data-frame="7">
+                  <img src="static/images/failure-cases/task035-step76.png"
+                    alt="Task035 step 76 screenshot showing final spreadsheet review">
+                  <div class="story-frame-caption">
+                    <span>Step 76 - Agent trace</span>
+                    <strong>The Purchase Order Form is now complete with all 5 purchase requests.</strong>
+                  </div>
+                </div>
+              </a>
+
+              <div class="story-controls" role="group" aria-label="Task035 storyboard controls">
+                <button class="story-nav" type="button" data-frame-action="prev">
+                  <span class="icon"><i class="fas fa-arrow-left"></i></span>
+                  <span>Previous</span>
+                </button>
+                <div class="story-dots" role="tablist" aria-label="Task035 evidence frames">
+                  <button class="story-dot is-active" type="button" aria-label="Show Task035 step 05" data-frame-dot="0"></button>
+                  <button class="story-dot" type="button" aria-label="Show Task035 step 06" data-frame-dot="1"></button>
+                  <button class="story-dot" type="button" aria-label="Show Task035 step 13" data-frame-dot="2"></button>
+                  <button class="story-dot" type="button" aria-label="Show Task035 step 23" data-frame-dot="3"></button>
+                  <button class="story-dot" type="button" aria-label="Show Task035 step 44" data-frame-dot="4"></button>
+                  <button class="story-dot" type="button" aria-label="Show Task035 step 48" data-frame-dot="5"></button>
+                  <button class="story-dot" type="button" aria-label="Show Task035 step 51" data-frame-dot="6"></button>
+                  <button class="story-dot" type="button" aria-label="Show Task035 step 76" data-frame-dot="7"></button>
+                </div>
+                <button class="story-nav" type="button" data-frame-action="next">
+                  <span>Next</span>
+                  <span class="icon"><i class="fas fa-arrow-right"></i></span>
+                </button>
+              </div>
+            </div>
+
+            <div class="story-panel">
+              <div class="case-brief">
+                <span>Task setup</span>
+                <dl>
+                  <div>
+                    <dt>Context</dt>
+                    <dd>Purchase requests and approvals arrive through a spreadsheet, finance channel, and direct messages.</dd>
+                  </div>
+                  <div>
+                    <dt>Goal</dt>
+                    <dd>Submit a purchase order sheet with every request and the correct approval status.</dd>
+                  </div>
+                  <div>
+                    <dt>Design point</dt>
+                    <dd>The task checks whether the agent refreshes its working table when late messages change the source of truth.</dd>
+                  </div>
+                </dl>
+              </div>
+              <div class="story-note is-active" data-frame-note="0">
+                <p class="note-index">Failure case · 1 / 8 · Step 05</p>
+                <h3>Initial Rules Become the Anchor State</h3>
+                <p class="case-detail"><span>Design point</span>The agent captures the policy, but this becomes an early static frame.</p>
+              </div>
+              <div class="story-note" data-frame-note="1">
+                <p class="note-index">Failure case · 2 / 8 · Step 06</p>
+                <h3>Requests Are Inventoried from Visible DMs</h3>
+                <p class="case-detail"><span>Design point</span>The request list starts as visible-message memory, not durable task state.</p>
+              </div>
+              <div class="story-note" data-frame-note="2">
+                <p class="note-index">Failure case · 3 / 8 · Step 13</p>
+                <h3>Update Channel Noticed</h3>
+                <p class="case-detail"><span>Design point</span>A dynamic channel is noticed, but not treated as a continuing source of truth.</p>
+              </div>
+              <div class="story-note" data-frame-note="3">
+                <p class="note-index">Failure case · 4 / 8 · Step 23</p>
+                <h3>Spreadsheet State Is Rebuilt from Memory</h3>
+                <p class="case-detail"><span>Design point</span>The agent repairs the sheet from memory rather than reconciling all sources.</p>
+              </div>
+              <div class="story-note" data-frame-note="4">
+                <p class="note-index">Failure case · 5 / 8 · Step 44</p>
+                <h3>One Late Exception Is Integrated</h3>
+                <p class="case-detail"><span>Design point</span>The late update is recognized, but only as a local exception.</p>
+              </div>
+              <div class="story-note" data-frame-note="5">
+                <p class="note-index">Failure case · 6 / 8 · Step 48</p>
+                <h3>Information Gathering Closes Too Early</h3>
+                <p class="case-detail"><span>Design point</span>The stopping claim freezes the working set before later approvals are reconciled.</p>
+              </div>
+              <div class="story-note" data-frame-note="6">
+                <p class="note-index">Failure case · 7 / 8 · Step 51</p>
+                <h3>Old Decisions Are Executed Without Revalidation</h3>
+                <p class="case-detail"><span>Design point</span>New messages are filtered out while the stale table is executed.</p>
+              </div>
+              <div class="story-note" data-frame-note="7">
+                <p class="note-index">Failure case · 8 / 8 · Step 76</p>
+                <h3>Self-Check Misses the Absent Row</h3>
+                <p class="case-detail"><span>Design point</span>The final check validates the agent's five-row story, not task completeness.</p>
+                <div class="case-summary">
+                  <span>Case summary</span>
+                  <p>Dynamic updates are observed, but the final spreadsheet is checked against an incomplete internal list.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="story-case" data-case-panel="task103" aria-labelledby="task103-title">
+          <div class="story-case-head">
+            <div>
+              <p class="case-kicker">Task103 - FreeCAD Bracket</p>
+              <h2 id="task103-title">The Agent Reads the Bracket Drawing but Exports a STEP Model Whose Geometry Does Not Match It.</h2>
+            </div>
+          </div>
+
+          <div class="story-layout">
+            <div class="story-stage">
+              <a class="story-image-button" href="#" data-frame-action="next"
+                aria-label="Show next Task103 evidence frame">
+                <div class="story-frame is-active" data-frame="0">
+                  <img src="static/images/failure-cases/task103-step27.png"
+                    alt="Task103 step 27 screenshot showing CAD drawing dimensions">
+                  <div class="story-frame-caption">
+                    <span>Step 27 - Agent trace</span>
+                    <strong>Now I can see the drawing in full screen.</strong>
+                  </div>
+                </div>
+
+                <div class="story-frame" data-frame="1">
+                  <img src="static/images/failure-cases/task103-step31.png"
+                    alt="Task103 step 31 screenshot showing drawing grounding uncertainty">
+                  <div class="story-frame-caption">
+                    <span>Step 31 - Agent trace</span>
+                    <strong>Let me analyze what I can see from the drawing.</strong>
+                  </div>
+                </div>
+
+                <div class="story-frame" data-frame="2">
+                  <img src="static/images/failure-cases/task103-step33.png"
+                    alt="Task103 step 33 screenshot showing feature checklist and orientation uncertainty">
+                  <div class="story-frame-caption">
+                    <span>Step 33 - Agent trace</span>
+                    <strong>I need to see the full drawing. Let me zoom out.</strong>
+                  </div>
+                </div>
+
+                <div class="story-frame" data-frame="3">
+                  <img src="static/images/failure-cases/task103-step119.png"
+                    alt="Task103 step 119 screenshot showing base primitive construction">
+                  <div class="story-frame-caption">
+                    <span>Step 119 - Agent trace</span>
+                    <strong>Let me check if the file exists and view it.</strong>
+                  </div>
+                </div>
+
+                <div class="story-frame" data-frame="4">
+                  <img src="static/images/failure-cases/task103-step150.png"
+                    alt="Task103 step 150 screenshot showing execution stall before required output">
+                  <div class="story-frame-caption">
+                    <span>Step 150 - Agent trace</span>
+                    <strong>The numpad keys don't seem to be working in FreeCAD.</strong>
+                  </div>
+                </div>
+
+                <div class="story-frame" data-frame="5">
+                  <img src="static/images/failure-cases/task103-step193.png"
+                    alt="Task103 step 193 screenshot showing arbitrary cylinder placement">
+                  <div class="story-frame-caption">
+                    <span>Step 193 - Agent trace</span>
+                    <strong>Let me now completely rewrite the macro file with all the correct dimensions at once.</strong>
+                  </div>
+                </div>
+
+                <div class="story-frame" data-frame="6">
+                  <img src="static/images/failure-cases/task103-step194.png"
+                    alt="Task103 step 194 screenshot showing simplified gusset primitives">
+                  <div class="story-frame-caption">
+                    <span>Step 194 - Agent trace</span>
+                    <strong>Wait - I changed bW from 130 to 105. Let me think about this.</strong>
+                  </div>
+                </div>
+
+                <div class="story-frame" data-frame="7">
+                  <img src="static/images/failure-cases/task103-step251.png"
+                    alt="Task103 step 251 screenshot showing file existence verification">
+                  <div class="story-frame-caption">
+                    <span>Step 251 - Agent trace</span>
+                    <strong>The STEP file exists and has reasonable file size.</strong>
+                  </div>
+                </div>
+              </a>
+
+              <div class="story-controls" role="group" aria-label="Task103 storyboard controls">
+                <button class="story-nav" type="button" data-frame-action="prev">
+                  <span class="icon"><i class="fas fa-arrow-left"></i></span>
+                  <span>Previous</span>
+                </button>
+                <div class="story-dots" role="tablist" aria-label="Task103 evidence frames">
+                  <button class="story-dot is-active" type="button" aria-label="Show Task103 step 27" data-frame-dot="0"></button>
+                  <button class="story-dot" type="button" aria-label="Show Task103 step 31" data-frame-dot="1"></button>
+                  <button class="story-dot" type="button" aria-label="Show Task103 step 33" data-frame-dot="2"></button>
+                  <button class="story-dot" type="button" aria-label="Show Task103 step 119" data-frame-dot="3"></button>
+                  <button class="story-dot" type="button" aria-label="Show Task103 step 150" data-frame-dot="4"></button>
+                  <button class="story-dot" type="button" aria-label="Show Task103 step 193" data-frame-dot="5"></button>
+                  <button class="story-dot" type="button" aria-label="Show Task103 step 194" data-frame-dot="6"></button>
+                  <button class="story-dot" type="button" aria-label="Show Task103 step 251" data-frame-dot="7"></button>
+                </div>
+                <button class="story-nav" type="button" data-frame-action="next">
+                  <span>Next</span>
+                  <span class="icon"><i class="fas fa-arrow-right"></i></span>
+                </button>
+              </div>
+            </div>
+
+            <div class="story-panel">
+              <div class="case-brief">
+                <span>Task setup</span>
+                <dl>
+                  <div>
+                    <dt>Context</dt>
+                    <dd>A mechanical drawing specifies the dimensions and structure of a FreeCAD support bracket.</dd>
+                  </div>
+                  <div>
+                    <dt>Goal</dt>
+                    <dd>Build and export a STEP model whose geometry matches the drawing.</dd>
+                  </div>
+                  <div>
+                    <dt>Design point</dt>
+                    <dd>The task checks whether dimensions become a stable feature-to-geometry plan, not just plausible primitives.</dd>
+                  </div>
+                </dl>
+              </div>
+              <div class="story-note is-active" data-frame-note="0">
+                <p class="note-index">Failure case · 1 / 8 · Step 27</p>
+                <h3>Dimensions Are Extracted</h3>
+                <p class="case-detail"><span>Design point</span>Visual access improves, but the geometry is not yet structured.</p>
+              </div>
+              <div class="story-note" data-frame-note="1">
+                <p class="note-index">Failure case · 2 / 8 · Step 31</p>
+                <h3>Drawing Orientation Remains Unresolved</h3>
+                <p class="case-detail"><span>Design point</span>The trace is still interpreting the drawing, not building from a stable map.</p>
+              </div>
+              <div class="story-note" data-frame-note="2">
+                <p class="note-index">Failure case · 3 / 8 · Step 33</p>
+                <h3>Feature Mapping Remains Unstable</h3>
+                <p class="case-detail"><span>Design point</span>The evidence remains unresolved while planning pressure increases.</p>
+              </div>
+              <div class="story-note" data-frame-note="3">
+                <p class="note-index">Failure case · 4 / 8 · Step 119</p>
+                <h3>A Correct-Looking Base Primitive Appears</h3>
+                <p class="case-detail"><span>Design point</span>The workflow shifts toward artifact existence before geometry is settled.</p>
+              </div>
+              <div class="story-note" data-frame-note="4">
+                <p class="note-index">Failure case · 5 / 8 · Step 150</p>
+                <h3>Execution Stalls Before a Submit-Ready Artifact</h3>
+                <p class="case-detail"><span>Design point</span>Tool operation is consuming the trajectory while the model remains unfinished.</p>
+              </div>
+              <div class="story-note" data-frame-note="5">
+                <p class="note-index">Failure case · 6 / 8 · Step 193</p>
+                <h3>Uncertainty Becomes an Arbitrary Coordinate</h3>
+                <p class="case-detail"><span>Design point</span>A script rewrite replaces a feature-by-feature CAD workflow.</p>
+              </div>
+              <div class="story-note" data-frame-note="6">
+                <p class="note-index">Failure case · 7 / 8 · Step 194</p>
+                <h3>Domain Geometry Is Simplified into Ad Hoc Ribs</h3>
+                <p class="case-detail"><span>Design point</span>The agent notices dimension drift, but the model is already unstable.</p>
+              </div>
+              <div class="story-note" data-frame-note="7">
+                <p class="note-index">Failure case · 8 / 8 · Step 251</p>
+                <h3>File Existence Replaces Geometric Validation</h3>
+                <p class="case-detail"><span>Design point</span>File existence becomes the check, while geometric correctness is unverified.</p>
+                <div class="case-summary">
+                  <span>Case summary</span>
+                  <p>The drawing is translated into approximate primitives, then accepted because an output file exists.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="story-case" data-case-panel="task008" aria-labelledby="task008-title">
+          <div class="story-case-head">
+            <div>
+              <p class="case-kicker">Task008 - Oracle Reimbursement</p>
+              <h2 id="task008-title">The Agent Gathers Reimbursement Evidence but Reaches ExpenseFlow Too Late to Submit the Claim.</h2>
+            </div>
+          </div>
+
+          <div class="story-layout">
+            <div class="story-stage">
+              <a class="story-image-button" href="#" data-frame-action="next"
+                aria-label="Show next Task008 evidence frame">
+                <div class="story-frame is-active" data-frame="0">
+                  <img src="static/images/failure-cases/task008-step65.png"
+                    alt="Task008 step 65 screenshot showing supplementary document requirements">
+                  <div class="story-frame-caption">
+                    <span>Step 65 - Agent trace</span>
+                    <strong>Now I can read the supplementary documents guide clearly.</strong>
+                  </div>
+                </div>
+
+                <div class="story-frame" data-frame="1">
+                  <img src="static/images/failure-cases/task008-step120.png"
+                    alt="Task008 step 120 screenshot showing VaultBank transaction search">
+                  <div class="story-frame-caption">
+                    <span>Step 120 - Agent trace</span>
+                    <strong>I need to scroll down to find November transactions.</strong>
+                  </div>
+                </div>
+
+                <div class="story-frame" data-frame="2">
+                  <img src="static/images/failure-cases/task008-step220.png"
+                    alt="Task008 step 220 screenshot showing API failure and screenshot automation plan">
+                  <div class="story-frame-caption">
+                    <span>Step 220 - Agent trace</span>
+                    <strong>The /api endpoint returns 404. Let me take a more practical approach.</strong>
+                  </div>
+                </div>
+
+                <div class="story-frame" data-frame="3">
+                  <img src="static/images/failure-cases/task008-step300.png"
+                    alt="Task008 step 300 screenshot showing expanded HKG to LAX bank transaction">
+                  <div class="story-frame-caption">
+                    <span>Step 300 - Agent trace</span>
+                    <strong>The HKG to LAX transaction is expanded showing transaction details.</strong>
+                  </div>
+                </div>
+
+                <div class="story-frame" data-frame="4">
+                  <img src="static/images/failure-cases/task008-step360.png"
+                    alt="Task008 step 360 screenshot showing a Python script running for document creation">
+                  <div class="story-frame-caption">
+                    <span>Step 360 - Agent trace</span>
+                    <strong>The Python script is running and trying to get the VaultBank scripts.</strong>
+                  </div>
+                </div>
+
+                <div class="story-frame" data-frame="5">
+                  <img src="static/images/failure-cases/task008-step446.png"
+                    alt="Task008 step 446 screenshot showing late transition toward ExpenseFlow">
+                  <div class="story-frame-caption">
+                    <span>Step 446 - Agent trace</span>
+                    <strong>I already read the guidelines carefully earlier and I have the key information I need.</strong>
+                  </div>
+                </div>
+
+                <div class="story-frame" data-frame="6">
+                  <img src="static/images/failure-cases/task008-step459.png"
+                    alt="Task008 step 459 screenshot showing ExpenseFlow loaded with previous report">
+                  <div class="story-frame-caption">
+                    <span>Step 459 - Agent trace</span>
+                    <strong>ExpenseFlow is now loaded. I need to click Create New Expense Report.</strong>
+                  </div>
+                </div>
+
+                <div class="story-frame" data-frame="7">
+                  <img src="static/images/failure-cases/task008-step500.png"
+                    alt="Task008 step 500 screenshot showing DevTools inspection of readonly date input">
+                  <div class="story-frame-caption">
+                    <span>Step 500 - Agent trace</span>
+                    <strong>The first input is readonly and requires the calendar picker.</strong>
+                  </div>
+                </div>
+              </a>
+
+              <div class="story-controls" role="group" aria-label="Task008 storyboard controls">
+                <button class="story-nav" type="button" data-frame-action="prev">
+                  <span class="icon"><i class="fas fa-arrow-left"></i></span>
+                  <span>Previous</span>
+                </button>
+                <div class="story-dots" role="tablist" aria-label="Task008 evidence frames">
+                  <button class="story-dot is-active" type="button" aria-label="Show Task008 step 65" data-frame-dot="0"></button>
+                  <button class="story-dot" type="button" aria-label="Show Task008 step 120" data-frame-dot="1"></button>
+                  <button class="story-dot" type="button" aria-label="Show Task008 step 220" data-frame-dot="2"></button>
+                  <button class="story-dot" type="button" aria-label="Show Task008 step 300" data-frame-dot="3"></button>
+                  <button class="story-dot" type="button" aria-label="Show Task008 step 360" data-frame-dot="4"></button>
+                  <button class="story-dot" type="button" aria-label="Show Task008 step 446" data-frame-dot="5"></button>
+                  <button class="story-dot" type="button" aria-label="Show Task008 step 459" data-frame-dot="6"></button>
+                  <button class="story-dot" type="button" aria-label="Show Task008 step 500" data-frame-dot="7"></button>
+                </div>
+                <button class="story-nav" type="button" data-frame-action="next">
+                  <span>Next</span>
+                  <span class="icon"><i class="fas fa-arrow-right"></i></span>
+                </button>
+              </div>
+            </div>
+
+            <div class="story-panel">
+              <div class="case-brief">
+                <span>Task setup</span>
+                <dl>
+                  <div>
+                    <dt>Context</dt>
+                    <dd>An overseas reimbursement claim requires ExpenseFlow fields plus Word attachments from bank, email, and guideline evidence.</dd>
+                  </div>
+                  <div>
+                    <dt>Goal</dt>
+                    <dd>Create and submit a complete claim with correct expense lines, dates, documents, and allocations.</dd>
+                  </div>
+                  <div>
+                    <dt>Design point</dt>
+                    <dd>The task checks whether evidence gathering turns into the target form workflow before the horizon runs out.</dd>
+                  </div>
+                </dl>
+              </div>
+              <div class="story-note is-active" data-frame-note="0">
+                <p class="note-index">Failure case · 1 / 8 · Step 65</p>
+                <h3>Attachment Rules Are Captured Correctly</h3>
+                <p class="case-detail"><span>Design point</span>The requirements are captured, but the action path is not bounded.</p>
+              </div>
+              <div class="story-note" data-frame-note="1">
+                <p class="note-index">Failure case · 2 / 8 · Step 120</p>
+                <h3>Evidence Search Keeps Expanding</h3>
+                <p class="case-detail"><span>Design point</span>Evidence search keeps expanding instead of converging on submission.</p>
+              </div>
+              <div class="story-note" data-frame-note="2">
+                <p class="note-index">Failure case · 3 / 8 · Step 220</p>
+                <h3>A Failed API Path Becomes a Tooling Detour</h3>
+                <p class="case-detail"><span>Design point</span>A failed shortcut turns into a document-generation detour.</p>
+              </div>
+              <div class="story-note" data-frame-note="3">
+                <p class="note-index">Failure case · 4 / 8 · Step 300</p>
+                <h3>The Checkpoint Arrives while Evidence Is Still Being Captured</h3>
+                <p class="case-detail"><span>Design point</span>At step 300, the agent is still collecting evidence rather than submitting.</p>
+              </div>
+              <div class="story-note" data-frame-note="4">
+                <p class="note-index">Failure case · 5 / 8 · Step 360</p>
+                <h3>Automation Stalls inside the Evidence Workflow</h3>
+                <p class="case-detail"><span>Design point</span>Tooling effort has become the task, displacing the form workflow.</p>
+              </div>
+              <div class="story-note" data-frame-note="5">
+                <p class="note-index">Failure case · 6 / 8 · Step 446</p>
+                <h3>The Target App Finally Becomes the Focus</h3>
+                <p class="case-detail"><span>Design point</span>The agent finally pivots to ExpenseFlow after most of the horizon is gone.</p>
+              </div>
+              <div class="story-note" data-frame-note="6">
+                <p class="note-index">Failure case · 7 / 8 · Step 459</p>
+                <h3>The Form Workflow Starts Too Late</h3>
+                <p class="case-detail"><span>Design point</span>The target workflow starts very late.</p>
+              </div>
+              <div class="story-note" data-frame-note="7">
+                <p class="note-index">Failure case · 8 / 8 · Step 500</p>
+                <h3>Deadline Verification Becomes UI Reverse Engineering</h3>
+                <p class="case-detail"><span>Design point</span>The final state is UI debugging, not a submitted reimbursement claim.</p>
+                <div class="case-summary">
+                  <span>Case summary</span>
+                  <p>The agent gathers requirements and evidence, but preparation consumes the horizon before submission.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-section" id="showcase">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered section-heading visual-heading">
+          <div class="column is-four-fifths">
+            <h2 class="title is-2">Trajectory Showcase</h2>
+          </div>
+        </div>
+        <div class="domain-showcase-full">
+          <div class="domain-showcase-rail" id="domain-showcase-rail" aria-label="Representative task trajectory screenshots">
+            <div class="domain-showcase-track" id="domain-showcase-track"></div>
+          </div>
+        </div>
+        <div class="has-text-centered showcase-link">
+          <a href="task-showcase/" class="button is-medium is-rounded is-dark">
+            <span class="icon"><i class="fas fa-images"></i></span>
+            <span>Task showcase</span>
+          </a>
+          <a href="task-trajectories/" class="button is-medium is-rounded is-light">
+            <span class="icon"><i class="fas fa-compass"></i></span>
+            <span>Explore all task trajectories</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-section reference-section more-research-section" id="more-research">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered section-heading visual-heading">
+          <div class="column is-four-fifths">
+            <h2 class="title is-2">More Research</h2>
+
+            <div class="research-list" aria-label="Related XLANG Lab computer-use agent research">
+              <article class="research-card">
+                <div class="research-card-header">
+                  <div class="research-card-copy">
+                    <h3><a href="https://cua-gym.xlang.ai/" target="_blank" rel="noopener noreferrer">CUA-Gym</a> <span class="research-venue">ArXiv 2026</span></h3>
+                    <p>Scaling verifiable training environments and tasks for computer-use agents.</p>
+                  </div>
+                  <div class="research-links">
+                    <a href="https://arxiv.org/abs/2605.25624" target="_blank" rel="noopener noreferrer"><span class="research-link-icon"><i class="ai ai-arxiv"></i></span>Paper</a>
+                    <a href="https://cua-gym.xlang.ai/" target="_blank" rel="noopener noreferrer"><span class="research-link-icon"><i class="fas fa-globe"></i></span>Project</a>
+                    <a href="https://github.com/xlang-ai/CUA-Gym" target="_blank" rel="noopener noreferrer"><span class="research-link-icon"><i class="fab fa-github"></i></span>Code</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="research-card">
+                <div class="research-card-header">
+                  <div class="research-card-copy">
+                    <h3><a href="https://arena.xlang.ai/" target="_blank" rel="noopener noreferrer">Computer Agent Arena</a> <span class="research-venue">ICLR 2026 (Top 3%)</span></h3>
+                    <p>Human-centered evaluation and analysis of computer-use agents.</p>
+                  </div>
+                  <div class="research-links">
+                    <a href="https://arena.xlang.ai/" target="_blank" rel="noopener noreferrer"><span class="research-link-icon"><i class="fas fa-globe"></i></span>Project</a>
+                    <a href="https://github.com/xlang-ai/computer-agent-arena" target="_blank" rel="noopener noreferrer"><span class="research-link-icon"><i class="fab fa-github"></i></span>Code</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="research-card">
+                <div class="research-card-header">
+                  <div class="research-card-copy">
+                    <h3><a href="https://opencua.xlang.ai/" target="_blank" rel="noopener noreferrer">OpenCUA</a> <span class="research-venue">NeurIPS 2025 Spotlight</span></h3>
+                    <p>Open foundations for scaling computer-use agent data, models, and evaluation.</p>
+                  </div>
+                  <div class="research-links">
+                    <a href="https://arxiv.org/abs/2508.09123" target="_blank" rel="noopener noreferrer"><span class="research-link-icon"><i class="ai ai-arxiv"></i></span>Paper</a>
+                    <a href="https://opencua.xlang.ai/" target="_blank" rel="noopener noreferrer"><span class="research-link-icon"><i class="fas fa-globe"></i></span>Project</a>
+                    <a href="https://github.com/xlang-ai/OpenCUA" target="_blank" rel="noopener noreferrer"><span class="research-link-icon"><i class="fab fa-github"></i></span>Code</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="research-card">
+                <div class="research-card-header">
+                  <div class="research-card-copy">
+                    <h3><a href="https://osworld-grounding.github.io/" target="_blank" rel="noopener noreferrer">Jedi / OSWorld-G</a> <span class="research-venue">NeurIPS 2025 Spotlight</span></h3>
+                    <p>Scaling computer-use grounding via user interface decomposition and synthesis.</p>
+                  </div>
+                  <div class="research-links">
+                    <a href="https://arxiv.org/abs/2505.13227" target="_blank" rel="noopener noreferrer"><span class="research-link-icon"><i class="ai ai-arxiv"></i></span>Paper</a>
+                    <a href="https://osworld-grounding.github.io/" target="_blank" rel="noopener noreferrer"><span class="research-link-icon"><i class="fas fa-globe"></i></span>Project</a>
+                    <a href="https://github.com/xlang-ai/OSWorld-G" target="_blank" rel="noopener noreferrer"><span class="research-link-icon"><i class="fab fa-github"></i></span>Code</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="research-card">
+                <div class="research-card-header">
+                  <div class="research-card-copy">
+                    <h3><a href="https://aguvis-project.github.io/" target="_blank" rel="noopener noreferrer">Aguvis</a> <span class="research-venue">ICML 2025</span></h3>
+                    <p>Unified pure-vision agents for autonomous GUI interaction.</p>
+                  </div>
+                  <div class="research-links">
+                    <a href="https://arxiv.org/abs/2412.04454" target="_blank" rel="noopener noreferrer"><span class="research-link-icon"><i class="ai ai-arxiv"></i></span>Paper</a>
+                    <a href="https://aguvis-project.github.io/" target="_blank" rel="noopener noreferrer"><span class="research-link-icon"><i class="fas fa-globe"></i></span>Project</a>
+                    <a href="https://github.com/xlang-ai/aguvis" target="_blank" rel="noopener noreferrer"><span class="research-link-icon"><i class="fab fa-github"></i></span>Code</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="research-card">
+                <div class="research-card-header">
+                  <div class="research-card-copy">
+                    <h3><a href="https://spider2-v.github.io/" target="_blank" rel="noopener noreferrer">Spider2-V</a> <span class="research-venue">NeurIPS 2024</span></h3>
+                    <p>Measuring multimodal agents on data science and engineering workflows.</p>
+                  </div>
+                  <div class="research-links">
+                    <a href="https://arxiv.org/abs/2407.10956" target="_blank" rel="noopener noreferrer"><span class="research-link-icon"><i class="ai ai-arxiv"></i></span>Paper</a>
+                    <a href="https://spider2-v.github.io/" target="_blank" rel="noopener noreferrer"><span class="research-link-icon"><i class="fas fa-globe"></i></span>Project</a>
+                    <a href="https://github.com/xlang-ai/Spider2-V" target="_blank" rel="noopener noreferrer"><span class="research-link-icon"><i class="fab fa-github"></i></span>Code</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="research-card">
+                <div class="research-card-header">
+                  <div class="research-card-copy">
+                    <h3><a href="https://osworld-v1.xlang.ai/" target="_blank" rel="noopener noreferrer">OSWorld</a> <span class="research-venue">NeurIPS 2024</span></h3>
+                    <p>Benchmarking multimodal agents for open-ended tasks in real computer environments.</p>
+                  </div>
+                  <div class="research-links">
+                    <a href="https://arxiv.org/abs/2404.07972" target="_blank" rel="noopener noreferrer"><span class="research-link-icon"><i class="ai ai-arxiv"></i></span>Paper</a>
+                    <a href="https://osworld-v1.xlang.ai/" target="_blank" rel="noopener noreferrer"><span class="research-link-icon"><i class="fas fa-globe"></i></span>Project</a>
+                    <a href="https://github.com/xlang-ai/OSWorld" target="_blank" rel="noopener noreferrer"><span class="research-link-icon"><i class="fab fa-github"></i></span>Code</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-section reference-section" id="acknowledgments">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered section-heading visual-heading">
+          <div class="column is-four-fifths">
+            <h2 class="title is-2">Acknowledgments</h2>
+            <div class="contribution-copy">
+              <p>
+                We thank Cheng Chang,
+                <a href="https://dawnsong.io/" target="_blank" rel="noopener noreferrer">Dawn Song</a>,
+                <a href="https://chendl02.github.io/" target="_blank" rel="noopener noreferrer">Delin Chen</a>,
+                <a href="https://junliwang.tech/" target="_blank" rel="noopener noreferrer">Junli Wang</a>,
+                Ke Xu,
+                <a href="https://github.com/ArcaLunar" target="_blank" rel="noopener noreferrer">Qiyue Xu</a>,
+                <a href="https://github.com/carol-xrl" target="_blank" rel="noopener noreferrer">Ruiling Xu</a>,
+                <a href="https://github.com/Wangshengwei666" target="_blank" rel="noopener noreferrer">Shengwei Wang</a>,
+                <a href="https://github.com/Karis004" target="_blank" rel="noopener noreferrer">Yanzhuo Lin</a>,
+                <a href="https://github.com/JamesCai23" target="_blank" rel="noopener noreferrer">Yimo Cai</a>,
+                <a href="https://sunyiyou.github.io/" target="_blank" rel="noopener noreferrer">Yiyong Sun</a>,
+                and Yutong Yao for their helpful feedback and for
+                contributing materials to this benchmark. We thank
+                <a href="https://snorkel.ai/" target="_blank" rel="noopener noreferrer">Snorkel AI</a>,
+                our research &amp; data partner, for their support of this work. We gratefully acknowledge
+                support from the
+                <a href="https://research.google/" target="_blank" rel="noopener noreferrer">Google Research</a>
+                gift fund.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-section reference-section" id="citation">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered section-heading visual-heading">
+          <div class="column is-four-fifths">
+            <h2 class="title is-2">Citation</h2>
+            <pre class="bibtex-block"><code>@misc{yuan2026osworld20benchmarkingcomputeruse,
+      title={OSWorld2.0: Benchmarking Computer Use Agents on Long-Horizon Real-World Tasks},
+      author={Mengqi Yuan and Zilong Zhou and Xinzhuang Xiong and Weiming Wu and Jiayang Sun and Jiamin Song and Kaiqian Cui and Bowen Wang and Haoyuan Wu and Yitong Li and Dunjie Lu and Haikong Lu and Qi Zhen and Xinyuan Wang and Jiaqi Deng and Yuhao Yang and Cheng Chen and Boyuan Zheng and Alex Su and Xiao Yu and Hao Zou and Saaket Agashe and Xing Han Lu and Manpreet Kaur and Zhengyang Qi and Vincent Sunn Chen and Frederic Sala and Dayiheng Liu and Junyang Lin and Zhou Yu and Yu Su and Siva Reddy and Xin Eric Wang and Peng Qi and Tianbao Xie and Tao Yu},
+      year={2026},
+      eprint={2606.29537},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2606.29537},
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer footer-strip" aria-hidden="true"></footer>
+</body>
+
+</html>

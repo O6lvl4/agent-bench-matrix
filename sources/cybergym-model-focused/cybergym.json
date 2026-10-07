@@ -62,29 +62,30 @@
     },
     {
       "agent": "Claude Code",
-      "model": "Feyospace-v0",
-      "model_release_date": "2026-09-08",
+      "model": "Feyospace-v1.1 (finetuned from Qwen3.8-27B)",
+      "model_release_date": "2026-09-23",
       "include_in_plot": true,
       "icon": "/assets/images/cybergym/feyospace.png",
-      "score_10": 0.5116,
-      "date": "2026-09-08",
+      "score_10": 0.8441,
+      "date": "2026-09-23",
       "source": "Vera Praxis Lab",
-      "source_url": "https://arxiv.org/abs/2609.08418",
+      "source_url": "https://verapraxis.ai/en/research/feyospace-v1-1",
       "trials": 1,
-      "focus": "model"
-    },
-    {
-      "agent": "Claude Code",
-      "model": "Feyospace-v1",
-      "model_release_date": "2026-09-08",
-      "include_in_plot": true,
-      "icon": "/assets/images/cybergym/feyospace.png",
-      "score_10": 0.6304,
-      "date": "2026-09-08",
-      "source": "Vera Praxis Lab",
-      "source_url": "https://arxiv.org/abs/2609.08418",
-      "trials": 1,
-      "focus": "model"
+      "focus": "model",
+      "subRows": [
+        {
+          "model": "Feyospace-v1",
+          "score_10": 0.6304,
+          "date": "2026-09-08",
+          "source_url": "https://arxiv.org/abs/2609.08418"
+        },
+        {
+          "model": "Feyospace-v0",
+          "score_10": 0.5116,
+          "date": "2026-09-08",
+          "source_url": "https://arxiv.org/abs/2609.08418"
+        }
+      ]
     },
     {
       "agent": "Claude Code",
@@ -173,6 +174,46 @@
       "focus": "agent"
     },
     {
+      "agent": "PwnBot",
+      "model": "DeepSeek-V4-Flash",
+      "model_release_date": "2026-07-31",
+      "include_in_plot": true,
+      "plot_links": [
+        "DeepSeek-V4-Flash"
+      ],
+      "icon": "/assets/images/cybergym/pwnbot.png",
+      "features": [
+        "dynamic (uses cleaned vulnerable Docker image)",
+        "test-time mem. (with a test-time-updated knowledge base)"
+      ],
+      "score_10": 0.931,
+      "date": "2026-09-27",
+      "source": "FUNNY_04",
+      "source_url": "https://github.com/CyberLadX64/PwnBot",
+      "trials": 1,
+      "focus": "agent"
+    },
+    {
+      "agent": "OrcaCyber",
+      "model": "Multi-model (DeepSeek-V4-Flash, OrcaCyber-Zero-1.0)",
+      "model_release_date": "2026-07-31",
+      "include_in_plot": true,
+      "plot_links": [
+        "DeepSeek-V4-Flash"
+      ],
+      "icon": "/assets/images/cybergym/orcacyber.png",
+      "features": [
+        "Multi-model",
+        "dynamic (uses cleaned vulnerable Docker image)"
+      ],
+      "score_10": 0.9801,
+      "date": "2026-09-14",
+      "source": "Continuum AI",
+      "source_url": "https://github.com/Continuum-AI-Corp/OrcaCyber-Harness-CyberGym-Technical-Report",
+      "trials": 1,
+      "focus": "agent"
+    },
+    {
       "agent": "RedbudAI",
       "model": "GLM-5.2",
       "model_release_date": "2026-08-10",
@@ -207,11 +248,7 @@
       "trials": 1,
       "focus": "agent",
       "subRows": [
-        {
-          "model": "GLM-5.2",
-          "score_10": 0.9084,
-          "date": "2026-08-03"
-        }
+        { "model": "GLM-5.2", "score_10": 0.9084, "date": "2026-08-03" }
       ]
     },
     {
@@ -220,9 +257,7 @@
       "model_release_date": "2026-08-14",
       "include_in_plot": true,
       "icon": "/assets/images/cybergym/nsfocus.png",
-      "features": [
-        "dynamic (uses cleaned vulnerable Docker image)"
-      ],
+      "features": ["dynamic (uses cleaned vulnerable Docker image)"],
       "score_10": 0.9502,
       "date": "2026-08-13",
       "source": "NSFOCUS",
@@ -272,22 +307,34 @@
     },
     {
       "agent": "VARAS-OneMind \\(智安·宇盾\\)",
-      "model": "GPT-5.4",
-      "model_release_date": "2026-03-05",
+      "model": "DeepSeek-V4-Flash",
+      "model_release_date": "2026-07-31",
       "include_in_plot": true,
       "plot_links": [
-        "GPT-5.4"
+        "DeepSeek-V4-Flash"
       ],
       "icon": "/assets/images/cybergym/varas.png",
       "features": [
+        "dynamic (uses cleaned vulnerable Docker image)",
         "test-time mem. (with a test-time-updated knowledge base)"
       ],
-      "score_10": 0.7379,
-      "date": "2026-08-14",
+      "score_10": 0.9695,
+      "date": "2026-09-16",
       "source": "VARAS",
-      "source_url": "https://varas-onemind.github.io/posts/cybergym/",
+      "source_url": "https://varas-onemind.github.io/posts/cybergym_v2/",
       "trials": 1,
-      "focus": "agent"
+      "focus": "agent",
+      "subRows": [
+        {
+          "model": "GPT-5.4",
+          "score_10": 0.7379,
+          "date": "2026-08-14",
+          "source_url": "https://varas-onemind.github.io/posts/cybergym/",
+          "features": [
+            "test-time mem. (with a test-time-updated knowledge base)"
+          ]
+        }
+      ]
     },
     {
       "agent": "Gusion",
@@ -405,22 +452,26 @@
     },
     {
       "agent": "RO0T Agent",
-      "model": "DeepSeek-V4-Flash",
-      "model_release_date": "2026-07-31",
+      "model": "DeepSeek-V4.1-Flash",
+      "model_release_date": "2026-09-18",
       "include_in_plot": true,
-      "plot_links": [
-        "DeepSeek-V4-Flash"
-      ],
       "icon": "/assets/images/cybergym/root-lab.png",
       "features": [
         "dynamic (uses cleaned vulnerable Docker image)"
       ],
-      "score_10": 0.9416,
-      "date": "2026-08-26",
+      "score_10": 0.977,
+      "date": "2026-09-18",
       "source": "RO0T Lab",
       "source_url": "https://github.com/RO0TLab/RO0T-Agent/blob/main/README.md",
       "trials": 1,
-      "focus": "agent"
+      "focus": "agent",
+      "subRows": [
+        {
+          "model": "DeepSeek-V4-Flash",
+          "score_10": 0.9416,
+          "date": "2026-08-26"
+        }
+      ]
     },
     {
       "agent": "DeepSeek Agent",

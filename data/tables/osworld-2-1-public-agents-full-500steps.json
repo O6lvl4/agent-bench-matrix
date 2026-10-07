@@ -1,0 +1,51 @@
+{
+  "id": "osworld-2-1-public-agents-full-500steps",
+  "family": "osworld-2",
+  "name": "OSWorld 2.0 (release v2.1, public agents from All tab, full set, 500 steps)",
+  "board": "osworld-v2.xlang.ai",
+  "category": "computer-use",
+  "measures_ja": "熟練者でも1時間以上かかる長い実務ワークフロー(自前ホストのWebサイト・オフィスソフト・複数アプリ連携)を端から端まで完遂できるか。",
+  "tasks": 108,
+  "tasks_note": "公開JSONの taskCount。All タブのうち modelType=agent の行だけを抽出した別表。",
+  "metric": "Binary accuracy (%)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "公式サイトの All タブに掲載された外部エージェントの結果。modelType=agent の行のみ。Foundation E2E GUI の公式実行条件とは別扱いで、掲載行には official 検証フラグが無いため verified=null。",
+  "source": "https://osworld-v2.xlang.ai/",
+  "fetched": [
+    "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+    "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+    "https://osworld-v2.xlang.ai/"
+  ],
+  "retrieved": "2026-10-07",
+  "newest_row_date": null,
+  "snapshot": "sources/osworld-2-1-public-agents-full-500steps/official-results.json",
+  "paper": "https://arxiv.org/abs/2606.29537",
+  "repo": "https://github.com/xlang-ai/OSWorld-V2",
+  "notes_ja": "releaseVersion=v2.1・datasetScope=full・stepBudget=500 に限定。専用の agent タブがあるわけではなく、All タブからエージェント行だけを分離している。rank は同条件の All タブを Binary accuracy 降順にした順位を保持する。basePlannerModel はプランナーの開示でありシステム全体の単一モデル構成を保証しないため、model_raw に原文を保持し model_ids=[] としてモデル別マトリクス・推定へ入れない。行の日付・検証マーク・オープン性は非掲載。toolSetting は空文字のまま、standard と推定しない。costPerTaskUsd と estimatedCostUsd を別々に保持。公開JSONの updatedAt は 2026-10-05。再現用リンクは原データに保持。",
+  "rows": [
+    {
+      "rank": 2,
+      "system": "Sai w/ Claude Opus 5",
+      "agent": null,
+      "model_raw": [
+        "anthropic/claude-opus-5"
+      ],
+      "model_ids": [],
+      "model_config": "model_type=agent; model_scope=all; base_planner_model=anthropic/claude-opus-5; reasoning=max; tool_setting=; step_budget=500; release=v2.1; dataset_scope=full",
+      "score": 41.67,
+      "score_extra": {
+        "partial_score": 79.38,
+        "step_budget": 500,
+        "task_count": 108,
+        "cost_per_task_usd": 14.34,
+        "estimated_cost_usd_total": 1548.72
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "Simular",
+      "row_url": "https://huggingface.co/datasets/simular-ai/sai-osworld-v21-reference-runs"
+    }
+  ]
+}

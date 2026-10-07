@@ -1,7 +1,7 @@
 {
   "id": "osworld-2-1-offline-500steps",
   "family": "osworld-2",
-  "name": "OSWorld 2.0 (release v2.1, offline set, 500 steps)",
+  "name": "OSWorld 2.0 (release v2.1, Foundation E2E GUI, offline set, 500 steps)",
   "board": "osworld-v2.xlang.ai",
   "category": "computer-use",
   "measures_ja": "熟練者でも1時間以上かかる長い実務ワークフロー(自前ホストのWebサイト・オフィスソフト・複数アプリ連携)を端から端まで完遂できるか。",
@@ -10,18 +10,18 @@
   "metric": "Binary accuracy (%)",
   "unit": "%",
   "higher_is_better": true,
-  "harness_ja": "OSWorld 2.0 チームが公式に実行した結果(official)。ステップ上限・推論量・ツール設定(standard / batch tool)は行ごとに異なる。",
+  "harness_ja": "公式ボードの Foundation E2E GUI タブに対応する modelType=e2e・official=true の行だけ。OSWorld 2.0 チームの公式実行。推論量・ツール設定は行ごとに異なる。All タブにのみ載る外部エージェントの結果は含めない。",
   "source": "https://osworld-v2.xlang.ai/",
   "fetched": [
     "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
     "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1"
   ],
-  "retrieved": "2026-10-05",
+  "retrieved": "2026-10-07",
   "newest_row_date": null,
   "snapshot": "sources/osworld-2-1-offline-500steps/official-results.json",
   "paper": "https://arxiv.org/abs/2606.29537",
   "repo": "https://github.com/xlang-ai/OSWorld-V2",
-  "notes_ja": "公式JSONの releaseVersion=v2.1 の行だけ。2.0 の行と混在させない。行の日付は無く、updatedAt は 2026-09-17。output_tokens_per_task は1タスクあたりの出力トークン数。",
+  "notes_ja": "公式JSONの releaseVersion=v2.1 の行だけ。2.0 の行と混在させない。行の日付は無く、updatedAt は 2026-10-05。output_tokens_per_task は1タスクあたりの出力トークン数。 2026-10-07取得時点で従来の全50行に modelType=e2e が明示されたが、数値と順位は不変。外部エージェント行は All タブ由来の別表に保存。",
   "rows": [
     {
       "rank": 1,

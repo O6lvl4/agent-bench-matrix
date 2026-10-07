@@ -1,0 +1,256 @@
+{
+  "retrieved": "2026-10-07",
+  "gaps": [
+    {
+      "id": "bountybench",
+      "status": "not-rechecked-in-this-run",
+      "sources": [],
+      "prior_gap_preserved": true
+    },
+    {
+      "id": "browsecomp-zh",
+      "status": "responses-rechecked-existing-exclusion-retained",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/PALIN2018/BrowseComp-ZH/main/README.md",
+          "http_status": 200,
+          "error": null,
+          "bytes": 8238,
+          "sha256": "bd8d592e740bd1d1bd4af1a7f8f68ce0ea7eb3479d60e84b2e76810650d69a33"
+        }
+      ],
+      "prior_gap_preserved": true
+    },
+    {
+      "id": "browsecomp",
+      "status": "reason-updated",
+      "sources": [
+        {
+          "url": "https://openai.com/index/browsecomp/",
+          "http_status": 200,
+          "error": null,
+          "bytes": 503533,
+          "sha256": "927efef6da7016d87f5be1246a426fc20e24ca16c6a3e736c431fe6239baacbe"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/openai/simple-evals/main/README.md",
+          "http_status": 200,
+          "error": null,
+          "bytes": 13160,
+          "sha256": "d9647c4a0e34cd9b2b528ff6986141734aac6f5f2f18a068eeadb2af0b29786f"
+        },
+        {
+          "url": "https://www.kaggle.com/api/i/benchmarks.BenchmarkService/GetBenchmarkLeaderboard",
+          "http_status": 200,
+          "error": null,
+          "bytes": 59378,
+          "sha256": "4e3971559f8f24522b19e1992c3d782fc67e6aeb8d71b81f9c473f8e71e93ae1"
+        }
+      ],
+      "prior_gap_preserved": false
+    },
+    {
+      "id": "computer-agent-arena",
+      "status": "reason-updated",
+      "sources": [
+        {
+          "url": "https://arena.xlang.ai/leaderboard",
+          "http_status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://arena.xlang.ai/",
+          "http_status": 200,
+          "error": null,
+          "bytes": 455,
+          "sha256": "caa18e67a3da49febca2eec306912849d7d0ea370704b683a081118e7e7306c5"
+        }
+      ],
+      "prior_gap_preserved": false
+    },
+    {
+      "id": "core-bench",
+      "status": "not-rechecked-in-this-run",
+      "sources": [],
+      "prior_gap_preserved": true
+    },
+    {
+      "id": "crmarena",
+      "status": "not-rechecked-in-this-run",
+      "sources": [],
+      "prior_gap_preserved": true
+    },
+    {
+      "id": "gaia-validation",
+      "status": "not-rechecked-in-this-run",
+      "sources": [],
+      "prior_gap_preserved": true
+    },
+    {
+      "id": "galileo-agent-leaderboard-v2",
+      "status": "not-rechecked-in-this-run",
+      "sources": [],
+      "prior_gap_preserved": true
+    },
+    {
+      "id": "harbor-index",
+      "status": "not-rechecked-in-this-run",
+      "sources": [],
+      "prior_gap_preserved": true
+    },
+    {
+      "id": "hud-osworld-verified",
+      "status": "responses-rechecked-existing-exclusion-retained",
+      "sources": [
+        {
+          "url": "https://www.hud.ai/leaderboards",
+          "http_status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www.hud.ai/",
+          "http_status": 200,
+          "error": null,
+          "bytes": 148534,
+          "sha256": "82ddca04f7a9e45a492ba1010218b254e465db51c76b769ff213785dd46d842f"
+        }
+      ],
+      "prior_gap_preserved": true
+    },
+    {
+      "id": "livemcpbench",
+      "status": "not-rechecked-in-this-run",
+      "sources": [],
+      "prior_gap_preserved": true
+    },
+    {
+      "id": "macosworld",
+      "status": "responses-rechecked-existing-exclusion-retained",
+      "sources": [
+        {
+          "url": "https://macos-world.github.io/",
+          "http_status": 200,
+          "error": null,
+          "bytes": 18988,
+          "sha256": "634111c7fe4a8833a6d117f87def535dc8e2ca263b2f7fb0b839b73cb957e00c"
+        }
+      ],
+      "prior_gap_preserved": true
+    },
+    {
+      "id": "re-bench",
+      "status": "not-rechecked-in-this-run",
+      "sources": [],
+      "prior_gap_preserved": true
+    },
+    {
+      "id": "screensuite",
+      "status": "responses-rechecked-existing-exclusion-retained",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/huggingface/screensuite/main/README.md",
+          "http_status": 200,
+          "error": null,
+          "bytes": 9359,
+          "sha256": "edcaa6f8355be6a8774ebeeb9bdb67648e8eeddb813d6be0fa2433116d9def36"
+        }
+      ],
+      "prior_gap_preserved": true
+    },
+    {
+      "id": "sheetbench-50",
+      "status": "partially-rechecked",
+      "sources": [
+        {
+          "url": "https://www.hud.ai/leaderboards",
+          "http_status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ],
+      "prior_gap_preserved": true
+    },
+    {
+      "id": "st-webagentbench",
+      "status": "responses-rechecked-existing-exclusion-retained",
+      "sources": [
+        {
+          "url": "https://huggingface.co/api/spaces/ST-WebAgentBench/st-webagentbench-leaderboard",
+          "http_status": 200,
+          "error": null,
+          "bytes": 3315,
+          "sha256": "0e134a3619178722d22f3efb361b16cee04fb537c250ce7d2871b3eb0ca45e09"
+        },
+        {
+          "url": "https://st-webagentbench-st-webagentbench-leaderboard.hf.space/config",
+          "http_status": 503,
+          "error": "HTTP Error 503: Service Unavailable"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ST-WebAgentBench/st-webagentbench-leaderboard/raw/main/app.py",
+          "http_status": 200,
+          "error": null,
+          "bytes": 143859,
+          "sha256": "20537065ccf1e15a61708fc73e40c77d7f05e2e4d0ad6ead05801cf390320e26"
+        },
+        {
+          "url": "https://huggingface.co/api/datasets/ST-WebAgentBench/st-webagentbench-data",
+          "http_status": 401,
+          "error": "HTTP Error 401: Unauthorized"
+        }
+      ],
+      "prior_gap_preserved": true
+    },
+    {
+      "id": "swe-bench-pro-public-deprecated",
+      "status": "not-rechecked-in-this-run",
+      "sources": [],
+      "prior_gap_preserved": true
+    },
+    {
+      "id": "terminal-bench-1-0",
+      "status": "not-rechecked-in-this-run",
+      "sources": [],
+      "prior_gap_preserved": true
+    },
+    {
+      "id": "terminal-bench-challenges",
+      "status": "not-rechecked-in-this-run",
+      "sources": [],
+      "prior_gap_preserved": true
+    },
+    {
+      "id": "vending-bench-arena",
+      "status": "not-rechecked-in-this-run",
+      "sources": [],
+      "prior_gap_preserved": true
+    },
+    {
+      "id": "webvoyager",
+      "status": "responses-rechecked-existing-exclusion-retained",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/MinorJerry/WebVoyager/main/README.md",
+          "http_status": 200,
+          "error": null,
+          "bytes": 10723,
+          "sha256": "b5523941b2773634fdcf359b5b89bf0aca589f33ad9db30692c8b1912ed5dda5"
+        }
+      ],
+      "prior_gap_preserved": true
+    },
+    {
+      "id": "windows-agent-arena",
+      "status": "responses-rechecked-existing-exclusion-retained",
+      "sources": [
+        {
+          "url": "https://microsoft.github.io/WindowsAgentArena/",
+          "http_status": 200,
+          "error": null,
+          "bytes": 23885,
+          "sha256": "10cd8fca042d2b9ebac114913e40598ca8bb0b50bf0df89f1306cc505f02ee6c"
+        }
+      ],
+      "prior_gap_preserved": true
+    }
+  ]
+}

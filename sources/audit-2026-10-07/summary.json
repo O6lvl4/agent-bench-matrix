@@ -1,0 +1,928 @@
+{
+  "retrieved": "2026-10-07",
+  "base_commit": "b02f0c0505f70d1a8a71456d2615a0ba299e506a",
+  "completion": "partial-public-source-refresh",
+  "tables": 164,
+  "rows": 4377,
+  "models": 503,
+  "gaps": 23,
+  "categories": {
+    "coding": 50,
+    "computer-use": 20,
+    "tool-use": 32,
+    "web": 23,
+    "research": 9,
+    "security": 13,
+    "long-horizon": 7,
+    "general": 5,
+    "terminal": 5
+  },
+  "incomplete_existing_table_count": 40,
+  "completed_existing_table_count": 123,
+  "new_tables": [
+    "osworld-2-1-public-agents-full-500steps"
+  ],
+  "claims_numeric_cells_checked": 55,
+  "claims_figures_checked": 17,
+  "changed_tables": [
+    {
+      "id": "androidworld",
+      "rows_before": 47,
+      "rows_after": 47,
+      "rows_changed": true,
+      "category": "computer-use"
+    },
+    {
+      "id": "cybergym-agent-focused",
+      "rows_before": 35,
+      "rows_after": 39,
+      "rows_changed": true,
+      "category": "security"
+    },
+    {
+      "id": "cybergym-e2e",
+      "rows_before": 9,
+      "rows_after": 11,
+      "rows_changed": true,
+      "category": "security"
+    },
+    {
+      "id": "cybergym-model-focused",
+      "rows_before": 45,
+      "rows_after": 46,
+      "rows_changed": true,
+      "category": "security"
+    },
+    {
+      "id": "osworld-2-1-full-500steps",
+      "rows_before": 5,
+      "rows_after": 5,
+      "rows_changed": false,
+      "category": "computer-use"
+    },
+    {
+      "id": "osworld-2-1-offline-500steps",
+      "rows_before": 5,
+      "rows_after": 5,
+      "rows_changed": false,
+      "category": "computer-use"
+    },
+    {
+      "id": "osworld-2-1-public-agents-full-500steps",
+      "rows_before": 0,
+      "rows_after": 1,
+      "new": true,
+      "category": "computer-use"
+    },
+    {
+      "id": "osworld-2-full-150steps",
+      "rows_before": 6,
+      "rows_after": 6,
+      "rows_changed": false,
+      "category": "computer-use"
+    },
+    {
+      "id": "osworld-2-full-300steps",
+      "rows_before": 7,
+      "rows_after": 7,
+      "rows_changed": false,
+      "category": "computer-use"
+    },
+    {
+      "id": "osworld-2-full-500steps",
+      "rows_before": 16,
+      "rows_after": 16,
+      "rows_changed": false,
+      "category": "computer-use"
+    },
+    {
+      "id": "osworld-2-offline-500steps",
+      "rows_before": 11,
+      "rows_after": 11,
+      "rows_changed": false,
+      "category": "computer-use"
+    }
+  ],
+  "snapshots": [
+    {
+      "table": "aider-code-editing",
+      "path": "sources/aider-code-editing/edit_leaderboard.yml",
+      "sha256": "4c437c9e22c7fff8b0d61cb8fd4bf9bdf44370783ac9b00a840a80c81319d36e"
+    },
+    {
+      "table": "aider-polyglot",
+      "path": "sources/aider-polyglot/polyglot_leaderboard.yml",
+      "sha256": "85a50b25953512d18ba4bb0c23c0b8e626fcf9a5b52d287644b8a0b44b9535de"
+    },
+    {
+      "table": "aider-refactoring",
+      "path": "sources/aider-refactoring/refactor_leaderboard.yml",
+      "sha256": "e01b88adf869b88501d48f9b041dbbb37e77e464e1bed886bb62f6b335c60561"
+    },
+    {
+      "table": "algotune",
+      "path": "sources/algotune/leaderboard_table.html",
+      "sha256": "f259f681a94fdef8c3b242d9c5622d78e02cc25086b70201399ff136696d726c"
+    },
+    {
+      "table": "androidworld-mobileminiwob",
+      "path": "sources/androidworld-mobileminiwob/androidworld_gid1078963525.csv",
+      "sha256": "d022affe1a8ec99cfc940bf645e85a089b2aa3afc123d59dafc3d8fa021c0b22"
+    },
+    {
+      "table": "androidworld",
+      "path": "sources/androidworld/androidworld_gid0.csv",
+      "sha256": "d8364afa273b33164fd01e95fa2de4698c7ce9d18a14067ad4d3a0d28904d97c"
+    },
+    {
+      "table": "apex-agents-corporate-lawyer",
+      "path": "sources/apex-agents-corporate-lawyer/leaderboard_data.json",
+      "sha256": "3e1ec6cf0efd5bbf299d6d74da8baf3ca3d8e55142c80715da4cbca74408b260"
+    },
+    {
+      "table": "apex-agents-investment-banking",
+      "path": "sources/apex-agents-investment-banking/leaderboard_data.json",
+      "sha256": "87e2de6046b740b62cf8e5185f643371fd654597eb49d4eb278e511d154f6f06"
+    },
+    {
+      "table": "apex-agents-management-consultant",
+      "path": "sources/apex-agents-management-consultant/leaderboard_data.json",
+      "sha256": "40c94e667433c27cdcf4f8a409eec254c9d204c5efa95b793877e7fa8ec9526c"
+    },
+    {
+      "table": "apex-agents",
+      "path": "sources/apex-agents/leaderboard_data.json",
+      "sha256": "176b0251db8f8e17d90fc805654aefd0e0dae6a34b7b3791c2237d8eab2a15de"
+    },
+    {
+      "table": "appworld-test-challenge",
+      "path": "sources/appworld-test-challenge/leaderboard.json",
+      "sha256": "5dc72e48e619f483af9035413bccb50e68f63446b6f84371f6e2989e595dc49d"
+    },
+    {
+      "table": "appworld-test-normal",
+      "path": "sources/appworld-test-normal/leaderboard.json",
+      "sha256": "5dc72e48e619f483af9035413bccb50e68f63446b6f84371f6e2989e595dc49d"
+    },
+    {
+      "table": "assistantbench",
+      "path": "sources/assistantbench/board_test.json",
+      "sha256": "5c9570475c21aa4fe10a412a2430560b32687c18bc2a75265957b2aa25a5c4d3"
+    },
+    {
+      "table": "bearcubs",
+      "path": "sources/bearcubs/bear_cubs_leaderboard.json",
+      "sha256": "7d9455bc007bf667a66515f9f1ef9c70ea018376e8d5c7d90d9abcefa121a250"
+    },
+    {
+      "table": "bfcl-v4",
+      "path": "sources/bfcl-v4/data_overall.csv",
+      "sha256": "ede5081a24bc5ac7f9b3b09a52af6bcfcd35aa0f1709239fed979db77a8159a6"
+    },
+    {
+      "table": "browsecomp-kaggle",
+      "path": "sources/browsecomp-kaggle/GetBenchmarkLeaderboard.json",
+      "sha256": "8ae67337cd1d7195b9b2a84115cbc737205431329a490123b5fa581383e47dd2"
+    },
+    {
+      "table": "browsecomp-plus",
+      "path": "sources/browsecomp-plus/leaderboard.json",
+      "sha256": "f351fc9555d22d3014d71b03f14d2e479707b12c11622ee77ac0868e5e74d116"
+    },
+    {
+      "table": "browsergym-assistantbench",
+      "path": "sources/browsergym-assistantbench/results_assistantbench.json",
+      "sha256": "66e6aa0bd9cea4416e460b0e5784ef9745ad61f71d3bbf17c709961a6d64b1b6"
+    },
+    {
+      "table": "browsergym-miniwob",
+      "path": "sources/browsergym-miniwob/results_miniwob.json",
+      "sha256": "c74b5535b85351a204ecb22eeb777d1c4428d3301db0679c20c9b697cf7d3e88"
+    },
+    {
+      "table": "browsergym-visualwebarena",
+      "path": "sources/browsergym-visualwebarena/results_visualwebarena.json",
+      "sha256": "0a13af207a9e87976907b52947f90db46f82382aac07e1e3f113a5a8d898b6dc"
+    },
+    {
+      "table": "browsergym-webarena",
+      "path": "sources/browsergym-webarena/results_webarena.json",
+      "sha256": "d9b567c3564a78f00c425e4f0f967e6279f5a17188861424940d423ac2d5487b"
+    },
+    {
+      "table": "browsergym-weblinx",
+      "path": "sources/browsergym-weblinx/results_weblinx.json",
+      "sha256": "7d3404018d737e90e5b925beb80971ed5ae5adda1a5fba1db81c892bd01ee4f6"
+    },
+    {
+      "table": "browsergym-workarena-l1",
+      "path": "sources/browsergym-workarena-l1/results_workarena-l1.json",
+      "sha256": "7e7f06934c0ce79051ec8ba928d34ebdd228f005436209335940f2c3f42369c6"
+    },
+    {
+      "table": "browsergym-workarena-l2",
+      "path": "sources/browsergym-workarena-l2/results_workarena-l2.json",
+      "sha256": "eda864ede05026f850cbc3802763bc9bf51f86ffd2abc2c5572e49584375f086"
+    },
+    {
+      "table": "browsergym-workarena-l3",
+      "path": "sources/browsergym-workarena-l3/results_workarena-l3.json",
+      "sha256": "1958bf5b6105c480905f8a93b6c89dead871fd4c2dc319c98daf4a7dddb18601"
+    },
+    {
+      "table": "cad-bench-v2",
+      "path": "sources/cad-bench-v2/leaderboard.json",
+      "sha256": "00eeb4dcbde17fdca1c29a88f4144f7d7b909ba7ee26fa54c0d44418b256a7f5"
+    },
+    {
+      "table": "codeclash",
+      "path": "sources/codeclash/fullLeaderboardData.json",
+      "sha256": "5679d86f6bc031af156af20b6d1b4963c632c1fb34356d90fd612ac0cb8a81b6"
+    },
+    {
+      "table": "commit0-all",
+      "path": "sources/commit0-all/leaderboard_tables.html",
+      "sha256": "c483e7d76047c368b1a22c945d3f94ff70a11229fe410c08b54abd7e57faf3bb"
+    },
+    {
+      "table": "commit0-lite",
+      "path": "sources/commit0-lite/leaderboard_tables.html",
+      "sha256": "c483e7d76047c368b1a22c945d3f94ff70a11229fe410c08b54abd7e57faf3bb"
+    },
+    {
+      "table": "cua-bench-eda-kicad",
+      "path": "sources/cua-bench-eda-kicad/leaderboard_table.html",
+      "sha256": "fb235ea8420ea25588e5bcaffca5a6015ccf80399903f4c38842f8646ab88e8a"
+    },
+    {
+      "table": "cve-bench-one-day",
+      "path": "sources/cve-bench-one-day/leaderboard-entries.json",
+      "sha256": "11ab91c1b0762104c0c224cc20b6d7dcd14b1781e46fa42abbe70bfdcf0ccf64"
+    },
+    {
+      "table": "cve-bench-zero-day",
+      "path": "sources/cve-bench-zero-day/leaderboard-entries.json",
+      "sha256": "11ab91c1b0762104c0c224cc20b6d7dcd14b1781e46fa42abbe70bfdcf0ccf64"
+    },
+    {
+      "table": "cybench",
+      "path": "sources/cybench/leaderboard.csv",
+      "sha256": "846bb17951ec9f7c103486d7c0344974decd2d57f1039df26f9e84986704da45"
+    },
+    {
+      "table": "cybergym-agent-focused",
+      "path": "sources/cybergym-agent-focused/cybergym.json",
+      "sha256": "dc3a8452432617323c4c6adc22dc364fc5771770aae5299b6baf882fde0f3fca"
+    },
+    {
+      "table": "cybergym-e2e",
+      "path": "sources/cybergym-e2e/cybergym-e2e.json",
+      "sha256": "579621cca5cd352834b43fb36fbd6b769ee2680421b395f20c9f62888000ced1"
+    },
+    {
+      "table": "cybergym-model-focused",
+      "path": "sources/cybergym-model-focused/cybergym.json",
+      "sha256": "dc3a8452432617323c4c6adc22dc364fc5771770aae5299b6baf882fde0f3fca"
+    },
+    {
+      "table": "deepswe-v1-1",
+      "path": "sources/deepswe-v1-1/leaderboard-live.json",
+      "sha256": "a7c15d66288fd249c020b9931c017b92d1a3b90e480b3ff34974b752bd030019"
+    },
+    {
+      "table": "deepswe-v1",
+      "path": "sources/deepswe-v1/leaderboard-live.json",
+      "sha256": "6fc4a40007a7db1647b2661bed7f3c61f698ea08cb13d60de1707e108e9c2964"
+    },
+    {
+      "table": "ecommerce-bench",
+      "path": "sources/ecommerce-bench/showcase_data_models.json",
+      "sha256": "b4de26fc16469afe5200ec495ffe4879a9dddffe6eef38e7c3483d9b67a61f5b"
+    },
+    {
+      "table": "exploitgym",
+      "path": "sources/exploitgym/exploitgym.json",
+      "sha256": "1cf3b94633364a7cb76c35dc502f21fbf889ee02b639f3a20042960a0a9b2533"
+    },
+    {
+      "table": "gaia",
+      "path": "sources/gaia/board_test_top100.json",
+      "sha256": "b5883827c4815594630203d58ecd3913862a78ed4096dd2b76899faeff7a09c4"
+    },
+    {
+      "table": "gaia2-cli",
+      "path": "sources/gaia2-cli/gaia2_cli_data_from_app_py.json",
+      "sha256": "682849a2fdf1798d16617f2d0c8531d814b33382d10e338b95622a437147bc86"
+    },
+    {
+      "table": "gaia2",
+      "path": "sources/gaia2/board_vanilla_gaia2.json",
+      "sha256": "d979294f9d0cad4760e49bbb3dde0cc8da6d657ff2f290699262a4d68270a71c"
+    },
+    {
+      "table": "gso-opt10",
+      "path": "sources/gso-opt10/leaderboard.json",
+      "sha256": "ea360f34a526d772ea3877d2b80ba4f4eebefc484e82b0abdd27ff9fe70b3b55"
+    },
+    {
+      "table": "gso",
+      "path": "sources/gso/leaderboard.json",
+      "sha256": "ea360f34a526d772ea3877d2b80ba4f4eebefc484e82b0abdd27ff9fe70b3b55"
+    },
+    {
+      "table": "hal-assistantbench",
+      "path": "sources/hal-assistantbench/leaderboard-table.html",
+      "sha256": "963d5302c61009eed281c4567b0717afff7fa7e8bd3d44592236d8314eb480eb"
+    },
+    {
+      "table": "hal-core-bench-hard",
+      "path": "sources/hal-core-bench-hard/leaderboard-table.html",
+      "sha256": "158c725b5628663215ce87d850afc65c590664569953e8a862af5b88f26a462a"
+    },
+    {
+      "table": "hal-gaia",
+      "path": "sources/hal-gaia/leaderboard-table.html",
+      "sha256": "f9497d5350637a02469f9885a69438f3be86fa638d1971b4699e00c33b75364c"
+    },
+    {
+      "table": "hal-online-mind2web",
+      "path": "sources/hal-online-mind2web/leaderboard-table.html",
+      "sha256": "f578ff747e48db2cba29d9b06331aa375fcb82a7debb40a30e525f91add87b05"
+    },
+    {
+      "table": "hal-scicode",
+      "path": "sources/hal-scicode/leaderboard-table.html",
+      "sha256": "06f6fc28a3c103ab7997d8e1722ccee1ce134bf8657106fdd1ad6c32e9fcb22a"
+    },
+    {
+      "table": "hal-scienceagentbench",
+      "path": "sources/hal-scienceagentbench/leaderboard-table.html",
+      "sha256": "a3c629b6d214900921646bd0e6d30c90489cb6a6ab9a3cb9eb8c1e8370c16af0"
+    },
+    {
+      "table": "hal-swe-bench-verified-mini",
+      "path": "sources/hal-swe-bench-verified-mini/leaderboard-table.html",
+      "sha256": "7c762ea1ea03676c4fe8387d2ba483895bf6356ffcc1452c199ab582013e3f48"
+    },
+    {
+      "table": "hal-tau-bench-airline",
+      "path": "sources/hal-tau-bench-airline/leaderboard-table.html",
+      "sha256": "702a0e2470e8134f36d82e365272243f439c088aa57c6edafacae1544de792a5"
+    },
+    {
+      "table": "hal-usaco",
+      "path": "sources/hal-usaco/leaderboard-table.html",
+      "sha256": "07e811380dd596407571118e1b1fcb98eaff9b967272c242087b2859881dde00"
+    },
+    {
+      "table": "liveswebench",
+      "path": "sources/liveswebench/results_csv.json",
+      "sha256": "1fe13b2d2d5cbe065461693761b28a110de69c106a06b9db37b65d6f17727643"
+    },
+    {
+      "table": "macagentbench",
+      "path": "sources/macagentbench/index.json",
+      "sha256": "20d9e2f8ede68266a3e60f2f20c4ff5644a4bb06bd9a46af8688413c7b3ca9e0"
+    },
+    {
+      "table": "mcp-atlas",
+      "path": "sources/mcp-atlas/leaderboard_entries.json",
+      "sha256": "04ac43a397032d8f38b2c01949c9011e34db628c8adb56fc3ae64986b94bffe8"
+    },
+    {
+      "table": "mcp-bench",
+      "path": "sources/mcp-bench/leaderboard_data.json",
+      "sha256": "755d6f1807359278268a0ebf5a83117e9fcc5284aa8096801255459c695b593c"
+    },
+    {
+      "table": "mcp-universe-agent",
+      "path": "sources/mcp-universe-agent/leaderboard_panel.html",
+      "sha256": "7031d9286e070d17d31315c4e4aff0ecab04ffdbbf2947753846ff18c378c569"
+    },
+    {
+      "table": "mcp-universe-fc",
+      "path": "sources/mcp-universe-fc/leaderboard_panel.html",
+      "sha256": "a030b5dd3cea9ea6a209d7d9a8bc481680328a751be27a81e6ff7e7c919cbc29"
+    },
+    {
+      "table": "mcp-universe-react",
+      "path": "sources/mcp-universe-react/leaderboard_panel.html",
+      "sha256": "635bed5955df6c147d91479686f3cacca788f7e6e0666fac2157d7c5d052d0bd"
+    },
+    {
+      "table": "mcpmark-legacy",
+      "path": "sources/mcpmark-legacy/leaderboard_data.json",
+      "sha256": "1bfedb17704527f49ac569e2ec1b9fb2a019e1f74a7006bc97133e8d215641c3"
+    },
+    {
+      "table": "mcpmark-verified",
+      "path": "sources/mcpmark-verified/leaderboard_data.json",
+      "sha256": "5e7d384a2493cb76f5cd85b7227182b41c4d1c177b11a348d8dd41cc9861197a"
+    },
+    {
+      "table": "metr-time-horizon-1.0",
+      "path": "sources/metr-time-horizon-1.0/benchmark_results_1_0.yaml",
+      "sha256": "f15fd2f13cd8d28f06f5430fabf21dcd1284193ec152bdedc34e11dcc525df66"
+    },
+    {
+      "table": "metr-time-horizon",
+      "path": "sources/metr-time-horizon/benchmark_results_1_1.yaml",
+      "sha256": "aae31902b0519a4da73e16643915e5e8aca13cd3315c3aac893ce3d6dfe92ad9"
+    },
+    {
+      "table": "mind2web-2",
+      "path": "sources/mind2web-2/leaderboard_data.json",
+      "sha256": "2f3370afc3b20e7f0c1964cc915f433561258ba3588525412bc6f89d45507504"
+    },
+    {
+      "table": "mle-bench-additional",
+      "path": "sources/mle-bench-additional/README.md",
+      "sha256": "586bbc19cb2a3e11be61021866ef6436cf4b4d935bb1db088984b567b76595bb"
+    },
+    {
+      "table": "mle-bench",
+      "path": "sources/mle-bench/README.md",
+      "sha256": "586bbc19cb2a3e11be61021866ef6436cf4b4d935bb1db088984b567b76595bb"
+    },
+    {
+      "table": "mobileworld",
+      "path": "sources/mobileworld/leaderboard.json",
+      "sha256": "27c069757ef8c8cf120623a285a81f3fb7c9df4dc3ae6ae93f04957d803c3458"
+    },
+    {
+      "table": "multi-swe-bench-c",
+      "path": "sources/multi-swe-bench-c/leaderboard_c.json",
+      "sha256": "16efd00cd3507db19f729e8cedd1104800d54b8ae6a38ddba55d04b47653efda"
+    },
+    {
+      "table": "multi-swe-bench-cpp",
+      "path": "sources/multi-swe-bench-cpp/leaderboard_cpp.json",
+      "sha256": "7f97fa113393af7a1b185bcd5d5d6f7b981f1606496f9860d22b997c7b099ff3"
+    },
+    {
+      "table": "multi-swe-bench-flash",
+      "path": "sources/multi-swe-bench-flash/leaderboard-flash.json",
+      "sha256": "6131348c971565d5a5163dc5f1344faafbb0a754f5d08e12e6e15df94a63789a"
+    },
+    {
+      "table": "multi-swe-bench-go",
+      "path": "sources/multi-swe-bench-go/leaderboard_go.json",
+      "sha256": "b41094e1350019f7223493f03f8c59315d14b7a5e5a3f7e87609efc1e6211137"
+    },
+    {
+      "table": "multi-swe-bench-java",
+      "path": "sources/multi-swe-bench-java/leaderboard_java.json",
+      "sha256": "52fcaf496a6ba9c0d1b4b47b6addb74afbaf920448044a19c64ac306a7fd161c"
+    },
+    {
+      "table": "multi-swe-bench-javascript",
+      "path": "sources/multi-swe-bench-javascript/leaderboard_javascript.json",
+      "sha256": "20e814299d022c1676d08060ef36d175e270da605b7822d57d9983be39495157"
+    },
+    {
+      "table": "multi-swe-bench-mini",
+      "path": "sources/multi-swe-bench-mini/leaderboard-mini.json",
+      "sha256": "47495a1bb2abd3551b0ad5423a9e05f960b777b19e642a2ad0839f8f23abad18"
+    },
+    {
+      "table": "multi-swe-bench-python",
+      "path": "sources/multi-swe-bench-python/leaderboard_python.json",
+      "sha256": "2dafb0d9b884c58209de27f8ebde228d9e79eda931b6eaeddf9d6a3500b8fa9e"
+    },
+    {
+      "table": "multi-swe-bench-rust",
+      "path": "sources/multi-swe-bench-rust/leaderboard_rust.json",
+      "sha256": "600932e5fceb1682dd6a5cb1df17f050814500ae58401336d7400015cdffd83d"
+    },
+    {
+      "table": "multi-swe-bench-typescript",
+      "path": "sources/multi-swe-bench-typescript/leaderboard_typescript.json",
+      "sha256": "e26859eaad1705a9690476d80c7449a31014aa70aed8525a4d3f9dc3d4544740"
+    },
+    {
+      "table": "multi-swe-bench",
+      "path": "sources/multi-swe-bench/leaderboard.json",
+      "sha256": "49c1a3808b633e0239639126e885a14e5807e6a65d7dccfe4d6be6fb728d85fa"
+    },
+    {
+      "table": "online-mind2web-auto",
+      "path": "sources/online-mind2web-auto/auto_o4-mini.csv",
+      "sha256": "1cea02f3f4218afd8f4c83df456bbf6b0dbfa248f0d538fc2cfa4200742c8f38"
+    },
+    {
+      "table": "online-mind2web-human",
+      "path": "sources/online-mind2web-human/human.csv",
+      "sha256": "64f3c169115a9037d9055831d7362e635e06b1fd92a7aea6e8a80f3bf0bb40c1"
+    },
+    {
+      "table": "osuniverse",
+      "path": "sources/osuniverse/agent_performance_table.html",
+      "sha256": "6c1e6e496558266f0f22f12a0eb645dc62aceb1d92ce6ec6b1ff9916525734a3"
+    },
+    {
+      "table": "osworld-2-1-full-500steps",
+      "path": "sources/osworld-2-1-full-500steps/official-results.json",
+      "sha256": "35a0ed7cfe2e9981c4976ea326ee3a21d77e4a80b7e44adcad55316d83cc2cec"
+    },
+    {
+      "table": "osworld-2-1-offline-500steps",
+      "path": "sources/osworld-2-1-offline-500steps/official-results.json",
+      "sha256": "35a0ed7cfe2e9981c4976ea326ee3a21d77e4a80b7e44adcad55316d83cc2cec"
+    },
+    {
+      "table": "osworld-2-1-public-agents-full-500steps",
+      "path": "sources/osworld-2-1-public-agents-full-500steps/official-results.json",
+      "sha256": "35a0ed7cfe2e9981c4976ea326ee3a21d77e4a80b7e44adcad55316d83cc2cec"
+    },
+    {
+      "table": "osworld-2-full-150steps",
+      "path": "sources/osworld-2-full-150steps/official-results.json",
+      "sha256": "35a0ed7cfe2e9981c4976ea326ee3a21d77e4a80b7e44adcad55316d83cc2cec"
+    },
+    {
+      "table": "osworld-2-full-300steps",
+      "path": "sources/osworld-2-full-300steps/official-results.json",
+      "sha256": "35a0ed7cfe2e9981c4976ea326ee3a21d77e4a80b7e44adcad55316d83cc2cec"
+    },
+    {
+      "table": "osworld-2-full-500steps",
+      "path": "sources/osworld-2-full-500steps/official-results.json",
+      "sha256": "35a0ed7cfe2e9981c4976ea326ee3a21d77e4a80b7e44adcad55316d83cc2cec"
+    },
+    {
+      "table": "osworld-2-offline-500steps",
+      "path": "sources/osworld-2-offline-500steps/official-results.json",
+      "sha256": "35a0ed7cfe2e9981c4976ea326ee3a21d77e4a80b7e44adcad55316d83cc2cec"
+    },
+    {
+      "table": "osworld-mcp",
+      "path": "sources/osworld-mcp/leaderboard_table.html",
+      "sha256": "c6c16c38966cf96bad1f7a8d4aac39ccd9a40161a28a68c8b71e84fffa264b13"
+    },
+    {
+      "table": "osworld-self-reported-a11y-tree",
+      "path": "sources/osworld-self-reported-a11y-tree/self_reported_results.A11y_tree.json",
+      "sha256": "1b55130cf672f862b536bb0e67664a91edb59966017adbfc47ce8daf5d857578"
+    },
+    {
+      "table": "osworld-self-reported-screenshot-a11y-tree",
+      "path": "sources/osworld-self-reported-screenshot-a11y-tree/self_reported_results.Screenshot_A11y_tree.json",
+      "sha256": "0286551d9f3c58e899fd022c29a96678c43137ba58f07de4f825b1fa11e79c81"
+    },
+    {
+      "table": "osworld-self-reported-screenshot",
+      "path": "sources/osworld-self-reported-screenshot/self_reported_results.Screenshot.json",
+      "sha256": "1c4907fd316bd286870cb016c97c118e21a263dc41f99bd651ae1ef7b4c12851"
+    },
+    {
+      "table": "osworld-self-reported-set-of-mark",
+      "path": "sources/osworld-self-reported-set-of-mark/self_reported_results.Set-of-Mark.json",
+      "sha256": "8b171f33ba7a9e6b41573212e9375ee1eb0c5bfbe6e11a0c30cabbfd91314698"
+    },
+    {
+      "table": "osworld-verified",
+      "path": "sources/osworld-verified/osworld_verified_results.sheet.json",
+      "sha256": "92304352bbee7cf4e5309611d39360c3af8f2b7b61973aad16bdeb4180b2bab9"
+    },
+    {
+      "table": "paperbench-code-dev",
+      "path": "sources/paperbench-code-dev/README.md",
+      "sha256": "b50041ce9329b4a5a779c7114b8c21f6eab93cae91d309f5924f6ebe06f470cb"
+    },
+    {
+      "table": "paperbench",
+      "path": "sources/paperbench/README.md",
+      "sha256": "b50041ce9329b4a5a779c7114b8c21f6eab93cae91d309f5924f6ebe06f470cb"
+    },
+    {
+      "table": "real-v1-frameworks",
+      "path": "sources/real-v1-frameworks/getVerifiedModelData_v1_frameworks.json",
+      "sha256": "1077bb05e2483747436028bd40d898acfbcc5bfb3a016e1dddeab88d88799dfe"
+    },
+    {
+      "table": "real-v1-models",
+      "path": "sources/real-v1-models/getVerifiedModelData_v1_models.json",
+      "sha256": "3a28fdde480f3f3aed5540363ceaf976839416a9121c99fd0d3c66504c5d8679"
+    },
+    {
+      "table": "real-v1-open-arena",
+      "path": "sources/real-v1-open-arena/getVerifiedModelData_v1_open-arena.json",
+      "sha256": "2914f66c3db6f23b766a0aa0e280912bad4f6ae068e5044d6787e7029453e536"
+    },
+    {
+      "table": "real-v2-frameworks",
+      "path": "sources/real-v2-frameworks/getVerifiedModelData_v2_frameworks.json",
+      "sha256": "8993d2315f39dcb0fde5e94b795bd5ef4d462e908febfeffef5b5c09d3db157f"
+    },
+    {
+      "table": "real-v2-models",
+      "path": "sources/real-v2-models/getVerifiedModelData_v2_models.json",
+      "sha256": "ff57fcc99ff27a08d6b7b9fbfac2f132eb4ede874d0576824707345314fd96d9"
+    },
+    {
+      "table": "sec-bench-poc-generation",
+      "path": "sources/sec-bench-poc-generation/leaderboard-table.html",
+      "sha256": "dfad75302168ae0f56a92abf31724b200954bbe8c2749e29cc5fe30a50ab0fd4"
+    },
+    {
+      "table": "sec-bench-pro-firefox",
+      "path": "sources/sec-bench-pro-firefox/leaderboard-table.html",
+      "sha256": "b6ea0cd5c55c8dce9e92d7b1d0775e6f2348946e57a85453c4da8415634a091b"
+    },
+    {
+      "table": "sec-bench-pro-linux",
+      "path": "sources/sec-bench-pro-linux/leaderboard-table.html",
+      "sha256": "ba74fded0bbac0c9787540f25b8e3b9049ea03aec783dee44f7203c70c76c70a"
+    },
+    {
+      "table": "sec-bench-pro-overall",
+      "path": "sources/sec-bench-pro-overall/leaderboard-table.html",
+      "sha256": "c6dc359c547b526dd924cbce7f8fe9d50f8a12144f37ab40072949e6a619b035"
+    },
+    {
+      "table": "sec-bench-pro-v8",
+      "path": "sources/sec-bench-pro-v8/leaderboard-table.html",
+      "sha256": "312106428ac7308e21d496db029efa9601eef48c99ba25388985616fb6beff08"
+    },
+    {
+      "table": "sec-bench-vulnerability-patching",
+      "path": "sources/sec-bench-vulnerability-patching/leaderboard-table.html",
+      "sha256": "175afb4cfbc17758d115624aa7f3ca770fc67747a20d0a4f5a1abf32cd934b3c"
+    },
+    {
+      "table": "skillsbench",
+      "path": "sources/skillsbench/leaderboardData.json",
+      "sha256": "12779b8ccfc160fcf29514f2d4dbca2c3844a4a2c42fad835b8b12b94c346d09"
+    },
+    {
+      "table": "slopcodebench",
+      "path": "sources/slopcodebench/leaderboard_data.json",
+      "sha256": "b5f2079200cc2c1f736aaf9766d2a301c980cc3bac37d5faa4c7e0f083cfda3b"
+    },
+    {
+      "table": "swe-bench-bash-only",
+      "path": "sources/swe-bench-bash-only/leaderboards_verified_mini-swe-agent.json",
+      "sha256": "211f5154ead68f0e2c5b9ad6445ac71a9b59dba8f878685ebf9e91c7caebf682"
+    },
+    {
+      "table": "swe-bench-full",
+      "path": "sources/swe-bench-full/leaderboards_test.json",
+      "sha256": "ebcebd9c8d7f1d622aafa08e637d1ce427fbda7b52a8225d9416c61b6f092041"
+    },
+    {
+      "table": "swe-bench-lite",
+      "path": "sources/swe-bench-lite/leaderboards_lite.json",
+      "sha256": "b8368d81cb52fbcb089e6b16bb68de3ec85fefb649cede562eb7f14416bfc65b"
+    },
+    {
+      "table": "swe-bench-live-c-cpp",
+      "path": "sources/swe-bench-live-c-cpp/reports-0605_ccpp.json",
+      "sha256": "c89bf0cb3bdf3ab6b01049f50b12a4db345b67f7a0811222690d2fb16b3214c2"
+    },
+    {
+      "table": "swe-bench-live-csharp",
+      "path": "sources/swe-bench-live-csharp/reports-0605_csharp.json",
+      "sha256": "378e875a3c83696b52d29ea81ebc0bb0e5037fbfa8f39529334c80ee430dfe91"
+    },
+    {
+      "table": "swe-bench-live-full",
+      "path": "sources/swe-bench-live-full/reports-0605_full.json",
+      "sha256": "7ce488d95fb31b840e7503751695c06504d1985e14825d90c7547993ee8535ea"
+    },
+    {
+      "table": "swe-bench-live-go",
+      "path": "sources/swe-bench-live-go/reports-0605_go.json",
+      "sha256": "9243041a9ad797a991789e7dcb74156bb4497bdd0b40c5d2b5724844c2895081"
+    },
+    {
+      "table": "swe-bench-live-java",
+      "path": "sources/swe-bench-live-java/reports-0605_java.json",
+      "sha256": "295f0150ba413374c7b14e7431c1602a5574be61227eea44bc8d84f0f68aaeb4"
+    },
+    {
+      "table": "swe-bench-live-lite",
+      "path": "sources/swe-bench-live-lite/reports-0605_lite.json",
+      "sha256": "0977633215eb08f6c27da574df6ab91a7a22b565542536dbedec1776b52202b3"
+    },
+    {
+      "table": "swe-bench-live-rust",
+      "path": "sources/swe-bench-live-rust/reports-0605_rust.json",
+      "sha256": "f35613b310d794f129ece87f563aac3ed86e8b8835fd95489fb84286caaa479c"
+    },
+    {
+      "table": "swe-bench-live-ts-js",
+      "path": "sources/swe-bench-live-ts-js/reports-0605_tsjs.json",
+      "sha256": "b9d96b8ad8e1223e7f2532b6994cd5eaa2d6a612ecafb30b628727fd9e7c769f"
+    },
+    {
+      "table": "swe-bench-live-verified",
+      "path": "sources/swe-bench-live-verified/reports-0605_verified.json",
+      "sha256": "8ef2c4ff4db34302ee1273cba50f910d5154688d925fb6be75e1197968c24b00"
+    },
+    {
+      "table": "swe-bench-live-windows",
+      "path": "sources/swe-bench-live-windows/reports-0605_windows.json",
+      "sha256": "e9e4d1ae9dbc2b20f62abe2db3b0d86ef3c35d61e57256206d8121f8dfb1d8bb"
+    },
+    {
+      "table": "swe-bench-multilingual",
+      "path": "sources/swe-bench-multilingual/leaderboards_multilingual.json",
+      "sha256": "80e583114e81feed9939ade83410eb9dc6d7b8f2d717125506ce35b467dc02a7"
+    },
+    {
+      "table": "swe-bench-multimodal",
+      "path": "sources/swe-bench-multimodal/leaderboards_multimodal.json",
+      "sha256": "c9694ef2cede7385e57089d277d6f1602a427ee20fdc6cd5b677681060faedda"
+    },
+    {
+      "table": "swe-bench-pro-private",
+      "path": "sources/swe-bench-pro-private/entries.json",
+      "sha256": "f51b7b15e7969014699a8ea14e6f411be40d7a86fcbf8c8c2bb7d64cb4a62440"
+    },
+    {
+      "table": "swe-bench-pro-public",
+      "path": "sources/swe-bench-pro-public/entries.json",
+      "sha256": "e5142c861a733769a4c6231b9b234d324a72918df03b8495ca1f9f0a245b2d2b"
+    },
+    {
+      "table": "swe-bench-verified",
+      "path": "sources/swe-bench-verified/leaderboards_verified.json",
+      "sha256": "294a9ba56a8463efd3e79dbe84b2840cef81201785e64dd56644a4c996d861c7"
+    },
+    {
+      "table": "swe-lancer-diamond",
+      "path": "sources/swe-lancer-diamond/results.csv",
+      "sha256": "7bc06635827610f9f35c5e5327fa669c332783448ca5cbec0c516d60b0903efd"
+    },
+    {
+      "table": "swe-marathon-v1-0",
+      "path": "sources/swe-marathon-v1-0/leaderboard_v1_0.json",
+      "sha256": "20e05de9291b96039d2b66bbf4700e817ae79d995fde3a8dd501ee15569ce839"
+    },
+    {
+      "table": "swe-marathon-v1-1",
+      "path": "sources/swe-marathon-v1-1/task_results_trimmed.json",
+      "sha256": "de3494f7893d1bf2ca27692048da0a33746740fbdfe3a44a2c67e3f633542b04"
+    },
+    {
+      "table": "swe-polybench-500",
+      "path": "sources/swe-polybench-500/polybench_data_polybench500.json",
+      "sha256": "439132903728d3ae811fa25ab7417805bd172800f408125bba485e2e438275f2"
+    },
+    {
+      "table": "swe-polybench-verified",
+      "path": "sources/swe-polybench-verified/polybench_data_verified.json",
+      "sha256": "42b6cbcdd4004165668d68437ca717bdcb362512e14c438dab9555c94369e20d"
+    },
+    {
+      "table": "swe-polybench",
+      "path": "sources/swe-polybench/polybench_data_full.json",
+      "sha256": "e2091ed264c8949b9517d5013a749d5155cc899bb361e3cd3fd6b63da4da3265"
+    },
+    {
+      "table": "swe-rebench",
+      "path": "sources/swe-rebench/leaderboard_props.json",
+      "sha256": "4d9b50926d8321eebdfe8d75b4be38fa9b5cc56f3d0393aee7d222c688c13f55"
+    },
+    {
+      "table": "tau2-bench-airline",
+      "path": "sources/tau2-bench-airline/submissions.json",
+      "sha256": "a661caa90aebc29e37b97d71c61af011bb2c313994d520e0263acc5cd0dde510"
+    },
+    {
+      "table": "tau2-bench-legacy-airline",
+      "path": "sources/tau2-bench-legacy-airline/submissions.json",
+      "sha256": "85612ce632847923dc194a2023f2d5829c3d43e246f6752f72553bc88f4fa7a1"
+    },
+    {
+      "table": "tau2-bench-legacy-retail",
+      "path": "sources/tau2-bench-legacy-retail/submissions.json",
+      "sha256": "b88125288a2ca67e8d160d1be9da8d71d05b50160d0c02ce3ebc5943c64813aa"
+    },
+    {
+      "table": "tau2-bench-legacy-telecom",
+      "path": "sources/tau2-bench-legacy-telecom/submissions.json",
+      "sha256": "4e6a9d9104e0376e35b07d4d033fe5d607b0e73336046246ca4ef14e6b4bab3a"
+    },
+    {
+      "table": "tau2-bench-legacy",
+      "path": "sources/tau2-bench-legacy/submissions.json",
+      "sha256": "7e93440f26588d6adf5dece9397cf4c90030055cf433432c54551da6dbeec9cd"
+    },
+    {
+      "table": "tau2-bench-retail",
+      "path": "sources/tau2-bench-retail/submissions.json",
+      "sha256": "32f132a5d3be3776afa08212232aae8c1901f2e06083044b3d560fda0c29c0a6"
+    },
+    {
+      "table": "tau2-bench-telecom",
+      "path": "sources/tau2-bench-telecom/submissions.json",
+      "sha256": "82cfdba24acf91fcaf1862decc492deec81053e850f6aace8b73493606325f8c"
+    },
+    {
+      "table": "tau2-bench",
+      "path": "sources/tau2-bench/submissions.json",
+      "sha256": "e5ba65dedd6c6f72d7427d19cd8154d84cfff8f1779370af875d20be5c614dba"
+    },
+    {
+      "table": "tau3-banking",
+      "path": "sources/tau3-banking/submissions.json",
+      "sha256": "419a95ca960778e50462e546320b378c789c494e4f8bf00e15cf48d5cf618e90"
+    },
+    {
+      "table": "tau3-voice-airline",
+      "path": "sources/tau3-voice-airline/submissions.json",
+      "sha256": "a69e8d7e4a3f0284c7a39136f52669e0107d3c89b0799024d1fe0c71eee9b5a1"
+    },
+    {
+      "table": "tau3-voice-banking",
+      "path": "sources/tau3-voice-banking/submissions.json",
+      "sha256": "a188ea28bfdce4a0cdd5e9e190f2752890070f71874464e33c20acaf32cab735"
+    },
+    {
+      "table": "tau3-voice-retail",
+      "path": "sources/tau3-voice-retail/submissions.json",
+      "sha256": "aff54bcd02a5d06c29d4bbeaa748b0a63d24c24920c6d265f8e31d9d5ed49d49"
+    },
+    {
+      "table": "tau3-voice-telecom",
+      "path": "sources/tau3-voice-telecom/submissions.json",
+      "sha256": "575928ab76188fbc99ad65f0bae222ae93cd831fba5a5a78e33ea4f3b8ac6d8b"
+    },
+    {
+      "table": "tau3-voice",
+      "path": "sources/tau3-voice/submissions.json",
+      "sha256": "f0efae397e0064df359f74b2dc09557da97db13994f210735652f05a6e795056"
+    },
+    {
+      "table": "terminal-bench-2-0",
+      "path": "sources/terminal-bench-2-0/leaderboard.json",
+      "sha256": "3cbf87d1d3c6ee8528a70bbf653724f89ed66f1adf25d335b0e1f47e388f704b"
+    },
+    {
+      "table": "terminal-bench-2-1",
+      "path": "sources/terminal-bench-2-1/leaderboard.json",
+      "sha256": "63b2d2c51476de6b9c8821def8ccb2705cffae62898d0c70959491f4e7cd7300"
+    },
+    {
+      "table": "terminal-bench-3-0",
+      "path": "sources/terminal-bench-3-0/leaderboard.json",
+      "sha256": "83a420d2efc0b5cc6b2ec7689066bcc477650cdb3336ef1fc0ea40632e4e3786"
+    },
+    {
+      "table": "terminal-bench-4-0",
+      "path": "sources/terminal-bench-4-0/leaderboard.json",
+      "sha256": "b178edd93316b2a8ea4f75c000ea0ea5a97fd4b4aad938643ef5aaae0b1580c4"
+    },
+    {
+      "table": "terminal-bench-science-0-1",
+      "path": "sources/terminal-bench-science-0-1/leaderboard.json",
+      "sha256": "1984c45eab608b74492eee98c383267a6e7a51a9581fa01d3db28892485f6946"
+    },
+    {
+      "table": "theagentcompany",
+      "path": "sources/theagentcompany/leaderboard.json",
+      "sha256": "9e12abe430f0f93c1a088f1f510ab05da5d0f312b3c8de2a329d0c3fedbf79c9"
+    },
+    {
+      "table": "toolathlon-verified",
+      "path": "sources/toolathlon-verified/leaderboard.md",
+      "sha256": "87dd9d87290142c468c32ad966f12e13c8d6fc4481b09971ce28f43c0bc58e0c"
+    },
+    {
+      "table": "toolathlon",
+      "path": "sources/toolathlon/leaderboard.md",
+      "sha256": "87dd9d87290142c468c32ad966f12e13c8d6fc4481b09971ce28f43c0bc58e0c"
+    },
+    {
+      "table": "vending-bench-2",
+      "path": "sources/vending-bench-2/vb2_data.json",
+      "sha256": "0287be89a8b0b88ca3e56313cded373f3409225d5178bcd8bc76921d36d6bdd7"
+    },
+    {
+      "table": "vending-bench",
+      "path": "sources/vending-bench/leaderboard.tsv",
+      "sha256": "78f189e1ad5457e8a087559c23ab4acb7ac7171eafe689130252325484917c95"
+    },
+    {
+      "table": "venusbench-mobile",
+      "path": "sources/venusbench-mobile/venusbench-mobile.json",
+      "sha256": "078ec9962b1ff73db9836f8f24ecf90cfd85598336219a41e660e4d0082cf9de"
+    },
+    {
+      "table": "visualwebarena",
+      "path": "sources/visualwebarena/sheet_visualwebarena_tab.json",
+      "sha256": "b8b2dc3817732cdc20934132f5f0cd3a0d395bf7de116bc43dffed67cd4f24ba"
+    },
+    {
+      "table": "webarena",
+      "path": "sources/webarena/sheet_webarena_tab.json",
+      "sha256": "31c477bd5b91ea4cd7be592fc027af81ea76f11346b5dae088cd5246565e0cda"
+    },
+    {
+      "table": "webchorearena",
+      "path": "sources/webchorearena/sheet_leaderboard.json",
+      "sha256": "5e62896379bb5e8abf4111e39111c0c687c8a7fec6d15d2df0905c23c7b70b45"
+    }
+  ]
+}

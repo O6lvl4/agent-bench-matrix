@@ -1,0 +1,30 @@
+{
+  "id": "osworld-2-1-offline-500steps",
+  "retrieved": "2026-10-07",
+  "status": "changed",
+  "change_type": "source-schema-and-scope-clarification",
+  "rows_changed": false,
+  "old_rows": 5,
+  "rows": 5,
+  "method": "Completed standalone extraction: explicit modelType=e2e and official=true; dataset scope, step budget and release boundary preserved. All old source fields match after removing newly explicit modelType; scores, extra metrics, ranks and identities reproduced exactly. Updated source date and scope labels only.",
+  "sources": [
+    {
+      "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+      "response_url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+      "http_status": 200,
+      "bytes": 18545,
+      "sha256": "35a0ed7cfe2e9981c4976ea326ee3a21d77e4a80b7e44adcad55316d83cc2cec",
+      "snapshot": "sources/osworld-2-1-public-agents-full-500steps/official-results.json",
+      "response_date": "Wed, 07 Oct 2026 00:09:17 GMT"
+    },
+    {
+      "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+      "response_url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+      "http_status": 200,
+      "bytes": 18065,
+      "sha256": "51230893f487601bd26fd072ce13fb538e0d770a9aaec519f2fe08c802cdf141",
+      "snapshot": "sources/osworld-2-1-public-agents-full-500steps/leaderboard.js",
+      "response_date": "Wed, 07 Oct 2026 00:09:17 GMT"
+    }
+  ]
+}
