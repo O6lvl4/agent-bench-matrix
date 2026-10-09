@@ -17,8 +17,8 @@
     "https://swe-bench-live.github.io/leaderboard.js",
     "https://swe-bench-live.github.io/"
   ],
-  "retrieved": "2026-10-05",
-  "newest_row_date": "2026-09-27",
+  "retrieved": "2026-10-09",
+  "newest_row_date": "2026-10-08",
   "snapshot": "sources/swe-bench-live-lite/reports-0605_lite.json",
   "paper": "https://arxiv.org/abs/2505.23419",
   "repo": "https://github.com/microsoft/SWE-bench-Live",
@@ -26,6 +26,28 @@
   "rows": [
     {
       "rank": 1,
+      "system": "TianxiCode + Deepseek-v4.1-Flash",
+      "agent": "TianxiCode",
+      "model_raw": [
+        "Deepseek-v4.1-Flash"
+      ],
+      "model_ids": [
+        "deepseek-v4.1-flash"
+      ],
+      "model_config": null,
+      "score": 71.0,
+      "score_extra": {
+        "resolved_count": 213,
+        "num_valid_inst": 300
+      },
+      "date": "2026-10-08",
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://github.com/SWE-bench-Live/submission/tree/main/submissions/lite/tianxicode/deepseek-flash"
+    },
+    {
+      "rank": 2,
       "system": "Slingshot-v3.4.0 + GPT-5.6-Sol",
       "agent": "Slingshot-v3.4.0",
       "model_raw": [
@@ -45,28 +67,6 @@
       "open_source": null,
       "org": null,
       "row_url": "https://github.com/SWE-bench-Live/submission/tree/main/submissions/lite/sapient-slingshot-agent/v3.4.0/gpt-5.6-sol"
-    },
-    {
-      "rank": 2,
-      "system": "TianxiCode + Deepseek-v4.1-Flash",
-      "agent": "TianxiCode",
-      "model_raw": [
-        "Deepseek-v4.1-Flash"
-      ],
-      "model_ids": [
-        "deepseek-v4.1-flash"
-      ],
-      "model_config": null,
-      "score": 68.0,
-      "score_extra": {
-        "resolved_count": 204,
-        "num_valid_inst": 300
-      },
-      "date": "2026-09-27",
-      "verified": true,
-      "open_source": null,
-      "org": null,
-      "row_url": "https://github.com/SWE-bench-Live/submission/tree/main/submissions/lite/tianxicode/deepseek-flash"
     },
     {
       "rank": 3,

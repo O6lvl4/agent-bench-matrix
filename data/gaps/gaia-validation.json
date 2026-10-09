@@ -1,10 +1,10 @@
 {
-  "id": "gaia-validation",
-  "name": "GAIA (validation)",
-  "tried": [
-    "https://huggingface.co/spaces/gaia-benchmark/leaderboard/raw/main/app.py",
-    "https://huggingface.co/datasets/gaia-benchmark/results_public/resolve/main/2023/validation-00000-of-00001.parquet"
-  ],
-  "reason_ja": "公式ボードのvalidationタブは現在のapp.pyでもコメントアウトされている。公開結果データセットのvalidation分割は96件のまま。ボードに表示されない表は既存の採録方針に従い取り込まない。",
-  "retrieved": "2026-10-05"
+ "id": "gaia-validation",
+ "name": "GAIA (validation)",
+ "tried": [
+  "https://huggingface.co/spaces/gaia-benchmark/leaderboard/raw/main/app.py",
+  "https://huggingface.co/datasets/gaia-benchmark/results_public/resolve/main/2023/validation-00000-of-00001.parquet"
+ ],
+ "reason_ja": "公式app.pyのvalidationタブは引き続きコメントアウト。公開validation Parquetは前回96件を確認したデータとSHA-256が一致する。現行ボードに表示されない表は既存の採録方針に従い取り込まない。",
+ "retrieved": "2026-10-09"
 }

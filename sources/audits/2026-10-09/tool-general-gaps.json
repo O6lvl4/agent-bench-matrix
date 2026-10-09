@@ -1,0 +1,251 @@
+{
+  "retrieved": "2026-10-09",
+  "gaps": [
+    {
+      "id": "terminal-bench-1-0",
+      "status": "still-gap",
+      "evidence": {
+        "old_board_urls_match_current_homepage": true,
+        "current_homepage_sha256": "4407dab9ac56e671cf069c3f460c562dd780ca06b5215f4b4b7d161875a94b1a"
+      },
+      "reason_ja": "旧1.0の3つのボードURLを再取得し、いずれも現行トップページと同一のHTMLであることをSHA-256で確認した。独立した旧1.0提出結果表は取り出せず、過去値から補完しない。",
+      "requests": [
+        {
+          "url": "https://www.tbench.ai/leaderboard/terminal-bench/1.0",
+          "status": 200,
+          "final_url": "https://www.tbench.ai/",
+          "bytes": 145339,
+          "sha256": "4407dab9ac56e671cf069c3f460c562dd780ca06b5215f4b4b7d161875a94b1a"
+        },
+        {
+          "url": "https://www.tbench.ai/leaderboard/terminal-bench-core/1.0",
+          "status": 200,
+          "final_url": "https://www.tbench.ai/",
+          "bytes": 145339,
+          "sha256": "4407dab9ac56e671cf069c3f460c562dd780ca06b5215f4b4b7d161875a94b1a"
+        },
+        {
+          "url": "https://www.tbench.ai/?version=1.0",
+          "status": 200,
+          "final_url": "https://www.tbench.ai/?version=1.0",
+          "bytes": 145339,
+          "sha256": "4407dab9ac56e671cf069c3f460c562dd780ca06b5215f4b4b7d161875a94b1a"
+        },
+        {
+          "url": "https://github.com/harbor-framework/terminal-bench-1",
+          "status": 200,
+          "final_url": "https://github.com/harbor-framework/terminal-bench-1",
+          "bytes": 346311,
+          "sha256": "6a65369b57db2e7e61f17c40b8b59c7653dfb7371c476a7f06232f7d1168cc61"
+        }
+      ]
+    },
+    {
+      "id": "terminal-bench-challenges",
+      "status": "still-gap",
+      "evidence": {
+        "board_url_matches_current_homepage": true,
+        "announcement_unchanged_since": "2026-10-05"
+      },
+      "reason_ja": "指定ボードURLは現行トップページと同一のHTML。公式のチャレンジ告知記事も前回と同一で、今回取得した一次資料から独立した提出結果表を機械抽出できなかった。",
+      "requests": [
+        {
+          "url": "https://www.tbench.ai/leaderboard/terminal-bench-challenges",
+          "status": 200,
+          "final_url": "https://www.tbench.ai/",
+          "bytes": 145339,
+          "sha256": "4407dab9ac56e671cf069c3f460c562dd780ca06b5215f4b4b7d161875a94b1a"
+        },
+        {
+          "url": "https://www.tbench.ai/news/terminal-bench-challenges",
+          "status": 200,
+          "final_url": "https://www.tbench.ai/news/terminal-bench-challenges",
+          "bytes": 71388,
+          "sha256": "69033640aa0bbf9b55e249981d051c6fe9114204bbd82f19f5cb9764c0e4e61e"
+        },
+        {
+          "url": "https://github.com/harbor-framework/terminal-bench-challenges",
+          "status": 200,
+          "final_url": "https://github.com/harbor-framework/terminal-bench-challenges",
+          "bytes": 269037,
+          "sha256": "9a6ee24560c3bae86d6f52ff8f11395f21bbb7c12ea244695eaa3cbae3fd57b3"
+        }
+      ]
+    },
+    {
+      "id": "harbor-index",
+      "status": "still-gap",
+      "evidence": {
+        "api_row_counts": {
+          "https://ofhuhcpkvzjlejydnvyd.supabase.co/functions/v1/leaderboard-read (POST {\"package\":\"harbor-index/harbor-index-1.0\",\"name\":\"harbor-index-1-0\"})": 0,
+          "https://ofhuhcpkvzjlejydnvyd.supabase.co/functions/v1/leaderboard-read (POST {\"package\":\"harbor-index/harbor-index\",\"name\":\"harbor-index-1-4\"})": 0
+        },
+        "announcement_site_unchanged_since": "2026-10-05"
+      },
+      "reason_ja": "公式Harbor HubリーダーボードAPIの1.0/1.4を再取得し、どちらもrowsは0件。harbor-index.orgも前回と同一の告知ページで、独立した公開ボード表は確認できなかった。",
+      "requests": [
+        {
+          "url": "https://hub.harborframework.com/datasets/harbor-index/harbor-index-1.0?tab=leaderboard",
+          "status": 200,
+          "final_url": "https://hub.harborframework.com/datasets/harbor-index/harbor-index-1.0?tab=leaderboard",
+          "bytes": 129776,
+          "sha256": "749508845e9419686e6e255513a479c706839c7727a134c8d60f2c7954b5b15d"
+        },
+        {
+          "url": "https://harbor-index.org/",
+          "status": 200,
+          "final_url": "https://harbor-index.org/",
+          "bytes": 313088,
+          "sha256": "c9e9ab7158e9f73fa4964d637dc0c3c7d9105442fba772937a4e6ce66d5b9e64"
+        },
+        {
+          "url": "https://ofhuhcpkvzjlejydnvyd.supabase.co/functions/v1/leaderboard-read (POST {\"package\":\"harbor-index/harbor-index-1.0\",\"name\":\"harbor-index-1-0\"})",
+          "status": 200,
+          "final_url": "https://ofhuhcpkvzjlejydnvyd.supabase.co/functions/v1/leaderboard-read",
+          "bytes": 2558,
+          "sha256": "04679f4fc7b7a23468753b51eef103ec10f00ec6e52004d99f19176222f7524a"
+        },
+        {
+          "url": "https://ofhuhcpkvzjlejydnvyd.supabase.co/functions/v1/leaderboard-read (POST {\"package\":\"harbor-index/harbor-index\",\"name\":\"harbor-index-1-4\"})",
+          "status": 200,
+          "final_url": "https://ofhuhcpkvzjlejydnvyd.supabase.co/functions/v1/leaderboard-read",
+          "bytes": 2710,
+          "sha256": "a70fdd419394bb114f73614fe53a92bfb151486ed8b0c144f74502f10f017e21"
+        }
+      ]
+    },
+    {
+      "id": "livemcpbench",
+      "status": "still-gap",
+      "evidence": {
+        "csv_rows": 13,
+        "csv_dates": [
+          "8/2025"
+        ],
+        "csv_unchanged_since_previous": true
+      },
+      "reason_ja": "公式ページと公開スプレッドシートCSVを再取得。13行すべての日付は引き続き8/2025で、CSVは前回と同一。更新停止表を除く既存方針を維持。",
+      "requests": [
+        {
+          "url": "https://icip-cas.github.io/LiveMCPBench/",
+          "status": 200,
+          "final_url": "https://icip-cas.github.io/LiveMCPBench/",
+          "bytes": 11448,
+          "sha256": "3f2e60b437928e1a8d4caded2d0f22c193af660b2af0a24e1e2ec3e8ebdd704a"
+        },
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1EXpgXq1VKw5A7l7-N2E9xt3w0eLJ2YPVPT-VrRxKZBw/export?format=csv",
+          "status": 200,
+          "final_url": "https://doc-04-78-sheets.googleusercontent.com/export/f3kk9gtum31ktuqh54kn7i1e14/m13mulvpoqnofi9abpsf4l1s6k/1791504810000/108590811031314228641/*/1EXpgXq1VKw5A7l7-N2E9xt3w0eLJ2YPVPT-VrRxKZBw?format=csv",
+          "bytes": 667,
+          "sha256": "823309a782497c1a5ba76434351af888ee096acf5187aa85974ea22784e25561"
+        },
+        {
+          "url": "https://api.github.com/repos/icip-cas/LiveMCPBench/commits",
+          "status": 200,
+          "final_url": "https://api.github.com/repos/icip-cas/LiveMCPBench/commits",
+          "bytes": 31916,
+          "sha256": "6c5c56c7d69c0288183d2a9fb90ef317ff84fb9313c5a7d37d687e98d8a80001"
+        }
+      ]
+    },
+    {
+      "id": "gaia-validation",
+      "status": "still-gap",
+      "evidence": {
+        "validation_tab_commented_out": true,
+        "validation_parquet_identical_to_2026_10_05": true,
+        "previously_verified_rows": 96
+      },
+      "reason_ja": "公式app.pyのvalidationタブは引き続きコメントアウト。公開validation Parquetは前回96件を確認したデータとSHA-256が一致する。現行ボードに表示されない表は既存の採録方針に従い取り込まない。",
+      "requests": [
+        {
+          "url": "https://huggingface.co/spaces/gaia-benchmark/leaderboard/raw/main/app.py",
+          "status": 200,
+          "final_url": "https://huggingface.co/spaces/gaia-benchmark/leaderboard/raw/main/app.py",
+          "bytes": 14531,
+          "sha256": "3b5ae007d232951c3ed2505b862048f98b3b912314365256c3b0c106ae8cc579"
+        },
+        {
+          "url": "https://huggingface.co/datasets/gaia-benchmark/results_public/resolve/main/2023/validation-00000-of-00001.parquet",
+          "status": 200,
+          "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/654125601c4b203c01450ced/5cffee6e83756a562af7792eed729177590224923f176c7f39554a216e812337",
+          "bytes": 17943,
+          "sha256": "247e551dd60dd3cf7b77d727230a5573f2e3c2c026173661449ae4e6ba0341d4",
+          "final_url_note": "Ephemeral signing/access query parameters omitted; original requested public URL is retained."
+        }
+      ]
+    },
+    {
+      "id": "galileo-agent-leaderboard-v2",
+      "status": "still-gap",
+      "evidence": {
+        "latest_space_commit": {
+          "date": "2026-06-11T10:07:47.000Z",
+          "title": "updated pydantic version"
+        },
+        "commit_history_unchanged_since": "2026-10-05",
+        "v2_dataset_last_modified": "2025-07-16T14:50:47.000Z",
+        "v2_dataset_revision": "80200b599f33def2d54580f7d8c3ce3cdf8ef270"
+      },
+      "reason_ja": "公式HF Spaceとコミット一覧を再取得。履歴は前回と同一で、最後の結果追加は2025-08-13、最新2026-06-11の更新は依存ライブラリ。v2データセットの最終更新も2025-07-16のまま。更新停止表を除く既存方針を維持。",
+      "requests": [
+        {
+          "url": "https://huggingface.co/api/spaces/galileo-ai/agent-leaderboard",
+          "status": 200,
+          "final_url": "https://huggingface.co/api/spaces/galileo-ai/agent-leaderboard",
+          "bytes": 43056,
+          "sha256": "864c8c9c3b5371c855d56bd3d93f653486dff89e83630d653ce37e5e18c6b449"
+        },
+        {
+          "url": "https://huggingface.co/api/spaces/galileo-ai/agent-leaderboard/commits/main",
+          "status": 200,
+          "final_url": "https://huggingface.co/api/spaces/galileo-ai/agent-leaderboard/commits/main",
+          "bytes": 11326,
+          "sha256": "7e15541ba5bd65e2b56e356d45b5ab60490fd31ab74f2bc9b0f09355e35767f2"
+        },
+        {
+          "url": "https://huggingface.co/api/datasets/galileo-ai/agent-leaderboard-v2",
+          "status": 200,
+          "final_url": "https://huggingface.co/api/datasets/galileo-ai/agent-leaderboard-v2",
+          "bytes": 5168,
+          "sha256": "66e4c22197db8c52025eaded57ae9f2857b4707e2f0638ff2416330315a50f0d"
+        }
+      ]
+    },
+    {
+      "id": "crmarena",
+      "status": "still-gap",
+      "evidence": {
+        "last_modified": "2025-02-06T20:01:53.000Z",
+        "csv_rows": 24,
+        "csv_identical_to_2026_10_05": true
+      },
+      "reason_ja": "公式HF Spaceの最終更新は2025-02-06のまま。CSVも前回と同一で、初代CRMArenaの24モデル・足場設定×9タスク種別、CRMArena-Proの結果は無い。更新停止表を除く既存方針を維持。",
+      "requests": [
+        {
+          "url": "https://huggingface.co/api/spaces/Salesforce/CRMArena-Leaderboard",
+          "status": 200,
+          "final_url": "https://huggingface.co/api/spaces/Salesforce/CRMArena-Leaderboard",
+          "bytes": 1594,
+          "sha256": "e9ab3e8142b3bbad169e0fd79d6bdb2a7843eb3b9850391cf24b67e07d52a454"
+        },
+        {
+          "url": "https://huggingface.co/api/spaces/Salesforce/CRMArena-Leaderboard/commits/main",
+          "status": 200,
+          "final_url": "https://huggingface.co/api/spaces/Salesforce/CRMArena-Leaderboard/commits/main",
+          "bytes": 2020,
+          "sha256": "95e54325312934bd46a904c18cda77b87056e0cb664b980abffd6aeaa40ab439"
+        },
+        {
+          "url": "https://huggingface.co/spaces/Salesforce/CRMArena-Leaderboard/raw/main/crmarena_results/all_results.csv",
+          "status": 200,
+          "final_url": "https://huggingface.co/spaces/Salesforce/CRMArena-Leaderboard/raw/main/crmarena_results/all_results.csv",
+          "bytes": 1808,
+          "sha256": "de76cf7c6d42a705d8f88a31bc584f69e517bdec8b600ddc2a9b042e6a1f11f5"
+        }
+      ]
+    }
+  ],
+  "note": "All 22 gap-source requests had complete successful responses already retained before cancellation surfaced on the separate main collector polling call. This recipe performs no network calls."
+}

@@ -1,0 +1,2484 @@
+{
+  "retrieved": "2026-10-09",
+  "tables": [
+    {
+      "id": "macagentbench",
+      "retrieved": "2026-10-09",
+      "status": "unchanged",
+      "old_rows": 30,
+      "rows": 30,
+      "method": "Parsed entire JSON artifact and compared every record/value with previous mechanically extracted snapshot",
+      "sources": [
+        {
+          "url": "https://jetastra.github.io/MacAgentBench/data/models/index.json",
+          "response_url": "https://jetastra.github.io/MacAgentBench/data/models/index.json",
+          "http_status": 200,
+          "bytes": 8538,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "20d9e2f8ede68266a3e60f2f20c4ff5644a4bb06bd9a46af8688413c7b3ca9e0",
+          "headers": {
+            "Content-Type": "application/json; charset=utf-8",
+            "Last-Modified": "Sun, 21 Jun 2026 08:15:33 GMT",
+            "ETag": "\"6a379da5-215a\"",
+            "Date": "Fri, 09 Oct 2026 00:12:49 GMT"
+          },
+          "archive_member": "d5e232c3e3fc04f1.response"
+        }
+      ],
+      "previous_data_retrieved": "2026-10-05",
+      "data_retrieved_after": "2026-10-05",
+      "rows_changed": false
+    },
+    {
+      "id": "venusbench-mobile",
+      "retrieved": "2026-10-09",
+      "status": "unchanged",
+      "old_rows": 11,
+      "rows": 11,
+      "method": "Parsed entire JSON artifact and compared every record/value with previous mechanically extracted snapshot",
+      "sources": [
+        {
+          "url": "https://ui-venus.github.io/VenusBench-Mobile-Leaderboard/results/venusbench-mobile.json",
+          "response_url": "https://ui-venus.github.io/VenusBench-Mobile-Leaderboard/results/venusbench-mobile.json",
+          "http_status": 200,
+          "bytes": 10426,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "078ec9962b1ff73db9836f8f24ecf90cfd85598336219a41e660e4d0082cf9de",
+          "headers": {
+            "Content-Type": "application/json; charset=utf-8",
+            "Last-Modified": "Mon, 11 May 2026 07:02:42 GMT",
+            "ETag": "\"6a017f12-28ba\"",
+            "Date": "Fri, 09 Oct 2026 00:12:55 GMT"
+          },
+          "archive_member": "aebfbbe45c1807f6.response"
+        }
+      ],
+      "previous_data_retrieved": "2026-10-05",
+      "data_retrieved_after": "2026-10-05",
+      "rows_changed": false
+    },
+    {
+      "id": "online-mind2web-auto",
+      "retrieved": "2026-10-09",
+      "status": "unchanged",
+      "old_rows": 20,
+      "rows": 20,
+      "method": "Parsed all CSV cells; exact record/value equality with previous snapshot",
+      "sources": [
+        {
+          "url": "https://huggingface.co/spaces/osunlp/Online_Mind2Web_Leaderboard/resolve/main/auto_o4-mini_Mind2Web-Online%20-%20Leaderboard_data.csv",
+          "response_url": "https://huggingface.co/api/resolve-cache/spaces/osunlp/Online_Mind2Web_Leaderboard/ba470716b95a67404059cb052710146ecec2bd68/auto_o4-mini_Mind2Web-Online%20-%20Leaderboard_data.csv?%2Fspaces%2Fosunlp%2FOnline_Mind2Web_Leaderboard%2Fresolve%2Fmain%2Fauto_o4-mini_Mind2Web-Online+-+Leaderboard_data.csv=&etag=%22ea33e9cb683bc8e923b427c16b82d2e636a969b2%22",
+          "http_status": 200,
+          "bytes": 3708,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "1cea02f3f4218afd8f4c83df456bbf6b0dbfa248f0d538fc2cfa4200742c8f38",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "Date": "Wed, 05 Aug 2026 12:23:57 GMT",
+            "ETag": "\"ea33e9cb683bc8e923b427c16b82d2e636a969b2\""
+          },
+          "archive_member": "a93b78ff13ee5aae.response"
+        }
+      ],
+      "previous_data_retrieved": "2026-10-05",
+      "data_retrieved_after": "2026-10-05",
+      "rows_changed": false
+    },
+    {
+      "id": "online-mind2web-human",
+      "retrieved": "2026-10-09",
+      "status": "unchanged",
+      "old_rows": 13,
+      "rows": 13,
+      "method": "Parsed all CSV cells; exact record/value equality with previous snapshot",
+      "sources": [
+        {
+          "url": "https://huggingface.co/spaces/osunlp/Online_Mind2Web_Leaderboard/resolve/main/human_Mind2Web-Online%20-%20Leaderboard_data.csv",
+          "response_url": "https://huggingface.co/api/resolve-cache/spaces/osunlp/Online_Mind2Web_Leaderboard/ba470716b95a67404059cb052710146ecec2bd68/human_Mind2Web-Online%20-%20Leaderboard_data.csv?%2Fspaces%2Fosunlp%2FOnline_Mind2Web_Leaderboard%2Fresolve%2Fmain%2Fhuman_Mind2Web-Online+-+Leaderboard_data.csv=&etag=%22be076c69d4cc3cab82e9bd990a6206de9fb269f5%22",
+          "http_status": 200,
+          "bytes": 1573,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "64f3c169115a9037d9055831d7362e635e06b1fd92a7aea6e8a80f3bf0bb40c1",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "Date": "Thu, 10 Sep 2026 06:55:09 GMT",
+            "ETag": "\"be076c69d4cc3cab82e9bd990a6206de9fb269f5\""
+          },
+          "archive_member": "53b91966467cdcbd.response"
+        }
+      ],
+      "previous_data_retrieved": "2026-10-05",
+      "data_retrieved_after": "2026-10-05",
+      "rows_changed": false
+    },
+    {
+      "id": "androidworld-mobileminiwob",
+      "retrieved": "2026-10-09",
+      "status": "unchanged",
+      "old_rows": 4,
+      "rows": 4,
+      "method": "Parsed all CSV cells; exact record/value equality with previous snapshot",
+      "sources": [
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo/export?format=csv&gid=1078963525",
+          "response_url": "https://doc-04-10-sheets.googleusercontent.com/export/f3kk9gtum31ktuqh54kn7i1e14/th1qcn274p2bia10oj3mdcajuo/1791504760000/106503711661754615063/*/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo?format=csv&gid=1078963525",
+          "http_status": 200,
+          "bytes": 457,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "d022affe1a8ec99cfc940bf645e85a089b2aa3afc123d59dafc3d8fa021c0b22",
+          "headers": {
+            "Content-Type": "text/csv; charset=utf-8",
+            "Date": "Fri, 09 Oct 2026 00:12:46 GMT"
+          },
+          "archive_member": "024e02b151857c2d.response"
+        }
+      ],
+      "previous_data_retrieved": "2026-10-05",
+      "data_retrieved_after": "2026-10-05",
+      "rows_changed": false
+    },
+    {
+      "id": "osuniverse",
+      "retrieved": "2026-10-09",
+      "status": "unchanged",
+      "old_rows": 8,
+      "rows": 8,
+      "method": "Extracted live HTML table; every row text, numeric cell and hyperlink matches previous snapshot",
+      "sources": [
+        {
+          "url": "https://agentsea.github.io/osuniverse/",
+          "response_url": "https://agentsea.github.io/osuniverse/",
+          "http_status": 200,
+          "bytes": 22800,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "15a1befde1c86308d65975b01495d0718e2598589994e8ffc83e585c1f0922b3",
+          "headers": {
+            "Content-Type": "text/html; charset=utf-8",
+            "Last-Modified": "Wed, 07 May 2025 09:54:25 GMT",
+            "ETag": "\"681b2dd1-5910\"",
+            "Date": "Fri, 09 Oct 2026 00:12:40 GMT"
+          },
+          "archive_member": "29c2d3961eeb2583.response"
+        }
+      ],
+      "previous_data_retrieved": "2026-10-05",
+      "data_retrieved_after": "2026-10-05",
+      "rows_changed": false
+    },
+    {
+      "id": "osworld-mcp",
+      "retrieved": "2026-10-09",
+      "status": "unchanged",
+      "old_rows": 22,
+      "rows": 22,
+      "method": "Extracted live HTML table; every row text, numeric cell and hyperlink matches previous snapshot",
+      "sources": [
+        {
+          "url": "https://osworld-mcp.github.io/",
+          "response_url": "https://osworld-mcp.github.io/",
+          "http_status": 200,
+          "bytes": 42986,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "181cb1fa9d2c373fec67db088dfd380b52d4d323fa9cc380cc44b15e4ceaa4b4",
+          "headers": {
+            "Content-Type": "text/html; charset=utf-8",
+            "Last-Modified": "Sun, 10 May 2026 11:34:38 GMT",
+            "ETag": "\"6a006d4e-a7ea\"",
+            "Date": "Fri, 09 Oct 2026 00:12:49 GMT"
+          },
+          "archive_member": "9812dc57e167a706.response"
+        }
+      ],
+      "previous_data_retrieved": "2026-10-05",
+      "data_retrieved_after": "2026-10-05",
+      "rows_changed": false
+    },
+    {
+      "id": "hal-online-mind2web",
+      "retrieved": "2026-10-09",
+      "status": "unchanged",
+      "old_rows": 22,
+      "rows": 22,
+      "method": "Extracted live HTML table; every row text, numeric cell and hyperlink matches previous snapshot",
+      "sources": [
+        {
+          "url": "https://hal.cs.princeton.edu/online_mind2web",
+          "response_url": "https://hal.cs.princeton.edu/online_mind2web",
+          "http_status": 200,
+          "bytes": 265682,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "3c689a054d9d4d538ae0bde48d546a68223f3083fc6b210a4143b3c3e1e8cc0f",
+          "headers": {
+            "Date": "Fri, 09 Oct 2026 00:12:44 GMT",
+            "Content-Type": "text/html; charset=utf-8"
+          },
+          "archive_member": "10b1f9c4168f0eab.response"
+        }
+      ],
+      "previous_data_retrieved": "2026-10-05",
+      "data_retrieved_after": "2026-10-05",
+      "rows_changed": false
+    },
+    {
+      "id": "hal-assistantbench",
+      "retrieved": "2026-10-09",
+      "status": "unchanged",
+      "old_rows": 15,
+      "rows": 15,
+      "method": "Extracted live HTML table; every row text, numeric cell and hyperlink matches previous snapshot",
+      "sources": [
+        {
+          "url": "https://hal.cs.princeton.edu/assistantbench",
+          "response_url": "https://hal.cs.princeton.edu/assistantbench",
+          "http_status": 200,
+          "bytes": 199625,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "be14ddb7055803de81f1ca8d41a42583a6582014ce4b687806145f7162bf8a73",
+          "headers": {
+            "Date": "Fri, 09 Oct 2026 00:12:44 GMT",
+            "Content-Type": "text/html; charset=utf-8"
+          },
+          "archive_member": "c3c1c89747c21ca1.response"
+        }
+      ],
+      "previous_data_retrieved": "2026-10-05",
+      "data_retrieved_after": "2026-10-05",
+      "rows_changed": false
+    },
+    {
+      "id": "cua-bench-eda-kicad",
+      "retrieved": "2026-10-09",
+      "status": "unchanged",
+      "old_rows": 10,
+      "rows": 10,
+      "method": "Extracted live HTML table; every row text, numeric cell and hyperlink matches previous snapshot",
+      "sources": [
+        {
+          "url": "https://cua.ai/cuabench/leaderboard",
+          "response_url": "https://cua.ai/cuabench/leaderboard",
+          "http_status": 200,
+          "bytes": 58015,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "be301bb3e17fe323f9e787b0660fb333b1e12cd14901cef1ca5d35e51a02dfe9",
+          "headers": {
+            "Content-Type": "text/html",
+            "Date": "Fri, 09 Oct 2026 00:12:40 GMT"
+          },
+          "archive_member": "7d66c5aa716ce462.response"
+        }
+      ],
+      "previous_data_retrieved": "2026-10-05",
+      "data_retrieved_after": "2026-10-05",
+      "rows_changed": false
+    },
+    {
+      "id": "mobileworld",
+      "retrieved": "2026-10-09",
+      "status": "unchanged",
+      "old_rows": 41,
+      "rows": 41,
+      "method": "Parsed all result records; retained reviewed normalization for exact old records; mechanically ingested new model and all numeric/configuration fields",
+      "sources": [
+        {
+          "url": "https://tongyi-mai.github.io/MobileWorld/leaderboard.json",
+          "response_url": "https://tongyi-mai.github.io/MobileWorld/leaderboard.json",
+          "http_status": 200,
+          "bytes": 19516,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "27c069757ef8c8cf120623a285a81f3fb7c9df4dc3ae6ae93f04957d803c3458",
+          "headers": {
+            "Content-Type": "application/json; charset=utf-8",
+            "Last-Modified": "Tue, 22 Sep 2026 09:00:43 GMT",
+            "ETag": "\"6ab243bb-4c3c\"",
+            "Date": "Fri, 09 Oct 2026 00:12:54 GMT"
+          },
+          "archive_member": "95e0d5c16f66115e.response"
+        }
+      ],
+      "previous_data_retrieved": "2026-10-05",
+      "data_retrieved_after": "2026-10-05",
+      "rows_changed": false
+    },
+    {
+      "id": "osworld-2-1-full-500steps",
+      "retrieved": "2026-10-09",
+      "status": "unchanged",
+      "old_rows": 5,
+      "rows": 5,
+      "method": "All 51 official JSON records, current renderer JavaScript, and display HTML are byte-identical to the reviewed October 7 evidence. Release v2.0/v2.1, full/offline taskset, 150/300/500 step budget, official Foundation E2E GUI versus public agents from All, metric, cost and rank semantics remain unchanged.",
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "response_url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "http_status": 200,
+          "bytes": 18545,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "35a0ed7cfe2e9981c4976ea326ee3a21d77e4a80b7e44adcad55316d83cc2cec",
+          "headers": {
+            "Content-Type": "application/json; charset=utf-8",
+            "Last-Modified": "Mon, 05 Oct 2026 07:26:48 GMT",
+            "ETag": "\"6ac35138-4871\"",
+            "Date": "Fri, 09 Oct 2026 00:12:50 GMT"
+          },
+          "archive_member": "8d50dae6d2b588e2.response"
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+          "response_url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+          "http_status": 200,
+          "bytes": 18065,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "51230893f487601bd26fd072ce13fb538e0d770a9aaec519f2fe08c802cdf141",
+          "headers": {
+            "Content-Type": "application/javascript; charset=utf-8",
+            "Last-Modified": "Mon, 05 Oct 2026 07:26:50 GMT",
+            "ETag": "\"6ac3513a-4691\"",
+            "Date": "Fri, 09 Oct 2026 00:12:50 GMT"
+          },
+          "archive_member": "cac85039efdc07ca.response"
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/",
+          "response_url": "https://osworld-v2.xlang.ai/",
+          "http_status": 200,
+          "bytes": 88325,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "91138b5d752d7d5242bfc147c6a1bd6430e81f89f36eb9ffe0af3a40feca6b5b",
+          "headers": {
+            "Content-Type": "text/html; charset=utf-8",
+            "Last-Modified": "Mon, 05 Oct 2026 07:26:50 GMT",
+            "ETag": "\"6ac3513a-15905\"",
+            "Date": "Fri, 09 Oct 2026 00:12:50 GMT"
+          },
+          "archive_member": "d10a4a0235addd13.response"
+        }
+      ],
+      "previous_data_retrieved": "2026-10-07",
+      "data_retrieved_after": "2026-10-07",
+      "rows_changed": false
+    },
+    {
+      "id": "osworld-2-1-offline-500steps",
+      "retrieved": "2026-10-09",
+      "status": "unchanged",
+      "old_rows": 5,
+      "rows": 5,
+      "method": "All 51 official JSON records, current renderer JavaScript, and display HTML are byte-identical to the reviewed October 7 evidence. Release v2.0/v2.1, full/offline taskset, 150/300/500 step budget, official Foundation E2E GUI versus public agents from All, metric, cost and rank semantics remain unchanged.",
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "response_url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "http_status": 200,
+          "bytes": 18545,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "35a0ed7cfe2e9981c4976ea326ee3a21d77e4a80b7e44adcad55316d83cc2cec",
+          "headers": {
+            "Content-Type": "application/json; charset=utf-8",
+            "Last-Modified": "Mon, 05 Oct 2026 07:26:48 GMT",
+            "ETag": "\"6ac35138-4871\"",
+            "Date": "Fri, 09 Oct 2026 00:12:50 GMT"
+          },
+          "archive_member": "8d50dae6d2b588e2.response"
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+          "response_url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+          "http_status": 200,
+          "bytes": 18065,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "51230893f487601bd26fd072ce13fb538e0d770a9aaec519f2fe08c802cdf141",
+          "headers": {
+            "Content-Type": "application/javascript; charset=utf-8",
+            "Last-Modified": "Mon, 05 Oct 2026 07:26:50 GMT",
+            "ETag": "\"6ac3513a-4691\"",
+            "Date": "Fri, 09 Oct 2026 00:12:50 GMT"
+          },
+          "archive_member": "cac85039efdc07ca.response"
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/",
+          "response_url": "https://osworld-v2.xlang.ai/",
+          "http_status": 200,
+          "bytes": 88325,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "91138b5d752d7d5242bfc147c6a1bd6430e81f89f36eb9ffe0af3a40feca6b5b",
+          "headers": {
+            "Content-Type": "text/html; charset=utf-8",
+            "Last-Modified": "Mon, 05 Oct 2026 07:26:50 GMT",
+            "ETag": "\"6ac3513a-15905\"",
+            "Date": "Fri, 09 Oct 2026 00:12:50 GMT"
+          },
+          "archive_member": "d10a4a0235addd13.response"
+        }
+      ],
+      "previous_data_retrieved": "2026-10-07",
+      "data_retrieved_after": "2026-10-07",
+      "rows_changed": false
+    },
+    {
+      "id": "osworld-2-1-public-agents-full-500steps",
+      "retrieved": "2026-10-09",
+      "status": "unchanged",
+      "old_rows": 1,
+      "rows": 1,
+      "method": "All 51 official JSON records, current renderer JavaScript, and display HTML are byte-identical to the reviewed October 7 evidence. Release v2.0/v2.1, full/offline taskset, 150/300/500 step budget, official Foundation E2E GUI versus public agents from All, metric, cost and rank semantics remain unchanged.",
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "response_url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "http_status": 200,
+          "bytes": 18545,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "35a0ed7cfe2e9981c4976ea326ee3a21d77e4a80b7e44adcad55316d83cc2cec",
+          "headers": {
+            "Content-Type": "application/json; charset=utf-8",
+            "Last-Modified": "Mon, 05 Oct 2026 07:26:48 GMT",
+            "ETag": "\"6ac35138-4871\"",
+            "Date": "Fri, 09 Oct 2026 00:12:50 GMT"
+          },
+          "archive_member": "8d50dae6d2b588e2.response"
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+          "response_url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+          "http_status": 200,
+          "bytes": 18065,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "51230893f487601bd26fd072ce13fb538e0d770a9aaec519f2fe08c802cdf141",
+          "headers": {
+            "Content-Type": "application/javascript; charset=utf-8",
+            "Last-Modified": "Mon, 05 Oct 2026 07:26:50 GMT",
+            "ETag": "\"6ac3513a-4691\"",
+            "Date": "Fri, 09 Oct 2026 00:12:50 GMT"
+          },
+          "archive_member": "cac85039efdc07ca.response"
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/",
+          "response_url": "https://osworld-v2.xlang.ai/",
+          "http_status": 200,
+          "bytes": 88325,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "91138b5d752d7d5242bfc147c6a1bd6430e81f89f36eb9ffe0af3a40feca6b5b",
+          "headers": {
+            "Content-Type": "text/html; charset=utf-8",
+            "Last-Modified": "Mon, 05 Oct 2026 07:26:50 GMT",
+            "ETag": "\"6ac3513a-15905\"",
+            "Date": "Fri, 09 Oct 2026 00:12:50 GMT"
+          },
+          "archive_member": "d10a4a0235addd13.response"
+        }
+      ],
+      "previous_data_retrieved": "2026-10-07",
+      "data_retrieved_after": "2026-10-07",
+      "rows_changed": false
+    },
+    {
+      "id": "osworld-2-full-150steps",
+      "retrieved": "2026-10-09",
+      "status": "unchanged",
+      "old_rows": 6,
+      "rows": 6,
+      "method": "All 51 official JSON records, current renderer JavaScript, and display HTML are byte-identical to the reviewed October 7 evidence. Release v2.0/v2.1, full/offline taskset, 150/300/500 step budget, official Foundation E2E GUI versus public agents from All, metric, cost and rank semantics remain unchanged.",
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "response_url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "http_status": 200,
+          "bytes": 18545,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "35a0ed7cfe2e9981c4976ea326ee3a21d77e4a80b7e44adcad55316d83cc2cec",
+          "headers": {
+            "Content-Type": "application/json; charset=utf-8",
+            "Last-Modified": "Mon, 05 Oct 2026 07:26:48 GMT",
+            "ETag": "\"6ac35138-4871\"",
+            "Date": "Fri, 09 Oct 2026 00:12:50 GMT"
+          },
+          "archive_member": "8d50dae6d2b588e2.response"
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+          "response_url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+          "http_status": 200,
+          "bytes": 18065,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "51230893f487601bd26fd072ce13fb538e0d770a9aaec519f2fe08c802cdf141",
+          "headers": {
+            "Content-Type": "application/javascript; charset=utf-8",
+            "Last-Modified": "Mon, 05 Oct 2026 07:26:50 GMT",
+            "ETag": "\"6ac3513a-4691\"",
+            "Date": "Fri, 09 Oct 2026 00:12:50 GMT"
+          },
+          "archive_member": "cac85039efdc07ca.response"
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/",
+          "response_url": "https://osworld-v2.xlang.ai/",
+          "http_status": 200,
+          "bytes": 88325,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "91138b5d752d7d5242bfc147c6a1bd6430e81f89f36eb9ffe0af3a40feca6b5b",
+          "headers": {
+            "Content-Type": "text/html; charset=utf-8",
+            "Last-Modified": "Mon, 05 Oct 2026 07:26:50 GMT",
+            "ETag": "\"6ac3513a-15905\"",
+            "Date": "Fri, 09 Oct 2026 00:12:50 GMT"
+          },
+          "archive_member": "d10a4a0235addd13.response"
+        }
+      ],
+      "previous_data_retrieved": "2026-10-07",
+      "data_retrieved_after": "2026-10-07",
+      "rows_changed": false
+    },
+    {
+      "id": "osworld-2-full-300steps",
+      "retrieved": "2026-10-09",
+      "status": "unchanged",
+      "old_rows": 7,
+      "rows": 7,
+      "method": "All 51 official JSON records, current renderer JavaScript, and display HTML are byte-identical to the reviewed October 7 evidence. Release v2.0/v2.1, full/offline taskset, 150/300/500 step budget, official Foundation E2E GUI versus public agents from All, metric, cost and rank semantics remain unchanged.",
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "response_url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "http_status": 200,
+          "bytes": 18545,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "35a0ed7cfe2e9981c4976ea326ee3a21d77e4a80b7e44adcad55316d83cc2cec",
+          "headers": {
+            "Content-Type": "application/json; charset=utf-8",
+            "Last-Modified": "Mon, 05 Oct 2026 07:26:48 GMT",
+            "ETag": "\"6ac35138-4871\"",
+            "Date": "Fri, 09 Oct 2026 00:12:50 GMT"
+          },
+          "archive_member": "8d50dae6d2b588e2.response"
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+          "response_url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+          "http_status": 200,
+          "bytes": 18065,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "51230893f487601bd26fd072ce13fb538e0d770a9aaec519f2fe08c802cdf141",
+          "headers": {
+            "Content-Type": "application/javascript; charset=utf-8",
+            "Last-Modified": "Mon, 05 Oct 2026 07:26:50 GMT",
+            "ETag": "\"6ac3513a-4691\"",
+            "Date": "Fri, 09 Oct 2026 00:12:50 GMT"
+          },
+          "archive_member": "cac85039efdc07ca.response"
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/",
+          "response_url": "https://osworld-v2.xlang.ai/",
+          "http_status": 200,
+          "bytes": 88325,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "91138b5d752d7d5242bfc147c6a1bd6430e81f89f36eb9ffe0af3a40feca6b5b",
+          "headers": {
+            "Content-Type": "text/html; charset=utf-8",
+            "Last-Modified": "Mon, 05 Oct 2026 07:26:50 GMT",
+            "ETag": "\"6ac3513a-15905\"",
+            "Date": "Fri, 09 Oct 2026 00:12:50 GMT"
+          },
+          "archive_member": "d10a4a0235addd13.response"
+        }
+      ],
+      "previous_data_retrieved": "2026-10-07",
+      "data_retrieved_after": "2026-10-07",
+      "rows_changed": false
+    },
+    {
+      "id": "osworld-2-full-500steps",
+      "retrieved": "2026-10-09",
+      "status": "unchanged",
+      "old_rows": 16,
+      "rows": 16,
+      "method": "All 51 official JSON records, current renderer JavaScript, and display HTML are byte-identical to the reviewed October 7 evidence. Release v2.0/v2.1, full/offline taskset, 150/300/500 step budget, official Foundation E2E GUI versus public agents from All, metric, cost and rank semantics remain unchanged.",
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "response_url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "http_status": 200,
+          "bytes": 18545,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "35a0ed7cfe2e9981c4976ea326ee3a21d77e4a80b7e44adcad55316d83cc2cec",
+          "headers": {
+            "Content-Type": "application/json; charset=utf-8",
+            "Last-Modified": "Mon, 05 Oct 2026 07:26:48 GMT",
+            "ETag": "\"6ac35138-4871\"",
+            "Date": "Fri, 09 Oct 2026 00:12:50 GMT"
+          },
+          "archive_member": "8d50dae6d2b588e2.response"
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+          "response_url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+          "http_status": 200,
+          "bytes": 18065,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "51230893f487601bd26fd072ce13fb538e0d770a9aaec519f2fe08c802cdf141",
+          "headers": {
+            "Content-Type": "application/javascript; charset=utf-8",
+            "Last-Modified": "Mon, 05 Oct 2026 07:26:50 GMT",
+            "ETag": "\"6ac3513a-4691\"",
+            "Date": "Fri, 09 Oct 2026 00:12:50 GMT"
+          },
+          "archive_member": "cac85039efdc07ca.response"
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/",
+          "response_url": "https://osworld-v2.xlang.ai/",
+          "http_status": 200,
+          "bytes": 88325,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "91138b5d752d7d5242bfc147c6a1bd6430e81f89f36eb9ffe0af3a40feca6b5b",
+          "headers": {
+            "Content-Type": "text/html; charset=utf-8",
+            "Last-Modified": "Mon, 05 Oct 2026 07:26:50 GMT",
+            "ETag": "\"6ac3513a-15905\"",
+            "Date": "Fri, 09 Oct 2026 00:12:50 GMT"
+          },
+          "archive_member": "d10a4a0235addd13.response"
+        }
+      ],
+      "previous_data_retrieved": "2026-10-07",
+      "data_retrieved_after": "2026-10-07",
+      "rows_changed": false
+    },
+    {
+      "id": "osworld-2-offline-500steps",
+      "retrieved": "2026-10-09",
+      "status": "unchanged",
+      "old_rows": 11,
+      "rows": 11,
+      "method": "All 51 official JSON records, current renderer JavaScript, and display HTML are byte-identical to the reviewed October 7 evidence. Release v2.0/v2.1, full/offline taskset, 150/300/500 step budget, official Foundation E2E GUI versus public agents from All, metric, cost and rank semantics remain unchanged.",
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "response_url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "http_status": 200,
+          "bytes": 18545,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "35a0ed7cfe2e9981c4976ea326ee3a21d77e4a80b7e44adcad55316d83cc2cec",
+          "headers": {
+            "Content-Type": "application/json; charset=utf-8",
+            "Last-Modified": "Mon, 05 Oct 2026 07:26:48 GMT",
+            "ETag": "\"6ac35138-4871\"",
+            "Date": "Fri, 09 Oct 2026 00:12:50 GMT"
+          },
+          "archive_member": "8d50dae6d2b588e2.response"
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+          "response_url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+          "http_status": 200,
+          "bytes": 18065,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "51230893f487601bd26fd072ce13fb538e0d770a9aaec519f2fe08c802cdf141",
+          "headers": {
+            "Content-Type": "application/javascript; charset=utf-8",
+            "Last-Modified": "Mon, 05 Oct 2026 07:26:50 GMT",
+            "ETag": "\"6ac3513a-4691\"",
+            "Date": "Fri, 09 Oct 2026 00:12:50 GMT"
+          },
+          "archive_member": "cac85039efdc07ca.response"
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/",
+          "response_url": "https://osworld-v2.xlang.ai/",
+          "http_status": 200,
+          "bytes": 88325,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "91138b5d752d7d5242bfc147c6a1bd6430e81f89f36eb9ffe0af3a40feca6b5b",
+          "headers": {
+            "Content-Type": "text/html; charset=utf-8",
+            "Last-Modified": "Mon, 05 Oct 2026 07:26:50 GMT",
+            "ETag": "\"6ac3513a-15905\"",
+            "Date": "Fri, 09 Oct 2026 00:12:50 GMT"
+          },
+          "archive_member": "d10a4a0235addd13.response"
+        }
+      ],
+      "previous_data_retrieved": "2026-10-07",
+      "data_retrieved_after": "2026-10-07",
+      "rows_changed": false
+    },
+    {
+      "id": "osworld-verified",
+      "retrieved": "2026-10-09",
+      "status": "unchanged",
+      "old_rows": 110,
+      "rows": 110,
+      "method": "Parsed every workbook sheet cell and compared all values (blank and absent cells equivalent); prior aggregation unchanged",
+      "sources": [
+        {
+          "url": "https://osworld-v1.xlang.ai/static/data/osworld_verified_results.xlsx",
+          "response_url": "https://osworld-v1.xlang.ai/static/data/osworld_verified_results.xlsx",
+          "http_status": 200,
+          "bytes": 113066,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "cf6b4b67eed566ddcd5a8b7ad2d89013157978dad0eea76ea12d2377471efc09",
+          "headers": {
+            "Content-Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            "Last-Modified": "Fri, 07 Aug 2026 16:28:57 GMT",
+            "ETag": "\"6a7607c9-1b9aa\"",
+            "Date": "Fri, 09 Oct 2026 00:12:50 GMT"
+          },
+          "archive_member": "f432aef5b03598be.response"
+        }
+      ],
+      "previous_data_retrieved": "2026-10-05",
+      "data_retrieved_after": "2026-10-05",
+      "rows_changed": false
+    },
+    {
+      "id": "osworld-self-reported-a11y-tree",
+      "retrieved": "2026-10-09",
+      "status": "unchanged",
+      "old_rows": 15,
+      "rows": 15,
+      "method": "Parsed every workbook sheet cell and compared all values (blank and absent cells equivalent); prior aggregation unchanged",
+      "sources": [
+        {
+          "url": "https://osworld-v1.xlang.ai/static/data/self_reported_results.xlsx",
+          "response_url": "https://osworld-v1.xlang.ai/static/data/self_reported_results.xlsx",
+          "http_status": 200,
+          "bytes": 24115,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "3016a0665f7c4527f235cd72f2217d759461253c488ba03991f36ea44968f731",
+          "headers": {
+            "Content-Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            "Last-Modified": "Fri, 07 Aug 2026 16:28:57 GMT",
+            "ETag": "\"6a7607c9-5e33\"",
+            "Date": "Fri, 09 Oct 2026 00:12:50 GMT"
+          },
+          "archive_member": "c7b29986113a16d1.response"
+        }
+      ],
+      "previous_data_retrieved": "2026-10-05",
+      "data_retrieved_after": "2026-10-05",
+      "rows_changed": false
+    },
+    {
+      "id": "osworld-self-reported-screenshot-a11y-tree",
+      "retrieved": "2026-10-09",
+      "status": "unchanged",
+      "old_rows": 18,
+      "rows": 18,
+      "method": "Parsed every workbook sheet cell and compared all values (blank and absent cells equivalent); prior aggregation unchanged",
+      "sources": [
+        {
+          "url": "https://osworld-v1.xlang.ai/static/data/self_reported_results.xlsx",
+          "response_url": "https://osworld-v1.xlang.ai/static/data/self_reported_results.xlsx",
+          "http_status": 200,
+          "bytes": 24115,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "3016a0665f7c4527f235cd72f2217d759461253c488ba03991f36ea44968f731",
+          "headers": {
+            "Content-Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            "Last-Modified": "Fri, 07 Aug 2026 16:28:57 GMT",
+            "ETag": "\"6a7607c9-5e33\"",
+            "Date": "Fri, 09 Oct 2026 00:12:50 GMT"
+          },
+          "archive_member": "c7b29986113a16d1.response"
+        }
+      ],
+      "previous_data_retrieved": "2026-10-05",
+      "data_retrieved_after": "2026-10-05",
+      "rows_changed": false
+    },
+    {
+      "id": "osworld-self-reported-screenshot",
+      "retrieved": "2026-10-09",
+      "status": "unchanged",
+      "old_rows": 56,
+      "rows": 56,
+      "method": "Parsed every workbook sheet cell and compared all values (blank and absent cells equivalent); prior aggregation unchanged",
+      "sources": [
+        {
+          "url": "https://osworld-v1.xlang.ai/static/data/self_reported_results.xlsx",
+          "response_url": "https://osworld-v1.xlang.ai/static/data/self_reported_results.xlsx",
+          "http_status": 200,
+          "bytes": 24115,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "3016a0665f7c4527f235cd72f2217d759461253c488ba03991f36ea44968f731",
+          "headers": {
+            "Content-Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            "Last-Modified": "Fri, 07 Aug 2026 16:28:57 GMT",
+            "ETag": "\"6a7607c9-5e33\"",
+            "Date": "Fri, 09 Oct 2026 00:12:50 GMT"
+          },
+          "archive_member": "c7b29986113a16d1.response"
+        }
+      ],
+      "previous_data_retrieved": "2026-10-05",
+      "data_retrieved_after": "2026-10-05",
+      "rows_changed": false
+    },
+    {
+      "id": "osworld-self-reported-set-of-mark",
+      "retrieved": "2026-10-09",
+      "status": "unchanged",
+      "old_rows": 11,
+      "rows": 11,
+      "method": "Parsed every workbook sheet cell and compared all values (blank and absent cells equivalent); prior aggregation unchanged",
+      "sources": [
+        {
+          "url": "https://osworld-v1.xlang.ai/static/data/self_reported_results.xlsx",
+          "response_url": "https://osworld-v1.xlang.ai/static/data/self_reported_results.xlsx",
+          "http_status": 200,
+          "bytes": 24115,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "3016a0665f7c4527f235cd72f2217d759461253c488ba03991f36ea44968f731",
+          "headers": {
+            "Content-Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            "Last-Modified": "Fri, 07 Aug 2026 16:28:57 GMT",
+            "ETag": "\"6a7607c9-5e33\"",
+            "Date": "Fri, 09 Oct 2026 00:12:50 GMT"
+          },
+          "archive_member": "c7b29986113a16d1.response"
+        }
+      ],
+      "previous_data_retrieved": "2026-10-05",
+      "data_retrieved_after": "2026-10-05",
+      "rows_changed": false
+    },
+    {
+      "id": "browsergym-visualwebarena",
+      "retrieved": "2026-10-09",
+      "status": "unchanged",
+      "old_rows": 4,
+      "rows": 4,
+      "method": "Enumerated live HF manifest and parsed every benchmark result at immutable commit 294ebe1dc36ba83c6916c64c64fb870af3dc8cee; all source records match",
+      "sources": [
+        {
+          "url": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+          "response_url": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+          "http_status": 200,
+          "bytes": 7753,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "82cc7387c7fb54b807c75745e1c055bb9d69d5dd9e1cdd5505b57dad45d8e737",
+          "headers": {
+            "Content-Type": "application/json; charset=utf-8",
+            "Date": "Fri, 09 Oct 2026 00:12:46 GMT",
+            "ETag": "W/\"1e49-8G7lNlyzOvgndHd4QZNpSTCrtPg\""
+          },
+          "archive_member": "0f018f3595377e90.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/A3-Qwen3.5-9B/visualwebarena.json",
+          "response_url": "https://huggingface.co/api/resolve-cache/spaces/ServiceNow/browsergym-leaderboard/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results%2FA3-Qwen3.5-9B%2Fvisualwebarena.json?%2Fspaces%2FServiceNow%2Fbrowsergym-leaderboard%2Fresolve%2F294ebe1dc36ba83c6916c64c64fb870af3dc8cee%2Fresults%2FA3-Qwen3.5-9B%2Fvisualwebarena.json=&etag=%22c790f5875e643825855bf6db95f4e6a7cd0f2802%22",
+          "http_status": 200,
+          "bytes": 807,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "5c57f9505b9ea8cc865a220ac624790452cb74b39f8fecf8b9d4120be62a1cc8",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "Date": "Thu, 08 Oct 2026 09:01:18 GMT",
+            "ETag": "\"c790f5875e643825855bf6db95f4e6a7cd0f2802\""
+          },
+          "archive_member": "4a009e5d7de70056.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/visualwebarena.json",
+          "response_url": "https://huggingface.co/api/resolve-cache/spaces/ServiceNow/browsergym-leaderboard/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results%2FGenericAgent-Claude-3.5-Sonnet%2Fvisualwebarena.json?%2Fspaces%2FServiceNow%2Fbrowsergym-leaderboard%2Fresolve%2F294ebe1dc36ba83c6916c64c64fb870af3dc8cee%2Fresults%2FGenericAgent-Claude-3.5-Sonnet%2Fvisualwebarena.json=&etag=%222314e53cd7e52a492b298e2d417ca83c8e99ad4e%22",
+          "http_status": 200,
+          "bytes": 479,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "ca920c35139cebd9e2aceefe1cf0c0bc4b812d6187662e4d370eceb0cf2f6945",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "Date": "Thu, 08 Oct 2026 09:01:29 GMT",
+            "ETag": "\"2314e53cd7e52a492b298e2d417ca83c8e99ad4e\""
+          },
+          "archive_member": "8293bc78801c1610.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o-mini/visualwebarena.json",
+          "response_url": "https://huggingface.co/api/resolve-cache/spaces/ServiceNow/browsergym-leaderboard/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results%2FGenericAgent-GPT-4o-mini%2Fvisualwebarena.json?%2Fspaces%2FServiceNow%2Fbrowsergym-leaderboard%2Fresolve%2F294ebe1dc36ba83c6916c64c64fb870af3dc8cee%2Fresults%2FGenericAgent-GPT-4o-mini%2Fvisualwebarena.json=&etag=%2273d01f9c23c56b48eee3901be1bc0b9a8788b1a2%22",
+          "http_status": 200,
+          "bytes": 473,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "ba420442e2b2c76df8bbcafc91947eed0f8d930a76c9b757b659859d5bd50494",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "Date": "Mon, 05 Oct 2026 00:54:59 GMT",
+            "ETag": "\"73d01f9c23c56b48eee3901be1bc0b9a8788b1a2\""
+          },
+          "archive_member": "a963fc5dd97309b8.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/visualwebarena.json",
+          "response_url": "https://huggingface.co/api/resolve-cache/spaces/ServiceNow/browsergym-leaderboard/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results%2FGenericAgent-GPT-4o%2Fvisualwebarena.json?%2Fspaces%2FServiceNow%2Fbrowsergym-leaderboard%2Fresolve%2F294ebe1dc36ba83c6916c64c64fb870af3dc8cee%2Fresults%2FGenericAgent-GPT-4o%2Fvisualwebarena.json=&etag=%22730550b0d16f9421b0372671f1a17b93fd17dc7a%22",
+          "http_status": 200,
+          "bytes": 468,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "0069033938ccba77f3a38be40bd5ca07ebabab0be172120a73d4e7789faa0d48",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "Date": "Mon, 05 Oct 2026 00:55:17 GMT",
+            "ETag": "\"730550b0d16f9421b0372671f1a17b93fd17dc7a\""
+          },
+          "archive_member": "cb08df64e5bf6fd0.response"
+        }
+      ],
+      "previous_data_retrieved": "2026-10-05",
+      "data_retrieved_after": "2026-10-05",
+      "rows_changed": false,
+      "current_manifest_sha": "294ebe1dc36ba83c6916c64c64fb870af3dc8cee",
+      "manifest_revision_and_membership_unchanged": true
+    },
+    {
+      "id": "real-v1-frameworks",
+      "retrieved": "2026-10-09",
+      "status": "unchanged",
+      "old_rows": 5,
+      "rows": 5,
+      "method": "Flattened all task-level records; selected version and tab, recomputed v1 pass as nonempty evalsPassed and empty evalsFailed; v2 pass as points>0; passed/tasks ×100 rounded to 1 decimal; all records and scores match",
+      "sources": [
+        {
+          "url": "https://www.realevals.xyz/api/getVerifiedModelData",
+          "response_url": "https://www.realevals.xyz/api/getVerifiedModelData",
+          "http_status": 200,
+          "bytes": 3421090,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "904366e9daf872b8ca250fac5e413248e80d61209aa7db055c213efb695b0683",
+          "headers": {
+            "Content-Type": "application/json",
+            "Date": "Fri, 09 Oct 2026 00:12:57 GMT"
+          },
+          "archive_member": "31d7d6ae821dd2e8.response"
+        },
+        {
+          "url": "https://www.realevals.xyz/_next/static/chunks/app/(main)/page-89fe682a64228531.js",
+          "response_url": "https://www.realevals.xyz/_next/static/chunks/app/(main)/page-89fe682a64228531.js",
+          "http_status": 200,
+          "bytes": 24818,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "ed5f6ff9986b67f6f4fcf7f2a08e97bcb598edbbca15277007289ab033dd71a4",
+          "headers": {
+            "Content-Type": "application/javascript; charset=utf-8",
+            "Date": "Fri, 09 Oct 2026 00:12:56 GMT",
+            "Etag": "\"bbf5b6ead4721fd99ae1b3376d9eb301\"",
+            "Last-Modified": "Thu, 08 Oct 2026 21:12:17 GMT"
+          },
+          "archive_member": "4bee2e816200d9c2.response"
+        }
+      ],
+      "previous_data_retrieved": "2026-10-05",
+      "data_retrieved_after": "2026-10-05",
+      "rows_changed": false
+    },
+    {
+      "id": "real-v1-models",
+      "retrieved": "2026-10-09",
+      "status": "unchanged",
+      "old_rows": 21,
+      "rows": 21,
+      "method": "Flattened all task-level records; selected version and tab, recomputed v1 pass as nonempty evalsPassed and empty evalsFailed; v2 pass as points>0; passed/tasks ×100 rounded to 1 decimal; all records and scores match",
+      "sources": [
+        {
+          "url": "https://www.realevals.xyz/api/getVerifiedModelData",
+          "response_url": "https://www.realevals.xyz/api/getVerifiedModelData",
+          "http_status": 200,
+          "bytes": 3421090,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "904366e9daf872b8ca250fac5e413248e80d61209aa7db055c213efb695b0683",
+          "headers": {
+            "Content-Type": "application/json",
+            "Date": "Fri, 09 Oct 2026 00:12:57 GMT"
+          },
+          "archive_member": "31d7d6ae821dd2e8.response"
+        },
+        {
+          "url": "https://www.realevals.xyz/_next/static/chunks/app/(main)/page-89fe682a64228531.js",
+          "response_url": "https://www.realevals.xyz/_next/static/chunks/app/(main)/page-89fe682a64228531.js",
+          "http_status": 200,
+          "bytes": 24818,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "ed5f6ff9986b67f6f4fcf7f2a08e97bcb598edbbca15277007289ab033dd71a4",
+          "headers": {
+            "Content-Type": "application/javascript; charset=utf-8",
+            "Date": "Fri, 09 Oct 2026 00:12:56 GMT",
+            "Etag": "\"bbf5b6ead4721fd99ae1b3376d9eb301\"",
+            "Last-Modified": "Thu, 08 Oct 2026 21:12:17 GMT"
+          },
+          "archive_member": "4bee2e816200d9c2.response"
+        }
+      ],
+      "previous_data_retrieved": "2026-10-05",
+      "data_retrieved_after": "2026-10-05",
+      "rows_changed": false
+    },
+    {
+      "id": "real-v1-open-arena",
+      "retrieved": "2026-10-09",
+      "status": "unchanged",
+      "old_rows": 7,
+      "rows": 7,
+      "method": "Flattened all task-level records; selected version and tab, recomputed v1 pass as nonempty evalsPassed and empty evalsFailed; v2 pass as points>0; passed/tasks ×100 rounded to 1 decimal; all records and scores match",
+      "sources": [
+        {
+          "url": "https://www.realevals.xyz/api/getVerifiedModelData",
+          "response_url": "https://www.realevals.xyz/api/getVerifiedModelData",
+          "http_status": 200,
+          "bytes": 3421090,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "904366e9daf872b8ca250fac5e413248e80d61209aa7db055c213efb695b0683",
+          "headers": {
+            "Content-Type": "application/json",
+            "Date": "Fri, 09 Oct 2026 00:12:57 GMT"
+          },
+          "archive_member": "31d7d6ae821dd2e8.response"
+        },
+        {
+          "url": "https://www.realevals.xyz/_next/static/chunks/app/(main)/page-89fe682a64228531.js",
+          "response_url": "https://www.realevals.xyz/_next/static/chunks/app/(main)/page-89fe682a64228531.js",
+          "http_status": 200,
+          "bytes": 24818,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "ed5f6ff9986b67f6f4fcf7f2a08e97bcb598edbbca15277007289ab033dd71a4",
+          "headers": {
+            "Content-Type": "application/javascript; charset=utf-8",
+            "Date": "Fri, 09 Oct 2026 00:12:56 GMT",
+            "Etag": "\"bbf5b6ead4721fd99ae1b3376d9eb301\"",
+            "Last-Modified": "Thu, 08 Oct 2026 21:12:17 GMT"
+          },
+          "archive_member": "4bee2e816200d9c2.response"
+        }
+      ],
+      "previous_data_retrieved": "2026-10-05",
+      "data_retrieved_after": "2026-10-05",
+      "rows_changed": false
+    },
+    {
+      "id": "real-v2-frameworks",
+      "retrieved": "2026-10-09",
+      "status": "unchanged",
+      "old_rows": 1,
+      "rows": 1,
+      "method": "Flattened all task-level records; selected version and tab, recomputed v1 pass as nonempty evalsPassed and empty evalsFailed; v2 pass as points>0; passed/tasks ×100 rounded to 1 decimal; all records and scores match",
+      "sources": [
+        {
+          "url": "https://www.realevals.xyz/api/getVerifiedModelData",
+          "response_url": "https://www.realevals.xyz/api/getVerifiedModelData",
+          "http_status": 200,
+          "bytes": 3421090,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "904366e9daf872b8ca250fac5e413248e80d61209aa7db055c213efb695b0683",
+          "headers": {
+            "Content-Type": "application/json",
+            "Date": "Fri, 09 Oct 2026 00:12:57 GMT"
+          },
+          "archive_member": "31d7d6ae821dd2e8.response"
+        },
+        {
+          "url": "https://www.realevals.xyz/_next/static/chunks/app/(main)/page-89fe682a64228531.js",
+          "response_url": "https://www.realevals.xyz/_next/static/chunks/app/(main)/page-89fe682a64228531.js",
+          "http_status": 200,
+          "bytes": 24818,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "ed5f6ff9986b67f6f4fcf7f2a08e97bcb598edbbca15277007289ab033dd71a4",
+          "headers": {
+            "Content-Type": "application/javascript; charset=utf-8",
+            "Date": "Fri, 09 Oct 2026 00:12:56 GMT",
+            "Etag": "\"bbf5b6ead4721fd99ae1b3376d9eb301\"",
+            "Last-Modified": "Thu, 08 Oct 2026 21:12:17 GMT"
+          },
+          "archive_member": "4bee2e816200d9c2.response"
+        }
+      ],
+      "previous_data_retrieved": "2026-10-05",
+      "data_retrieved_after": "2026-10-05",
+      "rows_changed": false
+    },
+    {
+      "id": "real-v2-models",
+      "retrieved": "2026-10-09",
+      "status": "unchanged",
+      "old_rows": 12,
+      "rows": 12,
+      "method": "Flattened all task-level records; selected version and tab, recomputed v1 pass as nonempty evalsPassed and empty evalsFailed; v2 pass as points>0; passed/tasks ×100 rounded to 1 decimal; all records and scores match",
+      "sources": [
+        {
+          "url": "https://www.realevals.xyz/api/getVerifiedModelData",
+          "response_url": "https://www.realevals.xyz/api/getVerifiedModelData",
+          "http_status": 200,
+          "bytes": 3421090,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "904366e9daf872b8ca250fac5e413248e80d61209aa7db055c213efb695b0683",
+          "headers": {
+            "Content-Type": "application/json",
+            "Date": "Fri, 09 Oct 2026 00:12:57 GMT"
+          },
+          "archive_member": "31d7d6ae821dd2e8.response"
+        },
+        {
+          "url": "https://www.realevals.xyz/_next/static/chunks/app/(main)/page-89fe682a64228531.js",
+          "response_url": "https://www.realevals.xyz/_next/static/chunks/app/(main)/page-89fe682a64228531.js",
+          "http_status": 200,
+          "bytes": 24818,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "ed5f6ff9986b67f6f4fcf7f2a08e97bcb598edbbca15277007289ab033dd71a4",
+          "headers": {
+            "Content-Type": "application/javascript; charset=utf-8",
+            "Date": "Fri, 09 Oct 2026 00:12:56 GMT",
+            "Etag": "\"bbf5b6ead4721fd99ae1b3376d9eb301\"",
+            "Last-Modified": "Thu, 08 Oct 2026 21:12:17 GMT"
+          },
+          "archive_member": "4bee2e816200d9c2.response"
+        }
+      ],
+      "previous_data_retrieved": "2026-10-05",
+      "data_retrieved_after": "2026-10-05",
+      "rows_changed": false
+    },
+    {
+      "id": "assistantbench",
+      "retrieved": "2026-10-09",
+      "status": "unchanged",
+      "old_rows": 184,
+      "rows": 184,
+      "method": "Extracted initialized Gradio dataframe with all 184 numeric rows; full equality with prior test board",
+      "sources": [
+        {
+          "url": "https://assistantbench-leaderboard.hf.space/config",
+          "response_url": "https://assistantbench-leaderboard.hf.space/config",
+          "http_status": 200,
+          "bytes": 38193,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "701b088cf5bca5280b76819bee3d36396839ca9f18595bed78b070f748ec018f",
+          "headers": {
+            "Date": "Fri, 09 Oct 2026 00:12:41 GMT",
+            "Content-Type": "application/json"
+          },
+          "archive_member": "54c249c0590a8b96.response"
+        }
+      ],
+      "previous_data_retrieved": "2026-10-05",
+      "data_retrieved_after": "2026-10-05",
+      "rows_changed": false
+    },
+    {
+      "id": "bearcubs",
+      "retrieved": "2026-10-09",
+      "status": "unchanged",
+      "old_rows": 12,
+      "rows": 12,
+      "method": "Parsed published Typescript JSON array; compared every numeric field and row",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/bear-cubs/bear-cubs.github.io/main/src/data/bear_cubs_leaderboard.ts",
+          "response_url": "https://raw.githubusercontent.com/bear-cubs/bear-cubs.github.io/main/src/data/bear_cubs_leaderboard.ts",
+          "http_status": 200,
+          "bytes": 5156,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "f631d30ebe218c2794ca90330fe238f6653db2a4aee187c2987be8aeb64b149d",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "ETag": "\"73b3156c2aecca60d7f5e9ba622d8fbc033f2ff1d48a1e3f26463317b329bd23\"",
+            "Date": "Fri, 09 Oct 2026 00:12:53 GMT"
+          },
+          "archive_member": "4ed9ac5fbaf49428.response"
+        }
+      ],
+      "previous_data_retrieved": "2026-10-05",
+      "data_retrieved_after": "2026-10-05",
+      "rows_changed": false
+    },
+    {
+      "id": "webchorearena",
+      "retrieved": "2026-10-09",
+      "status": "unchanged",
+      "old_rows": 8,
+      "rows": 8,
+      "method": "Parsed every CSV cell including main/subset metadata; exact equality",
+      "sources": [
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1RGyJ0QOxGj196KTfUK0SZeVl5IkM928_38wzIkQVxCs/export?format=csv&gid=0",
+          "response_url": "https://doc-0s-5o-sheets.googleusercontent.com/export/f3kk9gtum31ktuqh54kn7i1e14/enk20psuenvr1s591rornbsdko/1791504760000/103623120947968158097/*/1RGyJ0QOxGj196KTfUK0SZeVl5IkM928_38wzIkQVxCs?format=csv&gid=0",
+          "http_status": 200,
+          "bytes": 1797,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "648674ee1b6c44d4de45e29a8ca9aced00ac4b96fd5f0184e68640f51f644d6e",
+          "headers": {
+            "Content-Type": "text/csv; charset=utf-8",
+            "Date": "Fri, 09 Oct 2026 00:12:46 GMT"
+          },
+          "archive_member": "c33f20462fa5973b.response"
+        }
+      ],
+      "previous_data_retrieved": "2026-10-05",
+      "data_retrieved_after": "2026-10-05",
+      "rows_changed": false
+    },
+    {
+      "id": "webarena",
+      "retrieved": "2026-10-09",
+      "status": "unchanged",
+      "old_rows": 47,
+      "rows": 47,
+      "method": "Parsed all current CSV rows; exact main-board rows equality; verified subset/human boundaries and retained separate full CSV/HTML artifacts",
+      "sources": [
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ/export?format=csv&gid=0",
+          "response_url": "https://doc-0s-8k-sheets.googleusercontent.com/export/f3kk9gtum31ktuqh54kn7i1e14/8u0fh257sh1it7msagmd7cnn34/1791504760000/107749188441013449624/*/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ?format=csv&gid=0",
+          "http_status": 200,
+          "bytes": 4592,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "94979863e58fa36104c2c1fc060fa580c1022a2fc26be37d1dcc722fc7e5866f",
+          "headers": {
+            "Content-Type": "text/csv; charset=utf-8",
+            "Date": "Fri, 09 Oct 2026 00:12:45 GMT"
+          },
+          "archive_member": "f4211910bc3eb9dd.response"
+        },
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ/htmlview/sheet?headers=true&gid=0",
+          "response_url": "https://docs.google.com/spreadsheets/d/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ/htmlview/sheet?headers=true&gid=0",
+          "http_status": 200,
+          "bytes": 98116,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "56a866c25105d7480f9e42f8c97ace4ac35ba5813e0ab2ecd9b956966b3d7deb",
+          "headers": {
+            "Content-Type": "text/html; charset=utf-8",
+            "Date": "Fri, 09 Oct 2026 00:12:41 GMT"
+          },
+          "archive_member": "685afe9369ab60a7.response"
+        }
+      ],
+      "previous_data_retrieved": "2026-10-05",
+      "data_retrieved_after": "2026-10-05",
+      "rows_changed": false
+    },
+    {
+      "id": "visualwebarena",
+      "retrieved": "2026-10-09",
+      "status": "unchanged",
+      "old_rows": 38,
+      "rows": 38,
+      "method": "Parsed all current CSV rows; exact main-board rows equality; verified subset/human boundaries and retained separate full CSV/HTML artifacts",
+      "sources": [
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ/export?format=csv&gid=2044883967",
+          "response_url": "https://doc-0s-8k-sheets.googleusercontent.com/export/f3kk9gtum31ktuqh54kn7i1e14/8u0fh257sh1it7msagmd7cnn34/1791504760000/107749188441013449624/*/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ?format=csv&gid=2044883967",
+          "http_status": 200,
+          "bytes": 3209,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "be851ca44c7141bf0f4acfb6e1844955f4d82c331df3b603f3531e3f0c7a74ee",
+          "headers": {
+            "Content-Type": "text/csv; charset=utf-8",
+            "Date": "Fri, 09 Oct 2026 00:12:45 GMT"
+          },
+          "archive_member": "e493570f0ae2f216.response"
+        },
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ/htmlview/sheet?headers=true&gid=2044883967",
+          "response_url": "https://docs.google.com/spreadsheets/d/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ/htmlview/sheet?headers=true&gid=2044883967",
+          "http_status": 200,
+          "bytes": 75950,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "a37c681bd3d8f0889b2ddd0df36fc1b07e79a18ba828564f9dd8dbc2cd14a236",
+          "headers": {
+            "Content-Type": "text/html; charset=utf-8",
+            "Date": "Fri, 09 Oct 2026 00:12:42 GMT"
+          },
+          "archive_member": "35147ff1eb9713c3.response"
+        }
+      ],
+      "previous_data_retrieved": "2026-10-05",
+      "data_retrieved_after": "2026-10-05",
+      "rows_changed": false
+    },
+    {
+      "id": "androidworld",
+      "retrieved": "2026-10-09",
+      "status": "unchanged",
+      "old_rows": 47,
+      "rows": 47,
+      "method": "Parsed all main-board CSV rows/ranks/months and notes; preserved exact known model identity mappings; retained self-reported verification=false",
+      "sources": [
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo/export?format=csv&gid=0",
+          "response_url": "https://doc-04-10-sheets.googleusercontent.com/export/f3kk9gtum31ktuqh54kn7i1e14/th1qcn274p2bia10oj3mdcajuo/1791504760000/106503711661754615063/*/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo?format=csv&gid=0",
+          "http_status": 200,
+          "bytes": 8990,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "d8364afa273b33164fd01e95fa2de4698c7ce9d18a14067ad4d3a0d28904d97c",
+          "headers": {
+            "Content-Type": "text/csv; charset=utf-8",
+            "Date": "Fri, 09 Oct 2026 00:12:46 GMT"
+          },
+          "archive_member": "b046c85fd2961984.response"
+        }
+      ],
+      "previous_data_retrieved": "2026-10-07",
+      "data_retrieved_after": "2026-10-07",
+      "rows_changed": false
+    },
+    {
+      "id": "browsecomp-kaggle",
+      "retrieved": "2026-10-09",
+      "status": "unchanged",
+      "old_rows": 42,
+      "rows": 42,
+      "method": "POST versionIdentifier.versionIdSelector.id=35; mechanically extracted/compared all 42 scores, confidence intervals, row dates, model identities and links; API metadata additions retained",
+      "sources": [
+        {
+          "url": "https://www.kaggle.com/api/i/benchmarks.BenchmarkService/GetBenchmarkLeaderboard",
+          "response_url": "https://www.kaggle.com/api/i/benchmarks.BenchmarkService/GetBenchmarkLeaderboard",
+          "http_status": 200,
+          "bytes": 59785,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "44f7f215e448f67bdcd6b31a19c6a7fbf676988f5223381a237e8aec600dfc49",
+          "headers": {
+            "Content-Type": "application/json",
+            "Date": "Fri, 09 Oct 2026 00:12:55 GMT"
+          },
+          "request_json": {
+            "versionIdentifier": {
+              "versionIdSelector": {
+                "id": 35
+              }
+            }
+          },
+          "archive_member": "b0da3ecade59fddd.response"
+        }
+      ],
+      "previous_data_retrieved": "2026-10-05",
+      "data_retrieved_after": "2026-10-05",
+      "rows_changed": false
+    },
+    {
+      "id": "browsergym-assistantbench",
+      "status": "preserved-gap",
+      "error": "AssertionError: ('https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/assistantbench.json', {'error': '<urlopen error Tunnel connection failed: 403 Forbidden>'})",
+      "retrieved": "2026-10-09",
+      "previous_data_retrieved": "2026-10-05",
+      "data_retrieved_after": "2026-10-05",
+      "old_rows": 6,
+      "rows": 6,
+      "rows_changed": false,
+      "current_manifest_sha": "294ebe1dc36ba83c6916c64c64fb870af3dc8cee",
+      "manifest_revision_and_membership_unchanged": true,
+      "reason": "Complete numeric comparison is blocked by the cancelled network acquisition. Current manifest SHA and result membership match the previously extracted immutable commit, but this is not reported as a fresh full-record comparison. Prior table and source snapshot remain byte-for-byte unchanged.",
+      "sources": [
+        {
+          "url": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+          "response_url": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+          "http_status": 200,
+          "bytes": 7753,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "82cc7387c7fb54b807c75745e1c055bb9d69d5dd9e1cdd5505b57dad45d8e737",
+          "headers": {
+            "Content-Type": "application/json; charset=utf-8",
+            "Date": "Fri, 09 Oct 2026 00:12:46 GMT",
+            "ETag": "W/\"1e49-8G7lNlyzOvgndHd4QZNpSTCrtPg\""
+          },
+          "archive_member": "0f018f3595377e90.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/assistantbench.json",
+          "response_url": "https://huggingface.co/api/resolve-cache/spaces/ServiceNow/browsergym-leaderboard/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results%2FGenericAgent-Claude-3.5-Sonnet%2Fassistantbench.json?%2Fspaces%2FServiceNow%2Fbrowsergym-leaderboard%2Fresolve%2F294ebe1dc36ba83c6916c64c64fb870af3dc8cee%2Fresults%2FGenericAgent-Claude-3.5-Sonnet%2Fassistantbench.json=&etag=%2225e6e505abf6edc37e4d4205842b41af8eefe9a6%22",
+          "http_status": 200,
+          "bytes": 521,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "ea237141c5f61093376fc94d7f24bf59cb0398b16f53e85f3d2e05769602c4fa",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "Date": "Thu, 08 Oct 2026 09:01:27 GMT",
+            "ETag": "\"25e6e505abf6edc37e4d4205842b41af8eefe9a6\""
+          },
+          "archive_member": "fdcfb82084a54671.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o-mini/assistantbench.json",
+          "response_url": "https://huggingface.co/api/resolve-cache/spaces/ServiceNow/browsergym-leaderboard/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results%2FGenericAgent-GPT-4o-mini%2Fassistantbench.json?%2Fspaces%2FServiceNow%2Fbrowsergym-leaderboard%2Fresolve%2F294ebe1dc36ba83c6916c64c64fb870af3dc8cee%2Fresults%2FGenericAgent-GPT-4o-mini%2Fassistantbench.json=&etag=%22edfcd630cb3884c4b7902ad14f1595dfff2a092f%22",
+          "http_status": 200,
+          "bytes": 515,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "2f1b913da62be0a89c42482938d7fdec1b89e8314d0a4f316e7965b4d915ae52",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "Date": "Thu, 08 Oct 2026 09:01:39 GMT",
+            "ETag": "\"edfcd630cb3884c4b7902ad14f1595dfff2a092f\""
+          },
+          "archive_member": "78aa59d11137d63d.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/assistantbench.json",
+          "response_url": "https://huggingface.co/api/resolve-cache/spaces/ServiceNow/browsergym-leaderboard/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results%2FGenericAgent-GPT-4o%2Fassistantbench.json?%2Fspaces%2FServiceNow%2Fbrowsergym-leaderboard%2Fresolve%2F294ebe1dc36ba83c6916c64c64fb870af3dc8cee%2Fresults%2FGenericAgent-GPT-4o%2Fassistantbench.json=&etag=%22b6a57ca0ad20cd092f5260ebb168a8e058fc4e40%22",
+          "http_status": 200,
+          "bytes": 510,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "0f9c42a83145f7cb6e758eb100cb46e6a9ebcf2d4c9aa7ead829425810b28e8a",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "Date": "Mon, 05 Oct 2026 00:54:59 GMT",
+            "ETag": "\"b6a57ca0ad20cd092f5260ebb168a8e058fc4e40\""
+          },
+          "archive_member": "2396ba6986ab546c.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/assistantbench.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/assistantbench.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-70b/assistantbench.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        }
+      ]
+    },
+    {
+      "id": "browsergym-miniwob",
+      "status": "preserved-gap",
+      "error": "AssertionError: ('https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-mini/miniwob.json', {'error': '<urlopen error Tunnel connection failed: 403 Forbidden>'})",
+      "retrieved": "2026-10-09",
+      "previous_data_retrieved": "2026-10-05",
+      "data_retrieved_after": "2026-10-05",
+      "old_rows": 16,
+      "rows": 16,
+      "rows_changed": false,
+      "current_manifest_sha": "294ebe1dc36ba83c6916c64c64fb870af3dc8cee",
+      "manifest_revision_and_membership_unchanged": true,
+      "reason": "Complete numeric comparison is blocked by the cancelled network acquisition. Current manifest SHA and result membership match the previously extracted immutable commit, but this is not reported as a fresh full-record comparison. Prior table and source snapshot remain byte-for-byte unchanged.",
+      "sources": [
+        {
+          "url": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+          "response_url": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+          "http_status": 200,
+          "bytes": 7753,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "82cc7387c7fb54b807c75745e1c055bb9d69d5dd9e1cdd5505b57dad45d8e737",
+          "headers": {
+            "Content-Type": "application/json; charset=utf-8",
+            "Date": "Fri, 09 Oct 2026 00:12:46 GMT",
+            "ETag": "W/\"1e49-8G7lNlyzOvgndHd4QZNpSTCrtPg\""
+          },
+          "archive_member": "0f018f3595377e90.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/A3-Qwen3.5-9B/miniwob.json",
+          "response_url": "https://huggingface.co/api/resolve-cache/spaces/ServiceNow/browsergym-leaderboard/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results%2FA3-Qwen3.5-9B%2Fminiwob.json?%2Fspaces%2FServiceNow%2Fbrowsergym-leaderboard%2Fresolve%2F294ebe1dc36ba83c6916c64c64fb870af3dc8cee%2Fresults%2FA3-Qwen3.5-9B%2Fminiwob.json=&etag=%220746b18a5c5b5e379d17fb56c60f0393841351d1%22",
+          "http_status": 200,
+          "bytes": 612,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "65cb35a202fae743edd5f1ac2e12c9c22016b0158393120eb3099e3762b3daa8",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "Date": "Fri, 02 Oct 2026 00:39:38 GMT",
+            "ETag": "\"0746b18a5c5b5e379d17fb56c60f0393841351d1\""
+          },
+          "archive_member": "b729994b1709953c.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-AgentTrek-1.0-32b/miniwob.json",
+          "response_url": "https://huggingface.co/api/resolve-cache/spaces/ServiceNow/browsergym-leaderboard/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results%2FGenericAgent-AgentTrek-1.0-32b%2Fminiwob.json?%2Fspaces%2FServiceNow%2Fbrowsergym-leaderboard%2Fresolve%2F294ebe1dc36ba83c6916c64c64fb870af3dc8cee%2Fresults%2FGenericAgent-AgentTrek-1.0-32b%2Fminiwob.json=&etag=%220877890bd9296bb436a8afbd6cc5ae2614408df2%22",
+          "http_status": 200,
+          "bytes": 490,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "7e254d4cfe35b89032057578dc1f730885b9a4f77964275a6696c717fe60b2aa",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "Date": "Fri, 09 Oct 2026 00:13:04 GMT",
+            "ETag": "\"0877890bd9296bb436a8afbd6cc5ae2614408df2\""
+          },
+          "archive_member": "67413f3c37d5db1f.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/miniwob.json",
+          "response_url": "https://huggingface.co/api/resolve-cache/spaces/ServiceNow/browsergym-leaderboard/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results%2FGenericAgent-Claude-3.5-Sonnet%2Fminiwob.json?%2Fspaces%2FServiceNow%2Fbrowsergym-leaderboard%2Fresolve%2F294ebe1dc36ba83c6916c64c64fb870af3dc8cee%2Fresults%2FGenericAgent-Claude-3.5-Sonnet%2Fminiwob.json=&etag=%223d92a3b23ef10422e12b47f1697bd47799f2f5b5%22",
+          "http_status": 200,
+          "bytes": 455,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "b1a9684e5882c90c53c570d3c82377f6a322a1baa2d7de7f2a413853077f9755",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "Date": "Fri, 09 Oct 2026 00:13:04 GMT",
+            "ETag": "\"3d92a3b23ef10422e12b47f1697bd47799f2f5b5\""
+          },
+          "archive_member": "4f92ecac5048bcef.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-4-Sonnet/miniwob.json",
+          "response_url": "https://huggingface.co/api/resolve-cache/spaces/ServiceNow/browsergym-leaderboard/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results%2FGenericAgent-Claude-4-Sonnet%2Fminiwob.json?%2Fspaces%2FServiceNow%2Fbrowsergym-leaderboard%2Fresolve%2F294ebe1dc36ba83c6916c64c64fb870af3dc8cee%2Fresults%2FGenericAgent-Claude-4-Sonnet%2Fminiwob.json=&etag=%22ff24bacff16a85f7ac208effa3fa16506caf4415%22",
+          "http_status": 200,
+          "bytes": 406,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "dc36399fba1308f30640a9d91969624fcdac403e111f27775084c16939dc981f",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "Date": "Sat, 03 Oct 2026 14:08:24 GMT",
+            "ETag": "\"ff24bacff16a85f7ac208effa3fa16506caf4415\""
+          },
+          "archive_member": "ab0b2631e612a44e.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o-mini/miniwob.json",
+          "response_url": "https://huggingface.co/api/resolve-cache/spaces/ServiceNow/browsergym-leaderboard/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results%2FGenericAgent-GPT-4o-mini%2Fminiwob.json?%2Fspaces%2FServiceNow%2Fbrowsergym-leaderboard%2Fresolve%2F294ebe1dc36ba83c6916c64c64fb870af3dc8cee%2Fresults%2FGenericAgent-GPT-4o-mini%2Fminiwob.json=&etag=%228fd1b099c7968b9f41faad3dfd46fbe340ab535a%22",
+          "http_status": 200,
+          "bytes": 449,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "b07b68c9de7842569d2ae3c239ef770a959d9ed7a04227d97565642c9fae7ded",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "Date": "Fri, 02 Oct 2026 00:41:56 GMT",
+            "ETag": "\"8fd1b099c7968b9f41faad3dfd46fbe340ab535a\""
+          },
+          "archive_member": "49daf22d1bb02a35.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/miniwob.json",
+          "response_url": "https://huggingface.co/api/resolve-cache/spaces/ServiceNow/browsergym-leaderboard/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results%2FGenericAgent-GPT-4o%2Fminiwob.json?%2Fspaces%2FServiceNow%2Fbrowsergym-leaderboard%2Fresolve%2F294ebe1dc36ba83c6916c64c64fb870af3dc8cee%2Fresults%2FGenericAgent-GPT-4o%2Fminiwob.json=&etag=%22b3aa2029432187b2737e378d5a7127aae52230b1%22",
+          "http_status": 200,
+          "bytes": 444,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "7ffd4815baa1ef666a72df8e321fce75188bc9b1d5a59e36467bb0aa0c1553d8",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "Date": "Fri, 09 Oct 2026 00:13:21 GMT",
+            "ETag": "\"b3aa2029432187b2737e378d5a7127aae52230b1\""
+          },
+          "archive_member": "e305851a298b79a0.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-mini/miniwob.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-nano/miniwob.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5/miniwob.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/miniwob.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-oss-120b/miniwob.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-oss-20b/miniwob.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/miniwob.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-70b/miniwob.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/OrbyAgent-ActIO-72b/miniwob.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/OrbyAgent-Claude-3.5-Sonnet/miniwob.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        }
+      ]
+    },
+    {
+      "id": "browsergym-webarena",
+      "status": "preserved-gap",
+      "error": "AssertionError: ('https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/webarena.json', {'error': '<urlopen error Tunnel connection failed: 403 Forbidden>'})",
+      "retrieved": "2026-10-09",
+      "previous_data_retrieved": "2026-10-05",
+      "data_retrieved_after": "2026-10-05",
+      "old_rows": 12,
+      "rows": 12,
+      "rows_changed": false,
+      "current_manifest_sha": "294ebe1dc36ba83c6916c64c64fb870af3dc8cee",
+      "manifest_revision_and_membership_unchanged": true,
+      "reason": "Complete numeric comparison is blocked by the cancelled network acquisition. Current manifest SHA and result membership match the previously extracted immutable commit, but this is not reported as a fresh full-record comparison. Prior table and source snapshot remain byte-for-byte unchanged.",
+      "sources": [
+        {
+          "url": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+          "response_url": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+          "http_status": 200,
+          "bytes": 7753,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "82cc7387c7fb54b807c75745e1c055bb9d69d5dd9e1cdd5505b57dad45d8e737",
+          "headers": {
+            "Content-Type": "application/json; charset=utf-8",
+            "Date": "Fri, 09 Oct 2026 00:12:46 GMT",
+            "ETag": "W/\"1e49-8G7lNlyzOvgndHd4QZNpSTCrtPg\""
+          },
+          "archive_member": "0f018f3595377e90.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/A3-Qwen3.5-9B/webarena.json",
+          "response_url": "https://huggingface.co/api/resolve-cache/spaces/ServiceNow/browsergym-leaderboard/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results%2FA3-Qwen3.5-9B%2Fwebarena.json?%2Fspaces%2FServiceNow%2Fbrowsergym-leaderboard%2Fresolve%2F294ebe1dc36ba83c6916c64c64fb870af3dc8cee%2Fresults%2FA3-Qwen3.5-9B%2Fwebarena.json=&etag=%22e017e381d9db514600aebef8e2d3b6445c879c3e%22",
+          "http_status": 200,
+          "bytes": 749,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "bcea3d0bfe45f043b4fe0eb6ec61c219c4c6b5e35472660a2d4f7456eb74b250",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "Date": "Thu, 08 Oct 2026 09:01:19 GMT",
+            "ETag": "\"e017e381d9db514600aebef8e2d3b6445c879c3e\""
+          },
+          "archive_member": "6a5c7a856befe7bf.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-AgentTrek-1.0-32b/webarena.json",
+          "response_url": "https://huggingface.co/api/resolve-cache/spaces/ServiceNow/browsergym-leaderboard/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results%2FGenericAgent-AgentTrek-1.0-32b%2Fwebarena.json?%2Fspaces%2FServiceNow%2Fbrowsergym-leaderboard%2Fresolve%2F294ebe1dc36ba83c6916c64c64fb870af3dc8cee%2Fresults%2FGenericAgent-AgentTrek-1.0-32b%2Fwebarena.json=&etag=%220634bdfc8304a9148264ced6498c59868388910b%22",
+          "http_status": 200,
+          "bytes": 491,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "7b9dac29a6efa888c5d9e2aa817d549c1ee7df537074081845d35b64fb54385d",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "Date": "Fri, 09 Oct 2026 00:13:05 GMT",
+            "ETag": "\"0634bdfc8304a9148264ced6498c59868388910b\""
+          },
+          "archive_member": "654e26998903c000.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/webarena.json",
+          "response_url": "https://huggingface.co/api/resolve-cache/spaces/ServiceNow/browsergym-leaderboard/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results%2FGenericAgent-Claude-3.5-Sonnet%2Fwebarena.json?%2Fspaces%2FServiceNow%2Fbrowsergym-leaderboard%2Fresolve%2F294ebe1dc36ba83c6916c64c64fb870af3dc8cee%2Fresults%2FGenericAgent-Claude-3.5-Sonnet%2Fwebarena.json=&etag=%220f54ccd322f68c971e4182db57a9313cb9cf7c6a%22",
+          "http_status": 200,
+          "bytes": 473,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "de4f970b77b83f1e09b8c98a957654149c0d91b23bd8fff170b6869dd8d195f0",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "Date": "Fri, 09 Oct 2026 00:13:12 GMT",
+            "ETag": "\"0f54ccd322f68c971e4182db57a9313cb9cf7c6a\""
+          },
+          "archive_member": "c75130c96675d27b.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.7-Sonnet/webarena.json",
+          "response_url": "https://huggingface.co/api/resolve-cache/spaces/ServiceNow/browsergym-leaderboard/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results%2FGenericAgent-Claude-3.7-Sonnet%2Fwebarena.json?%2Fspaces%2FServiceNow%2Fbrowsergym-leaderboard%2Fresolve%2F294ebe1dc36ba83c6916c64c64fb870af3dc8cee%2Fresults%2FGenericAgent-Claude-3.7-Sonnet%2Fwebarena.json=&etag=%225bb20c58f04632a2030939e05d60cc3d2670d433%22",
+          "http_status": 200,
+          "bytes": 406,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "fe715ea246b3a178c845720558fe154546c63d69b1223f2087addd82171fc9dd",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "Date": "Fri, 09 Oct 2026 00:13:12 GMT",
+            "ETag": "\"5bb20c58f04632a2030939e05d60cc3d2670d433\""
+          },
+          "archive_member": "ee80f30896ec6f11.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4.1-Mini/webarena.json",
+          "response_url": "https://huggingface.co/api/resolve-cache/spaces/ServiceNow/browsergym-leaderboard/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results%2FGenericAgent-GPT-4.1-Mini%2Fwebarena.json?%2Fspaces%2FServiceNow%2Fbrowsergym-leaderboard%2Fresolve%2F294ebe1dc36ba83c6916c64c64fb870af3dc8cee%2Fresults%2FGenericAgent-GPT-4.1-Mini%2Fwebarena.json=&etag=%22357066bb68722c6bf3abde2cede028305fa5cc7e%22",
+          "http_status": 200,
+          "bytes": 399,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "27863f95494366fedfeea0dac063a76c8293d3a64b8ec13c9793f5440eaa5d14",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "Date": "Thu, 08 Oct 2026 09:01:37 GMT",
+            "ETag": "\"357066bb68722c6bf3abde2cede028305fa5cc7e\""
+          },
+          "archive_member": "d123b3e86330c859.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o-mini/webarena.json",
+          "response_url": "https://huggingface.co/api/resolve-cache/spaces/ServiceNow/browsergym-leaderboard/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results%2FGenericAgent-GPT-4o-mini%2Fwebarena.json?%2Fspaces%2FServiceNow%2Fbrowsergym-leaderboard%2Fresolve%2F294ebe1dc36ba83c6916c64c64fb870af3dc8cee%2Fresults%2FGenericAgent-GPT-4o-mini%2Fwebarena.json=&etag=%223958a8c47219cf2856a1e73a1309d1acc3b295b4%22",
+          "http_status": 200,
+          "bytes": 467,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "642a18bc81d6eed67f12ea5f3b92f6e187335a9c63f6c751f19a03b66d6fc018",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "Date": "Fri, 09 Oct 2026 00:13:21 GMT",
+            "ETag": "\"3958a8c47219cf2856a1e73a1309d1acc3b295b4\""
+          },
+          "archive_member": "c1912de6597e8f52.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/webarena.json",
+          "response_url": "https://huggingface.co/api/resolve-cache/spaces/ServiceNow/browsergym-leaderboard/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results%2FGenericAgent-GPT-4o%2Fwebarena.json?%2Fspaces%2FServiceNow%2Fbrowsergym-leaderboard%2Fresolve%2F294ebe1dc36ba83c6916c64c64fb870af3dc8cee%2Fresults%2FGenericAgent-GPT-4o%2Fwebarena.json=&etag=%2253542859b5677c179c3edb195d17b5dd63d7db11%22",
+          "http_status": 200,
+          "bytes": 462,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "621fddaf8ee04bab7cfccf75b9dd454e468d757aeb2aa4ccd11c57dcff4c09c5",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "Date": "Fri, 09 Oct 2026 00:13:21 GMT",
+            "ETag": "\"53542859b5677c179c3edb195d17b5dd63d7db11\""
+          },
+          "archive_member": "5a109862acc2b0d0.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/webarena.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/webarena.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-70b/webarena.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/OrbyAgent-ActIO-72b/webarena.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/OrbyAgent-Claude-3.5-Sonnet/webarena.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        }
+      ]
+    },
+    {
+      "id": "browsergym-weblinx",
+      "status": "preserved-gap",
+      "error": "AssertionError: ('https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/weblinx.json', {'error': '<urlopen error Tunnel connection failed: 403 Forbidden>'})",
+      "retrieved": "2026-10-09",
+      "previous_data_retrieved": "2026-10-05",
+      "data_retrieved_after": "2026-10-05",
+      "old_rows": 6,
+      "rows": 6,
+      "rows_changed": false,
+      "current_manifest_sha": "294ebe1dc36ba83c6916c64c64fb870af3dc8cee",
+      "manifest_revision_and_membership_unchanged": true,
+      "reason": "Complete numeric comparison is blocked by the cancelled network acquisition. Current manifest SHA and result membership match the previously extracted immutable commit, but this is not reported as a fresh full-record comparison. Prior table and source snapshot remain byte-for-byte unchanged.",
+      "sources": [
+        {
+          "url": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+          "response_url": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+          "http_status": 200,
+          "bytes": 7753,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "82cc7387c7fb54b807c75745e1c055bb9d69d5dd9e1cdd5505b57dad45d8e737",
+          "headers": {
+            "Content-Type": "application/json; charset=utf-8",
+            "Date": "Fri, 09 Oct 2026 00:12:46 GMT",
+            "ETag": "W/\"1e49-8G7lNlyzOvgndHd4QZNpSTCrtPg\""
+          },
+          "archive_member": "0f018f3595377e90.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/weblinx.json",
+          "response_url": "https://huggingface.co/api/resolve-cache/spaces/ServiceNow/browsergym-leaderboard/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results%2FGenericAgent-Claude-3.5-Sonnet%2Fweblinx.json?%2Fspaces%2FServiceNow%2Fbrowsergym-leaderboard%2Fresolve%2F294ebe1dc36ba83c6916c64c64fb870af3dc8cee%2Fresults%2FGenericAgent-Claude-3.5-Sonnet%2Fweblinx.json=&etag=%224be0689c02e5e8e9dee2dd09966fc9cf8577f0d5%22",
+          "http_status": 200,
+          "bytes": 472,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "f8972acf77dfaa591267ce44fda3e7a86d783ba6cc5f3eb14de388a473dc8b58",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "Date": "Thu, 08 Oct 2026 09:01:30 GMT",
+            "ETag": "\"4be0689c02e5e8e9dee2dd09966fc9cf8577f0d5\""
+          },
+          "archive_member": "b40f5ab4eb412188.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o-mini/weblinx.json",
+          "response_url": "https://huggingface.co/api/resolve-cache/spaces/ServiceNow/browsergym-leaderboard/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results%2FGenericAgent-GPT-4o-mini%2Fweblinx.json?%2Fspaces%2FServiceNow%2Fbrowsergym-leaderboard%2Fresolve%2F294ebe1dc36ba83c6916c64c64fb870af3dc8cee%2Fresults%2FGenericAgent-GPT-4o-mini%2Fweblinx.json=&etag=%2220293812e70717a0c19c9e9efe5c9a9052d62153%22",
+          "http_status": 200,
+          "bytes": 466,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "a4d871bfb78f22a867613d7c3f8d4cc0840a7b1573809e479f48282cb3150e47",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "Date": "Thu, 08 Oct 2026 09:01:42 GMT",
+            "ETag": "\"20293812e70717a0c19c9e9efe5c9a9052d62153\""
+          },
+          "archive_member": "e99f49ce203d4da2.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/weblinx.json",
+          "response_url": "https://huggingface.co/api/resolve-cache/spaces/ServiceNow/browsergym-leaderboard/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results%2FGenericAgent-GPT-4o%2Fweblinx.json?%2Fspaces%2FServiceNow%2Fbrowsergym-leaderboard%2Fresolve%2F294ebe1dc36ba83c6916c64c64fb870af3dc8cee%2Fresults%2FGenericAgent-GPT-4o%2Fweblinx.json=&etag=%222b75c3a1e8a455277a5b15c1208bc3c10d31f369%22",
+          "http_status": 200,
+          "bytes": 461,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "525ceb7c5be75ea76b62a3f12e88999118705e2063b79ccd1a50538949042339",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "Date": "Thu, 08 Oct 2026 09:01:49 GMT",
+            "ETag": "\"2b75c3a1e8a455277a5b15c1208bc3c10d31f369\""
+          },
+          "archive_member": "2d2faf8942dce9ad.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/weblinx.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/weblinx.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-70b/weblinx.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        }
+      ]
+    },
+    {
+      "id": "browsergym-workarena-l1",
+      "status": "preserved-gap",
+      "error": "AssertionError: ('https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/workarena-l1.json', {'error': '<urlopen error Tunnel connection failed: 403 Forbidden>'})",
+      "retrieved": "2026-10-09",
+      "previous_data_retrieved": "2026-10-05",
+      "data_retrieved_after": "2026-10-05",
+      "old_rows": 16,
+      "rows": 16,
+      "rows_changed": false,
+      "current_manifest_sha": "294ebe1dc36ba83c6916c64c64fb870af3dc8cee",
+      "manifest_revision_and_membership_unchanged": true,
+      "reason": "Complete numeric comparison is blocked by the cancelled network acquisition. Current manifest SHA and result membership match the previously extracted immutable commit, but this is not reported as a fresh full-record comparison. Prior table and source snapshot remain byte-for-byte unchanged.",
+      "sources": [
+        {
+          "url": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+          "response_url": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+          "http_status": 200,
+          "bytes": 7753,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "82cc7387c7fb54b807c75745e1c055bb9d69d5dd9e1cdd5505b57dad45d8e737",
+          "headers": {
+            "Content-Type": "application/json; charset=utf-8",
+            "Date": "Fri, 09 Oct 2026 00:12:46 GMT",
+            "ETag": "W/\"1e49-8G7lNlyzOvgndHd4QZNpSTCrtPg\""
+          },
+          "archive_member": "0f018f3595377e90.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/A3-Qwen3.5-9B/workarena-l1.json",
+          "response_url": "https://huggingface.co/api/resolve-cache/spaces/ServiceNow/browsergym-leaderboard/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results%2FA3-Qwen3.5-9B%2Fworkarena-l1.json?%2Fspaces%2FServiceNow%2Fbrowsergym-leaderboard%2Fresolve%2F294ebe1dc36ba83c6916c64c64fb870af3dc8cee%2Fresults%2FA3-Qwen3.5-9B%2Fworkarena-l1.json=&etag=%22c0e49d5ee85cbba6a198827e79d350337442a7f8%22",
+          "http_status": 200,
+          "bytes": 627,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "c6569b12464c4bd0c00ae31ebed4b4ccedb8b1dcb483464d8ab9879e995be824",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "Date": "Thu, 08 Oct 2026 09:01:20 GMT",
+            "ETag": "\"c0e49d5ee85cbba6a198827e79d350337442a7f8\""
+          },
+          "archive_member": "d887f60bbd50c151.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-AgentTrek-1.0-32b/workarena-l1.json",
+          "response_url": "https://huggingface.co/api/resolve-cache/spaces/ServiceNow/browsergym-leaderboard/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results%2FGenericAgent-AgentTrek-1.0-32b%2Fworkarena-l1.json?%2Fspaces%2FServiceNow%2Fbrowsergym-leaderboard%2Fresolve%2F294ebe1dc36ba83c6916c64c64fb870af3dc8cee%2Fresults%2FGenericAgent-AgentTrek-1.0-32b%2Fworkarena-l1.json=&etag=%229c5a3ff367959ebb56b9f606bc9da0576606399d%22",
+          "http_status": 200,
+          "bytes": 497,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "74a6394fa902cb4b7e18f4d772dfc536d7a611fc53975ed5e3233956907859ae",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "Date": "Fri, 09 Oct 2026 00:13:05 GMT",
+            "ETag": "\"9c5a3ff367959ebb56b9f606bc9da0576606399d\""
+          },
+          "archive_member": "945ae46901e8d9b6.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/workarena-l1.json",
+          "response_url": "https://huggingface.co/api/resolve-cache/spaces/ServiceNow/browsergym-leaderboard/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results%2FGenericAgent-Claude-3.5-Sonnet%2Fworkarena-l1.json?%2Fspaces%2FServiceNow%2Fbrowsergym-leaderboard%2Fresolve%2F294ebe1dc36ba83c6916c64c64fb870af3dc8cee%2Fresults%2FGenericAgent-Claude-3.5-Sonnet%2Fworkarena-l1.json=&etag=%221eecc0e8f9ea7aa11252e6b280ea14e358c5cb0d%22",
+          "http_status": 200,
+          "bytes": 460,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "a33de4c34c4bd63884c91dcea1c64a551be01330be0897a253fe19960403534d",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "Date": "Fri, 09 Oct 2026 00:13:12 GMT",
+            "ETag": "\"1eecc0e8f9ea7aa11252e6b280ea14e358c5cb0d\""
+          },
+          "archive_member": "a43ef0acc64f502f.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-4-Sonnet/workarena-l1.json",
+          "response_url": "https://huggingface.co/api/resolve-cache/spaces/ServiceNow/browsergym-leaderboard/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results%2FGenericAgent-Claude-4-Sonnet%2Fworkarena-l1.json?%2Fspaces%2FServiceNow%2Fbrowsergym-leaderboard%2Fresolve%2F294ebe1dc36ba83c6916c64c64fb870af3dc8cee%2Fresults%2FGenericAgent-Claude-4-Sonnet%2Fworkarena-l1.json=&etag=%2294604f41153e9e4429d8ec76b424e31a0b357a32%22",
+          "http_status": 200,
+          "bytes": 408,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "fead207233b57beeb9e0b475d113ba439875537d4d2edd86232f8381366a1ed2",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "Date": "Fri, 09 Oct 2026 00:13:12 GMT",
+            "ETag": "\"94604f41153e9e4429d8ec76b424e31a0b357a32\""
+          },
+          "archive_member": "99e08e4f77b6620f.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o-mini/workarena-l1.json",
+          "response_url": "https://huggingface.co/api/resolve-cache/spaces/ServiceNow/browsergym-leaderboard/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results%2FGenericAgent-GPT-4o-mini%2Fworkarena-l1.json?%2Fspaces%2FServiceNow%2Fbrowsergym-leaderboard%2Fresolve%2F294ebe1dc36ba83c6916c64c64fb870af3dc8cee%2Fresults%2FGenericAgent-GPT-4o-mini%2Fworkarena-l1.json=&etag=%22ca27a541ef9ffe198860ad51a9db327b9928adbd%22",
+          "http_status": 200,
+          "bytes": 452,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "a2135d21629550f960ce9aefcbcb7a7a2b11940471f3a2339722360cbdb173d5",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "Date": "Fri, 09 Oct 2026 00:13:21 GMT",
+            "ETag": "\"ca27a541ef9ffe198860ad51a9db327b9928adbd\""
+          },
+          "archive_member": "4c1876ad34af2ddb.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/workarena-l1.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-mini/workarena-l1.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-nano/workarena-l1.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5/workarena-l1.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/workarena-l1.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-oss-120b/workarena-l1.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-oss-20b/workarena-l1.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/workarena-l1.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-70b/workarena-l1.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-o3-mini/workarena-l1.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/IpaziaHPA-Gemini-3-flash-preview/workarena-l1.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        }
+      ]
+    },
+    {
+      "id": "browsergym-workarena-l2",
+      "status": "preserved-gap",
+      "error": "AssertionError: ('https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/workarena-l2.json', {'error': '<urlopen error Tunnel connection failed: 403 Forbidden>'})",
+      "retrieved": "2026-10-09",
+      "previous_data_retrieved": "2026-10-05",
+      "data_retrieved_after": "2026-10-05",
+      "old_rows": 14,
+      "rows": 14,
+      "rows_changed": false,
+      "current_manifest_sha": "294ebe1dc36ba83c6916c64c64fb870af3dc8cee",
+      "manifest_revision_and_membership_unchanged": true,
+      "reason": "Complete numeric comparison is blocked by the cancelled network acquisition. Current manifest SHA and result membership match the previously extracted immutable commit, but this is not reported as a fresh full-record comparison. Prior table and source snapshot remain byte-for-byte unchanged.",
+      "sources": [
+        {
+          "url": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+          "response_url": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+          "http_status": 200,
+          "bytes": 7753,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "82cc7387c7fb54b807c75745e1c055bb9d69d5dd9e1cdd5505b57dad45d8e737",
+          "headers": {
+            "Content-Type": "application/json; charset=utf-8",
+            "Date": "Fri, 09 Oct 2026 00:12:46 GMT",
+            "ETag": "W/\"1e49-8G7lNlyzOvgndHd4QZNpSTCrtPg\""
+          },
+          "archive_member": "0f018f3595377e90.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/A3-Qwen3.5-9B/workarena-l2.json",
+          "response_url": "https://huggingface.co/api/resolve-cache/spaces/ServiceNow/browsergym-leaderboard/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results%2FA3-Qwen3.5-9B%2Fworkarena-l2.json?%2Fspaces%2FServiceNow%2Fbrowsergym-leaderboard%2Fresolve%2F294ebe1dc36ba83c6916c64c64fb870af3dc8cee%2Fresults%2FA3-Qwen3.5-9B%2Fworkarena-l2.json=&etag=%22a86127a9607bef21fc29eedb6832f661b87751e9%22",
+          "http_status": 200,
+          "bytes": 649,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "fa7ddf1120884e43aff2cec3480db65d10920de312b71e46cae89e2011c2c95a",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "Date": "Thu, 08 Oct 2026 09:01:21 GMT",
+            "ETag": "\"a86127a9607bef21fc29eedb6832f661b87751e9\""
+          },
+          "archive_member": "09a18f09ae4b3b60.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-AgentTrek-1.0-32b/workarena-l2.json",
+          "response_url": "https://huggingface.co/api/resolve-cache/spaces/ServiceNow/browsergym-leaderboard/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results%2FGenericAgent-AgentTrek-1.0-32b%2Fworkarena-l2.json?%2Fspaces%2FServiceNow%2Fbrowsergym-leaderboard%2Fresolve%2F294ebe1dc36ba83c6916c64c64fb870af3dc8cee%2Fresults%2FGenericAgent-AgentTrek-1.0-32b%2Fworkarena-l2.json=&etag=%2215e30b9ae065a131118a164a22008fc6f7e3e578%22",
+          "http_status": 200,
+          "bytes": 496,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "855fcede12daad9cb6315bdfe5fb2ebaf1af6b730d8d78ac45e2496bb77c0717",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "Date": "Fri, 09 Oct 2026 00:13:04 GMT",
+            "ETag": "\"15e30b9ae065a131118a164a22008fc6f7e3e578\""
+          },
+          "archive_member": "b09339af09ecec29.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/workarena-l2.json",
+          "response_url": "https://huggingface.co/api/resolve-cache/spaces/ServiceNow/browsergym-leaderboard/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results%2FGenericAgent-Claude-3.5-Sonnet%2Fworkarena-l2.json?%2Fspaces%2FServiceNow%2Fbrowsergym-leaderboard%2Fresolve%2F294ebe1dc36ba83c6916c64c64fb870af3dc8cee%2Fresults%2FGenericAgent-Claude-3.5-Sonnet%2Fworkarena-l2.json=&etag=%22a0927edab449cd654a9ab66b6fb4524d3fd6bc6d%22",
+          "http_status": 200,
+          "bytes": 460,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "34f9128e7aa9f8e01bae65eaceb94cc2314bb82899e5113b9476ea4c4b510b2e",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "Date": "Fri, 09 Oct 2026 00:13:12 GMT",
+            "ETag": "\"a0927edab449cd654a9ab66b6fb4524d3fd6bc6d\""
+          },
+          "archive_member": "7794e7db41f92e07.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-4-Sonnet/workarena-l2.json",
+          "response_url": "https://huggingface.co/api/resolve-cache/spaces/ServiceNow/browsergym-leaderboard/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results%2FGenericAgent-Claude-4-Sonnet%2Fworkarena-l2.json?%2Fspaces%2FServiceNow%2Fbrowsergym-leaderboard%2Fresolve%2F294ebe1dc36ba83c6916c64c64fb870af3dc8cee%2Fresults%2FGenericAgent-Claude-4-Sonnet%2Fworkarena-l2.json=&etag=%221a07ea851a5ef06a2a5986970da6725544ed4837%22",
+          "http_status": 200,
+          "bytes": 408,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "5fb56137adef3ed7c249ecc78642cd7323170b8e9f4dd920395524abad7db39b",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "Date": "Fri, 09 Oct 2026 00:13:12 GMT",
+            "ETag": "\"1a07ea851a5ef06a2a5986970da6725544ed4837\""
+          },
+          "archive_member": "5d7c732af86686d8.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o-mini/workarena-l2.json",
+          "response_url": "https://huggingface.co/api/resolve-cache/spaces/ServiceNow/browsergym-leaderboard/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results%2FGenericAgent-GPT-4o-mini%2Fworkarena-l2.json?%2Fspaces%2FServiceNow%2Fbrowsergym-leaderboard%2Fresolve%2F294ebe1dc36ba83c6916c64c64fb870af3dc8cee%2Fresults%2FGenericAgent-GPT-4o-mini%2Fworkarena-l2.json=&etag=%22ba423ad1010b93ecf159e2db44e428376b66a90c%22",
+          "http_status": 200,
+          "bytes": 453,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "a7e7c9f98bbb0a4d8041dbfc046fea06cf67c5efeb6fd4b58098a6c2c6082aa3",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "Date": "Mon, 05 Oct 2026 00:54:59 GMT",
+            "ETag": "\"ba423ad1010b93ecf159e2db44e428376b66a90c\""
+          },
+          "archive_member": "9a5f6e2467dae2a6.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/workarena-l2.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-mini/workarena-l2.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-nano/workarena-l2.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5/workarena-l2.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/workarena-l2.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-oss-120b/workarena-l2.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-oss-20b/workarena-l2.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/workarena-l2.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-70b/workarena-l2.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        }
+      ]
+    },
+    {
+      "id": "browsergym-workarena-l3",
+      "status": "preserved-gap",
+      "error": "AssertionError: ('https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/workarena-l3.json', {'error': '<urlopen error Tunnel connection failed: 403 Forbidden>'})",
+      "retrieved": "2026-10-09",
+      "previous_data_retrieved": "2026-10-05",
+      "data_retrieved_after": "2026-10-05",
+      "old_rows": 8,
+      "rows": 8,
+      "rows_changed": false,
+      "current_manifest_sha": "294ebe1dc36ba83c6916c64c64fb870af3dc8cee",
+      "manifest_revision_and_membership_unchanged": true,
+      "reason": "Complete numeric comparison is blocked by the cancelled network acquisition. Current manifest SHA and result membership match the previously extracted immutable commit, but this is not reported as a fresh full-record comparison. Prior table and source snapshot remain byte-for-byte unchanged.",
+      "sources": [
+        {
+          "url": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+          "response_url": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+          "http_status": 200,
+          "bytes": 7753,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "82cc7387c7fb54b807c75745e1c055bb9d69d5dd9e1cdd5505b57dad45d8e737",
+          "headers": {
+            "Content-Type": "application/json; charset=utf-8",
+            "Date": "Fri, 09 Oct 2026 00:12:46 GMT",
+            "ETag": "W/\"1e49-8G7lNlyzOvgndHd4QZNpSTCrtPg\""
+          },
+          "archive_member": "0f018f3595377e90.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-AgentTrek-1.0-32b/workarena-l3.json",
+          "response_url": "https://huggingface.co/api/resolve-cache/spaces/ServiceNow/browsergym-leaderboard/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results%2FGenericAgent-AgentTrek-1.0-32b%2Fworkarena-l3.json?%2Fspaces%2FServiceNow%2Fbrowsergym-leaderboard%2Fresolve%2F294ebe1dc36ba83c6916c64c64fb870af3dc8cee%2Fresults%2FGenericAgent-AgentTrek-1.0-32b%2Fworkarena-l3.json=&etag=%22fca096b12f2212917f97efd35769d470244be488%22",
+          "http_status": 200,
+          "bytes": 494,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "a4833791b84344fa444ab93257a568a41ee424a20716146abb7527985882f7fa",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "Date": "Thu, 08 Oct 2026 09:01:25 GMT",
+            "ETag": "\"fca096b12f2212917f97efd35769d470244be488\""
+          },
+          "archive_member": "3285cf74e9f3521d.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/workarena-l3.json",
+          "response_url": "https://huggingface.co/api/resolve-cache/spaces/ServiceNow/browsergym-leaderboard/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results%2FGenericAgent-Claude-3.5-Sonnet%2Fworkarena-l3.json?%2Fspaces%2FServiceNow%2Fbrowsergym-leaderboard%2Fresolve%2F294ebe1dc36ba83c6916c64c64fb870af3dc8cee%2Fresults%2FGenericAgent-Claude-3.5-Sonnet%2Fworkarena-l3.json=&etag=%22dc85da14be3c4f1722f11f2c30e28db8ceeaf670%22",
+          "http_status": 200,
+          "bytes": 459,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "e417a592179b53523cf2b22f31aee050b9fb0ca7ed3735cf6136431c45fdb944",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "Date": "Thu, 08 Oct 2026 09:01:32 GMT",
+            "ETag": "\"dc85da14be3c4f1722f11f2c30e28db8ceeaf670\""
+          },
+          "archive_member": "10a6a1710133dd3e.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o-mini/workarena-l3.json",
+          "response_url": "https://huggingface.co/api/resolve-cache/spaces/ServiceNow/browsergym-leaderboard/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results%2FGenericAgent-GPT-4o-mini%2Fworkarena-l3.json?%2Fspaces%2FServiceNow%2Fbrowsergym-leaderboard%2Fresolve%2F294ebe1dc36ba83c6916c64c64fb870af3dc8cee%2Fresults%2FGenericAgent-GPT-4o-mini%2Fworkarena-l3.json=&etag=%2243aab700e44b6fc39160b306b7bbbcf56c507b05%22",
+          "http_status": 200,
+          "bytes": 435,
+          "snapshot": "sources/audits/2026-10-09/webcomputer-responses.tar.gz",
+          "compression": "tar.gz",
+          "sha256": "bc5f2f366a091933d81b5cf31d993273dea57fceed327448f297c25e039dd0ee",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "Date": "Thu, 08 Oct 2026 09:01:45 GMT",
+            "ETag": "\"43aab700e44b6fc39160b306b7bbbcf56c507b05\""
+          },
+          "archive_member": "c76aa2a875a19ea2.response"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/workarena-l3.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5/workarena-l3.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/workarena-l3.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/workarena-l3.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-70b/workarena-l3.json",
+          "response_url": null,
+          "http_status": null,
+          "headers": {},
+          "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+        }
+      ]
+    }
+  ],
+  "parser_errors": [
+    {
+      "id": "browsergym-assistantbench",
+      "error": "AssertionError: ('https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/assistantbench.json', {'error': '<urlopen error Tunnel connection failed: 403 Forbidden>'})"
+    },
+    {
+      "id": "browsergym-miniwob",
+      "error": "AssertionError: ('https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-mini/miniwob.json', {'error': '<urlopen error Tunnel connection failed: 403 Forbidden>'})"
+    },
+    {
+      "id": "browsergym-webarena",
+      "error": "AssertionError: ('https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/webarena.json', {'error': '<urlopen error Tunnel connection failed: 403 Forbidden>'})"
+    },
+    {
+      "id": "browsergym-weblinx",
+      "error": "AssertionError: ('https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/weblinx.json', {'error': '<urlopen error Tunnel connection failed: 403 Forbidden>'})"
+    },
+    {
+      "id": "browsergym-workarena-l1",
+      "error": "AssertionError: ('https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/workarena-l1.json', {'error': '<urlopen error Tunnel connection failed: 403 Forbidden>'})"
+    },
+    {
+      "id": "browsergym-workarena-l2",
+      "error": "AssertionError: ('https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/workarena-l2.json', {'error': '<urlopen error Tunnel connection failed: 403 Forbidden>'})"
+    },
+    {
+      "id": "browsergym-workarena-l3",
+      "error": "AssertionError: ('https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/workarena-l3.json', {'error': '<urlopen error Tunnel connection failed: 403 Forbidden>'})"
+    }
+  ],
+  "model_proposals": [],
+  "baseline_commit": "af0325ce49fdeb5200bd9730b195cc0537c63f05",
+  "timezone": "Asia/Tokyo",
+  "scope": [
+    "web",
+    "computer-use"
+  ],
+  "source_requests": 125,
+  "successful_source_requests": 75,
+  "source_manifest": "sources/audits/2026-10-09/webcomputer-fetch-index.json",
+  "reproduction": "python sources/audits/2026-10-09/webcomputer-audit.py",
+  "network_acquisition_note": "The collector obtained 75 successful responses, then BrowserGym result requests were stopped by a cancelled network approval; 46 remaining result requests report tunnel 403. No blocked request or alternate route was retried. Seven incomplete tables retain prior good data and retrieval dates. HTTP 401/404/503 returned by the nine existing gap sources are recorded separately from this network-policy cancellation.",
+  "summary": {
+    "existing_tables": 43,
+    "verified_unchanged": 36,
+    "changed": 0,
+    "incomplete": 7,
+    "model_proposals": 0
+  }
+}

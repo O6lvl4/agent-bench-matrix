@@ -1,0 +1,1772 @@
+{
+ "retrieved": "2026-10-09",
+ "table_count": 42,
+ "collection_recipe": "scripts/collect_tool_general_20261005.py /tmp/abm-tool-20261009",
+ "network_status": "Acquisition execution cancellation surfaced on poll. Retained completed index contains 57 successful bodies and 53 errors. No retry or alternate-route network requests performed.",
+ "tables": [
+  {
+   "id": "apex-agents",
+   "category": "tool-use",
+   "rows_before": 53,
+   "retrieved_before": "2026-10-05",
+   "status": "changed",
+   "sources": [
+    {
+     "url": "https://www.mercor.com/apex/apex-agents-leaderboard/",
+     "status": 200,
+     "final_url": "https://www.mercor.com/apex/apex-agents-leaderboard/",
+     "bytes": 178291,
+     "sha256": "648cc6fa61886275d37085f5d25e51f151256b5a2bcb51eb51c7c646552f1ede"
+    }
+   ],
+   "detail": "Extracted 56 published configurations separately; source display names and all score/error/sample fields rechecked against APEX v1.1 Loop page props. Mean score remains distinct from Pass@1.",
+   "rows_after": 56,
+   "retrieved_after": "2026-10-09",
+   "rows_added_net": 3,
+   "row_values_changed": true,
+   "checked_at": "2026-10-09",
+   "snapshot_sha256": "06bf30f7e85c182381176dc6336bee5815b047e0503ae1626410fb515d396707"
+  },
+  {
+   "id": "apex-agents-corporate-lawyer",
+   "category": "tool-use",
+   "rows_before": 53,
+   "retrieved_before": "2026-10-05",
+   "status": "changed",
+   "sources": [
+    {
+     "url": "https://www.mercor.com/apex/apex-agents-leaderboard/corporate-lawyer-agent/",
+     "status": 200,
+     "final_url": "https://www.mercor.com/apex/apex-agents-leaderboard/corporate-lawyer-agent/",
+     "bytes": 755810,
+     "sha256": "88015b4a7c506940066d7e15bbbf220009efde0257c040946b94237531bda513"
+    }
+   ],
+   "detail": "Extracted 56 published configurations separately; source display names and all score/error/sample fields rechecked against APEX v1.1 Loop page props. Mean score remains distinct from Pass@1.",
+   "rows_after": 56,
+   "retrieved_after": "2026-10-09",
+   "rows_added_net": 3,
+   "row_values_changed": true,
+   "checked_at": "2026-10-09",
+   "snapshot_sha256": "41376cdf9b7c603431cfaa72e296ae7a9303c7074bc0fab0efe3a801ce87ffbc"
+  },
+  {
+   "id": "apex-agents-investment-banking",
+   "category": "tool-use",
+   "rows_before": 53,
+   "retrieved_before": "2026-10-05",
+   "status": "changed",
+   "sources": [
+    {
+     "url": "https://www.mercor.com/apex/apex-agents-leaderboard/investment-banking-analyst-agent/",
+     "status": 200,
+     "final_url": "https://www.mercor.com/apex/apex-agents-leaderboard/investment-banking-analyst-agent/",
+     "bytes": 486189,
+     "sha256": "698cc9364ed8fad8c25204d4e6dce7c012856691e13fd1625bc2351ce292f6d9"
+    }
+   ],
+   "detail": "Extracted 56 published configurations separately; source display names and all score/error/sample fields rechecked against APEX v1.1 Loop page props. Mean score remains distinct from Pass@1.",
+   "rows_after": 56,
+   "retrieved_after": "2026-10-09",
+   "rows_added_net": 3,
+   "row_values_changed": true,
+   "checked_at": "2026-10-09",
+   "snapshot_sha256": "cfff02b237e6ceece126ed9a8773f1e8196eae5bc22bd7fd70551c56bc2a5e64"
+  },
+  {
+   "id": "apex-agents-management-consultant",
+   "category": "tool-use",
+   "rows_before": 53,
+   "retrieved_before": "2026-10-05",
+   "status": "changed",
+   "sources": [
+    {
+     "url": "https://www.mercor.com/apex/apex-agents-leaderboard/management-consultant-agent/",
+     "status": 200,
+     "final_url": "https://www.mercor.com/apex/apex-agents-leaderboard/management-consultant-agent/",
+     "bytes": 824046,
+     "sha256": "578d073d6e45f451de85af280bacfed3165a69c452a2366a7e9777fd667a63c2"
+    }
+   ],
+   "detail": "Extracted 56 published configurations separately; source display names and all score/error/sample fields rechecked against APEX v1.1 Loop page props. Mean score remains distinct from Pass@1.",
+   "rows_after": 56,
+   "retrieved_after": "2026-10-09",
+   "rows_added_net": 3,
+   "row_values_changed": true,
+   "checked_at": "2026-10-09",
+   "snapshot_sha256": "58e50a99096e5957a8ef1dd2ab1bed19f3283eeec7559ff68f2a264b3f50c140"
+  },
+  {
+   "id": "appworld-test-challenge",
+   "category": "tool-use",
+   "rows_before": 23,
+   "retrieved_before": "2026-10-05",
+   "status": "unchanged",
+   "sources": [
+    {
+     "url": "https://appworld.dev/appworld/leaderboard.json",
+     "status": 200,
+     "final_url": "https://appworld.dev/appworld/leaderboard.json",
+     "bytes": 41643,
+     "sha256": "5dc72e48e619f483af9035413bccb50e68f63446b6f84371f6e2989e595dc49d"
+    }
+   ],
+   "detail": "All comparison-relevant leaderboard rows and fields extracted from current retained primary response and matched the previous snapshot. Existing table bytes/retrieval date retained because data did not change.",
+   "rows_after": 23,
+   "retrieved_after": "2026-10-05",
+   "rows_added_net": 0,
+   "row_values_changed": false,
+   "checked_at": "2026-10-09",
+   "snapshot_sha256": "5dc72e48e619f483af9035413bccb50e68f63446b6f84371f6e2989e595dc49d"
+  },
+  {
+   "id": "appworld-test-normal",
+   "category": "tool-use",
+   "rows_before": 23,
+   "retrieved_before": "2026-10-05",
+   "status": "unchanged",
+   "sources": [
+    {
+     "url": "https://appworld.dev/appworld/leaderboard.json",
+     "status": 200,
+     "final_url": "https://appworld.dev/appworld/leaderboard.json",
+     "bytes": 41643,
+     "sha256": "5dc72e48e619f483af9035413bccb50e68f63446b6f84371f6e2989e595dc49d"
+    }
+   ],
+   "detail": "All comparison-relevant leaderboard rows and fields extracted from current retained primary response and matched the previous snapshot. Existing table bytes/retrieval date retained because data did not change.",
+   "rows_after": 23,
+   "retrieved_after": "2026-10-05",
+   "rows_added_net": 0,
+   "row_values_changed": false,
+   "checked_at": "2026-10-09",
+   "snapshot_sha256": "5dc72e48e619f483af9035413bccb50e68f63446b6f84371f6e2989e595dc49d"
+  },
+  {
+   "id": "bfcl-v4",
+   "category": "tool-use",
+   "rows_before": 109,
+   "retrieved_before": "2026-10-05",
+   "status": "unchanged",
+   "sources": [
+    {
+     "url": "https://gorilla.cs.berkeley.edu/data_overall.csv",
+     "status": 200,
+     "final_url": "https://gorilla.cs.berkeley.edu/data_overall.csv",
+     "bytes": 33046,
+     "sha256": "ede5081a24bc5ac7f9b3b09a52af6bcfcd35aa0f1709239fed979db77a8159a6"
+    }
+   ],
+   "detail": "All comparison-relevant leaderboard rows and fields extracted from current retained primary response and matched the previous snapshot. Existing table bytes/retrieval date retained because data did not change.",
+   "rows_after": 109,
+   "retrieved_after": "2026-10-05",
+   "rows_added_net": 0,
+   "row_values_changed": false,
+   "checked_at": "2026-10-09",
+   "snapshot_sha256": "ede5081a24bc5ac7f9b3b09a52af6bcfcd35aa0f1709239fed979db77a8159a6"
+  },
+  {
+   "id": "gaia",
+   "category": "general",
+   "rows_before": 100,
+   "retrieved_before": "2026-10-05",
+   "status": "changed",
+   "sources": [
+    {
+     "url": "https://gaia-benchmark-leaderboard.hf.space/gradio_api/call/refresh",
+     "status": 200,
+     "final_url": "https://gaia-benchmark-leaderboard.hf.space/gradio_api/call/refresh",
+     "bytes": 47,
+     "sha256": "ffb7837139503fe486387e0ba051d77f8486a7ec836cc3703ad471ae01cca9b2"
+    },
+    {
+     "url": "https://gaia-benchmark-leaderboard.hf.space/gradio_api/call/refresh/22215de384c941718ecb21a92edb1367",
+     "status": 200,
+     "final_url": "https://gaia-benchmark-leaderboard.hf.space/gradio_api/call/refresh/22215de384c941718ecb21a92edb1367",
+     "bytes": 24687,
+     "sha256": "280ca5ba1d19478edfe442b49ad6354a42110e12fd922fd742344fe4d2326e0b"
+    }
+   ],
+   "detail": "Re-extracted official top-100 display, including six new multi-model/ambiguous Shadow rows. Such rows retain empty model_ids. Model variants, level metrics, source dates, links and organisations preserved.",
+   "rows_after": 100,
+   "retrieved_after": "2026-10-09",
+   "rows_added_net": 0,
+   "row_values_changed": true,
+   "checked_at": "2026-10-09",
+   "snapshot_sha256": "0ef31b55c62e1c27a48051920d9773297a71cbd37931c1a9e2a6ceb870f93f5c"
+  },
+  {
+   "id": "gaia2",
+   "category": "general",
+   "rows_before": 16,
+   "retrieved_before": "2026-10-05",
+   "status": "unchanged",
+   "sources": [
+    {
+     "url": "https://meta-agents-research-environments-leaderboard.hf.space/gradio_api/call/refresh_legacy",
+     "status": 200,
+     "final_url": "https://meta-agents-research-environments-leaderboard.hf.space/gradio_api/call/refresh_legacy",
+     "bytes": 47,
+     "sha256": "64dfeff6de1a4f2d4f88ee743f10fb73e22da9f91776fcb69afc513d9812acd8"
+    },
+    {
+     "url": "https://meta-agents-research-environments-leaderboard.hf.space/gradio_api/call/refresh_legacy/a35a92be18eb48e2bc6bdf7e7fb49b7e",
+     "status": 200,
+     "final_url": "https://meta-agents-research-environments-leaderboard.hf.space/gradio_api/call/refresh_legacy/a35a92be18eb48e2bc6bdf7e7fb49b7e",
+     "bytes": 1767,
+     "sha256": "3020957577cef9daf1b9a5ec8bb00ea9f54ed1d3259317816b1e206ce46d67ae"
+    }
+   ],
+   "detail": "All comparison-relevant leaderboard rows and fields extracted from current retained primary response and matched the previous snapshot. Existing table bytes/retrieval date retained because data did not change.",
+   "rows_after": 16,
+   "retrieved_after": "2026-10-05",
+   "rows_added_net": 0,
+   "row_values_changed": false,
+   "checked_at": "2026-10-09",
+   "snapshot_sha256": "d979294f9d0cad4760e49bbb3dde0cc8da6d657ff2f290699262a4d68270a71c"
+  },
+  {
+   "id": "gaia2-cli",
+   "category": "general",
+   "rows_before": 7,
+   "retrieved_before": "2026-10-05",
+   "status": "unchanged",
+   "sources": [
+    {
+     "url": "https://huggingface.co/spaces/meta-agents-research-environments/leaderboard/raw/main/app.py",
+     "status": 200,
+     "final_url": "https://huggingface.co/spaces/meta-agents-research-environments/leaderboard/raw/main/app.py",
+     "bytes": 21000,
+     "sha256": "c7e686b548945dc8bf0556dccf39f3a9d3e1cd5cfec7b71432efaab7227b6c3a"
+    }
+   ],
+   "detail": "All comparison-relevant leaderboard rows and fields extracted from current retained primary response and matched the previous snapshot. Existing table bytes/retrieval date retained because data did not change.",
+   "rows_after": 7,
+   "retrieved_after": "2026-10-05",
+   "rows_added_net": 0,
+   "row_values_changed": false,
+   "checked_at": "2026-10-09",
+   "snapshot_sha256": "682849a2fdf1798d16617f2d0c8531d814b33382d10e338b95622a437147bc86"
+  },
+  {
+   "id": "hal-gaia",
+   "category": "general",
+   "rows_before": 32,
+   "retrieved_before": "2026-10-05",
+   "status": "unchanged",
+   "sources": [
+    {
+     "url": "https://hal.cs.princeton.edu/gaia",
+     "status": 200,
+     "final_url": "https://hal.cs.princeton.edu/gaia",
+     "bytes": 357292,
+     "sha256": "916379d9022e7a8fd4abd8615c81c2fc958305e98f7764c913f63bf787e4138b"
+    }
+   ],
+   "detail": "All comparison-relevant leaderboard rows and fields extracted from current retained primary response and matched the previous snapshot. Existing table bytes/retrieval date retained because data did not change.",
+   "rows_after": 32,
+   "retrieved_after": "2026-10-05",
+   "rows_added_net": 0,
+   "row_values_changed": false,
+   "checked_at": "2026-10-09",
+   "snapshot_sha256": "f9497d5350637a02469f9885a69438f3be86fa638d1971b4699e00c33b75364c"
+  },
+  {
+   "id": "hal-tau-bench-airline",
+   "category": "tool-use",
+   "rows_before": 26,
+   "retrieved_before": "2026-10-05",
+   "status": "unchanged",
+   "sources": [
+    {
+     "url": "https://hal.cs.princeton.edu/taubench_airline",
+     "status": 200,
+     "final_url": "https://hal.cs.princeton.edu/taubench_airline",
+     "bytes": 253939,
+     "sha256": "83631f306f1fd6c85a6c0f7dcb53f9dec3915f6b6a323fc1dd46a9887209cc41"
+    }
+   ],
+   "detail": "All comparison-relevant leaderboard rows and fields extracted from current retained primary response and matched the previous snapshot. Existing table bytes/retrieval date retained because data did not change.",
+   "rows_after": 26,
+   "retrieved_after": "2026-10-05",
+   "rows_added_net": 0,
+   "row_values_changed": false,
+   "checked_at": "2026-10-09",
+   "snapshot_sha256": "702a0e2470e8134f36d82e365272243f439c088aa57c6edafacae1544de792a5"
+  },
+  {
+   "id": "mcp-atlas",
+   "category": "tool-use",
+   "rows_before": 34,
+   "retrieved_before": "2026-10-05",
+   "status": "changed",
+   "sources": [
+    {
+     "url": "https://labs.scale.com/leaderboard/mcp_atlas",
+     "status": 200,
+     "final_url": "https://labs.scale.com/leaderboard/mcp_atlas",
+     "bytes": 205596,
+     "sha256": "d0c9cf629b66dcc00c1efc10cc0d33d479c7cc40786a128456f96b6845c242ae"
+    }
+   ],
+   "detail": "Current RSC rows preserve all 34 scores/configurations; official rank values are now consecutively renumbered.",
+   "rows_after": 34,
+   "retrieved_after": "2026-10-09",
+   "rows_added_net": 0,
+   "row_values_changed": true,
+   "checked_at": "2026-10-09",
+   "snapshot_sha256": "8b36a1fd17ae5875979ae9597e58bacfbdde96194b9fdefc8ce12490fbe06737"
+  },
+  {
+   "id": "mcp-bench",
+   "category": "tool-use",
+   "rows_before": 20,
+   "retrieved_before": "2026-10-05",
+   "status": "unchanged",
+   "sources": [
+    {
+     "url": "https://mcpbench-mcp-bench.static.hf.space/script.js",
+     "status": 200,
+     "final_url": "https://mcpbench-mcp-bench.static.hf.space/script.js",
+     "bytes": 21490,
+     "sha256": "47abf1e3f5cfe7e9a43d6b5c9ba244a04005834b98d8afdb74eb000b32b9b342"
+    }
+   ],
+   "detail": "All comparison-relevant leaderboard rows and fields extracted from current retained primary response and matched the previous snapshot. Existing table bytes/retrieval date retained because data did not change.",
+   "rows_after": 20,
+   "retrieved_after": "2026-10-05",
+   "rows_added_net": 0,
+   "row_values_changed": false,
+   "checked_at": "2026-10-09",
+   "snapshot_sha256": "755d6f1807359278268a0ebf5a83117e9fcc5284aa8096801255459c695b593c"
+  },
+  {
+   "id": "mcp-universe-agent",
+   "category": "tool-use",
+   "rows_before": 8,
+   "retrieved_before": "2026-10-05",
+   "status": "unchanged",
+   "sources": [
+    {
+     "url": "https://mcp-universe.github.io/",
+     "status": 200,
+     "final_url": "https://mcp-universe.github.io/",
+     "bytes": 119803,
+     "sha256": "59e44ce99072a91080fc5c0ebe9e9bbecfac1783d50b863568404ae919a3cff0"
+    }
+   ],
+   "detail": "All comparison-relevant leaderboard rows and fields extracted from current retained primary response and matched the previous snapshot. Existing table bytes/retrieval date retained because data did not change.",
+   "rows_after": 8,
+   "retrieved_after": "2026-10-05",
+   "rows_added_net": 0,
+   "row_values_changed": false,
+   "checked_at": "2026-10-09",
+   "snapshot_sha256": "7031d9286e070d17d31315c4e4aff0ecab04ffdbbf2947753846ff18c378c569"
+  },
+  {
+   "id": "mcp-universe-fc",
+   "category": "tool-use",
+   "rows_before": 21,
+   "retrieved_before": "2026-10-05",
+   "status": "unchanged",
+   "sources": [
+    {
+     "url": "https://mcp-universe.github.io/",
+     "status": 200,
+     "final_url": "https://mcp-universe.github.io/",
+     "bytes": 119803,
+     "sha256": "59e44ce99072a91080fc5c0ebe9e9bbecfac1783d50b863568404ae919a3cff0"
+    }
+   ],
+   "detail": "All comparison-relevant leaderboard rows and fields extracted from current retained primary response and matched the previous snapshot. Existing table bytes/retrieval date retained because data did not change.",
+   "rows_after": 21,
+   "retrieved_after": "2026-10-05",
+   "rows_added_net": 0,
+   "row_values_changed": false,
+   "checked_at": "2026-10-09",
+   "snapshot_sha256": "a030b5dd3cea9ea6a209d7d9a8bc481680328a751be27a81e6ff7e7c919cbc29"
+  },
+  {
+   "id": "mcp-universe-react",
+   "category": "tool-use",
+   "rows_before": 28,
+   "retrieved_before": "2026-10-05",
+   "status": "unchanged",
+   "sources": [
+    {
+     "url": "https://mcp-universe.github.io/",
+     "status": 200,
+     "final_url": "https://mcp-universe.github.io/",
+     "bytes": 119803,
+     "sha256": "59e44ce99072a91080fc5c0ebe9e9bbecfac1783d50b863568404ae919a3cff0"
+    }
+   ],
+   "detail": "All comparison-relevant leaderboard rows and fields extracted from current retained primary response and matched the previous snapshot. Existing table bytes/retrieval date retained because data did not change.",
+   "rows_after": 28,
+   "retrieved_after": "2026-10-05",
+   "rows_added_net": 0,
+   "row_values_changed": false,
+   "checked_at": "2026-10-09",
+   "snapshot_sha256": "635bed5955df6c147d91479686f3cacca788f7e6e0666fac2157d7c5d052d0bd"
+  },
+  {
+   "id": "mcpmark-legacy",
+   "category": "tool-use",
+   "rows_before": 39,
+   "retrieved_before": "2026-10-05",
+   "status": "unchanged",
+   "sources": [
+    {
+     "url": "https://mcpmark.ai/leaderboard",
+     "status": 200,
+     "final_url": "https://mcpmark.ai/leaderboard",
+     "bytes": 2392920,
+     "sha256": "a6908dd4cd6e84a8c2cdf6624f7243912f9c3e351dd724059a60ef24a5d1091f"
+    }
+   ],
+   "detail": "All comparison-relevant leaderboard rows and fields extracted from current retained primary response and matched the previous snapshot. Existing table bytes/retrieval date retained because data did not change.",
+   "rows_after": 39,
+   "retrieved_after": "2026-10-05",
+   "rows_added_net": 0,
+   "row_values_changed": false,
+   "checked_at": "2026-10-09",
+   "snapshot_sha256": "1bfedb17704527f49ac569e2ec1b9fb2a019e1f74a7006bc97133e8d215641c3"
+  },
+  {
+   "id": "mcpmark-verified",
+   "category": "tool-use",
+   "rows_before": 8,
+   "retrieved_before": "2026-10-05",
+   "status": "unchanged",
+   "sources": [
+    {
+     "url": "https://mcpmark.ai/leaderboard/verified",
+     "status": 200,
+     "final_url": "https://mcpmark.ai/leaderboard/verified",
+     "bytes": 1276071,
+     "sha256": "37a0ca52e66f302b7e1b2595bb2a7c4c8e7f89bebf5c19eeade481fdca245649"
+    }
+   ],
+   "detail": "All comparison-relevant leaderboard rows and fields extracted from current retained primary response and matched the previous snapshot. Existing table bytes/retrieval date retained because data did not change.",
+   "rows_after": 8,
+   "retrieved_after": "2026-10-05",
+   "rows_added_net": 0,
+   "row_values_changed": false,
+   "checked_at": "2026-10-09",
+   "snapshot_sha256": "5e7d384a2493cb76f5cd85b7227182b41c4d1c177b11a348d8dd41cc9861197a"
+  },
+  {
+   "id": "skillsbench",
+   "category": "general",
+   "rows_before": 25,
+   "retrieved_before": "2026-10-05",
+   "status": "unchanged",
+   "sources": [
+    {
+     "url": "https://www.skillsbench.ai/_next/static/chunks/8e836c7a01322d0f.js",
+     "status": 200,
+     "final_url": "https://www.skillsbench.ai/_next/static/chunks/8e836c7a01322d0f.js",
+     "bytes": 12722,
+     "sha256": "d072e7b4adb2cb9d886fe9f5cde99cc573ae7d4bbaeede4d2a013a72d71b9ac3"
+    }
+   ],
+   "detail": "All comparison-relevant leaderboard rows and fields extracted from current retained primary response and matched the previous snapshot. Existing table bytes/retrieval date retained because data did not change.",
+   "rows_after": 25,
+   "retrieved_after": "2026-10-05",
+   "rows_added_net": 0,
+   "row_values_changed": false,
+   "checked_at": "2026-10-09",
+   "snapshot_sha256": "12779b8ccfc160fcf29514f2d4dbca2c3844a4a2c42fad835b8b12b94c346d09"
+  },
+  {
+   "id": "tau2-bench",
+   "category": "tool-use",
+   "rows_before": 8,
+   "retrieved_before": "2026-10-05",
+   "status": "preserved-gap",
+   "error": "Incomplete selected submission set: 6 missing primary bodies",
+   "tried": [
+    "https://taubench.com/",
+    "https://taubench.com/assets/index-QtX8yEBE.js",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3.5-397b-a17b-think_sierra_2026-03-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-5_sierra_2026-02-26/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2_sierra_2026-02-26/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-flash_sierra_2026-03-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_sierra_2026-03-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/glm-5-think_sierra_2026-03-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_sierra_2026-02-26/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2-none_sierra_2026-02-26/submission.json"
+   ],
+   "rows_after": 8,
+   "retrieved_after": "2026-10-05",
+   "checked_at": "2026-10-09",
+   "failed_sources": [
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3.5-397b-a17b-think_sierra_2026-03-02/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2_sierra_2026-02-26/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-flash_sierra_2026-03-02/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_sierra_2026-03-02/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/glm-5-think_sierra_2026-03-02/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2-none_sierra_2026-02-26/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    }
+   ],
+   "snapshot_sha256": "e5ba65dedd6c6f72d7427d19cd8154d84cfff8f1779370af875d20be5c614dba",
+   "rows_added_net": 0
+  },
+  {
+   "id": "tau2-bench-airline",
+   "category": "tool-use",
+   "rows_before": 8,
+   "retrieved_before": "2026-10-05",
+   "status": "preserved-gap",
+   "error": "Incomplete selected submission set: 6 missing primary bodies",
+   "tried": [
+    "https://taubench.com/",
+    "https://taubench.com/assets/index-QtX8yEBE.js",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-5_sierra_2026-02-26/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2_sierra_2026-02-26/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/glm-5-think_sierra_2026-03-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-flash_sierra_2026-03-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3.5-397b-a17b-think_sierra_2026-03-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_sierra_2026-03-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_sierra_2026-02-26/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2-none_sierra_2026-02-26/submission.json"
+   ],
+   "rows_after": 8,
+   "retrieved_after": "2026-10-05",
+   "checked_at": "2026-10-09",
+   "failed_sources": [
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2_sierra_2026-02-26/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/glm-5-think_sierra_2026-03-02/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-flash_sierra_2026-03-02/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3.5-397b-a17b-think_sierra_2026-03-02/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_sierra_2026-03-02/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2-none_sierra_2026-02-26/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    }
+   ],
+   "snapshot_sha256": "a661caa90aebc29e37b97d71c61af011bb2c313994d520e0263acc5cd0dde510",
+   "rows_added_net": 0
+  },
+  {
+   "id": "tau2-bench-legacy",
+   "category": "tool-use",
+   "rows_before": 12,
+   "retrieved_before": "2026-10-05",
+   "status": "preserved-gap",
+   "error": "Incomplete selected submission set: 9 missing primary bodies",
+   "tried": [
+    "https://taubench.com/",
+    "https://taubench.com/assets/index-QtX8yEBE.js",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_google_2025-11-18/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_anthropic_2025-10-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2026-01-23/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/deepseek-v3.2_deepseek_2025-12-01/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5_sierra_2025-08-09/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/toolorchestra_nvidia_2025-12-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2024_09_23/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/kimi-k2_moonshot-ai_2025-07-11/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-3-7-sonnet_anthropic_2024-06-20/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/o4-mini_openai_2024-06-20/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1_openai_2024-06-20/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1-mini_openai_2024-06-20/submission.json"
+   ],
+   "rows_after": 12,
+   "retrieved_after": "2026-10-05",
+   "checked_at": "2026-10-09",
+   "failed_sources": [
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_google_2025-11-18/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2026-01-23/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5_sierra_2025-08-09/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/toolorchestra_nvidia_2025-12-02/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2024_09_23/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/kimi-k2_moonshot-ai_2025-07-11/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/o4-mini_openai_2024-06-20/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1_openai_2024-06-20/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1-mini_openai_2024-06-20/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    }
+   ],
+   "snapshot_sha256": "7e93440f26588d6adf5dece9397cf4c90030055cf433432c54551da6dbeec9cd",
+   "rows_added_net": 0
+  },
+  {
+   "id": "tau2-bench-legacy-airline",
+   "category": "tool-use",
+   "rows_before": 16,
+   "retrieved_before": "2026-10-05",
+   "status": "preserved-gap",
+   "error": "Incomplete selected submission set: 10 missing primary bodies",
+   "tried": [
+    "https://taubench.com/",
+    "https://taubench.com/assets/index-QtX8yEBE.js",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_google_2025-11-18/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_anthropic_2025-10-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2026-01-23/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-3-7-sonnet_anthropic_2024-06-20/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/deepseek-v3.2_deepseek_2025-12-01/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5_sierra_2025-08-09/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4_anthropic_2025-05-22/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4_anthropic_2025-05-22/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2024_09_23/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/kimi-k2_moonshot-ai_2025-07-11/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-1_anthropic_2025-01-15/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1_openai_2024-06-20/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/toolorchestra_nvidia_2025-12-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/o4-mini_openai_2024-06-20/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/o3_openai_2025-01-15/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1-mini_openai_2024-06-20/submission.json"
+   ],
+   "rows_after": 16,
+   "retrieved_after": "2026-10-05",
+   "checked_at": "2026-10-09",
+   "failed_sources": [
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_google_2025-11-18/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2026-01-23/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5_sierra_2025-08-09/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2024_09_23/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/kimi-k2_moonshot-ai_2025-07-11/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1_openai_2024-06-20/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/toolorchestra_nvidia_2025-12-02/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/o4-mini_openai_2024-06-20/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/o3_openai_2025-01-15/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1-mini_openai_2024-06-20/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    }
+   ],
+   "snapshot_sha256": "85612ce632847923dc194a2023f2d5829c3d43e246f6752f72553bc88f4fa7a1",
+   "rows_added_net": 0
+  },
+  {
+   "id": "tau2-bench-legacy-retail",
+   "category": "tool-use",
+   "rows_before": 16,
+   "retrieved_before": "2026-10-05",
+   "status": "preserved-gap",
+   "error": "Incomplete selected submission set: 10 missing primary bodies",
+   "tried": [
+    "https://taubench.com/",
+    "https://taubench.com/assets/index-QtX8yEBE.js",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_anthropic_2025-10-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_google_2025-11-18/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/toolorchestra_nvidia_2025-12-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-1_anthropic_2025-01-15/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5_sierra_2025-08-09/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4_anthropic_2025-05-22/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/deepseek-v3.2_deepseek_2025-12-01/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4_anthropic_2025-05-22/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2026-01-23/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1_openai_2024-06-20/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/o3_openai_2025-01-15/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2024_09_23/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-3-7-sonnet_anthropic_2024-06-20/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/kimi-k2_moonshot-ai_2025-07-11/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/o4-mini_openai_2024-06-20/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1-mini_openai_2024-06-20/submission.json"
+   ],
+   "rows_after": 16,
+   "retrieved_after": "2026-10-05",
+   "checked_at": "2026-10-09",
+   "failed_sources": [
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_google_2025-11-18/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/toolorchestra_nvidia_2025-12-02/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5_sierra_2025-08-09/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2026-01-23/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1_openai_2024-06-20/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/o3_openai_2025-01-15/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2024_09_23/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/kimi-k2_moonshot-ai_2025-07-11/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/o4-mini_openai_2024-06-20/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1-mini_openai_2024-06-20/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    }
+   ],
+   "snapshot_sha256": "b88125288a2ca67e8d160d1be9da8d71d05b50160d0c02ce3ebc5943c64813aa",
+   "rows_added_net": 0
+  },
+  {
+   "id": "tau2-bench-legacy-telecom",
+   "category": "tool-use",
+   "rows_before": 12,
+   "retrieved_before": "2026-10-05",
+   "status": "preserved-gap",
+   "error": "Incomplete selected submission set: 9 missing primary bodies",
+   "tried": [
+    "https://taubench.com/",
+    "https://taubench.com/assets/index-QtX8yEBE.js",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2026-01-23/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_anthropic_2025-10-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_google_2025-11-18/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/deepseek-v3.2_deepseek_2025-12-01/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5_sierra_2025-08-09/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/toolorchestra_nvidia_2025-12-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2024_09_23/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/kimi-k2_moonshot-ai_2025-07-11/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/o4-mini_openai_2024-06-20/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-3-7-sonnet_anthropic_2024-06-20/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1-mini_openai_2024-06-20/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1_openai_2024-06-20/submission.json"
+   ],
+   "rows_after": 12,
+   "retrieved_after": "2026-10-05",
+   "checked_at": "2026-10-09",
+   "failed_sources": [
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2026-01-23/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_google_2025-11-18/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5_sierra_2025-08-09/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/toolorchestra_nvidia_2025-12-02/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2024_09_23/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/kimi-k2_moonshot-ai_2025-07-11/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/o4-mini_openai_2024-06-20/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1-mini_openai_2024-06-20/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1_openai_2024-06-20/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    }
+   ],
+   "snapshot_sha256": "4e6a9d9104e0376e35b07d4d033fe5d607b0e73336046246ca4ef14e6b4bab3a",
+   "rows_added_net": 0
+  },
+  {
+   "id": "tau2-bench-retail",
+   "category": "tool-use",
+   "rows_before": 9,
+   "retrieved_before": "2026-10-05",
+   "status": "preserved-gap",
+   "error": "Incomplete selected submission set: 7 missing primary bodies",
+   "tried": [
+    "https://taubench.com/",
+    "https://taubench.com/assets/index-QtX8yEBE.js",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3.5-397b-a17b-think_sierra_2026-03-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/raft-30b-a3b_neu_2026-04-29/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2_sierra_2026-02-26/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-5_sierra_2026-02-26/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-flash_sierra_2026-03-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_sierra_2026-03-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2-none_sierra_2026-02-26/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/glm-5-think_sierra_2026-03-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_sierra_2026-02-26/submission.json"
+   ],
+   "rows_after": 9,
+   "retrieved_after": "2026-10-05",
+   "checked_at": "2026-10-09",
+   "failed_sources": [
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3.5-397b-a17b-think_sierra_2026-03-02/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/raft-30b-a3b_neu_2026-04-29/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2_sierra_2026-02-26/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-flash_sierra_2026-03-02/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_sierra_2026-03-02/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2-none_sierra_2026-02-26/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/glm-5-think_sierra_2026-03-02/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    }
+   ],
+   "snapshot_sha256": "32f132a5d3be3776afa08212232aae8c1901f2e06083044b3d560fda0c29c0a6",
+   "rows_added_net": 0
+  },
+  {
+   "id": "tau2-bench-telecom",
+   "category": "tool-use",
+   "rows_before": 8,
+   "retrieved_before": "2026-10-05",
+   "status": "preserved-gap",
+   "error": "Incomplete selected submission set: 6 missing primary bodies",
+   "tried": [
+    "https://taubench.com/",
+    "https://taubench.com/assets/index-QtX8yEBE.js",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3.5-397b-a17b-think_sierra_2026-03-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-5_sierra_2026-02-26/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-flash_sierra_2026-03-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_sierra_2026-03-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2_sierra_2026-02-26/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/glm-5-think_sierra_2026-03-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_sierra_2026-02-26/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2-none_sierra_2026-02-26/submission.json"
+   ],
+   "rows_after": 8,
+   "retrieved_after": "2026-10-05",
+   "checked_at": "2026-10-09",
+   "failed_sources": [
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3.5-397b-a17b-think_sierra_2026-03-02/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-flash_sierra_2026-03-02/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_sierra_2026-03-02/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2_sierra_2026-02-26/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/glm-5-think_sierra_2026-03-02/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2-none_sierra_2026-02-26/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    }
+   ],
+   "snapshot_sha256": "82cfdba24acf91fcaf1862decc492deec81053e850f6aace8b73493606325f8c",
+   "rows_added_net": 0
+  },
+  {
+   "id": "tau3-banking",
+   "category": "tool-use",
+   "rows_before": 28,
+   "retrieved_before": "2026-10-05",
+   "status": "preserved-gap",
+   "error": "Incomplete selected submission set: 19 missing primary bodies",
+   "tried": [
+    "https://taubench.com/",
+    "https://taubench.com/assets/index-QtX8yEBE.js",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-8-max_sierra_2026-08-04/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-5_sierra_2026-08-04/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-4-5_sierra_2026-08-04/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-6-sol_sierra_2026-08-04/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-5_sierra_2026-05-05/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/muse-spark-1-1_sierra_2026-08-04/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-7_sierra_2026-05-05/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-8_sierra_2026-08-04/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-fable-5_sierra_2026-08-04/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-4_sierra_2026-03-25/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/kimi-k3_sierra_2026-08-04/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/glm-5-2_sierra_2026-08-04/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2_sierra_2026-02-26/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/distyl-buttonagent_distyl_2026-03-25/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-flash_sierra_2026-03-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-6_sierra_2026-05-05/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-pro-preview_sierra_2026-05-05/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_sierra_2026-02-26/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/inkling_sierra_2026-08-04/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-5_sierra_2026-02-26/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_sierra_2026-03-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-4-2_sierra_2026-05-05/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-4-fast_sierra_2026-05-05/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-2-5-pro_sierra_2026-05-05/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-4-1-fast_sierra_2026-05-05/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2-none_sierra_2026-02-26/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/glm-5-think_sierra_2026-03-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3.5-397b-a17b-think_sierra_2026-03-02/submission.json"
+   ],
+   "rows_after": 28,
+   "retrieved_after": "2026-10-05",
+   "checked_at": "2026-10-09",
+   "failed_sources": [
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-8-max_sierra_2026-08-04/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-4-5_sierra_2026-08-04/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-6-sol_sierra_2026-08-04/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-5_sierra_2026-05-05/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/muse-spark-1-1_sierra_2026-08-04/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-4_sierra_2026-03-25/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/kimi-k3_sierra_2026-08-04/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/glm-5-2_sierra_2026-08-04/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2_sierra_2026-02-26/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-flash_sierra_2026-03-02/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-pro-preview_sierra_2026-05-05/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/inkling_sierra_2026-08-04/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_sierra_2026-03-02/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-4-2_sierra_2026-05-05/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-4-fast_sierra_2026-05-05/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-4-1-fast_sierra_2026-05-05/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2-none_sierra_2026-02-26/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/glm-5-think_sierra_2026-03-02/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3.5-397b-a17b-think_sierra_2026-03-02/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    }
+   ],
+   "snapshot_sha256": "419a95ca960778e50462e546320b378c789c494e4f8bf00e15cf48d5cf618e90",
+   "rows_added_net": 0
+  },
+  {
+   "id": "tau3-voice",
+   "category": "tool-use",
+   "rows_before": 18,
+   "retrieved_before": "2026-10-05",
+   "status": "preserved-gap",
+   "error": "Incomplete selected submission set: 18 missing primary bodies",
+   "tried": [
+    "https://taubench.com/",
+    "https://taubench.com/assets/index-QtX8yEBE.js",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha-user-sim-gpt-5-5_openai_2026-09-09/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha_openai_2026-09-09/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-gpt-5-5_pineai_2026-08-17/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-v1-0_pineai_2026-08-17/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0-tool-mentor_pickle_2026-07-07/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0_xai_2026-04-21/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-08-06/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-5-omni-plus-realtime_qwen_2026-08-06/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-24/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-high_google_2026-04-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-29/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-minimal_openai_2026-07-01/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime_sierra_2026-03-03/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1.5_sierra_2026-03-03/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/livekit-cascaded_livekit_2026-05-19/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1-0_openai_2026-04-13/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-minimal_google_2026-04-13/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-live-2.5-flash_sierra_2026-03-03/submission.json"
+   ],
+   "rows_after": 18,
+   "retrieved_after": "2026-10-05",
+   "checked_at": "2026-10-09",
+   "failed_sources": [
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha-user-sim-gpt-5-5_openai_2026-09-09/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha_openai_2026-09-09/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-gpt-5-5_pineai_2026-08-17/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-v1-0_pineai_2026-08-17/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0-tool-mentor_pickle_2026-07-07/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0_xai_2026-04-21/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-08-06/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-5-omni-plus-realtime_qwen_2026-08-06/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-24/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-high_google_2026-04-02/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-29/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-minimal_openai_2026-07-01/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime_sierra_2026-03-03/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1.5_sierra_2026-03-03/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/livekit-cascaded_livekit_2026-05-19/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1-0_openai_2026-04-13/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-minimal_google_2026-04-13/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-live-2.5-flash_sierra_2026-03-03/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    }
+   ],
+   "snapshot_sha256": "f0efae397e0064df359f74b2dc09557da97db13994f210735652f05a6e795056",
+   "rows_added_net": 0
+  },
+  {
+   "id": "tau3-voice-airline",
+   "category": "tool-use",
+   "rows_before": 18,
+   "retrieved_before": "2026-10-05",
+   "status": "preserved-gap",
+   "error": "Incomplete selected submission set: 18 missing primary bodies",
+   "tried": [
+    "https://taubench.com/",
+    "https://taubench.com/assets/index-QtX8yEBE.js",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha_openai_2026-09-09/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-gpt-5-5_pineai_2026-08-17/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha-user-sim-gpt-5-5_openai_2026-09-09/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0-tool-mentor_pickle_2026-07-07/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-v1-0_pineai_2026-08-17/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0_xai_2026-04-21/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-24/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-high_google_2026-04-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-29/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-minimal_openai_2026-07-01/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-08-06/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-5-omni-plus-realtime_qwen_2026-08-06/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/livekit-cascaded_livekit_2026-05-19/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-minimal_google_2026-04-13/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1.5_sierra_2026-03-03/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime_sierra_2026-03-03/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1-0_openai_2026-04-13/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-live-2.5-flash_sierra_2026-03-03/submission.json"
+   ],
+   "rows_after": 18,
+   "retrieved_after": "2026-10-05",
+   "checked_at": "2026-10-09",
+   "failed_sources": [
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha_openai_2026-09-09/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-gpt-5-5_pineai_2026-08-17/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha-user-sim-gpt-5-5_openai_2026-09-09/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0-tool-mentor_pickle_2026-07-07/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-v1-0_pineai_2026-08-17/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0_xai_2026-04-21/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-24/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-high_google_2026-04-02/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-29/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-minimal_openai_2026-07-01/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-08-06/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-5-omni-plus-realtime_qwen_2026-08-06/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/livekit-cascaded_livekit_2026-05-19/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-minimal_google_2026-04-13/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1.5_sierra_2026-03-03/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime_sierra_2026-03-03/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1-0_openai_2026-04-13/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-live-2.5-flash_sierra_2026-03-03/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    }
+   ],
+   "snapshot_sha256": "a69e8d7e4a3f0284c7a39136f52669e0107d3c89b0799024d1fe0c71eee9b5a1",
+   "rows_added_net": 0
+  },
+  {
+   "id": "tau3-voice-banking",
+   "category": "tool-use",
+   "rows_before": 5,
+   "retrieved_before": "2026-10-05",
+   "status": "preserved-gap",
+   "error": "Incomplete selected submission set: 4 missing primary bodies",
+   "tried": [
+    "https://taubench.com/",
+    "https://taubench.com/assets/index-QtX8yEBE.js",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha-user-sim-gpt-5-5_openai_2026-09-09/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime-banking_xai_2026-07-13/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-high-banking_google_2026-07-13/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-banking_openai_2026-07-12/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-astra-high-banking_openai_2026-09-16/submission.json"
+   ],
+   "rows_after": 5,
+   "retrieved_after": "2026-10-05",
+   "checked_at": "2026-10-09",
+   "failed_sources": [
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha-user-sim-gpt-5-5_openai_2026-09-09/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime-banking_xai_2026-07-13/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-banking_openai_2026-07-12/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-astra-high-banking_openai_2026-09-16/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    }
+   ],
+   "snapshot_sha256": "a188ea28bfdce4a0cdd5e9e190f2752890070f71874464e33c20acaf32cab735",
+   "rows_added_net": 0
+  },
+  {
+   "id": "tau3-voice-retail",
+   "category": "tool-use",
+   "rows_before": 18,
+   "retrieved_before": "2026-10-05",
+   "status": "preserved-gap",
+   "error": "Incomplete selected submission set: 18 missing primary bodies",
+   "tried": [
+    "https://taubench.com/",
+    "https://taubench.com/assets/index-QtX8yEBE.js",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-gpt-5-5_pineai_2026-08-17/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha-user-sim-gpt-5-5_openai_2026-09-09/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha_openai_2026-09-09/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0-tool-mentor_pickle_2026-07-07/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-v1-0_pineai_2026-08-17/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0_xai_2026-04-21/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-08-06/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-24/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-29/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-5-omni-plus-realtime_qwen_2026-08-06/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-high_google_2026-04-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1.5_sierra_2026-03-03/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-minimal_openai_2026-07-01/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime_sierra_2026-03-03/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1-0_openai_2026-04-13/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-live-2.5-flash_sierra_2026-03-03/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/livekit-cascaded_livekit_2026-05-19/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-minimal_google_2026-04-13/submission.json"
+   ],
+   "rows_after": 18,
+   "retrieved_after": "2026-10-05",
+   "checked_at": "2026-10-09",
+   "failed_sources": [
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-gpt-5-5_pineai_2026-08-17/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha-user-sim-gpt-5-5_openai_2026-09-09/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha_openai_2026-09-09/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0-tool-mentor_pickle_2026-07-07/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-v1-0_pineai_2026-08-17/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0_xai_2026-04-21/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-08-06/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-24/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-29/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-5-omni-plus-realtime_qwen_2026-08-06/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-high_google_2026-04-02/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1.5_sierra_2026-03-03/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-minimal_openai_2026-07-01/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime_sierra_2026-03-03/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1-0_openai_2026-04-13/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-live-2.5-flash_sierra_2026-03-03/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/livekit-cascaded_livekit_2026-05-19/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-minimal_google_2026-04-13/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    }
+   ],
+   "snapshot_sha256": "aff54bcd02a5d06c29d4bbeaa748b0a63d24c24920c6d265f8e31d9d5ed49d49",
+   "rows_added_net": 0
+  },
+  {
+   "id": "tau3-voice-telecom",
+   "category": "tool-use",
+   "rows_before": 18,
+   "retrieved_before": "2026-10-05",
+   "status": "preserved-gap",
+   "error": "Incomplete selected submission set: 18 missing primary bodies",
+   "tried": [
+    "https://taubench.com/",
+    "https://taubench.com/assets/index-QtX8yEBE.js",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha-user-sim-gpt-5-5_openai_2026-09-09/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-v1-0_pineai_2026-08-17/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha_openai_2026-09-09/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0-tool-mentor_pickle_2026-07-07/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-gpt-5-5_pineai_2026-08-17/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0_xai_2026-04-21/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-08-06/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-5-omni-plus-realtime_qwen_2026-08-06/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime_sierra_2026-03-03/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-24/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-high_google_2026-04-02/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-29/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1.5_sierra_2026-03-03/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-minimal_openai_2026-07-01/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1-0_openai_2026-04-13/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-minimal_google_2026-04-13/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-live-2.5-flash_sierra_2026-03-03/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/livekit-cascaded_livekit_2026-05-19/submission.json"
+   ],
+   "rows_after": 18,
+   "retrieved_after": "2026-10-05",
+   "checked_at": "2026-10-09",
+   "failed_sources": [
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha-user-sim-gpt-5-5_openai_2026-09-09/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-v1-0_pineai_2026-08-17/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha_openai_2026-09-09/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0-tool-mentor_pickle_2026-07-07/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-gpt-5-5_pineai_2026-08-17/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0_xai_2026-04-21/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-08-06/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-5-omni-plus-realtime_qwen_2026-08-06/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime_sierra_2026-03-03/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-24/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-high_google_2026-04-02/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-29/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1.5_sierra_2026-03-03/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-minimal_openai_2026-07-01/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1-0_openai_2026-04-13/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-minimal_google_2026-04-13/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-live-2.5-flash_sierra_2026-03-03/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/livekit-cascaded_livekit_2026-05-19/submission.json",
+     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    }
+   ],
+   "snapshot_sha256": "575928ab76188fbc99ad65f0bae222ae93cd831fba5a5a78e33ea4f3b8ac6d8b",
+   "rows_added_net": 0
+  },
+  {
+   "id": "terminal-bench-2-0",
+   "category": "terminal",
+   "rows_before": 142,
+   "retrieved_before": "2026-10-05",
+   "status": "unchanged",
+   "sources": [
+    {
+     "url": "https://ofhuhcpkvzjlejydnvyd.supabase.co/functions/v1/leaderboard-read (POST {\"package\":\"terminal-bench/terminal-bench-2\",\"name\":\"2-0\"})",
+     "status": 200,
+     "final_url": "https://ofhuhcpkvzjlejydnvyd.supabase.co/functions/v1/leaderboard-read",
+     "bytes": 117567,
+     "sha256": "dd426eef8d24974e1b916b197c896990121932791e177a01d7908d9d7a3f08f6"
+    }
+   ],
+   "detail": "All comparison-relevant leaderboard rows and fields extracted from current retained primary response and matched the previous snapshot. Existing table bytes/retrieval date retained because data did not change.",
+   "rows_after": 142,
+   "retrieved_after": "2026-10-05",
+   "rows_added_net": 0,
+   "row_values_changed": false,
+   "checked_at": "2026-10-09",
+   "snapshot_sha256": "3cbf87d1d3c6ee8528a70bbf653724f89ed66f1adf25d335b0e1f47e388f704b"
+  },
+  {
+   "id": "terminal-bench-2-1",
+   "category": "terminal",
+   "rows_before": 22,
+   "retrieved_before": "2026-10-05",
+   "status": "unchanged",
+   "sources": [
+    {
+     "url": "https://ofhuhcpkvzjlejydnvyd.supabase.co/functions/v1/leaderboard-read (POST {\"package\":\"terminal-bench/terminal-bench-2-1\",\"name\":\"main\"})",
+     "status": 200,
+     "final_url": "https://ofhuhcpkvzjlejydnvyd.supabase.co/functions/v1/leaderboard-read",
+     "bytes": 35230,
+     "sha256": "a03472372fd4cbf34bd7f344ec2d593e27c2147c00cb3170d898afb07711c1c2"
+    }
+   ],
+   "detail": "All comparison-relevant leaderboard rows and fields extracted from current retained primary response and matched the previous snapshot. Existing table bytes/retrieval date retained because data did not change.",
+   "rows_after": 22,
+   "retrieved_after": "2026-10-05",
+   "rows_added_net": 0,
+   "row_values_changed": false,
+   "checked_at": "2026-10-09",
+   "snapshot_sha256": "63b2d2c51476de6b9c8821def8ccb2705cffae62898d0c70959491f4e7cd7300"
+  },
+  {
+   "id": "terminal-bench-3-0",
+   "category": "terminal",
+   "rows_before": 12,
+   "retrieved_before": "2026-10-05",
+   "status": "unchanged",
+   "sources": [
+    {
+     "url": "https://ofhuhcpkvzjlejydnvyd.supabase.co/functions/v1/leaderboard-read (POST {\"package\":\"terminal-bench/terminal-bench\",\"name\":\"3-0-0\"})",
+     "status": 200,
+     "final_url": "https://ofhuhcpkvzjlejydnvyd.supabase.co/functions/v1/leaderboard-read",
+     "bytes": 15190,
+     "sha256": "f2cd1cca28d317737c079badbbd551fb186f9e3c57e55fefe502ff6719fb0b18"
+    }
+   ],
+   "detail": "All comparison-relevant leaderboard rows and fields extracted from current retained primary response and matched the previous snapshot. Existing table bytes/retrieval date retained because data did not change.",
+   "rows_after": 12,
+   "retrieved_after": "2026-10-05",
+   "rows_added_net": 0,
+   "row_values_changed": false,
+   "checked_at": "2026-10-09",
+   "snapshot_sha256": "83a420d2efc0b5cc6b2ec7689066bcc477650cdb3336ef1fc0ea40632e4e3786"
+  },
+  {
+   "id": "terminal-bench-4-0",
+   "category": "terminal",
+   "rows_before": 27,
+   "retrieved_before": "2026-10-05",
+   "status": "changed",
+   "sources": [
+    {
+     "url": "https://ofhuhcpkvzjlejydnvyd.supabase.co/functions/v1/leaderboard-read (POST {\"package\":\"terminal-bench/terminal-bench\",\"name\":\"4-0-0\"})",
+     "status": 200,
+     "final_url": "https://ofhuhcpkvzjlejydnvyd.supabase.co/functions/v1/leaderboard-read",
+     "bytes": 42942,
+     "sha256": "6ccc3a6964d07ec7eea06a99ee95a280c93d54bbc6b223883e79e7c6dfb3310c"
+    }
+   ],
+   "detail": "Extracted 8 new official-agent configurations plus source ranks. Preserved effort, release dates, 330 trials, costs, confidence intervals, and pass@k; no scoring aggregation.",
+   "rows_after": 35,
+   "retrieved_after": "2026-10-09",
+   "rows_added_net": 8,
+   "row_values_changed": true,
+   "checked_at": "2026-10-09",
+   "snapshot_sha256": "70896fbbe9a3e8f161f6d67235e72292aca373d29c60722254a438540d6c8619"
+  },
+  {
+   "id": "terminal-bench-science-0-1",
+   "category": "terminal",
+   "rows_before": 17,
+   "retrieved_before": "2026-10-05",
+   "status": "changed",
+   "sources": [
+    {
+     "url": "https://www.terminal-bench-science.ai/api/leaderboard?package=terminal-bench-science%2Fterminal-bench-science&name=v0-1-eval",
+     "status": 200,
+     "final_url": "https://www.terminal-bench-science.ai/api/leaderboard?package=terminal-bench-science%2Fterminal-bench-science&name=v0-1-eval",
+     "bytes": 493155,
+     "sha256": "86e6278ca64da88b69c1efd6059a33248bd300f27673098f60184286b470c4a7"
+    }
+   ],
+   "detail": "Retained complete official site API response used because the already-attempted Harbor POST returned HTTP 500. Same leaderboard/package/version and same 17 overall scores/costs; site API n_trials is now 210 on five previously inconsistent source rows. Domain metric payload retained in snapshot, not mixed into the overall table.",
+   "rows_after": 17,
+   "retrieved_after": "2026-10-09",
+   "rows_added_net": 0,
+   "row_values_changed": true,
+   "checked_at": "2026-10-09",
+   "snapshot_sha256": "f8c0bca8138adff141a1e086dc9ba7ad76ed8d58fe25aac7e96504d5d94b4039"
+  },
+  {
+   "id": "theagentcompany",
+   "category": "tool-use",
+   "rows_before": 17,
+   "retrieved_before": "2026-10-05",
+   "status": "unchanged",
+   "sources": [
+    {
+     "url": "https://the-agent-company.com/static/js/main.6a1ea1e4.js",
+     "status": 200,
+     "final_url": "https://the-agent-company.com/static/js/main.6a1ea1e4.js",
+     "bytes": 214932,
+     "sha256": "2b0e3eab9220b8b1761c932a6745528a57370778bcf1eb3f08f675c3d3bb056e"
+    }
+   ],
+   "detail": "All comparison-relevant leaderboard rows and fields extracted from current retained primary response and matched the previous snapshot. Existing table bytes/retrieval date retained because data did not change.",
+   "rows_after": 17,
+   "retrieved_after": "2026-10-05",
+   "rows_added_net": 0,
+   "row_values_changed": false,
+   "checked_at": "2026-10-09",
+   "snapshot_sha256": "9e12abe430f0f93c1a088f1f510ab05da5d0f312b3c8de2a329d0c3fedbf79c9"
+  },
+  {
+   "id": "toolathlon",
+   "category": "tool-use",
+   "rows_before": 51,
+   "retrieved_before": "2026-10-05",
+   "status": "unchanged",
+   "sources": [
+    {
+     "url": "https://toolathlon.xyz/docs/leaderboard.md",
+     "status": 200,
+     "final_url": "https://toolathlon.xyz/docs/leaderboard.md",
+     "bytes": 182447,
+     "sha256": "b1b3980d395280893d95d3191c49f21bd893e9645c9cdee794c0938e87bf7cd5"
+    }
+   ],
+   "detail": "All comparison-relevant leaderboard rows and fields extracted from current retained primary response and matched the previous snapshot. Existing table bytes/retrieval date retained because data did not change.",
+   "rows_after": 51,
+   "retrieved_after": "2026-10-05",
+   "rows_added_net": 0,
+   "row_values_changed": false,
+   "checked_at": "2026-10-09",
+   "snapshot_sha256": "87dd9d87290142c468c32ad966f12e13c8d6fc4481b09971ce28f43c0bc58e0c"
+  },
+  {
+   "id": "toolathlon-verified",
+   "category": "tool-use",
+   "rows_before": 25,
+   "retrieved_before": "2026-10-05",
+   "status": "unchanged",
+   "sources": [
+    {
+     "url": "https://toolathlon.xyz/docs/leaderboard.md",
+     "status": 200,
+     "final_url": "https://toolathlon.xyz/docs/leaderboard.md",
+     "bytes": 182447,
+     "sha256": "b1b3980d395280893d95d3191c49f21bd893e9645c9cdee794c0938e87bf7cd5"
+    }
+   ],
+   "detail": "All comparison-relevant leaderboard rows and fields extracted from current retained primary response and matched the previous snapshot. Existing table bytes/retrieval date retained because data did not change.",
+   "rows_after": 25,
+   "retrieved_after": "2026-10-05",
+   "rows_added_net": 0,
+   "row_values_changed": false,
+   "checked_at": "2026-10-09",
+   "snapshot_sha256": "87dd9d87290142c468c32ad966f12e13c8d6fc4481b09971ce28f43c0bc58e0c"
+  }
+ ]
+}

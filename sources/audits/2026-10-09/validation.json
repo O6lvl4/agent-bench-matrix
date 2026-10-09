@@ -1,0 +1,30 @@
+{
+  "retrieved": "2026-10-09",
+  "almide_commit": "e706ba8c4e32eb39983bd125cec1890d17094300",
+  "rust_version": "1.94.0 (4a4ef493e 2026-03-02)",
+  "compiler_build": "cargo +1.94.0 build --release --locked --bin almide",
+  "fit_tests": {
+    "command": "almide test src/fit.almd",
+    "exit_code": 0,
+    "tests": 4,
+    "files": 1
+  },
+  "strict_build": {
+    "command": "almide run src/build.almd -- --strict",
+    "exit_code": 0,
+    "tables": 164,
+    "rows": 4398,
+    "models": 505,
+    "unregistered_model_ids": 0,
+    "gaps": 23,
+    "claims_documents": 1
+  },
+  "bundle_rebuild_equality": {
+    "command": "git diff --exit-code -- docs/data.json (after staging first build and rebuilding)",
+    "exit_code": 0,
+    "sha256": "38d477e5e278f25b92e2bbad8876fc9b3d5266db6ca039d820ea86ec11abb926"
+  },
+  "git_diff_check": "passed",
+  "ci_status": "Must additionally pass on final PR head before merge",
+  "deployment_status": "Must independently verify Pages on merge commit and public data after merge"
+}

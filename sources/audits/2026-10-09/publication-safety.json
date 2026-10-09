@@ -1,0 +1,30 @@
+{
+  "checked": "2026-10-09",
+  "policy": "No signed access URLs or bearer query material are published. Canonical public request URLs, statuses and original response hashes remain recorded.",
+  "changes": [
+    {
+      "archive_member": "tool-general/929cc5cdff51f3",
+      "original_response_sha256": "a2dc2ae7b4ebd42d01405a3d0ffa0a2dcd179ffa64d50bbe699214ee3fb53d56",
+      "stored_response_sha256": "3e9961f12562b3048056a2a93e967e1c7a6e623751691ab1577b1b7b3216be95",
+      "parameters_removed": 4,
+      "change": "Unrelated signed social-preview URL parameters only"
+    },
+    {
+      "archive_member": "tool-general/index.json",
+      "original_manifest_sha256": "2555b20300ace8eb2cbde5d9715a3b25c9e27a99e1cbad5b64f2cd945236d4f0",
+      "stored_manifest_sha256": "2b9e5ec2d6d6fc85724ab1de55d77e3f4afe2bf008fdf3a9e43bf695a335de37",
+      "change": "Signed redirect query parameters removed; stored response hash updated for redacted preview URLs"
+    },
+    {
+      "archive_member": "tool-general-gaps/index.json",
+      "original_manifest_sha256": "6a375aec730e1b54cd297fa055a6f6c3ce2e4709e6a21ebe54c0d39642ffcf71",
+      "stored_manifest_sha256": "2e7456801ead0829b2c4bc05530d726157ec5e40f5dc8bb19ae3897ed5968896",
+      "change": "Signed redirect query parameters removed; stored response hash updated for redacted preview URLs"
+    }
+  ],
+  "archive_sha256": "a4a0927f98955cb01d37c0bb3b7af29d498655ce4c6a51c8e501bdb87eaa9ef9",
+  "measured_data_changed": false,
+  "archive_response_integrity_note": "One response has only unrelated social-preview URL signatures removed; original and stored hashes are both explicit. Archive index hashes validate retained bytes.",
+  "final_candidate_signature_scan": "passed: no credential-like query parameters in candidate files or archive members",
+  "archived_response_hash_checks": 79
+}

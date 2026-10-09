@@ -1,0 +1,28 @@
+{
+ "checked": "2026-10-09",
+ "table": "mcp-atlas",
+ "source": "https://labs.scale.com/leaderboard/mcp_atlas",
+ "finding": "Current MCP-Atlas page imports the same retained renderer chunks as SWE-Bench Pro. LeaderboardEntriesSection forwards each entry to LeaderboardScoreEntry; that component assigns x=entry.rank and renders x. Current MCP-Atlas ranks are 1 through 34. Page RSC still supplies a Rank (UB) footnote, so this discrepancy is disclosed. Static source inspection only; no browser rendering was claimed.",
+ "supporting_snapshots": [
+  {
+   "path": "sources/audits/2026-10-09/swe-bench-pro-rank-render.js",
+   "sha256": "ef104d026a3613c3158f1a65c2ae0422d90301f426553b6d5f0017d07734cb4a",
+   "raw_response_sha256": "81fe4acf379909ea4dd4e0e50d340499c1fdb0b44fef1daf1795deca8b6f73e6",
+   "source": "https://labs.scale.com/_next/static/immutable/chunks/0de0n0okbxfbt.js",
+   "character_start": 13738,
+   "character_end": 18212,
+   "method": "Exact literal source excerpt; fetched JavaScript was never executed."
+  },
+  {
+   "path": "sources/audits/2026-10-09/swe-bench-pro-entries-render.js",
+   "sha256": "f432b2f3311f090d914f8a2a23542bb5c28a9a814e1f3fd25b941d15926f31b8",
+   "raw_response_sha256": "6cd93a74a058ccce02131c1da35a266c4cf02ae1ec0ed74fa5dc3e29974f9fa4",
+   "source": "https://labs.scale.com/_next/static/immutable/chunks/1qyi6_4cstd1_.js",
+   "character_start": 1142,
+   "character_end": 2404,
+   "method": "Exact literal source excerpt; fetched JavaScript was never executed."
+  }
+ ],
+ "page_sha256": "d0c9cf629b66dcc00c1efc10cc0d33d479c7cc40786a128456f96b6845c242ae",
+ "rsc_footnote_excerpt": "1f:[\"$\",\"$L19\",null,{\"blocks\":[{\"_key\":\"key32pu8\",\"_type\":\"block\",\"children\":[{\"_key\":\"key1cf3c\",\"_type\":\"span\",\"marks\":[\"strong\",\"em\"],\"text\":\"Rank (UB):\"},{\"_key\":\"key2nobh\",\"_type\":\"span\",\"marks\":[\"em\"],\"text\":\" 1 + the number of models whose lower CI bound exceeds this model’s upper CI bound.\"}],\"markDefs\":[],\"style\":\"normal\"},{\"_key\":\"key566jm\",\"_type\":\"block\",\"children\":[{\"_key\":\"key4r3z6\",\"_type\":\"span\",\"marks\":[],\"text\":\"*Evaluations for these models were run using Fireworks AI for inference\"}],\"markDefs\":[],\"style\":\"normal\"},{\"_key\":\"2fca9a7d1cf1\",\"_type\":\"block\",\"children\":[{\"_key\":\"c6a9d020891c\",\"_type\":\"span\",\"marks\":[],\"text\":\"Updated April 8, 2026\"}],\"markDefs\":[],\"style\":\"normal\"}]}]\n"
+}

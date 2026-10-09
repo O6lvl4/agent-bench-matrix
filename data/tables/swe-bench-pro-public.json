@@ -16,12 +16,12 @@
     "https://labs.scale.com/leaderboard/swe_bench_pro_public",
     "https://labs.scale.com/leaderboard/swe_bench_pro"
   ],
-  "retrieved": "2026-10-05",
+  "retrieved": "2026-10-09",
   "newest_row_date": "2026-07-09",
   "snapshot": "sources/swe-bench-pro-public/entries.json",
   "paper": "https://scale.com/research/swe_bench_pro",
   "repo": "https://github.com/scaleapi/SWE-bench_Pro-os",
-  "notes_ja": "rank は信頼区間の上限基準(Rank (UB))。score_extra.ci_plus_minus はボードの ± 値。agent は脚注と本文の記述から付けた。",
+  "notes_ja": "rank は現行の公開データの rank を転記(フロントエンドもその値を表示)。ページには Rank (UB) の説明が残るが、現在の値はスコア順の連番。score_extra.ci_plus_minus はボードの ± 値。agent は脚注と本文の記述から付けた。",
   "rows": [
     {
       "rank": 1,
@@ -45,7 +45,7 @@
       "row_url": null
     },
     {
-      "rank": 1,
+      "rank": 2,
       "system": "gpt-5.4 (xHigh)*",
       "agent": "mini-swe-agent",
       "model_raw": [
@@ -87,7 +87,7 @@
       "row_url": null
     },
     {
-      "rank": 3,
+      "rank": 4,
       "system": "claude-opus-4-6 (thinking)*",
       "agent": "mini-swe-agent",
       "model_raw": [
@@ -129,7 +129,7 @@
       "row_url": null
     },
     {
-      "rank": 5,
+      "rank": 6,
       "system": "claude-opus-4-5-20251101",
       "agent": "SWE-agent",
       "model_raw": [
@@ -150,7 +150,7 @@
       "row_url": null
     },
     {
-      "rank": 5,
+      "rank": 7,
       "system": "claude-4-5-Sonnet",
       "agent": "SWE-agent",
       "model_raw": [
@@ -171,7 +171,7 @@
       "row_url": null
     },
     {
-      "rank": 5,
+      "rank": 8,
       "system": "gemini-3-pro-preview",
       "agent": "SWE-agent",
       "model_raw": [
@@ -192,7 +192,7 @@
       "row_url": null
     },
     {
-      "rank": 5,
+      "rank": 9,
       "system": "claude-4-Sonnet",
       "agent": "SWE-agent",
       "model_raw": [
@@ -234,7 +234,7 @@
       "row_url": null
     },
     {
-      "rank": 10,
+      "rank": 11,
       "system": "gpt-5.2-codex",
       "agent": "SWE-agent",
       "model_raw": [
@@ -255,7 +255,7 @@
       "row_url": null
     },
     {
-      "rank": 10,
+      "rank": 12,
       "system": "claude-4-5-haiku",
       "agent": "SWE-agent",
       "model_raw": [
@@ -276,7 +276,7 @@
       "row_url": null
     },
     {
-      "rank": 10,
+      "rank": 13,
       "system": "qwen3-coder-480b-a35b",
       "agent": "SWE-agent",
       "model_raw": [
@@ -318,7 +318,7 @@
       "row_url": null
     },
     {
-      "rank": 14,
+      "rank": 15,
       "system": "gemini-3-flash",
       "agent": "SWE-agent",
       "model_raw": [
@@ -360,7 +360,7 @@
       "row_url": null
     },
     {
-      "rank": 16,
+      "rank": 17,
       "system": "kimi-k2-instruct",
       "agent": "SWE-agent",
       "model_raw": [
@@ -423,7 +423,7 @@
       "row_url": null
     },
     {
-      "rank": 19,
+      "rank": 20,
       "system": "deepseek-v3p2",
       "agent": "SWE-agent",
       "model_raw": [
@@ -465,7 +465,7 @@
       "row_url": null
     },
     {
-      "rank": 21,
+      "rank": 22,
       "system": "llama3-1-405b-instruct",
       "agent": "SWE-agent",
       "model_raw": [
@@ -486,7 +486,7 @@
       "row_url": null
     },
     {
-      "rank": 21,
+      "rank": 23,
       "system": "glm-4.6",
       "agent": "SWE-agent",
       "model_raw": [
