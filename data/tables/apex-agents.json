@@ -1,1299 +1,1371 @@
 {
-  "id": "apex-agents",
-  "family": "apex-agents",
-  "name": "APEX-Agents 1.1",
-  "board": "mercor.com",
-  "category": "tool-use",
-  "measures_ja": "投資銀行アナリスト・経営コンサルタント・企業法務弁護士の実務を、文書・表計算・メール・チャット等のアプリを横断して長時間かけて仕上げられるか。",
-  "tasks": 240,
-  "tasks_note": "全体は240タスク。v1.1告知ブログの80 tasks per domainと、現在の職種別ページ3件のnumTasks=80が一致する。",
-  "metric": "Mean Score",
-  "unit": "%",
-  "higher_is_better": true,
-  "harness_ja": "Mercor が共通のエージェント(Loop: loop_truncated_tools_agent)で各モデルを実行し、専門家作成のルーブリックを使ってLLM審査で採点する。",
-  "source": "https://www.mercor.com/apex/apex-agents-leaderboard/",
-  "fetched": [
-    "https://www.mercor.com/apex/apex-agents-leaderboard/",
-    "https://www.mercor.com/blog/introducing-apex-agents-1-1"
-  ],
-  "retrieved": "2026-10-05",
-  "newest_row_date": "2026-09-30",
-  "snapshot": "sources/apex-agents/leaderboard_data.json",
-  "paper": "https://arxiv.org/abs/2601.14242",
-  "repo": "https://github.com/Mercor-Intelligence/apex_loop_truncated_tools_agent",
-  "notes_ja": "ボードの FAQ は Mean Score(ルーブリック基準の平均達成率)を順位付けの主指標としているので score はそれにし、Mean Score 降順で rank を振った。ページの切替の初期表示は Pass@1(全基準達成率)で、score_extra に入れた。date はデータ上のモデルのリリース日で評価日ではない。system はボード表示名(Opus 5 など、ベンダー名を省いた表記)。",
-  "rows": [
-    {
-      "rank": 1,
-      "system": "Gemini 4 Argon",
-      "agent": "Loop",
-      "model_raw": [
-        "Gemini 4 Argon"
-      ],
-      "model_ids": [
-        "gemini-4-argon"
-      ],
-      "model_config": "effort: high; model_id: gemini-4-argon",
-      "score": 87.9,
-      "score_extra": {
-        "pass_at_1": 82.2,
-        "mean_score_error": 3.4,
-        "pass_at_1_error": 4.4,
-        "n_samples": 949
-      },
-      "date": "2026-09-30",
-      "verified": null,
-      "open_source": null,
-      "org": "Google",
-      "row_url": null
-    },
-    {
-      "rank": 2,
-      "system": "Sonnet 5.5",
-      "agent": "Loop",
-      "model_raw": [
-        "Sonnet 5.5"
-      ],
-      "model_ids": [
-        "claude-sonnet-5.5"
-      ],
-      "model_config": "effort: max; model_id: claude-sonnet-5-5",
-      "score": 83.7,
-      "score_extra": {
-        "pass_at_1": 75.5,
-        "mean_score_error": 3.6,
-        "pass_at_1_error": 4.7,
-        "n_samples": 955
-      },
-      "date": null,
-      "verified": null,
-      "open_source": null,
-      "org": "Anthropic",
-      "row_url": null
-    },
-    {
-      "rank": 3,
-      "system": "Opus 5.5",
-      "agent": "Loop",
-      "model_raw": [
-        "Opus 5.5"
-      ],
-      "model_ids": [
-        "claude-opus-5.5"
-      ],
-      "model_config": "effort: max; model_id: claude-opus-5-5",
-      "score": 81.3,
-      "score_extra": {
-        "pass_at_1": 73.5,
-        "mean_score_error": 4,
-        "pass_at_1_error": 4.9,
-        "n_samples": 950
-      },
-      "date": "2026-09-22",
-      "verified": null,
-      "open_source": null,
-      "org": "Anthropic",
-      "row_url": null
-    },
-    {
-      "rank": 4,
-      "system": "Gemini 3.7 Flash",
-      "agent": "Loop",
-      "model_raw": [
-        "Gemini 3.7 Flash"
-      ],
-      "model_ids": [
-        "gemini-3.7-flash"
-      ],
-      "model_config": "effort: high; model_id: gemini-3.7-flash",
-      "score": 79.4,
-      "score_extra": {
-        "pass_at_1": 67.8,
-        "mean_score_error": 3.8,
-        "pass_at_1_error": 5.1,
-        "n_samples": 952
-      },
-      "date": "2026-08-13",
-      "verified": null,
-      "open_source": null,
-      "org": "Google",
-      "row_url": null
-    },
-    {
-      "rank": 5,
-      "system": "Grok 4.6",
-      "agent": "Loop",
-      "model_raw": [
-        "Grok 4.6"
-      ],
-      "model_ids": [
-        "grok-4.6"
-      ],
-      "model_config": "effort: xhigh; model_id: grok-4-6-xhigh",
-      "score": 77.3,
-      "score_extra": {
-        "pass_at_1": 65.3,
-        "mean_score_error": 4.1,
-        "pass_at_1_error": 5.2,
-        "n_samples": 960
-      },
-      "date": "2026-08-12",
-      "verified": null,
-      "open_source": null,
-      "org": "xAI",
-      "row_url": null
-    },
-    {
-      "rank": 6,
-      "system": "Fable 5.1",
-      "agent": "Loop",
-      "model_raw": [
-        "Fable 5.1"
-      ],
-      "model_ids": [
-        "claude-fable-5.1"
-      ],
-      "model_config": "effort: max; model_id: claude-fable-5.1",
-      "score": 77.1,
-      "score_extra": {
-        "pass_at_1": 68.6,
-        "mean_score_error": 4.3,
-        "pass_at_1_error": 4.9,
-        "n_samples": 959
-      },
-      "date": "2026-09-01",
-      "verified": null,
-      "open_source": null,
-      "org": "Anthropic",
-      "row_url": null
-    },
-    {
-      "rank": 7,
-      "system": "Opus 5",
-      "agent": "Loop",
-      "model_raw": [
-        "Opus 5"
-      ],
-      "model_ids": [
-        "claude-opus-5"
-      ],
-      "model_config": "effort: max; model_id: claude-opus-5",
-      "score": 77,
-      "score_extra": {
-        "pass_at_1": 65.8,
-        "mean_score_error": 4,
-        "pass_at_1_error": 5.1,
-        "n_samples": 956
-      },
-      "date": "2026-07-24",
-      "verified": null,
-      "open_source": null,
-      "org": "Anthropic",
-      "row_url": null
-    },
-    {
-      "rank": 8,
-      "system": "GPT-6 Astra",
-      "agent": "Loop",
-      "model_raw": [
-        "GPT-6 Astra"
-      ],
-      "model_ids": [
-        "gpt-6-astra"
-      ],
-      "model_config": "effort: max; model_id: gpt-6-astra-max",
-      "score": 75.1,
-      "score_extra": {
-        "pass_at_1": 64.7,
-        "mean_score_error": 4.6,
-        "pass_at_1_error": 5.6,
-        "n_samples": 959
-      },
-      "date": "2026-09-03",
-      "verified": null,
-      "open_source": null,
-      "org": "OpenAI",
-      "row_url": null
-    },
-    {
-      "rank": 9,
-      "system": "Fable 5",
-      "agent": "Loop",
-      "model_raw": [
-        "Fable 5"
-      ],
-      "model_ids": [
-        "claude-fable-5"
-      ],
-      "model_config": "effort: max; model_id: claude-fable-5",
-      "score": 74.5,
-      "score_extra": {
-        "pass_at_1": 63.6,
-        "mean_score_error": 4.3,
-        "pass_at_1_error": 5.3,
-        "n_samples": 959
-      },
-      "date": "2026-06-09",
-      "verified": null,
-      "open_source": null,
-      "org": "Anthropic",
-      "row_url": null
-    },
-    {
-      "rank": 10,
-      "system": "Qwen3.8-Max",
-      "agent": "Loop",
-      "model_raw": [
-        "Qwen3.8-Max"
-      ],
-      "model_ids": [
-        "qwen3.8-max"
-      ],
-      "model_config": "effort: xhigh; model_id: qwen-3-8-max-xhigh",
-      "score": 74.3,
-      "score_extra": {
-        "pass_at_1": 63.3,
-        "mean_score_error": 4,
-        "pass_at_1_error": 4.9,
-        "n_samples": 951
-      },
-      "date": "2026-08-02",
-      "verified": null,
-      "open_source": null,
-      "org": "Alibaba",
-      "row_url": null
-    },
-    {
-      "rank": 11,
-      "system": "GPT-6.1 Sol",
-      "agent": "Loop",
-      "model_raw": [
-        "GPT-6.1 Sol"
-      ],
-      "model_ids": [
-        "gpt-6.1-sol"
-      ],
-      "model_config": "effort: max; model_id: gpt-6-1-sol",
-      "score": 73.2,
-      "score_extra": {
-        "pass_at_1": 60,
-        "mean_score_error": 4.6,
-        "pass_at_1_error": 5.6,
-        "n_samples": 954
-      },
-      "date": "2026-09-29",
-      "verified": null,
-      "open_source": null,
-      "org": "OpenAI",
-      "row_url": null
-    },
-    {
-      "rank": 12,
-      "system": "Gemini 3.8 Flash",
-      "agent": "Loop",
-      "model_raw": [
-        "Gemini 3.8 Flash"
-      ],
-      "model_ids": [
-        "gemini-3.8-flash"
-      ],
-      "model_config": "effort: high; model_id: gemini-3.8-flash",
-      "score": 72.9,
-      "score_extra": {
-        "pass_at_1": 64.3,
-        "mean_score_error": 4.4,
-        "pass_at_1_error": 5.2,
-        "n_samples": 956
-      },
-      "date": "2026-09-02",
-      "verified": null,
-      "open_source": null,
-      "org": "Google",
-      "row_url": null
-    },
-    {
-      "rank": 13,
-      "system": "GPT-5.6 Terra",
-      "agent": "Loop",
-      "model_raw": [
-        "GPT-5.6 Terra"
-      ],
-      "model_ids": [
-        "gpt-5.6-terra"
-      ],
-      "model_config": "effort: max; model_id: gpt-5.6-terra-max",
-      "score": 71.8,
-      "score_extra": {
-        "pass_at_1": 58.2,
-        "mean_score_error": 4.2,
-        "pass_at_1_error": 5.3,
-        "n_samples": 958
-      },
-      "date": "2026-07-09",
-      "verified": null,
-      "open_source": null,
-      "org": "OpenAI",
-      "row_url": null
-    },
-    {
-      "rank": 14,
-      "system": "Fable 5.1",
-      "agent": "Loop",
-      "model_raw": [
-        "Fable 5.1"
-      ],
-      "model_ids": [
-        "claude-fable-5.1"
-      ],
-      "model_config": "effort: high; model_id: claude-fable-5.1-high",
-      "score": 71.8,
-      "score_extra": {
-        "pass_at_1": 59.7,
-        "mean_score_error": 4.6,
-        "pass_at_1_error": 5.6,
-        "n_samples": 954
-      },
-      "date": "2026-09-01",
-      "verified": null,
-      "open_source": null,
-      "org": "Anthropic",
-      "row_url": null
-    },
-    {
-      "rank": 15,
-      "system": "MiMo V2.6 Pro",
-      "agent": "Loop",
-      "model_raw": [
-        "MiMo V2.6 Pro"
-      ],
-      "model_ids": [
-        "mimo-v2.6-pro"
-      ],
-      "model_config": "effort: none; model_id: mimo-v2.6-pro",
-      "score": 71.1,
-      "score_extra": {
-        "pass_at_1": 59.5,
-        "mean_score_error": 4.4,
-        "pass_at_1_error": 5.2,
-        "n_samples": 864
-      },
-      "date": null,
-      "verified": null,
-      "open_source": null,
-      "org": "Xiaomi",
-      "row_url": null
-    },
-    {
-      "rank": 16,
-      "system": "Grok 4.5",
-      "agent": "Loop",
-      "model_raw": [
-        "Grok 4.5"
-      ],
-      "model_ids": [
-        "grok-4.5"
-      ],
-      "model_config": "effort: high; model_id: grok-4-5",
-      "score": 70.5,
-      "score_extra": {
-        "pass_at_1": 56.2,
-        "mean_score_error": 4.3,
-        "pass_at_1_error": 5.4,
-        "n_samples": 960
-      },
-      "date": "2026-07-08",
-      "verified": null,
-      "open_source": null,
-      "org": "xAI",
-      "row_url": null
-    },
-    {
-      "rank": 17,
-      "system": "Muse Spark 1.3",
-      "agent": "Loop",
-      "model_raw": [
-        "Muse Spark 1.3"
-      ],
-      "model_ids": [
-        "muse-spark-1.3"
-      ],
-      "model_config": "effort: xhigh; model_id: muse-spark-1-3",
-      "score": 70.4,
-      "score_extra": {
-        "pass_at_1": 58.6,
-        "mean_score_error": 4.4,
-        "pass_at_1_error": 5.5,
-        "n_samples": 959
-      },
-      "date": "2026-09-02",
-      "verified": null,
-      "open_source": null,
-      "org": "Meta",
-      "row_url": null
-    },
-    {
-      "rank": 18,
-      "system": "GPT-5.5",
-      "agent": "Loop",
-      "model_raw": [
-        "GPT-5.5"
-      ],
-      "model_ids": [
-        "gpt-5.5"
-      ],
-      "model_config": "effort: xhigh; model_id: gpt-5.5-xhigh",
-      "score": 70.3,
-      "score_extra": {
-        "pass_at_1": 55.1,
-        "mean_score_error": 4.4,
-        "pass_at_1_error": 5.5,
-        "n_samples": 959
-      },
-      "date": "2026-04-23",
-      "verified": null,
-      "open_source": null,
-      "org": "OpenAI",
-      "row_url": null
-    },
-    {
-      "rank": 19,
-      "system": "Grok 4.7",
-      "agent": "Loop",
-      "model_raw": [
-        "Grok 4.7"
-      ],
-      "model_ids": [
-        "grok-4.7"
-      ],
-      "model_config": "effort: xhigh; model_id: grok-4.7",
-      "score": 68.7,
-      "score_extra": {
-        "pass_at_1": 54.6,
-        "mean_score_error": 4.2,
-        "pass_at_1_error": 5.1,
-        "n_samples": 960
-      },
-      "date": "2026-09-21",
-      "verified": null,
-      "open_source": null,
-      "org": "xAI",
-      "row_url": null
-    },
-    {
-      "rank": 20,
-      "system": "GPT-6 Sol",
-      "agent": "Loop",
-      "model_raw": [
-        "GPT-6 Sol"
-      ],
-      "model_ids": [
-        "gpt-6-sol"
-      ],
-      "model_config": "effort: max; model_id: gpt-6-sol",
-      "score": 68.7,
-      "score_extra": {
-        "pass_at_1": 54.3,
-        "mean_score_error": 4.7,
-        "pass_at_1_error": 5.6,
-        "n_samples": 951
-      },
-      "date": "2026-09-22",
-      "verified": null,
-      "open_source": null,
-      "org": "OpenAI",
-      "row_url": null
-    },
-    {
-      "rank": 21,
-      "system": "GPT-5.4",
-      "agent": "Loop",
-      "model_raw": [
-        "GPT-5.4"
-      ],
-      "model_ids": [
-        "gpt-5.4"
-      ],
-      "model_config": "effort: xhigh; model_id: responses/gpt-5.4",
-      "score": 68.2,
-      "score_extra": {
-        "pass_at_1": 52.4,
-        "mean_score_error": 4.4,
-        "pass_at_1_error": 5.3,
-        "n_samples": 958
-      },
-      "date": "2026-03-05",
-      "verified": null,
-      "open_source": null,
-      "org": "OpenAI",
-      "row_url": null
-    },
-    {
-      "rank": 22,
-      "system": "DeepSeek-V4-Flash",
-      "agent": "Loop",
-      "model_raw": [
-        "DeepSeek-V4-Flash"
-      ],
-      "model_ids": [
-        "deepseek-v4-flash"
-      ],
-      "model_config": "effort: max; model_id: deepseek-v4-flash",
-      "score": 67.5,
-      "score_extra": {
-        "pass_at_1": 55.3,
-        "mean_score_error": 4.6,
-        "pass_at_1_error": 5.6,
-        "n_samples": 829
-      },
-      "date": "2026-07-31",
-      "verified": null,
-      "open_source": null,
-      "org": "DeepSeek",
-      "row_url": null
-    },
-    {
-      "rank": 23,
-      "system": "Sonnet 5",
-      "agent": "Loop",
-      "model_raw": [
-        "Sonnet 5"
-      ],
-      "model_ids": [
-        "claude-sonnet-5"
-      ],
-      "model_config": "effort: max; model_id: claude-sonnet-5-max",
-      "score": 67.4,
-      "score_extra": {
-        "pass_at_1": 54.5,
-        "mean_score_error": 4.5,
-        "pass_at_1_error": 5.5,
-        "n_samples": 958
-      },
-      "date": "2026-06-30",
-      "verified": null,
-      "open_source": null,
-      "org": "Anthropic",
-      "row_url": null
-    },
-    {
-      "rank": 24,
-      "system": "GLM-5.3-Flash",
-      "agent": "Loop",
-      "model_raw": [
-        "GLM-5.3-Flash"
-      ],
-      "model_ids": [
-        "glm-5.3-flash"
-      ],
-      "model_config": "effort: max; model_id: glm-5-3-flash",
-      "score": 66.8,
-      "score_extra": {
-        "pass_at_1": 52.8,
-        "mean_score_error": 4.4,
-        "pass_at_1_error": 5.3,
-        "n_samples": 957
-      },
-      "date": "2026-08-26",
-      "verified": null,
-      "open_source": null,
-      "org": "Zhipu",
-      "row_url": null
-    },
-    {
-      "rank": 25,
-      "system": "GLM-5.3",
-      "agent": "Loop",
-      "model_raw": [
-        "GLM-5.3"
-      ],
-      "model_ids": [
-        "glm-5.3"
-      ],
-      "model_config": "effort: max; model_id: glm-5-3",
-      "score": 66.2,
-      "score_extra": {
-        "pass_at_1": 56.6,
-        "mean_score_error": 4.3,
-        "pass_at_1_error": 5.1,
-        "n_samples": 960
-      },
-      "date": "2026-08-14",
-      "verified": null,
-      "open_source": null,
-      "org": "Zhipu",
-      "row_url": null
-    },
-    {
-      "rank": 26,
-      "system": "Opus 5.5",
-      "agent": "Loop",
-      "model_raw": [
-        "Opus 5.5"
-      ],
-      "model_ids": [
-        "claude-opus-5.5"
-      ],
-      "model_config": "effort: medium; model_id: opus-5.5",
-      "score": 65.7,
-      "score_extra": {
-        "pass_at_1": 52.5,
-        "mean_score_error": 4.9,
-        "pass_at_1_error": 5.6,
-        "n_samples": 943
-      },
-      "date": "2026-09-22",
-      "verified": null,
-      "open_source": null,
-      "org": "Anthropic",
-      "row_url": null
-    },
-    {
-      "rank": 27,
-      "system": "GPT-5.6 Sol",
-      "agent": "Loop",
-      "model_raw": [
-        "GPT-5.6 Sol"
-      ],
-      "model_ids": [
-        "gpt-5.6-sol"
-      ],
-      "model_config": "effort: max; model_id: gpt-5-6-sol-max-pro",
-      "score": 65.2,
-      "score_extra": {
-        "pass_at_1": 51.4,
-        "mean_score_error": 4.8,
-        "pass_at_1_error": 5.5,
-        "n_samples": 955
-      },
-      "date": "2026-07-09",
-      "verified": null,
-      "open_source": null,
-      "org": "OpenAI",
-      "row_url": null
-    },
-    {
-      "rank": 28,
-      "system": "Opus 4.8",
-      "agent": "Loop",
-      "model_raw": [
-        "Opus 4.8"
-      ],
-      "model_ids": [
-        "claude-opus-4.8"
-      ],
-      "model_config": "effort: max; model_id: claude-opus-4-8",
-      "score": 64.4,
-      "score_extra": {
-        "pass_at_1": 48.9,
-        "mean_score_error": 4.6,
-        "pass_at_1_error": 5.5,
-        "n_samples": 961
-      },
-      "date": "2026-05-28",
-      "verified": null,
-      "open_source": null,
-      "org": "Anthropic",
-      "row_url": null
-    },
-    {
-      "rank": 29,
-      "system": "Kimi K3",
-      "agent": "Loop",
-      "model_raw": [
-        "Kimi K3"
-      ],
-      "model_ids": [
-        "kimi-k3"
-      ],
-      "model_config": "effort: max; model_id: kimi-k3",
-      "score": 64,
-      "score_extra": {
-        "pass_at_1": 50.6,
-        "mean_score_error": 4.3,
-        "pass_at_1_error": 5.1,
-        "n_samples": 960
-      },
-      "date": "2026-07-27",
-      "verified": null,
-      "open_source": null,
-      "org": "Kimi",
-      "row_url": null
-    },
-    {
-      "rank": 30,
-      "system": "Gemini 3.6 Flash",
-      "agent": "Loop",
-      "model_raw": [
-        "Gemini 3.6 Flash"
-      ],
-      "model_ids": [
-        "gemini-3.6-flash"
-      ],
-      "model_config": "effort: high; model_id: gemini-3.6-flash",
-      "score": 63.4,
-      "score_extra": {
-        "pass_at_1": 46.9,
-        "mean_score_error": 4.4,
-        "pass_at_1_error": 5.2,
-        "n_samples": 956
-      },
-      "date": "2026-07-21",
-      "verified": null,
-      "open_source": null,
-      "org": "Google",
-      "row_url": null
-    },
-    {
-      "rank": 31,
-      "system": "Opus 4.7",
-      "agent": "Loop",
-      "model_raw": [
-        "Opus 4.7"
-      ],
-      "model_ids": [
-        "claude-opus-4.7"
-      ],
-      "model_config": "effort: max; model_id: claude-opus-4-7",
-      "score": 63.1,
-      "score_extra": {
-        "pass_at_1": 49.2,
-        "mean_score_error": 4.8,
-        "pass_at_1_error": 5.4,
-        "n_samples": 960
-      },
-      "date": "2026-04-16",
-      "verified": null,
-      "open_source": null,
-      "org": "Anthropic",
-      "row_url": null
-    },
-    {
-      "rank": 32,
-      "system": "DeepSeek-V4-Pro-0813",
-      "agent": "Loop",
-      "model_raw": [
-        "DeepSeek-V4-Pro-0813"
-      ],
-      "model_ids": [
-        "deepseek-v4-pro-0813"
-      ],
-      "model_config": "effort: max; model_id: deepseek-v4-pro-08-13",
-      "score": 62.3,
-      "score_extra": {
-        "pass_at_1": 47.3,
-        "mean_score_error": 4.9,
-        "pass_at_1_error": 5.6,
-        "n_samples": 849
-      },
-      "date": "2026-08-13",
-      "verified": null,
-      "open_source": null,
-      "org": "DeepSeek",
-      "row_url": null
-    },
-    {
-      "rank": 33,
-      "system": "Qwen 3.8 27B",
-      "agent": "Loop",
-      "model_raw": [
-        "Qwen 3.8 27B"
-      ],
-      "model_ids": [
-        "qwen3.8-27b"
-      ],
-      "model_config": "effort: xhigh; model_id: qwen-3-8-27b",
-      "score": 62.2,
-      "score_extra": {
-        "pass_at_1": 47.5,
-        "mean_score_error": 4.3,
-        "pass_at_1_error": 4.9,
-        "n_samples": 957
-      },
-      "date": "2026-08-03",
-      "verified": null,
-      "open_source": null,
-      "org": "Alibaba",
-      "row_url": null
-    },
-    {
-      "rank": 34,
-      "system": "Opus 4.6",
-      "agent": "Loop",
-      "model_raw": [
-        "Opus 4.6"
-      ],
-      "model_ids": [
-        "claude-opus-4.6"
-      ],
-      "model_config": "effort: max; model_id: claude-opus-4-6-max",
-      "score": 61.8,
-      "score_extra": {
-        "pass_at_1": 46.3,
-        "mean_score_error": 4.8,
-        "pass_at_1_error": 5.5,
-        "n_samples": 955
-      },
-      "date": "2026-02-05",
-      "verified": null,
-      "open_source": null,
-      "org": "Anthropic",
-      "row_url": null
-    },
-    {
-      "rank": 35,
-      "system": "GLM-5.2",
-      "agent": "Loop",
-      "model_raw": [
-        "GLM-5.2"
-      ],
-      "model_ids": [
-        "glm-5.2"
-      ],
-      "model_config": "effort: max; model_id: glm-5-2",
-      "score": 61.1,
-      "score_extra": {
-        "pass_at_1": 45.2,
-        "mean_score_error": 4.9,
-        "pass_at_1_error": 5.7,
-        "n_samples": 846
-      },
-      "date": "2026-06-16",
-      "verified": null,
-      "open_source": null,
-      "org": "Zhipu",
-      "row_url": null
-    },
-    {
-      "rank": 36,
-      "system": "Sonnet 5.5",
-      "agent": "Loop",
-      "model_raw": [
-        "Sonnet 5.5"
-      ],
-      "model_ids": [
-        "claude-sonnet-5.5"
-      ],
-      "model_config": "effort: medium; model_id: claude-sonnet-5-5-medium",
-      "score": 59.4,
-      "score_extra": {
-        "pass_at_1": 44.6,
-        "mean_score_error": 4.9,
-        "pass_at_1_error": 5.6,
-        "n_samples": 955
-      },
-      "date": "2026-09-28",
-      "verified": null,
-      "open_source": null,
-      "org": "Anthropic",
-      "row_url": null
-    },
-    {
-      "rank": 37,
-      "system": "GPT-6 Luna",
-      "agent": "Loop",
-      "model_raw": [
-        "GPT-6 Luna"
-      ],
-      "model_ids": [
-        "gpt-6-luna"
-      ],
-      "model_config": "effort: max; model_id: gpt-6-luna",
-      "score": 59,
-      "score_extra": {
-        "pass_at_1": 44.3,
-        "mean_score_error": 4.9,
-        "pass_at_1_error": 5.5,
-        "n_samples": 946
-      },
-      "date": "2026-09-22",
-      "verified": null,
-      "open_source": null,
-      "org": "OpenAI",
-      "row_url": null
-    },
-    {
-      "rank": 38,
-      "system": "GPT-5.6 Luna",
-      "agent": "Loop",
-      "model_raw": [
-        "GPT-5.6 Luna"
-      ],
-      "model_ids": [
-        "gpt-5.6-luna"
-      ],
-      "model_config": "effort: max; model_id: gpt-5.6-luna-max",
-      "score": 57.8,
-      "score_extra": {
-        "pass_at_1": 43,
-        "mean_score_error": 4.9,
-        "pass_at_1_error": 5.4,
-        "n_samples": 945
-      },
-      "date": "2026-07-09",
-      "verified": null,
-      "open_source": null,
-      "org": "OpenAI",
-      "row_url": null
-    },
-    {
-      "rank": 39,
-      "system": "Sonnet 4.6",
-      "agent": "Loop",
-      "model_raw": [
-        "Sonnet 4.6"
-      ],
-      "model_ids": [
-        "claude-sonnet-4.6"
-      ],
-      "model_config": "effort: high; model_id: claude-sonnet-4-6-high",
-      "score": 57.6,
-      "score_extra": {
-        "pass_at_1": 43,
-        "mean_score_error": 4.9,
-        "pass_at_1_error": 5.5,
-        "n_samples": 949
-      },
-      "date": "2026-02-17",
-      "verified": null,
-      "open_source": null,
-      "org": "Anthropic",
-      "row_url": null
-    },
-    {
-      "rank": 40,
-      "system": "GLM-5.1",
-      "agent": "Loop",
-      "model_raw": [
-        "GLM-5.1"
-      ],
-      "model_ids": [
-        "glm-5.1"
-      ],
-      "model_config": "model_id: glm-5-1",
-      "score": 56.8,
-      "score_extra": {
-        "pass_at_1": 40.9,
-        "mean_score_error": 4.6,
-        "pass_at_1_error": 5.4,
-        "n_samples": 856
-      },
-      "date": "2026-03-27",
-      "verified": null,
-      "open_source": null,
-      "org": "Zhipu",
-      "row_url": null
-    },
-    {
-      "rank": 41,
-      "system": "MiniMax-M3",
-      "agent": "Loop",
-      "model_raw": [
-        "MiniMax-M3"
-      ],
-      "model_ids": [
-        "minimax-m3"
-      ],
-      "model_config": "effort: high; model_id: minimax-m3",
-      "score": 53.5,
-      "score_extra": {
-        "pass_at_1": 37.7,
-        "mean_score_error": 4.5,
-        "pass_at_1_error": 4.9,
-        "n_samples": 951
-      },
-      "date": null,
-      "verified": null,
-      "open_source": null,
-      "org": "MiniMax",
-      "row_url": null
-    },
-    {
-      "rank": 42,
-      "system": "Kimi K2.7 Code",
-      "agent": "Loop",
-      "model_raw": [
-        "Kimi K2.7 Code"
-      ],
-      "model_ids": [
-        "kimi-k2.7-code"
-      ],
-      "model_config": "effort: high; model_id: kimi-k2-7-code-high",
-      "score": 53.4,
-      "score_extra": {
-        "pass_at_1": 37.6,
-        "mean_score_error": 4.4,
-        "pass_at_1_error": 4.8,
-        "n_samples": 950
-      },
-      "date": null,
-      "verified": null,
-      "open_source": null,
-      "org": "Kimi",
-      "row_url": null
-    },
-    {
-      "rank": 43,
-      "system": "Gemini 3.1 Pro",
-      "agent": "Loop",
-      "model_raw": [
-        "Gemini 3.1 Pro"
-      ],
-      "model_ids": [
-        "gemini-3.1-pro"
-      ],
-      "model_config": "effort: high; model_id: gemini-3.1-pro-preview-high",
-      "score": 52.5,
-      "score_extra": {
-        "pass_at_1": 35.3,
-        "mean_score_error": 4.6,
-        "pass_at_1_error": 5,
-        "n_samples": 947
-      },
-      "date": "2026-02-19",
-      "verified": null,
-      "open_source": null,
-      "org": "Google",
-      "row_url": null
-    },
-    {
-      "rank": 44,
-      "system": "Muse Spark 1.2",
-      "agent": "Loop",
-      "model_raw": [
-        "Muse Spark 1.2"
-      ],
-      "model_ids": [
-        "muse-spark-1.2"
-      ],
-      "model_config": "effort: xhigh; model_id: muse-spark-1-2",
-      "score": 51.7,
-      "score_extra": {
-        "pass_at_1": 36.4,
-        "mean_score_error": 4.9,
-        "pass_at_1_error": 5.2,
-        "n_samples": 960
-      },
-      "date": "2026-08-05",
-      "verified": null,
-      "open_source": null,
-      "org": "Meta",
-      "row_url": null
-    },
-    {
-      "rank": 45,
-      "system": "DeepSeek-V4.1-Flash",
-      "agent": "Loop",
-      "model_raw": [
-        "DeepSeek-V4.1-Flash"
-      ],
-      "model_ids": [
-        "deepseek-v4.1-flash"
-      ],
-      "model_config": "effort: max; model_id: deepseek-v4-1-flash",
-      "score": 50.4,
-      "score_extra": {
-        "pass_at_1": 39.5,
-        "mean_score_error": 4.7,
-        "pass_at_1_error": 4.9,
-        "n_samples": 960
-      },
-      "date": "2026-09-09",
-      "verified": null,
-      "open_source": null,
-      "org": "DeepSeek",
-      "row_url": null
-    },
-    {
-      "rank": 46,
-      "system": "Inkling",
-      "agent": "Loop",
-      "model_raw": [
-        "Inkling"
-      ],
-      "model_ids": [
-        "inkling"
-      ],
-      "model_config": "effort: high; model_id: inkling",
-      "score": 48.8,
-      "score_extra": {
-        "pass_at_1": 33.8,
-        "mean_score_error": 4.8,
-        "pass_at_1_error": 4.9,
-        "n_samples": 946
-      },
-      "date": "2026-07-15",
-      "verified": null,
-      "open_source": null,
-      "org": "Thinking Machines",
-      "row_url": null
-    },
-    {
-      "rank": 47,
-      "system": "Muse Spark 1.1",
-      "agent": "Loop",
-      "model_raw": [
-        "Muse Spark 1.1"
-      ],
-      "model_ids": [
-        "muse-spark-1.1"
-      ],
-      "model_config": "effort: xhigh; model_id: muse-spark-1-1",
-      "score": 46.2,
-      "score_extra": {
-        "pass_at_1": 31.8,
-        "mean_score_error": 5,
-        "pass_at_1_error": 5.1,
-        "n_samples": 819
-      },
-      "date": "2026-07-09",
-      "verified": null,
-      "open_source": null,
-      "org": "Meta",
-      "row_url": null
-    },
-    {
-      "rank": 48,
-      "system": "Gemini 3.5 Flash Lite",
-      "agent": "Loop",
-      "model_raw": [
-        "Gemini 3.5 Flash Lite"
-      ],
-      "model_ids": [
-        "gemini-3.5-flash-lite"
-      ],
-      "model_config": "effort: high; model_id: gemini-3-5-flash-lite",
-      "score": 46.1,
-      "score_extra": {
-        "pass_at_1": 29.3,
-        "mean_score_error": 4.7,
-        "pass_at_1_error": 4.9,
-        "n_samples": 954
-      },
-      "date": "2026-08-31",
-      "verified": null,
-      "open_source": null,
-      "org": "Google",
-      "row_url": null
-    },
-    {
-      "rank": 49,
-      "system": "Gemini 3.5 Flash",
-      "agent": "Loop",
-      "model_raw": [
-        "Gemini 3.5 Flash"
-      ],
-      "model_ids": [
-        "gemini-3.5-flash"
-      ],
-      "model_config": "effort: high; model_id: gemini-3.5-flash",
-      "score": 44.3,
-      "score_extra": {
-        "pass_at_1": 27.5,
-        "mean_score_error": 4.9,
-        "pass_at_1_error": 5,
-        "n_samples": 959
-      },
-      "date": "2026-05-19",
-      "verified": null,
-      "open_source": null,
-      "org": "Google",
-      "row_url": null
-    },
-    {
-      "rank": 50,
-      "system": "Qwen3.5",
-      "agent": "Loop",
-      "model_raw": [
-        "Qwen3.5"
-      ],
-      "model_ids": [
-        "qwen3.5-397b-a17b"
-      ],
-      "model_config": "model_id: Qwen3.5-397B-A17B",
-      "score": 40.3,
-      "score_extra": {
-        "pass_at_1": 24.9,
-        "mean_score_error": 4.6,
-        "pass_at_1_error": 4.7,
-        "n_samples": 960
-      },
-      "date": "2026-02-16",
-      "verified": null,
-      "open_source": null,
-      "org": "Alibaba",
-      "row_url": null
-    },
-    {
-      "rank": 51,
-      "system": "Nemotron 3 Ultra",
-      "agent": "Loop",
-      "model_raw": [
-        "Nemotron 3 Ultra"
-      ],
-      "model_ids": [
-        "nemotron-3-ultra"
-      ],
-      "model_config": "effort: high; model_id: nemotron-3-ultra-nvfp4",
-      "score": 38.3,
-      "score_extra": {
-        "pass_at_1": 22.7,
-        "mean_score_error": 4.6,
-        "pass_at_1_error": 4.5,
-        "n_samples": 887
-      },
-      "date": "2026-06-04",
-      "verified": null,
-      "open_source": null,
-      "org": "NVIDIA",
-      "row_url": null
-    },
-    {
-      "rank": 52,
-      "system": "DeepSeek-V3.2",
-      "agent": "Loop",
-      "model_raw": [
-        "DeepSeek-V3.2"
-      ],
-      "model_ids": [
-        "deepseek-v3.2"
-      ],
-      "model_config": "model_id: deepseek-ai/DeepSeek-V3.2",
-      "score": 35.1,
-      "score_extra": {
-        "pass_at_1": 21.3,
-        "mean_score_error": 4.5,
-        "pass_at_1_error": 4.1,
-        "n_samples": 952
-      },
-      "date": "2025-12-01",
-      "verified": null,
-      "open_source": null,
-      "org": "DeepSeek",
-      "row_url": null
-    },
-    {
-      "rank": 53,
-      "system": "GPT-OSS-120B",
-      "agent": "Loop",
-      "model_raw": [
-        "GPT-OSS-120B"
-      ],
-      "model_ids": [
-        "gpt-oss-120b"
-      ],
-      "model_config": "effort: high; model_id: openai/gpt-oss-120b",
-      "score": 8.3,
-      "score_extra": {
-        "pass_at_1": 4.4,
-        "mean_score_error": 2.7,
-        "pass_at_1_error": 2,
-        "n_samples": 954
-      },
-      "date": "2025-08-05",
-      "verified": null,
-      "open_source": null,
-      "org": "OpenAI",
-      "row_url": null
-    }
-  ]
+ "id": "apex-agents",
+ "family": "apex-agents",
+ "name": "APEX-Agents 1.1",
+ "board": "mercor.com",
+ "category": "tool-use",
+ "measures_ja": "投資銀行アナリスト・経営コンサルタント・企業法務弁護士の実務を、文書・表計算・メール・チャット等のアプリを横断して長時間かけて仕上げられるか。",
+ "tasks": 240,
+ "tasks_note": "全体は240タスク。v1.1告知ブログの80 tasks per domainと、現在の職種別ページ3件のnumTasks=80が一致する。",
+ "metric": "Mean Score",
+ "unit": "%",
+ "higher_is_better": true,
+ "harness_ja": "Mercor が共通のエージェント(Loop: loop_truncated_tools_agent)で各モデルを実行し、専門家作成のルーブリックを使ってLLM審査で採点する。",
+ "source": "https://www.mercor.com/apex/apex-agents-leaderboard/",
+ "fetched": [
+  "https://www.mercor.com/apex/apex-agents-leaderboard/",
+  "https://www.mercor.com/blog/introducing-apex-agents-1-1"
+ ],
+ "retrieved": "2026-10-09",
+ "newest_row_date": "2026-09-30",
+ "snapshot": "sources/apex-agents/leaderboard_data.json",
+ "paper": "https://arxiv.org/abs/2601.14242",
+ "repo": "https://github.com/Mercor-Intelligence/apex_loop_truncated_tools_agent",
+ "notes_ja": "ボードの FAQ は Mean Score(ルーブリック基準の平均達成率)を順位付けの主指標としているので score はそれにし、Mean Score 降順で rank を振った。ページの切替の初期表示は Pass@1(全基準達成率)で、score_extra に入れた。date はデータ上のモデルのリリース日で評価日ではない。system はボード表示名(Opus 5 など、ベンダー名を省いた表記)。",
+ "rows": [
+  {
+   "rank": 1,
+   "system": "Gemini 4 Argon",
+   "agent": "Loop",
+   "model_raw": [
+    "Gemini 4 Argon"
+   ],
+   "model_ids": [
+    "gemini-4-argon"
+   ],
+   "model_config": "effort: high; model_id: gemini-4-argon",
+   "score": 87.4,
+   "score_extra": {
+    "pass_at_1": 82.4,
+    "mean_score_error": 3.3,
+    "pass_at_1_error": 4.3,
+    "n_samples": 954
+   },
+   "date": "2026-09-30",
+   "verified": null,
+   "open_source": null,
+   "org": "Google",
+   "row_url": null
+  },
+  {
+   "rank": 2,
+   "system": "Sonnet 5.5",
+   "agent": "Loop",
+   "model_raw": [
+    "Sonnet 5.5"
+   ],
+   "model_ids": [
+    "claude-sonnet-5.5"
+   ],
+   "model_config": "effort: max; model_id: claude-sonnet-5-5",
+   "score": 83.7,
+   "score_extra": {
+    "pass_at_1": 75.5,
+    "mean_score_error": 3.6,
+    "pass_at_1_error": 4.7,
+    "n_samples": 955
+   },
+   "date": null,
+   "verified": null,
+   "open_source": null,
+   "org": "Anthropic",
+   "row_url": null
+  },
+  {
+   "rank": 3,
+   "system": "Opus 5.5",
+   "agent": "Loop",
+   "model_raw": [
+    "Opus 5.5"
+   ],
+   "model_ids": [
+    "claude-opus-5.5"
+   ],
+   "model_config": "effort: max; model_id: claude-opus-5-5",
+   "score": 81.3,
+   "score_extra": {
+    "pass_at_1": 73.5,
+    "mean_score_error": 4,
+    "pass_at_1_error": 4.9,
+    "n_samples": 950
+   },
+   "date": "2026-09-22",
+   "verified": null,
+   "open_source": null,
+   "org": "Anthropic",
+   "row_url": null
+  },
+  {
+   "rank": 4,
+   "system": "Gemini 3.7 Flash",
+   "agent": "Loop",
+   "model_raw": [
+    "Gemini 3.7 Flash"
+   ],
+   "model_ids": [
+    "gemini-3.7-flash"
+   ],
+   "model_config": "effort: high; model_id: gemini-3.7-flash",
+   "score": 79.4,
+   "score_extra": {
+    "pass_at_1": 67.8,
+    "mean_score_error": 3.8,
+    "pass_at_1_error": 5.1,
+    "n_samples": 952
+   },
+   "date": "2026-08-13",
+   "verified": null,
+   "open_source": null,
+   "org": "Google",
+   "row_url": null
+  },
+  {
+   "rank": 5,
+   "system": "Grok 4.6",
+   "agent": "Loop",
+   "model_raw": [
+    "Grok 4.6"
+   ],
+   "model_ids": [
+    "grok-4.6"
+   ],
+   "model_config": "effort: xhigh; model_id: grok-4-6-xhigh",
+   "score": 77.3,
+   "score_extra": {
+    "pass_at_1": 65.3,
+    "mean_score_error": 4.1,
+    "pass_at_1_error": 5.2,
+    "n_samples": 960
+   },
+   "date": "2026-08-12",
+   "verified": null,
+   "open_source": null,
+   "org": "xAI",
+   "row_url": null
+  },
+  {
+   "rank": 6,
+   "system": "Fable 5.1",
+   "agent": "Loop",
+   "model_raw": [
+    "Fable 5.1"
+   ],
+   "model_ids": [
+    "claude-fable-5.1"
+   ],
+   "model_config": "effort: max; model_id: claude-fable-5.1",
+   "score": 77.1,
+   "score_extra": {
+    "pass_at_1": 68.6,
+    "mean_score_error": 4.3,
+    "pass_at_1_error": 4.9,
+    "n_samples": 959
+   },
+   "date": "2026-09-01",
+   "verified": null,
+   "open_source": null,
+   "org": "Anthropic",
+   "row_url": null
+  },
+  {
+   "rank": 7,
+   "system": "Opus 5",
+   "agent": "Loop",
+   "model_raw": [
+    "Opus 5"
+   ],
+   "model_ids": [
+    "claude-opus-5"
+   ],
+   "model_config": "effort: max; model_id: claude-opus-5",
+   "score": 77,
+   "score_extra": {
+    "pass_at_1": 65.8,
+    "mean_score_error": 4,
+    "pass_at_1_error": 5.1,
+    "n_samples": 956
+   },
+   "date": "2026-07-24",
+   "verified": null,
+   "open_source": null,
+   "org": "Anthropic",
+   "row_url": null
+  },
+  {
+   "rank": 8,
+   "system": "GPT 6 Astra",
+   "agent": "Loop",
+   "model_raw": [
+    "GPT 6 Astra"
+   ],
+   "model_ids": [
+    "gpt-6-astra"
+   ],
+   "model_config": "effort: max; model_id: gpt-6-astra-max",
+   "score": 75.1,
+   "score_extra": {
+    "pass_at_1": 64.7,
+    "mean_score_error": 4.6,
+    "pass_at_1_error": 5.6,
+    "n_samples": 959
+   },
+   "date": "2026-09-03",
+   "verified": null,
+   "open_source": null,
+   "org": "OpenAI",
+   "row_url": null
+  },
+  {
+   "rank": 9,
+   "system": "Fable 5",
+   "agent": "Loop",
+   "model_raw": [
+    "Fable 5"
+   ],
+   "model_ids": [
+    "claude-fable-5"
+   ],
+   "model_config": "effort: max; model_id: claude-fable-5",
+   "score": 74.5,
+   "score_extra": {
+    "pass_at_1": 63.6,
+    "mean_score_error": 4.3,
+    "pass_at_1_error": 5.3,
+    "n_samples": 959
+   },
+   "date": "2026-06-09",
+   "verified": null,
+   "open_source": null,
+   "org": "Anthropic",
+   "row_url": null
+  },
+  {
+   "rank": 10,
+   "system": "Qwen 3.8 Max",
+   "agent": "Loop",
+   "model_raw": [
+    "Qwen 3.8 Max"
+   ],
+   "model_ids": [
+    "qwen3.8-max"
+   ],
+   "model_config": "effort: xhigh; model_id: qwen-3-8-max-xhigh",
+   "score": 74.3,
+   "score_extra": {
+    "pass_at_1": 63.3,
+    "mean_score_error": 4,
+    "pass_at_1_error": 4.9,
+    "n_samples": 951
+   },
+   "date": "2026-08-02",
+   "verified": null,
+   "open_source": null,
+   "org": "Alibaba",
+   "row_url": null
+  },
+  {
+   "rank": 11,
+   "system": "GPT 6.1 Sol",
+   "agent": "Loop",
+   "model_raw": [
+    "GPT 6.1 Sol"
+   ],
+   "model_ids": [
+    "gpt-6.1-sol"
+   ],
+   "model_config": "effort: max; model_id: gpt-6-1-sol",
+   "score": 73.2,
+   "score_extra": {
+    "pass_at_1": 60,
+    "mean_score_error": 4.6,
+    "pass_at_1_error": 5.6,
+    "n_samples": 954
+   },
+   "date": "2026-09-29",
+   "verified": null,
+   "open_source": null,
+   "org": "OpenAI",
+   "row_url": null
+  },
+  {
+   "rank": 12,
+   "system": "Gemini 3.8 Flash",
+   "agent": "Loop",
+   "model_raw": [
+    "Gemini 3.8 Flash"
+   ],
+   "model_ids": [
+    "gemini-3.8-flash"
+   ],
+   "model_config": "effort: high; model_id: gemini-3.8-flash",
+   "score": 72.9,
+   "score_extra": {
+    "pass_at_1": 64.3,
+    "mean_score_error": 4.4,
+    "pass_at_1_error": 5.2,
+    "n_samples": 956
+   },
+   "date": "2026-09-02",
+   "verified": null,
+   "open_source": null,
+   "org": "Google",
+   "row_url": null
+  },
+  {
+   "rank": 13,
+   "system": "GPT 5.6 Terra",
+   "agent": "Loop",
+   "model_raw": [
+    "GPT 5.6 Terra"
+   ],
+   "model_ids": [
+    "gpt-5.6-terra"
+   ],
+   "model_config": "effort: max; model_id: gpt-5.6-terra-max",
+   "score": 71.8,
+   "score_extra": {
+    "pass_at_1": 58.2,
+    "mean_score_error": 4.2,
+    "pass_at_1_error": 5.3,
+    "n_samples": 958
+   },
+   "date": "2026-07-09",
+   "verified": null,
+   "open_source": null,
+   "org": "OpenAI",
+   "row_url": null
+  },
+  {
+   "rank": 14,
+   "system": "Fable 5.1",
+   "agent": "Loop",
+   "model_raw": [
+    "Fable 5.1"
+   ],
+   "model_ids": [
+    "claude-fable-5.1"
+   ],
+   "model_config": "effort: high; model_id: claude-fable-5.1-high",
+   "score": 71.8,
+   "score_extra": {
+    "pass_at_1": 59.7,
+    "mean_score_error": 4.6,
+    "pass_at_1_error": 5.6,
+    "n_samples": 954
+   },
+   "date": "2026-09-01",
+   "verified": null,
+   "open_source": null,
+   "org": "Anthropic",
+   "row_url": null
+  },
+  {
+   "rank": 15,
+   "system": "MiMo V2.6 Pro",
+   "agent": "Loop",
+   "model_raw": [
+    "MiMo V2.6 Pro"
+   ],
+   "model_ids": [
+    "mimo-v2.6-pro"
+   ],
+   "model_config": "effort: auto; model_id: mimo-v2.6-pro",
+   "score": 71.1,
+   "score_extra": {
+    "pass_at_1": 59.5,
+    "mean_score_error": 4.4,
+    "pass_at_1_error": 5.2,
+    "n_samples": 864
+   },
+   "date": null,
+   "verified": null,
+   "open_source": null,
+   "org": "Xiaomi",
+   "row_url": null
+  },
+  {
+   "rank": 16,
+   "system": "Grok 4.5",
+   "agent": "Loop",
+   "model_raw": [
+    "Grok 4.5"
+   ],
+   "model_ids": [
+    "grok-4.5"
+   ],
+   "model_config": "effort: high; model_id: grok-4-5",
+   "score": 70.5,
+   "score_extra": {
+    "pass_at_1": 56.2,
+    "mean_score_error": 4.3,
+    "pass_at_1_error": 5.4,
+    "n_samples": 960
+   },
+   "date": "2026-07-08",
+   "verified": null,
+   "open_source": null,
+   "org": "xAI",
+   "row_url": null
+  },
+  {
+   "rank": 17,
+   "system": "Muse Spark 1.3",
+   "agent": "Loop",
+   "model_raw": [
+    "Muse Spark 1.3"
+   ],
+   "model_ids": [
+    "muse-spark-1.3"
+   ],
+   "model_config": "effort: xhigh; model_id: muse-spark-1-3",
+   "score": 70.4,
+   "score_extra": {
+    "pass_at_1": 58.6,
+    "mean_score_error": 4.4,
+    "pass_at_1_error": 5.5,
+    "n_samples": 959
+   },
+   "date": "2026-09-02",
+   "verified": null,
+   "open_source": null,
+   "org": "Meta",
+   "row_url": null
+  },
+  {
+   "rank": 18,
+   "system": "MiMo V2.6 Flash RL",
+   "agent": "Loop",
+   "model_raw": [
+    "MiMo V2.6 Flash RL"
+   ],
+   "model_ids": [
+    "mimo-v2.6-flash-rl"
+   ],
+   "model_config": "effort: auto; model_id: mimo-v2.6-flash-rl",
+   "score": 70.4,
+   "score_extra": {
+    "pass_at_1": 57.4,
+    "mean_score_error": 4,
+    "pass_at_1_error": 5.1,
+    "n_samples": 940
+   },
+   "date": null,
+   "verified": null,
+   "open_source": null,
+   "org": "Xiaomi",
+   "row_url": null
+  },
+  {
+   "rank": 19,
+   "system": "GPT 5.5",
+   "agent": "Loop",
+   "model_raw": [
+    "GPT 5.5"
+   ],
+   "model_ids": [
+    "gpt-5.5"
+   ],
+   "model_config": "effort: xhigh; model_id: gpt-5.5-xhigh",
+   "score": 70.3,
+   "score_extra": {
+    "pass_at_1": 55.1,
+    "mean_score_error": 4.4,
+    "pass_at_1_error": 5.5,
+    "n_samples": 959
+   },
+   "date": "2026-04-23",
+   "verified": null,
+   "open_source": null,
+   "org": "OpenAI",
+   "row_url": null
+  },
+  {
+   "rank": 20,
+   "system": "Grok 4.7",
+   "agent": "Loop",
+   "model_raw": [
+    "Grok 4.7"
+   ],
+   "model_ids": [
+    "grok-4.7"
+   ],
+   "model_config": "effort: xhigh; model_id: grok-4.7",
+   "score": 68.7,
+   "score_extra": {
+    "pass_at_1": 54.6,
+    "mean_score_error": 4.2,
+    "pass_at_1_error": 5.1,
+    "n_samples": 960
+   },
+   "date": "2026-09-21",
+   "verified": null,
+   "open_source": null,
+   "org": "xAI",
+   "row_url": null
+  },
+  {
+   "rank": 21,
+   "system": "GPT 6 Sol",
+   "agent": "Loop",
+   "model_raw": [
+    "GPT 6 Sol"
+   ],
+   "model_ids": [
+    "gpt-6-sol"
+   ],
+   "model_config": "effort: max; model_id: gpt-6-sol",
+   "score": 68.7,
+   "score_extra": {
+    "pass_at_1": 54.3,
+    "mean_score_error": 4.7,
+    "pass_at_1_error": 5.6,
+    "n_samples": 951
+   },
+   "date": "2026-09-22",
+   "verified": null,
+   "open_source": null,
+   "org": "OpenAI",
+   "row_url": null
+  },
+  {
+   "rank": 22,
+   "system": "Haiku 5.5",
+   "agent": "Loop",
+   "model_raw": [
+    "Haiku 5.5"
+   ],
+   "model_ids": [
+    "claude-haiku-5.5"
+   ],
+   "model_config": "effort: max; model_id: claude-haiku-5-5",
+   "score": 68.3,
+   "score_extra": {
+    "pass_at_1": 56.1,
+    "mean_score_error": 4.4,
+    "pass_at_1_error": 5.2,
+    "n_samples": 959
+   },
+   "date": null,
+   "verified": null,
+   "open_source": null,
+   "org": "Anthropic",
+   "row_url": null
+  },
+  {
+   "rank": 23,
+   "system": "GPT 5.4",
+   "agent": "Loop",
+   "model_raw": [
+    "GPT 5.4"
+   ],
+   "model_ids": [
+    "gpt-5.4"
+   ],
+   "model_config": "effort: xhigh; model_id: responses/gpt-5.4",
+   "score": 68.2,
+   "score_extra": {
+    "pass_at_1": 52.4,
+    "mean_score_error": 4.4,
+    "pass_at_1_error": 5.3,
+    "n_samples": 958
+   },
+   "date": "2026-03-05",
+   "verified": null,
+   "open_source": null,
+   "org": "OpenAI",
+   "row_url": null
+  },
+  {
+   "rank": 24,
+   "system": "DeepSeek V4 Flash",
+   "agent": "Loop",
+   "model_raw": [
+    "DeepSeek V4 Flash"
+   ],
+   "model_ids": [
+    "deepseek-v4-flash"
+   ],
+   "model_config": "effort: max; model_id: deepseek-v4-flash",
+   "score": 67.5,
+   "score_extra": {
+    "pass_at_1": 55.3,
+    "mean_score_error": 4.6,
+    "pass_at_1_error": 5.6,
+    "n_samples": 829
+   },
+   "date": "2026-07-31",
+   "verified": null,
+   "open_source": null,
+   "org": "DeepSeek",
+   "row_url": null
+  },
+  {
+   "rank": 25,
+   "system": "Sonnet 5",
+   "agent": "Loop",
+   "model_raw": [
+    "Sonnet 5"
+   ],
+   "model_ids": [
+    "claude-sonnet-5"
+   ],
+   "model_config": "effort: max; model_id: claude-sonnet-5-max",
+   "score": 67.4,
+   "score_extra": {
+    "pass_at_1": 54.5,
+    "mean_score_error": 4.5,
+    "pass_at_1_error": 5.5,
+    "n_samples": 958
+   },
+   "date": "2026-06-30",
+   "verified": null,
+   "open_source": null,
+   "org": "Anthropic",
+   "row_url": null
+  },
+  {
+   "rank": 26,
+   "system": "GLM 5.3 Flash",
+   "agent": "Loop",
+   "model_raw": [
+    "GLM 5.3 Flash"
+   ],
+   "model_ids": [
+    "glm-5.3-flash"
+   ],
+   "model_config": "effort: max; model_id: glm-5-3-flash",
+   "score": 66.8,
+   "score_extra": {
+    "pass_at_1": 52.8,
+    "mean_score_error": 4.4,
+    "pass_at_1_error": 5.3,
+    "n_samples": 957
+   },
+   "date": "2026-08-26",
+   "verified": null,
+   "open_source": null,
+   "org": "Zhipu",
+   "row_url": null
+  },
+  {
+   "rank": 27,
+   "system": "GLM 5.3",
+   "agent": "Loop",
+   "model_raw": [
+    "GLM 5.3"
+   ],
+   "model_ids": [
+    "glm-5.3"
+   ],
+   "model_config": "effort: max; model_id: glm-5-3",
+   "score": 66.2,
+   "score_extra": {
+    "pass_at_1": 56.6,
+    "mean_score_error": 4.3,
+    "pass_at_1_error": 5.1,
+    "n_samples": 960
+   },
+   "date": "2026-08-14",
+   "verified": null,
+   "open_source": null,
+   "org": "Zhipu",
+   "row_url": null
+  },
+  {
+   "rank": 28,
+   "system": "Opus 5.5",
+   "agent": "Loop",
+   "model_raw": [
+    "Opus 5.5"
+   ],
+   "model_ids": [
+    "claude-opus-5.5"
+   ],
+   "model_config": "effort: medium; model_id: opus-5.5",
+   "score": 65.7,
+   "score_extra": {
+    "pass_at_1": 52.5,
+    "mean_score_error": 4.9,
+    "pass_at_1_error": 5.6,
+    "n_samples": 943
+   },
+   "date": "2026-09-22",
+   "verified": null,
+   "open_source": null,
+   "org": "Anthropic",
+   "row_url": null
+  },
+  {
+   "rank": 29,
+   "system": "GPT 5.6 Sol",
+   "agent": "Loop",
+   "model_raw": [
+    "GPT 5.6 Sol"
+   ],
+   "model_ids": [
+    "gpt-5.6-sol"
+   ],
+   "model_config": "effort: max; model_id: gpt-5-6-sol-max-pro",
+   "score": 65.2,
+   "score_extra": {
+    "pass_at_1": 51.5,
+    "mean_score_error": 4.8,
+    "pass_at_1_error": 5.5,
+    "n_samples": 958
+   },
+   "date": "2026-07-09",
+   "verified": null,
+   "open_source": null,
+   "org": "OpenAI",
+   "row_url": null
+  },
+  {
+   "rank": 30,
+   "system": "Opus 4.8",
+   "agent": "Loop",
+   "model_raw": [
+    "Opus 4.8"
+   ],
+   "model_ids": [
+    "claude-opus-4.8"
+   ],
+   "model_config": "effort: max; model_id: claude-opus-4-8",
+   "score": 64.4,
+   "score_extra": {
+    "pass_at_1": 48.9,
+    "mean_score_error": 4.6,
+    "pass_at_1_error": 5.5,
+    "n_samples": 961
+   },
+   "date": "2026-05-28",
+   "verified": null,
+   "open_source": null,
+   "org": "Anthropic",
+   "row_url": null
+  },
+  {
+   "rank": 31,
+   "system": "Kimi K3",
+   "agent": "Loop",
+   "model_raw": [
+    "Kimi K3"
+   ],
+   "model_ids": [
+    "kimi-k3"
+   ],
+   "model_config": "effort: max; model_id: kimi-k3",
+   "score": 64,
+   "score_extra": {
+    "pass_at_1": 50.6,
+    "mean_score_error": 4.3,
+    "pass_at_1_error": 5.1,
+    "n_samples": 960
+   },
+   "date": "2026-07-27",
+   "verified": null,
+   "open_source": null,
+   "org": "Kimi",
+   "row_url": null
+  },
+  {
+   "rank": 32,
+   "system": "Gemini 3.6 Flash",
+   "agent": "Loop",
+   "model_raw": [
+    "Gemini 3.6 Flash"
+   ],
+   "model_ids": [
+    "gemini-3.6-flash"
+   ],
+   "model_config": "effort: high; model_id: gemini-3.6-flash",
+   "score": 63.4,
+   "score_extra": {
+    "pass_at_1": 46.9,
+    "mean_score_error": 4.4,
+    "pass_at_1_error": 5.2,
+    "n_samples": 956
+   },
+   "date": "2026-07-21",
+   "verified": null,
+   "open_source": null,
+   "org": "Google",
+   "row_url": null
+  },
+  {
+   "rank": 33,
+   "system": "Opus 4.7",
+   "agent": "Loop",
+   "model_raw": [
+    "Opus 4.7"
+   ],
+   "model_ids": [
+    "claude-opus-4.7"
+   ],
+   "model_config": "effort: max; model_id: claude-opus-4-7",
+   "score": 63.1,
+   "score_extra": {
+    "pass_at_1": 49.2,
+    "mean_score_error": 4.8,
+    "pass_at_1_error": 5.4,
+    "n_samples": 960
+   },
+   "date": "2026-04-16",
+   "verified": null,
+   "open_source": null,
+   "org": "Anthropic",
+   "row_url": null
+  },
+  {
+   "rank": 34,
+   "system": "DeepSeek V4 Pro 0813",
+   "agent": "Loop",
+   "model_raw": [
+    "DeepSeek V4 Pro 0813"
+   ],
+   "model_ids": [
+    "deepseek-v4-pro-0813"
+   ],
+   "model_config": "effort: max; model_id: deepseek-v4-pro-08-13",
+   "score": 62.3,
+   "score_extra": {
+    "pass_at_1": 47.3,
+    "mean_score_error": 4.9,
+    "pass_at_1_error": 5.6,
+    "n_samples": 849
+   },
+   "date": "2026-08-13",
+   "verified": null,
+   "open_source": null,
+   "org": "DeepSeek",
+   "row_url": null
+  },
+  {
+   "rank": 35,
+   "system": "Qwen 3.8 27B",
+   "agent": "Loop",
+   "model_raw": [
+    "Qwen 3.8 27B"
+   ],
+   "model_ids": [
+    "qwen3.8-27b"
+   ],
+   "model_config": "effort: xhigh; model_id: qwen-3-8-27b",
+   "score": 62.2,
+   "score_extra": {
+    "pass_at_1": 47.5,
+    "mean_score_error": 4.3,
+    "pass_at_1_error": 4.9,
+    "n_samples": 957
+   },
+   "date": "2026-08-03",
+   "verified": null,
+   "open_source": null,
+   "org": "Alibaba",
+   "row_url": null
+  },
+  {
+   "rank": 36,
+   "system": "Opus 4.6",
+   "agent": "Loop",
+   "model_raw": [
+    "Opus 4.6"
+   ],
+   "model_ids": [
+    "claude-opus-4.6"
+   ],
+   "model_config": "effort: max; model_id: claude-opus-4-6-max",
+   "score": 61.8,
+   "score_extra": {
+    "pass_at_1": 46.3,
+    "mean_score_error": 4.8,
+    "pass_at_1_error": 5.5,
+    "n_samples": 955
+   },
+   "date": "2026-02-05",
+   "verified": null,
+   "open_source": null,
+   "org": "Anthropic",
+   "row_url": null
+  },
+  {
+   "rank": 37,
+   "system": "Muse Spark 1.3",
+   "agent": "Loop",
+   "model_raw": [
+    "Muse Spark 1.3"
+   ],
+   "model_ids": [
+    "muse-spark-1.3"
+   ],
+   "model_config": "effort: max; model_id: muse-spark-1-3-max",
+   "score": 61.3,
+   "score_extra": {
+    "pass_at_1": 47.6,
+    "mean_score_error": 5,
+    "pass_at_1_error": 5.7,
+    "n_samples": 960
+   },
+   "date": "2026-09-02",
+   "verified": null,
+   "open_source": null,
+   "org": "Meta",
+   "row_url": null
+  },
+  {
+   "rank": 38,
+   "system": "GLM 5.2",
+   "agent": "Loop",
+   "model_raw": [
+    "GLM 5.2"
+   ],
+   "model_ids": [
+    "glm-5.2"
+   ],
+   "model_config": "effort: max; model_id: glm-5-2",
+   "score": 61.1,
+   "score_extra": {
+    "pass_at_1": 45.2,
+    "mean_score_error": 4.9,
+    "pass_at_1_error": 5.7,
+    "n_samples": 846
+   },
+   "date": "2026-06-16",
+   "verified": null,
+   "open_source": null,
+   "org": "Zhipu",
+   "row_url": null
+  },
+  {
+   "rank": 39,
+   "system": "Sonnet 5.5",
+   "agent": "Loop",
+   "model_raw": [
+    "Sonnet 5.5"
+   ],
+   "model_ids": [
+    "claude-sonnet-5.5"
+   ],
+   "model_config": "effort: medium; model_id: claude-sonnet-5-5-medium",
+   "score": 59.4,
+   "score_extra": {
+    "pass_at_1": 44.6,
+    "mean_score_error": 4.9,
+    "pass_at_1_error": 5.6,
+    "n_samples": 955
+   },
+   "date": "2026-09-28",
+   "verified": null,
+   "open_source": null,
+   "org": "Anthropic",
+   "row_url": null
+  },
+  {
+   "rank": 40,
+   "system": "GPT 6 Luna",
+   "agent": "Loop",
+   "model_raw": [
+    "GPT 6 Luna"
+   ],
+   "model_ids": [
+    "gpt-6-luna"
+   ],
+   "model_config": "effort: max; model_id: gpt-6-luna",
+   "score": 59,
+   "score_extra": {
+    "pass_at_1": 44.3,
+    "mean_score_error": 4.9,
+    "pass_at_1_error": 5.5,
+    "n_samples": 946
+   },
+   "date": "2026-09-22",
+   "verified": null,
+   "open_source": null,
+   "org": "OpenAI",
+   "row_url": null
+  },
+  {
+   "rank": 41,
+   "system": "GPT 5.6 Luna",
+   "agent": "Loop",
+   "model_raw": [
+    "GPT 5.6 Luna"
+   ],
+   "model_ids": [
+    "gpt-5.6-luna"
+   ],
+   "model_config": "effort: max; model_id: gpt-5.6-luna-max",
+   "score": 57.8,
+   "score_extra": {
+    "pass_at_1": 43,
+    "mean_score_error": 4.9,
+    "pass_at_1_error": 5.4,
+    "n_samples": 945
+   },
+   "date": "2026-07-09",
+   "verified": null,
+   "open_source": null,
+   "org": "OpenAI",
+   "row_url": null
+  },
+  {
+   "rank": 42,
+   "system": "Sonnet 4.6",
+   "agent": "Loop",
+   "model_raw": [
+    "Sonnet 4.6"
+   ],
+   "model_ids": [
+    "claude-sonnet-4.6"
+   ],
+   "model_config": "effort: high; model_id: claude-sonnet-4-6-high",
+   "score": 57.6,
+   "score_extra": {
+    "pass_at_1": 43,
+    "mean_score_error": 4.9,
+    "pass_at_1_error": 5.5,
+    "n_samples": 949
+   },
+   "date": "2026-02-17",
+   "verified": null,
+   "open_source": null,
+   "org": "Anthropic",
+   "row_url": null
+  },
+  {
+   "rank": 43,
+   "system": "GLM 5.1",
+   "agent": "Loop",
+   "model_raw": [
+    "GLM 5.1"
+   ],
+   "model_ids": [
+    "glm-5.1"
+   ],
+   "model_config": "model_id: glm-5-1",
+   "score": 56.8,
+   "score_extra": {
+    "pass_at_1": 40.9,
+    "mean_score_error": 4.6,
+    "pass_at_1_error": 5.4,
+    "n_samples": 856
+   },
+   "date": "2026-03-27",
+   "verified": null,
+   "open_source": null,
+   "org": "Zhipu",
+   "row_url": null
+  },
+  {
+   "rank": 44,
+   "system": "MiniMax M3",
+   "agent": "Loop",
+   "model_raw": [
+    "MiniMax M3"
+   ],
+   "model_ids": [
+    "minimax-m3"
+   ],
+   "model_config": "effort: high; model_id: minimax-m3",
+   "score": 53.5,
+   "score_extra": {
+    "pass_at_1": 37.7,
+    "mean_score_error": 4.5,
+    "pass_at_1_error": 4.9,
+    "n_samples": 951
+   },
+   "date": null,
+   "verified": null,
+   "open_source": null,
+   "org": "MiniMax",
+   "row_url": null
+  },
+  {
+   "rank": 45,
+   "system": "Kimi K2.7 Code",
+   "agent": "Loop",
+   "model_raw": [
+    "Kimi K2.7 Code"
+   ],
+   "model_ids": [
+    "kimi-k2.7-code"
+   ],
+   "model_config": "effort: high; model_id: kimi-k2-7-code-high",
+   "score": 53.4,
+   "score_extra": {
+    "pass_at_1": 37.6,
+    "mean_score_error": 4.4,
+    "pass_at_1_error": 4.8,
+    "n_samples": 950
+   },
+   "date": null,
+   "verified": null,
+   "open_source": null,
+   "org": "Kimi",
+   "row_url": null
+  },
+  {
+   "rank": 46,
+   "system": "Gemini 3.1 Pro",
+   "agent": "Loop",
+   "model_raw": [
+    "Gemini 3.1 Pro"
+   ],
+   "model_ids": [
+    "gemini-3.1-pro"
+   ],
+   "model_config": "effort: high; model_id: gemini-3.1-pro-preview-high",
+   "score": 52.5,
+   "score_extra": {
+    "pass_at_1": 35.3,
+    "mean_score_error": 4.6,
+    "pass_at_1_error": 5,
+    "n_samples": 947
+   },
+   "date": "2026-02-19",
+   "verified": null,
+   "open_source": null,
+   "org": "Google",
+   "row_url": null
+  },
+  {
+   "rank": 47,
+   "system": "Muse Spark 1.2",
+   "agent": "Loop",
+   "model_raw": [
+    "Muse Spark 1.2"
+   ],
+   "model_ids": [
+    "muse-spark-1.2"
+   ],
+   "model_config": "effort: xhigh; model_id: muse-spark-1-2",
+   "score": 51.7,
+   "score_extra": {
+    "pass_at_1": 36.4,
+    "mean_score_error": 4.9,
+    "pass_at_1_error": 5.2,
+    "n_samples": 960
+   },
+   "date": "2026-08-05",
+   "verified": null,
+   "open_source": null,
+   "org": "Meta",
+   "row_url": null
+  },
+  {
+   "rank": 48,
+   "system": "DeepSeek V4.1 Flash",
+   "agent": "Loop",
+   "model_raw": [
+    "DeepSeek V4.1 Flash"
+   ],
+   "model_ids": [
+    "deepseek-v4.1-flash"
+   ],
+   "model_config": "effort: max; model_id: deepseek-v4-1-flash",
+   "score": 50.4,
+   "score_extra": {
+    "pass_at_1": 39.5,
+    "mean_score_error": 4.7,
+    "pass_at_1_error": 4.9,
+    "n_samples": 960
+   },
+   "date": "2026-09-09",
+   "verified": null,
+   "open_source": null,
+   "org": "DeepSeek",
+   "row_url": null
+  },
+  {
+   "rank": 49,
+   "system": "Inkling",
+   "agent": "Loop",
+   "model_raw": [
+    "Inkling"
+   ],
+   "model_ids": [
+    "inkling"
+   ],
+   "model_config": "effort: high; model_id: inkling",
+   "score": 48.8,
+   "score_extra": {
+    "pass_at_1": 33.8,
+    "mean_score_error": 4.8,
+    "pass_at_1_error": 4.9,
+    "n_samples": 946
+   },
+   "date": "2026-07-15",
+   "verified": null,
+   "open_source": null,
+   "org": "Thinking Machines",
+   "row_url": null
+  },
+  {
+   "rank": 50,
+   "system": "Muse Spark 1.1",
+   "agent": "Loop",
+   "model_raw": [
+    "Muse Spark 1.1"
+   ],
+   "model_ids": [
+    "muse-spark-1.1"
+   ],
+   "model_config": "effort: xhigh; model_id: muse-spark-1-1",
+   "score": 46.2,
+   "score_extra": {
+    "pass_at_1": 31.8,
+    "mean_score_error": 5,
+    "pass_at_1_error": 5.1,
+    "n_samples": 819
+   },
+   "date": "2026-07-09",
+   "verified": null,
+   "open_source": null,
+   "org": "Meta",
+   "row_url": null
+  },
+  {
+   "rank": 51,
+   "system": "Gemini 3.5 Flash Lite",
+   "agent": "Loop",
+   "model_raw": [
+    "Gemini 3.5 Flash Lite"
+   ],
+   "model_ids": [
+    "gemini-3.5-flash-lite"
+   ],
+   "model_config": "effort: high; model_id: gemini-3-5-flash-lite",
+   "score": 46.1,
+   "score_extra": {
+    "pass_at_1": 29.3,
+    "mean_score_error": 4.7,
+    "pass_at_1_error": 4.9,
+    "n_samples": 954
+   },
+   "date": "2026-08-31",
+   "verified": null,
+   "open_source": null,
+   "org": "Google",
+   "row_url": null
+  },
+  {
+   "rank": 52,
+   "system": "Gemini 3.5 Flash",
+   "agent": "Loop",
+   "model_raw": [
+    "Gemini 3.5 Flash"
+   ],
+   "model_ids": [
+    "gemini-3.5-flash"
+   ],
+   "model_config": "effort: high; model_id: gemini-3.5-flash",
+   "score": 44.3,
+   "score_extra": {
+    "pass_at_1": 27.5,
+    "mean_score_error": 4.9,
+    "pass_at_1_error": 5,
+    "n_samples": 959
+   },
+   "date": "2026-05-19",
+   "verified": null,
+   "open_source": null,
+   "org": "Google",
+   "row_url": null
+  },
+  {
+   "rank": 53,
+   "system": "Qwen 3.5",
+   "agent": "Loop",
+   "model_raw": [
+    "Qwen 3.5"
+   ],
+   "model_ids": [
+    "qwen3.5-397b-a17b"
+   ],
+   "model_config": "model_id: Qwen3.5-397B-A17B",
+   "score": 40.3,
+   "score_extra": {
+    "pass_at_1": 24.9,
+    "mean_score_error": 4.6,
+    "pass_at_1_error": 4.7,
+    "n_samples": 960
+   },
+   "date": "2026-02-16",
+   "verified": null,
+   "open_source": null,
+   "org": "Alibaba",
+   "row_url": null
+  },
+  {
+   "rank": 54,
+   "system": "Nemotron 3 Ultra",
+   "agent": "Loop",
+   "model_raw": [
+    "Nemotron 3 Ultra"
+   ],
+   "model_ids": [
+    "nemotron-3-ultra"
+   ],
+   "model_config": "effort: high; model_id: nemotron-3-ultra-nvfp4",
+   "score": 38.3,
+   "score_extra": {
+    "pass_at_1": 22.7,
+    "mean_score_error": 4.6,
+    "pass_at_1_error": 4.5,
+    "n_samples": 887
+   },
+   "date": "2026-06-04",
+   "verified": null,
+   "open_source": null,
+   "org": "NVIDIA",
+   "row_url": null
+  },
+  {
+   "rank": 55,
+   "system": "DeepSeek V3.2",
+   "agent": "Loop",
+   "model_raw": [
+    "DeepSeek V3.2"
+   ],
+   "model_ids": [
+    "deepseek-v3.2"
+   ],
+   "model_config": "model_id: deepseek-ai/DeepSeek-V3.2",
+   "score": 35.1,
+   "score_extra": {
+    "pass_at_1": 21.3,
+    "mean_score_error": 4.5,
+    "pass_at_1_error": 4.1,
+    "n_samples": 952
+   },
+   "date": "2025-12-01",
+   "verified": null,
+   "open_source": null,
+   "org": "DeepSeek",
+   "row_url": null
+  },
+  {
+   "rank": 56,
+   "system": "GPT OSS 120B",
+   "agent": "Loop",
+   "model_raw": [
+    "GPT OSS 120B"
+   ],
+   "model_ids": [
+    "gpt-oss-120b"
+   ],
+   "model_config": "effort: high; model_id: openai/gpt-oss-120b",
+   "score": 8.3,
+   "score_extra": {
+    "pass_at_1": 4.4,
+    "mean_score_error": 2.7,
+    "pass_at_1_error": 2,
+    "n_samples": 954
+   },
+   "date": "2025-08-05",
+   "verified": null,
+   "open_source": null,
+   "org": "OpenAI",
+   "row_url": null
+  }
+ ]
 }

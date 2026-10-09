@@ -1,13 +1,13 @@
 {
-  "retrieved": "2026-10-05",
+  "retrieved": "2026-10-09",
   "table": "swe-bench-pro-private",
   "status": "comparable-source-extracted",
-  "source_data_changed": false,
+  "source_data_changed": true,
   "old_rows": 14,
   "new_rows": 14,
-  "rows_changed": false,
+  "rows_changed": true,
   "snapshot": "sources/swe-bench-pro-private/entries.json",
-  "snapshot_sha256": "f51b7b15e7969014699a8ea14e6f411be40d7a86fcbf8c8c2bb7d64cb4a62440",
+  "snapshot_sha256": "c89db4c410315442b7c25c5b3ed79dc7d64c14d1eae1b30709d84f1441f0b363",
   "sources": [
     {
       "url": "https://labs.scale.com/leaderboard/swe_bench_pro_private",
@@ -16,12 +16,32 @@
         "swe-bench-pro-private"
       ],
       "file": "57963a7c9400cf50",
-      "retrieved": "2026-10-05",
+      "retrieved": "2026-10-09",
       "status": 200,
       "final_url": "https://labs.scale.com/leaderboard/swe_bench_pro",
-      "bytes": 149202,
-      "sha256": "c32dda99ce37b97123f8743673d05b73ed670adf4a0c890e24a2d9a69829b1a4"
+      "bytes": 149365,
+      "sha256": "313d7c4efabf159b54b296cb15d2ab2d4b992dcd38fbfddb01f8700924f54ef2"
     }
   ],
-  "method": "Complete native JSON/YAML/CSV/HTML/RSC table projection compared against the prior snapshot; supported changed rows mechanically regenerated; other source changes fail closed."
+  "method": "Reviewed complete source projection; existing normalization reused; SWE-bench Live native resolved/total and explicit dates, or SWE-bench Pro native rank-only updates with frontend direct-render evidence. Unchanged score/configuration fields preserved.",
+  "supporting_snapshots": [
+    {
+      "path": "sources/audits/2026-10-09/swe-bench-pro-rank-render.js",
+      "sha256": "ef104d026a3613c3158f1a65c2ae0422d90301f426553b6d5f0017d07734cb4a",
+      "raw_response_sha256": "81fe4acf379909ea4dd4e0e50d340499c1fdb0b44fef1daf1795deca8b6f73e6",
+      "source": "https://labs.scale.com/_next/static/immutable/chunks/0de0n0okbxfbt.js",
+      "character_start": 13738,
+      "character_end": 18212,
+      "method": "Exact literal source excerpt; fetched JavaScript was never executed."
+    },
+    {
+      "path": "sources/audits/2026-10-09/swe-bench-pro-entries-render.js",
+      "sha256": "f432b2f3311f090d914f8a2a23542bb5c28a9a814e1f3fd25b941d15926f31b8",
+      "raw_response_sha256": "6cd93a74a058ccce02131c1da35a266c4cf02ae1ec0ed74fa5dc3e29974f9fa4",
+      "source": "https://labs.scale.com/_next/static/immutable/chunks/1qyi6_4cstd1_.js",
+      "character_start": 1142,
+      "character_end": 2404,
+      "method": "Exact literal source excerpt; fetched JavaScript was never executed."
+    }
+  ]
 }
