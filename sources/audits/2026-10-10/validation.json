@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-10",
+  "almide_commit": "e706ba8c4e32eb39983bd125cec1890d17094300",
+  "rust": "1.94.0 (4a4ef493e 2026-03-02)",
+  "fit_tests": {
+    "command": "almide test src/fit.almd",
+    "exit_code": 0,
+    "tests": 4
+  },
+  "strict_build": {
+    "command": "almide run src/build.almd -- --strict",
+    "exit_code": 0,
+    "tables": 164,
+    "rows": 4403,
+    "models": 505,
+    "unregistered_model_ids": 0,
+    "gaps": 23
+  },
+  "bundle_rebuild_equality": {
+    "exit_code": 0,
+    "sha256": "b967a35cb807cd26f0a396ec34d59f41a9a71afbe37d5a19fd3a30acf893f465"
+  },
+  "independent_source_review": {
+    "changed_tables": 7,
+    "verified_unchanged": 156,
+    "provider_outage_preserved": 1,
+    "registry_and_claims_unchanged": true,
+    "result": "passed"
+  },
+  "publication_scan": {
+    "result": "passed after privacy remediation",
+    "candidate_and_expanded_members": 531,
+    "approximate_megabytes": 52.2,
+    "staged_paths_including_deletion": 81,
+    "archives": 4,
+    "archive_members": 411,
+    "nested_zip_members": 44,
+    "retained_response_hashes_verified": 407,
+    "actual_ancillary_contact_leaks": 0,
+    "credential_header_signed_access_leaks": 0,
+    "operator_private_path_leaks": 0,
+    "omitted_binary_responses": 2,
+    "exceptions": [
+      "reserved/example and REAL benchmark fixture addresses",
+      "Git SSH syntax",
+      "public README placeholder paths",
+      "APEX relative fixture filenames",
+      "sanitizer matcher literals"
+    ],
+    "scope": "all candidate evidence and expanded archives; validation metadata updated after independent review"
+  },
+  "whitespace_check": {
+    "result": "passed except authentic AndroidWorld CSV source whitespace",
+    "exception": "Original CSV CRLF and trailing field whitespace retained; complete attachment endpoint and ancillary email omitted with original/stored hashes and benchmark-cell invariance verified"
+  },
+  "remote_gates": "Final-head CI and independent Pages/public bundle verification required after publication",
+  "publication_scope": "Temporary execution scripts removed from final publication; prior independent privacy scan covers a superset of retained evidence. Numeric data, archives and source hashes unchanged."
+}

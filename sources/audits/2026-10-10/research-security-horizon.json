@@ -1,0 +1,989 @@
+{
+  "retrieved": "2026-10-10",
+  "tables": [
+    {
+      "id": "browsecomp-plus",
+      "status": "refreshed_unchanged",
+      "rows_before": 85,
+      "rows_after": 85,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://tevatron-browsecomp-plus.hf.space/data/leaderboard.json",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 48681,
+          "raw_response_sha256": "9b7742492e752c22a4bdb7d8b5ce2844167b4ae12026b74ffe89c92e02f26324",
+          "bytes": 48681,
+          "sha256": "9b7742492e752c22a4bdb7d8b5ce2844167b4ae12026b74ffe89c92e02f26324",
+          "archive_member": "6c9e8a47473ee3.source",
+          "redactions": {}
+        },
+        {
+          "url": "https://huggingface.co/datasets/Tevatron/BrowseComp-Plus-results/resolve/main/agent_results.csv",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 18975,
+          "raw_response_sha256": "7b68ade4b54260902d3ef353b8f217087ecbe1a432a442479e59e3c214bfaf12",
+          "bytes": 18975,
+          "sha256": "7b68ade4b54260902d3ef353b8f217087ecbe1a432a442479e59e3c214bfaf12",
+          "archive_member": "69aaec6a147359.source",
+          "redactions": {}
+        }
+      ],
+      "table_sha256": "07dada2c0ca9fa8e222b4f09d12c25f7931ac1cf6733a6a429785cd46e45acd8",
+      "snapshot": "sources/browsecomp-plus/leaderboard.json",
+      "snapshot_sha256": "f351fc9555d22d3014d71b03f14d2e479707b12c11622ee77ac0868e5e74d116",
+      "retrieved": "2026-10-05",
+      "preserved_table_sha256": "07dada2c0ca9fa8e222b4f09d12c25f7931ac1cf6733a6a429785cd46e45acd8",
+      "preserved_snapshot_sha256": "f351fc9555d22d3014d71b03f14d2e479707b12c11622ee77ac0868e5e74d116",
+      "preserved_retrieved": "2026-10-05"
+    },
+    {
+      "id": "cve-bench-one-day",
+      "status": "refreshed_unchanged",
+      "rows_before": 2,
+      "rows_after": 2,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://cvebench.com/index-wf61xq3j.js",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 3992,
+          "raw_response_sha256": "3ea79483ba2c9201b5bbcf89e64e39bf774a4b67eb03b5fc305732f00d6a0fc1",
+          "bytes": 3992,
+          "sha256": "3ea79483ba2c9201b5bbcf89e64e39bf774a4b67eb03b5fc305732f00d6a0fc1",
+          "archive_member": "db72db5cbbcfe6.source",
+          "redactions": {}
+        }
+      ],
+      "table_sha256": "084a6d5608caeb1ca764af2e26fab3c05e3a8e3c94bf10c86225617222754c08",
+      "snapshot": "sources/cve-bench-one-day/leaderboard-entries.json",
+      "snapshot_sha256": "11ab91c1b0762104c0c224cc20b6d7dcd14b1781e46fa42abbe70bfdcf0ccf64",
+      "retrieved": "2026-10-05",
+      "preserved_table_sha256": "084a6d5608caeb1ca764af2e26fab3c05e3a8e3c94bf10c86225617222754c08",
+      "preserved_snapshot_sha256": "11ab91c1b0762104c0c224cc20b6d7dcd14b1781e46fa42abbe70bfdcf0ccf64",
+      "preserved_retrieved": "2026-10-05"
+    },
+    {
+      "id": "cve-bench-zero-day",
+      "status": "refreshed_unchanged",
+      "rows_before": 2,
+      "rows_after": 2,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://cvebench.com/index-wf61xq3j.js",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 3992,
+          "raw_response_sha256": "3ea79483ba2c9201b5bbcf89e64e39bf774a4b67eb03b5fc305732f00d6a0fc1",
+          "bytes": 3992,
+          "sha256": "3ea79483ba2c9201b5bbcf89e64e39bf774a4b67eb03b5fc305732f00d6a0fc1",
+          "archive_member": "db72db5cbbcfe6.source",
+          "redactions": {}
+        }
+      ],
+      "table_sha256": "4f8e62381d3c8fa8832fac8811ebba3110c3240bc43b35d0cfb12ca6e6c467d0",
+      "snapshot": "sources/cve-bench-zero-day/leaderboard-entries.json",
+      "snapshot_sha256": "11ab91c1b0762104c0c224cc20b6d7dcd14b1781e46fa42abbe70bfdcf0ccf64",
+      "retrieved": "2026-10-05",
+      "preserved_table_sha256": "4f8e62381d3c8fa8832fac8811ebba3110c3240bc43b35d0cfb12ca6e6c467d0",
+      "preserved_snapshot_sha256": "11ab91c1b0762104c0c224cc20b6d7dcd14b1781e46fa42abbe70bfdcf0ccf64",
+      "preserved_retrieved": "2026-10-05"
+    },
+    {
+      "id": "cybench",
+      "status": "refreshed_unchanged",
+      "rows_before": 24,
+      "rows_after": 24,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://cybench.github.io/data/leaderboard.csv",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 1179,
+          "raw_response_sha256": "846bb17951ec9f7c103486d7c0344974decd2d57f1039df26f9e84986704da45",
+          "bytes": 1179,
+          "sha256": "846bb17951ec9f7c103486d7c0344974decd2d57f1039df26f9e84986704da45",
+          "archive_member": "5ec58650facfaa.source",
+          "redactions": {}
+        }
+      ],
+      "table_sha256": "f2023c5c272b765a0b98bdf8afca2f56d333facd7c12c3f490f3818622f75d95",
+      "snapshot": "sources/cybench/leaderboard.csv",
+      "snapshot_sha256": "846bb17951ec9f7c103486d7c0344974decd2d57f1039df26f9e84986704da45",
+      "retrieved": "2026-10-05",
+      "preserved_table_sha256": "f2023c5c272b765a0b98bdf8afca2f56d333facd7c12c3f490f3818622f75d95",
+      "preserved_snapshot_sha256": "846bb17951ec9f7c103486d7c0344974decd2d57f1039df26f9e84986704da45",
+      "preserved_retrieved": "2026-10-05"
+    },
+    {
+      "id": "cybergym-agent-focused",
+      "status": "refreshed_unchanged",
+      "rows_before": 39,
+      "rows_after": 39,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://www.cybergym.io/cybergym/",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 30813,
+          "raw_response_sha256": "12db2de6dc74a678fcc38abc1cc60e100f2278025163f8efcd80f1a455ed376e",
+          "bytes": 30832,
+          "sha256": "b7a0bcb17bcce52241894239b4883a5c5f5eb73de0ccd2ea00d58663c86282e7",
+          "archive_member": "fed75d3d8fca8a.source",
+          "redactions": {
+            "ancillary_mailto_targets_removed": 4
+          },
+          "redaction_disclosure": "Ancillary contact email values and mailto targets were omitted, including source author/submission/footer contacts and unrelated embedded examples where present. Benchmark scoring, model/system identities, configurations, costs and extracted rows are unchanged."
+        },
+        {
+          "url": "https://www.cybergym.io/assets/js/leaderboard.js",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 41330,
+          "raw_response_sha256": "3b452788e6c8fd872ae4d93897356ac25cca0cb30094a325dce2bcf94174d176",
+          "bytes": 41330,
+          "sha256": "3b452788e6c8fd872ae4d93897356ac25cca0cb30094a325dce2bcf94174d176",
+          "archive_member": "67f189db690b23.source",
+          "redactions": {}
+        },
+        {
+          "url": "https://www.cybergym.io/assets/data/cybergym.json",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 35263,
+          "raw_response_sha256": "dc3a8452432617323c4c6adc22dc364fc5771770aae5299b6baf882fde0f3fca",
+          "bytes": 35263,
+          "sha256": "dc3a8452432617323c4c6adc22dc364fc5771770aae5299b6baf882fde0f3fca",
+          "archive_member": "c6b8eb4b86c6f9.source",
+          "redactions": {}
+        }
+      ],
+      "table_sha256": "c694abcd46920704e8627846a243b1633505ad5f48a0034b1ee71f93fedef241",
+      "snapshot": "sources/cybergym-agent-focused/cybergym.json",
+      "snapshot_sha256": "dc3a8452432617323c4c6adc22dc364fc5771770aae5299b6baf882fde0f3fca",
+      "retrieved": "2026-10-07",
+      "preserved_table_sha256": "c694abcd46920704e8627846a243b1633505ad5f48a0034b1ee71f93fedef241",
+      "preserved_snapshot_sha256": "dc3a8452432617323c4c6adc22dc364fc5771770aae5299b6baf882fde0f3fca",
+      "preserved_retrieved": "2026-10-07"
+    },
+    {
+      "id": "cybergym-e2e",
+      "status": "refreshed_unchanged",
+      "rows_before": 11,
+      "rows_after": 11,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://www.cybergym.io/assets/data/cybergym-e2e.json",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 3713,
+          "raw_response_sha256": "579621cca5cd352834b43fb36fbd6b769ee2680421b395f20c9f62888000ced1",
+          "bytes": 3713,
+          "sha256": "579621cca5cd352834b43fb36fbd6b769ee2680421b395f20c9f62888000ced1",
+          "archive_member": "9e6a2167ebc0c1.source",
+          "redactions": {}
+        },
+        {
+          "url": "https://www.cybergym.io/cybergym-e2e/",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 25168,
+          "raw_response_sha256": "483df0fa563c55315bf1d5f7b72e7e2810043e7146ced8ab68e04fc556cb1258",
+          "bytes": 25214,
+          "sha256": "957cc2db2f5c788b1b0f0f08fd59a7f11adc3a0f24f8cf385fce32f7a7bde697",
+          "archive_member": "421761cd46be24.source",
+          "redactions": {
+            "ancillary_mailto_targets_removed": 8
+          },
+          "redaction_disclosure": "Ancillary contact email values and mailto targets were omitted, including source author/submission/footer contacts and unrelated embedded examples where present. Benchmark scoring, model/system identities, configurations, costs and extracted rows are unchanged."
+        }
+      ],
+      "table_sha256": "292063209a2aef0af871364b303df1e01de43c7c2ea8fde51a5aafb5458d966c",
+      "snapshot": "sources/cybergym-e2e/cybergym-e2e.json",
+      "snapshot_sha256": "579621cca5cd352834b43fb36fbd6b769ee2680421b395f20c9f62888000ced1",
+      "retrieved": "2026-10-07",
+      "preserved_table_sha256": "292063209a2aef0af871364b303df1e01de43c7c2ea8fde51a5aafb5458d966c",
+      "preserved_snapshot_sha256": "579621cca5cd352834b43fb36fbd6b769ee2680421b395f20c9f62888000ced1",
+      "preserved_retrieved": "2026-10-07"
+    },
+    {
+      "id": "cybergym-model-focused",
+      "status": "refreshed_unchanged",
+      "rows_before": 46,
+      "rows_after": 46,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://www.cybergym.io/cybergym/",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 30813,
+          "raw_response_sha256": "12db2de6dc74a678fcc38abc1cc60e100f2278025163f8efcd80f1a455ed376e",
+          "bytes": 30832,
+          "sha256": "b7a0bcb17bcce52241894239b4883a5c5f5eb73de0ccd2ea00d58663c86282e7",
+          "archive_member": "fed75d3d8fca8a.source",
+          "redactions": {
+            "ancillary_mailto_targets_removed": 4
+          },
+          "redaction_disclosure": "Ancillary contact email values and mailto targets were omitted, including source author/submission/footer contacts and unrelated embedded examples where present. Benchmark scoring, model/system identities, configurations, costs and extracted rows are unchanged."
+        },
+        {
+          "url": "https://www.cybergym.io/assets/js/leaderboard.js",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 41330,
+          "raw_response_sha256": "3b452788e6c8fd872ae4d93897356ac25cca0cb30094a325dce2bcf94174d176",
+          "bytes": 41330,
+          "sha256": "3b452788e6c8fd872ae4d93897356ac25cca0cb30094a325dce2bcf94174d176",
+          "archive_member": "67f189db690b23.source",
+          "redactions": {}
+        },
+        {
+          "url": "https://www.cybergym.io/assets/data/cybergym.json",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 35263,
+          "raw_response_sha256": "dc3a8452432617323c4c6adc22dc364fc5771770aae5299b6baf882fde0f3fca",
+          "bytes": 35263,
+          "sha256": "dc3a8452432617323c4c6adc22dc364fc5771770aae5299b6baf882fde0f3fca",
+          "archive_member": "c6b8eb4b86c6f9.source",
+          "redactions": {}
+        }
+      ],
+      "table_sha256": "a690832e5355f46faecc9865785afd0904b9c0f9f9d1a048033804352a1bebc7",
+      "snapshot": "sources/cybergym-model-focused/cybergym.json",
+      "snapshot_sha256": "dc3a8452432617323c4c6adc22dc364fc5771770aae5299b6baf882fde0f3fca",
+      "retrieved": "2026-10-07",
+      "preserved_table_sha256": "a690832e5355f46faecc9865785afd0904b9c0f9f9d1a048033804352a1bebc7",
+      "preserved_snapshot_sha256": "dc3a8452432617323c4c6adc22dc364fc5771770aae5299b6baf882fde0f3fca",
+      "preserved_retrieved": "2026-10-07"
+    },
+    {
+      "id": "ecommerce-bench",
+      "status": "refreshed_unchanged",
+      "rows_before": 21,
+      "rows_after": 21,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://ecbench.github.io/showcase_data.json",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 389797,
+          "raw_response_sha256": "92f5a96c47517afb176efaf87778b720c11ebc4c329663646c55f18b1fbfc33f",
+          "bytes": 389852,
+          "sha256": "f0b3f13898c0ab6e0a2eb2717ab6861537861cec10170755184944a98c5de2e9",
+          "archive_member": "99affb3adf9dc7.source",
+          "redactions": {
+            "simulated_trajectory_email_occurrences_removed": 44
+          },
+          "redaction_disclosure": "Simulated benchmark trajectory/example email addresses were omitted. These are not established actual personal contacts. Benchmark scoring, model/system identities, configurations, costs and extracted rows are unchanged."
+        }
+      ],
+      "table_sha256": "3382f015b0dfee40ad07bf2141b9d63aff30c901371cbdfeb7149d6148d209e8",
+      "snapshot": "sources/ecommerce-bench/showcase_data_models.json",
+      "snapshot_sha256": "b4de26fc16469afe5200ec495ffe4879a9dddffe6eef38e7c3483d9b67a61f5b",
+      "retrieved": "2026-10-05",
+      "preserved_table_sha256": "3382f015b0dfee40ad07bf2141b9d63aff30c901371cbdfeb7149d6148d209e8",
+      "preserved_snapshot_sha256": "b4de26fc16469afe5200ec495ffe4879a9dddffe6eef38e7c3483d9b67a61f5b",
+      "preserved_retrieved": "2026-10-05"
+    },
+    {
+      "id": "exploitgym",
+      "status": "refreshed_unchanged",
+      "rows_before": 20,
+      "rows_after": 20,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://www.cybergym.io/assets/data/exploitgym.json",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 9303,
+          "raw_response_sha256": "1cf3b94633364a7cb76c35dc502f21fbf889ee02b639f3a20042960a0a9b2533",
+          "bytes": 9303,
+          "sha256": "1cf3b94633364a7cb76c35dc502f21fbf889ee02b639f3a20042960a0a9b2533",
+          "archive_member": "c2b9332665b312.source",
+          "redactions": {}
+        }
+      ],
+      "table_sha256": "9b5d37632d09e8eda966e8351b24baa477c07599dabe1a7af34eca458d7e289b",
+      "snapshot": "sources/exploitgym/exploitgym.json",
+      "snapshot_sha256": "1cf3b94633364a7cb76c35dc502f21fbf889ee02b639f3a20042960a0a9b2533",
+      "retrieved": "2026-10-05",
+      "preserved_table_sha256": "9b5d37632d09e8eda966e8351b24baa477c07599dabe1a7af34eca458d7e289b",
+      "preserved_snapshot_sha256": "1cf3b94633364a7cb76c35dc502f21fbf889ee02b639f3a20042960a0a9b2533",
+      "preserved_retrieved": "2026-10-05"
+    },
+    {
+      "id": "hal-core-bench-hard",
+      "status": "refreshed_unchanged",
+      "rows_before": 49,
+      "rows_after": 49,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://hal.cs.princeton.edu/corebench_hard",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 358438,
+          "raw_response_sha256": "f46a6d73ead02529444c35c3f1d67898d4c88e799f8d8f6d9a47c99cfe527997",
+          "bytes": 358438,
+          "sha256": "f46a6d73ead02529444c35c3f1d67898d4c88e799f8d8f6d9a47c99cfe527997",
+          "archive_member": "d8f029c455c4d5.source",
+          "redactions": {}
+        }
+      ],
+      "table_sha256": "4aa84cb8a0314c7cfc551cbf5d3093d16441dffd83732e0290eb2e134c94e040",
+      "snapshot": "sources/hal-core-bench-hard/leaderboard-table.html",
+      "snapshot_sha256": "158c725b5628663215ce87d850afc65c590664569953e8a862af5b88f26a462a",
+      "retrieved": "2026-10-05",
+      "preserved_table_sha256": "4aa84cb8a0314c7cfc551cbf5d3093d16441dffd83732e0290eb2e134c94e040",
+      "preserved_snapshot_sha256": "158c725b5628663215ce87d850afc65c590664569953e8a862af5b88f26a462a",
+      "preserved_retrieved": "2026-10-05"
+    },
+    {
+      "id": "hal-scicode",
+      "status": "refreshed_unchanged",
+      "rows_before": 33,
+      "rows_after": 33,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://hal.cs.princeton.edu/scicode",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 292216,
+          "raw_response_sha256": "50d72f921462a52888d012144c2a88e300720e1100ab6611bf7e146593d62a10",
+          "bytes": 292216,
+          "sha256": "50d72f921462a52888d012144c2a88e300720e1100ab6611bf7e146593d62a10",
+          "archive_member": "3dc7af377a3e03.source",
+          "redactions": {}
+        }
+      ],
+      "table_sha256": "0b2273259db7faab4d0c533153a8f9b926322ce3dafba3ce7f461924446912f9",
+      "snapshot": "sources/hal-scicode/leaderboard-table.html",
+      "snapshot_sha256": "06f6fc28a3c103ab7997d8e1722ccee1ce134bf8657106fdd1ad6c32e9fcb22a",
+      "retrieved": "2026-10-05",
+      "preserved_table_sha256": "0b2273259db7faab4d0c533153a8f9b926322ce3dafba3ce7f461924446912f9",
+      "preserved_snapshot_sha256": "06f6fc28a3c103ab7997d8e1722ccee1ce134bf8657106fdd1ad6c32e9fcb22a",
+      "preserved_retrieved": "2026-10-05"
+    },
+    {
+      "id": "hal-scienceagentbench",
+      "status": "refreshed_unchanged",
+      "rows_before": 23,
+      "rows_after": 23,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://hal.cs.princeton.edu/scienceagentbench",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 196981,
+          "raw_response_sha256": "f576d5df56b23cf57da42bf848d55d8da5cbab1ba52e973aed033f646b6f26f9",
+          "bytes": 196981,
+          "sha256": "f576d5df56b23cf57da42bf848d55d8da5cbab1ba52e973aed033f646b6f26f9",
+          "archive_member": "5f32eb43271d6f.source",
+          "redactions": {}
+        }
+      ],
+      "table_sha256": "6c60b2022c25ffcd708182609c25ec6d10e1ab8077d7c731cee62c6492624f1c",
+      "snapshot": "sources/hal-scienceagentbench/leaderboard-table.html",
+      "snapshot_sha256": "a3c629b6d214900921646bd0e6d30c90489cb6a6ab9a3cb9eb8c1e8370c16af0",
+      "retrieved": "2026-10-05",
+      "preserved_table_sha256": "6c60b2022c25ffcd708182609c25ec6d10e1ab8077d7c731cee62c6492624f1c",
+      "preserved_snapshot_sha256": "a3c629b6d214900921646bd0e6d30c90489cb6a6ab9a3cb9eb8c1e8370c16af0",
+      "preserved_retrieved": "2026-10-05"
+    },
+    {
+      "id": "metr-time-horizon-1.0",
+      "status": "refreshed_unchanged",
+      "rows_before": 33,
+      "rows_after": 33,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://metr.org/assets/benchmark_results_1_0.yaml",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 14328,
+          "raw_response_sha256": "f15fd2f13cd8d28f06f5430fabf21dcd1284193ec152bdedc34e11dcc525df66",
+          "bytes": 14328,
+          "sha256": "f15fd2f13cd8d28f06f5430fabf21dcd1284193ec152bdedc34e11dcc525df66",
+          "archive_member": "b14cb70cd20d95.source",
+          "redactions": {}
+        }
+      ],
+      "table_sha256": "89da565bce7af75f3c5d9e8db62f8471c4acbb03dbdcc57c4c8a2b77ef23e5bd",
+      "snapshot": "sources/metr-time-horizon-1.0/benchmark_results_1_0.yaml",
+      "snapshot_sha256": "f15fd2f13cd8d28f06f5430fabf21dcd1284193ec152bdedc34e11dcc525df66",
+      "retrieved": "2026-10-05",
+      "preserved_table_sha256": "89da565bce7af75f3c5d9e8db62f8471c4acbb03dbdcc57c4c8a2b77ef23e5bd",
+      "preserved_snapshot_sha256": "f15fd2f13cd8d28f06f5430fabf21dcd1284193ec152bdedc34e11dcc525df66",
+      "preserved_retrieved": "2026-10-05"
+    },
+    {
+      "id": "metr-time-horizon",
+      "status": "refreshed_unchanged",
+      "rows_before": 26,
+      "rows_after": 26,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://metr.org/assets/benchmark_results_1_1.yaml",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 16255,
+          "raw_response_sha256": "aae31902b0519a4da73e16643915e5e8aca13cd3315c3aac893ce3d6dfe92ad9",
+          "bytes": 16255,
+          "sha256": "aae31902b0519a4da73e16643915e5e8aca13cd3315c3aac893ce3d6dfe92ad9",
+          "archive_member": "55c1d6cf12bbfb.source",
+          "redactions": {}
+        }
+      ],
+      "table_sha256": "ecc3f2754ac9bb0634ea056d8f3567f0db9114c87e80e38239139a3133731109",
+      "snapshot": "sources/metr-time-horizon/benchmark_results_1_1.yaml",
+      "snapshot_sha256": "aae31902b0519a4da73e16643915e5e8aca13cd3315c3aac893ce3d6dfe92ad9",
+      "retrieved": "2026-10-05",
+      "preserved_table_sha256": "ecc3f2754ac9bb0634ea056d8f3567f0db9114c87e80e38239139a3133731109",
+      "preserved_snapshot_sha256": "aae31902b0519a4da73e16643915e5e8aca13cd3315c3aac893ce3d6dfe92ad9",
+      "preserved_retrieved": "2026-10-05"
+    },
+    {
+      "id": "mind2web-2",
+      "status": "refreshed_unchanged",
+      "rows_before": 13,
+      "rows_after": 13,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://osu-nlp-group.github.io/Mind2Web-2/leaderboard_data.json",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 7783,
+          "raw_response_sha256": "ed954c3b30c7e32c26eb58d7a6612b21537db82fa6c51462455937036cb08702",
+          "bytes": 7801,
+          "sha256": "648ce609f0a1f5ed5a0529ef86b192d7c10ae10c7263ffb3ec1e56b3af425fe3",
+          "archive_member": "c385c7d00debf8.source",
+          "redactions": {
+            "ancillary_contact_email_occurrences_removed": 1
+          },
+          "redaction_disclosure": "Ancillary contact email values and mailto targets were omitted, including source author/submission/footer contacts and unrelated embedded examples where present. Benchmark scoring, model/system identities, configurations, costs and extracted rows are unchanged."
+        }
+      ],
+      "table_sha256": "a004ba2cd70e60dce001f8a743609e21a88ca9129d23100061a456fedcb103c2",
+      "snapshot": "sources/mind2web-2/leaderboard_data.json",
+      "snapshot_sha256": "2f3370afc3b20e7f0c1964cc915f433561258ba3588525412bc6f89d45507504",
+      "retrieved": "2026-10-05",
+      "preserved_table_sha256": "a004ba2cd70e60dce001f8a743609e21a88ca9129d23100061a456fedcb103c2",
+      "preserved_snapshot_sha256": "2f3370afc3b20e7f0c1964cc915f433561258ba3588525412bc6f89d45507504",
+      "preserved_retrieved": "2026-10-05"
+    },
+    {
+      "id": "mle-bench-additional",
+      "status": "refreshed_unchanged",
+      "rows_before": 2,
+      "rows_after": 2,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/openai/mle-bench/main/README.md",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 20988,
+          "raw_response_sha256": "586bbc19cb2a3e11be61021866ef6436cf4b4d935bb1db088984b567b76595bb",
+          "bytes": 20988,
+          "sha256": "586bbc19cb2a3e11be61021866ef6436cf4b4d935bb1db088984b567b76595bb",
+          "archive_member": "0cc4aa5fa4ceed.source",
+          "redactions": {}
+        }
+      ],
+      "table_sha256": "7bca65fb6962d03e10334ca56f26a8c3a21d92d832b2db908538246e29b0e7a3",
+      "snapshot": "sources/mle-bench-additional/README.md",
+      "snapshot_sha256": "586bbc19cb2a3e11be61021866ef6436cf4b4d935bb1db088984b567b76595bb",
+      "retrieved": "2026-10-05",
+      "preserved_table_sha256": "7bca65fb6962d03e10334ca56f26a8c3a21d92d832b2db908538246e29b0e7a3",
+      "preserved_snapshot_sha256": "586bbc19cb2a3e11be61021866ef6436cf4b4d935bb1db088984b567b76595bb",
+      "preserved_retrieved": "2026-10-05"
+    },
+    {
+      "id": "mle-bench",
+      "status": "refreshed_unchanged",
+      "rows_before": 28,
+      "rows_after": 28,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/openai/mle-bench/main/README.md",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 20988,
+          "raw_response_sha256": "586bbc19cb2a3e11be61021866ef6436cf4b4d935bb1db088984b567b76595bb",
+          "bytes": 20988,
+          "sha256": "586bbc19cb2a3e11be61021866ef6436cf4b4d935bb1db088984b567b76595bb",
+          "archive_member": "0cc4aa5fa4ceed.source",
+          "redactions": {}
+        }
+      ],
+      "table_sha256": "3ed88862abe4dfad72cb888ec2c74b2523c10b561fa2008c265a1e06b57d31a7",
+      "snapshot": "sources/mle-bench/README.md",
+      "snapshot_sha256": "586bbc19cb2a3e11be61021866ef6436cf4b4d935bb1db088984b567b76595bb",
+      "retrieved": "2026-10-05",
+      "preserved_table_sha256": "3ed88862abe4dfad72cb888ec2c74b2523c10b561fa2008c265a1e06b57d31a7",
+      "preserved_snapshot_sha256": "586bbc19cb2a3e11be61021866ef6436cf4b4d935bb1db088984b567b76595bb",
+      "preserved_retrieved": "2026-10-05"
+    },
+    {
+      "id": "paperbench-code-dev",
+      "status": "refreshed_unchanged",
+      "rows_before": 1,
+      "rows_after": 1,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/openai/preparedness/main/project/paperbench/README.md",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 20104,
+          "raw_response_sha256": "b50041ce9329b4a5a779c7114b8c21f6eab93cae91d309f5924f6ebe06f470cb",
+          "bytes": 20104,
+          "sha256": "b50041ce9329b4a5a779c7114b8c21f6eab93cae91d309f5924f6ebe06f470cb",
+          "archive_member": "6b8da3a47db9d1.source",
+          "redactions": {}
+        }
+      ],
+      "table_sha256": "6c6f499ba25caaafc260e46c4036c19691ca1e5da921a2072e286bdf605830b1",
+      "snapshot": "sources/paperbench-code-dev/README.md",
+      "snapshot_sha256": "b50041ce9329b4a5a779c7114b8c21f6eab93cae91d309f5924f6ebe06f470cb",
+      "retrieved": "2026-10-05",
+      "preserved_table_sha256": "6c6f499ba25caaafc260e46c4036c19691ca1e5da921a2072e286bdf605830b1",
+      "preserved_snapshot_sha256": "b50041ce9329b4a5a779c7114b8c21f6eab93cae91d309f5924f6ebe06f470cb",
+      "preserved_retrieved": "2026-10-05"
+    },
+    {
+      "id": "paperbench",
+      "status": "refreshed_unchanged",
+      "rows_before": 10,
+      "rows_after": 10,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/openai/preparedness/main/project/paperbench/README.md",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 20104,
+          "raw_response_sha256": "b50041ce9329b4a5a779c7114b8c21f6eab93cae91d309f5924f6ebe06f470cb",
+          "bytes": 20104,
+          "sha256": "b50041ce9329b4a5a779c7114b8c21f6eab93cae91d309f5924f6ebe06f470cb",
+          "archive_member": "6b8da3a47db9d1.source",
+          "redactions": {}
+        }
+      ],
+      "table_sha256": "7578b78e72ec726447227fb155a03cc855c6653431bc333a8d209a28b24bef8b",
+      "snapshot": "sources/paperbench/README.md",
+      "snapshot_sha256": "b50041ce9329b4a5a779c7114b8c21f6eab93cae91d309f5924f6ebe06f470cb",
+      "retrieved": "2026-10-05",
+      "preserved_table_sha256": "7578b78e72ec726447227fb155a03cc855c6653431bc333a8d209a28b24bef8b",
+      "preserved_snapshot_sha256": "b50041ce9329b4a5a779c7114b8c21f6eab93cae91d309f5924f6ebe06f470cb",
+      "preserved_retrieved": "2026-10-05"
+    },
+    {
+      "id": "sec-bench-poc-generation",
+      "status": "refreshed_unchanged",
+      "rows_before": 3,
+      "rows_after": 3,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://sec-bench.github.io/",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 219225,
+          "raw_response_sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5",
+          "bytes": 219225,
+          "sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5",
+          "archive_member": "f34eda62a81c36.source",
+          "redactions": {}
+        }
+      ],
+      "table_sha256": "8d470e8ee25bd76a1e9cc18a610ca54383bf5b62e398ae013765baeb91cc241b",
+      "snapshot": "sources/sec-bench-poc-generation/leaderboard-table.html",
+      "snapshot_sha256": "dfad75302168ae0f56a92abf31724b200954bbe8c2749e29cc5fe30a50ab0fd4",
+      "retrieved": "2026-10-05",
+      "preserved_table_sha256": "8d470e8ee25bd76a1e9cc18a610ca54383bf5b62e398ae013765baeb91cc241b",
+      "preserved_snapshot_sha256": "dfad75302168ae0f56a92abf31724b200954bbe8c2749e29cc5fe30a50ab0fd4",
+      "preserved_retrieved": "2026-10-05"
+    },
+    {
+      "id": "sec-bench-pro-firefox",
+      "status": "refreshed_unchanged",
+      "rows_before": 6,
+      "rows_after": 6,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://sec-bench.github.io/",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 219225,
+          "raw_response_sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5",
+          "bytes": 219225,
+          "sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5",
+          "archive_member": "f34eda62a81c36.source",
+          "redactions": {}
+        }
+      ],
+      "table_sha256": "503db61d1e71c92520d787d077a54e7fe3c1e460d586acee18494ec32f348e20",
+      "snapshot": "sources/sec-bench-pro-firefox/leaderboard-table.html",
+      "snapshot_sha256": "b6ea0cd5c55c8dce9e92d7b1d0775e6f2348946e57a85453c4da8415634a091b",
+      "retrieved": "2026-10-05",
+      "preserved_table_sha256": "503db61d1e71c92520d787d077a54e7fe3c1e460d586acee18494ec32f348e20",
+      "preserved_snapshot_sha256": "b6ea0cd5c55c8dce9e92d7b1d0775e6f2348946e57a85453c4da8415634a091b",
+      "preserved_retrieved": "2026-10-05"
+    },
+    {
+      "id": "sec-bench-pro-linux",
+      "status": "refreshed_unchanged",
+      "rows_before": 6,
+      "rows_after": 6,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://sec-bench.github.io/",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 219225,
+          "raw_response_sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5",
+          "bytes": 219225,
+          "sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5",
+          "archive_member": "f34eda62a81c36.source",
+          "redactions": {}
+        }
+      ],
+      "table_sha256": "98f72a4424733767caedf5a07f35cf71109ff1e8d64def2b3f36574d65b10fc3",
+      "snapshot": "sources/sec-bench-pro-linux/leaderboard-table.html",
+      "snapshot_sha256": "ba74fded0bbac0c9787540f25b8e3b9049ea03aec783dee44f7203c70c76c70a",
+      "retrieved": "2026-10-05",
+      "preserved_table_sha256": "98f72a4424733767caedf5a07f35cf71109ff1e8d64def2b3f36574d65b10fc3",
+      "preserved_snapshot_sha256": "ba74fded0bbac0c9787540f25b8e3b9049ea03aec783dee44f7203c70c76c70a",
+      "preserved_retrieved": "2026-10-05"
+    },
+    {
+      "id": "sec-bench-pro-overall",
+      "status": "refreshed_unchanged",
+      "rows_before": 6,
+      "rows_after": 6,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://sec-bench.github.io/",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 219225,
+          "raw_response_sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5",
+          "bytes": 219225,
+          "sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5",
+          "archive_member": "f34eda62a81c36.source",
+          "redactions": {}
+        }
+      ],
+      "table_sha256": "60c698493cb7c2a9b11f4aad78edd35af54438019cf766c98fb0de7d5277cca1",
+      "snapshot": "sources/sec-bench-pro-overall/leaderboard-table.html",
+      "snapshot_sha256": "c6dc359c547b526dd924cbce7f8fe9d50f8a12144f37ab40072949e6a619b035",
+      "retrieved": "2026-10-05",
+      "preserved_table_sha256": "60c698493cb7c2a9b11f4aad78edd35af54438019cf766c98fb0de7d5277cca1",
+      "preserved_snapshot_sha256": "c6dc359c547b526dd924cbce7f8fe9d50f8a12144f37ab40072949e6a619b035",
+      "preserved_retrieved": "2026-10-05"
+    },
+    {
+      "id": "sec-bench-pro-v8",
+      "status": "refreshed_unchanged",
+      "rows_before": 6,
+      "rows_after": 6,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://sec-bench.github.io/",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 219225,
+          "raw_response_sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5",
+          "bytes": 219225,
+          "sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5",
+          "archive_member": "f34eda62a81c36.source",
+          "redactions": {}
+        }
+      ],
+      "table_sha256": "54521649a634dade8d508896404c15f37cff49e6df95f3134da0040b19b73332",
+      "snapshot": "sources/sec-bench-pro-v8/leaderboard-table.html",
+      "snapshot_sha256": "312106428ac7308e21d496db029efa9601eef48c99ba25388985616fb6beff08",
+      "retrieved": "2026-10-05",
+      "preserved_table_sha256": "54521649a634dade8d508896404c15f37cff49e6df95f3134da0040b19b73332",
+      "preserved_snapshot_sha256": "312106428ac7308e21d496db029efa9601eef48c99ba25388985616fb6beff08",
+      "preserved_retrieved": "2026-10-05"
+    },
+    {
+      "id": "sec-bench-vulnerability-patching",
+      "status": "refreshed_unchanged",
+      "rows_before": 5,
+      "rows_after": 5,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://sec-bench.github.io/",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 219225,
+          "raw_response_sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5",
+          "bytes": 219225,
+          "sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5",
+          "archive_member": "f34eda62a81c36.source",
+          "redactions": {}
+        }
+      ],
+      "table_sha256": "dca885cc0ed86981a415dfbac9febf3f425cb502a2508033eecc9cefc36a9e66",
+      "snapshot": "sources/sec-bench-vulnerability-patching/leaderboard-table.html",
+      "snapshot_sha256": "175afb4cfbc17758d115624aa7f3ca770fc67747a20d0a4f5a1abf32cd934b3c",
+      "retrieved": "2026-10-05",
+      "preserved_table_sha256": "dca885cc0ed86981a415dfbac9febf3f425cb502a2508033eecc9cefc36a9e66",
+      "preserved_snapshot_sha256": "175afb4cfbc17758d115624aa7f3ca770fc67747a20d0a4f5a1abf32cd934b3c",
+      "preserved_retrieved": "2026-10-05"
+    },
+    {
+      "id": "swe-marathon-v1-0",
+      "status": "refreshed_unchanged",
+      "rows_before": 16,
+      "rows_after": 16,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://www.swe-marathon.org/",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 4714,
+          "raw_response_sha256": "a103d5e18e4c5f11c962239d5e2cf191b27171f47e9e7f81a2eec92b8985ec2f",
+          "bytes": 4714,
+          "sha256": "a103d5e18e4c5f11c962239d5e2cf191b27171f47e9e7f81a2eec92b8985ec2f",
+          "archive_member": "d0f5bd3428fd70.source",
+          "redactions": {}
+        },
+        {
+          "url": "https://www.swe-marathon.org/assets/index-8aFpQU6L.js",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 5751788,
+          "raw_response_sha256": "81a4f19e3187242fa964be89a9bbfe0c4c6173c56301bc9a5437361d3e6d56ec",
+          "bytes": 5752125,
+          "sha256": "a0f4c65c8c3d1655082b91786a309d9e0a51e02050f0e6664c52f6fb11067ea7",
+          "archive_member": "a261c2b52655a0.source",
+          "redactions": {
+            "credential_query_removed": 4,
+            "public_example_aws_access_key_fixture": 2,
+            "public_example_aws_secret_key_fixture": 2,
+            "ancillary_mailto_targets_removed": 1,
+            "ancillary_contact_email_occurrences_removed": 21
+          },
+          "redaction_disclosure": "Ancillary contact email values and mailto targets were omitted, including source author/submission/footer contacts and unrelated embedded examples where present. Benchmark scoring, model/system identities, configurations, costs and extracted rows are unchanged."
+        }
+      ],
+      "table_sha256": "95582f3d24adfbae261bfc42fd21fe23e0e1528599198ad2b90e0a9e90ed78d2",
+      "snapshot": "sources/swe-marathon-v1-0/leaderboard_v1_0.json",
+      "snapshot_sha256": "20e05de9291b96039d2b66bbf4700e817ae79d995fde3a8dd501ee15569ce839",
+      "retrieved": "2026-10-05",
+      "preserved_table_sha256": "95582f3d24adfbae261bfc42fd21fe23e0e1528599198ad2b90e0a9e90ed78d2",
+      "preserved_snapshot_sha256": "20e05de9291b96039d2b66bbf4700e817ae79d995fde3a8dd501ee15569ce839",
+      "preserved_retrieved": "2026-10-05"
+    },
+    {
+      "id": "swe-marathon-v1-1",
+      "status": "refreshed_changed",
+      "rows_before": 24,
+      "rows_after": 25,
+      "rows_changed_or_added": 23,
+      "rows_removed_or_changed": 22,
+      "sources": [
+        {
+          "url": "https://www.swe-marathon.org/",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 4714,
+          "raw_response_sha256": "a103d5e18e4c5f11c962239d5e2cf191b27171f47e9e7f81a2eec92b8985ec2f",
+          "bytes": 4714,
+          "sha256": "a103d5e18e4c5f11c962239d5e2cf191b27171f47e9e7f81a2eec92b8985ec2f",
+          "archive_member": "d0f5bd3428fd70.source",
+          "redactions": {}
+        },
+        {
+          "url": "https://www.swe-marathon.org/assets/index-8aFpQU6L.js",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 5751788,
+          "raw_response_sha256": "81a4f19e3187242fa964be89a9bbfe0c4c6173c56301bc9a5437361d3e6d56ec",
+          "bytes": 5752125,
+          "sha256": "a0f4c65c8c3d1655082b91786a309d9e0a51e02050f0e6664c52f6fb11067ea7",
+          "archive_member": "a261c2b52655a0.source",
+          "redactions": {
+            "credential_query_removed": 4,
+            "public_example_aws_access_key_fixture": 2,
+            "public_example_aws_secret_key_fixture": 2,
+            "ancillary_mailto_targets_removed": 1,
+            "ancillary_contact_email_occurrences_removed": 21
+          },
+          "redaction_disclosure": "Ancillary contact email values and mailto targets were omitted, including source author/submission/footer contacts and unrelated embedded examples where present. Benchmark scoring, model/system identities, configurations, costs and extracted rows are unchanged."
+        }
+      ],
+      "table_sha256": "ea2911d99c747c02fecc3cb1f985564819f814fd81c8816a37d8200e0198bee7",
+      "snapshot": "sources/swe-marathon-v1-1/task_results_trimmed.json",
+      "snapshot_sha256": "720217770cbee3f12fce5b7b9e5fd1707ec5feb517442871c4b4de7edbeb9a20",
+      "retrieved": "2026-10-10"
+    },
+    {
+      "id": "vending-bench-2",
+      "status": "refreshed_changed",
+      "rows_before": 67,
+      "rows_after": 69,
+      "rows_changed_or_added": 65,
+      "rows_removed_or_changed": 63,
+      "sources": [
+        {
+          "url": "https://andonlabs.com/evals/vending-bench-2",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 83541,
+          "raw_response_sha256": "2f0f8ea600dc6f411756a4ba291363886a0f8ec2523670c10d9bfc5012e1035f",
+          "bytes": 83541,
+          "sha256": "2f0f8ea600dc6f411756a4ba291363886a0f8ec2523670c10d9bfc5012e1035f",
+          "archive_member": "ebcec333cce225.source",
+          "redactions": {}
+        },
+        {
+          "url": "https://andonlabs.com/_app/immutable/nodes/27.DD89StnP.js",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 47333,
+          "raw_response_sha256": "3b3afa23251171fb5a89dfeaefeebc143296b3ef77d19ac180cf037fc8d52f8f",
+          "bytes": 47332,
+          "sha256": "ed2721c57cde6c615afbc4d73b7f4f1047183188c117e8ce3e789af41d162d11",
+          "archive_member": "f7c31360a2b1c8.source",
+          "redactions": {
+            "simulated_trajectory_email_occurrences_removed": 1
+          },
+          "redaction_disclosure": "Simulated benchmark trajectory/example email addresses were omitted. These are not established actual personal contacts. Benchmark scoring, model/system identities, configurations, costs and extracted rows are unchanged."
+        },
+        {
+          "url": "https://andonlabs.com/_app/immutable/chunks/Dfav8PA6.js",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 712831,
+          "raw_response_sha256": "8d52f3dd1f1fcb73ad141d93adfa0939fd2d3193d2da4c9675a68d018ec7c5d0",
+          "bytes": 712831,
+          "sha256": "8d52f3dd1f1fcb73ad141d93adfa0939fd2d3193d2da4c9675a68d018ec7c5d0",
+          "archive_member": "e44eda2f9dae5b.source",
+          "redactions": {}
+        },
+        {
+          "url": "https://andonlabs.com/_app/immutable/chunks/B_kw8hTs.js",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 4963,
+          "raw_response_sha256": "09116a3248ffcf1fef1148ebe6a37907555f8a307e959ff9e9dec1e698647bdc",
+          "bytes": 4963,
+          "sha256": "09116a3248ffcf1fef1148ebe6a37907555f8a307e959ff9e9dec1e698647bdc",
+          "archive_member": "4261e44084fb3f.source",
+          "redactions": {}
+        }
+      ],
+      "table_sha256": "8ab3bcd49d12ce57fd6909c719d5e7af3dd3d9ab573b1b07a45118adb1b7c192",
+      "snapshot": "sources/vending-bench-2/vb2_data.json",
+      "snapshot_sha256": "91c08756668ee5f9e80d6a62908b121fc4c0b02f26160fdb7e2b82a295907362",
+      "retrieved": "2026-10-10"
+    },
+    {
+      "id": "vending-bench",
+      "status": "refreshed_unchanged",
+      "rows_before": 27,
+      "rows_after": 27,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://andonlabs.com/evals/vending-bench",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 63309,
+          "raw_response_sha256": "898fc32a5e2c99d732735ec785a722b005b0994612a6686a4224f54508904ee9",
+          "bytes": 63309,
+          "sha256": "898fc32a5e2c99d732735ec785a722b005b0994612a6686a4224f54508904ee9",
+          "archive_member": "f887d579d7ab64.source",
+          "redactions": {}
+        },
+        {
+          "url": "https://andonlabs.com/_app/immutable/nodes/26.FUD8iaCC.js",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 20261,
+          "raw_response_sha256": "bb4e62bab75fbb5c37d01a8d6b51f51ab3a8e3aff9bb248e18a7f8f06cfddff5",
+          "bytes": 20290,
+          "sha256": "4d0d43c957442c4992c2d9fb3817278104ad0a1c2825a278a59d14cffececd5a",
+          "archive_member": "9ac76df835b0e3.source",
+          "redactions": {
+            "ancillary_mailto_targets_removed": 1,
+            "ancillary_contact_email_occurrences_removed": 1
+          },
+          "redaction_disclosure": "Ancillary contact email values and mailto targets were omitted, including source author/submission/footer contacts and unrelated embedded examples where present. Benchmark scoring, model/system identities, configurations, costs and extracted rows are unchanged."
+        }
+      ],
+      "table_sha256": "3598b9c42536bacddfbc5d3a542b2fc6f6fdc3d1e4864d6048a9f006af9f9588",
+      "snapshot": "sources/vending-bench/leaderboard.tsv",
+      "snapshot_sha256": "78f189e1ad5457e8a087559c23ab4acb7ac7171eafe689130252325484917c95",
+      "retrieved": "2026-10-05",
+      "preserved_table_sha256": "3598b9c42536bacddfbc5d3a542b2fc6f6fdc3d1e4864d6048a9f006af9f9588",
+      "preserved_snapshot_sha256": "78f189e1ad5457e8a087559c23ab4acb7ac7171eafe689130252325484917c95",
+      "preserved_retrieved": "2026-10-05"
+    }
+  ],
+  "model_proposals": [],
+  "baseline_commit": "5ba249becaeb5d5ef04a6cbef3513408330246d8",
+  "source_manifest": "sources/audits/2026-10-10/research-source-index.json",
+  "summary": {
+    "tables": 29,
+    "refreshed_changed": 2,
+    "refreshed_unchanged": 27,
+    "preserved": 0,
+    "rows_checked": 637
+  }
+}

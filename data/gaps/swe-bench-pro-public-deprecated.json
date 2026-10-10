@@ -3,10 +3,10 @@
   "name": "SWE-Bench Pro (Public Dataset, deprecated capped runs)",
   "tried": [
     "https://labs.scale.com/leaderboard/swe_bench_pro",
-    "https://scale.com/leaderboard/swe_bench_pro_public_deprecated (HTTP 403)",
-    "https://labs.scale.com/leaderboard/swe_bench_pro_public_deprecated (HTTP 403)",
-    "https://labs.scale.com/leaderboard/swe_bench_pro_commercial (HTTP 403)"
+    "https://scale.com/leaderboard/swe_bench_pro_public_deprecated",
+    "https://labs.scale.com/leaderboard/swe_bench_pro_public_deprecated",
+    "https://labs.scale.com/leaderboard/swe_bench_pro_commercial"
   ],
-  "reason_ja": "現行の統合 SWE-Bench Pro ページには Public / Private の別々の結果と、費用上限・50 ターンで走らせた旧 Public 結果へのリンクがある。2026-10-05 の取得では旧結果リンクと旧 commercial URL が HTTP 403 を返し、比較可能な旧表を抽出できない。現在の Public / Private 表は混ぜずに取得済み。",
-  "retrieved": "2026-10-05"
+  "reason_ja": "現行の統合 SWE-Bench Pro ページの Public / Private 集計結果を再取得し、既存2表と同一であることを確認。ページが案内する旧 capped-run 結果リンクと labs.scale.com の旧 Public / commercial URL は今回いずれも HTTP 404（前回は403）。比較可能な旧表を抽出できず、現行2表と混合しない。",
+  "retrieved": "2026-10-10"
 }

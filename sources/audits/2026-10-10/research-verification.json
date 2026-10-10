@@ -1,0 +1,145 @@
+{
+  "retrieved": "2026-10-10",
+  "checks": {
+    "tables_and_primary_snapshots_byte_identical_to_baseline": 27,
+    "checked_rows": 637,
+    "all_retained_response_sizes_and_sha256_verified": true,
+    "offline_archive_replay_matches_live_cache_parse": true,
+    "changed_tables_byte_identical_after_offline_replay": true,
+    "changed_swe_marathon_all_25_row_aggregates_and_ranks_independently_checked": true,
+    "changed_vending_bench_all_69_rows_independently_checked": true,
+    "new_model_proposals": 0,
+    "claims_and_six_gap_records_byte_preserved": true,
+    "signed_or_credential_query_values_absent_from_archive": true,
+    "ancillary_contact_emails_and_mailto_targets_absent_from_archive": true
+  },
+  "table_outcome": {
+    "tables": 29,
+    "refreshed_changed": 2,
+    "refreshed_unchanged": 27,
+    "preserved": 0,
+    "rows_checked": 637
+  },
+  "scope": "research, security, long-horizon; vendor claims remain separate",
+  "blocked_required_sources": [],
+  "existing_gaps_rechecked": 6,
+  "claims_checked": 17,
+  "public_response_count": 123,
+  "redactions": [
+    {
+      "url": "https://ecbench.github.io/showcase_data.json",
+      "archive_member": "99affb3adf9dc7.source",
+      "counts": {
+        "simulated_trajectory_email_occurrences_removed": 44
+      },
+      "raw_response_sha256": "92f5a96c47517afb176efaf87778b720c11ebc4c329663646c55f18b1fbfc33f",
+      "retained_sha256": "f0b3f13898c0ab6e0a2eb2717ab6861537861cec10170755184944a98c5de2e9",
+      "disclosure": "Simulated benchmark trajectory/example email addresses were omitted. These are not established actual personal contacts. Benchmark scoring, model/system identities, configurations, costs and extracted rows are unchanged."
+    },
+    {
+      "url": "https://metr.org/time-horizons/",
+      "archive_member": "6f9c9f881a4696.source",
+      "counts": {
+        "ancillary_mailto_targets_removed": 2,
+        "ancillary_contact_email_occurrences_removed": 2
+      },
+      "raw_response_sha256": "a7cfa3615ae899520901340e710574bfa2b0d0ec9192335780f750372d5e8a99",
+      "retained_sha256": "04ecca60cba53a4fea11c1b24c6dfaa5463a005bcc1f8e7879f20ad75f9830fe",
+      "disclosure": "Ancillary contact email values and mailto targets were omitted, including source author/submission/footer contacts and unrelated embedded examples where present. Benchmark scoring, model/system identities, configurations, costs and extracted rows are unchanged."
+    },
+    {
+      "url": "https://osu-nlp-group.github.io/Mind2Web-2/leaderboard_data.json",
+      "archive_member": "c385c7d00debf8.source",
+      "counts": {
+        "ancillary_contact_email_occurrences_removed": 1
+      },
+      "raw_response_sha256": "ed954c3b30c7e32c26eb58d7a6612b21537db82fa6c51462455937036cb08702",
+      "retained_sha256": "648ce609f0a1f5ed5a0529ef86b192d7c10ae10c7263ffb3ec1e56b3af425fe3",
+      "disclosure": "Ancillary contact email values and mailto targets were omitted, including source author/submission/footer contacts and unrelated embedded examples where present. Benchmark scoring, model/system identities, configurations, costs and extracted rows are unchanged."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/METR/RE-Bench/main/README.md",
+      "archive_member": "0aad26dd88b143.source",
+      "counts": {
+        "public_benchmark_archive_password": 1
+      },
+      "raw_response_sha256": "7f279f6fcbfa8d6e7309764cd7620f682ffbeaedc5f9af09b8746b9c10bbb2dd",
+      "retained_sha256": "d196b6d104439a425625918049f6d6cc0b4477051826bd5e73686ae197044f58"
+    },
+    {
+      "url": "https://www.cybergym.io/cybergym-e2e/",
+      "archive_member": "421761cd46be24.source",
+      "counts": {
+        "ancillary_mailto_targets_removed": 8
+      },
+      "raw_response_sha256": "483df0fa563c55315bf1d5f7b72e7e2810043e7146ced8ab68e04fc556cb1258",
+      "retained_sha256": "957cc2db2f5c788b1b0f0f08fd59a7f11adc3a0f24f8cf385fce32f7a7bde697",
+      "disclosure": "Ancillary contact email values and mailto targets were omitted, including source author/submission/footer contacts and unrelated embedded examples where present. Benchmark scoring, model/system identities, configurations, costs and extracted rows are unchanged."
+    },
+    {
+      "url": "https://www.cybergym.io/cybergym/",
+      "archive_member": "fed75d3d8fca8a.source",
+      "counts": {
+        "ancillary_mailto_targets_removed": 4
+      },
+      "raw_response_sha256": "12db2de6dc74a678fcc38abc1cc60e100f2278025163f8efcd80f1a455ed376e",
+      "retained_sha256": "b7a0bcb17bcce52241894239b4883a5c5f5eb73de0ccd2ea00d58663c86282e7",
+      "disclosure": "Ancillary contact email values and mailto targets were omitted, including source author/submission/footer contacts and unrelated embedded examples where present. Benchmark scoring, model/system identities, configurations, costs and extracted rows are unchanged."
+    },
+    {
+      "url": "https://www.cybergym.io/exploitgym/",
+      "archive_member": "07854342f1011c.source",
+      "counts": {
+        "ancillary_mailto_targets_removed": 9
+      },
+      "raw_response_sha256": "97db69cc276fe24ba54f6032c07f0170cc889bd88368d68c65ad97ab755b0889",
+      "retained_sha256": "c0130c65e2812bd82d2d85f9bdc541e6713bc671bb712d2890dce10385d21aa3",
+      "disclosure": "Ancillary contact email values and mailto targets were omitted, including source author/submission/footer contacts and unrelated embedded examples where present. Benchmark scoring, model/system identities, configurations, costs and extracted rows are unchanged."
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/nodes/26.FUD8iaCC.js",
+      "archive_member": "9ac76df835b0e3.source",
+      "counts": {
+        "ancillary_mailto_targets_removed": 1,
+        "ancillary_contact_email_occurrences_removed": 1
+      },
+      "raw_response_sha256": "bb4e62bab75fbb5c37d01a8d6b51f51ab3a8e3aff9bb248e18a7f8f06cfddff5",
+      "retained_sha256": "4d0d43c957442c4992c2d9fb3817278104ad0a1c2825a278a59d14cffececd5a",
+      "disclosure": "Ancillary contact email values and mailto targets were omitted, including source author/submission/footer contacts and unrelated embedded examples where present. Benchmark scoring, model/system identities, configurations, costs and extracted rows are unchanged."
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/nodes/27.DD89StnP.js",
+      "archive_member": "f7c31360a2b1c8.source",
+      "counts": {
+        "simulated_trajectory_email_occurrences_removed": 1
+      },
+      "raw_response_sha256": "3b3afa23251171fb5a89dfeaefeebc143296b3ef77d19ac180cf037fc8d52f8f",
+      "retained_sha256": "ed2721c57cde6c615afbc4d73b7f4f1047183188c117e8ce3e789af41d162d11",
+      "disclosure": "Simulated benchmark trajectory/example email addresses were omitted. These are not established actual personal contacts. Benchmark scoring, model/system identities, configurations, costs and extracted rows are unchanged."
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/nodes/28.CFd3ujOx.js",
+      "archive_member": "b18c67be3fe48e.source",
+      "counts": {
+        "simulated_trajectory_email_occurrences_removed": 90
+      },
+      "raw_response_sha256": "2cb7bf2a1f79d3363ec7ae3b3f3c75d8736b004897bfa38c2eca3768e7d3aea4",
+      "retained_sha256": "28d873011a308b85354dcf26beba98ecb03c6811b560460da0a1f5256959423a",
+      "disclosure": "Simulated benchmark trajectory/example email addresses were omitted. These are not established actual personal contacts. Benchmark scoring, model/system identities, configurations, costs and extracted rows are unchanged."
+    },
+    {
+      "url": "https://www.swe-marathon.org/assets/index-8aFpQU6L.js",
+      "archive_member": "a261c2b52655a0.source",
+      "counts": {
+        "credential_query_removed": 4,
+        "public_example_aws_access_key_fixture": 2,
+        "public_example_aws_secret_key_fixture": 2,
+        "ancillary_mailto_targets_removed": 1,
+        "ancillary_contact_email_occurrences_removed": 21
+      },
+      "raw_response_sha256": "81a4f19e3187242fa964be89a9bbfe0c4c6173c56301bc9a5437361d3e6d56ec",
+      "retained_sha256": "a0f4c65c8c3d1655082b91786a309d9e0a51e02050f0e6664c52f6fb11067ea7",
+      "disclosure": "Ancillary contact email values and mailto targets were omitted, including source author/submission/footer contacts and unrelated embedded examples where present. Benchmark scoring, model/system identities, configurations, costs and extracted rows are unchanged."
+    }
+  ]
+}

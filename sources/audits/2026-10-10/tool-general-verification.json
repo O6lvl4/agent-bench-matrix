@@ -1,0 +1,391 @@
+{
+ "checked": "2026-10-10",
+ "tables_checked": 42,
+ "complete_primary_sources_matching_snapshots": 42,
+ "changed_table_normalizations_exactly_reproduced": 3,
+ "unchanged_tables_and_snapshots_kept_byte_identical": 39,
+ "all_14_tau_tables_complete_and_unchanged": true,
+ "standing_gaps_rechecked_and_preserved": 7,
+ "model_registry_additions": [],
+ "contact_omission_comparison": "Tau comparison excludes only contact_info.email; all benchmark metadata/results match and historical snapshots remain byte-identical.",
+ "tables": [
+  {
+   "id": "apex-agents",
+   "complete_primary_match": true,
+   "rows": 56,
+   "table_byte_identical_to_base": false,
+   "snapshot_byte_identical_to_base": false,
+   "normalized_rows_reproduced": true,
+   "comparison_excludes_ancillary_contact_info_email": false
+  },
+  {
+   "id": "apex-agents-corporate-lawyer",
+   "complete_primary_match": true,
+   "rows": 56,
+   "table_byte_identical_to_base": true,
+   "snapshot_byte_identical_to_base": true,
+   "normalized_rows_reproduced": false,
+   "comparison_excludes_ancillary_contact_info_email": false
+  },
+  {
+   "id": "apex-agents-investment-banking",
+   "complete_primary_match": true,
+   "rows": 56,
+   "table_byte_identical_to_base": true,
+   "snapshot_byte_identical_to_base": true,
+   "normalized_rows_reproduced": false,
+   "comparison_excludes_ancillary_contact_info_email": false
+  },
+  {
+   "id": "apex-agents-management-consultant",
+   "complete_primary_match": true,
+   "rows": 56,
+   "table_byte_identical_to_base": false,
+   "snapshot_byte_identical_to_base": false,
+   "normalized_rows_reproduced": true,
+   "comparison_excludes_ancillary_contact_info_email": false
+  },
+  {
+   "id": "appworld-test-challenge",
+   "complete_primary_match": true,
+   "rows": 23,
+   "table_byte_identical_to_base": true,
+   "snapshot_byte_identical_to_base": true,
+   "normalized_rows_reproduced": false,
+   "comparison_excludes_ancillary_contact_info_email": false
+  },
+  {
+   "id": "appworld-test-normal",
+   "complete_primary_match": true,
+   "rows": 23,
+   "table_byte_identical_to_base": true,
+   "snapshot_byte_identical_to_base": true,
+   "normalized_rows_reproduced": false,
+   "comparison_excludes_ancillary_contact_info_email": false
+  },
+  {
+   "id": "bfcl-v4",
+   "complete_primary_match": true,
+   "rows": 109,
+   "table_byte_identical_to_base": true,
+   "snapshot_byte_identical_to_base": true,
+   "normalized_rows_reproduced": false,
+   "comparison_excludes_ancillary_contact_info_email": false
+  },
+  {
+   "id": "gaia",
+   "complete_primary_match": true,
+   "rows": 100,
+   "table_byte_identical_to_base": false,
+   "snapshot_byte_identical_to_base": false,
+   "normalized_rows_reproduced": true,
+   "comparison_excludes_ancillary_contact_info_email": false
+  },
+  {
+   "id": "gaia2",
+   "complete_primary_match": true,
+   "rows": 16,
+   "table_byte_identical_to_base": true,
+   "snapshot_byte_identical_to_base": true,
+   "normalized_rows_reproduced": false,
+   "comparison_excludes_ancillary_contact_info_email": false
+  },
+  {
+   "id": "gaia2-cli",
+   "complete_primary_match": true,
+   "rows": 7,
+   "table_byte_identical_to_base": true,
+   "snapshot_byte_identical_to_base": true,
+   "normalized_rows_reproduced": false,
+   "comparison_excludes_ancillary_contact_info_email": false
+  },
+  {
+   "id": "hal-gaia",
+   "complete_primary_match": true,
+   "rows": 32,
+   "table_byte_identical_to_base": true,
+   "snapshot_byte_identical_to_base": true,
+   "normalized_rows_reproduced": false,
+   "comparison_excludes_ancillary_contact_info_email": false
+  },
+  {
+   "id": "hal-tau-bench-airline",
+   "complete_primary_match": true,
+   "rows": 26,
+   "table_byte_identical_to_base": true,
+   "snapshot_byte_identical_to_base": true,
+   "normalized_rows_reproduced": false,
+   "comparison_excludes_ancillary_contact_info_email": false
+  },
+  {
+   "id": "mcp-atlas",
+   "complete_primary_match": true,
+   "rows": 34,
+   "table_byte_identical_to_base": true,
+   "snapshot_byte_identical_to_base": true,
+   "normalized_rows_reproduced": false,
+   "comparison_excludes_ancillary_contact_info_email": false
+  },
+  {
+   "id": "mcp-bench",
+   "complete_primary_match": true,
+   "rows": 20,
+   "table_byte_identical_to_base": true,
+   "snapshot_byte_identical_to_base": true,
+   "normalized_rows_reproduced": false,
+   "comparison_excludes_ancillary_contact_info_email": false
+  },
+  {
+   "id": "mcp-universe-agent",
+   "complete_primary_match": true,
+   "rows": 8,
+   "table_byte_identical_to_base": true,
+   "snapshot_byte_identical_to_base": true,
+   "normalized_rows_reproduced": false,
+   "comparison_excludes_ancillary_contact_info_email": false
+  },
+  {
+   "id": "mcp-universe-fc",
+   "complete_primary_match": true,
+   "rows": 21,
+   "table_byte_identical_to_base": true,
+   "snapshot_byte_identical_to_base": true,
+   "normalized_rows_reproduced": false,
+   "comparison_excludes_ancillary_contact_info_email": false
+  },
+  {
+   "id": "mcp-universe-react",
+   "complete_primary_match": true,
+   "rows": 28,
+   "table_byte_identical_to_base": true,
+   "snapshot_byte_identical_to_base": true,
+   "normalized_rows_reproduced": false,
+   "comparison_excludes_ancillary_contact_info_email": false
+  },
+  {
+   "id": "mcpmark-legacy",
+   "complete_primary_match": true,
+   "rows": 39,
+   "table_byte_identical_to_base": true,
+   "snapshot_byte_identical_to_base": true,
+   "normalized_rows_reproduced": false,
+   "comparison_excludes_ancillary_contact_info_email": false
+  },
+  {
+   "id": "mcpmark-verified",
+   "complete_primary_match": true,
+   "rows": 8,
+   "table_byte_identical_to_base": true,
+   "snapshot_byte_identical_to_base": true,
+   "normalized_rows_reproduced": false,
+   "comparison_excludes_ancillary_contact_info_email": false
+  },
+  {
+   "id": "skillsbench",
+   "complete_primary_match": true,
+   "rows": 25,
+   "table_byte_identical_to_base": true,
+   "snapshot_byte_identical_to_base": true,
+   "normalized_rows_reproduced": false,
+   "comparison_excludes_ancillary_contact_info_email": false
+  },
+  {
+   "id": "tau2-bench",
+   "complete_primary_match": true,
+   "rows": 8,
+   "table_byte_identical_to_base": true,
+   "snapshot_byte_identical_to_base": true,
+   "normalized_rows_reproduced": false,
+   "comparison_excludes_ancillary_contact_info_email": true
+  },
+  {
+   "id": "tau2-bench-airline",
+   "complete_primary_match": true,
+   "rows": 8,
+   "table_byte_identical_to_base": true,
+   "snapshot_byte_identical_to_base": true,
+   "normalized_rows_reproduced": false,
+   "comparison_excludes_ancillary_contact_info_email": true
+  },
+  {
+   "id": "tau2-bench-legacy",
+   "complete_primary_match": true,
+   "rows": 12,
+   "table_byte_identical_to_base": true,
+   "snapshot_byte_identical_to_base": true,
+   "normalized_rows_reproduced": false,
+   "comparison_excludes_ancillary_contact_info_email": true
+  },
+  {
+   "id": "tau2-bench-legacy-airline",
+   "complete_primary_match": true,
+   "rows": 16,
+   "table_byte_identical_to_base": true,
+   "snapshot_byte_identical_to_base": true,
+   "normalized_rows_reproduced": false,
+   "comparison_excludes_ancillary_contact_info_email": true
+  },
+  {
+   "id": "tau2-bench-legacy-retail",
+   "complete_primary_match": true,
+   "rows": 16,
+   "table_byte_identical_to_base": true,
+   "snapshot_byte_identical_to_base": true,
+   "normalized_rows_reproduced": false,
+   "comparison_excludes_ancillary_contact_info_email": true
+  },
+  {
+   "id": "tau2-bench-legacy-telecom",
+   "complete_primary_match": true,
+   "rows": 12,
+   "table_byte_identical_to_base": true,
+   "snapshot_byte_identical_to_base": true,
+   "normalized_rows_reproduced": false,
+   "comparison_excludes_ancillary_contact_info_email": true
+  },
+  {
+   "id": "tau2-bench-retail",
+   "complete_primary_match": true,
+   "rows": 9,
+   "table_byte_identical_to_base": true,
+   "snapshot_byte_identical_to_base": true,
+   "normalized_rows_reproduced": false,
+   "comparison_excludes_ancillary_contact_info_email": true
+  },
+  {
+   "id": "tau2-bench-telecom",
+   "complete_primary_match": true,
+   "rows": 8,
+   "table_byte_identical_to_base": true,
+   "snapshot_byte_identical_to_base": true,
+   "normalized_rows_reproduced": false,
+   "comparison_excludes_ancillary_contact_info_email": true
+  },
+  {
+   "id": "tau3-banking",
+   "complete_primary_match": true,
+   "rows": 28,
+   "table_byte_identical_to_base": true,
+   "snapshot_byte_identical_to_base": true,
+   "normalized_rows_reproduced": false,
+   "comparison_excludes_ancillary_contact_info_email": true
+  },
+  {
+   "id": "tau3-voice",
+   "complete_primary_match": true,
+   "rows": 18,
+   "table_byte_identical_to_base": true,
+   "snapshot_byte_identical_to_base": true,
+   "normalized_rows_reproduced": false,
+   "comparison_excludes_ancillary_contact_info_email": true
+  },
+  {
+   "id": "tau3-voice-airline",
+   "complete_primary_match": true,
+   "rows": 18,
+   "table_byte_identical_to_base": true,
+   "snapshot_byte_identical_to_base": true,
+   "normalized_rows_reproduced": false,
+   "comparison_excludes_ancillary_contact_info_email": true
+  },
+  {
+   "id": "tau3-voice-banking",
+   "complete_primary_match": true,
+   "rows": 5,
+   "table_byte_identical_to_base": true,
+   "snapshot_byte_identical_to_base": true,
+   "normalized_rows_reproduced": false,
+   "comparison_excludes_ancillary_contact_info_email": true
+  },
+  {
+   "id": "tau3-voice-retail",
+   "complete_primary_match": true,
+   "rows": 18,
+   "table_byte_identical_to_base": true,
+   "snapshot_byte_identical_to_base": true,
+   "normalized_rows_reproduced": false,
+   "comparison_excludes_ancillary_contact_info_email": true
+  },
+  {
+   "id": "tau3-voice-telecom",
+   "complete_primary_match": true,
+   "rows": 18,
+   "table_byte_identical_to_base": true,
+   "snapshot_byte_identical_to_base": true,
+   "normalized_rows_reproduced": false,
+   "comparison_excludes_ancillary_contact_info_email": true
+  },
+  {
+   "id": "terminal-bench-2-0",
+   "complete_primary_match": true,
+   "rows": 142,
+   "table_byte_identical_to_base": true,
+   "snapshot_byte_identical_to_base": true,
+   "normalized_rows_reproduced": false,
+   "comparison_excludes_ancillary_contact_info_email": false
+  },
+  {
+   "id": "terminal-bench-2-1",
+   "complete_primary_match": true,
+   "rows": 22,
+   "table_byte_identical_to_base": true,
+   "snapshot_byte_identical_to_base": true,
+   "normalized_rows_reproduced": false,
+   "comparison_excludes_ancillary_contact_info_email": false
+  },
+  {
+   "id": "terminal-bench-3-0",
+   "complete_primary_match": true,
+   "rows": 12,
+   "table_byte_identical_to_base": true,
+   "snapshot_byte_identical_to_base": true,
+   "normalized_rows_reproduced": false,
+   "comparison_excludes_ancillary_contact_info_email": false
+  },
+  {
+   "id": "terminal-bench-4-0",
+   "complete_primary_match": true,
+   "rows": 35,
+   "table_byte_identical_to_base": true,
+   "snapshot_byte_identical_to_base": true,
+   "normalized_rows_reproduced": false,
+   "comparison_excludes_ancillary_contact_info_email": false
+  },
+  {
+   "id": "terminal-bench-science-0-1",
+   "complete_primary_match": true,
+   "rows": 17,
+   "table_byte_identical_to_base": true,
+   "snapshot_byte_identical_to_base": true,
+   "normalized_rows_reproduced": false,
+   "comparison_excludes_ancillary_contact_info_email": false
+  },
+  {
+   "id": "theagentcompany",
+   "complete_primary_match": true,
+   "rows": 17,
+   "table_byte_identical_to_base": true,
+   "snapshot_byte_identical_to_base": true,
+   "normalized_rows_reproduced": false,
+   "comparison_excludes_ancillary_contact_info_email": false
+  },
+  {
+   "id": "toolathlon",
+   "complete_primary_match": true,
+   "rows": 51,
+   "table_byte_identical_to_base": true,
+   "snapshot_byte_identical_to_base": true,
+   "normalized_rows_reproduced": false,
+   "comparison_excludes_ancillary_contact_info_email": false
+  },
+  {
+   "id": "toolathlon-verified",
+   "complete_primary_match": true,
+   "rows": 25,
+   "table_byte_identical_to_base": true,
+   "snapshot_byte_identical_to_base": true,
+   "normalized_rows_reproduced": false,
+   "comparison_excludes_ancillary_contact_info_email": false
+  }
+ ]
+}

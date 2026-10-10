@@ -5,6 +5,6 @@
     "https://arena.xlang.ai/leaderboard",
     "https://arena.xlang.ai/"
   ],
-  "reason_ja": "leaderboard URL は HTTP 404。ルートは HTTP 200 だが内容は www.peaktransit.com への meta refresh のみで、公開ベンチマーク表は含まれない。無関係な転送先には進まず、旧リポジトリの固定CSVを現行値として代用しない。",
-  "retrieved": "2026-10-07"
+  "reason_ja": "leaderboard URL とサイトのルートを再取得したが、いずれも HTTP 522。現在の公開リーダーボードを取得できないため既存の欠測扱いを維持。以前のルートにあった無関係な meta refresh 転送先には進まず、旧リポジトリの固定 CSV を現行値として代用しない。",
+  "retrieved": "2026-10-10"
 }
