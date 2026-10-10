@@ -1,0 +1,10 @@
+{
+  "id": "refresh-incomplete-2026-10-10",
+  "name": "2026-10-10 source refresh: AssistantBench unavailable",
+  "tried": [
+    "https://assistantbench-leaderboard.hf.space/config",
+    "https://huggingface.co/api/spaces/AssistantBench/leaderboard"
+  ],
+  "reason_ja": "9分野164表を点検し、163表を当日取得した一次資料で比較。AssistantBench の公開Spaceの config は2回とも HTTP 503、Space APIでも RUNTIME_ERROR が確認され、現在の行データを取得できなかった。この1表は既存の実測・構成・取得日を保持。前回未完了だったTau14表、BrowserGym7表、SWE-Marathon2表、Vending-Bench1表は今回すべて再取得・比較済み。詳細は sources/audits/2026-10-10/。",
+  "retrieved": "2026-10-10"
+}

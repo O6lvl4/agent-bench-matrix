@@ -1,8 +1,8 @@
 {
  "source": {
-  "runs": "https://andonlabs.com/_app/immutable/chunks/DVaUlUWR.js (vb2; time_series removed)",
-  "release_dates": "https://andonlabs.com/_app/immutable/chunks/D6mQEJpA.js",
-  "costs": "https://andonlabs.com/_app/immutable/nodes/27.CdaLjywI.js"
+  "runs": "https://andonlabs.com/_app/immutable/chunks/Dfav8PA6.js (vb2; time_series removed)",
+  "release_dates": "https://andonlabs.com/_app/immutable/chunks/B_kw8hTs.js",
+  "costs": "https://andonlabs.com/_app/immutable/nodes/27.DD89StnP.js"
  },
  "runs_vb2": {
   "Claude Fable 5 - High": {
@@ -80,6 +80,17 @@
    "final_value_ci95": 538.8890147491016,
    "final_value_geomean": 364.15229067740256,
    "final_value_geomean_n": 4,
+   "time_series_len": 365
+  },
+  "Claude Haiku 5.5": {
+   "num_epochs": 6,
+   "num_final_values": 6,
+   "final_value": 3602.4633333333345,
+   "final_value_std": 1691.7272368992174,
+   "final_value_sem": 690.6447523952602,
+   "final_value_ci95": 1353.6637146947098,
+   "final_value_geomean": 3204.676138323894,
+   "final_value_geomean_n": 6,
    "time_series_len": 365
   },
   "Claude Opus 4.5": {
@@ -189,6 +200,17 @@
    "final_value_sem": 783.7400790841168,
    "final_value_ci95": 1536.130555004869,
    "final_value_geomean": 6117.1395254154995,
+   "final_value_geomean_n": 6,
+   "time_series_len": 365
+  },
+  "Claude Sonnet 5.5": {
+   "num_epochs": 6,
+   "num_final_values": 6,
+   "final_value": 11165.27833333333,
+   "final_value_std": 3883.2718435124557,
+   "final_value_sem": 1585.339091520414,
+   "final_value_ci95": 3107.2646193800115,
+   "final_value_geomean": 10594.146220506917,
    "final_value_geomean_n": 6,
    "time_series_len": 365
   },
@@ -814,7 +836,9 @@
   "Claude Opus 5.5": "2026-09-22",
   "GPT-6 Luna": "2026-09-22",
   "GPT-6 Sol": "2026-09-22",
-  "Gemini 4 Argon": "2026-09-30"
+  "Claude Sonnet 5.5": "2026-09-28",
+  "Gemini 4 Argon": "2026-09-30",
+  "Claude Haiku 5.5": "2026-10-07"
  },
  "costs": {
   "Claude Fable 5 - High": {
@@ -893,6 +917,17 @@
    "avg_output_tokens": 362745,
    "price_per_mtok_in": 1,
    "price_per_mtok_out": 5
+  },
+  "Claude Haiku 5.5": {
+   "provider": "Anthropic",
+   "n": 6,
+   "mean_cost": 11.13,
+   "min_cost": 10.79,
+   "max_cost": 12.03,
+   "avg_input_tokens": 101870470,
+   "avg_output_tokens": 1895675,
+   "price_per_mtok_in": 0.1,
+   "price_per_mtok_out": 0.5
   },
   "Claude Opus 4.5": {
    "provider": "Anthropic",
@@ -1003,6 +1038,17 @@
    "avg_output_tokens": 326636,
    "price_per_mtok_in": 3,
    "price_per_mtok_out": 15
+  },
+  "Claude Sonnet 5.5": {
+   "provider": "Anthropic",
+   "n": 6,
+   "mean_cost": 172.18,
+   "min_cost": 110.92,
+   "max_cost": 243.84,
+   "avg_input_tokens": 77841700,
+   "avg_output_tokens": 1649278,
+   "price_per_mtok_in": 2,
+   "price_per_mtok_out": 10
   },
   "DeepSeek-V3.2": {
    "provider": "DeepSeek",

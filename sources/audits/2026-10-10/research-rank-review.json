@@ -1,0 +1,27 @@
+{
+  "retrieved": "2026-10-10",
+  "tables": [
+    {
+      "id": "swe-marathon-v1-1",
+      "display_filter": "rt=e=>{let t=e.agent===`Codex`&&/^GPT-5\\.6-(?:sol|terra|luna)$/.test(e.model),n=e.agent===`Claude Code`&&/^(?:Claude Opus 5|Claude Opus 5\\.5|Claude Sonnet 5)$/.test(e.model),r=e.agent===`Claude Code`&&/^(?:GLM 5\\.3|GLM 5\\.3 Flash)$/.test(e.model),i=e.agent===`Codex`&&e.model===`GPT-6 Astra`,a=e.agent===`Claude Code`&&e.model===`Claude Fable 5.1`,o=e.agent===`Muse Code`&&e.model===`Muse Spark 1.3`;return t||n||r||i||a?$e(e)===`max`:o?$e(e)===`xhigh`:!0}",
+      "pass_formula": "vt=e=>e.length?100*e.filter(e=>e.reward>=1).length/e.length:0",
+      "ranking": ".sort((e,t)=>t.pass1-e.pass1||t.partialAvg-e.partialAvg).map((e,t)=>({...e,rank:t+1,highlight:t===0}))",
+      "agent_model_reasoning_groups_verified": 25,
+      "task_population": 20,
+      "fallback_model_row_unmapped": true,
+      "source": "https://www.swe-marathon.org/assets/index-8aFpQU6L.js"
+    },
+    {
+      "id": "vending-bench-2",
+      "ranking": ".sort((c,h)=>h.finalMoneyBalance-c.finalMoneyBalance)",
+      "rows_verified": 69,
+      "metric": "arithmetic mean final money balance; alternate geometric means retained separately",
+      "sources": [
+        "https://andonlabs.com/evals/vending-bench-2",
+        "https://andonlabs.com/_app/immutable/nodes/27.DD89StnP.js",
+        "https://andonlabs.com/_app/immutable/chunks/Dfav8PA6.js",
+        "https://andonlabs.com/_app/immutable/chunks/B_kw8hTs.js"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1092 @@
+{
+  "retrieved": "2026-10-10",
+  "timezone": "Asia/Tokyo",
+  "base_commit": "5ba249becaeb5d5ef04a6cbef3513408330246d8",
+  "completion": "public-source-refresh-with-one-provider-outage",
+  "tables": 164,
+  "rows": 4403,
+  "models": 505,
+  "gaps": 23,
+  "coverage": {
+    "unchanged": 156,
+    "changed": 7,
+    "incomplete": 1
+  },
+  "categories": {
+    "coding": {
+      "unchanged": 49,
+      "changed": 1
+    },
+    "computer-use": {
+      "unchanged": 19,
+      "changed": 1
+    },
+    "general": {
+      "changed": 1,
+      "unchanged": 4
+    },
+    "long-horizon": {
+      "unchanged": 5,
+      "changed": 2
+    },
+    "research": {
+      "unchanged": 9
+    },
+    "security": {
+      "unchanged": 13
+    },
+    "terminal": {
+      "unchanged": 5
+    },
+    "tool-use": {
+      "changed": 2,
+      "unchanged": 30
+    },
+    "web": {
+      "unchanged": 22,
+      "incomplete": 1
+    }
+  },
+  "changed_tables": [
+    {
+      "id": "androidworld",
+      "category": "computer-use",
+      "rows_before": 47,
+      "rows_after": 48,
+      "rows_changed": true
+    },
+    {
+      "id": "apex-agents-management-consultant",
+      "category": "tool-use",
+      "rows_before": 56,
+      "rows_after": 56,
+      "rows_changed": true
+    },
+    {
+      "id": "apex-agents",
+      "category": "tool-use",
+      "rows_before": 56,
+      "rows_after": 56,
+      "rows_changed": true
+    },
+    {
+      "id": "gaia",
+      "category": "general",
+      "rows_before": 100,
+      "rows_after": 100,
+      "rows_changed": true
+    },
+    {
+      "id": "swe-bench-live-go",
+      "category": "coding",
+      "rows_before": 22,
+      "rows_after": 23,
+      "rows_changed": true
+    },
+    {
+      "id": "swe-marathon-v1-1",
+      "category": "long-horizon",
+      "rows_before": 24,
+      "rows_after": 25,
+      "rows_changed": true
+    },
+    {
+      "id": "vending-bench-2",
+      "category": "long-horizon",
+      "rows_before": 67,
+      "rows_after": 69,
+      "rows_changed": true
+    }
+  ],
+  "incomplete_tables": [
+    "assistantbench"
+  ],
+  "previous_incomplete_tables_resolved": 24,
+  "claims_status": "Latest Sakana v2 checked: all55 cells and17 figures unchanged; original claim data/date retained",
+  "tables_audit": [
+    {
+      "id": "aider-code-editing",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "aider-polyglot",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "aider-refactoring",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "algotune",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "androidworld",
+      "category": "computer-use",
+      "status": "changed",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "androidworld-mobileminiwob",
+      "category": "computer-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "apex-agents",
+      "category": "tool-use",
+      "status": "changed",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "apex-agents-corporate-lawyer",
+      "category": "tool-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "apex-agents-investment-banking",
+      "category": "tool-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "apex-agents-management-consultant",
+      "category": "tool-use",
+      "status": "changed",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "appworld-test-challenge",
+      "category": "tool-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "appworld-test-normal",
+      "category": "tool-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "assistantbench",
+      "category": "web",
+      "status": "incomplete",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "bearcubs",
+      "category": "web",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "bfcl-v4",
+      "category": "tool-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "browsecomp-kaggle",
+      "category": "web",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "browsecomp-plus",
+      "category": "research",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/research-security-horizon.json"
+    },
+    {
+      "id": "browsergym-assistantbench",
+      "category": "web",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "browsergym-miniwob",
+      "category": "web",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "browsergym-visualwebarena",
+      "category": "web",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "browsergym-webarena",
+      "category": "web",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "browsergym-weblinx",
+      "category": "web",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "browsergym-workarena-l1",
+      "category": "web",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "browsergym-workarena-l2",
+      "category": "web",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "browsergym-workarena-l3",
+      "category": "web",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "cad-bench-v2",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "codeclash",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "commit0-all",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "commit0-lite",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "cua-bench-eda-kicad",
+      "category": "computer-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "cve-bench-one-day",
+      "category": "security",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/research-security-horizon.json"
+    },
+    {
+      "id": "cve-bench-zero-day",
+      "category": "security",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/research-security-horizon.json"
+    },
+    {
+      "id": "cybench",
+      "category": "security",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/research-security-horizon.json"
+    },
+    {
+      "id": "cybergym-agent-focused",
+      "category": "security",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/research-security-horizon.json"
+    },
+    {
+      "id": "cybergym-e2e",
+      "category": "security",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/research-security-horizon.json"
+    },
+    {
+      "id": "cybergym-model-focused",
+      "category": "security",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/research-security-horizon.json"
+    },
+    {
+      "id": "deepswe-v1",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "deepswe-v1-1",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "ecommerce-bench",
+      "category": "long-horizon",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/research-security-horizon.json"
+    },
+    {
+      "id": "exploitgym",
+      "category": "security",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/research-security-horizon.json"
+    },
+    {
+      "id": "gaia",
+      "category": "general",
+      "status": "changed",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "gaia2",
+      "category": "general",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "gaia2-cli",
+      "category": "general",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "gso",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "gso-opt10",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "hal-assistantbench",
+      "category": "web",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "hal-core-bench-hard",
+      "category": "research",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/research-security-horizon.json"
+    },
+    {
+      "id": "hal-gaia",
+      "category": "general",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "hal-online-mind2web",
+      "category": "web",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "hal-scicode",
+      "category": "research",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/research-security-horizon.json"
+    },
+    {
+      "id": "hal-scienceagentbench",
+      "category": "research",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/research-security-horizon.json"
+    },
+    {
+      "id": "hal-swe-bench-verified-mini",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "hal-tau-bench-airline",
+      "category": "tool-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "hal-usaco",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "liveswebench",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "macagentbench",
+      "category": "computer-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "mcp-atlas",
+      "category": "tool-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "mcp-bench",
+      "category": "tool-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "mcp-universe-agent",
+      "category": "tool-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "mcp-universe-fc",
+      "category": "tool-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "mcp-universe-react",
+      "category": "tool-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "mcpmark-legacy",
+      "category": "tool-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "mcpmark-verified",
+      "category": "tool-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "metr-time-horizon",
+      "category": "long-horizon",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/research-security-horizon.json"
+    },
+    {
+      "id": "metr-time-horizon-1.0",
+      "category": "long-horizon",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/research-security-horizon.json"
+    },
+    {
+      "id": "mind2web-2",
+      "category": "research",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/research-security-horizon.json"
+    },
+    {
+      "id": "mle-bench",
+      "category": "research",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/research-security-horizon.json"
+    },
+    {
+      "id": "mle-bench-additional",
+      "category": "research",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/research-security-horizon.json"
+    },
+    {
+      "id": "mobileworld",
+      "category": "computer-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "multi-swe-bench",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "multi-swe-bench-c",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "multi-swe-bench-cpp",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "multi-swe-bench-flash",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "multi-swe-bench-go",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "multi-swe-bench-java",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "multi-swe-bench-javascript",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "multi-swe-bench-mini",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "multi-swe-bench-python",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "multi-swe-bench-rust",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "multi-swe-bench-typescript",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "online-mind2web-auto",
+      "category": "web",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "online-mind2web-human",
+      "category": "web",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "osuniverse",
+      "category": "computer-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "osworld-2-1-full-500steps",
+      "category": "computer-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "osworld-2-1-offline-500steps",
+      "category": "computer-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "osworld-2-1-public-agents-full-500steps",
+      "category": "computer-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "osworld-2-full-150steps",
+      "category": "computer-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "osworld-2-full-300steps",
+      "category": "computer-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "osworld-2-full-500steps",
+      "category": "computer-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "osworld-2-offline-500steps",
+      "category": "computer-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "osworld-mcp",
+      "category": "computer-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "osworld-self-reported-a11y-tree",
+      "category": "computer-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "osworld-self-reported-screenshot",
+      "category": "computer-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "osworld-self-reported-screenshot-a11y-tree",
+      "category": "computer-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "osworld-self-reported-set-of-mark",
+      "category": "computer-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "osworld-verified",
+      "category": "computer-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "paperbench",
+      "category": "research",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/research-security-horizon.json"
+    },
+    {
+      "id": "paperbench-code-dev",
+      "category": "research",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/research-security-horizon.json"
+    },
+    {
+      "id": "real-v1-frameworks",
+      "category": "web",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "real-v1-models",
+      "category": "web",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "real-v1-open-arena",
+      "category": "web",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "real-v2-frameworks",
+      "category": "web",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "real-v2-models",
+      "category": "web",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "sec-bench-poc-generation",
+      "category": "security",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/research-security-horizon.json"
+    },
+    {
+      "id": "sec-bench-pro-firefox",
+      "category": "security",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/research-security-horizon.json"
+    },
+    {
+      "id": "sec-bench-pro-linux",
+      "category": "security",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/research-security-horizon.json"
+    },
+    {
+      "id": "sec-bench-pro-overall",
+      "category": "security",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/research-security-horizon.json"
+    },
+    {
+      "id": "sec-bench-pro-v8",
+      "category": "security",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/research-security-horizon.json"
+    },
+    {
+      "id": "sec-bench-vulnerability-patching",
+      "category": "security",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/research-security-horizon.json"
+    },
+    {
+      "id": "skillsbench",
+      "category": "general",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "slopcodebench",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "swe-bench-bash-only",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "swe-bench-full",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "swe-bench-lite",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "swe-bench-live-c-cpp",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "swe-bench-live-csharp",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "swe-bench-live-full",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "swe-bench-live-go",
+      "category": "coding",
+      "status": "changed",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "swe-bench-live-java",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "swe-bench-live-lite",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "swe-bench-live-rust",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "swe-bench-live-ts-js",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "swe-bench-live-verified",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "swe-bench-live-windows",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "swe-bench-multilingual",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "swe-bench-multimodal",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "swe-bench-pro-private",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "swe-bench-pro-public",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "swe-bench-verified",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "swe-lancer-diamond",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "swe-marathon-v1-0",
+      "category": "long-horizon",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/research-security-horizon.json"
+    },
+    {
+      "id": "swe-marathon-v1-1",
+      "category": "long-horizon",
+      "status": "changed",
+      "audit": "sources/audits/2026-10-10/research-security-horizon.json"
+    },
+    {
+      "id": "swe-polybench",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "swe-polybench-500",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "swe-polybench-verified",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "swe-rebench",
+      "category": "coding",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/coding.json"
+    },
+    {
+      "id": "tau2-bench",
+      "category": "tool-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "tau2-bench-airline",
+      "category": "tool-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "tau2-bench-legacy",
+      "category": "tool-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "tau2-bench-legacy-airline",
+      "category": "tool-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "tau2-bench-legacy-retail",
+      "category": "tool-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "tau2-bench-legacy-telecom",
+      "category": "tool-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "tau2-bench-retail",
+      "category": "tool-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "tau2-bench-telecom",
+      "category": "tool-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "tau3-banking",
+      "category": "tool-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "tau3-voice",
+      "category": "tool-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "tau3-voice-airline",
+      "category": "tool-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "tau3-voice-banking",
+      "category": "tool-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "tau3-voice-retail",
+      "category": "tool-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "tau3-voice-telecom",
+      "category": "tool-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "terminal-bench-2-0",
+      "category": "terminal",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "terminal-bench-2-1",
+      "category": "terminal",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "terminal-bench-3-0",
+      "category": "terminal",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "terminal-bench-4-0",
+      "category": "terminal",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "terminal-bench-science-0-1",
+      "category": "terminal",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "theagentcompany",
+      "category": "tool-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "toolathlon",
+      "category": "tool-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "toolathlon-verified",
+      "category": "tool-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/tool-general.json"
+    },
+    {
+      "id": "vending-bench",
+      "category": "long-horizon",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/research-security-horizon.json"
+    },
+    {
+      "id": "vending-bench-2",
+      "category": "long-horizon",
+      "status": "changed",
+      "audit": "sources/audits/2026-10-10/research-security-horizon.json"
+    },
+    {
+      "id": "venusbench-mobile",
+      "category": "computer-use",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "visualwebarena",
+      "category": "web",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "webarena",
+      "category": "web",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    },
+    {
+      "id": "webchorearena",
+      "category": "web",
+      "status": "unchanged",
+      "audit": "sources/audits/2026-10-10/webcomputer.json"
+    }
+  ]
+}

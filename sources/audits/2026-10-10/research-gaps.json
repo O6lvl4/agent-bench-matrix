@@ -1,0 +1,207 @@
+{
+  "retrieved": "2026-10-10",
+  "gaps": [
+    {
+      "id": "bountybench",
+      "reason": "Project page still returns HTTP 404; the current official README contains no leaderboard link or model-ranking result table.",
+      "status": "rechecked_unavailable",
+      "checks": {
+        "project_page_http": "404",
+        "readme_leaderboard_mentions": 0
+      },
+      "sources": [
+        {
+          "url": "https://bountybench.github.io/",
+          "status": "404",
+          "error": "",
+          "raw_response_bytes": 9115,
+          "raw_response_sha256": "70d613e3acfba24fd2876fcbacaf639e1e111ef4d54baf70761c47673f37d6a3",
+          "bytes": 9115,
+          "sha256": "70d613e3acfba24fd2876fcbacaf639e1e111ef4d54baf70761c47673f37d6a3",
+          "archive_member": "42be836351f0ec.source",
+          "redactions": {}
+        },
+        {
+          "url": "https://raw.githubusercontent.com/bountybench/bountybench/main/README.md",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 7937,
+          "raw_response_sha256": "363a7c22affcccae6ca6958e3528eda5d9f66b269a0285bb71ae4fa334a1eb0b",
+          "bytes": 7937,
+          "sha256": "363a7c22affcccae6ca6958e3528eda5d9f66b269a0285bb71ae4fa334a1eb0b",
+          "archive_member": "5633e0ec5507ca.source",
+          "redactions": {}
+        }
+      ],
+      "preserved_gap_sha256": "69c1d52192694697b77ca72a6712d4ed2ed1ab05bcf0d7b22d606ff1badf568d",
+      "preserved_retrieved": "2026-10-05"
+    },
+    {
+      "id": "browsecomp-zh",
+      "reason": "Official README still contains a fixed Model Performance Overview and evaluation instructions, with no continuously updated leaderboard link. Historical paper results were not promoted to live measured rows.",
+      "status": "rechecked_unavailable",
+      "checks": {
+        "fixed_overview_present": true,
+        "readme_leaderboard_mentions": 0
+      },
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/PALIN2018/BrowseComp-ZH/main/README.md",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 8238,
+          "raw_response_sha256": "bd8d592e740bd1d1bd4af1a7f8f68ce0ea7eb3479d60e84b2e76810650d69a33",
+          "bytes": 8238,
+          "sha256": "bd8d592e740bd1d1bd4af1a7f8f68ce0ea7eb3479d60e84b2e76810650d69a33",
+          "archive_member": "60b0b2bf1a41f4.source",
+          "redactions": {}
+        }
+      ],
+      "preserved_gap_sha256": "048e6e3b7600257c1f011ce16f400fbebea23e2f85af9f427391c922b1adafd6",
+      "preserved_retrieved": "2026-10-05"
+    },
+    {
+      "id": "core-bench",
+      "reason": "The official README still directs evaluations and leaderboard submissions to HAL; this is already represented by hal-core-bench-hard, not a separate standalone board.",
+      "status": "rechecked_same_scope",
+      "checks": {
+        "official_hal_redirect": true
+      },
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/siegelz/core-bench/main/README.md",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 10603,
+          "raw_response_sha256": "8c0f6086d0aad6871b516e441ad28f0428991779446cc2370f91bfe4ecef73ba",
+          "bytes": 10603,
+          "sha256": "8c0f6086d0aad6871b516e441ad28f0428991779446cc2370f91bfe4ecef73ba",
+          "archive_member": "7cce878989b7fd.source",
+          "redactions": {}
+        }
+      ],
+      "preserved_gap_sha256": "759570019870fbaa3ed45f98806be95a14f13c653f4b1dd3f35a11e41add9c94",
+      "preserved_retrieved": "2026-10-05"
+    },
+    {
+      "id": "re-bench",
+      "reason": "Official README still describes seven task families with starting and official-solution baselines; no public model-ranked leaderboard is identified. These baselines are not METR Time Horizon results.",
+      "status": "rechecked_unavailable",
+      "checks": {
+        "task_baselines": 7,
+        "readme_leaderboard_mentions": 0
+      },
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/METR/RE-Bench/main/README.md",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 6662,
+          "raw_response_sha256": "7f279f6fcbfa8d6e7309764cd7620f682ffbeaedc5f9af09b8746b9c10bbb2dd",
+          "bytes": 6676,
+          "sha256": "d196b6d104439a425625918049f6d6cc0b4477051826bd5e73686ae197044f58",
+          "archive_member": "0aad26dd88b143.source",
+          "redactions": {
+            "public_benchmark_archive_password": 1
+          }
+        }
+      ],
+      "preserved_gap_sha256": "c1e937b7e9b706bab70cc4a967767d583e4e4c02bc8ce1eb1af2281fb78e5be6",
+      "preserved_retrieved": "2026-10-05"
+    },
+    {
+      "id": "browsecomp",
+      "reason": "OpenAI article and simple-evals README rechecked. The README still states that new model and result updates stopped in July 2025; no live official browsing-agent leaderboard link is present in the article. The separate Kaggle-managed benchmark is a different harness and is not merged into this gap.",
+      "status": "rechecked_same_scope",
+      "checks": {
+        "simple_evals_results_frozen_july_2025": true,
+        "article_leaderboard_links": [],
+        "separate_kaggle_board": {
+          "id": "browsecomp-kaggle",
+          "rows_checked": 42,
+          "status": "refreshed_unchanged",
+          "source": "https://www.kaggle.com/api/i/benchmarks.BenchmarkService/GetBenchmarkLeaderboard",
+          "response_sha256": "44f7f215e448f67bdcd6b31a19c6a7fbf676988f5223381a237e8aec600dfc49",
+          "request": {
+            "versionIdentifier": {
+              "versionIdSelector": {
+                "id": 35
+              }
+            }
+          },
+          "evidence_owner": "web/computer audit in this daily batch",
+          "not_comparable_to_standalone_agent_results": true
+        }
+      },
+      "sources": [
+        {
+          "url": "https://openai.com/index/browsecomp/",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 504783,
+          "raw_response_sha256": "28068d7d5867a76f9a7f59cba0fbbcbe1154dd6e469558c3de62b88bc5fa6dbb",
+          "bytes": 504783,
+          "sha256": "28068d7d5867a76f9a7f59cba0fbbcbe1154dd6e469558c3de62b88bc5fa6dbb",
+          "archive_member": "785eca3e6476b4.source",
+          "redactions": {}
+        },
+        {
+          "url": "https://raw.githubusercontent.com/openai/simple-evals/main/README.md",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 13160,
+          "raw_response_sha256": "d9647c4a0e34cd9b2b528ff6986141734aac6f5f2f18a068eeadb2af0b29786f",
+          "bytes": 13160,
+          "sha256": "d9647c4a0e34cd9b2b528ff6986141734aac6f5f2f18a068eeadb2af0b29786f",
+          "archive_member": "ac4e1a9e09bf0a.source",
+          "redactions": {}
+        }
+      ],
+      "preserved_gap_sha256": "55c070f86a1c6fd95fabd553a6ea3ff7dc60b802902614fe091f740290f34789",
+      "preserved_retrieved": "2026-10-07"
+    },
+    {
+      "id": "vending-bench-arena",
+      "reason": "Latest published Arena round remains #13. Results compare different two- or three-model opponent groups by round; no single all-model ranking under shared opposition is present. Results remain separate from Vending-Bench 2.",
+      "status": "rechecked_same_scope",
+      "checks": {
+        "latest_round": 13,
+        "rounds": [
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      },
+      "sources": [
+        {
+          "url": "https://andonlabs.com/evals/vending-bench-arena",
+          "status": "200",
+          "error": "",
+          "raw_response_bytes": 321978,
+          "raw_response_sha256": "436a5dd6cdd72738d2d877b0e4463d6b5ded7a30d28bcdd682eaee5de05a3267",
+          "bytes": 321978,
+          "sha256": "436a5dd6cdd72738d2d877b0e4463d6b5ded7a30d28bcdd682eaee5de05a3267",
+          "archive_member": "f7581aedc8a47c.source",
+          "redactions": {}
+        }
+      ],
+      "preserved_gap_sha256": "78cbb7d3295a0dc95424498a2f0852843841130a4a9dab7fa61fe82715b443b5",
+      "preserved_retrieved": "2026-10-05"
+    }
+  ],
+  "summary": {
+    "gaps_rechecked": 6,
+    "gap_data_changed": 0,
+    "reason": "Existing scope and availability conclusions remain applicable; byte-exact historical gap records and dates retained, with this dated recheck recorded separately."
+  }
+}

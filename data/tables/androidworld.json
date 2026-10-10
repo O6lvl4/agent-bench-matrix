@@ -15,12 +15,12 @@
   "fetched": [
     "https://docs.google.com/spreadsheets/d/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo/export?format=csv&gid=0"
   ],
-  "retrieved": "2026-10-07",
+  "retrieved": "2026-10-10",
   "newest_row_date": "2026-09",
   "snapshot": "sources/androidworld/androidworld_gid0.csv",
   "paper": "https://arxiv.org/abs/2405.14573",
   "repo": "https://github.com/google-research/android_world",
-  "notes_ja": "日付は月単位(YYYY-MM)。OSCAR は pass@1 が空で pass@k(k=4)だけなので score は null。シート下部の人間の成績(80.0)は行に含めない。90%超が並び飽和気味。",
+  "notes_ja": "日付は月単位(YYYY-MM)。OSCAR は pass@1 が空で pass@k(k=4)だけなので score は null。シート下部の人間の成績(80.0)は行に含めない。90%超が並び飽和気味。 Agent-Visco の添付ファイル用アクセス識別子は公開データから除去し、任意の row_url は null とした。公開ボードURLと取得応答のハッシュは監査記録に保持。",
   "rows": [
     {
       "rank": 1,
@@ -97,14 +97,14 @@
       "system": "AGI-0",
       "agent": "AGI-0",
       "model_raw": [
-        "AGI-0"
+        "AGI-AW"
       ],
       "model_ids": [],
       "model_config": "type=AI agent; screen=Screenshot",
       "score": 100.0,
       "score_extra": {
         "trials": 1,
-        "note": "[09/2026]: 97.4 --> 100. Qwen3.5-27B trained with using our novel training technique on AndroidWorld tasks. Code and model will be open-sourced upon publication.\n[10/14/2025] Changed from model --> agent, based on description in blog post. https://www.theagi.company/blog/android-world"
+        "note": "[09/2026]: 97.4 --> 100. Trained open source models using our novel training technique on AndroidWorld tasks. Code and model will be open-sourced upon publication."
       },
       "date": "2025-10",
       "verified": false,
@@ -113,7 +113,29 @@
       "row_url": null
     },
     {
-      "rank": 5,
+      "rank": 1,
+      "system": "agent-qa by Vostride AI",
+      "agent": "agent-qa",
+      "model_raw": [
+        "gpt-6-sol"
+      ],
+      "model_ids": [
+        "gpt-6-sol"
+      ],
+      "model_config": "type=AI agent; screen=Screenshot + A11y tree; memory=off; self_improvement=off",
+      "score": 100.0,
+      "score_extra": {
+        "trials": 1,
+        "note": "Note: Open-source self-improving QA agent with memory. Code is available at https://github.com/vostride/agent-qa. agent-qa's memory and self-improvement loop were switched off during the benchmark run."
+      },
+      "date": "2026-09",
+      "verified": false,
+      "open_source": true,
+      "org": "Vostride AI",
+      "row_url": "https://vostride.com/benchmark/android-world"
+    },
+    {
+      "rank": 6,
       "system": "Artemis",
       "agent": "Artemis",
       "model_raw": [
@@ -137,7 +159,7 @@
       "row_url": null
     },
     {
-      "rank": 6,
+      "rank": 7,
       "system": "MobileUseAgent",
       "agent": "MobileUseAgent",
       "model_raw": [
@@ -158,7 +180,7 @@
       "row_url": null
     },
     {
-      "rank": 6,
+      "rank": 7,
       "system": "Finalrun",
       "agent": "Finalrun",
       "model_raw": [
@@ -182,7 +204,7 @@
       "row_url": "https://drive.google.com/file/d/1NITEkiYb3itSq46I8BYsmzefEddzYbqm/view?usp=sharing"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "system": "askui AndroidVisionAgent",
       "agent": "askui AndroidVisionAgent",
       "model_raw": [
@@ -206,7 +228,7 @@
       "row_url": null
     },
     {
-      "rank": 8,
+      "rank": 9,
       "system": "AutoDevice",
       "agent": "AutoDevice",
       "model_raw": [
@@ -230,7 +252,7 @@
       "row_url": "https://autodevice.io/benchmark/"
     },
     {
-      "rank": 10,
+      "rank": 11,
       "system": "Midscene.js",
       "agent": "Midscene.js",
       "model_raw": [
@@ -253,7 +275,7 @@
       "row_url": null
     },
     {
-      "rank": 11,
+      "rank": 12,
       "system": "mobile-use",
       "agent": "mobile-use",
       "model_raw": [
@@ -279,7 +301,7 @@
       "row_url": "https://minitap.ai/benchmark"
     },
     {
-      "rank": 12,
+      "rank": 13,
       "system": "Agent-Visco",
       "agent": "Agent-Visco",
       "model_raw": [],
@@ -294,10 +316,10 @@
       "verified": false,
       "open_source": false,
       "org": null,
-      "row_url": "https://work.aliyun.com/alimail/openLinks/downloadMimeMetaDiskBigAttach?id=netdiskid%3Av001%3Afile%3ADzzzzzzNqZy%3BG8EhE7UV7U9nk2t2O6opysa%2BgRf5Zm6eTqXqtVApm1nDD8W%2BxnLAgdDsJsOSlxfXTx44NU7qRM%2BkJMuIA0smltxGWspXGX2Ox228yqp07rNX%2FIm2QehcGJBgHwUs0f81cz2sX76WNxvxnhpZnqmxiYxHNHRd2hybrPLi2DRQ8bM5ORhI%2BtGG%2B7n%2BcxdY1Ji0"
+      "row_url": null
     },
     {
-      "rank": 13,
+      "rank": 14,
       "system": "Surfer 2",
       "agent": "Surfer 2",
       "model_raw": [
@@ -322,7 +344,7 @@
       "row_url": "https://hcompai.github.io/android-world-traces/"
     },
     {
-      "rank": 14,
+      "rank": 15,
       "system": "gbox.ai",
       "agent": "gbox.ai",
       "model_raw": [
@@ -346,7 +368,7 @@
       "row_url": "https://github.com/babelcloud/android_world_benchmark/tree/main/GBOX/trajectory"
     },
     {
-      "rank": 15,
+      "rank": 16,
       "system": "AutoGLM-Mobile",
       "agent": null,
       "model_raw": [
@@ -368,7 +390,7 @@
       "row_url": null
     },
     {
-      "rank": 16,
+      "rank": 17,
       "system": "LX-GUIAgent",
       "agent": "LX-GUIAgent",
       "model_raw": [
@@ -388,7 +410,7 @@
       "row_url": null
     },
     {
-      "rank": 17,
+      "rank": 18,
       "system": "AgentProg",
       "agent": "AgentProg",
       "model_raw": [
@@ -412,7 +434,7 @@
       "row_url": null
     },
     {
-      "rank": 18,
+      "rank": 19,
       "system": "K²-Agent",
       "agent": "K²-Agent",
       "model_raw": [
@@ -436,7 +458,7 @@
       "row_url": "https://github.com/k2-agent/k2-agent/blob/main/androidworld-trajectories.zip"
     },
     {
-      "rank": 18,
+      "rank": 19,
       "system": "MAI-UI",
       "agent": null,
       "model_raw": [
@@ -455,7 +477,7 @@
       "row_url": null
     },
     {
-      "rank": 20,
+      "rank": 21,
       "system": "MobileUse-v2",
       "agent": "MobileUse-v2",
       "model_raw": [
@@ -477,7 +499,7 @@
       "row_url": null
     },
     {
-      "rank": 21,
+      "rank": 22,
       "system": "Mobile-Agent-v3",
       "agent": "Mobile-Agent-v3",
       "model_raw": [
@@ -499,7 +521,7 @@
       "row_url": null
     },
     {
-      "rank": 21,
+      "rank": 22,
       "system": "MAI-UI",
       "agent": null,
       "model_raw": [
@@ -518,7 +540,7 @@
       "row_url": null
     },
     {
-      "rank": 23,
+      "rank": 24,
       "system": "MAI-UI",
       "agent": null,
       "model_raw": [
@@ -537,7 +559,7 @@
       "row_url": null
     },
     {
-      "rank": 24,
+      "rank": 25,
       "system": "Gemini 2.5 Computer Use",
       "agent": null,
       "model_raw": [
@@ -558,7 +580,7 @@
       "row_url": null
     },
     {
-      "rank": 25,
+      "rank": 26,
       "system": "JT-GUIAgent-V2",
       "agent": "JT-GUIAgent-V2",
       "model_raw": [
@@ -577,7 +599,7 @@
       "row_url": null
     },
     {
-      "rank": 26,
+      "rank": 27,
       "system": "GUI-Owl-7B",
       "agent": null,
       "model_raw": [
@@ -599,7 +621,7 @@
       "row_url": null
     },
     {
-      "rank": 27,
+      "rank": 28,
       "system": "UI-Venus",
       "agent": null,
       "model_raw": [
@@ -621,7 +643,7 @@
       "row_url": "https://github.com/inclusionAI/UI-Venus/blob/main/vis_androidworld/UI-Venus-androidworld.zip"
     },
     {
-      "rank": 28,
+      "rank": 29,
       "system": "MobileUse",
       "agent": "MobileUse",
       "model_raw": [
@@ -642,7 +664,7 @@
       "row_url": null
     },
     {
-      "rank": 29,
+      "rank": 30,
       "system": "Seed1.5-VL",
       "agent": null,
       "model_raw": [
@@ -663,7 +685,7 @@
       "row_url": null
     },
     {
-      "rank": 30,
+      "rank": 31,
       "system": "JT-GUIAgent-V1",
       "agent": "JT-GUIAgent-V1",
       "model_raw": [
@@ -682,7 +704,7 @@
       "row_url": null
     },
     {
-      "rank": 31,
+      "rank": 32,
       "system": "V-Droid Paper",
       "agent": "V-Droid Paper",
       "model_raw": [
@@ -702,7 +724,7 @@
       "row_url": null
     },
     {
-      "rank": 32,
+      "rank": 33,
       "system": "Agent S2",
       "agent": "Agent S2",
       "model_raw": [
@@ -721,7 +743,7 @@
       "row_url": null
     },
     {
-      "rank": 33,
+      "rank": 34,
       "system": "UI-Venus",
       "agent": null,
       "model_raw": [
@@ -743,7 +765,7 @@
       "row_url": "https://github.com/inclusionAI/UI-Venus/blob/main/vis_androidworld/UI-Venus-androidworld.zip"
     },
     {
-      "rank": 33,
+      "rank": 34,
       "system": "MAI-UI",
       "agent": null,
       "model_raw": [
@@ -762,7 +784,7 @@
       "row_url": null
     },
     {
-      "rank": 35,
+      "rank": 36,
       "system": "GUI-Explorer",
       "agent": "GUI-Explorer",
       "model_raw": [
@@ -783,7 +805,7 @@
       "row_url": null
     },
     {
-      "rank": 36,
+      "rank": 37,
       "system": "AndroidGen",
       "agent": "AndroidGen",
       "model_raw": [
@@ -804,7 +826,7 @@
       "row_url": null
     },
     {
-      "rank": 37,
+      "rank": 38,
       "system": "UI-TARS",
       "agent": null,
       "model_raw": [
@@ -825,7 +847,7 @@
       "row_url": null
     },
     {
-      "rank": 38,
+      "rank": 39,
       "system": "Aria-UI",
       "agent": null,
       "model_raw": [
@@ -848,7 +870,7 @@
       "row_url": null
     },
     {
-      "rank": 39,
+      "rank": 40,
       "system": "ScaleTrack",
       "agent": null,
       "model_raw": [
@@ -869,7 +891,7 @@
       "row_url": null
     },
     {
-      "rank": 39,
+      "rank": 40,
       "system": "UGround",
       "agent": null,
       "model_raw": [
@@ -893,7 +915,7 @@
       "row_url": null
     },
     {
-      "rank": 41,
+      "rank": 42,
       "system": "Mirage-1",
       "agent": "Mirage-1",
       "model_raw": [
@@ -915,7 +937,7 @@
       "row_url": null
     },
     {
-      "rank": 42,
+      "rank": 43,
       "system": "Ponder & Press",
       "agent": "Ponder & Press",
       "model_raw": [
@@ -937,7 +959,7 @@
       "row_url": null
     },
     {
-      "rank": 43,
+      "rank": 44,
       "system": "AndroidWorld",
       "agent": "AndroidWorld",
       "model_raw": [
@@ -958,7 +980,7 @@
       "row_url": null
     },
     {
-      "rank": 44,
+      "rank": 45,
       "system": "GUI-Critic-R1",
       "agent": null,
       "model_raw": [
@@ -979,7 +1001,7 @@
       "row_url": null
     },
     {
-      "rank": 44,
+      "rank": 45,
       "system": "EcoAgent",
       "agent": "EcoAgent",
       "model_raw": [
@@ -1004,7 +1026,7 @@
       "row_url": null
     },
     {
-      "rank": 46,
+      "rank": 47,
       "system": "InfiGUIAgent",
       "agent": null,
       "model_raw": [

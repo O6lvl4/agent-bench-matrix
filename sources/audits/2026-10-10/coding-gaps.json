@@ -1,0 +1,57 @@
+{
+  "checked": "2026-10-10",
+  "timezone": "Asia/Tokyo",
+  "gaps": [
+    {
+      "id": "swe-bench-pro-public-deprecated",
+      "status": "still-unavailable-status-changed",
+      "finding": "Official unified page still links to the deprecated capped-run board; deprecated/commercial paths return HTTP 404 instead of the previously recorded HTTP 403. Public/private aggregate tables remain accessible and unchanged.",
+      "page": {
+        "url": "https://labs.scale.com/leaderboard/swe_bench_pro_public",
+        "request_description": "https://labs.scale.com/leaderboard/swe_bench_pro_public",
+        "tables": [
+          "swe-bench-pro-public"
+        ],
+        "file": "bc0d7082af2a1129",
+        "retrieved": "2026-10-10",
+        "status": 200,
+        "final_url": "https://labs.scale.com/leaderboard/swe_bench_pro",
+        "bytes": 149571,
+        "sha256": "3cbf22ce99afb3f589712de86968e4669cd941b871cac56c4e1c62bdc3a007fc"
+      },
+      "sources": [
+        {
+          "url": "https://scale.com/leaderboard/swe_bench_pro_public_deprecated",
+          "retrieved": "2026-10-10",
+          "file": "af20e14e0cb88511",
+          "status": 404,
+          "final_url": "https://labs.scale.com/leaderboard/swe_bench_pro_public_deprecated",
+          "bytes": 17127,
+          "sha256": "cbb3b71036385e1a784018fb13977d9420a6a2e08f3ff33fb583ca366d22f8f1"
+        },
+        {
+          "url": "https://labs.scale.com/leaderboard/swe_bench_pro_public_deprecated",
+          "retrieved": "2026-10-10",
+          "file": "ba98104591d29248",
+          "status": 404,
+          "final_url": "https://labs.scale.com/leaderboard/swe_bench_pro_public_deprecated",
+          "bytes": 17127,
+          "sha256": "ec76c432bdfc48bbae40d647d5c4f7e87b5ff19f468b2bcd4d340e6d48ee5d0a"
+        },
+        {
+          "url": "https://labs.scale.com/leaderboard/swe_bench_pro_commercial",
+          "retrieved": "2026-10-10",
+          "file": "8f1cd9b735151454",
+          "status": 404,
+          "final_url": "https://labs.scale.com/leaderboard/swe_bench_pro_commercial",
+          "bytes": 17099,
+          "sha256": "f9f41e6dab5b38cdb957173fa536ca0aec55cb65896902496f1d551d79e3ebde"
+        }
+      ],
+      "before_sha256": "11c656a6a4a4f94008f8b0a32fa9ea6dabd841dcddab40639da9214bfa5172a1",
+      "after_sha256": "9f6c00434391a1daee58fb75813d412cc2730d4e7b8e3d1a7bec515fa882d04d"
+    }
+  ],
+  "http_requests": 3,
+  "http_404": 3
+}

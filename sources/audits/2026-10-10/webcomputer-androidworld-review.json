@@ -1,0 +1,596 @@
+{
+  "retrieved": "2026-10-10",
+  "source": "https://docs.google.com/spreadsheets/d/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo/edit?gid=0#gid=0",
+  "all_current_columns_compared": [
+    "Rank",
+    "Release Date",
+    "Result Source",
+    "Model Type",
+    "Open?",
+    "Model Size",
+    "Model",
+    "Screen\nRepresentation",
+    "Success Rate\n(pass@1)",
+    "Number\nof trials",
+    "Success Rate\n(pass@k)",
+    "Trajectory\nsubmissions",
+    "Note"
+  ],
+  "old_main_rows": 47,
+  "current_main_rows": 48,
+  "normalized_rows": 48,
+  "removed_rows": [],
+  "source_cell_deltas": [
+    {
+      "system": "AGI-0",
+      "model_size": "-",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Model",
+          "old": "AGI-0",
+          "new": "AGI-AW"
+        },
+        {
+          "column": "Note",
+          "old": "[09/2026]: 97.4 --> 100. Qwen3.5-27B trained with using our novel training technique on AndroidWorld tasks. Code and model will be open-sourced upon publication.\n[10/14/2025] Changed from model --> agent, based on description in blog post. https://www.theagi.company/blog/android-world",
+          "new": "[09/2026]: 97.4 --> 100. Trained open source models using our novel training technique on AndroidWorld tasks. Code and model will be open-sourced upon publication."
+        }
+      ]
+    },
+    {
+      "system": "agent-qa by Vostride AI",
+      "status": "added",
+      "source_cells": {
+        "Rank": "1",
+        "Release Date": "09/2026",
+        "Result Source": "agent-qa by Vostride AI",
+        "Model Type": "AI agent",
+        "Open?": "✔",
+        "Model Size": "",
+        "Model": "gpt-6-sol",
+        "Screen\nRepresentation": "Screenshot + A11y tree",
+        "Success Rate\n(pass@1)": "100",
+        "Number\nof trials": "1",
+        "Success Rate\n(pass@k)": "",
+        "Trajectory\nsubmissions": "https://vostride.com/benchmark/android-world",
+        "Note": "Note: Open-source self-improving QA agent with memory. Code is available at https://github.com/vostride/agent-qa. agent-qa's memory and self-improvement loop were switched off during the benchmark run."
+      }
+    },
+    {
+      "system": "Artemis",
+      "model_size": "-",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "5",
+          "new": "6"
+        }
+      ]
+    },
+    {
+      "system": "MobileUseAgent",
+      "model_size": "-",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "6",
+          "new": "7"
+        }
+      ]
+    },
+    {
+      "system": "Finalrun",
+      "model_size": "-",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "6",
+          "new": "7"
+        }
+      ]
+    },
+    {
+      "system": "askui AndroidVisionAgent",
+      "model_size": "-",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "8",
+          "new": "9"
+        }
+      ]
+    },
+    {
+      "system": "AutoDevice",
+      "model_size": "-",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "8",
+          "new": "9"
+        }
+      ]
+    },
+    {
+      "system": "Midscene.js",
+      "model_size": "-",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "10",
+          "new": "11"
+        }
+      ]
+    },
+    {
+      "system": "mobile-use",
+      "model_size": "-",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "11",
+          "new": "12"
+        }
+      ]
+    },
+    {
+      "system": "Agent-Visco",
+      "model_size": "-",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "12",
+          "new": "13"
+        }
+      ]
+    },
+    {
+      "system": "Surfer 2",
+      "model_size": "-",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "13",
+          "new": "14"
+        }
+      ]
+    },
+    {
+      "system": "gbox.ai",
+      "model_size": "-",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "14",
+          "new": "15"
+        }
+      ]
+    },
+    {
+      "system": "AutoGLM-Mobile",
+      "model_size": "9B",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "15",
+          "new": "16"
+        }
+      ]
+    },
+    {
+      "system": "LX-GUIAgent",
+      "model_size": "-",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "16",
+          "new": "17"
+        }
+      ]
+    },
+    {
+      "system": "AgentProg",
+      "model_size": "-",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "17",
+          "new": "18"
+        }
+      ]
+    },
+    {
+      "system": "K²-Agent",
+      "model_size": "72B + 7B",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "18",
+          "new": "19"
+        }
+      ]
+    },
+    {
+      "system": "MAI-UI",
+      "model_size": "235B",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "18",
+          "new": "19"
+        }
+      ]
+    },
+    {
+      "system": "MobileUse-v2",
+      "model_size": "32B",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "20",
+          "new": "21"
+        }
+      ]
+    },
+    {
+      "system": "Mobile-Agent-v3",
+      "model_size": "32B",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "21",
+          "new": "22"
+        }
+      ]
+    },
+    {
+      "system": "MAI-UI",
+      "model_size": "32B",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "21",
+          "new": "22"
+        }
+      ]
+    },
+    {
+      "system": "MAI-UI",
+      "model_size": "8B",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "23",
+          "new": "24"
+        }
+      ]
+    },
+    {
+      "system": "Gemini 2.5 Computer Use ",
+      "model_size": "-",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "24",
+          "new": "25"
+        }
+      ]
+    },
+    {
+      "system": "JT-GUIAgent-V2",
+      "model_size": "-",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "25",
+          "new": "26"
+        }
+      ]
+    },
+    {
+      "system": "GUI-Owl-7B",
+      "model_size": "7B",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "26",
+          "new": "27"
+        }
+      ]
+    },
+    {
+      "system": "UI-Venus",
+      "model_size": "72B",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "27",
+          "new": "28"
+        }
+      ]
+    },
+    {
+      "system": "MobileUse",
+      "model_size": "72B",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "28",
+          "new": "29"
+        }
+      ]
+    },
+    {
+      "system": "Seed1.5-VL",
+      "model_size": "20.B",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "29",
+          "new": "30"
+        }
+      ]
+    },
+    {
+      "system": "JT-GUIAgent-V1",
+      "model_size": "-",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "30",
+          "new": "31"
+        }
+      ]
+    },
+    {
+      "system": "V-Droid Paper",
+      "model_size": "8B",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "31",
+          "new": "32"
+        }
+      ]
+    },
+    {
+      "system": "Agent S2",
+      "model_size": "-",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "32",
+          "new": "33"
+        }
+      ]
+    },
+    {
+      "system": "UI-Venus",
+      "model_size": "7B",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "33",
+          "new": "34"
+        }
+      ]
+    },
+    {
+      "system": "MAI-UI",
+      "model_size": "2B",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "33",
+          "new": "34"
+        }
+      ]
+    },
+    {
+      "system": "GUI-Explorer",
+      "model_size": "-",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "35",
+          "new": "36"
+        }
+      ]
+    },
+    {
+      "system": "AndroidGen",
+      "model_size": "-",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "36",
+          "new": "37"
+        }
+      ]
+    },
+    {
+      "system": "UI-TARS",
+      "model_size": "72B",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "37",
+          "new": "38"
+        }
+      ]
+    },
+    {
+      "system": "Aria-UI",
+      "model_size": "-",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "38",
+          "new": "39"
+        }
+      ]
+    },
+    {
+      "system": "ScaleTrack",
+      "model_size": "8B",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "39",
+          "new": "40"
+        }
+      ]
+    },
+    {
+      "system": "UGround",
+      "model_size": "-",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "39",
+          "new": "40"
+        }
+      ]
+    },
+    {
+      "system": "Mirage-1",
+      "model_size": "-",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "41",
+          "new": "42"
+        }
+      ]
+    },
+    {
+      "system": "Ponder & Press",
+      "model_size": "-",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "42",
+          "new": "43"
+        }
+      ]
+    },
+    {
+      "system": "AndroidWorld",
+      "model_size": "-",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "43",
+          "new": "44"
+        }
+      ]
+    },
+    {
+      "system": "GUI-Critic-R1",
+      "model_size": "7B",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "44",
+          "new": "45"
+        }
+      ]
+    },
+    {
+      "system": "EcoAgent",
+      "model_size": "-",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "44",
+          "new": "45"
+        }
+      ]
+    },
+    {
+      "system": "InfiGUIAgent",
+      "model_size": "2B",
+      "status": "changed",
+      "cells": [
+        {
+          "column": "Rank",
+          "old": "46",
+          "new": "47"
+        }
+      ]
+    }
+  ],
+  "score_delta_existing_rows": false,
+  "privacy_redaction": {
+    "system": "Agent-Visco",
+    "row_url": null,
+    "detail": "Entire unchanged attachment-access URL omitted from the trajectory cell; nonessential submission contact email omitted from the sheet footer. All source cells inspected; no other contact email, mailto/tel scheme, or similar opaque access URL found. Canonical public board and original/stored response hashes retained."
+  },
+  "identity_decisions": [
+    {
+      "system": "AGI-0",
+      "old_model_raw": [
+        "AGI-0"
+      ],
+      "new_model_raw": [
+        "AGI-AW"
+      ],
+      "model_ids": [],
+      "reason": "Exact source model-column change retained. Updated disclosure says trained open source models (plural) and row is typed AI agent; no single foundation-model identity is established. No alias to AGI-0 or Qwen3.5 is inferred. Official provider homepage and prior linked article both returned HTTP 403; no bypass attempted."
+    },
+    {
+      "system": "agent-qa by Vostride AI",
+      "model_raw": [
+        "gpt-6-sol"
+      ],
+      "model_ids": [
+        "gpt-6-sol"
+      ],
+      "reason": "Exact ID already exists in model registry; source states one trial, memory and self-improvement switched off, community self-reported score."
+    }
+  ],
+  "source_disclaimer": "⚠️ Community-submitted results. No independent verification is performed. Scores are self-reported and may be inaccurate. Use at your own risk.",
+  "checks": "All main rows verified for source rank, score, date, openness, verification disclaimer, trial count, note. Every old/new CSV column compared before retaining prior normalization; raw model changes handled explicitly."
+}
