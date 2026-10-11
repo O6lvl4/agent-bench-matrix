@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-11",
+  "almide_commit": "e706ba8c4e32eb39983bd125cec1890d17094300",
+  "rust": "1.94.0 (4a4ef493e 2026-03-02)",
+  "fit_tests": {
+    "command": "almide test src/fit.almd",
+    "exit_code": 0,
+    "tests": 4
+  },
+  "strict_build": {
+    "command": "almide run src/build.almd -- --strict",
+    "exit_code": 0,
+    "tables": 164,
+    "rows": 4403,
+    "models": 505,
+    "unregistered_model_ids": 0,
+    "gaps": 23
+  },
+  "bundle_rebuild_equality": {
+    "exit_code": 0,
+    "sha256": "36d61bdee43977f209f916566c84b91590915868ff9b6904fe8b99b205161dc3"
+  },
+  "independent_review": {
+    "result": "passed",
+    "changed_tables": 3,
+    "unchanged_tables": 160,
+    "unavailable_preserved": 1,
+    "preservation_byte_checks": 476,
+    "claims_numeric_cells": 55,
+    "claims_figures": 17,
+    "fit_registry_claims_unchanged": true
+  },
+  "publication_scan": {
+    "result": "passed",
+    "staged_paths_before_validation_metadata": 47,
+    "expanded_blobs": 636,
+    "archives": 5,
+    "tar_members": 559,
+    "nested_xlsx_members": 30,
+    "megabytes": 73.46,
+    "current_original_hashes_verified": 424,
+    "current_and_historical_stored_hashes_verified": 554,
+    "nested_current_hash_references_verified": 862,
+    "remaining_credential_contact_signed_access_operator_path_leaks": 0,
+    "exceptions": [
+      "benchmark fixtures",
+      "placeholder paths",
+      "cookie/AWS template code",
+      "Git SSH addresses",
+      "public README images",
+      "existing October10 public frontend identifiers"
+    ],
+    "historical_privacy_correction": "One incidental credential literal omitted from current tracked October10 archive; original fetched hash preserved, stored hashes updated. All other archived bodies unchanged. Git history not rewritten; credential not used or tested."
+  },
+  "whitespace_check": {
+    "exit_code": 0
+  },
+  "remote_gates": "Exact-head CI required before merge; main CI and independent Pages plus public bundle bytes verified afterward"
+}

@@ -1,0 +1,235 @@
+{
+  "retrieved": "2026-10-11",
+  "timezone": "Asia/Tokyo",
+  "base_commit": "034229f577e011a9f619ddf9bffd3bbc777130eb",
+  "checks": {
+    "tables_and_primary_snapshots_byte_identical_to_baseline": 29,
+    "checked_rows": 637,
+    "all_retained_response_sizes_and_sha256_verified": true,
+    "new_model_proposals": 0,
+    "claims_and_six_gap_records_byte_preserved": true,
+    "ancillary_contact_emails_obfuscated_addresses_and_mailto_targets_absent_from_archive": true,
+    "credential_example_literals_omitted_from_archive": true,
+    "raw_and_sanitized_source_parses_identical_all_29_tables": true,
+    "offline_archive_replay_matches_live_cache_parse": true,
+    "fresh_raw_source_parse_matches_all_baseline_row_and_metadata_values": true,
+    "table_audit_source_hashes_match_global_source_index": true,
+    "current_vending_import_paths_verified_in_fresh_source": true
+  },
+  "table_outcome": {
+    "tables": 29,
+    "refreshed_changed": 0,
+    "refreshed_unchanged": 29,
+    "preserved": 0,
+    "rows_checked": 637
+  },
+  "scope": "research, security, long-horizon; vendor claims remain separate",
+  "blocked_required_sources": [],
+  "existing_gaps_rechecked": 6,
+  "claims_checked": 17,
+  "claim_source_numeric_cells_checked": 55,
+  "public_response_count": 120,
+  "failed_optional_or_gap_sources": [
+    {
+      "url": "https://andonlabs.com/_app/immutable/nodes/26.zOFxseIK.js",
+      "status": "404",
+      "classification": "superseded_asset_current_replacement_fetched"
+    },
+    {
+      "url": "https://bountybench.github.io/",
+      "status": "404",
+      "classification": "standing_gap"
+    },
+    {
+      "url": "https://www.swe-marathon.org/assets/index-BqKcRchL.js",
+      "status": "404",
+      "classification": "superseded_asset_current_replacement_fetched"
+    }
+  ],
+  "redactions": [
+    {
+      "url": "https://andonlabs.com/_app/immutable/nodes/27.DD89StnP.js",
+      "archive_member": "f7c31360a2b1c8.source",
+      "counts": {
+        "simulated_trajectory_email_occurrences_removed": 1
+      },
+      "raw_response_sha256": "3b3afa23251171fb5a89dfeaefeebc143296b3ef77d19ac180cf037fc8d52f8f",
+      "retained_sha256": "ed2721c57cde6c615afbc4d73b7f4f1047183188c117e8ce3e789af41d162d11",
+      "disclosure": "Simulated benchmark trajectory/example email addresses were omitted. These are not established actual personal contacts. Benchmark scoring, model/system identities, configurations, costs and extracted rows are unchanged."
+    },
+    {
+      "url": "https://andonlabs.com/evals/vending-bench",
+      "archive_member": "f887d579d7ab64.source",
+      "counts": {
+        "obfuscated_ancillary_contact_email_occurrences_removed": 1
+      },
+      "raw_response_sha256": "9be65bc2ef9feaa207c57439479902b5cc65cf1311f05902b8d1ff11a0bc569a",
+      "retained_sha256": "b11de06af046de07071cd89273421e6d4941a993ea935f7372b76390135a3011",
+      "disclosure": "Ancillary contact email values, mailto targets, credential query values and public credential example literals were omitted where present. Benchmark scoring, model/system identities, configurations, costs and extracted rows are unchanged. Obfuscated ancillary contact addresses were also omitted."
+    },
+    {
+      "url": "https://andonlabs.com/evals/vending-bench-2",
+      "archive_member": "ebcec333cce225.source",
+      "counts": {
+        "obfuscated_ancillary_contact_email_occurrences_removed": 1
+      },
+      "raw_response_sha256": "1b20cd4b6bdb476c1ebc86433f4717eff3b976672861558c46e56d9d20743026",
+      "retained_sha256": "d81febe67cda40f3fe908548b194307178df9839f5025f97dd7a36887316030b",
+      "disclosure": "Ancillary contact email values, mailto targets, credential query values and public credential example literals were omitted where present. Benchmark scoring, model/system identities, configurations, costs and extracted rows are unchanged. Obfuscated ancillary contact addresses were also omitted."
+    },
+    {
+      "url": "https://andonlabs.com/evals/vending-bench-arena",
+      "archive_member": "f7581aedc8a47c.source",
+      "counts": {
+        "obfuscated_ancillary_contact_email_occurrences_removed": 1
+      },
+      "raw_response_sha256": "f54303d8f6ac7ae99b3e9d64e2a9b2e245a8507c11a80a0760b9a820af2a48e1",
+      "retained_sha256": "82f0dad6a6d8852917188e061ebc71f6a1f46c9a26234efc094613cf88b5d312",
+      "disclosure": "Ancillary contact email values, mailto targets, credential query values and public credential example literals were omitted where present. Benchmark scoring, model/system identities, configurations, costs and extracted rows are unchanged. Obfuscated ancillary contact addresses were also omitted."
+    },
+    {
+      "url": "https://ecbench.github.io/showcase_data.json",
+      "archive_member": "99affb3adf9dc7.source",
+      "counts": {
+        "simulated_trajectory_email_occurrences_removed": 44
+      },
+      "raw_response_sha256": "92f5a96c47517afb176efaf87778b720c11ebc4c329663646c55f18b1fbfc33f",
+      "retained_sha256": "f0b3f13898c0ab6e0a2eb2717ab6861537861cec10170755184944a98c5de2e9",
+      "disclosure": "Simulated benchmark trajectory/example email addresses were omitted. These are not established actual personal contacts. Benchmark scoring, model/system identities, configurations, costs and extracted rows are unchanged."
+    },
+    {
+      "url": "https://metr.org/time-horizons/",
+      "archive_member": "6f9c9f881a4696.source",
+      "counts": {
+        "ancillary_mailto_targets_removed": 2,
+        "ancillary_contact_email_occurrences_removed": 2
+      },
+      "raw_response_sha256": "189438ca644c0ad42d485d464aecc3762afc12135adbdfcd39f40a979b631925",
+      "retained_sha256": "18291e0d74809c65b8c5876909809c2adcd82741670f783b6958aef9571c2b53",
+      "disclosure": "Ancillary contact email values and mailto targets were omitted, including source author/submission/footer contacts and unrelated embedded examples where present. Benchmark scoring, model/system identities, configurations, costs and extracted rows are unchanged."
+    },
+    {
+      "url": "https://osu-nlp-group.github.io/Mind2Web-2/leaderboard_data.json",
+      "archive_member": "c385c7d00debf8.source",
+      "counts": {
+        "ancillary_contact_email_occurrences_removed": 1
+      },
+      "raw_response_sha256": "ed954c3b30c7e32c26eb58d7a6612b21537db82fa6c51462455937036cb08702",
+      "retained_sha256": "648ce609f0a1f5ed5a0529ef86b192d7c10ae10c7263ffb3ec1e56b3af425fe3",
+      "disclosure": "Ancillary contact email values and mailto targets were omitted, including source author/submission/footer contacts and unrelated embedded examples where present. Benchmark scoring, model/system identities, configurations, costs and extracted rows are unchanged."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/METR/RE-Bench/main/README.md",
+      "archive_member": "0aad26dd88b143.source",
+      "counts": {
+        "public_benchmark_archive_password": 1,
+        "obfuscated_ancillary_contact_email_occurrences_removed": 1
+      },
+      "raw_response_sha256": "7f279f6fcbfa8d6e7309764cd7620f682ffbeaedc5f9af09b8746b9c10bbb2dd",
+      "retained_sha256": "8e703672c4f59eb3307d48594833b4a793eb228fc2356fb7800baf5f537e9e3f",
+      "disclosure": "Ancillary contact email values, mailto targets, credential query values and public credential example literals were omitted where present. Benchmark scoring, model/system identities, configurations, costs and extracted rows are unchanged. Obfuscated ancillary contact addresses were also omitted."
+    },
+    {
+      "url": "https://www.cybergym.io/cybergym-e2e/",
+      "archive_member": "421761cd46be24.source",
+      "counts": {
+        "ancillary_mailto_targets_removed": 8
+      },
+      "raw_response_sha256": "483df0fa563c55315bf1d5f7b72e7e2810043e7146ced8ab68e04fc556cb1258",
+      "retained_sha256": "957cc2db2f5c788b1b0f0f08fd59a7f11adc3a0f24f8cf385fce32f7a7bde697",
+      "disclosure": "Ancillary contact email values and mailto targets were omitted, including source author/submission/footer contacts and unrelated embedded examples where present. Benchmark scoring, model/system identities, configurations, costs and extracted rows are unchanged."
+    },
+    {
+      "url": "https://www.cybergym.io/cybergym/",
+      "archive_member": "fed75d3d8fca8a.source",
+      "counts": {
+        "ancillary_mailto_targets_removed": 4
+      },
+      "raw_response_sha256": "12db2de6dc74a678fcc38abc1cc60e100f2278025163f8efcd80f1a455ed376e",
+      "retained_sha256": "b7a0bcb17bcce52241894239b4883a5c5f5eb73de0ccd2ea00d58663c86282e7",
+      "disclosure": "Ancillary contact email values and mailto targets were omitted, including source author/submission/footer contacts and unrelated embedded examples where present. Benchmark scoring, model/system identities, configurations, costs and extracted rows are unchanged."
+    },
+    {
+      "url": "https://www.cybergym.io/exploitgym/",
+      "archive_member": "07854342f1011c.source",
+      "counts": {
+        "ancillary_mailto_targets_removed": 9
+      },
+      "raw_response_sha256": "97db69cc276fe24ba54f6032c07f0170cc889bd88368d68c65ad97ab755b0889",
+      "retained_sha256": "c0130c65e2812bd82d2d85f9bdc541e6713bc671bb712d2890dce10385d21aa3",
+      "disclosure": "Ancillary contact email values and mailto targets were omitted, including source author/submission/footer contacts and unrelated embedded examples where present. Benchmark scoring, model/system identities, configurations, costs and extracted rows are unchanged."
+    },
+    {
+      "url": "https://www.swe-marathon.org/assets/index-8aFpQU6L.js",
+      "archive_member": "a261c2b52655a0.source",
+      "counts": {
+        "credential_query_removed": 4,
+        "public_example_aws_access_key_fixture": 2,
+        "public_example_aws_secret_key_fixture": 2,
+        "ancillary_mailto_targets_removed": 1,
+        "ancillary_contact_email_occurrences_removed": 21,
+        "credential_related_example_literals_removed": 4
+      },
+      "raw_response_sha256": "81a4f19e3187242fa964be89a9bbfe0c4c6173c56301bc9a5437361d3e6d56ec",
+      "retained_sha256": "01d3a08ddeb6d2f29d9e199145ca112d64c5b002a5af3fda7b7a8f7c58b09599",
+      "disclosure": "Ancillary contact email values and mailto targets were omitted, including source author/submission/footer contacts and unrelated embedded examples where present. Benchmark scoring, model/system identities, configurations, costs and extracted rows are unchanged. Credential-related example literals were also omitted; their values are unnecessary to reproduce benchmark scores."
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/BNJ3jDWC.js",
+      "archive_member": "b14b1ce8354912.source",
+      "counts": {
+        "obfuscated_ancillary_contact_email_occurrences_removed": 2
+      },
+      "raw_response_sha256": "11b3a6576f5fd7687fbca1308992d2b3c3330536c2a83501650043d91d17acca",
+      "retained_sha256": "29a0b6ba1b73b3a6355306800499a3c674a032451e0f710f7d4ba9d6ae381e97",
+      "disclosure": "Ancillary contact email values, mailto targets, credential query values and public credential example literals were omitted where present. Benchmark scoring, model/system identities, configurations, costs and extracted rows are unchanged. Obfuscated ancillary contact addresses were also omitted."
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/nodes/0.DlmnoFTK.js",
+      "archive_member": "51ac864c1ef343.source",
+      "counts": {
+        "obfuscated_ancillary_contact_email_occurrences_removed": 1
+      },
+      "raw_response_sha256": "599c14070c65ffdbda34dbb3002b468f2c8ef3da2d5a30545341b553f6f1eaf3",
+      "retained_sha256": "cc05c5454d13b6ac055dbb379f06b9a81c61f8fb4beec177c641bc46b332acb4",
+      "disclosure": "Ancillary contact email values, mailto targets, credential query values and public credential example literals were omitted where present. Benchmark scoring, model/system identities, configurations, costs and extracted rows are unchanged. Obfuscated ancillary contact addresses were also omitted."
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/nodes/26.FUD8iaCC.js",
+      "archive_member": "9ac76df835b0e3.source",
+      "counts": {
+        "ancillary_mailto_targets_removed": 1,
+        "ancillary_contact_email_occurrences_removed": 1
+      },
+      "raw_response_sha256": "bb4e62bab75fbb5c37d01a8d6b51f51ab3a8e3aff9bb248e18a7f8f06cfddff5",
+      "retained_sha256": "4d0d43c957442c4992c2d9fb3817278104ad0a1c2825a278a59d14cffececd5a",
+      "disclosure": "Ancillary contact email values and mailto targets were omitted, including source author/submission/footer contacts and unrelated embedded examples where present. Benchmark scoring, model/system identities, configurations, costs and extracted rows are unchanged."
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/nodes/28.CFd3ujOx.js",
+      "archive_member": "b18c67be3fe48e.source",
+      "counts": {
+        "simulated_trajectory_email_occurrences_removed": 90
+      },
+      "raw_response_sha256": "2cb7bf2a1f79d3363ec7ae3b3f3c75d8736b004897bfa38c2eca3768e7d3aea4",
+      "retained_sha256": "28d873011a308b85354dcf26beba98ecb03c6811b560460da0a1f5256959423a",
+      "disclosure": "Simulated benchmark trajectory/example email addresses were omitted. These are not established actual personal contacts. Benchmark scoring, model/system identities, configurations, costs and extracted rows are unchanged."
+    }
+  ],
+  "parser_provenance": {
+    "mechanical_parser": {
+      "path": "scripts/refresh_research_security_horizon.py",
+      "sha256": "082126ea2c566067ac0736ea170bd7f61948f527648fac88c1978cf4b7be690f"
+    },
+    "transactional_wrapper": {
+      "path": "sources/audits/2026-10-09/refresh_research_security_horizon.py",
+      "sha256": "658971fd17ae0ecdbb5256fcdf71245d0f669bb68554e55c1c12f19fba594b06"
+    },
+    "local_only_adaptations": [
+      "Date set to 2026-10-11 and baseline commit set to 034229f577e011a9f619ddf9bffd3bbc777130eb",
+      "Vending-Bench 2 runs and release-date module URLs followed from the freshly fetched current page and node module: Dfav8PA6.js and B_kw8hTs.js",
+      "All public source bodies parsed as data; fetched scripts were not executed"
+    ],
+    "new_executable_scripts_published": false
+  }
+}

@@ -829,7 +829,29 @@
    "original_bytes": 11448,
    "contact_email_redaction_count": 1,
    "body_redaction_note": "1 ancillary actual contact-email occurrence(s) replaced with [contact-email-redacted]; original fetched hash retained. All benchmark/model/agent/config/numeric content unchanged."
+  },
+  {
+   "url": "https://gorilla.cs.berkeley.edu/index_main.js",
+   "status": 200,
+   "final_url": "https://gorilla.cs.berkeley.edu/index_main.js",
+   "bytes": 57223,
+   "sha256": "aa014629f0cbc319a64badf1bf663ed874d693e30b08ae7ea558fed804dc01a8",
+   "original_sha256": "98ce7e9968527e3341086ae942ad8e568c2760f6008d36b2845e8dce3a72c2c1",
+   "original_bytes": 57203,
+   "embedded_feedback_password_redaction_count": 1,
+   "body_redaction_note": "One unnecessary embedded frontend feedback-service password literal omitted on 2026-10-11. Original fetched hash retained; leaderboard score/configuration data unchanged. Credential was not used or tested."
   }
  ],
- "note": "Only sanitized indexes/bodies are archived. Canonical public URLs retained. Original fetched SHA-256 and byte count retained when signatures or actual contact emails were removed. Ancillary undecoded binary Parquet bodies are withheld with canonical URLs/hashes and reasons. No cookies or request/response headers retained. Modified Git commit verification payloads are not cryptographically verifiable after privacy redaction."
+ "note": "Only sanitized indexes/bodies are archived. Canonical public URLs retained. Original fetched SHA-256 and byte count retained when signatures or actual contact emails were removed. Ancillary undecoded binary Parquet bodies are withheld with canonical URLs/hashes and reasons. No cookies or request/response headers retained. Modified Git commit verification payloads are not cryptographically verifiable after privacy redaction.",
+ "archive_sha256": "5200ea6e2043d4651d9e27c26203c1117c3c883133aa93ffadda470a87cb77f8",
+ "privacy_correction": {
+  "date": "2026-10-11",
+  "response": "https://gorilla.cs.berkeley.edu/index_main.js",
+  "member": "tool-general/8d444ed107ecb8",
+  "redacted_password_literals": 1,
+  "benchmark_fields_unchanged": true,
+  "other_response_bodies_byte_identical": true,
+  "original_fetched_hash_preserved": true,
+  "note": "One unnecessary embedded frontend feedback-service password literal omitted on 2026-10-11. Original fetched hash retained; leaderboard score/configuration data unchanged. Credential was not used or tested."
+ }
 }

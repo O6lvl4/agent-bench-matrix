@@ -1,0 +1,355 @@
+{
+  "retrieved": "2026-10-11",
+  "summary": "Nine standing gaps rechecked; HUD changed from HTTP 404 to an HTTP 200 sign-in redirect with no public result table. Its gap description/retrieval date are updated. The other eight gap files and dates remain byte-identical. No gap became mechanically extractable.",
+  "gaps": [
+    {
+      "id": "computer-agent-arena",
+      "retrieved": "2026-10-11",
+      "status": "gap-rechecked-unchanged",
+      "previous_gap_retrieved": "2026-10-10",
+      "reason_ja": "leaderboard URL とサイトのルートを再取得したが、いずれも HTTP 522。現在の公開リーダーボードを取得できないため既存の欠測扱いを維持。以前のルートにあった無関係な meta refresh 転送先には進まず、旧リポジトリの固定 CSV を現行値として代用しない。",
+      "sources": [
+        {
+          "url": "https://arena.xlang.ai/leaderboard",
+          "retrieved_at": "2026-10-11T00:57:51.529517+00:00",
+          "error": "HTTP Error 522: <none>",
+          "http_status": 522,
+          "attempts": [
+            {
+              "http_status": 522,
+              "error": "HTTP Error 522: <none>"
+            }
+          ]
+        },
+        {
+          "url": "https://arena.xlang.ai/",
+          "retrieved_at": "2026-10-11T00:57:51.529039+00:00",
+          "error": "HTTP Error 522: <none>",
+          "http_status": 522,
+          "attempts": [
+            {
+              "http_status": 522,
+              "error": "HTTP Error 522: <none>"
+            }
+          ]
+        }
+      ],
+      "comparison": "Both requested canonical public URLs again returned HTTP 522; prior failure condition preserved."
+    },
+    {
+      "id": "webvoyager",
+      "retrieved": "2026-10-11",
+      "status": "gap-rechecked-unchanged",
+      "previous_gap_retrieved": "2026-10-05",
+      "reason_ja": "公式 README を再取得。実装・タスク・評価方法はあるが、継続更新の公式リーダーボードへのリンクやモデル別の現行結果データは確認できない。",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/MinorJerry/WebVoyager/main/README.md",
+          "retrieved_at": "2026-10-11T00:58:06.040672+00:00",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "ETag": "\"dab1433805f3a01c841eda6818e2e8d947afe9dd155a447aa33d63f729b00ae3\"",
+            "Date": "Sun, 11 Oct 2026 00:58:10 GMT"
+          },
+          "redirected": false,
+          "http_status": 200,
+          "bytes": 10723,
+          "sha256": "b5523941b2773634fdcf359b5b89bf0aca589f33ad9db30692c8b1912ed5dda5",
+          "snapshot": "sources/audits/2026-10-11/webcomputer-responses.tar.gz",
+          "archive_member": "cd1ec4ccfdf2b715.response",
+          "compression": "tar.gz"
+        }
+      ],
+      "comparison": "Fresh complete source response hashes match the prior audit; prior public leaderboard availability assessment remains applicable."
+    },
+    {
+      "id": "browsecomp",
+      "retrieved": "2026-10-11",
+      "status": "gap-rechecked-unchanged",
+      "previous_gap_retrieved": "2026-10-07",
+      "reason_ja": "OpenAI の紹介ページと simple-evals の公式 README を取得。紹介ページは研究説明と固定の実験結果で、継続更新の公式リーダーボードへの案内は確認できない。README は2025年7月に新モデル・結果の更新を終了したと引き続き明記。Kaggle の別表 browsecomp-kaggle は全42行を照合済みで、ブラウジング用ツール付きエージェントの公式ボードと同一視しない。",
+      "sources": [
+        {
+          "url": "https://openai.com/index/browsecomp/",
+          "retrieved_at": "2026-10-11T00:58:02.265359+00:00",
+          "headers": {
+            "Date": "Sun, 11 Oct 2026 00:58:06 GMT",
+            "Content-Type": "text/html; charset=utf-8"
+          },
+          "redirected": false,
+          "http_status": 200,
+          "bytes": 504824,
+          "sha256": "9a8bc95b2a19169de1557c55ed2fee2704a455ed2f98739a36671cc0f7a041b8",
+          "snapshot": "sources/audits/2026-10-11/webcomputer-responses.tar.gz",
+          "archive_member": "785eca3e6476b4a3.response",
+          "compression": "tar.gz"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/openai/simple-evals/main/README.md",
+          "retrieved_at": "2026-10-11T00:58:06.684037+00:00",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "ETag": "\"3e47b01c90635a0f612b5468e317f9d49a0896f417f287ecdfd73f8e77f6f9cd\"",
+            "Date": "Sun, 11 Oct 2026 00:58:10 GMT"
+          },
+          "redirected": false,
+          "http_status": 200,
+          "bytes": 13160,
+          "sha256": "d9647c4a0e34cd9b2b528ff6986141734aac6f5f2f18a068eeadb2af0b29786f",
+          "snapshot": "sources/audits/2026-10-11/webcomputer-responses.tar.gz",
+          "archive_member": "ac4e1a9e09bf0ace.response",
+          "compression": "tar.gz"
+        },
+        {
+          "url": "https://www.kaggle.com/api/i/benchmarks.BenchmarkService/GetBenchmarkLeaderboard",
+          "retrieved_at": "2026-10-11T00:58:10.134036+00:00",
+          "request_json": {
+            "versionIdentifier": {
+              "versionIdSelector": {
+                "id": 35
+              }
+            }
+          },
+          "headers": {
+            "Content-Type": "application/json",
+            "Date": "Sun, 11 Oct 2026 00:58:14 GMT"
+          },
+          "redirected": false,
+          "http_status": 200,
+          "bytes": 59785,
+          "sha256": "44f7f215e448f67bdcd6b31a19c6a7fbf676988f5223381a237e8aec600dfc49",
+          "snapshot": "sources/audits/2026-10-11/webcomputer-responses.tar.gz",
+          "archive_member": "b0da3ecade59fddd.response",
+          "compression": "tar.gz"
+        }
+      ],
+      "comparison": "BrowseComp introduction visible article text and links unchanged after excluding scripts/style/navigation/footer/header; simple-evals README and Kaggle raw response hashes unchanged. Kaggle remains a separate evaluated table."
+    },
+    {
+      "id": "browsecomp-zh",
+      "retrieved": "2026-10-11",
+      "status": "gap-rechecked-unchanged",
+      "previous_gap_retrieved": "2026-10-05",
+      "reason_ja": "2026-10-05 に公式 README を再取得。論文時点の結果とデータ・評価手順は掲載されるが、継続更新のリーダーボードへの案内が無い。",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/PALIN2018/BrowseComp-ZH/main/README.md",
+          "retrieved_at": "2026-10-11T00:58:06.104237+00:00",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "ETag": "\"4e1943e20deddb3212cda3f02a96142f07d754061b86fc3aafcf8fcd6a18906c\"",
+            "Date": "Sun, 11 Oct 2026 00:58:10 GMT"
+          },
+          "redirected": false,
+          "http_status": 200,
+          "bytes": 8238,
+          "sha256": "bd8d592e740bd1d1bd4af1a7f8f68ce0ea7eb3479d60e84b2e76810650d69a33",
+          "snapshot": "sources/audits/2026-10-11/webcomputer-responses.tar.gz",
+          "archive_member": "60b0b2bf1a41f404.response",
+          "compression": "tar.gz"
+        }
+      ],
+      "comparison": "Fresh complete source response hashes match the prior audit; prior public leaderboard availability assessment remains applicable."
+    },
+    {
+      "id": "windows-agent-arena",
+      "retrieved": "2026-10-11",
+      "status": "gap-rechecked-unchanged",
+      "previous_gap_retrieved": "2026-10-05",
+      "reason_ja": "公式サイトを再取得。研究紹介・論文時点の結果はあるが、継続更新のモデル別リーダーボードや結果データは確認できない。",
+      "sources": [
+        {
+          "url": "https://microsoft.github.io/WindowsAgentArena/",
+          "retrieved_at": "2026-10-11T00:58:02.120846+00:00",
+          "headers": {
+            "Content-Type": "text/html; charset=utf-8",
+            "Last-Modified": "Tue, 11 Mar 2025 18:27:05 GMT",
+            "ETag": "\"67d08079-5d4d\"",
+            "Date": "Sun, 11 Oct 2026 00:58:05 GMT"
+          },
+          "redirected": false,
+          "http_status": 200,
+          "bytes": 23885,
+          "sha256": "10cd8fca042d2b9ebac114913e40598ca8bb0b50bf0df89f1306cc505f02ee6c",
+          "snapshot": "sources/audits/2026-10-11/webcomputer-responses.tar.gz",
+          "archive_member": "bdb5457eee4c7edb.response",
+          "compression": "tar.gz"
+        }
+      ],
+      "comparison": "Fresh complete source response hashes match the prior audit; prior public leaderboard availability assessment remains applicable."
+    },
+    {
+      "id": "screensuite",
+      "retrieved": "2026-10-11",
+      "status": "gap-rechecked-unchanged",
+      "previous_gap_retrieved": "2026-10-05",
+      "reason_ja": "公式 README を再取得。評価ツール群と対象データセットの一覧はあるが、公開の公式リーダーボードや保守中のモデル別結果データへの案内は確認できない。",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/huggingface/screensuite/main/README.md",
+          "retrieved_at": "2026-10-11T00:58:06.321963+00:00",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "ETag": "\"5ce4d3343410ea5a9012e2085dd177b121557bbd5343bbd271a842e69f2a82a0\"",
+            "Date": "Sun, 11 Oct 2026 00:58:10 GMT"
+          },
+          "redirected": false,
+          "http_status": 200,
+          "bytes": 9359,
+          "sha256": "edcaa6f8355be6a8774ebeeb9bdb67648e8eeddb813d6be0fa2433116d9def36",
+          "snapshot": "sources/audits/2026-10-11/webcomputer-responses.tar.gz",
+          "archive_member": "de78562d05babd91.response",
+          "compression": "tar.gz"
+        }
+      ],
+      "comparison": "Fresh complete source response hashes match the prior audit; prior public leaderboard availability assessment remains applicable."
+    },
+    {
+      "id": "hud-osworld-verified",
+      "retrieved": "2026-10-11",
+      "status": "gap-rechecked-changed",
+      "previous_gap_retrieved": "2026-10-05",
+      "reason_ja": "旧リーダーボード URL は HTTP 200 のサインイン画面へ転送され、公開の結果表は含まれない（前回は HTTP 404）。公式トップページも再取得したが、OSWorld-Verified の現行ボードや機械可読な結果データへのリンクは確認できないため、欠測扱いを維持。サインインや認証済みデータの取得は行わない。",
+      "sources": [
+        {
+          "url": "https://www.hud.ai/leaderboards",
+          "retrieved_at": "2026-10-11T00:58:10.054974+00:00",
+          "headers": {
+            "Content-Type": "text/html; charset=utf-8",
+            "Date": "Sun, 11 Oct 2026 00:58:19 GMT"
+          },
+          "redirected": true,
+          "http_status": 200,
+          "redirect_response_url_omitted": true,
+          "bytes": 95314,
+          "sha256": "f5b102949a0a42dcc676d5ebcdcedb32466ae19d34bf6475962c5ad493dfccc8",
+          "snapshot": "sources/audits/2026-10-11/webcomputer-responses.tar.gz",
+          "archive_member": "837333d7352e824b.response",
+          "compression": "tar.gz"
+        },
+        {
+          "url": "https://www.hud.ai/",
+          "retrieved_at": "2026-10-11T00:58:10.049149+00:00",
+          "headers": {
+            "Content-Type": "text/html; charset=utf-8",
+            "Date": "Fri, 09 Oct 2026 23:48:29 GMT"
+          },
+          "redirected": false,
+          "http_status": 200,
+          "original_response_sha256": "efef08f52609c24b41379c8c84e0f39a21a9c5fab83f7f469c5e92f76b451409",
+          "original_response_bytes": 149294,
+          "redacted_email_count": 2,
+          "redacted_url_count": 0,
+          "redaction": "Nonessential board submission, author/maintainer, or sales contact email values omitted; canonical public source retained",
+          "bytes": 149310,
+          "sha256": "0cbb315bb2fb5ccc003c5080e1b03e92e59d28b8156858d6f0d34974cf2ebf46",
+          "snapshot": "sources/audits/2026-10-11/webcomputer-responses.tar.gz",
+          "archive_member": "765322cc5df8447d.response",
+          "compression": "tar.gz"
+        }
+      ],
+      "evidence": {
+        "response_title": "Sign in | HUD",
+        "html_table_count": 0
+      },
+      "comparison": "Fresh old-board response title is Sign in | HUD, redirected=true, and HTML table count is zero. Public homepage hash matches prior audit. No sign-in attempted."
+    },
+    {
+      "id": "macosworld",
+      "retrieved": "2026-10-11",
+      "status": "gap-rechecked-unchanged",
+      "previous_gap_retrieved": "2026-10-05",
+      "reason_ja": "公式サイトを再取得。主なベンチマーク成績は images/results.png の画像で示され、機械可読な公開リーダーボードは確認できない。画像の値を転記しない。",
+      "sources": [
+        {
+          "url": "https://macos-world.github.io/",
+          "retrieved_at": "2026-10-11T00:58:02.107164+00:00",
+          "headers": {
+            "Content-Type": "text/html; charset=utf-8",
+            "Last-Modified": "Tue, 23 Sep 2025 08:06:37 GMT",
+            "ETag": "\"68d2550d-4a2c\"",
+            "Date": "Sun, 11 Oct 2026 00:58:06 GMT"
+          },
+          "redirected": false,
+          "http_status": 200,
+          "bytes": 18988,
+          "sha256": "634111c7fe4a8833a6d117f87def535dc8e2ca263b2f7fb0b839b73cb957e00c",
+          "snapshot": "sources/audits/2026-10-11/webcomputer-responses.tar.gz",
+          "archive_member": "f60ae507ae0ffb0a.response",
+          "compression": "tar.gz"
+        }
+      ],
+      "comparison": "Fresh complete source response hashes match the prior audit; prior public leaderboard availability assessment remains applicable."
+    },
+    {
+      "id": "st-webagentbench",
+      "retrieved": "2026-10-11",
+      "status": "gap-rechecked-unchanged",
+      "previous_gap_retrieved": "2026-10-05",
+      "reason_ja": "HF Space API は引き続き RUNTIME_ERROR。実行中ボードの config は HTTP 503。公式 app.py が結果を同期する ST-WebAgentBench/st-webagentbench-data の API は HTTP 401 で、認証無しの結果抽出はできない。",
+      "sources": [
+        {
+          "url": "https://huggingface.co/api/spaces/ST-WebAgentBench/st-webagentbench-leaderboard",
+          "retrieved_at": "2026-10-11T00:57:59.873653+00:00",
+          "headers": {
+            "Content-Type": "application/json; charset=utf-8",
+            "Date": "Sun, 11 Oct 2026 00:58:02 GMT",
+            "ETag": "W/\"cf3-1Um16WezcVLeSWSKEq2e9ZIgn0s\""
+          },
+          "redirected": false,
+          "http_status": 200,
+          "bytes": 3315,
+          "sha256": "0e134a3619178722d22f3efb361b16cee04fb537c250ce7d2871b3eb0ca45e09",
+          "snapshot": "sources/audits/2026-10-11/webcomputer-responses.tar.gz",
+          "archive_member": "8fc2e3ad3c125513.response",
+          "compression": "tar.gz"
+        },
+        {
+          "url": "https://st-webagentbench-st-webagentbench-leaderboard.hf.space/config",
+          "retrieved_at": "2026-10-11T00:58:06.907137+00:00",
+          "error": "HTTP Error 503: Service Unavailable",
+          "http_status": 503,
+          "attempts": [
+            {
+              "http_status": 503,
+              "error": "HTTP Error 503: Service Unavailable"
+            },
+            {
+              "http_status": 503,
+              "error": "HTTP Error 503: Service Unavailable"
+            }
+          ]
+        },
+        {
+          "url": "https://huggingface.co/spaces/ST-WebAgentBench/st-webagentbench-leaderboard/raw/main/app.py",
+          "retrieved_at": "2026-10-11T00:58:00.353149+00:00",
+          "headers": {
+            "Content-Type": "text/plain; charset=utf-8",
+            "Date": "Sun, 11 Oct 2026 00:58:02 GMT",
+            "ETag": "\"7110a0ddd6ce51be8267be3eeebe865ad8b09982\""
+          },
+          "redirected": false,
+          "http_status": 200,
+          "bytes": 143859,
+          "sha256": "20537065ccf1e15a61708fc73e40c77d7f05e2e4d0ad6ead05801cf390320e26",
+          "snapshot": "sources/audits/2026-10-11/webcomputer-responses.tar.gz",
+          "archive_member": "895d714e4b5648a6.response",
+          "compression": "tar.gz"
+        },
+        {
+          "url": "https://huggingface.co/api/datasets/ST-WebAgentBench/st-webagentbench-data",
+          "retrieved_at": "2026-10-11T00:57:59.870029+00:00",
+          "error": "HTTP Error 401: Unauthorized",
+          "http_status": 401,
+          "attempts": [
+            {
+              "http_status": 401,
+              "error": "HTTP Error 401: Unauthorized"
+            }
+          ]
+        }
+      ],
+      "comparison": "Fresh metadata again reports RUNTIME_ERROR; config twice returned HTTP 503 and backing public dataset API returned 401. app.py and metadata response hashes match prior audit; no authenticated access attempted."
+    }
+  ]
+}
