@@ -1,0 +1,56 @@
+{
+  "retrieved": "2026-10-13",
+  "models": [
+    {
+      "id": "basin1-0912-pre-dpo",
+      "name": "Basin (basin1-0912-pre-dpo)",
+      "vendor": "Submersion AI",
+      "open_weights": null,
+      "weights_url": null,
+      "aliases": [],
+      "source": "https://www.cybergym.io/assets/data/cybergym.json",
+      "evidence": {
+        "model": "Basin (basin1-0912-pre-dpo)",
+        "source": "Submersion AI",
+        "source_url": "https://submersion.ai/basin",
+        "agent": "Codex CLI"
+      },
+      "normalization_note": "Preserve the named pre-DPO checkpoint, including 0912; not a reasoning configuration."
+    },
+    {
+      "id": "muse-wonder",
+      "name": "Muse Wonder",
+      "vendor": "Meta",
+      "open_weights": null,
+      "weights_url": null,
+      "aliases": [],
+      "source": "https://www.swe-marathon.org/assets/index-CAG4k6zO.js",
+      "evidence": {
+        "model": "Muse Wonder",
+        "canonicalModel": "meta/muse-wonder",
+        "modelVariant": "meta/muse-wonder@max",
+        "agent": "Muse Code",
+        "reasoningEffort": "max"
+      },
+      "normalization_note": "Distinct source canonicalModel. Runtime max remains in model_config. Board label does not expose a version."
+    },
+    {
+      "id": "muse-wonder-full",
+      "name": "Muse Wonder Full",
+      "vendor": "Meta",
+      "open_weights": null,
+      "weights_url": null,
+      "aliases": [],
+      "source": "https://www.swe-marathon.org/assets/index-CAG4k6zO.js",
+      "evidence": {
+        "model": "Muse Wonder Full",
+        "canonicalModel": "meta/muse-wonder-full",
+        "modelVariant": "meta/muse-wonder-full@max",
+        "agent": "Muse Code",
+        "reasoningEffort": "max"
+      },
+      "normalization_note": "Distinct source canonicalModel. Runtime max remains in model_config. Board label does not expose a version."
+    }
+  ],
+  "registry_modified_by_this_batch": false
+}

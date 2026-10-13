@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-13",
+  "base_commit": "5d5926f2c6195a39898503041ee81c2817ef11ce",
+  "almide_commit": "e706ba8c4e32eb39983bd125cec1890d17094300",
+  "rust": "1.94.0 (4a4ef493e 2026-03-02)",
+  "fit_tests": {
+    "command": "almide test src/fit.almd",
+    "exit_code": 0,
+    "tests": 4
+  },
+  "strict_build": {
+    "command": "almide run src/build.almd -- --strict",
+    "exit_code": 0,
+    "tables": 164,
+    "rows": 4410,
+    "models": 508,
+    "unregistered_model_ids": 0,
+    "gaps": 23
+  },
+  "bundle_rebuild_equality": {
+    "exit_code": 0,
+    "sha256": "6121eafaff89e154ea5179212c179ab9a031a0f6dc954df09accc610c274dd96"
+  },
+  "parent_integrity_checks": {
+    "unchanged_and_unavailable_table_snapshot_byte_checks": 312,
+    "existing_registry_entries_byte_equivalent": 505,
+    "claims_and_snapshots_unchanged": true,
+    "fit_build_workflow_and_ui_source_unchanged": true
+  },
+  "independent_review": {
+    "result": "passed",
+    "audit": "sources/audits/2026-10-13/independent-review.json",
+    "sha256": "9786de2b4ab6ec8d56282b33307054bee77046b079170eab9bb47f6e132bca30",
+    "unresolved_findings": 0
+  },
+  "whitespace_check": {
+    "exit_code": 0
+  },
+  "remote_gates": "Exact-head CI required before merge; main CI and independent Pages plus public bundle bytes verified afterward"
+}
