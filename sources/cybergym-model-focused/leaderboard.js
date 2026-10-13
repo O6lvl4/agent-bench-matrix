@@ -68,10 +68,18 @@
         })
         .join("");
     },
-    source: (row) =>
-      row.source_url
-        ? `<a href="${esc(row.source_url)}" target="_blank" rel="noopener" class="inline-flex items-center gap-1 font-medium text-[color:var(--accent-strong)] underline-offset-2 hover:underline">${esc(row.source || "link")}<svg viewBox="0 0 24 24" class="h-3.5 w-3.5 opacity-70" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M9 7h8v8"/></svg></a>`
-        : `<span class="text-slate-400">${esc(row.source || "-")}</span>`,
+    // Source label. Same "Short (full name)" convention as agent/model: the short
+    // name is shown and the parenthetical appears on hover, so a long legal name
+    // doesn't widen the (non-wrapping) Source column.
+    source: (row) => {
+      const raw = row.source || (row.source_url ? "link" : "-");
+      const parts = splitNote(raw);
+      const label = esc(parts ? parts.name : unescParens(raw));
+      const note = parts ? ` data-note="${esc(parts.note)}"` : "";
+      return row.source_url
+        ? `<a href="${esc(row.source_url)}" target="_blank" rel="noopener"${note} class="inline-flex items-center gap-1 font-medium text-[color:var(--accent-strong)] underline-offset-2 hover:underline">${label}<svg viewBox="0 0 24 24" class="h-3.5 w-3.5 opacity-70" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M9 7h8v8"/></svg></a>`
+        : `<span class="text-slate-400"${note}>${label}</span>`;
+    },
     // Percentage score with a thin progress bar.
     percent: (value) => {
       const pct = (value * 100).toFixed(1);

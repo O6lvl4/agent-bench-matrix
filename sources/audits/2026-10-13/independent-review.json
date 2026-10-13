@@ -1,0 +1,334 @@
+{
+  "reviewed_at_utc": "2026-10-13T01:09:35.578594+00:00",
+  "date": "2026-10-13",
+  "timezone": "Asia/Tokyo",
+  "base_commit": "5d5926f2c6195a39898503041ee81c2817ef11ce",
+  "status": "passed",
+  "scope": {
+    "changed_tables_independently_reextracted": 8,
+    "normalized_rows_independently_checked": 441,
+    "unchanged_table_and_primary_snapshot_byte_checks": 156,
+    "source_method": "Read fresh public response bytes as inert data; independently parse changed source projections and recompute numeric aggregates. Validate retained evidence hashes, registry identity and source metadata. Unchanged-board normalization is covered by the category audits; this review independently verifies preservation and evidence integrity.",
+    "build_and_ci": "Recorded separately in validation.json; this review verifies unchanged code scope and exact generated bundle hash."
+  },
+  "checks": [
+    {
+      "check": "tool_general_raw_response_hashes",
+      "result": "passed",
+      "detail": {
+        "responses": 118,
+        "retrieval_date": "2026-10-13"
+      }
+    },
+    {
+      "check": "apex-agents",
+      "result": "passed",
+      "detail": {
+        "source_to_snapshot_to_all_rows": "exact; 56 rows and source-stable ties",
+        "changes": "three release dates only",
+        "scores_and_configurations": "unchanged"
+      }
+    },
+    {
+      "check": "apex-agents-corporate-lawyer",
+      "result": "passed",
+      "detail": {
+        "source_to_snapshot_to_all_rows": "exact; 56 rows and source-stable ties",
+        "changes": "three release dates only",
+        "scores_and_configurations": "unchanged"
+      }
+    },
+    {
+      "check": "apex-agents-investment-banking",
+      "result": "passed",
+      "detail": {
+        "source_to_snapshot_to_all_rows": "exact; 56 rows and source-stable ties",
+        "changes": "three release dates only",
+        "scores_and_configurations": "unchanged"
+      }
+    },
+    {
+      "check": "apex-agents-management-consultant",
+      "result": "passed",
+      "detail": {
+        "source_to_snapshot_to_all_rows": "exact; 56 rows and source-stable ties",
+        "changes": "three release dates only",
+        "scores_and_configurations": "unchanged"
+      }
+    },
+    {
+      "check": "gaia",
+      "result": "passed",
+      "detail": {
+        "source_to_snapshot_to_all_rows": "exact; native 100-row display and ties",
+        "added_systems": [
+          "Shadow Harness V8.01",
+          "Shadow Harness V5.01",
+          "Shadow Harness V4.01",
+          "Shadow Harness  V3.01",
+          "Shadow Harness V6.01",
+          "Shadow Harness V7.01"
+        ],
+        "new_ambiguous_mixed_systems": "model_ids empty",
+        "shared_identity_mappings": "unchanged"
+      }
+    },
+    {
+      "check": "model_registry_identity",
+      "result": "passed",
+      "detail": {
+        "existing_entries_unchanged": 505,
+        "new_entries": [
+          "basin1-0912-pre-dpo",
+          "muse-wonder",
+          "muse-wonder-full"
+        ],
+        "official_identity_body_hashes_and_tokens": "verified",
+        "new_open_weights_and_weights_url": "all null"
+      }
+    },
+    {
+      "check": "cybergym-agent-focused",
+      "result": "passed",
+      "detail": {
+        "source_to_snapshot_to_all_rows": "passed",
+        "rows": 43,
+        "lead_cards_unranked": 23,
+        "added_rows": [
+          {
+            "system": "Ostorlab Neutron",
+            "score": 97.08,
+            "model_ids": [
+              "deepseek-v4-flash"
+            ]
+          },
+          {
+            "system": "AiPy Mini",
+            "score": 92.83,
+            "model_ids": [
+              "deepseek-v4.1-flash"
+            ]
+          },
+          {
+            "system": "HiAUDIT Agent",
+            "score": 90.64,
+            "model_ids": [
+              "deepseek-v4-pro"
+            ]
+          },
+          {
+            "system": "TriLane",
+            "score": 88.92,
+            "model_ids": [
+              "deepseek-v4-flash"
+            ]
+          }
+        ],
+        "subrow_ranks_and_source_rank_offset": "verified",
+        "existing_scores": "preserved"
+      }
+    },
+    {
+      "check": "cybergym-model-focused",
+      "result": "passed",
+      "detail": {
+        "source_to_snapshot_to_all_rows": "passed",
+        "rows": 47,
+        "lead_cards_unranked": 0,
+        "added_rows": [
+          {
+            "system": "Basin (basin1-0912-pre-dpo)",
+            "score": 80.03,
+            "model_ids": [
+              "basin1-0912-pre-dpo"
+            ]
+          }
+        ],
+        "subrow_ranks_and_source_rank_offset": "verified",
+        "existing_scores": "preserved"
+      }
+    },
+    {
+      "check": "swe-marathon-v1-1",
+      "result": "passed",
+      "detail": {
+        "source_to_snapshot_to_all_rows": "passed; independently decoded inert task literal and recalculated every metric",
+        "tasks": 20,
+        "rows": 27,
+        "distinct_new_canonical_models": [
+          "meta/muse-wonder",
+          "meta/muse-wonder-full"
+        ],
+        "new_model_trials": 160,
+        "new_model_costs": "unknown; no invented zero cost",
+        "sort_and_reasoning_filter": "verified against current source functions",
+        "fallback_model_excluded": "verified"
+      }
+    },
+    {
+      "check": "sakana_claims",
+      "result": "passed",
+      "detail": {
+        "current_report_numeric_cells_verified": 55,
+        "retained_figures_verified": 17,
+        "claim_and_snapshot_bytes_and_dates": "preserved",
+        "fit_input": "tables only; claims separate"
+      }
+    },
+    {
+      "check": "archives_and_current_evidence",
+      "result": "passed",
+      "detail": {
+        "archives": [
+          {
+            "path": "sources/audits/2026-10-13/coding-responses.tar.gz",
+            "sha256": "2ffcb0e0d716ba1fada96020373573143a9b0232c73ec1d91531354e1731d72a",
+            "members": 52
+          },
+          {
+            "path": "sources/audits/2026-10-13/tool-general-responses.tar.gz",
+            "sha256": "bb09f4743651243934b2ebb4e401c7605efe6d4e964d91bbae4ac68ab6543c0e",
+            "members": 43
+          },
+          {
+            "path": "sources/audits/2026-10-13/webcomputer-responses.tar.gz",
+            "sha256": "826714f350d7c572b96b64f3751cb7e311b23e06e1203d89e80286e8bfc858a2",
+            "members": 122
+          },
+          {
+            "path": "sources/audits/2026-10-13/research-source-responses.tar.gz",
+            "sha256": "d2257db50e514f8a1c14981c06c9134cd8290a000d2c7e1e9870bc3f48491c61",
+            "members": 48
+          }
+        ],
+        "coding_bodies_verified": 50,
+        "webcomputer_bodies_verified": 122,
+        "research_bodies_verified": 48,
+        "tool_general_table_excerpts_verified": 37,
+        "source_dates": "all current October 13",
+        "all_published_response_hashes_and_sizes": "passed"
+      }
+    },
+    {
+      "check": "global_scope_and_summary",
+      "result": "passed",
+      "detail": {
+        "tables": 164,
+        "changed": 8,
+        "verified_unchanged": 155,
+        "unavailable_preserved": 1,
+        "rows_before": 4403,
+        "rows_after": 4410,
+        "models": 508,
+        "gaps": 23,
+        "all_156_unchanged_table_and_primary_snapshot_bytes_and_dates": "preserved",
+        "assistantbench": "two HTTP503 attempts; runtime error;184 retained rows",
+        "hud_gap": "current404 evidence",
+        "UI_build_fit_workflows": "unchanged",
+        "generated_bundle_sha256": "6121eafaff89e154ea5179212c179ab9a031a0f6dc954df09accc610c274dd96",
+        "README_changes_and_category_counts": "match verified evidence"
+      }
+    },
+    {
+      "check": "standing_gap_coverage",
+      "result": "passed",
+      "detail": {
+        "distinct_standing_gaps": 22,
+        "incomplete_refresh_gap": 1,
+        "all_registered_gaps_accounted_for": true,
+        "sheetbench": "Current article body hashes and extracted leaderboard link verified; recorded article statuses 200 and dedicated leaderboard404; gap bytes/date preserved",
+        "duplicate_category_checks": "BrowseComp and BrowseComp-ZH counted once each"
+      }
+    },
+    {
+      "check": "publication_privacy",
+      "result": "passed",
+      "detail": {
+        "scope": "Changed production files, new audit records, all four decompressed archives and nested XLSX XML",
+        "scanned_items": 368,
+        "credential_signed_query_private_key_JWT_matches": 0,
+        "actual_local_environment_path_leaks": 0,
+        "private_approval_or_conversation_text": 0,
+        "reviewed_non_sensitive_matches": [
+          "Four public image asset filenames containing @2x.png",
+          "618 REAL benchmark fixture strings:598 task prompts and20 retrievedAnswer strings",
+          "Five example addresses in public ST-WebAgentBench source examples",
+          "One public git SSH clone reference",
+          "Two public GitHub benchmark image assets with no access query",
+          "Two generic README example paths, not environment paths",
+          "One upstream benchmark methodology reference to user approval, not private approval context"
+        ],
+        "unresolved_findings": []
+      }
+    }
+  ],
+  "findings": [],
+  "changed_production_file_sha256": {
+    "data/gaps/hud-osworld-verified.json": "943b2d427b7f368700b3f43b06b9a731577bbb5cbe3cc80b2b438ecd13c31e4b",
+    "data/models.json": "668102485b85fb0c40b08ec40e7d564e959a583f7546f0f8f60271813a214c43",
+    "data/tables/apex-agents-corporate-lawyer.json": "186ac6119f91666f5fc62873e79c2bfdf8dc63af80427458eddc2a9c616e4f5b",
+    "data/tables/apex-agents-investment-banking.json": "c639bad5f47bc267f88603c185032b99e826f45635f883c89ac459079fdc31e5",
+    "data/tables/apex-agents-management-consultant.json": "55842d88fffaa5c5f74f44e4aa3ab39bfd885d36cb9700afd151fa6137b779fb",
+    "data/tables/apex-agents.json": "8a046000f1b001016d64fbf733ffed89825a3e1ef90447c4131bdf26a448826f",
+    "data/tables/cybergym-agent-focused.json": "6ab2609a53c2d4f155a840fc7f6e551abf12f06999d14a8f74ada7b841e433f8",
+    "data/tables/cybergym-model-focused.json": "5d925c1dbfaa1f1e48739231dfb78e0cdcb4e7849d56052bfc250a1dbeb12d89",
+    "data/tables/gaia.json": "9afff27386322a8a5b6a9c244f04080383bd2a730b45765bfe95b42840f6ed6b",
+    "data/tables/swe-marathon-v1-1.json": "f58c1a186c5845fd92e838677f3beba27df144cb792f690b21359951ab9377d1",
+    "docs/data.json": "6121eafaff89e154ea5179212c179ab9a031a0f6dc954df09accc610c274dd96",
+    "sources/apex-agents-corporate-lawyer/leaderboard_data.json": "42ab825fc867ab5af95ee1388ec4b445e45d2ac847505c16687483b0dbc8e6c5",
+    "sources/apex-agents-investment-banking/leaderboard_data.json": "761a140cea916bef45ff201dff94cc880cc364680df5bcd6fcb010e0b085f21f",
+    "sources/apex-agents-management-consultant/leaderboard_data.json": "7656e94aa0d30deae0ad61cc5c53445a6ed0ba5789051a13de4a35391fa9bf05",
+    "sources/apex-agents/leaderboard_data.json": "b7deb1fd67d84fbc969c26d0e306b970341e9c20462fc1c91a37afed22f96ebc",
+    "sources/cybergym-agent-focused/cybergym.json": "f43d433c26c20982badce24702ea89789acc2f9eba271ebd68bf15def2a3022e",
+    "sources/cybergym-agent-focused/display-page.html": "7797e222731e8cb5ab0bb5db7593c1a7e0bbf4e08b5b3d6208d43a14a0f8a0b2",
+    "sources/cybergym-agent-focused/leaderboard.js": "7aa2d51c07d2bda8dc8be9910844441aabcfaa03b8b1a9adf1a24e3be45298f2",
+    "sources/cybergym-model-focused/cybergym.json": "f43d433c26c20982badce24702ea89789acc2f9eba271ebd68bf15def2a3022e",
+    "sources/cybergym-model-focused/display-page.html": "7797e222731e8cb5ab0bb5db7593c1a7e0bbf4e08b5b3d6208d43a14a0f8a0b2",
+    "sources/cybergym-model-focused/leaderboard.js": "7aa2d51c07d2bda8dc8be9910844441aabcfaa03b8b1a9adf1a24e3be45298f2",
+    "sources/gaia/board_test_top100.json": "2f4ff0bec3ce1ffe75c8bc2b164c2282e45c4c1c1aeb2a8cf0ec4a38696c7cc1",
+    "sources/swe-marathon-v1-1/task_results_trimmed.json": "f1820c7b3f7076b97f85688f6e79d68ea0647567e17e4996aa7a7cf6d68aedba"
+  },
+  "reviewed_audit_file_sha256": {
+    "tool-general.json": "14486aa6d72a60553dc8d7d7427387fc81859e574b0a7b565960cef1d326ff80",
+    "webcomputer-model-proposals.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "research-security-horizon.json": "80d3288d6e74e485ad7bd48ade5bc44f90f47ebdf2396c99b385d15c190be8dc",
+    "tool-general-fetch-index.json": "bf2854b192e1595c4df7fc5dfa0dc7db25306642ab467c56da64a2d2bd339f95",
+    "webcomputer-row-deltas.json": "4fa77701b7e1a7405b8a0d41f70ae5f1a17e4c58139b6b955c5d428a4c6c9b09",
+    "webcomputer-publication-safety.json": "948eeda881518c53bf682bd136d563eed7c5f2a28fea56e2f7035fb0d270926e",
+    "coding-files.json": "84614d291159cedbe4ef7d638474d285d8542f8c7370d17efcd09323869174ed",
+    "research-verification.json": "704152f1d78a8287315c3646d245c65bde319779732895c06e890f31f8b66137",
+    "webcomputer-verification.json": "08cce94004755f9999a886ff27e4c1cd3b3b7460c17263d05aa633ecb975533c",
+    "coding-gaps-fetch-index.json": "31aa90a328ac8736828371caf1eb9bc3775e78c6b81cdb3be4ff518a9f33f4ae",
+    "webcomputer-gaps.json": "030a2727536e9c316b1ff7f151521f7cb0870d9009a15dcae44d486986f9a8b6",
+    "model-identity.json": "9af8a9bc82e53fbb539b287c4ec576b27283f70c594fb0671572eaed3e6a2cb1",
+    "tool-general-verification.json": "7ba96f303856ec85ae94ad28f4a705cff98dc15f5b469d9c3ea2b65372c5d1dd",
+    "coding-row-deltas.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "coding-gaps.json": "2b0712841a9a612372dff351227d35008cd3de829a4b33ad1ac2a01a1c4bb116",
+    "coding-response-archive.json": "d294dc7ccca6421af44c7469ac7e3c7b1baa5ca77c39876caa3bd5d0ce90f706",
+    "research-row-deltas.json": "47d8c5d280f5b4a6a1c1b699e219a0b2686c1d74fba79200be330ac96979864a",
+    "tool-general-responses.tar.gz": "bb09f4743651243934b2ebb4e401c7605efe6d4e964d91bbae4ac68ab6543c0e",
+    "research-source-responses.tar.gz": "d2257db50e514f8a1c14981c06c9134cd8290a000d2c7e1e9870bc3f48491c61",
+    "coding.json": "8dbbaf69ca44fdd5044095ae0e4d7ffec6f359190c1fb755376c4fc8470975d1",
+    "webcomputer-summary.md": "f328425a58bceffe780d463cdda72ce67710e36ebb44f5e03733ff32e4648d3c",
+    "sheetbench-gap.json": "76c11d89910775c82115c94526d50ce7a9e4ee3f9da66e3cb46d30c924e45ddb",
+    "webcomputer.json": "3427800c4579c37587a04f60b004d69b9342065096b08add97809a46d45bccd5",
+    "coding-science-endpoints.json": "40d326b1fab3ec79b76dc5ffe500cd237445247e18361c3ddca590c69b9c597a",
+    "tool-general-model-proposals.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "research-claims.json": "03d8d7857581aefedf544c0453c09d0616876e6537da962a045c431a8e0af28b",
+    "tool-general-publication-safety.json": "f7ddd957ba51efcb4883421e272fddfef10ff8ee5cf3aff7a23d0a2aec2fd16b",
+    "README.md": "493b4c18ffa9e352e39f99bf8bd59b2e4ddf17f0fca98b63eb49848dcbd66110",
+    "tool-general-gaps.json": "55c7d10935ed9d256dd3be0477f3b8256f351ad7f3e99ffb93ef200816ba799f",
+    "webcomputer-fetch-index.json": "187ec0d9319551383f953bbd7982012bd787405d9c7b940f0838e81dab65351b",
+    "tool-general-row-deltas.json": "65d7f0b494cb7abafb0e9978885ba148d68859bfcc83771e6eb4de6c6a16d97b",
+    "research-publication-safety.json": "5ba08c08477061cb1af3e3caac8ffcbf540b62a4d1f1b36cd1ff4c35a2856571",
+    "research-gaps.json": "7cbd97b4726f7f7ebb788ac482f64c60f70b941b179eee5198480549d20c0625",
+    "coding-model-additions.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "coding-responses.tar.gz": "2ffcb0e0d716ba1fada96020373573143a9b0232c73ec1d91531354e1731d72a",
+    "research-source-index.json": "e3a9f25bf61bdda4467e9a2b3dfa0e9eb08dd99f508fb1b3a97502a7a5ec7407",
+    "coding-fetch-index.json": "f2182d3ee23aecd5a53fd8310b27b22d83a40f8d3342192c94db2e6f5cd83051",
+    "coding-verification.json": "59bab7406e9a78830e2cd280fffb371e249025932c16118f2b60636d7c3d86b3",
+    "summary.json": "4eb5f8e527588958db783040acd0e9b354ab1b0d40ba5fd88bb4d12dc7072545",
+    "webcomputer-responses.tar.gz": "826714f350d7c572b96b64f3751cb7e311b23e06e1203d89e80286e8bfc858a2",
+    "research-model-proposals.json": "d0e10bfdacf989615a755c3b109b02cf686e0432c57476fb4dc133af4077a083"
+  }
+}

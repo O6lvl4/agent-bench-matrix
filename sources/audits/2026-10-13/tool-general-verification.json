@@ -1,0 +1,313 @@
+{
+ "checked": "2026-10-13",
+ "base": "5d5926f2c6195a39898503041ee81c2817ef11ce",
+ "tables_checked": 37,
+ "complete_primary_source_projections_matching_final_snapshots": 37,
+ "changed_table_normalizations_verified": 5,
+ "unchanged_tables_and_snapshots_byte_identical": 32,
+ "standing_gaps_rechecked_and_preserved": 4,
+ "all_14_tau_tables_complete_and_unchanged": true,
+ "source_responses": 119,
+ "source_http_errors": 1,
+ "failed_error_detail": "One historical taubench asset URL returns 404; current page-discovered asset fetched and confirms unchanged S3 source. No table verification blocked.",
+ "normalization_notes": "GAIA native top100 source order including ties preserved. Six newly visible mixed-model labels map to no single model. APEX only source release dates changed. Model registry untouched.",
+ "publication_omission_comparison": "Archived score projections reproduce all 37 final snapshot projections after disclosed ancillary contact/attachment omission. No score/model/configuration/date data omitted.",
+ "tables": [
+  {
+   "id": "apex-agents",
+   "rows": 56,
+   "complete_primary_projection_matches": true,
+   "normalized_changed_rows_verified": true,
+   "unchanged_bytes_and_dates_preserved": false,
+   "published_projection_sha256": "907dbe9e4f8eef740c07332d3a4c4730e20fb332a47c5bcd051074ccc60753b1"
+  },
+  {
+   "id": "apex-agents-corporate-lawyer",
+   "rows": 56,
+   "complete_primary_projection_matches": true,
+   "normalized_changed_rows_verified": true,
+   "unchanged_bytes_and_dates_preserved": false,
+   "published_projection_sha256": "53e1ec07bfa4d5044b5d77f0dd63d93b3fec24885f849c6a986c79fd446a8239"
+  },
+  {
+   "id": "apex-agents-investment-banking",
+   "rows": 56,
+   "complete_primary_projection_matches": true,
+   "normalized_changed_rows_verified": true,
+   "unchanged_bytes_and_dates_preserved": false,
+   "published_projection_sha256": "31325af3857620ca952e339f0435212c7dfe842789d2db340f554e039e498875"
+  },
+  {
+   "id": "apex-agents-management-consultant",
+   "rows": 56,
+   "complete_primary_projection_matches": true,
+   "normalized_changed_rows_verified": true,
+   "unchanged_bytes_and_dates_preserved": false,
+   "published_projection_sha256": "2e68fa20c32fdd788f00583cc89bfd6dbfd26518dc69d7dc8c1d11dc035c5bc6"
+  },
+  {
+   "id": "appworld-test-challenge",
+   "rows": 23,
+   "complete_primary_projection_matches": true,
+   "normalized_changed_rows_verified": null,
+   "unchanged_bytes_and_dates_preserved": true,
+   "published_projection_sha256": "72882bbba6f33a9f4de30d3e049e8b1ff0b2e3b3a216e043dc28aaeab4974afe"
+  },
+  {
+   "id": "appworld-test-normal",
+   "rows": 23,
+   "complete_primary_projection_matches": true,
+   "normalized_changed_rows_verified": null,
+   "unchanged_bytes_and_dates_preserved": true,
+   "published_projection_sha256": "d0bb2fa0468f80084413f170e232d5cc75d8c06a9ed6bef7bd0035fb93e269d6"
+  },
+  {
+   "id": "bfcl-v4",
+   "rows": 109,
+   "complete_primary_projection_matches": true,
+   "normalized_changed_rows_verified": null,
+   "unchanged_bytes_and_dates_preserved": true,
+   "published_projection_sha256": "948f9ca25f206febc413ae5b0983f11d76a5ba011823678020d617fc39c03f63"
+  },
+  {
+   "id": "gaia",
+   "rows": 100,
+   "complete_primary_projection_matches": true,
+   "normalized_changed_rows_verified": true,
+   "unchanged_bytes_and_dates_preserved": false,
+   "published_projection_sha256": "274317e641117ae51b577e6289ebd347997ff6c35197b6c5099d5899bee5108a"
+  },
+  {
+   "id": "gaia2",
+   "rows": 16,
+   "complete_primary_projection_matches": true,
+   "normalized_changed_rows_verified": null,
+   "unchanged_bytes_and_dates_preserved": true,
+   "published_projection_sha256": "1a2765f7c71d1777676f86ff25e4439b1c59d14a7b4047f180c96fa7e6fdf35a"
+  },
+  {
+   "id": "gaia2-cli",
+   "rows": 7,
+   "complete_primary_projection_matches": true,
+   "normalized_changed_rows_verified": null,
+   "unchanged_bytes_and_dates_preserved": true,
+   "published_projection_sha256": "de6a7f2842fe69180d0501d7ecd6dc80c9228983a2cf950f1ec9fed5f3890065"
+  },
+  {
+   "id": "hal-gaia",
+   "rows": 32,
+   "complete_primary_projection_matches": true,
+   "normalized_changed_rows_verified": null,
+   "unchanged_bytes_and_dates_preserved": true,
+   "published_projection_sha256": "37036f9b178b5b16abe1443b45752e2956d212256e34db095e0ae370d50fa5be"
+  },
+  {
+   "id": "hal-tau-bench-airline",
+   "rows": 26,
+   "complete_primary_projection_matches": true,
+   "normalized_changed_rows_verified": null,
+   "unchanged_bytes_and_dates_preserved": true,
+   "published_projection_sha256": "1292c413187ac906a008584e8a5136db569b7e8783e08c2104c143c0b4db82fb"
+  },
+  {
+   "id": "mcp-atlas",
+   "rows": 34,
+   "complete_primary_projection_matches": true,
+   "normalized_changed_rows_verified": null,
+   "unchanged_bytes_and_dates_preserved": true,
+   "published_projection_sha256": "be7ecbe2312803f13e8fb25a718f1700ce6b5420f8952ff329dda9ca36b4203a"
+  },
+  {
+   "id": "mcp-bench",
+   "rows": 20,
+   "complete_primary_projection_matches": true,
+   "normalized_changed_rows_verified": null,
+   "unchanged_bytes_and_dates_preserved": true,
+   "published_projection_sha256": "f731998f8907387c405c79db8e198e18f257b70bd3869e4bc577fc6b9fa57e98"
+  },
+  {
+   "id": "mcp-universe-agent",
+   "rows": 8,
+   "complete_primary_projection_matches": true,
+   "normalized_changed_rows_verified": null,
+   "unchanged_bytes_and_dates_preserved": true,
+   "published_projection_sha256": "c99c0d0755ed4d4a4ba24d54b5876f235e251b66b04170e53d9e4c0216beb264"
+  },
+  {
+   "id": "mcp-universe-fc",
+   "rows": 21,
+   "complete_primary_projection_matches": true,
+   "normalized_changed_rows_verified": null,
+   "unchanged_bytes_and_dates_preserved": true,
+   "published_projection_sha256": "c42d38c90a8728d38b2227619d2a53a446bd1a918bd4b13059ffad9e516c49af"
+  },
+  {
+   "id": "mcp-universe-react",
+   "rows": 28,
+   "complete_primary_projection_matches": true,
+   "normalized_changed_rows_verified": null,
+   "unchanged_bytes_and_dates_preserved": true,
+   "published_projection_sha256": "c35feb9b13573ae940b0f69829facd6e69bd97c6b6fd56f95bebda5cce981630"
+  },
+  {
+   "id": "mcpmark-legacy",
+   "rows": 39,
+   "complete_primary_projection_matches": true,
+   "normalized_changed_rows_verified": null,
+   "unchanged_bytes_and_dates_preserved": true,
+   "published_projection_sha256": "797470c78aae141fc153d1921883fb95200dc51e55e6d3d32203ddcad1526f42"
+  },
+  {
+   "id": "mcpmark-verified",
+   "rows": 8,
+   "complete_primary_projection_matches": true,
+   "normalized_changed_rows_verified": null,
+   "unchanged_bytes_and_dates_preserved": true,
+   "published_projection_sha256": "43f679104ed734df18be99b638f19c35476022fe0005d9089d84317429529ddd"
+  },
+  {
+   "id": "skillsbench",
+   "rows": 25,
+   "complete_primary_projection_matches": true,
+   "normalized_changed_rows_verified": null,
+   "unchanged_bytes_and_dates_preserved": true,
+   "published_projection_sha256": "af27e5911723cfb5bd3d796a079d3dcb27c1e85578469ed9e5a46b491783c73e"
+  },
+  {
+   "id": "tau2-bench",
+   "rows": 8,
+   "complete_primary_projection_matches": true,
+   "normalized_changed_rows_verified": null,
+   "unchanged_bytes_and_dates_preserved": true,
+   "published_projection_sha256": "f487998371388520d34c3e632af1c8c4aee85ff50fb267820db759766e8e7eb2"
+  },
+  {
+   "id": "tau2-bench-airline",
+   "rows": 8,
+   "complete_primary_projection_matches": true,
+   "normalized_changed_rows_verified": null,
+   "unchanged_bytes_and_dates_preserved": true,
+   "published_projection_sha256": "7c697bfed5ef74b86fee30dfec4ac3e2e2f9d70e084e7aa7a52816cec9f0b156"
+  },
+  {
+   "id": "tau2-bench-legacy",
+   "rows": 12,
+   "complete_primary_projection_matches": true,
+   "normalized_changed_rows_verified": null,
+   "unchanged_bytes_and_dates_preserved": true,
+   "published_projection_sha256": "18c6f0fce63f67a429915595c90facdecd9ba29af4186ddd0b8bcf657125b526"
+  },
+  {
+   "id": "tau2-bench-legacy-airline",
+   "rows": 16,
+   "complete_primary_projection_matches": true,
+   "normalized_changed_rows_verified": null,
+   "unchanged_bytes_and_dates_preserved": true,
+   "published_projection_sha256": "d8bc259030874ba47cd97a4e73e3db48f0f76b9c29e45633c998ec5e24fea7cf"
+  },
+  {
+   "id": "tau2-bench-legacy-retail",
+   "rows": 16,
+   "complete_primary_projection_matches": true,
+   "normalized_changed_rows_verified": null,
+   "unchanged_bytes_and_dates_preserved": true,
+   "published_projection_sha256": "20d4bd77de71c342ee492361bf9fca5e6aa6635bd4aee7774b869632f4e16737"
+  },
+  {
+   "id": "tau2-bench-legacy-telecom",
+   "rows": 12,
+   "complete_primary_projection_matches": true,
+   "normalized_changed_rows_verified": null,
+   "unchanged_bytes_and_dates_preserved": true,
+   "published_projection_sha256": "82d7381822a549c30653c7fcd9c19f744e0c9bbcc8f42674f4cccb55829f2f19"
+  },
+  {
+   "id": "tau2-bench-retail",
+   "rows": 9,
+   "complete_primary_projection_matches": true,
+   "normalized_changed_rows_verified": null,
+   "unchanged_bytes_and_dates_preserved": true,
+   "published_projection_sha256": "71e12e2e007346c8ed0564ae05f3b2ff5f11545f0f3cbcb48523c994fb96a1b9"
+  },
+  {
+   "id": "tau2-bench-telecom",
+   "rows": 8,
+   "complete_primary_projection_matches": true,
+   "normalized_changed_rows_verified": null,
+   "unchanged_bytes_and_dates_preserved": true,
+   "published_projection_sha256": "e3e86501b54281773ddbdfbfa089d324330a57749f3d6a6db682da6e5fceb68d"
+  },
+  {
+   "id": "tau3-banking",
+   "rows": 28,
+   "complete_primary_projection_matches": true,
+   "normalized_changed_rows_verified": null,
+   "unchanged_bytes_and_dates_preserved": true,
+   "published_projection_sha256": "9d12b63bdd429d3df5ce71eacb6380944b3f5f9d150100915e7048b847cf4bf1"
+  },
+  {
+   "id": "tau3-voice",
+   "rows": 18,
+   "complete_primary_projection_matches": true,
+   "normalized_changed_rows_verified": null,
+   "unchanged_bytes_and_dates_preserved": true,
+   "published_projection_sha256": "63bdcdf78524c399a689924c798395d9a8557484d538efce240283c37b17abc1"
+  },
+  {
+   "id": "tau3-voice-airline",
+   "rows": 18,
+   "complete_primary_projection_matches": true,
+   "normalized_changed_rows_verified": null,
+   "unchanged_bytes_and_dates_preserved": true,
+   "published_projection_sha256": "e2fc3e26325b3200a8f947b57d8660ef1f67b654d93bb09f4ef6cd0736708bc9"
+  },
+  {
+   "id": "tau3-voice-banking",
+   "rows": 5,
+   "complete_primary_projection_matches": true,
+   "normalized_changed_rows_verified": null,
+   "unchanged_bytes_and_dates_preserved": true,
+   "published_projection_sha256": "876cb6e07041fbe21c9b9420bf060cf5829d0145421051d7bc77372bb4ff572a"
+  },
+  {
+   "id": "tau3-voice-retail",
+   "rows": 18,
+   "complete_primary_projection_matches": true,
+   "normalized_changed_rows_verified": null,
+   "unchanged_bytes_and_dates_preserved": true,
+   "published_projection_sha256": "bc3b2ef46a955152918b7ab9a968a46fb0e04dba57981b77c3bc86a18d9cee20"
+  },
+  {
+   "id": "tau3-voice-telecom",
+   "rows": 18,
+   "complete_primary_projection_matches": true,
+   "normalized_changed_rows_verified": null,
+   "unchanged_bytes_and_dates_preserved": true,
+   "published_projection_sha256": "b78d17e2bbdebf6916503d84b90ce10580b81093ed71e0a70d26b4aec0bc840b"
+  },
+  {
+   "id": "theagentcompany",
+   "rows": 17,
+   "complete_primary_projection_matches": true,
+   "normalized_changed_rows_verified": null,
+   "unchanged_bytes_and_dates_preserved": true,
+   "published_projection_sha256": "9c04191db56ecd0f241eec458dbf5b4102d420e317172f9214d0da5f7d5a203b"
+  },
+  {
+   "id": "toolathlon",
+   "rows": 51,
+   "complete_primary_projection_matches": true,
+   "normalized_changed_rows_verified": null,
+   "unchanged_bytes_and_dates_preserved": true,
+   "published_projection_sha256": "bda0a695bb6a3e1852fbada991f5407d3ba36b6d14d3dc04a81f2b2f79d7742b"
+  },
+  {
+   "id": "toolathlon-verified",
+   "rows": 25,
+   "complete_primary_projection_matches": true,
+   "normalized_changed_rows_verified": null,
+   "unchanged_bytes_and_dates_preserved": true,
+   "published_projection_sha256": "b29b4bebec56e9f0852defaa92318937bb5288be74c2a70b33aa5ae7dbe2dffe"
+  }
+ ]
+}

@@ -14,17 +14,65 @@
   "source": "https://www.swe-marathon.org/",
   "fetched": [
     "https://www.swe-marathon.org/",
-    "https://www.swe-marathon.org/assets/index-8aFpQU6L.js"
+    "https://www.swe-marathon.org/assets/index-CAG4k6zO.js"
   ],
-  "retrieved": "2026-10-10",
+  "retrieved": "2026-10-13",
   "newest_row_date": null,
   "snapshot": "sources/swe-marathon-v1-1/task_results_trimmed.json",
   "paper": null,
   "repo": "https://github.com/abundant-ai/swe-marathon",
-  "notes_ja": "表はサイトの JS に埋め込まれたタスク別試行データから、サイト自身の集計式(reward>=1 の試行割合、表示対象の推論量のみ)で再計算した。行ごとの日付は無く、試行開始時刻の最新は 2026-10-08。",
+  "notes_ja": "表はサイトの JS に埋め込まれたタスク別試行データから、サイト自身の集計式(reward>=1 の試行割合、表示対象の推論量のみ)で再計算した。行ごとの日付は無く、試行開始時刻の最新は 2026-10-12。",
   "rows": [
     {
       "rank": 1,
+      "system": "Muse Wonder Full (max) / Muse Code",
+      "agent": "Muse Code",
+      "model_raw": [
+        "Muse Wonder Full"
+      ],
+      "model_ids": [
+        "muse-wonder-full"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 53.125,
+      "score_extra": {
+        "partial_avg_pct": 53.125,
+        "trials": 160,
+        "cost_trials": 0,
+        "tokens_avg_m": 29.141342675
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 2,
+      "system": "Muse Wonder (max) / Muse Code",
+      "agent": "Muse Code",
+      "model_raw": [
+        "Muse Wonder"
+      ],
+      "model_ids": [
+        "muse-wonder"
+      ],
+      "model_config": "reasoning_effort=max",
+      "score": 52.5,
+      "score_extra": {
+        "partial_avg_pct": 52.5,
+        "trials": 160,
+        "cost_trials": 0,
+        "tokens_avg_m": 49.5207650375
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 3,
       "system": "Claude Sonnet 5.5 (max) / Claude Code",
       "agent": "Claude Code",
       "model_raw": [
@@ -49,7 +97,7 @@
       "row_url": null
     },
     {
-      "rank": 2,
+      "rank": 4,
       "system": "Claude Opus 5 (max) / Claude Code",
       "agent": "Claude Code",
       "model_raw": [
@@ -74,7 +122,7 @@
       "row_url": null
     },
     {
-      "rank": 3,
+      "rank": 5,
       "system": "Claude Haiku 5.5 (max) / Claude Code",
       "agent": "Claude Code",
       "model_raw": [
@@ -99,7 +147,7 @@
       "row_url": null
     },
     {
-      "rank": 4,
+      "rank": 6,
       "system": "Claude Opus 4.8 (max) / Claude Code",
       "agent": "Claude Code",
       "model_raw": [
@@ -124,7 +172,7 @@
       "row_url": null
     },
     {
-      "rank": 5,
+      "rank": 7,
       "system": "Kimi K3 (max) / Claude Code",
       "agent": "Claude Code",
       "model_raw": [
@@ -149,7 +197,7 @@
       "row_url": null
     },
     {
-      "rank": 6,
+      "rank": 8,
       "system": "Claude Opus 5.5 (max) / Claude Code",
       "agent": "Claude Code",
       "model_raw": [
@@ -174,7 +222,7 @@
       "row_url": null
     },
     {
-      "rank": 7,
+      "rank": 9,
       "system": "Claude Fable 5.1 (max) / Claude Code",
       "agent": "Claude Code",
       "model_raw": [
@@ -199,7 +247,7 @@
       "row_url": null
     },
     {
-      "rank": 8,
+      "rank": 10,
       "system": "Grok 4.7 (high) / Grok Build",
       "agent": "Grok Build",
       "model_raw": [
@@ -223,7 +271,7 @@
       "row_url": null
     },
     {
-      "rank": 9,
+      "rank": 11,
       "system": "Claude Fable 5 (max) / Claude Code",
       "agent": "Claude Code",
       "model_raw": [
@@ -246,7 +294,7 @@
       "row_url": null
     },
     {
-      "rank": 10,
+      "rank": 12,
       "system": "GPT-6 Sol (max) / Codex",
       "agent": "Codex",
       "model_raw": [
@@ -271,7 +319,7 @@
       "row_url": null
     },
     {
-      "rank": 11,
+      "rank": 13,
       "system": "GPT-5.6-sol (max) / Codex",
       "agent": "Codex",
       "model_raw": [
@@ -296,7 +344,7 @@
       "row_url": null
     },
     {
-      "rank": 12,
+      "rank": 14,
       "system": "GPT-6-astra (max) / Codex",
       "agent": "Codex",
       "model_raw": [
@@ -321,7 +369,7 @@
       "row_url": null
     },
     {
-      "rank": 13,
+      "rank": 15,
       "system": "GLM 5.3 (max) / Claude Code",
       "agent": "Claude Code",
       "model_raw": [
@@ -346,7 +394,7 @@
       "row_url": null
     },
     {
-      "rank": 14,
+      "rank": 16,
       "system": "GPT-6.1 Sol (max) / Codex",
       "agent": "Codex",
       "model_raw": [
@@ -371,7 +419,7 @@
       "row_url": null
     },
     {
-      "rank": 15,
+      "rank": 17,
       "system": "GLM 5.3 Flash (max) / Claude Code",
       "agent": "Claude Code",
       "model_raw": [
@@ -396,7 +444,7 @@
       "row_url": null
     },
     {
-      "rank": 16,
+      "rank": 18,
       "system": "GPT-5.6-terra (max) / Codex",
       "agent": "Codex",
       "model_raw": [
@@ -421,7 +469,7 @@
       "row_url": null
     },
     {
-      "rank": 17,
+      "rank": 19,
       "system": "Grok 4.6 (high) / Grok Build",
       "agent": "Grok Build",
       "model_raw": [
@@ -446,7 +494,7 @@
       "row_url": null
     },
     {
-      "rank": 18,
+      "rank": 20,
       "system": "Muse Spark 1.3 (xhigh) / Muse Code",
       "agent": "Muse Code",
       "model_raw": [
@@ -470,7 +518,7 @@
       "row_url": null
     },
     {
-      "rank": 19,
+      "rank": 21,
       "system": "Claude Sonnet 5 (max) / Claude Code",
       "agent": "Claude Code",
       "model_raw": [
@@ -495,7 +543,7 @@
       "row_url": null
     },
     {
-      "rank": 20,
+      "rank": 22,
       "system": "Grok 4.5 (max) / Grok Build",
       "agent": "Grok Build",
       "model_raw": [
@@ -520,7 +568,7 @@
       "row_url": null
     },
     {
-      "rank": 21,
+      "rank": 23,
       "system": "GPT-6 Luna (max) / Codex",
       "agent": "Codex",
       "model_raw": [
@@ -545,7 +593,7 @@
       "row_url": null
     },
     {
-      "rank": 22,
+      "rank": 24,
       "system": "GPT-5.6-luna (max) / Codex",
       "agent": "Codex",
       "model_raw": [
@@ -570,7 +618,7 @@
       "row_url": null
     },
     {
-      "rank": 23,
+      "rank": 25,
       "system": "Gemini 3.7 Flash (max) / OpenCode",
       "agent": "OpenCode",
       "model_raw": [
@@ -595,7 +643,7 @@
       "row_url": null
     },
     {
-      "rank": 24,
+      "rank": 26,
       "system": "GLM 5.2 (max) / Claude Code",
       "agent": "Claude Code",
       "model_raw": [
@@ -620,7 +668,7 @@
       "row_url": null
     },
     {
-      "rank": 25,
+      "rank": 27,
       "system": "DeepSeek V4 Pro (max) / Mini-SWE-Agent",
       "agent": "Mini-SWE-Agent",
       "model_raw": [

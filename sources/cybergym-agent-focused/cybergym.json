@@ -209,7 +209,94 @@
       "score_10": 0.9801,
       "date": "2026-09-14",
       "source": "Continuum AI",
-      "source_url": "https://github.com/Continuum-AI-Corp/OrcaCyber-Harness-CyberGym-Technical-Report",
+      "source_url": "https://orcacyber.ai/blog/cybergym-technical-report",
+      "trials": 1,
+      "focus": "agent"
+    },
+    {
+      "agent": "Ostorlab Neutron",
+      "model": "DeepSeek-V4-Flash",
+      "model_release_date": "2026-07-31",
+      "include_in_plot": true,
+      "plot_links": [
+        "DeepSeek-V4-Flash"
+      ],
+      "icon": "/assets/images/cybergym/ostorlab.png",
+      "features": [
+        "dynamic (uses cleaned vulnerable Docker image)"
+      ],
+      "score_10": 0.9708,
+      "date": "2026-10-06",
+      "source": "Ostorlab",
+      "source_url": "https://blog.ostorlab.co/cybergym-benchmark-technical-writeup.html",
+      "trials": 1,
+      "focus": "agent"
+    },
+    {
+      "agent": "HiAUDIT Agent",
+      "model": "DeepSeek-V4-Pro",
+      "model_release_date": "2026-08-13",
+      "include_in_plot": true,
+      "plot_links": [
+        "DeepSeek-V4-Pro"
+      ],
+      "icon": "/assets/images/cybergym/techfund.png",
+      "features": [
+        "dynamic (uses cleaned vulnerable Docker image)",
+        "test-time mem. (with a test-time-updated knowledge base)"
+      ],
+      "score_10": 0.9064,
+      "date": "2026-09-18",
+      "source": "TECHFUND Inc.",
+      "source_url": "https://techfund.jp/en/media/cybergym",
+      "trials": 1,
+      "focus": "agent"
+    },
+    {
+      "agent": "Codex CLI",
+      "model": "Basin (basin1-0912-pre-dpo)",
+      "model_release_date": "2026-09-23",
+      "include_in_plot": true,
+      "icon": "/assets/images/cybergym/basin.png",
+      "score_10": 0.8003,
+      "date": "2026-09-23",
+      "source": "Submersion AI",
+      "source_url": "https://submersion.ai/basin",
+      "trials": 1,
+      "focus": "model"
+    },
+    {
+      "agent": "AiPy Mini",
+      "model": "DeepSeek-V4.1-Flash",
+      "model_release_date": "2026-09-23",
+      "include_in_plot": true,
+      "icon": "/assets/images/cybergym/aipy.png",
+      "features": [
+        "dynamic (uses cleaned vulnerable Docker image)"
+      ],
+      "score_10": 0.9283,
+      "date": "2026-09-23",
+      "source": "Knownsec",
+      "source_url": "https://github.com/knownsec/cybergym-writeup",
+      "trials": 1,
+      "focus": "agent"
+    },
+    {
+      "agent": "TriLane",
+      "model": "DeepSeek-V4-Flash",
+      "model_release_date": "2026-07-31",
+      "include_in_plot": true,
+      "plot_links": [
+        "DeepSeek-V4-Flash"
+      ],
+      "icon": "/assets/images/cybergym/trilane.png",
+      "features": [
+        "dynamic (uses cleaned vulnerable Docker image)"
+      ],
+      "score_10": 0.8892,
+      "date": "2026-09-20",
+      "source": "CMHI (China Mobile (Hangzhou) Information Technology Co., Ltd.)",
+      "source_url": "https://github.com/xyun92/trilane/blob/main/docs/cybergym-submission-report.md",
       "trials": 1,
       "focus": "agent"
     },

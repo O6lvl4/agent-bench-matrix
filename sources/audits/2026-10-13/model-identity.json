@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-13",
+  "base_commit": "5d5926f2c6195a39898503041ee81c2817ef11ce",
+  "models_added": [
+    {
+      "id": "basin1-0912-pre-dpo",
+      "name": "Basin (basin1-0912-pre-dpo)",
+      "vendor": "Submersion AI",
+      "open_weights": null,
+      "weights_url": null,
+      "aliases": []
+    },
+    {
+      "id": "muse-wonder",
+      "name": "Muse Wonder",
+      "vendor": "Meta",
+      "open_weights": null,
+      "weights_url": null,
+      "aliases": []
+    },
+    {
+      "id": "muse-wonder-full",
+      "name": "Muse Wonder Full",
+      "vendor": "Meta",
+      "open_weights": null,
+      "weights_url": null,
+      "aliases": []
+    }
+  ],
+  "primary_identity_evidence": [
+    {
+      "url": "https://dev.meta.ai/models/muse-wonder",
+      "retrieved": "2026-10-13",
+      "http_status": 200,
+      "fetched_sha256": "a104a818186c5cddb7583acc3b668497c27ad1ad7b1add1d0d8c97bced53decd",
+      "identity_tokens_extracted_from_visible_text": [
+        "muse-wonder-1.0",
+        "muse-wonder-full-1.0"
+      ],
+      "retained_scope": "Exact product identity tokens only; numeric marketing claims are not used"
+    },
+    {
+      "url": "https://submersion.ai/basin",
+      "retrieved": "2026-10-13",
+      "http_status": 200,
+      "fetched_sha256": "de0d60e040782693e4acba2200cf610036fb12e7bf6ae2dd8cd1517e22c94076",
+      "identity_tokens_extracted_from_visible_text": [
+        "Introducing Basin",
+        "Submersion AI"
+      ],
+      "retained_scope": "Exact product identity tokens only; numeric marketing claims are not used"
+    }
+  ],
+  "board_mapping": {
+    "basin1-0912-pre-dpo": "CyberGym explicit model field Basin (basin1-0912-pre-dpo); preserve pre-DPO checkpoint suffix, source Submersion AI",
+    "muse-wonder": "SWE-Marathon canonicalModel meta/muse-wonder; reasoningEffort max remains configuration",
+    "muse-wonder-full": "SWE-Marathon canonicalModel meta/muse-wonder-full; reasoningEffort max remains configuration"
+  },
+  "classification": "All three open_weights and weights_url remain null: public distribution of the exact checkpoint is not established. Existing classifications are unchanged. No vendor-claimed scores added."
+}

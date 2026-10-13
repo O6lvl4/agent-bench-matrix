@@ -1,0 +1,33 @@
+{
+  "retrieved": "2026-10-13",
+  "gap": "sheetbench-50",
+  "status": "gap-rechecked-unchanged",
+  "gap_bytes_and_date_preserved": true,
+  "requests": [
+    {
+      "url": "https://www.hud.ai/case-studies/sheetbench-50",
+      "retrieved": "2026-10-13",
+      "http_status": 200,
+      "sha256": "76d076a5482a0175ec494aae6cbfc20d19fc064caa29ebd7329ab716d774e22b",
+      "bytes": 179995
+    },
+    {
+      "url": "https://www.hud.ai/research/sheetbench-50",
+      "retrieved": "2026-10-13",
+      "http_status": 200,
+      "sha256": "76d076a5482a0175ec494aae6cbfc20d19fc064caa29ebd7329ab716d774e22b",
+      "bytes": 179995
+    },
+    {
+      "url": "https://www.hud.ai/leaderboards/hud-evals/SheetBench-50",
+      "retrieved": "2026-10-13",
+      "http_status": 404,
+      "sha256": "ae0f060b2bc64cb915af1eb80af1cd2b5ca374ec11e0450320aaed7df3ec4965",
+      "bytes": 20459
+    }
+  ],
+  "retained_identity_excerpt": "Evaluating Agents on Financial Analyst Workflows (SheetBench)",
+  "public_leaderboard_link_extracted_from_case_study": "https://www.hud.ai/leaderboards/hud-evals/SheetBench-50",
+  "method": "Parsed current visible text and links without executing scripts. Both article URLs return the same case-study body, not a current leaderboard. The article-linked dedicated leaderboard returns HTTP 404. The generic /leaderboards URL also returns 404 as recorded in webcomputer-fetch-index.json. No numeric vendor claim is promoted to a measured board. Ancillary article text, sample task attachments, example credential names and scorecard-specific query links are not retained.",
+  "result": "Existing missing-live-board gap remains accurate; no table or gap metadata change."
+}

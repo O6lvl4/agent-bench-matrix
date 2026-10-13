@@ -1,0 +1,234 @@
+{
+  "retrieved": "2026-10-13",
+  "timezone": "Asia/Tokyo",
+  "base_commit": "5d5926f2c6195a39898503041ee81c2817ef11ce",
+  "checks": {
+    "all_29_tables_mechanically_extracted_from_fresh_public_responses": true,
+    "raw_and_sanitized_source_parses_identical_all_29_tables": true,
+    "unchanged_tables_and_primary_snapshots_byte_identical_to_baseline": 26,
+    "all_retained_response_sizes_and_sha256_verified": true,
+    "existing_rows_have_no_score_changes": true,
+    "claims_and_six_gap_records_byte_preserved": true,
+    "claims_stay_separate_from_measured_tables_and_fit": true,
+    "no_fetched_source_code_executed": true,
+    "current_vending_data_module_paths_verified_in_fresh_imports": true,
+    "offline_archive_replay_matches_live_raw_parse": true,
+    "all_written_tables_semantically_match_verified_parse": true,
+    "retained_archive_credential_contact_pattern_scan_passed": true,
+    "changed_tables_match_full_verified_parse_including_fetched_urls": true
+  },
+  "table_outcome": {
+    "tables": 29,
+    "refreshed_changed": 3,
+    "refreshed_unchanged": 26,
+    "preserved": 0,
+    "rows_before": 637,
+    "rows_after": 644,
+    "added_rows": 7,
+    "removed_rows": 0
+  },
+  "changed_tables": [
+    "cybergym-agent-focused",
+    "cybergym-model-focused",
+    "swe-marathon-v1-1"
+  ],
+  "unchanged_tables": [
+    "browsecomp-plus",
+    "cve-bench-one-day",
+    "cve-bench-zero-day",
+    "cybench",
+    "cybergym-e2e",
+    "ecommerce-bench",
+    "exploitgym",
+    "hal-core-bench-hard",
+    "hal-scicode",
+    "hal-scienceagentbench",
+    "metr-time-horizon",
+    "metr-time-horizon-1.0",
+    "mind2web-2",
+    "mle-bench",
+    "mle-bench-additional",
+    "paperbench",
+    "paperbench-code-dev",
+    "sec-bench-poc-generation",
+    "sec-bench-pro-firefox",
+    "sec-bench-pro-linux",
+    "sec-bench-pro-overall",
+    "sec-bench-pro-v8",
+    "sec-bench-vulnerability-patching",
+    "swe-marathon-v1-0",
+    "vending-bench",
+    "vending-bench-2"
+  ],
+  "blocked_required_sources": [],
+  "existing_gaps_rechecked": 6,
+  "claims_checked": 17,
+  "claim_source_numeric_cells_checked": 55,
+  "retained_public_response_count": 48,
+  "standing_gap_http_failures": [
+    {
+      "url": "https://bountybench.github.io/",
+      "status": "404"
+    }
+  ],
+  "redaction_policy": "Only response bodies required for registered-table extraction, current display rules, six gaps and the Sakana claim check are retained. No request/response headers, cookies, authentication state or signed redirect URLs were collected. Ancillary and simulated email values, mailto targets, obfuscated contact links and the public RE-Bench archive password are omitted. CORE-Bench retains the overview and HAL leaderboard directions; unrelated installation and credential setup sections are omitted. SWE-Marathon retains byte-exact score literals, current filter and aggregation code as inert text excerpts; unrelated application code and task prompts containing contact/credential example literals are omitted. Benchmark identities, scores, configurations, costs and trial evidence are unchanged. Raw and retained SHA-256 hashes distinguish sanitized evidence; raw bodies are not published.",
+  "redactions": [
+    {
+      "url": "https://andonlabs.com/_app/immutable/nodes/26.FUD8iaCC.js",
+      "archive_member": "9ac76df835b0e3.source",
+      "counts": {
+        "ancillary_mailto_targets_omitted": 1,
+        "ancillary_or_simulated_email_occurrences_omitted": 1
+      },
+      "raw_response_sha256": "bb4e62bab75fbb5c37d01a8d6b51f51ab3a8e3aff9bb248e18a7f8f06cfddff5",
+      "retained_sha256": "cddf3c29e160cd2f47a780d9e89a1391db51825c6fe6ff6540b5a7c1ada81fa4"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/nodes/27.DD89StnP.js",
+      "archive_member": "f7c31360a2b1c8.source",
+      "counts": {
+        "ancillary_or_simulated_email_occurrences_omitted": 1
+      },
+      "raw_response_sha256": "3b3afa23251171fb5a89dfeaefeebc143296b3ef77d19ac180cf037fc8d52f8f",
+      "retained_sha256": "03e1b3f07031ad287128f6149a0d5569625d2712a5c3f43263239ca29630afbf"
+    },
+    {
+      "url": "https://andonlabs.com/evals/vending-bench",
+      "archive_member": "f887d579d7ab64.source",
+      "counts": {
+        "obfuscated_contact_links_omitted": 1
+      },
+      "raw_response_sha256": "c912c6c2bf325c4567da55c5d8bc34cdb62f141fb649f29050fb503b690223c5",
+      "retained_sha256": "8f3b06fc8ff488e1a0cd8e7dbd2d87ec7920c360b6bae9dafc5534188b8d954c"
+    },
+    {
+      "url": "https://andonlabs.com/evals/vending-bench-2",
+      "archive_member": "ebcec333cce225.source",
+      "counts": {
+        "obfuscated_contact_links_omitted": 1
+      },
+      "raw_response_sha256": "c653ff1f34067c919cc0c304775bd731169985fe82dc8214ac5e8579e6366600",
+      "retained_sha256": "6792f0f6fc70931110df0a3032bee7c8dc0d655a26a5be8a38957f8f29fb1aa2"
+    },
+    {
+      "url": "https://andonlabs.com/evals/vending-bench-arena",
+      "archive_member": "f7581aedc8a47c.source",
+      "counts": {
+        "obfuscated_contact_links_omitted": 90
+      },
+      "raw_response_sha256": "f0e8e5a970d2c1f6f1d96ab6de8bb5f238a59e6a0d67797d8edd3365950f8ee6",
+      "retained_sha256": "4878077531884ea943c74c4355362a7b306ec44248fae0820c1a6d175fec34ad"
+    },
+    {
+      "url": "https://ecbench.github.io/showcase_data.json",
+      "archive_member": "99affb3adf9dc7.source",
+      "counts": {
+        "ancillary_or_simulated_email_occurrences_omitted": 44
+      },
+      "raw_response_sha256": "92f5a96c47517afb176efaf87778b720c11ebc4c329663646c55f18b1fbfc33f",
+      "retained_sha256": "b17cb1a243221dd4a4190657925ab8b897ab8cb7507eb6659940501f85936828"
+    },
+    {
+      "url": "https://metr.org/time-horizons/",
+      "archive_member": "6f9c9f881a4696.source",
+      "counts": {
+        "ancillary_mailto_targets_omitted": 2,
+        "ancillary_or_simulated_email_occurrences_omitted": 2
+      },
+      "raw_response_sha256": "189438ca644c0ad42d485d464aecc3762afc12135adbdfcd39f40a979b631925",
+      "retained_sha256": "212255e7d7ab894f21b9db11eb94627d89866341ffdabc2e9fb90fbb1633126e"
+    },
+    {
+      "url": "https://osu-nlp-group.github.io/Mind2Web-2/leaderboard_data.json",
+      "archive_member": "c385c7d00debf8.source",
+      "counts": {
+        "ancillary_or_simulated_email_occurrences_omitted": 1
+      },
+      "raw_response_sha256": "ed954c3b30c7e32c26eb58d7a6612b21537db82fa6c51462455937036cb08702",
+      "retained_sha256": "0b99ded9d140823eb97ee3f361921ff0d1e020dd38bfdab17838a7e16c792efd"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/METR/RE-Bench/main/README.md",
+      "archive_member": "0aad26dd88b143.source",
+      "counts": {
+        "obfuscated_email_occurrences_omitted": 1,
+        "public_benchmark_archive_password_omitted": 1
+      },
+      "raw_response_sha256": "7f279f6fcbfa8d6e7309764cd7620f682ffbeaedc5f9af09b8746b9c10bbb2dd",
+      "retained_sha256": "140533066627cfde24f6145dd4eeae6cbef284baf1c8247fa5a8ca20dab72d28"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/siegelz/core-bench/main/README.md",
+      "archive_member": "7cce878989b7fd.source",
+      "counts": {
+        "unrelated_installation_and_credential_setup_sections_omitted": true
+      },
+      "raw_response_sha256": "8c0f6086d0aad6871b516e441ad28f0428991779446cc2370f91bfe4ecef73ba",
+      "retained_sha256": "1ef7012f0a3ada5885288d4436e136524de34ac1cb0c713b9f5b7ba5bb2bc03b"
+    },
+    {
+      "url": "https://www.cybergym.io/cybergym-e2e/",
+      "archive_member": "421761cd46be24.source",
+      "counts": {
+        "ancillary_mailto_targets_omitted": 8
+      },
+      "raw_response_sha256": "483df0fa563c55315bf1d5f7b72e7e2810043e7146ced8ab68e04fc556cb1258",
+      "retained_sha256": "19f49f54a26f0a85e3dddd1d51555b5a75c0e38d6f137bdfe737617747fb74cb"
+    },
+    {
+      "url": "https://www.cybergym.io/cybergym/",
+      "archive_member": "fed75d3d8fca8a.source",
+      "counts": {
+        "ancillary_mailto_targets_omitted": 4
+      },
+      "raw_response_sha256": "1c85822a74650b779b615f30f9188313fb40f3edf3096dd2220a1854cedf7f29",
+      "retained_sha256": "7797e222731e8cb5ab0bb5db7593c1a7e0bbf4e08b5b3d6208d43a14a0f8a0b2"
+    },
+    {
+      "url": "https://www.cybergym.io/exploitgym/",
+      "archive_member": "07854342f1011c.source",
+      "counts": {
+        "ancillary_mailto_targets_omitted": 9
+      },
+      "raw_response_sha256": "97db69cc276fe24ba54f6032c07f0170cc889bd88368d68c65ad97ab755b0889",
+      "retained_sha256": "bee91226fa72a0c104b81595bad0e8d6a0f0985a828e2b346bb86de37964760d"
+    },
+    {
+      "url": "https://www.swe-marathon.org/assets/index-CAG4k6zO.js",
+      "archive_member": "f5050d59797074.source",
+      "counts": {
+        "unrelated_application_and_task_prompt_sections_omitted": true
+      },
+      "raw_response_sha256": "6b38f9d83b0c3b865b6b53eadd82f196fd7303d0e0258783c405eb397a8b8a83",
+      "retained_sha256": "9cc7769da58d2b6204d34e265a86455efaf93540942bf84d8927a7d39ecd614b"
+    }
+  ],
+  "new_model_proposals": [
+    "basin1-0912-pre-dpo",
+    "muse-wonder",
+    "muse-wonder-full"
+  ],
+  "parser_provenance": {
+    "mechanical_parser": {
+      "path": "scripts/refresh_research_security_horizon.py",
+      "sha256": "082126ea2c566067ac0736ea170bd7f61948f527648fac88c1978cf4b7be690f"
+    },
+    "transactional_wrapper": {
+      "path": "sources/audits/2026-10-09/refresh_research_security_horizon.py",
+      "sha256": "658971fd17ae0ecdbb5256fcdf71245d0f669bb68554e55c1c12f19fba594b06"
+    },
+    "local_only_adaptations": [
+      "Date set to 2026-10-13 and baseline commit set to 5d5926f2c6195a39898503041ee81c2817ef11ce",
+      "Current Vending-Bench 2 modules selected from the freshly fetched page/node imports",
+      "Basin checkpoint and distinct Muse Wonder model IDs normalized using primary board source fields and coordinating registry decisions",
+      "Dry parse and write only three semantically changed tables; unchanged records retain exact bytes and dates"
+    ],
+    "dynamic_module_provenance": {
+      "page": "https://andonlabs.com/evals/vending-bench-2",
+      "node": "https://andonlabs.com/_app/immutable/nodes/27.DD89StnP.js",
+      "runs": "https://andonlabs.com/_app/immutable/chunks/Dfav8PA6.js",
+      "release_dates": "https://andonlabs.com/_app/immutable/chunks/B_kw8hTs.js"
+    },
+    "new_executable_scripts_published": false
+  }
+}
