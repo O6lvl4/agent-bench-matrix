@@ -1,0 +1,83 @@
+{
+ "retrieved": "2026-10-14",
+ "gaps": [
+  {
+   "id": "livemcpbench",
+   "status": "still-gap",
+   "checked_at": "2026-10-14",
+   "detail": "Official page, CSV and repository history unchanged; all 13 board dates remain 8/2025. Existing exclusion of inactive boards retained.",
+   "source_urls": [
+    "https://icip-cas.github.io/LiveMCPBench/",
+    "https://docs.google.com/spreadsheets/d/1EXpgXq1VKw5A7l7-N2E9xt3w0eLJ2YPVPT-VrRxKZBw/export?format=csv",
+    "https://api.github.com/repos/icip-cas/LiveMCPBench/commits"
+   ],
+   "source_response_hashes": {
+    "https://icip-cas.github.io/LiveMCPBench/": "3f2e60b437928e1a8d4caded2d0f22c193af660b2af0a24e1e2ec3e8ebdd704a",
+    "https://docs.google.com/spreadsheets/d/1EXpgXq1VKw5A7l7-N2E9xt3w0eLJ2YPVPT-VrRxKZBw/export?format=csv": "823309a782497c1a5ba76434351af888ee096acf5187aa85974ea22784e25561",
+    "https://api.github.com/repos/icip-cas/LiveMCPBench/commits": "6c5c56c7d69c0288183d2a9fb90ef317ff84fb9313c5a7d37d687e98d8a80001"
+   },
+   "archive_member": "gaps/livemcpbench.json",
+   "archive_sha256": "c2bfba4156690f7be5ffe098a51e6ddc928d3f36b1b0613a673bc7b6f55f005c",
+   "data_gap_file_preserved_byte_identical": true,
+   "gap_file_sha256": "85f96b31d07fbfeccef3ecadac06f11baba6c9b051112142dbabb5d5027cd623"
+  },
+  {
+   "id": "gaia-validation",
+   "status": "still-gap",
+   "checked_at": "2026-10-14",
+   "detail": "Official app source and public validation Parquet byte-identical to prior verified evidence; validation tab remains commented out. Not imported because absent from current displayed board.",
+   "source_urls": [
+    "https://huggingface.co/spaces/gaia-benchmark/leaderboard/raw/main/app.py",
+    "https://huggingface.co/datasets/gaia-benchmark/results_public/resolve/main/2023/validation-00000-of-00001.parquet"
+   ],
+   "source_response_hashes": {
+    "https://huggingface.co/spaces/gaia-benchmark/leaderboard/raw/main/app.py": "3b5ae007d232951c3ed2505b862048f98b3b912314365256c3b0c106ae8cc579",
+    "https://huggingface.co/datasets/gaia-benchmark/results_public/resolve/main/2023/validation-00000-of-00001.parquet": "247e551dd60dd3cf7b77d727230a5573f2e3c2c026173661449ae4e6ba0341d4"
+   },
+   "archive_member": "gaps/gaia-validation.json",
+   "archive_sha256": "709a4a9d9e87a1a45b13a21e635576b03a3d1c6266848343a9e4729af20a305a",
+   "data_gap_file_preserved_byte_identical": true,
+   "gap_file_sha256": "3e4259968fd1c30828d675481cb1c7d8a3c8284ea90873748a764b3d77b482de"
+  },
+  {
+   "id": "galileo-agent-leaderboard-v2",
+   "status": "still-gap",
+   "checked_at": "2026-10-14",
+   "detail": "Space and commit history unchanged; latest Space edit is a dependency update (2026-06-11), dataset lastModified remains 2025-07-16. Existing inactive-board exclusion retained; mutable API metadata hash differs without dataset revision change.",
+   "source_urls": [
+    "https://huggingface.co/api/spaces/galileo-ai/agent-leaderboard",
+    "https://huggingface.co/api/spaces/galileo-ai/agent-leaderboard/commits/main",
+    "https://huggingface.co/api/datasets/galileo-ai/agent-leaderboard-v2"
+   ],
+   "source_response_hashes": {
+    "https://huggingface.co/api/spaces/galileo-ai/agent-leaderboard": "864c8c9c3b5371c855d56bd3d93f653486dff89e83630d653ce37e5e18c6b449",
+    "https://huggingface.co/api/spaces/galileo-ai/agent-leaderboard/commits/main": "7e15541ba5bd65e2b56e356d45b5ab60490fd31ab74f2bc9b0f09355e35767f2",
+    "https://huggingface.co/api/datasets/galileo-ai/agent-leaderboard-v2": "5fc26d4810515684006bd5c3fc3dc57cbf39e2c66401d3d7f098931d95f90cc6"
+   },
+   "archive_member": "gaps/galileo-agent-leaderboard-v2.json",
+   "archive_sha256": "7fa667836f3066aa72571230ce2ee27f9c0d7693d0a2b88b3c0fda6e4f04e303",
+   "data_gap_file_preserved_byte_identical": true,
+   "gap_file_sha256": "3f578ebb2d2a2e03be5ade8abace2c6a9357c1a69ddd3be2b6b2e1e6c5edb313"
+  },
+  {
+   "id": "crmarena",
+   "status": "still-gap",
+   "checked_at": "2026-10-14",
+   "detail": "Official Space remains last modified 2025-02-06; CSV unchanged, 24 original CRMArena configurations and no CRMArena-Pro results. Existing inactive-board exclusion retained.",
+   "source_urls": [
+    "https://huggingface.co/api/spaces/Salesforce/CRMArena-Leaderboard",
+    "https://huggingface.co/api/spaces/Salesforce/CRMArena-Leaderboard/commits/main",
+    "https://huggingface.co/spaces/Salesforce/CRMArena-Leaderboard/raw/main/crmarena_results/all_results.csv"
+   ],
+   "source_response_hashes": {
+    "https://huggingface.co/api/spaces/Salesforce/CRMArena-Leaderboard": "e9ab3e8142b3bbad169e0fd79d6bdb2a7843eb3b9850391cf24b67e07d52a454",
+    "https://huggingface.co/api/spaces/Salesforce/CRMArena-Leaderboard/commits/main": "95e54325312934bd46a904c18cda77b87056e0cb664b980abffd6aeaa40ab439",
+    "https://huggingface.co/spaces/Salesforce/CRMArena-Leaderboard/raw/main/crmarena_results/all_results.csv": "de76cf7c6d42a705d8f88a31bc584f69e517bdec8b600ddc2a9b042e6a1f11f5"
+   },
+   "archive_member": "gaps/crmarena.json",
+   "archive_sha256": "24557b488bac62f2ca6ea04d23907f4f26e0983d05dfd9a50e335e9c08be283d",
+   "data_gap_file_preserved_byte_identical": true,
+   "gap_file_sha256": "5e1b8a1753e674dc51a6ef6a89416db675ae2a5835e8a2a369bb0ea35a2b7d16"
+  }
+ ]
+}

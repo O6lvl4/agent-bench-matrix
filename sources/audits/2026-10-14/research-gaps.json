@@ -1,0 +1,118 @@
+{
+  "retrieved": "2026-10-14",
+  "gaps": [
+    {
+      "id": "bountybench",
+      "sources": [
+        {
+          "url": "https://bountybench.github.io/",
+          "status": "404",
+          "sha256": "70d613e3acfba24fd2876fcbacaf639e1e111ef4d54baf70761c47673f37d6a3",
+          "bytes": 9115,
+          "fetched_at_utc": "2026-10-14T00:56:26.075178+00:00"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/bountybench/bountybench/main/README.md",
+          "status": "200",
+          "sha256": "363a7c22affcccae6ca6958e3528eda5d9f66b269a0285bb71ae4fa334a1eb0b",
+          "bytes": 7937,
+          "fetched_at_utc": "2026-10-14T00:56:17.935632+00:00"
+        }
+      ],
+      "prior_response_bytes_equal": true,
+      "status": "rechecked_unavailable",
+      "reason": "Project page still returns HTTP 404; the current official README contains no leaderboard link or model-ranking result table."
+    },
+    {
+      "id": "browsecomp-zh",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/PALIN2018/BrowseComp-ZH/main/README.md",
+          "status": "200",
+          "sha256": "bd8d592e740bd1d1bd4af1a7f8f68ce0ea7eb3479d60e84b2e76810650d69a33",
+          "bytes": 8238,
+          "fetched_at_utc": "2026-10-14T00:56:17.899635+00:00"
+        }
+      ],
+      "prior_response_bytes_equal": true,
+      "status": "rechecked_unavailable",
+      "reason": "Official README still contains a fixed Model Performance Overview and evaluation instructions, with no continuously updated leaderboard link. Historical paper results were not promoted to live measured rows."
+    },
+    {
+      "id": "core-bench",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/siegelz/core-bench/main/README.md",
+          "status": "200",
+          "sha256": "8c0f6086d0aad6871b516e441ad28f0428991779446cc2370f91bfe4ecef73ba",
+          "bytes": 10603,
+          "fetched_at_utc": "2026-10-14T00:56:17.967538+00:00"
+        }
+      ],
+      "prior_response_bytes_equal": true,
+      "status": "rechecked_unavailable",
+      "reason": "The official README still directs evaluations and leaderboard submissions to HAL; this is already represented by hal-core-bench-hard, not a separate standalone board."
+    },
+    {
+      "id": "re-bench",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/METR/RE-Bench/main/README.md",
+          "status": "200",
+          "sha256": "7f279f6fcbfa8d6e7309764cd7620f682ffbeaedc5f9af09b8746b9c10bbb2dd",
+          "bytes": 6662,
+          "fetched_at_utc": "2026-10-14T00:56:17.927812+00:00"
+        }
+      ],
+      "prior_response_bytes_equal": true,
+      "status": "rechecked_unavailable",
+      "reason": "Official README still describes seven task families with starting and official-solution baselines; no public model-ranked leaderboard is identified. These baselines are not METR Time Horizon results."
+    },
+    {
+      "id": "browsecomp",
+      "sources": [
+        {
+          "url": "https://openai.com/index/browsecomp/",
+          "status": "200",
+          "sha256": "b76af655737f6f70ee37fbe24c4b66b2915cc2f4e76bd35853bf6dc1ad1dcedc",
+          "bytes": 504582,
+          "fetched_at_utc": "2026-10-14T00:56:26.148232+00:00"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/openai/simple-evals/main/README.md",
+          "status": "200",
+          "sha256": "d9647c4a0e34cd9b2b528ff6986141734aac6f5f2f18a068eeadb2af0b29786f",
+          "bytes": 13160,
+          "fetched_at_utc": "2026-10-14T00:56:18.031675+00:00"
+        }
+      ],
+      "prior_response_bytes_equal": false,
+      "status": "rechecked_unavailable",
+      "reason": "OpenAI article and simple-evals README rechecked. The README still states that new model and result updates stopped in July 2025; no live official browsing-agent leaderboard link is present in the article. The separate Kaggle-managed benchmark is a different harness and is not merged into this gap.",
+      "checks": {
+        "announcement_leaderboard_links": 0,
+        "simple_evals_stopped_July_2025_notice": true,
+        "separate_kaggle_table_checked_by_web_audit": true
+      }
+    },
+    {
+      "id": "vending-bench-arena",
+      "sources": [
+        {
+          "url": "https://andonlabs.com/evals/vending-bench-arena",
+          "status": "200",
+          "sha256": "10643a6f972f3762ffc0576103eae40767c83884c311cec1bf5170200b8ac4a1",
+          "bytes": 321978,
+          "fetched_at_utc": "2026-10-14T00:56:26.008970+00:00"
+        }
+      ],
+      "prior_response_bytes_equal": false,
+      "status": "rechecked_unavailable",
+      "reason": "Latest published Arena round remains #13. Results compare different two- or three-model opponent groups by round; no single all-model ranking under shared opposition is present. Results remain separate from Vending-Bench 2.",
+      "checks": {
+        "latest_round": 13,
+        "single_comparable_board": false
+      }
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
  "source": {
-  "runs": "https://andonlabs.com/_app/immutable/chunks/Dfav8PA6.js (vb2; time_series removed)",
-  "release_dates": "https://andonlabs.com/_app/immutable/chunks/B_kw8hTs.js",
-  "costs": "https://andonlabs.com/_app/immutable/nodes/27.DD89StnP.js"
+  "runs": "https://andonlabs.com/_app/immutable/chunks/Cjn0_qj9.js (vb2; time_series removed)",
+  "release_dates": "https://andonlabs.com/_app/immutable/chunks/D-_XXLSr.js",
+  "costs": "https://andonlabs.com/_app/immutable/nodes/27.DD0oMeXK.js"
  },
  "runs_vb2": {
   "Claude Fable 5 - High": {
@@ -687,6 +687,28 @@
    "final_value_geomean_n": 6,
    "time_series_len": 365
   },
+  "Muse Wonder": {
+   "num_epochs": 6,
+   "num_final_values": 6,
+   "final_value": 9432.18,
+   "final_value_std": 2366.066333693964,
+   "final_value_sem": 965.9425358546611,
+   "final_value_ci95": 1893.2473702751356,
+   "final_value_geomean": 9205.447417616639,
+   "final_value_geomean_n": 6,
+   "time_series_len": 365
+  },
+  "Muse Wonder Full": {
+   "num_epochs": 6,
+   "num_final_values": 6,
+   "final_value": 12291.558333333334,
+   "final_value_std": 2167.231184155643,
+   "final_value_sem": 884.7684259715148,
+   "final_value_ci95": 1734.146114904169,
+   "final_value_geomean": 12133.320805346248,
+   "final_value_geomean_n": 6,
+   "time_series_len": 365
+  },
   "Qwen 3.5 27B": {
    "num_epochs": 5,
    "num_final_values": 5,
@@ -838,7 +860,9 @@
   "GPT-6 Sol": "2026-09-22",
   "Claude Sonnet 5.5": "2026-09-28",
   "Gemini 4 Argon": "2026-09-30",
-  "Claude Haiku 5.5": "2026-10-07"
+  "Claude Haiku 5.5": "2026-10-07",
+  "Muse Wonder": "2026-10-12",
+  "Muse Wonder Full": "2026-10-12"
  },
  "costs": {
   "Claude Fable 5 - High": {
@@ -932,11 +956,11 @@
   "Claude Opus 4.5": {
    "provider": "Anthropic",
    "n": 6,
-   "mean_cost": 770.73,
-   "min_cost": 94.03,
+   "mean_cost": 947.48,
+   "min_cost": 742.58,
    "max_cost": 1045.27,
-   "avg_input_tokens": 153077574,
-   "avg_output_tokens": 213555,
+   "avg_input_tokens": 188213861,
+   "avg_output_tokens": 256269,
    "price_per_mtok_in": 5,
    "price_per_mtok_out": 25
   },
@@ -1009,11 +1033,11 @@
   "Claude Sonnet 4.5": {
    "provider": "Anthropic",
    "n": 5,
-   "mean_cost": 90.72,
-   "min_cost": 6.55,
-   "max_cost": 259.36,
-   "avg_input_tokens": 30033014,
-   "avg_output_tokens": 41189,
+   "mean_cost": 333.61,
+   "min_cost": 266.02,
+   "max_cost": 392.72,
+   "avg_input_tokens": 110478190,
+   "avg_output_tokens": 145193,
    "price_per_mtok_in": 3,
    "price_per_mtok_out": 15
   },
@@ -1042,11 +1066,11 @@
   "Claude Sonnet 5.5": {
    "provider": "Anthropic",
    "n": 6,
-   "mean_cost": 172.18,
-   "min_cost": 110.92,
+   "mean_cost": 218.72,
+   "min_cost": 193.01,
    "max_cost": 243.84,
-   "avg_input_tokens": 77841700,
-   "avg_output_tokens": 1649278,
+   "avg_input_tokens": 99031294,
+   "avg_output_tokens": 2066016,
    "price_per_mtok_in": 2,
    "price_per_mtok_out": 10
   },
@@ -1119,11 +1143,11 @@
   "GLM-5.3": {
    "provider": "Zhipu",
    "n": 6,
-   "mean_cost": 113.23,
-   "min_cost": 30.28,
+   "mean_cost": 127.93,
+   "min_cost": 118.49,
    "max_cost": 136.39,
-   "avg_input_tokens": 80024532,
-   "avg_output_tokens": 271168,
+   "avg_input_tokens": 90421106,
+   "avg_output_tokens": 304632,
    "price_per_mtok_in": 1.4,
    "price_per_mtok_out": 4.4
   },
@@ -1218,11 +1242,11 @@
   "GPT-5.6 Terra": {
    "provider": "OpenAI",
    "n": 5,
-   "mean_cost": 137.6,
-   "min_cost": 81.65,
+   "mean_cost": 146.6,
+   "min_cost": 126.68,
    "max_cost": 156.14,
-   "avg_input_tokens": 52806840,
-   "avg_output_tokens": 371949,
+   "avg_input_tokens": 56241168,
+   "avg_output_tokens": 399928,
    "price_per_mtok_in": 2.5,
    "price_per_mtok_out": 15
   },
@@ -1240,22 +1264,22 @@
   "GPT-6 Sol": {
    "provider": "OpenAI",
    "n": 6,
-   "mean_cost": 103.79,
-   "min_cost": 57.34,
+   "mean_cost": 110.69,
+   "min_cost": 96.09,
    "max_cost": 140.5,
-   "avg_input_tokens": 49917784,
-   "avg_output_tokens": 395654,
+   "avg_input_tokens": 53242987,
+   "avg_output_tokens": 420093,
    "price_per_mtok_in": 2,
    "price_per_mtok_out": 10
   },
   "GPT-OSS-120b": {
    "provider": "Fireworks",
    "n": 5,
-   "mean_cost": 9.94,
-   "min_cost": 1.07,
+   "mean_cost": 11.4,
+   "min_cost": 6.5,
    "max_cost": 17.64,
-   "avg_input_tokens": 65012957,
-   "avg_output_tokens": 305778,
+   "avg_input_tokens": 74618646,
+   "avg_output_tokens": 344757,
    "price_per_mtok_in": 0.15,
    "price_per_mtok_out": 0.6
   },
@@ -1273,11 +1297,11 @@
   "Gemini 2.5 Pro": {
    "provider": "Google",
    "n": 5,
-   "mean_cost": 73.71,
-   "min_cost": 17.7,
+   "mean_cost": 81.39,
+   "min_cost": 56.14,
    "max_cost": 128.25,
-   "avg_input_tokens": 56963017,
-   "avg_output_tokens": 250285,
+   "avg_input_tokens": 62857415,
+   "avg_output_tokens": 282210,
    "price_per_mtok_in": 1.25,
    "price_per_mtok_out": 10
   },
@@ -1361,11 +1385,11 @@
   "Grok 4.1 Fast": {
    "provider": "xAI",
    "n": 5,
-   "mean_cost": 13.54,
-   "min_cost": 6.62,
-   "max_cost": 18.65,
-   "avg_input_tokens": 67590489,
-   "avg_output_tokens": 47771,
+   "mean_cost": 18.56,
+   "min_cost": 11.9,
+   "max_cost": 23.76,
+   "avg_input_tokens": 92620109,
+   "avg_output_tokens": 62662,
    "price_per_mtok_in": 0.2,
    "price_per_mtok_out": 0.5
   },
@@ -1449,11 +1473,11 @@
   "Kimi K3 (Moonshot)": {
    "provider": "Moonshot",
    "n": 6,
-   "mean_cost": 234.63,
-   "min_cost": 70.09,
+   "mean_cost": 283.2,
+   "min_cost": 215.64,
    "max_cost": 387.16,
-   "avg_input_tokens": 77031400,
-   "avg_output_tokens": 235996,
+   "avg_input_tokens": 92787217,
+   "avg_output_tokens": 322741,
    "price_per_mtok_in": 3,
    "price_per_mtok_out": 15
   },
@@ -1489,6 +1513,17 @@
    "avg_output_tokens": 185168,
    "price_per_mtok_in": 1.25,
    "price_per_mtok_out": 4.25
+  },
+  "Muse Wonder": {
+   "provider": "Meta",
+   "n": 6,
+   "mean_cost": 329.08,
+   "min_cost": 291.35,
+   "max_cost": 366.64,
+   "avg_input_tokens": 80923257,
+   "avg_output_tokens": 269155,
+   "price_per_mtok_in": 4,
+   "price_per_mtok_out": 20
   },
   "Qwen 3.5 27B": {
    "provider": "Alibaba",

@@ -1,0 +1,236 @@
+{
+  "table": "vending-bench-2",
+  "source": "https://andonlabs.com/evals/vending-bench-2",
+  "added": [
+    {
+      "rank": 10,
+      "system": "Muse Wonder",
+      "agent": null,
+      "model_raw": [
+        "Muse Wonder"
+      ],
+      "model_ids": [
+        "muse-wonder"
+      ],
+      "model_config": null,
+      "score": 9432.18,
+      "score_extra": {
+        "std_error": 965.9425358546611,
+        "num_runs": 6,
+        "geomean_money_balance": 9205.447417616639,
+        "geomean_num_runs": 6,
+        "mean_cost_usd": 329.08
+      },
+      "date": "2026-10-12",
+      "verified": null,
+      "open_source": null,
+      "org": "Meta",
+      "row_url": null
+    },
+    {
+      "rank": 4,
+      "system": "Muse Wonder Full",
+      "agent": null,
+      "model_raw": [
+        "Muse Wonder Full"
+      ],
+      "model_ids": [
+        "muse-wonder-full"
+      ],
+      "model_config": null,
+      "score": 12291.558333333334,
+      "score_extra": {
+        "std_error": 884.7684259715148,
+        "num_runs": 6,
+        "geomean_money_balance": 12133.320805346248,
+        "geomean_num_runs": 6
+      },
+      "date": "2026-10-12",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    }
+  ],
+  "removed": [],
+  "changed_excluding_rank": {
+    "GPT-OSS-120b": {
+      "score_extra": {
+        "before": {
+          "std_error": 2.8717092471209504,
+          "num_runs": 5,
+          "geomean_num_runs": 0,
+          "mean_cost_usd": 9.94
+        },
+        "after": {
+          "std_error": 2.8717092471209504,
+          "num_runs": 5,
+          "geomean_num_runs": 0,
+          "mean_cost_usd": 11.4
+        }
+      }
+    },
+    "GPT-6 Sol": {
+      "score_extra": {
+        "before": {
+          "std_error": 1050.6840635903725,
+          "num_runs": 6,
+          "geomean_money_balance": 14208.638578110926,
+          "geomean_num_runs": 6,
+          "mean_cost_usd": 103.79
+        },
+        "after": {
+          "std_error": 1050.6840635903725,
+          "num_runs": 6,
+          "geomean_money_balance": 14208.638578110926,
+          "geomean_num_runs": 6,
+          "mean_cost_usd": 110.69
+        }
+      }
+    },
+    "Grok 4.1 Fast": {
+      "score_extra": {
+        "before": {
+          "std_error": 457.64703638721403,
+          "num_runs": 5,
+          "geomean_money_balance": 972.1441276886194,
+          "geomean_num_runs": 4,
+          "mean_cost_usd": 13.54
+        },
+        "after": {
+          "std_error": 457.64703638721403,
+          "num_runs": 5,
+          "geomean_money_balance": 972.1441276886194,
+          "geomean_num_runs": 4,
+          "mean_cost_usd": 18.56
+        }
+      }
+    },
+    "Kimi K3 (Moonshot)": {
+      "score_extra": {
+        "before": {
+          "std_error": 691.1590364826801,
+          "num_runs": 6,
+          "geomean_money_balance": 4928.080870604488,
+          "geomean_num_runs": 6,
+          "mean_cost_usd": 234.63
+        },
+        "after": {
+          "std_error": 691.1590364826801,
+          "num_runs": 6,
+          "geomean_money_balance": 4928.080870604488,
+          "geomean_num_runs": 6,
+          "mean_cost_usd": 283.2
+        }
+      }
+    },
+    "GLM-5.3": {
+      "score_extra": {
+        "before": {
+          "std_error": 786.9159479851284,
+          "num_runs": 6,
+          "geomean_money_balance": 7950.579987807122,
+          "geomean_num_runs": 6,
+          "mean_cost_usd": 113.23
+        },
+        "after": {
+          "std_error": 786.9159479851284,
+          "num_runs": 6,
+          "geomean_money_balance": 7950.579987807122,
+          "geomean_num_runs": 6,
+          "mean_cost_usd": 127.93
+        }
+      }
+    },
+    "GPT-5.6 Terra": {
+      "score_extra": {
+        "before": {
+          "std_error": 373.2659993034456,
+          "num_runs": 5,
+          "geomean_money_balance": 7304.278160188037,
+          "geomean_num_runs": 5,
+          "mean_cost_usd": 137.6
+        },
+        "after": {
+          "std_error": 373.2659993034456,
+          "num_runs": 5,
+          "geomean_money_balance": 7304.278160188037,
+          "geomean_num_runs": 5,
+          "mean_cost_usd": 146.6
+        }
+      }
+    },
+    "Claude Sonnet 5.5": {
+      "score_extra": {
+        "before": {
+          "std_error": 1585.339091520414,
+          "num_runs": 6,
+          "geomean_money_balance": 10594.146220506917,
+          "geomean_num_runs": 6,
+          "mean_cost_usd": 172.18
+        },
+        "after": {
+          "std_error": 1585.339091520414,
+          "num_runs": 6,
+          "geomean_money_balance": 10594.146220506917,
+          "geomean_num_runs": 6,
+          "mean_cost_usd": 218.72
+        }
+      }
+    },
+    "Gemini 2.5 Pro": {
+      "score_extra": {
+        "before": {
+          "std_error": 465.30327731921267,
+          "num_runs": 5,
+          "geomean_money_balance": 493.2901510363499,
+          "geomean_num_runs": 3,
+          "mean_cost_usd": 73.71
+        },
+        "after": {
+          "std_error": 465.30327731921267,
+          "num_runs": 5,
+          "geomean_money_balance": 493.2901510363499,
+          "geomean_num_runs": 3,
+          "mean_cost_usd": 81.39
+        }
+      }
+    },
+    "Claude Sonnet 4.5": {
+      "score_extra": {
+        "before": {
+          "std_error": 1102.0977149236812,
+          "num_runs": 5,
+          "geomean_money_balance": 3006.3255724953715,
+          "geomean_num_runs": 5,
+          "mean_cost_usd": 90.72
+        },
+        "after": {
+          "std_error": 1102.0977149236812,
+          "num_runs": 5,
+          "geomean_money_balance": 3006.3255724953715,
+          "geomean_num_runs": 5,
+          "mean_cost_usd": 333.61
+        }
+      }
+    },
+    "Claude Opus 4.5": {
+      "score_extra": {
+        "before": {
+          "std_error": 979.2482646760785,
+          "num_runs": 6,
+          "geomean_money_balance": 4481.980086297864,
+          "geomean_num_runs": 6,
+          "mean_cost_usd": 770.73
+        },
+        "after": {
+          "std_error": 979.2482646760785,
+          "num_runs": 6,
+          "geomean_money_balance": 4481.980086297864,
+          "geomean_num_runs": 6,
+          "mean_cost_usd": 947.48
+        }
+      }
+    }
+  }
+}
