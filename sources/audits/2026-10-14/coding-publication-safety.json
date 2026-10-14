@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-14",
+  "status": "passed",
+  "response_files_scanned": 50,
+  "redactions": [
+    {
+      "member": "coding/897dc55094f8a907",
+      "original_response_sha256": "92c0b7c55446f4510f91c3f25e671becc51e422d9e18868324b896d7a0513699",
+      "stored_response_sha256": "dac37425da3ef93f982eb42fedd661435706f0e50831ca84d32ca0966cfc5828",
+      "redactions": {
+        "public_analytics_token": 1
+      },
+      "change": "Ancillary public analytics token redacted; benchmark rows and extraction/pricing logic preserved."
+    }
+  ],
+  "reviewed_false_positives": [
+    {
+      "file": "bf226ad3547d52e0",
+      "pattern": "contact_email",
+      "count": 4,
+      "reason": "Public @2x.png image asset filenames."
+    }
+  ],
+  "unresolved_sensitive_matches": [],
+  "archive_hashes_verified": 50
+}
