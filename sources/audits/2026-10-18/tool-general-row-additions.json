@@ -1,0 +1,182 @@
+[
+  {
+    "id": "tau3-voice",
+    "rows_before": 18,
+    "rows_after": 20,
+    "added_rows": [
+      {
+        "rank": null,
+        "system": "Grok Voice 3.0",
+        "agent": null,
+        "model_raw": [
+          "Grok Voice 3.0"
+        ],
+        "model_ids": [],
+        "model_config": "user sim: gpt-5.5 (xhigh); voice model: grok-voice-3.0; submission type: custom; evaluation date: 2026-10-08; benchmark revision: 4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699; methodology: Sierra evaluation of an early-access Grok Voice 3.0 model before its public release. The public API model name is grok-voice-3.0. Standard full-duplex xAI adapter, base airline/retail/telecom task sets, regular speech complexity, seed 300, 0.2-second ticks, 1200-second simulated limit, and one scored trial per task. The voice user simulator v1.0 pipeline used gpt-5.5 with xhigh reasoning effort as its customer LLM; the remaining simulator components, benchmark prompts, policies, tools, and evaluator were unchanged. This non-default customer LLM makes the result a custom submission. Published trajectory metadata replaces an internal early-access model identifier with the public API model name; scored task content, rewards, timestamps, and audio are unchanged.; verification details: All 278 base tasks have one scored canonical trajectory. The initial retail run encountered ungraded connection timeouts at 80 concurrency and was resumed at 40 concurrency; all 114 retail tasks have a final scored result. Airline ran at up to 80 concurrency and telecom at 40. The submitted scores were computed from the saved trajectories. Reviewed trajectories and canonical audio are hosted by the leaderboard.",
+        "score": 79.5906432748538,
+        "score_extra": {
+          "retail_pass_1": 76.31578947368422,
+          "airline_pass_1": 80.0,
+          "telecom_pass_1": 82.45614035087719
+        },
+        "date": "2026-10-14",
+        "verified": true,
+        "open_source": null,
+        "org": "xAI",
+        "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-3-0_xai_2026-10-14/submission.json"
+      },
+      {
+        "rank": null,
+        "system": "Salesforce Launa v1",
+        "agent": null,
+        "model_raw": [
+          "Salesforce Launa v1"
+        ],
+        "model_ids": [],
+        "model_config": "reasoning: none; user sim: v1.0; voice model: launa-v1; submission type: custom; evaluation date: 2026-10-03; benchmark revision: b7ea9074c1cba482b30687fecdb5c8425fd6f619; methodology: Custom Salesforce Launa v1 full-duplex voice evaluation using standard benchmark prompts, tools and domain policies, regular speech complexity, seed 300, and the Claude Opus 4.5 hallucination reviewer. The customer simulator uses gpt-5.2-2025-12-11 at temperature 0. The scored run used a 16,384-token agent context window except retail tasks 98 and 104, which used 32,768 tokens; task 98 was retried after ungraded context-overflow errors. The current endpoint uses 32,768 tokens for every session, so it does not exactly reproduce the submitted run.; verification details: Benchmark-supplied prompts, domain policies, tools, tasks and evaluator were unchanged. All 278 tasks have one scored canonical trajectory. Trajectories and audio are hosted by the leaderboard.",
+        "score": 72.87719298245614,
+        "score_extra": {
+          "retail_pass_1": 71.9298245614035,
+          "airline_pass_1": 66,
+          "telecom_pass_1": 80.7017543859649
+        },
+        "date": "2026-10-06",
+        "verified": true,
+        "open_source": null,
+        "org": "Salesforce",
+        "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/salesforce-launa-v1_salesforce_2026-10-06/submission.json"
+      }
+    ],
+    "changed_existing_rows": [],
+    "removed_rows": []
+  },
+  {
+    "id": "tau3-voice-airline",
+    "rows_before": 18,
+    "rows_after": 20,
+    "added_rows": [
+      {
+        "rank": null,
+        "system": "Grok Voice 3.0",
+        "agent": null,
+        "model_raw": [
+          "Grok Voice 3.0"
+        ],
+        "model_ids": [],
+        "model_config": "user sim: gpt-5.5 (xhigh); voice model: grok-voice-3.0; submission type: custom; evaluation date: 2026-10-08; benchmark revision: 4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699; methodology: Sierra evaluation of an early-access Grok Voice 3.0 model before its public release. The public API model name is grok-voice-3.0. Standard full-duplex xAI adapter, base airline/retail/telecom task sets, regular speech complexity, seed 300, 0.2-second ticks, 1200-second simulated limit, and one scored trial per task. The voice user simulator v1.0 pipeline used gpt-5.5 with xhigh reasoning effort as its customer LLM; the remaining simulator components, benchmark prompts, policies, tools, and evaluator were unchanged. This non-default customer LLM makes the result a custom submission. Published trajectory metadata replaces an internal early-access model identifier with the public API model name; scored task content, rewards, timestamps, and audio are unchanged.; verification details: All 278 base tasks have one scored canonical trajectory. The initial retail run encountered ungraded connection timeouts at 80 concurrency and was resumed at 40 concurrency; all 114 retail tasks have a final scored result. Airline ran at up to 80 concurrency and telecom at 40. The submitted scores were computed from the saved trajectories. Reviewed trajectories and canonical audio are hosted by the leaderboard.",
+        "score": 80.0,
+        "score_extra": {},
+        "date": "2026-10-14",
+        "verified": true,
+        "open_source": null,
+        "org": "xAI",
+        "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-3-0_xai_2026-10-14/submission.json"
+      },
+      {
+        "rank": null,
+        "system": "Salesforce Launa v1",
+        "agent": null,
+        "model_raw": [
+          "Salesforce Launa v1"
+        ],
+        "model_ids": [],
+        "model_config": "reasoning: none; user sim: v1.0; voice model: launa-v1; submission type: custom; evaluation date: 2026-10-03; benchmark revision: b7ea9074c1cba482b30687fecdb5c8425fd6f619; methodology: Custom Salesforce Launa v1 full-duplex voice evaluation using standard benchmark prompts, tools and domain policies, regular speech complexity, seed 300, and the Claude Opus 4.5 hallucination reviewer. The customer simulator uses gpt-5.2-2025-12-11 at temperature 0. The scored run used a 16,384-token agent context window except retail tasks 98 and 104, which used 32,768 tokens; task 98 was retried after ungraded context-overflow errors. The current endpoint uses 32,768 tokens for every session, so it does not exactly reproduce the submitted run.; verification details: Benchmark-supplied prompts, domain policies, tools, tasks and evaluator were unchanged. All 278 tasks have one scored canonical trajectory. Trajectories and audio are hosted by the leaderboard.",
+        "score": 66,
+        "score_extra": {},
+        "date": "2026-10-06",
+        "verified": true,
+        "open_source": null,
+        "org": "Salesforce",
+        "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/salesforce-launa-v1_salesforce_2026-10-06/submission.json"
+      }
+    ],
+    "changed_existing_rows": [],
+    "removed_rows": []
+  },
+  {
+    "id": "tau3-voice-retail",
+    "rows_before": 18,
+    "rows_after": 20,
+    "added_rows": [
+      {
+        "rank": null,
+        "system": "Grok Voice 3.0",
+        "agent": null,
+        "model_raw": [
+          "Grok Voice 3.0"
+        ],
+        "model_ids": [],
+        "model_config": "user sim: gpt-5.5 (xhigh); voice model: grok-voice-3.0; submission type: custom; evaluation date: 2026-10-08; benchmark revision: 4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699; methodology: Sierra evaluation of an early-access Grok Voice 3.0 model before its public release. The public API model name is grok-voice-3.0. Standard full-duplex xAI adapter, base airline/retail/telecom task sets, regular speech complexity, seed 300, 0.2-second ticks, 1200-second simulated limit, and one scored trial per task. The voice user simulator v1.0 pipeline used gpt-5.5 with xhigh reasoning effort as its customer LLM; the remaining simulator components, benchmark prompts, policies, tools, and evaluator were unchanged. This non-default customer LLM makes the result a custom submission. Published trajectory metadata replaces an internal early-access model identifier with the public API model name; scored task content, rewards, timestamps, and audio are unchanged.; verification details: All 278 base tasks have one scored canonical trajectory. The initial retail run encountered ungraded connection timeouts at 80 concurrency and was resumed at 40 concurrency; all 114 retail tasks have a final scored result. Airline ran at up to 80 concurrency and telecom at 40. The submitted scores were computed from the saved trajectories. Reviewed trajectories and canonical audio are hosted by the leaderboard.",
+        "score": 76.31578947368422,
+        "score_extra": {},
+        "date": "2026-10-14",
+        "verified": true,
+        "open_source": null,
+        "org": "xAI",
+        "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-3-0_xai_2026-10-14/submission.json"
+      },
+      {
+        "rank": null,
+        "system": "Salesforce Launa v1",
+        "agent": null,
+        "model_raw": [
+          "Salesforce Launa v1"
+        ],
+        "model_ids": [],
+        "model_config": "reasoning: none; user sim: v1.0; voice model: launa-v1; submission type: custom; evaluation date: 2026-10-03; benchmark revision: b7ea9074c1cba482b30687fecdb5c8425fd6f619; methodology: Custom Salesforce Launa v1 full-duplex voice evaluation using standard benchmark prompts, tools and domain policies, regular speech complexity, seed 300, and the Claude Opus 4.5 hallucination reviewer. The customer simulator uses gpt-5.2-2025-12-11 at temperature 0. The scored run used a 16,384-token agent context window except retail tasks 98 and 104, which used 32,768 tokens; task 98 was retried after ungraded context-overflow errors. The current endpoint uses 32,768 tokens for every session, so it does not exactly reproduce the submitted run.; verification details: Benchmark-supplied prompts, domain policies, tools, tasks and evaluator were unchanged. All 278 tasks have one scored canonical trajectory. Trajectories and audio are hosted by the leaderboard.",
+        "score": 71.9298245614035,
+        "score_extra": {},
+        "date": "2026-10-06",
+        "verified": true,
+        "open_source": null,
+        "org": "Salesforce",
+        "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/salesforce-launa-v1_salesforce_2026-10-06/submission.json"
+      }
+    ],
+    "changed_existing_rows": [],
+    "removed_rows": []
+  },
+  {
+    "id": "tau3-voice-telecom",
+    "rows_before": 18,
+    "rows_after": 20,
+    "added_rows": [
+      {
+        "rank": null,
+        "system": "Grok Voice 3.0",
+        "agent": null,
+        "model_raw": [
+          "Grok Voice 3.0"
+        ],
+        "model_ids": [],
+        "model_config": "user sim: gpt-5.5 (xhigh); voice model: grok-voice-3.0; submission type: custom; evaluation date: 2026-10-08; benchmark revision: 4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699; methodology: Sierra evaluation of an early-access Grok Voice 3.0 model before its public release. The public API model name is grok-voice-3.0. Standard full-duplex xAI adapter, base airline/retail/telecom task sets, regular speech complexity, seed 300, 0.2-second ticks, 1200-second simulated limit, and one scored trial per task. The voice user simulator v1.0 pipeline used gpt-5.5 with xhigh reasoning effort as its customer LLM; the remaining simulator components, benchmark prompts, policies, tools, and evaluator were unchanged. This non-default customer LLM makes the result a custom submission. Published trajectory metadata replaces an internal early-access model identifier with the public API model name; scored task content, rewards, timestamps, and audio are unchanged.; verification details: All 278 base tasks have one scored canonical trajectory. The initial retail run encountered ungraded connection timeouts at 80 concurrency and was resumed at 40 concurrency; all 114 retail tasks have a final scored result. Airline ran at up to 80 concurrency and telecom at 40. The submitted scores were computed from the saved trajectories. Reviewed trajectories and canonical audio are hosted by the leaderboard.",
+        "score": 82.45614035087719,
+        "score_extra": {},
+        "date": "2026-10-14",
+        "verified": true,
+        "open_source": null,
+        "org": "xAI",
+        "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-3-0_xai_2026-10-14/submission.json"
+      },
+      {
+        "rank": null,
+        "system": "Salesforce Launa v1",
+        "agent": null,
+        "model_raw": [
+          "Salesforce Launa v1"
+        ],
+        "model_ids": [],
+        "model_config": "reasoning: none; user sim: v1.0; voice model: launa-v1; submission type: custom; evaluation date: 2026-10-03; benchmark revision: b7ea9074c1cba482b30687fecdb5c8425fd6f619; methodology: Custom Salesforce Launa v1 full-duplex voice evaluation using standard benchmark prompts, tools and domain policies, regular speech complexity, seed 300, and the Claude Opus 4.5 hallucination reviewer. The customer simulator uses gpt-5.2-2025-12-11 at temperature 0. The scored run used a 16,384-token agent context window except retail tasks 98 and 104, which used 32,768 tokens; task 98 was retried after ungraded context-overflow errors. The current endpoint uses 32,768 tokens for every session, so it does not exactly reproduce the submitted run.; verification details: Benchmark-supplied prompts, domain policies, tools, tasks and evaluator were unchanged. All 278 tasks have one scored canonical trajectory. Trajectories and audio are hosted by the leaderboard.",
+        "score": 80.7017543859649,
+        "score_extra": {},
+        "date": "2026-10-06",
+        "verified": true,
+        "open_source": null,
+        "org": "Salesforce",
+        "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/salesforce-launa-v1_salesforce_2026-10-06/submission.json"
+      }
+    ],
+    "changed_existing_rows": [],
+    "removed_rows": []
+  }
+]

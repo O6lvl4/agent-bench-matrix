@@ -1,0 +1,31 @@
+{
+  "id": "refresh-tool-general-2026-10-18",
+  "name": "Tool-use/general source refresh acquisition gaps",
+  "retrieved": "2026-10-18",
+  "tried": [
+    "https://gaia-benchmark-leaderboard.hf.space/",
+    "https://gaia-benchmark-leaderboard.hf.space/gradio_api/call/refresh",
+    "https://gaia-benchmark-leaderboard.hf.space/gradio_api/call/refresh/{ephemeral_event_id_omitted}",
+    "https://the-agent-company.com/",
+    "https://the-agent-company.com/static/js/main.6a1ea1e4.js",
+    "https://toolathlon.xyz/docs/leaderboard.md",
+    "https://www.mercor.com/apex/apex-agents-leaderboard/",
+    "https://www.mercor.com/apex/apex-agents-leaderboard/corporate-lawyer-agent/",
+    "https://www.mercor.com/apex/apex-agents-leaderboard/investment-banking-analyst-agent/",
+    "https://www.mercor.com/apex/apex-agents-leaderboard/management-consultant-agent/",
+    "https://www.skillsbench.ai/_next/static/chunks/8e836c7a01322d0f.js",
+    "https://www.skillsbench.ai/leaderboard"
+  ],
+  "reason_ja": "今回9表で完全な現行一次データの取得・照合を完了できなかった。主に接続トンネルの403拒否。旧表・根拠スナップショット・最終成功取得日を維持。GAIAの初期表示HTMLは既存の10月12日行を欠き、非表示のサイズ計測行とも一致しないため代用しなかった。詳細は sources/audits/2026-10-18/tool-general.json。",
+  "affected_tables": [
+    "apex-agents",
+    "apex-agents-corporate-lawyer",
+    "apex-agents-investment-banking",
+    "apex-agents-management-consultant",
+    "gaia",
+    "skillsbench",
+    "theagentcompany",
+    "toolathlon",
+    "toolathlon-verified"
+  ]
+}

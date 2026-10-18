@@ -1,17 +1,17 @@
 {
-  "retrieved": "2026-10-09",
+  "retrieved": "2026-10-18",
   "table": "swe-bench-live-java",
   "status": "comparable-source-extracted",
   "source_data_changed": true,
-  "old_rows": 23,
-  "new_rows": 24,
+  "old_rows": 24,
+  "new_rows": 25,
   "rows_changed": true,
   "snapshot": "sources/swe-bench-live-java/reports-0605_java.json",
-  "snapshot_sha256": "950846d32d99f73c90695d362cb10b9bbab94bcf0791a1c496dd65eaec17c18d",
+  "snapshot_sha256": "64b420c29bd35659ddefdae66f6f2e9d033a60056625e0cea7e1aeb4b83d26f8",
   "sources": [
     {
-      "url": "https://swe-bench-live.github.io/reports-0605.jsonl",
       "request_description": "https://swe-bench-live.github.io/reports-0605.jsonl",
+      "url": "https://swe-bench-live.github.io/reports-0605.jsonl",
       "tables": [
         "swe-bench-live-c-cpp",
         "swe-bench-live-csharp",
@@ -24,16 +24,18 @@
         "swe-bench-live-verified",
         "swe-bench-live-windows"
       ],
+      "group": "coding",
       "file": "d12f2019684d4353",
-      "retrieved": "2026-10-09",
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:22:50.340274+00:00",
       "status": 200,
       "final_url": "https://swe-bench-live.github.io/reports-0605.jsonl",
-      "bytes": 423646,
-      "sha256": "db44484c8b2223d7bc732c5f285b5b51d2c9e625f2b7a992926567c77ccda45a"
+      "bytes": 424448,
+      "sha256": "23baada570d030dcdbdf2b7cff8cdef9be23032798dd7de7b98393cb39714f2c"
     },
     {
-      "url": "https://swe-bench-live.github.io/leaderboard.js",
       "request_description": "https://swe-bench-live.github.io/leaderboard.js",
+      "url": "https://swe-bench-live.github.io/leaderboard.js",
       "tables": [
         "swe-bench-live-c-cpp",
         "swe-bench-live-csharp",
@@ -46,13 +48,15 @@
         "swe-bench-live-verified",
         "swe-bench-live-windows"
       ],
+      "group": "coding",
       "file": "b8f381a4918d9e5e",
-      "retrieved": "2026-10-09",
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:22:51.253881+00:00",
       "status": 200,
       "final_url": "https://swe-bench-live.github.io/leaderboard.js",
       "bytes": 15504,
       "sha256": "d7cd69b4ab1590d95c7f3dd0d00e7e81b7a5bef057eca5f04dd08bba3276e063"
     }
   ],
-  "method": "Reviewed complete source projection; existing normalization reused; SWE-bench Live native resolved/total and explicit dates, or SWE-bench Pro native rank-only updates with frontend direct-render evidence. Unchanged score/configuration fields preserved."
+  "method": "Complete native JSON/YAML/CSV/HTML/RSC table projection compared against the prior snapshot; supported changed rows mechanically regenerated; other source changes fail closed."
 }

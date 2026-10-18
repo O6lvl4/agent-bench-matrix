@@ -16,8 +16,8 @@
     "https://www.cybergym.io/assets/data/cybergym-e2e.json",
     "https://www.cybergym.io/cybergym-e2e/"
   ],
-  "retrieved": "2026-10-07",
-  "newest_row_date": "2026-10-05",
+  "retrieved": "2026-10-18",
+  "newest_row_date": "2026-10-11",
   "snapshot": "sources/cybergym-e2e/cybergym-e2e.json",
   "paper": "https://arxiv.org/abs/2606.04460",
   "repo": "https://github.com/sunblaze-ucb/cybergym-e2e",
@@ -51,6 +51,33 @@
     },
     {
       "rank": 2,
+      "system": "Zhian·Changying (智安·长缨) · Multi-model (DeepSeek-V4-Flash, Zhian-27B)",
+      "agent": "Zhian·Changying (智安·长缨)",
+      "model_raw": [
+        "DeepSeek-V4-Flash",
+        "Zhian-27B"
+      ],
+      "model_ids": [],
+      "model_config": "Budget: self-hosted / 6 h; Multi-model",
+      "score": 66.5,
+      "score_extra": {
+        "patch_only_pct": 92.9,
+        "s1_pct": 78.8,
+        "s2_pct": 68.5,
+        "s4_pct": 41.1,
+        "task_set": 920,
+        "focus": "agent",
+        "multi_model": true,
+        "model_identity_note": "Board explicitly names a multi-model system; model_ids omitted because not all constituents are registered."
+      },
+      "date": "2026-10-11",
+      "verified": null,
+      "open_source": null,
+      "org": "UCAS Zhian",
+      "row_url": "https://github.com/Zhian-creator/Zhian/tree/main"
+    },
+    {
+      "rank": 3,
       "system": "GPT-5.4 · Codex",
       "agent": "Codex",
       "model_raw": [
@@ -76,7 +103,7 @@
       "row_url": null
     },
     {
-      "rank": 3,
+      "rank": 4,
       "system": "Claude Opus 4.6 · Claude Code",
       "agent": "Claude Code",
       "model_raw": [
@@ -102,7 +129,7 @@
       "row_url": null
     },
     {
-      "rank": 4,
+      "rank": 5,
       "system": "Gemini 3.1 Pro · Gemini CLI",
       "agent": "Gemini CLI",
       "model_raw": [
@@ -128,7 +155,7 @@
       "row_url": null
     },
     {
-      "rank": 5,
+      "rank": 6,
       "system": "Claude Opus 4.6 · Claude Code",
       "agent": "Claude Code",
       "model_raw": [
@@ -154,7 +181,7 @@
       "row_url": null
     },
     {
-      "rank": 6,
+      "rank": 7,
       "system": "Aegis · DeepSeek-V4-Flash-0731",
       "agent": "Aegis",
       "model_raw": [
@@ -180,7 +207,7 @@
       "row_url": "https://github.com/bofeng17/Cybergym-E2E/tree/main"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "system": "Gemini 3 Pro · Gemini CLI †",
       "agent": "Gemini CLI",
       "model_raw": [
@@ -206,7 +233,7 @@
       "row_url": null
     },
     {
-      "rank": 8,
+      "rank": 9,
       "system": "GPT-5.2 · Codex †",
       "agent": "Codex",
       "model_raw": [
@@ -232,7 +259,7 @@
       "row_url": null
     },
     {
-      "rank": 9,
+      "rank": 10,
       "system": "Claude Opus 4.5 · Claude Code †",
       "agent": "Claude Code",
       "model_raw": [
@@ -258,7 +285,7 @@
       "row_url": null
     },
     {
-      "rank": 10,
+      "rank": 11,
       "system": "Claude Sonnet 4.5 · Claude Code †",
       "agent": "Claude Code",
       "model_raw": [
@@ -284,7 +311,7 @@
       "row_url": null
     },
     {
-      "rank": 11,
+      "rank": 12,
       "system": "Claude Sonnet 4.5 · OpenHands †",
       "agent": "OpenHands",
       "model_raw": [

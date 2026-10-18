@@ -1,0 +1,76 @@
+{
+  "reason": "Remove contact information and auxiliary Drive access links unnecessary to benchmark verification before public upload. No score/model/condition cells changed. Acquisition hashes retain original response meaning; sanitized replacements are mapped below.",
+  "changes": [
+    {
+      "path": "sources/webarena/sheet_webarena_tab.json",
+      "omitted": "all ancillary trajectory links and non-leaderboard footer rows; benchmark cells unchanged"
+    },
+    {
+      "path": "sources/cybergym-e2e/display-page.html",
+      "email_matches_removed": 8,
+      "drive_matches_removed": 0
+    },
+    {
+      "path": "sources/claims/deepseek-v4-1-flash-1017/README.md",
+      "email_matches_removed": 2,
+      "drive_matches_removed": 0
+    },
+    {
+      "path": "sources/claims/deepseek-v4-1-flash-1017/updates.html",
+      "email_matches_removed": 1,
+      "drive_matches_removed": 0
+    },
+    {
+      "path": "sources/audits/2026-10-18/webcomputer-responses.tar.gz",
+      "members": [
+        "685afe9369ab60a7.response",
+        "b046c85fd2961984.response",
+        "895d714e4b5648a6.response",
+        "de78562d05babd91.response",
+        "31d7d6ae821dd2e8.response"
+      ]
+    },
+    {
+      "path": "sources/audits/2026-10-18/coding-source-responses.tar.gz",
+      "members": [
+        "responses/bf226ad3547d52e0"
+      ]
+    },
+    {
+      "path": "sources/audits/2026-10-18/tool-general-responses.tar.gz",
+      "members": [
+        "tables/tau3-banking.json"
+      ]
+    },
+    {
+      "path": "sources/audits/2026-10-18/research-sources-oct18.tar.gz",
+      "members": [
+        "sources/audits/2026-10-18/research-security-long-horizon/prior/sources/cybergym-e2e/display-page.html",
+        "sources/cybergym-e2e/display-page.html"
+      ]
+    },
+    {
+      "path": "sources/audits/2026-10-18/research-security-long-horizon/prior/sources/cybergym-e2e/display-page.html",
+      "email_matches_removed": 8,
+      "drive_matches_removed": 0
+    }
+  ],
+  "sha256_original_to_sanitized": {
+    "6851a3867c06c66a19c89bb8085f757987e130f354506e569e31155c3fa4edbe": "19b8385430b2515ebb2f1fbe58aafb16bed3da37efe661dd034cc7b17dcb83e2",
+    "627b31e2a2112f89eec254ba30b2c0cffbb9b83d117faf29ffb6a708059ee8ff": "57ff4da1e7f758c8aeae2386be0f8de531fd1545550066825aa02f70f471050b",
+    "b72b796e4f4c739eca5d0ad360a7679b39118ca7eb64891f7151a527b292c42a": "1dc961528ff5b2a33858c16b7a8738eaf6cbb037ee6f660248a7e3fb0da489f5",
+    "44aa1245d5d65d5fc54c8f47a9a3d3235e1ab064a8fc64d6a6e57f570ec8c99c": "cccf604308dfd61a5a8c1c7be1d4e46130d49f3d384d526de78b84d34dd42d62",
+    "e7b5662b97657d2f1b7102f18175d8fb81623602a7588a2fd9e8c290779927e7": "9161591de3815a8ca8c5390110499bf58d0b5af96185a307845d842e4ea38c47",
+    "2932158ec655c99282b9e273e9756d71b5269eb5b361a397e70b30598f751b34": "da3e46fda3a32c5a504fd19aeb1e9b21840a0d61d3c65fed02705d9f5cec5cad",
+    "20537065ccf1e15a61708fc73e40c77d7f05e2e4d0ad6ead05801cf390320e26": "20c882a57b7362a1f133363850a821ef37580ecf3911b994c7d6d7f5de9507e2",
+    "edcaa6f8355be6a8774ebeeb9bdb67648e8eeddb813d6be0fa2433116d9def36": "798ed8b03eabbe5e8249f079442c01ecf23c7299a948a64240dfc5c1c35f2199",
+    "904366e9daf872b8ca250fac5e413248e80d61209aa7db055c213efb695b0683": "7276695cd1ca0e9e00abeb34a56629b3b44fd5890425f423bdabbde1eb45c546",
+    "00e15303d76abc80334b3ddaf1176613562c3c4845f2fdbbbdc8007b194428ce": "bde3697d7270da784b3b9a9d01552987bc21cedf91756197bbca52aa5ea65664",
+    "7ac5c3356b384b6eabe211b331ca72e7766832eca7a92ae954de09f893cacd72": "1e1288a6f0b9437f0ef8df41adcea7339a907644b88837c15ea9088393c49f9f",
+    "c03670817be2c2788789469e5d341ad523dc39d1e6da3a7d2e72f7dfc8508bad": "83cbdfa37cfae11bf3e55f04dba5a7f526f7a398f1e5160f015b831633aa9156",
+    "c82d51b130045c7064ebb1af4c59fa52b2b5a47c4e6b24a896c76d0732282c6a": "5a3df79c974b4cd7e9a2dfa421eda5caf47045e240bffab3edbc9104b6df43c0",
+    "d4b961e35ec0ff361a074cf9e3aa5f616ad025c34f8b23038f7e7e0e204ae760": "17fe4cf789a558dc03fb6c928ab25d2fd88e23d2135a3c3e7d9e3708c7822a15",
+    "483df0fa563c55315bf1d5f7b72e7e2810043e7146ced8ab68e04fc556cb1258": "6dc8c362b14f04f8ddac859cf911d5c3d9188e375c46642a3d196118a40a38eb",
+    "f2136e03e6433c6be5be221ce3e0da583b665d5802d6eaf884d04bdc0ea427d4": "766e743d89d0fef382dd1323ec29e46412d050998c836fa997ae152bd49d0378"
+  }
+}

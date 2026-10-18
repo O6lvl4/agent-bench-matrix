@@ -1,0 +1,826 @@
+{
+  "retrieved": "2026-10-18",
+  "baseline_commit": "0310eeef75423a981e4d8bd158721c95a6b372a3",
+  "tables": [
+    {
+      "id": "androidworld-mobileminiwob",
+      "status": "unchanged",
+      "before_rows": 4,
+      "after_rows": 4,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "androidworld",
+      "status": "unchanged",
+      "before_rows": 48,
+      "after_rows": 48,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "assistantbench",
+      "status": "failed-preserved",
+      "before_rows": 184,
+      "after_rows": 184,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": false
+    },
+    {
+      "id": "bearcubs",
+      "status": "unchanged",
+      "before_rows": 12,
+      "after_rows": 12,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "browsecomp-kaggle",
+      "status": "unchanged",
+      "before_rows": 42,
+      "after_rows": 42,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "browsergym-assistantbench",
+      "status": "unchanged",
+      "before_rows": 6,
+      "after_rows": 6,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "browsergym-miniwob",
+      "status": "unchanged",
+      "before_rows": 16,
+      "after_rows": 16,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "browsergym-visualwebarena",
+      "status": "unchanged",
+      "before_rows": 4,
+      "after_rows": 4,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "browsergym-webarena",
+      "status": "unchanged",
+      "before_rows": 12,
+      "after_rows": 12,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "browsergym-weblinx",
+      "status": "unchanged",
+      "before_rows": 6,
+      "after_rows": 6,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "browsergym-workarena-l1",
+      "status": "unchanged",
+      "before_rows": 16,
+      "after_rows": 16,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "browsergym-workarena-l2",
+      "status": "unchanged",
+      "before_rows": 14,
+      "after_rows": 14,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "browsergym-workarena-l3",
+      "status": "unchanged",
+      "before_rows": 8,
+      "after_rows": 8,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "cua-bench-eda-kicad",
+      "status": "unchanged",
+      "before_rows": 10,
+      "after_rows": 10,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "hal-assistantbench",
+      "status": "unchanged",
+      "before_rows": 15,
+      "after_rows": 15,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "hal-online-mind2web",
+      "status": "unchanged",
+      "before_rows": 22,
+      "after_rows": 22,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "macagentbench",
+      "status": "unchanged",
+      "before_rows": 30,
+      "after_rows": 30,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "mobileworld",
+      "status": "unchanged",
+      "before_rows": 41,
+      "after_rows": 41,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "online-mind2web-auto",
+      "status": "unchanged",
+      "before_rows": 20,
+      "after_rows": 20,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "online-mind2web-human",
+      "status": "unchanged",
+      "before_rows": 13,
+      "after_rows": 13,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "osuniverse",
+      "status": "unchanged",
+      "before_rows": 8,
+      "after_rows": 8,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "osworld-2-1-full-500steps",
+      "status": "changed",
+      "before_rows": 5,
+      "after_rows": 7,
+      "added": [
+        {
+          "rank": 2,
+          "system": "MuseSpark 1.3",
+          "agent": null,
+          "model_raw": [
+            "MuseSpark 1.3"
+          ],
+          "model_ids": [
+            "muse-spark-1.3"
+          ],
+          "model_config": "reasoning=max; tool_setting=batch tool; step_budget=500; release=v2.1",
+          "score": 39.25,
+          "score_extra": {
+            "partial_score": 69.56,
+            "step_budget": 500
+          },
+          "date": null,
+          "verified": null,
+          "open_source": null,
+          "org": "Meta",
+          "row_url": "https://huggingface.co/datasets/xlangai/osworld2.0-trajectory/blob/main/v2.1-muse_spark_1.3-1015-merged-106tasks.zip"
+        },
+        {
+          "rank": 7,
+          "system": "MuseSpark 1.2",
+          "agent": null,
+          "model_raw": [
+            "MuseSpark 1.2"
+          ],
+          "model_ids": [
+            "muse-spark-1.2"
+          ],
+          "model_config": "reasoning=xhigh; tool_setting=batch tool; step_budget=500; release=v2.1",
+          "score": 15.84,
+          "score_extra": {
+            "partial_score": 44.08,
+            "step_budget": 500
+          },
+          "date": null,
+          "verified": null,
+          "open_source": null,
+          "org": "Meta",
+          "row_url": "https://huggingface.co/datasets/xlangai/osworld2.0-trajectory/blob/main/v2.1-muse_spark_1.2-1015-merged-105tasks.zip"
+        }
+      ],
+      "removed": [],
+      "changed": [
+        {
+          "system": "Claude Opus 5",
+          "model_config": "reasoning=high; tool_setting=batch tool; step_budget=500; release=v2.1",
+          "rank_before": 2,
+          "rank_after": 3
+        },
+        {
+          "system": "Claude Opus 5",
+          "model_config": "reasoning=xhigh; tool_setting=batch tool; step_budget=500; release=v2.1",
+          "rank_before": 3,
+          "rank_after": 4
+        },
+        {
+          "system": "Claude Opus 5",
+          "model_config": "reasoning=medium; tool_setting=batch tool; step_budget=500; release=v2.1",
+          "rank_before": 4,
+          "rank_after": 5
+        },
+        {
+          "system": "Claude Opus 5",
+          "model_config": "reasoning=low; tool_setting=batch tool; step_budget=500; release=v2.1",
+          "rank_before": 5,
+          "rank_after": 6
+        }
+      ],
+      "current_source_verified": true
+    },
+    {
+      "id": "osworld-2-1-offline-500steps",
+      "status": "unchanged",
+      "before_rows": 5,
+      "after_rows": 5,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "osworld-2-1-public-agents-full-500steps",
+      "status": "unchanged",
+      "before_rows": 1,
+      "after_rows": 1,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "osworld-2-full-150steps",
+      "status": "unchanged",
+      "before_rows": 6,
+      "after_rows": 6,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "osworld-2-full-300steps",
+      "status": "unchanged",
+      "before_rows": 7,
+      "after_rows": 7,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "osworld-2-full-500steps",
+      "status": "unchanged",
+      "before_rows": 16,
+      "after_rows": 16,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "osworld-2-offline-500steps",
+      "status": "unchanged",
+      "before_rows": 11,
+      "after_rows": 11,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "osworld-mcp",
+      "status": "unchanged",
+      "before_rows": 22,
+      "after_rows": 22,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "osworld-self-reported-a11y-tree",
+      "status": "unchanged",
+      "before_rows": 15,
+      "after_rows": 15,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "osworld-self-reported-screenshot-a11y-tree",
+      "status": "unchanged",
+      "before_rows": 18,
+      "after_rows": 18,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "osworld-self-reported-screenshot",
+      "status": "unchanged",
+      "before_rows": 56,
+      "after_rows": 56,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "osworld-self-reported-set-of-mark",
+      "status": "unchanged",
+      "before_rows": 11,
+      "after_rows": 11,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "osworld-verified",
+      "status": "unchanged",
+      "before_rows": 110,
+      "after_rows": 110,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "real-v1-frameworks",
+      "status": "unchanged",
+      "before_rows": 5,
+      "after_rows": 5,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "real-v1-models",
+      "status": "unchanged",
+      "before_rows": 21,
+      "after_rows": 21,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "real-v1-open-arena",
+      "status": "unchanged",
+      "before_rows": 7,
+      "after_rows": 7,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "real-v2-frameworks",
+      "status": "unchanged",
+      "before_rows": 1,
+      "after_rows": 1,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "real-v2-models",
+      "status": "unchanged",
+      "before_rows": 12,
+      "after_rows": 12,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "venusbench-mobile",
+      "status": "unchanged",
+      "before_rows": 11,
+      "after_rows": 11,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "visualwebarena",
+      "status": "unchanged",
+      "before_rows": 38,
+      "after_rows": 38,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "webarena",
+      "status": "changed",
+      "before_rows": 47,
+      "after_rows": 48,
+      "added": [
+        {
+          "rank": 1,
+          "system": "Narada AI Code",
+          "agent": null,
+          "model_raw": [
+            "Narada AI Code"
+          ],
+          "model_ids": [],
+          "model_config": null,
+          "score": 86.1,
+          "score_extra": {
+            "result_source": "Narada AI Code"
+          },
+          "date": "2026-09",
+          "verified": null,
+          "open_source": false,
+          "org": null,
+          "row_url": "https://narada.ai/blog/introducing-narada-code-operatormini"
+        }
+      ],
+      "removed": [],
+      "changed": [
+        {
+          "system": "Deepseek v3.2",
+          "rank_before": 1,
+          "rank_after": 2
+        },
+        {
+          "system": "OpAgent",
+          "rank_before": 2,
+          "rank_after": 3
+        },
+        {
+          "system": "ColorBrowserAgent",
+          "rank_before": 3,
+          "rank_after": 4
+        },
+        {
+          "system": "Claude Code + GBOX MCP",
+          "rank_before": 4,
+          "rank_after": 5
+        },
+        {
+          "system": "DeepSky Agent",
+          "rank_before": 5,
+          "rank_after": 6
+        },
+        {
+          "system": "Narada AI",
+          "rank_before": 6,
+          "rank_after": 7
+        },
+        {
+          "system": "IBM CUGA",
+          "rank_before": 7,
+          "rank_after": 8
+        },
+        {
+          "system": "OpenAI Operator",
+          "rank_before": 8,
+          "rank_after": 9
+        },
+        {
+          "system": "Jace.AI",
+          "rank_before": 9,
+          "rank_after": 10
+        },
+        {
+          "system": "GLM-4-32B + Qwen2.5-VL-7B",
+          "rank_before": 10,
+          "rank_after": 11
+        },
+        {
+          "system": "WebOperator + GPT-4o",
+          "rank_before": 11,
+          "rank_after": 12
+        },
+        {
+          "system": "ScribeAgent + GPT-4o",
+          "rank_before": 12,
+          "rank_after": 13
+        },
+        {
+          "system": "AgentSymbiotic",
+          "rank_before": 13,
+          "rank_after": 14
+        },
+        {
+          "system": "Learn-by-Interact",
+          "rank_before": 14,
+          "rank_after": 15
+        },
+        {
+          "system": "AgentOccam-Judge",
+          "rank_before": 15,
+          "rank_after": 16
+        },
+        {
+          "system": "A3-Qwen3.5-9B",
+          "rank_before": 16,
+          "rank_after": 17
+        },
+        {
+          "system": "WebPilot",
+          "rank_before": 17,
+          "rank_after": 18
+        },
+        {
+          "system": "GUI-API Hybrid Agent",
+          "rank_before": 18,
+          "rank_after": 19
+        },
+        {
+          "system": "Agent Workflow Memory",
+          "rank_before": 19,
+          "rank_after": 20
+        },
+        {
+          "system": "SteP",
+          "rank_before": 20,
+          "rank_after": 21
+        },
+        {
+          "system": "TTI",
+          "rank_before": 21,
+          "rank_after": 22
+        },
+        {
+          "system": "BrowserGym + GPT-4",
+          "rank_before": 22,
+          "rank_after": 23
+        },
+        {
+          "system": "AgentTrek-1.0-32B",
+          "rank_before": 23,
+          "rank_after": 24
+        },
+        {
+          "system": "GPT-4 + Auto Eval",
+          "rank_before": 24,
+          "rank_after": 25
+        },
+        {
+          "system": "GPT-4o + Tree Search",
+          "rank_before": 25,
+          "rank_after": 26
+        },
+        {
+          "system": "AutoWebGLM",
+          "rank_before": 26,
+          "rank_after": 27
+        },
+        {
+          "system": "NNetNav",
+          "rank_before": 27,
+          "rank_after": 28
+        },
+        {
+          "system": "gpt-4-0613",
+          "rank_before": 28,
+          "rank_after": 29
+        },
+        {
+          "system": "gpt-4o-2024-05-13",
+          "rank_before": 29,
+          "rank_after": 30
+        },
+        {
+          "system": "gpt-4-0613",
+          "rank_before": 30,
+          "rank_after": 31
+        },
+        {
+          "system": "Patel et al + 2024",
+          "rank_before": 31,
+          "rank_after": 32
+        },
+        {
+          "system": "gpt-3.5-turbo-16k-0613",
+          "rank_before": 32,
+          "rank_after": 33
+        },
+        {
+          "system": "Qwen-1.5-chat-72b",
+          "rank_before": 33,
+          "rank_after": 34
+        },
+        {
+          "system": "Gemini Pro",
+          "rank_before": 34,
+          "rank_after": 35
+        },
+        {
+          "system": "Llama3-chat-70b",
+          "rank_before": 35,
+          "rank_after": 36
+        },
+        {
+          "system": "Synatra-CodeLLama7b",
+          "rank_before": 36,
+          "rank_after": 37
+        },
+        {
+          "system": "Lemur-chat-70b",
+          "rank_before": 37,
+          "rank_after": 38
+        },
+        {
+          "system": "Agent Flan",
+          "rank_before": 38,
+          "rank_after": 39
+        },
+        {
+          "system": "CodeLlama-instruct-34b",
+          "rank_before": 39,
+          "rank_after": 40
+        },
+        {
+          "system": "AgentLM-70b",
+          "rank_before": 40,
+          "rank_after": 41
+        },
+        {
+          "system": "Llama3-chat-8b",
+          "rank_before": 41,
+          "rank_after": 42
+        },
+        {
+          "system": "CodeAct Agent",
+          "rank_before": 42,
+          "rank_after": 43
+        },
+        {
+          "system": "AgentLM-13b",
+          "rank_before": 43,
+          "rank_after": 44
+        },
+        {
+          "system": "Mixtral",
+          "rank_before": 44,
+          "rank_after": 45
+        },
+        {
+          "system": "AgentLM-7b",
+          "rank_before": 45,
+          "rank_after": 46
+        },
+        {
+          "system": "FireAct",
+          "rank_before": 46,
+          "rank_after": 47
+        },
+        {
+          "system": "CodeLlama-instruct-7b",
+          "rank_before": 47,
+          "rank_after": 48
+        }
+      ],
+      "current_source_verified": true
+    },
+    {
+      "id": "webchorearena",
+      "status": "unchanged",
+      "before_rows": 8,
+      "after_rows": 8,
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "osworld-2-public-agents-full-450steps",
+      "status": "new",
+      "before_rows": 0,
+      "after_rows": 1,
+      "added": [
+        {
+          "rank": 1,
+          "system": "Darwinx w/ Claude Opus 4.8",
+          "agent": null,
+          "model_raw": [
+            "anthropic/claude-opus-4-8"
+          ],
+          "model_ids": [],
+          "model_config": "model_type=agent; model_scope=all; base_planner_model=anthropic/claude-opus-4-8; reasoning=max (thinking disabled); tool_setting=; step_budget=450; release=v2026.08.08; dataset_scope=full",
+          "score": 37.65,
+          "score_extra": {
+            "partial_score": 66.62,
+            "step_budget": 450,
+            "binary_success_threshold": 0.99
+          },
+          "date": null,
+          "verified": null,
+          "open_source": null,
+          "org": "Salesforce AI Research",
+          "row_url": "https://huggingface.co/datasets/LoyoTheNerd/darwinx_v0808_20260915"
+        }
+      ],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    },
+    {
+      "id": "osworld-2-1-public-agents-full-450steps",
+      "status": "new",
+      "before_rows": 0,
+      "after_rows": 1,
+      "added": [
+        {
+          "rank": 1,
+          "system": "Darwinx w/ Claude Opus 4.8",
+          "agent": null,
+          "model_raw": [
+            "anthropic/claude-opus-4-8"
+          ],
+          "model_ids": [],
+          "model_config": "model_type=agent; model_scope=all; base_planner_model=anthropic/claude-opus-4-8; reasoning=max (thinking disabled); tool_setting=; step_budget=450; release=v2.1; dataset_scope=full",
+          "score": 44.44,
+          "score_extra": {
+            "partial_score": 75.97,
+            "step_budget": 450,
+            "binary_success_threshold": 0.99
+          },
+          "date": null,
+          "verified": null,
+          "open_source": null,
+          "org": "Salesforce AI Research",
+          "row_url": "https://huggingface.co/datasets/LoyoTheNerd/darwinx_v21_20261012"
+        }
+      ],
+      "removed": [],
+      "changed": [],
+      "current_source_verified": true
+    }
+  ]
+}

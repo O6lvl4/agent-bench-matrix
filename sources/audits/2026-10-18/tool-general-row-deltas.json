@@ -1,0 +1,2860 @@
+[
+  {
+    "id": "tau3-voice",
+    "rows_before": 18,
+    "rows_after": 20,
+    "row_differences": [
+      {
+        "path": "/3/date",
+        "before": "2026-08-17",
+        "after": "2026-10-14"
+      },
+      {
+        "path": "/3/model_config",
+        "before": "reasoning: enabled; user sim: v1.0; voice model: pine-voice-preview; submission type: standard",
+        "after": "user sim: gpt-5.5 (xhigh); voice model: grok-voice-3.0; submission type: custom; evaluation date: 2026-10-08; benchmark revision: 4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699; methodology: Sierra evaluation of an early-access Grok Voice 3.0 model before its public release. The public API model name is grok-voice-3.0. Standard full-duplex xAI adapter, base airline/retail/telecom task sets, regular speech complexity, seed 300, 0.2-second ticks, 1200-second simulated limit, and one scored trial per task. The voice user simulator v1.0 pipeline used gpt-5.5 with xhigh reasoning effort as its customer LLM; the remaining simulator components, benchmark prompts, policies, tools, and evaluator were unchanged. This non-default customer LLM makes the result a custom submission. Published trajectory metadata replaces an internal early-access model identifier with the public API model name; scored task content, rewards, timestamps, and audio are unchanged.; verification details: All 278 base tasks have one scored canonical trajectory. The initial retail run encountered ungraded connection timeouts at 80 concurrency and was resumed at 40 concurrency; all 114 retail tasks have a final scored result. Airline ran at up to 80 concurrency and telecom at 40. The submitted scores were computed from the saved trajectories. Reviewed trajectories and canonical audio are hosted by the leaderboard."
+      },
+      {
+        "path": "/3/model_ids/0",
+        "removed": "pine-voice-preview"
+      },
+      {
+        "path": "/3/model_raw/0",
+        "before": "Pine Voice Preview",
+        "after": "Grok Voice 3.0"
+      },
+      {
+        "path": "/3/org",
+        "before": "Pine AI",
+        "after": "xAI"
+      },
+      {
+        "path": "/3/rank",
+        "before": 2,
+        "after": null
+      },
+      {
+        "path": "/3/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-v1-0_pineai_2026-08-17/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-3-0_xai_2026-10-14/submission.json"
+      },
+      {
+        "path": "/3/score",
+        "before": 75.38011695906432,
+        "after": 79.5906432748538
+      },
+      {
+        "path": "/3/score_extra/airline_pass_1",
+        "added": 80.0
+      },
+      {
+        "path": "/3/score_extra/retail_pass_1",
+        "added": 76.31578947368422
+      },
+      {
+        "path": "/3/score_extra/telecom_pass_1",
+        "added": 82.45614035087719
+      },
+      {
+        "path": "/3/system",
+        "before": "Pine Voice Preview",
+        "after": "Grok Voice 3.0"
+      },
+      {
+        "path": "/4/agent",
+        "before": "tool-mentor",
+        "after": null
+      },
+      {
+        "path": "/4/date",
+        "before": "2026-07-07",
+        "after": "2026-08-17"
+      },
+      {
+        "path": "/4/model_config",
+        "before": "reasoning: enabled; user sim: gpt-5.5-2026-04-23 (xhigh); voice model: grok-voice-think-fast-1.0; submission type: custom",
+        "after": "reasoning: enabled; user sim: v1.0; voice model: pine-voice-preview; submission type: standard"
+      },
+      {
+        "path": "/4/model_ids/0",
+        "before": "grok-voice-think-fast-1.0",
+        "after": "pine-voice-preview"
+      },
+      {
+        "path": "/4/model_raw/0",
+        "before": "grok-voice-think-fast-1.0 + tool-mentor",
+        "after": "Pine Voice Preview"
+      },
+      {
+        "path": "/4/org",
+        "before": "xAI",
+        "after": "Pine AI"
+      },
+      {
+        "path": "/4/rank",
+        "before": null,
+        "after": 2
+      },
+      {
+        "path": "/4/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0-tool-mentor_pickle_2026-07-07/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-v1-0_pineai_2026-08-17/submission.json"
+      },
+      {
+        "path": "/4/score",
+        "before": 74.79532163742691,
+        "after": 75.38011695906432
+      },
+      {
+        "path": "/4/system",
+        "before": "grok-voice-think-fast-1.0 + tool-mentor",
+        "after": "Pine Voice Preview"
+      },
+      {
+        "path": "/5/agent",
+        "before": null,
+        "after": "tool-mentor"
+      },
+      {
+        "path": "/5/date",
+        "before": "2026-04-21",
+        "after": "2026-07-07"
+      },
+      {
+        "path": "/5/model_config",
+        "before": "reasoning: enabled; user sim: v1.0; voice model: grok-voice-think-fast-1.0; submission type: standard",
+        "after": "reasoning: enabled; user sim: gpt-5.5-2026-04-23 (xhigh); voice model: grok-voice-think-fast-1.0; submission type: custom"
+      },
+      {
+        "path": "/5/model_raw/0",
+        "before": "grok-voice-think-fast-1.0",
+        "after": "grok-voice-think-fast-1.0 + tool-mentor"
+      },
+      {
+        "path": "/5/rank",
+        "before": 3,
+        "after": null
+      },
+      {
+        "path": "/5/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0_xai_2026-04-21/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0-tool-mentor_pickle_2026-07-07/submission.json"
+      },
+      {
+        "path": "/5/score",
+        "before": 67.32163742690058,
+        "after": 74.79532163742691
+      },
+      {
+        "path": "/5/system",
+        "before": "grok-voice-think-fast-1.0",
+        "after": "grok-voice-think-fast-1.0 + tool-mentor"
+      },
+      {
+        "path": "/6/date",
+        "before": "2026-08-06",
+        "after": "2026-10-06"
+      },
+      {
+        "path": "/6/model_config",
+        "before": "reasoning: high; user sim: v1.0; voice model: grok-voice-think-fast-2.0; submission type: standard",
+        "after": "reasoning: none; user sim: v1.0; voice model: launa-v1; submission type: custom; evaluation date: 2026-10-03; benchmark revision: b7ea9074c1cba482b30687fecdb5c8425fd6f619; methodology: Custom Salesforce Launa v1 full-duplex voice evaluation using standard benchmark prompts, tools and domain policies, regular speech complexity, seed 300, and the Claude Opus 4.5 hallucination reviewer. The customer simulator uses gpt-5.2-2025-12-11 at temperature 0. The scored run used a 16,384-token agent context window except retail tasks 98 and 104, which used 32,768 tokens; task 98 was retried after ungraded context-overflow errors. The current endpoint uses 32,768 tokens for every session, so it does not exactly reproduce the submitted run.; verification details: Benchmark-supplied prompts, domain policies, tools, tasks and evaluator were unchanged. All 278 tasks have one scored canonical trajectory. Trajectories and audio are hosted by the leaderboard."
+      },
+      {
+        "path": "/6/model_ids/0",
+        "removed": "grok-voice-think-fast-2.0"
+      },
+      {
+        "path": "/6/model_raw/0",
+        "before": "grok-voice-think-fast-2.0",
+        "after": "Salesforce Launa v1"
+      },
+      {
+        "path": "/6/org",
+        "before": "xai",
+        "after": "Salesforce"
+      },
+      {
+        "path": "/6/rank",
+        "before": 4,
+        "after": null
+      },
+      {
+        "path": "/6/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-08-06/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/salesforce-launa-v1_salesforce_2026-10-06/submission.json"
+      },
+      {
+        "path": "/6/score",
+        "before": 62.52631578947368,
+        "after": 72.87719298245614
+      },
+      {
+        "path": "/6/score_extra/airline_pass_1",
+        "added": 66
+      },
+      {
+        "path": "/6/score_extra/retail_pass_1",
+        "added": 71.9298245614035
+      },
+      {
+        "path": "/6/score_extra/telecom_pass_1",
+        "added": 80.7017543859649
+      },
+      {
+        "path": "/6/system",
+        "before": "grok-voice-think-fast-2.0",
+        "after": "Salesforce Launa v1"
+      },
+      {
+        "path": "/7/date",
+        "before": "2026-08-06",
+        "after": "2026-04-21"
+      },
+      {
+        "path": "/7/model_config",
+        "before": "user sim: v1.0; voice model: qwen3.5-omni-plus-realtime; submission type: standard",
+        "after": "reasoning: enabled; user sim: v1.0; voice model: grok-voice-think-fast-1.0; submission type: standard"
+      },
+      {
+        "path": "/7/model_ids/0",
+        "before": "qwen3.5-omni-plus-realtime",
+        "after": "grok-voice-think-fast-1.0"
+      },
+      {
+        "path": "/7/model_raw/0",
+        "before": "qwen3.5-omni-plus-realtime",
+        "after": "grok-voice-think-fast-1.0"
+      },
+      {
+        "path": "/7/org",
+        "before": "qwen",
+        "after": "xAI"
+      },
+      {
+        "path": "/7/rank",
+        "before": 5,
+        "after": 3
+      },
+      {
+        "path": "/7/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-5-omni-plus-realtime_qwen_2026-08-06/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0_xai_2026-04-21/submission.json"
+      },
+      {
+        "path": "/7/score",
+        "before": 53.67251461988304,
+        "after": 67.32163742690058
+      },
+      {
+        "path": "/7/system",
+        "before": "qwen3.5-omni-plus-realtime",
+        "after": "grok-voice-think-fast-1.0"
+      },
+      {
+        "path": "/8/date",
+        "before": "2026-06-29",
+        "after": "2026-08-06"
+      },
+      {
+        "path": "/8/model_config",
+        "before": "reasoning: xhigh; user sim: gpt-5.5-2026-04-23 (xhigh); voice model: gpt-realtime-2; submission type: custom",
+        "after": "reasoning: high; user sim: v1.0; voice model: grok-voice-think-fast-2.0; submission type: standard"
+      },
+      {
+        "path": "/8/model_ids/0",
+        "before": "gpt-realtime-2",
+        "after": "grok-voice-think-fast-2.0"
+      },
+      {
+        "path": "/8/model_raw/0",
+        "before": "gpt-realtime-2",
+        "after": "grok-voice-think-fast-2.0"
+      },
+      {
+        "path": "/8/org",
+        "before": "OpenAI",
+        "after": "xai"
+      },
+      {
+        "path": "/8/rank",
+        "before": null,
+        "after": 4
+      },
+      {
+        "path": "/8/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-24/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-08-06/submission.json"
+      },
+      {
+        "path": "/8/score",
+        "before": 51.239766081871345,
+        "after": 62.52631578947368
+      },
+      {
+        "path": "/8/system",
+        "before": "gpt-realtime-2",
+        "after": "grok-voice-think-fast-2.0"
+      },
+      {
+        "path": "/9/date",
+        "before": "2026-04-02",
+        "after": "2026-08-06"
+      },
+      {
+        "path": "/9/model_config",
+        "before": "reasoning: high; user sim: v1.0; voice model: gemini-3.1-flash-live-preview; submission type: standard, preview",
+        "after": "user sim: v1.0; voice model: qwen3.5-omni-plus-realtime; submission type: standard"
+      },
+      {
+        "path": "/9/model_ids/0",
+        "before": "gemini-3.1-flash-live",
+        "after": "qwen3.5-omni-plus-realtime"
+      },
+      {
+        "path": "/9/model_raw/0",
+        "before": "gemini-3.1-flash-live-preview-thinking-high",
+        "after": "qwen3.5-omni-plus-realtime"
+      },
+      {
+        "path": "/9/org",
+        "before": "Google",
+        "after": "qwen"
+      },
+      {
+        "path": "/9/rank",
+        "before": 6,
+        "after": 5
+      },
+      {
+        "path": "/9/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-high_google_2026-04-02/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-5-omni-plus-realtime_qwen_2026-08-06/submission.json"
+      },
+      {
+        "path": "/9/score",
+        "before": 43.847953216374265,
+        "after": 53.67251461988304
+      },
+      {
+        "path": "/9/system",
+        "before": "gemini-3.1-flash-live-preview-thinking-high",
+        "after": "qwen3.5-omni-plus-realtime"
+      },
+      {
+        "path": "/10/model_config",
+        "before": "reasoning: xhigh; user sim: v1.0; voice model: gpt-realtime-2; submission type: standard",
+        "after": "reasoning: xhigh; user sim: gpt-5.5-2026-04-23 (xhigh); voice model: gpt-realtime-2; submission type: custom"
+      },
+      {
+        "path": "/10/org",
+        "before": "openai",
+        "after": "OpenAI"
+      },
+      {
+        "path": "/10/rank",
+        "before": 7,
+        "after": null
+      },
+      {
+        "path": "/10/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-29/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-24/submission.json"
+      },
+      {
+        "path": "/10/score",
+        "before": 42.43274853801169,
+        "after": 51.239766081871345
+      },
+      {
+        "path": "/11/date",
+        "before": "2026-07-01",
+        "after": "2026-04-02"
+      },
+      {
+        "path": "/11/model_config",
+        "before": "reasoning: minimal; user sim: v1.0; voice model: gpt-realtime-2; submission type: standard",
+        "after": "reasoning: high; user sim: v1.0; voice model: gemini-3.1-flash-live-preview; submission type: standard, preview"
+      },
+      {
+        "path": "/11/model_ids/0",
+        "before": "gpt-realtime-2",
+        "after": "gemini-3.1-flash-live"
+      },
+      {
+        "path": "/11/model_raw/0",
+        "before": "gpt-realtime-2",
+        "after": "gemini-3.1-flash-live-preview-thinking-high"
+      },
+      {
+        "path": "/11/org",
+        "before": "openai",
+        "after": "Google"
+      },
+      {
+        "path": "/11/rank",
+        "before": 8,
+        "after": 6
+      },
+      {
+        "path": "/11/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-minimal_openai_2026-07-01/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-high_google_2026-04-02/submission.json"
+      },
+      {
+        "path": "/11/score",
+        "before": 38.54970760233918,
+        "after": 43.847953216374265
+      },
+      {
+        "path": "/11/system",
+        "before": "gpt-realtime-2",
+        "after": "gemini-3.1-flash-live-preview-thinking-high"
+      },
+      {
+        "path": "/12/date",
+        "before": "2026-03-03",
+        "after": "2026-06-29"
+      },
+      {
+        "path": "/12/model_config",
+        "before": "user sim: v1.0; voice model: grok-voice-fast-1.0; submission type: standard",
+        "after": "reasoning: xhigh; user sim: v1.0; voice model: gpt-realtime-2; submission type: standard"
+      },
+      {
+        "path": "/12/model_ids/0",
+        "before": "grok-voice-fast-1.0",
+        "after": "gpt-realtime-2"
+      },
+      {
+        "path": "/12/model_raw/0",
+        "before": "grok-voice-fast-1.0",
+        "after": "gpt-realtime-2"
+      },
+      {
+        "path": "/12/org",
+        "before": "xAI",
+        "after": "openai"
+      },
+      {
+        "path": "/12/rank",
+        "before": 9,
+        "after": 7
+      },
+      {
+        "path": "/12/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime_sierra_2026-03-03/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-29/submission.json"
+      },
+      {
+        "path": "/12/score",
+        "before": 38.333333333333336,
+        "after": 42.43274853801169
+      },
+      {
+        "path": "/12/system",
+        "before": "grok-voice-fast-1.0",
+        "after": "gpt-realtime-2"
+      },
+      {
+        "path": "/13/date",
+        "before": "2026-03-03",
+        "after": "2026-07-01"
+      },
+      {
+        "path": "/13/model_config",
+        "before": "user sim: v1.0; voice model: gpt-realtime-1.5; submission type: standard",
+        "after": "reasoning: minimal; user sim: v1.0; voice model: gpt-realtime-2; submission type: standard"
+      },
+      {
+        "path": "/13/model_ids/0",
+        "before": "gpt-realtime-1.5",
+        "after": "gpt-realtime-2"
+      },
+      {
+        "path": "/13/model_raw/0",
+        "before": "gpt-realtime-1.5",
+        "after": "gpt-realtime-2"
+      },
+      {
+        "path": "/13/org",
+        "before": "OpenAI",
+        "after": "openai"
+      },
+      {
+        "path": "/13/rank",
+        "before": 10,
+        "after": 8
+      },
+      {
+        "path": "/13/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1.5_sierra_2026-03-03/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-minimal_openai_2026-07-01/submission.json"
+      },
+      {
+        "path": "/13/score",
+        "before": 35.26666666666667,
+        "after": 38.54970760233918
+      },
+      {
+        "path": "/13/system",
+        "before": "gpt-realtime-1.5",
+        "after": "gpt-realtime-2"
+      },
+      {
+        "path": "/14/date",
+        "before": "2026-05-19",
+        "after": "2026-03-03"
+      },
+      {
+        "path": "/14/model_config",
+        "before": "user sim: v1.0; voice model: STT-LLM-TTS; pipeline: asr=Deepgram nova-3, llm=OpenAI gpt-4.1, tts=Deepgram aura-asteria-en; submission type: standard",
+        "after": "user sim: v1.0; voice model: grok-voice-fast-1.0; submission type: standard"
+      },
+      {
+        "path": "/14/model_ids/0",
+        "added": "grok-voice-fast-1.0"
+      },
+      {
+        "path": "/14/model_raw/0",
+        "before": "Cascaded baseline",
+        "after": "grok-voice-fast-1.0"
+      },
+      {
+        "path": "/14/org",
+        "before": "Cascaded",
+        "after": "xAI"
+      },
+      {
+        "path": "/14/rank",
+        "before": 11,
+        "after": 9
+      },
+      {
+        "path": "/14/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/livekit-cascaded_livekit_2026-05-19/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime_sierra_2026-03-03/submission.json"
+      },
+      {
+        "path": "/14/score",
+        "before": 31.2046783625731,
+        "after": 38.333333333333336
+      },
+      {
+        "path": "/14/system",
+        "before": "Cascaded baseline",
+        "after": "grok-voice-fast-1.0"
+      },
+      {
+        "path": "/15/date",
+        "before": "2026-04-13",
+        "after": "2026-03-03"
+      },
+      {
+        "path": "/15/model_config",
+        "before": "user sim: v1.0; voice model: gpt-realtime-1.0; submission type: standard",
+        "after": "user sim: v1.0; voice model: gpt-realtime-1.5; submission type: standard"
+      },
+      {
+        "path": "/15/model_ids/0",
+        "before": "gpt-realtime-1.0",
+        "after": "gpt-realtime-1.5"
+      },
+      {
+        "path": "/15/model_raw/0",
+        "before": "gpt-realtime-1.0",
+        "after": "gpt-realtime-1.5"
+      },
+      {
+        "path": "/15/rank",
+        "before": 12,
+        "after": 10
+      },
+      {
+        "path": "/15/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1-0_openai_2026-04-13/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1.5_sierra_2026-03-03/submission.json"
+      },
+      {
+        "path": "/15/score",
+        "before": 30.421052631578945,
+        "after": 35.26666666666667
+      },
+      {
+        "path": "/15/system",
+        "before": "gpt-realtime-1.0",
+        "after": "gpt-realtime-1.5"
+      },
+      {
+        "path": "/16/date",
+        "before": "2026-04-13",
+        "after": "2026-05-19"
+      },
+      {
+        "path": "/16/model_config",
+        "before": "reasoning: minimal; user sim: v1.0; voice model: gemini-3.1-flash-live-preview-thinking-minimal; submission type: standard, preview",
+        "after": "user sim: v1.0; voice model: STT-LLM-TTS; pipeline: asr=Deepgram nova-3, llm=OpenAI gpt-4.1, tts=Deepgram aura-asteria-en; submission type: standard"
+      },
+      {
+        "path": "/16/model_ids/0",
+        "removed": "gemini-3.1-flash-live"
+      },
+      {
+        "path": "/16/model_raw/0",
+        "before": "gemini-3.1-flash-live-preview-thinking-minimal",
+        "after": "Cascaded baseline"
+      },
+      {
+        "path": "/16/org",
+        "before": "Google",
+        "after": "Cascaded"
+      },
+      {
+        "path": "/16/rank",
+        "before": 13,
+        "after": 11
+      },
+      {
+        "path": "/16/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-minimal_google_2026-04-13/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/livekit-cascaded_livekit_2026-05-19/submission.json"
+      },
+      {
+        "path": "/16/score",
+        "before": 28.619883040935672,
+        "after": 31.2046783625731
+      },
+      {
+        "path": "/16/system",
+        "before": "gemini-3.1-flash-live-preview-thinking-minimal",
+        "after": "Cascaded baseline"
+      },
+      {
+        "path": "/17/date",
+        "before": "2026-03-03",
+        "after": "2026-04-13"
+      },
+      {
+        "path": "/17/model_config",
+        "before": "user sim: v1.0; voice model: gemini-live-2.5-flash-native-audio; submission type: standard",
+        "after": "user sim: v1.0; voice model: gpt-realtime-1.0; submission type: standard"
+      },
+      {
+        "path": "/17/model_ids/0",
+        "before": "gemini-live-2.5-flash-native-audio",
+        "after": "gpt-realtime-1.0"
+      },
+      {
+        "path": "/17/model_raw/0",
+        "before": "gemini-live-2.5-flash-native-audio",
+        "after": "gpt-realtime-1.0"
+      },
+      {
+        "path": "/17/org",
+        "before": "Google",
+        "after": "OpenAI"
+      },
+      {
+        "path": "/17/rank",
+        "before": 14,
+        "after": 12
+      },
+      {
+        "path": "/17/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-live-2.5-flash_sierra_2026-03-03/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1-0_openai_2026-04-13/submission.json"
+      },
+      {
+        "path": "/17/score",
+        "before": 25.766666666666666,
+        "after": 30.421052631578945
+      },
+      {
+        "path": "/17/system",
+        "before": "gemini-live-2.5-flash-native-audio",
+        "after": "gpt-realtime-1.0"
+      },
+      {
+        "path": "/18",
+        "added": {
+          "rank": 13,
+          "system": "gemini-3.1-flash-live-preview-thinking-minimal",
+          "agent": null,
+          "model_raw": [
+            "gemini-3.1-flash-live-preview-thinking-minimal"
+          ],
+          "model_ids": [
+            "gemini-3.1-flash-live"
+          ],
+          "model_config": "reasoning: minimal; user sim: v1.0; voice model: gemini-3.1-flash-live-preview-thinking-minimal; submission type: standard, preview",
+          "score": 28.619883040935672,
+          "score_extra": {},
+          "date": "2026-04-13",
+          "verified": true,
+          "open_source": null,
+          "org": "Google",
+          "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-minimal_google_2026-04-13/submission.json"
+        }
+      },
+      {
+        "path": "/19",
+        "added": {
+          "rank": 14,
+          "system": "gemini-live-2.5-flash-native-audio",
+          "agent": null,
+          "model_raw": [
+            "gemini-live-2.5-flash-native-audio"
+          ],
+          "model_ids": [
+            "gemini-live-2.5-flash-native-audio"
+          ],
+          "model_config": "user sim: v1.0; voice model: gemini-live-2.5-flash-native-audio; submission type: standard",
+          "score": 25.766666666666666,
+          "score_extra": {},
+          "date": "2026-03-03",
+          "verified": true,
+          "open_source": null,
+          "org": "Google",
+          "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-live-2.5-flash_sierra_2026-03-03/submission.json"
+        }
+      }
+    ],
+    "source_differences_file": "source-deltas/tau3-voice.json"
+  },
+  {
+    "id": "tau3-voice-airline",
+    "rows_before": 18,
+    "rows_after": 20,
+    "row_differences": [
+      {
+        "path": "/2/date",
+        "before": "2026-09-09",
+        "after": "2026-10-14"
+      },
+      {
+        "path": "/2/model_config",
+        "before": "reasoning: Backend: GPT-6 Astra (medium); user sim: gpt-5.5-2026-04-23 (xhigh); voice model: gpt-live-1-diamond-alpha; submission type: custom",
+        "after": "user sim: gpt-5.5 (xhigh); voice model: grok-voice-3.0; submission type: custom; evaluation date: 2026-10-08; benchmark revision: 4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699; methodology: Sierra evaluation of an early-access Grok Voice 3.0 model before its public release. The public API model name is grok-voice-3.0. Standard full-duplex xAI adapter, base airline/retail/telecom task sets, regular speech complexity, seed 300, 0.2-second ticks, 1200-second simulated limit, and one scored trial per task. The voice user simulator v1.0 pipeline used gpt-5.5 with xhigh reasoning effort as its customer LLM; the remaining simulator components, benchmark prompts, policies, tools, and evaluator were unchanged. This non-default customer LLM makes the result a custom submission. Published trajectory metadata replaces an internal early-access model identifier with the public API model name; scored task content, rewards, timestamps, and audio are unchanged.; verification details: All 278 base tasks have one scored canonical trajectory. The initial retail run encountered ungraded connection timeouts at 80 concurrency and was resumed at 40 concurrency; all 114 retail tasks have a final scored result. Airline ran at up to 80 concurrency and telecom at 40. The submitted scores were computed from the saved trajectories. Reviewed trajectories and canonical audio are hosted by the leaderboard."
+      },
+      {
+        "path": "/2/model_ids/0",
+        "removed": "gpt-live-1"
+      },
+      {
+        "path": "/2/model_ids/1",
+        "removed": "gpt-6-astra"
+      },
+      {
+        "path": "/2/model_raw/0",
+        "before": "gpt-live-1",
+        "after": "Grok Voice 3.0"
+      },
+      {
+        "path": "/2/model_raw/1",
+        "removed": "GPT-6 Astra"
+      },
+      {
+        "path": "/2/org",
+        "before": "OpenAI",
+        "after": "xAI"
+      },
+      {
+        "path": "/2/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha-user-sim-gpt-5-5_openai_2026-09-09/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-3-0_xai_2026-10-14/submission.json"
+      },
+      {
+        "path": "/2/score",
+        "before": 78.0,
+        "after": 80.0
+      },
+      {
+        "path": "/2/system",
+        "before": "gpt-live-1",
+        "after": "Grok Voice 3.0"
+      },
+      {
+        "path": "/3/agent",
+        "before": "tool-mentor",
+        "after": null
+      },
+      {
+        "path": "/3/date",
+        "before": "2026-07-07",
+        "after": "2026-09-09"
+      },
+      {
+        "path": "/3/model_config",
+        "before": "reasoning: enabled; user sim: gpt-5.5-2026-04-23 (xhigh); voice model: grok-voice-think-fast-1.0; submission type: custom",
+        "after": "reasoning: Backend: GPT-6 Astra (medium); user sim: gpt-5.5-2026-04-23 (xhigh); voice model: gpt-live-1-diamond-alpha; submission type: custom"
+      },
+      {
+        "path": "/3/model_ids/0",
+        "before": "grok-voice-think-fast-1.0",
+        "after": "gpt-live-1"
+      },
+      {
+        "path": "/3/model_ids/1",
+        "added": "gpt-6-astra"
+      },
+      {
+        "path": "/3/model_raw/0",
+        "before": "grok-voice-think-fast-1.0 + tool-mentor",
+        "after": "gpt-live-1"
+      },
+      {
+        "path": "/3/model_raw/1",
+        "added": "GPT-6 Astra"
+      },
+      {
+        "path": "/3/org",
+        "before": "xAI",
+        "after": "OpenAI"
+      },
+      {
+        "path": "/3/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0-tool-mentor_pickle_2026-07-07/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha-user-sim-gpt-5-5_openai_2026-09-09/submission.json"
+      },
+      {
+        "path": "/3/score",
+        "before": 70.0,
+        "after": 78.0
+      },
+      {
+        "path": "/3/system",
+        "before": "grok-voice-think-fast-1.0 + tool-mentor",
+        "after": "gpt-live-1"
+      },
+      {
+        "path": "/4/agent",
+        "before": null,
+        "after": "tool-mentor"
+      },
+      {
+        "path": "/4/date",
+        "before": "2026-08-17",
+        "after": "2026-07-07"
+      },
+      {
+        "path": "/4/model_config",
+        "before": "reasoning: enabled; user sim: v1.0; voice model: pine-voice-preview; submission type: standard",
+        "after": "reasoning: enabled; user sim: gpt-5.5-2026-04-23 (xhigh); voice model: grok-voice-think-fast-1.0; submission type: custom"
+      },
+      {
+        "path": "/4/model_ids/0",
+        "before": "pine-voice-preview",
+        "after": "grok-voice-think-fast-1.0"
+      },
+      {
+        "path": "/4/model_raw/0",
+        "before": "Pine Voice Preview",
+        "after": "grok-voice-think-fast-1.0 + tool-mentor"
+      },
+      {
+        "path": "/4/org",
+        "before": "Pine AI",
+        "after": "xAI"
+      },
+      {
+        "path": "/4/rank",
+        "before": 2,
+        "after": null
+      },
+      {
+        "path": "/4/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-v1-0_pineai_2026-08-17/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0-tool-mentor_pickle_2026-07-07/submission.json"
+      },
+      {
+        "path": "/4/system",
+        "before": "Pine Voice Preview",
+        "after": "grok-voice-think-fast-1.0 + tool-mentor"
+      },
+      {
+        "path": "/5/date",
+        "before": "2026-04-21",
+        "after": "2026-08-17"
+      },
+      {
+        "path": "/5/model_config",
+        "before": "reasoning: enabled; user sim: v1.0; voice model: grok-voice-think-fast-1.0; submission type: standard",
+        "after": "reasoning: enabled; user sim: v1.0; voice model: pine-voice-preview; submission type: standard"
+      },
+      {
+        "path": "/5/model_ids/0",
+        "before": "grok-voice-think-fast-1.0",
+        "after": "pine-voice-preview"
+      },
+      {
+        "path": "/5/model_raw/0",
+        "before": "grok-voice-think-fast-1.0",
+        "after": "Pine Voice Preview"
+      },
+      {
+        "path": "/5/org",
+        "before": "xAI",
+        "after": "Pine AI"
+      },
+      {
+        "path": "/5/rank",
+        "before": 3,
+        "after": 2
+      },
+      {
+        "path": "/5/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0_xai_2026-04-21/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-v1-0_pineai_2026-08-17/submission.json"
+      },
+      {
+        "path": "/5/score",
+        "before": 66.0,
+        "after": 70.0
+      },
+      {
+        "path": "/5/system",
+        "before": "grok-voice-think-fast-1.0",
+        "after": "Pine Voice Preview"
+      },
+      {
+        "path": "/6/date",
+        "before": "2026-06-29",
+        "after": "2026-04-21"
+      },
+      {
+        "path": "/6/model_config",
+        "before": "reasoning: xhigh; user sim: gpt-5.5-2026-04-23 (xhigh); voice model: gpt-realtime-2; submission type: custom",
+        "after": "reasoning: enabled; user sim: v1.0; voice model: grok-voice-think-fast-1.0; submission type: standard"
+      },
+      {
+        "path": "/6/model_ids/0",
+        "before": "gpt-realtime-2",
+        "after": "grok-voice-think-fast-1.0"
+      },
+      {
+        "path": "/6/model_raw/0",
+        "before": "gpt-realtime-2",
+        "after": "grok-voice-think-fast-1.0"
+      },
+      {
+        "path": "/6/org",
+        "before": "OpenAI",
+        "after": "xAI"
+      },
+      {
+        "path": "/6/rank",
+        "before": null,
+        "after": 3
+      },
+      {
+        "path": "/6/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-24/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0_xai_2026-04-21/submission.json"
+      },
+      {
+        "path": "/6/system",
+        "before": "gpt-realtime-2",
+        "after": "grok-voice-think-fast-1.0"
+      },
+      {
+        "path": "/7/date",
+        "before": "2026-04-02",
+        "after": "2026-06-29"
+      },
+      {
+        "path": "/7/model_config",
+        "before": "reasoning: high; user sim: v1.0; voice model: gemini-3.1-flash-live-preview; submission type: standard, preview",
+        "after": "reasoning: xhigh; user sim: gpt-5.5-2026-04-23 (xhigh); voice model: gpt-realtime-2; submission type: custom"
+      },
+      {
+        "path": "/7/model_ids/0",
+        "before": "gemini-3.1-flash-live",
+        "after": "gpt-realtime-2"
+      },
+      {
+        "path": "/7/model_raw/0",
+        "before": "gemini-3.1-flash-live-preview-thinking-high",
+        "after": "gpt-realtime-2"
+      },
+      {
+        "path": "/7/org",
+        "before": "Google",
+        "after": "OpenAI"
+      },
+      {
+        "path": "/7/rank",
+        "before": 4,
+        "after": null
+      },
+      {
+        "path": "/7/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-high_google_2026-04-02/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-24/submission.json"
+      },
+      {
+        "path": "/7/score",
+        "before": 64.0,
+        "after": 66.0
+      },
+      {
+        "path": "/7/system",
+        "before": "gemini-3.1-flash-live-preview-thinking-high",
+        "after": "gpt-realtime-2"
+      },
+      {
+        "path": "/8/date",
+        "before": "2026-06-29",
+        "after": "2026-10-06"
+      },
+      {
+        "path": "/8/model_config",
+        "before": "reasoning: xhigh; user sim: v1.0; voice model: gpt-realtime-2; submission type: standard",
+        "after": "reasoning: none; user sim: v1.0; voice model: launa-v1; submission type: custom; evaluation date: 2026-10-03; benchmark revision: b7ea9074c1cba482b30687fecdb5c8425fd6f619; methodology: Custom Salesforce Launa v1 full-duplex voice evaluation using standard benchmark prompts, tools and domain policies, regular speech complexity, seed 300, and the Claude Opus 4.5 hallucination reviewer. The customer simulator uses gpt-5.2-2025-12-11 at temperature 0. The scored run used a 16,384-token agent context window except retail tasks 98 and 104, which used 32,768 tokens; task 98 was retried after ungraded context-overflow errors. The current endpoint uses 32,768 tokens for every session, so it does not exactly reproduce the submitted run.; verification details: Benchmark-supplied prompts, domain policies, tools, tasks and evaluator were unchanged. All 278 tasks have one scored canonical trajectory. Trajectories and audio are hosted by the leaderboard."
+      },
+      {
+        "path": "/8/model_ids/0",
+        "removed": "gpt-realtime-2"
+      },
+      {
+        "path": "/8/model_raw/0",
+        "before": "gpt-realtime-2",
+        "after": "Salesforce Launa v1"
+      },
+      {
+        "path": "/8/org",
+        "before": "openai",
+        "after": "Salesforce"
+      },
+      {
+        "path": "/8/rank",
+        "before": 5,
+        "after": null
+      },
+      {
+        "path": "/8/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-29/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/salesforce-launa-v1_salesforce_2026-10-06/submission.json"
+      },
+      {
+        "path": "/8/score",
+        "before": 57.99999999999999,
+        "after": 66
+      },
+      {
+        "path": "/8/system",
+        "before": "gpt-realtime-2",
+        "after": "Salesforce Launa v1"
+      },
+      {
+        "path": "/9/date",
+        "before": "2026-07-01",
+        "after": "2026-04-02"
+      },
+      {
+        "path": "/9/model_config",
+        "before": "reasoning: minimal; user sim: v1.0; voice model: gpt-realtime-2; submission type: standard",
+        "after": "reasoning: high; user sim: v1.0; voice model: gemini-3.1-flash-live-preview; submission type: standard, preview"
+      },
+      {
+        "path": "/9/model_ids/0",
+        "before": "gpt-realtime-2",
+        "after": "gemini-3.1-flash-live"
+      },
+      {
+        "path": "/9/model_raw/0",
+        "before": "gpt-realtime-2",
+        "after": "gemini-3.1-flash-live-preview-thinking-high"
+      },
+      {
+        "path": "/9/org",
+        "before": "openai",
+        "after": "Google"
+      },
+      {
+        "path": "/9/rank",
+        "before": 6,
+        "after": 4
+      },
+      {
+        "path": "/9/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-minimal_openai_2026-07-01/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-high_google_2026-04-02/submission.json"
+      },
+      {
+        "path": "/9/score",
+        "before": 56.00000000000001,
+        "after": 64.0
+      },
+      {
+        "path": "/9/system",
+        "before": "gpt-realtime-2",
+        "after": "gemini-3.1-flash-live-preview-thinking-high"
+      },
+      {
+        "path": "/10/date",
+        "before": "2026-08-06",
+        "after": "2026-06-29"
+      },
+      {
+        "path": "/10/model_config",
+        "before": "reasoning: high; user sim: v1.0; voice model: grok-voice-think-fast-2.0; submission type: standard",
+        "after": "reasoning: xhigh; user sim: v1.0; voice model: gpt-realtime-2; submission type: standard"
+      },
+      {
+        "path": "/10/model_ids/0",
+        "before": "grok-voice-think-fast-2.0",
+        "after": "gpt-realtime-2"
+      },
+      {
+        "path": "/10/model_raw/0",
+        "before": "grok-voice-think-fast-2.0",
+        "after": "gpt-realtime-2"
+      },
+      {
+        "path": "/10/org",
+        "before": "xai",
+        "after": "openai"
+      },
+      {
+        "path": "/10/rank",
+        "before": 7,
+        "after": 5
+      },
+      {
+        "path": "/10/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-08-06/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-29/submission.json"
+      },
+      {
+        "path": "/10/score",
+        "before": 56.00000000000001,
+        "after": 57.99999999999999
+      },
+      {
+        "path": "/10/score_extra/cost",
+        "removed": 0.20933333333333337
+      },
+      {
+        "path": "/10/system",
+        "before": "grok-voice-think-fast-2.0",
+        "after": "gpt-realtime-2"
+      },
+      {
+        "path": "/11/date",
+        "before": "2026-08-06",
+        "after": "2026-07-01"
+      },
+      {
+        "path": "/11/model_config",
+        "before": "user sim: v1.0; voice model: qwen3.5-omni-plus-realtime; submission type: standard",
+        "after": "reasoning: minimal; user sim: v1.0; voice model: gpt-realtime-2; submission type: standard"
+      },
+      {
+        "path": "/11/model_ids/0",
+        "before": "qwen3.5-omni-plus-realtime",
+        "after": "gpt-realtime-2"
+      },
+      {
+        "path": "/11/model_raw/0",
+        "before": "qwen3.5-omni-plus-realtime",
+        "after": "gpt-realtime-2"
+      },
+      {
+        "path": "/11/org",
+        "before": "qwen",
+        "after": "openai"
+      },
+      {
+        "path": "/11/rank",
+        "before": 8,
+        "after": 6
+      },
+      {
+        "path": "/11/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-5-omni-plus-realtime_qwen_2026-08-06/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-minimal_openai_2026-07-01/submission.json"
+      },
+      {
+        "path": "/11/score",
+        "before": 54.0,
+        "after": 56.00000000000001
+      },
+      {
+        "path": "/11/score_extra/cost",
+        "removed": 0.5397773999999999
+      },
+      {
+        "path": "/11/system",
+        "before": "qwen3.5-omni-plus-realtime",
+        "after": "gpt-realtime-2"
+      },
+      {
+        "path": "/12/date",
+        "before": "2026-05-19",
+        "after": "2026-08-06"
+      },
+      {
+        "path": "/12/model_config",
+        "before": "user sim: v1.0; voice model: STT-LLM-TTS; pipeline: asr=Deepgram nova-3, llm=OpenAI gpt-4.1, tts=Deepgram aura-asteria-en; submission type: standard",
+        "after": "reasoning: high; user sim: v1.0; voice model: grok-voice-think-fast-2.0; submission type: standard"
+      },
+      {
+        "path": "/12/model_ids/0",
+        "added": "grok-voice-think-fast-2.0"
+      },
+      {
+        "path": "/12/model_raw/0",
+        "before": "Cascaded baseline",
+        "after": "grok-voice-think-fast-2.0"
+      },
+      {
+        "path": "/12/org",
+        "before": "Cascaded",
+        "after": "xai"
+      },
+      {
+        "path": "/12/rank",
+        "before": 9,
+        "after": 7
+      },
+      {
+        "path": "/12/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/livekit-cascaded_livekit_2026-05-19/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-08-06/submission.json"
+      },
+      {
+        "path": "/12/score",
+        "before": 48.0,
+        "after": 56.00000000000001
+      },
+      {
+        "path": "/12/score_extra/cost",
+        "added": 0.20933333333333337
+      },
+      {
+        "path": "/12/system",
+        "before": "Cascaded baseline",
+        "after": "grok-voice-think-fast-2.0"
+      },
+      {
+        "path": "/13/date",
+        "before": "2026-04-13",
+        "after": "2026-08-06"
+      },
+      {
+        "path": "/13/model_config",
+        "before": "reasoning: minimal; user sim: v1.0; voice model: gemini-3.1-flash-live-preview-thinking-minimal; submission type: standard, preview",
+        "after": "user sim: v1.0; voice model: qwen3.5-omni-plus-realtime; submission type: standard"
+      },
+      {
+        "path": "/13/model_ids/0",
+        "before": "gemini-3.1-flash-live",
+        "after": "qwen3.5-omni-plus-realtime"
+      },
+      {
+        "path": "/13/model_raw/0",
+        "before": "gemini-3.1-flash-live-preview-thinking-minimal",
+        "after": "qwen3.5-omni-plus-realtime"
+      },
+      {
+        "path": "/13/org",
+        "before": "Google",
+        "after": "qwen"
+      },
+      {
+        "path": "/13/rank",
+        "before": 10,
+        "after": 8
+      },
+      {
+        "path": "/13/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-minimal_google_2026-04-13/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-5-omni-plus-realtime_qwen_2026-08-06/submission.json"
+      },
+      {
+        "path": "/13/score",
+        "before": 42.0,
+        "after": 54.0
+      },
+      {
+        "path": "/13/score_extra/cost",
+        "added": 0.5397773999999999
+      },
+      {
+        "path": "/13/system",
+        "before": "gemini-3.1-flash-live-preview-thinking-minimal",
+        "after": "qwen3.5-omni-plus-realtime"
+      },
+      {
+        "path": "/14/date",
+        "before": "2026-03-03",
+        "after": "2026-05-19"
+      },
+      {
+        "path": "/14/model_config",
+        "before": "user sim: v1.0; voice model: gpt-realtime-1.5; submission type: standard",
+        "after": "user sim: v1.0; voice model: STT-LLM-TTS; pipeline: asr=Deepgram nova-3, llm=OpenAI gpt-4.1, tts=Deepgram aura-asteria-en; submission type: standard"
+      },
+      {
+        "path": "/14/model_ids/0",
+        "removed": "gpt-realtime-1.5"
+      },
+      {
+        "path": "/14/model_raw/0",
+        "before": "gpt-realtime-1.5",
+        "after": "Cascaded baseline"
+      },
+      {
+        "path": "/14/org",
+        "before": "OpenAI",
+        "after": "Cascaded"
+      },
+      {
+        "path": "/14/rank",
+        "before": 11,
+        "after": 9
+      },
+      {
+        "path": "/14/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1.5_sierra_2026-03-03/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/livekit-cascaded_livekit_2026-05-19/submission.json"
+      },
+      {
+        "path": "/14/score",
+        "before": 40.0,
+        "after": 48.0
+      },
+      {
+        "path": "/14/system",
+        "before": "gpt-realtime-1.5",
+        "after": "Cascaded baseline"
+      },
+      {
+        "path": "/15/date",
+        "before": "2026-03-03",
+        "after": "2026-04-13"
+      },
+      {
+        "path": "/15/model_config",
+        "before": "user sim: v1.0; voice model: grok-voice-fast-1.0; submission type: standard",
+        "after": "reasoning: minimal; user sim: v1.0; voice model: gemini-3.1-flash-live-preview-thinking-minimal; submission type: standard, preview"
+      },
+      {
+        "path": "/15/model_ids/0",
+        "before": "grok-voice-fast-1.0",
+        "after": "gemini-3.1-flash-live"
+      },
+      {
+        "path": "/15/model_raw/0",
+        "before": "grok-voice-fast-1.0",
+        "after": "gemini-3.1-flash-live-preview-thinking-minimal"
+      },
+      {
+        "path": "/15/org",
+        "before": "xAI",
+        "after": "Google"
+      },
+      {
+        "path": "/15/rank",
+        "before": 12,
+        "after": 10
+      },
+      {
+        "path": "/15/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime_sierra_2026-03-03/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-minimal_google_2026-04-13/submission.json"
+      },
+      {
+        "path": "/15/score",
+        "before": 36.0,
+        "after": 42.0
+      },
+      {
+        "path": "/15/system",
+        "before": "grok-voice-fast-1.0",
+        "after": "gemini-3.1-flash-live-preview-thinking-minimal"
+      },
+      {
+        "path": "/16/date",
+        "before": "2026-04-13",
+        "after": "2026-03-03"
+      },
+      {
+        "path": "/16/model_config",
+        "before": "user sim: v1.0; voice model: gpt-realtime-1.0; submission type: standard",
+        "after": "user sim: v1.0; voice model: gpt-realtime-1.5; submission type: standard"
+      },
+      {
+        "path": "/16/model_ids/0",
+        "before": "gpt-realtime-1.0",
+        "after": "gpt-realtime-1.5"
+      },
+      {
+        "path": "/16/model_raw/0",
+        "before": "gpt-realtime-1.0",
+        "after": "gpt-realtime-1.5"
+      },
+      {
+        "path": "/16/rank",
+        "before": 13,
+        "after": 11
+      },
+      {
+        "path": "/16/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1-0_openai_2026-04-13/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1.5_sierra_2026-03-03/submission.json"
+      },
+      {
+        "path": "/16/score",
+        "before": 36.0,
+        "after": 40.0
+      },
+      {
+        "path": "/16/system",
+        "before": "gpt-realtime-1.0",
+        "after": "gpt-realtime-1.5"
+      },
+      {
+        "path": "/17/model_config",
+        "before": "user sim: v1.0; voice model: gemini-live-2.5-flash-native-audio; submission type: standard",
+        "after": "user sim: v1.0; voice model: grok-voice-fast-1.0; submission type: standard"
+      },
+      {
+        "path": "/17/model_ids/0",
+        "before": "gemini-live-2.5-flash-native-audio",
+        "after": "grok-voice-fast-1.0"
+      },
+      {
+        "path": "/17/model_raw/0",
+        "before": "gemini-live-2.5-flash-native-audio",
+        "after": "grok-voice-fast-1.0"
+      },
+      {
+        "path": "/17/org",
+        "before": "Google",
+        "after": "xAI"
+      },
+      {
+        "path": "/17/rank",
+        "before": 14,
+        "after": 12
+      },
+      {
+        "path": "/17/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-live-2.5-flash_sierra_2026-03-03/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime_sierra_2026-03-03/submission.json"
+      },
+      {
+        "path": "/17/score",
+        "before": 30.0,
+        "after": 36.0
+      },
+      {
+        "path": "/17/system",
+        "before": "gemini-live-2.5-flash-native-audio",
+        "after": "grok-voice-fast-1.0"
+      },
+      {
+        "path": "/18",
+        "added": {
+          "rank": 13,
+          "system": "gpt-realtime-1.0",
+          "agent": null,
+          "model_raw": [
+            "gpt-realtime-1.0"
+          ],
+          "model_ids": [
+            "gpt-realtime-1.0"
+          ],
+          "model_config": "user sim: v1.0; voice model: gpt-realtime-1.0; submission type: standard",
+          "score": 36.0,
+          "score_extra": {},
+          "date": "2026-04-13",
+          "verified": true,
+          "open_source": null,
+          "org": "OpenAI",
+          "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1-0_openai_2026-04-13/submission.json"
+        }
+      },
+      {
+        "path": "/19",
+        "added": {
+          "rank": 14,
+          "system": "gemini-live-2.5-flash-native-audio",
+          "agent": null,
+          "model_raw": [
+            "gemini-live-2.5-flash-native-audio"
+          ],
+          "model_ids": [
+            "gemini-live-2.5-flash-native-audio"
+          ],
+          "model_config": "user sim: v1.0; voice model: gemini-live-2.5-flash-native-audio; submission type: standard",
+          "score": 30.0,
+          "score_extra": {},
+          "date": "2026-03-03",
+          "verified": true,
+          "open_source": null,
+          "org": "Google",
+          "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-live-2.5-flash_sierra_2026-03-03/submission.json"
+        }
+      }
+    ],
+    "source_differences_file": "source-deltas/tau3-voice-airline.json"
+  },
+  {
+    "id": "tau3-voice-retail",
+    "rows_before": 18,
+    "rows_after": 20,
+    "row_differences": [
+      {
+        "path": "/4/date",
+        "before": "2026-08-17",
+        "after": "2026-10-14"
+      },
+      {
+        "path": "/4/model_config",
+        "before": "reasoning: enabled; user sim: v1.0; voice model: pine-voice-preview; submission type: standard",
+        "after": "user sim: gpt-5.5 (xhigh); voice model: grok-voice-3.0; submission type: custom; evaluation date: 2026-10-08; benchmark revision: 4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699; methodology: Sierra evaluation of an early-access Grok Voice 3.0 model before its public release. The public API model name is grok-voice-3.0. Standard full-duplex xAI adapter, base airline/retail/telecom task sets, regular speech complexity, seed 300, 0.2-second ticks, 1200-second simulated limit, and one scored trial per task. The voice user simulator v1.0 pipeline used gpt-5.5 with xhigh reasoning effort as its customer LLM; the remaining simulator components, benchmark prompts, policies, tools, and evaluator were unchanged. This non-default customer LLM makes the result a custom submission. Published trajectory metadata replaces an internal early-access model identifier with the public API model name; scored task content, rewards, timestamps, and audio are unchanged.; verification details: All 278 base tasks have one scored canonical trajectory. The initial retail run encountered ungraded connection timeouts at 80 concurrency and was resumed at 40 concurrency; all 114 retail tasks have a final scored result. Airline ran at up to 80 concurrency and telecom at 40. The submitted scores were computed from the saved trajectories. Reviewed trajectories and canonical audio are hosted by the leaderboard."
+      },
+      {
+        "path": "/4/model_ids/0",
+        "removed": "pine-voice-preview"
+      },
+      {
+        "path": "/4/model_raw/0",
+        "before": "Pine Voice Preview",
+        "after": "Grok Voice 3.0"
+      },
+      {
+        "path": "/4/org",
+        "before": "Pine AI",
+        "after": "xAI"
+      },
+      {
+        "path": "/4/rank",
+        "before": 2,
+        "after": null
+      },
+      {
+        "path": "/4/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-v1-0_pineai_2026-08-17/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-3-0_xai_2026-10-14/submission.json"
+      },
+      {
+        "path": "/4/score",
+        "before": 70.17543859649122,
+        "after": 76.31578947368422
+      },
+      {
+        "path": "/4/system",
+        "before": "Pine Voice Preview",
+        "after": "Grok Voice 3.0"
+      },
+      {
+        "path": "/5/date",
+        "before": "2026-04-21",
+        "after": "2026-10-06"
+      },
+      {
+        "path": "/5/model_config",
+        "before": "reasoning: enabled; user sim: v1.0; voice model: grok-voice-think-fast-1.0; submission type: standard",
+        "after": "reasoning: none; user sim: v1.0; voice model: launa-v1; submission type: custom; evaluation date: 2026-10-03; benchmark revision: b7ea9074c1cba482b30687fecdb5c8425fd6f619; methodology: Custom Salesforce Launa v1 full-duplex voice evaluation using standard benchmark prompts, tools and domain policies, regular speech complexity, seed 300, and the Claude Opus 4.5 hallucination reviewer. The customer simulator uses gpt-5.2-2025-12-11 at temperature 0. The scored run used a 16,384-token agent context window except retail tasks 98 and 104, which used 32,768 tokens; task 98 was retried after ungraded context-overflow errors. The current endpoint uses 32,768 tokens for every session, so it does not exactly reproduce the submitted run.; verification details: Benchmark-supplied prompts, domain policies, tools, tasks and evaluator were unchanged. All 278 tasks have one scored canonical trajectory. Trajectories and audio are hosted by the leaderboard."
+      },
+      {
+        "path": "/5/model_ids/0",
+        "removed": "grok-voice-think-fast-1.0"
+      },
+      {
+        "path": "/5/model_raw/0",
+        "before": "grok-voice-think-fast-1.0",
+        "after": "Salesforce Launa v1"
+      },
+      {
+        "path": "/5/org",
+        "before": "xAI",
+        "after": "Salesforce"
+      },
+      {
+        "path": "/5/rank",
+        "before": 3,
+        "after": null
+      },
+      {
+        "path": "/5/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0_xai_2026-04-21/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/salesforce-launa-v1_salesforce_2026-10-06/submission.json"
+      },
+      {
+        "path": "/5/score",
+        "before": 62.28070175438597,
+        "after": 71.9298245614035
+      },
+      {
+        "path": "/5/system",
+        "before": "grok-voice-think-fast-1.0",
+        "after": "Salesforce Launa v1"
+      },
+      {
+        "path": "/6/date",
+        "before": "2026-08-06",
+        "after": "2026-08-17"
+      },
+      {
+        "path": "/6/model_config",
+        "before": "reasoning: high; user sim: v1.0; voice model: grok-voice-think-fast-2.0; submission type: standard",
+        "after": "reasoning: enabled; user sim: v1.0; voice model: pine-voice-preview; submission type: standard"
+      },
+      {
+        "path": "/6/model_ids/0",
+        "before": "grok-voice-think-fast-2.0",
+        "after": "pine-voice-preview"
+      },
+      {
+        "path": "/6/model_raw/0",
+        "before": "grok-voice-think-fast-2.0",
+        "after": "Pine Voice Preview"
+      },
+      {
+        "path": "/6/org",
+        "before": "xai",
+        "after": "Pine AI"
+      },
+      {
+        "path": "/6/rank",
+        "before": 4,
+        "after": 2
+      },
+      {
+        "path": "/6/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-08-06/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-v1-0_pineai_2026-08-17/submission.json"
+      },
+      {
+        "path": "/6/score",
+        "before": 59.64912280701754,
+        "after": 70.17543859649122
+      },
+      {
+        "path": "/6/score_extra/cost",
+        "removed": 0.23825263157894733
+      },
+      {
+        "path": "/6/system",
+        "before": "grok-voice-think-fast-2.0",
+        "after": "Pine Voice Preview"
+      },
+      {
+        "path": "/7/date",
+        "before": "2026-06-29",
+        "after": "2026-04-21"
+      },
+      {
+        "path": "/7/model_config",
+        "before": "reasoning: xhigh; user sim: gpt-5.5-2026-04-23 (xhigh); voice model: gpt-realtime-2; submission type: custom",
+        "after": "reasoning: enabled; user sim: v1.0; voice model: grok-voice-think-fast-1.0; submission type: standard"
+      },
+      {
+        "path": "/7/model_ids/0",
+        "before": "gpt-realtime-2",
+        "after": "grok-voice-think-fast-1.0"
+      },
+      {
+        "path": "/7/model_raw/0",
+        "before": "gpt-realtime-2",
+        "after": "grok-voice-think-fast-1.0"
+      },
+      {
+        "path": "/7/org",
+        "before": "OpenAI",
+        "after": "xAI"
+      },
+      {
+        "path": "/7/rank",
+        "before": null,
+        "after": 3
+      },
+      {
+        "path": "/7/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-24/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0_xai_2026-04-21/submission.json"
+      },
+      {
+        "path": "/7/score",
+        "before": 50.0,
+        "after": 62.28070175438597
+      },
+      {
+        "path": "/7/system",
+        "before": "gpt-realtime-2",
+        "after": "grok-voice-think-fast-1.0"
+      },
+      {
+        "path": "/8/date",
+        "before": "2026-06-29",
+        "after": "2026-08-06"
+      },
+      {
+        "path": "/8/model_config",
+        "before": "reasoning: xhigh; user sim: v1.0; voice model: gpt-realtime-2; submission type: standard",
+        "after": "reasoning: high; user sim: v1.0; voice model: grok-voice-think-fast-2.0; submission type: standard"
+      },
+      {
+        "path": "/8/model_ids/0",
+        "before": "gpt-realtime-2",
+        "after": "grok-voice-think-fast-2.0"
+      },
+      {
+        "path": "/8/model_raw/0",
+        "before": "gpt-realtime-2",
+        "after": "grok-voice-think-fast-2.0"
+      },
+      {
+        "path": "/8/org",
+        "before": "openai",
+        "after": "xai"
+      },
+      {
+        "path": "/8/rank",
+        "before": 5,
+        "after": 4
+      },
+      {
+        "path": "/8/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-29/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-08-06/submission.json"
+      },
+      {
+        "path": "/8/score",
+        "before": 47.368421052631575,
+        "after": 59.64912280701754
+      },
+      {
+        "path": "/8/score_extra/cost",
+        "added": 0.23825263157894733
+      },
+      {
+        "path": "/8/system",
+        "before": "gpt-realtime-2",
+        "after": "grok-voice-think-fast-2.0"
+      },
+      {
+        "path": "/9/date",
+        "before": "2026-08-06",
+        "after": "2026-06-29"
+      },
+      {
+        "path": "/9/model_config",
+        "before": "user sim: v1.0; voice model: qwen3.5-omni-plus-realtime; submission type: standard",
+        "after": "reasoning: xhigh; user sim: gpt-5.5-2026-04-23 (xhigh); voice model: gpt-realtime-2; submission type: custom"
+      },
+      {
+        "path": "/9/model_ids/0",
+        "before": "qwen3.5-omni-plus-realtime",
+        "after": "gpt-realtime-2"
+      },
+      {
+        "path": "/9/model_raw/0",
+        "before": "qwen3.5-omni-plus-realtime",
+        "after": "gpt-realtime-2"
+      },
+      {
+        "path": "/9/org",
+        "before": "qwen",
+        "after": "OpenAI"
+      },
+      {
+        "path": "/9/rank",
+        "before": 6,
+        "after": null
+      },
+      {
+        "path": "/9/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-5-omni-plus-realtime_qwen_2026-08-06/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-24/submission.json"
+      },
+      {
+        "path": "/9/score",
+        "before": 46.49122807017544,
+        "after": 50.0
+      },
+      {
+        "path": "/9/score_extra/cost",
+        "removed": 0.580765906741573
+      },
+      {
+        "path": "/9/system",
+        "before": "qwen3.5-omni-plus-realtime",
+        "after": "gpt-realtime-2"
+      },
+      {
+        "path": "/10/date",
+        "before": "2026-04-02",
+        "after": "2026-06-29"
+      },
+      {
+        "path": "/10/model_config",
+        "before": "reasoning: high; user sim: v1.0; voice model: gemini-3.1-flash-live-preview; submission type: standard, preview",
+        "after": "reasoning: xhigh; user sim: v1.0; voice model: gpt-realtime-2; submission type: standard"
+      },
+      {
+        "path": "/10/model_ids/0",
+        "before": "gemini-3.1-flash-live",
+        "after": "gpt-realtime-2"
+      },
+      {
+        "path": "/10/model_raw/0",
+        "before": "gemini-3.1-flash-live-preview-thinking-high",
+        "after": "gpt-realtime-2"
+      },
+      {
+        "path": "/10/org",
+        "before": "Google",
+        "after": "openai"
+      },
+      {
+        "path": "/10/rank",
+        "before": 7,
+        "after": 5
+      },
+      {
+        "path": "/10/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-high_google_2026-04-02/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-29/submission.json"
+      },
+      {
+        "path": "/10/score",
+        "before": 45.614035087719294,
+        "after": 47.368421052631575
+      },
+      {
+        "path": "/10/system",
+        "before": "gemini-3.1-flash-live-preview-thinking-high",
+        "after": "gpt-realtime-2"
+      },
+      {
+        "path": "/11/date",
+        "before": "2026-03-03",
+        "after": "2026-08-06"
+      },
+      {
+        "path": "/11/model_config",
+        "before": "user sim: v1.0; voice model: gpt-realtime-1.5; submission type: standard",
+        "after": "user sim: v1.0; voice model: qwen3.5-omni-plus-realtime; submission type: standard"
+      },
+      {
+        "path": "/11/model_ids/0",
+        "before": "gpt-realtime-1.5",
+        "after": "qwen3.5-omni-plus-realtime"
+      },
+      {
+        "path": "/11/model_raw/0",
+        "before": "gpt-realtime-1.5",
+        "after": "qwen3.5-omni-plus-realtime"
+      },
+      {
+        "path": "/11/org",
+        "before": "OpenAI",
+        "after": "qwen"
+      },
+      {
+        "path": "/11/rank",
+        "before": 8,
+        "after": 6
+      },
+      {
+        "path": "/11/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1.5_sierra_2026-03-03/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-5-omni-plus-realtime_qwen_2026-08-06/submission.json"
+      },
+      {
+        "path": "/11/score",
+        "before": 44.7,
+        "after": 46.49122807017544
+      },
+      {
+        "path": "/11/score_extra/cost",
+        "added": 0.580765906741573
+      },
+      {
+        "path": "/11/system",
+        "before": "gpt-realtime-1.5",
+        "after": "qwen3.5-omni-plus-realtime"
+      },
+      {
+        "path": "/12/date",
+        "before": "2026-07-01",
+        "after": "2026-04-02"
+      },
+      {
+        "path": "/12/model_config",
+        "before": "reasoning: minimal; user sim: v1.0; voice model: gpt-realtime-2; submission type: standard",
+        "after": "reasoning: high; user sim: v1.0; voice model: gemini-3.1-flash-live-preview; submission type: standard, preview"
+      },
+      {
+        "path": "/12/model_ids/0",
+        "before": "gpt-realtime-2",
+        "after": "gemini-3.1-flash-live"
+      },
+      {
+        "path": "/12/model_raw/0",
+        "before": "gpt-realtime-2",
+        "after": "gemini-3.1-flash-live-preview-thinking-high"
+      },
+      {
+        "path": "/12/org",
+        "before": "openai",
+        "after": "Google"
+      },
+      {
+        "path": "/12/rank",
+        "before": 9,
+        "after": 7
+      },
+      {
+        "path": "/12/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-minimal_openai_2026-07-01/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-high_google_2026-04-02/submission.json"
+      },
+      {
+        "path": "/12/score",
+        "before": 39.473684210526315,
+        "after": 45.614035087719294
+      },
+      {
+        "path": "/12/system",
+        "before": "gpt-realtime-2",
+        "after": "gemini-3.1-flash-live-preview-thinking-high"
+      },
+      {
+        "path": "/13/model_config",
+        "before": "user sim: v1.0; voice model: grok-voice-fast-1.0; submission type: standard",
+        "after": "user sim: v1.0; voice model: gpt-realtime-1.5; submission type: standard"
+      },
+      {
+        "path": "/13/model_ids/0",
+        "before": "grok-voice-fast-1.0",
+        "after": "gpt-realtime-1.5"
+      },
+      {
+        "path": "/13/model_raw/0",
+        "before": "grok-voice-fast-1.0",
+        "after": "gpt-realtime-1.5"
+      },
+      {
+        "path": "/13/org",
+        "before": "xAI",
+        "after": "OpenAI"
+      },
+      {
+        "path": "/13/rank",
+        "before": 10,
+        "after": 8
+      },
+      {
+        "path": "/13/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime_sierra_2026-03-03/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1.5_sierra_2026-03-03/submission.json"
+      },
+      {
+        "path": "/13/score",
+        "before": 38.6,
+        "after": 44.7
+      },
+      {
+        "path": "/13/system",
+        "before": "grok-voice-fast-1.0",
+        "after": "gpt-realtime-1.5"
+      },
+      {
+        "path": "/14/date",
+        "before": "2026-04-13",
+        "after": "2026-07-01"
+      },
+      {
+        "path": "/14/model_config",
+        "before": "user sim: v1.0; voice model: gpt-realtime-1.0; submission type: standard",
+        "after": "reasoning: minimal; user sim: v1.0; voice model: gpt-realtime-2; submission type: standard"
+      },
+      {
+        "path": "/14/model_ids/0",
+        "before": "gpt-realtime-1.0",
+        "after": "gpt-realtime-2"
+      },
+      {
+        "path": "/14/model_raw/0",
+        "before": "gpt-realtime-1.0",
+        "after": "gpt-realtime-2"
+      },
+      {
+        "path": "/14/org",
+        "before": "OpenAI",
+        "after": "openai"
+      },
+      {
+        "path": "/14/rank",
+        "before": 11,
+        "after": 9
+      },
+      {
+        "path": "/14/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1-0_openai_2026-04-13/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-minimal_openai_2026-07-01/submission.json"
+      },
+      {
+        "path": "/14/score",
+        "before": 35.96491228070175,
+        "after": 39.473684210526315
+      },
+      {
+        "path": "/14/system",
+        "before": "gpt-realtime-1.0",
+        "after": "gpt-realtime-2"
+      },
+      {
+        "path": "/15/model_config",
+        "before": "user sim: v1.0; voice model: gemini-live-2.5-flash-native-audio; submission type: standard",
+        "after": "user sim: v1.0; voice model: grok-voice-fast-1.0; submission type: standard"
+      },
+      {
+        "path": "/15/model_ids/0",
+        "before": "gemini-live-2.5-flash-native-audio",
+        "after": "grok-voice-fast-1.0"
+      },
+      {
+        "path": "/15/model_raw/0",
+        "before": "gemini-live-2.5-flash-native-audio",
+        "after": "grok-voice-fast-1.0"
+      },
+      {
+        "path": "/15/org",
+        "before": "Google",
+        "after": "xAI"
+      },
+      {
+        "path": "/15/rank",
+        "before": 12,
+        "after": 10
+      },
+      {
+        "path": "/15/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-live-2.5-flash_sierra_2026-03-03/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime_sierra_2026-03-03/submission.json"
+      },
+      {
+        "path": "/15/score",
+        "before": 29.8,
+        "after": 38.6
+      },
+      {
+        "path": "/15/system",
+        "before": "gemini-live-2.5-flash-native-audio",
+        "after": "grok-voice-fast-1.0"
+      },
+      {
+        "path": "/16/date",
+        "before": "2026-05-19",
+        "after": "2026-04-13"
+      },
+      {
+        "path": "/16/model_config",
+        "before": "user sim: v1.0; voice model: STT-LLM-TTS; pipeline: asr=Deepgram nova-3, llm=OpenAI gpt-4.1, tts=Deepgram aura-asteria-en; submission type: standard",
+        "after": "user sim: v1.0; voice model: gpt-realtime-1.0; submission type: standard"
+      },
+      {
+        "path": "/16/model_ids/0",
+        "added": "gpt-realtime-1.0"
+      },
+      {
+        "path": "/16/model_raw/0",
+        "before": "Cascaded baseline",
+        "after": "gpt-realtime-1.0"
+      },
+      {
+        "path": "/16/org",
+        "before": "Cascaded",
+        "after": "OpenAI"
+      },
+      {
+        "path": "/16/rank",
+        "before": 13,
+        "after": 11
+      },
+      {
+        "path": "/16/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/livekit-cascaded_livekit_2026-05-19/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1-0_openai_2026-04-13/submission.json"
+      },
+      {
+        "path": "/16/score",
+        "before": 28.947368421052634,
+        "after": 35.96491228070175
+      },
+      {
+        "path": "/16/system",
+        "before": "Cascaded baseline",
+        "after": "gpt-realtime-1.0"
+      },
+      {
+        "path": "/17/date",
+        "before": "2026-04-13",
+        "after": "2026-03-03"
+      },
+      {
+        "path": "/17/model_config",
+        "before": "reasoning: minimal; user sim: v1.0; voice model: gemini-3.1-flash-live-preview-thinking-minimal; submission type: standard, preview",
+        "after": "user sim: v1.0; voice model: gemini-live-2.5-flash-native-audio; submission type: standard"
+      },
+      {
+        "path": "/17/model_ids/0",
+        "before": "gemini-3.1-flash-live",
+        "after": "gemini-live-2.5-flash-native-audio"
+      },
+      {
+        "path": "/17/model_raw/0",
+        "before": "gemini-3.1-flash-live-preview-thinking-minimal",
+        "after": "gemini-live-2.5-flash-native-audio"
+      },
+      {
+        "path": "/17/rank",
+        "before": 14,
+        "after": 12
+      },
+      {
+        "path": "/17/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-minimal_google_2026-04-13/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-live-2.5-flash_sierra_2026-03-03/submission.json"
+      },
+      {
+        "path": "/17/score",
+        "before": 26.31578947368421,
+        "after": 29.8
+      },
+      {
+        "path": "/17/system",
+        "before": "gemini-3.1-flash-live-preview-thinking-minimal",
+        "after": "gemini-live-2.5-flash-native-audio"
+      },
+      {
+        "path": "/18",
+        "added": {
+          "rank": 13,
+          "system": "Cascaded baseline",
+          "agent": null,
+          "model_raw": [
+            "Cascaded baseline"
+          ],
+          "model_ids": [],
+          "model_config": "user sim: v1.0; voice model: STT-LLM-TTS; pipeline: asr=Deepgram nova-3, llm=OpenAI gpt-4.1, tts=Deepgram aura-asteria-en; submission type: standard",
+          "score": 28.947368421052634,
+          "score_extra": {},
+          "date": "2026-05-19",
+          "verified": true,
+          "open_source": null,
+          "org": "Cascaded",
+          "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/livekit-cascaded_livekit_2026-05-19/submission.json"
+        }
+      },
+      {
+        "path": "/19",
+        "added": {
+          "rank": 14,
+          "system": "gemini-3.1-flash-live-preview-thinking-minimal",
+          "agent": null,
+          "model_raw": [
+            "gemini-3.1-flash-live-preview-thinking-minimal"
+          ],
+          "model_ids": [
+            "gemini-3.1-flash-live"
+          ],
+          "model_config": "reasoning: minimal; user sim: v1.0; voice model: gemini-3.1-flash-live-preview-thinking-minimal; submission type: standard, preview",
+          "score": 26.31578947368421,
+          "score_extra": {},
+          "date": "2026-04-13",
+          "verified": true,
+          "open_source": null,
+          "org": "Google",
+          "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-minimal_google_2026-04-13/submission.json"
+        }
+      }
+    ],
+    "source_differences_file": "source-deltas/tau3-voice-retail.json"
+  },
+  {
+    "id": "tau3-voice-telecom",
+    "rows_before": 18,
+    "rows_after": 20,
+    "row_differences": [
+      {
+        "path": "/3/agent",
+        "before": "tool-mentor",
+        "after": null
+      },
+      {
+        "path": "/3/date",
+        "before": "2026-07-07",
+        "after": "2026-10-14"
+      },
+      {
+        "path": "/3/model_config",
+        "before": "reasoning: enabled; user sim: gpt-5.5-2026-04-23 (xhigh); voice model: grok-voice-think-fast-1.0; submission type: custom",
+        "after": "user sim: gpt-5.5 (xhigh); voice model: grok-voice-3.0; submission type: custom; evaluation date: 2026-10-08; benchmark revision: 4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699; methodology: Sierra evaluation of an early-access Grok Voice 3.0 model before its public release. The public API model name is grok-voice-3.0. Standard full-duplex xAI adapter, base airline/retail/telecom task sets, regular speech complexity, seed 300, 0.2-second ticks, 1200-second simulated limit, and one scored trial per task. The voice user simulator v1.0 pipeline used gpt-5.5 with xhigh reasoning effort as its customer LLM; the remaining simulator components, benchmark prompts, policies, tools, and evaluator were unchanged. This non-default customer LLM makes the result a custom submission. Published trajectory metadata replaces an internal early-access model identifier with the public API model name; scored task content, rewards, timestamps, and audio are unchanged.; verification details: All 278 base tasks have one scored canonical trajectory. The initial retail run encountered ungraded connection timeouts at 80 concurrency and was resumed at 40 concurrency; all 114 retail tasks have a final scored result. Airline ran at up to 80 concurrency and telecom at 40. The submitted scores were computed from the saved trajectories. Reviewed trajectories and canonical audio are hosted by the leaderboard."
+      },
+      {
+        "path": "/3/model_ids/0",
+        "removed": "grok-voice-think-fast-1.0"
+      },
+      {
+        "path": "/3/model_raw/0",
+        "before": "grok-voice-think-fast-1.0 + tool-mentor",
+        "after": "Grok Voice 3.0"
+      },
+      {
+        "path": "/3/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0-tool-mentor_pickle_2026-07-07/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-3-0_xai_2026-10-14/submission.json"
+      },
+      {
+        "path": "/3/score",
+        "before": 78.0701754385965,
+        "after": 82.45614035087719
+      },
+      {
+        "path": "/3/system",
+        "before": "grok-voice-think-fast-1.0 + tool-mentor",
+        "after": "Grok Voice 3.0"
+      },
+      {
+        "path": "/4/date",
+        "before": "2026-08-17",
+        "after": "2026-10-06"
+      },
+      {
+        "path": "/4/model_config",
+        "before": "reasoning: enabled; user sim: gpt-5.5-2026-04-23 (xhigh); voice model: pine-voice-preview; submission type: custom",
+        "after": "reasoning: none; user sim: v1.0; voice model: launa-v1; submission type: custom; evaluation date: 2026-10-03; benchmark revision: b7ea9074c1cba482b30687fecdb5c8425fd6f619; methodology: Custom Salesforce Launa v1 full-duplex voice evaluation using standard benchmark prompts, tools and domain policies, regular speech complexity, seed 300, and the Claude Opus 4.5 hallucination reviewer. The customer simulator uses gpt-5.2-2025-12-11 at temperature 0. The scored run used a 16,384-token agent context window except retail tasks 98 and 104, which used 32,768 tokens; task 98 was retried after ungraded context-overflow errors. The current endpoint uses 32,768 tokens for every session, so it does not exactly reproduce the submitted run.; verification details: Benchmark-supplied prompts, domain policies, tools, tasks and evaluator were unchanged. All 278 tasks have one scored canonical trajectory. Trajectories and audio are hosted by the leaderboard."
+      },
+      {
+        "path": "/4/model_ids/0",
+        "removed": "pine-voice-preview"
+      },
+      {
+        "path": "/4/model_raw/0",
+        "before": "Pine Voice Preview",
+        "after": "Salesforce Launa v1"
+      },
+      {
+        "path": "/4/org",
+        "before": "Pine AI",
+        "after": "Salesforce"
+      },
+      {
+        "path": "/4/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-gpt-5-5_pineai_2026-08-17/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/salesforce-launa-v1_salesforce_2026-10-06/submission.json"
+      },
+      {
+        "path": "/4/score",
+        "before": 75.43859649122807,
+        "after": 80.7017543859649
+      },
+      {
+        "path": "/4/system",
+        "before": "Pine Voice Preview",
+        "after": "Salesforce Launa v1"
+      },
+      {
+        "path": "/5/agent",
+        "before": null,
+        "after": "tool-mentor"
+      },
+      {
+        "path": "/5/date",
+        "before": "2026-04-21",
+        "after": "2026-07-07"
+      },
+      {
+        "path": "/5/model_config",
+        "before": "reasoning: enabled; user sim: v1.0; voice model: grok-voice-think-fast-1.0; submission type: standard",
+        "after": "reasoning: enabled; user sim: gpt-5.5-2026-04-23 (xhigh); voice model: grok-voice-think-fast-1.0; submission type: custom"
+      },
+      {
+        "path": "/5/model_raw/0",
+        "before": "grok-voice-think-fast-1.0",
+        "after": "grok-voice-think-fast-1.0 + tool-mentor"
+      },
+      {
+        "path": "/5/rank",
+        "before": 3,
+        "after": null
+      },
+      {
+        "path": "/5/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0_xai_2026-04-21/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0-tool-mentor_pickle_2026-07-07/submission.json"
+      },
+      {
+        "path": "/5/score",
+        "before": 73.68421052631578,
+        "after": 78.0701754385965
+      },
+      {
+        "path": "/5/system",
+        "before": "grok-voice-think-fast-1.0",
+        "after": "grok-voice-think-fast-1.0 + tool-mentor"
+      },
+      {
+        "path": "/6/date",
+        "before": "2026-08-06",
+        "after": "2026-08-17"
+      },
+      {
+        "path": "/6/model_config",
+        "before": "reasoning: high; user sim: v1.0; voice model: grok-voice-think-fast-2.0; submission type: standard",
+        "after": "reasoning: enabled; user sim: gpt-5.5-2026-04-23 (xhigh); voice model: pine-voice-preview; submission type: custom"
+      },
+      {
+        "path": "/6/model_ids/0",
+        "before": "grok-voice-think-fast-2.0",
+        "after": "pine-voice-preview"
+      },
+      {
+        "path": "/6/model_raw/0",
+        "before": "grok-voice-think-fast-2.0",
+        "after": "Pine Voice Preview"
+      },
+      {
+        "path": "/6/org",
+        "before": "xai",
+        "after": "Pine AI"
+      },
+      {
+        "path": "/6/rank",
+        "before": 4,
+        "after": null
+      },
+      {
+        "path": "/6/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-08-06/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-gpt-5-5_pineai_2026-08-17/submission.json"
+      },
+      {
+        "path": "/6/score",
+        "before": 71.9298245614035,
+        "after": 75.43859649122807
+      },
+      {
+        "path": "/6/score_extra/cost",
+        "removed": 0.38721871345029246
+      },
+      {
+        "path": "/6/system",
+        "before": "grok-voice-think-fast-2.0",
+        "after": "Pine Voice Preview"
+      },
+      {
+        "path": "/7/date",
+        "before": "2026-08-06",
+        "after": "2026-04-21"
+      },
+      {
+        "path": "/7/model_config",
+        "before": "user sim: v1.0; voice model: qwen3.5-omni-plus-realtime; submission type: standard",
+        "after": "reasoning: enabled; user sim: v1.0; voice model: grok-voice-think-fast-1.0; submission type: standard"
+      },
+      {
+        "path": "/7/model_ids/0",
+        "before": "qwen3.5-omni-plus-realtime",
+        "after": "grok-voice-think-fast-1.0"
+      },
+      {
+        "path": "/7/model_raw/0",
+        "before": "qwen3.5-omni-plus-realtime",
+        "after": "grok-voice-think-fast-1.0"
+      },
+      {
+        "path": "/7/org",
+        "before": "qwen",
+        "after": "xAI"
+      },
+      {
+        "path": "/7/rank",
+        "before": 5,
+        "after": 3
+      },
+      {
+        "path": "/7/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-5-omni-plus-realtime_qwen_2026-08-06/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0_xai_2026-04-21/submission.json"
+      },
+      {
+        "path": "/7/score",
+        "before": 60.526315789473685,
+        "after": 73.68421052631578
+      },
+      {
+        "path": "/7/score_extra/cost",
+        "removed": 1.467414694736842
+      },
+      {
+        "path": "/7/system",
+        "before": "qwen3.5-omni-plus-realtime",
+        "after": "grok-voice-think-fast-1.0"
+      },
+      {
+        "path": "/8/date",
+        "before": "2026-03-03",
+        "after": "2026-08-06"
+      },
+      {
+        "path": "/8/model_config",
+        "before": "user sim: v1.0; voice model: grok-voice-fast-1.0; submission type: standard",
+        "after": "reasoning: high; user sim: v1.0; voice model: grok-voice-think-fast-2.0; submission type: standard"
+      },
+      {
+        "path": "/8/model_ids/0",
+        "before": "grok-voice-fast-1.0",
+        "after": "grok-voice-think-fast-2.0"
+      },
+      {
+        "path": "/8/model_raw/0",
+        "before": "grok-voice-fast-1.0",
+        "after": "grok-voice-think-fast-2.0"
+      },
+      {
+        "path": "/8/org",
+        "before": "xAI",
+        "after": "xai"
+      },
+      {
+        "path": "/8/rank",
+        "before": 6,
+        "after": 4
+      },
+      {
+        "path": "/8/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime_sierra_2026-03-03/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-08-06/submission.json"
+      },
+      {
+        "path": "/8/score",
+        "before": 40.4,
+        "after": 71.9298245614035
+      },
+      {
+        "path": "/8/score_extra/cost",
+        "added": 0.38721871345029246
+      },
+      {
+        "path": "/8/system",
+        "before": "grok-voice-fast-1.0",
+        "after": "grok-voice-think-fast-2.0"
+      },
+      {
+        "path": "/9/date",
+        "before": "2026-06-29",
+        "after": "2026-08-06"
+      },
+      {
+        "path": "/9/model_config",
+        "before": "reasoning: xhigh; user sim: gpt-5.5-2026-04-23 (xhigh); voice model: gpt-realtime-2; submission type: custom",
+        "after": "user sim: v1.0; voice model: qwen3.5-omni-plus-realtime; submission type: standard"
+      },
+      {
+        "path": "/9/model_ids/0",
+        "before": "gpt-realtime-2",
+        "after": "qwen3.5-omni-plus-realtime"
+      },
+      {
+        "path": "/9/model_raw/0",
+        "before": "gpt-realtime-2",
+        "after": "qwen3.5-omni-plus-realtime"
+      },
+      {
+        "path": "/9/org",
+        "before": "OpenAI",
+        "after": "qwen"
+      },
+      {
+        "path": "/9/rank",
+        "before": null,
+        "after": 5
+      },
+      {
+        "path": "/9/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-24/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-5-omni-plus-realtime_qwen_2026-08-06/submission.json"
+      },
+      {
+        "path": "/9/score",
+        "before": 37.719298245614034,
+        "after": 60.526315789473685
+      },
+      {
+        "path": "/9/score_extra/cost",
+        "added": 1.467414694736842
+      },
+      {
+        "path": "/9/system",
+        "before": "gpt-realtime-2",
+        "after": "qwen3.5-omni-plus-realtime"
+      },
+      {
+        "path": "/10/date",
+        "before": "2026-04-02",
+        "after": "2026-03-03"
+      },
+      {
+        "path": "/10/model_config",
+        "before": "reasoning: high; user sim: v1.0; voice model: gemini-3.1-flash-live-preview; submission type: standard, preview",
+        "after": "user sim: v1.0; voice model: grok-voice-fast-1.0; submission type: standard"
+      },
+      {
+        "path": "/10/model_ids/0",
+        "before": "gemini-3.1-flash-live",
+        "after": "grok-voice-fast-1.0"
+      },
+      {
+        "path": "/10/model_raw/0",
+        "before": "gemini-3.1-flash-live-preview-thinking-high",
+        "after": "grok-voice-fast-1.0"
+      },
+      {
+        "path": "/10/org",
+        "before": "Google",
+        "after": "xAI"
+      },
+      {
+        "path": "/10/rank",
+        "before": 7,
+        "after": 6
+      },
+      {
+        "path": "/10/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-high_google_2026-04-02/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime_sierra_2026-03-03/submission.json"
+      },
+      {
+        "path": "/10/score",
+        "before": 21.929824561403507,
+        "after": 40.4
+      },
+      {
+        "path": "/10/system",
+        "before": "gemini-3.1-flash-live-preview-thinking-high",
+        "after": "grok-voice-fast-1.0"
+      },
+      {
+        "path": "/11/model_config",
+        "before": "reasoning: xhigh; user sim: v1.0; voice model: gpt-realtime-2; submission type: standard",
+        "after": "reasoning: xhigh; user sim: gpt-5.5-2026-04-23 (xhigh); voice model: gpt-realtime-2; submission type: custom"
+      },
+      {
+        "path": "/11/org",
+        "before": "openai",
+        "after": "OpenAI"
+      },
+      {
+        "path": "/11/rank",
+        "before": 8,
+        "after": null
+      },
+      {
+        "path": "/11/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-29/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-24/submission.json"
+      },
+      {
+        "path": "/11/score",
+        "before": 21.929824561403507,
+        "after": 37.719298245614034
+      },
+      {
+        "path": "/12/date",
+        "before": "2026-03-03",
+        "after": "2026-04-02"
+      },
+      {
+        "path": "/12/model_config",
+        "before": "user sim: v1.0; voice model: gpt-realtime-1.5; submission type: standard",
+        "after": "reasoning: high; user sim: v1.0; voice model: gemini-3.1-flash-live-preview; submission type: standard, preview"
+      },
+      {
+        "path": "/12/model_ids/0",
+        "before": "gpt-realtime-1.5",
+        "after": "gemini-3.1-flash-live"
+      },
+      {
+        "path": "/12/model_raw/0",
+        "before": "gpt-realtime-1.5",
+        "after": "gemini-3.1-flash-live-preview-thinking-high"
+      },
+      {
+        "path": "/12/org",
+        "before": "OpenAI",
+        "after": "Google"
+      },
+      {
+        "path": "/12/rank",
+        "before": 9,
+        "after": 7
+      },
+      {
+        "path": "/12/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1.5_sierra_2026-03-03/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-high_google_2026-04-02/submission.json"
+      },
+      {
+        "path": "/12/score",
+        "before": 21.1,
+        "after": 21.929824561403507
+      },
+      {
+        "path": "/12/system",
+        "before": "gpt-realtime-1.5",
+        "after": "gemini-3.1-flash-live-preview-thinking-high"
+      },
+      {
+        "path": "/13/date",
+        "before": "2026-07-01",
+        "after": "2026-06-29"
+      },
+      {
+        "path": "/13/model_config",
+        "before": "reasoning: minimal; user sim: v1.0; voice model: gpt-realtime-2; submission type: standard",
+        "after": "reasoning: xhigh; user sim: v1.0; voice model: gpt-realtime-2; submission type: standard"
+      },
+      {
+        "path": "/13/rank",
+        "before": 10,
+        "after": 8
+      },
+      {
+        "path": "/13/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-minimal_openai_2026-07-01/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-29/submission.json"
+      },
+      {
+        "path": "/13/score",
+        "before": 20.175438596491226,
+        "after": 21.929824561403507
+      },
+      {
+        "path": "/14/date",
+        "before": "2026-04-13",
+        "after": "2026-03-03"
+      },
+      {
+        "path": "/14/model_config",
+        "before": "user sim: v1.0; voice model: gpt-realtime-1.0; submission type: standard",
+        "after": "user sim: v1.0; voice model: gpt-realtime-1.5; submission type: standard"
+      },
+      {
+        "path": "/14/model_ids/0",
+        "before": "gpt-realtime-1.0",
+        "after": "gpt-realtime-1.5"
+      },
+      {
+        "path": "/14/model_raw/0",
+        "before": "gpt-realtime-1.0",
+        "after": "gpt-realtime-1.5"
+      },
+      {
+        "path": "/14/rank",
+        "before": 11,
+        "after": 9
+      },
+      {
+        "path": "/14/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1-0_openai_2026-04-13/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1.5_sierra_2026-03-03/submission.json"
+      },
+      {
+        "path": "/14/score",
+        "before": 19.298245614035086,
+        "after": 21.1
+      },
+      {
+        "path": "/14/system",
+        "before": "gpt-realtime-1.0",
+        "after": "gpt-realtime-1.5"
+      },
+      {
+        "path": "/15/date",
+        "before": "2026-04-13",
+        "after": "2026-07-01"
+      },
+      {
+        "path": "/15/model_config",
+        "before": "reasoning: minimal; user sim: v1.0; voice model: gemini-3.1-flash-live-preview-thinking-minimal; submission type: standard, preview",
+        "after": "reasoning: minimal; user sim: v1.0; voice model: gpt-realtime-2; submission type: standard"
+      },
+      {
+        "path": "/15/model_ids/0",
+        "before": "gemini-3.1-flash-live",
+        "after": "gpt-realtime-2"
+      },
+      {
+        "path": "/15/model_raw/0",
+        "before": "gemini-3.1-flash-live-preview-thinking-minimal",
+        "after": "gpt-realtime-2"
+      },
+      {
+        "path": "/15/org",
+        "before": "Google",
+        "after": "openai"
+      },
+      {
+        "path": "/15/rank",
+        "before": 12,
+        "after": 10
+      },
+      {
+        "path": "/15/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-minimal_google_2026-04-13/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-minimal_openai_2026-07-01/submission.json"
+      },
+      {
+        "path": "/15/score",
+        "before": 17.543859649122805,
+        "after": 20.175438596491226
+      },
+      {
+        "path": "/15/system",
+        "before": "gemini-3.1-flash-live-preview-thinking-minimal",
+        "after": "gpt-realtime-2"
+      },
+      {
+        "path": "/16/date",
+        "before": "2026-03-03",
+        "after": "2026-04-13"
+      },
+      {
+        "path": "/16/model_config",
+        "before": "user sim: v1.0; voice model: gemini-live-2.5-flash-native-audio; submission type: standard",
+        "after": "user sim: v1.0; voice model: gpt-realtime-1.0; submission type: standard"
+      },
+      {
+        "path": "/16/model_ids/0",
+        "before": "gemini-live-2.5-flash-native-audio",
+        "after": "gpt-realtime-1.0"
+      },
+      {
+        "path": "/16/model_raw/0",
+        "before": "gemini-live-2.5-flash-native-audio",
+        "after": "gpt-realtime-1.0"
+      },
+      {
+        "path": "/16/org",
+        "before": "Google",
+        "after": "OpenAI"
+      },
+      {
+        "path": "/16/rank",
+        "before": 13,
+        "after": 11
+      },
+      {
+        "path": "/16/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-live-2.5-flash_sierra_2026-03-03/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1-0_openai_2026-04-13/submission.json"
+      },
+      {
+        "path": "/16/score",
+        "before": 17.5,
+        "after": 19.298245614035086
+      },
+      {
+        "path": "/16/system",
+        "before": "gemini-live-2.5-flash-native-audio",
+        "after": "gpt-realtime-1.0"
+      },
+      {
+        "path": "/17/date",
+        "before": "2026-05-19",
+        "after": "2026-04-13"
+      },
+      {
+        "path": "/17/model_config",
+        "before": "user sim: v1.0; voice model: STT-LLM-TTS; pipeline: asr=Deepgram nova-3, llm=OpenAI gpt-4.1, tts=Deepgram aura-asteria-en; submission type: standard",
+        "after": "reasoning: minimal; user sim: v1.0; voice model: gemini-3.1-flash-live-preview-thinking-minimal; submission type: standard, preview"
+      },
+      {
+        "path": "/17/model_ids/0",
+        "added": "gemini-3.1-flash-live"
+      },
+      {
+        "path": "/17/model_raw/0",
+        "before": "Cascaded baseline",
+        "after": "gemini-3.1-flash-live-preview-thinking-minimal"
+      },
+      {
+        "path": "/17/org",
+        "before": "Cascaded",
+        "after": "Google"
+      },
+      {
+        "path": "/17/rank",
+        "before": 14,
+        "after": 12
+      },
+      {
+        "path": "/17/row_url",
+        "before": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/livekit-cascaded_livekit_2026-05-19/submission.json",
+        "after": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-minimal_google_2026-04-13/submission.json"
+      },
+      {
+        "path": "/17/score",
+        "before": 16.666666666666664,
+        "after": 17.543859649122805
+      },
+      {
+        "path": "/17/system",
+        "before": "Cascaded baseline",
+        "after": "gemini-3.1-flash-live-preview-thinking-minimal"
+      },
+      {
+        "path": "/18",
+        "added": {
+          "rank": 13,
+          "system": "gemini-live-2.5-flash-native-audio",
+          "agent": null,
+          "model_raw": [
+            "gemini-live-2.5-flash-native-audio"
+          ],
+          "model_ids": [
+            "gemini-live-2.5-flash-native-audio"
+          ],
+          "model_config": "user sim: v1.0; voice model: gemini-live-2.5-flash-native-audio; submission type: standard",
+          "score": 17.5,
+          "score_extra": {},
+          "date": "2026-03-03",
+          "verified": true,
+          "open_source": null,
+          "org": "Google",
+          "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-live-2.5-flash_sierra_2026-03-03/submission.json"
+        }
+      },
+      {
+        "path": "/19",
+        "added": {
+          "rank": 14,
+          "system": "Cascaded baseline",
+          "agent": null,
+          "model_raw": [
+            "Cascaded baseline"
+          ],
+          "model_ids": [],
+          "model_config": "user sim: v1.0; voice model: STT-LLM-TTS; pipeline: asr=Deepgram nova-3, llm=OpenAI gpt-4.1, tts=Deepgram aura-asteria-en; submission type: standard",
+          "score": 16.666666666666664,
+          "score_extra": {},
+          "date": "2026-05-19",
+          "verified": true,
+          "open_source": null,
+          "org": "Cascaded",
+          "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/livekit-cascaded_livekit_2026-05-19/submission.json"
+        }
+      }
+    ],
+    "source_differences_file": "source-deltas/tau3-voice-telecom.json"
+  }
+]
