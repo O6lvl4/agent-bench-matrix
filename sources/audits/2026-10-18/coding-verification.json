@@ -1,0 +1,202 @@
+{
+  "date": "2026-10-18",
+  "base_commit": "0310eeef75423a981e4d8bd158721c95a6b372a3",
+  "tables_checked": 55,
+  "complete_projection_comparisons_passed": 53,
+  "registry_identity_checks": "passed for all successfully checked tables",
+  "row_date_checks": "passed for all successfully checked tables",
+  "newest_row_date_checks": "passed for all successfully checked tables",
+  "original_files_byte_preserved": 165,
+  "model_registry_edited_by_this_worker": false,
+  "model_registry_proposals": 0,
+  "native_checks": [
+    {
+      "table": "deepswe-v1-1",
+      "row_count": 70,
+      "all_native_scores_frontend_costs_configuration_and_pricing_snippet": "passed",
+      "supporting_snippet_byte_preserved": true
+    },
+    {
+      "table": "deepswe-v1",
+      "row_count": 29,
+      "all_native_scores_frontend_costs_configuration_and_pricing_snippet": "passed",
+      "supporting_snippet_byte_preserved": true
+    },
+    {
+      "table": "swe-bench-bash-only",
+      "row_count": 47,
+      "source_resolved_values": "passed"
+    },
+    {
+      "table": "swe-bench-full",
+      "row_count": 24,
+      "source_resolved_values": "passed"
+    },
+    {
+      "table": "swe-bench-lite",
+      "row_count": 84,
+      "source_resolved_values": "passed"
+    },
+    {
+      "table": "swe-bench-live-c-cpp",
+      "row_count": 17,
+      "resolved_over_total_score_check": "passed"
+    },
+    {
+      "table": "swe-bench-live-csharp",
+      "row_count": 19,
+      "resolved_over_total_score_check": "passed"
+    },
+    {
+      "table": "swe-bench-live-full",
+      "row_count": 4,
+      "resolved_over_total_score_check": "passed"
+    },
+    {
+      "table": "swe-bench-live-go",
+      "row_count": 24,
+      "resolved_over_total_score_check": "passed"
+    },
+    {
+      "table": "swe-bench-live-java",
+      "row_count": 25,
+      "resolved_over_total_score_check": "passed"
+    },
+    {
+      "table": "swe-bench-live-lite",
+      "row_count": 24,
+      "resolved_over_total_score_check": "passed"
+    },
+    {
+      "table": "swe-bench-live-rust",
+      "row_count": 18,
+      "resolved_over_total_score_check": "passed"
+    },
+    {
+      "table": "swe-bench-live-ts-js",
+      "row_count": 22,
+      "resolved_over_total_score_check": "passed"
+    },
+    {
+      "table": "swe-bench-live-verified",
+      "row_count": 2,
+      "resolved_over_total_score_check": "passed"
+    },
+    {
+      "table": "swe-bench-live-windows",
+      "row_count": 6,
+      "resolved_over_total_score_check": "passed"
+    },
+    {
+      "table": "swe-bench-multilingual",
+      "row_count": 13,
+      "source_resolved_values": "passed"
+    },
+    {
+      "table": "swe-bench-multimodal",
+      "row_count": 22,
+      "source_resolved_values": "passed"
+    },
+    {
+      "table": "swe-bench-verified",
+      "row_count": 180,
+      "source_resolved_values": "passed"
+    },
+    {
+      "table": "terminal-bench-2-0",
+      "row_count": 142,
+      "rank_and_primary_metric": "passed",
+      "all_normalized_numeric_score_extras": "passed",
+      "numeric_values_checked": 276
+    },
+    {
+      "table": "terminal-bench-2-1",
+      "row_count": 22,
+      "rank_and_primary_metric": "passed",
+      "all_normalized_numeric_score_extras": "passed",
+      "numeric_values_checked": 330
+    },
+    {
+      "table": "terminal-bench-3-0",
+      "row_count": 12,
+      "rank_and_primary_metric": "passed",
+      "all_normalized_numeric_score_extras": "passed",
+      "numeric_values_checked": 72
+    },
+    {
+      "table": "terminal-bench-4-0",
+      "row_count": 35,
+      "rank_and_primary_metric": "passed",
+      "all_normalized_numeric_score_extras": "passed",
+      "numeric_values_checked": 490
+    },
+    {
+      "table": "terminal-bench-science-0-1",
+      "row_count": 17,
+      "rank_and_primary_metric": "passed",
+      "all_normalized_numeric_score_extras": "passed",
+      "numeric_values_checked": 102
+    }
+  ],
+  "full_build": "Parent task owns final aggregate build and validation",
+  "fresh_tables_successfully_checked": 55,
+  "failed_preserved_tables": [],
+  "changed_row_native_checks": [
+    {
+      "table": "swe-bench-live-go",
+      "source_set": "go",
+      "source_name": "TianxiCode + Deepseek-v4.1-Flash",
+      "resolved_count": 88,
+      "total": 138,
+      "score": 63.8,
+      "date": "2026-10-16",
+      "verified": true,
+      "row_url": "https://github.com/SWE-bench-Live/submission/tree/main/submissions/multilang/go/tianxi/deepseek-flash",
+      "all_normalized_new_row_fields_match_source": "passed"
+    },
+    {
+      "table": "swe-bench-live-java",
+      "source_set": "java",
+      "source_name": "TianxiCode + Deepseek-v4.1-Flash",
+      "resolved_count": 109,
+      "total": 160,
+      "score": 68.1,
+      "date": "2026-10-16",
+      "verified": true,
+      "row_url": "https://github.com/SWE-bench-Live/submission/tree/main/submissions/multilang/java/tianxicode/deepseek-flash",
+      "all_normalized_new_row_fields_match_source": "passed"
+    }
+  ],
+  "proposed_files": [
+    {
+      "path": "data/tables/swe-bench-live-go.json",
+      "before_sha256": "83f22be25958c96c642d9ea27ecb8fc934040d46a0e931dda5776a6d8c413c63",
+      "after_sha256": "8ae7aa9162195f54af2e2fc7940c28f8a847b3cbb125336851555214b62631ea"
+    },
+    {
+      "path": "data/tables/swe-bench-live-java.json",
+      "before_sha256": "d096652737d8de432bbde701efe73d8b145ac18c06415f4e9ad53d8242448a38",
+      "after_sha256": "4860f9a7665f09fe7912aaf04fed06129f207f0bb50636894d1c671e31aee38a"
+    },
+    {
+      "path": "sources/swe-bench-live-go/provenance.json",
+      "before_sha256": "90c2c4eb3fb5e59485d47a783a201f03b3807803efcf5bf71bb639f077ca5021",
+      "after_sha256": "6ce4b080c730d4a59d5b04e7e24ee2627b844b19c5b683bbf164d812e325ad88"
+    },
+    {
+      "path": "sources/swe-bench-live-go/reports-0605_go.json",
+      "before_sha256": "94618846634902998336808ebfab78a340ea8719277ab6cb8f4eac80df63372c",
+      "after_sha256": "4b882bd5e2068c7b97a7850a8bc4aad880c60b6956ecb0d1f094ff2d9cb9823f"
+    },
+    {
+      "path": "sources/swe-bench-live-java/provenance.json",
+      "before_sha256": "0dfdb6846217305f3fc828c888d1c4dc4ca8cbf7180626c5a589a0a93058a000",
+      "after_sha256": "09f607a8f6ea1c2617bca97522273f24170ba6d862c1e6af3ca9b798c21eb849"
+    },
+    {
+      "path": "sources/swe-bench-live-java/reports-0605_java.json",
+      "before_sha256": "950846d32d99f73c90695d362cb10b9bbab94bcf0791a1c496dd65eaec17c18d",
+      "after_sha256": "64b420c29bd35659ddefdae66f6f2e9d033a60056625e0cea7e1aeb4b83d26f8"
+    }
+  ]
+}

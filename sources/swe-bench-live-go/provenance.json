@@ -1,17 +1,17 @@
 {
-  "retrieved": "2026-10-10",
+  "retrieved": "2026-10-18",
   "table": "swe-bench-live-go",
   "status": "comparable-source-extracted",
   "source_data_changed": true,
-  "old_rows": 22,
-  "new_rows": 23,
+  "old_rows": 23,
+  "new_rows": 24,
   "rows_changed": true,
   "snapshot": "sources/swe-bench-live-go/reports-0605_go.json",
-  "snapshot_sha256": "94618846634902998336808ebfab78a340ea8719277ab6cb8f4eac80df63372c",
+  "snapshot_sha256": "4b882bd5e2068c7b97a7850a8bc4aad880c60b6956ecb0d1f094ff2d9cb9823f",
   "sources": [
     {
-      "url": "https://swe-bench-live.github.io/reports-0605.jsonl",
       "request_description": "https://swe-bench-live.github.io/reports-0605.jsonl",
+      "url": "https://swe-bench-live.github.io/reports-0605.jsonl",
       "tables": [
         "swe-bench-live-c-cpp",
         "swe-bench-live-csharp",
@@ -24,16 +24,18 @@
         "swe-bench-live-verified",
         "swe-bench-live-windows"
       ],
+      "group": "coding",
       "file": "d12f2019684d4353",
-      "retrieved": "2026-10-10",
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:22:50.340274+00:00",
       "status": 200,
       "final_url": "https://swe-bench-live.github.io/reports-0605.jsonl",
-      "bytes": 423915,
-      "sha256": "ddfc39161803b6c9ccdfec86004ff5f2c138e6d2136e5a40494262243dba61a8"
+      "bytes": 424448,
+      "sha256": "23baada570d030dcdbdf2b7cff8cdef9be23032798dd7de7b98393cb39714f2c"
     },
     {
-      "url": "https://swe-bench-live.github.io/leaderboard.js",
       "request_description": "https://swe-bench-live.github.io/leaderboard.js",
+      "url": "https://swe-bench-live.github.io/leaderboard.js",
       "tables": [
         "swe-bench-live-c-cpp",
         "swe-bench-live-csharp",
@@ -46,13 +48,15 @@
         "swe-bench-live-verified",
         "swe-bench-live-windows"
       ],
+      "group": "coding",
       "file": "b8f381a4918d9e5e",
-      "retrieved": "2026-10-10",
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:22:51.253881+00:00",
       "status": 200,
       "final_url": "https://swe-bench-live.github.io/leaderboard.js",
       "bytes": 15504,
       "sha256": "d7cd69b4ab1590d95c7f3dd0d00e7e81b7a5bef057eca5f04dd08bba3276e063"
     }
   ],
-  "method": "Complete current source projection; SWE-bench Live native resolved/total and explicit dates; existing rows preserved apart from rank order. Qwen 3.8-27B matches existing registry name Qwen 3.8 27B by dash/space formatting only. No unknown model identity is inferred."
+  "method": "Complete native JSON/YAML/CSV/HTML/RSC table projection compared against the prior snapshot; supported changed rows mechanically regenerated; other source changes fail closed."
 }

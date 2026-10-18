@@ -1,0 +1,26 @@
+{
+  "id": "refresh-tool-general-identities-2026-10-18",
+  "name": "Unmapped voice system identities",
+  "retrieved": "2026-10-18",
+  "tried": [
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-3-0_xai_2026-10-14/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/salesforce-launa-v1_salesforce_2026-10-06/submission.json"
+  ],
+  "reason_ja": "Grok Voice 3.0 と Salesforce Launa v1 の新規公開提出は4表に追加したが、この取得では既存モデル登録簿への対応を設定せず model_ids=[] とした。名称・音声APIモデル名・全評価条件は原データどおり保持。アーキテクチャや別名の推測による統合をしていない。",
+  "systems": [
+    {
+      "model_raw": "Grok Voice 3.0",
+      "source_voice_model": "grok-voice-3.0",
+      "model_ids": [],
+      "reason": "Not mapped into the existing model registry in this pass; label and source voice-model identifier are preserved without architecture or alias inference.",
+      "source": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-3-0_xai_2026-10-14/submission.json"
+    },
+    {
+      "model_raw": "Salesforce Launa v1",
+      "source_voice_model": "launa-v1",
+      "model_ids": [],
+      "reason": "Not mapped into the existing model registry in this pass; label and source voice-model identifier are preserved without architecture or alias inference.",
+      "source": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/salesforce-launa-v1_salesforce_2026-10-06/submission.json"
+    }
+  ]
+}

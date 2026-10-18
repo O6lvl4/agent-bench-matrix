@@ -1,0 +1,161 @@
+{
+  "id": "deepseek-v4-1-flash-1017",
+  "vendor": "DeepSeek",
+  "title": "DeepSeek-V4.1-Flash-1017 official model card benchmark table",
+  "source": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "fetched": [
+    "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/raw/main/README.md",
+    "https://api-docs.deepseek.com/updates/"
+  ],
+  "retrieved": "2026-10-18",
+  "published": "2026-10-17",
+  "snapshot": "sources/claims/deepseek-v4-1-flash-1017/README.md",
+  "harness_ja": "DeepSeek 自身の公表値。Terminal-Bench 4.0 は Claude Code、DeepSWE v1.1 は Mini-SWE-V2。ZeroBench-main はツールあり Pass@5。HLE はツールなしで全体と純テキスト部分集合を別記。その他の足場・推論設定・試行回数・実行日は未記載。推奨推論パラメータを評価時の設定とみなさない。",
+  "notes_ja": "10月17日版を旧 DeepSeek-V4.1-Flash と別モデルとして登録。deepseek-flash は更新される API 名のため固定版の別名として登録しない。11ベンチマーク・12数値をモデルカードから機械抽出。ベンダー比較表の他モデル値は今回転記しない。スコアの単位が表に明示されていないため reported score とし、独立ランキング・fit には混ぜない。",
+  "figures": [
+    {
+      "model_raw": "DS-V4.1-Flash-1017",
+      "model_ids": [
+        "deepseek-v4.1-flash-1017"
+      ],
+      "model_config": "no tools",
+      "benchmark_raw": "HLE w/o tools",
+      "table": null,
+      "metric": "reported score",
+      "value": 42.6,
+      "note_ja": "DeepSeek 自己申告。独立ボードの測定値ではない。版・集合・試行条件の同一性を確認できないため既存表には対応づけない。 ツールなし。純テキスト部分集合の値とは区別する。"
+    },
+    {
+      "model_raw": "DS-V4.1-Flash-1017",
+      "model_ids": [
+        "deepseek-v4.1-flash-1017"
+      ],
+      "model_config": "text-only subset; no tools",
+      "benchmark_raw": "HLE w/o tools",
+      "table": null,
+      "metric": "reported score",
+      "value": 44.0,
+      "note_ja": "DeepSeek 自己申告。独立ボードの測定値ではない。版・集合・試行条件の同一性を確認できないため既存表には対応づけない。 ツールなし。純テキスト部分集合（†）。"
+    },
+    {
+      "model_raw": "DS-V4.1-Flash-1017",
+      "model_ids": [
+        "deepseek-v4.1-flash-1017"
+      ],
+      "model_config": "Claude Code harness",
+      "benchmark_raw": "Terminal-Bench 4.0",
+      "table": null,
+      "metric": "reported score",
+      "value": 42.3,
+      "note_ja": "DeepSeek 自己申告。独立ボードの測定値ではない。版・集合・試行条件の同一性を確認できないため既存表には対応づけない。 Claude Code harness。"
+    },
+    {
+      "model_raw": "DS-V4.1-Flash-1017",
+      "model_ids": [
+        "deepseek-v4.1-flash-1017"
+      ],
+      "model_config": "Mini-SWE-V2 harness",
+      "benchmark_raw": "DeepSWE v1.1",
+      "table": null,
+      "metric": "reported score",
+      "value": 77.0,
+      "note_ja": "DeepSeek 自己申告。独立ボードの測定値ではない。版・集合・試行条件の同一性を確認できないため既存表には対応づけない。 Mini-SWE-V2 harness。"
+    },
+    {
+      "model_raw": "DS-V4.1-Flash-1017",
+      "model_ids": [
+        "deepseek-v4.1-flash-1017"
+      ],
+      "model_config": null,
+      "benchmark_raw": "ProgramBench",
+      "table": null,
+      "metric": "reported score",
+      "value": 29.1,
+      "note_ja": "DeepSeek 自己申告。独立ボードの測定値ではない。版・集合・試行条件の同一性を確認できないため既存表には対応づけない。"
+    },
+    {
+      "model_raw": "DS-V4.1-Flash-1017",
+      "model_ids": [
+        "deepseek-v4.1-flash-1017"
+      ],
+      "model_config": null,
+      "benchmark_raw": "NL2Repo-Bench",
+      "table": null,
+      "metric": "reported score",
+      "value": 68.2,
+      "note_ja": "DeepSeek 自己申告。独立ボードの測定値ではない。版・集合・試行条件の同一性を確認できないため既存表には対応づけない。"
+    },
+    {
+      "model_raw": "DS-V4.1-Flash-1017",
+      "model_ids": [
+        "deepseek-v4.1-flash-1017"
+      ],
+      "model_config": null,
+      "benchmark_raw": "Automation-Bench v1.0.6",
+      "table": null,
+      "metric": "reported score",
+      "value": 60.5,
+      "note_ja": "DeepSeek 自己申告。独立ボードの測定値ではない。版・集合・試行条件の同一性を確認できないため既存表には対応づけない。"
+    },
+    {
+      "model_raw": "DS-V4.1-Flash-1017",
+      "model_ids": [
+        "deepseek-v4.1-flash-1017"
+      ],
+      "model_config": null,
+      "benchmark_raw": "Agents’ Last Exam",
+      "table": null,
+      "metric": "reported score",
+      "value": 35.4,
+      "note_ja": "DeepSeek 自己申告。独立ボードの測定値ではない。版・集合・試行条件の同一性を確認できないため既存表には対応づけない。"
+    },
+    {
+      "model_raw": "DS-V4.1-Flash-1017",
+      "model_ids": [
+        "deepseek-v4.1-flash-1017"
+      ],
+      "model_config": null,
+      "benchmark_raw": "Apex Bench v1.1",
+      "table": null,
+      "metric": "reported score",
+      "value": 72.1,
+      "note_ja": "DeepSeek 自己申告。独立ボードの測定値ではない。版・集合・試行条件の同一性を確認できないため既存表には対応づけない。"
+    },
+    {
+      "model_raw": "DS-V4.1-Flash-1017",
+      "model_ids": [
+        "deepseek-v4.1-flash-1017"
+      ],
+      "model_config": "with tools",
+      "benchmark_raw": "Chartography (w/tools)",
+      "table": null,
+      "metric": "reported score",
+      "value": 83.0,
+      "note_ja": "DeepSeek 自己申告。独立ボードの測定値ではない。版・集合・試行条件の同一性を確認できないため既存表には対応づけない。"
+    },
+    {
+      "model_raw": "DS-V4.1-Flash-1017",
+      "model_ids": [
+        "deepseek-v4.1-flash-1017"
+      ],
+      "model_config": "with tools",
+      "benchmark_raw": "BabyVision (w/tools)",
+      "table": null,
+      "metric": "reported score",
+      "value": 92.5,
+      "note_ja": "DeepSeek 自己申告。独立ボードの測定値ではない。版・集合・試行条件の同一性を確認できないため既存表には対応づけない。"
+    },
+    {
+      "model_raw": "DS-V4.1-Flash-1017",
+      "model_ids": [
+        "deepseek-v4.1-flash-1017"
+      ],
+      "model_config": "tools; Pass@5",
+      "benchmark_raw": "ZeroBench-main (w/tools)",
+      "table": null,
+      "metric": "reported score",
+      "value": 51.0,
+      "note_ja": "DeepSeek 自己申告。独立ボードの測定値ではない。版・集合・試行条件の同一性を確認できないため既存表には対応づけない。 公式更新履歴で Pass@5 と明記。"
+    }
+  ]
+}

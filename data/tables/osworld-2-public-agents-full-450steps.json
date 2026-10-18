@@ -1,0 +1,49 @@
+{
+  "id": "osworld-2-public-agents-full-450steps",
+  "family": "osworld-2",
+  "name": "OSWorld 2.0 (release v2026.08.08, public agents from All tab, full set, 450 steps)",
+  "board": "osworld-v2.xlang.ai",
+  "category": "computer-use",
+  "measures_ja": "熟練者でも1時間以上かかる長い実務ワークフロー(自前ホストのWebサイト・オフィスソフト・複数アプリ連携)を端から端まで完遂できるか。",
+  "tasks": 108,
+  "tasks_note": "108 は公開JSONの datasetSize。行ごとの taskCount は非掲載。All タブから modelType=agent・指定 release・full・450 steps の行だけを抽出。",
+  "metric": "Binary accuracy (%)",
+  "unit": "%",
+  "higher_is_better": true,
+  "harness_ja": "公式サイトの All タブに掲載された外部エージェントの結果。modelType=agent の行のみ。Foundation E2E GUI の公式実行条件とは別扱いで、掲載行には official 検証フラグが無いため verified=null。",
+  "source": "https://osworld-v2.xlang.ai/",
+  "fetched": [
+    "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json?v=leaderboard-musespark-v10",
+    "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-musespark-v10",
+    "https://osworld-v2.xlang.ai/"
+  ],
+  "retrieved": "2026-10-18",
+  "newest_row_date": null,
+  "snapshot": "sources/osworld-2-public-agents-full-450steps/official-results.json",
+  "paper": "https://arxiv.org/abs/2606.29537",
+  "repo": "https://github.com/xlang-ai/OSWorld-V2",
+  "notes_ja": "releaseVersion=v2026.08.08・datasetScope=full・stepBudget=450 に限定し、500-step の表や別 release と混ぜない。rank は同じ条件の All タブ内の順位。binarySuccessThreshold=0.99 を明示して保持。reasoning は max (thinking disabled)、toolSetting は空文字の原文どおり。basePlannerModel はプランナーだけの開示のため model_ids=[]。行の日付・official・オープン性・費用・taskCount は非掲載で推測しない。公開JSONの updatedAt は 2026-10-15。",
+  "rows": [
+    {
+      "rank": 1,
+      "system": "Darwinx w/ Claude Opus 4.8",
+      "agent": null,
+      "model_raw": [
+        "anthropic/claude-opus-4-8"
+      ],
+      "model_ids": [],
+      "model_config": "model_type=agent; model_scope=all; base_planner_model=anthropic/claude-opus-4-8; reasoning=max (thinking disabled); tool_setting=; step_budget=450; release=v2026.08.08; dataset_scope=full",
+      "score": 37.65,
+      "score_extra": {
+        "partial_score": 66.62,
+        "step_budget": 450,
+        "binary_success_threshold": 0.99
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": "Salesforce AI Research",
+      "row_url": "https://huggingface.co/datasets/LoyoTheNerd/darwinx_v0808_20260915"
+    }
+  ]
+}

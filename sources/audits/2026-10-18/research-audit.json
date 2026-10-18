@@ -1,0 +1,3413 @@
+{
+  "retrieved": "2026-10-18",
+  "baseline_commit": "0310eeef75423a981e4d8bd158721c95a6b372a3",
+  "scope": [
+    "research",
+    "security",
+    "long-horizon"
+  ],
+  "comparison": "committed baseline, not Oct17 working tree",
+  "tables": [
+    {
+      "id": "browsecomp-plus",
+      "status": "unchanged",
+      "rows_before": 85,
+      "rows_after": 85,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://tevatron-browsecomp-plus.hf.space/data/leaderboard.json",
+          "tables": [
+            "browsecomp-plus"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:25:27.672119+00:00",
+          "completed_at": "2026-10-18T00:25:32.019443+00:00",
+          "status": "200",
+          "final_url": "https://tevatron-browsecomp-plus.hf.space/data/leaderboard.json",
+          "content_type": "application/json",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 48681,
+          "sha256": "9b7742492e752c22a4bdb7d8b5ce2844167b4ae12026b74ffe89c92e02f26324"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Tevatron/BrowseComp-Plus-results/resolve/main/agent_results.csv",
+          "tables": [
+            "browsecomp-plus"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:25:19.531114+00:00",
+          "completed_at": "2026-10-18T00:25:23.551833+00:00",
+          "status": "200",
+          "final_url": "https://huggingface.co/api/resolve-cache/datasets/Tevatron/BrowseComp-Plus-results/ce3096984ec947e6a2196f00465f0b7de3a0bc77/agent_results.csv?%2Fdatasets%2FTevatron%2FBrowseComp-Plus-results%2Fresolve%2Fmain%2Fagent_results.csv=&etag=%22a4a9072a16cca8b2cf56e6d46c06d085d80e7433%22",
+          "content_type": "text/plain; charset=utf-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 18975,
+          "sha256": "7b68ade4b54260902d3ef353b8f217087ecbe1a432a442479e59e3c214bfaf12"
+        }
+      ],
+      "category": "research",
+      "table_file": "data/tables/browsecomp-plus.json",
+      "table_retrieved_before": "2026-10-05",
+      "table_retrieved_after": "2026-10-05",
+      "table_sha256_before": "07dada2c0ca9fa8e222b4f09d12c25f7931ac1cf6733a6a429785cd46e45acd8",
+      "table_sha256_after": "07dada2c0ca9fa8e222b4f09d12c25f7931ac1cf6733a6a429785cd46e45acd8",
+      "fresh_check_date": "2026-10-18",
+      "snapshot_byte_preserved": true,
+      "semantic_changed_fields": []
+    },
+    {
+      "id": "cve-bench-one-day",
+      "status": "unchanged",
+      "rows_before": 2,
+      "rows_after": 2,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://cvebench.com/index-wf61xq3j.js",
+          "tables": [
+            "cve-bench-one-day",
+            "cve-bench-zero-day"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:25:11.362134+00:00",
+          "completed_at": "2026-10-18T00:25:15.747154+00:00",
+          "status": "200",
+          "final_url": "https://cvebench.com/index-wf61xq3j.js",
+          "content_type": "application/javascript; charset=utf-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 3992,
+          "sha256": "3ea79483ba2c9201b5bbcf89e64e39bf774a4b67eb03b5fc305732f00d6a0fc1"
+        }
+      ],
+      "category": "security",
+      "table_file": "data/tables/cve-bench-one-day.json",
+      "table_retrieved_before": "2026-10-05",
+      "table_retrieved_after": "2026-10-05",
+      "table_sha256_before": "084a6d5608caeb1ca764af2e26fab3c05e3a8e3c94bf10c86225617222754c08",
+      "table_sha256_after": "084a6d5608caeb1ca764af2e26fab3c05e3a8e3c94bf10c86225617222754c08",
+      "fresh_check_date": "2026-10-18",
+      "snapshot_byte_preserved": true,
+      "semantic_changed_fields": []
+    },
+    {
+      "id": "cve-bench-zero-day",
+      "status": "unchanged",
+      "rows_before": 2,
+      "rows_after": 2,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://cvebench.com/index-wf61xq3j.js",
+          "tables": [
+            "cve-bench-one-day",
+            "cve-bench-zero-day"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:25:11.362134+00:00",
+          "completed_at": "2026-10-18T00:25:15.747154+00:00",
+          "status": "200",
+          "final_url": "https://cvebench.com/index-wf61xq3j.js",
+          "content_type": "application/javascript; charset=utf-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 3992,
+          "sha256": "3ea79483ba2c9201b5bbcf89e64e39bf774a4b67eb03b5fc305732f00d6a0fc1"
+        }
+      ],
+      "category": "security",
+      "table_file": "data/tables/cve-bench-zero-day.json",
+      "table_retrieved_before": "2026-10-05",
+      "table_retrieved_after": "2026-10-05",
+      "table_sha256_before": "4f8e62381d3c8fa8832fac8811ebba3110c3240bc43b35d0cfb12ca6e6c467d0",
+      "table_sha256_after": "4f8e62381d3c8fa8832fac8811ebba3110c3240bc43b35d0cfb12ca6e6c467d0",
+      "fresh_check_date": "2026-10-18",
+      "snapshot_byte_preserved": true,
+      "semantic_changed_fields": []
+    },
+    {
+      "id": "cybench",
+      "status": "unchanged",
+      "rows_before": 24,
+      "rows_after": 24,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://cybench.github.io/data/leaderboard.csv",
+          "tables": [
+            "cybench"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:25:15.400148+00:00",
+          "completed_at": "2026-10-18T00:25:19.211213+00:00",
+          "status": "200",
+          "final_url": "https://cybench.github.io/data/leaderboard.csv",
+          "content_type": "text/csv; charset=utf-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 1179,
+          "sha256": "846bb17951ec9f7c103486d7c0344974decd2d57f1039df26f9e84986704da45"
+        }
+      ],
+      "category": "security",
+      "table_file": "data/tables/cybench.json",
+      "table_retrieved_before": "2026-10-05",
+      "table_retrieved_after": "2026-10-05",
+      "table_sha256_before": "f2023c5c272b765a0b98bdf8afca2f56d333facd7c12c3f490f3818622f75d95",
+      "table_sha256_after": "f2023c5c272b765a0b98bdf8afca2f56d333facd7c12c3f490f3818622f75d95",
+      "fresh_check_date": "2026-10-18",
+      "snapshot_byte_preserved": true,
+      "semantic_changed_fields": []
+    },
+    {
+      "id": "cybergym-agent-focused",
+      "status": "unchanged",
+      "rows_before": 43,
+      "rows_after": 43,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://www.cybergym.io/cybergym/",
+          "tables": [
+            "cybergym-agent-focused",
+            "cybergym-model-focused"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:25:30.163574+00:00",
+          "completed_at": "2026-10-18T00:25:31.514948+00:00",
+          "status": "200",
+          "final_url": "https://www.cybergym.io/cybergym/",
+          "content_type": "text/html; charset=utf-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 30896,
+          "sha256": "1c85822a74650b779b615f30f9188313fb40f3edf3096dd2220a1854cedf7f29"
+        },
+        {
+          "url": "https://www.cybergym.io/assets/js/leaderboard.js",
+          "tables": [
+            "cybergym-agent-focused",
+            "cybergym-model-focused"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:25:28.471683+00:00",
+          "completed_at": "2026-10-18T00:25:31.511243+00:00",
+          "status": "200",
+          "final_url": "https://www.cybergym.io/assets/js/leaderboard.js",
+          "content_type": "application/javascript; charset=utf-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 41775,
+          "sha256": "7aa2d51c07d2bda8dc8be9910844441aabcfaa03b8b1a9adf1a24e3be45298f2"
+        },
+        {
+          "url": "https://www.cybergym.io/assets/data/cybergym.json",
+          "tables": [
+            "cybergym-agent-focused",
+            "cybergym-model-focused"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:25:28.155268+00:00",
+          "completed_at": "2026-10-18T00:25:31.512230+00:00",
+          "status": "200",
+          "final_url": "https://www.cybergym.io/assets/data/cybergym.json",
+          "content_type": "application/json; charset=utf-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 37909,
+          "sha256": "f43d433c26c20982badce24702ea89789acc2f9eba271ebd68bf15def2a3022e"
+        }
+      ],
+      "category": "security",
+      "table_file": "data/tables/cybergym-agent-focused.json",
+      "table_retrieved_before": "2026-10-13",
+      "table_retrieved_after": "2026-10-13",
+      "table_sha256_before": "6ab2609a53c2d4f155a840fc7f6e551abf12f06999d14a8f74ada7b841e433f8",
+      "table_sha256_after": "6ab2609a53c2d4f155a840fc7f6e551abf12f06999d14a8f74ada7b841e433f8",
+      "fresh_check_date": "2026-10-18",
+      "snapshot_byte_preserved": true,
+      "semantic_changed_fields": []
+    },
+    {
+      "id": "cybergym-e2e",
+      "status": "changed",
+      "rows_before": 11,
+      "rows_after": 12,
+      "rows_changed_or_added": 11,
+      "rows_removed_or_changed": 10,
+      "sources": [
+        {
+          "url": "https://www.cybergym.io/assets/data/cybergym-e2e.json",
+          "tables": [
+            "cybergym-e2e"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:25:28.067200+00:00",
+          "completed_at": "2026-10-18T00:25:31.504682+00:00",
+          "status": "200",
+          "final_url": "https://www.cybergym.io/assets/data/cybergym-e2e.json",
+          "content_type": "application/json; charset=utf-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 4152,
+          "sha256": "05a59f9f5c398bbabeb672164e7f172ecab00294f329a0a24a6a95b2a0951c34"
+        },
+        {
+          "url": "https://www.cybergym.io/cybergym-e2e/",
+          "tables": [
+            "cybergym-e2e"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:25:28.523279+00:00",
+          "completed_at": "2026-10-18T00:25:31.519159+00:00",
+          "status": "200",
+          "final_url": "https://www.cybergym.io/cybergym-e2e/",
+          "content_type": "text/html; charset=utf-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 25612,
+          "sha256": "627b31e2a2112f89eec254ba30b2c0cffbb9b83d117faf29ffb6a708059ee8ff"
+        }
+      ],
+      "category": "security",
+      "table_file": "data/tables/cybergym-e2e.json",
+      "table_retrieved_before": "2026-10-07",
+      "table_retrieved_after": "2026-10-18",
+      "table_sha256_before": "292063209a2aef0af871364b303df1e01de43c7c2ea8fde51a5aafb5458d966c",
+      "table_sha256_after": "293f96e25afb66287769fd8e6b8cd6f1f73aab79674b05f3807d963bba1bdc80",
+      "fresh_check_date": "2026-10-18",
+      "snapshot_byte_preserved": false,
+      "semantic_changed_fields": [
+        "newest_row_date",
+        "rows"
+      ]
+    },
+    {
+      "id": "cybergym-model-focused",
+      "status": "unchanged",
+      "rows_before": 47,
+      "rows_after": 47,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://www.cybergym.io/cybergym/",
+          "tables": [
+            "cybergym-agent-focused",
+            "cybergym-model-focused"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:25:30.163574+00:00",
+          "completed_at": "2026-10-18T00:25:31.514948+00:00",
+          "status": "200",
+          "final_url": "https://www.cybergym.io/cybergym/",
+          "content_type": "text/html; charset=utf-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 30896,
+          "sha256": "1c85822a74650b779b615f30f9188313fb40f3edf3096dd2220a1854cedf7f29"
+        },
+        {
+          "url": "https://www.cybergym.io/assets/js/leaderboard.js",
+          "tables": [
+            "cybergym-agent-focused",
+            "cybergym-model-focused"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:25:28.471683+00:00",
+          "completed_at": "2026-10-18T00:25:31.511243+00:00",
+          "status": "200",
+          "final_url": "https://www.cybergym.io/assets/js/leaderboard.js",
+          "content_type": "application/javascript; charset=utf-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 41775,
+          "sha256": "7aa2d51c07d2bda8dc8be9910844441aabcfaa03b8b1a9adf1a24e3be45298f2"
+        },
+        {
+          "url": "https://www.cybergym.io/assets/data/cybergym.json",
+          "tables": [
+            "cybergym-agent-focused",
+            "cybergym-model-focused"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:25:28.155268+00:00",
+          "completed_at": "2026-10-18T00:25:31.512230+00:00",
+          "status": "200",
+          "final_url": "https://www.cybergym.io/assets/data/cybergym.json",
+          "content_type": "application/json; charset=utf-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 37909,
+          "sha256": "f43d433c26c20982badce24702ea89789acc2f9eba271ebd68bf15def2a3022e"
+        }
+      ],
+      "category": "security",
+      "table_file": "data/tables/cybergym-model-focused.json",
+      "table_retrieved_before": "2026-10-13",
+      "table_retrieved_after": "2026-10-13",
+      "table_sha256_before": "5d925c1dbfaa1f1e48739231dfb78e0cdcb4e7849d56052bfc250a1dbeb12d89",
+      "table_sha256_after": "5d925c1dbfaa1f1e48739231dfb78e0cdcb4e7849d56052bfc250a1dbeb12d89",
+      "fresh_check_date": "2026-10-18",
+      "snapshot_byte_preserved": true,
+      "semantic_changed_fields": []
+    },
+    {
+      "id": "ecommerce-bench",
+      "status": "unchanged",
+      "rows_before": 21,
+      "rows_after": 21,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://ecbench.github.io/showcase_data.json",
+          "tables": [
+            "ecommerce-bench"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:25:15.843153+00:00",
+          "completed_at": "2026-10-18T00:25:19.519352+00:00",
+          "status": "200",
+          "final_url": "https://ecbench.github.io/showcase_data.json",
+          "content_type": "application/json; charset=utf-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 389797,
+          "sha256": "92f5a96c47517afb176efaf87778b720c11ebc4c329663646c55f18b1fbfc33f"
+        }
+      ],
+      "category": "long-horizon",
+      "table_file": "data/tables/ecommerce-bench.json",
+      "table_retrieved_before": "2026-10-05",
+      "table_retrieved_after": "2026-10-05",
+      "table_sha256_before": "3382f015b0dfee40ad07bf2141b9d63aff30c901371cbdfeb7149d6148d209e8",
+      "table_sha256_after": "3382f015b0dfee40ad07bf2141b9d63aff30c901371cbdfeb7149d6148d209e8",
+      "fresh_check_date": "2026-10-18",
+      "snapshot_byte_preserved": true,
+      "semantic_changed_fields": []
+    },
+    {
+      "id": "exploitgym",
+      "status": "unchanged",
+      "rows_before": 20,
+      "rows_after": 20,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://www.cybergym.io/assets/data/exploitgym.json",
+          "tables": [
+            "exploitgym"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:25:28.169628+00:00",
+          "completed_at": "2026-10-18T00:25:31.503663+00:00",
+          "status": "200",
+          "final_url": "https://www.cybergym.io/assets/data/exploitgym.json",
+          "content_type": "application/json; charset=utf-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 9303,
+          "sha256": "1cf3b94633364a7cb76c35dc502f21fbf889ee02b639f3a20042960a0a9b2533"
+        }
+      ],
+      "category": "security",
+      "table_file": "data/tables/exploitgym.json",
+      "table_retrieved_before": "2026-10-05",
+      "table_retrieved_after": "2026-10-05",
+      "table_sha256_before": "9b5d37632d09e8eda966e8351b24baa477c07599dabe1a7af34eca458d7e289b",
+      "table_sha256_after": "9b5d37632d09e8eda966e8351b24baa477c07599dabe1a7af34eca458d7e289b",
+      "fresh_check_date": "2026-10-18",
+      "snapshot_byte_preserved": true,
+      "semantic_changed_fields": []
+    },
+    {
+      "id": "hal-core-bench-hard",
+      "status": "unchanged",
+      "rows_before": 49,
+      "rows_after": 49,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://hal.cs.princeton.edu/corebench_hard",
+          "tables": [
+            "hal-core-bench-hard"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:25:19.335660+00:00",
+          "completed_at": "2026-10-18T00:25:25.781334+00:00",
+          "status": "200",
+          "final_url": "https://hal.cs.princeton.edu/corebench_hard",
+          "content_type": "text/html; charset=utf-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 358438,
+          "sha256": "f46a6d73ead02529444c35c3f1d67898d4c88e799f8d8f6d9a47c99cfe527997"
+        }
+      ],
+      "category": "research",
+      "table_file": "data/tables/hal-core-bench-hard.json",
+      "table_retrieved_before": "2026-10-05",
+      "table_retrieved_after": "2026-10-05",
+      "table_sha256_before": "4aa84cb8a0314c7cfc551cbf5d3093d16441dffd83732e0290eb2e134c94e040",
+      "table_sha256_after": "4aa84cb8a0314c7cfc551cbf5d3093d16441dffd83732e0290eb2e134c94e040",
+      "fresh_check_date": "2026-10-18",
+      "snapshot_byte_preserved": true,
+      "semantic_changed_fields": []
+    },
+    {
+      "id": "hal-scicode",
+      "status": "unchanged",
+      "rows_before": 33,
+      "rows_after": 33,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://hal.cs.princeton.edu/scicode",
+          "tables": [
+            "hal-scicode"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:25:19.379368+00:00",
+          "completed_at": "2026-10-18T00:25:24.626630+00:00",
+          "status": "200",
+          "final_url": "https://hal.cs.princeton.edu/scicode",
+          "content_type": "text/html; charset=utf-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 292216,
+          "sha256": "50d72f921462a52888d012144c2a88e300720e1100ab6611bf7e146593d62a10"
+        }
+      ],
+      "category": "research",
+      "table_file": "data/tables/hal-scicode.json",
+      "table_retrieved_before": "2026-10-05",
+      "table_retrieved_after": "2026-10-05",
+      "table_sha256_before": "0b2273259db7faab4d0c533153a8f9b926322ce3dafba3ce7f461924446912f9",
+      "table_sha256_after": "0b2273259db7faab4d0c533153a8f9b926322ce3dafba3ce7f461924446912f9",
+      "fresh_check_date": "2026-10-18",
+      "snapshot_byte_preserved": true,
+      "semantic_changed_fields": []
+    },
+    {
+      "id": "hal-scienceagentbench",
+      "status": "unchanged",
+      "rows_before": 23,
+      "rows_after": 23,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://hal.cs.princeton.edu/scienceagentbench",
+          "tables": [
+            "hal-scienceagentbench"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:25:19.519751+00:00",
+          "completed_at": "2026-10-18T00:25:26.067866+00:00",
+          "status": "200",
+          "final_url": "https://hal.cs.princeton.edu/scienceagentbench",
+          "content_type": "text/html; charset=utf-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 196981,
+          "sha256": "f576d5df56b23cf57da42bf848d55d8da5cbab1ba52e973aed033f646b6f26f9"
+        }
+      ],
+      "category": "research",
+      "table_file": "data/tables/hal-scienceagentbench.json",
+      "table_retrieved_before": "2026-10-05",
+      "table_retrieved_after": "2026-10-05",
+      "table_sha256_before": "6c60b2022c25ffcd708182609c25ec6d10e1ab8077d7c731cee62c6492624f1c",
+      "table_sha256_after": "6c60b2022c25ffcd708182609c25ec6d10e1ab8077d7c731cee62c6492624f1c",
+      "fresh_check_date": "2026-10-18",
+      "snapshot_byte_preserved": true,
+      "semantic_changed_fields": []
+    },
+    {
+      "id": "metr-time-horizon-1.0",
+      "status": "unchanged",
+      "rows_before": 33,
+      "rows_after": 33,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://metr.org/assets/benchmark_results_1_0.yaml",
+          "tables": [
+            "metr-time-horizon-1.0"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:25:19.545243+00:00",
+          "completed_at": "2026-10-18T00:25:24.287474+00:00",
+          "status": "200",
+          "final_url": "https://metr.org/assets/benchmark_results_1_0.yaml",
+          "content_type": "application/x-yaml",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 14328,
+          "sha256": "f15fd2f13cd8d28f06f5430fabf21dcd1284193ec152bdedc34e11dcc525df66"
+        }
+      ],
+      "category": "long-horizon",
+      "table_file": "data/tables/metr-time-horizon-1.0.json",
+      "table_retrieved_before": "2026-10-05",
+      "table_retrieved_after": "2026-10-05",
+      "table_sha256_before": "89da565bce7af75f3c5d9e8db62f8471c4acbb03dbdcc57c4c8a2b77ef23e5bd",
+      "table_sha256_after": "89da565bce7af75f3c5d9e8db62f8471c4acbb03dbdcc57c4c8a2b77ef23e5bd",
+      "fresh_check_date": "2026-10-18",
+      "snapshot_byte_preserved": true,
+      "semantic_changed_fields": []
+    },
+    {
+      "id": "metr-time-horizon",
+      "status": "unchanged",
+      "rows_before": 26,
+      "rows_after": 26,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://metr.org/assets/benchmark_results_1_1.yaml",
+          "tables": [
+            "metr-time-horizon"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:25:20.383936+00:00",
+          "completed_at": "2026-10-18T00:25:24.303286+00:00",
+          "status": "200",
+          "final_url": "https://metr.org/assets/benchmark_results_1_1.yaml",
+          "content_type": "application/x-yaml",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 16255,
+          "sha256": "aae31902b0519a4da73e16643915e5e8aca13cd3315c3aac893ce3d6dfe92ad9"
+        }
+      ],
+      "category": "long-horizon",
+      "table_file": "data/tables/metr-time-horizon.json",
+      "table_retrieved_before": "2026-10-05",
+      "table_retrieved_after": "2026-10-05",
+      "table_sha256_before": "ecc3f2754ac9bb0634ea056d8f3567f0db9114c87e80e38239139a3133731109",
+      "table_sha256_after": "ecc3f2754ac9bb0634ea056d8f3567f0db9114c87e80e38239139a3133731109",
+      "fresh_check_date": "2026-10-18",
+      "snapshot_byte_preserved": true,
+      "semantic_changed_fields": []
+    },
+    {
+      "id": "mind2web-2",
+      "status": "unchanged",
+      "rows_before": 13,
+      "rows_after": 13,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://osu-nlp-group.github.io/Mind2Web-2/leaderboard_data.json",
+          "tables": [
+            "mind2web-2"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:25:24.303378+00:00",
+          "completed_at": "2026-10-18T00:25:28.155172+00:00",
+          "status": "200",
+          "final_url": "https://osu-nlp-group.github.io/Mind2Web-2/leaderboard_data.json",
+          "content_type": "application/json; charset=utf-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 7783,
+          "sha256": "ed954c3b30c7e32c26eb58d7a6612b21537db82fa6c51462455937036cb08702"
+        }
+      ],
+      "category": "research",
+      "table_file": "data/tables/mind2web-2.json",
+      "table_retrieved_before": "2026-10-05",
+      "table_retrieved_after": "2026-10-05",
+      "table_sha256_before": "a004ba2cd70e60dce001f8a743609e21a88ca9129d23100061a456fedcb103c2",
+      "table_sha256_after": "a004ba2cd70e60dce001f8a743609e21a88ca9129d23100061a456fedcb103c2",
+      "fresh_check_date": "2026-10-18",
+      "snapshot_byte_preserved": true,
+      "semantic_changed_fields": []
+    },
+    {
+      "id": "mle-bench-additional",
+      "status": "unchanged",
+      "rows_before": 2,
+      "rows_after": 2,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/openai/mle-bench/main/README.md",
+          "tables": [
+            "mle-bench",
+            "mle-bench-additional"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:25:24.626837+00:00",
+          "completed_at": "2026-10-18T00:25:28.471584+00:00",
+          "status": "200",
+          "final_url": "https://raw.githubusercontent.com/openai/mle-bench/main/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 20988,
+          "sha256": "586bbc19cb2a3e11be61021866ef6436cf4b4d935bb1db088984b567b76595bb"
+        }
+      ],
+      "category": "research",
+      "table_file": "data/tables/mle-bench-additional.json",
+      "table_retrieved_before": "2026-10-05",
+      "table_retrieved_after": "2026-10-05",
+      "table_sha256_before": "7bca65fb6962d03e10334ca56f26a8c3a21d92d832b2db908538246e29b0e7a3",
+      "table_sha256_after": "7bca65fb6962d03e10334ca56f26a8c3a21d92d832b2db908538246e29b0e7a3",
+      "fresh_check_date": "2026-10-18",
+      "snapshot_byte_preserved": true,
+      "semantic_changed_fields": []
+    },
+    {
+      "id": "mle-bench",
+      "status": "unchanged",
+      "rows_before": 28,
+      "rows_after": 28,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/openai/mle-bench/main/README.md",
+          "tables": [
+            "mle-bench",
+            "mle-bench-additional"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:25:24.626837+00:00",
+          "completed_at": "2026-10-18T00:25:28.471584+00:00",
+          "status": "200",
+          "final_url": "https://raw.githubusercontent.com/openai/mle-bench/main/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 20988,
+          "sha256": "586bbc19cb2a3e11be61021866ef6436cf4b4d935bb1db088984b567b76595bb"
+        }
+      ],
+      "category": "research",
+      "table_file": "data/tables/mle-bench.json",
+      "table_retrieved_before": "2026-10-05",
+      "table_retrieved_after": "2026-10-05",
+      "table_sha256_before": "3ed88862abe4dfad72cb888ec2c74b2523c10b561fa2008c265a1e06b57d31a7",
+      "table_sha256_after": "3ed88862abe4dfad72cb888ec2c74b2523c10b561fa2008c265a1e06b57d31a7",
+      "fresh_check_date": "2026-10-18",
+      "snapshot_byte_preserved": true,
+      "semantic_changed_fields": []
+    },
+    {
+      "id": "paperbench-code-dev",
+      "status": "unchanged",
+      "rows_before": 1,
+      "rows_after": 1,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/openai/preparedness/main/project/paperbench/README.md",
+          "tables": [
+            "paperbench",
+            "paperbench-code-dev"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:25:25.781629+00:00",
+          "completed_at": "2026-10-18T00:25:28.523189+00:00",
+          "status": "200",
+          "final_url": "https://raw.githubusercontent.com/openai/preparedness/main/project/paperbench/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 20104,
+          "sha256": "b50041ce9329b4a5a779c7114b8c21f6eab93cae91d309f5924f6ebe06f470cb"
+        }
+      ],
+      "category": "research",
+      "table_file": "data/tables/paperbench-code-dev.json",
+      "table_retrieved_before": "2026-10-05",
+      "table_retrieved_after": "2026-10-05",
+      "table_sha256_before": "6c6f499ba25caaafc260e46c4036c19691ca1e5da921a2072e286bdf605830b1",
+      "table_sha256_after": "6c6f499ba25caaafc260e46c4036c19691ca1e5da921a2072e286bdf605830b1",
+      "fresh_check_date": "2026-10-18",
+      "snapshot_byte_preserved": true,
+      "semantic_changed_fields": []
+    },
+    {
+      "id": "paperbench",
+      "status": "unchanged",
+      "rows_before": 10,
+      "rows_after": 10,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/openai/preparedness/main/project/paperbench/README.md",
+          "tables": [
+            "paperbench",
+            "paperbench-code-dev"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:25:25.781629+00:00",
+          "completed_at": "2026-10-18T00:25:28.523189+00:00",
+          "status": "200",
+          "final_url": "https://raw.githubusercontent.com/openai/preparedness/main/project/paperbench/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 20104,
+          "sha256": "b50041ce9329b4a5a779c7114b8c21f6eab93cae91d309f5924f6ebe06f470cb"
+        }
+      ],
+      "category": "research",
+      "table_file": "data/tables/paperbench.json",
+      "table_retrieved_before": "2026-10-05",
+      "table_retrieved_after": "2026-10-05",
+      "table_sha256_before": "7578b78e72ec726447227fb155a03cc855c6653431bc333a8d209a28b24bef8b",
+      "table_sha256_after": "7578b78e72ec726447227fb155a03cc855c6653431bc333a8d209a28b24bef8b",
+      "fresh_check_date": "2026-10-18",
+      "snapshot_byte_preserved": true,
+      "semantic_changed_fields": []
+    },
+    {
+      "id": "sec-bench-poc-generation",
+      "status": "unchanged",
+      "rows_before": 3,
+      "rows_after": 3,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://sec-bench.github.io/",
+          "tables": [
+            "sec-bench-poc-generation",
+            "sec-bench-pro-firefox",
+            "sec-bench-pro-linux",
+            "sec-bench-pro-overall",
+            "sec-bench-pro-v8",
+            "sec-bench-vulnerability-patching"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:25:26.068085+00:00",
+          "completed_at": "2026-10-18T00:25:30.163293+00:00",
+          "status": "200",
+          "final_url": "https://sec-bench.github.io/",
+          "content_type": "text/html; charset=utf-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 219225,
+          "sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5"
+        }
+      ],
+      "category": "security",
+      "table_file": "data/tables/sec-bench-poc-generation.json",
+      "table_retrieved_before": "2026-10-05",
+      "table_retrieved_after": "2026-10-05",
+      "table_sha256_before": "8d470e8ee25bd76a1e9cc18a610ca54383bf5b62e398ae013765baeb91cc241b",
+      "table_sha256_after": "8d470e8ee25bd76a1e9cc18a610ca54383bf5b62e398ae013765baeb91cc241b",
+      "fresh_check_date": "2026-10-18",
+      "snapshot_byte_preserved": true,
+      "semantic_changed_fields": []
+    },
+    {
+      "id": "sec-bench-pro-firefox",
+      "status": "unchanged",
+      "rows_before": 6,
+      "rows_after": 6,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://sec-bench.github.io/",
+          "tables": [
+            "sec-bench-poc-generation",
+            "sec-bench-pro-firefox",
+            "sec-bench-pro-linux",
+            "sec-bench-pro-overall",
+            "sec-bench-pro-v8",
+            "sec-bench-vulnerability-patching"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:25:26.068085+00:00",
+          "completed_at": "2026-10-18T00:25:30.163293+00:00",
+          "status": "200",
+          "final_url": "https://sec-bench.github.io/",
+          "content_type": "text/html; charset=utf-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 219225,
+          "sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5"
+        }
+      ],
+      "category": "security",
+      "table_file": "data/tables/sec-bench-pro-firefox.json",
+      "table_retrieved_before": "2026-10-05",
+      "table_retrieved_after": "2026-10-05",
+      "table_sha256_before": "503db61d1e71c92520d787d077a54e7fe3c1e460d586acee18494ec32f348e20",
+      "table_sha256_after": "503db61d1e71c92520d787d077a54e7fe3c1e460d586acee18494ec32f348e20",
+      "fresh_check_date": "2026-10-18",
+      "snapshot_byte_preserved": true,
+      "semantic_changed_fields": []
+    },
+    {
+      "id": "sec-bench-pro-linux",
+      "status": "unchanged",
+      "rows_before": 6,
+      "rows_after": 6,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://sec-bench.github.io/",
+          "tables": [
+            "sec-bench-poc-generation",
+            "sec-bench-pro-firefox",
+            "sec-bench-pro-linux",
+            "sec-bench-pro-overall",
+            "sec-bench-pro-v8",
+            "sec-bench-vulnerability-patching"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:25:26.068085+00:00",
+          "completed_at": "2026-10-18T00:25:30.163293+00:00",
+          "status": "200",
+          "final_url": "https://sec-bench.github.io/",
+          "content_type": "text/html; charset=utf-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 219225,
+          "sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5"
+        }
+      ],
+      "category": "security",
+      "table_file": "data/tables/sec-bench-pro-linux.json",
+      "table_retrieved_before": "2026-10-05",
+      "table_retrieved_after": "2026-10-05",
+      "table_sha256_before": "98f72a4424733767caedf5a07f35cf71109ff1e8d64def2b3f36574d65b10fc3",
+      "table_sha256_after": "98f72a4424733767caedf5a07f35cf71109ff1e8d64def2b3f36574d65b10fc3",
+      "fresh_check_date": "2026-10-18",
+      "snapshot_byte_preserved": true,
+      "semantic_changed_fields": []
+    },
+    {
+      "id": "sec-bench-pro-overall",
+      "status": "unchanged",
+      "rows_before": 6,
+      "rows_after": 6,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://sec-bench.github.io/",
+          "tables": [
+            "sec-bench-poc-generation",
+            "sec-bench-pro-firefox",
+            "sec-bench-pro-linux",
+            "sec-bench-pro-overall",
+            "sec-bench-pro-v8",
+            "sec-bench-vulnerability-patching"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:25:26.068085+00:00",
+          "completed_at": "2026-10-18T00:25:30.163293+00:00",
+          "status": "200",
+          "final_url": "https://sec-bench.github.io/",
+          "content_type": "text/html; charset=utf-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 219225,
+          "sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5"
+        }
+      ],
+      "category": "security",
+      "table_file": "data/tables/sec-bench-pro-overall.json",
+      "table_retrieved_before": "2026-10-05",
+      "table_retrieved_after": "2026-10-05",
+      "table_sha256_before": "60c698493cb7c2a9b11f4aad78edd35af54438019cf766c98fb0de7d5277cca1",
+      "table_sha256_after": "60c698493cb7c2a9b11f4aad78edd35af54438019cf766c98fb0de7d5277cca1",
+      "fresh_check_date": "2026-10-18",
+      "snapshot_byte_preserved": true,
+      "semantic_changed_fields": []
+    },
+    {
+      "id": "sec-bench-pro-v8",
+      "status": "unchanged",
+      "rows_before": 6,
+      "rows_after": 6,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://sec-bench.github.io/",
+          "tables": [
+            "sec-bench-poc-generation",
+            "sec-bench-pro-firefox",
+            "sec-bench-pro-linux",
+            "sec-bench-pro-overall",
+            "sec-bench-pro-v8",
+            "sec-bench-vulnerability-patching"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:25:26.068085+00:00",
+          "completed_at": "2026-10-18T00:25:30.163293+00:00",
+          "status": "200",
+          "final_url": "https://sec-bench.github.io/",
+          "content_type": "text/html; charset=utf-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 219225,
+          "sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5"
+        }
+      ],
+      "category": "security",
+      "table_file": "data/tables/sec-bench-pro-v8.json",
+      "table_retrieved_before": "2026-10-05",
+      "table_retrieved_after": "2026-10-05",
+      "table_sha256_before": "54521649a634dade8d508896404c15f37cff49e6df95f3134da0040b19b73332",
+      "table_sha256_after": "54521649a634dade8d508896404c15f37cff49e6df95f3134da0040b19b73332",
+      "fresh_check_date": "2026-10-18",
+      "snapshot_byte_preserved": true,
+      "semantic_changed_fields": []
+    },
+    {
+      "id": "sec-bench-vulnerability-patching",
+      "status": "unchanged",
+      "rows_before": 5,
+      "rows_after": 5,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://sec-bench.github.io/",
+          "tables": [
+            "sec-bench-poc-generation",
+            "sec-bench-pro-firefox",
+            "sec-bench-pro-linux",
+            "sec-bench-pro-overall",
+            "sec-bench-pro-v8",
+            "sec-bench-vulnerability-patching"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:25:26.068085+00:00",
+          "completed_at": "2026-10-18T00:25:30.163293+00:00",
+          "status": "200",
+          "final_url": "https://sec-bench.github.io/",
+          "content_type": "text/html; charset=utf-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 219225,
+          "sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5"
+        }
+      ],
+      "category": "security",
+      "table_file": "data/tables/sec-bench-vulnerability-patching.json",
+      "table_retrieved_before": "2026-10-05",
+      "table_retrieved_after": "2026-10-05",
+      "table_sha256_before": "dca885cc0ed86981a415dfbac9febf3f425cb502a2508033eecc9cefc36a9e66",
+      "table_sha256_after": "dca885cc0ed86981a415dfbac9febf3f425cb502a2508033eecc9cefc36a9e66",
+      "fresh_check_date": "2026-10-18",
+      "snapshot_byte_preserved": true,
+      "semantic_changed_fields": []
+    },
+    {
+      "id": "swe-marathon-v1-0",
+      "status": "unchanged",
+      "rows_before": 16,
+      "rows_after": 16,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://www.swe-marathon.org/",
+          "tables": [
+            "swe-marathon-v1-0",
+            "swe-marathon-v1-1"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:25:31.503790+00:00",
+          "completed_at": "2026-10-18T00:25:34.817251+00:00",
+          "status": "200",
+          "final_url": "https://www.swe-marathon.org/",
+          "content_type": "text/html; charset=utf-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 4714,
+          "sha256": "8bee5c3bbe68e574564a9aabd6137d475b71a919151166996727f902a440382e"
+        },
+        {
+          "url": "https://www.swe-marathon.org/assets/index-BMEz9I0h.js",
+          "tables": [
+            "swe-marathon-v1-0",
+            "swe-marathon-v1-1"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:26:04.959370+00:00",
+          "completed_at": "2026-10-18T00:26:09.315198+00:00",
+          "status": "200",
+          "final_url": "https://www.swe-marathon.org/assets/index-BMEz9I0h.js",
+          "content_type": "application/javascript; charset=utf-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 5988846,
+          "sha256": "a5e99154c6361e0b050641d540e10ad4a07c84287d060da1623aa221bc4bce8b"
+        }
+      ],
+      "category": "long-horizon",
+      "table_file": "data/tables/swe-marathon-v1-0.json",
+      "table_retrieved_before": "2026-10-05",
+      "table_retrieved_after": "2026-10-05",
+      "table_sha256_before": "95582f3d24adfbae261bfc42fd21fe23e0e1528599198ad2b90e0a9e90ed78d2",
+      "table_sha256_after": "95582f3d24adfbae261bfc42fd21fe23e0e1528599198ad2b90e0a9e90ed78d2",
+      "fresh_check_date": "2026-10-18",
+      "snapshot_byte_preserved": true,
+      "semantic_changed_fields": []
+    },
+    {
+      "id": "swe-marathon-v1-1",
+      "status": "changed",
+      "rows_before": 27,
+      "rows_after": 17,
+      "rows_changed_or_added": 14,
+      "rows_removed_or_changed": 24,
+      "sources": [
+        {
+          "url": "https://www.swe-marathon.org/",
+          "tables": [
+            "swe-marathon-v1-0",
+            "swe-marathon-v1-1"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:25:31.503790+00:00",
+          "completed_at": "2026-10-18T00:25:34.817251+00:00",
+          "status": "200",
+          "final_url": "https://www.swe-marathon.org/",
+          "content_type": "text/html; charset=utf-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 4714,
+          "sha256": "8bee5c3bbe68e574564a9aabd6137d475b71a919151166996727f902a440382e"
+        },
+        {
+          "url": "https://www.swe-marathon.org/assets/index-BMEz9I0h.js",
+          "tables": [
+            "swe-marathon-v1-0",
+            "swe-marathon-v1-1"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:26:04.959370+00:00",
+          "completed_at": "2026-10-18T00:26:09.315198+00:00",
+          "status": "200",
+          "final_url": "https://www.swe-marathon.org/assets/index-BMEz9I0h.js",
+          "content_type": "application/javascript; charset=utf-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 5988846,
+          "sha256": "a5e99154c6361e0b050641d540e10ad4a07c84287d060da1623aa221bc4bce8b"
+        }
+      ],
+      "category": "long-horizon",
+      "table_file": "data/tables/swe-marathon-v1-1.json",
+      "table_retrieved_before": "2026-10-13",
+      "table_retrieved_after": "2026-10-18",
+      "table_sha256_before": "f58c1a186c5845fd92e838677f3beba27df144cb792f690b21359951ab9377d1",
+      "table_sha256_after": "3400b8ae0ec9028e7e9cfcd524d2487e309075cbeb3d97d8b32e9df34c63ac80",
+      "fresh_check_date": "2026-10-18",
+      "snapshot_byte_preserved": false,
+      "semantic_changed_fields": [
+        "notes_ja",
+        "rows"
+      ]
+    },
+    {
+      "id": "vending-bench-2",
+      "status": "unchanged",
+      "rows_before": 71,
+      "rows_after": 71,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://andonlabs.com/evals/vending-bench-2",
+          "tables": [
+            "vending-bench-2"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:25:11.360923+00:00",
+          "completed_at": "2026-10-18T00:25:15.412400+00:00",
+          "status": "200",
+          "final_url": "https://andonlabs.com/evals/vending-bench-2",
+          "content_type": "text/html; charset=UTF-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 84685,
+          "sha256": "a2108ece28372055612d1867abd392384f6080516af4f4bc11e5faf7c958a613"
+        },
+        {
+          "url": "https://andonlabs.com/_app/immutable/nodes/27.DD0oMeXK.js",
+          "tables": [
+            "vending-bench-2"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:25:11.360432+00:00",
+          "completed_at": "2026-10-18T00:25:15.351973+00:00",
+          "status": "200",
+          "final_url": "https://andonlabs.com/_app/immutable/nodes/27.DD0oMeXK.js",
+          "content_type": "application/javascript; charset=UTF-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 47560,
+          "sha256": "becec23d2e4668179f552a3fb27a60795eded8a069145130659ea20cb3866ca0"
+        },
+        {
+          "url": "https://andonlabs.com/_app/immutable/chunks/Cjn0_qj9.js",
+          "tables": [
+            "vending-bench-2"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:25:11.359273+00:00",
+          "completed_at": "2026-10-18T00:25:15.420595+00:00",
+          "status": "200",
+          "final_url": "https://andonlabs.com/_app/immutable/chunks/Cjn0_qj9.js",
+          "content_type": "application/javascript; charset=UTF-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 725462,
+          "sha256": "1a0b043147050298c405bcb743d73e425d532464202231cd18c27f836fa5f223"
+        },
+        {
+          "url": "https://andonlabs.com/_app/immutable/chunks/D-_XXLSr.js",
+          "tables": [
+            "vending-bench-2"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:25:11.359486+00:00",
+          "completed_at": "2026-10-18T00:25:15.400027+00:00",
+          "status": "200",
+          "final_url": "https://andonlabs.com/_app/immutable/chunks/D-_XXLSr.js",
+          "content_type": "application/javascript; charset=UTF-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 5022,
+          "sha256": "d1b57c2c7e22ad68408c48759faa6d7c00fe2380a5087694a4fb5297fd3de298"
+        }
+      ],
+      "category": "long-horizon",
+      "table_file": "data/tables/vending-bench-2.json",
+      "table_retrieved_before": "2026-10-14",
+      "table_retrieved_after": "2026-10-14",
+      "table_sha256_before": "889e081c1e24f36be364eb7145c65e2ff1c7b079240af288693c73093f27b178",
+      "table_sha256_after": "889e081c1e24f36be364eb7145c65e2ff1c7b079240af288693c73093f27b178",
+      "fresh_check_date": "2026-10-18",
+      "snapshot_byte_preserved": true,
+      "semantic_changed_fields": []
+    },
+    {
+      "id": "vending-bench",
+      "status": "unchanged",
+      "rows_before": 27,
+      "rows_after": 27,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "sources": [
+        {
+          "url": "https://andonlabs.com/evals/vending-bench",
+          "tables": [
+            "vending-bench"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:25:11.360674+00:00",
+          "completed_at": "2026-10-18T00:25:15.404551+00:00",
+          "status": "200",
+          "final_url": "https://andonlabs.com/evals/vending-bench",
+          "content_type": "text/html; charset=UTF-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 63309,
+          "sha256": "aeaaeb0c2e07707c9ed7fa0fcaa5315058089b7af674006964f5cf96fcb31432"
+        },
+        {
+          "url": "https://andonlabs.com/_app/immutable/nodes/26.FUD8iaCC.js",
+          "tables": [
+            "vending-bench"
+          ],
+          "retrieved": "2026-10-18",
+          "requested_at": "2026-10-18T00:26:04.930811+00:00",
+          "completed_at": "2026-10-18T00:26:08.314864+00:00",
+          "status": "200",
+          "final_url": "https://andonlabs.com/_app/immutable/nodes/26.FUD8iaCC.js",
+          "content_type": "application/javascript; charset=UTF-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 20261,
+          "sha256": "bb4e62bab75fbb5c37d01a8d6b51f51ab3a8e3aff9bb248e18a7f8f06cfddff5"
+        }
+      ],
+      "category": "long-horizon",
+      "table_file": "data/tables/vending-bench.json",
+      "table_retrieved_before": "2026-10-05",
+      "table_retrieved_after": "2026-10-05",
+      "table_sha256_before": "3598b9c42536bacddfbc5d3a542b2fc6f6fdc3d1e4864d6048a9f006af9f9588",
+      "table_sha256_after": "3598b9c42536bacddfbc5d3a542b2fc6f6fdc3d1e4864d6048a9f006af9f9588",
+      "fresh_check_date": "2026-10-18",
+      "snapshot_byte_preserved": true,
+      "semantic_changed_fields": []
+    }
+  ],
+  "identity_gaps": [
+    {
+      "table": "cybergym-e2e",
+      "raw_model_name": "Zhian-27B",
+      "source": "https://www.cybergym.io/assets/data/cybergym-e2e.json",
+      "handling": "Mixed-model row retained with model_ids=[] and both raw constituent names; excluded from single-model matrix/fit. No speculative registry entry."
+    }
+  ],
+  "model_proposals": [],
+  "unresolved_models": [],
+  "status_counts": {
+    "unchanged": 27,
+    "changed": 2
+  },
+  "source_fetches": [
+    {
+      "url": "https://andonlabs.com/_app/immutable/nodes/27.DD0oMeXK.js",
+      "tables": [
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:11.360432+00:00",
+      "completed_at": "2026-10-18T00:25:15.351973+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/nodes/27.DD0oMeXK.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 47560,
+      "sha256": "becec23d2e4668179f552a3fb27a60795eded8a069145130659ea20cb3866ca0"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/D-_XXLSr.js",
+      "tables": [
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:11.359486+00:00",
+      "completed_at": "2026-10-18T00:25:15.400027+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/D-_XXLSr.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 5022,
+      "sha256": "d1b57c2c7e22ad68408c48759faa6d7c00fe2380a5087694a4fb5297fd3de298"
+    },
+    {
+      "url": "https://andonlabs.com/evals/vending-bench",
+      "tables": [
+        "vending-bench"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:11.360674+00:00",
+      "completed_at": "2026-10-18T00:25:15.404551+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/evals/vending-bench",
+      "content_type": "text/html; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 63309,
+      "sha256": "aeaaeb0c2e07707c9ed7fa0fcaa5315058089b7af674006964f5cf96fcb31432"
+    },
+    {
+      "url": "https://andonlabs.com/evals/vending-bench-2",
+      "tables": [
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:11.360923+00:00",
+      "completed_at": "2026-10-18T00:25:15.412400+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/evals/vending-bench-2",
+      "content_type": "text/html; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 84685,
+      "sha256": "a2108ece28372055612d1867abd392384f6080516af4f4bc11e5faf7c958a613"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/Cjn0_qj9.js",
+      "tables": [
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:11.359273+00:00",
+      "completed_at": "2026-10-18T00:25:15.420595+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/Cjn0_qj9.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 725462,
+      "sha256": "1a0b043147050298c405bcb743d73e425d532464202231cd18c27f836fa5f223"
+    },
+    {
+      "url": "https://cvebench.com/index-wf61xq3j.js",
+      "tables": [
+        "cve-bench-one-day",
+        "cve-bench-zero-day"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:11.362134+00:00",
+      "completed_at": "2026-10-18T00:25:15.747154+00:00",
+      "status": "200",
+      "final_url": "https://cvebench.com/index-wf61xq3j.js",
+      "content_type": "application/javascript; charset=utf-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 3992,
+      "sha256": "3ea79483ba2c9201b5bbcf89e64e39bf774a4b67eb03b5fc305732f00d6a0fc1"
+    },
+    {
+      "url": "https://cvebench.com/",
+      "tables": [
+        "cve-bench-one-day",
+        "cve-bench-zero-day"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:11.361817+00:00",
+      "completed_at": "2026-10-18T00:25:15.843073+00:00",
+      "status": "200",
+      "final_url": "https://cvebench.com/",
+      "content_type": "text/html; charset=utf-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 4464,
+      "sha256": "4208f89f965a552f72d19f61def9e419aea2ca64cff2bf4e406ee29a8ce39912"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/nodes/26.zOFxseIK.js",
+      "tables": [
+        "vending-bench"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:11.359818+00:00",
+      "completed_at": "2026-10-18T00:25:15.883193+00:00",
+      "status": "404",
+      "final_url": "https://andonlabs.com/_app/immutable/nodes/26.zOFxseIK.js",
+      "content_type": "text/plain; charset=utf-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 9,
+      "sha256": "e3ebaa16dd9d9b9fc107c42183fb6cf9d22927e1af03dbbdfa0ccc38e4e4ac31"
+    },
+    {
+      "url": "https://cybench.github.io/data/leaderboard.csv",
+      "tables": [
+        "cybench"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:15.400148+00:00",
+      "completed_at": "2026-10-18T00:25:19.211213+00:00",
+      "status": "200",
+      "final_url": "https://cybench.github.io/data/leaderboard.csv",
+      "content_type": "text/csv; charset=utf-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 1179,
+      "sha256": "846bb17951ec9f7c103486d7c0344974decd2d57f1039df26f9e84986704da45"
+    },
+    {
+      "url": "https://cybench.github.io/js/homeSetup.js",
+      "tables": [
+        "cybench"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:15.404671+00:00",
+      "completed_at": "2026-10-18T00:25:19.335569+00:00",
+      "status": "200",
+      "final_url": "https://cybench.github.io/js/homeSetup.js",
+      "content_type": "application/javascript; charset=utf-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 5581,
+      "sha256": "4eb8f1e100c718c919645570f755f9d70851e1147db0da4b74389710ddf121cd"
+    },
+    {
+      "url": "https://cybench.github.io/",
+      "tables": [
+        "cybench"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:15.352128+00:00",
+      "completed_at": "2026-10-18T00:25:19.379283+00:00",
+      "status": "200",
+      "final_url": "https://cybench.github.io/",
+      "content_type": "text/html; charset=utf-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 31738,
+      "sha256": "1e02e52f99c950f867c2f604e0681ea77fb835d78c89361e482e9f0993e94c5b"
+    },
+    {
+      "url": "https://ecbench.github.io/showcase_data.json",
+      "tables": [
+        "ecommerce-bench"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:15.843153+00:00",
+      "completed_at": "2026-10-18T00:25:19.519352+00:00",
+      "status": "200",
+      "final_url": "https://ecbench.github.io/showcase_data.json",
+      "content_type": "application/json; charset=utf-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 389797,
+      "sha256": "92f5a96c47517afb176efaf87778b720c11ebc4c329663646c55f18b1fbfc33f"
+    },
+    {
+      "url": "https://ecbench.github.io/assets/js/app.min.js",
+      "tables": [
+        "ecommerce-bench"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:15.747253+00:00",
+      "completed_at": "2026-10-18T00:25:19.530965+00:00",
+      "status": "200",
+      "final_url": "https://ecbench.github.io/assets/js/app.min.js",
+      "content_type": "application/javascript; charset=utf-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 116183,
+      "sha256": "b44cc7955174814a4d8505a981cd3df002d1abb9d68c0812da55c7a7f4393f0f"
+    },
+    {
+      "url": "https://ecbench.github.io/",
+      "tables": [
+        "ecommerce-bench"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:15.412524+00:00",
+      "completed_at": "2026-10-18T00:25:19.537519+00:00",
+      "status": "200",
+      "final_url": "https://ecbench.github.io/",
+      "content_type": "text/html; charset=utf-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 36235,
+      "sha256": "be907b2ec69a3d2a5c4393db68b9a8f48b2b728ff808622c8d026132e4da4a9f"
+    },
+    {
+      "url": "https://ecbench.github.io/#balance",
+      "tables": [
+        "ecommerce-bench"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:15.421087+00:00",
+      "completed_at": "2026-10-18T00:25:19.545118+00:00",
+      "status": "200",
+      "final_url": "https://ecbench.github.io/#balance",
+      "content_type": "text/html; charset=utf-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 36235,
+      "sha256": "be907b2ec69a3d2a5c4393db68b9a8f48b2b728ff808622c8d026132e4da4a9f"
+    },
+    {
+      "url": "https://github.com/openai/mle-bench#leaderboard",
+      "tables": [
+        "mle-bench",
+        "mle-bench-additional"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:15.883264+00:00",
+      "completed_at": "2026-10-18T00:25:20.383610+00:00",
+      "status": "200",
+      "final_url": "https://github.com/openai/mle-bench#leaderboard",
+      "content_type": "text/html; charset=utf-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 408963,
+      "sha256": "5d2e1d961b95233de2d2b9c3e9ecd4beb1f53d2a20f19a1e82565281b605756c"
+    },
+    {
+      "url": "https://huggingface.co/datasets/Tevatron/BrowseComp-Plus-results/resolve/main/agent_results.csv",
+      "tables": [
+        "browsecomp-plus"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:19.531114+00:00",
+      "completed_at": "2026-10-18T00:25:23.551833+00:00",
+      "status": "200",
+      "final_url": "https://huggingface.co/api/resolve-cache/datasets/Tevatron/BrowseComp-Plus-results/ce3096984ec947e6a2196f00465f0b7de3a0bc77/agent_results.csv?%2Fdatasets%2FTevatron%2FBrowseComp-Plus-results%2Fresolve%2Fmain%2Fagent_results.csv=&etag=%22a4a9072a16cca8b2cf56e6d46c06d085d80e7433%22",
+      "content_type": "text/plain; charset=utf-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 18975,
+      "sha256": "7b68ade4b54260902d3ef353b8f217087ecbe1a432a442479e59e3c214bfaf12"
+    },
+    {
+      "url": "https://huggingface.co/spaces/Tevatron/BrowseComp-Plus",
+      "tables": [
+        "browsecomp-plus"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:19.537628+00:00",
+      "completed_at": "2026-10-18T00:25:23.557968+00:00",
+      "status": "200",
+      "final_url": "https://huggingface.co/spaces/Tevatron/BrowseComp-Plus",
+      "content_type": "text/html; charset=utf-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 44380,
+      "sha256": "86ad6841ef8cafe26da479ef256d3801e47def8fb59502d32390617626eabf80"
+    },
+    {
+      "url": "https://metr.org/assets/benchmark_results_1_0.yaml",
+      "tables": [
+        "metr-time-horizon-1.0"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:19.545243+00:00",
+      "completed_at": "2026-10-18T00:25:24.287474+00:00",
+      "status": "200",
+      "final_url": "https://metr.org/assets/benchmark_results_1_0.yaml",
+      "content_type": "application/x-yaml",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 14328,
+      "sha256": "f15fd2f13cd8d28f06f5430fabf21dcd1284193ec152bdedc34e11dcc525df66"
+    },
+    {
+      "url": "https://metr.org/assets/benchmark_results_1_1.yaml",
+      "tables": [
+        "metr-time-horizon"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:20.383936+00:00",
+      "completed_at": "2026-10-18T00:25:24.303286+00:00",
+      "status": "200",
+      "final_url": "https://metr.org/assets/benchmark_results_1_1.yaml",
+      "content_type": "application/x-yaml",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 16255,
+      "sha256": "aae31902b0519a4da73e16643915e5e8aca13cd3315c3aac893ce3d6dfe92ad9"
+    },
+    {
+      "url": "https://github.com/openai/preparedness/tree/main/project/paperbench",
+      "tables": [
+        "paperbench",
+        "paperbench-code-dev"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:19.211306+00:00",
+      "completed_at": "2026-10-18T00:25:24.625178+00:00",
+      "status": "200",
+      "final_url": "https://github.com/openai/frontier-evals/tree/main/project/paperbench",
+      "content_type": "text/html; charset=utf-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 356441,
+      "sha256": "3b204f57534163dc75be63fe6fe18be3671072591d7c47b3a2523a62e3fd3ede"
+    },
+    {
+      "url": "https://hal.cs.princeton.edu/scicode",
+      "tables": [
+        "hal-scicode"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:19.379368+00:00",
+      "completed_at": "2026-10-18T00:25:24.626630+00:00",
+      "status": "200",
+      "final_url": "https://hal.cs.princeton.edu/scicode",
+      "content_type": "text/html; charset=utf-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 292216,
+      "sha256": "50d72f921462a52888d012144c2a88e300720e1100ab6611bf7e146593d62a10"
+    },
+    {
+      "url": "https://hal.cs.princeton.edu/corebench_hard",
+      "tables": [
+        "hal-core-bench-hard"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:19.335660+00:00",
+      "completed_at": "2026-10-18T00:25:25.781334+00:00",
+      "status": "200",
+      "final_url": "https://hal.cs.princeton.edu/corebench_hard",
+      "content_type": "text/html; charset=utf-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 358438,
+      "sha256": "f46a6d73ead02529444c35c3f1d67898d4c88e799f8d8f6d9a47c99cfe527997"
+    },
+    {
+      "url": "https://hal.cs.princeton.edu/scienceagentbench",
+      "tables": [
+        "hal-scienceagentbench"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:19.519751+00:00",
+      "completed_at": "2026-10-18T00:25:26.067866+00:00",
+      "status": "200",
+      "final_url": "https://hal.cs.princeton.edu/scienceagentbench",
+      "content_type": "text/html; charset=utf-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 196981,
+      "sha256": "f576d5df56b23cf57da42bf848d55d8da5cbab1ba52e973aed033f646b6f26f9"
+    },
+    {
+      "url": "https://metr.org/assets/js/time-horizon-chart.js",
+      "tables": [
+        "metr-time-horizon",
+        "metr-time-horizon-1.0"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:23.551932+00:00",
+      "completed_at": "2026-10-18T00:25:27.571856+00:00",
+      "status": "200",
+      "final_url": "https://metr.org/assets/js/time-horizon-chart.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 112573,
+      "sha256": "3533ad9795111eab9954782913baef98ba2604854eea15610af53df0d7a477c0"
+    },
+    {
+      "url": "https://metr.org/time-horizons/",
+      "tables": [
+        "metr-time-horizon",
+        "metr-time-horizon-1.0"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:23.558130+00:00",
+      "completed_at": "2026-10-18T00:25:27.671608+00:00",
+      "status": "200",
+      "final_url": "https://metr.org/time-horizons/",
+      "content_type": "text/html; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 682272,
+      "sha256": "3290b572f25746eabbd4e4bf3d1baa05b13fe70850fcd2ecfbea99b7ff4d6461"
+    },
+    {
+      "url": "https://osu-nlp-group.github.io/Mind2Web-2/",
+      "tables": [
+        "mind2web-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:24.287643+00:00",
+      "completed_at": "2026-10-18T00:25:28.067103+00:00",
+      "status": "200",
+      "final_url": "https://osu-nlp-group.github.io/Mind2Web-2/",
+      "content_type": "text/html; charset=utf-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 35961,
+      "sha256": "97925926cd540664ba1bc2ee00dc05dff032f87e9b90bc7b98feaca4a212230b"
+    },
+    {
+      "url": "https://osu-nlp-group.github.io/Mind2Web-2/leaderboard_data.json",
+      "tables": [
+        "mind2web-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:24.303378+00:00",
+      "completed_at": "2026-10-18T00:25:28.155172+00:00",
+      "status": "200",
+      "final_url": "https://osu-nlp-group.github.io/Mind2Web-2/leaderboard_data.json",
+      "content_type": "application/json; charset=utf-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 7783,
+      "sha256": "ed954c3b30c7e32c26eb58d7a6612b21537db82fa6c51462455937036cb08702"
+    },
+    {
+      "url": "https://osu-nlp-group.github.io/Mind2Web-2/static/js/leaderboard.js",
+      "tables": [
+        "mind2web-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:24.625495+00:00",
+      "completed_at": "2026-10-18T00:25:28.169526+00:00",
+      "status": "200",
+      "final_url": "https://osu-nlp-group.github.io/Mind2Web-2/static/js/leaderboard.js",
+      "content_type": "application/javascript; charset=utf-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 18165,
+      "sha256": "adc519f118ac077a4b3c22b27e33f11479b9f8c1f89007099b786dcc79be3709"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/mle-bench/main/README.md",
+      "tables": [
+        "mle-bench",
+        "mle-bench-additional"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:24.626837+00:00",
+      "completed_at": "2026-10-18T00:25:28.471584+00:00",
+      "status": "200",
+      "final_url": "https://raw.githubusercontent.com/openai/mle-bench/main/README.md",
+      "content_type": "text/plain; charset=utf-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 20988,
+      "sha256": "586bbc19cb2a3e11be61021866ef6436cf4b4d935bb1db088984b567b76595bb"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/preparedness/main/project/paperbench/README.md",
+      "tables": [
+        "paperbench",
+        "paperbench-code-dev"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:25.781629+00:00",
+      "completed_at": "2026-10-18T00:25:28.523189+00:00",
+      "status": "200",
+      "final_url": "https://raw.githubusercontent.com/openai/preparedness/main/project/paperbench/README.md",
+      "content_type": "text/plain; charset=utf-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 20104,
+      "sha256": "b50041ce9329b4a5a779c7114b8c21f6eab93cae91d309f5924f6ebe06f470cb"
+    },
+    {
+      "url": "https://sec-bench.github.io/",
+      "tables": [
+        "sec-bench-poc-generation",
+        "sec-bench-pro-firefox",
+        "sec-bench-pro-linux",
+        "sec-bench-pro-overall",
+        "sec-bench-pro-v8",
+        "sec-bench-vulnerability-patching"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:26.068085+00:00",
+      "completed_at": "2026-10-18T00:25:30.163293+00:00",
+      "status": "200",
+      "final_url": "https://sec-bench.github.io/",
+      "content_type": "text/html; charset=utf-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 219225,
+      "sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5"
+    },
+    {
+      "url": "https://sec-bench.github.io/data/leaderboards.yaml",
+      "tables": [
+        "sec-bench-poc-generation",
+        "sec-bench-pro-firefox",
+        "sec-bench-pro-linux",
+        "sec-bench-pro-overall",
+        "sec-bench-pro-v8",
+        "sec-bench-vulnerability-patching"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:27.572005+00:00",
+      "completed_at": "2026-10-18T00:25:30.263501+00:00",
+      "status": "200",
+      "final_url": "https://sec-bench.github.io/data/leaderboards.yaml",
+      "content_type": "text/yaml",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 10612,
+      "sha256": "5d2d1a9168b9a228910f34aa27912b6ab5b36158c21b209a2796ca59157fa063"
+    },
+    {
+      "url": "https://www.cybergym.io/assets/data/exploitgym.json",
+      "tables": [
+        "exploitgym"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:28.169628+00:00",
+      "completed_at": "2026-10-18T00:25:31.503663+00:00",
+      "status": "200",
+      "final_url": "https://www.cybergym.io/assets/data/exploitgym.json",
+      "content_type": "application/json; charset=utf-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 9303,
+      "sha256": "1cf3b94633364a7cb76c35dc502f21fbf889ee02b639f3a20042960a0a9b2533"
+    },
+    {
+      "url": "https://www.cybergym.io/assets/data/cybergym-e2e.json",
+      "tables": [
+        "cybergym-e2e"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:28.067200+00:00",
+      "completed_at": "2026-10-18T00:25:31.504682+00:00",
+      "status": "200",
+      "final_url": "https://www.cybergym.io/assets/data/cybergym-e2e.json",
+      "content_type": "application/json; charset=utf-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 4152,
+      "sha256": "05a59f9f5c398bbabeb672164e7f172ecab00294f329a0a24a6a95b2a0951c34"
+    },
+    {
+      "url": "https://www.cybergym.io/assets/js/leaderboard.js",
+      "tables": [
+        "cybergym-agent-focused",
+        "cybergym-model-focused"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:28.471683+00:00",
+      "completed_at": "2026-10-18T00:25:31.511243+00:00",
+      "status": "200",
+      "final_url": "https://www.cybergym.io/assets/js/leaderboard.js",
+      "content_type": "application/javascript; charset=utf-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 41775,
+      "sha256": "7aa2d51c07d2bda8dc8be9910844441aabcfaa03b8b1a9adf1a24e3be45298f2"
+    },
+    {
+      "url": "https://www.cybergym.io/assets/data/cybergym.json",
+      "tables": [
+        "cybergym-agent-focused",
+        "cybergym-model-focused"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:28.155268+00:00",
+      "completed_at": "2026-10-18T00:25:31.512230+00:00",
+      "status": "200",
+      "final_url": "https://www.cybergym.io/assets/data/cybergym.json",
+      "content_type": "application/json; charset=utf-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 37909,
+      "sha256": "f43d433c26c20982badce24702ea89789acc2f9eba271ebd68bf15def2a3022e"
+    },
+    {
+      "url": "https://www.cybergym.io/cybergym/",
+      "tables": [
+        "cybergym-agent-focused",
+        "cybergym-model-focused"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:30.163574+00:00",
+      "completed_at": "2026-10-18T00:25:31.514948+00:00",
+      "status": "200",
+      "final_url": "https://www.cybergym.io/cybergym/",
+      "content_type": "text/html; charset=utf-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 30896,
+      "sha256": "1c85822a74650b779b615f30f9188313fb40f3edf3096dd2220a1854cedf7f29"
+    },
+    {
+      "url": "https://www.cybergym.io/cybergym-e2e/",
+      "tables": [
+        "cybergym-e2e"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:28.523279+00:00",
+      "completed_at": "2026-10-18T00:25:31.519159+00:00",
+      "status": "200",
+      "final_url": "https://www.cybergym.io/cybergym-e2e/",
+      "content_type": "text/html; charset=utf-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 25612,
+      "sha256": "627b31e2a2112f89eec254ba30b2c0cffbb9b83d117faf29ffb6a708059ee8ff"
+    },
+    {
+      "url": "https://www.cybergym.io/exploitgym/",
+      "tables": [
+        "exploitgym"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:30.263601+00:00",
+      "completed_at": "2026-10-18T00:25:31.519248+00:00",
+      "status": "200",
+      "final_url": "https://www.cybergym.io/exploitgym/",
+      "content_type": "text/html; charset=utf-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 32436,
+      "sha256": "97db69cc276fe24ba54f6032c07f0170cc889bd88368d68c65ad97ab755b0889"
+    },
+    {
+      "url": "https://tevatron-browsecomp-plus.hf.space/data/leaderboard.json",
+      "tables": [
+        "browsecomp-plus"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:27.672119+00:00",
+      "completed_at": "2026-10-18T00:25:32.019443+00:00",
+      "status": "200",
+      "final_url": "https://tevatron-browsecomp-plus.hf.space/data/leaderboard.json",
+      "content_type": "application/json",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 48681,
+      "sha256": "9b7742492e752c22a4bdb7d8b5ce2844167b4ae12026b74ffe89c92e02f26324"
+    },
+    {
+      "url": "https://www.swe-marathon.org/",
+      "tables": [
+        "swe-marathon-v1-0",
+        "swe-marathon-v1-1"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:31.503790+00:00",
+      "completed_at": "2026-10-18T00:25:34.817251+00:00",
+      "status": "200",
+      "final_url": "https://www.swe-marathon.org/",
+      "content_type": "text/html; charset=utf-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 4714,
+      "sha256": "8bee5c3bbe68e574564a9aabd6137d475b71a919151166996727f902a440382e"
+    },
+    {
+      "url": "https://www.swe-marathon.org/assets/index-BqKcRchL.js",
+      "tables": [
+        "swe-marathon-v1-0"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:31.504723+00:00",
+      "completed_at": "2026-10-18T00:25:34.888907+00:00",
+      "status": "404",
+      "final_url": "https://www.swe-marathon.org/assets/index-BqKcRchL.js",
+      "content_type": "text/plain; charset=utf-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 79,
+      "sha256": "c2e37a730682d137feb1d22cc4ff6246b05c9953c9e6b8b6209bc0ca5eba157d"
+    },
+    {
+      "url": "https://www.swe-marathon.org/assets/index-CAG4k6zO.js",
+      "tables": [
+        "swe-marathon-v1-1"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:31.511352+00:00",
+      "completed_at": "2026-10-18T00:25:34.915230+00:00",
+      "status": "404",
+      "final_url": "https://www.swe-marathon.org/assets/index-CAG4k6zO.js",
+      "content_type": "text/plain; charset=utf-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 79,
+      "sha256": "b5e9f9ce33a7e44e9a97d118a099b457dc78dd0851bbc2043c57a30697ad1278"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/0uudAOyj.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:34.922607+00:00",
+      "completed_at": "2026-10-18T00:25:38.193133+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/0uudAOyj.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 3865,
+      "sha256": "d8a4ce0a5fb30d07bb1a1bcda556a888f96aa1e4a88826db0dd7af67dbf6c73a"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/BDWa0FIA.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:34.924756+00:00",
+      "completed_at": "2026-10-18T00:25:38.209454+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/BDWa0FIA.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 526,
+      "sha256": "793b95e91a3e4267f3a9b03efc95acfdad3fa146c69366c27ba7e673b734ad1a"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/BDRz8QZN.js",
+      "tables": [
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:34.923995+00:00",
+      "completed_at": "2026-10-18T00:25:38.212240+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/BDRz8QZN.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 4082,
+      "sha256": "013eb62ff80cb887ff17156b3ce5968ae8b7bde69b5806f29f61732c0e91e5d0"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/5ob4BCe4.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:34.923120+00:00",
+      "completed_at": "2026-10-18T00:25:38.224159+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/5ob4BCe4.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 2456,
+      "sha256": "4fcb2baffdf637f0ebe8448a1e74e1d1b79ebad33f9b65db1100bac24c3e7864"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/69_IOA4Y.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:34.923788+00:00",
+      "completed_at": "2026-10-18T00:25:38.262896+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/69_IOA4Y.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 34,
+      "sha256": "65e4471257b6dfbf825046a7f9502b544c717ca8bd5da7d7339f75ca58ff79cb"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/3xg-yjhm.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:34.922828+00:00",
+      "completed_at": "2026-10-18T00:25:38.267131+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/3xg-yjhm.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 1484,
+      "sha256": "54065c3e3ef0db212733a2636553c0942ca110723c329b9bb5f13ec8c4d414b2"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/-7RA5DjZ.js",
+      "tables": [
+        "vending-bench"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:34.922436+00:00",
+      "completed_at": "2026-10-18T00:25:38.302852+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/-7RA5DjZ.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 2703,
+      "sha256": "cd555ed3527eae36d7d800c3e6fc55794e4794cf138d9fb27ac1f6ece984e23d"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/BH_f2Gcz.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:34.929315+00:00",
+      "completed_at": "2026-10-18T00:25:38.323334+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/BH_f2Gcz.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 20631,
+      "sha256": "2b6b1d5e0bf0704bf634c666583dbc88e87311e1d1007ee223dc6f8c2e50976b"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/BbaRNkho.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:38.262977+00:00",
+      "completed_at": "2026-10-18T00:25:41.482359+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/BbaRNkho.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 147,
+      "sha256": "eadccc65cacb79dd0d1e2b07dba2ecd0ead6c35e921739556d774cd4165fc1c5"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/BRzbOd_U.js",
+      "tables": [
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:38.209546+00:00",
+      "completed_at": "2026-10-18T00:25:41.516495+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/BRzbOd_U.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 4022,
+      "sha256": "eccd2cce1d13f028f1a63e38e4f9775b7b1fce52dd333a98fabf3258f00d753a"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/BgcypRYm.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:38.267217+00:00",
+      "completed_at": "2026-10-18T00:25:41.517671+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/BgcypRYm.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 287,
+      "sha256": "1a772d37e4b78c9447b8be3b3d5694fa4d5b0f363ac61b8e75627ef557ed7678"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/BVAfDaE4.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:38.212302+00:00",
+      "completed_at": "2026-10-18T00:25:41.535219+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/BVAfDaE4.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 325,
+      "sha256": "3276cc444401e8eaccb41c2daab33316331d9742984c8d747307d5eeb6b3bba9"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/Btofzz5C.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:38.323420+00:00",
+      "completed_at": "2026-10-18T00:25:41.549576+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/Btofzz5C.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 464,
+      "sha256": "c6670229b80c973c6859c4d87ea4d50864333bb111a8470aec0495e7aa1a8efc"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/BNJ3jDWC.js",
+      "tables": [
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:38.193264+00:00",
+      "completed_at": "2026-10-18T00:25:41.561403+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/BNJ3jDWC.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 301532,
+      "sha256": "11b3a6576f5fd7687fbca1308992d2b3c3330536c2a83501650043d91d17acca"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/Bn94b5AV.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:38.302925+00:00",
+      "completed_at": "2026-10-18T00:25:41.586727+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/Bn94b5AV.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 3613,
+      "sha256": "34885cac467dbf25d7ed3f810e3d0117b338751d2917589bd8e5eaa36145f118"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/BaK2DUsO.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:38.224243+00:00",
+      "completed_at": "2026-10-18T00:25:41.587794+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/BaK2DUsO.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 2664,
+      "sha256": "86939242aa57a0c86d616e8181403bb134772e39e5820107fc6881affbb7e0b0"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/CHRcX_TQ.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:41.587835+00:00",
+      "completed_at": "2026-10-18T00:25:45.127417+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/CHRcX_TQ.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 620,
+      "sha256": "ee4a4b2141c688a871c1ff93c41f76586077df06bb1e553487198bdad1f087a5"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/Bw5ehx1-.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:41.482475+00:00",
+      "completed_at": "2026-10-18T00:25:45.159306+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/Bw5ehx1-.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 726,
+      "sha256": "35e13f4e4086acd579d07b18697c3986c82ec6f575c62ee844965ac0fdfde150"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/C5Jwi1LQ.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:41.535280+00:00",
+      "completed_at": "2026-10-18T00:25:45.174662+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/C5Jwi1LQ.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 747,
+      "sha256": "c70b9768b1fa028b117645042f9443d01c2da7cca37d8c82f4429a9953f60822"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/C1zZ46ia.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:41.517707+00:00",
+      "completed_at": "2026-10-18T00:25:45.183764+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/C1zZ46ia.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 1458,
+      "sha256": "418d6241d13651e97b4edd3c1a998fb9c58c02597ff5c4c8ffa8d6331ac9d05f"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/C1FmrZbK.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:41.516601+00:00",
+      "completed_at": "2026-10-18T00:25:45.190934+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/C1FmrZbK.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 1141,
+      "sha256": "ddabd08ef1896dd07a2c2a8d01a9963d181dcdaf1d3cb917b321965c3937dde9"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/C63-oUos.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:41.549634+00:00",
+      "completed_at": "2026-10-18T00:25:45.203310+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/C63-oUos.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 2710,
+      "sha256": "c4e9d2b219ff099e3bff4a1457b9544b10ae4513d859cf838f5e98ed912bf13f"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/C66Dxnp2.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:41.561623+00:00",
+      "completed_at": "2026-10-18T00:25:45.219113+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/C66Dxnp2.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 25408,
+      "sha256": "8691e989f4a9368b0b1c4f30e642131c3d124304d366760d56530030d0732824"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/CBwW-_qi.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:41.586799+00:00",
+      "completed_at": "2026-10-18T00:25:45.219379+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/CBwW-_qi.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 31354,
+      "sha256": "6d47fe826fa3f8952190f2bdbf0a1859000dee207924934edea809c40155a188"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/CS44c37R.js",
+      "tables": [
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:45.190990+00:00",
+      "completed_at": "2026-10-18T00:25:48.368800+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/CS44c37R.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 1850,
+      "sha256": "f610249e7e1a6a5ed8ba7cfbe682677ddfb621a19f2de7d41a17b48faafb3612"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/CLE3iiGX.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:45.127511+00:00",
+      "completed_at": "2026-10-18T00:25:48.391019+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/CLE3iiGX.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 3004,
+      "sha256": "6b30a70bd011a23a579448c6f13cb864ba33ee0fb16520cd183ece2d42b6fe3c"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/CMCgmUzN.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:45.159375+00:00",
+      "completed_at": "2026-10-18T00:25:48.411862+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/CMCgmUzN.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 654,
+      "sha256": "bb369594ea4d8b21914bb4a7d61bd3859dc123b38a855dd2fb72d88211e4c4d7"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/CZHlpsdQ.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:45.220083+00:00",
+      "completed_at": "2026-10-18T00:25:48.415437+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/CZHlpsdQ.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 2644,
+      "sha256": "474f7d5655d432824a73118cac5f14c7ba36a03087078d679782581340756d39"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/CZEtPMYm.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:45.219253+00:00",
+      "completed_at": "2026-10-18T00:25:48.423996+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/CZEtPMYm.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 4440,
+      "sha256": "4dbc75c32398bfe31c046895ab5edfd22b5d92cf2d0d5540751d2e46327421fb"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/CWj6FrbW.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:45.203369+00:00",
+      "completed_at": "2026-10-18T00:25:48.427017+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/CWj6FrbW.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 106,
+      "sha256": "53c82e8f07094eeb094a59b3b66cb3ef507aedfbe2c9725d038b31e2dcfec2f6"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/CQwfvnmX.js",
+      "tables": [
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:45.183822+00:00",
+      "completed_at": "2026-10-18T00:25:48.459777+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/CQwfvnmX.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 13829,
+      "sha256": "569e50bfb40ed963349da6453c67bc6f16e3f6908fda9243645e09a3f7e17519"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/CMFG9ocV.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:45.174731+00:00",
+      "completed_at": "2026-10-18T00:25:48.461128+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/CMFG9ocV.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 10723,
+      "sha256": "fe70f63e70cd8a0fdb0722022aafbc088b28bfc0bd419136848cdeae4ed95b3b"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/Ca7__5no.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:48.369065+00:00",
+      "completed_at": "2026-10-18T00:25:53.084139+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/Ca7__5no.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 2661,
+      "sha256": "e985e76324ad9e3e2da14677307a2b79f6271171bef326f2224fefe8cb046378"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/CtE_KJAu.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:48.427074+00:00",
+      "completed_at": "2026-10-18T00:25:53.089477+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/CtE_KJAu.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 5159,
+      "sha256": "227073a46c79a1ef424fde9532cdb8125329f1ab442e0687b25fea75652d8f65"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/D-laMq6w.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:48.461222+00:00",
+      "completed_at": "2026-10-18T00:25:53.115176+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/D-laMq6w.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 2648,
+      "sha256": "afa151afb8b9cdd713d9e335cbba175d639aaedbd0bfed0f7a6ef88499693f3b"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/CjaR4RE-.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:48.415546+00:00",
+      "completed_at": "2026-10-18T00:25:53.124582+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/CjaR4RE-.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 2252,
+      "sha256": "2d7f427018c877acb9d78ff33396e9ea16f4d67d52338ffde1ad068a1ddc837c"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/Cl8GeZqc.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:48.424077+00:00",
+      "completed_at": "2026-10-18T00:25:53.128191+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/Cl8GeZqc.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 775,
+      "sha256": "630e2ae428c543a203f9eaad691106e70e19e88cd8756ae1300e8089885312ce"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/CjH6loWA.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:48.411960+00:00",
+      "completed_at": "2026-10-18T00:25:53.154845+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/CjH6loWA.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 4641,
+      "sha256": "b87bee9e88605fe909903b432a41f531d8359cc9865dff8d2f6ed88a691295c3"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/ChQkAmIR.js",
+      "tables": [
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:48.391131+00:00",
+      "completed_at": "2026-10-18T00:25:53.158729+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/ChQkAmIR.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 30351,
+      "sha256": "54a1aab8d236c1636c947177c4bebe043640481ccfbe188aed7115e0c4e0b58a"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/Ctg9xj9H.js",
+      "tables": [
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:48.459855+00:00",
+      "completed_at": "2026-10-18T00:25:53.166748+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/Ctg9xj9H.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 6715,
+      "sha256": "c525655c54e2c66abd48035e16bee8910e494241f52aec563851d60d35c83548"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/D1SRtqym.js",
+      "tables": [
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:53.084235+00:00",
+      "completed_at": "2026-10-18T00:25:57.630330+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/D1SRtqym.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 730,
+      "sha256": "80d915a04969f4386de161f7069440224568b9de17fd5b5b24475caaed9b9007"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/DEJ4F0sa.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:53.154931+00:00",
+      "completed_at": "2026-10-18T00:25:57.660503+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/DEJ4F0sa.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 380,
+      "sha256": "d8695402ae6e6a35423d318b6ed349ac2136c704de77bb6bf8b0a10297428c18"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/D9PjWwtk.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:53.128249+00:00",
+      "completed_at": "2026-10-18T00:25:57.674869+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/D9PjWwtk.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 187,
+      "sha256": "d857ce9a13d4107b21d557c5b5597c3115a17f7620dfa3a57c706c128f63897c"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/D69B0bUj.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:53.124659+00:00",
+      "completed_at": "2026-10-18T00:25:57.687397+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/D69B0bUj.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 2809,
+      "sha256": "e005bd3ce697d495a6824e36e89b8f55f15d5abe57851ea03184b3f688f0bed7"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/D3co1dJh.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:53.089555+00:00",
+      "completed_at": "2026-10-18T00:25:57.694716+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/D3co1dJh.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 6684,
+      "sha256": "53fb5303ba8f10024256880346780d0d449ea7b7467d18c43558835391112955"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/D406UIMg.js",
+      "tables": [
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:53.115285+00:00",
+      "completed_at": "2026-10-18T00:25:57.698823+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/D406UIMg.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 2451,
+      "sha256": "d1e80feddc5659c6ab443f3f630e9e748743fd8bd9b6f8e97d98918131190da8"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/DGdIoOfl.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:53.158814+00:00",
+      "completed_at": "2026-10-18T00:25:57.706601+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/DGdIoOfl.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 2801,
+      "sha256": "faef3ebb414743eec2612467c98dff1cb5e1d0846f094dea186d492598df0f32"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/DHZDvTDi.js",
+      "tables": [
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:53.166841+00:00",
+      "completed_at": "2026-10-18T00:25:57.951530+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/DHZDvTDi.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 12306,
+      "sha256": "79d478058ac94b558e43e241246ced2c86b0927be19394c685051b5123a06fab"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/DSOvpBhz.js",
+      "tables": [
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:57.687482+00:00",
+      "completed_at": "2026-10-18T00:26:00.809509+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/DSOvpBhz.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 2845,
+      "sha256": "e1dda56b275d18fcfece51631459609cf4212daa83dc20774c94aafb8d39f645"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/DcAGJAvW.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:57.694779+00:00",
+      "completed_at": "2026-10-18T00:26:00.854924+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/DcAGJAvW.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 3419,
+      "sha256": "4213a9e2f0ff88a907bbbe20c2bbb9479904e3871c11c9853ede2254f2992af8"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/DIeogL5L.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:57.630434+00:00",
+      "completed_at": "2026-10-18T00:26:00.858904+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/DIeogL5L.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 62,
+      "sha256": "531fbd0c6ed3b893214e57bcaa58bc884cf4eb5a98c6633d6650f315da924dcf"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/DoElIRFq.js",
+      "tables": [
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:57.698871+00:00",
+      "completed_at": "2026-10-18T00:26:00.861997+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/DoElIRFq.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 2926,
+      "sha256": "53c7a1f33a629d3513b0477be864a444f0714d7a8dcb5794d888261d9530e233"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/DNUelGmW.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:57.660600+00:00",
+      "completed_at": "2026-10-18T00:26:00.866856+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/DNUelGmW.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 2721,
+      "sha256": "202338479a63e768816d82513ede7915153d6fb126e4ee92831235b6eda1e15b"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/DOdOrbr4.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:57.674958+00:00",
+      "completed_at": "2026-10-18T00:26:00.874558+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/DOdOrbr4.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 2672,
+      "sha256": "50dc0d90d1e2ff2f7e1ac676a71519fc2ba5c44692339b6d84e4422fae50242c"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/DwbFJ1Au.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:57.951629+00:00",
+      "completed_at": "2026-10-18T00:26:00.879022+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/DwbFJ1Au.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 1283,
+      "sha256": "49a228c04619e2ae367b723b66fe48a0cc1b11ea6323ca0a216af03358518b19"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/DvedNBsG.js",
+      "tables": [
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:25:57.706651+00:00",
+      "completed_at": "2026-10-18T00:26:00.899548+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/DvedNBsG.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 5083,
+      "sha256": "d65a2888061793b525966ba7ee37c12f775ef4aff17a941ef33358be78f913c6"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/OA8UcISh.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:26:00.859224+00:00",
+      "completed_at": "2026-10-18T00:26:04.860884+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/OA8UcISh.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 644,
+      "sha256": "41ff9c8eb86bbc65675cfb094c40020b4212961942765447f80a818df5c0d6c3"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/DzcxQvGq.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:26:00.809601+00:00",
+      "completed_at": "2026-10-18T00:26:04.904406+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/DzcxQvGq.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 264,
+      "sha256": "c1dbf9456224b19cf9501fc63931004bda675cbbc4a1da2de37b712c19e18117"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/T2n24-oX.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:26:00.866907+00:00",
+      "completed_at": "2026-10-18T00:26:04.913664+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/T2n24-oX.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 3390,
+      "sha256": "399b603e3a9eb44240e838ddafd207a40589eebcd50bb5a2722f24736cc8a0c7"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/lPgHJzuc.js",
+      "tables": [
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:26:00.874609+00:00",
+      "completed_at": "2026-10-18T00:26:04.930734+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/lPgHJzuc.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 3053,
+      "sha256": "014ee5e359eccf1dbf2f32f739ca4b59940f6ff4f338a8f7b0842aa3e94a5096"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/M4KuKVKS.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:26:00.855000+00:00",
+      "completed_at": "2026-10-18T00:26:04.939236+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/M4KuKVKS.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 686,
+      "sha256": "cb1faf2d614caacd404855b3c79456585e717830fc02ee67a6fbfb2150db6f4f"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/SnWuLDk_.js",
+      "tables": [
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:26:00.862034+00:00",
+      "completed_at": "2026-10-18T00:26:04.959268+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/SnWuLDk_.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 44367,
+      "sha256": "60e531c6be1a859b024ca95caa329802b12c590329709a32ba97194051cfcffe"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/r3Q2r7G8.js",
+      "tables": [
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:26:00.899621+00:00",
+      "completed_at": "2026-10-18T00:26:04.960812+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/r3Q2r7G8.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 33631,
+      "sha256": "50feab8cb0ea110facad3551a8bbe732ff380510b31cf41c4a40b3689b9a9e9f"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/oQS3Y3Tk.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:26:00.879087+00:00",
+      "completed_at": "2026-10-18T00:26:04.966716+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/oQS3Y3Tk.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 35423,
+      "sha256": "5a5648123413a65b48ff13ce3e12b2d0097491a7c37495a34da7776329c4b077"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/nodes/3.Dr26qLeS.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:26:04.939286+00:00",
+      "completed_at": "2026-10-18T00:26:08.232760+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/nodes/3.Dr26qLeS.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 2422,
+      "sha256": "00133011c1d5fe409fa171fc07f12fc10e70575514f6cd4815ba57ba7a6fcc90"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/tLpCenSf.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:26:04.860967+00:00",
+      "completed_at": "2026-10-18T00:26:08.259261+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/tLpCenSf.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 564,
+      "sha256": "157b64785aa6cbbbb5edab8b1bdcce2bfa51f909e5c102fbf2577dd7e78a6867"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/vxIbxFEj.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:26:04.904490+00:00",
+      "completed_at": "2026-10-18T00:26:08.274754+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/chunks/vxIbxFEj.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 402,
+      "sha256": "3309d42bdd3340a23a1daf8a07944736203ed548cad458afc2e49927b1de65d6"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/nodes/0.2adxRQ1K.js",
+      "tables": [
+        "vending-bench",
+        "vending-bench-2"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:26:04.913729+00:00",
+      "completed_at": "2026-10-18T00:26:08.308166+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/nodes/0.2adxRQ1K.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 31284,
+      "sha256": "0f335321f36eb8899a3ec14f4f5d966cdf3bbcb99c765e1ab6643144862aad30"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/nodes/26.FUD8iaCC.js",
+      "tables": [
+        "vending-bench"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:26:04.930811+00:00",
+      "completed_at": "2026-10-18T00:26:08.314864+00:00",
+      "status": "200",
+      "final_url": "https://andonlabs.com/_app/immutable/nodes/26.FUD8iaCC.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 20261,
+      "sha256": "bb4e62bab75fbb5c37d01a8d6b51f51ab3a8e3aff9bb248e18a7f8f06cfddff5"
+    },
+    {
+      "url": "https://www.swe-marathon.org/assets/index-BMEz9I0h.js",
+      "tables": [
+        "swe-marathon-v1-0",
+        "swe-marathon-v1-1"
+      ],
+      "retrieved": "2026-10-18",
+      "requested_at": "2026-10-18T00:26:04.959370+00:00",
+      "completed_at": "2026-10-18T00:26:09.315198+00:00",
+      "status": "200",
+      "final_url": "https://www.swe-marathon.org/assets/index-BMEz9I0h.js",
+      "content_type": "application/javascript; charset=utf-8",
+      "exit_code": 0,
+      "error": "",
+      "bytes": 5988846,
+      "sha256": "a5e99154c6361e0b050641d540e10ad4a07c84287d060da1623aa221bc4bce8b"
+    }
+  ],
+  "fetch_status_counts": {
+    "200": 111,
+    "404": 3
+  },
+  "proposed_files": [
+    {
+      "bytes": 9277,
+      "sha256": "293f96e25afb66287769fd8e6b8cd6f1f73aab79674b05f3807d963bba1bdc80",
+      "new_file": false
+    },
+    {
+      "bytes": 11645,
+      "sha256": "3400b8ae0ec9028e7e9cfcd524d2487e309075cbeb3d97d8b32e9df34c63ac80",
+      "new_file": false
+    },
+    {
+      "bytes": 3713,
+      "sha256": "579621cca5cd352834b43fb36fbd6b769ee2680421b395f20c9f62888000ced1",
+      "new_file": true
+    },
+    {
+      "bytes": 25168,
+      "sha256": "483df0fa563c55315bf1d5f7b72e7e2810043e7146ced8ab68e04fc556cb1258",
+      "new_file": true
+    },
+    {
+      "bytes": 4334,
+      "sha256": "47397cff778b2344689cf734516c48c43ef1b256e08b23ed98cf91cbf0281269",
+      "new_file": true
+    },
+    {
+      "bytes": 682020,
+      "sha256": "f1820c7b3f7076b97f85688f6e79d68ea0647567e17e4996aa7a7cf6d68aedba",
+      "new_file": true
+    },
+    {
+      "bytes": 4152,
+      "sha256": "05a59f9f5c398bbabeb672164e7f172ecab00294f329a0a24a6a95b2a0951c34",
+      "new_file": false
+    },
+    {
+      "bytes": 25612,
+      "sha256": "627b31e2a2112f89eec254ba30b2c0cffbb9b83d117faf29ffb6a708059ee8ff",
+      "new_file": false
+    },
+    {
+      "bytes": 5871,
+      "sha256": "cf0c31b16719447716aeecc68971b3ed14d8b3e512d2a00656e0e62b41517664",
+      "new_file": true
+    },
+    {
+      "bytes": 439136,
+      "sha256": "522b639761ebbce833104193732e75a292e08d9bb00485ee6e5efd43a986fec4",
+      "new_file": false
+    }
+  ],
+  "swe_marathon_visibility": {
+    "baseline_rows": 27,
+    "current_rows": 17,
+    "retained_rows": 16,
+    "new_rows": [
+      {
+        "rank": 9,
+        "system": "Gemini 4 Argon (high) / Gemini CLI",
+        "agent": "Gemini CLI",
+        "model_raw": [
+          "Gemini 4 Argon"
+        ],
+        "model_ids": [
+          "gemini-4-argon"
+        ],
+        "model_config": "reasoning_effort=high",
+        "score": 43.75,
+        "score_extra": {
+          "partial_avg_pct": 70.165625,
+          "trials": 160,
+          "cost_trials": 160,
+          "cost_avg_usd": 10.0380909375,
+          "tokens_avg_m": 22.680556550000002
+        },
+        "date": null,
+        "verified": null,
+        "open_source": null,
+        "org": null,
+        "row_url": null
+      }
+    ],
+    "source_excluded_models": [
+      "Claude Opus 4.8",
+      "Claude Opus 5",
+      "Claude Fable 5",
+      "Claude Sonnet 5",
+      "GPT-5.6-sol",
+      "GPT-5.6-terra",
+      "GPT-5.6-luna",
+      "GPT-6 Sol",
+      "Grok 4.5",
+      "Grok 4.6",
+      "GLM 5.2"
+    ],
+    "removed_rows": [
+      {
+        "system": "Claude Opus 5 (max) / Claude Code",
+        "agent": "Claude Code",
+        "model_raw": [
+          "Claude Opus 5"
+        ],
+        "model_ids": [
+          "claude-opus-5"
+        ],
+        "model_config": "reasoning_effort=max"
+      },
+      {
+        "system": "Claude Opus 4.8 (max) / Claude Code",
+        "agent": "Claude Code",
+        "model_raw": [
+          "Claude Opus 4.8"
+        ],
+        "model_ids": [
+          "claude-opus-4.8"
+        ],
+        "model_config": "reasoning_effort=max"
+      },
+      {
+        "system": "Claude Fable 5 (max) / Claude Code",
+        "agent": "Claude Code",
+        "model_raw": [
+          "Claude Fable 5"
+        ],
+        "model_ids": [],
+        "model_config": "reasoning_effort=max; Run with a fallback model."
+      },
+      {
+        "system": "GPT-6 Sol (max) / Codex",
+        "agent": "Codex",
+        "model_raw": [
+          "GPT-6 Sol"
+        ],
+        "model_ids": [
+          "gpt-6-sol"
+        ],
+        "model_config": "reasoning_effort=max"
+      },
+      {
+        "system": "GPT-5.6-sol (max) / Codex",
+        "agent": "Codex",
+        "model_raw": [
+          "GPT-5.6-sol"
+        ],
+        "model_ids": [
+          "gpt-5.6-sol"
+        ],
+        "model_config": "reasoning_effort=max"
+      },
+      {
+        "system": "GPT-5.6-terra (max) / Codex",
+        "agent": "Codex",
+        "model_raw": [
+          "GPT-5.6-terra"
+        ],
+        "model_ids": [
+          "gpt-5.6-terra"
+        ],
+        "model_config": "reasoning_effort=max"
+      },
+      {
+        "system": "Grok 4.6 (high) / Grok Build",
+        "agent": "Grok Build",
+        "model_raw": [
+          "Grok 4.6"
+        ],
+        "model_ids": [
+          "grok-4.6"
+        ],
+        "model_config": "reasoning_effort=high"
+      },
+      {
+        "system": "Claude Sonnet 5 (max) / Claude Code",
+        "agent": "Claude Code",
+        "model_raw": [
+          "Claude Sonnet 5"
+        ],
+        "model_ids": [
+          "claude-sonnet-5"
+        ],
+        "model_config": "reasoning_effort=max"
+      },
+      {
+        "system": "Grok 4.5 (max) / Grok Build",
+        "agent": "Grok Build",
+        "model_raw": [
+          "Grok 4.5"
+        ],
+        "model_ids": [
+          "grok-4.5"
+        ],
+        "model_config": "reasoning_effort=max"
+      },
+      {
+        "system": "GPT-5.6-luna (max) / Codex",
+        "agent": "Codex",
+        "model_raw": [
+          "GPT-5.6-luna"
+        ],
+        "model_ids": [
+          "gpt-5.6-luna"
+        ],
+        "model_config": "reasoning_effort=max"
+      },
+      {
+        "system": "GLM 5.2 (max) / Claude Code",
+        "agent": "Claude Code",
+        "model_raw": [
+          "GLM 5.2"
+        ],
+        "model_ids": [
+          "glm-5.2"
+        ],
+        "model_config": "reasoning_effort=max"
+      }
+    ],
+    "reason": "Current official bundle first excludes named models, then applies reasoning-effort filter rt, then aggregates by model/agent/effort. These are display removals, not performance declines. All 16 retained rows preserve their metrics and conditions.",
+    "evidence": "sources/swe-marathon-v1-1/display-rules.js.txt",
+    "prior_snapshot": "sources/audits/2026-10-18/research-security-long-horizon/prior/sources/swe-marathon-v1-1/task_results_trimmed.json"
+  },
+  "recovery_notes": [
+    "Three historical hashed JavaScript URLs returned 404. Current bundle URLs were discovered from freshly fetched official pages, and all 29 tables were successfully extracted."
+  ]
+}

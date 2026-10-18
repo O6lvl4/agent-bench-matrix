@@ -17,8 +17,8 @@
     "https://swe-bench-live.github.io/leaderboard.js",
     "https://swe-bench-live.github.io/"
   ],
-  "retrieved": "2026-10-10",
-  "newest_row_date": "2026-10-09",
+  "retrieved": "2026-10-18",
+  "newest_row_date": "2026-10-16",
   "snapshot": "sources/swe-bench-live-go/reports-0605_go.json",
   "paper": "https://arxiv.org/abs/2505.23419",
   "repo": "https://github.com/microsoft/SWE-bench-Live",
@@ -92,6 +92,28 @@
     },
     {
       "rank": 4,
+      "system": "TianxiCode + Deepseek-v4.1-Flash",
+      "agent": "TianxiCode",
+      "model_raw": [
+        "Deepseek-v4.1-Flash"
+      ],
+      "model_ids": [
+        "deepseek-v4.1-flash"
+      ],
+      "model_config": null,
+      "score": 63.8,
+      "score_extra": {
+        "resolved_count": 88,
+        "num_valid_inst": 138
+      },
+      "date": "2026-10-16",
+      "verified": true,
+      "open_source": null,
+      "org": null,
+      "row_url": "https://github.com/SWE-bench-Live/submission/tree/main/submissions/multilang/go/tianxi/deepseek-flash"
+    },
+    {
+      "rank": 5,
       "system": "AMI Agent + Gemini-3.6-flash",
       "agent": "AMI Agent",
       "model_raw": [
@@ -113,7 +135,7 @@
       "row_url": "https://github.com/SWE-bench-Live/submission/tree/main/submissions/multilang/go/ami-agent/20260729-gemini-3.6-flash"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "system": "AMI Agent + Gemini-3.1-Pro",
       "agent": "AMI Agent",
       "model_raw": [
@@ -135,7 +157,7 @@
       "row_url": "https://github.com/SWE-bench-Live/submission/tree/main/submissions/multilang/go/ami-agent/20260729-gemini-3.1-pro-preview"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "system": "Claude Code + Claude-4.5-Sonnet",
       "agent": "Claude Code",
       "model_raw": [
@@ -157,7 +179,7 @@
       "row_url": null
     },
     {
-      "rank": 7,
+      "rank": 8,
       "system": "OpenHands + Claude-4.5-Sonnet",
       "agent": "OpenHands",
       "model_raw": [
@@ -179,7 +201,7 @@
       "row_url": null
     },
     {
-      "rank": 8,
+      "rank": 9,
       "system": "SWE-agent + Claude-4.5-Sonnet",
       "agent": "SWE-agent",
       "model_raw": [
@@ -201,7 +223,7 @@
       "row_url": null
     },
     {
-      "rank": 9,
+      "rank": 10,
       "system": "Claude Code + GPT-5.5 (Medium)",
       "agent": "Claude Code",
       "model_raw": [
@@ -223,7 +245,7 @@
       "row_url": "https://github.com/SWE-bench-Live/submission/tree/main/submissions/multilang/all_languages/claudecode/gpt-5.5-medium"
     },
     {
-      "rank": 10,
+      "rank": 11,
       "system": "SWE-agent + GPT-5.5 (Medium)",
       "agent": "SWE-agent",
       "model_raw": [
@@ -245,7 +267,7 @@
       "row_url": "https://github.com/SWE-bench-Live/submission/tree/main/submissions/multilang/all_languages/sweagent/gpt-5.5-medium"
     },
     {
-      "rank": 11,
+      "rank": 12,
       "system": "SWE-agent + Gemini3-Flash",
       "agent": "SWE-agent",
       "model_raw": [
@@ -267,7 +289,7 @@
       "row_url": null
     },
     {
-      "rank": 12,
+      "rank": 13,
       "system": "OpenHands + Gemini3-Flash",
       "agent": "OpenHands",
       "model_raw": [
@@ -289,7 +311,7 @@
       "row_url": null
     },
     {
-      "rank": 13,
+      "rank": 14,
       "system": "AMI Agent + Qwen 3.8-27B",
       "agent": "AMI Agent",
       "model_raw": [
@@ -311,7 +333,7 @@
       "row_url": "https://github.com/SWE-bench-Live/submission/tree/main/submissions/multilang/go/ami-agent/20260923-v0.7.2-qwen3.8-27b"
     },
     {
-      "rank": 14,
+      "rank": 15,
       "system": "Claude Code + Deepseek-v4-Pro",
       "agent": "Claude Code",
       "model_raw": [
@@ -333,7 +355,7 @@
       "row_url": "https://github.com/SWE-bench-Live/submission/tree/main/submissions/multilang/all_languages/claudecode/deepseek-v4-pro"
     },
     {
-      "rank": 15,
+      "rank": 16,
       "system": "SWE-agent + Deepseek-v4-Pro",
       "agent": "SWE-agent",
       "model_raw": [
@@ -355,7 +377,7 @@
       "row_url": "https://github.com/SWE-bench-Live/submission/tree/main/submissions/multilang/all_languages/sweagent/deepseek-v4-pro"
     },
     {
-      "rank": 16,
+      "rank": 17,
       "system": "Claude Code + DeepSeek-V3.1-Terminus",
       "agent": "Claude Code",
       "model_raw": [
@@ -377,7 +399,7 @@
       "row_url": null
     },
     {
-      "rank": 17,
+      "rank": 18,
       "system": "Claude Code + GPT5.2-Thinking (Medium)",
       "agent": "Claude Code",
       "model_raw": [
@@ -399,7 +421,7 @@
       "row_url": null
     },
     {
-      "rank": 18,
+      "rank": 19,
       "system": "OpenHands + Deepseek-v4-Pro",
       "agent": "OpenHands",
       "model_raw": [
@@ -421,7 +443,7 @@
       "row_url": "https://github.com/SWE-bench-Live/submission/tree/main/submissions/multilang/all_languages/openhands/deepseek-v4-pro"
     },
     {
-      "rank": 19,
+      "rank": 20,
       "system": "OpenHands + GPT-5.5 (Medium)",
       "agent": "OpenHands",
       "model_raw": [
@@ -443,7 +465,7 @@
       "row_url": "https://github.com/SWE-bench-Live/submission/tree/main/submissions/multilang/all_languages/openhands/gpt-5.5-medium"
     },
     {
-      "rank": 20,
+      "rank": 21,
       "system": "SWE-agent + GPT5.2-Thinking (Medium)",
       "agent": "SWE-agent",
       "model_raw": [
@@ -465,7 +487,7 @@
       "row_url": null
     },
     {
-      "rank": 21,
+      "rank": 22,
       "system": "OpenHands + DeepSeek-V3.1-Terminus",
       "agent": "OpenHands",
       "model_raw": [
@@ -487,7 +509,7 @@
       "row_url": null
     },
     {
-      "rank": 22,
+      "rank": 23,
       "system": "SWE-agent + DeepSeek-V3.1-Terminus",
       "agent": "SWE-agent",
       "model_raw": [
@@ -509,7 +531,7 @@
       "row_url": null
     },
     {
-      "rank": 23,
+      "rank": 24,
       "system": "OpenHands + GPT5.2-Thinking (Medium)",
       "agent": "OpenHands",
       "model_raw": [
