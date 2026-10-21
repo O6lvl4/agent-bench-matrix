@@ -1,0 +1,303 @@
+{
+  "retrieved": "2026-10-21",
+  "status": "both_existing_claim_artifacts_revalidated_unchanged",
+  "layer": "vendor_claims_only",
+  "measured_tables_modified_by_claims_audit": false,
+  "claim_figures_checked": 29,
+  "numeric_cells_checked": 120,
+  "claims": [
+    {
+      "retrieved": "2026-10-21",
+      "id": "sakana-fugu-report",
+      "layer": "vendor_claims_only",
+      "status": "comparable_unchanged",
+      "latest_report_version": "v2",
+      "table_id": "S4.T1.7",
+      "table_rows": 11,
+      "numeric_cells_checked": 55,
+      "claim_figures_checked": 17,
+      "numeric_differences": [],
+      "files_modified": [],
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2606.21228",
+          "tables": [
+            "claims:sakana-fugu-report"
+          ],
+          "retrieved": "2026-10-21",
+          "requested_at": "2026-10-21T00:45:07.325925+00:00",
+          "completed_at": "2026-10-21T00:45:13.120040+00:00",
+          "status": "200",
+          "content_type": "text/html; charset=utf-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 44950,
+          "sha256": "c536e627a385441167ced69f269eaa8759c5c25bd31e50d7b2f24abacb377c17",
+          "archive_member": "responses/73783836cda43a9c2b.source",
+          "stored_sha256": "c536e627a385441167ced69f269eaa8759c5c25bd31e50d7b2f24abacb377c17",
+          "stored_bytes": 44950,
+          "redaction_counts": {
+            "contact_emails": 0,
+            "auxiliary_access_urls": 0
+          }
+        },
+        {
+          "url": "https://arxiv.org/html/2606.21228v2",
+          "tables": [
+            "claims:sakana-fugu-report"
+          ],
+          "retrieved": "2026-10-21",
+          "requested_at": "2026-10-21T00:45:07.329927+00:00",
+          "completed_at": "2026-10-21T00:45:13.122677+00:00",
+          "status": "200",
+          "content_type": "text/html; charset=utf-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 416263,
+          "sha256": "628520c4c69bff43a7eb54a42a4eedcbb242063efc7e195264010bd7ee90cb58",
+          "archive_member": "responses/accd115629aa659877.source",
+          "stored_sha256": "628520c4c69bff43a7eb54a42a4eedcbb242063efc7e195264010bd7ee90cb58",
+          "stored_bytes": 416263,
+          "redaction_counts": {
+            "contact_emails": 0,
+            "auxiliary_access_urls": 0
+          }
+        }
+      ],
+      "extracted_rows": {
+        "SWE Bench Pro": {
+          "Fugu-Ultra": 73.7,
+          "Fugu": 59.0,
+          "Claude Opus 4.8": 69.2,
+          "Gemini 3.1": 54.2,
+          "GPT-5.5": 58.6
+        },
+        "Terminal Bench 2.1": {
+          "Fugu-Ultra": 82.1,
+          "Fugu": 80.2,
+          "Claude Opus 4.8": 74.6,
+          "Gemini 3.1": 70.3,
+          "GPT-5.5": 78.2
+        },
+        "LiveCodeBench": {
+          "Fugu-Ultra": 93.2,
+          "Fugu": 92.9,
+          "Claude Opus 4.8": 87.8,
+          "Gemini 3.1": 88.5,
+          "GPT-5.5": 85.3
+        },
+        "LiveCodeBench Pro": {
+          "Fugu-Ultra": 90.8,
+          "Fugu": 87.8,
+          "Claude Opus 4.8": 84.8,
+          "Gemini 3.1": 82.9,
+          "GPT-5.5": 88.4
+        },
+        "Humanity’s Last Exam": {
+          "Fugu-Ultra": 50.0,
+          "Fugu": 47.2,
+          "Claude Opus 4.8": 49.8,
+          "Gemini 3.1": 44.4,
+          "GPT-5.5": 41.4
+        },
+        "CharXiv Reasoning": {
+          "Fugu-Ultra": 86.6,
+          "Fugu": 85.1,
+          "Claude Opus 4.8": 84.2,
+          "Gemini 3.1": 83.3,
+          "GPT-5.5": 84.1
+        },
+        "GPQA Diamond": {
+          "Fugu-Ultra": 95.5,
+          "Fugu": 95.5,
+          "Claude Opus 4.8": 92.0,
+          "Gemini 3.1": 94.3,
+          "GPT-5.5": 93.6
+        },
+        "SciCode": {
+          "Fugu-Ultra": 58.7,
+          "Fugu": 60.1,
+          "Claude Opus 4.8": 53.5,
+          "Gemini 3.1": 58.9,
+          "GPT-5.5": 56.1
+        },
+        "τ3\\tau^{3} Banking": {
+          "Fugu-Ultra": 20.6,
+          "Fugu": 21.7,
+          "Claude Opus 4.8": 20.6,
+          "Gemini 3.1": 8.4,
+          "GPT-5.5": 20.6
+        },
+        "Long Context Reasoning": {
+          "Fugu-Ultra": 73.3,
+          "Fugu": 74.7,
+          "Claude Opus 4.8": 67.7,
+          "Gemini 3.1": 72.7,
+          "GPT-5.5": 74.3
+        },
+        "MRCRv2": {
+          "Fugu-Ultra": 93.6,
+          "Fugu": 86.6,
+          "Claude Opus 4.8": 87.9,
+          "Gemini 3.1": 84.9,
+          "GPT-5.5": 94.8
+        }
+      }
+    },
+    {
+      "id": "deepseek-v4-1-flash-1017",
+      "retrieved": "2026-10-21",
+      "status": "comparable_unchanged",
+      "layer": "vendor_claims_only",
+      "table_rows": 11,
+      "numeric_cells_checked": 65,
+      "claim_figures_checked": 12,
+      "numeric_differences": [],
+      "conditions_revalidated": [
+        "HLE no-tools total and text-only subset remain separate",
+        "Terminal-Bench 4.0 uses Claude Code harness",
+        "DeepSWE v1.1 uses Mini-SWE-V2 harness",
+        "ZeroBench-main uses tools and Pass@5",
+        "No independent leaderboard mappings were added"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/raw/main/README.md",
+          "tables": [
+            "claims:deepseek-v4-1-flash-1017"
+          ],
+          "retrieved": "2026-10-21",
+          "requested_at": "2026-10-21T00:49:30.695901+00:00",
+          "completed_at": "2026-10-21T00:49:35.663406+00:00",
+          "status": "200",
+          "content_type": "text/plain; charset=utf-8",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 5231,
+          "sha256": "b72b796e4f4c739eca5d0ad360a7679b39118ca7eb64891f7151a527b292c42a",
+          "archive_member": "responses/17aa6f2c9876fccb86.source",
+          "stored_sha256": "1dc961528ff5b2a33858c16b7a8738eaf6cbb037ee6f660248a7e3fb0da489f5",
+          "stored_bytes": 5241,
+          "redaction_counts": {
+            "contact_emails": 2,
+            "auxiliary_access_urls": 0
+          }
+        },
+        {
+          "url": "https://api-docs.deepseek.com/updates/",
+          "tables": [
+            "claims:deepseek-v4-1-flash-1017"
+          ],
+          "retrieved": "2026-10-21",
+          "requested_at": "2026-10-21T00:49:30.695375+00:00",
+          "completed_at": "2026-10-21T00:49:38.177974+00:00",
+          "status": "200",
+          "content_type": "text/html",
+          "exit_code": 0,
+          "error": "",
+          "bytes": 52380,
+          "sha256": "9abda5ba89b86be5d82ad045864dbe5047e0908b45c161d8a4631d4d5fcb6f18",
+          "archive_member": "responses/e547d0d8cbe359a051.source",
+          "stored_sha256": "a401fdb3dbf7664aa8fb3745ea0579782dd50201cb612802b2c46a69712b198a",
+          "stored_bytes": 52381,
+          "redaction_counts": {
+            "contact_emails": 1,
+            "auxiliary_access_urls": 0
+          }
+        }
+      ],
+      "existing_claim_and_redacted_snapshots_preserved": true,
+      "files_modified": [],
+      "extracted_table": {
+        "HLE w/o tools": {
+          "DS-V4.1-Flash-1017": "42.6 (44.0†)",
+          "DS-V4.1-Flash": "36.8 (39.1†)",
+          "K3": "43.5",
+          "GLM-5.3": "42.0†",
+          "GPT-5.6 Sol": "44.5",
+          "Opus 5": "56.3"
+        },
+        "Terminal-Bench 4.0": {
+          "DS-V4.1-Flash-1017": "42.3",
+          "DS-V4.1-Flash": "31.2",
+          "K3": "12.6",
+          "GLM-5.3": "37.9",
+          "GPT-5.6 Sol": "39.9",
+          "Opus 5": "51.8"
+        },
+        "DeepSWE v1.1": {
+          "DS-V4.1-Flash-1017": "77.0",
+          "DS-V4.1-Flash": "74.2",
+          "K3": "67.5",
+          "GLM-5.3": "66.9",
+          "GPT-5.6 Sol": "73.0",
+          "Opus 5": "74.0"
+        },
+        "ProgramBench": {
+          "DS-V4.1-Flash-1017": "29.1",
+          "DS-V4.1-Flash": "20.3",
+          "K3": "17.5",
+          "GLM-5.3": "19.0",
+          "GPT-5.6 Sol": "23.0",
+          "Opus 5": "37.0"
+        },
+        "NL2Repo-Bench": {
+          "DS-V4.1-Flash-1017": "68.2",
+          "DS-V4.1-Flash": "65.4",
+          "K3": "58.0",
+          "GLM-5.3": "58.0",
+          "GPT-5.6 Sol": "56.8",
+          "Opus 5": "75.3"
+        },
+        "Automation-Bench v1.0.6": {
+          "DS-V4.1-Flash-1017": "60.5",
+          "DS-V4.1-Flash": "54.8",
+          "K3": "46.7",
+          "GLM-5.3": "48.8",
+          "GPT-5.6 Sol": "45.8",
+          "Opus 5": "50.3"
+        },
+        "Agents’ Last Exam": {
+          "DS-V4.1-Flash-1017": "35.4",
+          "DS-V4.1-Flash": "31.8",
+          "K3": "27.6",
+          "GLM-5.3": "28.5",
+          "GPT-5.6 Sol": "26.7",
+          "Opus 5": "28.6"
+        },
+        "Apex Bench v1.1": {
+          "DS-V4.1-Flash-1017": "72.1",
+          "DS-V4.1-Flash": "64.6",
+          "K3": "47.8",
+          "GLM-5.3": "56.6",
+          "GPT-5.6 Sol": "54.3",
+          "Opus 5": "65.8"
+        },
+        "Chartography (w/tools)": {
+          "DS-V4.1-Flash-1017": "83.0",
+          "DS-V4.1-Flash": "78.9",
+          "K3": "68.1",
+          "GLM-5.3": "—",
+          "GPT-5.6 Sol": "79.9",
+          "Opus 5": "84.0"
+        },
+        "BabyVision (w/tools)": {
+          "DS-V4.1-Flash-1017": "92.5",
+          "DS-V4.1-Flash": "89.6",
+          "K3": "85.7",
+          "GLM-5.3": "—",
+          "GPT-5.6 Sol": "88.9",
+          "Opus 5": "94.1"
+        },
+        "ZeroBench-main (w/tools)": {
+          "DS-V4.1-Flash-1017": "51.0",
+          "DS-V4.1-Flash": "49.0",
+          "K3": "41.0",
+          "GLM-5.3": "—",
+          "GPT-5.6 Sol": "53.0",
+          "Opus 5": "52.0"
+        }
+      }
+    }
+  ]
+}
