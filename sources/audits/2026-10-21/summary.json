@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-21",
+  "base_commit": "f39077b8c7a294d5b32e7e7f095686722be869cb",
+  "tables": 166,
+  "totals": {
+    "unchanged": 157,
+    "changed": 8,
+    "failed-preserved": 1
+  },
+  "categories": {
+    "coding": {
+      "unchanged": 49,
+      "changed": 1
+    },
+    "computer-use": {
+      "unchanged": 22
+    },
+    "general": {
+      "changed": 1,
+      "unchanged": 4
+    },
+    "long-horizon": {
+      "unchanged": 6,
+      "changed": 1
+    },
+    "research": {
+      "changed": 1,
+      "unchanged": 8
+    },
+    "security": {
+      "unchanged": 13
+    },
+    "terminal": {
+      "unchanged": 5
+    },
+    "tool-use": {
+      "changed": 4,
+      "unchanged": 28
+    },
+    "web": {
+      "failed-preserved": 1,
+      "unchanged": 22
+    }
+  },
+  "changed": [
+    "apex-agents",
+    "apex-agents-corporate-lawyer",
+    "apex-agents-investment-banking",
+    "apex-agents-management-consultant",
+    "browsecomp-plus",
+    "gaia",
+    "swe-bench-live-rust",
+    "swe-marathon-v1-1"
+  ],
+  "rows_before": 4418,
+  "rows_after": 4437,
+  "models_before": 509,
+  "models_after": 512,
+  "failed_preserved": [
+    {
+      "table": "assistantbench",
+      "rows": 184,
+      "reason": "AssertionError: ('https://assistantbench-leaderboard.hf.space/config', 503, 'HTTP 503')"
+    }
+  ],
+  "comparison_policy": "Within each existing board/version/domain/set only. GAIA remains score-descending top 100 of the 2023 test board; absent model labels stay unmapped. SWE-Marathon xhigh and max configurations are not equal-condition improvements. Published leaderboard results, vendor claims and fitted estimates remain separate."
+}

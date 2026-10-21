@@ -1,0 +1,532 @@
+[
+  {
+    "id": "assistantbench",
+    "retrieved": "2026-10-21",
+    "status": "failed-preserved",
+    "reason_ja": "公式 Gradio config は2回とも HTTP 503。公式 HF API は RUNTIME_ERROR を報告し、Ori/results 読み込みで停止。最後に検証できた184行と snapshot・retrieved=2026-10-05 を変更せず保持。",
+    "sources": [
+      {
+        "url": "https://assistantbench-leaderboard.hf.space/config",
+        "retrieved_at": "2026-10-21T00:47:51.395478+00:00",
+        "request_method": "GET",
+        "http_status": 503,
+        "error": "HTTP 503",
+        "attempts": [
+          {
+            "retrieved_at": "2026-10-21T00:42:23.635588+00:00",
+            "http_status": 503,
+            "error": "HTTP 503"
+          },
+          {
+            "retrieved_at": "2026-10-21T00:47:51.395478+00:00",
+            "http_status": 503,
+            "error": "HTTP 503"
+          }
+        ]
+      },
+      {
+        "url": "https://huggingface.co/api/spaces/AssistantBench/leaderboard",
+        "retrieved_at": "2026-10-21T00:42:29.374459+00:00",
+        "request_method": "GET",
+        "http_status": 200,
+        "bytes": 3127,
+        "sha256": "df96d27d32b446eed7e52aaca04b6b8124907ddd87593015259286999d933ff6",
+        "headers": {
+          "content-type": "application/json; charset=utf-8",
+          "date": "Wed, 21 Oct 2026 00:42:32 GMT",
+          "etag": "W/\"c37-qa6bjcsOigirzOdZ2ppW0BNwrb8\""
+        },
+        "redirected": false,
+        "snapshot": "sources/audits/2026-10-21/webcomputer-responses.tar.gz",
+        "archive_member": "ca3cb5278c1cb88b.response",
+        "compression": "tar.gz"
+      }
+    ],
+    "retained_rows": 184,
+    "retained_table_retrieved": "2026-10-05",
+    "retained_snapshot": "sources/assistantbench/board_test.json"
+  },
+  {
+    "id": "computer-agent-arena",
+    "retrieved": "2026-10-21",
+    "status": "gap-rechecked",
+    "reason_ja": "現行ボードとルートは HTTP 522。取得できず、旧固定データや推測では補完しない。",
+    "sources": [
+      {
+        "url": "https://arena.xlang.ai/leaderboard",
+        "retrieved_at": "2026-10-21T00:42:23.634507+00:00",
+        "request_method": "GET",
+        "http_status": 522,
+        "error": "HTTP 522"
+      },
+      {
+        "url": "https://arena.xlang.ai/",
+        "retrieved_at": "2026-10-21T00:42:23.633650+00:00",
+        "request_method": "GET",
+        "http_status": 522,
+        "error": "HTTP 522"
+      }
+    ]
+  },
+  {
+    "id": "st-webagentbench",
+    "retrieved": "2026-10-21",
+    "status": "gap-rechecked",
+    "reason_ja": "公式 Space は RUNTIME_ERROR、config は HTTP 503。結果保存先の公開 API は HTTP 401。認証や提出操作は行わず欠測扱いを維持。",
+    "sources": [
+      {
+        "url": "https://huggingface.co/api/spaces/ST-WebAgentBench/st-webagentbench-leaderboard",
+        "retrieved_at": "2026-10-21T00:42:30.958953+00:00",
+        "request_method": "GET",
+        "http_status": 200,
+        "bytes": 3315,
+        "sha256": "0e134a3619178722d22f3efb361b16cee04fb537c250ce7d2871b3eb0ca45e09",
+        "headers": {
+          "content-type": "application/json; charset=utf-8",
+          "date": "Wed, 21 Oct 2026 00:42:32 GMT",
+          "etag": "W/\"cf3-1Um16WezcVLeSWSKEq2e9ZIgn0s\""
+        },
+        "redirected": false,
+        "snapshot": "sources/audits/2026-10-21/webcomputer-responses.tar.gz",
+        "archive_member": "8fc2e3ad3c125513.response",
+        "compression": "tar.gz"
+      },
+      {
+        "url": "https://st-webagentbench-st-webagentbench-leaderboard.hf.space/config",
+        "retrieved_at": "2026-10-21T00:42:41.587291+00:00",
+        "request_method": "GET",
+        "http_status": 503,
+        "error": "HTTP 503"
+      },
+      {
+        "url": "https://huggingface.co/spaces/ST-WebAgentBench/st-webagentbench-leaderboard/raw/main/app.py",
+        "retrieved_at": "2026-10-21T00:42:32.318563+00:00",
+        "request_method": "GET",
+        "http_status": 200,
+        "bytes": 143901,
+        "sha256": "23f2933ef905913c22dbcf5358baa99ece1c61a067a5d2c15ce11050ed16ece1",
+        "headers": {
+          "content-type": "text/plain; charset=utf-8",
+          "date": "Wed, 21 Oct 2026 00:42:34 GMT",
+          "etag": "\"7110a0ddd6ce51be8267be3eeebe865ad8b09982\""
+        },
+        "redirected": false,
+        "original_response_sha256": "20537065ccf1e15a61708fc73e40c77d7f05e2e4d0ad6ead05801cf390320e26",
+        "original_response_bytes": 143859,
+        "redactions": {
+          "redacted_contact_emails": 5,
+          "redacted_access_urls": 0,
+          "auxiliary_drive_urls_omitted": 0,
+          "canonicalized_google_redirect_links": 0,
+          "html_scripts_styles_comments_omitted": false
+        },
+        "snapshot": "sources/audits/2026-10-21/webcomputer-responses.tar.gz",
+        "archive_member": "895d714e4b5648a6.response",
+        "compression": "tar.gz"
+      },
+      {
+        "url": "https://huggingface.co/api/datasets/ST-WebAgentBench/st-webagentbench-data",
+        "retrieved_at": "2026-10-21T00:42:29.334358+00:00",
+        "request_method": "GET",
+        "http_status": 401,
+        "error": "HTTP 401"
+      }
+    ]
+  },
+  {
+    "id": "webvoyager",
+    "retrieved": "2026-10-21",
+    "status": "gap-rechecked",
+    "reason_ja": "公式 README は10月18日取得分と全バイト一致。研究・実装・評価方法はあるが、継続更新の公式リーダーボード結果は確認できず。",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/MinorJerry/WebVoyager/main/README.md",
+        "retrieved_at": "2026-10-21T00:42:40.797809+00:00",
+        "request_method": "GET",
+        "http_status": 200,
+        "bytes": 10723,
+        "sha256": "b5523941b2773634fdcf359b5b89bf0aca589f33ad9db30692c8b1912ed5dda5",
+        "headers": {
+          "content-type": "text/plain; charset=utf-8",
+          "etag": "\"dab1433805f3a01c841eda6818e2e8d947afe9dd155a447aa33d63f729b00ae3\"",
+          "date": "Wed, 21 Oct 2026 00:42:43 GMT"
+        },
+        "redirected": false,
+        "snapshot": "sources/audits/2026-10-21/webcomputer-responses.tar.gz",
+        "archive_member": "cd1ec4ccfdf2b715.response",
+        "compression": "tar.gz"
+      }
+    ]
+  },
+  {
+    "id": "browsecomp-zh",
+    "retrieved": "2026-10-21",
+    "status": "gap-rechecked",
+    "reason_ja": "公式 README は10月18日取得分と全バイト一致。論文の固定結果表を現行の継続更新ボードへ置き換えない。",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/PALIN2018/BrowseComp-ZH/main/README.md",
+        "retrieved_at": "2026-10-21T00:42:40.831240+00:00",
+        "request_method": "GET",
+        "http_status": 200,
+        "bytes": 8238,
+        "sha256": "bd8d592e740bd1d1bd4af1a7f8f68ce0ea7eb3479d60e84b2e76810650d69a33",
+        "headers": {
+          "content-type": "text/plain; charset=utf-8",
+          "etag": "\"4e1943e20deddb3212cda3f02a96142f07d754061b86fc3aafcf8fcd6a18906c\"",
+          "date": "Wed, 21 Oct 2026 00:42:43 GMT"
+        },
+        "redirected": false,
+        "snapshot": "sources/audits/2026-10-21/webcomputer-responses.tar.gz",
+        "archive_member": "60b0b2bf1a41f404.response",
+        "compression": "tar.gz"
+      }
+    ]
+  },
+  {
+    "id": "windows-agent-arena",
+    "retrieved": "2026-10-21",
+    "status": "gap-rechecked",
+    "reason_ja": "公式ページは10月18日取得分と全バイト一致。研究紹介の固定結果はあるが、継続更新のモデル別結果データは確認できず。",
+    "sources": [
+      {
+        "url": "https://microsoft.github.io/WindowsAgentArena/",
+        "retrieved_at": "2026-10-21T00:42:34.978631+00:00",
+        "request_method": "GET",
+        "http_status": 200,
+        "bytes": 18972,
+        "sha256": "fad53c6f96f25cbb700422333a0d62ebc87edafcc79b7dd31c9669062a566c51",
+        "headers": {
+          "content-type": "text/html; charset=utf-8",
+          "last-modified": "Tue, 11 Mar 2025 18:27:05 GMT",
+          "etag": "\"67d08079-5d4d\"",
+          "date": "Wed, 21 Oct 2026 00:42:38 GMT"
+        },
+        "redirected": false,
+        "original_response_sha256": "10cd8fca042d2b9ebac114913e40598ca8bb0b50bf0df89f1306cc505f02ee6c",
+        "original_response_bytes": 23885,
+        "redactions": {
+          "redacted_contact_emails": 0,
+          "redacted_access_urls": 0,
+          "auxiliary_drive_urls_omitted": 0,
+          "canonicalized_google_redirect_links": 0,
+          "html_scripts_styles_comments_omitted": true
+        },
+        "snapshot": "sources/audits/2026-10-21/webcomputer-responses.tar.gz",
+        "archive_member": "bdb5457eee4c7edb.response",
+        "compression": "tar.gz"
+      }
+    ]
+  },
+  {
+    "id": "screensuite",
+    "retrieved": "2026-10-21",
+    "status": "gap-rechecked",
+    "reason_ja": "公式 README は10月18日取得分と全バイト一致。評価ツール群・データセット一覧であり、継続更新の公式スコアボードは確認できず。",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/huggingface/screensuite/main/README.md",
+        "retrieved_at": "2026-10-21T00:42:41.562667+00:00",
+        "request_method": "GET",
+        "http_status": 200,
+        "bytes": 9368,
+        "sha256": "250cc594415e6a292f8c4f58a32900f88a7e56bd452de1b794b1a840f61ba030",
+        "headers": {
+          "content-type": "text/plain; charset=utf-8",
+          "etag": "\"5ce4d3343410ea5a9012e2085dd177b121557bbd5343bbd271a842e69f2a82a0\"",
+          "date": "Wed, 21 Oct 2026 00:42:43 GMT"
+        },
+        "redirected": false,
+        "original_response_sha256": "edcaa6f8355be6a8774ebeeb9bdb67648e8eeddb813d6be0fa2433116d9def36",
+        "original_response_bytes": 9359,
+        "redactions": {
+          "redacted_contact_emails": 1,
+          "redacted_access_urls": 0,
+          "auxiliary_drive_urls_omitted": 0,
+          "canonicalized_google_redirect_links": 0,
+          "html_scripts_styles_comments_omitted": false
+        },
+        "snapshot": "sources/audits/2026-10-21/webcomputer-responses.tar.gz",
+        "archive_member": "de78562d05babd91.response",
+        "compression": "tar.gz"
+      }
+    ]
+  },
+  {
+    "id": "macosworld",
+    "retrieved": "2026-10-21",
+    "status": "gap-rechecked",
+    "reason_ja": "公式ページは10月18日取得分と全バイト一致。主要結果は images/results.png に掲載。画像の数値を転記しない。",
+    "sources": [
+      {
+        "url": "https://macos-world.github.io/",
+        "retrieved_at": "2026-10-21T00:42:34.890390+00:00",
+        "request_method": "GET",
+        "http_status": 200,
+        "bytes": 6021,
+        "sha256": "4dc7887f438a82257e0041c965af1b1d11cc33a3764454a65196737876bcce53",
+        "headers": {
+          "content-type": "text/html; charset=utf-8",
+          "last-modified": "Tue, 23 Sep 2025 08:06:37 GMT",
+          "etag": "\"68d2550d-4a2c\"",
+          "date": "Wed, 21 Oct 2026 00:42:38 GMT"
+        },
+        "redirected": false,
+        "original_response_sha256": "634111c7fe4a8833a6d117f87def535dc8e2ca263b2f7fb0b839b73cb957e00c",
+        "original_response_bytes": 18988,
+        "redactions": {
+          "redacted_contact_emails": 0,
+          "redacted_access_urls": 0,
+          "auxiliary_drive_urls_omitted": 0,
+          "canonicalized_google_redirect_links": 0,
+          "html_scripts_styles_comments_omitted": true
+        },
+        "snapshot": "sources/audits/2026-10-21/webcomputer-responses.tar.gz",
+        "archive_member": "f60ae507ae0ffb0a.response",
+        "compression": "tar.gz"
+      }
+    ]
+  },
+  {
+    "id": "hud-osworld-verified",
+    "retrieved": "2026-10-21",
+    "status": "gap-rechecked",
+    "reason_ja": "旧リーダーボードは HTTP 404。取得した公式トップ・研究・環境ページに現行 OSWorld-Verified の機械可読な結果ボードへのリンクは確認できず。",
+    "sources": [
+      {
+        "url": "https://www.hud.ai/leaderboards",
+        "retrieved_at": "2026-10-21T00:42:44.034470+00:00",
+        "request_method": "GET",
+        "http_status": 404,
+        "error": "HTTP 404"
+      },
+      {
+        "url": "https://www.hud.ai/",
+        "retrieved_at": "2026-10-21T00:42:43.975009+00:00",
+        "request_method": "GET",
+        "http_status": 200,
+        "bytes": 178131,
+        "sha256": "69bea72ff4e2ceb183bd342ccbbb218f88a7d04797fcce3ce5b52ea41d7d18a5",
+        "headers": {
+          "content-type": "text/html; charset=utf-8",
+          "date": "Tue, 20 Oct 2026 16:23:37 GMT"
+        },
+        "redirected": false,
+        "original_response_sha256": "46386671f7ce87d36e826db5dd532b0ec598e616b322ab14c95ddd6f0b1a613e",
+        "original_response_bytes": 224017,
+        "redactions": {
+          "redacted_contact_emails": 1,
+          "redacted_access_urls": 0,
+          "auxiliary_drive_urls_omitted": 0,
+          "canonicalized_google_redirect_links": 0,
+          "html_scripts_styles_comments_omitted": true
+        },
+        "snapshot": "sources/audits/2026-10-21/webcomputer-responses.tar.gz",
+        "archive_member": "765322cc5df8447d.response",
+        "compression": "tar.gz"
+      },
+      {
+        "url": "https://www.hud.ai/research",
+        "retrieved_at": "2026-10-21T00:42:45.770812+00:00",
+        "request_method": "GET",
+        "http_status": 200,
+        "bytes": 63488,
+        "sha256": "855164d844cfd707a0b024133475491fc6c51f17fecb017041fba1e837dc43ef",
+        "headers": {
+          "content-type": "text/html; charset=utf-8",
+          "date": "Tue, 20 Oct 2026 16:27:45 GMT"
+        },
+        "redirected": false,
+        "original_response_sha256": "15d697047fed7502ca25192777c99d7ef34f5bb73d7a35063159040142daf022",
+        "original_response_bytes": 119464,
+        "redactions": {
+          "redacted_contact_emails": 1,
+          "redacted_access_urls": 0,
+          "auxiliary_drive_urls_omitted": 0,
+          "canonicalized_google_redirect_links": 0,
+          "html_scripts_styles_comments_omitted": true
+        },
+        "snapshot": "sources/audits/2026-10-21/webcomputer-responses.tar.gz",
+        "archive_member": "08a7ece95575e41d.response",
+        "compression": "tar.gz"
+      },
+      {
+        "url": "https://www.hud.ai/environments",
+        "retrieved_at": "2026-10-21T00:42:43.978463+00:00",
+        "request_method": "GET",
+        "http_status": 200,
+        "bytes": 116482,
+        "sha256": "dcfc2a38a1218d602470dd24cefa922ac56c0b49063c1740addabddefb570729",
+        "headers": {
+          "content-type": "text/html; charset=utf-8",
+          "date": "Wed, 21 Oct 2026 00:42:48 GMT"
+        },
+        "redirected": false,
+        "original_response_sha256": "129ff895a9ca497ffd82826112c6d46179b7081b214f0b9c983ea4e86217c230",
+        "original_response_bytes": 154284,
+        "redactions": {
+          "redacted_contact_emails": 0,
+          "redacted_access_urls": 0,
+          "auxiliary_drive_urls_omitted": 0,
+          "canonicalized_google_redirect_links": 0,
+          "html_scripts_styles_comments_omitted": true
+        },
+        "snapshot": "sources/audits/2026-10-21/webcomputer-responses.tar.gz",
+        "archive_member": "8c18a37fae65ad08.response",
+        "compression": "tar.gz"
+      }
+    ]
+  },
+  {
+    "id": "sheetbench-50",
+    "retrieved": "2026-10-21",
+    "status": "gap-rechecked",
+    "reason_ja": "旧ボードは HTTP 404。公式研究記事は HTTP 200。同記事がリンクする SheetBench-50 専用ボードとスコアカードも各 HTTP 404 を確認。研究記事の固定結果を継続更新のリーダーボードとして取り込まない。",
+    "sources": [
+      {
+        "url": "https://www.hud.ai/leaderboards",
+        "retrieved_at": "2026-10-21T00:42:44.034470+00:00",
+        "request_method": "GET",
+        "http_status": 404,
+        "error": "HTTP 404"
+      },
+      {
+        "url": "https://www.hud.ai/research",
+        "retrieved_at": "2026-10-21T00:42:45.770812+00:00",
+        "request_method": "GET",
+        "http_status": 200,
+        "bytes": 63488,
+        "sha256": "855164d844cfd707a0b024133475491fc6c51f17fecb017041fba1e837dc43ef",
+        "headers": {
+          "content-type": "text/html; charset=utf-8",
+          "date": "Tue, 20 Oct 2026 16:27:45 GMT"
+        },
+        "redirected": false,
+        "original_response_sha256": "15d697047fed7502ca25192777c99d7ef34f5bb73d7a35063159040142daf022",
+        "original_response_bytes": 119464,
+        "redactions": {
+          "redacted_contact_emails": 1,
+          "redacted_access_urls": 0,
+          "auxiliary_drive_urls_omitted": 0,
+          "canonicalized_google_redirect_links": 0,
+          "html_scripts_styles_comments_omitted": true
+        },
+        "snapshot": "sources/audits/2026-10-21/webcomputer-responses.tar.gz",
+        "archive_member": "08a7ece95575e41d.response",
+        "compression": "tar.gz"
+      },
+      {
+        "url": "https://www.hud.ai/research/sheetbench-50",
+        "retrieved_at": "2026-10-21T00:47:57.117328+00:00",
+        "request_method": "GET",
+        "http_status": 200,
+        "bytes": 94398,
+        "sha256": "4e19178f9aa75c3b39805ca1f113a49a8eab3a3defd63ffb658d90a83bc1fe73",
+        "headers": {
+          "content-type": "text/html; charset=utf-8",
+          "date": "Tue, 20 Oct 2026 16:42:15 GMT"
+        },
+        "redirected": false,
+        "original_response_sha256": "9cf68df6b9ec25989f7c916c0e42c36419da30530557d3b5e5b65a4c0d724749",
+        "original_response_bytes": 181919,
+        "redactions": {
+          "redacted_contact_emails": 3,
+          "redacted_access_urls": 0,
+          "auxiliary_drive_urls_omitted": 0,
+          "canonicalized_google_redirect_links": 0,
+          "html_scripts_styles_comments_omitted": true
+        },
+        "snapshot": "sources/audits/2026-10-21/webcomputer-responses.tar.gz",
+        "archive_member": "28029ee146d1485c.response",
+        "compression": "tar.gz"
+      },
+      {
+        "url": "https://www.hud.ai/leaderboards/hud-evals/SheetBench-50",
+        "retrieved_at": "2026-10-21T00:49:35.174281+00:00",
+        "request_method": "GET",
+        "http_status": 404,
+        "error": "HTTP 404"
+      },
+      {
+        "url": "https://www.hud.ai/leaderboards/hud-evals/SheetBench-50?scorecard=19c2f4b7-ea8a-4c2b-866f-20ae57976d13",
+        "retrieved_at": "2026-10-21T00:49:39.330697+00:00",
+        "request_method": "GET",
+        "http_status": 404,
+        "error": "HTTP 404"
+      }
+    ]
+  },
+  {
+    "id": "browsecomp",
+    "retrieved": "2026-10-21",
+    "status": "gap-rechecked",
+    "reason_ja": "公式紹介ページと simple-evals を取得。README は10月18日取得分と全バイト一致し、新規モデル・結果の追加終了の記載を維持。Kaggle versionId=35 の全42行は別表で変化なし。紹介ページ・固定研究結果を公式エージェントボードに統合しない。",
+    "sources": [
+      {
+        "url": "https://openai.com/index/browsecomp/",
+        "retrieved_at": "2026-10-21T00:42:37.018591+00:00",
+        "request_method": "GET",
+        "http_status": 200,
+        "bytes": 122580,
+        "sha256": "fedd7c2e0480347238f84485a4d5705cb9963c9925fc97f158878e6cdb8ab3e3",
+        "headers": {
+          "date": "Wed, 21 Oct 2026 00:42:40 GMT",
+          "content-type": "text/html; charset=utf-8"
+        },
+        "redirected": false,
+        "original_response_sha256": "cec1f7f93a575fefba6c1018abd8708aa6bb371837d275476aca6b975dc86121",
+        "original_response_bytes": 507169,
+        "redactions": {
+          "redacted_contact_emails": 0,
+          "redacted_access_urls": 0,
+          "auxiliary_drive_urls_omitted": 0,
+          "canonicalized_google_redirect_links": 0,
+          "html_scripts_styles_comments_omitted": true
+        },
+        "snapshot": "sources/audits/2026-10-21/webcomputer-responses.tar.gz",
+        "archive_member": "785eca3e6476b4a3.response",
+        "compression": "tar.gz"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openai/simple-evals/main/README.md",
+        "retrieved_at": "2026-10-21T00:42:41.578882+00:00",
+        "request_method": "GET",
+        "http_status": 200,
+        "bytes": 13160,
+        "sha256": "d9647c4a0e34cd9b2b528ff6986141734aac6f5f2f18a068eeadb2af0b29786f",
+        "headers": {
+          "content-type": "text/plain; charset=utf-8",
+          "etag": "\"3e47b01c90635a0f612b5468e317f9d49a0896f417f287ecdfd73f8e77f6f9cd\"",
+          "date": "Wed, 21 Oct 2026 00:42:43 GMT"
+        },
+        "redirected": false,
+        "snapshot": "sources/audits/2026-10-21/webcomputer-responses.tar.gz",
+        "archive_member": "ac4e1a9e09bf0ace.response",
+        "compression": "tar.gz"
+      },
+      {
+        "url": "https://www.kaggle.com/api/i/benchmarks.BenchmarkService/GetBenchmarkLeaderboard",
+        "retrieved_at": "2026-10-21T00:42:45.786444+00:00",
+        "request_method": "POST",
+        "request_json": {
+          "versionIdentifier": {
+            "versionIdSelector": {
+              "id": 35
+            }
+          }
+        },
+        "http_status": 200,
+        "bytes": 59785,
+        "sha256": "44f7f215e448f67bdcd6b31a19c6a7fbf676988f5223381a237e8aec600dfc49",
+        "headers": {
+          "content-type": "application/json",
+          "date": "Wed, 21 Oct 2026 00:42:49 GMT"
+        },
+        "redirected": false,
+        "snapshot": "sources/audits/2026-10-21/webcomputer-responses.tar.gz",
+        "archive_member": "b0da3ecade59fddd.response",
+        "compression": "tar.gz"
+      }
+    ]
+  }
+]

@@ -1,0 +1,1307 @@
+[
+ {
+  "id": "apex-agents",
+  "rows_before": 56,
+  "rows_after": 60,
+  "added": [
+   {
+    "rank": 27,
+    "system": "DeepSeek-V4.1-Flash-1017",
+    "agent": "Loop",
+    "model_raw": [
+     "DeepSeek-V4.1-Flash-1017"
+    ],
+    "model_ids": [
+     "deepseek-v4.1-flash-1017"
+    ],
+    "model_config": "effort: max; model_id: deepseek-v4-1-flash-1017",
+    "score": 66.2,
+    "score_extra": {
+     "pass_at_1": 56.7,
+     "mean_score_error": 4.4,
+     "pass_at_1_error": 5.1,
+     "n_samples": 956
+    },
+    "date": null,
+    "verified": null,
+    "open_source": null,
+    "org": "DeepSeek",
+    "row_url": null
+   },
+   {
+    "rank": 34,
+    "system": "Mercury 3",
+    "agent": "Loop",
+    "model_raw": [
+     "Mercury 3"
+    ],
+    "model_ids": [
+     "mercury-3"
+    ],
+    "model_config": "effort: high; model_id: inception/mercury-3",
+    "score": 62.9,
+    "score_extra": {
+     "pass_at_1": 50.2,
+     "mean_score_error": 4.8,
+     "pass_at_1_error": 5.6,
+     "n_samples": 855
+    },
+    "date": "2026-10-19",
+    "verified": null,
+    "open_source": null,
+    "org": "Inception",
+    "row_url": null
+   },
+   {
+    "rank": 35,
+    "system": "Beam",
+    "agent": "Loop",
+    "model_raw": [
+     "Beam"
+    ],
+    "model_ids": [
+     "beam-1.0"
+    ],
+    "model_config": "effort: max; model_id: beam-1-0-max",
+    "score": 62.5,
+    "score_extra": {
+     "pass_at_1": 48.8,
+     "mean_score_error": 4.4,
+     "pass_at_1_error": 5.1,
+     "n_samples": 952
+    },
+    "date": "2026-10-05",
+    "verified": null,
+    "open_source": null,
+    "org": "Reflection",
+    "row_url": null
+   },
+   {
+    "rank": 53,
+    "system": "Muse Spark Open",
+    "agent": "Loop",
+    "model_raw": [
+     "Muse Spark Open"
+    ],
+    "model_ids": [
+     "muse-spark-open"
+    ],
+    "model_config": "effort: xhigh; model_id: muse-spark-open",
+    "score": 48.7,
+    "score_extra": {
+     "pass_at_1": 33.4,
+     "mean_score_error": 5.1,
+     "pass_at_1_error": 5.3,
+     "n_samples": 956
+    },
+    "date": null,
+    "verified": null,
+    "open_source": null,
+    "org": "Meta",
+    "row_url": null
+   }
+  ],
+  "removed": [],
+  "existing_nonrank_changes": [
+   {
+    "source_model_id": "mimo-v2.6-pro",
+    "system": "MiMo V2.6 Pro",
+    "fields": {
+     "score": {
+      "before": 71.1,
+      "after": 65.3
+     },
+     "score_extra": {
+      "before": {
+       "pass_at_1": 59.5,
+       "mean_score_error": 4.4,
+       "pass_at_1_error": 5.2,
+       "n_samples": 864
+      },
+      "after": {
+       "pass_at_1": 54.4,
+       "mean_score_error": 4.6,
+       "pass_at_1_error": 5.2,
+       "n_samples": 960
+      }
+     }
+    }
+   },
+   {
+    "source_model_id": "kimi-k3",
+    "system": "Kimi K3",
+    "fields": {
+     "score": {
+      "before": 64,
+      "after": 62.2
+     },
+     "score_extra": {
+      "before": {
+       "pass_at_1": 50.6,
+       "mean_score_error": 4.3,
+       "pass_at_1_error": 5.1,
+       "n_samples": 960
+      },
+      "after": {
+       "pass_at_1": 47.8,
+       "mean_score_error": 4.4,
+       "pass_at_1_error": 5.2,
+       "n_samples": 960
+      }
+     }
+    }
+   },
+   {
+    "source_model_id": "gemini-3.1-pro-preview-high",
+    "system": "Gemini 3.1 Pro",
+    "fields": {
+     "score": {
+      "before": 52.5,
+      "after": 52.2
+     },
+     "score_extra": {
+      "before": {
+       "pass_at_1": 35.3,
+       "mean_score_error": 4.6,
+       "pass_at_1_error": 5,
+       "n_samples": 947
+      },
+      "after": {
+       "pass_at_1": 35.1,
+       "mean_score_error": 4.7,
+       "pass_at_1_error": 5,
+       "n_samples": 960
+      }
+     }
+    }
+   },
+   {
+    "source_model_id": "muse-spark-1-2",
+    "system": "Muse Spark 1.2",
+    "fields": {
+     "score": {
+      "before": 51.7,
+      "after": 59.8
+     },
+     "score_extra": {
+      "before": {
+       "pass_at_1": 36.4,
+       "mean_score_error": 4.9,
+       "pass_at_1_error": 5.2,
+       "n_samples": 960
+      },
+      "after": {
+       "pass_at_1": 45.4,
+       "mean_score_error": 4.5,
+       "pass_at_1_error": 5,
+       "n_samples": 960
+      }
+     }
+    }
+   },
+   {
+    "source_model_id": "deepseek-v4-1-flash",
+    "system": "DeepSeek-V4.1-Flash",
+    "fields": {
+     "score": {
+      "before": 50.4,
+      "after": 50.5
+     }
+    }
+   }
+  ],
+  "comparison_scope": {
+   "version": "APEX-Agents v1.1",
+   "harness": "loop_truncated_tools_agent",
+   "metric": "mean-score",
+   "secondary_metric": "pass-1",
+   "tasks": 240,
+   "domain": "overall",
+   "date_semantics": "source release_date; empty values remain null"
+  }
+ },
+ {
+  "id": "apex-agents-corporate-lawyer",
+  "rows_before": 56,
+  "rows_after": 60,
+  "added": [
+   {
+    "rank": 28,
+    "system": "Muse Spark Open",
+    "agent": "Loop",
+    "model_raw": [
+     "Muse Spark Open"
+    ],
+    "model_ids": [
+     "muse-spark-open"
+    ],
+    "model_config": "effort: xhigh; model_id: muse-spark-open",
+    "score": 80.3,
+    "score_extra": {
+     "pass_at_1": 59.8
+    },
+    "date": null,
+    "verified": null,
+    "open_source": null,
+    "org": "Meta",
+    "row_url": null
+   },
+   {
+    "rank": 38,
+    "system": "Mercury 3",
+    "agent": "Loop",
+    "model_raw": [
+     "Mercury 3"
+    ],
+    "model_ids": [
+     "mercury-3"
+    ],
+    "model_config": "effort: high; model_id: inception/mercury-3",
+    "score": 78.4,
+    "score_extra": {
+     "pass_at_1": 60.1
+    },
+    "date": "2026-10-19",
+    "verified": null,
+    "open_source": null,
+    "org": "Inception",
+    "row_url": null
+   },
+   {
+    "rank": 44,
+    "system": "Beam",
+    "agent": "Loop",
+    "model_raw": [
+     "Beam"
+    ],
+    "model_ids": [
+     "beam-1.0"
+    ],
+    "model_config": "effort: max; model_id: beam-1-0-max",
+    "score": 76.9,
+    "score_extra": {
+     "pass_at_1": 55.1
+    },
+    "date": "2026-10-05",
+    "verified": null,
+    "open_source": null,
+    "org": "Reflection",
+    "row_url": null
+   },
+   {
+    "rank": 45,
+    "system": "DeepSeek-V4.1-Flash-1017",
+    "agent": "Loop",
+    "model_raw": [
+     "DeepSeek-V4.1-Flash-1017"
+    ],
+    "model_ids": [
+     "deepseek-v4.1-flash-1017"
+    ],
+    "model_config": "effort: max; model_id: deepseek-v4-1-flash-1017",
+    "score": 76.9,
+    "score_extra": {
+     "pass_at_1": 60.4
+    },
+    "date": null,
+    "verified": null,
+    "open_source": null,
+    "org": "DeepSeek",
+    "row_url": null
+   }
+  ],
+  "removed": [],
+  "existing_nonrank_changes": [
+   {
+    "source_model_id": "mimo-v2.6-pro",
+    "system": "MiMo V2.6 Pro",
+    "fields": {
+     "score": {
+      "before": 80.4,
+      "after": 75.2
+     },
+     "score_extra": {
+      "before": {
+       "pass_at_1": 63.5
+      },
+      "after": {
+       "pass_at_1": 59.1
+      }
+     }
+    }
+   },
+   {
+    "source_model_id": "muse-spark-1-2",
+    "system": "Muse Spark 1.2",
+    "fields": {
+     "score": {
+      "before": 80.1,
+      "after": 80.5
+     },
+     "score_extra": {
+      "before": {
+       "pass_at_1": 62.2
+      },
+      "after": {
+       "pass_at_1": 61.6
+      }
+     }
+    }
+   },
+   {
+    "source_model_id": "kimi-k3",
+    "system": "Kimi K3",
+    "fields": {
+     "score": {
+      "before": 78.4,
+      "after": 77.6
+     },
+     "score_extra": {
+      "before": {
+       "pass_at_1": 61.3
+      },
+      "after": {
+       "pass_at_1": 60
+      }
+     }
+    }
+   }
+  ],
+  "comparison_scope": {
+   "version": "APEX-Agents v1.1",
+   "harness": "loop_truncated_tools_agent",
+   "metric": "mean-score",
+   "secondary_metric": "pass-1",
+   "tasks": 80,
+   "domain": "corporate-lawyer-agent",
+   "date_semantics": "source release_date; empty values remain null"
+  }
+ },
+ {
+  "id": "apex-agents-investment-banking",
+  "rows_before": 56,
+  "rows_after": 60,
+  "added": [
+   {
+    "rank": 23,
+    "system": "DeepSeek-V4.1-Flash-1017",
+    "agent": "Loop",
+    "model_raw": [
+     "DeepSeek-V4.1-Flash-1017"
+    ],
+    "model_ids": [
+     "deepseek-v4.1-flash-1017"
+    ],
+    "model_config": "effort: max; model_id: deepseek-v4-1-flash-1017",
+    "score": 60.3,
+    "score_extra": {
+     "pass_at_1": 57.2
+    },
+    "date": null,
+    "verified": null,
+    "open_source": null,
+    "org": "DeepSeek",
+    "row_url": null
+   },
+   {
+    "rank": 33,
+    "system": "Beam",
+    "agent": "Loop",
+    "model_raw": [
+     "Beam"
+    ],
+    "model_ids": [
+     "beam-1.0"
+    ],
+    "model_config": "effort: max; model_id: beam-1-0-max",
+    "score": 53.6,
+    "score_extra": {
+     "pass_at_1": 48.1
+    },
+    "date": "2026-10-05",
+    "verified": null,
+    "open_source": null,
+    "org": "Reflection",
+    "row_url": null
+   },
+   {
+    "rank": 36,
+    "system": "Mercury 3",
+    "agent": "Loop",
+    "model_raw": [
+     "Mercury 3"
+    ],
+    "model_ids": [
+     "mercury-3"
+    ],
+    "model_config": "effort: high; model_id: inception/mercury-3",
+    "score": 51.4,
+    "score_extra": {
+     "pass_at_1": 46.2
+    },
+    "date": "2026-10-19",
+    "verified": null,
+    "open_source": null,
+    "org": "Inception",
+    "row_url": null
+   },
+   {
+    "rank": 54,
+    "system": "Muse Spark Open",
+    "agent": "Loop",
+    "model_raw": [
+     "Muse Spark Open"
+    ],
+    "model_ids": [
+     "muse-spark-open"
+    ],
+    "model_config": "effort: xhigh; model_id: muse-spark-open",
+    "score": 27.4,
+    "score_extra": {
+     "pass_at_1": 19.7
+    },
+    "date": null,
+    "verified": null,
+    "open_source": null,
+    "org": "Meta",
+    "row_url": null
+   }
+  ],
+  "removed": [],
+  "existing_nonrank_changes": [
+   {
+    "source_model_id": "mimo-v2.6-pro",
+    "system": "MiMo V2.6 Pro",
+    "fields": {
+     "score": {
+      "before": 63.7,
+      "after": 54.5
+     },
+     "score_extra": {
+      "before": {
+       "pass_at_1": 58.7
+      },
+      "after": {
+       "pass_at_1": 50
+      }
+     }
+    }
+   },
+   {
+    "source_model_id": "kimi-k3",
+    "system": "Kimi K3",
+    "fields": {
+     "score": {
+      "before": 56.5,
+      "after": 50.6
+     },
+     "score_extra": {
+      "before": {
+       "pass_at_1": 50.3
+      },
+      "after": {
+       "pass_at_1": 44.1
+      }
+     }
+    }
+   },
+   {
+    "source_model_id": "gemini-3.1-pro-preview-high",
+    "system": "Gemini 3.1 Pro",
+    "fields": {
+     "score": {
+      "before": 45.2,
+      "after": 44.6
+     },
+     "score_extra": {
+      "before": {
+       "pass_at_1": 38
+      },
+      "after": {
+       "pass_at_1": 37.5
+      }
+     }
+    }
+   },
+   {
+    "source_model_id": "deepseek-v4-1-flash",
+    "system": "DeepSeek-V4.1-Flash",
+    "fields": {
+     "score": {
+      "before": 43.2,
+      "after": 43.3
+     }
+    }
+   },
+   {
+    "source_model_id": "muse-spark-1-2",
+    "system": "Muse Spark 1.2",
+    "fields": {
+     "score": {
+      "before": 31.5,
+      "after": 44.1
+     },
+     "score_extra": {
+      "before": {
+       "pass_at_1": 23.4
+      },
+      "after": {
+       "pass_at_1": 36.2
+      }
+     }
+    }
+   }
+  ],
+  "comparison_scope": {
+   "version": "APEX-Agents v1.1",
+   "harness": "loop_truncated_tools_agent",
+   "metric": "mean-score",
+   "secondary_metric": "pass-1",
+   "tasks": 80,
+   "domain": "investment-banking-analyst-agent",
+   "date_semantics": "source release_date; empty values remain null"
+  }
+ },
+ {
+  "id": "apex-agents-management-consultant",
+  "rows_before": 56,
+  "rows_after": 60,
+  "added": [
+   {
+    "rank": 25,
+    "system": "DeepSeek-V4.1-Flash-1017",
+    "agent": "Loop",
+    "model_raw": [
+     "DeepSeek-V4.1-Flash-1017"
+    ],
+    "model_ids": [
+     "deepseek-v4.1-flash-1017"
+    ],
+    "model_config": "effort: max; model_id: deepseek-v4-1-flash-1017",
+    "score": 61.6,
+    "score_extra": {
+     "pass_at_1": 52.5
+    },
+    "date": null,
+    "verified": null,
+    "open_source": null,
+    "org": "DeepSeek",
+    "row_url": null
+   },
+   {
+    "rank": 32,
+    "system": "Mercury 3",
+    "agent": "Loop",
+    "model_raw": [
+     "Mercury 3"
+    ],
+    "model_ids": [
+     "mercury-3"
+    ],
+    "model_config": "effort: high; model_id: inception/mercury-3",
+    "score": 57.5,
+    "score_extra": {
+     "pass_at_1": 42.1
+    },
+    "date": "2026-10-19",
+    "verified": null,
+    "open_source": null,
+    "org": "Inception",
+    "row_url": null
+   },
+   {
+    "rank": 33,
+    "system": "Beam",
+    "agent": "Loop",
+    "model_raw": [
+     "Beam"
+    ],
+    "model_ids": [
+     "beam-1.0"
+    ],
+    "model_config": "effort: max; model_id: beam-1-0-max",
+    "score": 57.4,
+    "score_extra": {
+     "pass_at_1": 43.4
+    },
+    "date": "2026-10-05",
+    "verified": null,
+    "open_source": null,
+    "org": "Reflection",
+    "row_url": null
+   },
+   {
+    "rank": 52,
+    "system": "Muse Spark Open",
+    "agent": "Loop",
+    "model_raw": [
+     "Muse Spark Open"
+    ],
+    "model_ids": [
+     "muse-spark-open"
+    ],
+    "model_config": "effort: xhigh; model_id: muse-spark-open",
+    "score": 38.7,
+    "score_extra": {
+     "pass_at_1": 20.9
+    },
+    "date": null,
+    "verified": null,
+    "open_source": null,
+    "org": "Meta",
+    "row_url": null
+   }
+  ],
+  "removed": [],
+  "existing_nonrank_changes": [
+   {
+    "source_model_id": "mimo-v2.6-pro",
+    "system": "MiMo V2.6 Pro",
+    "fields": {
+     "score": {
+      "before": 68.9,
+      "after": 66.2
+     },
+     "score_extra": {
+      "before": {
+       "pass_at_1": 56.2
+      },
+      "after": {
+       "pass_at_1": 54.1
+      }
+     }
+    }
+   },
+   {
+    "source_model_id": "kimi-k3",
+    "system": "Kimi K3",
+    "fields": {
+     "score": {
+      "before": 56.9,
+      "after": 58.5
+     },
+     "score_extra": {
+      "before": {
+       "pass_at_1": 40.3
+      },
+      "after": {
+       "pass_at_1": 39.4
+      }
+     }
+    }
+   },
+   {
+    "source_model_id": "muse-spark-1-2",
+    "system": "Muse Spark 1.2",
+    "fields": {
+     "score": {
+      "before": 43.5,
+      "after": 54.9
+     },
+     "score_extra": {
+      "before": {
+       "pass_at_1": 23.4
+      },
+      "after": {
+       "pass_at_1": 38.4
+      }
+     }
+    }
+   }
+  ],
+  "comparison_scope": {
+   "version": "APEX-Agents v1.1",
+   "harness": "loop_truncated_tools_agent",
+   "metric": "mean-score",
+   "secondary_metric": "pass-1",
+   "tasks": 80,
+   "domain": "management-consultant-agent",
+   "date_semantics": "source release_date; empty values remain null"
+  }
+ },
+ {
+  "id": "gaia",
+  "rows_before": 100,
+  "rows_after": 100,
+  "added": [
+   {
+    "rank": 41,
+    "system": "1020-9",
+    "agent": null,
+    "model_raw": [],
+    "model_ids": [],
+    "model_config": null,
+    "score": 91.69,
+    "score_extra": {
+     "level1": 95.7,
+     "level2": 91.19,
+     "level3": 85.71
+    },
+    "date": "2026-10-20",
+    "verified": null,
+    "open_source": null,
+    "org": null,
+    "row_url": null
+   },
+   {
+    "rank": 47,
+    "system": "1020-8",
+    "agent": null,
+    "model_raw": [],
+    "model_ids": [],
+    "model_config": null,
+    "score": 91.36,
+    "score_extra": {
+     "level1": 94.62,
+     "level2": 91.19,
+     "level3": 85.71
+    },
+    "date": "2026-10-20",
+    "verified": null,
+    "open_source": null,
+    "org": null,
+    "row_url": null
+   },
+   {
+    "rank": 48,
+    "system": "1020-6",
+    "agent": null,
+    "model_raw": [],
+    "model_ids": [],
+    "model_config": null,
+    "score": 91.36,
+    "score_extra": {
+     "level1": 94.62,
+     "level2": 91.19,
+     "level3": 85.71
+    },
+    "date": "2026-10-20",
+    "verified": null,
+    "open_source": null,
+    "org": null,
+    "row_url": null
+   },
+   {
+    "rank": 54,
+    "system": "1020-4",
+    "agent": null,
+    "model_raw": [],
+    "model_ids": [],
+    "model_config": null,
+    "score": 91.03,
+    "score_extra": {
+     "level1": 94.62,
+     "level2": 91.19,
+     "level3": 83.67
+    },
+    "date": "2026-10-20",
+    "verified": null,
+    "open_source": null,
+    "org": null,
+    "row_url": null
+   },
+   {
+    "rank": 57,
+    "system": "1020-7",
+    "agent": null,
+    "model_raw": [],
+    "model_ids": [],
+    "model_config": null,
+    "score": 91.03,
+    "score_extra": {
+     "level1": 93.55,
+     "level2": 91.19,
+     "level3": 85.71
+    },
+    "date": "2026-10-20",
+    "verified": null,
+    "open_source": null,
+    "org": null,
+    "row_url": null
+   },
+   {
+    "rank": 67,
+    "system": "1019-9",
+    "agent": null,
+    "model_raw": [],
+    "model_ids": [],
+    "model_config": null,
+    "score": 90.7,
+    "score_extra": {
+     "level1": 94.62,
+     "level2": 90.57,
+     "level3": 83.67
+    },
+    "date": "2026-10-19",
+    "verified": null,
+    "open_source": null,
+    "org": null,
+    "row_url": null
+   },
+   {
+    "rank": 84,
+    "system": "1019-6",
+    "agent": null,
+    "model_raw": [],
+    "model_ids": [],
+    "model_config": null,
+    "score": 90.37,
+    "score_extra": {
+     "level1": 94.62,
+     "level2": 89.94,
+     "level3": 83.67
+    },
+    "date": "2026-10-19",
+    "verified": null,
+    "open_source": null,
+    "org": null,
+    "row_url": null
+   },
+   {
+    "rank": 85,
+    "system": "1020-1",
+    "agent": null,
+    "model_raw": [],
+    "model_ids": [],
+    "model_config": null,
+    "score": 90.37,
+    "score_extra": {
+     "level1": 93.55,
+     "level2": 90.57,
+     "level3": 83.67
+    },
+    "date": "2026-10-20",
+    "verified": null,
+    "open_source": null,
+    "org": null,
+    "row_url": null
+   },
+   {
+    "rank": 86,
+    "system": "1020-5",
+    "agent": null,
+    "model_raw": [],
+    "model_ids": [],
+    "model_config": null,
+    "score": 90.37,
+    "score_extra": {
+     "level1": 93.55,
+     "level2": 90.57,
+     "level3": 83.67
+    },
+    "date": "2026-10-20",
+    "verified": null,
+    "open_source": null,
+    "org": null,
+    "row_url": null
+   },
+   {
+    "rank": 87,
+    "system": "1020-2",
+    "agent": null,
+    "model_raw": [],
+    "model_ids": [],
+    "model_config": null,
+    "score": 90.37,
+    "score_extra": {
+     "level1": 93.55,
+     "level2": 90.57,
+     "level3": 83.67
+    },
+    "date": "2026-10-20",
+    "verified": null,
+    "open_source": null,
+    "org": null,
+    "row_url": null
+   },
+   {
+    "rank": 88,
+    "system": "1020-3",
+    "agent": null,
+    "model_raw": [],
+    "model_ids": [],
+    "model_config": null,
+    "score": 90.37,
+    "score_extra": {
+     "level1": 93.55,
+     "level2": 90.57,
+     "level3": 83.67
+    },
+    "date": "2026-10-20",
+    "verified": null,
+    "open_source": null,
+    "org": null,
+    "row_url": null
+   },
+   {
+    "rank": 89,
+    "system": "1019-4",
+    "agent": null,
+    "model_raw": [],
+    "model_ids": [],
+    "model_config": null,
+    "score": 90.03,
+    "score_extra": {
+     "level1": 94.62,
+     "level2": 89.94,
+     "level3": 81.63
+    },
+    "date": "2026-10-19",
+    "verified": null,
+    "open_source": null,
+    "org": null,
+    "row_url": null
+   },
+   {
+    "rank": 90,
+    "system": "1019-5",
+    "agent": null,
+    "model_raw": [],
+    "model_ids": [],
+    "model_config": null,
+    "score": 90.03,
+    "score_extra": {
+     "level1": 94.62,
+     "level2": 89.94,
+     "level3": 81.63
+    },
+    "date": "2026-10-19",
+    "verified": null,
+    "open_source": null,
+    "org": null,
+    "row_url": null
+   },
+   {
+    "rank": 99,
+    "system": "1019-7",
+    "agent": null,
+    "model_raw": [],
+    "model_ids": [],
+    "model_config": null,
+    "score": 90.03,
+    "score_extra": {
+     "level1": 94.62,
+     "level2": 89.31,
+     "level3": 83.67
+    },
+    "date": "2026-10-19",
+    "verified": null,
+    "open_source": null,
+    "org": null,
+    "row_url": null
+   }
+  ],
+  "removed_from_current_top100": [
+   {
+    "rank": 79,
+    "system": "Deep_Ensemble_1.0",
+    "agent": null,
+    "model_raw": [
+     "GPT 5.5",
+     "Claude"
+    ],
+    "model_ids": [],
+    "model_config": null,
+    "score": 90.03,
+    "score_extra": {
+     "level1": 96.77,
+     "level2": 87.42,
+     "level3": 85.71
+    },
+    "date": "2026-06-23",
+    "verified": null,
+    "open_source": null,
+    "org": "0",
+    "row_url": null
+   },
+   {
+    "rank": 88,
+    "system": "SHAPARTNER V8",
+    "agent": null,
+    "model_raw": [
+     "GPT"
+    ],
+    "model_ids": [],
+    "model_config": null,
+    "score": 89.7,
+    "score_extra": {
+     "level1": 95.7,
+     "level2": 89.31,
+     "level3": 79.59
+    },
+    "date": "2026-09-20",
+    "verified": null,
+    "open_source": null,
+    "org": "SHAPARTNER ",
+    "row_url": null
+   },
+   {
+    "rank": 89,
+    "system": "CustomGPT.ai Research Lab v24",
+    "agent": null,
+    "model_raw": [
+     "claude",
+     "gemini",
+     "gpt"
+    ],
+    "model_ids": [],
+    "model_config": null,
+    "score": 89.7,
+    "score_extra": {
+     "level1": 96.77,
+     "level2": 87.42,
+     "level3": 83.67
+    },
+    "date": "2026-05-14",
+    "verified": null,
+    "open_source": null,
+    "org": "CustomGPT.ai",
+    "row_url": null
+   },
+   {
+    "rank": 90,
+    "system": "SHAPARTNER V5",
+    "agent": null,
+    "model_raw": [
+     "Claude"
+    ],
+    "model_ids": [],
+    "model_config": null,
+    "score": 89.7,
+    "score_extra": {
+     "level1": 95.7,
+     "level2": 89.31,
+     "level3": 79.59
+    },
+    "date": "2026-09-20",
+    "verified": null,
+    "open_source": null,
+    "org": "SHAPARTNER ",
+    "row_url": null
+   },
+   {
+    "rank": 91,
+    "system": "SHADOW HARNESS",
+    "agent": null,
+    "model_raw": [
+     "CLAUDE GPT"
+    ],
+    "model_ids": [],
+    "model_config": null,
+    "score": 89.7,
+    "score_extra": {
+     "level1": 95.7,
+     "level2": 89.94,
+     "level3": 77.55
+    },
+    "date": "2026-09-13",
+    "verified": null,
+    "open_source": null,
+    "org": null,
+    "row_url": null
+   },
+   {
+    "rank": 92,
+    "system": "Shadow Harness V4",
+    "agent": null,
+    "model_raw": [
+     "GPT CLAUDE GEMINI DEEPSEEK"
+    ],
+    "model_ids": [],
+    "model_config": null,
+    "score": 89.7,
+    "score_extra": {
+     "level1": 94.62,
+     "level2": 89.94,
+     "level3": 79.59
+    },
+    "date": "2026-09-14",
+    "verified": null,
+    "open_source": null,
+    "org": "Shadow",
+    "row_url": null
+   },
+   {
+    "rank": 93,
+    "system": "Shapartner V7",
+    "agent": null,
+    "model_raw": [
+     "GPT"
+    ],
+    "model_ids": [],
+    "model_config": null,
+    "score": 89.7,
+    "score_extra": {
+     "level1": 95.7,
+     "level2": 89.31,
+     "level3": 79.59
+    },
+    "date": "2026-09-20",
+    "verified": null,
+    "open_source": null,
+    "org": "Shapartner ",
+    "row_url": null
+   },
+   {
+    "rank": 94,
+    "system": "SHAPARTNER V3",
+    "agent": null,
+    "model_raw": [
+     "CLAUDE GPT"
+    ],
+    "model_ids": [],
+    "model_config": null,
+    "score": 89.7,
+    "score_extra": {
+     "level1": 94.62,
+     "level2": 89.94,
+     "level3": 79.59
+    },
+    "date": "2026-09-13",
+    "verified": null,
+    "open_source": null,
+    "org": "SHAPARTNER",
+    "row_url": null
+   },
+   {
+    "rank": 95,
+    "system": "SHADOW HARNESS V3",
+    "agent": null,
+    "model_raw": [
+     "CLAUDE GPT"
+    ],
+    "model_ids": [],
+    "model_config": null,
+    "score": 89.7,
+    "score_extra": {
+     "level1": 95.7,
+     "level2": 89.94,
+     "level3": 77.55
+    },
+    "date": "2026-09-14",
+    "verified": null,
+    "open_source": null,
+    "org": "SHADOW",
+    "row_url": null
+   },
+   {
+    "rank": 96,
+    "system": "Cobra Agent_v2.26",
+    "agent": null,
+    "model_raw": [
+     "GPT 5.5"
+    ],
+    "model_ids": [
+     "gpt-5.5"
+    ],
+    "model_config": null,
+    "score": 89.7,
+    "score_extra": {
+     "level1": 94.62,
+     "level2": 88.05,
+     "level3": 85.71
+    },
+    "date": "2026-06-22",
+    "verified": null,
+    "open_source": null,
+    "org": "Dalpha Inc",
+    "row_url": null
+   },
+   {
+    "rank": 97,
+    "system": "CustomGPT.ai Research Lab v25",
+    "agent": null,
+    "model_raw": [
+     "Claude"
+    ],
+    "model_ids": [],
+    "model_config": null,
+    "score": 89.7,
+    "score_extra": {
+     "level1": 96.77,
+     "level2": 87.42,
+     "level3": 83.67
+    },
+    "date": "2026-05-14",
+    "verified": null,
+    "open_source": null,
+    "org": "CustomGPT.ai",
+    "row_url": "https://huggingface.co/Arnav3035/garuda-sql-2b"
+   },
+   {
+    "rank": 98,
+    "system": "Submit Test",
+    "agent": null,
+    "model_raw": [
+     "Claude"
+    ],
+    "model_ids": [],
+    "model_config": null,
+    "score": 89.7,
+    "score_extra": {
+     "level1": 97.85,
+     "level2": 86.16,
+     "level3": 85.71
+    },
+    "date": "2026-06-23",
+    "verified": null,
+    "open_source": null,
+    "org": "0",
+    "row_url": null
+   },
+   {
+    "rank": 99,
+    "system": "CustomGPT.ai Research Lab v23",
+    "agent": null,
+    "model_raw": [
+     "claude",
+     "gemini",
+     "gpt"
+    ],
+    "model_ids": [],
+    "model_config": null,
+    "score": 89.37,
+    "score_extra": {
+     "level1": 96.77,
+     "level2": 86.79,
+     "level3": 83.67
+    },
+    "date": "2026-05-14",
+    "verified": null,
+    "open_source": null,
+    "org": "CustomGPT.ai",
+    "row_url": null
+   },
+   {
+    "rank": 100,
+    "system": "SHAPARTNER V2",
+    "agent": null,
+    "model_raw": [
+     "Claude  GPT"
+    ],
+    "model_ids": [],
+    "model_config": null,
+    "score": 89.37,
+    "score_extra": {
+     "level1": 95.7,
+     "level2": 89.94,
+     "level3": 75.51
+    },
+    "date": "2026-09-13",
+    "verified": null,
+    "open_source": null,
+    "org": null,
+    "row_url": null
+   }
+  ],
+  "existing_nonrank_changes": [],
+  "comparison_scope": {
+   "version": "GAIA 2023",
+   "split": "test",
+   "tasks": 301,
+   "selector": "sort Average score (%) descending; head(100); scores x100 rounded to two decimals",
+   "metric": "Average score (%)",
+   "scope_note": "14 incoming and 14 outgoing rows are current-board top-100 snapshot turnover, not removed benchmark evidence or model performance improvements. Historical snapshot remains in git history. Incoming model labels are empty and remain unmapped."
+  }
+ }
+]

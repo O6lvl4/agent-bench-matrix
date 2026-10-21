@@ -468,18 +468,18 @@
    "model_id": "kimi-k3",
    "score": {
     "pass-1": {
-     "loop_truncated_tools_agent": 50.6
+     "loop_truncated_tools_agent": 47.8
     },
     "mean-score": {
-     "loop_truncated_tools_agent": 64
+     "loop_truncated_tools_agent": 62.2
     }
    },
    "error": {
     "pass-1": {
-     "loop_truncated_tools_agent": 5.1
+     "loop_truncated_tools_agent": 5.2
     },
     "mean-score": {
-     "loop_truncated_tools_agent": 4.3
+     "loop_truncated_tools_agent": 4.4
     }
    },
    "effort": "max",
@@ -671,18 +671,18 @@
    "model_id": "muse-spark-1-2",
    "score": {
     "pass-1": {
-     "loop_truncated_tools_agent": 36.4
+     "loop_truncated_tools_agent": 45.4
     },
     "mean-score": {
-     "loop_truncated_tools_agent": 51.7
+     "loop_truncated_tools_agent": 59.8
     }
    },
    "error": {
     "pass-1": {
-     "loop_truncated_tools_agent": 5.2
+     "loop_truncated_tools_agent": 5
     },
     "mean-score": {
-     "loop_truncated_tools_agent": 4.9
+     "loop_truncated_tools_agent": 4.5
     }
    },
    "effort": "xhigh",
@@ -815,10 +815,10 @@
    "model_id": "gemini-3.1-pro-preview-high",
    "score": {
     "pass-1": {
-     "loop_truncated_tools_agent": 35.3
+     "loop_truncated_tools_agent": 35.1
     },
     "mean-score": {
-     "loop_truncated_tools_agent": 52.5
+     "loop_truncated_tools_agent": 52.2
     }
    },
    "error": {
@@ -826,7 +826,7 @@
      "loop_truncated_tools_agent": 5
     },
     "mean-score": {
-     "loop_truncated_tools_agent": 4.6
+     "loop_truncated_tools_agent": 4.7
     }
    },
    "effort": "high",
@@ -837,7 +837,7 @@
    "providerName": "Google",
    "gradientStyle": "linear-gradient(to right, #8eb7ff, #468aff)",
    "release_date": "2026-02-19",
-   "n_samples": 947
+   "n_samples": 960
   },
   {
    "model_name": "Inkling",
@@ -1309,7 +1309,7 @@
      "loop_truncated_tools_agent": 39.5
     },
     "mean-score": {
-     "loop_truncated_tools_agent": 50.4
+     "loop_truncated_tools_agent": 50.5
     }
    },
    "error": {
@@ -1509,10 +1509,10 @@
    "model_id": "mimo-v2.6-pro",
    "score": {
     "pass-1": {
-     "loop_truncated_tools_agent": 59.5
+     "loop_truncated_tools_agent": 54.4
     },
     "mean-score": {
-     "loop_truncated_tools_agent": 71.1
+     "loop_truncated_tools_agent": 65.3
     }
    },
    "error": {
@@ -1520,7 +1520,7 @@
      "loop_truncated_tools_agent": 5.2
     },
     "mean-score": {
-     "loop_truncated_tools_agent": 4.4
+     "loop_truncated_tools_agent": 4.6
     }
    },
    "effort": "auto",
@@ -1531,7 +1531,7 @@
    "providerName": "Xiaomi",
    "gradientStyle": "linear-gradient(to right, #ffc29e, #ff6900)",
    "release_date": "",
-   "n_samples": 864
+   "n_samples": 960
   },
   {
    "model_name": "MiMo V2.6 Flash RL",
@@ -1648,6 +1648,122 @@
    "gradientStyle": "linear-gradient(to right, #ff9b5e, #ea6234)",
    "release_date": "2026-10-07",
    "n_samples": 959
+  },
+  {
+   "model_name": "Muse Spark Open",
+   "model_id": "muse-spark-open",
+   "score": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 33.4
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 48.7
+    }
+   },
+   "error": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 5.3
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 5.1
+    }
+   },
+   "effort": "xhigh",
+   "company": "meta",
+   "logoUrl": "https://cdn.sanity.io/images/h6s14f4z/production/9acfeac811b8266d47c46a63b3ce28b22491dfaf-20x20.svg",
+   "darkLogoUrl": null,
+   "providerColorTo": "#3281ee",
+   "providerName": "Meta",
+   "gradientStyle": "linear-gradient(to right, #7cd3ff, #3281ee)",
+   "release_date": "",
+   "n_samples": 956
+  },
+  {
+   "model_name": "Beam",
+   "model_id": "beam-1-0-max",
+   "score": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 48.8
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 62.5
+    }
+   },
+   "error": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 5.1
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 4.4
+    }
+   },
+   "effort": "max",
+   "company": "reflection",
+   "logoUrl": "https://cdn.sanity.io/images/h6s14f4z/production/80173c72ad6f17ac74dd8135c4ef77b7a41679e2-20x20.svg",
+   "darkLogoUrl": null,
+   "providerColorTo": "#dcef54",
+   "providerName": "Reflection",
+   "gradientStyle": "linear-gradient(to right, #eef7aa, #dcef54)",
+   "release_date": "2026-10-05",
+   "n_samples": 952
+  },
+  {
+   "model_name": "Mercury 3",
+   "model_id": "inception/mercury-3",
+   "score": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 50.2
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 62.9
+    }
+   },
+   "error": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 5.6
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 4.8
+    }
+   },
+   "effort": "high",
+   "company": "inception",
+   "logoUrl": "https://cdn.sanity.io/images/h6s14f4z/production/ac0a55054d9180cf7269835ea6203dd1f638a384-136x136.png",
+   "darkLogoUrl": null,
+   "providerColorTo": "4B5563",
+   "providerName": "Inception",
+   "gradientStyle": "linear-gradient(to right, 9CA3AF, 4B5563)",
+   "release_date": "2026-10-19",
+   "n_samples": 855
+  },
+  {
+   "model_name": "DeepSeek-V4.1-Flash-1017",
+   "model_id": "deepseek-v4-1-flash-1017",
+   "score": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 56.7
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 66.2
+    }
+   },
+   "error": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 5.1
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 4.4
+    }
+   },
+   "effort": "max",
+   "company": "deepseek",
+   "logoUrl": "https://cdn.sanity.io/images/h6s14f4z/production/ff33d5e41c990bfae7566b9adb61924b766d2bb8-20x20.svg",
+   "darkLogoUrl": null,
+   "providerColorTo": "#6882ff",
+   "providerName": "DeepSeek",
+   "gradientStyle": "linear-gradient(to right, #b8c4ff, #6882ff)",
+   "release_date": "",
+   "n_samples": 956
   }
  ],
  "domains": [

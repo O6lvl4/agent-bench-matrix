@@ -16,8 +16,8 @@
   "https://www.mercor.com/apex/apex-agents-leaderboard/corporate-lawyer-agent/",
   "https://www.mercor.com/blog/introducing-apex-agents-1-1"
  ],
- "retrieved": "2026-10-13",
- "newest_row_date": "2026-10-07",
+ "retrieved": "2026-10-21",
+ "newest_row_date": "2026-10-19",
  "snapshot": "sources/apex-agents-corporate-lawyer/leaderboard_data.json",
  "paper": "https://arxiv.org/abs/2601.14242",
  "repo": "https://github.com/Mercor-Intelligence/apex_loop_truncated_tools_agent",
@@ -571,27 +571,48 @@
   },
   {
    "rank": 27,
-   "system": "MiMo V2.6 Pro",
+   "system": "Muse Spark 1.2",
    "agent": "Loop",
    "model_raw": [
-    "MiMo V2.6 Pro"
+    "Muse Spark 1.2"
    ],
    "model_ids": [
-    "mimo-v2.6-pro"
+    "muse-spark-1.2"
    ],
-   "model_config": "effort: auto; model_id: mimo-v2.6-pro",
-   "score": 80.4,
+   "model_config": "effort: xhigh; model_id: muse-spark-1-2",
+   "score": 80.5,
    "score_extra": {
-    "pass_at_1": 63.5
+    "pass_at_1": 61.6
    },
-   "date": null,
+   "date": "2026-08-05",
    "verified": null,
    "open_source": null,
-   "org": "Xiaomi",
+   "org": "Meta",
    "row_url": null
   },
   {
    "rank": 28,
+   "system": "Muse Spark Open",
+   "agent": "Loop",
+   "model_raw": [
+    "Muse Spark Open"
+   ],
+   "model_ids": [
+    "muse-spark-open"
+   ],
+   "model_config": "effort: xhigh; model_id: muse-spark-open",
+   "score": 80.3,
+   "score_extra": {
+    "pass_at_1": 59.8
+   },
+   "date": null,
+   "verified": null,
+   "open_source": null,
+   "org": "Meta",
+   "row_url": null
+  },
+  {
+   "rank": 29,
    "system": "Grok 4.5",
    "agent": "Loop",
    "model_raw": [
@@ -609,27 +630,6 @@
    "verified": null,
    "open_source": null,
    "org": "xAI",
-   "row_url": null
-  },
-  {
-   "rank": 29,
-   "system": "Muse Spark 1.2",
-   "agent": "Loop",
-   "model_raw": [
-    "Muse Spark 1.2"
-   ],
-   "model_ids": [
-    "muse-spark-1.2"
-   ],
-   "model_config": "effort: xhigh; model_id: muse-spark-1-2",
-   "score": 80.1,
-   "score_extra": {
-    "pass_at_1": 62.2
-   },
-   "date": "2026-08-05",
-   "verified": null,
-   "open_source": null,
-   "org": "Meta",
    "row_url": null
   },
   {
@@ -802,23 +802,23 @@
   },
   {
    "rank": 38,
-   "system": "Kimi K3",
+   "system": "Mercury 3",
    "agent": "Loop",
    "model_raw": [
-    "Kimi K3"
+    "Mercury 3"
    ],
    "model_ids": [
-    "kimi-k3"
+    "mercury-3"
    ],
-   "model_config": "effort: max; model_id: kimi-k3",
+   "model_config": "effort: high; model_id: inception/mercury-3",
    "score": 78.4,
    "score_extra": {
-    "pass_at_1": 61.3
+    "pass_at_1": 60.1
    },
-   "date": "2026-07-27",
+   "date": "2026-10-19",
    "verified": null,
    "open_source": null,
-   "org": "Kimi",
+   "org": "Inception",
    "row_url": null
   },
   {
@@ -865,6 +865,27 @@
   },
   {
    "rank": 41,
+   "system": "Kimi K3",
+   "agent": "Loop",
+   "model_raw": [
+    "Kimi K3"
+   ],
+   "model_ids": [
+    "kimi-k3"
+   ],
+   "model_config": "effort: max; model_id: kimi-k3",
+   "score": 77.6,
+   "score_extra": {
+    "pass_at_1": 60
+   },
+   "date": "2026-07-27",
+   "verified": null,
+   "open_source": null,
+   "org": "Kimi",
+   "row_url": null
+  },
+  {
+   "rank": 42,
    "system": "Haiku 5.5",
    "agent": "Loop",
    "model_raw": [
@@ -885,7 +906,7 @@
    "row_url": null
   },
   {
-   "rank": 42,
+   "rank": 43,
    "system": "GPT-6 Luna",
    "agent": "Loop",
    "model_raw": [
@@ -906,7 +927,49 @@
    "row_url": null
   },
   {
-   "rank": 43,
+   "rank": 44,
+   "system": "Beam",
+   "agent": "Loop",
+   "model_raw": [
+    "Beam"
+   ],
+   "model_ids": [
+    "beam-1.0"
+   ],
+   "model_config": "effort: max; model_id: beam-1-0-max",
+   "score": 76.9,
+   "score_extra": {
+    "pass_at_1": 55.1
+   },
+   "date": "2026-10-05",
+   "verified": null,
+   "open_source": null,
+   "org": "Reflection",
+   "row_url": null
+  },
+  {
+   "rank": 45,
+   "system": "DeepSeek-V4.1-Flash-1017",
+   "agent": "Loop",
+   "model_raw": [
+    "DeepSeek-V4.1-Flash-1017"
+   ],
+   "model_ids": [
+    "deepseek-v4.1-flash-1017"
+   ],
+   "model_config": "effort: max; model_id: deepseek-v4-1-flash-1017",
+   "score": 76.9,
+   "score_extra": {
+    "pass_at_1": 60.4
+   },
+   "date": null,
+   "verified": null,
+   "open_source": null,
+   "org": "DeepSeek",
+   "row_url": null
+  },
+  {
+   "rank": 46,
    "system": "Grok 4.7",
    "agent": "Loop",
    "model_raw": [
@@ -927,7 +990,7 @@
    "row_url": null
   },
   {
-   "rank": 44,
+   "rank": 47,
    "system": "Sonnet 4.6",
    "agent": "Loop",
    "model_raw": [
@@ -948,7 +1011,7 @@
    "row_url": null
   },
   {
-   "rank": 45,
+   "rank": 48,
    "system": "Gemini 3.5 Flash",
    "agent": "Loop",
    "model_raw": [
@@ -969,7 +1032,28 @@
    "row_url": null
   },
   {
-   "rank": 46,
+   "rank": 49,
+   "system": "MiMo V2.6 Pro",
+   "agent": "Loop",
+   "model_raw": [
+    "MiMo V2.6 Pro"
+   ],
+   "model_ids": [
+    "mimo-v2.6-pro"
+   ],
+   "model_config": "effort: auto; model_id: mimo-v2.6-pro",
+   "score": 75.2,
+   "score_extra": {
+    "pass_at_1": 59.1
+   },
+   "date": null,
+   "verified": null,
+   "open_source": null,
+   "org": "Xiaomi",
+   "row_url": null
+  },
+  {
+   "rank": 50,
    "system": "GLM-5.1",
    "agent": "Loop",
    "model_raw": [
@@ -990,7 +1074,7 @@
    "row_url": null
   },
   {
-   "rank": 47,
+   "rank": 51,
    "system": "Inkling",
    "agent": "Loop",
    "model_raw": [
@@ -1011,7 +1095,7 @@
    "row_url": null
   },
   {
-   "rank": 48,
+   "rank": 52,
    "system": "Kimi K2.7 Code",
    "agent": "Loop",
    "model_raw": [
@@ -1032,7 +1116,7 @@
    "row_url": null
   },
   {
-   "rank": 49,
+   "rank": 53,
    "system": "DeepSeek-V4-Flash",
    "agent": "Loop",
    "model_raw": [
@@ -1053,7 +1137,7 @@
    "row_url": null
   },
   {
-   "rank": 50,
+   "rank": 54,
    "system": "MiniMax-M3",
    "agent": "Loop",
    "model_raw": [
@@ -1074,7 +1158,7 @@
    "row_url": null
   },
   {
-   "rank": 51,
+   "rank": 55,
    "system": "Gemini 3.5 Flash Lite",
    "agent": "Loop",
    "model_raw": [
@@ -1095,7 +1179,7 @@
    "row_url": null
   },
   {
-   "rank": 52,
+   "rank": 56,
    "system": "Nemotron 3 Ultra",
    "agent": "Loop",
    "model_raw": [
@@ -1116,7 +1200,7 @@
    "row_url": null
   },
   {
-   "rank": 53,
+   "rank": 57,
    "system": "DeepSeek-V3.2",
    "agent": "Loop",
    "model_raw": [
@@ -1137,7 +1221,7 @@
    "row_url": null
   },
   {
-   "rank": 54,
+   "rank": 58,
    "system": "Gemini 3.1 Pro",
    "agent": "Loop",
    "model_raw": [
@@ -1158,7 +1242,7 @@
    "row_url": null
   },
   {
-   "rank": 55,
+   "rank": 59,
    "system": "Qwen3.5",
    "agent": "Loop",
    "model_raw": [
@@ -1179,7 +1263,7 @@
    "row_url": null
   },
   {
-   "rank": 56,
+   "rank": 60,
    "system": "GPT-OSS-120B",
    "agent": "Loop",
    "model_raw": [

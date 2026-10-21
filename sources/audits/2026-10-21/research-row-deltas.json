@@ -1,0 +1,176 @@
+{
+  "retrieved": "2026-10-21",
+  "baseline_commit": "f39077b8c7a294d5b32e7e7f095686722be869cb",
+  "tables": [
+    {
+      "id": "browsecomp-plus",
+      "rows_before": 85,
+      "rows_after": 87,
+      "retained_rows_ignoring_rank": 84,
+      "added_rows": [
+        {
+          "rank": 6,
+          "system": "GPT-5 + topk-embed-v1",
+          "agent": "Search with get_doc: standard `search`, `get_document` (view full doc by id, avg. 2.87 calls this run)",
+          "model_raw": [
+            "GPT-5"
+          ],
+          "model_ids": [
+            "gpt-5"
+          ],
+          "model_config": null,
+          "score": 86.87,
+          "score_extra": {
+            "retriever": "topk-embed-v1",
+            "recall": 83.22,
+            "search_calls": 11.88,
+            "calibration_error": 4.1
+          },
+          "date": "2026-10-08",
+          "verified": null,
+          "open_source": false,
+          "org": "TopK",
+          "row_url": "https://www.topk.io/"
+        },
+        {
+          "rank": 15,
+          "system": "oss-120b-high + Agent-UIBK-v1",
+          "agent": "Search with get_doc: standard `search`, `get_document` (view full doc by id, avg. 2.58 calls this run)",
+          "model_raw": [
+            "oss-120b-high"
+          ],
+          "model_ids": [
+            "gpt-oss-120b"
+          ],
+          "model_config": "high",
+          "score": 72.41,
+          "score_extra": {
+            "retriever": "Agent-UIBK-v1",
+            "recall": 71.25,
+            "search_calls": 13.37,
+            "calibration_error": 24.16,
+            "model_size_b": 120.0
+          },
+          "date": "2026-10-16",
+          "verified": null,
+          "open_source": true,
+          "org": "DataScienceUIBK",
+          "row_url": "https://ds-informatik.uibk.ac.at/"
+        },
+        {
+          "rank": 16,
+          "system": "GPT-6-luna + BM25 (Marina)",
+          "agent": "Search with get_doc: standard `search`, `get_document` (view full doc by id, avg. 2.56 calls this run)",
+          "model_raw": [
+            "GPT-6-luna"
+          ],
+          "model_ids": [
+            "gpt-6-luna"
+          ],
+          "model_config": null,
+          "score": 71.93,
+          "score_extra": {
+            "retriever": "BM25 (Marina)",
+            "recall": 76.12,
+            "search_calls": 65.06,
+            "calibration_error": 6.45
+          },
+          "date": "2026-10-04",
+          "verified": null,
+          "open_source": false,
+          "org": "Marina",
+          "row_url": "https://github.com/h2oai/marina"
+        }
+      ],
+      "removed_rows": [
+        {
+          "rank": 55,
+          "system": "oss-120b-high + BM25",
+          "agent": "Standard",
+          "model_raw": [
+            "oss-120b-high"
+          ],
+          "model_ids": [
+            "gpt-oss-120b"
+          ],
+          "model_config": "high",
+          "score": 29.16,
+          "score_extra": {
+            "retriever": "BM25",
+            "recall": 35.5,
+            "search_calls": 19.45,
+            "calibration_error": 45.92,
+            "model_size_b": 120.0,
+            "accuracy_gpt41_judge": 28.67
+          },
+          "date": "2025-08-08",
+          "verified": null,
+          "open_source": true,
+          "org": "BrowseComp-Plus",
+          "row_url": "https://openai.com/index/introducing-gpt-oss/"
+        }
+      ],
+      "notes": "One identical legacy row duplicate removed by upstream; three distinct new runs added."
+    },
+    {
+      "id": "swe-marathon-v1-1",
+      "rows_before": 17,
+      "rows_after": 17,
+      "retained_rows_ignoring_rank": 16,
+      "added_rows": [
+        {
+          "rank": 6,
+          "system": "Muse Spark 1.3 (max) / Muse Code",
+          "agent": "Muse Code",
+          "model_raw": [
+            "Muse Spark 1.3"
+          ],
+          "model_ids": [
+            "muse-spark-1.3"
+          ],
+          "model_config": "reasoning_effort=max",
+          "score": 46.25,
+          "score_extra": {
+            "partial_avg_pct": 83.225,
+            "trials": 160,
+            "cost_trials": 160,
+            "cost_avg_usd": 14.293202167499999,
+            "tokens_avg_m": 73.021637775
+          },
+          "date": null,
+          "verified": null,
+          "open_source": null,
+          "org": null,
+          "row_url": null
+        }
+      ],
+      "removed_rows": [
+        {
+          "rank": 14,
+          "system": "Muse Spark 1.3 (xhigh) / Muse Code",
+          "agent": "Muse Code",
+          "model_raw": [
+            "Muse Spark 1.3"
+          ],
+          "model_ids": [
+            "muse-spark-1.3"
+          ],
+          "model_config": "reasoning_effort=xhigh",
+          "score": 30.625,
+          "score_extra": {
+            "partial_avg_pct": 78.80187500000002,
+            "trials": 160,
+            "cost_trials": 0,
+            "tokens_avg_m": 73.6858492625
+          },
+          "date": null,
+          "verified": null,
+          "open_source": null,
+          "org": null,
+          "row_url": null
+        }
+      ],
+      "notes": "Muse Spark 1.3 replaced xhigh with max and a disjoint set of 160 trials; no same-condition performance claim."
+    }
+  ]
+}
