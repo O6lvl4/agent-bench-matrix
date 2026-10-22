@@ -301,6 +301,70 @@
       "focus": "agent"
     },
     {
+      "agent": "Ji Realm \\(极境\\)",
+      "model": "Multi-model (DeepSeek-V4-Flash, GLM-5.2)",
+      "model_release_date": "2026-09-07",
+      "include_in_plot": true,
+      "plot_links": [
+        "DeepSeek-V4-Flash",
+        "GLM-5.2"
+      ],
+      "icon": "/assets/images/cybergym/jirealm.png",
+      "features": [
+        "Multi-model",
+        "dynamic (uses cleaned vulnerable Docker image)"
+      ],
+      "score_10": 0.9244,
+      "date": "2026-09-07",
+      "source": "Sealed Realm Team \\(界内\\)",
+      "source_url": "https://JiRealmAgent.github.io/writeup_static.html",
+      "trials": 1,
+      "focus": "agent"
+    },
+    {
+      "agent": "ai-deep-audit",
+      "model": "Multi-model (DeepSeek-V4-Flash, DeepSeek-V4.1-Flash, GLM-5.3, GLM-5.3-Flash)",
+      "model_release_date": "2026-09-18",
+      "include_in_plot": true,
+      "plot_links": [
+        "DeepSeek-V4-Flash",
+        "GLM-5.3"
+      ],
+      "icon": "/assets/images/cybergym/bybit.png",
+      "features": [
+        "Multi-model",
+        "dynamic (uses cleaned vulnerable Docker image)"
+      ],
+      "score_10": 0.9416,
+      "date": "2026-09-18",
+      "source": "Bybit",
+      "source_url": "https://github.com/bybit-sec/cybergym",
+      "trials": 1,
+      "focus": "agent"
+    },
+    {
+      "agent": "NPC Agent System",
+      "model": "Multi-model (DeepSeek-V4-Flash, GLM-5.2, GLM-5.3, GLM-5.3-Flash)",
+      "model_release_date": "2026-10-06",
+      "include_in_plot": true,
+      "plot_links": [
+        "DeepSeek-V4-Flash",
+        "GLM-5.2",
+        "GLM-5.3"
+      ],
+      "icon": "/assets/images/cybergym/npc.png",
+      "features": [
+        "Multi-model",
+        "dynamic (uses cleaned vulnerable Docker image)"
+      ],
+      "score_10": 0.9668,
+      "date": "2026-10-06",
+      "source": "NPC Agent",
+      "source_url": "https://github.com/npc4g3nt/npc",
+      "trials": 1,
+      "focus": "agent"
+    },
+    {
       "agent": "RedbudAI",
       "model": "GLM-5.2",
       "model_release_date": "2026-08-10",
@@ -600,23 +664,31 @@
     },
     {
       "agent": "JiuXuan \\(九玄\\)",
-      "model": "GLM-5.1",
-      "model_release_date": "2026-04-07",
+      "model": "JT236B",
+      "model_release_date": "2026-10-16",
       "include_in_plot": true,
-      "plot_links": [
-        "GLM-5.1"
-      ],
-      "icon": "/assets/images/cybergym/jiuxuan.png",
+      "icon": "/assets/images/cybergym/jiutian.png",
       "features": [
-        "Memory",
         "dynamic (uses cleaned vulnerable Docker image)"
       ],
-      "score_10": 0.7286,
-      "date": "2026-08-03",
-      "source": "China Mobile Jiutian AI",
+      "score_10": 0.923,
+      "date": "2026-10-16",
+      "source": "China Mobile Jiutian AI Team",
       "source_url": "https://github.com/as837430732/JiuXuan",
       "trials": 1,
-      "focus": "agent"
+      "focus": "agent",
+      "subRows": [
+        {
+          "model": "GLM-5.1",
+          "score_10": 0.7286,
+          "date": "2026-08-03",
+          "source": "China Mobile Jiutian AI",
+          "features": [
+            "Memory",
+            "dynamic (uses cleaned vulnerable Docker image)"
+          ]
+        }
+      ]
     },
     {
       "agent": "Wiz Atlas",

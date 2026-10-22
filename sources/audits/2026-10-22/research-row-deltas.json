@@ -1,0 +1,117 @@
+{
+  "retrieved": "2026-10-22",
+  "tables": [
+    {
+      "id": "cybergym-agent-focused",
+      "rows_before": 43,
+      "rows_after": 47,
+      "retained_rows_ignoring_rank": 43,
+      "added_rows": [
+        {
+          "agent": "NPC Agent System",
+          "date": "2026-10-06",
+          "model_config": "Multi-model",
+          "model_ids": [
+            "deepseek-v4-flash",
+            "glm-5.2",
+            "glm-5.3",
+            "glm-5.3-flash"
+          ],
+          "model_raw": [
+            "DeepSeek-V4-Flash",
+            "GLM-5.2",
+            "GLM-5.3",
+            "GLM-5.3-Flash"
+          ],
+          "open_source": null,
+          "org": "NPC Agent",
+          "row_url": "https://github.com/npc4g3nt/npc",
+          "score": 96.68,
+          "score_extra": {
+            "dynamic": true,
+            "lead_card_unranked": true,
+            "trials": 1
+          },
+          "system": "NPC Agent System",
+          "verified": null
+        },
+        {
+          "agent": "ai-deep-audit",
+          "date": "2026-09-18",
+          "model_config": "Multi-model",
+          "model_ids": [
+            "deepseek-v4-flash",
+            "deepseek-v4.1-flash",
+            "glm-5.3",
+            "glm-5.3-flash"
+          ],
+          "model_raw": [
+            "DeepSeek-V4-Flash",
+            "DeepSeek-V4.1-Flash",
+            "GLM-5.3",
+            "GLM-5.3-Flash"
+          ],
+          "open_source": null,
+          "org": "Bybit",
+          "row_url": "https://github.com/bybit-sec/cybergym",
+          "score": 94.16,
+          "score_extra": {
+            "dynamic": true,
+            "lead_card_unranked": true,
+            "trials": 1
+          },
+          "system": "ai-deep-audit",
+          "verified": null
+        },
+        {
+          "agent": "Ji Realm (极境)",
+          "date": "2026-09-07",
+          "model_config": "Multi-model",
+          "model_ids": [
+            "deepseek-v4-flash",
+            "glm-5.2"
+          ],
+          "model_raw": [
+            "DeepSeek-V4-Flash",
+            "GLM-5.2"
+          ],
+          "open_source": null,
+          "org": "Sealed Realm Team \\(界内\\)",
+          "row_url": "https://JiRealmAgent.github.io/writeup_static.html",
+          "score": 92.44,
+          "score_extra": {
+            "dynamic": true,
+            "lead_card_unranked": true,
+            "trials": 1
+          },
+          "system": "Ji Realm (极境)",
+          "verified": null
+        },
+        {
+          "agent": "JiuXuan (九玄)",
+          "date": "2026-10-16",
+          "model_config": null,
+          "model_ids": [
+            "jt236b"
+          ],
+          "model_raw": [
+            "JT236B"
+          ],
+          "open_source": null,
+          "org": "China Mobile Jiutian AI Team",
+          "row_url": "https://github.com/as837430732/JiuXuan",
+          "score": 92.3,
+          "score_extra": {
+            "dynamic": true,
+            "lead_card_unranked": true,
+            "trials": 1
+          },
+          "system": "JiuXuan (九玄)",
+          "verified": null
+        }
+      ],
+      "removed_rows": [],
+      "notes": "Four new runs. All previous run values and conditions retained. The old JiuXuan GLM-5.1 row is now an unranked historical subrow. Three new multi-model runs remain multi-model, not single-model attributions."
+    }
+  ]
+}

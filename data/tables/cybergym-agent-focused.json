@@ -17,12 +17,12 @@
     "https://www.cybergym.io/cybergym/",
     "https://www.cybergym.io/assets/js/leaderboard.js"
   ],
-  "retrieved": "2026-10-13",
-  "newest_row_date": "2026-10-06",
+  "retrieved": "2026-10-22",
+  "newest_row_date": "2026-10-16",
   "snapshot": "sources/cybergym-agent-focused/cybergym.json",
   "paper": "https://arxiv.org/abs/2506.02548",
   "repo": "https://github.com/sunblaze-ucb/cybergym",
-  "notes_ja": "ボードの Type フィルタで分けた表(trials=1、dynamic と test-time mem. の両方を含む)。90% を超える行はランダム順のカードとして表示され順位が無いため rank は null(score_extra.lead_card_unranked)。以前の版の結果(subRows)も rank null の行として入れた。score は score_10 を百分率にした値。通常の表の rank は、先頭に表示されるカード数を含めた順位。",
+  "notes_ja": "ボードの Type フィルタで分けた表(trials=1 かつ hidden ではない行、dynamic と test-time mem. の両方を含む)。90% を超える行はランダム順のカードとして表示され順位が無いため rank は null(score_extra.lead_card_unranked)。以前の版の結果(subRows)も rank null の行として入れた。score は score_10 を百分率にした値。通常の表の rank は、先頭に表示されるカード数を含めた順位。JiuXuan の旧 GLM-5.1 行は公式 subRows として保持し、新しい JT236B 行とは別モデル・別の足場条件の結果として扱う。",
   "rows": [
     {
       "rank": null,
@@ -331,6 +331,35 @@
     },
     {
       "rank": null,
+      "system": "NPC Agent System",
+      "agent": "NPC Agent System",
+      "model_raw": [
+        "DeepSeek-V4-Flash",
+        "GLM-5.2",
+        "GLM-5.3",
+        "GLM-5.3-Flash"
+      ],
+      "model_ids": [
+        "deepseek-v4-flash",
+        "glm-5.2",
+        "glm-5.3",
+        "glm-5.3-flash"
+      ],
+      "model_config": "Multi-model",
+      "score": 96.68,
+      "score_extra": {
+        "trials": 1,
+        "dynamic": true,
+        "lead_card_unranked": true
+      },
+      "date": "2026-10-06",
+      "verified": null,
+      "open_source": null,
+      "org": "NPC Agent",
+      "row_url": "https://github.com/npc4g3nt/npc"
+    },
+    {
+      "rank": null,
       "system": "Hero Agent",
       "agent": "Hero Agent",
       "model_raw": [
@@ -444,6 +473,35 @@
     },
     {
       "rank": null,
+      "system": "ai-deep-audit",
+      "agent": "ai-deep-audit",
+      "model_raw": [
+        "DeepSeek-V4-Flash",
+        "DeepSeek-V4.1-Flash",
+        "GLM-5.3",
+        "GLM-5.3-Flash"
+      ],
+      "model_ids": [
+        "deepseek-v4-flash",
+        "deepseek-v4.1-flash",
+        "glm-5.3",
+        "glm-5.3-flash"
+      ],
+      "model_config": "Multi-model",
+      "score": 94.16,
+      "score_extra": {
+        "trials": 1,
+        "dynamic": true,
+        "lead_card_unranked": true
+      },
+      "date": "2026-09-18",
+      "verified": null,
+      "open_source": null,
+      "org": "Bybit",
+      "row_url": "https://github.com/bybit-sec/cybergym"
+    },
+    {
+      "rank": null,
       "system": "PwnBot",
       "agent": "PwnBot",
       "model_raw": [
@@ -488,6 +546,76 @@
       "open_source": null,
       "org": "Knownsec",
       "row_url": "https://github.com/knownsec/cybergym-writeup"
+    },
+    {
+      "rank": null,
+      "system": "Ji Realm (极境)",
+      "agent": "Ji Realm (极境)",
+      "model_raw": [
+        "DeepSeek-V4-Flash",
+        "GLM-5.2"
+      ],
+      "model_ids": [
+        "deepseek-v4-flash",
+        "glm-5.2"
+      ],
+      "model_config": "Multi-model",
+      "score": 92.44,
+      "score_extra": {
+        "trials": 1,
+        "dynamic": true,
+        "lead_card_unranked": true
+      },
+      "date": "2026-09-07",
+      "verified": null,
+      "open_source": null,
+      "org": "Sealed Realm Team \\(界内\\)",
+      "row_url": "https://JiRealmAgent.github.io/writeup_static.html"
+    },
+    {
+      "rank": null,
+      "system": "JiuXuan (九玄)",
+      "agent": "JiuXuan (九玄)",
+      "model_raw": [
+        "JT236B"
+      ],
+      "model_ids": [
+        "jt236b"
+      ],
+      "model_config": null,
+      "score": 92.3,
+      "score_extra": {
+        "trials": 1,
+        "dynamic": true,
+        "lead_card_unranked": true
+      },
+      "date": "2026-10-16",
+      "verified": null,
+      "open_source": null,
+      "org": "China Mobile Jiutian AI Team",
+      "row_url": "https://github.com/as837430732/JiuXuan"
+    },
+    {
+      "rank": null,
+      "system": "JiuXuan (九玄)",
+      "agent": "JiuXuan (九玄)",
+      "model_raw": [
+        "GLM-5.1"
+      ],
+      "model_ids": [
+        "glm-5.1"
+      ],
+      "model_config": null,
+      "score": 72.86,
+      "score_extra": {
+        "trials": 1,
+        "dynamic": true
+      },
+      "date": "2026-08-03",
+      "verified": null,
+      "open_source": null,
+      "org": "China Mobile Jiutian AI",
+      "row_url": "https://github.com/as837430732/JiuXuan"
     },
     {
       "rank": null,
@@ -773,7 +901,7 @@
       "row_url": "https://techfund.jp/en/media/cybergym"
     },
     {
-      "rank": 24,
+      "rank": 28,
       "system": "Crystalline",
       "agent": "Crystalline",
       "model_raw": [
@@ -795,7 +923,7 @@
       "row_url": "https://github.com/synchopate/cybergym-logos"
     },
     {
-      "rank": 25,
+      "rank": 29,
       "system": "TriLane",
       "agent": "TriLane",
       "model_raw": [
@@ -817,7 +945,7 @@
       "row_url": "https://github.com/xyun92/trilane/blob/main/docs/cybergym-submission-report.md"
     },
     {
-      "rank": 26,
+      "rank": 30,
       "system": "Gusion",
       "agent": "Gusion",
       "model_raw": [
@@ -838,7 +966,7 @@
       "row_url": "https://github.com/EBWi11/Gusion/blob/add-level1-technical-report/README.md"
     },
     {
-      "rank": 27,
+      "rank": 31,
       "system": "RedbudAI",
       "agent": "RedbudAI",
       "model_raw": [
@@ -861,7 +989,7 @@
       "row_url": "https://redbud.tsinghua.edu.cn/posts/cybergym.html"
     },
     {
-      "rank": 28,
+      "rank": 32,
       "system": "Velldepth Agent",
       "agent": "Velldepth Agent",
       "model_raw": [
@@ -882,7 +1010,7 @@
       "row_url": "https://alibaba-velldepth.github.io/writeups/"
     },
     {
-      "rank": 29,
+      "rank": 33,
       "system": "Xuanwu Atuin AI",
       "agent": "Xuanwu Atuin AI",
       "model_raw": [
@@ -926,7 +1054,7 @@
       "row_url": "https://xlab.tencent.com/en/2026/07/02/xuanwu-atuin-cybergym/"
     },
     {
-      "rank": 30,
+      "rank": 34,
       "system": "MopMonk Agent",
       "agent": "MopMonk Agent",
       "model_raw": [
@@ -947,29 +1075,7 @@
       "row_url": "https://github.com/MopMonkAI/MopMonkAgent"
     },
     {
-      "rank": 31,
-      "system": "JiuXuan (九玄)",
-      "agent": "JiuXuan (九玄)",
-      "model_raw": [
-        "GLM-5.1"
-      ],
-      "model_ids": [
-        "glm-5.1"
-      ],
-      "model_config": null,
-      "score": 72.86,
-      "score_extra": {
-        "trials": 1,
-        "dynamic": true
-      },
-      "date": "2026-08-03",
-      "verified": null,
-      "open_source": null,
-      "org": "China Mobile Jiutian AI",
-      "row_url": "https://github.com/as837430732/JiuXuan"
-    },
-    {
-      "rank": 32,
+      "rank": 35,
       "system": "XD Agent",
       "agent": "XD Agent",
       "model_raw": [
@@ -990,7 +1096,7 @@
       "row_url": "https://github.com/XDxAI/XD-Agent/blob/main/CyberGym_submission_XDagent.md"
     },
     {
-      "rank": 33,
+      "rank": 36,
       "system": "SageAgent",
       "agent": "SageAgent",
       "model_raw": [
