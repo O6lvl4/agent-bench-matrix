@@ -1,0 +1,10 @@
+{
+  "id": "refresh-2026-10-22",
+  "name": "2026-10-22 public-source refresh gaps",
+  "tried": [
+    "https://assistantbench-leaderboard.hf.space/config",
+    "https://huggingface.co/api/spaces/AssistantBench/leaderboard"
+  ],
+  "reason_ja": "AssistantBench公式Spaceのconfigは2回ともHTTP 503で、公式メタデータもRUNTIME_ERROR。既存184行・スナップショット・取得日を保持し、成功や変更なしには数えない。他165表は同じボード・版・集合の一次データを機械比較し、159表不変・6表更新。新しいτ-bench voice v2とRECONの候補は既存測定値に混ぜず別gapに記録。",
+  "retrieved": "2026-10-22"
+}

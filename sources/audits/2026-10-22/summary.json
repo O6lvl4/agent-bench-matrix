@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-22",
+  "base_commit": "9aa8b748184494d398bbb8e65a09304f9ce2fce4",
+  "tables": 166,
+  "totals": {
+    "unchanged": 159,
+    "changed": 6,
+    "failed-preserved": 1
+  },
+  "categories": {
+    "coding": {
+      "unchanged": 50
+    },
+    "computer-use": {
+      "unchanged": 22
+    },
+    "general": {
+      "changed": 1,
+      "unchanged": 4
+    },
+    "long-horizon": {
+      "unchanged": 7
+    },
+    "research": {
+      "unchanged": 9
+    },
+    "security": {
+      "unchanged": 12,
+      "changed": 1
+    },
+    "terminal": {
+      "unchanged": 5
+    },
+    "tool-use": {
+      "changed": 4,
+      "unchanged": 28
+    },
+    "web": {
+      "failed-preserved": 1,
+      "unchanged": 22
+    }
+  },
+  "changed": [
+    "apex-agents",
+    "apex-agents-corporate-lawyer",
+    "apex-agents-investment-banking",
+    "apex-agents-management-consultant",
+    "cybergym-agent-focused",
+    "gaia"
+  ],
+  "rows_before": 4437,
+  "rows_after": 4444,
+  "models_before": 512,
+  "models_after": 514,
+  "failed_preserved": [
+    {
+      "table": "assistantbench",
+      "rows": 184,
+      "reason": "Config HTTP503; official Space RUNTIME_ERROR. Old table, snapshot and retrieval date preserved."
+    }
+  ],
+  "comparison_policy": "Same board/version/set/configuration only. CyberGym multi-model rows are not single-model scores; JiuXuan historical GLM-5.1 preserved separate from JT236B. GAIA remains top100 and unlabeled new submissions stay unmapped. APEX overall row removal is source omission, not an inferred withdrawal. New Tau voice_v2 and RECON candidates remain gaps, not mixed into existing measurements."
+}

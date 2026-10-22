@@ -53,10 +53,10 @@
 
       <!-- Authors -->
       <div class="mx-auto mt-6 max-w-3xl text-lg text-slate-700">
-        <a class="email-author" href="[omitted-mailto-target]" title="Email Zhun Wang">Zhun Wang<svg viewBox="0 0 24 24" class="email-ico" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a><sup>*</sup>,
-        <a class="email-author" href="[omitted-mailto-target]" title="Email Tianneng Shi">Tianneng Shi<svg viewBox="0 0 24 24" class="email-ico" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a><sup>*</sup>,
-        <a class="email-author" href="[omitted-mailto-target]" title="Email Jingxuan He">Jingxuan He<svg viewBox="0 0 24 24" class="email-ico" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>, Matthew Cai, Jialin Zhang,
-        <a class="email-author" href="[omitted-mailto-target]" title="Email Dawn Song">Dawn Song<svg viewBox="0 0 24 24" class="email-ico" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
+        <a class="email-author" href="mailto:[contact address omitted]" title="Email Zhun Wang">Zhun Wang<svg viewBox="0 0 24 24" class="email-ico" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a><sup>*</sup>,
+        <a class="email-author" href="mailto:[contact address omitted]" title="Email Tianneng Shi">Tianneng Shi<svg viewBox="0 0 24 24" class="email-ico" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a><sup>*</sup>,
+        <a class="email-author" href="mailto:[contact address omitted]" title="Email Jingxuan He">Jingxuan He<svg viewBox="0 0 24 24" class="email-ico" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>, Matthew Cai, Jialin Zhang,
+        <a class="email-author" href="mailto:[contact address omitted]" title="Email Dawn Song">Dawn Song<svg viewBox="0 0 24 24" class="email-ico" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
       </div>
       <div class="mt-1 text-sm text-slate-500">
         UC Berkeley &nbsp;·&nbsp; <sup>*</sup>Equal contribution
@@ -409,9 +409,15 @@
         // Source link that yields the name room: its label truncates (full text
         // on hover via title) rather than pushing the name to an ellipsis.
         const arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M9 7h8v8"/></svg>';
+        // Same rule as the table's Source column: an unescaped " (…)" is a full name
+        // shown only on hover; an escaped "\\(…\\)" (e.g. a Chinese name) stays inline.
+        const srcRaw = String(v.source || '');
+        const srcCut = srcRaw.replace(/\\\(/g, '\x00').indexOf(' (');
+        const srcLabel = unesc(srcCut === -1 ? srcRaw : srcRaw.slice(0, srcCut));
+        const srcFull = unesc(srcRaw).replace(/"/g, '&quot;');
         const src = v.source_url
-          ? '<a class="lb-lcard-src" href="' + v.source_url + '" target="_blank" rel="noopener" title="' + (v.source || 'Source') + '"><span class="lb-lcard-srctxt">' + (String(v.source || '').split(' (')[0] || 'link') + '</span>' + arrow + '</a>'
-          : '<span class="lb-lcard-src lb-lcard-src-plain" title="' + (v.source || '') + '">' + String(v.source || '').split(' (')[0] + '</span>';
+          ? '<a class="lb-lcard-src" href="' + v.source_url + '" target="_blank" rel="noopener" title="' + (srcFull || 'Source') + '"><span class="lb-lcard-srctxt">' + (srcLabel || 'link') + '</span>' + arrow + '</a>'
+          : '<span class="lb-lcard-src lb-lcard-src-plain" title="' + srcFull + '">' + srcLabel + '</span>';
         // The tier is "all above 90%, not ranked", so the face carries no number —
         // the exact rate is revealed by hovering the card.
         const scoreNote = ' data-note-html="<div class=&quot;cg-tip-title&quot;>Reference success rate</div>' + pct + '%"';
@@ -437,7 +443,7 @@
       C.render({
         dataUrl: "/assets/data/cybergym.json",
         rootId: "leaderboard",
-        rows: (j) => (j.level1 || []).filter((r) => r.trials === 1), // single-trial results only
+        rows: (j) => (j.level1 || []).filter((r) => r.trials === 1 && !r.hidden), // single-trial, not held back
         sort: (a, b) => b.score_10 - a.score_10,
         // Lift systems above 90% into a compact card grid (ordering not meaningful);
         // the rest stay in the ranked table, numbered continuing past the cards.
