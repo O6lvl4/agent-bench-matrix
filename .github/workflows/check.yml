@@ -50,3 +50,15 @@ jobs:
         run: npm ci --ignore-scripts
       - name: Cost calculation and DOM regression tests
         run: npm test
+      - name: Install pinned Chromium for browser QA
+        run: npx playwright install --with-deps chromium
+      - name: Browser smoke and responsive screenshots
+        run: node scripts/check_cost_browser.mjs
+      - name: Preserve browser QA screenshots
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: cost-browser-qa
+          path: .qa/cost/*.png
+          if-no-files-found: ignore
+          retention-days: 7
