@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-25",
+  "base_commit": "657b731e1b70f77775947392e16d81ca1760567b",
+  "tables_checked": 166,
+  "changed_tables": [
+    "apex-agents-corporate-lawyer",
+    "apex-agents-investment-banking",
+    "apex-agents-management-consultant",
+    "apex-agents",
+    "gaia",
+    "mobileworld",
+    "tau3-voice-airline",
+    "tau3-voice-retail",
+    "tau3-voice-telecom",
+    "tau3-voice",
+    "terminal-bench-4-0"
+  ],
+  "unchanged_tables": 154,
+  "failed_tables": [
+    "assistantbench"
+  ],
+  "counts_by_category": {
+    "coding": 50,
+    "computer-use": 22,
+    "tool-use": 32,
+    "web": 23,
+    "research": 9,
+    "security": 13,
+    "long-horizon": 7,
+    "general": 5,
+    "terminal": 5
+  },
+  "rows": 4457,
+  "models": 516,
+  "not_imported": "Tau voice v2 retrieved successfully but independent v2 table and comparison-condition definitions absent; kept separate from existing v1 tables.",
+  "notes": [
+    "No measured claims created by us; public primary source data only.",
+    "Unknown open weights retained null for two new models.",
+    "Micar-GUI-Agent not attributed to one model. Ava Zero keeps explicit multi-model combination.",
+    "Old successful AssistantBench rows, snapshot and date preserved on HTTP503.",
+    "No UI, schemas, source code, workflow, credentials or permissions changed."
+  ]
+}

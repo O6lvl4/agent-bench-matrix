@@ -1730,9 +1730,9 @@
    "company": "inception",
    "logoUrl": "https://cdn.sanity.io/images/h6s14f4z/production/ac0a55054d9180cf7269835ea6203dd1f638a384-136x136.png",
    "darkLogoUrl": null,
-   "providerColorTo": "4B5563",
+   "providerColorTo": "#18C4C3",
    "providerName": "Inception",
-   "gradientStyle": "linear-gradient(to right, 9CA3AF, 4B5563)",
+   "gradientStyle": "linear-gradient(to right, #9FDFDF, #18C4C3)",
    "release_date": "2026-10-19",
    "n_samples": 855
   },
@@ -1764,6 +1764,64 @@
    "gradientStyle": "linear-gradient(to right, #ace473, #5cb900)",
    "release_date": "2026-10-14",
    "n_samples": 960
+  },
+  {
+   "model_name": "MiniMax-M3.1-Flash",
+   "model_id": "minimax-m3p1-flash",
+   "score": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 53.9
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 68
+    }
+   },
+   "error": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 5.1
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 4.2
+    }
+   },
+   "effort": "max",
+   "company": "minimax",
+   "logoUrl": "https://cdn.sanity.io/images/h6s14f4z/production/e230cc3be938804212b18e376dad70671df5c8cd-17x14.svg",
+   "darkLogoUrl": null,
+   "providerColorTo": "#ff5371",
+   "providerName": "MiniMax",
+   "gradientStyle": "linear-gradient(to right, #ffb9c5, #ff5371)",
+   "release_date": "",
+   "n_samples": 959
+  },
+  {
+   "model_name": "Mistral Large 4",
+   "model_id": "mistral-large-4",
+   "score": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 51.6
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 64.3
+    }
+   },
+   "error": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 5.2
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 4.5
+    }
+   },
+   "effort": "high",
+   "company": "mistral",
+   "logoUrl": "https://cdn.sanity.io/images/h6s14f4z/production/22828ea103c237c65f457df719342f013a1020c8-20x20.svg",
+   "darkLogoUrl": null,
+   "providerColorTo": "#ffa100",
+   "providerName": "Mistral",
+   "gradientStyle": "linear-gradient(to right, #ffe1ae, #ffa100)",
+   "release_date": "2026-10-06",
+   "n_samples": 955
   }
  ],
  "domains": [

@@ -33,15 +33,34 @@
   "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1.5_sierra_2026-03-03/submission.json",
   "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime_sierra_2026-03-03/submission.json",
   "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1-0_openai_2026-04-13/submission.json",
-  "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-live-2.5-flash_sierra_2026-03-03/submission.json"
+  "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-live-2.5-flash_sierra_2026-03-03/submission.json",
+  "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/ava-zero_avartha_2026-10-22/submission.json"
  ],
- "retrieved": "2026-10-18",
- "newest_row_date": "2026-10-14",
+ "retrieved": "2026-10-25",
+ "newest_row_date": "2026-10-22",
  "snapshot": "sources/tau3-voice-airline/submissions.json",
  "paper": "https://arxiv.org/abs/2603.13686",
  "repo": "https://github.com/sierra-research/tau2-bench",
  "notes_ja": "rank はボード既定表示(Standard のみ)での順位で、Custom 提出は rank を null にした。 GPT Liveが別モデルGPT-6 Astraへ委譲する構成は複数モデルとして記録し、単一モデルのマトリクスと当てはめから除外する。",
  "rows": [
+  {
+   "rank": null,
+   "system": "Ava Zero",
+   "agent": "Ava Zero",
+   "model_raw": [
+    "GLM 5.3 Anchor",
+    "Deepseek v4.1 Flash 1017"
+   ],
+   "model_ids": [],
+   "model_config": "reasoning: Backend: DeepSeek-V4.1-Flash-1017 (max); user sim: v1.0; voice model: ava-zero; submission type: standard; Standard Ava Zero evaluation through the avartha_pipecat adapter against a hosted Ava Zero agent on the Avartha Platform over WebRTC. We use GLM 5.3 Anchor and Deepseek v4.1 Flash 1017 as the backend worker at Max reasoning. Regular speech complexity, realtime user generation, seed 300, and the default Opus 4.5 hallucination reviewer. One trial was scheduled for every task: airline 50, retail 114, and telecom 114.",
+   "score": 86.0,
+   "score_extra": {},
+   "date": "2026-10-22",
+   "verified": true,
+   "open_source": null,
+   "org": "Avartha",
+   "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/ava-zero_avartha_2026-10-22/submission.json"
+  },
   {
    "rank": 1,
    "system": "gpt-live-1",
