@@ -36,3 +36,29 @@ jobs:
       # The page serves the committed bundle, so it must be the one the data builds.
       - name: The committed bundle is the one the data builds
         run: git diff --exit-code -- docs/data.json
+      - name: Rebuild cost evidence projection
+        run: |
+          python3 sources/cost/models/extract_profiles.py
+          python3 sources/cost/prices/extract_model_cost_prices.py
+          python3 scripts/assemble_cost.py
+          git diff --exit-code -- sources/cost/model-research.json sources/cost/prices/model-cost-prices.json data/cost.json
+      - name: Validate isolated local-run cost data
+        run: python3 scripts/build_cost.py --check
+      - name: Cost schema regression tests
+        run: python3 -m unittest discover -s tests -p 'test_*.py'
+      - name: Install pinned UI test dependencies
+        run: npm ci --ignore-scripts
+      - name: Cost calculation and DOM regression tests
+        run: npm test
+      - name: Install pinned Chromium for browser QA
+        run: npx playwright install --with-deps chromium
+      - name: Browser smoke and responsive screenshots
+        run: node scripts/check_cost_browser.mjs
+      - name: Preserve browser QA screenshots
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: cost-browser-qa
+          path: .qa/cost/*.png
+          if-no-files-found: ignore
+          retention-days: 7

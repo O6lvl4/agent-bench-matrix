@@ -1,0 +1,44 @@
+import {JSDOM} from 'jsdom';
+import fs from 'node:fs/promises';
+import assert from 'node:assert/strict';
+const root=new URL('../docs/', import.meta.url).pathname;
+const html=await fs.readFile(root+'index.html','utf8');
+const dom=new JSDOM(html,{url:'https://example.test/#/ability?open=1',pretendToBeVisual:true});
+for(const k of ['window','document','Node','location','history','URLSearchParams'])globalThis[k]=dom.window[k];
+globalThis.fetch=async name=>({ok:true,json:async()=>JSON.parse(await fs.readFile(root+name,'utf8'))});
+await import(root+'app.js');
+const waitFor=async predicate=>{const deadline=Date.now()+10000;while(!predicate()){if(Date.now()>deadline)throw new Error('DOM boot timed out');await new Promise(r=>setTimeout(r,20));}};
+await waitFor(()=>document.querySelector('.ability'));
+assert(document.querySelector('.ability'));
+assert(document.querySelector('a[href="#/cost"]'));
+const goto=async hash=>{if(window.location.hash===hash)return;await new Promise(resolve=>{window.addEventListener('hashchange',resolve,{once:true});window.location.hash=hash;});};
+await goto('#/cost');assert(document.querySelector('#cost-model'));assert.equal(document.querySelector('#cost-context').value,'4096');
+assert.equal(document.querySelectorAll('.cost-chart-point.historical').length,29);
+for(const id of ['qwen3-8b','qwen3-32b','qwen3-coder-30b-a3b']){
+ await goto('#/cost?model='+id);assert(document.querySelector('.cost-energy-result'));assert(!/NaN|undefined/.test(document.querySelector('#view').textContent));
+}
+await goto('#/cost?model=qwen3-8b');
+let watts=document.querySelector('#cost-watts');watts.value='600';watts.dispatchEvent(new window.Event('change'));assert(location.hash.includes('watts=600'));assert(document.querySelector('.cost-energy-result').textContent.includes('1,116'));
+let model=document.querySelector('#cost-model');model.value='qwen3-32b';model.dispatchEvent(new window.Event('change'));assert(location.hash.includes('model=qwen3-32b'));
+await goto('#/cost?model=gpt-oss-20b');assert(document.querySelector('.cost-unsupported').textContent.includes('MXFP4'));
+await goto('#/cost?model=gpt-5');assert(document.querySelector('.cost-unsupported'));assert(!document.querySelector('.cost-energy-result'));
+await goto('#/cost?model=unknown');assert(document.querySelector('.cost-unsupported').textContent.includes('登録されていない'));
+await goto('#/cost?model=qwen3-8b&context=-1&watts=Infinity');assert.equal(document.querySelector('#cost-context').value,'4096');assert.equal(document.querySelector('#cost-watts').value,'300');
+await goto('#/cost?model=qwen3-32b&hardware=mac-studio-m5-max-64gb');assert(document.querySelector('.cost-history-empty'));assert(document.querySelector('#view').textContent.includes('5〜6週間'));
+await goto('#/matrix');assert(document.querySelector('.matrix'));
+await goto('#/ability?open=1');assert(document.querySelector('.ability'));assert(document.querySelector('.cost-model-link'));
+history.back();await waitFor(()=>document.querySelector('.matrix'));
+history.forward();await waitFor(()=>document.querySelector('.ability'));
+console.log('PASS: app boot, ability links, all supported models, history, current stock, energy edit, URL state, unsupported/closed/unknown, invalid inputs, route return');
+// A new same-day inventory observation must supersede an old orderable quote.
+const {renderCost}=await import(root+'cost.js');
+const costs=JSON.parse(await fs.readFile(root+'cost-data.json','utf8'));
+const registry=new Map(JSON.parse(await fs.readFile(root+'data.json','utf8')).models.map(m=>[m.id,m]));
+const earlier=costs.offers.find(o=>o.hardware_id==='rtx-5060-ti-16gb'&&o.source_type==='seller_page');
+costs.offers.push({...earlier,observed_at:'2026-10-25T07:00:00Z',price_jpy:135000,available:false,in_stock:false,availability_label_ja:'在庫なし',lead_time_ja:'購入不可'});
+const preview=document.createElement('main');renderCost(preview,{models:registry,data:costs,params:new URLSearchParams('model=qwen3-8b')});
+assert(!preview.querySelector('.cost-tiers').textContent.includes('129,800'));
+const updatedRow=[...preview.querySelectorAll('.cost-table tbody tr')].find(row=>row.textContent.includes('Palit'));
+assert(updatedRow.textContent.includes('135,000'));
+assert(updatedRow.textContent.includes('購入不可'));
+console.log('PASS: later same-day sold-out observation supersedes old orderable offer');

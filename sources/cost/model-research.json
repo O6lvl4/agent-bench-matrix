@@ -1,0 +1,721 @@
+{
+  "schema_version": 1,
+  "retrieved_at_utc": "2026-10-25T06:37:56.496425+00:00",
+  "scope": "Five representative open-weight models; three Qwen capacity-estimate profiles plus two gpt-oss evidence-only profiles.",
+  "methodology": {
+    "storage_evidence": "Actual selected downloadable GGUF artifact bytes; no parameter-count times bits approximation.",
+    "memory_evidence": "Source config dimensions derive unpadded f16 KV payload at 4096 cached tokens and one concurrent sequence. File size is not measured runtime memory.",
+    "performance": "No tokens/s, latency, quality, minimum-memory or validated fit claim is made.",
+    "runtime_overhead": "No overhead number is claimed from these sources. Any added 2 GiB buffer or 10/25 percent margin must be labeled an explicit planning assumption, not a measured requirement.",
+    "provenance": "Public source snapshots and extraction script in model-cost-provenance. Artifact metadata is commit-pinned and independently checked against x-linked-size. Artifacts themselves were not downloaded."
+  },
+  "profiles": [
+    {
+      "model_id": "qwen3-8b",
+      "model_name": "Qwen3-8B",
+      "source_model": {
+        "repository": "Qwen/Qwen3-8B",
+        "url": "https://huggingface.co/Qwen/Qwen3-8B",
+        "revision": "b968826d9c46dd6066d109eabc6255188de91218"
+      },
+      "artifact": {
+        "bytes": 5027783488,
+        "gib": 4.682488262653351,
+        "gb_decimal": 5.027783488,
+        "quantization": "Q4_K_M",
+        "format": "GGUF",
+        "repository": "Qwen/Qwen3-8B-GGUF",
+        "filename": "Qwen3-8B-Q4_K_M.gguf",
+        "revision": "7c41481f57cb95916b40956ab2f0b139b296d974",
+        "publisher_role": "model-publisher",
+        "url": "https://huggingface.co/Qwen/Qwen3-8B-GGUF/blob/7c41481f57cb95916b40956ab2f0b139b296d974/Qwen3-8B-Q4_K_M.gguf",
+        "download_url": "https://huggingface.co/Qwen/Qwen3-8B-GGUF/resolve/7c41481f57cb95916b40956ab2f0b139b296d974/Qwen3-8B-Q4_K_M.gguf",
+        "lfs_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+        "byte_verification": "Hugging Face pinned tree API file.size = lfs.size = download HEAD x-linked-size",
+        "download_head_status": 302,
+        "retrieved_at_utc": "2026-10-25T06:37:50.243465+00:00"
+      },
+      "runtime": "llama.cpp / GGUF (documented support; not execution-tested)",
+      "runtime_details": {
+        "name": "llama.cpp",
+        "source_url": "https://github.com/ggml-org/llama.cpp",
+        "inspected_revision": "b3fa69955ea81c3b60e77e3c1e2224c4a826ffb9",
+        "execution_tested": false,
+        "benchmark_available": false
+      },
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://huggingface.co/Qwen/Qwen3-8B/blob/b968826d9c46dd6066d109eabc6255188de91218/LICENSE"
+      },
+      "config": {
+        "layers": 36,
+        "kv_heads": 8,
+        "head_dim": 128,
+        "attention_heads": 32,
+        "architecture": "qwen3",
+        "max_position_embeddings_config": 40960,
+        "sliding_window": null,
+        "kv_mode": "full-context",
+        "context_tokens": 4096,
+        "concurrent_sequences": 1,
+        "kv_dtype": "f16",
+        "bytes_per_element": 2,
+        "source_url": "https://huggingface.co/Qwen/Qwen3-8B/resolve/b968826d9c46dd6066d109eabc6255188de91218/config.json"
+      },
+      "kv_memory": {
+        "bytes": 603979776,
+        "gib": 0.5625,
+        "kind": "calculated-unpadded-payload",
+        "mode": "full-context",
+        "formula": "2 (K and V) * layers * kv_heads * head_dim * context_tokens * concurrent_sequences * 2 (f16 bytes)",
+        "not_included": [
+          "tensor padding/alignment",
+          "runtime graph and compute buffers",
+          "weights",
+          "runtime/driver memory",
+          "operating system memory"
+        ],
+        "measured": false
+      },
+      "modeled_fit_eligible": true,
+      "modeled_fit_status": "eligible-for-explicitly-assumed-capacity-estimate",
+      "modeled_fit_exclusion_reason": null,
+      "runtime_constraints": [
+        "Use a current llama.cpp build with support for the selected architecture and quantization. Runtime support was documented, not benchmarked or execution-tested in this research.",
+        "GGUF file bytes are storage bytes, not measured resident VRAM/RAM. Graph buffers, padding, backend allocations, driver/OS memory, memory mapping and offload policy can change actual requirements.",
+        "4096 tokens means total cached context (prompt plus generated tokens), one concurrent sequence, f16 keys and values. This does not specify throughput-oriented prompt token batching.",
+        "The official model card provides llama.cpp GGUF usage. The 4096-token cost scenario is deliberately shorter than the model card's recommended output budgets for complex reasoning; no quality equivalence is claimed."
+      ],
+      "notes_ja": "公開GGUFの正確なダウンロード容量と、設定ファイルから計算したKVキャッシュのデータ量です。実測VRAM/RAM使用量や動作保証ではありません。 Q4_K_Mは混合量子化のため、パラメータ数×0.5 byteではなく公開ファイル容量を使用します。4K contextは費用比較用の限定条件で、長い推論タスクの品質評価ではありません。",
+      "sources": [
+        {
+          "label": "Source configuration",
+          "url": "https://huggingface.co/Qwen/Qwen3-8B/resolve/b968826d9c46dd6066d109eabc6255188de91218/config.json",
+          "retrieved_at_utc": "2026-10-25T06:35:58.193785+00:00",
+          "snapshot_file": "Qwen__Qwen3-8B.config.json",
+          "snapshot_sha256": "f7c4eadfbbf522470667b797a3c89be2524832d2d599797248dc304fff447c30"
+        },
+        {
+          "label": "Source model card",
+          "url": "https://huggingface.co/Qwen/Qwen3-8B/resolve/b968826d9c46dd6066d109eabc6255188de91218/README.md",
+          "retrieved_at_utc": "2026-10-25T06:36:05.873974+00:00",
+          "snapshot_file": "Qwen__Qwen3-8B.README.md",
+          "snapshot_sha256": "0f36caaff9c2516411a7738db384606263ba653c1e63e61d72f511606164d5a6"
+        },
+        {
+          "label": "Source license",
+          "url": "https://huggingface.co/Qwen/Qwen3-8B/resolve/b968826d9c46dd6066d109eabc6255188de91218/LICENSE",
+          "retrieved_at_utc": "2026-10-25T06:36:11.395792+00:00",
+          "snapshot_file": "Qwen__Qwen3-8B.LICENSE",
+          "snapshot_sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+        },
+        {
+          "label": "Selected quantization model card",
+          "url": "https://huggingface.co/Qwen/Qwen3-8B-GGUF/resolve/7c41481f57cb95916b40956ab2f0b139b296d974/README.md",
+          "retrieved_at_utc": "2026-10-25T06:35:58.146596+00:00",
+          "snapshot_file": "Qwen__Qwen3-8B-GGUF.README.md",
+          "snapshot_sha256": "913fd918b4afb4511accca0874f701248b024013e804fa7a463639ead74e4dcb"
+        },
+        {
+          "label": "Pinned artifact byte metadata",
+          "url": "https://huggingface.co/api/models/Qwen/Qwen3-8B-GGUF/tree/7c41481f57cb95916b40956ab2f0b139b296d974?recursive=true",
+          "retrieved_at_utc": "2026-10-25T06:35:55.329340+00:00",
+          "snapshot_file": "Qwen__Qwen3-8B-GGUF.tree.json",
+          "snapshot_sha256": "35d0e26e56cc01812faca3653a33b5531fe32207102492709ad6e2ef6f43fc95"
+        },
+        {
+          "label": "llama.cpp KV allocation implementation",
+          "url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/b3fa69955ea81c3b60e77e3c1e2224c4a826ffb9/src/llama-kv-cache.cpp",
+          "retrieved_at_utc": "2026-10-25T06:37:00.560047+00:00",
+          "snapshot_file": "llamacpp__src__llama-kv-cache.cpp",
+          "snapshot_sha256": "6c0ed0c7080b7fba57bba6d7d4ac2b52ed0b777849022f90edfc2bbc71e0d546"
+        }
+      ]
+    },
+    {
+      "model_id": "qwen3-32b",
+      "model_name": "Qwen3-32B",
+      "source_model": {
+        "repository": "Qwen/Qwen3-32B",
+        "url": "https://huggingface.co/Qwen/Qwen3-32B",
+        "revision": "9216db5781bf21249d130ec9da846c4624c16137"
+      },
+      "artifact": {
+        "bytes": 19762149024,
+        "gib": 18.404935508966446,
+        "gb_decimal": 19.762149024,
+        "quantization": "Q4_K_M",
+        "format": "GGUF",
+        "repository": "Qwen/Qwen3-32B-GGUF",
+        "filename": "Qwen3-32B-Q4_K_M.gguf",
+        "revision": "938a7432affaec9157f883a87164e2646ae17555",
+        "publisher_role": "model-publisher",
+        "url": "https://huggingface.co/Qwen/Qwen3-32B-GGUF/blob/938a7432affaec9157f883a87164e2646ae17555/Qwen3-32B-Q4_K_M.gguf",
+        "download_url": "https://huggingface.co/Qwen/Qwen3-32B-GGUF/resolve/938a7432affaec9157f883a87164e2646ae17555/Qwen3-32B-Q4_K_M.gguf",
+        "lfs_sha256": "efd971561896866f0e910cce52761ca77b1b138090c7f15fe284676d57d1f689",
+        "byte_verification": "Hugging Face pinned tree API file.size = lfs.size = download HEAD x-linked-size",
+        "download_head_status": 302,
+        "retrieved_at_utc": "2026-10-25T06:37:50.245284+00:00"
+      },
+      "runtime": "llama.cpp / GGUF (documented support; not execution-tested)",
+      "runtime_details": {
+        "name": "llama.cpp",
+        "source_url": "https://github.com/ggml-org/llama.cpp",
+        "inspected_revision": "b3fa69955ea81c3b60e77e3c1e2224c4a826ffb9",
+        "execution_tested": false,
+        "benchmark_available": false
+      },
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://huggingface.co/Qwen/Qwen3-32B/blob/9216db5781bf21249d130ec9da846c4624c16137/LICENSE"
+      },
+      "config": {
+        "layers": 64,
+        "kv_heads": 8,
+        "head_dim": 128,
+        "attention_heads": 64,
+        "architecture": "qwen3",
+        "max_position_embeddings_config": 40960,
+        "sliding_window": null,
+        "kv_mode": "full-context",
+        "context_tokens": 4096,
+        "concurrent_sequences": 1,
+        "kv_dtype": "f16",
+        "bytes_per_element": 2,
+        "source_url": "https://huggingface.co/Qwen/Qwen3-32B/resolve/9216db5781bf21249d130ec9da846c4624c16137/config.json"
+      },
+      "kv_memory": {
+        "bytes": 1073741824,
+        "gib": 1.0,
+        "kind": "calculated-unpadded-payload",
+        "mode": "full-context",
+        "formula": "2 (K and V) * layers * kv_heads * head_dim * context_tokens * concurrent_sequences * 2 (f16 bytes)",
+        "not_included": [
+          "tensor padding/alignment",
+          "runtime graph and compute buffers",
+          "weights",
+          "runtime/driver memory",
+          "operating system memory"
+        ],
+        "measured": false
+      },
+      "modeled_fit_eligible": true,
+      "modeled_fit_status": "eligible-for-explicitly-assumed-capacity-estimate",
+      "modeled_fit_exclusion_reason": null,
+      "runtime_constraints": [
+        "Use a current llama.cpp build with support for the selected architecture and quantization. Runtime support was documented, not benchmarked or execution-tested in this research.",
+        "GGUF file bytes are storage bytes, not measured resident VRAM/RAM. Graph buffers, padding, backend allocations, driver/OS memory, memory mapping and offload policy can change actual requirements.",
+        "4096 tokens means total cached context (prompt plus generated tokens), one concurrent sequence, f16 keys and values. This does not specify throughput-oriented prompt token batching.",
+        "The official model card provides llama.cpp GGUF usage. The 4096-token cost scenario is deliberately shorter than the model card's recommended output budgets for complex reasoning; no quality equivalence is claimed."
+      ],
+      "notes_ja": "公開GGUFの正確なダウンロード容量と、設定ファイルから計算したKVキャッシュのデータ量です。実測VRAM/RAM使用量や動作保証ではありません。 Q4_K_Mは混合量子化のため、パラメータ数×0.5 byteではなく公開ファイル容量を使用します。4K contextは費用比較用の限定条件で、長い推論タスクの品質評価ではありません。",
+      "sources": [
+        {
+          "label": "Source configuration",
+          "url": "https://huggingface.co/Qwen/Qwen3-32B/resolve/9216db5781bf21249d130ec9da846c4624c16137/config.json",
+          "retrieved_at_utc": "2026-10-25T06:35:58.234030+00:00",
+          "snapshot_file": "Qwen__Qwen3-32B.config.json",
+          "snapshot_sha256": "97e295b63283935788fac5e4f8860862a56d4089538cafc93f0431f2ebe483bb"
+        },
+        {
+          "label": "Source model card",
+          "url": "https://huggingface.co/Qwen/Qwen3-32B/resolve/9216db5781bf21249d130ec9da846c4624c16137/README.md",
+          "retrieved_at_utc": "2026-10-25T06:36:05.874924+00:00",
+          "snapshot_file": "Qwen__Qwen3-32B.README.md",
+          "snapshot_sha256": "0af37735eef45eb3b406f3d74952e6cbcbc180904dc68b73a31a690719a235da"
+        },
+        {
+          "label": "Source license",
+          "url": "https://huggingface.co/Qwen/Qwen3-32B/resolve/9216db5781bf21249d130ec9da846c4624c16137/LICENSE",
+          "retrieved_at_utc": "2026-10-25T06:36:11.385151+00:00",
+          "snapshot_file": "Qwen__Qwen3-32B.LICENSE",
+          "snapshot_sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+        },
+        {
+          "label": "Selected quantization model card",
+          "url": "https://huggingface.co/Qwen/Qwen3-32B-GGUF/resolve/938a7432affaec9157f883a87164e2646ae17555/README.md",
+          "retrieved_at_utc": "2026-10-25T06:36:17.139866+00:00",
+          "snapshot_file": "Qwen__Qwen3-32B-GGUF.README.md",
+          "snapshot_sha256": "8d8c6441b826e340a16397475d29db19f83f13481e6488f683e6e67c446eb6b8"
+        },
+        {
+          "label": "Pinned artifact byte metadata",
+          "url": "https://huggingface.co/api/models/Qwen/Qwen3-32B-GGUF/tree/938a7432affaec9157f883a87164e2646ae17555?recursive=true",
+          "retrieved_at_utc": "2026-10-25T06:36:14.224961+00:00",
+          "snapshot_file": "Qwen__Qwen3-32B-GGUF.tree.json",
+          "snapshot_sha256": "f85703dd5111594864d500f09727364e102a8239cb3a2d08265cf89185f0e6be"
+        },
+        {
+          "label": "llama.cpp KV allocation implementation",
+          "url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/b3fa69955ea81c3b60e77e3c1e2224c4a826ffb9/src/llama-kv-cache.cpp",
+          "retrieved_at_utc": "2026-10-25T06:37:00.560047+00:00",
+          "snapshot_file": "llamacpp__src__llama-kv-cache.cpp",
+          "snapshot_sha256": "6c0ed0c7080b7fba57bba6d7d4ac2b52ed0b777849022f90edfc2bbc71e0d546"
+        }
+      ]
+    },
+    {
+      "model_id": "qwen3-coder-30b-a3b",
+      "model_name": "Qwen3-Coder-30B-A3B-Instruct",
+      "source_model": {
+        "repository": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+        "url": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct",
+        "revision": "b2cff646eb4bb1d68355c01b18ae02e7cf42d120"
+      },
+      "artifact": {
+        "bytes": 17988419552,
+        "gib": 16.753021210432053,
+        "gb_decimal": 17.988419552,
+        "quantization": "Q4_K_M",
+        "format": "GGUF",
+        "repository": "ggml-org/Qwen3-Coder-30B-A3B-Instruct-GGUF",
+        "filename": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M.gguf",
+        "revision": "0ca51122012fe4a20dc82988ee58780b008ce4e3",
+        "publisher_role": "runtime-maintainer-conversion",
+        "url": "https://huggingface.co/ggml-org/Qwen3-Coder-30B-A3B-Instruct-GGUF/blob/0ca51122012fe4a20dc82988ee58780b008ce4e3/Qwen3-Coder-30B-A3B-Instruct-Q4_K_M.gguf",
+        "download_url": "https://huggingface.co/ggml-org/Qwen3-Coder-30B-A3B-Instruct-GGUF/resolve/0ca51122012fe4a20dc82988ee58780b008ce4e3/Qwen3-Coder-30B-A3B-Instruct-Q4_K_M.gguf",
+        "lfs_sha256": "f6050b4da22869aa3fb9d94bb3314e9fc5a027d4741c1f97761c387d6b2b2335",
+        "byte_verification": "Hugging Face pinned tree API file.size = lfs.size = download HEAD x-linked-size",
+        "download_head_status": 302,
+        "retrieved_at_utc": "2026-10-25T06:37:50.245998+00:00",
+        "conversion_source_revision_verified": true
+      },
+      "runtime": "llama.cpp / GGUF (documented support; not execution-tested)",
+      "runtime_details": {
+        "name": "llama.cpp",
+        "source_url": "https://github.com/ggml-org/llama.cpp",
+        "inspected_revision": "b3fa69955ea81c3b60e77e3c1e2224c4a826ffb9",
+        "execution_tested": false,
+        "benchmark_available": false
+      },
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/LICENSE"
+      },
+      "config": {
+        "layers": 48,
+        "kv_heads": 4,
+        "head_dim": 128,
+        "attention_heads": 32,
+        "architecture": "qwen3_moe",
+        "max_position_embeddings_config": 262144,
+        "sliding_window": null,
+        "kv_mode": "full-context",
+        "context_tokens": 4096,
+        "concurrent_sequences": 1,
+        "kv_dtype": "f16",
+        "bytes_per_element": 2,
+        "source_url": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/resolve/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/config.json",
+        "experts": 128,
+        "active_experts_per_token": 8
+      },
+      "kv_memory": {
+        "bytes": 402653184,
+        "gib": 0.375,
+        "kind": "calculated-unpadded-payload",
+        "mode": "full-context",
+        "formula": "2 (K and V) * layers * kv_heads * head_dim * context_tokens * concurrent_sequences * 2 (f16 bytes)",
+        "not_included": [
+          "tensor padding/alignment",
+          "runtime graph and compute buffers",
+          "weights",
+          "runtime/driver memory",
+          "operating system memory"
+        ],
+        "measured": false
+      },
+      "modeled_fit_eligible": true,
+      "modeled_fit_status": "eligible-for-explicitly-assumed-capacity-estimate",
+      "modeled_fit_exclusion_reason": null,
+      "runtime_constraints": [
+        "Use a current llama.cpp build with support for the selected architecture and quantization. Runtime support was documented, not benchmarked or execution-tested in this research.",
+        "GGUF file bytes are storage bytes, not measured resident VRAM/RAM. Graph buffers, padding, backend allocations, driver/OS memory, memory mapping and offload policy can change actual requirements.",
+        "4096 tokens means total cached context (prompt plus generated tokens), one concurrent sequence, f16 keys and values. This does not specify throughput-oriented prompt token batching.",
+        "The selected ggml-org Q4_K_M conversion uses base quantization for routed experts; embeddings and attention are kept at Q8_0. Active-parameter count must not be used for storage or residency sizing."
+      ],
+      "notes_ja": "公開GGUFの正確なダウンロード容量と、設定ファイルから計算したKVキャッシュのデータ量です。実測VRAM/RAM使用量や動作保証ではありません。 MoEの「3B active」は保存する重みの容量ではありません。ggml-org版Q4_K_Mはexpertを量子化し、attention・embedding等をQ8_0で保持します。",
+      "sources": [
+        {
+          "label": "Source configuration",
+          "url": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/resolve/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/config.json",
+          "retrieved_at_utc": "2026-10-25T06:35:58.198144+00:00",
+          "snapshot_file": "Qwen__Qwen3-Coder-30B-A3B-Instruct.config.json",
+          "snapshot_sha256": "e2c8d8eea39471785cd93379d8b48241ad7dcda299013155dd02526e34a0de62"
+        },
+        {
+          "label": "Source model card",
+          "url": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/resolve/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md",
+          "retrieved_at_utc": "2026-10-25T06:36:05.871951+00:00",
+          "snapshot_file": "Qwen__Qwen3-Coder-30B-A3B-Instruct.README.md",
+          "snapshot_sha256": "98e8f0e00f2d6c7f1743fc4ef2b6297dcc57bec73d71f36588aed984370ac3f3"
+        },
+        {
+          "label": "Source license",
+          "url": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/resolve/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/LICENSE",
+          "retrieved_at_utc": "2026-10-25T06:36:11.297514+00:00",
+          "snapshot_file": "Qwen__Qwen3-Coder-30B-A3B-Instruct.LICENSE",
+          "snapshot_sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+        },
+        {
+          "label": "Selected quantization model card",
+          "url": "https://huggingface.co/ggml-org/Qwen3-Coder-30B-A3B-Instruct-GGUF/resolve/0ca51122012fe4a20dc82988ee58780b008ce4e3/README.md",
+          "retrieved_at_utc": "2026-10-25T06:36:23.088841+00:00",
+          "snapshot_file": "ggml-org__Qwen3-Coder-30B-A3B-Instruct-GGUF.README.md",
+          "snapshot_sha256": "9ab6dd7889228cc2abc10f0012a2d9e97866523a17dacd35038cb3a789ecf73c"
+        },
+        {
+          "label": "Pinned artifact byte metadata",
+          "url": "https://huggingface.co/api/models/ggml-org/Qwen3-Coder-30B-A3B-Instruct-GGUF/tree/0ca51122012fe4a20dc82988ee58780b008ce4e3?recursive=true",
+          "retrieved_at_utc": "2026-10-25T06:36:20.124435+00:00",
+          "snapshot_file": "ggml-org__Qwen3-Coder-30B-A3B-Instruct-GGUF.tree.json",
+          "snapshot_sha256": "9f64f1b1e5f4e3396e0bc746ce1f758236bb5221d9d37cee11bef4763a723183"
+        },
+        {
+          "label": "llama.cpp KV allocation implementation",
+          "url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/b3fa69955ea81c3b60e77e3c1e2224c4a826ffb9/src/llama-kv-cache.cpp",
+          "retrieved_at_utc": "2026-10-25T06:37:00.560047+00:00",
+          "snapshot_file": "llamacpp__src__llama-kv-cache.cpp",
+          "snapshot_sha256": "6c0ed0c7080b7fba57bba6d7d4ac2b52ed0b777849022f90edfc2bbc71e0d546"
+        }
+      ]
+    },
+    {
+      "model_id": "gpt-oss-20b",
+      "model_name": "gpt-oss-20b",
+      "source_model": {
+        "repository": "openai/gpt-oss-20b",
+        "url": "https://huggingface.co/openai/gpt-oss-20b",
+        "revision": "6cee5e81ee83917806bbde320786a8fb61efebee"
+      },
+      "artifact": {
+        "bytes": 12109566624,
+        "gib": 11.277912765741348,
+        "gb_decimal": 12.109566624,
+        "quantization": "MXFP4",
+        "format": "GGUF",
+        "repository": "ggml-org/gpt-oss-20b-GGUF",
+        "filename": "gpt-oss-20b-MXFP4.gguf",
+        "revision": "15dcfc7e7c608c6161507211ed43c5b590801b4b",
+        "publisher_role": "runtime-maintainer-conversion",
+        "url": "https://huggingface.co/ggml-org/gpt-oss-20b-GGUF/blob/15dcfc7e7c608c6161507211ed43c5b590801b4b/gpt-oss-20b-MXFP4.gguf",
+        "download_url": "https://huggingface.co/ggml-org/gpt-oss-20b-GGUF/resolve/15dcfc7e7c608c6161507211ed43c5b590801b4b/gpt-oss-20b-MXFP4.gguf",
+        "lfs_sha256": "27cd6c432c7672cb812a92f611cf3ba7bbc35928262bb1e1253ff4ee6ae35901",
+        "byte_verification": "Hugging Face pinned tree API file.size = lfs.size = download HEAD x-linked-size",
+        "download_head_status": 302,
+        "retrieved_at_utc": "2026-10-25T06:37:50.247849+00:00",
+        "conversion_source_revision_verified": true
+      },
+      "runtime": "llama.cpp / GGUF (documented support; not execution-tested)",
+      "runtime_details": {
+        "name": "llama.cpp",
+        "source_url": "https://github.com/ggml-org/llama.cpp",
+        "inspected_revision": "b3fa69955ea81c3b60e77e3c1e2224c4a826ffb9",
+        "execution_tested": false,
+        "benchmark_available": false
+      },
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://huggingface.co/openai/gpt-oss-20b/blob/6cee5e81ee83917806bbde320786a8fb61efebee/LICENSE"
+      },
+      "config": {
+        "layers": 24,
+        "kv_heads": 8,
+        "head_dim": 64,
+        "attention_heads": 64,
+        "architecture": "gpt_oss",
+        "max_position_embeddings_config": 131072,
+        "sliding_window": 128,
+        "kv_mode": "full-context-upper-bound",
+        "context_tokens": 4096,
+        "concurrent_sequences": 1,
+        "kv_dtype": "f16",
+        "bytes_per_element": 2,
+        "source_url": "https://huggingface.co/openai/gpt-oss-20b/resolve/6cee5e81ee83917806bbde320786a8fb61efebee/config.json",
+        "layer_types": [
+          "sliding_attention",
+          "full_attention",
+          "sliding_attention",
+          "full_attention",
+          "sliding_attention",
+          "full_attention",
+          "sliding_attention",
+          "full_attention",
+          "sliding_attention",
+          "full_attention",
+          "sliding_attention",
+          "full_attention",
+          "sliding_attention",
+          "full_attention",
+          "sliding_attention",
+          "full_attention",
+          "sliding_attention",
+          "full_attention",
+          "sliding_attention",
+          "full_attention",
+          "sliding_attention",
+          "full_attention",
+          "sliding_attention",
+          "full_attention"
+        ],
+        "full_attention_layers": 12,
+        "sliding_attention_layers": 12,
+        "experts": 32,
+        "active_experts_per_token": 4
+      },
+      "kv_memory": {
+        "bytes": 201326592,
+        "gib": 0.1875,
+        "kind": "calculated-unpadded-payload",
+        "mode": "full-context-upper-bound",
+        "formula": "2 (K and V) * layers * kv_heads * head_dim * context_tokens * concurrent_sequences * 2 (f16 bytes)",
+        "not_included": [
+          "tensor padding/alignment",
+          "runtime graph and compute buffers",
+          "weights",
+          "runtime/driver memory",
+          "operating system memory"
+        ],
+        "measured": false
+      },
+      "modeled_fit_eligible": false,
+      "modeled_fit_status": "research-only-in-mvp",
+      "modeled_fit_exclusion_reason": "Native MXFP4 is supported, but no matched hardware/runtime resident-allocation validation was performed; alternating sliding/full-attention KV allocation needs runtime-specific validation.",
+      "runtime_constraints": [
+        "Use a current llama.cpp build with support for the selected architecture and quantization. Runtime support was documented, not benchmarked or execution-tested in this research.",
+        "GGUF file bytes are storage bytes, not measured resident VRAM/RAM. Graph buffers, padding, backend allocations, driver/OS memory, memory mapping and offload policy can change actual requirements.",
+        "4096 tokens means total cached context (prompt plus generated tokens), one concurrent sequence, f16 keys and values. This does not specify throughput-oriented prompt token batching.",
+        "Native MXFP4 runtime support is documented for CPU, CUDA, Metal and Vulkan by llama.cpp maintainers. This does not establish the loaded allocation on any particular hardware.",
+        "The source model requires the Harmony response format. Use a compatible embedded chat template/runtime.",
+        "Alternating sliding-window (128 tokens) and full-attention layers are present. The displayed KV number is an unpadded full-context payload ceiling, not an upper bound on total runtime memory.",
+        "MoE active parameters do not reduce total stored weights. No external EAGLE3/speculative model is included in the selected artifact."
+      ],
+      "notes_ja": "公開GGUFの正確なダウンロード容量と、設定ファイルから計算したKVキャッシュのデータ量です。実測VRAM/RAM使用量や動作保証ではありません。 MXFP4は通常の一律4-bit換算ではありません。全層に4096 tokenを割り当てるKV上限を表示していますが、実際は128-token sliding attentionとfull attentionが交互にあり、実行時の確保量は異なります。このMVPでは自動ハードウェア適合・最安判定の対象外です。",
+      "sources": [
+        {
+          "label": "Source configuration",
+          "url": "https://huggingface.co/openai/gpt-oss-20b/resolve/6cee5e81ee83917806bbde320786a8fb61efebee/config.json",
+          "retrieved_at_utc": "2026-10-25T06:35:58.195502+00:00",
+          "snapshot_file": "openai__gpt-oss-20b.config.json",
+          "snapshot_sha256": "3a2a26ded679375b7928ddeca59764df7cea83220c1961035f6d6e232659e9ce"
+        },
+        {
+          "label": "Source model card",
+          "url": "https://huggingface.co/openai/gpt-oss-20b/resolve/6cee5e81ee83917806bbde320786a8fb61efebee/README.md",
+          "retrieved_at_utc": "2026-10-25T06:36:05.873238+00:00",
+          "snapshot_file": "openai__gpt-oss-20b.README.md",
+          "snapshot_sha256": "03c2fcf292549176757b85c911e7dcf527aef3e4241d64b6caec94af3ecf3ac2"
+        },
+        {
+          "label": "Source license",
+          "url": "https://huggingface.co/openai/gpt-oss-20b/resolve/6cee5e81ee83917806bbde320786a8fb61efebee/LICENSE",
+          "retrieved_at_utc": "2026-10-25T06:36:11.385771+00:00",
+          "snapshot_file": "openai__gpt-oss-20b.LICENSE",
+          "snapshot_sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+        },
+        {
+          "label": "Selected quantization model card",
+          "url": "https://huggingface.co/ggml-org/gpt-oss-20b-GGUF/resolve/15dcfc7e7c608c6161507211ed43c5b590801b4b/README.md",
+          "retrieved_at_utc": "2026-10-25T06:36:23.164417+00:00",
+          "snapshot_file": "ggml-org__gpt-oss-20b-GGUF.README.md",
+          "snapshot_sha256": "bc2128d8465343a21181e43f753f96481b88a11b268fdfed4801390a4cfb5d0f"
+        },
+        {
+          "label": "Pinned artifact byte metadata",
+          "url": "https://huggingface.co/api/models/ggml-org/gpt-oss-20b-GGUF/tree/15dcfc7e7c608c6161507211ed43c5b590801b4b?recursive=true",
+          "retrieved_at_utc": "2026-10-25T06:36:20.124898+00:00",
+          "snapshot_file": "ggml-org__gpt-oss-20b-GGUF.tree.json",
+          "snapshot_sha256": "83ed18ebb53d6e81b220e893410d3797b2fb910df47d2a789f51b4c442815c53"
+        },
+        {
+          "label": "llama.cpp KV allocation implementation",
+          "url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/b3fa69955ea81c3b60e77e3c1e2224c4a826ffb9/src/llama-kv-cache.cpp",
+          "retrieved_at_utc": "2026-10-25T06:37:00.560047+00:00",
+          "snapshot_file": "llamacpp__src__llama-kv-cache.cpp",
+          "snapshot_sha256": "6c0ed0c7080b7fba57bba6d7d4ac2b52ed0b777849022f90edfc2bbc71e0d546"
+        },
+        {
+          "label": "Maintainer native MXFP4 support announcement",
+          "url": "https://github.com/ggml-org/llama.cpp/discussions/15095",
+          "retrieved_at_utc": "2026-10-25T06:37:56.496425+00:00",
+          "snapshot_file": "llamacpp-gpt-oss-announcement.txt",
+          "snapshot_sha256": "2644aa989e89fc6a461aec633f312cf35f420af3b2ba8f7268fa8e406be0e340"
+        }
+      ]
+    },
+    {
+      "model_id": "gpt-oss-120b",
+      "model_name": "gpt-oss-120b",
+      "source_model": {
+        "repository": "openai/gpt-oss-120b",
+        "url": "https://huggingface.co/openai/gpt-oss-120b",
+        "revision": "b5c939de8f754692c1647ca79fbf85e8c1e70f8a"
+      },
+      "artifact": {
+        "bytes": 63387346208,
+        "gib": 59.03406646847725,
+        "gb_decimal": 63.387346208,
+        "quantization": "MXFP4",
+        "format": "GGUF",
+        "repository": "ggml-org/gpt-oss-120b-GGUF",
+        "filename": "gpt-oss-120b-MXFP4.gguf",
+        "revision": "7200b74bea78b0a2964ef9f3897eefa401e890ff",
+        "publisher_role": "runtime-maintainer-conversion",
+        "url": "https://huggingface.co/ggml-org/gpt-oss-120b-GGUF/blob/7200b74bea78b0a2964ef9f3897eefa401e890ff/gpt-oss-120b-MXFP4.gguf",
+        "download_url": "https://huggingface.co/ggml-org/gpt-oss-120b-GGUF/resolve/7200b74bea78b0a2964ef9f3897eefa401e890ff/gpt-oss-120b-MXFP4.gguf",
+        "lfs_sha256": "582bd40f6886200101f4c4ed9f25f3fe80cc14c86e9e2b37746cd8904a0c622d",
+        "byte_verification": "Hugging Face pinned tree API file.size = lfs.size = download HEAD x-linked-size",
+        "download_head_status": 302,
+        "retrieved_at_utc": "2026-10-25T06:37:50.249002+00:00",
+        "conversion_source_revision_verified": true
+      },
+      "runtime": "llama.cpp / GGUF (documented support; not execution-tested)",
+      "runtime_details": {
+        "name": "llama.cpp",
+        "source_url": "https://github.com/ggml-org/llama.cpp",
+        "inspected_revision": "b3fa69955ea81c3b60e77e3c1e2224c4a826ffb9",
+        "execution_tested": false,
+        "benchmark_available": false
+      },
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://huggingface.co/openai/gpt-oss-120b/blob/b5c939de8f754692c1647ca79fbf85e8c1e70f8a/LICENSE"
+      },
+      "config": {
+        "layers": 36,
+        "kv_heads": 8,
+        "head_dim": 64,
+        "attention_heads": 64,
+        "architecture": "gpt_oss",
+        "max_position_embeddings_config": 131072,
+        "sliding_window": 128,
+        "kv_mode": "full-context-upper-bound",
+        "context_tokens": 4096,
+        "concurrent_sequences": 1,
+        "kv_dtype": "f16",
+        "bytes_per_element": 2,
+        "source_url": "https://huggingface.co/openai/gpt-oss-120b/resolve/b5c939de8f754692c1647ca79fbf85e8c1e70f8a/config.json",
+        "layer_types": [
+          "sliding_attention",
+          "full_attention",
+          "sliding_attention",
+          "full_attention",
+          "sliding_attention",
+          "full_attention",
+          "sliding_attention",
+          "full_attention",
+          "sliding_attention",
+          "full_attention",
+          "sliding_attention",
+          "full_attention",
+          "sliding_attention",
+          "full_attention",
+          "sliding_attention",
+          "full_attention",
+          "sliding_attention",
+          "full_attention",
+          "sliding_attention",
+          "full_attention",
+          "sliding_attention",
+          "full_attention",
+          "sliding_attention",
+          "full_attention",
+          "sliding_attention",
+          "full_attention",
+          "sliding_attention",
+          "full_attention",
+          "sliding_attention",
+          "full_attention",
+          "sliding_attention",
+          "full_attention",
+          "sliding_attention",
+          "full_attention",
+          "sliding_attention",
+          "full_attention"
+        ],
+        "full_attention_layers": 18,
+        "sliding_attention_layers": 18,
+        "experts": 128,
+        "active_experts_per_token": 4
+      },
+      "kv_memory": {
+        "bytes": 301989888,
+        "gib": 0.28125,
+        "kind": "calculated-unpadded-payload",
+        "mode": "full-context-upper-bound",
+        "formula": "2 (K and V) * layers * kv_heads * head_dim * context_tokens * concurrent_sequences * 2 (f16 bytes)",
+        "not_included": [
+          "tensor padding/alignment",
+          "runtime graph and compute buffers",
+          "weights",
+          "runtime/driver memory",
+          "operating system memory"
+        ],
+        "measured": false
+      },
+      "modeled_fit_eligible": false,
+      "modeled_fit_status": "research-only-in-mvp",
+      "modeled_fit_exclusion_reason": "Native MXFP4 is supported, but no matched hardware/runtime resident-allocation validation was performed; alternating sliding/full-attention KV allocation needs runtime-specific validation.",
+      "runtime_constraints": [
+        "Use a current llama.cpp build with support for the selected architecture and quantization. Runtime support was documented, not benchmarked or execution-tested in this research.",
+        "GGUF file bytes are storage bytes, not measured resident VRAM/RAM. Graph buffers, padding, backend allocations, driver/OS memory, memory mapping and offload policy can change actual requirements.",
+        "4096 tokens means total cached context (prompt plus generated tokens), one concurrent sequence, f16 keys and values. This does not specify throughput-oriented prompt token batching.",
+        "Native MXFP4 runtime support is documented for CPU, CUDA, Metal and Vulkan by llama.cpp maintainers. This does not establish the loaded allocation on any particular hardware.",
+        "The source model requires the Harmony response format. Use a compatible embedded chat template/runtime.",
+        "Alternating sliding-window (128 tokens) and full-attention layers are present. The displayed KV number is an unpadded full-context payload ceiling, not an upper bound on total runtime memory.",
+        "MoE active parameters do not reduce total stored weights. No external EAGLE3/speculative model is included in the selected artifact."
+      ],
+      "notes_ja": "公開GGUFの正確なダウンロード容量と、設定ファイルから計算したKVキャッシュのデータ量です。実測VRAM/RAM使用量や動作保証ではありません。 MXFP4は通常の一律4-bit換算ではありません。全層に4096 tokenを割り当てるKV上限を表示していますが、実際は128-token sliding attentionとfull attentionが交互にあり、実行時の確保量は異なります。このMVPでは自動ハードウェア適合・最安判定の対象外です。",
+      "sources": [
+        {
+          "label": "Source configuration",
+          "url": "https://huggingface.co/openai/gpt-oss-120b/resolve/b5c939de8f754692c1647ca79fbf85e8c1e70f8a/config.json",
+          "retrieved_at_utc": "2026-10-25T06:35:58.239718+00:00",
+          "snapshot_file": "openai__gpt-oss-120b.config.json",
+          "snapshot_sha256": "933aeb666a3fd851133ddd7686414f369bc564c4185fb5704416550879f10566"
+        },
+        {
+          "label": "Source model card",
+          "url": "https://huggingface.co/openai/gpt-oss-120b/resolve/b5c939de8f754692c1647ca79fbf85e8c1e70f8a/README.md",
+          "retrieved_at_utc": "2026-10-25T06:36:05.828517+00:00",
+          "snapshot_file": "openai__gpt-oss-120b.README.md",
+          "snapshot_sha256": "92b0408cf5dce04e4c5e4e5f2be0361da710d3650baefd7d7519badd1c687919"
+        },
+        {
+          "label": "Source license",
+          "url": "https://huggingface.co/openai/gpt-oss-120b/resolve/b5c939de8f754692c1647ca79fbf85e8c1e70f8a/LICENSE",
+          "retrieved_at_utc": "2026-10-25T06:36:11.386907+00:00",
+          "snapshot_file": "openai__gpt-oss-120b.LICENSE",
+          "snapshot_sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+        },
+        {
+          "label": "Selected quantization model card",
+          "url": "https://huggingface.co/ggml-org/gpt-oss-120b-GGUF/resolve/7200b74bea78b0a2964ef9f3897eefa401e890ff/README.md",
+          "retrieved_at_utc": "2026-10-25T06:36:23.087071+00:00",
+          "snapshot_file": "ggml-org__gpt-oss-120b-GGUF.README.md",
+          "snapshot_sha256": "db1fe98191c12ab2cb5d91512326fe487c57fc48ba54c174570c124c53142c16"
+        },
+        {
+          "label": "Pinned artifact byte metadata",
+          "url": "https://huggingface.co/api/models/ggml-org/gpt-oss-120b-GGUF/tree/7200b74bea78b0a2964ef9f3897eefa401e890ff?recursive=true",
+          "retrieved_at_utc": "2026-10-25T06:36:20.072343+00:00",
+          "snapshot_file": "ggml-org__gpt-oss-120b-GGUF.tree.json",
+          "snapshot_sha256": "399d8ad0387b31b398f60399a36ede63043ced9fe3f4e8da9c5071332f328f0c"
+        },
+        {
+          "label": "llama.cpp KV allocation implementation",
+          "url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/b3fa69955ea81c3b60e77e3c1e2224c4a826ffb9/src/llama-kv-cache.cpp",
+          "retrieved_at_utc": "2026-10-25T06:37:00.560047+00:00",
+          "snapshot_file": "llamacpp__src__llama-kv-cache.cpp",
+          "snapshot_sha256": "6c0ed0c7080b7fba57bba6d7d4ac2b52ed0b777849022f90edfc2bbc71e0d546"
+        },
+        {
+          "label": "Maintainer native MXFP4 support announcement",
+          "url": "https://github.com/ggml-org/llama.cpp/discussions/15095",
+          "retrieved_at_utc": "2026-10-25T06:37:56.496425+00:00",
+          "snapshot_file": "llamacpp-gpt-oss-announcement.txt",
+          "snapshot_sha256": "2644aa989e89fc6a461aec633f312cf35f420af3b2ba8f7268fa8e406be0e340"
+        }
+      ]
+    }
+  ]
+}

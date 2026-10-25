@@ -70,3 +70,32 @@ almide run src/build.almd -- --strict
 出典URLの欠落、形の崩れた日付、取得日より後の日付、行の日付と合わない `newest_row_date`、登録簿に無いモデルID などがあると、問題を列挙して終了コード 1 で止まり、`docs/data.json` は書き換えません。CI も同じ検査を走らせ、コミットされた `docs/data.json` がデータから作ったものと一致するかを確かめます。
 
 誤りに気づいたら、あるいは載せるべきボードがあれば Issue か PR をください。
+
+## ローカル実行費用（試算）
+
+「実行費用」タブ（`#/cost`）は、登録済みモデルから選んで、検証できた量子化ファイルのサイズ・KVキャッシュ・仮の実行余裕を積み上げる別の層です。戦闘力の一覧から各モデルへ移動できます。重みが非公開のモデルや未調査のモデルには値を捏造しません。
+
+- **メモリに収まりそうかの試算であり、起動・速度・ベンチマークスコアの再現を保証しません。** 最小側と余裕側は異なる安全率で、実測の最低動作構成／推奨構成ではありません。
+- 単一GPUまたは単一統合メモリ機を対象とします。GPUを複数足したVRAMの単純合算やCPUオフロードは対象外です。GPU単体価格にはホストPC代を含みません。
+- 価格は特定SKUの公開ページから確認した税込／送料条件付きの観測価格で、相場全体の最安値や購入時の在庫を保証しません。価格グラフは実際の観測・公開履歴のみです。記録が足りなければ不足を表示します。
+- 電気代はユーザーが編集する消費電力・時間・単価からの計算です。機種の実測電力や現行の電力料金ではありません。
+- `data/cost.json` と `sources/cost/` はベンチマークの実測値から分離し、`scripts/build_cost.py` が検査して `docs/cost-data.json` を作ります。自動取得ジョブや有料APIは追加していません。
+
+```bash
+python3 scripts/build_cost.py
+python3 scripts/build_cost.py --check
+python3 -m unittest discover -s tests -p 'test_*.py'
+npm ci --ignore-scripts
+npm test
+```
+
+価格の再確認時は、取得日付きの新しいスナップショットを `sources/cost/prices/snapshots/` に追加し、過去のファイルを上書きしません。モデルと価格は別々に更新できます。取得後のオフライン再生成は次の順です（ネットワークアクセスはしません）。
+
+```bash
+python3 sources/cost/models/extract_profiles.py
+python3 sources/cost/prices/extract_model_cost_prices.py
+python3 scripts/assemble_cost.py
+python3 scripts/build_cost.py
+```
+
+CI は保存した証拠からの再生成結果、価格・モデルのスキーマ、計算と DOM の回帰テストを検査します。実機でのモデル実行テストは含みません。
