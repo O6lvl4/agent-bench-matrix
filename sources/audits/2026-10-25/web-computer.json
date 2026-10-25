@@ -1,0 +1,2387 @@
+{
+  "retrieved": "2026-10-25",
+  "baseline_commit": "657b731e1b70f77775947392e16d81ca1760567b",
+  "tables": [
+    {
+      "id": "androidworld",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 48,
+      "rows": 48,
+      "source_snapshot": "sources/androidworld/androidworld_gid0.csv",
+      "retained_table_retrieved": "2026-10-10",
+      "sources": [
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo/export?format=csv&gid=0",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 9203,
+          "sha256": "fa55b5154926e6027efa02dda6a07d15e008b3e314adbc20d0980ce537aca8f0",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "All authoritative source response bytes identical to prior verified full extraction audit; every numeric and condition record unchanged. Current table and source snapshot retained.",
+      "prior_verified_extract": {
+        "snapshot": "sources/audits/2026-10-22/webcomputer-extracts.tar.gz",
+        "archive_member": "androidworld.json",
+        "bytes": 14602,
+        "sha256": "4e77d11a35a98a62acdcc180d7390d25418cb0ee31874dca6045e3fd355d69a2"
+      }
+    },
+    {
+      "id": "androidworld-mobileminiwob",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 4,
+      "rows": 4,
+      "source_snapshot": "sources/androidworld-mobileminiwob/androidworld_gid1078963525.csv",
+      "retained_table_retrieved": "2026-10-05",
+      "sources": [
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo/export?format=csv&gid=1078963525",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 457,
+          "sha256": "d022affe1a8ec99cfc940bf645e85a089b2aa3afc123d59dafc3d8fa021c0b22",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "All authoritative source response bytes identical to prior verified full extraction audit; every numeric and condition record unchanged. Current table and source snapshot retained.",
+      "prior_verified_extract": {
+        "snapshot": "sources/audits/2026-10-22/webcomputer-extracts.tar.gz",
+        "archive_member": "androidworld-mobileminiwob.json",
+        "bytes": 882,
+        "sha256": "80482be6789aa97420643bac6eaf80314a0b290bbb146b99e72050d63f1fe03f"
+      }
+    },
+    {
+      "id": "assistantbench",
+      "retrieved": "2026-10-25",
+      "status": "failed_preserved",
+      "old_rows": 184,
+      "rows": 184,
+      "source_snapshot": "sources/assistantbench/board_test.json",
+      "retained_table_retrieved": "2026-10-05",
+      "sources": [
+        {
+          "url": "https://assistantbench-leaderboard.hf.space/config",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 503,
+          "error": "HTTP Error 503: Service Unavailable"
+        },
+        {
+          "url": "https://huggingface.co/api/spaces/AssistantBench/leaderboard",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 3127,
+          "sha256": "df96d27d32b446eed7e52aaca04b6b8124907ddd87593015259286999d933ff6",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "Primary Gradio config returned HTTP503; metadata alone cannot verify current scores. Existing 184 rows and snapshot retained, not marked successful.",
+      "failure": "HTTP 503 for initialized leaderboard config"
+    },
+    {
+      "id": "bearcubs",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 12,
+      "rows": 12,
+      "source_snapshot": "sources/bearcubs/bear_cubs_leaderboard.json",
+      "retained_table_retrieved": "2026-10-05",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/bear-cubs/bear-cubs.github.io/main/src/data/bear_cubs_leaderboard.ts",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 5156,
+          "sha256": "f631d30ebe218c2794ca90330fe238f6653db2a4aee187c2987be8aeb64b149d",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "All authoritative source response bytes identical to prior verified full extraction audit; every numeric and condition record unchanged. Current table and source snapshot retained.",
+      "prior_verified_extract": {
+        "snapshot": "sources/audits/2026-10-22/webcomputer-extracts.tar.gz",
+        "archive_member": "bearcubs.json",
+        "bytes": 5120,
+        "sha256": "4f5dcaab50f8277392898e0b05f7df37ceaf30849a17cd99290b454d97c95074"
+      }
+    },
+    {
+      "id": "browsecomp-kaggle",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 42,
+      "rows": 42,
+      "source_snapshot": "sources/browsecomp-kaggle/GetBenchmarkLeaderboard.json",
+      "retained_table_retrieved": "2026-10-05",
+      "sources": [
+        {
+          "url": "https://www.kaggle.com/api/i/benchmarks.BenchmarkService/GetBenchmarkLeaderboard",
+          "retrieved": "2026-10-25",
+          "request_method": "POST",
+          "http_status": 200,
+          "bytes": 59785,
+          "sha256": "44f7f215e448f67bdcd6b31a19c6a7fbf676988f5223381a237e8aec600dfc49",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "All authoritative source response bytes identical to prior verified full extraction audit; every numeric and condition record unchanged. Current table and source snapshot retained.",
+      "prior_verified_extract": {
+        "snapshot": "sources/audits/2026-10-22/webcomputer-extracts.tar.gz",
+        "archive_member": "browsecomp-kaggle.json",
+        "bytes": 87151,
+        "sha256": "f1395a7dbe4647b4af1c8fc594b85428fab009a5d82b7cc7980dce85cb036df9"
+      }
+    },
+    {
+      "id": "browsergym-assistantbench",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 6,
+      "rows": 6,
+      "source_snapshot": "sources/browsergym-assistantbench/results_assistantbench.json",
+      "retained_table_retrieved": "2026-10-05",
+      "sources": [
+        {
+          "url": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 7753,
+          "sha256": "82cc7387c7fb54b807c75745e1c055bb9d69d5dd9e1cdd5505b57dad45d8e737",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/assistantbench.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 521,
+          "sha256": "ea237141c5f61093376fc94d7f24bf59cb0398b16f53e85f3d2e05769602c4fa",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o-mini/assistantbench.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 515,
+          "sha256": "2f1b913da62be0a89c42482938d7fdec1b89e8314d0a4f316e7965b4d915ae52",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/assistantbench.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 510,
+          "sha256": "0f9c42a83145f7cb6e758eb100cb46e6a9ebcf2d4c9aa7ead829425810b28e8a",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/assistantbench.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 515,
+          "sha256": "36d37ed6d6b71616daf2cc7769b0545a03ef849fbed7d9b6c076340f9dd5c61d",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/assistantbench.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 518,
+          "sha256": "8547a296b15db00cd6989cb7613f94cb880aed83b79c999f9fe9a2313d39fd13",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-70b/assistantbench.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 517,
+          "sha256": "c6217e1b4108d2d5249cc22199b503618ee6b4559d2a46e083f9345bd61463fb",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "All authoritative source response bytes identical to prior verified full extraction audit; every numeric and condition record unchanged. Current table and source snapshot retained.",
+      "prior_verified_extract": {
+        "snapshot": "sources/audits/2026-10-22/webcomputer-extracts.tar.gz",
+        "archive_member": "browsergym-assistantbench.json",
+        "bytes": 2775,
+        "sha256": "7e5b71c27ed4e24ddaf52d0be3842ee118296b5771e4872275b66de080c477f5"
+      }
+    },
+    {
+      "id": "browsergym-miniwob",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 16,
+      "rows": 16,
+      "source_snapshot": "sources/browsergym-miniwob/results_miniwob.json",
+      "retained_table_retrieved": "2026-10-05",
+      "sources": [
+        {
+          "url": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 7753,
+          "sha256": "82cc7387c7fb54b807c75745e1c055bb9d69d5dd9e1cdd5505b57dad45d8e737",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/A3-Qwen3.5-9B/miniwob.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 612,
+          "sha256": "65cb35a202fae743edd5f1ac2e12c9c22016b0158393120eb3099e3762b3daa8",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-AgentTrek-1.0-32b/miniwob.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 490,
+          "sha256": "7e254d4cfe35b89032057578dc1f730885b9a4f77964275a6696c717fe60b2aa",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/miniwob.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 455,
+          "sha256": "b1a9684e5882c90c53c570d3c82377f6a322a1baa2d7de7f2a413853077f9755",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-4-Sonnet/miniwob.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 406,
+          "sha256": "dc36399fba1308f30640a9d91969624fcdac403e111f27775084c16939dc981f",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o-mini/miniwob.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 449,
+          "sha256": "b07b68c9de7842569d2ae3c239ef770a959d9ed7a04227d97565642c9fae7ded",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/miniwob.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 444,
+          "sha256": "7ffd4815baa1ef666a72df8e321fce75188bc9b1d5a59e36467bb0aa0c1553d8",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-mini/miniwob.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 394,
+          "sha256": "674f35fac26ea43ed604e296eab4487d9c020ef985fece4a7f07a91123e36f1b",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-nano/miniwob.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 395,
+          "sha256": "276d9bdfaf58522c485fe133fde58655b4069258b760e3728f4e20d74b0608a7",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5/miniwob.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 391,
+          "sha256": "0bf72cd8c8aa580a852fc9dfaee6f74153b1c0ffb756fe8fb605d97af322dddc",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/miniwob.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 449,
+          "sha256": "9465e9d2899a21c02877901d46257e0dc74dbf263c9e434bfd6642657cdd5deb",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-oss-120b/miniwob.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 398,
+          "sha256": "64ae5bbef12fd7b49c10f50be7b04394e17c05930f975a2204e8398efa80d374",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-oss-20b/miniwob.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 395,
+          "sha256": "d54cfcf07b6366ad021f52a804e5e4251158bb382fd1edff6b94d2ccedf3e60a",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/miniwob.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 469,
+          "sha256": "bccee3c64d4c9b6375494606344a89694ba9373a2cfec723ab1f87456ff9c7e2",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-70b/miniwob.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 451,
+          "sha256": "9f52ae6c1a79181a8e4edc13287b1ca70aea0c74275d3af644bf8029a90bab64",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/OrbyAgent-ActIO-72b/miniwob.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 455,
+          "sha256": "0e7f4c191a92e559b678e4a7b41f1222684c33c3d57d28786fc178e4eab6a9ad",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/OrbyAgent-Claude-3.5-Sonnet/miniwob.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 465,
+          "sha256": "d5a7c771819b37bbaecd666ae9ff53d4d279a4e2748f03c80e2b8e5ae0611c89",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "All authoritative source response bytes identical to prior verified full extraction audit; every numeric and condition record unchanged. Current table and source snapshot retained.",
+      "prior_verified_extract": {
+        "snapshot": "sources/audits/2026-10-22/webcomputer-extracts.tar.gz",
+        "archive_member": "browsergym-miniwob.json",
+        "bytes": 6562,
+        "sha256": "733ddbdd94b406279a4b2cde6cd4e585f43cef96b5642032e1696c03332d0c10"
+      }
+    },
+    {
+      "id": "browsergym-visualwebarena",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 4,
+      "rows": 4,
+      "source_snapshot": "sources/browsergym-visualwebarena/results_visualwebarena.json",
+      "retained_table_retrieved": "2026-10-05",
+      "sources": [
+        {
+          "url": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 7753,
+          "sha256": "82cc7387c7fb54b807c75745e1c055bb9d69d5dd9e1cdd5505b57dad45d8e737",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/A3-Qwen3.5-9B/visualwebarena.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 807,
+          "sha256": "5c57f9505b9ea8cc865a220ac624790452cb74b39f8fecf8b9d4120be62a1cc8",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/visualwebarena.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 479,
+          "sha256": "ca920c35139cebd9e2aceefe1cf0c0bc4b812d6187662e4d370eceb0cf2f6945",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o-mini/visualwebarena.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 473,
+          "sha256": "ba420442e2b2c76df8bbcafc91947eed0f8d930a76c9b757b659859d5bd50494",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/visualwebarena.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 468,
+          "sha256": "0069033938ccba77f3a38be40bd5ca07ebabab0be172120a73d4e7789faa0d48",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "All authoritative source response bytes identical to prior verified full extraction audit; every numeric and condition record unchanged. Current table and source snapshot retained.",
+      "prior_verified_extract": {
+        "snapshot": "sources/audits/2026-10-22/webcomputer-extracts.tar.gz",
+        "archive_member": "browsergym-visualwebarena.json",
+        "bytes": 2013,
+        "sha256": "dd25e8eed7d8a49cc813cab9f984d53aef4169a92beec6f325b266cf2b66c6b7"
+      }
+    },
+    {
+      "id": "browsergym-webarena",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 12,
+      "rows": 12,
+      "source_snapshot": "sources/browsergym-webarena/results_webarena.json",
+      "retained_table_retrieved": "2026-10-05",
+      "sources": [
+        {
+          "url": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 7753,
+          "sha256": "82cc7387c7fb54b807c75745e1c055bb9d69d5dd9e1cdd5505b57dad45d8e737",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/A3-Qwen3.5-9B/webarena.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 749,
+          "sha256": "bcea3d0bfe45f043b4fe0eb6ec61c219c4c6b5e35472660a2d4f7456eb74b250",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-AgentTrek-1.0-32b/webarena.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 491,
+          "sha256": "7b9dac29a6efa888c5d9e2aa817d549c1ee7df537074081845d35b64fb54385d",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/webarena.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 473,
+          "sha256": "de4f970b77b83f1e09b8c98a957654149c0d91b23bd8fff170b6869dd8d195f0",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.7-Sonnet/webarena.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 406,
+          "sha256": "fe715ea246b3a178c845720558fe154546c63d69b1223f2087addd82171fc9dd",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4.1-Mini/webarena.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 399,
+          "sha256": "27863f95494366fedfeea0dac063a76c8293d3a64b8ec13c9793f5440eaa5d14",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o-mini/webarena.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 467,
+          "sha256": "642a18bc81d6eed67f12ea5f3b92f6e187335a9c63f6c751f19a03b66d6fc018",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/webarena.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 462,
+          "sha256": "621fddaf8ee04bab7cfccf75b9dd454e468d757aeb2aa4ccd11c57dcff4c09c5",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/webarena.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 467,
+          "sha256": "2d7cb22e24172461136ec603830a2f56ab60904c621432903053209ad58d412b",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/webarena.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 470,
+          "sha256": "968638a31fe54315197bf9f6e0bf169182dd01c9ec5875ce7b67fb4146db1815",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-70b/webarena.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 469,
+          "sha256": "98e564f6cc04bf8614e457e1f0b94a7fb8df1221a75ed4d98afdb757022d30b7",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/OrbyAgent-ActIO-72b/webarena.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 517,
+          "sha256": "6caac10fd3d012558eefd8a71dd39b807be61c4edf88bfe341330671eae29e8a",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/OrbyAgent-Claude-3.5-Sonnet/webarena.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 519,
+          "sha256": "79a29ea899bd2e238234893685c7ba5cc192c79e4ec66f827ce6e27067bdf101",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "All authoritative source response bytes identical to prior verified full extraction audit; every numeric and condition record unchanged. Current table and source snapshot retained.",
+      "prior_verified_extract": {
+        "snapshot": "sources/audits/2026-10-22/webcomputer-extracts.tar.gz",
+        "archive_member": "browsergym-webarena.json",
+        "bytes": 5343,
+        "sha256": "b31e1b0737ad79a6eaba962d4501a9ff311006bd1f2d59affc38acdcd377c8f2"
+      }
+    },
+    {
+      "id": "browsergym-weblinx",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 6,
+      "rows": 6,
+      "source_snapshot": "sources/browsergym-weblinx/results_weblinx.json",
+      "retained_table_retrieved": "2026-10-05",
+      "sources": [
+        {
+          "url": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 7753,
+          "sha256": "82cc7387c7fb54b807c75745e1c055bb9d69d5dd9e1cdd5505b57dad45d8e737",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/weblinx.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 472,
+          "sha256": "f8972acf77dfaa591267ce44fda3e7a86d783ba6cc5f3eb14de388a473dc8b58",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o-mini/weblinx.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 466,
+          "sha256": "a4d871bfb78f22a867613d7c3f8d4cc0840a7b1573809e479f48282cb3150e47",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/weblinx.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 461,
+          "sha256": "525ceb7c5be75ea76b62a3f12e88999118705e2063b79ccd1a50538949042339",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/weblinx.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 466,
+          "sha256": "4eb598dc951a09717364c53f1b99ab2f354262d93101b685fe0743ade64c2b87",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/weblinx.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 468,
+          "sha256": "47674e6ad4bda4e96f0fd0b99a8d832dc2b77f5edcc0dceacf58a708095b5bf2",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-70b/weblinx.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 467,
+          "sha256": "8a9824a9302e82f6ca026f518731f635a37750e5529aad8eb4652ddd45764c4c",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "All authoritative source response bytes identical to prior verified full extraction audit; every numeric and condition record unchanged. Current table and source snapshot retained.",
+      "prior_verified_extract": {
+        "snapshot": "sources/audits/2026-10-22/webcomputer-extracts.tar.gz",
+        "archive_member": "browsergym-weblinx.json",
+        "bytes": 2479,
+        "sha256": "b181dc1e2add93b01a1139640b4805876c1b427127e2e84dc2bc38551346d5e8"
+      }
+    },
+    {
+      "id": "browsergym-workarena-l1",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 16,
+      "rows": 16,
+      "source_snapshot": "sources/browsergym-workarena-l1/results_workarena-l1.json",
+      "retained_table_retrieved": "2026-10-05",
+      "sources": [
+        {
+          "url": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 7753,
+          "sha256": "82cc7387c7fb54b807c75745e1c055bb9d69d5dd9e1cdd5505b57dad45d8e737",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/A3-Qwen3.5-9B/workarena-l1.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 627,
+          "sha256": "c6569b12464c4bd0c00ae31ebed4b4ccedb8b1dcb483464d8ab9879e995be824",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-AgentTrek-1.0-32b/workarena-l1.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 497,
+          "sha256": "74a6394fa902cb4b7e18f4d772dfc536d7a611fc53975ed5e3233956907859ae",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/workarena-l1.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 460,
+          "sha256": "a33de4c34c4bd63884c91dcea1c64a551be01330be0897a253fe19960403534d",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-4-Sonnet/workarena-l1.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 408,
+          "sha256": "fead207233b57beeb9e0b475d113ba439875537d4d2edd86232f8381366a1ed2",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o-mini/workarena-l1.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 452,
+          "sha256": "a2135d21629550f960ce9aefcbcb7a7a2b11940471f3a2339722360cbdb173d5",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/workarena-l1.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 449,
+          "sha256": "08be6a487c83b24aa52adaae00c53b8e20095be1ed84747280219f3251134670",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-mini/workarena-l1.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 401,
+          "sha256": "f7c887c8af41cbda87abbf20ccf8c859ad75d7798af524f106bc92b12067ec5e",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-nano/workarena-l1.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 401,
+          "sha256": "1a66b4656f2781b582fb7284ab7a1103ac23b3f9a7b7258653b40dd050ea901f",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5/workarena-l1.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 430,
+          "sha256": "7ea81bbfd5ce9a8a101bb7d1dea185d514cdb72dee8f2fdbf9a3660a6f8cd2fc",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/workarena-l1.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 944,
+          "sha256": "1c75ff75b2ad720a9655f776f7e408b3386a4bea1863bb43de4c063fa61a6584",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-oss-120b/workarena-l1.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 403,
+          "sha256": "2bb00d97edb3cdc0a30fcc998fdea19b1f2f9c302a693362e5a2329d5cb38951",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-oss-20b/workarena-l1.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 402,
+          "sha256": "cc23870c0a148a840ce4183db58bfd48f7d62ddc031d34d45be7faba19d091d7",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/workarena-l1.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 457,
+          "sha256": "cf57301f5cc66d17bc4b07e2caa40534b4703b3134a5336b035da670026b7a82",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-70b/workarena-l1.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 456,
+          "sha256": "3ec1bc65128a349bfd21370cc8ea276a4f41fcdbc108c242b106a08556260a4f",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-o3-mini/workarena-l1.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 486,
+          "sha256": "75e5ab9eab52d9e4aaf97f9cf5856fe5099dff9b1ac9cc9d8d68847d0c83806c",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/IpaziaHPA-Gemini-3-flash-preview/workarena-l1.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 494,
+          "sha256": "424cf76d2d3a4ddc619e0c2e27d7fd380032f84662435b9f847630490474c89b",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "All authoritative source response bytes identical to prior verified full extraction audit; every numeric and condition record unchanged. Current table and source snapshot retained.",
+      "prior_verified_extract": {
+        "snapshot": "sources/audits/2026-10-22/webcomputer-extracts.tar.gz",
+        "archive_member": "browsergym-workarena-l1.json",
+        "bytes": 7148,
+        "sha256": "e1b3a7f92d241df36687677dcd3e484b57b6fe456b0fa16c6a04cc4ca6c10b0b"
+      }
+    },
+    {
+      "id": "browsergym-workarena-l2",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 14,
+      "rows": 14,
+      "source_snapshot": "sources/browsergym-workarena-l2/results_workarena-l2.json",
+      "retained_table_retrieved": "2026-10-05",
+      "sources": [
+        {
+          "url": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 7753,
+          "sha256": "82cc7387c7fb54b807c75745e1c055bb9d69d5dd9e1cdd5505b57dad45d8e737",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/A3-Qwen3.5-9B/workarena-l2.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 649,
+          "sha256": "fa7ddf1120884e43aff2cec3480db65d10920de312b71e46cae89e2011c2c95a",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-AgentTrek-1.0-32b/workarena-l2.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 496,
+          "sha256": "855fcede12daad9cb6315bdfe5fb2ebaf1af6b730d8d78ac45e2496bb77c0717",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/workarena-l2.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 460,
+          "sha256": "34f9128e7aa9f8e01bae65eaceb94cc2314bb82899e5113b9476ea4c4b510b2e",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-4-Sonnet/workarena-l2.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 408,
+          "sha256": "5fb56137adef3ed7c249ecc78642cd7323170b8e9f4dd920395524abad7db39b",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o-mini/workarena-l2.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 453,
+          "sha256": "a7e7c9f98bbb0a4d8041dbfc046fea06cf67c5efeb6fd4b58098a6c2c6082aa3",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/workarena-l2.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 448,
+          "sha256": "1a3be6550ce29c3c8936d13d14be23f9d8c0ca14a42372700579d14a5322f9a6",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-mini/workarena-l2.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 401,
+          "sha256": "7ca101ac6bb4970547e6188a18ae14d0191f5659e6fad01b2d567d595dead633",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-nano/workarena-l2.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 400,
+          "sha256": "f72981c3dcd60e2ebb40e590977c980179461fca8ab28300d76924c3ea6635fe",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5/workarena-l2.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 396,
+          "sha256": "c414dfd4b25be3268be8f82bc919416c544e5a36e44ef65c0013a06423499dc4",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/workarena-l2.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 454,
+          "sha256": "bc17322f1a54b4339f8f5a79131245b3ea012cf226b5b5caecb54de7774ef518",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-oss-120b/workarena-l2.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 403,
+          "sha256": "30f6d49a050903b66b790f76dc63db02f5dd97279234a6aeb891a5ba354795c4",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-oss-20b/workarena-l2.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 401,
+          "sha256": "91eb4981a7ae5dc0749deec209a25aa8ba5d9cbb23e931ee212c7804a8d2a72f",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/workarena-l2.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 473,
+          "sha256": "3b4c47354c96735fe3e7b27a209e65d5a6272e99489b3cf81745245e95dc3c21",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-70b/workarena-l2.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 455,
+          "sha256": "8fa434995294d08fdc27e09973e327a28951fe64034550b962a9c30d0d8288f2",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "All authoritative source response bytes identical to prior verified full extraction audit; every numeric and condition record unchanged. Current table and source snapshot retained.",
+      "prior_verified_extract": {
+        "snapshot": "sources/audits/2026-10-22/webcomputer-extracts.tar.gz",
+        "archive_member": "browsergym-workarena-l2.json",
+        "bytes": 5850,
+        "sha256": "e6ba04cfc6aa1c5916bc7eadc9f7ce5c5067402f9750fd06d4e0ef3d9fe377c7"
+      }
+    },
+    {
+      "id": "browsergym-workarena-l3",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 8,
+      "rows": 8,
+      "source_snapshot": "sources/browsergym-workarena-l3/results_workarena-l3.json",
+      "retained_table_retrieved": "2026-10-05",
+      "sources": [
+        {
+          "url": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 7753,
+          "sha256": "82cc7387c7fb54b807c75745e1c055bb9d69d5dd9e1cdd5505b57dad45d8e737",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-AgentTrek-1.0-32b/workarena-l3.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 494,
+          "sha256": "a4833791b84344fa444ab93257a568a41ee424a20716146abb7527985882f7fa",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/workarena-l3.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 459,
+          "sha256": "e417a592179b53523cf2b22f31aee050b9fb0ca7ed3735cf6136431c45fdb944",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o-mini/workarena-l3.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 435,
+          "sha256": "bc5f2f366a091933d81b5cf31d993273dea57fceed327448f297c25e039dd0ee",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/workarena-l3.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 430,
+          "sha256": "659f7caaf898e5e08df5d19223c8e850956282ecdb7060f6810df4e2f5fc23b0",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5/workarena-l3.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 429,
+          "sha256": "f448e30ef4d816a4f68692fcfbf12d51ed35c50bff4341d7dab2f88143ea5945",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/workarena-l3.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 435,
+          "sha256": "9b9343bc23580734b483f7b645e366c4db6c237b4f34feb9dc272ad13155d6f3",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/workarena-l3.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 438,
+          "sha256": "2a3918313197e5b829547e6f3ee4a7b2b865c0e7b5ac1017d79f4b8ed6638e65",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-70b/workarena-l3.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 437,
+          "sha256": "856ebe4e16d9d71dab0d66c4d460c58e6abbb751c85da853738426ad50c0cf07",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "All authoritative source response bytes identical to prior verified full extraction audit; every numeric and condition record unchanged. Current table and source snapshot retained.",
+      "prior_verified_extract": {
+        "snapshot": "sources/audits/2026-10-22/webcomputer-extracts.tar.gz",
+        "archive_member": "browsergym-workarena-l3.json",
+        "bytes": 3176,
+        "sha256": "a257e11e52d2d1191c3e92222dd1aacb392cda9af713c78dbe9743cbc958ca17"
+      }
+    },
+    {
+      "id": "cua-bench-eda-kicad",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 10,
+      "rows": 10,
+      "source_snapshot": "sources/cua-bench-eda-kicad/leaderboard_table.html",
+      "retained_table_retrieved": "2026-10-05",
+      "sources": [
+        {
+          "url": "https://cua.ai/cuabench/leaderboard",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 54676,
+          "sha256": "2dec1687efb0212d62020034a07c4c04f0efa5d03a50a714f2e89d23a8726f50",
+          "raw_bytes_match_previous_audit": false
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "Live HTML wrapper changed; every result table row text, numeric cell and public link matches retained snapshot. Table bytes unchanged."
+    },
+    {
+      "id": "hal-assistantbench",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 15,
+      "rows": 15,
+      "source_snapshot": "sources/hal-assistantbench/leaderboard-table.html",
+      "retained_table_retrieved": "2026-10-05",
+      "sources": [
+        {
+          "url": "https://hal.cs.princeton.edu/assistantbench",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 199625,
+          "sha256": "be14ddb7055803de81f1ca8d41a42583a6582014ce4b687806145f7162bf8a73",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "All authoritative source response bytes identical to prior verified full extraction audit; every numeric and condition record unchanged. Current table and source snapshot retained.",
+      "prior_verified_extract": {
+        "snapshot": "sources/audits/2026-10-22/webcomputer-extracts.tar.gz",
+        "archive_member": "hal-assistantbench.json",
+        "bytes": 6395,
+        "sha256": "74551a85ec1c09b60163ceae28326068038716e0676819dba582a764a82d4658"
+      }
+    },
+    {
+      "id": "hal-online-mind2web",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 22,
+      "rows": 22,
+      "source_snapshot": "sources/hal-online-mind2web/leaderboard-table.html",
+      "retained_table_retrieved": "2026-10-05",
+      "sources": [
+        {
+          "url": "https://hal.cs.princeton.edu/online_mind2web",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 265682,
+          "sha256": "3c689a054d9d4d538ae0bde48d546a68223f3083fc6b210a4143b3c3e1e8cc0f",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "All authoritative source response bytes identical to prior verified full extraction audit; every numeric and condition record unchanged. Current table and source snapshot retained.",
+      "prior_verified_extract": {
+        "snapshot": "sources/audits/2026-10-22/webcomputer-extracts.tar.gz",
+        "archive_member": "hal-online-mind2web.json",
+        "bytes": 8380,
+        "sha256": "f2ffbd897d95fd60e2a11cf920a325fb5c834f758d9079499cb572ec5dacc7aa"
+      }
+    },
+    {
+      "id": "macagentbench",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 30,
+      "rows": 30,
+      "source_snapshot": "sources/macagentbench/index.json",
+      "retained_table_retrieved": "2026-10-05",
+      "sources": [
+        {
+          "url": "https://jetastra.github.io/MacAgentBench/data/models/index.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 8538,
+          "sha256": "20d9e2f8ede68266a3e60f2f20c4ff5644a4bb06bd9a46af8688413c7b3ca9e0",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "All authoritative source response bytes identical to prior verified full extraction audit; every numeric and condition record unchanged. Current table and source snapshot retained.",
+      "prior_verified_extract": {
+        "snapshot": "sources/audits/2026-10-22/webcomputer-extracts.tar.gz",
+        "archive_member": "macagentbench.json",
+        "bytes": 8539,
+        "sha256": "79b2e74173e676ef30359e727c5d8b1076125233eb88c68084f7c34031f8eefa"
+      }
+    },
+    {
+      "id": "mobileworld",
+      "retrieved": "2026-10-25",
+      "status": "changed",
+      "old_rows": 41,
+      "rows": 42,
+      "source_snapshot": "sources/mobileworld/leaderboard.json",
+      "retained_table_retrieved": "2026-10-25",
+      "sources": [
+        {
+          "url": "https://tongyi-mai.github.io/MobileWorld/leaderboard.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 20031,
+          "sha256": "47a3ef74398159f0c22d9c921cbc8c807342704335460f0ed519cc1875b8774c",
+          "raw_bytes_match_previous_audit": false
+        }
+      ],
+      "row_delta": {
+        "added": 1,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "Parsed complete official JSON; all prior source rows unchanged; added one Agentic Framework row mechanically. No single-model attribution; model_ids left empty."
+    },
+    {
+      "id": "online-mind2web-auto",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 20,
+      "rows": 20,
+      "source_snapshot": "sources/online-mind2web-auto/auto_o4-mini.csv",
+      "retained_table_retrieved": "2026-10-05",
+      "sources": [
+        {
+          "url": "https://huggingface.co/spaces/osunlp/Online_Mind2Web_Leaderboard/resolve/main/auto_o4-mini_Mind2Web-Online%20-%20Leaderboard_data.csv",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 3708,
+          "sha256": "1cea02f3f4218afd8f4c83df456bbf6b0dbfa248f0d538fc2cfa4200742c8f38",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "All authoritative source response bytes identical to prior verified full extraction audit; every numeric and condition record unchanged. Current table and source snapshot retained.",
+      "prior_verified_extract": {
+        "snapshot": "sources/audits/2026-10-22/webcomputer-extracts.tar.gz",
+        "archive_member": "online-mind2web-auto.json",
+        "bytes": 5644,
+        "sha256": "636e4fffdde5e384edbadf5297fb44f95d60d339b6f53900cf6dc1366626ba55"
+      }
+    },
+    {
+      "id": "online-mind2web-human",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 13,
+      "rows": 13,
+      "source_snapshot": "sources/online-mind2web-human/human.csv",
+      "retained_table_retrieved": "2026-10-05",
+      "sources": [
+        {
+          "url": "https://huggingface.co/spaces/osunlp/Online_Mind2Web_Leaderboard/resolve/main/human_Mind2Web-Online%20-%20Leaderboard_data.csv",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 1573,
+          "sha256": "64f3c169115a9037d9055831d7362e635e06b1fd92a7aea6e8a80f3bf0bb40c1",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "All authoritative source response bytes identical to prior verified full extraction audit; every numeric and condition record unchanged. Current table and source snapshot retained.",
+      "prior_verified_extract": {
+        "snapshot": "sources/audits/2026-10-22/webcomputer-extracts.tar.gz",
+        "archive_member": "online-mind2web-human.json",
+        "bytes": 2571,
+        "sha256": "237c7b5672375c660a687a8cba67dbb876cfa4b887f1b2fac7022f175c225b3d"
+      }
+    },
+    {
+      "id": "osuniverse",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 8,
+      "rows": 8,
+      "source_snapshot": "sources/osuniverse/agent_performance_table.html",
+      "retained_table_retrieved": "2026-10-05",
+      "sources": [
+        {
+          "url": "https://agentsea.github.io/osuniverse/",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 22800,
+          "sha256": "15a1befde1c86308d65975b01495d0718e2598589994e8ffc83e585c1f0922b3",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "All authoritative source response bytes identical to prior verified full extraction audit; every numeric and condition record unchanged. Current table and source snapshot retained.",
+      "prior_verified_extract": {
+        "snapshot": "sources/audits/2026-10-22/webcomputer-extracts.tar.gz",
+        "archive_member": "osuniverse.json",
+        "bytes": 1043,
+        "sha256": "71da4d3f99e379c55d533adc0d5c0287abadf7f19e351496ce249cac26ae2d97"
+      }
+    },
+    {
+      "id": "osworld-2-1-full-500steps",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 7,
+      "rows": 7,
+      "source_snapshot": "sources/osworld-2-1-full-500steps/official-results.json",
+      "retained_table_retrieved": "2026-10-18",
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json?v=leaderboard-musespark-v10",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 21204,
+          "sha256": "1bd159e867f183f1f146e556f1d82b5eb10e0cede37bfd33e90437f00f7c4ef5",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-musespark-v10",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 18526,
+          "sha256": "4c425a9ae9edcdb4a9809e3b3ce6530c0c58e40e02d96e953b5cb773cb3dac63",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 88332,
+          "sha256": "0f4c37bc221153a3c4c4c1fe89d70f0b421ed660ee9d8841b9d0c06ad776f680",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "All authoritative source response bytes identical to prior verified full extraction audit; every numeric and condition record unchanged. Current table and source snapshot retained.",
+      "prior_verified_extract": {
+        "snapshot": "sources/audits/2026-10-22/webcomputer-extracts.tar.gz",
+        "archive_member": "osworld-2-1-full-500steps.json",
+        "bytes": 2831,
+        "sha256": "66e06c3b7f793c59520893d9290a4ddcce72250b2d4e1dd7e41f1bc3a8391195"
+      }
+    },
+    {
+      "id": "osworld-2-1-offline-500steps",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 5,
+      "rows": 5,
+      "source_snapshot": "sources/osworld-2-1-offline-500steps/official-results.json",
+      "retained_table_retrieved": "2026-10-07",
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json?v=leaderboard-musespark-v10",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 21204,
+          "sha256": "1bd159e867f183f1f146e556f1d82b5eb10e0cede37bfd33e90437f00f7c4ef5",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-musespark-v10",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 18526,
+          "sha256": "4c425a9ae9edcdb4a9809e3b3ce6530c0c58e40e02d96e953b5cb773cb3dac63",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 88332,
+          "sha256": "0f4c37bc221153a3c4c4c1fe89d70f0b421ed660ee9d8841b9d0c06ad776f680",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "All authoritative source response bytes identical to prior verified full extraction audit; every numeric and condition record unchanged. Current table and source snapshot retained.",
+      "prior_verified_extract": {
+        "snapshot": "sources/audits/2026-10-22/webcomputer-extracts.tar.gz",
+        "archive_member": "osworld-2-1-offline-500steps.json",
+        "bytes": 1879,
+        "sha256": "122235a06e44c7cfea670534b27864bd999bde7f369710055d5418863b389c32"
+      }
+    },
+    {
+      "id": "osworld-2-1-public-agents-full-450steps",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 1,
+      "rows": 1,
+      "source_snapshot": "sources/osworld-2-1-public-agents-full-450steps/official-results.json",
+      "retained_table_retrieved": "2026-10-18",
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json?v=leaderboard-musespark-v10",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 21204,
+          "sha256": "1bd159e867f183f1f146e556f1d82b5eb10e0cede37bfd33e90437f00f7c4ef5",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-musespark-v10",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 18526,
+          "sha256": "4c425a9ae9edcdb4a9809e3b3ce6530c0c58e40e02d96e953b5cb773cb3dac63",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 88332,
+          "sha256": "0f4c37bc221153a3c4c4c1fe89d70f0b421ed660ee9d8841b9d0c06ad776f680",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "All authoritative source response bytes identical to prior verified full extraction audit; every numeric and condition record unchanged. Current table and source snapshot retained.",
+      "prior_verified_extract": {
+        "snapshot": "sources/audits/2026-10-22/webcomputer-extracts.tar.gz",
+        "archive_member": "osworld-2-1-public-agents-full-450steps.json",
+        "bytes": 773,
+        "sha256": "d53c141f830886691861ee4617a3a2585e3adbae9f4edb6e08fbe0abf2b34114"
+      }
+    },
+    {
+      "id": "osworld-2-1-public-agents-full-500steps",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 1,
+      "rows": 1,
+      "source_snapshot": "sources/osworld-2-1-public-agents-full-500steps/official-results.json",
+      "retained_table_retrieved": "2026-10-07",
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json?v=leaderboard-musespark-v10",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 21204,
+          "sha256": "1bd159e867f183f1f146e556f1d82b5eb10e0cede37bfd33e90437f00f7c4ef5",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-musespark-v10",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 18526,
+          "sha256": "4c425a9ae9edcdb4a9809e3b3ce6530c0c58e40e02d96e953b5cb773cb3dac63",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 88332,
+          "sha256": "0f4c37bc221153a3c4c4c1fe89d70f0b421ed660ee9d8841b9d0c06ad776f680",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "All authoritative source response bytes identical to prior verified full extraction audit; every numeric and condition record unchanged. Current table and source snapshot retained.",
+      "prior_verified_extract": {
+        "snapshot": "sources/audits/2026-10-22/webcomputer-extracts.tar.gz",
+        "archive_member": "osworld-2-1-public-agents-full-500steps.json",
+        "bytes": 685,
+        "sha256": "4210bab6eaf32f239c36bde56cee4afce1f43a1805b784a359f56574f0a8a97c"
+      }
+    },
+    {
+      "id": "osworld-2-full-150steps",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 6,
+      "rows": 6,
+      "source_snapshot": "sources/osworld-2-full-150steps/official-results.json",
+      "retained_table_retrieved": "2026-10-07",
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json?v=leaderboard-musespark-v10",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 21204,
+          "sha256": "1bd159e867f183f1f146e556f1d82b5eb10e0cede37bfd33e90437f00f7c4ef5",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-musespark-v10",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 18526,
+          "sha256": "4c425a9ae9edcdb4a9809e3b3ce6530c0c58e40e02d96e953b5cb773cb3dac63",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 88332,
+          "sha256": "0f4c37bc221153a3c4c4c1fe89d70f0b421ed660ee9d8841b9d0c06ad776f680",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "All authoritative source response bytes identical to prior verified full extraction audit; every numeric and condition record unchanged. Current table and source snapshot retained.",
+      "prior_verified_extract": {
+        "snapshot": "sources/audits/2026-10-22/webcomputer-extracts.tar.gz",
+        "archive_member": "osworld-2-full-150steps.json",
+        "bytes": 1651,
+        "sha256": "9518ec4395670501f35970888e92a186911eb25c5f40feb04f8ac8c9baef903e"
+      }
+    },
+    {
+      "id": "osworld-2-full-300steps",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 7,
+      "rows": 7,
+      "source_snapshot": "sources/osworld-2-full-300steps/official-results.json",
+      "retained_table_retrieved": "2026-10-07",
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json?v=leaderboard-musespark-v10",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 21204,
+          "sha256": "1bd159e867f183f1f146e556f1d82b5eb10e0cede37bfd33e90437f00f7c4ef5",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-musespark-v10",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 18526,
+          "sha256": "4c425a9ae9edcdb4a9809e3b3ce6530c0c58e40e02d96e953b5cb773cb3dac63",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 88332,
+          "sha256": "0f4c37bc221153a3c4c4c1fe89d70f0b421ed660ee9d8841b9d0c06ad776f680",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "All authoritative source response bytes identical to prior verified full extraction audit; every numeric and condition record unchanged. Current table and source snapshot retained.",
+      "prior_verified_extract": {
+        "snapshot": "sources/audits/2026-10-22/webcomputer-extracts.tar.gz",
+        "archive_member": "osworld-2-full-300steps.json",
+        "bytes": 1935,
+        "sha256": "28e699abe42965404703fb0f3046d1099aa9662ad7b19f3ab4a10a5041a64f15"
+      }
+    },
+    {
+      "id": "osworld-2-full-500steps",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 16,
+      "rows": 16,
+      "source_snapshot": "sources/osworld-2-full-500steps/official-results.json",
+      "retained_table_retrieved": "2026-10-07",
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json?v=leaderboard-musespark-v10",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 21204,
+          "sha256": "1bd159e867f183f1f146e556f1d82b5eb10e0cede37bfd33e90437f00f7c4ef5",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-musespark-v10",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 18526,
+          "sha256": "4c425a9ae9edcdb4a9809e3b3ce6530c0c58e40e02d96e953b5cb773cb3dac63",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 88332,
+          "sha256": "0f4c37bc221153a3c4c4c1fe89d70f0b421ed660ee9d8841b9d0c06ad776f680",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "All authoritative source response bytes identical to prior verified full extraction audit; every numeric and condition record unchanged. Current table and source snapshot retained.",
+      "prior_verified_extract": {
+        "snapshot": "sources/audits/2026-10-22/webcomputer-extracts.tar.gz",
+        "archive_member": "osworld-2-full-500steps.json",
+        "bytes": 4843,
+        "sha256": "28663201f1b9c127473929b29a05c18a463bcf7499ff3cf2c2392141eb4e9d9e"
+      }
+    },
+    {
+      "id": "osworld-2-offline-500steps",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 11,
+      "rows": 11,
+      "source_snapshot": "sources/osworld-2-offline-500steps/official-results.json",
+      "retained_table_retrieved": "2026-10-07",
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json?v=leaderboard-musespark-v10",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 21204,
+          "sha256": "1bd159e867f183f1f146e556f1d82b5eb10e0cede37bfd33e90437f00f7c4ef5",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-musespark-v10",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 18526,
+          "sha256": "4c425a9ae9edcdb4a9809e3b3ce6530c0c58e40e02d96e953b5cb773cb3dac63",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 88332,
+          "sha256": "0f4c37bc221153a3c4c4c1fe89d70f0b421ed660ee9d8841b9d0c06ad776f680",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "All authoritative source response bytes identical to prior verified full extraction audit; every numeric and condition record unchanged. Current table and source snapshot retained.",
+      "prior_verified_extract": {
+        "snapshot": "sources/audits/2026-10-22/webcomputer-extracts.tar.gz",
+        "archive_member": "osworld-2-offline-500steps.json",
+        "bytes": 3805,
+        "sha256": "a92025edec92ee4d94f48e2ef8fb526bf0b60335ea7aa725536cb9ab21361c9d"
+      }
+    },
+    {
+      "id": "osworld-2-public-agents-full-450steps",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 1,
+      "rows": 1,
+      "source_snapshot": "sources/osworld-2-public-agents-full-450steps/official-results.json",
+      "retained_table_retrieved": "2026-10-18",
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json?v=leaderboard-musespark-v10",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 21204,
+          "sha256": "1bd159e867f183f1f146e556f1d82b5eb10e0cede37bfd33e90437f00f7c4ef5",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-musespark-v10",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 18526,
+          "sha256": "4c425a9ae9edcdb4a9809e3b3ce6530c0c58e40e02d96e953b5cb773cb3dac63",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 88332,
+          "sha256": "0f4c37bc221153a3c4c4c1fe89d70f0b421ed660ee9d8841b9d0c06ad776f680",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "All authoritative source response bytes identical to prior verified full extraction audit; every numeric and condition record unchanged. Current table and source snapshot retained.",
+      "prior_verified_extract": {
+        "snapshot": "sources/audits/2026-10-22/webcomputer-extracts.tar.gz",
+        "archive_member": "osworld-2-public-agents-full-450steps.json",
+        "bytes": 782,
+        "sha256": "ef4737d0c00245b5f5456dbfd03a5a8fe3878f21d6ee89505ccac05b4d0dfc48"
+      }
+    },
+    {
+      "id": "osworld-mcp",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 22,
+      "rows": 22,
+      "source_snapshot": "sources/osworld-mcp/leaderboard_table.html",
+      "retained_table_retrieved": "2026-10-05",
+      "sources": [
+        {
+          "url": "https://osworld-mcp.github.io/",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 42986,
+          "sha256": "181cb1fa9d2c373fec67db088dfd380b52d4d323fa9cc380cc44b15e4ceaa4b4",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "All authoritative source response bytes identical to prior verified full extraction audit; every numeric and condition record unchanged. Current table and source snapshot retained.",
+      "prior_verified_extract": {
+        "snapshot": "sources/audits/2026-10-22/webcomputer-extracts.tar.gz",
+        "archive_member": "osworld-mcp.json",
+        "bytes": 5395,
+        "sha256": "b4b1c1e6fa1280caa9c048f148b450491254eb56c267054730e26e87eca2ae67"
+      }
+    },
+    {
+      "id": "osworld-self-reported-a11y-tree",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 15,
+      "rows": 15,
+      "source_snapshot": "sources/osworld-self-reported-a11y-tree/self_reported_results.A11y_tree.json",
+      "retained_table_retrieved": "2026-10-05",
+      "sources": [
+        {
+          "url": "https://osworld-v1.xlang.ai/static/data/self_reported_results.xlsx",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 24115,
+          "sha256": "3016a0665f7c4527f235cd72f2217d759461253c488ba03991f36ea44968f731",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "All authoritative source response bytes identical to prior verified full extraction audit; every numeric and condition record unchanged. Current table and source snapshot retained.",
+      "prior_verified_extract": {
+        "snapshot": "sources/audits/2026-10-22/webcomputer-extracts.tar.gz",
+        "archive_member": "osworld-self-reported-a11y-tree.json",
+        "bytes": 4601,
+        "sha256": "23b6c662459ddcd62a496076c9aefb474a22ce729a9a0af56b45c0c00025f5d3"
+      }
+    },
+    {
+      "id": "osworld-self-reported-screenshot",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 56,
+      "rows": 56,
+      "source_snapshot": "sources/osworld-self-reported-screenshot/self_reported_results.Screenshot.json",
+      "retained_table_retrieved": "2026-10-05",
+      "sources": [
+        {
+          "url": "https://osworld-v1.xlang.ai/static/data/self_reported_results.xlsx",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 24115,
+          "sha256": "3016a0665f7c4527f235cd72f2217d759461253c488ba03991f36ea44968f731",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "All authoritative source response bytes identical to prior verified full extraction audit; every numeric and condition record unchanged. Current table and source snapshot retained.",
+      "prior_verified_extract": {
+        "snapshot": "sources/audits/2026-10-22/webcomputer-extracts.tar.gz",
+        "archive_member": "osworld-self-reported-screenshot.json",
+        "bytes": 17645,
+        "sha256": "5820a258b6d031f5fa02d5cc18215930c974e46247c0b5b8f561028bcf9626f6"
+      }
+    },
+    {
+      "id": "osworld-self-reported-screenshot-a11y-tree",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 18,
+      "rows": 18,
+      "source_snapshot": "sources/osworld-self-reported-screenshot-a11y-tree/self_reported_results.Screenshot_A11y_tree.json",
+      "retained_table_retrieved": "2026-10-05",
+      "sources": [
+        {
+          "url": "https://osworld-v1.xlang.ai/static/data/self_reported_results.xlsx",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 24115,
+          "sha256": "3016a0665f7c4527f235cd72f2217d759461253c488ba03991f36ea44968f731",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "All authoritative source response bytes identical to prior verified full extraction audit; every numeric and condition record unchanged. Current table and source snapshot retained.",
+      "prior_verified_extract": {
+        "snapshot": "sources/audits/2026-10-22/webcomputer-extracts.tar.gz",
+        "archive_member": "osworld-self-reported-screenshot-a11y-tree.json",
+        "bytes": 5486,
+        "sha256": "5499dfb0075eaca4e3f3ce0d04f5840999bb5b039154d11aedcbab832fb9d3d9"
+      }
+    },
+    {
+      "id": "osworld-self-reported-set-of-mark",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 11,
+      "rows": 11,
+      "source_snapshot": "sources/osworld-self-reported-set-of-mark/self_reported_results.Set-of-Mark.json",
+      "retained_table_retrieved": "2026-10-05",
+      "sources": [
+        {
+          "url": "https://osworld-v1.xlang.ai/static/data/self_reported_results.xlsx",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 24115,
+          "sha256": "3016a0665f7c4527f235cd72f2217d759461253c488ba03991f36ea44968f731",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "All authoritative source response bytes identical to prior verified full extraction audit; every numeric and condition record unchanged. Current table and source snapshot retained.",
+      "prior_verified_extract": {
+        "snapshot": "sources/audits/2026-10-22/webcomputer-extracts.tar.gz",
+        "archive_member": "osworld-self-reported-set-of-mark.json",
+        "bytes": 3404,
+        "sha256": "e2470df9bddfa41a997c1e2953aa8f65bf0cff6da2dc4d5c1af7ae088c2d9692"
+      }
+    },
+    {
+      "id": "osworld-verified",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 110,
+      "rows": 110,
+      "source_snapshot": "sources/osworld-verified/osworld_verified_results.sheet.json",
+      "retained_table_retrieved": "2026-10-05",
+      "sources": [
+        {
+          "url": "https://osworld-v1.xlang.ai/static/data/osworld_verified_results.xlsx",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 113066,
+          "sha256": "cf6b4b67eed566ddcd5a8b7ad2d89013157978dad0eea76ea12d2377471efc09",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "All authoritative source response bytes identical to prior verified full extraction audit; every numeric and condition record unchanged. Current table and source snapshot retained.",
+      "prior_verified_extract": {
+        "snapshot": "sources/audits/2026-10-22/webcomputer-extracts.tar.gz",
+        "archive_member": "osworld-verified.json",
+        "bytes": 107873,
+        "sha256": "206c3d6be5fbc6167849b121ce1e8ffcce08461aee75baf550a6192696b1d003"
+      }
+    },
+    {
+      "id": "real-v1-frameworks",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 5,
+      "rows": 5,
+      "source_snapshot": "sources/real-v1-frameworks/getVerifiedModelData_v1_frameworks.json",
+      "retained_table_retrieved": "2026-10-05",
+      "sources": [
+        {
+          "url": "https://www.realevals.xyz/api/getVerifiedModelData",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 3421090,
+          "sha256": "904366e9daf872b8ca250fac5e413248e80d61209aa7db055c213efb695b0683",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://www.realevals.xyz/_next/static/chunks/app/(main)/page-89fe682a64228531.js",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 24818,
+          "sha256": "ed5f6ff9986b67f6f4fcf7f2a08e97bcb598edbbca15277007289ab033dd71a4",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "All authoritative source response bytes identical to prior verified full extraction audit; every numeric and condition record unchanged. Current table and source snapshot retained.",
+      "prior_verified_extract": {
+        "snapshot": "sources/audits/2026-10-22/webcomputer-extracts.tar.gz",
+        "archive_member": "real-v1-frameworks.json",
+        "bytes": 113212,
+        "sha256": "cddcf5ab915fb51558ce73b0e9030d4797ddd23da92a902b9ed24fd08962f755"
+      }
+    },
+    {
+      "id": "real-v1-models",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 21,
+      "rows": 21,
+      "source_snapshot": "sources/real-v1-models/getVerifiedModelData_v1_models.json",
+      "retained_table_retrieved": "2026-10-05",
+      "sources": [
+        {
+          "url": "https://www.realevals.xyz/api/getVerifiedModelData",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 3421090,
+          "sha256": "904366e9daf872b8ca250fac5e413248e80d61209aa7db055c213efb695b0683",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://www.realevals.xyz/_next/static/chunks/app/(main)/page-89fe682a64228531.js",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 24818,
+          "sha256": "ed5f6ff9986b67f6f4fcf7f2a08e97bcb598edbbca15277007289ab033dd71a4",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "All authoritative source response bytes identical to prior verified full extraction audit; every numeric and condition record unchanged. Current table and source snapshot retained.",
+      "prior_verified_extract": {
+        "snapshot": "sources/audits/2026-10-22/webcomputer-extracts.tar.gz",
+        "archive_member": "real-v1-models.json",
+        "bytes": 475664,
+        "sha256": "a21549501d3c5b3ef77d15780da0c1b183357d160171d3b42ff024f8c66d0bff"
+      }
+    },
+    {
+      "id": "real-v1-open-arena",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 7,
+      "rows": 7,
+      "source_snapshot": "sources/real-v1-open-arena/getVerifiedModelData_v1_open-arena.json",
+      "retained_table_retrieved": "2026-10-05",
+      "sources": [
+        {
+          "url": "https://www.realevals.xyz/api/getVerifiedModelData",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 3421090,
+          "sha256": "904366e9daf872b8ca250fac5e413248e80d61209aa7db055c213efb695b0683",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://www.realevals.xyz/_next/static/chunks/app/(main)/page-89fe682a64228531.js",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 24818,
+          "sha256": "ed5f6ff9986b67f6f4fcf7f2a08e97bcb598edbbca15277007289ab033dd71a4",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "All authoritative source response bytes identical to prior verified full extraction audit; every numeric and condition record unchanged. Current table and source snapshot retained.",
+      "prior_verified_extract": {
+        "snapshot": "sources/audits/2026-10-22/webcomputer-extracts.tar.gz",
+        "archive_member": "real-v1-open-arena.json",
+        "bytes": 157179,
+        "sha256": "b691fe9467e9eff10be9fd2a76a59d43876aeedaa7f67202ba74b83781a1657c"
+      }
+    },
+    {
+      "id": "real-v2-frameworks",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 1,
+      "rows": 1,
+      "source_snapshot": "sources/real-v2-frameworks/getVerifiedModelData_v2_frameworks.json",
+      "retained_table_retrieved": "2026-10-05",
+      "sources": [
+        {
+          "url": "https://www.realevals.xyz/api/getVerifiedModelData",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 3421090,
+          "sha256": "904366e9daf872b8ca250fac5e413248e80d61209aa7db055c213efb695b0683",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://www.realevals.xyz/_next/static/chunks/app/(main)/page-89fe682a64228531.js",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 24818,
+          "sha256": "ed5f6ff9986b67f6f4fcf7f2a08e97bcb598edbbca15277007289ab033dd71a4",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "All authoritative source response bytes identical to prior verified full extraction audit; every numeric and condition record unchanged. Current table and source snapshot retained.",
+      "prior_verified_extract": {
+        "snapshot": "sources/audits/2026-10-22/webcomputer-extracts.tar.gz",
+        "archive_member": "real-v2-frameworks.json",
+        "bytes": 24801,
+        "sha256": "0e8c2c553b1928ad1b1daecc6b7c28dbda6d3e529e72ec60f45a324b35c56d38"
+      }
+    },
+    {
+      "id": "real-v2-models",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 12,
+      "rows": 12,
+      "source_snapshot": "sources/real-v2-models/getVerifiedModelData_v2_models.json",
+      "retained_table_retrieved": "2026-10-05",
+      "sources": [
+        {
+          "url": "https://www.realevals.xyz/api/getVerifiedModelData",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 3421090,
+          "sha256": "904366e9daf872b8ca250fac5e413248e80d61209aa7db055c213efb695b0683",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://www.realevals.xyz/_next/static/chunks/app/(main)/page-89fe682a64228531.js",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 24818,
+          "sha256": "ed5f6ff9986b67f6f4fcf7f2a08e97bcb598edbbca15277007289ab033dd71a4",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "All authoritative source response bytes identical to prior verified full extraction audit; every numeric and condition record unchanged. Current table and source snapshot retained.",
+      "prior_verified_extract": {
+        "snapshot": "sources/audits/2026-10-22/webcomputer-extracts.tar.gz",
+        "archive_member": "real-v2-models.json",
+        "bytes": 285414,
+        "sha256": "44a6603c1742dce044f9461a6aa0a0e0fbe31c7db979202a8d4c4f7a5d8186bb"
+      }
+    },
+    {
+      "id": "venusbench-mobile",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 11,
+      "rows": 11,
+      "source_snapshot": "sources/venusbench-mobile/venusbench-mobile.json",
+      "retained_table_retrieved": "2026-10-05",
+      "sources": [
+        {
+          "url": "https://ui-venus.github.io/VenusBench-Mobile-Leaderboard/results/venusbench-mobile.json",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 10426,
+          "sha256": "078ec9962b1ff73db9836f8f24ecf90cfd85598336219a41e660e4d0082cf9de",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "All authoritative source response bytes identical to prior verified full extraction audit; every numeric and condition record unchanged. Current table and source snapshot retained.",
+      "prior_verified_extract": {
+        "snapshot": "sources/audits/2026-10-22/webcomputer-extracts.tar.gz",
+        "archive_member": "venusbench-mobile.json",
+        "bytes": 11172,
+        "sha256": "ddc67d0ed667706d32161566ee21e57bdd9b8aeeabfa8b7f8d39e05913fb5253"
+      }
+    },
+    {
+      "id": "visualwebarena",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 38,
+      "rows": 38,
+      "source_snapshot": "sources/visualwebarena/sheet_visualwebarena_tab.json",
+      "retained_table_retrieved": "2026-10-05",
+      "sources": [
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ/export?format=csv&gid=2044883967",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 3209,
+          "sha256": "be851ca44c7141bf0f4acfb6e1844955f4d82c331df3b603f3531e3f0c7a74ee",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ/htmlview/sheet?headers=true&gid=2044883967",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 79681,
+          "sha256": "e2557629168c5dacf3e956c52f9dcd5a29b17a3c7214ec18c13050cb4fc0051f",
+          "raw_bytes_match_previous_audit": false
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "Authoritative complete CSV response byte-identical to prior verified audit. HTML wrapper changed only; CSV remains canonical numeric source, previous validated main/subset scope retained."
+    },
+    {
+      "id": "webarena",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 48,
+      "rows": 48,
+      "source_snapshot": "sources/webarena/sheet_webarena_tab.json",
+      "retained_table_retrieved": "2026-10-18",
+      "sources": [
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ/export?format=csv&gid=0",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 4663,
+          "sha256": "12af5577f23efc93b2d1f9209dd924ed28db00665cae43ad6b9ad421ae91365b",
+          "raw_bytes_match_previous_audit": true
+        },
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ/htmlview/sheet?headers=true&gid=0",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 102904,
+          "sha256": "30601fcccc152fe4cec21dc1b530e319069f331296c24faa6f82985000539400",
+          "raw_bytes_match_previous_audit": false
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "Authoritative complete CSV response byte-identical to prior verified audit. HTML wrapper changed only; CSV remains canonical numeric source, previous validated main/subset scope retained."
+    },
+    {
+      "id": "webchorearena",
+      "retrieved": "2026-10-25",
+      "status": "unchanged",
+      "old_rows": 8,
+      "rows": 8,
+      "source_snapshot": "sources/webchorearena/sheet_leaderboard.json",
+      "retained_table_retrieved": "2026-10-05",
+      "sources": [
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1RGyJ0QOxGj196KTfUK0SZeVl5IkM928_38wzIkQVxCs/export?format=csv&gid=0",
+          "retrieved": "2026-10-25",
+          "request_method": "GET",
+          "http_status": 200,
+          "bytes": 1797,
+          "sha256": "648674ee1b6c44d4de45e29a8ca9aced00ac4b96fd5f0184e68640f51f644d6e",
+          "raw_bytes_match_previous_audit": true
+        }
+      ],
+      "row_delta": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "method": "All authoritative source response bytes identical to prior verified full extraction audit; every numeric and condition record unchanged. Current table and source snapshot retained.",
+      "prior_verified_extract": {
+        "snapshot": "sources/audits/2026-10-22/webcomputer-extracts.tar.gz",
+        "archive_member": "webchorearena.json",
+        "bytes": 2874,
+        "sha256": "8f81b46b1bf05a5ab026a87d5b077e8aad6d380b37681260bc80b8fac221caf5"
+      }
+    }
+  ]
+}

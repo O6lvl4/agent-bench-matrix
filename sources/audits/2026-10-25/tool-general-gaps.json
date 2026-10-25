@@ -1,0 +1,51 @@
+{
+ "checked": "2026-10-25",
+ "gaps": [],
+ "notes": [
+  "The 9 old v2 submission.json URLs returned 404, but all 18 current benchmark-metadata/submission endpoints succeeded after route discovery in current application JavaScript. Existing v1 tables are not comparable to the v2 cohort; separate v2 table definitions remain unimplemented.",
+  "The stale hashed application bundle returned 404; the current index-Bds3jOxa.js was retrieved successfully.",
+  "Existing custom v1 voice rows include multi-model routing and model-name mappings whose full equivalence has not been independently revalidated in this update. Their original raw names and conditions are retained; no new alias is inferred. Ava Zero explicitly names two backends and uses an empty model_ids list rather than attributing the score to one model."
+ ],
+ "resolved_fetch_failures": [
+  {
+   "url": "https://taubench.com/assets/index-QtX8yEBE.js",
+   "error": "HTTP Error 404: Not Found"
+  },
+  {
+   "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-8-live-extended-thinking_google_2026-10-07/submission.json",
+   "error": "HTTP Error 404: Not Found"
+  },
+  {
+   "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-8-live-extended-thinking_google_2026-10-07_banking/submission.json",
+   "error": "HTTP Error 404: Not Found"
+  },
+  {
+   "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-8-live-extended-thinking_google_2026-10-07_entity/submission.json",
+   "error": "HTTP Error 404: Not Found"
+  },
+  {
+   "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1_openai_2026-10-20/submission.json",
+   "error": "HTTP Error 404: Not Found"
+  },
+  {
+   "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1_openai_2026-10-20_banking/submission.json",
+   "error": "HTTP Error 404: Not Found"
+  },
+  {
+   "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1_openai_2026-10-20_entity/submission.json",
+   "error": "HTTP Error 404: Not Found"
+  },
+  {
+   "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-10-20/submission.json",
+   "error": "HTTP Error 404: Not Found"
+  },
+  {
+   "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-10-20_banking/submission.json",
+   "error": "HTTP Error 404: Not Found"
+  },
+  {
+   "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-10-20_entity/submission.json",
+   "error": "HTTP Error 404: Not Found"
+  }
+ ]
+}
