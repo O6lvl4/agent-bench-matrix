@@ -746,6 +746,12 @@ async function boot() {
   document.getElementById("drawer-close").addEventListener("click", closeDrawer);
   document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeDrawer(); });
   window.addEventListener("hashchange", render);
+  let viewportWidth = window.innerWidth;
+  window.addEventListener("resize", () => {
+    if (window.innerWidth === viewportWidth) return;
+    viewportWidth = window.innerWidth;
+    if (parseHash().view === "cost") render();
+  });
   render();
 }
 boot();

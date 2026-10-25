@@ -74,6 +74,8 @@ try {
     const overflow = await page.evaluate(() => ({ viewport: innerWidth, document: document.documentElement.scrollWidth }));
     assert(overflow.document <= overflow.viewport + 1, `Page overflows at ${width}px: ${JSON.stringify(overflow)}`);
     const chart = await page.locator('.cost-chart').boundingBox();
+    const axisLabel = await page.locator('.cost-chart text').first().boundingBox();
+    assert(axisLabel && axisLabel.height >= 9, `Chart axis text too small at ${width}px`);
     assert(chart && chart.x >= 0 && chart.x + chart.width <= width + 1, `Chart overflows at ${width}px`);
     assert.equal(await page.locator('.cost-chart-point.historical').count(), 29);
     assert(!/NaN|undefined/.test(await page.locator('#view').innerText()));

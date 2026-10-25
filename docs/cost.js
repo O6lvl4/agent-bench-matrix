@@ -199,7 +199,11 @@ function svg(tag, attrs, ...children) {
 function historyChart(offers, hardware) {
   const rows = [...offers].sort((a, b) => offerDate(a).localeCompare(offerDate(b)));
   const dates = [...new Set(rows.map((offer) => offerDate(offer).slice(0, 10)))];
-  const width = 780, height = 230, left = 84, right = 30, top = 25, bottom = 44;
+  // Use the actual page width so mobile axes stay readable instead of scaling
+  // a 780px diagram (and its labels) down to a few pixels.
+  const width = Math.min(780, Math.max(260, document.querySelector('.cost-page')?.clientWidth || 780));
+  const compact = width < 420;
+  const height = 230, left = 84, right = 30, top = 25, bottom = 44;
   const values = rows.map(offerPrice);
   const min = Math.min(...values), max = Math.max(...values);
   const spread = Math.max(max - min, max * 0.12, 1);
@@ -212,11 +216,12 @@ function historyChart(offers, hardware) {
     const value = low + (high - low) * i / 2;
     chart.append(svg("line", { x1: left, x2: width - right, y1: y(value), y2: y(value), class: "cost-chart-grid" }), svg("text", { x: left - 10, y: y(value) + 4, "text-anchor": "end", class: "cost-chart-label" }, yen(value)));
   }
-  const tickDates = dates.length < 4 ? dates : [dates[0], dates[Math.floor(dates.length / 2)], dates[dates.length - 1]];
-  for (const date of tickDates) chart.append(svg("text", { x: x(date), y: height - 12, "text-anchor": "middle", class: "cost-chart-label" }, date));
+  const tickDates = compact && dates.length > 1 ? [dates[0], dates[dates.length - 1]] : dates.length < 4 ? dates : [dates[0], dates[Math.floor(dates.length / 2)], dates[dates.length - 1]];
+  for (const date of tickDates) chart.append(svg("text", { x: x(date), y: height - 12, "text-anchor": "middle", class: "cost-chart-label" }, compact ? date.slice(5) : date));
   for (const offer of rows) {
     const historical = offer.source_type === "historical_record";
-    const position = historical ? { x: x(offerDate(offer)) - 3.5, y: y(offerPrice(offer)) - 3.5, width: 7, height: 7 } : { cx: x(offerDate(offer)), cy: y(offerPrice(offer)), r: 5.5 };
+    const pointSize = compact ? 3 : 7;
+    const position = historical ? { x: x(offerDate(offer)) - pointSize / 2, y: y(offerPrice(offer)) - pointSize / 2, width: pointSize, height: pointSize } : { cx: x(offerDate(offer)), cy: y(offerPrice(offer)), r: compact ? 4 : 5.5 };
     chart.append(svg(historical ? "rect" : "circle", { ...position, class: `cost-chart-point ${historical ? "historical" : ""} ${offer.available === false ? "unavailable" : ""}` }, svg("title", {}, `${dateLabel(offer.observed_at)}: ${yen(offerPrice(offer))} / ${priceSeries(offer)} / SKU: ${offer.sku || "未確認"} / ${taxLabel(offer)} / ${conditionLabel(offer.condition)} / ${offer.seller || (historical ? "価格.com" : "販売元未確認")} / ${stockLabel(offer)}`)));
   }
   return chart;
