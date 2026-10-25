@@ -147,3 +147,18 @@
 ```json
 { "id": "browsecomp", "name": "BrowseComp", "tried": ["https://..."], "reason_ja": "公式のリーダーボードが無い。", "retrieved": "2026-09-14" }
 ```
+
+## ローカル実行費用: `data/cost.json`
+
+ベンチマークではない独立した層です。`docs/cost-data.json` は `python3 scripts/build_cost.py` で生成します。既存の `docs/data.json`・戦闘力の当てはめには入りません。
+
+- `retrieved`: 収集確認時刻（ISO 8601）。価格がライブ更新される意味ではありません。
+- `profiles`: `model_id`（既存登録簿のオープンウェイトのみ）、量子化配布物の `artifact.bytes`（正確なファイルバイト数、分割時は合計）、`artifact.quantization`・`artifact.url`、`runtime`、`license.name/url`、`config.layers/kv_heads/head_dim`、`sources`、`notes_ja`。
+- `hardware`: 特定構成の `id/name`、`kind`（GPU単体またはPC一式）、`memory_gib`、`runtime`、`reserve_gib`（OS等のために残す仮定の容量）。ハードウェアの仕様値とメモリの余裕という仮定を混ぜません。
+- `offers`: `hardware_id`、`observed_at`、`price_jpy`、`tax_included`、`shipping_jpy`（不明は `null`）、`condition`、`seller`、`url`、`available`。注文可能と即納は異なるため、納期を別記します。過去の履歴は日時と出所を保持し、現在の販売価格として扱いません。
+
+推定式（同時実行1、f16 KV）: 重みのバイト数 / 2^30 + 2 × layers × kv_heads × head_dim × context × 2 bytes / 2^30 + 実行用2 GiB。これに10%（下限側）または25%（余裕側）を加えます。2 GiBと安全率は本ページの仮定で実測値ではありません。ファイルサイズと実際の常駐メモリは厳密には一致せず、ランタイム・バッチ・コンテキスト・実装で変わります。MoEでも全重みのファイル容量を使い、active parametersの値で代用しません。
+
+更新時は元ページ／APIの取得内容とURL・日時を `sources/cost/` に保存してから機械的に取り出します。過去に取得していない価格を「昔はこの価格だったはず」で補いません。同一SKUの出典付き履歴以外はグラフへ混ぜません。新しい観測は既存履歴を消さず追記します。自動巡回・有料API・認証情報は本機能の範囲外です。
+
+価格の原本は `sources/cost/prices/snapshots/YYYY-MM-DD.json`（同日複数回は時刻などを付記）として保存します。更新は新しいファイルを追加し、以前の観測時刻は保持します。抽出器は全スナップショットを統合し、同じ販売店・SKU・URL・観測時刻の矛盾はエラーにします。同日中に在庫が変わった場合、画面の現在価格はその販売店掲載の最終観測を使います。過去の「在庫あり」を後の「在庫なし」より優先しません。

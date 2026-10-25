@@ -1,0 +1,1508 @@
+{
+  "schema_version": 1,
+  "market": "JP",
+  "currency": "JPY",
+  "observed_at": "2026-10-25T06:37:14Z",
+  "provenance": {
+    "method": "Append-preserving union of dated reviewed snapshots; no interpolation or replacement of older observations.",
+    "extractor": "extract_model_cost_prices.py",
+    "snapshots": [
+      {
+        "snapshot_file": "snapshots/2026-10-25.json",
+        "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+        "retrieved_at": "2026-10-25T06:37:14Z",
+        "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+        "extractor": "extract_model_cost_prices.py"
+      }
+    ]
+  },
+  "hardware": [
+    {
+      "id": "rtx-5060-ti-16gb",
+      "name": "GeForce RTX 5060 Ti 16GB",
+      "memory_gib": 16,
+      "kind": "gpu",
+      "runtime": "llama.cpp CUDA",
+      "reserve_gib": 0
+    },
+    {
+      "id": "rtx-3090-24gb",
+      "name": "GeForce RTX 3090 24GB",
+      "memory_gib": 24,
+      "kind": "gpu",
+      "runtime": "llama.cpp CUDA",
+      "reserve_gib": 0
+    },
+    {
+      "id": "rtx-5090-32gb",
+      "name": "GeForce RTX 5090 32GB",
+      "memory_gib": 32,
+      "kind": "gpu",
+      "runtime": "llama.cpp CUDA",
+      "reserve_gib": 0
+    },
+    {
+      "id": "mac-mini-m6-24gb",
+      "name": "Mac mini M6 12CPU/12GPU 24GB / 512GB",
+      "memory_gib": 24,
+      "kind": "computer",
+      "runtime": "llama.cpp Metal",
+      "reserve_gib": 8
+    },
+    {
+      "id": "mac-mini-m5-pro-24gb",
+      "name": "Mac mini M5 Pro 15CPU/16GPU 24GB / 512GB",
+      "memory_gib": 24,
+      "kind": "computer",
+      "runtime": "llama.cpp Metal",
+      "reserve_gib": 8
+    },
+    {
+      "id": "mac-studio-m5-max-64gb",
+      "name": "Mac Studio M5 Max 18CPU/40GPU 64GB / 512GB",
+      "memory_gib": 64,
+      "kind": "computer",
+      "runtime": "llama.cpp Metal",
+      "reserve_gib": 8
+    },
+    {
+      "id": "mac-studio-m5-max-128gb",
+      "name": "Mac Studio M5 Max 18CPU/40GPU 128GB / 512GB",
+      "memory_gib": 128,
+      "kind": "computer",
+      "runtime": "llama.cpp Metal",
+      "reserve_gib": 8
+    }
+  ],
+  "offers": [
+    {
+      "hardware_id": "mac-mini-m5-pro-24gb",
+      "source_id": "bic-mini-m5-pro-24",
+      "tax_included": true,
+      "shipping_jpy": 0,
+      "condition": "new",
+      "seller": "ビックカメラ",
+      "available": true,
+      "in_stock": true,
+      "availability": "in_stock",
+      "orderable": true,
+      "notes": "Shipping zero is displayed ordinary domestic rate; remote-area exceptions apply.",
+      "availability_label_ja": "在庫あり",
+      "lead_time_ja": "東京都の初期表示先へ10月26日お届け予定",
+      "id": "bic-mini-m5-pro-24-0-2026-10-25T06:37:14Z",
+      "observed_at": "2026-10-25T06:37:14Z",
+      "retrieved_at": "2026-10-25T06:37:14Z",
+      "source_type": "seller_page",
+      "price_jpy": 299800,
+      "currency": "JPY",
+      "url": "https://www.biccamera.com/bc/item/15491534/",
+      "sku": "MHQN4J/A",
+      "source_last_crawled": "today",
+      "price_scope": "computer_only",
+      "provenance": [
+        {
+          "snapshot_file": "snapshots/2026-10-25.json",
+          "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+          "retrieved_at": "2026-10-25T06:37:14Z",
+          "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+          "source_id": "bic-mini-m5-pro-24",
+          "url": "https://www.biccamera.com/bc/item/15491534/"
+        }
+      ]
+    },
+    {
+      "hardware_id": "mac-mini-m6-24gb",
+      "source_id": "ks-mini-m6-24",
+      "tax_included": true,
+      "shipping_jpy": 0,
+      "condition": "new",
+      "seller": "ケーズデンキ",
+      "available": null,
+      "in_stock": false,
+      "availability": "backorder_unknown_date",
+      "orderable": null,
+      "notes": "Backorder; purchase availability not proven. Do not include in confirmed available minima.",
+      "availability_label_ja": "取り寄せ・納期未定",
+      "lead_time_ja": "未定（販売店の10月23日表示）",
+      "id": "ks-mini-m6-24-0-2026-10-25T06:37:14Z",
+      "observed_at": "2026-10-25T06:37:14Z",
+      "retrieved_at": "2026-10-25T06:37:14Z",
+      "source_type": "seller_page",
+      "price_jpy": 219582,
+      "currency": "JPY",
+      "url": "https://www.ksdenki.com/item?sku=4549995676013",
+      "sku": "MHQM4J/A",
+      "source_last_crawled": "today",
+      "price_scope": "computer_only",
+      "price_ex_tax_jpy": 199620,
+      "provenance": [
+        {
+          "snapshot_file": "snapshots/2026-10-25.json",
+          "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+          "retrieved_at": "2026-10-25T06:37:14Z",
+          "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+          "source_id": "ks-mini-m6-24",
+          "url": "https://www.ksdenki.com/item?sku=4549995676013"
+        }
+      ]
+    },
+    {
+      "hardware_id": "mac-studio-m5-max-128gb",
+      "source_id": "yodobashi-studio-128",
+      "tax_included": true,
+      "shipping_jpy": 0,
+      "condition": "new",
+      "seller": "ヨドバシカメラ",
+      "available": true,
+      "in_stock": false,
+      "availability": "made_to_order",
+      "orderable": true,
+      "lead_time_weeks": [
+        6,
+        7
+      ],
+      "notes": "Orderable, not immediately available; no returns.",
+      "availability_label_ja": "受注生産",
+      "lead_time_ja": "決済確認後6〜7週間で入荷予定",
+      "id": "yodobashi-studio-128-0-2026-10-25T06:37:14Z",
+      "observed_at": "2026-10-25T06:37:14Z",
+      "retrieved_at": "2026-10-25T06:37:14Z",
+      "source_type": "seller_page",
+      "price_jpy": 887800,
+      "currency": "JPY",
+      "url": "https://www.yodobashi.com/product/100000001010195907/",
+      "sku": "Z1U40003G",
+      "source_last_crawled": "today",
+      "price_scope": "computer_only",
+      "provenance": [
+        {
+          "snapshot_file": "snapshots/2026-10-25.json",
+          "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+          "retrieved_at": "2026-10-25T06:37:14Z",
+          "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+          "source_id": "yodobashi-studio-128",
+          "url": "https://www.yodobashi.com/product/100000001010195907/"
+        }
+      ]
+    },
+    {
+      "hardware_id": "mac-studio-m5-max-64gb",
+      "source_id": "yodobashi-studio-64",
+      "tax_included": true,
+      "shipping_jpy": 0,
+      "condition": "new",
+      "seller": "ヨドバシカメラ",
+      "available": true,
+      "in_stock": false,
+      "availability": "made_to_order",
+      "orderable": true,
+      "lead_time_weeks": [
+        5,
+        6
+      ],
+      "notes": "Orderable, not immediately available; no returns.",
+      "availability_label_ja": "受注生産",
+      "lead_time_ja": "決済確認後5〜6週間で入荷予定",
+      "id": "yodobashi-studio-64-0-2026-10-25T06:37:14Z",
+      "observed_at": "2026-10-25T06:37:14Z",
+      "retrieved_at": "2026-10-25T06:37:14Z",
+      "source_type": "seller_page",
+      "price_jpy": 599800,
+      "currency": "JPY",
+      "url": "https://www.yodobashi.com/product/100000001010195906/",
+      "sku": "Z1U40003F",
+      "source_last_crawled": "today",
+      "price_scope": "computer_only",
+      "provenance": [
+        {
+          "snapshot_file": "snapshots/2026-10-25.json",
+          "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+          "retrieved_at": "2026-10-25T06:37:14Z",
+          "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+          "source_id": "yodobashi-studio-64",
+          "url": "https://www.yodobashi.com/product/100000001010195906/"
+        }
+      ]
+    },
+    {
+      "hardware_id": "rtx-3090-24gb",
+      "source_id": "janpara-yahoo-3090",
+      "tax_included": null,
+      "shipping_jpy": 0,
+      "condition": "used",
+      "seller": "じゃんぱら Yahoo!店",
+      "available": false,
+      "in_stock": false,
+      "availability": "out_of_stock",
+      "orderable": false,
+      "notes": "Sold-out reference only; tax inclusion not verified. One-week warranty.",
+      "availability_label_ja": "在庫なし",
+      "lead_time_ja": "購入不可",
+      "id": "janpara-yahoo-3090-0-2026-10-25T06:37:14Z",
+      "observed_at": "2026-10-25T06:37:14Z",
+      "retrieved_at": "2026-10-25T06:37:14Z",
+      "source_type": "seller_page",
+      "price_jpy": 187980,
+      "currency": "JPY",
+      "url": "https://store.shopping.yahoo.co.jp/janpara/67707793-67.html",
+      "sku": "67707793-67",
+      "source_last_crawled": "today",
+      "price_scope": "gpu_card_only",
+      "provenance": [
+        {
+          "snapshot_file": "snapshots/2026-10-25.json",
+          "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+          "retrieved_at": "2026-10-25T06:37:14Z",
+          "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+          "source_id": "janpara-yahoo-3090",
+          "url": "https://store.shopping.yahoo.co.jp/janpara/67707793-67.html"
+        }
+      ]
+    },
+    {
+      "hardware_id": "rtx-5060-ti-16gb",
+      "source_id": "dospara-palit-5060ti",
+      "tax_included": true,
+      "tax_source_id": "dospara-tax",
+      "shipping_jpy": 0,
+      "condition": "new",
+      "seller": "ドスパラ",
+      "available": true,
+      "in_stock": true,
+      "availability": "in_stock",
+      "orderable": true,
+      "availability_label_ja": "在庫あり",
+      "lead_time_ja": "24時間以内に出荷",
+      "id": "dospara-palit-5060ti-0-2026-10-25T06:37:14Z",
+      "observed_at": "2026-10-25T06:37:14Z",
+      "retrieved_at": "2026-10-25T06:37:14Z",
+      "source_type": "seller_page",
+      "price_jpy": 129800,
+      "currency": "JPY",
+      "url": "https://www.dospara.co.jp/SBR1892/IC523108.html",
+      "sku": "NE7506T019T1-GB2061S",
+      "source_last_crawled": "today",
+      "price_scope": "gpu_card_only",
+      "provenance": [
+        {
+          "snapshot_file": "snapshots/2026-10-25.json",
+          "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+          "retrieved_at": "2026-10-25T06:37:14Z",
+          "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+          "source_id": "dospara-palit-5060ti",
+          "url": "https://www.dospara.co.jp/SBR1892/IC523108.html"
+        }
+      ]
+    },
+    {
+      "hardware_id": "rtx-5060-ti-16gb",
+      "source_id": "dospara-msi-5060ti",
+      "tax_included": true,
+      "tax_source_id": "dospara-tax",
+      "shipping_jpy": 0,
+      "condition": "new",
+      "seller": "ドスパラ",
+      "available": false,
+      "in_stock": false,
+      "availability": "out_of_stock",
+      "orderable": false,
+      "availability_label_ja": "在庫なし",
+      "lead_time_ja": "購入不可",
+      "id": "dospara-msi-5060ti-0-2026-10-25T06:37:14Z",
+      "observed_at": "2026-10-25T06:37:14Z",
+      "retrieved_at": "2026-10-25T06:37:14Z",
+      "source_type": "seller_page",
+      "price_jpy": 99800,
+      "currency": "JPY",
+      "url": "https://www.dospara.co.jp/SBR1892/IC527334.html",
+      "sku": "GeForce RTX 5060 Ti 16G INSPIRE 2X OC",
+      "source_last_crawled": "today",
+      "price_scope": "gpu_card_only",
+      "provenance": [
+        {
+          "snapshot_file": "snapshots/2026-10-25.json",
+          "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+          "retrieved_at": "2026-10-25T06:37:14Z",
+          "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+          "source_id": "dospara-msi-5060ti",
+          "url": "https://www.dospara.co.jp/SBR1892/IC527334.html"
+        }
+      ]
+    },
+    {
+      "hardware_id": "rtx-5090-32gb",
+      "source_id": "pc4u-5090",
+      "tax_included": true,
+      "shipping_jpy": 0,
+      "condition": "new",
+      "seller": "PC4U",
+      "available": false,
+      "in_stock": false,
+      "availability": "out_of_stock",
+      "orderable": false,
+      "notes": "Sale ends when remaining inventory is exhausted; presently sold out.",
+      "availability_label_ja": "在庫なし",
+      "lead_time_ja": "購入不可",
+      "id": "pc4u-5090-1-2026-10-25T06:37:14Z",
+      "observed_at": "2026-10-25T06:37:14Z",
+      "retrieved_at": "2026-10-25T06:37:14Z",
+      "source_type": "seller_page",
+      "price_jpy": 489800,
+      "currency": "JPY",
+      "url": "https://www.pc4u.co.jp/view/category/ct2980",
+      "sku": "RTX5090AMPEX32G/ZT-B50900B-10P",
+      "source_last_crawled": "today",
+      "price_scope": "gpu_card_only",
+      "provenance": [
+        {
+          "snapshot_file": "snapshots/2026-10-25.json",
+          "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+          "retrieved_at": "2026-10-25T06:37:14Z",
+          "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+          "source_id": "pc4u-5090",
+          "url": "https://www.pc4u.co.jp/view/category/ct2980"
+        }
+      ]
+    },
+    {
+      "hardware_id": "rtx-5090-32gb",
+      "source_id": "pc4u-5090",
+      "tax_included": true,
+      "shipping_jpy": 0,
+      "condition": "new",
+      "seller": "PC4U",
+      "available": false,
+      "in_stock": false,
+      "availability": "out_of_stock",
+      "orderable": false,
+      "availability_label_ja": "在庫なし",
+      "lead_time_ja": "購入不可",
+      "id": "pc4u-5090-0-2026-10-25T06:37:14Z",
+      "observed_at": "2026-10-25T06:37:14Z",
+      "retrieved_at": "2026-10-25T06:37:14Z",
+      "source_type": "seller_page",
+      "price_jpy": 511729,
+      "currency": "JPY",
+      "url": "https://www.pc4u.co.jp/view/category/ct2980",
+      "sku": "VCG509032TFXPB1-O",
+      "source_last_crawled": "today",
+      "price_scope": "gpu_card_only",
+      "provenance": [
+        {
+          "snapshot_file": "snapshots/2026-10-25.json",
+          "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+          "retrieved_at": "2026-10-25T06:37:14Z",
+          "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+          "source_id": "pc4u-5090",
+          "url": "https://www.pc4u.co.jp/view/category/ct2980"
+        }
+      ]
+    }
+  ],
+  "history": [
+    {
+      "hardware_id": "rtx-5060-ti-16gb",
+      "sku": "NE7506T019T1-GB2061S",
+      "observed_at": "2026-09-14",
+      "observed_date": "2026-09-14",
+      "time_precision": "day",
+      "retrieved_at": "2026-10-25T06:37:14Z",
+      "price_jpy": 129800,
+      "tax_included": true,
+      "shipping_jpy": null,
+      "available": null,
+      "condition": "new",
+      "currency": "JPY",
+      "source_type": "historical_record",
+      "metric": "same_sku_aggregator_daily_minimum",
+      "source_id": "kakaku-palit-history",
+      "tax_source_id": "kakaku-tax",
+      "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory",
+      "provenance": [
+        {
+          "snapshot_file": "snapshots/2026-10-25.json",
+          "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+          "retrieved_at": "2026-10-25T06:37:14Z",
+          "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+          "source_id": "kakaku-palit-history",
+          "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory"
+        }
+      ]
+    },
+    {
+      "hardware_id": "rtx-5060-ti-16gb",
+      "sku": "NE7506T019T1-GB2061S",
+      "observed_at": "2026-09-15",
+      "observed_date": "2026-09-15",
+      "time_precision": "day",
+      "retrieved_at": "2026-10-25T06:37:14Z",
+      "price_jpy": 129800,
+      "tax_included": true,
+      "shipping_jpy": null,
+      "available": null,
+      "condition": "new",
+      "currency": "JPY",
+      "source_type": "historical_record",
+      "metric": "same_sku_aggregator_daily_minimum",
+      "source_id": "kakaku-palit-history",
+      "tax_source_id": "kakaku-tax",
+      "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory",
+      "provenance": [
+        {
+          "snapshot_file": "snapshots/2026-10-25.json",
+          "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+          "retrieved_at": "2026-10-25T06:37:14Z",
+          "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+          "source_id": "kakaku-palit-history",
+          "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory"
+        }
+      ]
+    },
+    {
+      "hardware_id": "rtx-5060-ti-16gb",
+      "sku": "NE7506T019T1-GB2061S",
+      "observed_at": "2026-09-16",
+      "observed_date": "2026-09-16",
+      "time_precision": "day",
+      "retrieved_at": "2026-10-25T06:37:14Z",
+      "price_jpy": 129800,
+      "tax_included": true,
+      "shipping_jpy": null,
+      "available": null,
+      "condition": "new",
+      "currency": "JPY",
+      "source_type": "historical_record",
+      "metric": "same_sku_aggregator_daily_minimum",
+      "source_id": "kakaku-palit-history",
+      "tax_source_id": "kakaku-tax",
+      "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory",
+      "provenance": [
+        {
+          "snapshot_file": "snapshots/2026-10-25.json",
+          "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+          "retrieved_at": "2026-10-25T06:37:14Z",
+          "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+          "source_id": "kakaku-palit-history",
+          "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory"
+        }
+      ]
+    },
+    {
+      "hardware_id": "rtx-5060-ti-16gb",
+      "sku": "NE7506T019T1-GB2061S",
+      "observed_at": "2026-09-17",
+      "observed_date": "2026-09-17",
+      "time_precision": "day",
+      "retrieved_at": "2026-10-25T06:37:14Z",
+      "price_jpy": 129800,
+      "tax_included": true,
+      "shipping_jpy": null,
+      "available": null,
+      "condition": "new",
+      "currency": "JPY",
+      "source_type": "historical_record",
+      "metric": "same_sku_aggregator_daily_minimum",
+      "source_id": "kakaku-palit-history",
+      "tax_source_id": "kakaku-tax",
+      "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory",
+      "provenance": [
+        {
+          "snapshot_file": "snapshots/2026-10-25.json",
+          "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+          "retrieved_at": "2026-10-25T06:37:14Z",
+          "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+          "source_id": "kakaku-palit-history",
+          "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory"
+        }
+      ]
+    },
+    {
+      "hardware_id": "rtx-5060-ti-16gb",
+      "sku": "NE7506T019T1-GB2061S",
+      "observed_at": "2026-09-18",
+      "observed_date": "2026-09-18",
+      "time_precision": "day",
+      "retrieved_at": "2026-10-25T06:37:14Z",
+      "price_jpy": 129800,
+      "tax_included": true,
+      "shipping_jpy": null,
+      "available": null,
+      "condition": "new",
+      "currency": "JPY",
+      "source_type": "historical_record",
+      "metric": "same_sku_aggregator_daily_minimum",
+      "source_id": "kakaku-palit-history",
+      "tax_source_id": "kakaku-tax",
+      "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory",
+      "provenance": [
+        {
+          "snapshot_file": "snapshots/2026-10-25.json",
+          "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+          "retrieved_at": "2026-10-25T06:37:14Z",
+          "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+          "source_id": "kakaku-palit-history",
+          "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory"
+        }
+      ]
+    },
+    {
+      "hardware_id": "rtx-5060-ti-16gb",
+      "sku": "NE7506T019T1-GB2061S",
+      "observed_at": "2026-09-19",
+      "observed_date": "2026-09-19",
+      "time_precision": "day",
+      "retrieved_at": "2026-10-25T06:37:14Z",
+      "price_jpy": 129800,
+      "tax_included": true,
+      "shipping_jpy": null,
+      "available": null,
+      "condition": "new",
+      "currency": "JPY",
+      "source_type": "historical_record",
+      "metric": "same_sku_aggregator_daily_minimum",
+      "source_id": "kakaku-palit-history",
+      "tax_source_id": "kakaku-tax",
+      "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory",
+      "provenance": [
+        {
+          "snapshot_file": "snapshots/2026-10-25.json",
+          "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+          "retrieved_at": "2026-10-25T06:37:14Z",
+          "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+          "source_id": "kakaku-palit-history",
+          "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory"
+        }
+      ]
+    },
+    {
+      "hardware_id": "rtx-5060-ti-16gb",
+      "sku": "NE7506T019T1-GB2061S",
+      "observed_at": "2026-09-20",
+      "observed_date": "2026-09-20",
+      "time_precision": "day",
+      "retrieved_at": "2026-10-25T06:37:14Z",
+      "price_jpy": 129800,
+      "tax_included": true,
+      "shipping_jpy": null,
+      "available": null,
+      "condition": "new",
+      "currency": "JPY",
+      "source_type": "historical_record",
+      "metric": "same_sku_aggregator_daily_minimum",
+      "source_id": "kakaku-palit-history",
+      "tax_source_id": "kakaku-tax",
+      "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory",
+      "provenance": [
+        {
+          "snapshot_file": "snapshots/2026-10-25.json",
+          "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+          "retrieved_at": "2026-10-25T06:37:14Z",
+          "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+          "source_id": "kakaku-palit-history",
+          "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory"
+        }
+      ]
+    },
+    {
+      "hardware_id": "rtx-5060-ti-16gb",
+      "sku": "NE7506T019T1-GB2061S",
+      "observed_at": "2026-09-21",
+      "observed_date": "2026-09-21",
+      "time_precision": "day",
+      "retrieved_at": "2026-10-25T06:37:14Z",
+      "price_jpy": 129800,
+      "tax_included": true,
+      "shipping_jpy": null,
+      "available": null,
+      "condition": "new",
+      "currency": "JPY",
+      "source_type": "historical_record",
+      "metric": "same_sku_aggregator_daily_minimum",
+      "source_id": "kakaku-palit-history",
+      "tax_source_id": "kakaku-tax",
+      "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory",
+      "provenance": [
+        {
+          "snapshot_file": "snapshots/2026-10-25.json",
+          "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+          "retrieved_at": "2026-10-25T06:37:14Z",
+          "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+          "source_id": "kakaku-palit-history",
+          "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory"
+        }
+      ]
+    },
+    {
+      "hardware_id": "rtx-5060-ti-16gb",
+      "sku": "NE7506T019T1-GB2061S",
+      "observed_at": "2026-09-22",
+      "observed_date": "2026-09-22",
+      "time_precision": "day",
+      "retrieved_at": "2026-10-25T06:37:14Z",
+      "price_jpy": 129800,
+      "tax_included": true,
+      "shipping_jpy": null,
+      "available": null,
+      "condition": "new",
+      "currency": "JPY",
+      "source_type": "historical_record",
+      "metric": "same_sku_aggregator_daily_minimum",
+      "source_id": "kakaku-palit-history",
+      "tax_source_id": "kakaku-tax",
+      "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory",
+      "provenance": [
+        {
+          "snapshot_file": "snapshots/2026-10-25.json",
+          "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+          "retrieved_at": "2026-10-25T06:37:14Z",
+          "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+          "source_id": "kakaku-palit-history",
+          "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory"
+        }
+      ]
+    },
+    {
+      "hardware_id": "rtx-5060-ti-16gb",
+      "sku": "NE7506T019T1-GB2061S",
+      "observed_at": "2026-09-23",
+      "observed_date": "2026-09-23",
+      "time_precision": "day",
+      "retrieved_at": "2026-10-25T06:37:14Z",
+      "price_jpy": 129800,
+      "tax_included": true,
+      "shipping_jpy": null,
+      "available": null,
+      "condition": "new",
+      "currency": "JPY",
+      "source_type": "historical_record",
+      "metric": "same_sku_aggregator_daily_minimum",
+      "source_id": "kakaku-palit-history",
+      "tax_source_id": "kakaku-tax",
+      "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory",
+      "provenance": [
+        {
+          "snapshot_file": "snapshots/2026-10-25.json",
+          "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+          "retrieved_at": "2026-10-25T06:37:14Z",
+          "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+          "source_id": "kakaku-palit-history",
+          "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory"
+        }
+      ]
+    },
+    {
+      "hardware_id": "rtx-5060-ti-16gb",
+      "sku": "NE7506T019T1-GB2061S",
+      "observed_at": "2026-09-24",
+      "observed_date": "2026-09-24",
+      "time_precision": "day",
+      "retrieved_at": "2026-10-25T06:37:14Z",
+      "price_jpy": 129800,
+      "tax_included": true,
+      "shipping_jpy": null,
+      "available": null,
+      "condition": "new",
+      "currency": "JPY",
+      "source_type": "historical_record",
+      "metric": "same_sku_aggregator_daily_minimum",
+      "source_id": "kakaku-palit-history",
+      "tax_source_id": "kakaku-tax",
+      "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory",
+      "provenance": [
+        {
+          "snapshot_file": "snapshots/2026-10-25.json",
+          "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+          "retrieved_at": "2026-10-25T06:37:14Z",
+          "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+          "source_id": "kakaku-palit-history",
+          "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory"
+        }
+      ]
+    },
+    {
+      "hardware_id": "rtx-5060-ti-16gb",
+      "sku": "NE7506T019T1-GB2061S",
+      "observed_at": "2026-09-25",
+      "observed_date": "2026-09-25",
+      "time_precision": "day",
+      "retrieved_at": "2026-10-25T06:37:14Z",
+      "price_jpy": 129800,
+      "tax_included": true,
+      "shipping_jpy": null,
+      "available": null,
+      "condition": "new",
+      "currency": "JPY",
+      "source_type": "historical_record",
+      "metric": "same_sku_aggregator_daily_minimum",
+      "source_id": "kakaku-palit-history",
+      "tax_source_id": "kakaku-tax",
+      "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory",
+      "provenance": [
+        {
+          "snapshot_file": "snapshots/2026-10-25.json",
+          "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+          "retrieved_at": "2026-10-25T06:37:14Z",
+          "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+          "source_id": "kakaku-palit-history",
+          "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory"
+        }
+      ]
+    },
+    {
+      "hardware_id": "rtx-5060-ti-16gb",
+      "sku": "NE7506T019T1-GB2061S",
+      "observed_at": "2026-09-26",
+      "observed_date": "2026-09-26",
+      "time_precision": "day",
+      "retrieved_at": "2026-10-25T06:37:14Z",
+      "price_jpy": 129800,
+      "tax_included": true,
+      "shipping_jpy": null,
+      "available": null,
+      "condition": "new",
+      "currency": "JPY",
+      "source_type": "historical_record",
+      "metric": "same_sku_aggregator_daily_minimum",
+      "source_id": "kakaku-palit-history",
+      "tax_source_id": "kakaku-tax",
+      "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory",
+      "provenance": [
+        {
+          "snapshot_file": "snapshots/2026-10-25.json",
+          "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+          "retrieved_at": "2026-10-25T06:37:14Z",
+          "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+          "source_id": "kakaku-palit-history",
+          "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory"
+        }
+      ]
+    },
+    {
+      "hardware_id": "rtx-5060-ti-16gb",
+      "sku": "NE7506T019T1-GB2061S",
+      "observed_at": "2026-09-27",
+      "observed_date": "2026-09-27",
+      "time_precision": "day",
+      "retrieved_at": "2026-10-25T06:37:14Z",
+      "price_jpy": 129800,
+      "tax_included": true,
+      "shipping_jpy": null,
+      "available": null,
+      "condition": "new",
+      "currency": "JPY",
+      "source_type": "historical_record",
+      "metric": "same_sku_aggregator_daily_minimum",
+      "source_id": "kakaku-palit-history",
+      "tax_source_id": "kakaku-tax",
+      "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory",
+      "provenance": [
+        {
+          "snapshot_file": "snapshots/2026-10-25.json",
+          "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+          "retrieved_at": "2026-10-25T06:37:14Z",
+          "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+          "source_id": "kakaku-palit-history",
+          "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory"
+        }
+      ]
+    },
+    {
+      "hardware_id": "rtx-5060-ti-16gb",
+      "sku": "NE7506T019T1-GB2061S",
+      "observed_at": "2026-09-28",
+      "observed_date": "2026-09-28",
+      "time_precision": "day",
+      "retrieved_at": "2026-10-25T06:37:14Z",
+      "price_jpy": 129800,
+      "tax_included": true,
+      "shipping_jpy": null,
+      "available": null,
+      "condition": "new",
+      "currency": "JPY",
+      "source_type": "historical_record",
+      "metric": "same_sku_aggregator_daily_minimum",
+      "source_id": "kakaku-palit-history",
+      "tax_source_id": "kakaku-tax",
+      "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory",
+      "provenance": [
+        {
+          "snapshot_file": "snapshots/2026-10-25.json",
+          "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+          "retrieved_at": "2026-10-25T06:37:14Z",
+          "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+          "source_id": "kakaku-palit-history",
+          "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory"
+        }
+      ]
+    },
+    {
+      "hardware_id": "rtx-5060-ti-16gb",
+      "sku": "NE7506T019T1-GB2061S",
+      "observed_at": "2026-09-29",
+      "observed_date": "2026-09-29",
+      "time_precision": "day",
+      "retrieved_at": "2026-10-25T06:37:14Z",
+      "price_jpy": 129800,
+      "tax_included": true,
+      "shipping_jpy": null,
+      "available": null,
+      "condition": "new",
+      "currency": "JPY",
+      "source_type": "historical_record",
+      "metric": "same_sku_aggregator_daily_minimum",
+      "source_id": "kakaku-palit-history",
+      "tax_source_id": "kakaku-tax",
+      "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory",
+      "provenance": [
+        {
+          "snapshot_file": "snapshots/2026-10-25.json",
+          "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+          "retrieved_at": "2026-10-25T06:37:14Z",
+          "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+          "source_id": "kakaku-palit-history",
+          "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory"
+        }
+      ]
+    },
+    {
+      "hardware_id": "rtx-5060-ti-16gb",
+      "sku": "NE7506T019T1-GB2061S",
+      "observed_at": "2026-09-30",
+      "observed_date": "2026-09-30",
+      "time_precision": "day",
+      "retrieved_at": "2026-10-25T06:37:14Z",
+      "price_jpy": 129800,
+      "tax_included": true,
+      "shipping_jpy": null,
+      "available": null,
+      "condition": "new",
+      "currency": "JPY",
+      "source_type": "historical_record",
+      "metric": "same_sku_aggregator_daily_minimum",
+      "source_id": "kakaku-palit-history",
+      "tax_source_id": "kakaku-tax",
+      "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory",
+      "provenance": [
+        {
+          "snapshot_file": "snapshots/2026-10-25.json",
+          "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+          "retrieved_at": "2026-10-25T06:37:14Z",
+          "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+          "source_id": "kakaku-palit-history",
+          "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory"
+        }
+      ]
+    },
+    {
+      "hardware_id": "rtx-5060-ti-16gb",
+      "sku": "NE7506T019T1-GB2061S",
+      "observed_at": "2026-10-01",
+      "observed_date": "2026-10-01",
+      "time_precision": "day",
+      "retrieved_at": "2026-10-25T06:37:14Z",
+      "price_jpy": 129800,
+      "tax_included": true,
+      "shipping_jpy": null,
+      "available": null,
+      "condition": "new",
+      "currency": "JPY",
+      "source_type": "historical_record",
+      "metric": "same_sku_aggregator_daily_minimum",
+      "source_id": "kakaku-palit-history",
+      "tax_source_id": "kakaku-tax",
+      "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory",
+      "provenance": [
+        {
+          "snapshot_file": "snapshots/2026-10-25.json",
+          "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+          "retrieved_at": "2026-10-25T06:37:14Z",
+          "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+          "source_id": "kakaku-palit-history",
+          "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory"
+        }
+      ]
+    },
+    {
+      "hardware_id": "rtx-5060-ti-16gb",
+      "sku": "NE7506T019T1-GB2061S",
+      "observed_at": "2026-10-02",
+      "observed_date": "2026-10-02",
+      "time_precision": "day",
+      "retrieved_at": "2026-10-25T06:37:14Z",
+      "price_jpy": 129800,
+      "tax_included": true,
+      "shipping_jpy": null,
+      "available": null,
+      "condition": "new",
+      "currency": "JPY",
+      "source_type": "historical_record",
+      "metric": "same_sku_aggregator_daily_minimum",
+      "source_id": "kakaku-palit-history",
+      "tax_source_id": "kakaku-tax",
+      "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory",
+      "provenance": [
+        {
+          "snapshot_file": "snapshots/2026-10-25.json",
+          "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+          "retrieved_at": "2026-10-25T06:37:14Z",
+          "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+          "source_id": "kakaku-palit-history",
+          "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory"
+        }
+      ]
+    },
+    {
+      "hardware_id": "rtx-5060-ti-16gb",
+      "sku": "NE7506T019T1-GB2061S",
+      "observed_at": "2026-10-03",
+      "observed_date": "2026-10-03",
+      "time_precision": "day",
+      "retrieved_at": "2026-10-25T06:37:14Z",
+      "price_jpy": 129800,
+      "tax_included": true,
+      "shipping_jpy": null,
+      "available": null,
+      "condition": "new",
+      "currency": "JPY",
+      "source_type": "historical_record",
+      "metric": "same_sku_aggregator_daily_minimum",
+      "source_id": "kakaku-palit-history",
+      "tax_source_id": "kakaku-tax",
+      "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory",
+      "provenance": [
+        {
+          "snapshot_file": "snapshots/2026-10-25.json",
+          "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+          "retrieved_at": "2026-10-25T06:37:14Z",
+          "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+          "source_id": "kakaku-palit-history",
+          "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory"
+        }
+      ]
+    },
+    {
+      "hardware_id": "rtx-5060-ti-16gb",
+      "sku": "NE7506T019T1-GB2061S",
+      "observed_at": "2026-10-04",
+      "observed_date": "2026-10-04",
+      "time_precision": "day",
+      "retrieved_at": "2026-10-25T06:37:14Z",
+      "price_jpy": 129800,
+      "tax_included": true,
+      "shipping_jpy": null,
+      "available": null,
+      "condition": "new",
+      "currency": "JPY",
+      "source_type": "historical_record",
+      "metric": "same_sku_aggregator_daily_minimum",
+      "source_id": "kakaku-palit-history",
+      "tax_source_id": "kakaku-tax",
+      "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory",
+      "provenance": [
+        {
+          "snapshot_file": "snapshots/2026-10-25.json",
+          "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+          "retrieved_at": "2026-10-25T06:37:14Z",
+          "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+          "source_id": "kakaku-palit-history",
+          "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory"
+        }
+      ]
+    },
+    {
+      "hardware_id": "rtx-5060-ti-16gb",
+      "sku": "NE7506T019T1-GB2061S",
+      "observed_at": "2026-10-05",
+      "observed_date": "2026-10-05",
+      "time_precision": "day",
+      "retrieved_at": "2026-10-25T06:37:14Z",
+      "price_jpy": 129800,
+      "tax_included": true,
+      "shipping_jpy": null,
+      "available": null,
+      "condition": "new",
+      "currency": "JPY",
+      "source_type": "historical_record",
+      "metric": "same_sku_aggregator_daily_minimum",
+      "source_id": "kakaku-palit-history",
+      "tax_source_id": "kakaku-tax",
+      "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory",
+      "provenance": [
+        {
+          "snapshot_file": "snapshots/2026-10-25.json",
+          "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+          "retrieved_at": "2026-10-25T06:37:14Z",
+          "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+          "source_id": "kakaku-palit-history",
+          "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory"
+        }
+      ]
+    },
+    {
+      "hardware_id": "rtx-5060-ti-16gb",
+      "sku": "NE7506T019T1-GB2061S",
+      "observed_at": "2026-10-06",
+      "observed_date": "2026-10-06",
+      "time_precision": "day",
+      "retrieved_at": "2026-10-25T06:37:14Z",
+      "price_jpy": 138000,
+      "tax_included": true,
+      "shipping_jpy": null,
+      "available": null,
+      "condition": "new",
+      "currency": "JPY",
+      "source_type": "historical_record",
+      "metric": "same_sku_aggregator_daily_minimum",
+      "source_id": "kakaku-palit-history",
+      "tax_source_id": "kakaku-tax",
+      "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory",
+      "provenance": [
+        {
+          "snapshot_file": "snapshots/2026-10-25.json",
+          "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+          "retrieved_at": "2026-10-25T06:37:14Z",
+          "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+          "source_id": "kakaku-palit-history",
+          "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory"
+        }
+      ]
+    },
+    {
+      "hardware_id": "rtx-5060-ti-16gb",
+      "sku": "NE7506T019T1-GB2061S",
+      "observed_at": "2026-10-07",
+      "observed_date": "2026-10-07",
+      "time_precision": "day",
+      "retrieved_at": "2026-10-25T06:37:14Z",
+      "price_jpy": 138000,
+      "tax_included": true,
+      "shipping_jpy": null,
+      "available": null,
+      "condition": "new",
+      "currency": "JPY",
+      "source_type": "historical_record",
+      "metric": "same_sku_aggregator_daily_minimum",
+      "source_id": "kakaku-palit-history",
+      "tax_source_id": "kakaku-tax",
+      "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory",
+      "provenance": [
+        {
+          "snapshot_file": "snapshots/2026-10-25.json",
+          "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+          "retrieved_at": "2026-10-25T06:37:14Z",
+          "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+          "source_id": "kakaku-palit-history",
+          "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory"
+        }
+      ]
+    },
+    {
+      "hardware_id": "rtx-5060-ti-16gb",
+      "sku": "NE7506T019T1-GB2061S",
+      "observed_at": "2026-10-08",
+      "observed_date": "2026-10-08",
+      "time_precision": "day",
+      "retrieved_at": "2026-10-25T06:37:14Z",
+      "price_jpy": 138000,
+      "tax_included": true,
+      "shipping_jpy": null,
+      "available": null,
+      "condition": "new",
+      "currency": "JPY",
+      "source_type": "historical_record",
+      "metric": "same_sku_aggregator_daily_minimum",
+      "source_id": "kakaku-palit-history",
+      "tax_source_id": "kakaku-tax",
+      "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory",
+      "provenance": [
+        {
+          "snapshot_file": "snapshots/2026-10-25.json",
+          "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+          "retrieved_at": "2026-10-25T06:37:14Z",
+          "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+          "source_id": "kakaku-palit-history",
+          "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory"
+        }
+      ]
+    },
+    {
+      "hardware_id": "rtx-5060-ti-16gb",
+      "sku": "NE7506T019T1-GB2061S",
+      "observed_at": "2026-10-09",
+      "observed_date": "2026-10-09",
+      "time_precision": "day",
+      "retrieved_at": "2026-10-25T06:37:14Z",
+      "price_jpy": 138000,
+      "tax_included": true,
+      "shipping_jpy": null,
+      "available": null,
+      "condition": "new",
+      "currency": "JPY",
+      "source_type": "historical_record",
+      "metric": "same_sku_aggregator_daily_minimum",
+      "source_id": "kakaku-palit-history",
+      "tax_source_id": "kakaku-tax",
+      "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory",
+      "provenance": [
+        {
+          "snapshot_file": "snapshots/2026-10-25.json",
+          "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+          "retrieved_at": "2026-10-25T06:37:14Z",
+          "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+          "source_id": "kakaku-palit-history",
+          "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory"
+        }
+      ]
+    },
+    {
+      "hardware_id": "rtx-5060-ti-16gb",
+      "sku": "NE7506T019T1-GB2061S",
+      "observed_at": "2026-10-10",
+      "observed_date": "2026-10-10",
+      "time_precision": "day",
+      "retrieved_at": "2026-10-25T06:37:14Z",
+      "price_jpy": 138000,
+      "tax_included": true,
+      "shipping_jpy": null,
+      "available": null,
+      "condition": "new",
+      "currency": "JPY",
+      "source_type": "historical_record",
+      "metric": "same_sku_aggregator_daily_minimum",
+      "source_id": "kakaku-palit-history",
+      "tax_source_id": "kakaku-tax",
+      "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory",
+      "provenance": [
+        {
+          "snapshot_file": "snapshots/2026-10-25.json",
+          "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+          "retrieved_at": "2026-10-25T06:37:14Z",
+          "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+          "source_id": "kakaku-palit-history",
+          "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory"
+        }
+      ]
+    },
+    {
+      "hardware_id": "rtx-5060-ti-16gb",
+      "sku": "NE7506T019T1-GB2061S",
+      "observed_at": "2026-10-11",
+      "observed_date": "2026-10-11",
+      "time_precision": "day",
+      "retrieved_at": "2026-10-25T06:37:14Z",
+      "price_jpy": 138000,
+      "tax_included": true,
+      "shipping_jpy": null,
+      "available": null,
+      "condition": "new",
+      "currency": "JPY",
+      "source_type": "historical_record",
+      "metric": "same_sku_aggregator_daily_minimum",
+      "source_id": "kakaku-palit-history",
+      "tax_source_id": "kakaku-tax",
+      "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory",
+      "provenance": [
+        {
+          "snapshot_file": "snapshots/2026-10-25.json",
+          "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+          "retrieved_at": "2026-10-25T06:37:14Z",
+          "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+          "source_id": "kakaku-palit-history",
+          "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory"
+        }
+      ]
+    },
+    {
+      "hardware_id": "rtx-5060-ti-16gb",
+      "sku": "NE7506T019T1-GB2061S",
+      "observed_at": "2026-10-12",
+      "observed_date": "2026-10-12",
+      "time_precision": "day",
+      "retrieved_at": "2026-10-25T06:37:14Z",
+      "price_jpy": 138000,
+      "tax_included": true,
+      "shipping_jpy": null,
+      "available": null,
+      "condition": "new",
+      "currency": "JPY",
+      "source_type": "historical_record",
+      "metric": "same_sku_aggregator_daily_minimum",
+      "source_id": "kakaku-palit-history",
+      "tax_source_id": "kakaku-tax",
+      "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory",
+      "provenance": [
+        {
+          "snapshot_file": "snapshots/2026-10-25.json",
+          "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+          "retrieved_at": "2026-10-25T06:37:14Z",
+          "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+          "source_id": "kakaku-palit-history",
+          "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "dospara-palit-5060ti",
+      "url": "https://www.dospara.co.jp/SBR1892/IC523108.html",
+      "title": "Palit RTX 5060 Ti Infinity 3 16GB",
+      "type": "seller_product",
+      "source_last_crawled": "today",
+      "price_text": "129,800円",
+      "availability_text": "24時間以内に出荷",
+      "shipping_text": "送料無料",
+      "evidence_location": "Product heading and offer block, retrieved lines 1107–1145",
+      "sku": "NE7506T019T1-GB2061S",
+      "snapshot_provenance": {
+        "snapshot_file": "snapshots/2026-10-25.json",
+        "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+        "retrieved_at": "2026-10-25T06:37:14Z",
+        "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+        "extractor": "extract_model_cost_prices.py"
+      }
+    },
+    {
+      "id": "dospara-msi-5060ti",
+      "url": "https://www.dospara.co.jp/SBR1892/IC527334.html",
+      "title": "MSI RTX 5060 Ti 16G INSPIRE 2X OC",
+      "type": "seller_product",
+      "source_last_crawled": "today",
+      "price_text": "99,800円",
+      "availability_text": "在庫なし",
+      "shipping_text": "送料無料",
+      "evidence_location": "Product offer block, retrieved lines 1015–1037",
+      "sku": "GeForce RTX 5060 Ti 16G INSPIRE 2X OC",
+      "snapshot_provenance": {
+        "snapshot_file": "snapshots/2026-10-25.json",
+        "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+        "retrieved_at": "2026-10-25T06:37:14Z",
+        "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+        "extractor": "extract_model_cost_prices.py"
+      }
+    },
+    {
+      "id": "janpara-yahoo-3090",
+      "url": "https://store.shopping.yahoo.co.jp/janpara/67707793-67.html",
+      "title": "中古 NVIDIA PC抜き取り品 GeForce RTX 3090 24GB",
+      "type": "seller_product",
+      "source_last_crawled": "today",
+      "price_text": "187,980円",
+      "availability_text": "在庫なし",
+      "shipping_text": "送料無料（全国一律）",
+      "evidence_location": "Offer block, retrieved lines 75–89",
+      "sku": "67707793-67",
+      "notes": "Tax inclusion was not explicit in the retrieved product block. Shipping block also says conditions may change fees.",
+      "snapshot_provenance": {
+        "snapshot_file": "snapshots/2026-10-25.json",
+        "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+        "retrieved_at": "2026-10-25T06:37:14Z",
+        "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+        "extractor": "extract_model_cost_prices.py"
+      }
+    },
+    {
+      "id": "pc4u-5090",
+      "url": "https://www.pc4u.co.jp/view/category/ct2980",
+      "title": "PC4U RTX 5090 category",
+      "type": "seller_catalog",
+      "source_last_crawled": "today",
+      "price_entries": [
+        {
+          "sku": "VCG509032TFXPB1-O",
+          "price_text": "511,729円（税込）",
+          "availability_text": "品切れ"
+        },
+        {
+          "sku": "RTX5090AMPEX32G/ZT-B50900B-10P",
+          "price_text": "489,800円（税込）",
+          "availability_text": "品切れ"
+        }
+      ],
+      "shipping_text": "3,000円以上お買い上げで、全国どこでも送料無料！",
+      "evidence_location": "PNY lines 280–284; ZOTAC lines 295–301; shipping lines 332–338",
+      "snapshot_provenance": {
+        "snapshot_file": "snapshots/2026-10-25.json",
+        "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+        "retrieved_at": "2026-10-25T06:37:14Z",
+        "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+        "extractor": "extract_model_cost_prices.py"
+      }
+    },
+    {
+      "id": "ks-mini-m6-24",
+      "url": "https://www.ksdenki.com/item?sku=4549995676013",
+      "title": "K's Denki Mac mini M6 MHQM4J/A 24GB / 512GB",
+      "type": "seller_product",
+      "source_last_crawled": "today",
+      "price_text": "219,582 円 (税込)",
+      "price_ex_tax_text": "199,620 円 (税別)",
+      "availability_text": "お取り寄せ",
+      "shipping_text": "送料無料",
+      "evidence_location": "Product/price/stock lines 163–192",
+      "sku": "MHQM4J/A",
+      "notes": "Lead time unspecified as of 2026-10-23; checkout/order acceptance not tested.",
+      "snapshot_provenance": {
+        "snapshot_file": "snapshots/2026-10-25.json",
+        "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+        "retrieved_at": "2026-10-25T06:37:14Z",
+        "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+        "extractor": "extract_model_cost_prices.py"
+      }
+    },
+    {
+      "id": "bic-mini-m5-pro-24",
+      "url": "https://www.biccamera.com/bc/item/15491534/",
+      "title": "Bic Camera Mac mini M5 Pro MHQN4J/A 24GB / 512GB",
+      "type": "seller_product",
+      "source_last_crawled": "today",
+      "price_text": "299,800円 （税込）",
+      "availability_text": "在庫あり",
+      "shipping_text": "送料無料",
+      "evidence_location": "Product and price lines 73–106; delivery lines 207–239",
+      "sku": "MHQN4J/A",
+      "notes": "Displayed 2026-10-26 delivery estimate for default Tokyo destination; some remote/mountain regions incur shipping fees.",
+      "snapshot_provenance": {
+        "snapshot_file": "snapshots/2026-10-25.json",
+        "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+        "retrieved_at": "2026-10-25T06:37:14Z",
+        "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+        "extractor": "extract_model_cost_prices.py"
+      }
+    },
+    {
+      "id": "yodobashi-studio-64",
+      "url": "https://www.yodobashi.com/product/100000001010195906/",
+      "title": "Yodobashi Mac Studio M5 Max Z1U40003F 64GB / 512GB",
+      "type": "seller_product",
+      "source_last_crawled": "today",
+      "price_text": "￥599,800（税込）",
+      "availability_text": "お取り寄せ",
+      "shipping_text": "日本全国配達料金無料",
+      "evidence_location": "Product and offer lines 548–604",
+      "sku": "Z1U40003F",
+      "notes": "Made to order; estimated 5–6 weeks after payment confirmation; cart action available. Not ready stock.",
+      "snapshot_provenance": {
+        "snapshot_file": "snapshots/2026-10-25.json",
+        "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+        "retrieved_at": "2026-10-25T06:37:14Z",
+        "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+        "extractor": "extract_model_cost_prices.py"
+      }
+    },
+    {
+      "id": "yodobashi-studio-128",
+      "url": "https://www.yodobashi.com/product/100000001010195907/",
+      "title": "Yodobashi Mac Studio M5 Max Z1U40003G 128GB / 512GB",
+      "type": "seller_product",
+      "source_last_crawled": "today",
+      "price_text": "￥887,800（税込）",
+      "availability_text": "お取り寄せ",
+      "shipping_text": "日本全国配達料金無料",
+      "evidence_location": "Product and offer lines 548–604",
+      "sku": "Z1U40003G",
+      "notes": "Made to order; estimated 6–7 weeks after payment confirmation; cart action available. Not ready stock.",
+      "snapshot_provenance": {
+        "snapshot_file": "snapshots/2026-10-25.json",
+        "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+        "retrieved_at": "2026-10-25T06:37:14Z",
+        "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+        "extractor": "extract_model_cost_prices.py"
+      }
+    },
+    {
+      "id": "dospara-tax",
+      "url": "https://www.dospara.co.jp/shopping/shp_agreement.html",
+      "title": "Dospara sales terms §3-1 price",
+      "type": "seller_policy",
+      "source_last_crawled": "today",
+      "evidence_text": "消費税及び地方消費税を含んだ総額表示",
+      "evidence_location": "Section 3-1, retrieved lines 610–614",
+      "snapshot_provenance": {
+        "snapshot_file": "snapshots/2026-10-25.json",
+        "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+        "retrieved_at": "2026-10-25T06:37:14Z",
+        "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+        "extractor": "extract_model_cost_prices.py"
+      }
+    },
+    {
+      "id": "kakaku-palit-history",
+      "url": "https://kakaku.com/item/K0001686864/pricehistory/?lid=itemview_pricehistory",
+      "title": "Kakaku Palit NE7506T019T1-GB2061S daily lowest-price history",
+      "type": "price_aggregator_history",
+      "source_last_crawled": "last week",
+      "sku": "NE7506T019T1-GB2061S",
+      "evidence_location": "Daily price table, retrieved lines 29–61",
+      "history_rows": [
+        "2026年10月12日 | ¥138,000 | 0",
+        "2026年10月11日 | ¥138,000 | 0",
+        "2026年10月10日 | ¥138,000 | 0",
+        "2026年10月 9日 | ¥138,000 | 0",
+        "2026年10月 8日 | ¥138,000 | 0",
+        "2026年10月 7日 | ¥138,000 | 0",
+        "2026年10月 6日 | ¥138,000 | +8,200",
+        "2026年10月 5日 | ¥129,800 | 0",
+        "2026年10月 4日 | ¥129,800 | 0",
+        "2026年10月 3日 | ¥129,800 | 0",
+        "2026年10月 2日 | ¥129,800 | 0",
+        "2026年10月 1日 | ¥129,800 | 0",
+        "2026年 9月30日 | ¥129,800 | 0",
+        "2026年 9月29日 | ¥129,800 | 0",
+        "2026年 9月28日 | ¥129,800 | 0",
+        "2026年 9月27日 | ¥129,800 | 0",
+        "2026年 9月26日 | ¥129,800 | 0",
+        "2026年 9月25日 | ¥129,800 | 0",
+        "2026年 9月24日 | ¥129,800 | 0",
+        "2026年 9月23日 | ¥129,800 | 0",
+        "2026年 9月22日 | ¥129,800 | 0",
+        "2026年 9月21日 | ¥129,800 | 0",
+        "2026年 9月20日 | ¥129,800 | 0",
+        "2026年 9月19日 | ¥129,800 | 0",
+        "2026年 9月18日 | ¥129,800 | 0",
+        "2026年 9月17日 | ¥129,800 | 0",
+        "2026年 9月16日 | ¥129,800 | 0",
+        "2026年 9月15日 | ¥129,800 | 0",
+        "2026年 9月14日 | ¥129,800 | 0"
+      ],
+      "notes": "Not a seller-direct time series. Last visible dated entry is 2026-10-12; no values are inferred after it. Excludes Amazon per page methodology.",
+      "snapshot_provenance": {
+        "snapshot_file": "snapshots/2026-10-25.json",
+        "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+        "retrieved_at": "2026-10-25T06:37:14Z",
+        "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+        "extractor": "extract_model_cost_prices.py"
+      }
+    },
+    {
+      "id": "kakaku-tax",
+      "url": "https://support.kakaku.com/%E8%A1%A8%E7%A4%BA%E4%BE%A1%E6%A0%BC%E3%81%AF%E7%A8%8E%E8%BE%BC%E3%81%BF%E3%81%A7%E3%81%99%E3%81%8B%EF%BC%9F-684157a13963aa4da02f8fe2",
+      "title": "Kakaku display-price policy",
+      "type": "aggregator_policy",
+      "source_last_crawled": "today",
+      "evidence_text": "商品本体のみの税込価格",
+      "notes": "Unless specifically stated otherwise, listed prices include tax for the item only.",
+      "snapshot_provenance": {
+        "snapshot_file": "snapshots/2026-10-25.json",
+        "snapshot_sha256": "62de01e6178530bb8e3d1b5348d28a120bace4a66ee80252a030de4a00689908",
+        "retrieved_at": "2026-10-25T06:37:14Z",
+        "method": "Manual review of web.run open/find seller-page text. This is a retrieval timestamp, not a guaranteed live HTTP quotation. Only sources reporting 'Crawled: today' are included in current offers.",
+        "extractor": "extract_model_cost_prices.py"
+      }
+    }
+  ],
+  "limitations": [
+    "A bounded reference set, not an exhaustive Japanese market scan and not a claim of nationwide lowest price.",
+    "GPU offers cover the card only. Host PC, CPU, motherboard, RAM, SSD, case, cooling and adequate PSU are excluded.",
+    "Computer offers cover the computer configuration, excluding monitor, keyboard, mouse, paid software and warranty upgrades.",
+    "Memory GiB values follow marketed RAM/VRAM capacities as modeling inputs; runtime/backend labels are compatibility assumptions, not benchmarks.",
+    "Eight GiB computer OS/application reserve is an explicit conservative modeling assumption, not a measured allocation limit. GPU zero reserve is not a promise all VRAM is usable.",
+    "Power use and token throughput are not provided by these price observations and must not be invented.",
+    "Current observed_at is the web-tool retrieval time. Crawled-today metadata is preserved, but checkout-level live quotes and inventory are not verified.",
+    "available means a purchase listing is explicitly orderable, not necessarily ready stock. Always show availability and lead_time_weeks; made-to-order rows are not immediate-delivery offers.",
+    "Do not use unavailable or unknown-availability rows to compute confirmed purchase minima. RTX 3090 and RTX 5090 had no confirmed purchasable seller listing in this bounded fresh-page subset.",
+    "The sole historical series is Kakaku's dated minimum for one exact Palit SKU, not a GPU-family index. Keep it separate from seller-direct snapshots and do not interpolate missing dates or splice sources invisibly.",
+    "Points, coupons, rebates and financing are ignored. Shipping zero refers to displayed ordinary domestic delivery and can have region/payment exceptions.",
+    "No recurring collection has been configured; future points require fresh verifiable observations."
+  ]
+}

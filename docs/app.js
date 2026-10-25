@@ -1,3 +1,5 @@
+import { renderCost } from "./cost.js";
+
 // Agent Bench Matrix — reads data.json (written by tools/build.almd) and renders it.
 // Every string on the page comes from a leaderboard someone else runs, so nothing is
 // inserted as HTML: elements are built and text is assigned.
@@ -67,7 +69,7 @@ function fmtExtra(v) {
 }
 
 // ── data ───────────────────────────────────────────────────────────────────
-const state = { data: null, models: new Map(), cells: new Map(), modelIds: [], tables: [], byId: new Map(), firstSeen: new Map(), claims: new Map(), claimOnly: new Set() };
+const state = { costData: null, costError: null, data: null, models: new Map(), cells: new Map(), modelIds: [], tables: [], byId: new Map(), firstSeen: new Map(), claims: new Map(), claimOnly: new Set() };
 
 function prepare(data) {
   state.data = data;
@@ -175,8 +177,21 @@ function render() {
   const main = document.getElementById("view");
   main.replaceChildren();
   closeDrawer();
-  const views = { matrix: viewMatrix, ability: viewAbility, benchmarks: viewBenchmarks, table: viewTable, claims: viewClaims, gaps: viewGaps, about: viewAbout };
+  const views = { cost: viewCost, matrix: viewMatrix, ability: viewAbility, benchmarks: viewBenchmarks, table: viewTable, claims: viewClaims, gaps: viewGaps, about: viewAbout };
   (views[view] || viewMatrix)(main, arg, params);
+}
+
+// Local-run estimates are isolated from benchmark scores and their fit.
+function viewCost(main, _arg, params) {
+  if (!state.costData) {
+    main.append(h("p", { class: "empty" }, "費用データを読み込めませんでした。", state.costError || ""));
+    return;
+  }
+  renderCost(main, { models: state.models, data: state.costData, params,
+    navigate: (p) => {
+      setHash("cost", null, p);
+      render();
+    } });
 }
 
 // ── matrix ─────────────────────────────────────────────────────────────────
@@ -572,6 +587,8 @@ function viewAbility(main, _arg, params) {
     `全体のばらつきのうち説明できなかった大きさは σ = ${(state.data.fit?.overall?.sigma ?? 0).toFixed(2)}(z の単位)で、これが誤差の元です。`,
     state.claimOnly.size ? ` ボードに載っておらず自己申告しかないモデル(${[...state.claimOnly].map(modelName).join("、")})は、当てはめに入れていないので、ここには出ません。` : ""));
 
+  main.append(h("p", { class: "note" }, h("a", { href: "#/cost" }, "このモデル、いくらで動く？ → ローカル実行費用を調べる")));
+
   const scopes = ["overall", ...CATEGORY_ORDER.filter((c) => state.data.fit?.[c])];
   main.append(h("div", { class: "controls" },
     h("div", { class: "cats", role: "group", "aria-label": "軸" },
@@ -615,7 +632,8 @@ function viewAbility(main, _arg, params) {
       h("td", { class: "num" }, i + 1),
       h("td", {}, modelName(x.id),
         x.m?.open_weights ? h("span", { class: "chip ow" }, "open") : null,
-        x.m?.vendor ? h("span", { class: "vendor" }, x.m.vendor) : null),
+        x.m?.vendor ? h("span", { class: "vendor" }, x.m.vendor) : null,
+        h("a", { href: "#/cost?model=" + encodeURIComponent(x.id), class: "cost-model-link" }, "実行費用 →")),
       h("td", { class: "num" }, x.r.rating.toFixed(1), h("span", { class: "muted" }, " ±", x.r.se.toFixed(1))),
       h("td", {}, bar(x.r)),
       h("td", { class: "num" }, x.r.n),
@@ -719,6 +737,11 @@ async function boot() {
     document.getElementById("view").replaceChildren(h("p", { class: "empty" }, "data.json を読めませんでした: " + e.message));
     return;
   }
+  try {
+    const res = await fetch("cost-data.json", { cache: "no-cache" });
+    if (!res.ok) throw new Error(String(res.status));
+    state.costData = await res.json();
+  } catch (e) { state.costError = e.message; }
   stats();
   document.getElementById("drawer-close").addEventListener("click", closeDrawer);
   document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeDrawer(); });
