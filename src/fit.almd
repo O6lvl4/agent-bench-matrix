@@ -44,8 +44,9 @@ fn fsd(xs: List[Float], m: Float) -> Float = {
   if n < 2 then 0.0 else math.sqrt(list.fold(xs, 0.0, (a, x) => a + (x - m) * (x - m)) / float.from(n - 1))
 }
 
-fn add_to(mut m: Map[String, Float], k: String, v: Float) -> Unit =
+fn add_to(mut m: Map[String, Float], k: String, v: Float) -> Unit = {
   m = map.set(m, k, map.get(m, k) ?? 0.0 + v)
+}
 
 fn distinct(xs: List[String]) -> List[String] = {
   var seen: Map[String, Bool] = map.new()
