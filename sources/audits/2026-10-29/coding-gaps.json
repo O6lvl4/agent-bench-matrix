@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-29",
+  "existing_gap_files_preserved": true,
+  "gaps": [
+    {
+      "id": "terminal-bench-1-0",
+      "status": "still-unavailable",
+      "evidence": "All three saved board URLs return identical SHA-256 to current tbench homepage. Repository only links submission guide; no separate old results extracted."
+    },
+    {
+      "id": "terminal-bench-challenges",
+      "status": "still-unavailable",
+      "evidence": "Saved board URL identical SHA-256 to homepage. Official announcement links same board URL; repository has no leaderboard link."
+    },
+    {
+      "id": "swe-bench-pro-public-deprecated",
+      "status": "still-unavailable",
+      "evidence": "Three deprecated/commercial URLs all HTTP 404; current unified board already verified unchanged in table audit. No old capped-run results substituted."
+    }
+  ],
+  "requests": 12,
+  "http_200": 9,
+  "expected_http_404": 3,
+  "model_proposals": []
+}
