@@ -1,8 +1,8 @@
 {
  "source": {
-  "runs": "https://andonlabs.com/_app/immutable/chunks/Cjn0_qj9.js (vb2; time_series removed)",
-  "release_dates": "https://andonlabs.com/_app/immutable/chunks/D-_XXLSr.js",
-  "costs": "https://andonlabs.com/_app/immutable/nodes/27.DD0oMeXK.js"
+  "runs": "https://andonlabs.com/_app/immutable/chunks/CdFT7FVG.js (vb2; time_series removed)",
+  "release_dates": "https://andonlabs.com/_app/immutable/chunks/3sxjRzhT.js",
+  "costs": "https://andonlabs.com/_app/immutable/nodes/27.DfnfhcbM.js"
  },
  "runs_vb2": {
   "Claude Fable 5 - High": {
@@ -412,6 +412,17 @@
    "final_value_geomean_n": 6,
    "time_series_len": 365
   },
+  "GPT-6.1 Terra": {
+   "num_epochs": 6,
+   "num_final_values": 6,
+   "final_value": 9107.458333333334,
+   "final_value_std": 1880.3604685529506,
+   "final_value_sem": 767.6539467425706,
+   "final_value_ci95": 1504.6017356154384,
+   "final_value_geomean": 8945.048157876668,
+   "final_value_geomean_n": 6,
+   "time_series_len": 365
+  },
   "GPT-OSS-120b": {
    "num_epochs": 5,
    "num_final_values": 5,
@@ -519,6 +530,17 @@
    "final_value_sem": 3100.0118277133693,
    "final_value_ci95": 6076.023182318204,
    "final_value_geomean": 11726.45551442005,
+   "final_value_geomean_n": 6,
+   "time_series_len": 365
+  },
+  "Gemini 4 Carbon": {
+   "num_epochs": 6,
+   "num_final_values": 6,
+   "final_value": 16484.20666666667,
+   "final_value_std": 2685.776494302287,
+   "final_value_sem": 1096.463662366936,
+   "final_value_ci95": 2149.0687782391947,
+   "final_value_geomean": 16295.708860899611,
    "final_value_geomean_n": 6,
    "time_series_len": 365
   },
@@ -862,7 +884,9 @@
   "Gemini 4 Argon": "2026-09-30",
   "Claude Haiku 5.5": "2026-10-07",
   "Muse Wonder": "2026-10-12",
-  "Muse Wonder Full": "2026-10-12"
+  "Muse Wonder Full": "2026-10-12",
+  "Gemini 4 Carbon": "2026-10-25",
+  "GPT-6.1 Terra": "2026-10-26"
  },
  "costs": {
   "Claude Fable 5 - High": {
@@ -1272,6 +1296,17 @@
    "price_per_mtok_in": 2,
    "price_per_mtok_out": 10
   },
+  "GPT-6.1 Terra": {
+   "provider": "OpenAI",
+   "n": 6,
+   "mean_cost": 62.75,
+   "min_cost": 59.13,
+   "max_cost": 67.07,
+   "avg_input_tokens": 61475919,
+   "avg_output_tokens": 254008,
+   "price_per_mtok_in": 1,
+   "price_per_mtok_out": 5
+  },
   "GPT-OSS-120b": {
    "provider": "Fireworks",
    "n": 5,
@@ -1379,6 +1414,17 @@
    "max_cost": 354.25,
    "avg_input_tokens": 61317114,
    "avg_output_tokens": 193483,
+   "price_per_mtok_in": 4,
+   "price_per_mtok_out": 20
+  },
+  "Gemini 4 Carbon": {
+   "provider": "Google",
+   "n": 6,
+   "mean_cost": 369.75,
+   "min_cost": 227.05,
+   "max_cost": 515.58,
+   "avg_input_tokens": 89831591,
+   "avg_output_tokens": 521214,
    "price_per_mtok_in": 4,
    "price_per_mtok_out": 20
   },

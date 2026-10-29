@@ -1,0 +1,54 @@
+{
+  "reviewed": "2026-10-29",
+  "hash_checks": [
+    {
+      "table": "cybergym-agent-focused",
+      "all_primary_bodies_match_2026_10_25": true,
+      "table_preserved": true,
+      "sources": [
+        "https://www.cybergym.io/cybergym/",
+        "https://www.cybergym.io/assets/js/leaderboard.js",
+        "https://www.cybergym.io/assets/data/cybergym.json"
+      ]
+    },
+    {
+      "table": "cybergym-e2e",
+      "all_primary_bodies_match_2026_10_25": true,
+      "table_preserved": true,
+      "sources": [
+        "https://www.cybergym.io/assets/data/cybergym-e2e.json",
+        "https://www.cybergym.io/cybergym-e2e/"
+      ]
+    },
+    {
+      "table": "cybergym-model-focused",
+      "all_primary_bodies_match_2026_10_25": true,
+      "table_preserved": true,
+      "sources": [
+        "https://www.cybergym.io/cybergym/",
+        "https://www.cybergym.io/assets/js/leaderboard.js",
+        "https://www.cybergym.io/assets/data/cybergym.json"
+      ]
+    },
+    {
+      "table": "swe-marathon-v1-1",
+      "all_primary_bodies_match_2026_10_25": true,
+      "table_preserved": true,
+      "sources": [
+        "https://www.swe-marathon.org/",
+        "https://www.swe-marathon.org/assets/index-Dsh1_CSb.js"
+      ]
+    }
+  ],
+  "vending_bench_2": {
+    "all_73_rows_match_primary_metrics_dates_provider": true,
+    "snapshot_matches_primary_projection": true
+  },
+  "exploitgym": {
+    "rows": 27,
+    "repair": "Numeric measurements are never inherited from parent rows; removed erroneous GLM-5.2 DoGNAVY flag_captured=197.",
+    "approximate_gpt_rows_excluded": true,
+    "raw_snapshot_hash_verified": true,
+    "all_27_rows_metadata_and_numeric_fields_verified": true
+  }
+}

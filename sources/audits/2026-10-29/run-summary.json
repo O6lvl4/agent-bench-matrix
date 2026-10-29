@@ -1,0 +1,38 @@
+{
+  "checked_at": "2026-10-29T06:03:50.416138+00:00",
+  "baseline_commit": "c80986d1b73d307011ad997b982bca5e5c8bcd52",
+  "table_count": 166,
+  "rows": 4479,
+  "models": 521,
+  "changed_tables": [
+    "apex-agents",
+    "apex-agents-corporate-lawyer",
+    "apex-agents-investment-banking",
+    "apex-agents-management-consultant",
+    "exploitgym",
+    "gaia",
+    "osworld-2-1-full-500steps",
+    "vending-bench-2"
+  ],
+  "unchanged": 157,
+  "failed_preserved": [
+    "assistantbench"
+  ],
+  "category_counts": {
+    "coding": 50,
+    "terminal": 5,
+    "web": 23,
+    "computer-use": 22,
+    "tool-use": 32,
+    "general": 5,
+    "long-horizon": 7,
+    "research": 9,
+    "security": 13
+  },
+  "notes": [
+    "No cost data, claims, UI, code, workflow, or quality gates changed.",
+    "AssistantBench 503 retains 184 rows and old retrieval point.",
+    "Unknown weights remain null. GAIA anonymous submissions are not mapped to models.",
+    "Approximate counts derived from rates excluded from measured tables; raw source retained."
+  ]
+}

@@ -16,8 +16,8 @@
   "https://www.mercor.com/apex/apex-agents-leaderboard/",
   "https://www.mercor.com/blog/introducing-apex-agents-1-1"
  ],
- "retrieved": "2026-10-25",
- "newest_row_date": "2026-10-19",
+ "retrieved": "2026-10-29",
+ "newest_row_date": "2026-10-26",
  "snapshot": "sources/apex-agents/leaderboard_data.json",
  "paper": "https://arxiv.org/abs/2601.14242",
  "repo": "https://github.com/Mercor-Intelligence/apex_loop_truncated_tools_agent",
@@ -121,6 +121,54 @@
   },
   {
    "rank": 5,
+   "system": "DeepSeek-V4.1-Flash-1017",
+   "agent": "Loop",
+   "model_raw": [
+    "DeepSeek-V4.1-Flash-1017"
+   ],
+   "model_ids": [
+    "deepseek-v4.1-flash-1017"
+   ],
+   "model_config": "effort: max; model_id: deepseek-v4-1-flash-1017",
+   "score": 79.4,
+   "score_extra": {
+    "pass_at_1": 69.8,
+    "mean_score_error": 3.9,
+    "pass_at_1_error": 4.9,
+    "n_samples": 957
+   },
+   "date": null,
+   "verified": null,
+   "open_source": null,
+   "org": "DeepSeek",
+   "row_url": null
+  },
+  {
+   "rank": 6,
+   "system": "GPT-6.1 Terra",
+   "agent": "Loop",
+   "model_raw": [
+    "GPT-6.1 Terra"
+   ],
+   "model_ids": [
+    "gpt-6.1-terra"
+   ],
+   "model_config": "effort: max; model_id: gpt-6-1-terra",
+   "score": 79.3,
+   "score_extra": {
+    "pass_at_1": 68.3,
+    "mean_score_error": 4.1,
+    "pass_at_1_error": 5.2,
+    "n_samples": 959
+   },
+   "date": "2026-10-26",
+   "verified": null,
+   "open_source": null,
+   "org": "OpenAI",
+   "row_url": null
+  },
+  {
+   "rank": 7,
    "system": "Grok 4.6",
    "agent": "Loop",
    "model_raw": [
@@ -144,7 +192,7 @@
    "row_url": null
   },
   {
-   "rank": 6,
+   "rank": 8,
    "system": "Fable 5.1",
    "agent": "Loop",
    "model_raw": [
@@ -168,7 +216,7 @@
    "row_url": null
   },
   {
-   "rank": 7,
+   "rank": 9,
    "system": "Opus 5",
    "agent": "Loop",
    "model_raw": [
@@ -192,7 +240,31 @@
    "row_url": null
   },
   {
-   "rank": 8,
+   "rank": 10,
+   "system": "Muse Wonder 1.0",
+   "agent": "Loop",
+   "model_raw": [
+    "Muse Wonder 1.0"
+   ],
+   "model_ids": [
+    "muse-wonder-1.0"
+   ],
+   "model_config": "effort: max; model_id: muse-wonder-1-0-max",
+   "score": 77,
+   "score_extra": {
+    "pass_at_1": 66.1,
+    "mean_score_error": 4.2,
+    "pass_at_1_error": 5.3,
+    "n_samples": 960
+   },
+   "date": "2026-10-12",
+   "verified": null,
+   "open_source": null,
+   "org": "Meta",
+   "row_url": null
+  },
+  {
+   "rank": 11,
    "system": "GPT-6 Astra",
    "agent": "Loop",
    "model_raw": [
@@ -216,7 +288,7 @@
    "row_url": null
   },
   {
-   "rank": 9,
+   "rank": 12,
    "system": "Fable 5",
    "agent": "Loop",
    "model_raw": [
@@ -240,7 +312,7 @@
    "row_url": null
   },
   {
-   "rank": 10,
+   "rank": 13,
    "system": "Qwen3.8-Max",
    "agent": "Loop",
    "model_raw": [
@@ -264,7 +336,7 @@
    "row_url": null
   },
   {
-   "rank": 11,
+   "rank": 14,
    "system": "GPT-6.1 Sol",
    "agent": "Loop",
    "model_raw": [
@@ -288,7 +360,7 @@
    "row_url": null
   },
   {
-   "rank": 12,
+   "rank": 15,
    "system": "Gemini 3.8 Flash",
    "agent": "Loop",
    "model_raw": [
@@ -312,7 +384,7 @@
    "row_url": null
   },
   {
-   "rank": 13,
+   "rank": 16,
    "system": "GPT-5.6 Terra",
    "agent": "Loop",
    "model_raw": [
@@ -336,7 +408,7 @@
    "row_url": null
   },
   {
-   "rank": 14,
+   "rank": 17,
    "system": "Fable 5.1",
    "agent": "Loop",
    "model_raw": [
@@ -360,7 +432,7 @@
    "row_url": null
   },
   {
-   "rank": 15,
+   "rank": 18,
    "system": "Grok 4.5",
    "agent": "Loop",
    "model_raw": [
@@ -384,7 +456,7 @@
    "row_url": null
   },
   {
-   "rank": 16,
+   "rank": 19,
    "system": "Muse Spark 1.3",
    "agent": "Loop",
    "model_raw": [
@@ -408,7 +480,7 @@
    "row_url": null
   },
   {
-   "rank": 17,
+   "rank": 20,
    "system": "MiMo V2.6 Flash RL",
    "agent": "Loop",
    "model_raw": [
@@ -432,7 +504,7 @@
    "row_url": null
   },
   {
-   "rank": 18,
+   "rank": 21,
    "system": "GPT-5.5",
    "agent": "Loop",
    "model_raw": [
@@ -456,7 +528,7 @@
    "row_url": null
   },
   {
-   "rank": 19,
+   "rank": 22,
    "system": "Grok 4.7",
    "agent": "Loop",
    "model_raw": [
@@ -480,7 +552,7 @@
    "row_url": null
   },
   {
-   "rank": 20,
+   "rank": 23,
    "system": "GPT-6 Sol",
    "agent": "Loop",
    "model_raw": [
@@ -504,7 +576,7 @@
    "row_url": null
   },
   {
-   "rank": 21,
+   "rank": 24,
    "system": "Haiku 5.5",
    "agent": "Loop",
    "model_raw": [
@@ -528,7 +600,7 @@
    "row_url": null
   },
   {
-   "rank": 22,
+   "rank": 25,
    "system": "GPT-5.4",
    "agent": "Loop",
    "model_raw": [
@@ -552,7 +624,7 @@
    "row_url": null
   },
   {
-   "rank": 23,
+   "rank": 26,
    "system": "MiniMax-M3.1-Flash",
    "agent": "Loop",
    "model_raw": [
@@ -562,12 +634,12 @@
     "minimax-m3.1-flash"
    ],
    "model_config": "effort: max; model_id: minimax-m3p1-flash",
-   "score": 68,
+   "score": 68.1,
    "score_extra": {
     "pass_at_1": 53.9,
     "mean_score_error": 4.2,
     "pass_at_1_error": 5.1,
-    "n_samples": 959
+    "n_samples": 960
    },
    "date": null,
    "verified": null,
@@ -576,7 +648,7 @@
    "row_url": null
   },
   {
-   "rank": 24,
+   "rank": 27,
    "system": "DeepSeek-V4-Flash",
    "agent": "Loop",
    "model_raw": [
@@ -600,7 +672,7 @@
    "row_url": null
   },
   {
-   "rank": 25,
+   "rank": 28,
    "system": "Sonnet 5",
    "agent": "Loop",
    "model_raw": [
@@ -624,7 +696,7 @@
    "row_url": null
   },
   {
-   "rank": 26,
+   "rank": 29,
    "system": "GLM-5.3-Flash",
    "agent": "Loop",
    "model_raw": [
@@ -648,7 +720,7 @@
    "row_url": null
   },
   {
-   "rank": 27,
+   "rank": 30,
    "system": "GLM-5.3",
    "agent": "Loop",
    "model_raw": [
@@ -672,7 +744,7 @@
    "row_url": null
   },
   {
-   "rank": 28,
+   "rank": 31,
    "system": "Opus 5.5",
    "agent": "Loop",
    "model_raw": [
@@ -696,7 +768,7 @@
    "row_url": null
   },
   {
-   "rank": 29,
+   "rank": 32,
    "system": "MiMo V2.6 Pro",
    "agent": "Loop",
    "model_raw": [
@@ -720,7 +792,7 @@
    "row_url": null
   },
   {
-   "rank": 30,
+   "rank": 33,
    "system": "GPT-5.6 Sol",
    "agent": "Loop",
    "model_raw": [
@@ -744,7 +816,7 @@
    "row_url": null
   },
   {
-   "rank": 31,
+   "rank": 34,
    "system": "Opus 4.8",
    "agent": "Loop",
    "model_raw": [
@@ -768,7 +840,7 @@
    "row_url": null
   },
   {
-   "rank": 32,
+   "rank": 35,
    "system": "Mistral Large 4",
    "agent": "Loop",
    "model_raw": [
@@ -792,7 +864,7 @@
    "row_url": null
   },
   {
-   "rank": 33,
+   "rank": 36,
    "system": "Gemini 3.6 Flash",
    "agent": "Loop",
    "model_raw": [
@@ -816,7 +888,7 @@
    "row_url": null
   },
   {
-   "rank": 34,
+   "rank": 37,
    "system": "Opus 4.7",
    "agent": "Loop",
    "model_raw": [
@@ -840,7 +912,7 @@
    "row_url": null
   },
   {
-   "rank": 35,
+   "rank": 38,
    "system": "Mercury 3",
    "agent": "Loop",
    "model_raw": [
@@ -864,7 +936,7 @@
    "row_url": null
   },
   {
-   "rank": 36,
+   "rank": 39,
    "system": "Beam",
    "agent": "Loop",
    "model_raw": [
@@ -888,7 +960,7 @@
    "row_url": null
   },
   {
-   "rank": 37,
+   "rank": 40,
    "system": "DeepSeek-V4-Pro-0813",
    "agent": "Loop",
    "model_raw": [
@@ -912,7 +984,7 @@
    "row_url": null
   },
   {
-   "rank": 38,
+   "rank": 41,
    "system": "Kimi K3",
    "agent": "Loop",
    "model_raw": [
@@ -936,7 +1008,7 @@
    "row_url": null
   },
   {
-   "rank": 39,
+   "rank": 42,
    "system": "Qwen 3.8 27B",
    "agent": "Loop",
    "model_raw": [
@@ -960,7 +1032,7 @@
    "row_url": null
   },
   {
-   "rank": 40,
+   "rank": 43,
    "system": "Opus 4.6",
    "agent": "Loop",
    "model_raw": [
@@ -984,7 +1056,7 @@
    "row_url": null
   },
   {
-   "rank": 41,
+   "rank": 44,
    "system": "Muse Spark 1.3",
    "agent": "Loop",
    "model_raw": [
@@ -1008,7 +1080,7 @@
    "row_url": null
   },
   {
-   "rank": 42,
+   "rank": 45,
    "system": "GLM-5.2",
    "agent": "Loop",
    "model_raw": [
@@ -1032,7 +1104,7 @@
    "row_url": null
   },
   {
-   "rank": 43,
+   "rank": 46,
    "system": "Muse Spark 1.2",
    "agent": "Loop",
    "model_raw": [
@@ -1056,7 +1128,7 @@
    "row_url": null
   },
   {
-   "rank": 44,
+   "rank": 47,
    "system": "Sonnet 5.5",
    "agent": "Loop",
    "model_raw": [
@@ -1080,7 +1152,7 @@
    "row_url": null
   },
   {
-   "rank": 45,
+   "rank": 48,
    "system": "GPT-6 Luna",
    "agent": "Loop",
    "model_raw": [
@@ -1104,7 +1176,7 @@
    "row_url": null
   },
   {
-   "rank": 46,
+   "rank": 49,
    "system": "GPT-5.6 Luna",
    "agent": "Loop",
    "model_raw": [
@@ -1128,7 +1200,7 @@
    "row_url": null
   },
   {
-   "rank": 47,
+   "rank": 50,
    "system": "Sonnet 4.6",
    "agent": "Loop",
    "model_raw": [
@@ -1152,7 +1224,7 @@
    "row_url": null
   },
   {
-   "rank": 48,
+   "rank": 51,
    "system": "GLM-5.1",
    "agent": "Loop",
    "model_raw": [
@@ -1176,7 +1248,7 @@
    "row_url": null
   },
   {
-   "rank": 49,
+   "rank": 52,
    "system": "MiniMax-M3",
    "agent": "Loop",
    "model_raw": [
@@ -1200,7 +1272,7 @@
    "row_url": null
   },
   {
-   "rank": 50,
+   "rank": 53,
    "system": "Kimi K2.7 Code",
    "agent": "Loop",
    "model_raw": [
@@ -1224,7 +1296,7 @@
    "row_url": null
   },
   {
-   "rank": 51,
+   "rank": 54,
    "system": "Gemini 3.1 Pro",
    "agent": "Loop",
    "model_raw": [
@@ -1248,7 +1320,7 @@
    "row_url": null
   },
   {
-   "rank": 52,
+   "rank": 55,
    "system": "DeepSeek-V4.1-Flash",
    "agent": "Loop",
    "model_raw": [
@@ -1272,7 +1344,7 @@
    "row_url": null
   },
   {
-   "rank": 53,
+   "rank": 56,
    "system": "Inkling",
    "agent": "Loop",
    "model_raw": [
@@ -1296,7 +1368,7 @@
    "row_url": null
   },
   {
-   "rank": 54,
+   "rank": 57,
    "system": "Muse Spark Open",
    "agent": "Loop",
    "model_raw": [
@@ -1320,7 +1392,7 @@
    "row_url": null
   },
   {
-   "rank": 55,
+   "rank": 58,
    "system": "Muse Spark 1.1",
    "agent": "Loop",
    "model_raw": [
@@ -1344,7 +1416,7 @@
    "row_url": null
   },
   {
-   "rank": 56,
+   "rank": 59,
    "system": "Gemini 3.5 Flash Lite",
    "agent": "Loop",
    "model_raw": [
@@ -1368,7 +1440,7 @@
    "row_url": null
   },
   {
-   "rank": 57,
+   "rank": 60,
    "system": "Nemotron 3.5 Super VL",
    "agent": "Loop",
    "model_raw": [
@@ -1392,7 +1464,7 @@
    "row_url": null
   },
   {
-   "rank": 58,
+   "rank": 61,
    "system": "Gemini 3.5 Flash",
    "agent": "Loop",
    "model_raw": [
@@ -1416,7 +1488,31 @@
    "row_url": null
   },
   {
-   "rank": 59,
+   "rank": 62,
+   "system": "Nemotron 3.5 Bolt",
+   "agent": "Loop",
+   "model_raw": [
+    "Nemotron 3.5 Bolt"
+   ],
+   "model_ids": [
+    "nemotron-3.5-bolt"
+   ],
+   "model_config": "effort: high; model_id: nemotron-3-5-bolt",
+   "score": 43.9,
+   "score_extra": {
+    "pass_at_1": 27.4,
+    "mean_score_error": 4.5,
+    "pass_at_1_error": 4.6,
+    "n_samples": 960
+   },
+   "date": null,
+   "verified": null,
+   "open_source": null,
+   "org": "NVIDIA",
+   "row_url": null
+  },
+  {
+   "rank": 63,
    "system": "Qwen3.5",
    "agent": "Loop",
    "model_raw": [
@@ -1440,7 +1536,7 @@
    "row_url": null
   },
   {
-   "rank": 60,
+   "rank": 64,
    "system": "Nemotron 3 Ultra",
    "agent": "Loop",
    "model_raw": [
@@ -1464,7 +1560,7 @@
    "row_url": null
   },
   {
-   "rank": 61,
+   "rank": 65,
    "system": "DeepSeek-V3.2",
    "agent": "Loop",
    "model_raw": [
@@ -1488,7 +1584,7 @@
    "row_url": null
   },
   {
-   "rank": 62,
+   "rank": 66,
    "system": "GPT-OSS-120B",
    "agent": "Loop",
    "model_raw": [
