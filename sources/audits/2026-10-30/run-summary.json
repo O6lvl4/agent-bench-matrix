@@ -1,0 +1,41 @@
+{
+  "run": "2026-10-30T00:00:00Z",
+  "checked_at": "2026-10-30T01:03:29.396750+00:00",
+  "baseline_commit": "85324ed8129f5d80fc2e005bf4d93202634c1bf8",
+  "tables": 166,
+  "rows": 4491,
+  "models": 522,
+  "changed_tables": [
+    "tau3-voice",
+    "gaia",
+    "apex-agents-management-consultant",
+    "apex-agents-corporate-lawyer",
+    "tau3-voice-airline",
+    "tau3-voice-retail",
+    "tau3-voice-telecom",
+    "cybergym-agent-focused",
+    "apex-agents-investment-banking"
+  ],
+  "unchanged": 156,
+  "failed_preserved": [
+    "assistantbench"
+  ],
+  "category_counts": {
+    "web": 23,
+    "computer-use": 22,
+    "coding": 50,
+    "long-horizon": 7,
+    "security": 13,
+    "tool-use": 32,
+    "research": 9,
+    "general": 5,
+    "terminal": 5
+  },
+  "notes": [
+    "No cost data, claims, UI, code, workflows or quality gates changed.",
+    "AssistantBench HTTP503 retains184rows and success retrieval date.",
+    "Phonic standard/custom user simulators remain distinct; unknown weights null.",
+    "GAIA top100 cutoff and tie ordering changed, not common-row score improvement.",
+    "All new numeric observations mechanically extracted from saved public sources."
+  ]
+}

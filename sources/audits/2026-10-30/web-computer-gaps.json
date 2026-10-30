@@ -1,0 +1,204 @@
+[
+  {
+    "id": "browsecomp",
+    "status": "existing_gap_preserved",
+    "verification": "Official article remains fixed research results; reviewed live rendered article. README byte-identical; independent Kaggle extraction verified separately. No new live browsing-agent board.",
+    "sources": [
+      {
+        "url": "https://openai.com/index/browsecomp/",
+        "status": 200,
+        "sha256": "0a50e64e861a0f186702fc48fa53a875e8d6c119297893688cf0df2ea977920b",
+        "error": null,
+        "unchanged_from_oct29": false
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openai/simple-evals/main/README.md",
+        "status": 200,
+        "sha256": "d9647c4a0e34cd9b2b528ff6986141734aac6f5f2f18a068eeadb2af0b29786f",
+        "error": null,
+        "unchanged_from_oct29": true
+      },
+      {
+        "url": "https://www.kaggle.com/api/i/benchmarks.BenchmarkService/GetBenchmarkLeaderboard",
+        "status": 200,
+        "sha256": "1d87feb08a067c1e64cd025906aa2b109d1fb1c58271af4f7f8a6ab1e03e7340",
+        "error": null,
+        "unchanged_from_oct29": true
+      }
+    ]
+  },
+  {
+    "id": "browsecomp-zh",
+    "status": "existing_gap_preserved",
+    "verification": "Fetched official source bytes exactly match prior checked source; no newly available leaderboard data.",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/PALIN2018/BrowseComp-ZH/main/README.md",
+        "status": 200,
+        "sha256": "bd8d592e740bd1d1bd4af1a7f8f68ce0ea7eb3479d60e84b2e76810650d69a33",
+        "error": null,
+        "unchanged_from_oct29": true
+      }
+    ]
+  },
+  {
+    "id": "webvoyager",
+    "status": "existing_gap_preserved",
+    "verification": "Fetched official source bytes exactly match prior checked source; no newly available leaderboard data.",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/MinorJerry/WebVoyager/main/README.md",
+        "status": 200,
+        "sha256": "b5523941b2773634fdcf359b5b89bf0aca589f33ad9db30692c8b1912ed5dda5",
+        "error": null,
+        "unchanged_from_oct29": true
+      }
+    ]
+  },
+  {
+    "id": "computer-agent-arena",
+    "status": "existing_gap_preserved",
+    "verification": "Both endpoints still HTTP 522.",
+    "sources": [
+      {
+        "url": "https://arena.xlang.ai/leaderboard",
+        "status": 522,
+        "sha256": null,
+        "error": "HTTP Error 522: Unknown",
+        "unchanged_from_oct29": true
+      },
+      {
+        "url": "https://arena.xlang.ai/",
+        "status": 522,
+        "sha256": null,
+        "error": "HTTP Error 522: Unknown",
+        "unchanged_from_oct29": true
+      }
+    ]
+  },
+  {
+    "id": "hud-osworld-verified",
+    "status": "existing_gap_preserved",
+    "verification": "Leaderboard remains 404. Reviewed live homepage and Research text and links: environment platform and research article index, not OSWorld-Verified current results; Environments shell byte-identical. Existing gap retained.",
+    "sources": [
+      {
+        "url": "https://www.hud.ai/leaderboards",
+        "status": 404,
+        "sha256": null,
+        "error": "HTTP Error 404: Not Found",
+        "unchanged_from_oct29": true
+      },
+      {
+        "url": "https://www.hud.ai/",
+        "status": 200,
+        "sha256": "5c581bca2dbee4a001534e6478816dd4220cb1b2d3d9057d2919c2a17a6cbc6f",
+        "error": null,
+        "unchanged_from_oct29": false
+      },
+      {
+        "url": "https://www.hud.ai/research",
+        "status": 200,
+        "sha256": "044cb0739ac1b5950bbc8fc2a6e2d51d2c5413b72ce7dc62130cac835e87ae87",
+        "error": null,
+        "unchanged_from_oct29": false
+      },
+      {
+        "url": "https://www.hud.ai/environments",
+        "status": 200,
+        "sha256": "65a5a80eba637092f04ca0a74a409e43c73c7e0d8e259e393e8082f2cf6e2934",
+        "error": null,
+        "unchanged_from_oct29": true
+      }
+    ]
+  },
+  {
+    "id": "macosworld",
+    "status": "existing_gap_preserved",
+    "verification": "Fetched official source bytes exactly match prior checked source; no newly available leaderboard data.",
+    "sources": [
+      {
+        "url": "https://macos-world.github.io/",
+        "status": 200,
+        "sha256": "634111c7fe4a8833a6d117f87def535dc8e2ca263b2f7fb0b839b73cb957e00c",
+        "error": null,
+        "unchanged_from_oct29": true
+      }
+    ]
+  },
+  {
+    "id": "screensuite",
+    "status": "existing_gap_preserved",
+    "verification": "Fetched official source bytes exactly match prior checked source; no newly available leaderboard data.",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/huggingface/screensuite/main/README.md",
+        "status": 200,
+        "sha256": "edcaa6f8355be6a8774ebeeb9bdb67648e8eeddb813d6be0fa2433116d9def36",
+        "error": null,
+        "unchanged_from_oct29": true
+      }
+    ]
+  },
+  {
+    "id": "st-webagentbench",
+    "status": "existing_gap_preserved",
+    "verification": "Space metadata and app.py unchanged; config 503; dataset API 401; no authenticated requests attempted.",
+    "sources": [
+      {
+        "url": "https://huggingface.co/api/spaces/ST-WebAgentBench/st-webagentbench-leaderboard",
+        "status": 200,
+        "sha256": "0e134a3619178722d22f3efb361b16cee04fb537c250ce7d2871b3eb0ca45e09",
+        "error": null,
+        "unchanged_from_oct29": true
+      },
+      {
+        "url": "https://st-webagentbench-st-webagentbench-leaderboard.hf.space/config",
+        "status": 503,
+        "sha256": null,
+        "error": "HTTP Error 503: Service Unavailable",
+        "unchanged_from_oct29": true
+      },
+      {
+        "url": "https://huggingface.co/spaces/ST-WebAgentBench/st-webagentbench-leaderboard/raw/main/app.py",
+        "status": 200,
+        "sha256": "20537065ccf1e15a61708fc73e40c77d7f05e2e4d0ad6ead05801cf390320e26",
+        "error": null,
+        "unchanged_from_oct29": true
+      },
+      {
+        "url": "https://huggingface.co/api/datasets/ST-WebAgentBench/st-webagentbench-data",
+        "status": 401,
+        "sha256": null,
+        "error": "HTTP Error 401: Unauthorized",
+        "unchanged_from_oct29": true
+      }
+    ]
+  },
+  {
+    "id": "windows-agent-arena",
+    "status": "existing_gap_preserved",
+    "verification": "Fetched official source bytes exactly match prior checked source; no newly available leaderboard data.",
+    "sources": [
+      {
+        "url": "https://microsoft.github.io/WindowsAgentArena/",
+        "status": 200,
+        "sha256": "10cd8fca042d2b9ebac114913e40598ca8bb0b50bf0df89f1306cc505f02ee6c",
+        "error": null,
+        "unchanged_from_oct29": true
+      }
+    ]
+  },
+  {
+    "id": "assistantbench-refresh-2026-10-30",
+    "table": "assistantbench",
+    "status": "fetch_failure_preserved",
+    "retrieved": "2026-10-30",
+    "tried": [
+      "https://assistantbench-leaderboard.hf.space/config"
+    ],
+    "http_status": 503,
+    "preserved_rows": 184,
+    "retained_successful_retrieved": "2026-10-05",
+    "reason": "Current Gradio config HTTP 503; last successful numeric board and successful retrieval date retained; not an empty board."
+  }
+]
