@@ -1,0 +1,247 @@
+[
+  {
+    "id": "browsecomp",
+    "status": "existing_gap_preserved",
+    "verification": "Reviewed current main article: April 10, 2025 fixed research result, no new public agent leaderboard link. README and independent Kaggle source unchanged.",
+    "sources": [
+      {
+        "url": "https://openai.com/index/browsecomp/",
+        "checked_at": "2026-10-31T00:11:48.099575+00:00",
+        "status": 200,
+        "sha256": "1a2df76a14036d68286a5f08c8dfc43b3d91041412aa861024e9f7c772628c95",
+        "bytes": 430396,
+        "prior_sha256": "0a50e64e861a0f186702fc48fa53a875e8d6c119297893688cf0df2ea977920b",
+        "raw_bytes_equal": false
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openai/simple-evals/main/README.md",
+        "checked_at": "2026-10-31T00:11:52.090675+00:00",
+        "status": 200,
+        "sha256": "d9647c4a0e34cd9b2b528ff6986141734aac6f5f2f18a068eeadb2af0b29786f",
+        "bytes": 13160,
+        "prior_sha256": "d9647c4a0e34cd9b2b528ff6986141734aac6f5f2f18a068eeadb2af0b29786f",
+        "raw_bytes_equal": true
+      },
+      {
+        "url": "https://www.kaggle.com/api/i/benchmarks.BenchmarkService/GetBenchmarkLeaderboard",
+        "checked_at": "2026-10-31T00:11:55.394372+00:00",
+        "status": 200,
+        "sha256": "1d87feb08a067c1e64cd025906aa2b109d1fb1c58271af4f7f8a6ab1e03e7340",
+        "bytes": 59821,
+        "request_json": {
+          "versionIdentifier": {
+            "versionIdSelector": {
+              "id": 35
+            }
+          }
+        },
+        "prior_sha256": "1d87feb08a067c1e64cd025906aa2b109d1fb1c58271af4f7f8a6ab1e03e7340",
+        "raw_bytes_equal": true
+      }
+    ]
+  },
+  {
+    "id": "browsecomp-zh",
+    "status": "existing_gap_preserved",
+    "verification": "Successful sources byte-identical to prior checked sources; failed endpoints retained as acquisition gaps. No authenticated retry or bypass.",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/PALIN2018/BrowseComp-ZH/main/README.md",
+        "checked_at": "2026-10-31T00:11:51.559358+00:00",
+        "status": 200,
+        "sha256": "bd8d592e740bd1d1bd4af1a7f8f68ce0ea7eb3479d60e84b2e76810650d69a33",
+        "bytes": 8238,
+        "prior_sha256": "bd8d592e740bd1d1bd4af1a7f8f68ce0ea7eb3479d60e84b2e76810650d69a33",
+        "raw_bytes_equal": true
+      }
+    ]
+  },
+  {
+    "id": "webvoyager",
+    "status": "existing_gap_preserved",
+    "verification": "Successful sources byte-identical to prior checked sources; failed endpoints retained as acquisition gaps. No authenticated retry or bypass.",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/MinorJerry/WebVoyager/main/README.md",
+        "checked_at": "2026-10-31T00:11:51.558127+00:00",
+        "status": 200,
+        "sha256": "b5523941b2773634fdcf359b5b89bf0aca589f33ad9db30692c8b1912ed5dda5",
+        "bytes": 10723,
+        "prior_sha256": "b5523941b2773634fdcf359b5b89bf0aca589f33ad9db30692c8b1912ed5dda5",
+        "raw_bytes_equal": true
+      }
+    ]
+  },
+  {
+    "id": "computer-agent-arena",
+    "status": "existing_gap_preserved",
+    "verification": "Successful sources byte-identical to prior checked sources; failed endpoints retained as acquisition gaps. No authenticated retry or bypass.",
+    "sources": [
+      {
+        "url": "https://arena.xlang.ai/leaderboard",
+        "checked_at": "2026-10-31T00:10:52.629744+00:00",
+        "status": 522,
+        "sha256": null,
+        "error": "HTTP Error 522: Unknown",
+        "prior_sha256": null,
+        "raw_bytes_equal": false
+      },
+      {
+        "url": "https://arena.xlang.ai/",
+        "checked_at": "2026-10-31T00:10:52.629035+00:00",
+        "status": 522,
+        "sha256": null,
+        "error": "HTTP Error 522: Unknown",
+        "prior_sha256": null,
+        "raw_bytes_equal": false
+      }
+    ]
+  },
+  {
+    "id": "hud-osworld-verified",
+    "status": "existing_gap_preserved",
+    "verification": "Successful sources byte-identical to prior checked sources; failed endpoints retained as acquisition gaps. No authenticated retry or bypass.",
+    "sources": [
+      {
+        "url": "https://www.hud.ai/leaderboards",
+        "checked_at": "2026-10-31T00:11:55.374635+00:00",
+        "status": 404,
+        "sha256": null,
+        "error": "HTTP Error 404: Not Found",
+        "prior_sha256": null,
+        "raw_bytes_equal": false
+      },
+      {
+        "url": "https://www.hud.ai/",
+        "checked_at": "2026-10-31T00:11:54.059269+00:00",
+        "status": 200,
+        "sha256": "5c581bca2dbee4a001534e6478816dd4220cb1b2d3d9057d2919c2a17a6cbc6f",
+        "bytes": 224740,
+        "prior_sha256": "5c581bca2dbee4a001534e6478816dd4220cb1b2d3d9057d2919c2a17a6cbc6f",
+        "raw_bytes_equal": true
+      },
+      {
+        "url": "https://www.hud.ai/research",
+        "checked_at": "2026-10-31T00:11:55.379573+00:00",
+        "status": 200,
+        "sha256": "044cb0739ac1b5950bbc8fc2a6e2d51d2c5413b72ce7dc62130cac835e87ae87",
+        "bytes": 122005,
+        "prior_sha256": "044cb0739ac1b5950bbc8fc2a6e2d51d2c5413b72ce7dc62130cac835e87ae87",
+        "raw_bytes_equal": true
+      },
+      {
+        "url": "https://www.hud.ai/environments",
+        "checked_at": "2026-10-31T00:11:54.479033+00:00",
+        "status": 200,
+        "sha256": "65a5a80eba637092f04ca0a74a409e43c73c7e0d8e259e393e8082f2cf6e2934",
+        "bytes": 155076,
+        "prior_sha256": "65a5a80eba637092f04ca0a74a409e43c73c7e0d8e259e393e8082f2cf6e2934",
+        "raw_bytes_equal": true
+      }
+    ]
+  },
+  {
+    "id": "macosworld",
+    "status": "existing_gap_preserved",
+    "verification": "Successful sources byte-identical to prior checked sources; failed endpoints retained as acquisition gaps. No authenticated retry or bypass.",
+    "sources": [
+      {
+        "url": "https://macos-world.github.io/",
+        "checked_at": "2026-10-31T00:11:45.646655+00:00",
+        "status": 200,
+        "sha256": "634111c7fe4a8833a6d117f87def535dc8e2ca263b2f7fb0b839b73cb957e00c",
+        "bytes": 18988,
+        "prior_sha256": "634111c7fe4a8833a6d117f87def535dc8e2ca263b2f7fb0b839b73cb957e00c",
+        "raw_bytes_equal": true
+      }
+    ]
+  },
+  {
+    "id": "screensuite",
+    "status": "existing_gap_preserved",
+    "verification": "Successful sources byte-identical to prior checked sources; failed endpoints retained as acquisition gaps. No authenticated retry or bypass.",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/huggingface/screensuite/main/README.md",
+        "checked_at": "2026-10-31T00:11:52.063698+00:00",
+        "status": 200,
+        "sha256": "edcaa6f8355be6a8774ebeeb9bdb67648e8eeddb813d6be0fa2433116d9def36",
+        "bytes": 9359,
+        "prior_sha256": "edcaa6f8355be6a8774ebeeb9bdb67648e8eeddb813d6be0fa2433116d9def36",
+        "raw_bytes_equal": true
+      }
+    ]
+  },
+  {
+    "id": "st-webagentbench",
+    "status": "existing_gap_preserved",
+    "verification": "Successful sources byte-identical to prior checked sources; failed endpoints retained as acquisition gaps. No authenticated retry or bypass.",
+    "sources": [
+      {
+        "url": "https://huggingface.co/api/spaces/ST-WebAgentBench/st-webagentbench-leaderboard",
+        "checked_at": "2026-10-31T00:11:02.251759+00:00",
+        "status": 200,
+        "sha256": "0e134a3619178722d22f3efb361b16cee04fb537c250ce7d2871b3eb0ca45e09",
+        "bytes": 3315,
+        "prior_sha256": "0e134a3619178722d22f3efb361b16cee04fb537c250ce7d2871b3eb0ca45e09",
+        "raw_bytes_equal": true
+      },
+      {
+        "url": "https://st-webagentbench-st-webagentbench-leaderboard.hf.space/config",
+        "checked_at": "2026-10-31T00:11:52.094362+00:00",
+        "status": 503,
+        "sha256": null,
+        "error": "HTTP Error 503: Service Unavailable",
+        "prior_sha256": null,
+        "raw_bytes_equal": false
+      },
+      {
+        "url": "https://huggingface.co/spaces/ST-WebAgentBench/st-webagentbench-leaderboard/raw/main/app.py",
+        "checked_at": "2026-10-31T00:11:02.364574+00:00",
+        "status": 200,
+        "sha256": "20537065ccf1e15a61708fc73e40c77d7f05e2e4d0ad6ead05801cf390320e26",
+        "bytes": 143859,
+        "prior_sha256": "20537065ccf1e15a61708fc73e40c77d7f05e2e4d0ad6ead05801cf390320e26",
+        "raw_bytes_equal": true
+      },
+      {
+        "url": "https://huggingface.co/api/datasets/ST-WebAgentBench/st-webagentbench-data",
+        "checked_at": "2026-10-31T00:10:58.542768+00:00",
+        "status": 401,
+        "sha256": null,
+        "error": "HTTP Error 401: Unauthorized",
+        "prior_sha256": null,
+        "raw_bytes_equal": false
+      }
+    ]
+  },
+  {
+    "id": "windows-agent-arena",
+    "status": "existing_gap_preserved",
+    "verification": "Successful sources byte-identical to prior checked sources; failed endpoints retained as acquisition gaps. No authenticated retry or bypass.",
+    "sources": [
+      {
+        "url": "https://microsoft.github.io/WindowsAgentArena/",
+        "checked_at": "2026-10-31T00:11:48.051388+00:00",
+        "status": 200,
+        "sha256": "10cd8fca042d2b9ebac114913e40598ca8bb0b50bf0df89f1306cc505f02ee6c",
+        "bytes": 23885,
+        "prior_sha256": "10cd8fca042d2b9ebac114913e40598ca8bb0b50bf0df89f1306cc505f02ee6c",
+        "raw_bytes_equal": true
+      }
+    ]
+  },
+  {
+    "id": "assistantbench-refresh-2026-10-31",
+    "table": "assistantbench",
+    "status": "fetch_failure_preserved",
+    "retrieved": "2026-10-31",
+    "tried": [
+      "https://assistantbench-leaderboard.hf.space/config"
+    ],
+    "http_status": 503,
+    "preserved_rows": 184,
+    "retained_successful_retrieved": "2026-10-05",
+    "reason": "Gradio config remains HTTP503; previous numeric source, rows and successful retrieval date unchanged."
+  }
+]

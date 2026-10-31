@@ -1,0 +1,2195 @@
+{
+  "checked_at": "2026-10-31T00:13:13.475016+00:00",
+  "baseline_commit": "5125f7c8053cdf745419b6b60815ac970ed55819",
+  "summary": {
+    "unchanged_verified": 44,
+    "fetch_failure_preserved": 1
+  },
+  "tables": [
+    {
+      "id": "androidworld-mobileminiwob",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo/export?format=csv&gid=1078963525",
+          "checked_at": "2026-10-31T00:10:57.270464+00:00",
+          "status": 200,
+          "sha256": "d022affe1a8ec99cfc940bf645e85a089b2aa3afc123d59dafc3d8fa021c0b22",
+          "bytes": 457,
+          "prior_sha256": "d022affe1a8ec99cfc940bf645e85a089b2aa3afc123d59dafc3d8fa021c0b22",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 4,
+      "rows": 4,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "Success Rate (pass@1, %)",
+        "unit": "%",
+        "tasks": null,
+        "tasks_note": "AndroidWorld の README・シートにタスク数の記載が見当たらないため null。",
+        "harness_ja": "提出者の自己申告。足場・画面表現は提出者任せ。"
+      },
+      "table_sha256": "039365815945ec4e6271f3133695083633246dfcfc800fd14f248fb3068a5e94",
+      "snapshot_sha256": "d022affe1a8ec99cfc940bf645e85a089b2aa3afc123d59dafc3d8fa021c0b22"
+    },
+    {
+      "id": "androidworld",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo/export?format=csv&gid=0",
+          "checked_at": "2026-10-31T00:10:56.941076+00:00",
+          "status": 200,
+          "sha256": "fa55b5154926e6027efa02dda6a07d15e008b3e314adbc20d0980ce537aca8f0",
+          "bytes": 9203,
+          "prior_sha256": "fa55b5154926e6027efa02dda6a07d15e008b3e314adbc20d0980ce537aca8f0",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 48,
+      "rows": 48,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "Success Rate (pass@1, %)",
+        "unit": "%",
+        "tasks": 116,
+        "tasks_note": null,
+        "harness_ja": "提出者の自己申告。足場・画面表現(スクリーンショット / A11y tree)・モデルは提出者任せで、ボードは独立検証をしないと明記している。"
+      },
+      "table_sha256": "6839d7a0042b01465523d703d122683f61dffb15bf93661b0083e0fce0d77c51",
+      "snapshot_sha256": "2932158ec655c99282b9e273e9756d71b5269eb5b361a397e70b30598f751b34"
+    },
+    {
+      "id": "assistantbench",
+      "status": "fetch_failure_preserved",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://assistantbench-leaderboard.hf.space/config",
+          "checked_at": "2026-10-31T00:10:52.630212+00:00",
+          "status": 503,
+          "sha256": null,
+          "error": "HTTP Error 503: Service Unavailable",
+          "prior_sha256": null,
+          "raw_bytes_equal": false
+        }
+      ],
+      "old_rows": 184,
+      "rows": 184,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "Accuracy",
+        "unit": "%",
+        "tasks": 181,
+        "tasks_note": "公式データセット(AssistantBench/AssistantBench)の test 分割の件数。ボードはテスト分割で採点する。",
+        "harness_ja": "提出者が自前のエージェントで回答ファイルを作り、ボードが隠された正解と自動採点する。"
+      },
+      "table_sha256": "56d000ff73a00b47c73b553f6c270b5d78e5e41d04e6003a06a2c9cd11771ec2",
+      "snapshot_sha256": "5c9570475c21aa4fe10a412a2430560b32687c18bc2a75265957b2aa25a5c4d3"
+    },
+    {
+      "id": "bearcubs",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/bear-cubs/bear-cubs.github.io/main/src/data/bear_cubs_leaderboard.ts",
+          "checked_at": "2026-10-31T00:11:52.062702+00:00",
+          "status": 200,
+          "sha256": "f631d30ebe218c2794ca90330fe238f6653db2a4aee187c2987be8aeb64b149d",
+          "bytes": 5156,
+          "prior_sha256": "f631d30ebe218c2794ca90330fe238f6653db2a4aee187c2987be8aeb64b149d",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 12,
+      "rows": 12,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "Accuracy (All)",
+        "unit": "%",
+        "tasks": 111,
+        "tasks_note": null,
+        "harness_ja": "運営が掲載する結果で、評価の依頼はサイトのフォームから受け付ける。回答は正解・誤り・不確か・無回答に分類して集計される。"
+      },
+      "table_sha256": "4c59501f008998dd95564a114a7f9559479728aff08c5b9a41b2aa8559e81bc3",
+      "snapshot_sha256": "7d9455bc007bf667a66515f9f1ef9c70ea018376e8d5c7d90d9abcefa121a250"
+    },
+    {
+      "id": "browsecomp-kaggle",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://www.kaggle.com/api/i/benchmarks.BenchmarkService/GetBenchmarkLeaderboard",
+          "checked_at": "2026-10-31T00:11:55.394372+00:00",
+          "status": 200,
+          "sha256": "1d87feb08a067c1e64cd025906aa2b109d1fb1c58271af4f7f8a6ab1e03e7340",
+          "bytes": 59821,
+          "request_json": {
+            "versionIdentifier": {
+              "versionIdSelector": {
+                "id": 35
+              }
+            }
+          },
+          "prior_sha256": "1d87feb08a067c1e64cd025906aa2b109d1fb1c58271af4f7f8a6ab1e03e7340",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 42,
+      "rows": 42,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "Score (accuracy)",
+        "unit": "ratio",
+        "tasks": 1266,
+        "tasks_note": null,
+        "harness_ja": "Kaggle が管理するボードで、simple-evals 由来の Kaggle ノートブック実装により各モデルを一律に実行。ブラウジング用の道具を与えたという記載はデータに無い。"
+      },
+      "table_sha256": "e9995f5bda2cf9dfb1c1f72bb77491530d22b35c064c6636ab6eb99172c452c4",
+      "snapshot_sha256": "8ae67337cd1d7195b9b2a84115cbc737205431329a490123b5fa581383e47dd2"
+    },
+    {
+      "id": "browsergym-assistantbench",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+          "checked_at": "2026-10-31T00:11:02.286302+00:00",
+          "status": 200,
+          "sha256": "82cc7387c7fb54b807c75745e1c055bb9d69d5dd9e1cdd5505b57dad45d8e737",
+          "bytes": 7753,
+          "prior_sha256": "82cc7387c7fb54b807c75745e1c055bb9d69d5dd9e1cdd5505b57dad45d8e737",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/assistantbench.json",
+          "checked_at": "2026-10-31T00:11:09.464760+00:00",
+          "status": 200,
+          "sha256": "ea237141c5f61093376fc94d7f24bf59cb0398b16f53e85f3d2e05769602c4fa",
+          "bytes": 521,
+          "prior_sha256": "ea237141c5f61093376fc94d7f24bf59cb0398b16f53e85f3d2e05769602c4fa",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o-mini/assistantbench.json",
+          "checked_at": "2026-10-31T00:11:16.356062+00:00",
+          "status": 200,
+          "sha256": "2f1b913da62be0a89c42482938d7fdec1b89e8314d0a4f316e7965b4d915ae52",
+          "bytes": 515,
+          "prior_sha256": "2f1b913da62be0a89c42482938d7fdec1b89e8314d0a4f316e7965b4d915ae52",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/assistantbench.json",
+          "checked_at": "2026-10-31T00:11:18.427110+00:00",
+          "status": 200,
+          "sha256": "0f9c42a83145f7cb6e758eb100cb46e6a9ebcf2d4c9aa7ead829425810b28e8a",
+          "bytes": 510,
+          "prior_sha256": "0f9c42a83145f7cb6e758eb100cb46e6a9ebcf2d4c9aa7ead829425810b28e8a",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/assistantbench.json",
+          "checked_at": "2026-10-31T00:11:28.905837+00:00",
+          "status": 200,
+          "sha256": "36d37ed6d6b71616daf2cc7769b0545a03ef849fbed7d9b6c076340f9dd5c61d",
+          "bytes": 515,
+          "prior_sha256": "36d37ed6d6b71616daf2cc7769b0545a03ef849fbed7d9b6c076340f9dd5c61d",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/assistantbench.json",
+          "checked_at": "2026-10-31T00:11:35.785676+00:00",
+          "status": 200,
+          "sha256": "8547a296b15db00cd6989cb7613f94cb880aed83b79c999f9fe9a2313d39fd13",
+          "bytes": 518,
+          "prior_sha256": "8547a296b15db00cd6989cb7613f94cb880aed83b79c999f9fe9a2313d39fd13",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-70b/assistantbench.json",
+          "checked_at": "2026-10-31T00:11:38.687117+00:00",
+          "status": 200,
+          "sha256": "c6217e1b4108d2d5249cc22199b503618ee6b4559d2a46e083f9345bd61463fb",
+          "bytes": 517,
+          "prior_sha256": "c6217e1b4108d2d5249cc22199b503618ee6b4559d2a46e083f9345bd61463fb",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 6,
+      "rows": 6,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "Score",
+        "unit": "%",
+        "tasks": null,
+        "tasks_note": "BrowserGym で評価に使った分割と件数はボードに記載なし。",
+        "harness_ja": "BrowserGym 環境で走らせた結果を提出者が JSON で登録する。多くの行は AgentLab の GenericAgent に各モデルを載せたもので、独自エージェントの行も混ざる。"
+      },
+      "table_sha256": "2ae714be0f018e3a146bedd2587f8310fd0c7b31d7aa398bd8f7ee9b8ef7f512",
+      "snapshot_sha256": "66e6aa0bd9cea4416e460b0e5784ef9745ad61f71d3bbf17c709961a6d64b1b6"
+    },
+    {
+      "id": "browsergym-miniwob",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+          "checked_at": "2026-10-31T00:11:02.286302+00:00",
+          "status": 200,
+          "sha256": "82cc7387c7fb54b807c75745e1c055bb9d69d5dd9e1cdd5505b57dad45d8e737",
+          "bytes": 7753,
+          "prior_sha256": "82cc7387c7fb54b807c75745e1c055bb9d69d5dd9e1cdd5505b57dad45d8e737",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/A3-Qwen3.5-9B/miniwob.json",
+          "checked_at": "2026-10-31T00:11:02.420193+00:00",
+          "status": 200,
+          "sha256": "65cb35a202fae743edd5f1ac2e12c9c22016b0158393120eb3099e3762b3daa8",
+          "bytes": 612,
+          "prior_sha256": "65cb35a202fae743edd5f1ac2e12c9c22016b0158393120eb3099e3762b3daa8",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-AgentTrek-1.0-32b/miniwob.json",
+          "checked_at": "2026-10-31T00:11:04.682317+00:00",
+          "status": 200,
+          "sha256": "7e254d4cfe35b89032057578dc1f730885b9a4f77964275a6696c717fe60b2aa",
+          "bytes": 490,
+          "prior_sha256": "7e254d4cfe35b89032057578dc1f730885b9a4f77964275a6696c717fe60b2aa",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/miniwob.json",
+          "checked_at": "2026-10-31T00:11:09.477824+00:00",
+          "status": 200,
+          "sha256": "b1a9684e5882c90c53c570d3c82377f6a322a1baa2d7de7f2a413853077f9755",
+          "bytes": 455,
+          "prior_sha256": "b1a9684e5882c90c53c570d3c82377f6a322a1baa2d7de7f2a413853077f9755",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-4-Sonnet/miniwob.json",
+          "checked_at": "2026-10-31T00:11:14.079815+00:00",
+          "status": 200,
+          "sha256": "dc36399fba1308f30640a9d91969624fcdac403e111f27775084c16939dc981f",
+          "bytes": 406,
+          "prior_sha256": "dc36399fba1308f30640a9d91969624fcdac403e111f27775084c16939dc981f",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o-mini/miniwob.json",
+          "checked_at": "2026-10-31T00:11:17.832197+00:00",
+          "status": 200,
+          "sha256": "b07b68c9de7842569d2ae3c239ef770a959d9ed7a04227d97565642c9fae7ded",
+          "bytes": 449,
+          "prior_sha256": "b07b68c9de7842569d2ae3c239ef770a959d9ed7a04227d97565642c9fae7ded",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/miniwob.json",
+          "checked_at": "2026-10-31T00:11:21.324658+00:00",
+          "status": 200,
+          "sha256": "7ffd4815baa1ef666a72df8e321fce75188bc9b1d5a59e36467bb0aa0c1553d8",
+          "bytes": 444,
+          "prior_sha256": "7ffd4815baa1ef666a72df8e321fce75188bc9b1d5a59e36467bb0aa0c1553d8",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-mini/miniwob.json",
+          "checked_at": "2026-10-31T00:11:24.035973+00:00",
+          "status": 200,
+          "sha256": "674f35fac26ea43ed604e296eab4487d9c020ef985fece4a7f07a91123e36f1b",
+          "bytes": 394,
+          "prior_sha256": "674f35fac26ea43ed604e296eab4487d9c020ef985fece4a7f07a91123e36f1b",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-nano/miniwob.json",
+          "checked_at": "2026-10-31T00:11:26.345943+00:00",
+          "status": 200,
+          "sha256": "276d9bdfaf58522c485fe133fde58655b4069258b760e3728f4e20d74b0608a7",
+          "bytes": 395,
+          "prior_sha256": "276d9bdfaf58522c485fe133fde58655b4069258b760e3728f4e20d74b0608a7",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5/miniwob.json",
+          "checked_at": "2026-10-31T00:11:26.348600+00:00",
+          "status": 200,
+          "sha256": "0bf72cd8c8aa580a852fc9dfaee6f74153b1c0ffb756fe8fb605d97af322dddc",
+          "bytes": 391,
+          "prior_sha256": "0bf72cd8c8aa580a852fc9dfaee6f74153b1c0ffb756fe8fb605d97af322dddc",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/miniwob.json",
+          "checked_at": "2026-10-31T00:11:28.906372+00:00",
+          "status": 200,
+          "sha256": "9465e9d2899a21c02877901d46257e0dc74dbf263c9e434bfd6642657cdd5deb",
+          "bytes": 449,
+          "prior_sha256": "9465e9d2899a21c02877901d46257e0dc74dbf263c9e434bfd6642657cdd5deb",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-oss-120b/miniwob.json",
+          "checked_at": "2026-10-31T00:11:33.585413+00:00",
+          "status": 200,
+          "sha256": "64ae5bbef12fd7b49c10f50be7b04394e17c05930f975a2204e8398efa80d374",
+          "bytes": 398,
+          "prior_sha256": "64ae5bbef12fd7b49c10f50be7b04394e17c05930f975a2204e8398efa80d374",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-oss-20b/miniwob.json",
+          "checked_at": "2026-10-31T00:11:33.633783+00:00",
+          "status": 200,
+          "sha256": "d54cfcf07b6366ad021f52a804e5e4251158bb382fd1edff6b94d2ccedf3e60a",
+          "bytes": 395,
+          "prior_sha256": "d54cfcf07b6366ad021f52a804e5e4251158bb382fd1edff6b94d2ccedf3e60a",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/miniwob.json",
+          "checked_at": "2026-10-31T00:11:35.790665+00:00",
+          "status": 200,
+          "sha256": "bccee3c64d4c9b6375494606344a89694ba9373a2cfec723ab1f87456ff9c7e2",
+          "bytes": 469,
+          "prior_sha256": "bccee3c64d4c9b6375494606344a89694ba9373a2cfec723ab1f87456ff9c7e2",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-70b/miniwob.json",
+          "checked_at": "2026-10-31T00:11:38.688556+00:00",
+          "status": 200,
+          "sha256": "9f52ae6c1a79181a8e4edc13287b1ca70aea0c74275d3af644bf8029a90bab64",
+          "bytes": 451,
+          "prior_sha256": "9f52ae6c1a79181a8e4edc13287b1ca70aea0c74275d3af644bf8029a90bab64",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/OrbyAgent-ActIO-72b/miniwob.json",
+          "checked_at": "2026-10-31T00:11:43.488541+00:00",
+          "status": 200,
+          "sha256": "0e7f4c191a92e559b678e4a7b41f1222684c33c3d57d28786fc178e4eab6a9ad",
+          "bytes": 455,
+          "prior_sha256": "0e7f4c191a92e559b678e4a7b41f1222684c33c3d57d28786fc178e4eab6a9ad",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/OrbyAgent-Claude-3.5-Sonnet/miniwob.json",
+          "checked_at": "2026-10-31T00:11:43.491665+00:00",
+          "status": 200,
+          "sha256": "d5a7c771819b37bbaecd666ae9ff53d4d279a4e2748f03c80e2b8e5ae0611c89",
+          "bytes": 465,
+          "prior_sha256": "d5a7c771819b37bbaecd666ae9ff53d4d279a4e2748f03c80e2b8e5ae0611c89",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 16,
+      "rows": 16,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "Score",
+        "unit": "%",
+        "tasks": null,
+        "tasks_note": "BrowserGym で使うタスク数・シード数はボードに記載なし。",
+        "harness_ja": "BrowserGym 環境で走らせた結果を提出者が JSON で登録する。多くの行は AgentLab の GenericAgent に各モデルを載せたもので、独自エージェントの行も混ざる。"
+      },
+      "table_sha256": "efa50e29b3c151640a9ee7d6955f44e7e6090306efe92e9c440cb7c35cddbf07",
+      "snapshot_sha256": "c74b5535b85351a204ecb22eeb777d1c4428d3301db0679c20c9b697cf7d3e88"
+    },
+    {
+      "id": "browsergym-visualwebarena",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+          "checked_at": "2026-10-31T00:11:02.286302+00:00",
+          "status": 200,
+          "sha256": "82cc7387c7fb54b807c75745e1c055bb9d69d5dd9e1cdd5505b57dad45d8e737",
+          "bytes": 7753,
+          "prior_sha256": "82cc7387c7fb54b807c75745e1c055bb9d69d5dd9e1cdd5505b57dad45d8e737",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/A3-Qwen3.5-9B/visualwebarena.json",
+          "checked_at": "2026-10-31T00:11:02.714511+00:00",
+          "status": 200,
+          "sha256": "5c57f9505b9ea8cc865a220ac624790452cb74b39f8fecf8b9d4120be62a1cc8",
+          "bytes": 807,
+          "prior_sha256": "5c57f9505b9ea8cc865a220ac624790452cb74b39f8fecf8b9d4120be62a1cc8",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/visualwebarena.json",
+          "checked_at": "2026-10-31T00:11:09.506436+00:00",
+          "status": 200,
+          "sha256": "ca920c35139cebd9e2aceefe1cf0c0bc4b812d6187662e4d370eceb0cf2f6945",
+          "bytes": 479,
+          "prior_sha256": "ca920c35139cebd9e2aceefe1cf0c0bc4b812d6187662e4d370eceb0cf2f6945",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o-mini/visualwebarena.json",
+          "checked_at": "2026-10-31T00:11:17.959826+00:00",
+          "status": 200,
+          "sha256": "ba420442e2b2c76df8bbcafc91947eed0f8d930a76c9b757b659859d5bd50494",
+          "bytes": 473,
+          "prior_sha256": "ba420442e2b2c76df8bbcafc91947eed0f8d930a76c9b757b659859d5bd50494",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/visualwebarena.json",
+          "checked_at": "2026-10-31T00:11:21.370343+00:00",
+          "status": 200,
+          "sha256": "0069033938ccba77f3a38be40bd5ca07ebabab0be172120a73d4e7789faa0d48",
+          "bytes": 468,
+          "prior_sha256": "0069033938ccba77f3a38be40bd5ca07ebabab0be172120a73d4e7789faa0d48",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 4,
+      "rows": 4,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "Score",
+        "unit": "%",
+        "tasks": 910,
+        "tasks_note": null,
+        "harness_ja": "BrowserGym 環境で走らせた結果を提出者が JSON で登録する。多くの行は AgentLab の GenericAgent に各モデルを載せたもので、独自エージェントの行も混ざる。"
+      },
+      "table_sha256": "9e499f86fe887507855c5dc4861027e250e7c7a85182f59df89539859f628ad9",
+      "snapshot_sha256": "0a13af207a9e87976907b52947f90db46f82382aac07e1e3f113a5a8d898b6dc"
+    },
+    {
+      "id": "browsergym-webarena",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+          "checked_at": "2026-10-31T00:11:02.286302+00:00",
+          "status": 200,
+          "sha256": "82cc7387c7fb54b807c75745e1c055bb9d69d5dd9e1cdd5505b57dad45d8e737",
+          "bytes": 7753,
+          "prior_sha256": "82cc7387c7fb54b807c75745e1c055bb9d69d5dd9e1cdd5505b57dad45d8e737",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/A3-Qwen3.5-9B/webarena.json",
+          "checked_at": "2026-10-31T00:11:04.577066+00:00",
+          "status": 200,
+          "sha256": "bcea3d0bfe45f043b4fe0eb6ec61c219c4c6b5e35472660a2d4f7456eb74b250",
+          "bytes": 749,
+          "prior_sha256": "bcea3d0bfe45f043b4fe0eb6ec61c219c4c6b5e35472660a2d4f7456eb74b250",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-AgentTrek-1.0-32b/webarena.json",
+          "checked_at": "2026-10-31T00:11:07.189566+00:00",
+          "status": 200,
+          "sha256": "7b9dac29a6efa888c5d9e2aa817d549c1ee7df537074081845d35b64fb54385d",
+          "bytes": 491,
+          "prior_sha256": "7b9dac29a6efa888c5d9e2aa817d549c1ee7df537074081845d35b64fb54385d",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/webarena.json",
+          "checked_at": "2026-10-31T00:11:09.843348+00:00",
+          "status": 200,
+          "sha256": "de4f970b77b83f1e09b8c98a957654149c0d91b23bd8fff170b6869dd8d195f0",
+          "bytes": 473,
+          "prior_sha256": "de4f970b77b83f1e09b8c98a957654149c0d91b23bd8fff170b6869dd8d195f0",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.7-Sonnet/webarena.json",
+          "checked_at": "2026-10-31T00:11:14.077957+00:00",
+          "status": 200,
+          "sha256": "fe715ea246b3a178c845720558fe154546c63d69b1223f2087addd82171fc9dd",
+          "bytes": 406,
+          "prior_sha256": "fe715ea246b3a178c845720558fe154546c63d69b1223f2087addd82171fc9dd",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4.1-Mini/webarena.json",
+          "checked_at": "2026-10-31T00:11:16.353608+00:00",
+          "status": 200,
+          "sha256": "27863f95494366fedfeea0dac063a76c8293d3a64b8ec13c9793f5440eaa5d14",
+          "bytes": 399,
+          "prior_sha256": "27863f95494366fedfeea0dac063a76c8293d3a64b8ec13c9793f5440eaa5d14",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o-mini/webarena.json",
+          "checked_at": "2026-10-31T00:11:18.421431+00:00",
+          "status": 200,
+          "sha256": "642a18bc81d6eed67f12ea5f3b92f6e187335a9c63f6c751f19a03b66d6fc018",
+          "bytes": 467,
+          "prior_sha256": "642a18bc81d6eed67f12ea5f3b92f6e187335a9c63f6c751f19a03b66d6fc018",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/webarena.json",
+          "checked_at": "2026-10-31T00:11:21.370847+00:00",
+          "status": 200,
+          "sha256": "621fddaf8ee04bab7cfccf75b9dd454e468d757aeb2aa4ccd11c57dcff4c09c5",
+          "bytes": 462,
+          "prior_sha256": "621fddaf8ee04bab7cfccf75b9dd454e468d757aeb2aa4ccd11c57dcff4c09c5",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/webarena.json",
+          "checked_at": "2026-10-31T00:11:28.906692+00:00",
+          "status": 200,
+          "sha256": "2d7cb22e24172461136ec603830a2f56ab60904c621432903053209ad58d412b",
+          "bytes": 467,
+          "prior_sha256": "2d7cb22e24172461136ec603830a2f56ab60904c621432903053209ad58d412b",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/webarena.json",
+          "checked_at": "2026-10-31T00:11:35.829436+00:00",
+          "status": 200,
+          "sha256": "968638a31fe54315197bf9f6e0bf169182dd01c9ec5875ce7b67fb4146db1815",
+          "bytes": 470,
+          "prior_sha256": "968638a31fe54315197bf9f6e0bf169182dd01c9ec5875ce7b67fb4146db1815",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-70b/webarena.json",
+          "checked_at": "2026-10-31T00:11:38.689702+00:00",
+          "status": 200,
+          "sha256": "98e564f6cc04bf8614e457e1f0b94a7fb8df1221a75ed4d98afdb757022d30b7",
+          "bytes": 469,
+          "prior_sha256": "98e564f6cc04bf8614e457e1f0b94a7fb8df1221a75ed4d98afdb757022d30b7",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/OrbyAgent-ActIO-72b/webarena.json",
+          "checked_at": "2026-10-31T00:11:43.491052+00:00",
+          "status": 200,
+          "sha256": "6caac10fd3d012558eefd8a71dd39b807be61c4edf88bfe341330671eae29e8a",
+          "bytes": 517,
+          "prior_sha256": "6caac10fd3d012558eefd8a71dd39b807be61c4edf88bfe341330671eae29e8a",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/OrbyAgent-Claude-3.5-Sonnet/webarena.json",
+          "checked_at": "2026-10-31T00:11:43.535656+00:00",
+          "status": 200,
+          "sha256": "79a29ea899bd2e238234893685c7ba5cc192c79e4ec66f827ce6e27067bdf101",
+          "bytes": 519,
+          "prior_sha256": "79a29ea899bd2e238234893685c7ba5cc192c79e4ec66f827ce6e27067bdf101",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 12,
+      "rows": 12,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "Score",
+        "unit": "%",
+        "tasks": 812,
+        "tasks_note": null,
+        "harness_ja": "BrowserGym 環境で走らせた結果を提出者が JSON で登録する。多くの行は AgentLab の GenericAgent に各モデルを載せたもので、独自エージェントの行も混ざる。"
+      },
+      "table_sha256": "aafed8da9554191c7623a17f1be8550edbf5b68eadadad9d68393fd066d33d17",
+      "snapshot_sha256": "d9b567c3564a78f00c425e4f0f967e6279f5a17188861424940d423ac2d5487b"
+    },
+    {
+      "id": "browsergym-weblinx",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+          "checked_at": "2026-10-31T00:11:02.286302+00:00",
+          "status": 200,
+          "sha256": "82cc7387c7fb54b807c75745e1c055bb9d69d5dd9e1cdd5505b57dad45d8e737",
+          "bytes": 7753,
+          "prior_sha256": "82cc7387c7fb54b807c75745e1c055bb9d69d5dd9e1cdd5505b57dad45d8e737",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/weblinx.json",
+          "checked_at": "2026-10-31T00:11:11.534004+00:00",
+          "status": 200,
+          "sha256": "f8972acf77dfaa591267ce44fda3e7a86d783ba6cc5f3eb14de388a473dc8b58",
+          "bytes": 472,
+          "prior_sha256": "f8972acf77dfaa591267ce44fda3e7a86d783ba6cc5f3eb14de388a473dc8b58",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o-mini/weblinx.json",
+          "checked_at": "2026-10-31T00:11:18.421862+00:00",
+          "status": 200,
+          "sha256": "a4d871bfb78f22a867613d7c3f8d4cc0840a7b1573809e479f48282cb3150e47",
+          "bytes": 466,
+          "prior_sha256": "a4d871bfb78f22a867613d7c3f8d4cc0840a7b1573809e479f48282cb3150e47",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/weblinx.json",
+          "checked_at": "2026-10-31T00:11:21.371925+00:00",
+          "status": 200,
+          "sha256": "525ceb7c5be75ea76b62a3f12e88999118705e2063b79ccd1a50538949042339",
+          "bytes": 461,
+          "prior_sha256": "525ceb7c5be75ea76b62a3f12e88999118705e2063b79ccd1a50538949042339",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/weblinx.json",
+          "checked_at": "2026-10-31T00:11:31.415127+00:00",
+          "status": 200,
+          "sha256": "4eb598dc951a09717364c53f1b99ab2f354262d93101b685fe0743ade64c2b87",
+          "bytes": 466,
+          "prior_sha256": "4eb598dc951a09717364c53f1b99ab2f354262d93101b685fe0743ade64c2b87",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/weblinx.json",
+          "checked_at": "2026-10-31T00:11:35.829792+00:00",
+          "status": 200,
+          "sha256": "47674e6ad4bda4e96f0fd0b99a8d832dc2b77f5edcc0dceacf58a708095b5bf2",
+          "bytes": 468,
+          "prior_sha256": "47674e6ad4bda4e96f0fd0b99a8d832dc2b77f5edcc0dceacf58a708095b5bf2",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-70b/weblinx.json",
+          "checked_at": "2026-10-31T00:11:41.239277+00:00",
+          "status": 200,
+          "sha256": "8a9824a9302e82f6ca026f518731f635a37750e5529aad8eb4652ddd45764c4c",
+          "bytes": 467,
+          "prior_sha256": "8a9824a9302e82f6ca026f518731f635a37750e5529aad8eb4652ddd45764c4c",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 6,
+      "rows": 6,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "Score",
+        "unit": "%",
+        "tasks": null,
+        "tasks_note": "BrowserGym 版で使う件数はボードに記載なし。",
+        "harness_ja": "BrowserGym 環境で走らせた結果を提出者が JSON で登録する。多くの行は AgentLab の GenericAgent に各モデルを載せたもので、独自エージェントの行も混ざる。"
+      },
+      "table_sha256": "a2612eccd307880d8d03eec644a497ae6e249d65e790341492fed6e7d518d440",
+      "snapshot_sha256": "7d3404018d737e90e5b925beb80971ed5ae5adda1a5fba1db81c892bd01ee4f6"
+    },
+    {
+      "id": "browsergym-workarena-l1",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+          "checked_at": "2026-10-31T00:11:02.286302+00:00",
+          "status": 200,
+          "sha256": "82cc7387c7fb54b807c75745e1c055bb9d69d5dd9e1cdd5505b57dad45d8e737",
+          "bytes": 7753,
+          "prior_sha256": "82cc7387c7fb54b807c75745e1c055bb9d69d5dd9e1cdd5505b57dad45d8e737",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/A3-Qwen3.5-9B/workarena-l1.json",
+          "checked_at": "2026-10-31T00:11:04.639019+00:00",
+          "status": 200,
+          "sha256": "c6569b12464c4bd0c00ae31ebed4b4ccedb8b1dcb483464d8ab9879e995be824",
+          "bytes": 627,
+          "prior_sha256": "c6569b12464c4bd0c00ae31ebed4b4ccedb8b1dcb483464d8ab9879e995be824",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-AgentTrek-1.0-32b/workarena-l1.json",
+          "checked_at": "2026-10-31T00:11:07.193241+00:00",
+          "status": 200,
+          "sha256": "74a6394fa902cb4b7e18f4d772dfc536d7a611fc53975ed5e3233956907859ae",
+          "bytes": 497,
+          "prior_sha256": "74a6394fa902cb4b7e18f4d772dfc536d7a611fc53975ed5e3233956907859ae",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/workarena-l1.json",
+          "checked_at": "2026-10-31T00:11:11.537420+00:00",
+          "status": 200,
+          "sha256": "a33de4c34c4bd63884c91dcea1c64a551be01330be0897a253fe19960403534d",
+          "bytes": 460,
+          "prior_sha256": "a33de4c34c4bd63884c91dcea1c64a551be01330be0897a253fe19960403534d",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-4-Sonnet/workarena-l1.json",
+          "checked_at": "2026-10-31T00:11:14.080283+00:00",
+          "status": 200,
+          "sha256": "fead207233b57beeb9e0b475d113ba439875537d4d2edd86232f8381366a1ed2",
+          "bytes": 408,
+          "prior_sha256": "fead207233b57beeb9e0b475d113ba439875537d4d2edd86232f8381366a1ed2",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o-mini/workarena-l1.json",
+          "checked_at": "2026-10-31T00:11:18.425380+00:00",
+          "status": 200,
+          "sha256": "a2135d21629550f960ce9aefcbcb7a7a2b11940471f3a2339722360cbdb173d5",
+          "bytes": 452,
+          "prior_sha256": "a2135d21629550f960ce9aefcbcb7a7a2b11940471f3a2339722360cbdb173d5",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/workarena-l1.json",
+          "checked_at": "2026-10-31T00:11:24.033528+00:00",
+          "status": 200,
+          "sha256": "08be6a487c83b24aa52adaae00c53b8e20095be1ed84747280219f3251134670",
+          "bytes": 449,
+          "prior_sha256": "08be6a487c83b24aa52adaae00c53b8e20095be1ed84747280219f3251134670",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-mini/workarena-l1.json",
+          "checked_at": "2026-10-31T00:11:24.036481+00:00",
+          "status": 200,
+          "sha256": "f7c887c8af41cbda87abbf20ccf8c859ad75d7798af524f106bc92b12067ec5e",
+          "bytes": 401,
+          "prior_sha256": "f7c887c8af41cbda87abbf20ccf8c859ad75d7798af524f106bc92b12067ec5e",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-nano/workarena-l1.json",
+          "checked_at": "2026-10-31T00:11:26.346864+00:00",
+          "status": 200,
+          "sha256": "1a66b4656f2781b582fb7284ab7a1103ac23b3f9a7b7258653b40dd050ea901f",
+          "bytes": 401,
+          "prior_sha256": "1a66b4656f2781b582fb7284ab7a1103ac23b3f9a7b7258653b40dd050ea901f",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5/workarena-l1.json",
+          "checked_at": "2026-10-31T00:11:28.903335+00:00",
+          "status": 200,
+          "sha256": "7ea81bbfd5ce9a8a101bb7d1dea185d514cdb72dee8f2fdbf9a3660a6f8cd2fc",
+          "bytes": 430,
+          "prior_sha256": "7ea81bbfd5ce9a8a101bb7d1dea185d514cdb72dee8f2fdbf9a3660a6f8cd2fc",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/workarena-l1.json",
+          "checked_at": "2026-10-31T00:11:31.416162+00:00",
+          "status": 200,
+          "sha256": "1c75ff75b2ad720a9655f776f7e408b3386a4bea1863bb43de4c063fa61a6584",
+          "bytes": 944,
+          "prior_sha256": "1c75ff75b2ad720a9655f776f7e408b3386a4bea1863bb43de4c063fa61a6584",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-oss-120b/workarena-l1.json",
+          "checked_at": "2026-10-31T00:11:33.586059+00:00",
+          "status": 200,
+          "sha256": "2bb00d97edb3cdc0a30fcc998fdea19b1f2f9c302a693362e5a2329d5cb38951",
+          "bytes": 403,
+          "prior_sha256": "2bb00d97edb3cdc0a30fcc998fdea19b1f2f9c302a693362e5a2329d5cb38951",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-oss-20b/workarena-l1.json",
+          "checked_at": "2026-10-31T00:11:33.634721+00:00",
+          "status": 200,
+          "sha256": "cc23870c0a148a840ce4183db58bfd48f7d62ddc031d34d45be7faba19d091d7",
+          "bytes": 402,
+          "prior_sha256": "cc23870c0a148a840ce4183db58bfd48f7d62ddc031d34d45be7faba19d091d7",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/workarena-l1.json",
+          "checked_at": "2026-10-31T00:11:38.641071+00:00",
+          "status": 200,
+          "sha256": "cf57301f5cc66d17bc4b07e2caa40534b4703b3134a5336b035da670026b7a82",
+          "bytes": 457,
+          "prior_sha256": "cf57301f5cc66d17bc4b07e2caa40534b4703b3134a5336b035da670026b7a82",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-70b/workarena-l1.json",
+          "checked_at": "2026-10-31T00:11:41.285855+00:00",
+          "status": 200,
+          "sha256": "3ec1bc65128a349bfd21370cc8ea276a4f41fcdbc108c242b106a08556260a4f",
+          "bytes": 456,
+          "prior_sha256": "3ec1bc65128a349bfd21370cc8ea276a4f41fcdbc108c242b106a08556260a4f",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-o3-mini/workarena-l1.json",
+          "checked_at": "2026-10-31T00:11:43.440547+00:00",
+          "status": 200,
+          "sha256": "75e5ab9eab52d9e4aaf97f9cf5856fe5099dff9b1ac9cc9d8d68847d0c83806c",
+          "bytes": 486,
+          "prior_sha256": "75e5ab9eab52d9e4aaf97f9cf5856fe5099dff9b1ac9cc9d8d68847d0c83806c",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/IpaziaHPA-Gemini-3-flash-preview/workarena-l1.json",
+          "checked_at": "2026-10-31T00:11:43.444442+00:00",
+          "status": 200,
+          "sha256": "424cf76d2d3a4ddc619e0c2e27d7fd380032f84662435b9f847630490474c89b",
+          "bytes": 494,
+          "prior_sha256": "424cf76d2d3a4ddc619e0c2e27d7fd380032f84662435b9f847630490474c89b",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 16,
+      "rows": 16,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "Score",
+        "unit": "%",
+        "tasks": 33,
+        "tasks_note": null,
+        "harness_ja": "BrowserGym 環境で走らせた結果を提出者が JSON で登録する。多くの行は AgentLab の GenericAgent に各モデルを載せたもので、独自エージェントの行も混ざる。"
+      },
+      "table_sha256": "e142e7834658ec317fadd00a87fd125863f4eb861c39ac3dd00980c5181eda8b",
+      "snapshot_sha256": "7e7f06934c0ce79051ec8ba928d34ebdd228f005436209335940f2c3f42369c6"
+    },
+    {
+      "id": "browsergym-workarena-l2",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+          "checked_at": "2026-10-31T00:11:02.286302+00:00",
+          "status": 200,
+          "sha256": "82cc7387c7fb54b807c75745e1c055bb9d69d5dd9e1cdd5505b57dad45d8e737",
+          "bytes": 7753,
+          "prior_sha256": "82cc7387c7fb54b807c75745e1c055bb9d69d5dd9e1cdd5505b57dad45d8e737",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/A3-Qwen3.5-9B/workarena-l2.json",
+          "checked_at": "2026-10-31T00:11:04.670945+00:00",
+          "status": 200,
+          "sha256": "fa7ddf1120884e43aff2cec3480db65d10920de312b71e46cae89e2011c2c95a",
+          "bytes": 649,
+          "prior_sha256": "fa7ddf1120884e43aff2cec3480db65d10920de312b71e46cae89e2011c2c95a",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-AgentTrek-1.0-32b/workarena-l2.json",
+          "checked_at": "2026-10-31T00:11:09.360272+00:00",
+          "status": 200,
+          "sha256": "855fcede12daad9cb6315bdfe5fb2ebaf1af6b730d8d78ac45e2496bb77c0717",
+          "bytes": 496,
+          "prior_sha256": "855fcede12daad9cb6315bdfe5fb2ebaf1af6b730d8d78ac45e2496bb77c0717",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/workarena-l2.json",
+          "checked_at": "2026-10-31T00:11:14.032994+00:00",
+          "status": 200,
+          "sha256": "34f9128e7aa9f8e01bae65eaceb94cc2314bb82899e5113b9476ea4c4b510b2e",
+          "bytes": 460,
+          "prior_sha256": "34f9128e7aa9f8e01bae65eaceb94cc2314bb82899e5113b9476ea4c4b510b2e",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-4-Sonnet/workarena-l2.json",
+          "checked_at": "2026-10-31T00:11:14.080937+00:00",
+          "status": 200,
+          "sha256": "5fb56137adef3ed7c249ecc78642cd7323170b8e9f4dd920395524abad7db39b",
+          "bytes": 408,
+          "prior_sha256": "5fb56137adef3ed7c249ecc78642cd7323170b8e9f4dd920395524abad7db39b",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o-mini/workarena-l2.json",
+          "checked_at": "2026-10-31T00:11:18.426347+00:00",
+          "status": 200,
+          "sha256": "a7e7c9f98bbb0a4d8041dbfc046fea06cf67c5efeb6fd4b58098a6c2c6082aa3",
+          "bytes": 453,
+          "prior_sha256": "a7e7c9f98bbb0a4d8041dbfc046fea06cf67c5efeb6fd4b58098a6c2c6082aa3",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/workarena-l2.json",
+          "checked_at": "2026-10-31T00:11:24.035303+00:00",
+          "status": 200,
+          "sha256": "1a3be6550ce29c3c8936d13d14be23f9d8c0ca14a42372700579d14a5322f9a6",
+          "bytes": 448,
+          "prior_sha256": "1a3be6550ce29c3c8936d13d14be23f9d8c0ca14a42372700579d14a5322f9a6",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-mini/workarena-l2.json",
+          "checked_at": "2026-10-31T00:11:24.036979+00:00",
+          "status": 200,
+          "sha256": "7ca101ac6bb4970547e6188a18ae14d0191f5659e6fad01b2d567d595dead633",
+          "bytes": 401,
+          "prior_sha256": "7ca101ac6bb4970547e6188a18ae14d0191f5659e6fad01b2d567d595dead633",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-nano/workarena-l2.json",
+          "checked_at": "2026-10-31T00:11:26.348217+00:00",
+          "status": 200,
+          "sha256": "f72981c3dcd60e2ebb40e590977c980179461fca8ab28300d76924c3ea6635fe",
+          "bytes": 400,
+          "prior_sha256": "f72981c3dcd60e2ebb40e590977c980179461fca8ab28300d76924c3ea6635fe",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5/workarena-l2.json",
+          "checked_at": "2026-10-31T00:11:28.904732+00:00",
+          "status": 200,
+          "sha256": "c414dfd4b25be3268be8f82bc919416c544e5a36e44ef65c0013a06423499dc4",
+          "bytes": 396,
+          "prior_sha256": "c414dfd4b25be3268be8f82bc919416c544e5a36e44ef65c0013a06423499dc4",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/workarena-l2.json",
+          "checked_at": "2026-10-31T00:11:31.417007+00:00",
+          "status": 200,
+          "sha256": "bc17322f1a54b4339f8f5a79131245b3ea012cf226b5b5caecb54de7774ef518",
+          "bytes": 454,
+          "prior_sha256": "bc17322f1a54b4339f8f5a79131245b3ea012cf226b5b5caecb54de7774ef518",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-oss-120b/workarena-l2.json",
+          "checked_at": "2026-10-31T00:11:33.632975+00:00",
+          "status": 200,
+          "sha256": "30f6d49a050903b66b790f76dc63db02f5dd97279234a6aeb891a5ba354795c4",
+          "bytes": 403,
+          "prior_sha256": "30f6d49a050903b66b790f76dc63db02f5dd97279234a6aeb891a5ba354795c4",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-oss-20b/workarena-l2.json",
+          "checked_at": "2026-10-31T00:11:33.635363+00:00",
+          "status": 200,
+          "sha256": "91eb4981a7ae5dc0749deec209a25aa8ba5d9cbb23e931ee212c7804a8d2a72f",
+          "bytes": 401,
+          "prior_sha256": "91eb4981a7ae5dc0749deec209a25aa8ba5d9cbb23e931ee212c7804a8d2a72f",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/workarena-l2.json",
+          "checked_at": "2026-10-31T00:11:38.683822+00:00",
+          "status": 200,
+          "sha256": "3b4c47354c96735fe3e7b27a209e65d5a6272e99489b3cf81745245e95dc3c21",
+          "bytes": 473,
+          "prior_sha256": "3b4c47354c96735fe3e7b27a209e65d5a6272e99489b3cf81745245e95dc3c21",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-70b/workarena-l2.json",
+          "checked_at": "2026-10-31T00:11:41.324388+00:00",
+          "status": 200,
+          "sha256": "8fa434995294d08fdc27e09973e327a28951fe64034550b962a9c30d0d8288f2",
+          "bytes": 455,
+          "prior_sha256": "8fa434995294d08fdc27e09973e327a28951fe64034550b962a9c30d0d8288f2",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 14,
+      "rows": 14,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "Score",
+        "unit": "%",
+        "tasks": null,
+        "tasks_note": "WorkArena++ は L2/L3 合わせて682タスク(README)。L2 単独の数はボードに記載なし。",
+        "harness_ja": "BrowserGym 環境で走らせた結果を提出者が JSON で登録する。多くの行は AgentLab の GenericAgent に各モデルを載せたもので、独自エージェントの行も混ざる。"
+      },
+      "table_sha256": "6a4ea0b68a997f5430671a36274d21cba721c52163090c7e09b8840b6b97a1aa",
+      "snapshot_sha256": "eda864ede05026f850cbc3802763bc9bf51f86ffd2abc2c5572e49584375f086"
+    },
+    {
+      "id": "browsergym-workarena-l3",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard",
+          "checked_at": "2026-10-31T00:11:02.286302+00:00",
+          "status": 200,
+          "sha256": "82cc7387c7fb54b807c75745e1c055bb9d69d5dd9e1cdd5505b57dad45d8e737",
+          "bytes": 7753,
+          "prior_sha256": "82cc7387c7fb54b807c75745e1c055bb9d69d5dd9e1cdd5505b57dad45d8e737",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-AgentTrek-1.0-32b/workarena-l3.json",
+          "checked_at": "2026-10-31T00:11:09.459220+00:00",
+          "status": 200,
+          "sha256": "a4833791b84344fa444ab93257a568a41ee424a20716146abb7527985882f7fa",
+          "bytes": 494,
+          "prior_sha256": "a4833791b84344fa444ab93257a568a41ee424a20716146abb7527985882f7fa",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/workarena-l3.json",
+          "checked_at": "2026-10-31T00:11:14.076286+00:00",
+          "status": 200,
+          "sha256": "e417a592179b53523cf2b22f31aee050b9fb0ca7ed3735cf6136431c45fdb944",
+          "bytes": 459,
+          "prior_sha256": "e417a592179b53523cf2b22f31aee050b9fb0ca7ed3735cf6136431c45fdb944",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o-mini/workarena-l3.json",
+          "checked_at": "2026-10-31T00:11:18.426845+00:00",
+          "status": 200,
+          "sha256": "bc5f2f366a091933d81b5cf31d993273dea57fceed327448f297c25e039dd0ee",
+          "bytes": 435,
+          "prior_sha256": "bc5f2f366a091933d81b5cf31d993273dea57fceed327448f297c25e039dd0ee",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/workarena-l3.json",
+          "checked_at": "2026-10-31T00:11:24.035717+00:00",
+          "status": 200,
+          "sha256": "659f7caaf898e5e08df5d19223c8e850956282ecdb7060f6810df4e2f5fc23b0",
+          "bytes": 430,
+          "prior_sha256": "659f7caaf898e5e08df5d19223c8e850956282ecdb7060f6810df4e2f5fc23b0",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5/workarena-l3.json",
+          "checked_at": "2026-10-31T00:11:28.905497+00:00",
+          "status": 200,
+          "sha256": "f448e30ef4d816a4f68692fcfbf12d51ed35c50bff4341d7dab2f88143ea5945",
+          "bytes": 429,
+          "prior_sha256": "f448e30ef4d816a4f68692fcfbf12d51ed35c50bff4341d7dab2f88143ea5945",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/workarena-l3.json",
+          "checked_at": "2026-10-31T00:11:31.455881+00:00",
+          "status": 200,
+          "sha256": "9b9343bc23580734b483f7b645e366c4db6c237b4f34feb9dc272ad13155d6f3",
+          "bytes": 435,
+          "prior_sha256": "9b9343bc23580734b483f7b645e366c4db6c237b4f34feb9dc272ad13155d6f3",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/workarena-l3.json",
+          "checked_at": "2026-10-31T00:11:38.686096+00:00",
+          "status": 200,
+          "sha256": "2a3918313197e5b829547e6f3ee4a7b2b865c0e7b5ac1017d79f4b8ed6638e65",
+          "bytes": 438,
+          "prior_sha256": "2a3918313197e5b829547e6f3ee4a7b2b865c0e7b5ac1017d79f4b8ed6638e65",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-70b/workarena-l3.json",
+          "checked_at": "2026-10-31T00:11:41.325023+00:00",
+          "status": 200,
+          "sha256": "856ebe4e16d9d71dab0d66c4d460c58e6abbb751c85da853738426ad50c0cf07",
+          "bytes": 437,
+          "prior_sha256": "856ebe4e16d9d71dab0d66c4d460c58e6abbb751c85da853738426ad50c0cf07",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 8,
+      "rows": 8,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "Score",
+        "unit": "%",
+        "tasks": null,
+        "tasks_note": "WorkArena++ は L2/L3 合わせて682タスク(README)。L3 単独の数はボードに記載なし。",
+        "harness_ja": "BrowserGym 環境で走らせた結果を提出者が JSON で登録する。多くの行は AgentLab の GenericAgent に各モデルを載せたもので、独自エージェントの行も混ざる。"
+      },
+      "table_sha256": "bb8fc883909171f37c5a4443fa55380737402f2a1303cb560b5eaaf8b9810107",
+      "snapshot_sha256": "1958bf5b6105c480905f8a93b6c89dead871fd4c2dc319c98daf4a7dddb18601"
+    },
+    {
+      "id": "cua-bench-eda-kicad",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://cua.ai/cuabench/leaderboard",
+          "checked_at": "2026-10-31T00:10:52.630980+00:00",
+          "status": 200,
+          "sha256": "41f41bbc9cc0513f1810a19ae0fd867dc6ce12e1eee5cd3105acb4a212d9ff54",
+          "bytes": 50286,
+          "prior_sha256": "23138eddee27a040545b2c2d67e5fdba5b821c17538cbbb643ff01ee6a07cb93",
+          "raw_bytes_equal": false
+        }
+      ],
+      "old_rows": 10,
+      "rows": 10,
+      "verification": "Live HTML shell changed; all leaderboard row text, numeric cells and hyperlinks exactly match existing table snapshot.",
+      "conditions_preserved": {
+        "metric": "Full pass (tasks passed out of 25)",
+        "unit": "tasks",
+        "tasks": 25,
+        "tasks_note": null,
+        "harness_ja": "Cua が同じ環境・200ステップ上限で各モデルを実行。多くはネイティブの computer-use ツール、* 付きは function-calling 経由。"
+      },
+      "table_sha256": "bb5ce67723a7c62b130f59e83242a5d99f4c88044923c7ec1d1409a350d44d06",
+      "snapshot_sha256": "fb235ea8420ea25588e5bcaffca5a6015ccf80399903f4c38842f8646ab88e8a"
+    },
+    {
+      "id": "hal-assistantbench",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://hal.cs.princeton.edu/assistantbench",
+          "checked_at": "2026-10-31T00:10:57.602523+00:00",
+          "status": 200,
+          "sha256": "be14ddb7055803de81f1ca8d41a42583a6582014ce4b687806145f7162bf8a73",
+          "bytes": 199625,
+          "prior_sha256": "be14ddb7055803de81f1ca8d41a42583a6582014ce4b687806145f7162bf8a73",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 15,
+      "rows": 15,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "Accuracy",
+        "unit": "%",
+        "tasks": 33,
+        "tasks_note": "HAL ページは「33 Total Tasks」と記載(ベンチ全体は214タスク)。",
+        "harness_ja": "HAL 運営が共通ハーネス(hal-harness)で足場×モデルを自ら実行した結果。費用は公開トークン単価から算出し、キャッシュ割引は含まない。"
+      },
+      "table_sha256": "1b516b935edbd6d884e933466145f9ca2f774a88cda652ce9e466b118f116fbe",
+      "snapshot_sha256": "963d5302c61009eed281c4567b0717afff7fa7e8bd3d44592236d8314eb480eb"
+    },
+    {
+      "id": "hal-online-mind2web",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://hal.cs.princeton.edu/online_mind2web",
+          "checked_at": "2026-10-31T00:10:58.086375+00:00",
+          "status": 200,
+          "sha256": "3c689a054d9d4d538ae0bde48d546a68223f3083fc6b210a4143b3c3e1e8cc0f",
+          "bytes": 265682,
+          "prior_sha256": "3c689a054d9d4d538ae0bde48d546a68223f3083fc6b210a4143b3c3e1e8cc0f",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 22,
+      "rows": 22,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "Accuracy",
+        "unit": "%",
+        "tasks": 300,
+        "tasks_note": "HAL ページの記載は検証済み300タスク(136サイト)。",
+        "harness_ja": "HAL 運営が共通ハーネス(hal-harness)で足場×モデルを自ら実行した結果。費用は公開トークン単価から算出し、キャッシュ割引は含まない。"
+      },
+      "table_sha256": "780484534aabcd8eefda3c487af2a69e12cf2ebf2e9dd6cd7e13d7310d200393",
+      "snapshot_sha256": "f578ff747e48db2cba29d9b06331aa375fcb82a7debb40a30e525f91add87b05"
+    },
+    {
+      "id": "macagentbench",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://jetastra.github.io/MacAgentBench/data/models/index.json",
+          "checked_at": "2026-10-31T00:11:45.623445+00:00",
+          "status": 200,
+          "sha256": "20d9e2f8ede68266a3e60f2f20c4ff5644a4bb06bd9a46af8688413c7b3ca9e0",
+          "bytes": 8538,
+          "prior_sha256": "20d9e2f8ede68266a3e60f2f20c4ff5644a4bb06bd9a46af8688413c7b3ca9e0",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 30,
+      "rows": 30,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "Score (Pass@1, %)",
+        "unit": "%",
+        "tasks": 676,
+        "tasks_note": "論文(arXiv 2606.22557)の要旨で676タスク・25アプリ。",
+        "harness_ja": "ベンチ作成者が3つの足場(Baseline / Agent-S3 / OpenClaw)で各モデルを走らせた結果。足場が違う行は直接比べられない。"
+      },
+      "table_sha256": "8bffe493d737d1df04f8c15035f9c5f0e5d31bd34cd92711b72d077e6a56d2fc",
+      "snapshot_sha256": "20d9e2f8ede68266a3e60f2f20c4ff5644a4bb06bd9a46af8688413c7b3ca9e0"
+    },
+    {
+      "id": "mobileworld",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://tongyi-mai.github.io/MobileWorld/leaderboard.json",
+          "checked_at": "2026-10-31T00:11:52.134373+00:00",
+          "status": 200,
+          "sha256": "47a3ef74398159f0c22d9c921cbc8c807342704335460f0ed519cc1875b8774c",
+          "bytes": 20031,
+          "prior_sha256": "47a3ef74398159f0c22d9c921cbc8c807342704335460f0ed519cc1875b8774c",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 42,
+      "rows": 42,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "Success rate on GUI-Only tasks (%)",
+        "unit": "%",
+        "tasks": 201,
+        "tasks_note": "全201タスク。score は GUI-Only(117)の成功率で、User-Int.(44)と MCP(40)は score_extra。",
+        "harness_ja": "max steps=50 で統一。結果はチームの評価と、軌跡を添えたコミュニティ提出(GitHub issue 経由)。足場は agent_type ごとに異なる。"
+      },
+      "table_sha256": "3ec505e53f4e060460b05153859b57d4e92cd53508389a45d148c8d610195928",
+      "snapshot_sha256": "082bc6037cd63501f18bf3610e467d47871a6c4efa379bdaba25c60baa6c7eb5"
+    },
+    {
+      "id": "online-mind2web-auto",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://huggingface.co/spaces/osunlp/Online_Mind2Web_Leaderboard/resolve/main/auto_o4-mini_Mind2Web-Online%20-%20Leaderboard_data.csv",
+          "checked_at": "2026-10-31T00:11:45.618133+00:00",
+          "status": 200,
+          "sha256": "1cea02f3f4218afd8f4c83df456bbf6b0dbfa248f0d538fc2cfa4200742c8f38",
+          "bytes": 3708,
+          "prior_sha256": "1cea02f3f4218afd8f4c83df456bbf6b0dbfa248f0d538fc2cfa4200742c8f38",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 20,
+      "rows": 20,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "Average SR",
+        "unit": "%",
+        "tasks": 300,
+        "tasks_note": null,
+        "harness_ja": "エージェントは提出者が走らせ、成否は WebJudge(o4-mini)の自動判定。未検証の自己申告行も混ざる。"
+      },
+      "table_sha256": "cc096103c9d2b19a6df33e391445529afcd13ff74c66fb71160ed8361ff4633c",
+      "snapshot_sha256": "1cea02f3f4218afd8f4c83df456bbf6b0dbfa248f0d538fc2cfa4200742c8f38"
+    },
+    {
+      "id": "online-mind2web-human",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://huggingface.co/spaces/osunlp/Online_Mind2Web_Leaderboard/resolve/main/human_Mind2Web-Online%20-%20Leaderboard_data.csv",
+          "checked_at": "2026-10-31T00:11:45.618796+00:00",
+          "status": 200,
+          "sha256": "64f3c169115a9037d9055831d7362e635e06b1fd92a7aea6e8a80f3bf0bb40c1",
+          "bytes": 1573,
+          "prior_sha256": "64f3c169115a9037d9055831d7362e635e06b1fd92a7aea6e8a80f3bf0bb40c1",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 13,
+      "rows": 13,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "Average SR",
+        "unit": "%",
+        "tasks": 300,
+        "tasks_note": null,
+        "harness_ja": "エージェントは提出者が走らせ、成否は人手で判定する。OSU NLP か第三者の評価機関が判定し、ボードは運営の検証済みとしている。"
+      },
+      "table_sha256": "049060a526bb8b0cf454418f589a94529e0cd126e1ab894a6e94ea4dd5a27d12",
+      "snapshot_sha256": "64f3c169115a9037d9055831d7362e635e06b1fd92a7aea6e8a80f3bf0bb40c1"
+    },
+    {
+      "id": "osuniverse",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://agentsea.github.io/osuniverse/",
+          "checked_at": "2026-10-31T00:10:52.628254+00:00",
+          "status": 200,
+          "sha256": "15a1befde1c86308d65975b01495d0718e2598589994e8ffc83e585c1f0922b3",
+          "bytes": 22800,
+          "prior_sha256": "15a1befde1c86308d65975b01495d0718e2598589994e8ffc83e585c1f0922b3",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 8,
+      "rows": 8,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "Total Score (%)",
+        "unit": "%",
+        "tasks": 160,
+        "tasks_note": "サイト記載は160タスク(5段階・9カテゴリ)。",
+        "harness_ja": "作成者(AgentSea)が論文時点で各エージェントを実行し、Gemini による自動検証で採点した結果。"
+      },
+      "table_sha256": "dbc1de2723769df71ec694724dd50806a1ef649545bd0bf091f2440686cc4aee",
+      "snapshot_sha256": "6c1e6e496558266f0f22f12a0eb645dc62aceb1d92ce6ec6b1ff9916525734a3"
+    },
+    {
+      "id": "osworld-2-1-full-500steps",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json?v=leaderboard-musespark-v10",
+          "checked_at": "2026-10-31T00:11:50.274374+00:00",
+          "status": 200,
+          "sha256": "4cdcebeb33cd9c61cecfb275debc292326b48c209483d7da3ad66ee33d94b974",
+          "bytes": 21228,
+          "prior_sha256": "4cdcebeb33cd9c61cecfb275debc292326b48c209483d7da3ad66ee33d94b974",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-musespark-v10",
+          "checked_at": "2026-10-31T00:11:51.246426+00:00",
+          "status": 200,
+          "sha256": "4c425a9ae9edcdb4a9809e3b3ce6530c0c58e40e02d96e953b5cb773cb3dac63",
+          "bytes": 18526,
+          "prior_sha256": "4c425a9ae9edcdb4a9809e3b3ce6530c0c58e40e02d96e953b5cb773cb3dac63",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/",
+          "checked_at": "2026-10-31T00:11:48.104160+00:00",
+          "status": 200,
+          "sha256": "0f4c37bc221153a3c4c4c1fe89d70f0b421ed660ee9d8841b9d0c06ad776f680",
+          "bytes": 88332,
+          "prior_sha256": "0f4c37bc221153a3c4c4c1fe89d70f0b421ed660ee9d8841b9d0c06ad776f680",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 7,
+      "rows": 7,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "Binary accuracy (%)",
+        "unit": "%",
+        "tasks": 108,
+        "tasks_note": "108 はベンチマークの公称タスク数。MuseSpark の各行には評価対象タスク数が掲載されていない。",
+        "harness_ja": "公式ボードの Foundation E2E GUI タブに対応する modelType=e2e の行だけ。推論量・ツール設定は行ごとに異なる。official=true の行は verified=true、フラグ非掲載の行は null。All タブだけの外部エージェント行は含めない。"
+      },
+      "table_sha256": "c0d7c6f7111557f9f5ce53faad54dfe2bdcaf0669a06f2fb17cb5ded60eb9da9",
+      "snapshot_sha256": "4cdcebeb33cd9c61cecfb275debc292326b48c209483d7da3ad66ee33d94b974"
+    },
+    {
+      "id": "osworld-2-1-offline-500steps",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "checked_at": "2026-10-31T00:11:49.038685+00:00",
+          "status": 200,
+          "sha256": "4cdcebeb33cd9c61cecfb275debc292326b48c209483d7da3ad66ee33d94b974",
+          "bytes": 21228,
+          "prior_sha256": "4cdcebeb33cd9c61cecfb275debc292326b48c209483d7da3ad66ee33d94b974",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+          "checked_at": "2026-10-31T00:11:51.556726+00:00",
+          "status": 200,
+          "sha256": "4c425a9ae9edcdb4a9809e3b3ce6530c0c58e40e02d96e953b5cb773cb3dac63",
+          "bytes": 18526,
+          "prior_sha256": "4c425a9ae9edcdb4a9809e3b3ce6530c0c58e40e02d96e953b5cb773cb3dac63",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 5,
+      "rows": 5,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "Binary accuracy (%)",
+        "unit": "%",
+        "tasks": 82,
+        "tasks_note": "オフライン集合はボード注記で「インターネット無しで実行できる82タスク」。全体は108タスク。",
+        "harness_ja": "公式ボードの Foundation E2E GUI タブに対応する modelType=e2e・official=true の行だけ。OSWorld 2.0 チームの公式実行。推論量・ツール設定は行ごとに異なる。All タブにのみ載る外部エージェントの結果は含めない。"
+      },
+      "table_sha256": "3a07b1a52835271344490d34104700efee4b585a90e1f2c10f42a586b74680df",
+      "snapshot_sha256": "35a0ed7cfe2e9981c4976ea326ee3a21d77e4a80b7e44adcad55316d83cc2cec"
+    },
+    {
+      "id": "osworld-2-1-public-agents-full-450steps",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json?v=leaderboard-musespark-v10",
+          "checked_at": "2026-10-31T00:11:50.274374+00:00",
+          "status": 200,
+          "sha256": "4cdcebeb33cd9c61cecfb275debc292326b48c209483d7da3ad66ee33d94b974",
+          "bytes": 21228,
+          "prior_sha256": "4cdcebeb33cd9c61cecfb275debc292326b48c209483d7da3ad66ee33d94b974",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-musespark-v10",
+          "checked_at": "2026-10-31T00:11:51.246426+00:00",
+          "status": 200,
+          "sha256": "4c425a9ae9edcdb4a9809e3b3ce6530c0c58e40e02d96e953b5cb773cb3dac63",
+          "bytes": 18526,
+          "prior_sha256": "4c425a9ae9edcdb4a9809e3b3ce6530c0c58e40e02d96e953b5cb773cb3dac63",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/",
+          "checked_at": "2026-10-31T00:11:48.104160+00:00",
+          "status": 200,
+          "sha256": "0f4c37bc221153a3c4c4c1fe89d70f0b421ed660ee9d8841b9d0c06ad776f680",
+          "bytes": 88332,
+          "prior_sha256": "0f4c37bc221153a3c4c4c1fe89d70f0b421ed660ee9d8841b9d0c06ad776f680",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 1,
+      "rows": 1,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "Binary accuracy (%)",
+        "unit": "%",
+        "tasks": 108,
+        "tasks_note": "108 は公開JSONの datasetSize。行ごとの taskCount は非掲載。All タブから modelType=agent・指定 release・full・450 steps の行だけを抽出。",
+        "harness_ja": "公式サイトの All タブに掲載された外部エージェントの結果。modelType=agent の行のみ。Foundation E2E GUI の公式実行条件とは別扱いで、掲載行には official 検証フラグが無いため verified=null。"
+      },
+      "table_sha256": "b9e5e1ff64bca0c09dd0560637ab318a4d8308253c393c423f005ad8caa0d1e9",
+      "snapshot_sha256": "1bd159e867f183f1f146e556f1d82b5eb10e0cede37bfd33e90437f00f7c4ef5"
+    },
+    {
+      "id": "osworld-2-1-public-agents-full-500steps",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "checked_at": "2026-10-31T00:11:49.038685+00:00",
+          "status": 200,
+          "sha256": "4cdcebeb33cd9c61cecfb275debc292326b48c209483d7da3ad66ee33d94b974",
+          "bytes": 21228,
+          "prior_sha256": "4cdcebeb33cd9c61cecfb275debc292326b48c209483d7da3ad66ee33d94b974",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+          "checked_at": "2026-10-31T00:11:51.556726+00:00",
+          "status": 200,
+          "sha256": "4c425a9ae9edcdb4a9809e3b3ce6530c0c58e40e02d96e953b5cb773cb3dac63",
+          "bytes": 18526,
+          "prior_sha256": "4c425a9ae9edcdb4a9809e3b3ce6530c0c58e40e02d96e953b5cb773cb3dac63",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/",
+          "checked_at": "2026-10-31T00:11:48.104160+00:00",
+          "status": 200,
+          "sha256": "0f4c37bc221153a3c4c4c1fe89d70f0b421ed660ee9d8841b9d0c06ad776f680",
+          "bytes": 88332,
+          "prior_sha256": "0f4c37bc221153a3c4c4c1fe89d70f0b421ed660ee9d8841b9d0c06ad776f680",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 1,
+      "rows": 1,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "Binary accuracy (%)",
+        "unit": "%",
+        "tasks": 108,
+        "tasks_note": "公開JSONの taskCount。All タブのうち modelType=agent の行だけを抽出した別表。",
+        "harness_ja": "公式サイトの All タブに掲載された外部エージェントの結果。modelType=agent の行のみ。Foundation E2E GUI の公式実行条件とは別扱いで、掲載行には official 検証フラグが無いため verified=null。"
+      },
+      "table_sha256": "d7678cf04d963fd5b3b11682ffc4f52732ba2fcf0de38ce404381aec65350ad1",
+      "snapshot_sha256": "35a0ed7cfe2e9981c4976ea326ee3a21d77e4a80b7e44adcad55316d83cc2cec"
+    },
+    {
+      "id": "osworld-2-full-150steps",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "checked_at": "2026-10-31T00:11:49.038685+00:00",
+          "status": 200,
+          "sha256": "4cdcebeb33cd9c61cecfb275debc292326b48c209483d7da3ad66ee33d94b974",
+          "bytes": 21228,
+          "prior_sha256": "4cdcebeb33cd9c61cecfb275debc292326b48c209483d7da3ad66ee33d94b974",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+          "checked_at": "2026-10-31T00:11:51.556726+00:00",
+          "status": 200,
+          "sha256": "4c425a9ae9edcdb4a9809e3b3ce6530c0c58e40e02d96e953b5cb773cb3dac63",
+          "bytes": 18526,
+          "prior_sha256": "4c425a9ae9edcdb4a9809e3b3ce6530c0c58e40e02d96e953b5cb773cb3dac63",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 6,
+      "rows": 6,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "Binary accuracy (%)",
+        "unit": "%",
+        "tasks": 108,
+        "tasks_note": null,
+        "harness_ja": "公式ボードの Foundation E2E GUI タブに対応する modelType=e2e・official=true の行だけ。OSWorld 2.0 チームの公式実行。推論量・ツール設定は行ごとに異なる。All タブにのみ載る外部エージェントの結果は含めない。"
+      },
+      "table_sha256": "84405793f0c0e8913da34fa28f8170e5cf19c68d0eb3b49157b893dfee28c1ea",
+      "snapshot_sha256": "35a0ed7cfe2e9981c4976ea326ee3a21d77e4a80b7e44adcad55316d83cc2cec"
+    },
+    {
+      "id": "osworld-2-full-300steps",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "checked_at": "2026-10-31T00:11:49.038685+00:00",
+          "status": 200,
+          "sha256": "4cdcebeb33cd9c61cecfb275debc292326b48c209483d7da3ad66ee33d94b974",
+          "bytes": 21228,
+          "prior_sha256": "4cdcebeb33cd9c61cecfb275debc292326b48c209483d7da3ad66ee33d94b974",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+          "checked_at": "2026-10-31T00:11:51.556726+00:00",
+          "status": 200,
+          "sha256": "4c425a9ae9edcdb4a9809e3b3ce6530c0c58e40e02d96e953b5cb773cb3dac63",
+          "bytes": 18526,
+          "prior_sha256": "4c425a9ae9edcdb4a9809e3b3ce6530c0c58e40e02d96e953b5cb773cb3dac63",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 7,
+      "rows": 7,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "Binary accuracy (%)",
+        "unit": "%",
+        "tasks": 108,
+        "tasks_note": null,
+        "harness_ja": "公式ボードの Foundation E2E GUI タブに対応する modelType=e2e・official=true の行だけ。OSWorld 2.0 チームの公式実行。推論量・ツール設定は行ごとに異なる。All タブにのみ載る外部エージェントの結果は含めない。"
+      },
+      "table_sha256": "bd9bdc68d687e61b1010e2c6a6c64bc54765fdb676fc14da5f20ab27fc2ad98e",
+      "snapshot_sha256": "35a0ed7cfe2e9981c4976ea326ee3a21d77e4a80b7e44adcad55316d83cc2cec"
+    },
+    {
+      "id": "osworld-2-full-500steps",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "checked_at": "2026-10-31T00:11:49.038685+00:00",
+          "status": 200,
+          "sha256": "4cdcebeb33cd9c61cecfb275debc292326b48c209483d7da3ad66ee33d94b974",
+          "bytes": 21228,
+          "prior_sha256": "4cdcebeb33cd9c61cecfb275debc292326b48c209483d7da3ad66ee33d94b974",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+          "checked_at": "2026-10-31T00:11:51.556726+00:00",
+          "status": 200,
+          "sha256": "4c425a9ae9edcdb4a9809e3b3ce6530c0c58e40e02d96e953b5cb773cb3dac63",
+          "bytes": 18526,
+          "prior_sha256": "4c425a9ae9edcdb4a9809e3b3ce6530c0c58e40e02d96e953b5cb773cb3dac63",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 16,
+      "rows": 16,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "Binary accuracy (%)",
+        "unit": "%",
+        "tasks": 108,
+        "tasks_note": null,
+        "harness_ja": "公式ボードの Foundation E2E GUI タブに対応する modelType=e2e・official=true の行だけ。OSWorld 2.0 チームの公式実行。推論量・ツール設定は行ごとに異なる。All タブにのみ載る外部エージェントの結果は含めない。"
+      },
+      "table_sha256": "2c1dbfe62a83b6f951941dc789f0cb81a90a62c517c8d36e62f9468dac29f79a",
+      "snapshot_sha256": "35a0ed7cfe2e9981c4976ea326ee3a21d77e4a80b7e44adcad55316d83cc2cec"
+    },
+    {
+      "id": "osworld-2-offline-500steps",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "checked_at": "2026-10-31T00:11:49.038685+00:00",
+          "status": 200,
+          "sha256": "4cdcebeb33cd9c61cecfb275debc292326b48c209483d7da3ad66ee33d94b974",
+          "bytes": 21228,
+          "prior_sha256": "4cdcebeb33cd9c61cecfb275debc292326b48c209483d7da3ad66ee33d94b974",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+          "checked_at": "2026-10-31T00:11:51.556726+00:00",
+          "status": 200,
+          "sha256": "4c425a9ae9edcdb4a9809e3b3ce6530c0c58e40e02d96e953b5cb773cb3dac63",
+          "bytes": 18526,
+          "prior_sha256": "4c425a9ae9edcdb4a9809e3b3ce6530c0c58e40e02d96e953b5cb773cb3dac63",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 11,
+      "rows": 11,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "Binary accuracy (%)",
+        "unit": "%",
+        "tasks": 82,
+        "tasks_note": "オフライン集合はボード注記で「インターネット無しで実行できる82タスク」。全体は108タスク。",
+        "harness_ja": "公式ボードの Foundation E2E GUI タブに対応する modelType=e2e・official=true の行だけ。OSWorld 2.0 チームの公式実行。推論量・ツール設定は行ごとに異なる。All タブにのみ載る外部エージェントの結果は含めない。"
+      },
+      "table_sha256": "2b837f1860d27a7996858eb653608315c9f8cea3ba59c5a3834c9d96976ff5de",
+      "snapshot_sha256": "35a0ed7cfe2e9981c4976ea326ee3a21d77e4a80b7e44adcad55316d83cc2cec"
+    },
+    {
+      "id": "osworld-2-public-agents-full-450steps",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json?v=leaderboard-musespark-v10",
+          "checked_at": "2026-10-31T00:11:50.274374+00:00",
+          "status": 200,
+          "sha256": "4cdcebeb33cd9c61cecfb275debc292326b48c209483d7da3ad66ee33d94b974",
+          "bytes": 21228,
+          "prior_sha256": "4cdcebeb33cd9c61cecfb275debc292326b48c209483d7da3ad66ee33d94b974",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-musespark-v10",
+          "checked_at": "2026-10-31T00:11:51.246426+00:00",
+          "status": 200,
+          "sha256": "4c425a9ae9edcdb4a9809e3b3ce6530c0c58e40e02d96e953b5cb773cb3dac63",
+          "bytes": 18526,
+          "prior_sha256": "4c425a9ae9edcdb4a9809e3b3ce6530c0c58e40e02d96e953b5cb773cb3dac63",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/",
+          "checked_at": "2026-10-31T00:11:48.104160+00:00",
+          "status": 200,
+          "sha256": "0f4c37bc221153a3c4c4c1fe89d70f0b421ed660ee9d8841b9d0c06ad776f680",
+          "bytes": 88332,
+          "prior_sha256": "0f4c37bc221153a3c4c4c1fe89d70f0b421ed660ee9d8841b9d0c06ad776f680",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 1,
+      "rows": 1,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "Binary accuracy (%)",
+        "unit": "%",
+        "tasks": 108,
+        "tasks_note": "108 は公開JSONの datasetSize。行ごとの taskCount は非掲載。All タブから modelType=agent・指定 release・full・450 steps の行だけを抽出。",
+        "harness_ja": "公式サイトの All タブに掲載された外部エージェントの結果。modelType=agent の行のみ。Foundation E2E GUI の公式実行条件とは別扱いで、掲載行には official 検証フラグが無いため verified=null。"
+      },
+      "table_sha256": "7e19d2859e570e13275de34de8c32555a54d222dc18790f2ca264a0a20c22618",
+      "snapshot_sha256": "1bd159e867f183f1f146e556f1d82b5eb10e0cede37bfd33e90437f00f7c4ef5"
+    },
+    {
+      "id": "osworld-mcp",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://osworld-mcp.github.io/",
+          "checked_at": "2026-10-31T00:11:48.101349+00:00",
+          "status": 200,
+          "sha256": "181cb1fa9d2c373fec67db088dfd380b52d4d323fa9cc380cc44b15e4ceaa4b4",
+          "bytes": 42986,
+          "prior_sha256": "181cb1fa9d2c373fec67db088dfd380b52d4d323fa9cc380cc44b15e4ceaa4b4",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 22,
+      "rows": 22,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "Task Accuracy (Acc, %)",
+        "unit": "%",
+        "tasks": null,
+        "tasks_note": "README は「250 のツールが有効なタスク(全体の69%)」とだけ書き、総タスク数を明記していないため null。",
+        "harness_ja": "作成チームが評価。多くは GUI-Owl のエージェント設定に揃えた統一プロンプトで、一部はモデル固有プロンプト(model_config の prompt)。"
+      },
+      "table_sha256": "f9c8b2464b0ee8510b72c57a36c30734f234fef236c90f85ba1f4913e97bcb14",
+      "snapshot_sha256": "c6c16c38966cf96bad1f7a8d4aac39ccd9a40161a28a68c8b71e84fffa264b13"
+    },
+    {
+      "id": "osworld-self-reported-a11y-tree",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://osworld-v1.xlang.ai/static/data/self_reported_results.xlsx",
+          "checked_at": "2026-10-31T00:11:48.103688+00:00",
+          "status": 200,
+          "sha256": "3016a0665f7c4527f235cd72f2217d759461253c488ba03991f36ea44968f731",
+          "bytes": 24115,
+          "prior_sha256": "3016a0665f7c4527f235cd72f2217d759461253c488ba03991f36ea44968f731",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 15,
+      "rows": 15,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "Success rate (%)",
+        "unit": "%",
+        "tasks": 369,
+        "tasks_note": "サイト記載は369タスク(Google Drive 系8タスクを除く361でも可)。自己申告のため各行が何タスクで測ったかは行ごとに異なりうる。",
+        "harness_ja": "提出者の自己申告(アクセシビリティツリーのみを入力)。環境・ステップ上限・足場は提出者任せで、OSWorld-Verified 以前の版の結果を多く含む。"
+      },
+      "table_sha256": "331704853dae509eb041f701da26865bca252d668381a02789344c45725266cc",
+      "snapshot_sha256": "1b55130cf672f862b536bb0e67664a91edb59966017adbfc47ce8daf5d857578"
+    },
+    {
+      "id": "osworld-self-reported-screenshot-a11y-tree",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://osworld-v1.xlang.ai/static/data/self_reported_results.xlsx",
+          "checked_at": "2026-10-31T00:11:48.103688+00:00",
+          "status": 200,
+          "sha256": "3016a0665f7c4527f235cd72f2217d759461253c488ba03991f36ea44968f731",
+          "bytes": 24115,
+          "prior_sha256": "3016a0665f7c4527f235cd72f2217d759461253c488ba03991f36ea44968f731",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 18,
+      "rows": 18,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "Success rate (%)",
+        "unit": "%",
+        "tasks": 369,
+        "tasks_note": "サイト記載は369タスク(Google Drive 系8タスクを除く361でも可)。自己申告のため各行が何タスクで測ったかは行ごとに異なりうる。",
+        "harness_ja": "提出者の自己申告(スクリーンショットとアクセシビリティツリーを入力)。環境・ステップ上限・足場は提出者任せで、OSWorld-Verified 以前の版の結果を多く含む。"
+      },
+      "table_sha256": "d20b31e5a4840e0be1d6f058b4a4116699bd6f3b33239fd324537687b606e70a",
+      "snapshot_sha256": "0286551d9f3c58e899fd022c29a96678c43137ba58f07de4f825b1fa11e79c81"
+    },
+    {
+      "id": "osworld-self-reported-screenshot",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://osworld-v1.xlang.ai/static/data/self_reported_results.xlsx",
+          "checked_at": "2026-10-31T00:11:48.103688+00:00",
+          "status": 200,
+          "sha256": "3016a0665f7c4527f235cd72f2217d759461253c488ba03991f36ea44968f731",
+          "bytes": 24115,
+          "prior_sha256": "3016a0665f7c4527f235cd72f2217d759461253c488ba03991f36ea44968f731",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 56,
+      "rows": 56,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "Success rate (%)",
+        "unit": "%",
+        "tasks": 369,
+        "tasks_note": "サイト記載は369タスク(Google Drive 系8タスクを除く361でも可)。自己申告のため各行が何タスクで測ったかは行ごとに異なりうる。",
+        "harness_ja": "提出者の自己申告(スクリーンショットのみを入力)。環境・ステップ上限・足場は提出者任せで、OSWorld-Verified 以前の版の結果を多く含む。"
+      },
+      "table_sha256": "5636f88f7d45bae4fd64e4afa00838e0eb3e5a67ed6da96e977ff7a482b748fa",
+      "snapshot_sha256": "1c4907fd316bd286870cb016c97c118e21a263dc41f99bd651ae1ef7b4c12851"
+    },
+    {
+      "id": "osworld-self-reported-set-of-mark",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://osworld-v1.xlang.ai/static/data/self_reported_results.xlsx",
+          "checked_at": "2026-10-31T00:11:48.103688+00:00",
+          "status": 200,
+          "sha256": "3016a0665f7c4527f235cd72f2217d759461253c488ba03991f36ea44968f731",
+          "bytes": 24115,
+          "prior_sha256": "3016a0665f7c4527f235cd72f2217d759461253c488ba03991f36ea44968f731",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 11,
+      "rows": 11,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "Success rate (%)",
+        "unit": "%",
+        "tasks": 369,
+        "tasks_note": "サイト記載は369タスク(Google Drive 系8タスクを除く361でも可)。自己申告のため各行が何タスクで測ったかは行ごとに異なりうる。",
+        "harness_ja": "提出者の自己申告(Set-of-Mark 注釈付きスクリーンショットを入力)。環境・ステップ上限・足場は提出者任せで、OSWorld-Verified 以前の版の結果を多く含む。"
+      },
+      "table_sha256": "5ce6d5fd00bf8b5037bf6d1b7291135861b5fae31fe60fbb14bd85eb6fb719b4",
+      "snapshot_sha256": "8b171f33ba7a9e6b41573212e9375ee1eb0c5bfbe6e11a0c30cabbfd91314698"
+    },
+    {
+      "id": "osworld-verified",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://osworld-v1.xlang.ai/static/data/osworld_verified_results.xlsx",
+          "checked_at": "2026-10-31T00:11:48.102784+00:00",
+          "status": 200,
+          "sha256": "cf6b4b67eed566ddcd5a8b7ad2d89013157978dad0eea76ea12d2377471efc09",
+          "bytes": 113066,
+          "prior_sha256": "cf6b4b67eed566ddcd5a8b7ad2d89013157978dad0eea76ea12d2377471efc09",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 110,
+      "rows": 110,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "Success rate (%)",
+        "unit": "%",
+        "tasks": 369,
+        "tasks_note": "サイト記載は369タスク。Google Drive 系8タスクを除く361タスクでの評価も公式に認められている。",
+        "harness_ja": "OSWorld 側のチームが統一した環境・設定で再実行した結果。足場は行ごとに異なる(素のモデル/専用モデル/エージェント枠組み)。"
+      },
+      "table_sha256": "ddcc98571a471216079a587c96fe87ebf8dad60ca08772f4469ae52ef3bc15e1",
+      "snapshot_sha256": "92304352bbee7cf4e5309611d39360c3af8f2b7b61973aad16bdeb4180b2bab9"
+    },
+    {
+      "id": "real-v1-frameworks",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://www.realevals.xyz/api/getVerifiedModelData",
+          "checked_at": "2026-10-31T00:11:55.454734+00:00",
+          "status": 200,
+          "sha256": "904366e9daf872b8ca250fac5e413248e80d61209aa7db055c213efb695b0683",
+          "bytes": 3421090,
+          "prior_sha256": "904366e9daf872b8ca250fac5e413248e80d61209aa7db055c213efb695b0683",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://www.realevals.xyz/_next/static/chunks/app/(main)/page-89fe682a64228531.js",
+          "checked_at": "2026-10-31T00:11:55.426088+00:00",
+          "status": 200,
+          "sha256": "ed5f6ff9986b67f6f4fcf7f2a08e97bcb598edbbca15277007289ab033dd71a4",
+          "bytes": 24818,
+          "prior_sha256": "ed5f6ff9986b67f6f4fcf7f2a08e97bcb598edbbca15277007289ab033dd71a4",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 5,
+      "rows": 5,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "REAL Score",
+        "unit": "%",
+        "tasks": 112,
+        "tasks_note": "ボードのデータ上、各エントリの v1 タスクは112件。",
+        "harness_ja": "Frameworks タブ(エージェント製品・フレームワーク単位のエントリ)。誰がどの足場で走らせたかは行ごとに示されない。採点は複製サイトの状態と回答の自動評価。"
+      },
+      "table_sha256": "aaecf51dacb913766360d2373809c79124a7a0871c1e35e85a6f5c833462bca3",
+      "snapshot_sha256": "1077bb05e2483747436028bd40d898acfbcc5bfb3a016e1dddeab88d88799dfe"
+    },
+    {
+      "id": "real-v1-models",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://www.realevals.xyz/api/getVerifiedModelData",
+          "checked_at": "2026-10-31T00:11:55.454734+00:00",
+          "status": 200,
+          "sha256": "904366e9daf872b8ca250fac5e413248e80d61209aa7db055c213efb695b0683",
+          "bytes": 3421090,
+          "prior_sha256": "904366e9daf872b8ca250fac5e413248e80d61209aa7db055c213efb695b0683",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://www.realevals.xyz/_next/static/chunks/app/(main)/page-89fe682a64228531.js",
+          "checked_at": "2026-10-31T00:11:55.426088+00:00",
+          "status": 200,
+          "sha256": "ed5f6ff9986b67f6f4fcf7f2a08e97bcb598edbbca15277007289ab033dd71a4",
+          "bytes": 24818,
+          "prior_sha256": "ed5f6ff9986b67f6f4fcf7f2a08e97bcb598edbbca15277007289ab033dd71a4",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 21,
+      "rows": 21,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "REAL Score",
+        "unit": "%",
+        "tasks": 112,
+        "tasks_note": "ボードのデータ上、各エントリの v1 タスクは112件。",
+        "harness_ja": "Models タブ(モデル単位のエントリ)。誰がどの足場で走らせたかは行ごとに示されない。採点は複製サイトの状態と回答の自動評価。"
+      },
+      "table_sha256": "951e66ef87fe1bc076d00cbd3d2b0bb060911b1742690792dd5ac42de4e85523",
+      "snapshot_sha256": "3a28fdde480f3f3aed5540363ceaf976839416a9121c99fd0d3c66504c5d8679"
+    },
+    {
+      "id": "real-v1-open-arena",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://www.realevals.xyz/api/getVerifiedModelData",
+          "checked_at": "2026-10-31T00:11:55.454734+00:00",
+          "status": 200,
+          "sha256": "904366e9daf872b8ca250fac5e413248e80d61209aa7db055c213efb695b0683",
+          "bytes": 3421090,
+          "prior_sha256": "904366e9daf872b8ca250fac5e413248e80d61209aa7db055c213efb695b0683",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://www.realevals.xyz/_next/static/chunks/app/(main)/page-89fe682a64228531.js",
+          "checked_at": "2026-10-31T00:11:55.426088+00:00",
+          "status": 200,
+          "sha256": "ed5f6ff9986b67f6f4fcf7f2a08e97bcb598edbbca15277007289ab033dd71a4",
+          "bytes": 24818,
+          "prior_sha256": "ed5f6ff9986b67f6f4fcf7f2a08e97bcb598edbbca15277007289ab033dd71a4",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 7,
+      "rows": 7,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "REAL Score",
+        "unit": "%",
+        "tasks": 112,
+        "tasks_note": "ボードのデータ上、各エントリの v1 タスクは112件。",
+        "harness_ja": "Open Arena タブ(一般提出のエントリ)。誰がどの足場で走らせたかは行ごとに示されない。採点は複製サイトの状態と回答の自動評価。"
+      },
+      "table_sha256": "3d6dcab3bb48cdb6141f93a583ce30836f102b166e56a49f1272e457a86da8c3",
+      "snapshot_sha256": "2914f66c3db6f23b766a0aa0e280912bad4f6ae068e5044d6787e7029453e536"
+    },
+    {
+      "id": "real-v2-frameworks",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://www.realevals.xyz/api/getVerifiedModelData",
+          "checked_at": "2026-10-31T00:11:55.454734+00:00",
+          "status": 200,
+          "sha256": "904366e9daf872b8ca250fac5e413248e80d61209aa7db055c213efb695b0683",
+          "bytes": 3421090,
+          "prior_sha256": "904366e9daf872b8ca250fac5e413248e80d61209aa7db055c213efb695b0683",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://www.realevals.xyz/_next/static/chunks/app/(main)/page-89fe682a64228531.js",
+          "checked_at": "2026-10-31T00:11:55.426088+00:00",
+          "status": 200,
+          "sha256": "ed5f6ff9986b67f6f4fcf7f2a08e97bcb598edbbca15277007289ab033dd71a4",
+          "bytes": 24818,
+          "prior_sha256": "ed5f6ff9986b67f6f4fcf7f2a08e97bcb598edbbca15277007289ab033dd71a4",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 1,
+      "rows": 1,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "REAL Score",
+        "unit": "%",
+        "tasks": null,
+        "tasks_note": "ボードのデータ上、各エントリの v2 タスクは121件。サイト・論文に v2 のタスク数の記載は見当たらない。",
+        "harness_ja": "Frameworks タブ(エージェント製品・フレームワーク単位のエントリ)。誰がどの足場で走らせたかは行ごとに示されない。採点は複製サイトの状態と回答の自動評価。"
+      },
+      "table_sha256": "83656d5570cb7c6507affdef7b94b258b2a723af302aa704b69c69f594dc9925",
+      "snapshot_sha256": "8993d2315f39dcb0fde5e94b795bd5ef4d462e908febfeffef5b5c09d3db157f"
+    },
+    {
+      "id": "real-v2-models",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://www.realevals.xyz/api/getVerifiedModelData",
+          "checked_at": "2026-10-31T00:11:55.454734+00:00",
+          "status": 200,
+          "sha256": "904366e9daf872b8ca250fac5e413248e80d61209aa7db055c213efb695b0683",
+          "bytes": 3421090,
+          "prior_sha256": "904366e9daf872b8ca250fac5e413248e80d61209aa7db055c213efb695b0683",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://www.realevals.xyz/_next/static/chunks/app/(main)/page-89fe682a64228531.js",
+          "checked_at": "2026-10-31T00:11:55.426088+00:00",
+          "status": 200,
+          "sha256": "ed5f6ff9986b67f6f4fcf7f2a08e97bcb598edbbca15277007289ab033dd71a4",
+          "bytes": 24818,
+          "prior_sha256": "ed5f6ff9986b67f6f4fcf7f2a08e97bcb598edbbca15277007289ab033dd71a4",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 12,
+      "rows": 12,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "REAL Score",
+        "unit": "%",
+        "tasks": null,
+        "tasks_note": "ボードのデータ上、各エントリの v2 タスクは121件。サイト・論文に v2 のタスク数の記載は見当たらない。",
+        "harness_ja": "Models タブ(モデル単位のエントリ)。誰がどの足場で走らせたかは行ごとに示されない。採点は複製サイトの状態と回答の自動評価。"
+      },
+      "table_sha256": "508e931cc004e55f7e52b0ef38f2dea8b7d45faf5c74bba4669667f88ba143dd",
+      "snapshot_sha256": "ff57fcc99ff27a08d6b7b9fbfac2f132eb4ede874d0576824707345314fd96d9"
+    },
+    {
+      "id": "venusbench-mobile",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://ui-venus.github.io/VenusBench-Mobile-Leaderboard/results/venusbench-mobile.json",
+          "checked_at": "2026-10-31T00:11:54.034371+00:00",
+          "status": 200,
+          "sha256": "078ec9962b1ff73db9836f8f24ecf90cfd85598336219a41e660e4d0082cf9de",
+          "bytes": 10426,
+          "prior_sha256": "078ec9962b1ff73db9836f8f24ecf90cfd85598336219a41e660e4d0082cf9de",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 11,
+      "rows": 11,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "Primary success rate (%)",
+        "unit": "%",
+        "tasks": 149,
+        "tasks_note": "主タスク149件。安定性評価用の変種80件は別(score_extra.stability_*)。",
+        "harness_ja": "作成チーム(Ant Group Venus Team)が論文の表と提出結果をまとめたもの。行ごとの足場は setup(End-to-end / Planner-executor など)。"
+      },
+      "table_sha256": "ee4a2760804b6ddd16fb06420b991d0b176e7c9feea77166c2bec88ccc7ba184",
+      "snapshot_sha256": "078ec9962b1ff73db9836f8f24ecf90cfd85598336219a41e660e4d0082cf9de"
+    },
+    {
+      "id": "visualwebarena",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ/export?format=csv&gid=2044883967",
+          "checked_at": "2026-10-31T00:10:52.633594+00:00",
+          "status": 200,
+          "sha256": "be851ca44c7141bf0f4acfb6e1844955f4d82c331df3b603f3531e3f0c7a74ee",
+          "bytes": 3209,
+          "prior_sha256": "be851ca44c7141bf0f4acfb6e1844955f4d82c331df3b603f3531e3f0c7a74ee",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ/htmlview/sheet?headers=true&gid=2044883967",
+          "checked_at": "2026-10-31T00:10:52.637069+00:00",
+          "status": 200,
+          "sha256": "df022cffec11e1630e0b8e899f63ac79bba7eff725d06392175b8fb1cdf3cc07",
+          "bytes": 80495,
+          "prior_sha256": "33164632f1d2197c23a78e75fcbaca9ac1f07875238aabda0a6f3a1f5db97c93",
+          "raw_bytes_equal": false
+        }
+      ],
+      "old_rows": 38,
+      "rows": 38,
+      "verification": "CSV main-board source byte-identical. HTML wrapper changed; inspected main leaderboard cells against published CSV.",
+      "conditions_preserved": {
+        "metric": "Success Rate (%)",
+        "unit": "%",
+        "tasks": 910,
+        "tasks_note": null,
+        "harness_ja": "提出者が自前のエージェントで走らせて報告する。入力形式(SoM・キャプション・画像など)は行ごとに違う。"
+      },
+      "table_sha256": "402965a8331efc6288905b71fd420d956db850d09e7927120de188729e6462d5",
+      "snapshot_sha256": "b8b2dc3817732cdc20934132f5f0cd3a0d395bf7de116bc43dffed67cd4f24ba"
+    },
+    {
+      "id": "webarena",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ/export?format=csv&gid=0",
+          "checked_at": "2026-10-31T00:10:52.631718+00:00",
+          "status": 200,
+          "sha256": "12af5577f23efc93b2d1f9209dd924ed28db00665cae43ad6b9ad421ae91365b",
+          "bytes": 4663,
+          "prior_sha256": "12af5577f23efc93b2d1f9209dd924ed28db00665cae43ad6b9ad421ae91365b",
+          "raw_bytes_equal": true
+        },
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ/htmlview/sheet?headers=true&gid=0",
+          "checked_at": "2026-10-31T00:10:52.635459+00:00",
+          "status": 200,
+          "sha256": "c83c9fec1754585d5d1ae2a9a57dc1dc06d42b97d33b938a5aa3a5c685d45c9d",
+          "bytes": 103831,
+          "prior_sha256": "7e42a469ba5a32aa7acbaf2adbaf3dc60aa25316a3e5585561e2df8363e4dda0",
+          "raw_bytes_equal": false
+        }
+      ],
+      "old_rows": 48,
+      "rows": 48,
+      "verification": "CSV main-board source byte-identical. HTML wrapper changed; inspected main leaderboard cells against published CSV.",
+      "conditions_preserved": {
+        "metric": "Success Rate (%)",
+        "unit": "%",
+        "tasks": 812,
+        "tasks_note": null,
+        "harness_ja": "提出者がそれぞれ自前のエージェントで走らせ、結果を運営にメールで報告する(自己申告を含む)。2024年9月以降は軌跡の提出が必須。"
+      },
+      "table_sha256": "0e89c42ab1fb5dabe550c9c82ae36ff84d650b2b37c6e37994af144b31412c22",
+      "snapshot_sha256": "19b8385430b2515ebb2f1fbe58aafb16bed3da37efe661dd034cc7b17dcb83e2"
+    },
+    {
+      "id": "webchorearena",
+      "status": "unchanged_verified",
+      "previous_verified_audit": "sources/audits/2026-10-30/web-computer.json",
+      "sources": [
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1RGyJ0QOxGj196KTfUK0SZeVl5IkM928_38wzIkQVxCs/export?format=csv&gid=0",
+          "checked_at": "2026-10-31T00:10:52.637489+00:00",
+          "status": 200,
+          "sha256": "648674ee1b6c44d4de45e29a8ca9aced00ac4b96fd5f0184e68640f51f644d6e",
+          "bytes": 1797,
+          "prior_sha256": "648674ee1b6c44d4de45e29a8ca9aced00ac4b96fd5f0184e68640f51f644d6e",
+          "raw_bytes_equal": true
+        }
+      ],
+      "old_rows": 8,
+      "rows": 8,
+      "verification": "Every fetched source byte-identical to previous verified audit; table and snapshot hashes unchanged.",
+      "conditions_preserved": {
+        "metric": "Success Rate (%)",
+        "unit": "%",
+        "tasks": 532,
+        "tasks_note": null,
+        "harness_ja": "論文の著者実験と、提出者が自前で走らせた結果をメールで受け付けて載せる。"
+      },
+      "table_sha256": "34cf3c897d07f5f9c70a7ae5159f513ee3b9daca8569872b47f45718d5475e31",
+      "snapshot_sha256": "5e62896379bb5e8abf4111e39111c0c687c8a7fec6d15d2df0905c23c7b70b45"
+    }
+  ]
+}

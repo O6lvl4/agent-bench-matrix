@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-31",
+  "status": "passed_with_source_caveats",
+  "scope": [
+    "apex-agents",
+    "apex-agents-corporate-lawyer",
+    "apex-agents-investment-banking",
+    "apex-agents-management-consultant",
+    "gaia",
+    "browsecomp-plus",
+    "tau3-voice",
+    "tau3-voice-airline",
+    "tau3-voice-retail",
+    "tau3-voice-telecom"
+  ],
+  "method": "Independent read-only review of table diffs, extraction procedure, preserved source snapshots, and fetched original responses. Verified response SHA-256 against acquisition index before parsing. No independent network refetch; CI, bundle and deployment outside this review.",
+  "checks": [
+    {
+      "tables": "APEX four tables",
+      "rows": 272,
+      "result": "All current row mean scores, Pass@1 and dates match original NEXT_DATA payloads. Overall additions distinguished from domain-specific corrections."
+    },
+    {
+      "tables": "GAIA",
+      "rows": 100,
+      "result": "All current overall and level-specific scores and dates match original API response; snapshot data equals response data. New multi-model entry has no single-model attribution."
+    },
+    {
+      "tables": "BrowseComp-Plus",
+      "rows": 2,
+      "result": "New rows match original leaderboard JSON for score, recall and search calls. Distinct retrievers and verbatim custom scaffold conditions, variable search k and same-model delegation retained."
+    },
+    {
+      "tables": "tau3-voice four tables",
+      "rows": 4,
+      "result": "New Pine row scores exactly match original submission domain results; overall is equal mean of retail, airline and telecom. Pine Voice 1.0 and Gemini 4 Argon both attributed."
+    }
+  ],
+  "caveats": [
+    "GAIA top100 snapshot excludes prior Harness V8 at tied score 91.03; it was not the previous last row. Treat as top100 reselection, not evidence of withdrawal or score decline.",
+    "Pine methodology claims retail 114 tasks while interaction metrics report 113 simulations. Inconsistency is explicitly retained, not resolved by inference.",
+    "Pine verification follows existing source flag convention; source methodology describes added scaffold and local ElevenLabs personas, preserved in model_config and snapshot."
+  ],
+  "blocking_findings": []
+}

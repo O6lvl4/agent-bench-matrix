@@ -1,0 +1,3210 @@
+{
+  "checked": "2026-10-31",
+  "baseline_commit": "5125f7c8053cdf745419b6b60815ac970ed55819",
+  "table_count": 66,
+  "row_count_before": 1746,
+  "row_count_after": 1757,
+  "status_counts": {
+    "changed": 10,
+    "unchanged": 54,
+    "partial-check": 2
+  },
+  "source_url_requests": 251,
+  "source_successes": 237,
+  "source_failures": 14,
+  "retry_attempts": [
+    {
+      "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5_sierra_2025-08-09/submission.json",
+      "initial_status": 503,
+      "retry_status": 200
+    }
+  ],
+  "failed_source_records": [
+    {
+      "url": "https://andonlabs.com/_app/immutable/nodes/26.zOFxseIK.js",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://taubench.com/assets/index-QtX8yEBE.js",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://www.swe-marathon.org/assets/index-BqKcRchL.js",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/ava-zero_avartha_2026-10-27/submission.json",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-8-live-extended-thinking_google_2026-10-07/submission.json",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-8-live-extended-thinking_google_2026-10-07_banking/submission.json",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-8-live-extended-thinking_google_2026-10-07_entity/submission.json",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1_openai_2026-10-20/submission.json",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1_openai_2026-10-20_banking/submission.json",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1_openai_2026-10-20_entity/submission.json",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-10-20/submission.json",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-10-20_banking/submission.json",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-10-20_entity/submission.json",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/phonic-1_phonic_2026-10-29/submission.json",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+    }
+  ],
+  "tables": [
+    {
+      "id": "apex-agents",
+      "category": "tool-use",
+      "status": "changed",
+      "rows_before": 66,
+      "rows_after": 68,
+      "retrieved_before": "2026-10-29",
+      "retrieved_after": "2026-10-31",
+      "detail": "Mechanically extracted current APEX v1.1 Loop mean-score and Pass@1; Kimi K3.1 Pro max added. Gemini 4 Carbon high overall added.",
+      "sources": [
+        {
+          "url": "https://www.mercor.com/apex/apex-agents-leaderboard/",
+          "status": 200,
+          "final_url": "https://www.mercor.com/apex/apex-agents-leaderboard/",
+          "bytes": 192502,
+          "sha256": "d09ad467cb31a6300d9cebcb67a961cc71a5f62a4c81bd2195793788b68e1503"
+        }
+      ],
+      "table_sha256": "3646f4f318d458b902832602440cc873ad80d11a97fec887312a0430b3b65112",
+      "snapshot_sha256": "751af5e516108cec2ba70f44b30e2cb692a4578d2fa33f73a89a71ce6026997a"
+    },
+    {
+      "id": "apex-agents-corporate-lawyer",
+      "category": "tool-use",
+      "status": "changed",
+      "rows_before": 67,
+      "rows_after": 68,
+      "retrieved_before": "2026-10-30",
+      "retrieved_after": "2026-10-31",
+      "detail": "Mechanically extracted current APEX v1.1 Loop mean-score and Pass@1; Kimi K3.1 Pro max added. Existing Gemini 4 Carbon high domain scores corrected to current source.",
+      "sources": [
+        {
+          "url": "https://www.mercor.com/apex/apex-agents-leaderboard/corporate-lawyer-agent/",
+          "status": 200,
+          "final_url": "https://www.mercor.com/apex/apex-agents-leaderboard/corporate-lawyer-agent/",
+          "bytes": 823455,
+          "sha256": "206a01be7e1dd4b9f4e15efd3e868111355a391bb7b572f4da98e2c84d7a7f79"
+        }
+      ],
+      "table_sha256": "043b890a60cae14191bf2de614ab67c44ebd7af7c90bc2552e764ecd643af158",
+      "snapshot_sha256": "a5fe83be34ff8a05026208900ceebc2e8aa11d63336313fb79f02da24b0722f3"
+    },
+    {
+      "id": "apex-agents-investment-banking",
+      "category": "tool-use",
+      "status": "changed",
+      "rows_before": 67,
+      "rows_after": 68,
+      "retrieved_before": "2026-10-30",
+      "retrieved_after": "2026-10-31",
+      "detail": "Mechanically extracted current APEX v1.1 Loop mean-score and Pass@1; Kimi K3.1 Pro max added. Existing Gemini 4 Carbon high domain scores corrected to current source.",
+      "sources": [
+        {
+          "url": "https://www.mercor.com/apex/apex-agents-leaderboard/investment-banking-analyst-agent/",
+          "status": 200,
+          "final_url": "https://www.mercor.com/apex/apex-agents-leaderboard/investment-banking-analyst-agent/",
+          "bytes": 537809,
+          "sha256": "1bb0cc2894c491c27c3ecfb48191ff109b5036c206988d070c56d35dd2625175"
+        }
+      ],
+      "table_sha256": "a2b323d5d61153d21e63554d2cc210c2a0e8a23dd532f39da4695925f896def8",
+      "snapshot_sha256": "df0319af3ebcd708407c5e4c81ecb7d4ac683d27411ec0023a48e80d41aaf132"
+    },
+    {
+      "id": "apex-agents-management-consultant",
+      "category": "tool-use",
+      "status": "changed",
+      "rows_before": 67,
+      "rows_after": 68,
+      "retrieved_before": "2026-10-30",
+      "retrieved_after": "2026-10-31",
+      "detail": "Mechanically extracted current APEX v1.1 Loop mean-score and Pass@1; Kimi K3.1 Pro max added. Existing Gemini 4 Carbon high domain scores corrected to current source.",
+      "sources": [
+        {
+          "url": "https://www.mercor.com/apex/apex-agents-leaderboard/management-consultant-agent/",
+          "status": 200,
+          "final_url": "https://www.mercor.com/apex/apex-agents-leaderboard/management-consultant-agent/",
+          "bytes": 897074,
+          "sha256": "6992f3296023f5a6ddb00c55453c8e255a5f321f22256c65a0f1b10c86a61743"
+        }
+      ],
+      "table_sha256": "01ed717f5af4988ac67170419e9527763b65701fd03a3fb4976df45c8b2b50c4",
+      "snapshot_sha256": "de77c4bf02c674a7f49649ccacce99f65caa7d5999d95aa438c59e1b55a3522f"
+    },
+    {
+      "id": "appworld-test-challenge",
+      "category": "tool-use",
+      "status": "unchanged",
+      "rows_before": 23,
+      "rows_after": 23,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current authoritative source payload SHA-256 matches previous successful audit; all source content retained.",
+      "sources": [
+        {
+          "url": "https://appworld.dev/appworld/leaderboard.json",
+          "status": 200,
+          "final_url": "https://appworld.dev/appworld/leaderboard.json",
+          "bytes": 41643,
+          "sha256": "5dc72e48e619f483af9035413bccb50e68f63446b6f84371f6e2989e595dc49d"
+        }
+      ],
+      "table_sha256": "dfce57c71cd0d8fcdfe4a0f3216acfef2698b211388f4a20a2e15fa2d0eea122",
+      "snapshot_sha256": "5dc72e48e619f483af9035413bccb50e68f63446b6f84371f6e2989e595dc49d"
+    },
+    {
+      "id": "appworld-test-normal",
+      "category": "tool-use",
+      "status": "unchanged",
+      "rows_before": 23,
+      "rows_after": 23,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current authoritative source payload SHA-256 matches previous successful audit; all source content retained.",
+      "sources": [
+        {
+          "url": "https://appworld.dev/appworld/leaderboard.json",
+          "status": 200,
+          "final_url": "https://appworld.dev/appworld/leaderboard.json",
+          "bytes": 41643,
+          "sha256": "5dc72e48e619f483af9035413bccb50e68f63446b6f84371f6e2989e595dc49d"
+        }
+      ],
+      "table_sha256": "89cddd84f23b1bd11fc19f082b63992dd4c2a1c079f60a6e71f9f1d3be0c4dda",
+      "snapshot_sha256": "5dc72e48e619f483af9035413bccb50e68f63446b6f84371f6e2989e595dc49d"
+    },
+    {
+      "id": "bfcl-v4",
+      "category": "tool-use",
+      "status": "unchanged",
+      "rows_before": 109,
+      "rows_after": 109,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current authoritative source payload SHA-256 matches previous successful audit; all source content retained.",
+      "sources": [
+        {
+          "url": "https://gorilla.cs.berkeley.edu/data_overall.csv",
+          "status": 200,
+          "final_url": "https://gorilla.cs.berkeley.edu/data_overall.csv",
+          "bytes": 33046,
+          "sha256": "ede5081a24bc5ac7f9b3b09a52af6bcfcd35aa0f1709239fed979db77a8159a6"
+        }
+      ],
+      "table_sha256": "efec66d739b9c5c120aaf3b1150c04c59b93c67cc565f56c3e6eeb3210bd7cd4",
+      "snapshot_sha256": "ede5081a24bc5ac7f9b3b09a52af6bcfcd35aa0f1709239fed979db77a8159a6"
+    },
+    {
+      "id": "browsecomp-plus",
+      "category": "research",
+      "status": "changed",
+      "rows_before": 87,
+      "rows_after": 89,
+      "retrieved_before": "2026-10-21",
+      "retrieved_after": "2026-10-31",
+      "detail": "Two official GPT-5 custom RLM scaffold runs, distinct retrievers; variable search k and sub-agent delegation retained verbatim. CSV cross-checked.",
+      "sources": [
+        {
+          "url": "https://tevatron-browsecomp-plus.hf.space/data/leaderboard.json",
+          "status": 200,
+          "final_url": "https://tevatron-browsecomp-plus.hf.space/data/leaderboard.json",
+          "bytes": 52620,
+          "sha256": "4dac741487cfbae1a9115f069e088c87f9f32e645c2eb0f6514767525a38fc13"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Tevatron/BrowseComp-Plus-results/resolve/main/agent_results.csv",
+          "status": 200,
+          "final_url": "https://huggingface.co/api/resolve-cache/datasets/Tevatron/BrowseComp-Plus-results/11cd1768405cf2d505bb27b9f2a1ad68e797c998/agent_results.csv?%2Fdatasets%2FTevatron%2FBrowseComp-Plus-results%2Fresolve%2Fmain%2Fagent_results.csv=&etag=%22cd3d8e81303712f33e5f72602ea816b6f43bf4eb%22",
+          "bytes": 21515,
+          "sha256": "e56843834767d29b9234f4cb17c0ac3eb30335004ba5249e0d28f70037a4b482"
+        }
+      ],
+      "table_sha256": "4ee7517541a8840e751012dfd4cdc27bbdc5de4a28e51cba737495ed546af646",
+      "snapshot_sha256": "06698f8a992c9f5a2a1c8ede09a54c64078c239301c85cdef7fe8690300d7354"
+    },
+    {
+      "id": "cve-bench-one-day",
+      "category": "security",
+      "status": "unchanged",
+      "rows_before": 2,
+      "rows_after": 2,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current authoritative source payload SHA-256 matches previous successful audit; all source content retained.",
+      "sources": [
+        {
+          "url": "https://cvebench.com/index-wf61xq3j.js",
+          "status": 200,
+          "final_url": "https://cvebench.com/index-wf61xq3j.js",
+          "bytes": 3992,
+          "sha256": "3ea79483ba2c9201b5bbcf89e64e39bf774a4b67eb03b5fc305732f00d6a0fc1"
+        }
+      ],
+      "table_sha256": "084a6d5608caeb1ca764af2e26fab3c05e3a8e3c94bf10c86225617222754c08",
+      "snapshot_sha256": "11ab91c1b0762104c0c224cc20b6d7dcd14b1781e46fa42abbe70bfdcf0ccf64"
+    },
+    {
+      "id": "cve-bench-zero-day",
+      "category": "security",
+      "status": "unchanged",
+      "rows_before": 2,
+      "rows_after": 2,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current authoritative source payload SHA-256 matches previous successful audit; all source content retained.",
+      "sources": [
+        {
+          "url": "https://cvebench.com/index-wf61xq3j.js",
+          "status": 200,
+          "final_url": "https://cvebench.com/index-wf61xq3j.js",
+          "bytes": 3992,
+          "sha256": "3ea79483ba2c9201b5bbcf89e64e39bf774a4b67eb03b5fc305732f00d6a0fc1"
+        }
+      ],
+      "table_sha256": "4f8e62381d3c8fa8832fac8811ebba3110c3240bc43b35d0cfb12ca6e6c467d0",
+      "snapshot_sha256": "11ab91c1b0762104c0c224cc20b6d7dcd14b1781e46fa42abbe70bfdcf0ccf64"
+    },
+    {
+      "id": "cybench",
+      "category": "security",
+      "status": "unchanged",
+      "rows_before": 24,
+      "rows_after": 24,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current authoritative source payload SHA-256 matches previous successful audit; all source content retained.",
+      "sources": [
+        {
+          "url": "https://cybench.github.io/data/leaderboard.csv",
+          "status": 200,
+          "final_url": "https://cybench.github.io/data/leaderboard.csv",
+          "bytes": 1179,
+          "sha256": "846bb17951ec9f7c103486d7c0344974decd2d57f1039df26f9e84986704da45"
+        }
+      ],
+      "table_sha256": "f2023c5c272b765a0b98bdf8afca2f56d333facd7c12c3f490f3818622f75d95",
+      "snapshot_sha256": "846bb17951ec9f7c103486d7c0344974decd2d57f1039df26f9e84986704da45"
+    },
+    {
+      "id": "cybergym-agent-focused",
+      "category": "security",
+      "status": "unchanged",
+      "rows_before": 48,
+      "rows_after": 48,
+      "retrieved_before": "2026-10-30",
+      "retrieved_after": "2026-10-30",
+      "detail": "Current authoritative source payload SHA-256 matches previous successful audit; all source content retained.",
+      "sources": [
+        {
+          "url": "https://www.cybergym.io/cybergym/",
+          "status": 200,
+          "final_url": "https://www.cybergym.io/cybergym/",
+          "bytes": 31284,
+          "sha256": "768f35415a1b9f2b792cbf7fd7e51add14c92fd97b550565bff47de1516b496c"
+        },
+        {
+          "url": "https://www.cybergym.io/assets/js/leaderboard.js",
+          "status": 200,
+          "final_url": "https://www.cybergym.io/assets/js/leaderboard.js",
+          "bytes": 41775,
+          "sha256": "7aa2d51c07d2bda8dc8be9910844441aabcfaa03b8b1a9adf1a24e3be45298f2"
+        },
+        {
+          "url": "https://www.cybergym.io/assets/data/cybergym.json",
+          "status": 200,
+          "final_url": "https://www.cybergym.io/assets/data/cybergym.json",
+          "bytes": 40621,
+          "sha256": "c5aa28f57bc31f0c24aee998a8d5da379cfc6060a169dd030c431d58968bfe8d"
+        }
+      ],
+      "table_sha256": "201f4f8e530b55c81b426d7a4cd6e88b943a24c0fe04420f7aa5b0602c814167",
+      "snapshot_sha256": "eb029cf95b77f05fb4a8829ea69ae097795f7dcff2d8afc643491eb54c6dbbbb"
+    },
+    {
+      "id": "cybergym-e2e",
+      "category": "security",
+      "status": "unchanged",
+      "rows_before": 12,
+      "rows_after": 12,
+      "retrieved_before": "2026-10-18",
+      "retrieved_after": "2026-10-18",
+      "detail": "Current authoritative source payload SHA-256 matches previous successful audit; all source content retained.",
+      "sources": [
+        {
+          "url": "https://www.cybergym.io/assets/data/cybergym-e2e.json",
+          "status": 200,
+          "final_url": "https://www.cybergym.io/assets/data/cybergym-e2e.json",
+          "bytes": 4152,
+          "sha256": "05a59f9f5c398bbabeb672164e7f172ecab00294f329a0a24a6a95b2a0951c34"
+        },
+        {
+          "url": "https://www.cybergym.io/cybergym-e2e/",
+          "status": 200,
+          "final_url": "https://www.cybergym.io/cybergym-e2e/",
+          "bytes": 25612,
+          "sha256": "627b31e2a2112f89eec254ba30b2c0cffbb9b83d117faf29ffb6a708059ee8ff"
+        }
+      ],
+      "table_sha256": "293f96e25afb66287769fd8e6b8cd6f1f73aab79674b05f3807d963bba1bdc80",
+      "snapshot_sha256": "05a59f9f5c398bbabeb672164e7f172ecab00294f329a0a24a6a95b2a0951c34"
+    },
+    {
+      "id": "cybergym-model-focused",
+      "category": "security",
+      "status": "unchanged",
+      "rows_before": 47,
+      "rows_after": 47,
+      "retrieved_before": "2026-10-13",
+      "retrieved_after": "2026-10-13",
+      "detail": "Current authoritative source payload SHA-256 matches previous successful audit; all source content retained.",
+      "sources": [
+        {
+          "url": "https://www.cybergym.io/cybergym/",
+          "status": 200,
+          "final_url": "https://www.cybergym.io/cybergym/",
+          "bytes": 31284,
+          "sha256": "768f35415a1b9f2b792cbf7fd7e51add14c92fd97b550565bff47de1516b496c"
+        },
+        {
+          "url": "https://www.cybergym.io/assets/js/leaderboard.js",
+          "status": 200,
+          "final_url": "https://www.cybergym.io/assets/js/leaderboard.js",
+          "bytes": 41775,
+          "sha256": "7aa2d51c07d2bda8dc8be9910844441aabcfaa03b8b1a9adf1a24e3be45298f2"
+        },
+        {
+          "url": "https://www.cybergym.io/assets/data/cybergym.json",
+          "status": 200,
+          "final_url": "https://www.cybergym.io/assets/data/cybergym.json",
+          "bytes": 40621,
+          "sha256": "c5aa28f57bc31f0c24aee998a8d5da379cfc6060a169dd030c431d58968bfe8d"
+        }
+      ],
+      "table_sha256": "5d925c1dbfaa1f1e48739231dfb78e0cdcb4e7849d56052bfc250a1dbeb12d89",
+      "snapshot_sha256": "f43d433c26c20982badce24702ea89789acc2f9eba271ebd68bf15def2a3022e"
+    },
+    {
+      "id": "ecommerce-bench",
+      "category": "long-horizon",
+      "status": "unchanged",
+      "rows_before": 21,
+      "rows_after": 21,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current authoritative source payload SHA-256 matches previous successful audit; all source content retained.",
+      "sources": [
+        {
+          "url": "https://ecbench.github.io/showcase_data.json",
+          "status": 200,
+          "final_url": "https://ecbench.github.io/showcase_data.json",
+          "bytes": 389797,
+          "sha256": "92f5a96c47517afb176efaf87778b720c11ebc4c329663646c55f18b1fbfc33f"
+        }
+      ],
+      "table_sha256": "3382f015b0dfee40ad07bf2141b9d63aff30c901371cbdfeb7149d6148d209e8",
+      "snapshot_sha256": "b4de26fc16469afe5200ec495ffe4879a9dddffe6eef38e7c3483d9b67a61f5b"
+    },
+    {
+      "id": "exploitgym",
+      "category": "security",
+      "status": "unchanged",
+      "rows_before": 27,
+      "rows_after": 27,
+      "retrieved_before": "2026-10-29",
+      "retrieved_after": "2026-10-29",
+      "detail": "Current authoritative source payload SHA-256 matches previous successful audit; all source content retained.",
+      "sources": [
+        {
+          "url": "https://www.cybergym.io/assets/data/exploitgym.json",
+          "status": 200,
+          "final_url": "https://www.cybergym.io/assets/data/exploitgym.json",
+          "bytes": 14346,
+          "sha256": "bf8c380c061ce86b5a215f743994ad82c32829271d8f47c8054e8f8b6ecb4326"
+        },
+        {
+          "url": "https://www.cybergym.io/exploitgym/",
+          "status": 200,
+          "final_url": "https://www.cybergym.io/exploitgym/",
+          "bytes": 33053,
+          "sha256": "28362c8becf5b9e630303688aa1bf2786c9db64ef51b47166cc0ccd526a12763"
+        }
+      ],
+      "table_sha256": "d3a8eea04c3983f6b3551f44796bf088b673dc9d51cc7c886447fb164cccdc0a",
+      "snapshot_sha256": "bf8c380c061ce86b5a215f743994ad82c32829271d8f47c8054e8f8b6ecb4326"
+    },
+    {
+      "id": "gaia",
+      "category": "general",
+      "status": "changed",
+      "rows_before": 100,
+      "rows_after": 100,
+      "retrieved_before": "2026-10-30",
+      "retrieved_after": "2026-10-31",
+      "detail": "Official top100 adds OmniSeek_Preview_v1.1 combination Qwen3.8 Max, GPT-5.5, Gemini3.7 Flash; model_ids intentionally empty, no single-model attribution. Top100 reselection omits prior Harness V8 row; not evidence of withdrawal or performance decline.",
+      "sources": [
+        {
+          "url": "https://gaia-benchmark-leaderboard.hf.space/gradio_api/call/refresh",
+          "status": 200,
+          "final_url": "https://gaia-benchmark-leaderboard.hf.space/gradio_api/call/refresh",
+          "bytes": 47,
+          "sha256": "d752febf6ac6647f5cac3b809bf3b8ba98423b111a4cc9465cdc2ce418e1d0f4"
+        },
+        {
+          "url": "https://gaia-benchmark-leaderboard.hf.space/gradio_api/call/refresh/c5f28f1cc14d479fb6a0ce14440e02f0",
+          "status": 200,
+          "final_url": "https://gaia-benchmark-leaderboard.hf.space/gradio_api/call/refresh/c5f28f1cc14d479fb6a0ce14440e02f0",
+          "bytes": 23155,
+          "sha256": "895168b9a6ae117c47453a9135473c6c4c4b74782c15ee2193d650ecbbc58dfb"
+        }
+      ],
+      "table_sha256": "ad4a2c40ea259511a3d3cef14c9bd553162299a12bbd074b0b87293834ba0268",
+      "snapshot_sha256": "6f3429016b7f2491ccfd125dfbf26fd83407eca9cfb2f3ff1c9b11d606a3a17f"
+    },
+    {
+      "id": "gaia2",
+      "category": "general",
+      "status": "unchanged",
+      "rows_before": 16,
+      "rows_after": 16,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Fresh Gradio refresh_legacy headers/data match saved dataframe exactly.",
+      "sources": [
+        {
+          "url": "https://meta-agents-research-environments-leaderboard.hf.space/gradio_api/call/refresh_legacy",
+          "status": 200,
+          "final_url": "https://meta-agents-research-environments-leaderboard.hf.space/gradio_api/call/refresh_legacy",
+          "bytes": 47,
+          "sha256": "9456342d7c993e1f28cc73a245aab025fc10fee1572c443b0dec94978415fee2"
+        },
+        {
+          "url": "https://meta-agents-research-environments-leaderboard.hf.space/gradio_api/call/refresh_legacy/e05a92ba38f7476ebdea8f0a1b0db245",
+          "status": 200,
+          "final_url": "https://meta-agents-research-environments-leaderboard.hf.space/gradio_api/call/refresh_legacy/e05a92ba38f7476ebdea8f0a1b0db245",
+          "bytes": 1767,
+          "sha256": "3020957577cef9daf1b9a5ec8bb00ea9f54ed1d3259317816b1e206ce46d67ae"
+        }
+      ],
+      "table_sha256": "b53fb49a7bf1dfeeb7abdba39a8c365f80b610295d61a0a08396a960043e9891",
+      "snapshot_sha256": "d979294f9d0cad4760e49bbb3dde0cc8da6d657ff2f290699262a4d68270a71c"
+    },
+    {
+      "id": "gaia2-cli",
+      "category": "general",
+      "status": "unchanged",
+      "rows_before": 7,
+      "rows_after": 7,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current authoritative source payload SHA-256 matches previous successful audit; all source content retained.",
+      "sources": [
+        {
+          "url": "https://huggingface.co/spaces/meta-agents-research-environments/leaderboard/raw/main/app.py",
+          "status": 200,
+          "final_url": "https://huggingface.co/spaces/meta-agents-research-environments/leaderboard/raw/main/app.py",
+          "bytes": 21000,
+          "sha256": "c7e686b548945dc8bf0556dccf39f3a9d3e1cd5cfec7b71432efaab7227b6c3a"
+        }
+      ],
+      "table_sha256": "eccb1aaa615a24d654f781291d7e3f9ce5d092ba36a2bd48721c5c6ae41cf980",
+      "snapshot_sha256": "682849a2fdf1798d16617f2d0c8531d814b33382d10e338b95622a437147bc86"
+    },
+    {
+      "id": "hal-core-bench-hard",
+      "category": "research",
+      "status": "unchanged",
+      "rows_before": 49,
+      "rows_after": 49,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current authoritative source payload SHA-256 matches previous successful audit; all source content retained.",
+      "sources": [
+        {
+          "url": "https://hal.cs.princeton.edu/corebench_hard",
+          "status": 200,
+          "final_url": "https://hal.cs.princeton.edu/corebench_hard",
+          "bytes": 358438,
+          "sha256": "f46a6d73ead02529444c35c3f1d67898d4c88e799f8d8f6d9a47c99cfe527997"
+        }
+      ],
+      "table_sha256": "4aa84cb8a0314c7cfc551cbf5d3093d16441dffd83732e0290eb2e134c94e040",
+      "snapshot_sha256": "158c725b5628663215ce87d850afc65c590664569953e8a862af5b88f26a462a"
+    },
+    {
+      "id": "hal-gaia",
+      "category": "general",
+      "status": "unchanged",
+      "rows_before": 32,
+      "rows_after": 32,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current authoritative source payload SHA-256 matches previous successful audit; all source content retained.",
+      "sources": [
+        {
+          "url": "https://hal.cs.princeton.edu/gaia",
+          "status": 200,
+          "final_url": "https://hal.cs.princeton.edu/gaia",
+          "bytes": 357292,
+          "sha256": "916379d9022e7a8fd4abd8615c81c2fc958305e98f7764c913f63bf787e4138b"
+        }
+      ],
+      "table_sha256": "942fb6ee33b3d3265e82c4708f50ae54ab31e27ba3c731594375bbc7cc41d02a",
+      "snapshot_sha256": "f9497d5350637a02469f9885a69438f3be86fa638d1971b4699e00c33b75364c"
+    },
+    {
+      "id": "hal-scicode",
+      "category": "research",
+      "status": "unchanged",
+      "rows_before": 33,
+      "rows_after": 33,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current authoritative source payload SHA-256 matches previous successful audit; all source content retained.",
+      "sources": [
+        {
+          "url": "https://hal.cs.princeton.edu/scicode",
+          "status": 200,
+          "final_url": "https://hal.cs.princeton.edu/scicode",
+          "bytes": 292216,
+          "sha256": "50d72f921462a52888d012144c2a88e300720e1100ab6611bf7e146593d62a10"
+        }
+      ],
+      "table_sha256": "0b2273259db7faab4d0c533153a8f9b926322ce3dafba3ce7f461924446912f9",
+      "snapshot_sha256": "06f6fc28a3c103ab7997d8e1722ccee1ce134bf8657106fdd1ad6c32e9fcb22a"
+    },
+    {
+      "id": "hal-scienceagentbench",
+      "category": "research",
+      "status": "unchanged",
+      "rows_before": 23,
+      "rows_after": 23,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current authoritative source payload SHA-256 matches previous successful audit; all source content retained.",
+      "sources": [
+        {
+          "url": "https://hal.cs.princeton.edu/scienceagentbench",
+          "status": 200,
+          "final_url": "https://hal.cs.princeton.edu/scienceagentbench",
+          "bytes": 196981,
+          "sha256": "f576d5df56b23cf57da42bf848d55d8da5cbab1ba52e973aed033f646b6f26f9"
+        }
+      ],
+      "table_sha256": "6c60b2022c25ffcd708182609c25ec6d10e1ab8077d7c731cee62c6492624f1c",
+      "snapshot_sha256": "a3c629b6d214900921646bd0e6d30c90489cb6a6ab9a3cb9eb8c1e8370c16af0"
+    },
+    {
+      "id": "hal-tau-bench-airline",
+      "category": "tool-use",
+      "status": "unchanged",
+      "rows_before": 26,
+      "rows_after": 26,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current authoritative source payload SHA-256 matches previous successful audit; all source content retained.",
+      "sources": [
+        {
+          "url": "https://hal.cs.princeton.edu/taubench_airline",
+          "status": 200,
+          "final_url": "https://hal.cs.princeton.edu/taubench_airline",
+          "bytes": 253939,
+          "sha256": "83631f306f1fd6c85a6c0f7dcb53f9dec3915f6b6a323fc1dd46a9887209cc41"
+        }
+      ],
+      "table_sha256": "cb203145cc0d8f5b44a20ff9574ed835360fb8c5d9801174b53e825e231fc69c",
+      "snapshot_sha256": "702a0e2470e8134f36d82e365272243f439c088aa57c6edafacae1544de792a5"
+    },
+    {
+      "id": "mcp-atlas",
+      "category": "tool-use",
+      "status": "unchanged",
+      "rows_before": 34,
+      "rows_after": 34,
+      "retrieved_before": "2026-10-09",
+      "retrieved_after": "2026-10-09",
+      "detail": "Current RSC leaderboard entries and per-service data semantically identical; volatile page wrapper ignored.",
+      "sources": [
+        {
+          "url": "https://labs.scale.com/leaderboard/mcp_atlas",
+          "status": 200,
+          "final_url": "https://labs.scale.com/leaderboard/mcp_atlas",
+          "bytes": 204942,
+          "sha256": "96a17fe9aab76a4edc034d88a3abf60fef403724ebe59ab80fbec7756cbfc9cc"
+        }
+      ],
+      "table_sha256": "8ee3945b9db6b3f3a78f7f5b2af272688abee8455932e08639d7421ac65f1547",
+      "snapshot_sha256": "8b36a1fd17ae5875979ae9597e58bacfbdde96194b9fdefc8ce12490fbe06737"
+    },
+    {
+      "id": "mcp-bench",
+      "category": "tool-use",
+      "status": "unchanged",
+      "rows_before": 20,
+      "rows_after": 20,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current authoritative source payload SHA-256 matches previous successful audit; all source content retained.",
+      "sources": [
+        {
+          "url": "https://mcpbench-mcp-bench.static.hf.space/script.js",
+          "status": 200,
+          "final_url": "https://mcpbench-mcp-bench.static.hf.space/script.js",
+          "bytes": 21490,
+          "sha256": "47abf1e3f5cfe7e9a43d6b5c9ba244a04005834b98d8afdb74eb000b32b9b342"
+        }
+      ],
+      "table_sha256": "85ec9a49d21913f2be2c98339bef0296f2832bf30065f67597700d72c50aef72",
+      "snapshot_sha256": "755d6f1807359278268a0ebf5a83117e9fcc5284aa8096801255459c695b593c"
+    },
+    {
+      "id": "mcp-universe-agent",
+      "category": "tool-use",
+      "status": "unchanged",
+      "rows_before": 8,
+      "rows_after": 8,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current authoritative source payload SHA-256 matches previous successful audit; all source content retained.",
+      "sources": [
+        {
+          "url": "https://mcp-universe.github.io/",
+          "status": 200,
+          "final_url": "https://mcp-universe.github.io/",
+          "bytes": 119803,
+          "sha256": "59e44ce99072a91080fc5c0ebe9e9bbecfac1783d50b863568404ae919a3cff0"
+        }
+      ],
+      "table_sha256": "9d47a0871cc3a2a967d6b3f99f3bce6d2c19aedc57159ca008a18bfd18a02ca6",
+      "snapshot_sha256": "7031d9286e070d17d31315c4e4aff0ecab04ffdbbf2947753846ff18c378c569"
+    },
+    {
+      "id": "mcp-universe-fc",
+      "category": "tool-use",
+      "status": "unchanged",
+      "rows_before": 21,
+      "rows_after": 21,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current authoritative source payload SHA-256 matches previous successful audit; all source content retained.",
+      "sources": [
+        {
+          "url": "https://mcp-universe.github.io/",
+          "status": 200,
+          "final_url": "https://mcp-universe.github.io/",
+          "bytes": 119803,
+          "sha256": "59e44ce99072a91080fc5c0ebe9e9bbecfac1783d50b863568404ae919a3cff0"
+        }
+      ],
+      "table_sha256": "51cade9a0acdb83636dea37b82cdc40bc2a690f92e3ac81a091a25ca27fe6663",
+      "snapshot_sha256": "a030b5dd3cea9ea6a209d7d9a8bc481680328a751be27a81e6ff7e7c919cbc29"
+    },
+    {
+      "id": "mcp-universe-react",
+      "category": "tool-use",
+      "status": "unchanged",
+      "rows_before": 28,
+      "rows_after": 28,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current authoritative source payload SHA-256 matches previous successful audit; all source content retained.",
+      "sources": [
+        {
+          "url": "https://mcp-universe.github.io/",
+          "status": 200,
+          "final_url": "https://mcp-universe.github.io/",
+          "bytes": 119803,
+          "sha256": "59e44ce99072a91080fc5c0ebe9e9bbecfac1783d50b863568404ae919a3cff0"
+        }
+      ],
+      "table_sha256": "9c5ff0886c1d5e8684faf4fd09fdbb079712f9a431e434a1d6234995e235c974",
+      "snapshot_sha256": "635bed5955df6c147d91479686f3cacca788f7e6e0666fac2157d7c5d052d0bd"
+    },
+    {
+      "id": "mcpmark-legacy",
+      "category": "tool-use",
+      "status": "unchanged",
+      "rows_before": 39,
+      "rows_after": 39,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current RSC leaderboard entries and per-service data semantically identical; volatile page wrapper ignored.",
+      "sources": [
+        {
+          "url": "https://mcpmark.ai/leaderboard",
+          "status": 200,
+          "final_url": "https://mcpmark.ai/leaderboard",
+          "bytes": 2436751,
+          "sha256": "32af4fcbce4eebf0961a53f9b76bf0f1bee043be352dc3666f95989542a01d9d"
+        }
+      ],
+      "table_sha256": "78d13279d639763aef0fcdac30e8daa1355ce69d6793d349f71d59f56ad2b341",
+      "snapshot_sha256": "1bfedb17704527f49ac569e2ec1b9fb2a019e1f74a7006bc97133e8d215641c3"
+    },
+    {
+      "id": "mcpmark-verified",
+      "category": "tool-use",
+      "status": "unchanged",
+      "rows_before": 8,
+      "rows_after": 8,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current RSC leaderboard entries and per-service data semantically identical; volatile page wrapper ignored.",
+      "sources": [
+        {
+          "url": "https://mcpmark.ai/leaderboard/verified",
+          "status": 200,
+          "final_url": "https://mcpmark.ai/leaderboard/verified",
+          "bytes": 1322964,
+          "sha256": "d5099e495e0b846dea6a0853016495f14ca688b5e933cba9a9b2dfcf77efef3d"
+        }
+      ],
+      "table_sha256": "ff0b38706791c74071364c37bb5ac5a0563fa1f78d346fdfe3486393b9009556",
+      "snapshot_sha256": "5e7d384a2493cb76f5cd85b7227182b41c4d1c177b11a348d8dd41cc9861197a"
+    },
+    {
+      "id": "metr-time-horizon",
+      "category": "long-horizon",
+      "status": "unchanged",
+      "rows_before": 26,
+      "rows_after": 26,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current authoritative source payload SHA-256 matches previous successful audit; all source content retained.",
+      "sources": [
+        {
+          "url": "https://metr.org/assets/benchmark_results_1_1.yaml",
+          "status": 200,
+          "final_url": "https://metr.org/assets/benchmark_results_1_1.yaml",
+          "bytes": 16255,
+          "sha256": "aae31902b0519a4da73e16643915e5e8aca13cd3315c3aac893ce3d6dfe92ad9"
+        }
+      ],
+      "table_sha256": "ecc3f2754ac9bb0634ea056d8f3567f0db9114c87e80e38239139a3133731109",
+      "snapshot_sha256": "aae31902b0519a4da73e16643915e5e8aca13cd3315c3aac893ce3d6dfe92ad9"
+    },
+    {
+      "id": "metr-time-horizon-1.0",
+      "category": "long-horizon",
+      "status": "unchanged",
+      "rows_before": 33,
+      "rows_after": 33,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current authoritative source payload SHA-256 matches previous successful audit; all source content retained.",
+      "sources": [
+        {
+          "url": "https://metr.org/assets/benchmark_results_1_0.yaml",
+          "status": 200,
+          "final_url": "https://metr.org/assets/benchmark_results_1_0.yaml",
+          "bytes": 14328,
+          "sha256": "f15fd2f13cd8d28f06f5430fabf21dcd1284193ec152bdedc34e11dcc525df66"
+        }
+      ],
+      "table_sha256": "89da565bce7af75f3c5d9e8db62f8471c4acbb03dbdcc57c4c8a2b77ef23e5bd",
+      "snapshot_sha256": "f15fd2f13cd8d28f06f5430fabf21dcd1284193ec152bdedc34e11dcc525df66"
+    },
+    {
+      "id": "mind2web-2",
+      "category": "research",
+      "status": "unchanged",
+      "rows_before": 13,
+      "rows_after": 13,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current authoritative source payload SHA-256 matches previous successful audit; all source content retained.",
+      "sources": [
+        {
+          "url": "https://osu-nlp-group.github.io/Mind2Web-2/leaderboard_data.json",
+          "status": 200,
+          "final_url": "https://osu-nlp-group.github.io/Mind2Web-2/leaderboard_data.json",
+          "bytes": 7783,
+          "sha256": "ed954c3b30c7e32c26eb58d7a6612b21537db82fa6c51462455937036cb08702"
+        }
+      ],
+      "table_sha256": "a004ba2cd70e60dce001f8a743609e21a88ca9129d23100061a456fedcb103c2",
+      "snapshot_sha256": "2f3370afc3b20e7f0c1964cc915f433561258ba3588525412bc6f89d45507504"
+    },
+    {
+      "id": "mle-bench",
+      "category": "research",
+      "status": "unchanged",
+      "rows_before": 28,
+      "rows_after": 28,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current authoritative source payload SHA-256 matches previous successful audit; all source content retained.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/openai/mle-bench/main/README.md",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/openai/mle-bench/main/README.md",
+          "bytes": 20988,
+          "sha256": "586bbc19cb2a3e11be61021866ef6436cf4b4d935bb1db088984b567b76595bb"
+        }
+      ],
+      "table_sha256": "3ed88862abe4dfad72cb888ec2c74b2523c10b561fa2008c265a1e06b57d31a7",
+      "snapshot_sha256": "586bbc19cb2a3e11be61021866ef6436cf4b4d935bb1db088984b567b76595bb"
+    },
+    {
+      "id": "mle-bench-additional",
+      "category": "research",
+      "status": "unchanged",
+      "rows_before": 2,
+      "rows_after": 2,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current authoritative source payload SHA-256 matches previous successful audit; all source content retained.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/openai/mle-bench/main/README.md",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/openai/mle-bench/main/README.md",
+          "bytes": 20988,
+          "sha256": "586bbc19cb2a3e11be61021866ef6436cf4b4d935bb1db088984b567b76595bb"
+        }
+      ],
+      "table_sha256": "7bca65fb6962d03e10334ca56f26a8c3a21d92d832b2db908538246e29b0e7a3",
+      "snapshot_sha256": "586bbc19cb2a3e11be61021866ef6436cf4b4d935bb1db088984b567b76595bb"
+    },
+    {
+      "id": "paperbench",
+      "category": "research",
+      "status": "unchanged",
+      "rows_before": 10,
+      "rows_after": 10,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current authoritative source payload SHA-256 matches previous successful audit; all source content retained.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/openai/preparedness/main/project/paperbench/README.md",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/openai/preparedness/main/project/paperbench/README.md",
+          "bytes": 20104,
+          "sha256": "b50041ce9329b4a5a779c7114b8c21f6eab93cae91d309f5924f6ebe06f470cb"
+        }
+      ],
+      "table_sha256": "7578b78e72ec726447227fb155a03cc855c6653431bc333a8d209a28b24bef8b",
+      "snapshot_sha256": "b50041ce9329b4a5a779c7114b8c21f6eab93cae91d309f5924f6ebe06f470cb"
+    },
+    {
+      "id": "paperbench-code-dev",
+      "category": "research",
+      "status": "unchanged",
+      "rows_before": 1,
+      "rows_after": 1,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current authoritative source payload SHA-256 matches previous successful audit; all source content retained.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/openai/preparedness/main/project/paperbench/README.md",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/openai/preparedness/main/project/paperbench/README.md",
+          "bytes": 20104,
+          "sha256": "b50041ce9329b4a5a779c7114b8c21f6eab93cae91d309f5924f6ebe06f470cb"
+        }
+      ],
+      "table_sha256": "6c6f499ba25caaafc260e46c4036c19691ca1e5da921a2072e286bdf605830b1",
+      "snapshot_sha256": "b50041ce9329b4a5a779c7114b8c21f6eab93cae91d309f5924f6ebe06f470cb"
+    },
+    {
+      "id": "sec-bench-poc-generation",
+      "category": "security",
+      "status": "unchanged",
+      "rows_before": 3,
+      "rows_after": 3,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current authoritative source payload SHA-256 matches previous successful audit; all source content retained.",
+      "sources": [
+        {
+          "url": "https://sec-bench.github.io/",
+          "status": 200,
+          "final_url": "https://sec-bench.github.io/",
+          "bytes": 219225,
+          "sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5"
+        }
+      ],
+      "table_sha256": "8d470e8ee25bd76a1e9cc18a610ca54383bf5b62e398ae013765baeb91cc241b",
+      "snapshot_sha256": "dfad75302168ae0f56a92abf31724b200954bbe8c2749e29cc5fe30a50ab0fd4"
+    },
+    {
+      "id": "sec-bench-pro-firefox",
+      "category": "security",
+      "status": "unchanged",
+      "rows_before": 6,
+      "rows_after": 6,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current authoritative source payload SHA-256 matches previous successful audit; all source content retained.",
+      "sources": [
+        {
+          "url": "https://sec-bench.github.io/",
+          "status": 200,
+          "final_url": "https://sec-bench.github.io/",
+          "bytes": 219225,
+          "sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5"
+        }
+      ],
+      "table_sha256": "503db61d1e71c92520d787d077a54e7fe3c1e460d586acee18494ec32f348e20",
+      "snapshot_sha256": "b6ea0cd5c55c8dce9e92d7b1d0775e6f2348946e57a85453c4da8415634a091b"
+    },
+    {
+      "id": "sec-bench-pro-linux",
+      "category": "security",
+      "status": "unchanged",
+      "rows_before": 6,
+      "rows_after": 6,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current authoritative source payload SHA-256 matches previous successful audit; all source content retained.",
+      "sources": [
+        {
+          "url": "https://sec-bench.github.io/",
+          "status": 200,
+          "final_url": "https://sec-bench.github.io/",
+          "bytes": 219225,
+          "sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5"
+        }
+      ],
+      "table_sha256": "98f72a4424733767caedf5a07f35cf71109ff1e8d64def2b3f36574d65b10fc3",
+      "snapshot_sha256": "ba74fded0bbac0c9787540f25b8e3b9049ea03aec783dee44f7203c70c76c70a"
+    },
+    {
+      "id": "sec-bench-pro-overall",
+      "category": "security",
+      "status": "unchanged",
+      "rows_before": 6,
+      "rows_after": 6,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current authoritative source payload SHA-256 matches previous successful audit; all source content retained.",
+      "sources": [
+        {
+          "url": "https://sec-bench.github.io/",
+          "status": 200,
+          "final_url": "https://sec-bench.github.io/",
+          "bytes": 219225,
+          "sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5"
+        }
+      ],
+      "table_sha256": "60c698493cb7c2a9b11f4aad78edd35af54438019cf766c98fb0de7d5277cca1",
+      "snapshot_sha256": "c6dc359c547b526dd924cbce7f8fe9d50f8a12144f37ab40072949e6a619b035"
+    },
+    {
+      "id": "sec-bench-pro-v8",
+      "category": "security",
+      "status": "unchanged",
+      "rows_before": 6,
+      "rows_after": 6,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current authoritative source payload SHA-256 matches previous successful audit; all source content retained.",
+      "sources": [
+        {
+          "url": "https://sec-bench.github.io/",
+          "status": 200,
+          "final_url": "https://sec-bench.github.io/",
+          "bytes": 219225,
+          "sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5"
+        }
+      ],
+      "table_sha256": "54521649a634dade8d508896404c15f37cff49e6df95f3134da0040b19b73332",
+      "snapshot_sha256": "312106428ac7308e21d496db029efa9601eef48c99ba25388985616fb6beff08"
+    },
+    {
+      "id": "sec-bench-vulnerability-patching",
+      "category": "security",
+      "status": "unchanged",
+      "rows_before": 5,
+      "rows_after": 5,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current authoritative source payload SHA-256 matches previous successful audit; all source content retained.",
+      "sources": [
+        {
+          "url": "https://sec-bench.github.io/",
+          "status": 200,
+          "final_url": "https://sec-bench.github.io/",
+          "bytes": 219225,
+          "sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5"
+        }
+      ],
+      "table_sha256": "dca885cc0ed86981a415dfbac9febf3f425cb502a2508033eecc9cefc36a9e66",
+      "snapshot_sha256": "175afb4cfbc17758d115624aa7f3ca770fc67747a20d0a4f5a1abf32cd934b3c"
+    },
+    {
+      "id": "skillsbench",
+      "category": "general",
+      "status": "unchanged",
+      "rows_before": 25,
+      "rows_after": 25,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current authoritative source payload SHA-256 matches previous successful audit; all source content retained.",
+      "sources": [
+        {
+          "url": "https://www.skillsbench.ai/_next/static/chunks/8e836c7a01322d0f.js",
+          "status": 200,
+          "final_url": "https://www.skillsbench.ai/_next/static/chunks/8e836c7a01322d0f.js",
+          "bytes": 12722,
+          "sha256": "d072e7b4adb2cb9d886fe9f5cde99cc573ae7d4bbaeede4d2a013a72d71b9ac3"
+        }
+      ],
+      "table_sha256": "b5332a540e16175734c53811e917d1c47bd7b27b1b5f997a490f51764f1c0fad",
+      "snapshot_sha256": "12779b8ccfc160fcf29514f2d4dbca2c3844a4a2c42fad835b8b12b94c346d09"
+    },
+    {
+      "id": "swe-marathon-v1-0",
+      "category": "long-horizon",
+      "status": "unchanged",
+      "rows_before": 16,
+      "rows_after": 16,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current authoritative source payload SHA-256 matches previous successful audit; all source content retained.",
+      "sources": [
+        {
+          "url": "https://www.swe-marathon.org/",
+          "status": 200,
+          "final_url": "https://www.swe-marathon.org/",
+          "bytes": 4714,
+          "sha256": "06afed88bf43bfa6520745b41b55fca5fe751dbca8d79299aecb35478d2d2db1"
+        },
+        {
+          "url": "https://www.swe-marathon.org/assets/index-Dsh1_CSb.js",
+          "status": 200,
+          "final_url": "https://www.swe-marathon.org/assets/index-Dsh1_CSb.js",
+          "bytes": 5897498,
+          "sha256": "f7b28e0cceedb6621c8825ef2abacad3548fec13b3c4bca3818e518b93bf2f5f"
+        }
+      ],
+      "table_sha256": "95582f3d24adfbae261bfc42fd21fe23e0e1528599198ad2b90e0a9e90ed78d2",
+      "snapshot_sha256": "20e05de9291b96039d2b66bbf4700e817ae79d995fde3a8dd501ee15569ce839"
+    },
+    {
+      "id": "swe-marathon-v1-1",
+      "category": "long-horizon",
+      "status": "unchanged",
+      "rows_before": 17,
+      "rows_after": 17,
+      "retrieved_before": "2026-10-21",
+      "retrieved_after": "2026-10-21",
+      "detail": "Current authoritative source payload SHA-256 matches previous successful audit; all source content retained.",
+      "sources": [
+        {
+          "url": "https://www.swe-marathon.org/",
+          "status": 200,
+          "final_url": "https://www.swe-marathon.org/",
+          "bytes": 4714,
+          "sha256": "06afed88bf43bfa6520745b41b55fca5fe751dbca8d79299aecb35478d2d2db1"
+        },
+        {
+          "url": "https://www.swe-marathon.org/assets/index-Dsh1_CSb.js",
+          "status": 200,
+          "final_url": "https://www.swe-marathon.org/assets/index-Dsh1_CSb.js",
+          "bytes": 5897498,
+          "sha256": "f7b28e0cceedb6621c8825ef2abacad3548fec13b3c4bca3818e518b93bf2f5f"
+        }
+      ],
+      "table_sha256": "b4e8f580a9dc6706dd49a2aec9d7b2064cad7625eaf31294c76f30a6f5c51c9b",
+      "snapshot_sha256": "4735d48bd601e328525e884e8e9db6a1f4dd73de829ccebd533274fbfdd7c298"
+    },
+    {
+      "id": "tau2-bench",
+      "category": "tool-use",
+      "status": "unchanged",
+      "rows_before": 8,
+      "rows_after": 8,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current relevant manifest cohort and every selected submission match saved benchmark fields; unrelated manifest cohorts do not alter this table. Pine Voice 1.0 has no banking results.",
+      "sources": [
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "bytes": 3812,
+          "sha256": "9baaaf615efc04442fc385c651cb3fa0b87d5cb930eda001670d63e173e37b48"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3.5-397b-a17b-think_sierra_2026-03-02/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3.5-397b-a17b-think_sierra_2026-03-02/submission.json",
+          "bytes": 2349,
+          "sha256": "2cfb2c7d2a46e9f22154fa153dcdf155d50dbd5bf86233ecf564eccca1e5913e"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-5_sierra_2026-02-26/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-5_sierra_2026-02-26/submission.json",
+          "bytes": 2404,
+          "sha256": "9c3b8b400e21d370cea27caec3643bfe6fd8385be9ed5135b585d0b976b6e34f"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2_sierra_2026-02-26/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2_sierra_2026-02-26/submission.json",
+          "bytes": 2353,
+          "sha256": "343687b822edbcbff42a4d4632ecc6288a58d9817a7a02c8533081c5709c0ac6"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-flash_sierra_2026-03-02/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-flash_sierra_2026-03-02/submission.json",
+          "bytes": 2337,
+          "sha256": "d1b7d1fc5d789662fb6eeb4a5ec01948295db397d2313df42c43c7fd8caf3637"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_sierra_2026-03-02/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_sierra_2026-03-02/submission.json",
+          "bytes": 2321,
+          "sha256": "f5c7b2d432d4efc6d6c1533f87e61ae1673336579df9f5f5cf986c277f0afd18"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/glm-5-think_sierra_2026-03-02/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/glm-5-think_sierra_2026-03-02/submission.json",
+          "bytes": 2175,
+          "sha256": "fa27b9a1a7a4c8b15517ec1329ef21fcc700be2ca12f21659b60aeda99c7de8f"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_sierra_2026-02-26/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_sierra_2026-02-26/submission.json",
+          "bytes": 2351,
+          "sha256": "e5ce9f12ab9e616db52e973e90b48144b7bafd29e35c4fd6c3e7fde573a9b8d8"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2-none_sierra_2026-02-26/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2-none_sierra_2026-02-26/submission.json",
+          "bytes": 2374,
+          "sha256": "e1be4bac436e8115f9253697d68b71867f17cfcb2bef5dfa6a756c0a89a70dab"
+        }
+      ],
+      "table_sha256": "a8f598bc5bde42194e03aeb4e04be5d7dafc51599395873ad9d7f1578b179046",
+      "snapshot_sha256": "e5ba65dedd6c6f72d7427d19cd8154d84cfff8f1779370af875d20be5c614dba"
+    },
+    {
+      "id": "tau2-bench-airline",
+      "category": "tool-use",
+      "status": "unchanged",
+      "rows_before": 8,
+      "rows_after": 8,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current relevant manifest cohort and every selected submission match saved benchmark fields; unrelated manifest cohorts do not alter this table. Pine Voice 1.0 has no banking results.",
+      "sources": [
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "bytes": 3812,
+          "sha256": "9baaaf615efc04442fc385c651cb3fa0b87d5cb930eda001670d63e173e37b48"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-5_sierra_2026-02-26/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-5_sierra_2026-02-26/submission.json",
+          "bytes": 2404,
+          "sha256": "9c3b8b400e21d370cea27caec3643bfe6fd8385be9ed5135b585d0b976b6e34f"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2_sierra_2026-02-26/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2_sierra_2026-02-26/submission.json",
+          "bytes": 2353,
+          "sha256": "343687b822edbcbff42a4d4632ecc6288a58d9817a7a02c8533081c5709c0ac6"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/glm-5-think_sierra_2026-03-02/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/glm-5-think_sierra_2026-03-02/submission.json",
+          "bytes": 2175,
+          "sha256": "fa27b9a1a7a4c8b15517ec1329ef21fcc700be2ca12f21659b60aeda99c7de8f"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-flash_sierra_2026-03-02/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-flash_sierra_2026-03-02/submission.json",
+          "bytes": 2337,
+          "sha256": "d1b7d1fc5d789662fb6eeb4a5ec01948295db397d2313df42c43c7fd8caf3637"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3.5-397b-a17b-think_sierra_2026-03-02/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3.5-397b-a17b-think_sierra_2026-03-02/submission.json",
+          "bytes": 2349,
+          "sha256": "2cfb2c7d2a46e9f22154fa153dcdf155d50dbd5bf86233ecf564eccca1e5913e"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_sierra_2026-03-02/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_sierra_2026-03-02/submission.json",
+          "bytes": 2321,
+          "sha256": "f5c7b2d432d4efc6d6c1533f87e61ae1673336579df9f5f5cf986c277f0afd18"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_sierra_2026-02-26/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_sierra_2026-02-26/submission.json",
+          "bytes": 2351,
+          "sha256": "e5ce9f12ab9e616db52e973e90b48144b7bafd29e35c4fd6c3e7fde573a9b8d8"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2-none_sierra_2026-02-26/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2-none_sierra_2026-02-26/submission.json",
+          "bytes": 2374,
+          "sha256": "e1be4bac436e8115f9253697d68b71867f17cfcb2bef5dfa6a756c0a89a70dab"
+        }
+      ],
+      "table_sha256": "8385449998b5a7ad386ec51faa18a613ff2d52c05cce7feda1faba2edda11a59",
+      "snapshot_sha256": "a661caa90aebc29e37b97d71c61af011bb2c313994d520e0263acc5cd0dde510"
+    },
+    {
+      "id": "tau2-bench-legacy",
+      "category": "tool-use",
+      "status": "unchanged",
+      "rows_before": 12,
+      "rows_after": 12,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current relevant manifest cohort and every selected submission match saved benchmark fields; unrelated manifest cohorts do not alter this table. Pine Voice 1.0 has no banking results.",
+      "sources": [
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "bytes": 3812,
+          "sha256": "9baaaf615efc04442fc385c651cb3fa0b87d5cb930eda001670d63e173e37b48"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_google_2025-11-18/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_google_2025-11-18/submission.json",
+          "bytes": 1651,
+          "sha256": "27134a3b100a87e0780f08fda0475f4ffe0ef247bc41484ad48cc9798ffbe796"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_anthropic_2025-10-02/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_anthropic_2025-10-02/submission.json",
+          "bytes": 1753,
+          "sha256": "20e3ef4c1c495dbf3ec155ffa4899d6478b75deccf16862d886def20a79dda11"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2026-01-23/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2026-01-23/submission.json",
+          "bytes": 1581,
+          "sha256": "eb480b51b464175389262778510061ed96bf8f4e6ae2b05eb80d3d2455473b5a"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/deepseek-v3.2_deepseek_2025-12-01/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/deepseek-v3.2_deepseek_2025-12-01/submission.json",
+          "bytes": 1498,
+          "sha256": "ea902585a8aa18933efd69bfcaee7a0d6f7134084f274c81b5ded67cab3fd35f"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5_sierra_2025-08-09/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5_sierra_2025-08-09/submission.json",
+          "bytes": 1452,
+          "sha256": "288a3ec7ff0fe305344fa7fd866a692754a67ad61fb5198c0b64ee4987a88636"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/toolorchestra_nvidia_2025-12-02/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/toolorchestra_nvidia_2025-12-02/submission.json",
+          "bytes": 1714,
+          "sha256": "05ef54d0d64269f53b3a2b4bdd7ec5008a33b6c62a024e546d91a5a014bca77c"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2024_09_23/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2024_09_23/submission.json",
+          "bytes": 1587,
+          "sha256": "ebc4a976a9ccf834c06e7035681b8569b3a34b263c4f383da6499db1fbfd2969"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/kimi-k2_moonshot-ai_2025-07-11/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/kimi-k2_moonshot-ai_2025-07-11/submission.json",
+          "bytes": 1388,
+          "sha256": "87553297c0df116060a87aec279650fb6489950c49c0bd383dd6f897a4e7a0e1"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-3-7-sonnet_anthropic_2024-06-20/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-3-7-sonnet_anthropic_2024-06-20/submission.json",
+          "bytes": 1432,
+          "sha256": "1578bde0f074632d32d1e21499ee3fd7c2e45737a686feaae6e822002f1a47dc"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/o4-mini_openai_2024-06-20/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/o4-mini_openai_2024-06-20/submission.json",
+          "bytes": 1422,
+          "sha256": "9cfd165d23c1500b6413af7ceb48b64a0fb672ce15e6069a12a36fd54e92bade"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1_openai_2024-06-20/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1_openai_2024-06-20/submission.json",
+          "bytes": 1400,
+          "sha256": "69d0798527fc2cabf9168795e99dcec78128b440b5a4ad3abd1d788cc6db7954"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1-mini_openai_2024-06-20/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1-mini_openai_2024-06-20/submission.json",
+          "bytes": 1405,
+          "sha256": "2a86f83f6bfeff5b02015c9d7471602bcfd5fb732ef66f55f1fac4dcab20dff4"
+        }
+      ],
+      "table_sha256": "573f5b0a9202eef2bb851cac3f2c86ea2ef6d7a3dade2e2927217001815dad7f",
+      "snapshot_sha256": "7e93440f26588d6adf5dece9397cf4c90030055cf433432c54551da6dbeec9cd"
+    },
+    {
+      "id": "tau2-bench-legacy-airline",
+      "category": "tool-use",
+      "status": "unchanged",
+      "rows_before": 16,
+      "rows_after": 16,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current relevant manifest cohort and every selected submission match saved benchmark fields; unrelated manifest cohorts do not alter this table. Pine Voice 1.0 has no banking results.",
+      "sources": [
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "bytes": 3812,
+          "sha256": "9baaaf615efc04442fc385c651cb3fa0b87d5cb930eda001670d63e173e37b48"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_google_2025-11-18/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_google_2025-11-18/submission.json",
+          "bytes": 1651,
+          "sha256": "27134a3b100a87e0780f08fda0475f4ffe0ef247bc41484ad48cc9798ffbe796"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_anthropic_2025-10-02/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_anthropic_2025-10-02/submission.json",
+          "bytes": 1753,
+          "sha256": "20e3ef4c1c495dbf3ec155ffa4899d6478b75deccf16862d886def20a79dda11"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2026-01-23/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2026-01-23/submission.json",
+          "bytes": 1581,
+          "sha256": "eb480b51b464175389262778510061ed96bf8f4e6ae2b05eb80d3d2455473b5a"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-3-7-sonnet_anthropic_2024-06-20/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-3-7-sonnet_anthropic_2024-06-20/submission.json",
+          "bytes": 1432,
+          "sha256": "1578bde0f074632d32d1e21499ee3fd7c2e45737a686feaae6e822002f1a47dc"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/deepseek-v3.2_deepseek_2025-12-01/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/deepseek-v3.2_deepseek_2025-12-01/submission.json",
+          "bytes": 1498,
+          "sha256": "ea902585a8aa18933efd69bfcaee7a0d6f7134084f274c81b5ded67cab3fd35f"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5_sierra_2025-08-09/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5_sierra_2025-08-09/submission.json",
+          "bytes": 1452,
+          "sha256": "288a3ec7ff0fe305344fa7fd866a692754a67ad61fb5198c0b64ee4987a88636"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4_anthropic_2025-05-22/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4_anthropic_2025-05-22/submission.json",
+          "bytes": 2030,
+          "sha256": "c87bd245d5b2c2ac6494b650c1804239f742fb49524d0e5f17a1dab415220b31"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4_anthropic_2025-05-22/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4_anthropic_2025-05-22/submission.json",
+          "bytes": 2028,
+          "sha256": "e4e0813f7ce46327aad4065612edbdb04e0fb2cb1fbe05a77029be32573c8d61"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2024_09_23/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2024_09_23/submission.json",
+          "bytes": 1587,
+          "sha256": "ebc4a976a9ccf834c06e7035681b8569b3a34b263c4f383da6499db1fbfd2969"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/kimi-k2_moonshot-ai_2025-07-11/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/kimi-k2_moonshot-ai_2025-07-11/submission.json",
+          "bytes": 1388,
+          "sha256": "87553297c0df116060a87aec279650fb6489950c49c0bd383dd6f897a4e7a0e1"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-1_anthropic_2025-01-15/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-1_anthropic_2025-01-15/submission.json",
+          "bytes": 2046,
+          "sha256": "062f711a16ad29f27ee1611ef097de8f76810d18725028d70ea9349af19d28ed"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1_openai_2024-06-20/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1_openai_2024-06-20/submission.json",
+          "bytes": 1400,
+          "sha256": "69d0798527fc2cabf9168795e99dcec78128b440b5a4ad3abd1d788cc6db7954"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/toolorchestra_nvidia_2025-12-02/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/toolorchestra_nvidia_2025-12-02/submission.json",
+          "bytes": 1714,
+          "sha256": "05ef54d0d64269f53b3a2b4bdd7ec5008a33b6c62a024e546d91a5a014bca77c"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/o4-mini_openai_2024-06-20/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/o4-mini_openai_2024-06-20/submission.json",
+          "bytes": 1422,
+          "sha256": "9cfd165d23c1500b6413af7ceb48b64a0fb672ce15e6069a12a36fd54e92bade"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/o3_openai_2025-01-15/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/o3_openai_2025-01-15/submission.json",
+          "bytes": 1405,
+          "sha256": "47462170900587697dfcac4e42e459a6cf50ae40eab8d758c9be5a43dcb04900"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1-mini_openai_2024-06-20/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1-mini_openai_2024-06-20/submission.json",
+          "bytes": 1405,
+          "sha256": "2a86f83f6bfeff5b02015c9d7471602bcfd5fb732ef66f55f1fac4dcab20dff4"
+        }
+      ],
+      "table_sha256": "4fbfde5f4a340646cfb3da9e8fd7d9743d42ad4c71f235893453cf74cc954f13",
+      "snapshot_sha256": "85612ce632847923dc194a2023f2d5829c3d43e246f6752f72553bc88f4fa7a1"
+    },
+    {
+      "id": "tau2-bench-legacy-retail",
+      "category": "tool-use",
+      "status": "unchanged",
+      "rows_before": 16,
+      "rows_after": 16,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current relevant manifest cohort and every selected submission match saved benchmark fields; unrelated manifest cohorts do not alter this table. Pine Voice 1.0 has no banking results.",
+      "sources": [
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "bytes": 3812,
+          "sha256": "9baaaf615efc04442fc385c651cb3fa0b87d5cb930eda001670d63e173e37b48"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_anthropic_2025-10-02/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_anthropic_2025-10-02/submission.json",
+          "bytes": 1753,
+          "sha256": "20e3ef4c1c495dbf3ec155ffa4899d6478b75deccf16862d886def20a79dda11"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_google_2025-11-18/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_google_2025-11-18/submission.json",
+          "bytes": 1651,
+          "sha256": "27134a3b100a87e0780f08fda0475f4ffe0ef247bc41484ad48cc9798ffbe796"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/toolorchestra_nvidia_2025-12-02/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/toolorchestra_nvidia_2025-12-02/submission.json",
+          "bytes": 1714,
+          "sha256": "05ef54d0d64269f53b3a2b4bdd7ec5008a33b6c62a024e546d91a5a014bca77c"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-1_anthropic_2025-01-15/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-1_anthropic_2025-01-15/submission.json",
+          "bytes": 2046,
+          "sha256": "062f711a16ad29f27ee1611ef097de8f76810d18725028d70ea9349af19d28ed"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5_sierra_2025-08-09/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5_sierra_2025-08-09/submission.json",
+          "bytes": 1452,
+          "sha256": "288a3ec7ff0fe305344fa7fd866a692754a67ad61fb5198c0b64ee4987a88636"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4_anthropic_2025-05-22/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4_anthropic_2025-05-22/submission.json",
+          "bytes": 2028,
+          "sha256": "e4e0813f7ce46327aad4065612edbdb04e0fb2cb1fbe05a77029be32573c8d61"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/deepseek-v3.2_deepseek_2025-12-01/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/deepseek-v3.2_deepseek_2025-12-01/submission.json",
+          "bytes": 1498,
+          "sha256": "ea902585a8aa18933efd69bfcaee7a0d6f7134084f274c81b5ded67cab3fd35f"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4_anthropic_2025-05-22/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4_anthropic_2025-05-22/submission.json",
+          "bytes": 2030,
+          "sha256": "c87bd245d5b2c2ac6494b650c1804239f742fb49524d0e5f17a1dab415220b31"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2026-01-23/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2026-01-23/submission.json",
+          "bytes": 1581,
+          "sha256": "eb480b51b464175389262778510061ed96bf8f4e6ae2b05eb80d3d2455473b5a"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1_openai_2024-06-20/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1_openai_2024-06-20/submission.json",
+          "bytes": 1400,
+          "sha256": "69d0798527fc2cabf9168795e99dcec78128b440b5a4ad3abd1d788cc6db7954"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/o3_openai_2025-01-15/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/o3_openai_2025-01-15/submission.json",
+          "bytes": 1405,
+          "sha256": "47462170900587697dfcac4e42e459a6cf50ae40eab8d758c9be5a43dcb04900"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2024_09_23/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2024_09_23/submission.json",
+          "bytes": 1587,
+          "sha256": "ebc4a976a9ccf834c06e7035681b8569b3a34b263c4f383da6499db1fbfd2969"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-3-7-sonnet_anthropic_2024-06-20/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-3-7-sonnet_anthropic_2024-06-20/submission.json",
+          "bytes": 1432,
+          "sha256": "1578bde0f074632d32d1e21499ee3fd7c2e45737a686feaae6e822002f1a47dc"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/kimi-k2_moonshot-ai_2025-07-11/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/kimi-k2_moonshot-ai_2025-07-11/submission.json",
+          "bytes": 1388,
+          "sha256": "87553297c0df116060a87aec279650fb6489950c49c0bd383dd6f897a4e7a0e1"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/o4-mini_openai_2024-06-20/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/o4-mini_openai_2024-06-20/submission.json",
+          "bytes": 1422,
+          "sha256": "9cfd165d23c1500b6413af7ceb48b64a0fb672ce15e6069a12a36fd54e92bade"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1-mini_openai_2024-06-20/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1-mini_openai_2024-06-20/submission.json",
+          "bytes": 1405,
+          "sha256": "2a86f83f6bfeff5b02015c9d7471602bcfd5fb732ef66f55f1fac4dcab20dff4"
+        }
+      ],
+      "table_sha256": "dcd0a2377c233f853b7d02ebd8288c0b68744347903db78239896038aac7d633",
+      "snapshot_sha256": "b88125288a2ca67e8d160d1be9da8d71d05b50160d0c02ce3ebc5943c64813aa"
+    },
+    {
+      "id": "tau2-bench-legacy-telecom",
+      "category": "tool-use",
+      "status": "unchanged",
+      "rows_before": 12,
+      "rows_after": 12,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current relevant manifest cohort and every selected submission match saved benchmark fields; unrelated manifest cohorts do not alter this table. Pine Voice 1.0 has no banking results.",
+      "sources": [
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "bytes": 3812,
+          "sha256": "9baaaf615efc04442fc385c651cb3fa0b87d5cb930eda001670d63e173e37b48"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2026-01-23/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2026-01-23/submission.json",
+          "bytes": 1581,
+          "sha256": "eb480b51b464175389262778510061ed96bf8f4e6ae2b05eb80d3d2455473b5a"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_anthropic_2025-10-02/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_anthropic_2025-10-02/submission.json",
+          "bytes": 1753,
+          "sha256": "20e3ef4c1c495dbf3ec155ffa4899d6478b75deccf16862d886def20a79dda11"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_google_2025-11-18/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_google_2025-11-18/submission.json",
+          "bytes": 1651,
+          "sha256": "27134a3b100a87e0780f08fda0475f4ffe0ef247bc41484ad48cc9798ffbe796"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/deepseek-v3.2_deepseek_2025-12-01/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/deepseek-v3.2_deepseek_2025-12-01/submission.json",
+          "bytes": 1498,
+          "sha256": "ea902585a8aa18933efd69bfcaee7a0d6f7134084f274c81b5ded67cab3fd35f"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5_sierra_2025-08-09/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5_sierra_2025-08-09/submission.json",
+          "bytes": 1452,
+          "sha256": "288a3ec7ff0fe305344fa7fd866a692754a67ad61fb5198c0b64ee4987a88636"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/toolorchestra_nvidia_2025-12-02/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/toolorchestra_nvidia_2025-12-02/submission.json",
+          "bytes": 1714,
+          "sha256": "05ef54d0d64269f53b3a2b4bdd7ec5008a33b6c62a024e546d91a5a014bca77c"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2024_09_23/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2024_09_23/submission.json",
+          "bytes": 1587,
+          "sha256": "ebc4a976a9ccf834c06e7035681b8569b3a34b263c4f383da6499db1fbfd2969"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/kimi-k2_moonshot-ai_2025-07-11/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/kimi-k2_moonshot-ai_2025-07-11/submission.json",
+          "bytes": 1388,
+          "sha256": "87553297c0df116060a87aec279650fb6489950c49c0bd383dd6f897a4e7a0e1"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/o4-mini_openai_2024-06-20/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/o4-mini_openai_2024-06-20/submission.json",
+          "bytes": 1422,
+          "sha256": "9cfd165d23c1500b6413af7ceb48b64a0fb672ce15e6069a12a36fd54e92bade"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-3-7-sonnet_anthropic_2024-06-20/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-3-7-sonnet_anthropic_2024-06-20/submission.json",
+          "bytes": 1432,
+          "sha256": "1578bde0f074632d32d1e21499ee3fd7c2e45737a686feaae6e822002f1a47dc"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1-mini_openai_2024-06-20/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1-mini_openai_2024-06-20/submission.json",
+          "bytes": 1405,
+          "sha256": "2a86f83f6bfeff5b02015c9d7471602bcfd5fb732ef66f55f1fac4dcab20dff4"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1_openai_2024-06-20/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1_openai_2024-06-20/submission.json",
+          "bytes": 1400,
+          "sha256": "69d0798527fc2cabf9168795e99dcec78128b440b5a4ad3abd1d788cc6db7954"
+        }
+      ],
+      "table_sha256": "ad2b7801a8cf5591112d37d36247b9d52bac0837592f3ca97d1b12a0c5e7f439",
+      "snapshot_sha256": "4e6a9d9104e0376e35b07d4d033fe5d607b0e73336046246ca4ef14e6b4bab3a"
+    },
+    {
+      "id": "tau2-bench-retail",
+      "category": "tool-use",
+      "status": "unchanged",
+      "rows_before": 9,
+      "rows_after": 9,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current relevant manifest cohort and every selected submission match saved benchmark fields; unrelated manifest cohorts do not alter this table. Pine Voice 1.0 has no banking results.",
+      "sources": [
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "bytes": 3812,
+          "sha256": "9baaaf615efc04442fc385c651cb3fa0b87d5cb930eda001670d63e173e37b48"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3.5-397b-a17b-think_sierra_2026-03-02/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3.5-397b-a17b-think_sierra_2026-03-02/submission.json",
+          "bytes": 2349,
+          "sha256": "2cfb2c7d2a46e9f22154fa153dcdf155d50dbd5bf86233ecf564eccca1e5913e"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/raft-30b-a3b_neu_2026-04-29/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/raft-30b-a3b_neu_2026-04-29/submission.json",
+          "bytes": 1348,
+          "sha256": "ea8fff2d8386ff90b9f63aefda32a3f1afe5d01b087fdea9bf178919edc44fe6"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2_sierra_2026-02-26/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2_sierra_2026-02-26/submission.json",
+          "bytes": 2353,
+          "sha256": "343687b822edbcbff42a4d4632ecc6288a58d9817a7a02c8533081c5709c0ac6"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-5_sierra_2026-02-26/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-5_sierra_2026-02-26/submission.json",
+          "bytes": 2404,
+          "sha256": "9c3b8b400e21d370cea27caec3643bfe6fd8385be9ed5135b585d0b976b6e34f"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-flash_sierra_2026-03-02/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-flash_sierra_2026-03-02/submission.json",
+          "bytes": 2337,
+          "sha256": "d1b7d1fc5d789662fb6eeb4a5ec01948295db397d2313df42c43c7fd8caf3637"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_sierra_2026-03-02/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_sierra_2026-03-02/submission.json",
+          "bytes": 2321,
+          "sha256": "f5c7b2d432d4efc6d6c1533f87e61ae1673336579df9f5f5cf986c277f0afd18"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2-none_sierra_2026-02-26/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2-none_sierra_2026-02-26/submission.json",
+          "bytes": 2374,
+          "sha256": "e1be4bac436e8115f9253697d68b71867f17cfcb2bef5dfa6a756c0a89a70dab"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/glm-5-think_sierra_2026-03-02/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/glm-5-think_sierra_2026-03-02/submission.json",
+          "bytes": 2175,
+          "sha256": "fa27b9a1a7a4c8b15517ec1329ef21fcc700be2ca12f21659b60aeda99c7de8f"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_sierra_2026-02-26/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_sierra_2026-02-26/submission.json",
+          "bytes": 2351,
+          "sha256": "e5ce9f12ab9e616db52e973e90b48144b7bafd29e35c4fd6c3e7fde573a9b8d8"
+        }
+      ],
+      "table_sha256": "cbe5bf7ca7399a96f44697e64a4b4a6a6cd45968daf9455403b9c6cfa19fda1c",
+      "snapshot_sha256": "32f132a5d3be3776afa08212232aae8c1901f2e06083044b3d560fda0c29c0a6"
+    },
+    {
+      "id": "tau2-bench-telecom",
+      "category": "tool-use",
+      "status": "unchanged",
+      "rows_before": 8,
+      "rows_after": 8,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current relevant manifest cohort and every selected submission match saved benchmark fields; unrelated manifest cohorts do not alter this table. Pine Voice 1.0 has no banking results.",
+      "sources": [
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "bytes": 3812,
+          "sha256": "9baaaf615efc04442fc385c651cb3fa0b87d5cb930eda001670d63e173e37b48"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3.5-397b-a17b-think_sierra_2026-03-02/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3.5-397b-a17b-think_sierra_2026-03-02/submission.json",
+          "bytes": 2349,
+          "sha256": "2cfb2c7d2a46e9f22154fa153dcdf155d50dbd5bf86233ecf564eccca1e5913e"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-5_sierra_2026-02-26/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-5_sierra_2026-02-26/submission.json",
+          "bytes": 2404,
+          "sha256": "9c3b8b400e21d370cea27caec3643bfe6fd8385be9ed5135b585d0b976b6e34f"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-flash_sierra_2026-03-02/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-flash_sierra_2026-03-02/submission.json",
+          "bytes": 2337,
+          "sha256": "d1b7d1fc5d789662fb6eeb4a5ec01948295db397d2313df42c43c7fd8caf3637"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_sierra_2026-03-02/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_sierra_2026-03-02/submission.json",
+          "bytes": 2321,
+          "sha256": "f5c7b2d432d4efc6d6c1533f87e61ae1673336579df9f5f5cf986c277f0afd18"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2_sierra_2026-02-26/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2_sierra_2026-02-26/submission.json",
+          "bytes": 2353,
+          "sha256": "343687b822edbcbff42a4d4632ecc6288a58d9817a7a02c8533081c5709c0ac6"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/glm-5-think_sierra_2026-03-02/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/glm-5-think_sierra_2026-03-02/submission.json",
+          "bytes": 2175,
+          "sha256": "fa27b9a1a7a4c8b15517ec1329ef21fcc700be2ca12f21659b60aeda99c7de8f"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_sierra_2026-02-26/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_sierra_2026-02-26/submission.json",
+          "bytes": 2351,
+          "sha256": "e5ce9f12ab9e616db52e973e90b48144b7bafd29e35c4fd6c3e7fde573a9b8d8"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2-none_sierra_2026-02-26/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2-none_sierra_2026-02-26/submission.json",
+          "bytes": 2374,
+          "sha256": "e1be4bac436e8115f9253697d68b71867f17cfcb2bef5dfa6a756c0a89a70dab"
+        }
+      ],
+      "table_sha256": "9b3c08f3ee2ff2b07de87def51f658d057cb836bc8c42120081697b03daa01e8",
+      "snapshot_sha256": "82cfdba24acf91fcaf1862decc492deec81053e850f6aace8b73493606325f8c"
+    },
+    {
+      "id": "tau3-banking",
+      "category": "tool-use",
+      "status": "unchanged",
+      "rows_before": 28,
+      "rows_after": 28,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current relevant manifest cohort and every selected submission match saved benchmark fields; unrelated manifest cohorts do not alter this table. Pine Voice 1.0 has no banking results.",
+      "sources": [
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "bytes": 3812,
+          "sha256": "9baaaf615efc04442fc385c651cb3fa0b87d5cb930eda001670d63e173e37b48"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-8-max_sierra_2026-08-04/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-8-max_sierra_2026-08-04/submission.json",
+          "bytes": 1340,
+          "sha256": "afd5525e447a221f6997b6af8a6a72536acda81b0e7775fd7124836a13a9ad76"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-5_sierra_2026-08-04/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-5_sierra_2026-08-04/submission.json",
+          "bytes": 1340,
+          "sha256": "4ab17f3f2e77cae8b2b4e4ba13413f7e2168104a772f25afe9d071950ed24ba2"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-4-5_sierra_2026-08-04/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-4-5_sierra_2026-08-04/submission.json",
+          "bytes": 1307,
+          "sha256": "fb6414a4c05756d2ea00289684680f22fe3111a1ed69cf8d77c1071b1075bcb1"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-6-sol_sierra_2026-08-04/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-6-sol_sierra_2026-08-04/submission.json",
+          "bytes": 1363,
+          "sha256": "0394128dc04d58ff77846e404ce588d786988a5c2ffcb69a8af09f19c46c97a4"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-5_sierra_2026-05-05/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-5_sierra_2026-05-05/submission.json",
+          "bytes": 1328,
+          "sha256": "24247d74b2a942da4c8f85503d0f8b95ba6e2d5df7158c2adf15049056d8b7f4"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/muse-spark-1-1_sierra_2026-08-04/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/muse-spark-1-1_sierra_2026-08-04/submission.json",
+          "bytes": 1358,
+          "sha256": "5ec4d2b119542bb40358374e3408515dccf5f0b3dace60de7936a20cb9bf13da"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-7_sierra_2026-05-05/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-7_sierra_2026-05-05/submission.json",
+          "bytes": 1348,
+          "sha256": "7ec10475f58a7d24c55548df9b8a04b6e6105dc25a6927f618c487185f28eca9"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-8_sierra_2026-08-04/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-8_sierra_2026-08-04/submission.json",
+          "bytes": 1347,
+          "sha256": "13052291f58a74e601c4e577bce110a7fad93a126edaa87fb483e49df0823054"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-fable-5_sierra_2026-08-04/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-fable-5_sierra_2026-08-04/submission.json",
+          "bytes": 1361,
+          "sha256": "f5cb61669a7f9665a006031ae1779b59230dcb4527cf763cfc3d2c771878166b"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-4_sierra_2026-03-25/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-4_sierra_2026-03-25/submission.json",
+          "bytes": 2046,
+          "sha256": "47fa11691a745682b86ffc91e1a57aef6d6d7cebe60df66820ebb310b518b0ab"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/kimi-k3_sierra_2026-08-04/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/kimi-k3_sierra_2026-08-04/submission.json",
+          "bytes": 1337,
+          "sha256": "71e1ac4413f59ceac04851843319f73b485280a756f3b69fb5f47836d65a52b6"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/glm-5-2_sierra_2026-08-04/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/glm-5-2_sierra_2026-08-04/submission.json",
+          "bytes": 1326,
+          "sha256": "58b36fd68b92eac5c9e72efce3952aa4004db2b7f6f520c2bcf2908c4845e801"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2_sierra_2026-02-26/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2_sierra_2026-02-26/submission.json",
+          "bytes": 2353,
+          "sha256": "343687b822edbcbff42a4d4632ecc6288a58d9817a7a02c8533081c5709c0ac6"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/distyl-buttonagent_distyl_2026-03-25/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/distyl-buttonagent_distyl_2026-03-25/submission.json",
+          "bytes": 1727,
+          "sha256": "bb1984dd43557ac3e526f64eeaea0fd4467d924c69d38655d64dde0a45a2c522"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-flash_sierra_2026-03-02/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-flash_sierra_2026-03-02/submission.json",
+          "bytes": 2337,
+          "sha256": "d1b7d1fc5d789662fb6eeb4a5ec01948295db397d2313df42c43c7fd8caf3637"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-6_sierra_2026-05-05/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-6_sierra_2026-05-05/submission.json",
+          "bytes": 1877,
+          "sha256": "880ea58f76664a0f0e06c3117c6a8b75c4007149d06cc3de04f852f62487f3f3"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-pro-preview_sierra_2026-05-05/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-pro-preview_sierra_2026-05-05/submission.json",
+          "bytes": 1993,
+          "sha256": "16ada360be015c129cc704ab283535144305df1b1cb911750bb2ec6a2fde53ac"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_sierra_2026-02-26/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_sierra_2026-02-26/submission.json",
+          "bytes": 2351,
+          "sha256": "e5ce9f12ab9e616db52e973e90b48144b7bafd29e35c4fd6c3e7fde573a9b8d8"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/inkling_sierra_2026-08-04/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/inkling_sierra_2026-08-04/submission.json",
+          "bytes": 1349,
+          "sha256": "f5d7b5fae9986619bc3258d1be25b3577f46d4e61a1b6c8853933710eb3169b9"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-5_sierra_2026-02-26/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-5_sierra_2026-02-26/submission.json",
+          "bytes": 2404,
+          "sha256": "9c3b8b400e21d370cea27caec3643bfe6fd8385be9ed5135b585d0b976b6e34f"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_sierra_2026-03-02/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_sierra_2026-03-02/submission.json",
+          "bytes": 2321,
+          "sha256": "f5c7b2d432d4efc6d6c1533f87e61ae1673336579df9f5f5cf986c277f0afd18"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-4-2_sierra_2026-05-05/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-4-2_sierra_2026-05-05/submission.json",
+          "bytes": 2060,
+          "sha256": "6187e4b645a9de92f40ba0d6b800c13200ef39c5bc95062d5ae8122251459fc6"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-4-fast_sierra_2026-05-05/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-4-fast_sierra_2026-05-05/submission.json",
+          "bytes": 1859,
+          "sha256": "e310d5fa844297cbb9b3ff0755f9784ddeae8daf99624f1003a8d0bdd973c237"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-2-5-pro_sierra_2026-05-05/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-2-5-pro_sierra_2026-05-05/submission.json",
+          "bytes": 1985,
+          "sha256": "b14f65b54ac7b733550cb1e04b986d17b7ff877de6ff79e94e8e98998035de6f"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-4-1-fast_sierra_2026-05-05/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-4-1-fast_sierra_2026-05-05/submission.json",
+          "bytes": 2070,
+          "sha256": "24efda601208398e37890ee127e37190b2080dc8eb34aa52fac0ee7f32ae1e08"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2-none_sierra_2026-02-26/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2-none_sierra_2026-02-26/submission.json",
+          "bytes": 2374,
+          "sha256": "e1be4bac436e8115f9253697d68b71867f17cfcb2bef5dfa6a756c0a89a70dab"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/glm-5-think_sierra_2026-03-02/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/glm-5-think_sierra_2026-03-02/submission.json",
+          "bytes": 2175,
+          "sha256": "fa27b9a1a7a4c8b15517ec1329ef21fcc700be2ca12f21659b60aeda99c7de8f"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3.5-397b-a17b-think_sierra_2026-03-02/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3.5-397b-a17b-think_sierra_2026-03-02/submission.json",
+          "bytes": 2349,
+          "sha256": "2cfb2c7d2a46e9f22154fa153dcdf155d50dbd5bf86233ecf564eccca1e5913e"
+        }
+      ],
+      "table_sha256": "4939074c4909fa8d46dade6eb39b882c5773b946ad351c386da42319439dd228",
+      "snapshot_sha256": "419a95ca960778e50462e546320b378c789c494e4f8bf00e15cf48d5cf618e90"
+    },
+    {
+      "id": "tau3-voice",
+      "category": "tool-use",
+      "status": "changed",
+      "rows_before": 23,
+      "rows_after": 24,
+      "retrieved_before": "2026-10-30",
+      "retrieved_after": "2026-10-31",
+      "detail": "Pine Voice 1.0 + Gemini 4 Argon two-agent standard v1.0 submission; overall equal domain mean, banking excluded. Source retail114 vs interaction113 inconsistency retained, not inferred away.",
+      "sources": [
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "bytes": 3812,
+          "sha256": "9baaaf615efc04442fc385c651cb3fa0b87d5cb930eda001670d63e173e37b48"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha-user-sim-gpt-5-5_openai_2026-09-09/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha-user-sim-gpt-5-5_openai_2026-09-09/submission.json",
+          "bytes": 6203,
+          "sha256": "1eac97fde74af2b66ced406261e59cc0ae3cd8f48be4d0d406db2754b5e197a2"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha_openai_2026-09-09/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha_openai_2026-09-09/submission.json",
+          "bytes": 5332,
+          "sha256": "fe65fe145300e53338b3149f359854ead1858870f2a6ac5080ada90ba59075ca"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-gpt-5-5_pineai_2026-08-17/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-gpt-5-5_pineai_2026-08-17/submission.json",
+          "bytes": 7516,
+          "sha256": "44a65df475470f1234a541a0df74b42102599457f2cff8d1dbb126cd80724f5b"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-v1-0_pineai_2026-08-17/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-v1-0_pineai_2026-08-17/submission.json",
+          "bytes": 6875,
+          "sha256": "019e2ee4d144cf5a845140942e3d3e9073ce664dce26fe729653a4c91ac31d10"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0-tool-mentor_pickle_2026-07-07/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0-tool-mentor_pickle_2026-07-07/submission.json",
+          "bytes": 7884,
+          "sha256": "8f5c3e9c820a1b26721c073000da507afc5ef015c1e3ac44164ef5afd6356b1b"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0_xai_2026-04-21/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0_xai_2026-04-21/submission.json",
+          "bytes": 4503,
+          "sha256": "70da2fc2cf9922789f97463bd68dd45859f9785d3f4fa14a4b3f0bd7000b29b6"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-08-06/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-08-06/submission.json",
+          "bytes": 4709,
+          "sha256": "1e3b9d37d975dd7b2b82a73aca9bcceaa16617dbd6312dc3fd65b9cbdb0f5e4e"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-5-omni-plus-realtime_qwen_2026-08-06/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-5-omni-plus-realtime_qwen_2026-08-06/submission.json",
+          "bytes": 4746,
+          "sha256": "e2431f919b3bfa6a367fcff2609498b7cd5b6fc7505414323cbab6841544f17e"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-24/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-24/submission.json",
+          "bytes": 5150,
+          "sha256": "89dcccf3a8382c25c42555880a185970d2dbab745d1d253a91fbb55136563f47"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-high_google_2026-04-02/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-high_google_2026-04-02/submission.json",
+          "bytes": 4641,
+          "sha256": "8e75b8ebd8d32ea993f1b1c7a4f82e0dbc1af87bc47bae85ca9b6c17d35a59b8"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-29/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-29/submission.json",
+          "bytes": 4587,
+          "sha256": "f95972b276928d46e694239fc134bd66976e86cc2ac76a92276b829af33c1a2a"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-minimal_openai_2026-07-01/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-minimal_openai_2026-07-01/submission.json",
+          "bytes": 4559,
+          "sha256": "24ff60aa6c6824a13c8be0a1c543de066601faa6c281f1383bbd1f3fb3061de9"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime_sierra_2026-03-03/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime_sierra_2026-03-03/submission.json",
+          "bytes": 4648,
+          "sha256": "7d206662b3177050eb88db8547533fca0c905073d8e1cbe0e86e749cc81324df"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1.5_sierra_2026-03-03/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1.5_sierra_2026-03-03/submission.json",
+          "bytes": 4593,
+          "sha256": "0982bf5ecf5b76bac05491073071a3c3821c1dc4f139cfe135112ae6585aea18"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/livekit-cascaded_livekit_2026-05-19/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/livekit-cascaded_livekit_2026-05-19/submission.json",
+          "bytes": 4719,
+          "sha256": "b8a4b52ac90c67a5992e9c56980b7ea40737ab276b205ed421d7eee9122555d1"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1-0_openai_2026-04-13/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1-0_openai_2026-04-13/submission.json",
+          "bytes": 4495,
+          "sha256": "a16bf4a6c51a172ff0a3023cb75291ac609d61d6ca68f4b87a9d225890623003"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-minimal_google_2026-04-13/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-minimal_google_2026-04-13/submission.json",
+          "bytes": 4790,
+          "sha256": "63dba43a203a9fc45676306839ecd3753b5857afc30d5f1b84d8636e4e610a1d"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-live-2.5-flash_sierra_2026-03-03/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-live-2.5-flash_sierra_2026-03-03/submission.json",
+          "bytes": 4728,
+          "sha256": "7af89d64a58c67178bb161d24f09ac8d0e130fde557ce18483b85c46e7a5996f"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-3-0_xai_2026-10-14/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-3-0_xai_2026-10-14/submission.json",
+          "bytes": 5980,
+          "sha256": "ba2fe869ab163c4df258ca8252f679484c0002ab1dc01e9bcc4e3059ea54f6e5"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/salesforce-launa-v1_salesforce_2026-10-06/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/salesforce-launa-v1_salesforce_2026-10-06/submission.json",
+          "bytes": 5508,
+          "sha256": "59d7dbc3bc67d5091ab7319ed25978f65789bfffac1c491545a39a5f8edce928"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/ava-zero_avartha_2026-10-22/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/ava-zero_avartha_2026-10-22/submission.json",
+          "bytes": 5372,
+          "sha256": "a8ffb60746047ebb9c1316b14246110f0a6d451001a690a9bb7da3b14a75c1ef"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/phonic-1_phonic_2026-10-22/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/phonic-1_phonic_2026-10-22/submission.json",
+          "bytes": 5108,
+          "sha256": "ee10d266b33ef7eea72d601cf3721695f27792b0840c4d825600fb5a08d8ccf4"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/phonic-1-user-sim-gpt-5-5_phonic_2026-10-22/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/phonic-1-user-sim-gpt-5-5_phonic_2026-10-22/submission.json",
+          "bytes": 5341,
+          "sha256": "8fd864709d69297f87737fe78947939d5e77faafffbbc31d92d9ed279512cfbc"
+        },
+        {
+          "url": "https://taubench.com/assets/index-DHHai565.js",
+          "status": 200,
+          "final_url": "https://taubench.com/assets/index-DHHai565.js",
+          "bytes": 366319,
+          "sha256": "15ff729480c78c367d5274a8cf5e6d16731452894a346da646d63d807b197929"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-1-0_pineai_2026-10-27/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-1-0_pineai_2026-10-27/submission.json",
+          "bytes": 6506,
+          "sha256": "3e44f7798668142aec85e5998cb1e8ceb77371b68d100f85fed292e065f4dcb2"
+        }
+      ],
+      "table_sha256": "465425bec5bd1d02f6bd97ce79cdece4a0e1f22c76914522aa3880bac255b436",
+      "snapshot_sha256": "9533a2e287959459cb85a2e7164ed429f7aefa49aae3a152fa937b00442824ae"
+    },
+    {
+      "id": "tau3-voice-airline",
+      "category": "tool-use",
+      "status": "changed",
+      "rows_before": 23,
+      "rows_after": 24,
+      "retrieved_before": "2026-10-30",
+      "retrieved_after": "2026-10-31",
+      "detail": "Pine Voice 1.0 + Gemini 4 Argon two-agent standard v1.0 submission; overall equal domain mean, banking excluded. Source retail114 vs interaction113 inconsistency retained, not inferred away.",
+      "sources": [
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "bytes": 3812,
+          "sha256": "9baaaf615efc04442fc385c651cb3fa0b87d5cb930eda001670d63e173e37b48"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha_openai_2026-09-09/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha_openai_2026-09-09/submission.json",
+          "bytes": 5332,
+          "sha256": "fe65fe145300e53338b3149f359854ead1858870f2a6ac5080ada90ba59075ca"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-gpt-5-5_pineai_2026-08-17/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-gpt-5-5_pineai_2026-08-17/submission.json",
+          "bytes": 7516,
+          "sha256": "44a65df475470f1234a541a0df74b42102599457f2cff8d1dbb126cd80724f5b"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha-user-sim-gpt-5-5_openai_2026-09-09/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha-user-sim-gpt-5-5_openai_2026-09-09/submission.json",
+          "bytes": 6203,
+          "sha256": "1eac97fde74af2b66ced406261e59cc0ae3cd8f48be4d0d406db2754b5e197a2"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0-tool-mentor_pickle_2026-07-07/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0-tool-mentor_pickle_2026-07-07/submission.json",
+          "bytes": 7884,
+          "sha256": "8f5c3e9c820a1b26721c073000da507afc5ef015c1e3ac44164ef5afd6356b1b"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-v1-0_pineai_2026-08-17/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-v1-0_pineai_2026-08-17/submission.json",
+          "bytes": 6875,
+          "sha256": "019e2ee4d144cf5a845140942e3d3e9073ce664dce26fe729653a4c91ac31d10"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0_xai_2026-04-21/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0_xai_2026-04-21/submission.json",
+          "bytes": 4503,
+          "sha256": "70da2fc2cf9922789f97463bd68dd45859f9785d3f4fa14a4b3f0bd7000b29b6"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-24/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-24/submission.json",
+          "bytes": 5150,
+          "sha256": "89dcccf3a8382c25c42555880a185970d2dbab745d1d253a91fbb55136563f47"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-high_google_2026-04-02/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-high_google_2026-04-02/submission.json",
+          "bytes": 4641,
+          "sha256": "8e75b8ebd8d32ea993f1b1c7a4f82e0dbc1af87bc47bae85ca9b6c17d35a59b8"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-29/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-29/submission.json",
+          "bytes": 4587,
+          "sha256": "f95972b276928d46e694239fc134bd66976e86cc2ac76a92276b829af33c1a2a"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-minimal_openai_2026-07-01/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-minimal_openai_2026-07-01/submission.json",
+          "bytes": 4559,
+          "sha256": "24ff60aa6c6824a13c8be0a1c543de066601faa6c281f1383bbd1f3fb3061de9"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-08-06/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-08-06/submission.json",
+          "bytes": 4709,
+          "sha256": "1e3b9d37d975dd7b2b82a73aca9bcceaa16617dbd6312dc3fd65b9cbdb0f5e4e"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-5-omni-plus-realtime_qwen_2026-08-06/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-5-omni-plus-realtime_qwen_2026-08-06/submission.json",
+          "bytes": 4746,
+          "sha256": "e2431f919b3bfa6a367fcff2609498b7cd5b6fc7505414323cbab6841544f17e"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/livekit-cascaded_livekit_2026-05-19/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/livekit-cascaded_livekit_2026-05-19/submission.json",
+          "bytes": 4719,
+          "sha256": "b8a4b52ac90c67a5992e9c56980b7ea40737ab276b205ed421d7eee9122555d1"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-minimal_google_2026-04-13/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-minimal_google_2026-04-13/submission.json",
+          "bytes": 4790,
+          "sha256": "63dba43a203a9fc45676306839ecd3753b5857afc30d5f1b84d8636e4e610a1d"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1.5_sierra_2026-03-03/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1.5_sierra_2026-03-03/submission.json",
+          "bytes": 4593,
+          "sha256": "0982bf5ecf5b76bac05491073071a3c3821c1dc4f139cfe135112ae6585aea18"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime_sierra_2026-03-03/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime_sierra_2026-03-03/submission.json",
+          "bytes": 4648,
+          "sha256": "7d206662b3177050eb88db8547533fca0c905073d8e1cbe0e86e749cc81324df"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1-0_openai_2026-04-13/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1-0_openai_2026-04-13/submission.json",
+          "bytes": 4495,
+          "sha256": "a16bf4a6c51a172ff0a3023cb75291ac609d61d6ca68f4b87a9d225890623003"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-live-2.5-flash_sierra_2026-03-03/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-live-2.5-flash_sierra_2026-03-03/submission.json",
+          "bytes": 4728,
+          "sha256": "7af89d64a58c67178bb161d24f09ac8d0e130fde557ce18483b85c46e7a5996f"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-3-0_xai_2026-10-14/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-3-0_xai_2026-10-14/submission.json",
+          "bytes": 5980,
+          "sha256": "ba2fe869ab163c4df258ca8252f679484c0002ab1dc01e9bcc4e3059ea54f6e5"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/salesforce-launa-v1_salesforce_2026-10-06/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/salesforce-launa-v1_salesforce_2026-10-06/submission.json",
+          "bytes": 5508,
+          "sha256": "59d7dbc3bc67d5091ab7319ed25978f65789bfffac1c491545a39a5f8edce928"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/ava-zero_avartha_2026-10-22/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/ava-zero_avartha_2026-10-22/submission.json",
+          "bytes": 5372,
+          "sha256": "a8ffb60746047ebb9c1316b14246110f0a6d451001a690a9bb7da3b14a75c1ef"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/phonic-1_phonic_2026-10-22/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/phonic-1_phonic_2026-10-22/submission.json",
+          "bytes": 5108,
+          "sha256": "ee10d266b33ef7eea72d601cf3721695f27792b0840c4d825600fb5a08d8ccf4"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/phonic-1-user-sim-gpt-5-5_phonic_2026-10-22/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/phonic-1-user-sim-gpt-5-5_phonic_2026-10-22/submission.json",
+          "bytes": 5341,
+          "sha256": "8fd864709d69297f87737fe78947939d5e77faafffbbc31d92d9ed279512cfbc"
+        },
+        {
+          "url": "https://taubench.com/assets/index-DHHai565.js",
+          "status": 200,
+          "final_url": "https://taubench.com/assets/index-DHHai565.js",
+          "bytes": 366319,
+          "sha256": "15ff729480c78c367d5274a8cf5e6d16731452894a346da646d63d807b197929"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-1-0_pineai_2026-10-27/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-1-0_pineai_2026-10-27/submission.json",
+          "bytes": 6506,
+          "sha256": "3e44f7798668142aec85e5998cb1e8ceb77371b68d100f85fed292e065f4dcb2"
+        }
+      ],
+      "table_sha256": "aea8d814a2e04894961d20873f9916fb4ff6a275ee2cb48fb9bc35011e3dbbed",
+      "snapshot_sha256": "53156425b9bb2aa61ab70b075e8f6d5dafdea284b8c3cf6a2e059a39ab9f6998"
+    },
+    {
+      "id": "tau3-voice-banking",
+      "category": "tool-use",
+      "status": "unchanged",
+      "rows_before": 5,
+      "rows_after": 5,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current relevant manifest cohort and every selected submission match saved benchmark fields; unrelated manifest cohorts do not alter this table. Pine Voice 1.0 has no banking results.",
+      "sources": [
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "bytes": 3812,
+          "sha256": "9baaaf615efc04442fc385c651cb3fa0b87d5cb930eda001670d63e173e37b48"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha-user-sim-gpt-5-5_openai_2026-09-09/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha-user-sim-gpt-5-5_openai_2026-09-09/submission.json",
+          "bytes": 6203,
+          "sha256": "1eac97fde74af2b66ced406261e59cc0ae3cd8f48be4d0d406db2754b5e197a2"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime-banking_xai_2026-07-13/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime-banking_xai_2026-07-13/submission.json",
+          "bytes": 4051,
+          "sha256": "34053c035861b7745c2b9d86b61c5a2503cfd5647f21583be39847af5024796b"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-high-banking_google_2026-07-13/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-high-banking_google_2026-07-13/submission.json",
+          "bytes": 4050,
+          "sha256": "a41d225d97e33489a78ee663455350be72312a04cb6ada2bb8cc75a0c9bd15fb"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-banking_openai_2026-07-12/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-banking_openai_2026-07-12/submission.json",
+          "bytes": 3961,
+          "sha256": "2b9aa23aa956a5ab3adda84ccbed0e3de4f893850a65b5e9acc43ca5263cc034"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-astra-high-banking_openai_2026-09-16/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-astra-high-banking_openai_2026-09-16/submission.json",
+          "bytes": 5043,
+          "sha256": "e22ce6ba70eb02a5f4f296e546b3bed7c87c248df0e6fb6d36f7daabf90ce696"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-3-0_xai_2026-10-14/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-3-0_xai_2026-10-14/submission.json",
+          "bytes": 5980,
+          "sha256": "ba2fe869ab163c4df258ca8252f679484c0002ab1dc01e9bcc4e3059ea54f6e5"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/phonic-1-user-sim-gpt-5-5_phonic_2026-10-22/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/phonic-1-user-sim-gpt-5-5_phonic_2026-10-22/submission.json",
+          "bytes": 5341,
+          "sha256": "8fd864709d69297f87737fe78947939d5e77faafffbbc31d92d9ed279512cfbc"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/phonic-1_phonic_2026-10-22/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/phonic-1_phonic_2026-10-22/submission.json",
+          "bytes": 5108,
+          "sha256": "ee10d266b33ef7eea72d601cf3721695f27792b0840c4d825600fb5a08d8ccf4"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/salesforce-launa-v1_salesforce_2026-10-06/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/salesforce-launa-v1_salesforce_2026-10-06/submission.json",
+          "bytes": 5508,
+          "sha256": "59d7dbc3bc67d5091ab7319ed25978f65789bfffac1c491545a39a5f8edce928"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/ava-zero_avartha_2026-10-22/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/ava-zero_avartha_2026-10-22/submission.json",
+          "bytes": 5372,
+          "sha256": "a8ffb60746047ebb9c1316b14246110f0a6d451001a690a9bb7da3b14a75c1ef"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-1-0_pineai_2026-10-27/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-1-0_pineai_2026-10-27/submission.json",
+          "bytes": 6506,
+          "sha256": "3e44f7798668142aec85e5998cb1e8ceb77371b68d100f85fed292e065f4dcb2"
+        }
+      ],
+      "table_sha256": "ce3257781c0abf34ea2e1cf8ab88f83e966d648c6d89b975c77f2e35b5eccb36",
+      "snapshot_sha256": "a188ea28bfdce4a0cdd5e9e190f2752890070f71874464e33c20acaf32cab735"
+    },
+    {
+      "id": "tau3-voice-retail",
+      "category": "tool-use",
+      "status": "changed",
+      "rows_before": 23,
+      "rows_after": 24,
+      "retrieved_before": "2026-10-30",
+      "retrieved_after": "2026-10-31",
+      "detail": "Pine Voice 1.0 + Gemini 4 Argon two-agent standard v1.0 submission; overall equal domain mean, banking excluded. Source retail114 vs interaction113 inconsistency retained, not inferred away.",
+      "sources": [
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "bytes": 3812,
+          "sha256": "9baaaf615efc04442fc385c651cb3fa0b87d5cb930eda001670d63e173e37b48"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-gpt-5-5_pineai_2026-08-17/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-gpt-5-5_pineai_2026-08-17/submission.json",
+          "bytes": 7516,
+          "sha256": "44a65df475470f1234a541a0df74b42102599457f2cff8d1dbb126cd80724f5b"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha-user-sim-gpt-5-5_openai_2026-09-09/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha-user-sim-gpt-5-5_openai_2026-09-09/submission.json",
+          "bytes": 6203,
+          "sha256": "1eac97fde74af2b66ced406261e59cc0ae3cd8f48be4d0d406db2754b5e197a2"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha_openai_2026-09-09/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha_openai_2026-09-09/submission.json",
+          "bytes": 5332,
+          "sha256": "fe65fe145300e53338b3149f359854ead1858870f2a6ac5080ada90ba59075ca"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0-tool-mentor_pickle_2026-07-07/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0-tool-mentor_pickle_2026-07-07/submission.json",
+          "bytes": 7884,
+          "sha256": "8f5c3e9c820a1b26721c073000da507afc5ef015c1e3ac44164ef5afd6356b1b"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-v1-0_pineai_2026-08-17/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-v1-0_pineai_2026-08-17/submission.json",
+          "bytes": 6875,
+          "sha256": "019e2ee4d144cf5a845140942e3d3e9073ce664dce26fe729653a4c91ac31d10"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0_xai_2026-04-21/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0_xai_2026-04-21/submission.json",
+          "bytes": 4503,
+          "sha256": "70da2fc2cf9922789f97463bd68dd45859f9785d3f4fa14a4b3f0bd7000b29b6"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-08-06/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-08-06/submission.json",
+          "bytes": 4709,
+          "sha256": "1e3b9d37d975dd7b2b82a73aca9bcceaa16617dbd6312dc3fd65b9cbdb0f5e4e"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-24/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-24/submission.json",
+          "bytes": 5150,
+          "sha256": "89dcccf3a8382c25c42555880a185970d2dbab745d1d253a91fbb55136563f47"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-29/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-29/submission.json",
+          "bytes": 4587,
+          "sha256": "f95972b276928d46e694239fc134bd66976e86cc2ac76a92276b829af33c1a2a"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-5-omni-plus-realtime_qwen_2026-08-06/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-5-omni-plus-realtime_qwen_2026-08-06/submission.json",
+          "bytes": 4746,
+          "sha256": "e2431f919b3bfa6a367fcff2609498b7cd5b6fc7505414323cbab6841544f17e"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-high_google_2026-04-02/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-high_google_2026-04-02/submission.json",
+          "bytes": 4641,
+          "sha256": "8e75b8ebd8d32ea993f1b1c7a4f82e0dbc1af87bc47bae85ca9b6c17d35a59b8"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1.5_sierra_2026-03-03/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1.5_sierra_2026-03-03/submission.json",
+          "bytes": 4593,
+          "sha256": "0982bf5ecf5b76bac05491073071a3c3821c1dc4f139cfe135112ae6585aea18"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-minimal_openai_2026-07-01/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-minimal_openai_2026-07-01/submission.json",
+          "bytes": 4559,
+          "sha256": "24ff60aa6c6824a13c8be0a1c543de066601faa6c281f1383bbd1f3fb3061de9"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime_sierra_2026-03-03/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime_sierra_2026-03-03/submission.json",
+          "bytes": 4648,
+          "sha256": "7d206662b3177050eb88db8547533fca0c905073d8e1cbe0e86e749cc81324df"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1-0_openai_2026-04-13/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1-0_openai_2026-04-13/submission.json",
+          "bytes": 4495,
+          "sha256": "a16bf4a6c51a172ff0a3023cb75291ac609d61d6ca68f4b87a9d225890623003"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-live-2.5-flash_sierra_2026-03-03/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-live-2.5-flash_sierra_2026-03-03/submission.json",
+          "bytes": 4728,
+          "sha256": "7af89d64a58c67178bb161d24f09ac8d0e130fde557ce18483b85c46e7a5996f"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/livekit-cascaded_livekit_2026-05-19/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/livekit-cascaded_livekit_2026-05-19/submission.json",
+          "bytes": 4719,
+          "sha256": "b8a4b52ac90c67a5992e9c56980b7ea40737ab276b205ed421d7eee9122555d1"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-minimal_google_2026-04-13/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-minimal_google_2026-04-13/submission.json",
+          "bytes": 4790,
+          "sha256": "63dba43a203a9fc45676306839ecd3753b5857afc30d5f1b84d8636e4e610a1d"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-3-0_xai_2026-10-14/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-3-0_xai_2026-10-14/submission.json",
+          "bytes": 5980,
+          "sha256": "ba2fe869ab163c4df258ca8252f679484c0002ab1dc01e9bcc4e3059ea54f6e5"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/salesforce-launa-v1_salesforce_2026-10-06/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/salesforce-launa-v1_salesforce_2026-10-06/submission.json",
+          "bytes": 5508,
+          "sha256": "59d7dbc3bc67d5091ab7319ed25978f65789bfffac1c491545a39a5f8edce928"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/ava-zero_avartha_2026-10-22/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/ava-zero_avartha_2026-10-22/submission.json",
+          "bytes": 5372,
+          "sha256": "a8ffb60746047ebb9c1316b14246110f0a6d451001a690a9bb7da3b14a75c1ef"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/phonic-1_phonic_2026-10-22/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/phonic-1_phonic_2026-10-22/submission.json",
+          "bytes": 5108,
+          "sha256": "ee10d266b33ef7eea72d601cf3721695f27792b0840c4d825600fb5a08d8ccf4"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/phonic-1-user-sim-gpt-5-5_phonic_2026-10-22/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/phonic-1-user-sim-gpt-5-5_phonic_2026-10-22/submission.json",
+          "bytes": 5341,
+          "sha256": "8fd864709d69297f87737fe78947939d5e77faafffbbc31d92d9ed279512cfbc"
+        },
+        {
+          "url": "https://taubench.com/assets/index-DHHai565.js",
+          "status": 200,
+          "final_url": "https://taubench.com/assets/index-DHHai565.js",
+          "bytes": 366319,
+          "sha256": "15ff729480c78c367d5274a8cf5e6d16731452894a346da646d63d807b197929"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-1-0_pineai_2026-10-27/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-1-0_pineai_2026-10-27/submission.json",
+          "bytes": 6506,
+          "sha256": "3e44f7798668142aec85e5998cb1e8ceb77371b68d100f85fed292e065f4dcb2"
+        }
+      ],
+      "table_sha256": "4d5a91d29e4d0fc68df9336cc7f2c8129033c44a3f61ae41b814f0495609f318",
+      "snapshot_sha256": "df87a6a643e3ea0e88842eefb6145923c1a1998852d5ba31ef95ad5402ddb7ce"
+    },
+    {
+      "id": "tau3-voice-telecom",
+      "category": "tool-use",
+      "status": "changed",
+      "rows_before": 23,
+      "rows_after": 24,
+      "retrieved_before": "2026-10-30",
+      "retrieved_after": "2026-10-31",
+      "detail": "Pine Voice 1.0 + Gemini 4 Argon two-agent standard v1.0 submission; overall equal domain mean, banking excluded. Source retail114 vs interaction113 inconsistency retained, not inferred away.",
+      "sources": [
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "bytes": 3812,
+          "sha256": "9baaaf615efc04442fc385c651cb3fa0b87d5cb930eda001670d63e173e37b48"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha-user-sim-gpt-5-5_openai_2026-09-09/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha-user-sim-gpt-5-5_openai_2026-09-09/submission.json",
+          "bytes": 6203,
+          "sha256": "1eac97fde74af2b66ced406261e59cc0ae3cd8f48be4d0d406db2754b5e197a2"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-v1-0_pineai_2026-08-17/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-v1-0_pineai_2026-08-17/submission.json",
+          "bytes": 6875,
+          "sha256": "019e2ee4d144cf5a845140942e3d3e9073ce664dce26fe729653a4c91ac31d10"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha_openai_2026-09-09/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha_openai_2026-09-09/submission.json",
+          "bytes": 5332,
+          "sha256": "fe65fe145300e53338b3149f359854ead1858870f2a6ac5080ada90ba59075ca"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0-tool-mentor_pickle_2026-07-07/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0-tool-mentor_pickle_2026-07-07/submission.json",
+          "bytes": 7884,
+          "sha256": "8f5c3e9c820a1b26721c073000da507afc5ef015c1e3ac44164ef5afd6356b1b"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-gpt-5-5_pineai_2026-08-17/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-gpt-5-5_pineai_2026-08-17/submission.json",
+          "bytes": 7516,
+          "sha256": "44a65df475470f1234a541a0df74b42102599457f2cff8d1dbb126cd80724f5b"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0_xai_2026-04-21/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0_xai_2026-04-21/submission.json",
+          "bytes": 4503,
+          "sha256": "70da2fc2cf9922789f97463bd68dd45859f9785d3f4fa14a4b3f0bd7000b29b6"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-08-06/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-08-06/submission.json",
+          "bytes": 4709,
+          "sha256": "1e3b9d37d975dd7b2b82a73aca9bcceaa16617dbd6312dc3fd65b9cbdb0f5e4e"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-5-omni-plus-realtime_qwen_2026-08-06/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-5-omni-plus-realtime_qwen_2026-08-06/submission.json",
+          "bytes": 4746,
+          "sha256": "e2431f919b3bfa6a367fcff2609498b7cd5b6fc7505414323cbab6841544f17e"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime_sierra_2026-03-03/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime_sierra_2026-03-03/submission.json",
+          "bytes": 4648,
+          "sha256": "7d206662b3177050eb88db8547533fca0c905073d8e1cbe0e86e749cc81324df"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-24/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-24/submission.json",
+          "bytes": 5150,
+          "sha256": "89dcccf3a8382c25c42555880a185970d2dbab745d1d253a91fbb55136563f47"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-high_google_2026-04-02/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-high_google_2026-04-02/submission.json",
+          "bytes": 4641,
+          "sha256": "8e75b8ebd8d32ea993f1b1c7a4f82e0dbc1af87bc47bae85ca9b6c17d35a59b8"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-29/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-29/submission.json",
+          "bytes": 4587,
+          "sha256": "f95972b276928d46e694239fc134bd66976e86cc2ac76a92276b829af33c1a2a"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1.5_sierra_2026-03-03/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1.5_sierra_2026-03-03/submission.json",
+          "bytes": 4593,
+          "sha256": "0982bf5ecf5b76bac05491073071a3c3821c1dc4f139cfe135112ae6585aea18"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-minimal_openai_2026-07-01/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-minimal_openai_2026-07-01/submission.json",
+          "bytes": 4559,
+          "sha256": "24ff60aa6c6824a13c8be0a1c543de066601faa6c281f1383bbd1f3fb3061de9"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1-0_openai_2026-04-13/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1-0_openai_2026-04-13/submission.json",
+          "bytes": 4495,
+          "sha256": "a16bf4a6c51a172ff0a3023cb75291ac609d61d6ca68f4b87a9d225890623003"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-minimal_google_2026-04-13/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-minimal_google_2026-04-13/submission.json",
+          "bytes": 4790,
+          "sha256": "63dba43a203a9fc45676306839ecd3753b5857afc30d5f1b84d8636e4e610a1d"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-live-2.5-flash_sierra_2026-03-03/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-live-2.5-flash_sierra_2026-03-03/submission.json",
+          "bytes": 4728,
+          "sha256": "7af89d64a58c67178bb161d24f09ac8d0e130fde557ce18483b85c46e7a5996f"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/livekit-cascaded_livekit_2026-05-19/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/livekit-cascaded_livekit_2026-05-19/submission.json",
+          "bytes": 4719,
+          "sha256": "b8a4b52ac90c67a5992e9c56980b7ea40737ab276b205ed421d7eee9122555d1"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-3-0_xai_2026-10-14/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-3-0_xai_2026-10-14/submission.json",
+          "bytes": 5980,
+          "sha256": "ba2fe869ab163c4df258ca8252f679484c0002ab1dc01e9bcc4e3059ea54f6e5"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/salesforce-launa-v1_salesforce_2026-10-06/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/salesforce-launa-v1_salesforce_2026-10-06/submission.json",
+          "bytes": 5508,
+          "sha256": "59d7dbc3bc67d5091ab7319ed25978f65789bfffac1c491545a39a5f8edce928"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/ava-zero_avartha_2026-10-22/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/ava-zero_avartha_2026-10-22/submission.json",
+          "bytes": 5372,
+          "sha256": "a8ffb60746047ebb9c1316b14246110f0a6d451001a690a9bb7da3b14a75c1ef"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/phonic-1_phonic_2026-10-22/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/phonic-1_phonic_2026-10-22/submission.json",
+          "bytes": 5108,
+          "sha256": "ee10d266b33ef7eea72d601cf3721695f27792b0840c4d825600fb5a08d8ccf4"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/phonic-1-user-sim-gpt-5-5_phonic_2026-10-22/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/phonic-1-user-sim-gpt-5-5_phonic_2026-10-22/submission.json",
+          "bytes": 5341,
+          "sha256": "8fd864709d69297f87737fe78947939d5e77faafffbbc31d92d9ed279512cfbc"
+        },
+        {
+          "url": "https://taubench.com/assets/index-DHHai565.js",
+          "status": 200,
+          "final_url": "https://taubench.com/assets/index-DHHai565.js",
+          "bytes": 366319,
+          "sha256": "15ff729480c78c367d5274a8cf5e6d16731452894a346da646d63d807b197929"
+        },
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-1-0_pineai_2026-10-27/submission.json",
+          "status": 200,
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-1-0_pineai_2026-10-27/submission.json",
+          "bytes": 6506,
+          "sha256": "3e44f7798668142aec85e5998cb1e8ceb77371b68d100f85fed292e065f4dcb2"
+        }
+      ],
+      "table_sha256": "e8b4532fbb3cc9b1245ffbb714b19035dfe69513b695dd4204e4d98559d67656",
+      "snapshot_sha256": "8f647225ece781d26ac2a26b788a377be09265e7293ab49817beba55fe204ee0"
+    },
+    {
+      "id": "theagentcompany",
+      "category": "tool-use",
+      "status": "unchanged",
+      "rows_before": 17,
+      "rows_after": 17,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current authoritative source payload SHA-256 matches previous successful audit; all source content retained.",
+      "sources": [
+        {
+          "url": "https://the-agent-company.com/static/js/main.6a1ea1e4.js",
+          "status": 200,
+          "final_url": "https://the-agent-company.com/static/js/main.6a1ea1e4.js",
+          "bytes": 214932,
+          "sha256": "2b0e3eab9220b8b1761c932a6745528a57370778bcf1eb3f08f675c3d3bb056e"
+        }
+      ],
+      "table_sha256": "f54dfbec7a9bd732e6cceb6982267c7a2deda525ab3d03f32e2dcbc69289d247",
+      "snapshot_sha256": "9e12abe430f0f93c1a088f1f510ab05da5d0f312b3c8de2a329d0c3fedbf79c9"
+    },
+    {
+      "id": "toolathlon",
+      "category": "tool-use",
+      "status": "partial-check",
+      "rows_before": 51,
+      "rows_after": 51,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "All 25 verified and 51 historical numeric rows, model names, type, agent, dates and score fields match after removing icon markup/markdown wrappers. Current serialization omits Evaluated by us badges and row links; historical verification state cannot be revalidated. Last-good table/snapshot/retrieved preserved.",
+      "sources": [
+        {
+          "url": "https://toolathlon.xyz/docs/leaderboard",
+          "status": 200,
+          "final_url": "https://toolathlon.xyz/docs/leaderboard",
+          "bytes": 444825,
+          "sha256": "ec2a0ab097a2f27c043a50360bfdefb9a0d09ceaa1136c850e1a53cf819a6961"
+        }
+      ],
+      "table_sha256": "cba22c9523c051223012ff9cd790f6aeca413b1829bfa93bbff04b2c08988356",
+      "snapshot_sha256": "87dd9d87290142c468c32ad966f12e13c8d6fc4481b09971ce28f43c0bc58e0c"
+    },
+    {
+      "id": "toolathlon-verified",
+      "category": "tool-use",
+      "status": "partial-check",
+      "rows_before": 25,
+      "rows_after": 25,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "All 25 verified and 51 historical numeric rows, model names, type, agent, dates and score fields match after removing icon markup/markdown wrappers. Current serialization omits Evaluated by us badges and row links; historical verification state cannot be revalidated. Last-good table/snapshot/retrieved preserved.",
+      "sources": [
+        {
+          "url": "https://toolathlon.xyz/docs/leaderboard",
+          "status": 200,
+          "final_url": "https://toolathlon.xyz/docs/leaderboard",
+          "bytes": 444825,
+          "sha256": "ec2a0ab097a2f27c043a50360bfdefb9a0d09ceaa1136c850e1a53cf819a6961"
+        }
+      ],
+      "table_sha256": "8a890431b4e8fb04a7da496b04e386c60e5dbb8de4e1e2bb468eb9ea5d841964",
+      "snapshot_sha256": "87dd9d87290142c468c32ad966f12e13c8d6fc4481b09971ce28f43c0bc58e0c"
+    },
+    {
+      "id": "vending-bench",
+      "category": "long-horizon",
+      "status": "unchanged",
+      "rows_before": 27,
+      "rows_after": 27,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05",
+      "detail": "Current page asset discovered; authoritative leaderboard JS SHA-256 matches prior audit. Stale historical asset 404 retained as failed request.",
+      "sources": [
+        {
+          "url": "https://andonlabs.com/evals/vending-bench",
+          "status": 200,
+          "final_url": "https://andonlabs.com/evals/vending-bench",
+          "bytes": 63670,
+          "sha256": "64015eb490c2a96966f88717565ec2d518fece5c438beafb365ed0fce227b6aa"
+        },
+        {
+          "url": "https://andonlabs.com/_app/immutable/nodes/26.FUD8iaCC.js",
+          "status": 200,
+          "final_url": "https://andonlabs.com/_app/immutable/nodes/26.FUD8iaCC.js",
+          "bytes": 20261,
+          "sha256": "bb4e62bab75fbb5c37d01a8d6b51f51ab3a8e3aff9bb248e18a7f8f06cfddff5"
+        }
+      ],
+      "table_sha256": "3598b9c42536bacddfbc5d3a542b2fc6f6fdc3d1e4864d6048a9f006af9f9588",
+      "snapshot_sha256": "78f189e1ad5457e8a087559c23ab4acb7ac7171eafe689130252325484917c95"
+    },
+    {
+      "id": "vending-bench-2",
+      "category": "long-horizon",
+      "status": "unchanged",
+      "rows_before": 73,
+      "rows_after": 73,
+      "retrieved_before": "2026-10-29",
+      "retrieved_after": "2026-10-29",
+      "detail": "Current page asset discovered; authoritative leaderboard JS SHA-256 matches prior audit. Stale historical asset 404 retained as failed request.",
+      "sources": [
+        {
+          "url": "https://andonlabs.com/evals/vending-bench-2",
+          "status": 200,
+          "final_url": "https://andonlabs.com/evals/vending-bench-2",
+          "bytes": 85470,
+          "sha256": "d90499d55cdda759f8a5e21224d097b8ab20086e5fd648a82bd5cce04cc5f2a8"
+        },
+        {
+          "url": "https://andonlabs.com/_app/immutable/nodes/27.DfnfhcbM.js",
+          "status": 200,
+          "final_url": "https://andonlabs.com/_app/immutable/nodes/27.DfnfhcbM.js",
+          "bytes": 47956,
+          "sha256": "d7fa8b0cd151717550adb8fc8aa3f2b479c8f33927fd91aa1026ae056d45fbf0"
+        },
+        {
+          "url": "https://andonlabs.com/_app/immutable/chunks/CdFT7FVG.js",
+          "status": 200,
+          "final_url": "https://andonlabs.com/_app/immutable/chunks/CdFT7FVG.js",
+          "bytes": 757434,
+          "sha256": "e22a8fe9ca7bd7880939ef54bc011883b374bd98af3ce6780441b5a7802f0121"
+        },
+        {
+          "url": "https://andonlabs.com/_app/immutable/chunks/3sxjRzhT.js",
+          "status": 200,
+          "final_url": "https://andonlabs.com/_app/immutable/chunks/3sxjRzhT.js",
+          "bytes": 5082,
+          "sha256": "4fcaa2415f66472956a539852455726e747fd65de36827ca0246fa8e9e0c379c"
+        }
+      ],
+      "table_sha256": "0a6f208f6c9f76796f72f05c777e21b9d14ff6d5bf4bbc57b12c5377f84c1b36",
+      "snapshot_sha256": "5878236620acfaeecd23744c3f5b0a8e7b09d8048680f41c49cd50ddea4c2ece"
+    }
+  ],
+  "model_proposals": [
+    {
+      "id": "kimi-k3.1-pro",
+      "name": "Kimi K3.1 Pro",
+      "vendor": "Kimi",
+      "open_weights": null,
+      "weights_url": null,
+      "aliases": [],
+      "source": "https://www.mercor.com/apex/apex-agents-leaderboard/"
+    },
+    {
+      "id": "pine-voice-1.0",
+      "name": "Pine Voice 1.0",
+      "vendor": "Pine AI",
+      "open_weights": null,
+      "weights_url": null,
+      "aliases": [],
+      "source": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-1-0_pineai_2026-10-27/submission.json"
+    }
+  ],
+  "conditions": [
+    "No live benchmark runs. Source published observations only.",
+    "Unchanged tables keep prior successful retrieved dates.",
+    "Tau voice v2 packages are separate and not mixed into voice v1. Correct metadata/submission paths were fetched successfully; legacy submission.json paths404 are not whole-source failures.",
+    "Pine Voice 1.0 source inconsistency: claimed full retail114 versus interaction count113 retained explicitly.",
+    "Toolathlon numeric payload unchanged, verification badges/links not revalidated; partial-check, last-good retained."
+  ]
+}

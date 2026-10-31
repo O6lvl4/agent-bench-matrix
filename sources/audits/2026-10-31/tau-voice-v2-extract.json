@@ -1,0 +1,2512 @@
+{
+  "checked": "2026-10-31",
+  "detail": "20 current metadata/submission packages across existing9 and new Phonic v2 cohort. Separate v2 framework remains unregistered; no comparison against v1. Trajectories/contact fields omitted.",
+  "sources": [
+    {
+      "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-8-live-extended-thinking_google_2026-10-07/benchmark-metadata.json",
+      "sha256": "f5f431f2211f4cada74cf38a74ae00b2e0b0fd7df059d9a8cbd7405723b1a617",
+      "data": {
+        "model_name": "gemini-3.8-live-extended-thinking",
+        "model_organization": "Google",
+        "submitting_organization": "Sierra",
+        "submission_date": "2026-10-07",
+        "submission_type": "standard",
+        "references": [],
+        "notes": "Agent gemini-3.8-live-extended-thinking at high thinking. Supersedes the 2026-10-09 draft of this entry: includes the later English telecom rerun and recovered infrastructure calls. Frozen 2026-10-02 voice-v2 release calls (six languages, one trial per task, regular speech complexity), packaged from the saved export with the historical adapter. Caller simulator openai/gpt-5.5 (reasoning low).",
+        "schema_version": "benchmark-metadata-v1",
+        "agent_provider": "gemini",
+        "agent_model": "gemini-3.8-live-extended-thinking",
+        "evidence": "historical-voice-v2-2026-10-02"
+      }
+    },
+    {
+      "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-8-live-extended-thinking_google_2026-10-07/benchmark-submission.json",
+      "sha256": "d1a5274d4b06c549a23d5532aafed199626300863375a5d7be6c4ed9c08c0592",
+      "data": {
+        "schema_version": "benchmark-submission-v1",
+        "summary": {
+          "benchmark_version": "voice-v2",
+          "frame_revision": "regional-release-data-v16",
+          "condition_fingerprint": "8a5ec17f0e8175231c0670f0dba0ba6eb261e233f3521f9f09bf584f5df22ea0",
+          "expected_trials": 900,
+          "scored_trials": 898,
+          "error_trials": 2,
+          "unscored_trials": 0,
+          "missing_trials": 0,
+          "complete": true,
+          "score": 0.6850793650793651,
+          "observed_score": 0.6850793650793651,
+          "by_language": {
+            "en": {
+              "expected_trials": 150,
+              "scored_trials": 150,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.8133333333333334,
+              "observed_score": 0.8133333333333334
+            },
+            "es": {
+              "expected_trials": 150,
+              "scored_trials": 150,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.7466666666666667,
+              "observed_score": 0.7466666666666667
+            },
+            "pt": {
+              "expected_trials": 150,
+              "scored_trials": 150,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.7666666666666666,
+              "observed_score": 0.7666666666666666
+            },
+            "hi": {
+              "expected_trials": 150,
+              "scored_trials": 150,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.7733333333333333,
+              "observed_score": 0.7733333333333333
+            },
+            "zh": {
+              "expected_trials": 150,
+              "scored_trials": 149,
+              "error_trials": 1,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.6029931972789115,
+              "observed_score": 0.6029931972789115
+            },
+            "ko": {
+              "expected_trials": 150,
+              "scored_trials": 149,
+              "error_trials": 1,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.40748299319727893,
+              "observed_score": 0.40748299319727893
+            }
+          },
+          "by_domain": {
+            "airline": {
+              "expected_trials": 300,
+              "scored_trials": 298,
+              "error_trials": 2,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.6252380952380953,
+              "observed_score": 0.6252380952380953
+            },
+            "retail": {
+              "expected_trials": 300,
+              "scored_trials": 300,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.5833333333333334,
+              "observed_score": 0.5833333333333334
+            },
+            "telecom": {
+              "expected_trials": 300,
+              "scored_trials": 300,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.8466666666666667,
+              "observed_score": 0.8466666666666667
+            }
+          },
+          "cells": [
+            {
+              "language": "en",
+              "domain": "airline",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.8,
+              "observed_score": 0.8
+            },
+            {
+              "language": "en",
+              "domain": "retail",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.74,
+              "observed_score": 0.74
+            },
+            {
+              "language": "en",
+              "domain": "telecom",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.9,
+              "observed_score": 0.9
+            },
+            {
+              "language": "es",
+              "domain": "airline",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.74,
+              "observed_score": 0.74
+            },
+            {
+              "language": "es",
+              "domain": "retail",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.64,
+              "observed_score": 0.64
+            },
+            {
+              "language": "es",
+              "domain": "telecom",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.86,
+              "observed_score": 0.86
+            },
+            {
+              "language": "pt",
+              "domain": "airline",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.82,
+              "observed_score": 0.82
+            },
+            {
+              "language": "pt",
+              "domain": "retail",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.6,
+              "observed_score": 0.6
+            },
+            {
+              "language": "pt",
+              "domain": "telecom",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.88,
+              "observed_score": 0.88
+            },
+            {
+              "language": "hi",
+              "domain": "airline",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.82,
+              "observed_score": 0.82
+            },
+            {
+              "language": "hi",
+              "domain": "retail",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.66,
+              "observed_score": 0.66
+            },
+            {
+              "language": "hi",
+              "domain": "telecom",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.84,
+              "observed_score": 0.84
+            },
+            {
+              "language": "zh",
+              "domain": "airline",
+              "expected_trials": 50,
+              "scored_trials": 49,
+              "error_trials": 1,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.4489795918367347,
+              "observed_score": 0.4489795918367347
+            },
+            {
+              "language": "zh",
+              "domain": "retail",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.52,
+              "observed_score": 0.52
+            },
+            {
+              "language": "zh",
+              "domain": "telecom",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.84,
+              "observed_score": 0.84
+            },
+            {
+              "language": "ko",
+              "domain": "airline",
+              "expected_trials": 50,
+              "scored_trials": 49,
+              "error_trials": 1,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.12244897959183673,
+              "observed_score": 0.12244897959183673
+            },
+            {
+              "language": "ko",
+              "domain": "retail",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.34,
+              "observed_score": 0.34
+            },
+            {
+              "language": "ko",
+              "domain": "telecom",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.76,
+              "observed_score": 0.76
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-8-live-extended-thinking_google_2026-10-07_banking/benchmark-metadata.json",
+      "sha256": "7e2f7f8424416e8b3f3b8112f4a7d87065844775c83972c5fbc4ad1503cd5a31",
+      "data": {
+        "model_name": "gemini-3.8-live-extended-thinking",
+        "model_organization": "Google",
+        "submitting_organization": "Sierra",
+        "submission_date": "2026-10-07",
+        "submission_type": "standard",
+        "references": [],
+        "notes": "Agent gemini-3.8-live-extended-thinking at high thinking. Supersedes the 2026-10-09 draft of this entry: includes the later English telecom rerun and recovered infrastructure calls. Frozen 2026-10-02 voice-v2 release calls (six languages, one trial per task, regular speech complexity), packaged from the saved export with the historical adapter. Caller simulator openai/gpt-5.5 (reasoning low). Banking: 89 calls whose knowledge-base shell tool read answer-bearing files outside the knowledge base under the original sandbox were rerun with the fixed sandbox (sierra-research/tau2-bench#653, #655); per-call provenance is kept with the release export.",
+        "schema_version": "benchmark-metadata-v1",
+        "agent_provider": "gemini",
+        "agent_model": "gemini-3.8-live-extended-thinking",
+        "evidence": "historical-voice-v2-2026-10-02"
+      }
+    },
+    {
+      "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-8-live-extended-thinking_google_2026-10-07_banking/benchmark-submission.json",
+      "sha256": "86484417740daed15b3886af5a7d73d6dafe601f378bbd3d0e425f72508bb7f8",
+      "data": {
+        "schema_version": "benchmark-submission-v1",
+        "summary": {
+          "benchmark_version": "voice-v2-banking",
+          "frame_revision": "banking-release-v1",
+          "condition_fingerprint": "7dfcad8d3e134d6f70324ad39b8b6d63ed7ae84fa2b82537febf981344bb6b46",
+          "expected_trials": 582,
+          "scored_trials": 582,
+          "error_trials": 0,
+          "unscored_trials": 0,
+          "missing_trials": 0,
+          "complete": true,
+          "score": 0.3384879725085911,
+          "observed_score": 0.3384879725085911,
+          "by_language": {
+            "en": {
+              "expected_trials": 97,
+              "scored_trials": 97,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.3402061855670103,
+              "observed_score": 0.3402061855670103
+            },
+            "es": {
+              "expected_trials": 97,
+              "scored_trials": 97,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.31958762886597936,
+              "observed_score": 0.31958762886597936
+            },
+            "pt": {
+              "expected_trials": 97,
+              "scored_trials": 97,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.3711340206185567,
+              "observed_score": 0.3711340206185567
+            },
+            "hi": {
+              "expected_trials": 97,
+              "scored_trials": 97,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.4020618556701031,
+              "observed_score": 0.4020618556701031
+            },
+            "zh": {
+              "expected_trials": 97,
+              "scored_trials": 97,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.29896907216494845,
+              "observed_score": 0.29896907216494845
+            },
+            "ko": {
+              "expected_trials": 97,
+              "scored_trials": 97,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.29896907216494845,
+              "observed_score": 0.29896907216494845
+            }
+          },
+          "by_domain": {
+            "banking_knowledge": {
+              "expected_trials": 582,
+              "scored_trials": 582,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.3384879725085911,
+              "observed_score": 0.3384879725085911
+            }
+          },
+          "cells": [
+            {
+              "language": "en",
+              "domain": "banking_knowledge",
+              "expected_trials": 97,
+              "scored_trials": 97,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.3402061855670103,
+              "observed_score": 0.3402061855670103
+            },
+            {
+              "language": "es",
+              "domain": "banking_knowledge",
+              "expected_trials": 97,
+              "scored_trials": 97,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.31958762886597936,
+              "observed_score": 0.31958762886597936
+            },
+            {
+              "language": "pt",
+              "domain": "banking_knowledge",
+              "expected_trials": 97,
+              "scored_trials": 97,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.3711340206185567,
+              "observed_score": 0.3711340206185567
+            },
+            {
+              "language": "hi",
+              "domain": "banking_knowledge",
+              "expected_trials": 97,
+              "scored_trials": 97,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.4020618556701031,
+              "observed_score": 0.4020618556701031
+            },
+            {
+              "language": "zh",
+              "domain": "banking_knowledge",
+              "expected_trials": 97,
+              "scored_trials": 97,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.29896907216494845,
+              "observed_score": 0.29896907216494845
+            },
+            {
+              "language": "ko",
+              "domain": "banking_knowledge",
+              "expected_trials": 97,
+              "scored_trials": 97,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.29896907216494845,
+              "observed_score": 0.29896907216494845
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-8-live-extended-thinking_google_2026-10-07_entity/benchmark-metadata.json",
+      "sha256": "2f2792301ab7d9f1c8a6332592016b47c1dc3baa9aed97c5ff33a368eb0f90f6",
+      "data": {
+        "model_name": "gemini-3.8-live-extended-thinking",
+        "model_organization": "Google",
+        "submitting_organization": "Sierra",
+        "submission_date": "2026-10-07",
+        "submission_type": "standard",
+        "references": [],
+        "notes": "Agent gemini-3.8-live-extended-thinking at high thinking. Supersedes the 2026-10-09 draft of this entry: includes the later English telecom rerun and recovered infrastructure calls. Frozen 2026-10-02 voice-v2 release calls (six languages, one trial per task, regular speech complexity), packaged from the saved export with the historical adapter. Caller simulator openai/gpt-5.5 (reasoning low).",
+        "schema_version": "benchmark-metadata-v1",
+        "agent_provider": "gemini",
+        "agent_model": "gemini-3.8-live-extended-thinking",
+        "evidence": "historical-voice-v2-2026-10-02"
+      }
+    },
+    {
+      "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-8-live-extended-thinking_google_2026-10-07_entity/benchmark-submission.json",
+      "sha256": "b0eae38012b022bd3fb6676c7064a47261031d5de456fff4f2df2cef3f9f460d",
+      "data": {
+        "schema_version": "benchmark-submission-v1",
+        "summary": {
+          "benchmark_version": "voice-v2-entity",
+          "frame_revision": "entity-release-v1",
+          "condition_fingerprint": "f0d1dec99c151bb70c9a0572b302013e2faf64cafb5ac22c9cb9846791a3f70f",
+          "expected_trials": 1200,
+          "scored_trials": 1200,
+          "error_trials": 0,
+          "unscored_trials": 0,
+          "missing_trials": 0,
+          "complete": true,
+          "score": 0.4375,
+          "observed_score": 0.4375,
+          "by_language": {
+            "en": {
+              "expected_trials": 200,
+              "scored_trials": 200,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.505,
+              "observed_score": 0.505
+            },
+            "es": {
+              "expected_trials": 200,
+              "scored_trials": 200,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.54,
+              "observed_score": 0.54
+            },
+            "pt": {
+              "expected_trials": 200,
+              "scored_trials": 200,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.455,
+              "observed_score": 0.455
+            },
+            "hi": {
+              "expected_trials": 200,
+              "scored_trials": 200,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.51,
+              "observed_score": 0.51
+            },
+            "zh": {
+              "expected_trials": 200,
+              "scored_trials": 200,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.43,
+              "observed_score": 0.43
+            },
+            "ko": {
+              "expected_trials": 200,
+              "scored_trials": 200,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.185,
+              "observed_score": 0.185
+            }
+          },
+          "by_domain": {
+            "intake": {
+              "expected_trials": 1200,
+              "scored_trials": 1200,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.4375,
+              "observed_score": 0.4375
+            }
+          },
+          "cells": [
+            {
+              "language": "en",
+              "domain": "intake",
+              "expected_trials": 200,
+              "scored_trials": 200,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.505,
+              "observed_score": 0.505
+            },
+            {
+              "language": "es",
+              "domain": "intake",
+              "expected_trials": 200,
+              "scored_trials": 200,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.54,
+              "observed_score": 0.54
+            },
+            {
+              "language": "pt",
+              "domain": "intake",
+              "expected_trials": 200,
+              "scored_trials": 200,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.455,
+              "observed_score": 0.455
+            },
+            {
+              "language": "hi",
+              "domain": "intake",
+              "expected_trials": 200,
+              "scored_trials": 200,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.51,
+              "observed_score": 0.51
+            },
+            {
+              "language": "zh",
+              "domain": "intake",
+              "expected_trials": 200,
+              "scored_trials": 200,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.43,
+              "observed_score": 0.43
+            },
+            {
+              "language": "ko",
+              "domain": "intake",
+              "expected_trials": 200,
+              "scored_trials": 200,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.185,
+              "observed_score": 0.185
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1_openai_2026-10-20/benchmark-metadata.json",
+      "sha256": "1811d8e3752d3070d15fbd1628dafd5314fb7395d3ef69b6e74defd5004aa0c4",
+      "data": {
+        "model_name": "gpt-live-1",
+        "model_organization": "OpenAI",
+        "submitting_organization": "Sierra",
+        "submission_date": "2026-10-20",
+        "submission_type": "standard",
+        "references": [],
+        "notes": "Agent openai_live gpt-live-1 with the gpt-6-astra backend at medium reasoning effort, marin voice, provider-owned prompt templates. Frozen 2026-10-02 voice-v2 release calls (six languages, one trial per task, regular speech complexity), packaged from the saved export with the historical adapter. Caller simulator openai/gpt-5.5 (reasoning low).",
+        "schema_version": "benchmark-metadata-v1",
+        "agent_provider": "openai_live",
+        "agent_model": "gpt-live-1",
+        "evidence": "historical-voice-v2-2026-10-02"
+      }
+    },
+    {
+      "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1_openai_2026-10-20/benchmark-submission.json",
+      "sha256": "6ca69a56fc4d8b518c0e49d97a8b468b8885633b8d4194ffe9e2b29dc3f12f1d",
+      "data": {
+        "schema_version": "benchmark-submission-v1",
+        "summary": {
+          "benchmark_version": "voice-v2",
+          "frame_revision": "regional-release-data-v16",
+          "condition_fingerprint": "b9cda6528787e2e2eb95e9aa13274aa9695ab3964105527e570cb4a9a84ed520",
+          "expected_trials": 900,
+          "scored_trials": 891,
+          "error_trials": 9,
+          "unscored_trials": 0,
+          "missing_trials": 0,
+          "complete": true,
+          "score": 0.7991257816257816,
+          "observed_score": 0.7991257816257816,
+          "by_language": {
+            "en": {
+              "expected_trials": 150,
+              "scored_trials": 150,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.8466666666666667,
+              "observed_score": 0.8466666666666667
+            },
+            "es": {
+              "expected_trials": 150,
+              "scored_trials": 150,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.84,
+              "observed_score": 0.84
+            },
+            "pt": {
+              "expected_trials": 150,
+              "scored_trials": 150,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.7933333333333333,
+              "observed_score": 0.7933333333333333
+            },
+            "hi": {
+              "expected_trials": 150,
+              "scored_trials": 149,
+              "error_trials": 1,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.799047619047619,
+              "observed_score": 0.799047619047619
+            },
+            "zh": {
+              "expected_trials": 150,
+              "scored_trials": 142,
+              "error_trials": 8,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.8023737373737373,
+              "observed_score": 0.8023737373737373
+            },
+            "ko": {
+              "expected_trials": 150,
+              "scored_trials": 150,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.7133333333333334,
+              "observed_score": 0.7133333333333334
+            }
+          },
+          "by_domain": {
+            "airline": {
+              "expected_trials": 300,
+              "scored_trials": 300,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.8333333333333333,
+              "observed_score": 0.8333333333333333
+            },
+            "retail": {
+              "expected_trials": 300,
+              "scored_trials": 298,
+              "error_trials": 2,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.7286111111111111,
+              "observed_score": 0.7286111111111111
+            },
+            "telecom": {
+              "expected_trials": 300,
+              "scored_trials": 293,
+              "error_trials": 7,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.8354329004329004,
+              "observed_score": 0.8354329004329004
+            }
+          },
+          "cells": [
+            {
+              "language": "en",
+              "domain": "airline",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.86,
+              "observed_score": 0.86
+            },
+            {
+              "language": "en",
+              "domain": "retail",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.74,
+              "observed_score": 0.74
+            },
+            {
+              "language": "en",
+              "domain": "telecom",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.94,
+              "observed_score": 0.94
+            },
+            {
+              "language": "es",
+              "domain": "airline",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.84,
+              "observed_score": 0.84
+            },
+            {
+              "language": "es",
+              "domain": "retail",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.72,
+              "observed_score": 0.72
+            },
+            {
+              "language": "es",
+              "domain": "telecom",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.96,
+              "observed_score": 0.96
+            },
+            {
+              "language": "pt",
+              "domain": "airline",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.86,
+              "observed_score": 0.86
+            },
+            {
+              "language": "pt",
+              "domain": "retail",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.8,
+              "observed_score": 0.8
+            },
+            {
+              "language": "pt",
+              "domain": "telecom",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.72,
+              "observed_score": 0.72
+            },
+            {
+              "language": "hi",
+              "domain": "airline",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.84,
+              "observed_score": 0.84
+            },
+            {
+              "language": "hi",
+              "domain": "retail",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.7,
+              "observed_score": 0.7
+            },
+            {
+              "language": "hi",
+              "domain": "telecom",
+              "expected_trials": 50,
+              "scored_trials": 49,
+              "error_trials": 1,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.8571428571428571,
+              "observed_score": 0.8571428571428571
+            },
+            {
+              "language": "zh",
+              "domain": "airline",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.82,
+              "observed_score": 0.82
+            },
+            {
+              "language": "zh",
+              "domain": "retail",
+              "expected_trials": 50,
+              "scored_trials": 48,
+              "error_trials": 2,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.7916666666666666,
+              "observed_score": 0.7916666666666666
+            },
+            {
+              "language": "zh",
+              "domain": "telecom",
+              "expected_trials": 50,
+              "scored_trials": 44,
+              "error_trials": 6,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.7954545454545454,
+              "observed_score": 0.7954545454545454
+            },
+            {
+              "language": "ko",
+              "domain": "airline",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.78,
+              "observed_score": 0.78
+            },
+            {
+              "language": "ko",
+              "domain": "retail",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.62,
+              "observed_score": 0.62
+            },
+            {
+              "language": "ko",
+              "domain": "telecom",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.74,
+              "observed_score": 0.74
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1_openai_2026-10-20_banking/benchmark-metadata.json",
+      "sha256": "21cce7d9f996b07ebadcc03fc7c2ca9709508d72df1f43f8e01a03f386bbeb24",
+      "data": {
+        "model_name": "gpt-live-1",
+        "model_organization": "OpenAI",
+        "submitting_organization": "Sierra",
+        "submission_date": "2026-10-20",
+        "submission_type": "standard",
+        "references": [],
+        "notes": "Agent openai_live gpt-live-1 with the gpt-6-astra backend at medium reasoning effort, marin voice, provider-owned prompt templates. Frozen 2026-10-02 voice-v2 release calls (six languages, one trial per task, regular speech complexity), packaged from the saved export with the historical adapter. Caller simulator openai/gpt-5.5 (reasoning low).",
+        "schema_version": "benchmark-metadata-v1",
+        "agent_provider": "openai_live",
+        "agent_model": "gpt-live-1",
+        "evidence": "historical-voice-v2-2026-10-02"
+      }
+    },
+    {
+      "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1_openai_2026-10-20_banking/benchmark-submission.json",
+      "sha256": "1601733410f0ae563a1241c53dadb8836dadbaee5ccb497666ba8e32e6bb9692",
+      "data": {
+        "schema_version": "benchmark-submission-v1",
+        "summary": {
+          "benchmark_version": "voice-v2-banking",
+          "frame_revision": "banking-release-v1",
+          "condition_fingerprint": "8ada644f2f2bd3f9711b46a0d14d02e1304bf3dc83f513a4857a4ffcf7166c85",
+          "expected_trials": 582,
+          "scored_trials": 582,
+          "error_trials": 0,
+          "unscored_trials": 0,
+          "missing_trials": 0,
+          "complete": true,
+          "score": 0.3316151202749141,
+          "observed_score": 0.3316151202749141,
+          "by_language": {
+            "en": {
+              "expected_trials": 97,
+              "scored_trials": 97,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.3711340206185567,
+              "observed_score": 0.3711340206185567
+            },
+            "es": {
+              "expected_trials": 97,
+              "scored_trials": 97,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.29896907216494845,
+              "observed_score": 0.29896907216494845
+            },
+            "pt": {
+              "expected_trials": 97,
+              "scored_trials": 97,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.35051546391752575,
+              "observed_score": 0.35051546391752575
+            },
+            "hi": {
+              "expected_trials": 97,
+              "scored_trials": 97,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.36082474226804123,
+              "observed_score": 0.36082474226804123
+            },
+            "zh": {
+              "expected_trials": 97,
+              "scored_trials": 97,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.29896907216494845,
+              "observed_score": 0.29896907216494845
+            },
+            "ko": {
+              "expected_trials": 97,
+              "scored_trials": 97,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.30927835051546393,
+              "observed_score": 0.30927835051546393
+            }
+          },
+          "by_domain": {
+            "banking_knowledge": {
+              "expected_trials": 582,
+              "scored_trials": 582,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.3316151202749141,
+              "observed_score": 0.3316151202749141
+            }
+          },
+          "cells": [
+            {
+              "language": "en",
+              "domain": "banking_knowledge",
+              "expected_trials": 97,
+              "scored_trials": 97,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.3711340206185567,
+              "observed_score": 0.3711340206185567
+            },
+            {
+              "language": "es",
+              "domain": "banking_knowledge",
+              "expected_trials": 97,
+              "scored_trials": 97,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.29896907216494845,
+              "observed_score": 0.29896907216494845
+            },
+            {
+              "language": "pt",
+              "domain": "banking_knowledge",
+              "expected_trials": 97,
+              "scored_trials": 97,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.35051546391752575,
+              "observed_score": 0.35051546391752575
+            },
+            {
+              "language": "hi",
+              "domain": "banking_knowledge",
+              "expected_trials": 97,
+              "scored_trials": 97,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.36082474226804123,
+              "observed_score": 0.36082474226804123
+            },
+            {
+              "language": "zh",
+              "domain": "banking_knowledge",
+              "expected_trials": 97,
+              "scored_trials": 97,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.29896907216494845,
+              "observed_score": 0.29896907216494845
+            },
+            {
+              "language": "ko",
+              "domain": "banking_knowledge",
+              "expected_trials": 97,
+              "scored_trials": 97,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.30927835051546393,
+              "observed_score": 0.30927835051546393
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1_openai_2026-10-20_entity/benchmark-metadata.json",
+      "sha256": "5de64e49b74800a7e6f00fb5d6e1532403838926488a7c66b45f6294611579f3",
+      "data": {
+        "model_name": "gpt-live-1",
+        "model_organization": "OpenAI",
+        "submitting_organization": "Sierra",
+        "submission_date": "2026-10-20",
+        "submission_type": "standard",
+        "references": [],
+        "notes": "Agent openai_live gpt-live-1 with the gpt-6-astra backend at medium reasoning effort, marin voice, provider-owned prompt templates. Frozen 2026-10-02 voice-v2 release calls (six languages, one trial per task, regular speech complexity), packaged from the saved export with the historical adapter. Caller simulator openai/gpt-5.5 (reasoning low).",
+        "schema_version": "benchmark-metadata-v1",
+        "agent_provider": "openai_live",
+        "agent_model": "gpt-live-1",
+        "evidence": "historical-voice-v2-2026-10-02"
+      }
+    },
+    {
+      "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1_openai_2026-10-20_entity/benchmark-submission.json",
+      "sha256": "bb01096bf171d8445cfe221a234f366d5a864db624905eec3a13e83ffe7f8953",
+      "data": {
+        "schema_version": "benchmark-submission-v1",
+        "summary": {
+          "benchmark_version": "voice-v2-entity",
+          "frame_revision": "entity-release-v1",
+          "condition_fingerprint": "0dc4b0da07699202820a9471f80e6c697256f77efd58df19a5ad893b02e5feed",
+          "expected_trials": 1200,
+          "scored_trials": 1200,
+          "error_trials": 0,
+          "unscored_trials": 0,
+          "missing_trials": 0,
+          "complete": true,
+          "score": 0.6033333333333333,
+          "observed_score": 0.6033333333333333,
+          "by_language": {
+            "en": {
+              "expected_trials": 200,
+              "scored_trials": 200,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.74,
+              "observed_score": 0.74
+            },
+            "es": {
+              "expected_trials": 200,
+              "scored_trials": 200,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.735,
+              "observed_score": 0.735
+            },
+            "pt": {
+              "expected_trials": 200,
+              "scored_trials": 200,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.69,
+              "observed_score": 0.69
+            },
+            "hi": {
+              "expected_trials": 200,
+              "scored_trials": 200,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.565,
+              "observed_score": 0.565
+            },
+            "zh": {
+              "expected_trials": 200,
+              "scored_trials": 200,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.575,
+              "observed_score": 0.575
+            },
+            "ko": {
+              "expected_trials": 200,
+              "scored_trials": 200,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.315,
+              "observed_score": 0.315
+            }
+          },
+          "by_domain": {
+            "intake": {
+              "expected_trials": 1200,
+              "scored_trials": 1200,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.6033333333333333,
+              "observed_score": 0.6033333333333333
+            }
+          },
+          "cells": [
+            {
+              "language": "en",
+              "domain": "intake",
+              "expected_trials": 200,
+              "scored_trials": 200,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.74,
+              "observed_score": 0.74
+            },
+            {
+              "language": "es",
+              "domain": "intake",
+              "expected_trials": 200,
+              "scored_trials": 200,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.735,
+              "observed_score": 0.735
+            },
+            {
+              "language": "pt",
+              "domain": "intake",
+              "expected_trials": 200,
+              "scored_trials": 200,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.69,
+              "observed_score": 0.69
+            },
+            {
+              "language": "hi",
+              "domain": "intake",
+              "expected_trials": 200,
+              "scored_trials": 200,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.565,
+              "observed_score": 0.565
+            },
+            {
+              "language": "zh",
+              "domain": "intake",
+              "expected_trials": 200,
+              "scored_trials": 200,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.575,
+              "observed_score": 0.575
+            },
+            {
+              "language": "ko",
+              "domain": "intake",
+              "expected_trials": 200,
+              "scored_trials": 200,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.315,
+              "observed_score": 0.315
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-10-20/benchmark-metadata.json",
+      "sha256": "638e5acc375fe5b4e3087ad39867b2cffb4d7d8ee8555fd81f9097cad770081c",
+      "data": {
+        "model_name": "grok-voice-think-fast-2.0",
+        "model_organization": "xAI",
+        "submitting_organization": "Sierra",
+        "submission_date": "2026-10-20",
+        "submission_type": "standard",
+        "references": [],
+        "notes": "Agent xai grok-voice-think-fast-2.0 at high reasoning effort. Frozen 2026-10-02 voice-v2 release calls (six languages, one trial per task, regular speech complexity), packaged from the saved export with the historical adapter. Caller simulator openai/gpt-5.5 (reasoning low).",
+        "schema_version": "benchmark-metadata-v1",
+        "agent_provider": "xai",
+        "agent_model": "grok-voice-think-fast-2.0",
+        "evidence": "historical-voice-v2-2026-10-02"
+      }
+    },
+    {
+      "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-10-20/benchmark-submission.json",
+      "sha256": "64d959acd4cc26e9b3ec7b503bb923eb9605ff9ca2dc0074ba0a42ac382d5d67",
+      "data": {
+        "schema_version": "benchmark-submission-v1",
+        "summary": {
+          "benchmark_version": "voice-v2",
+          "frame_revision": "regional-release-data-v16",
+          "condition_fingerprint": "73cd0023129ad2c966c4b26883e8bad150c1d0c943dbe85eb56ce7bc1dca95b1",
+          "expected_trials": 900,
+          "scored_trials": 898,
+          "error_trials": 2,
+          "unscored_trials": 0,
+          "missing_trials": 0,
+          "complete": true,
+          "score": 0.7136961451247166,
+          "observed_score": 0.7136961451247166,
+          "by_language": {
+            "en": {
+              "expected_trials": 150,
+              "scored_trials": 150,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.76,
+              "observed_score": 0.76
+            },
+            "es": {
+              "expected_trials": 150,
+              "scored_trials": 150,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.76,
+              "observed_score": 0.76
+            },
+            "pt": {
+              "expected_trials": 150,
+              "scored_trials": 150,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.6666666666666667,
+              "observed_score": 0.6666666666666667
+            },
+            "hi": {
+              "expected_trials": 150,
+              "scored_trials": 150,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.7333333333333334,
+              "observed_score": 0.7333333333333334
+            },
+            "zh": {
+              "expected_trials": 150,
+              "scored_trials": 148,
+              "error_trials": 2,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.7421768707482993,
+              "observed_score": 0.7421768707482993
+            },
+            "ko": {
+              "expected_trials": 150,
+              "scored_trials": 150,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.62,
+              "observed_score": 0.62
+            }
+          },
+          "by_domain": {
+            "airline": {
+              "expected_trials": 300,
+              "scored_trials": 299,
+              "error_trials": 1,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.6387755102040816,
+              "observed_score": 0.6387755102040816
+            },
+            "retail": {
+              "expected_trials": 300,
+              "scored_trials": 299,
+              "error_trials": 1,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.6123129251700681,
+              "observed_score": 0.6123129251700681
+            },
+            "telecom": {
+              "expected_trials": 300,
+              "scored_trials": 300,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.89,
+              "observed_score": 0.89
+            }
+          },
+          "cells": [
+            {
+              "language": "en",
+              "domain": "airline",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.66,
+              "observed_score": 0.66
+            },
+            {
+              "language": "en",
+              "domain": "retail",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.72,
+              "observed_score": 0.72
+            },
+            {
+              "language": "en",
+              "domain": "telecom",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.9,
+              "observed_score": 0.9
+            },
+            {
+              "language": "es",
+              "domain": "airline",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.7,
+              "observed_score": 0.7
+            },
+            {
+              "language": "es",
+              "domain": "retail",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.74,
+              "observed_score": 0.74
+            },
+            {
+              "language": "es",
+              "domain": "telecom",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.84,
+              "observed_score": 0.84
+            },
+            {
+              "language": "pt",
+              "domain": "airline",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.64,
+              "observed_score": 0.64
+            },
+            {
+              "language": "pt",
+              "domain": "retail",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.44,
+              "observed_score": 0.44
+            },
+            {
+              "language": "pt",
+              "domain": "telecom",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.92,
+              "observed_score": 0.92
+            },
+            {
+              "language": "hi",
+              "domain": "airline",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.68,
+              "observed_score": 0.68
+            },
+            {
+              "language": "hi",
+              "domain": "retail",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.64,
+              "observed_score": 0.64
+            },
+            {
+              "language": "hi",
+              "domain": "telecom",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.88,
+              "observed_score": 0.88
+            },
+            {
+              "language": "zh",
+              "domain": "airline",
+              "expected_trials": 50,
+              "scored_trials": 49,
+              "error_trials": 1,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.6326530612244898,
+              "observed_score": 0.6326530612244898
+            },
+            {
+              "language": "zh",
+              "domain": "retail",
+              "expected_trials": 50,
+              "scored_trials": 49,
+              "error_trials": 1,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.6938775510204082,
+              "observed_score": 0.6938775510204082
+            },
+            {
+              "language": "zh",
+              "domain": "telecom",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.9,
+              "observed_score": 0.9
+            },
+            {
+              "language": "ko",
+              "domain": "airline",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.52,
+              "observed_score": 0.52
+            },
+            {
+              "language": "ko",
+              "domain": "retail",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.44,
+              "observed_score": 0.44
+            },
+            {
+              "language": "ko",
+              "domain": "telecom",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.9,
+              "observed_score": 0.9
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-10-20_banking/benchmark-metadata.json",
+      "sha256": "72692f696799599eea3fbe3807684cc2e8e0d24c4fbfeafa112e75ea333d54b2",
+      "data": {
+        "model_name": "grok-voice-think-fast-2.0",
+        "model_organization": "xAI",
+        "submitting_organization": "Sierra",
+        "submission_date": "2026-10-20",
+        "submission_type": "standard",
+        "references": [],
+        "notes": "Agent xai grok-voice-think-fast-2.0 at high reasoning effort. Frozen 2026-10-02 voice-v2 release calls (six languages, one trial per task, regular speech complexity), packaged from the saved export with the historical adapter. Caller simulator openai/gpt-5.5 (reasoning low).",
+        "schema_version": "benchmark-metadata-v1",
+        "agent_provider": "xai",
+        "agent_model": "grok-voice-think-fast-2.0",
+        "evidence": "historical-voice-v2-2026-10-02"
+      }
+    },
+    {
+      "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-10-20_banking/benchmark-submission.json",
+      "sha256": "15a9bf11294688ccd229a49b663dfb370a16c25ebe2ae81a1f6981faecac0a66",
+      "data": {
+        "schema_version": "benchmark-submission-v1",
+        "summary": {
+          "benchmark_version": "voice-v2-banking",
+          "frame_revision": "banking-release-v1",
+          "condition_fingerprint": "40e0b97859b88a20fc9bc69cf0e2db49cfc5cd77563cbd060caa0f4e06d131f9",
+          "expected_trials": 582,
+          "scored_trials": 582,
+          "error_trials": 0,
+          "unscored_trials": 0,
+          "missing_trials": 0,
+          "complete": true,
+          "score": 0.10996563573883161,
+          "observed_score": 0.10996563573883161,
+          "by_language": {
+            "en": {
+              "expected_trials": 97,
+              "scored_trials": 97,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.15463917525773196,
+              "observed_score": 0.15463917525773196
+            },
+            "es": {
+              "expected_trials": 97,
+              "scored_trials": 97,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.07216494845360824,
+              "observed_score": 0.07216494845360824
+            },
+            "pt": {
+              "expected_trials": 97,
+              "scored_trials": 97,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.14432989690721648,
+              "observed_score": 0.14432989690721648
+            },
+            "hi": {
+              "expected_trials": 97,
+              "scored_trials": 97,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.12371134020618557,
+              "observed_score": 0.12371134020618557
+            },
+            "zh": {
+              "expected_trials": 97,
+              "scored_trials": 97,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.08247422680412371,
+              "observed_score": 0.08247422680412371
+            },
+            "ko": {
+              "expected_trials": 97,
+              "scored_trials": 97,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.08247422680412371,
+              "observed_score": 0.08247422680412371
+            }
+          },
+          "by_domain": {
+            "banking_knowledge": {
+              "expected_trials": 582,
+              "scored_trials": 582,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.10996563573883161,
+              "observed_score": 0.10996563573883161
+            }
+          },
+          "cells": [
+            {
+              "language": "en",
+              "domain": "banking_knowledge",
+              "expected_trials": 97,
+              "scored_trials": 97,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.15463917525773196,
+              "observed_score": 0.15463917525773196
+            },
+            {
+              "language": "es",
+              "domain": "banking_knowledge",
+              "expected_trials": 97,
+              "scored_trials": 97,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.07216494845360824,
+              "observed_score": 0.07216494845360824
+            },
+            {
+              "language": "pt",
+              "domain": "banking_knowledge",
+              "expected_trials": 97,
+              "scored_trials": 97,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.14432989690721648,
+              "observed_score": 0.14432989690721648
+            },
+            {
+              "language": "hi",
+              "domain": "banking_knowledge",
+              "expected_trials": 97,
+              "scored_trials": 97,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.12371134020618557,
+              "observed_score": 0.12371134020618557
+            },
+            {
+              "language": "zh",
+              "domain": "banking_knowledge",
+              "expected_trials": 97,
+              "scored_trials": 97,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.08247422680412371,
+              "observed_score": 0.08247422680412371
+            },
+            {
+              "language": "ko",
+              "domain": "banking_knowledge",
+              "expected_trials": 97,
+              "scored_trials": 97,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.08247422680412371,
+              "observed_score": 0.08247422680412371
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-10-20_entity/benchmark-metadata.json",
+      "sha256": "b9158906dbfb443ccd454e059e37dae26f40e134ba4ad961f2b04bce6bea4a53",
+      "data": {
+        "model_name": "grok-voice-think-fast-2.0",
+        "model_organization": "xAI",
+        "submitting_organization": "Sierra",
+        "submission_date": "2026-10-20",
+        "submission_type": "standard",
+        "references": [],
+        "notes": "Agent xai grok-voice-think-fast-2.0 at high reasoning effort. Frozen 2026-10-02 voice-v2 release calls (six languages, one trial per task, regular speech complexity), packaged from the saved export with the historical adapter. Caller simulator openai/gpt-5.5 (reasoning low).",
+        "schema_version": "benchmark-metadata-v1",
+        "agent_provider": "xai",
+        "agent_model": "grok-voice-think-fast-2.0",
+        "evidence": "historical-voice-v2-2026-10-02"
+      }
+    },
+    {
+      "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-10-20_entity/benchmark-submission.json",
+      "sha256": "5ffa3d2a65ecae26aedfc1af76fe261d856deddae29733b9f5a129970e877d93",
+      "data": {
+        "schema_version": "benchmark-submission-v1",
+        "summary": {
+          "benchmark_version": "voice-v2-entity",
+          "frame_revision": "entity-release-v1",
+          "condition_fingerprint": "339bf55805e2001b9a5c9b196dddcf787eafdf998d24c00d51e32a485d3fa316",
+          "expected_trials": 1200,
+          "scored_trials": 1200,
+          "error_trials": 0,
+          "unscored_trials": 0,
+          "missing_trials": 0,
+          "complete": true,
+          "score": 0.44166666666666665,
+          "observed_score": 0.44166666666666665,
+          "by_language": {
+            "en": {
+              "expected_trials": 200,
+              "scored_trials": 200,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.48,
+              "observed_score": 0.48
+            },
+            "es": {
+              "expected_trials": 200,
+              "scored_trials": 200,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.56,
+              "observed_score": 0.56
+            },
+            "pt": {
+              "expected_trials": 200,
+              "scored_trials": 200,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.55,
+              "observed_score": 0.55
+            },
+            "hi": {
+              "expected_trials": 200,
+              "scored_trials": 200,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.48,
+              "observed_score": 0.48
+            },
+            "zh": {
+              "expected_trials": 200,
+              "scored_trials": 200,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.365,
+              "observed_score": 0.365
+            },
+            "ko": {
+              "expected_trials": 200,
+              "scored_trials": 200,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.215,
+              "observed_score": 0.215
+            }
+          },
+          "by_domain": {
+            "intake": {
+              "expected_trials": 1200,
+              "scored_trials": 1200,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.44166666666666665,
+              "observed_score": 0.44166666666666665
+            }
+          },
+          "cells": [
+            {
+              "language": "en",
+              "domain": "intake",
+              "expected_trials": 200,
+              "scored_trials": 200,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.48,
+              "observed_score": 0.48
+            },
+            {
+              "language": "es",
+              "domain": "intake",
+              "expected_trials": 200,
+              "scored_trials": 200,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.56,
+              "observed_score": 0.56
+            },
+            {
+              "language": "pt",
+              "domain": "intake",
+              "expected_trials": 200,
+              "scored_trials": 200,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.55,
+              "observed_score": 0.55
+            },
+            {
+              "language": "hi",
+              "domain": "intake",
+              "expected_trials": 200,
+              "scored_trials": 200,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.48,
+              "observed_score": 0.48
+            },
+            {
+              "language": "zh",
+              "domain": "intake",
+              "expected_trials": 200,
+              "scored_trials": 200,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.365,
+              "observed_score": 0.365
+            },
+            {
+              "language": "ko",
+              "domain": "intake",
+              "expected_trials": 200,
+              "scored_trials": 200,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.215,
+              "observed_score": 0.215
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/phonic-1_phonic_2026-10-29/benchmark-metadata.json",
+      "sha256": "3399df3ce925bc6609b174667a7e5adbec230553d5c76b1dc783c6ece23359ed",
+      "data": {
+        "model_name": "phonic-1",
+        "model_organization": "Phonic",
+        "submitting_organization": "Phonic",
+        "submission_date": "2026-10-29",
+        "submission_type": "standard",
+        "references": [],
+        "notes": "Phonic phonic-1 (intelligence level: high), full-duplex audio-native evaluation through the phonic adapter. voice-v2 frame (six languages, one trial per task, regular speech complexity). Caller simulator openai/gpt-5.5 (reasoning low). User-side voices are our own ElevenLabs voices, created with the same settings as tau2's setup_voices script; not Sierra-managed submission voices.",
+        "schema_version": "benchmark-metadata-v1",
+        "agent_provider": "phonic",
+        "agent_model": "phonic-1",
+        "evidence": "matrix"
+      }
+    },
+    {
+      "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/phonic-1_phonic_2026-10-29/benchmark-submission.json",
+      "sha256": "cf402d16f1773ce3d000de43a408e51e0a6f016c83ef81da6d3112613745fa75",
+      "data": {
+        "schema_version": "benchmark-submission-v1",
+        "summary": {
+          "benchmark_version": "voice-v2",
+          "frame_revision": "regional-release-data-v16",
+          "condition_fingerprint": "cabb6e7b03f3e8c963ff1c094ae3bb1c72a14ca4f75a3175694c3c65f317be7d",
+          "expected_trials": 900,
+          "scored_trials": 900,
+          "error_trials": 0,
+          "unscored_trials": 0,
+          "missing_trials": 0,
+          "complete": true,
+          "score": 0.8322222222222222,
+          "observed_score": 0.8322222222222222,
+          "by_language": {
+            "en": {
+              "expected_trials": 150,
+              "scored_trials": 150,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.8533333333333333,
+              "observed_score": 0.8533333333333333
+            },
+            "es": {
+              "expected_trials": 150,
+              "scored_trials": 150,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.9066666666666666,
+              "observed_score": 0.9066666666666666
+            },
+            "pt": {
+              "expected_trials": 150,
+              "scored_trials": 150,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.8933333333333333,
+              "observed_score": 0.8933333333333333
+            },
+            "hi": {
+              "expected_trials": 150,
+              "scored_trials": 150,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.7866666666666667,
+              "observed_score": 0.7866666666666667
+            },
+            "zh": {
+              "expected_trials": 150,
+              "scored_trials": 150,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.9066666666666666,
+              "observed_score": 0.9066666666666666
+            },
+            "ko": {
+              "expected_trials": 150,
+              "scored_trials": 150,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.6466666666666667,
+              "observed_score": 0.6466666666666667
+            }
+          },
+          "by_domain": {
+            "airline": {
+              "expected_trials": 300,
+              "scored_trials": 300,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.8166666666666667,
+              "observed_score": 0.8166666666666667
+            },
+            "retail": {
+              "expected_trials": 300,
+              "scored_trials": 300,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.7066666666666667,
+              "observed_score": 0.7066666666666667
+            },
+            "telecom": {
+              "expected_trials": 300,
+              "scored_trials": 300,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.9733333333333334,
+              "observed_score": 0.9733333333333334
+            }
+          },
+          "cells": [
+            {
+              "language": "en",
+              "domain": "airline",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.84,
+              "observed_score": 0.84
+            },
+            {
+              "language": "en",
+              "domain": "retail",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.76,
+              "observed_score": 0.76
+            },
+            {
+              "language": "en",
+              "domain": "telecom",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.96,
+              "observed_score": 0.96
+            },
+            {
+              "language": "es",
+              "domain": "airline",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.92,
+              "observed_score": 0.92
+            },
+            {
+              "language": "es",
+              "domain": "retail",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.82,
+              "observed_score": 0.82
+            },
+            {
+              "language": "es",
+              "domain": "telecom",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.98,
+              "observed_score": 0.98
+            },
+            {
+              "language": "pt",
+              "domain": "airline",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.82,
+              "observed_score": 0.82
+            },
+            {
+              "language": "pt",
+              "domain": "retail",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.86,
+              "observed_score": 0.86
+            },
+            {
+              "language": "pt",
+              "domain": "telecom",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 1.0,
+              "observed_score": 1.0
+            },
+            {
+              "language": "hi",
+              "domain": "airline",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.8,
+              "observed_score": 0.8
+            },
+            {
+              "language": "hi",
+              "domain": "retail",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.56,
+              "observed_score": 0.56
+            },
+            {
+              "language": "hi",
+              "domain": "telecom",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 1.0,
+              "observed_score": 1.0
+            },
+            {
+              "language": "zh",
+              "domain": "airline",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.86,
+              "observed_score": 0.86
+            },
+            {
+              "language": "zh",
+              "domain": "retail",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.86,
+              "observed_score": 0.86
+            },
+            {
+              "language": "zh",
+              "domain": "telecom",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 1.0,
+              "observed_score": 1.0
+            },
+            {
+              "language": "ko",
+              "domain": "airline",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.66,
+              "observed_score": 0.66
+            },
+            {
+              "language": "ko",
+              "domain": "retail",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.38,
+              "observed_score": 0.38
+            },
+            {
+              "language": "ko",
+              "domain": "telecom",
+              "expected_trials": 50,
+              "scored_trials": 50,
+              "error_trials": 0,
+              "unscored_trials": 0,
+              "missing_trials": 0,
+              "complete": true,
+              "score": 0.9,
+              "observed_score": 0.9
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -16,8 +16,8 @@
     "https://tevatron-browsecomp-plus.hf.space/data/leaderboard.json",
     "https://huggingface.co/datasets/Tevatron/BrowseComp-Plus-results/resolve/main/agent_results.csv"
   ],
-  "retrieved": "2026-10-21",
-  "newest_row_date": "2026-10-16",
+  "retrieved": "2026-10-31",
+  "newest_row_date": "2026-10-23",
   "snapshot": "sources/browsecomp-plus/leaderboard.json",
   "paper": "https://arxiv.org/abs/2508.06600",
   "repo": "https://github.com/texttron/BrowseComp-Plus",
@@ -146,6 +146,30 @@
     },
     {
       "rank": 6,
+      "system": "GPT-5 + Reason-ModernColBERT",
+      "agent": "RLM scaffold (recursive language model, github.com/alexzhang13/rlm, patched): the agent writes Python in a REPL and calls `search(query, k)` on the standard retriever, where the agent may choose k (default 5; mean k this run 27.2; Search Calls counts every retriever request, including those issued through the batched `search_many` helper, server-side; hard cap 10 per question; 512-token snippets as standard), `get_document` (view full doc by id, avg. 1.57 calls this run), `grep_docs`/`unread_docs`/`verify_answer` (regex and substring checks over snippets already retrieved -- no retrieval), and one level of sub-LLM delegation to the same model. Recall is computed over the union of docids returned at the agent's chosen k.",
+      "model_raw": [
+        "GPT-5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": null,
+      "score": 87.11,
+      "score_extra": {
+        "retriever": "Reason-ModernColBERT",
+        "recall": 78.75,
+        "search_calls": 8.09,
+        "calibration_error": 2.26
+      },
+      "date": "2026-10-23",
+      "verified": null,
+      "open_source": false,
+      "org": "Neuland AI",
+      "row_url": "https://neuland.ai/"
+    },
+    {
+      "rank": 7,
       "system": "GPT-5 + topk-embed-v1",
       "agent": "Search with get_doc: standard `search`, `get_document` (view full doc by id, avg. 2.87 calls this run)",
       "model_raw": [
@@ -169,7 +193,7 @@
       "row_url": "https://www.topk.io/"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "system": "GPT-5 + LightOn Console",
       "agent": "Search with get_doc: standard `search`, `get_document` (view full doc by id, avg. 2.97 calls this run)",
       "model_raw": [
@@ -193,7 +217,31 @@
       "row_url": "https://console.lighton.ai"
     },
     {
-      "rank": 8,
+      "rank": 9,
+      "system": "GPT-5 + Qwen3-Embed-8B",
+      "agent": "RLM scaffold (recursive language model, github.com/alexzhang13/rlm, patched): the agent writes Python in a REPL and calls `search(query, k)` on the standard retriever, where the agent may choose k (default 5; mean k this run 27.8; Search Calls counts every retriever request, including those issued through the batched `search_many` helper, server-side; hard cap 10 per question; 512-token snippets as standard), `get_document` (view full doc by id, avg. 3.31 calls this run), `grep_docs`/`unread_docs`/`verify_answer` (regex and substring checks over snippets already retrieved -- no retrieval), and one level of sub-LLM delegation to the same model. Recall is computed over the union of docids returned at the agent's chosen k.",
+      "model_raw": [
+        "GPT-5"
+      ],
+      "model_ids": [
+        "gpt-5"
+      ],
+      "model_config": null,
+      "score": 84.58,
+      "score_extra": {
+        "retriever": "Qwen3-Embed-8B",
+        "recall": 78.41,
+        "search_calls": 7.85,
+        "calibration_error": 5.01
+      },
+      "date": "2026-10-23",
+      "verified": null,
+      "open_source": false,
+      "org": "Neuland AI",
+      "row_url": "https://neuland.ai/"
+    },
+    {
+      "rank": 10,
       "system": "GPT-5 + Iso-ModernColBERT",
       "agent": "Search with get_doc: standard `search`, `get_document` (view full doc by id, avg. 2.11 calls this run)",
       "model_raw": [
@@ -217,7 +265,7 @@
       "row_url": "https://www.topk.io/"
     },
     {
-      "rank": 9,
+      "rank": 11,
       "system": "GPT-5-mini + openJiuwen-deepsearch",
       "agent": "openJiuwen custom setup: Multi-agent scaffold. Retrieved results are chunked; only most relevant chunks are returned in search, instead of truncating the full document by 512 tokens",
       "model_raw": [
@@ -241,7 +289,7 @@
       "row_url": "https://openjiuwen.com/en/"
     },
     {
-      "rank": 10,
+      "rank": 12,
       "system": "GPT-5 + Mixedbread Search (v3)",
       "agent": "Standard",
       "model_raw": [
@@ -265,7 +313,7 @@
       "row_url": "https://mixedbread.com"
     },
     {
-      "rank": 11,
+      "rank": 13,
       "system": "GPT-5 + Reason-ModernColBERT",
       "agent": "Standard",
       "model_raw": [
@@ -289,7 +337,7 @@
       "row_url": "https://lighton.ai/lighton-api"
     },
     {
-      "rank": 12,
+      "rank": 14,
       "system": "GPT-5 + Mixedbread Search",
       "agent": "Agentica custom scaffold: Allows agents to execute arbitrary code in a REPL. Agents had access to `search` and `get_doc_by_id` (avg. 8.83 calls this run) functions. `search` returned top 200 results instead of 5 in Standard scaffold. The submitter calculated recall using docs that the agent fetched using `get_doc_by_id`, due to the high top k used in `search`.",
       "model_raw": [
@@ -314,7 +362,7 @@
       "row_url": "https://www.symbolica.ai/agentica"
     },
     {
-      "rank": 13,
+      "rank": 15,
       "system": "GPT-5 + Mixedbread Search",
       "agent": "Standard",
       "model_raw": [
@@ -339,7 +387,7 @@
       "row_url": "https://www.mixedbread.com/"
     },
     {
-      "rank": 14,
+      "rank": 16,
       "system": "oss-120b-high + Agent-ModernColBERT",
       "agent": "Search with get_doc: standard `search`, `get_document` (view full doc by id, avg. 2.50 calls this run)",
       "model_raw": [
@@ -364,7 +412,7 @@
       "row_url": "https://lighton.ai/lighton-api"
     },
     {
-      "rank": 15,
+      "rank": 17,
       "system": "oss-120b-high + Agent-UIBK-v1",
       "agent": "Search with get_doc: standard `search`, `get_document` (view full doc by id, avg. 2.58 calls this run)",
       "model_raw": [
@@ -389,7 +437,7 @@
       "row_url": "https://ds-informatik.uibk.ac.at/"
     },
     {
-      "rank": 16,
+      "rank": 18,
       "system": "GPT-6-luna + BM25 (Marina)",
       "agent": "Search with get_doc: standard `search`, `get_document` (view full doc by id, avg. 2.56 calls this run)",
       "model_raw": [
@@ -413,7 +461,7 @@
       "row_url": "https://github.com/h2oai/marina"
     },
     {
-      "rank": 17,
+      "rank": 19,
       "system": "GPT-5 + Qwen3-Embed-8B",
       "agent": "Standard",
       "model_raw": [
@@ -438,7 +486,7 @@
       "row_url": "https://openai.com/index/introducing-gpt-5/"
     },
     {
-      "rank": 18,
+      "rank": 20,
       "system": "oss-20b-high + Passage Corpus BM25 + monoT5-3B Rerank",
       "agent": "Custom passage corpus: The corpus is indexed as passages instead of documents, and searcher returns passages to agent",
       "model_raw": [
@@ -463,7 +511,7 @@
       "row_url": "https://arxiv.org/pdf/2602.21456"
     },
     {
-      "rank": 19,
+      "rank": 21,
       "system": "Tongyi-DeepResearch-30B-A3B + AgentIR-4B",
       "agent": "Tongyi-DeepResearch native toolset: `search`, `visit` (view full doc by id, avg. 3.41 calls this run)",
       "model_raw": [
@@ -487,7 +535,7 @@
       "row_url": "https://texttron.github.io/AgentIR/"
     },
     {
-      "rank": 20,
+      "rank": 22,
       "system": "oss-120b-high + AgentIR-4B",
       "agent": "Standard",
       "model_raw": [
@@ -512,7 +560,7 @@
       "row_url": "https://texttron.github.io/AgentIR/"
     },
     {
-      "rank": 21,
+      "rank": 23,
       "system": "Tongyi-DeepResearch-30B-A3B + AgentIR-4B",
       "agent": "Standard",
       "model_raw": [
@@ -536,7 +584,7 @@
       "row_url": "https://texttron.github.io/AgentIR/"
     },
     {
-      "rank": 22,
+      "rank": 24,
       "system": "o3 + Qwen3-Embed-8B",
       "agent": "Standard",
       "model_raw": [
@@ -561,7 +609,7 @@
       "row_url": "https://openai.com/index/introducing-o3-and-o4-mini/"
     },
     {
-      "rank": 23,
+      "rank": 25,
       "system": "GLM-4.7 + AgentIR-4B",
       "agent": "Standard",
       "model_raw": [
@@ -586,7 +634,7 @@
       "row_url": "https://texttron.github.io/AgentIR/"
     },
     {
-      "rank": 24,
+      "rank": 26,
       "system": "oss-120b-high + Agent-ModernColBERT",
       "agent": "Standard",
       "model_raw": [
@@ -611,7 +659,7 @@
       "row_url": "https://lighton.ai/lighton-api"
     },
     {
-      "rank": 25,
+      "rank": 27,
       "system": "oss-120b-high + Reason-ModernColBERT",
       "agent": "Search with get_doc: standard `search`, `get_document` (view full doc by id, avg. 1.97 calls this run)",
       "model_raw": [
@@ -636,7 +684,7 @@
       "row_url": "https://lighton.ai/lighton-api"
     },
     {
-      "rank": 26,
+      "rank": 28,
       "system": "OpenResearcher + Qwen3-Embed-8B",
       "agent": "OpenResearcher toolset: `search` (with lucene highlighter to filter raw contents), `open` (view full doc by id, avg. 14.46 calls this run), `find` (grep in doc, avg. 5.04 calls this run)",
       "model_raw": [
@@ -661,7 +709,7 @@
       "row_url": "https://github.com/TIGER-AI-Lab/OpenResearcher"
     },
     {
-      "rank": 27,
+      "rank": 29,
       "system": "oss-120b-high + Reason-ModernColBERT",
       "agent": "Standard",
       "model_raw": [
@@ -686,7 +734,7 @@
       "row_url": "https://lighton.ai/lighton-api"
     },
     {
-      "rank": 28,
+      "rank": 30,
       "system": "oss-120b-high + GTE-ModernColBERT-v1",
       "agent": "Search with get_doc: standard `search`, `get_document` (view full doc by id, avg. 1.76 calls this run)",
       "model_raw": [
@@ -711,7 +759,7 @@
       "row_url": "https://lighton.ai/lighton-api"
     },
     {
-      "rank": 29,
+      "rank": 31,
       "system": "GPT-5 + BM25",
       "agent": "Standard",
       "model_raw": [
@@ -736,7 +784,7 @@
       "row_url": "https://openai.com/index/introducing-gpt-5/"
     },
     {
-      "rank": 30,
+      "rank": 32,
       "system": "oss-20b-high + Passage Corpus BM25",
       "agent": "Custom passage corpus: The corpus is indexed as passages instead of documents, and searcher returns passages to agent",
       "model_raw": [
@@ -761,7 +809,7 @@
       "row_url": "https://arxiv.org/pdf/2602.21456"
     },
     {
-      "rank": 31,
+      "rank": 33,
       "system": "oss-120b-high + Qwen3-Embed-8B",
       "agent": "gpt-oss native toolset: `search`, `open` (view full doc by id, avg. 11.06 calls this run), `find` (grep in doc, avg. 4.28 calls this run)",
       "model_raw": [
@@ -786,7 +834,7 @@
       "row_url": "https://openai.com/index/introducing-gpt-oss/"
     },
     {
-      "rank": 32,
+      "rank": 34,
       "system": "oss-120b-high + GTE-ModernColBERT-v1",
       "agent": "Standard",
       "model_raw": [
@@ -811,7 +859,7 @@
       "row_url": "https://lighton.ai/lighton-api"
     },
     {
-      "rank": 33,
+      "rank": 35,
       "system": "OpenResearcher + LRAT-Qwen3-Embed-0.6B",
       "agent": "OpenResearcher toolset: `search` (with lucene highlighter to filter raw contents), `open` (view full doc by id), `find` (grep in doc)",
       "model_raw": [
@@ -836,7 +884,7 @@
       "row_url": "https://arxiv.org/abs/2604.04949"
     },
     {
-      "rank": 34,
+      "rank": 36,
       "system": "Tongyi-DeepResearch-30B-A3B + Qwen3-Embed-8B",
       "agent": "Tongyi-DeepResearch native toolset: `search`, `visit` (view full doc by id, avg. 3.11 calls this run)",
       "model_raw": [
@@ -860,7 +908,7 @@
       "row_url": "https://tongyi-agent.github.io/blog/introducing-tongyi-deep-research/"
     },
     {
-      "rank": 35,
+      "rank": 37,
       "system": "oss-20b-high + BM25 (k1=10, b=1)",
       "agent": "Standard",
       "model_raw": [
@@ -885,7 +933,7 @@
       "row_url": "https://arxiv.org/pdf/2602.21456"
     },
     {
-      "rank": 36,
+      "rank": 38,
       "system": "o3 + BM25",
       "agent": "Standard",
       "model_raw": [
@@ -910,7 +958,7 @@
       "row_url": "https://openai.com/index/introducing-o3-and-o4-mini/"
     },
     {
-      "rank": 37,
+      "rank": 39,
       "system": "GLM-4.7 + Qwen3-Embed-8B",
       "agent": "Standard",
       "model_raw": [
@@ -935,7 +983,7 @@
       "row_url": "https://z.ai/blog/glm-4.7"
     },
     {
-      "rank": 38,
+      "rank": 40,
       "system": "GLM-4.6 + Qwen3-Embed-8B",
       "agent": "Standard",
       "model_raw": [
@@ -960,7 +1008,7 @@
       "row_url": "https://docs.z.ai/guides/llm/glm-4.6"
     },
     {
-      "rank": 39,
+      "rank": 41,
       "system": "Tongyi-DeepResearch-30B-A3B + Qwen3-Embed-8B",
       "agent": "Standard",
       "model_raw": [
@@ -985,7 +1033,7 @@
       "row_url": "https://tongyi-agent.github.io/blog/introducing-tongyi-deep-research/"
     },
     {
-      "rank": 40,
+      "rank": 42,
       "system": "OpenResearcher + Qwen3-Embed-0.6B",
       "agent": "OpenResearcher toolset: `search` (with lucene highlighter to filter raw contents), `open` (view full doc by id), `find` (grep in doc)",
       "model_raw": [
@@ -1010,7 +1058,7 @@
       "row_url": "https://arxiv.org/abs/2604.04949"
     },
     {
-      "rank": 41,
+      "rank": 43,
       "system": "oss-120b-high + Qwen3-Embed-8B",
       "agent": "Standard",
       "model_raw": [
@@ -1036,7 +1084,7 @@
       "row_url": "https://openai.com/index/introducing-gpt-oss/"
     },
     {
-      "rank": 42,
+      "rank": 44,
       "system": "oss-120b-high + BM25",
       "agent": "gpt-oss native toolset: `search`, `open` (view full doc by id, avg. 11.17 calls this run), `find` (grep in doc, avg. 4.23 calls this run)",
       "model_raw": [
@@ -1061,7 +1109,7 @@
       "row_url": "https://openai.com/index/introducing-gpt-oss/"
     },
     {
-      "rank": 43,
+      "rank": 45,
       "system": "Atom-Electron-1.0 + (BM25 + Qwen3-8B) + Qwen3-8B-ReRanker",
       "agent": "Standard",
       "model_raw": [
@@ -1086,7 +1134,7 @@
       "row_url": "https://huggingface.co/CrowtherLabs/Atom-Electron-1.0"
     },
     {
-      "rank": 44,
+      "rank": 46,
       "system": "Gemini 2.5 Flash + Mixedbread Search",
       "agent": "Standard",
       "model_raw": [
@@ -1111,7 +1159,7 @@
       "row_url": "https://www.mixedbread.com/"
     },
     {
-      "rank": 45,
+      "rank": 47,
       "system": "oss-120b-medium + Qwen3-Embed-8B",
       "agent": "Standard",
       "model_raw": [
@@ -1137,7 +1185,7 @@
       "row_url": "https://openai.com/index/introducing-gpt-oss/"
     },
     {
-      "rank": 46,
+      "rank": 48,
       "system": "SearchAgent-Zero + Qwen3-Embed-8B",
       "agent": "Standard",
       "model_raw": [
@@ -1162,7 +1210,7 @@
       "row_url": "https://github.com/NLPJCL/SearchAgent-Zero"
     },
     {
-      "rank": 47,
+      "rank": 49,
       "system": "Sonnet 4 + Qwen3-Embed-8B",
       "agent": "Standard",
       "model_raw": [
@@ -1187,7 +1235,7 @@
       "row_url": "https://www.anthropic.com/news/claude-4"
     },
     {
-      "rank": 48,
+      "rank": 50,
       "system": "Tongyi-DeepResearch-30B-A3B + BM25",
       "agent": "Tongyi-DeepResearch native toolset: `search`, `visit` (view full doc by id, avg. 2.75 calls this run)",
       "model_raw": [
@@ -1211,7 +1259,7 @@
       "row_url": "https://tongyi-agent.github.io/blog/introducing-tongyi-deep-research/"
     },
     {
-      "rank": 49,
+      "rank": 51,
       "system": "Opus 4 + Qwen3-Embed-8B",
       "agent": "Standard",
       "model_raw": [
@@ -1236,7 +1284,7 @@
       "row_url": "https://www.anthropic.com/news/claude-4"
     },
     {
-      "rank": 50,
+      "rank": 52,
       "system": "GPT-4.1 + Qwen3-Embed-8B",
       "agent": "Standard",
       "model_raw": [
@@ -1261,7 +1309,7 @@
       "row_url": "https://openai.com/index/gpt-4-1/"
     },
     {
-      "rank": 51,
+      "rank": 53,
       "system": "kimi-k2-0711-preview + Qwen3-Embed-8B",
       "agent": "Standard",
       "model_raw": [
@@ -1287,7 +1335,7 @@
       "row_url": "https://moonshotai.github.io/Kimi-K2/"
     },
     {
-      "rank": 52,
+      "rank": 54,
       "system": "oss-20b-high + Qwen3-Embed-8B",
       "agent": "Standard",
       "model_raw": [
@@ -1313,7 +1361,7 @@
       "row_url": "https://openai.com/index/introducing-gpt-oss/"
     },
     {
-      "rank": 53,
+      "rank": 55,
       "system": "Gemini 2.5 Flash + Qwen3-Embed-8B",
       "agent": "Standard",
       "model_raw": [
@@ -1338,7 +1386,7 @@
       "row_url": "https://arxiv.org/abs/2507.06261"
     },
     {
-      "rank": 54,
+      "rank": 56,
       "system": "Tongyi-DeepResearch-30B-A3B + BM25",
       "agent": "Standard",
       "model_raw": [
@@ -1363,7 +1411,7 @@
       "row_url": "https://tongyi-agent.github.io/blog/introducing-tongyi-deep-research/"
     },
     {
-      "rank": 55,
+      "rank": 57,
       "system": "GLM-4.7 + BM25",
       "agent": "Standard",
       "model_raw": [
@@ -1388,7 +1436,7 @@
       "row_url": "https://z.ai/blog/glm-4.7"
     },
     {
-      "rank": 56,
+      "rank": 58,
       "system": "oss-20b-medium + Qwen3-Embed-8B",
       "agent": "Standard",
       "model_raw": [
@@ -1414,7 +1462,7 @@
       "row_url": "https://openai.com/index/introducing-gpt-oss/"
     },
     {
-      "rank": 57,
+      "rank": 59,
       "system": "Gemini 2.5 Pro + Qwen3-Embed-8B",
       "agent": "Standard",
       "model_raw": [
@@ -1439,7 +1487,7 @@
       "row_url": "https://arxiv.org/abs/2507.06261"
     },
     {
-      "rank": 58,
+      "rank": 60,
       "system": "oss-120b-high + BM25",
       "agent": "Standard",
       "model_raw": [
@@ -1465,7 +1513,7 @@
       "row_url": "https://openai.com/index/introducing-gpt-oss/"
     },
     {
-      "rank": 59,
+      "rank": 61,
       "system": "GLM-4.6 + BM25",
       "agent": "Standard",
       "model_raw": [
@@ -1490,7 +1538,7 @@
       "row_url": "https://docs.z.ai/guides/llm/glm-4.6"
     },
     {
-      "rank": 60,
+      "rank": 62,
       "system": "WebSailor-32B + Qwen3-Embed-8B",
       "agent": "Standard",
       "model_raw": [
@@ -1515,7 +1563,7 @@
       "row_url": "https://arxiv.org/pdf/2507.02592"
     },
     {
-      "rank": 61,
+      "rank": 63,
       "system": "oss-120b-low + Qwen3-Embed-8B",
       "agent": "Standard",
       "model_raw": [
@@ -1541,7 +1589,7 @@
       "row_url": "https://openai.com/index/introducing-gpt-oss/"
     },
     {
-      "rank": 62,
+      "rank": 64,
       "system": "oss-120b-medium + BM25",
       "agent": "Standard",
       "model_raw": [
@@ -1567,7 +1615,7 @@
       "row_url": "https://openai.com/index/introducing-gpt-oss/"
     },
     {
-      "rank": 63,
+      "rank": 65,
       "system": "oss-20b-high + BM25",
       "agent": "Standard",
       "model_raw": [
@@ -1593,7 +1641,7 @@
       "row_url": "https://openai.com/index/introducing-gpt-oss/"
     },
     {
-      "rank": 64,
+      "rank": 66,
       "system": "FrugalRAG-Qwen7B + Qwen3-Embed-8B",
       "agent": "Standard",
       "model_raw": [
@@ -1618,7 +1666,7 @@
       "row_url": "https://arxiv.org/abs/2507.07634"
     },
     {
-      "rank": 65,
+      "rank": 67,
       "system": "Gemini 2.5 Pro + BM25",
       "agent": "Standard",
       "model_raw": [
@@ -1643,7 +1691,7 @@
       "row_url": "https://arxiv.org/abs/2507.06261"
     },
     {
-      "rank": 66,
+      "rank": 68,
       "system": "oss-20b-medium + BM25",
       "agent": "Standard",
       "model_raw": [
@@ -1669,7 +1717,7 @@
       "row_url": "https://openai.com/index/introducing-gpt-oss/"
     },
     {
-      "rank": 67,
+      "rank": 69,
       "system": "DeepSeek-R1-0528 + Qwen3-Embed-8B",
       "agent": "Standard",
       "model_raw": [
@@ -1695,7 +1743,7 @@
       "row_url": "https://api-docs.deepseek.com/news/news250528"
     },
     {
-      "rank": 68,
+      "rank": 70,
       "system": "Gemini 2.5 Flash + BM25",
       "agent": "Standard",
       "model_raw": [
@@ -1720,7 +1768,7 @@
       "row_url": "https://arxiv.org/abs/2507.06261"
     },
     {
-      "rank": 69,
+      "rank": 71,
       "system": "Opus 4 + BM25",
       "agent": "Standard",
       "model_raw": [
@@ -1745,7 +1793,7 @@
       "row_url": "https://www.anthropic.com/news/claude-4"
     },
     {
-      "rank": 70,
+      "rank": 72,
       "system": "GPT-4.1 + BM25",
       "agent": "Standard",
       "model_raw": [
@@ -1770,7 +1818,7 @@
       "row_url": "https://openai.com/index/gpt-4-1/"
     },
     {
-      "rank": 71,
+      "rank": 73,
       "system": "Sonnet 4 + BM25",
       "agent": "Standard",
       "model_raw": [
@@ -1795,7 +1843,7 @@
       "row_url": "https://www.anthropic.com/news/claude-4"
     },
     {
-      "rank": 72,
+      "rank": 74,
       "system": "kimi-k2-0711-preview + BM25",
       "agent": "Standard",
       "model_raw": [
@@ -1821,7 +1869,7 @@
       "row_url": "https://moonshotai.github.io/Kimi-K2/"
     },
     {
-      "rank": 73,
+      "rank": 75,
       "system": "oss-20b-low + Qwen3-Embed-8B",
       "agent": "Standard",
       "model_raw": [
@@ -1847,7 +1895,7 @@
       "row_url": "https://openai.com/index/introducing-gpt-oss/"
     },
     {
-      "rank": 74,
+      "rank": 76,
       "system": "WebSailor-32B + BM25",
       "agent": "Standard",
       "model_raw": [
@@ -1872,7 +1920,7 @@
       "row_url": "https://arxiv.org/pdf/2507.02592"
     },
     {
-      "rank": 75,
+      "rank": 77,
       "system": "SearchR1-32B + Qwen3-Embed-8B",
       "agent": "Standard",
       "model_raw": [
@@ -1897,7 +1945,7 @@
       "row_url": "https://arxiv.org/abs/2505.15117"
     },
     {
-      "rank": 76,
+      "rank": 78,
       "system": "Qwen3-32B + Qwen3-Embed-8B",
       "agent": "Standard",
       "model_raw": [
@@ -1923,7 +1971,7 @@
       "row_url": "https://arxiv.org/abs/2505.09388"
     },
     {
-      "rank": 77,
+      "rank": 79,
       "system": "oss-120b-low + BM25",
       "agent": "Standard",
       "model_raw": [
@@ -1949,7 +1997,7 @@
       "row_url": "https://openai.com/index/introducing-gpt-oss/"
     },
     {
-      "rank": 78,
+      "rank": 80,
       "system": "SearchR1-32B + ReasonIR",
       "agent": "Standard",
       "model_raw": [
@@ -1974,7 +2022,7 @@
       "row_url": "https://arxiv.org/abs/2505.15117"
     },
     {
-      "rank": 79,
+      "rank": 81,
       "system": "Qwen3-32B + ReasonIR",
       "agent": "Standard",
       "model_raw": [
@@ -2000,7 +2048,7 @@
       "row_url": "https://arxiv.org/abs/2505.09388"
     },
     {
-      "rank": 80,
+      "rank": 82,
       "system": "SearchR1-32B + Qwen3-Embed-4B",
       "agent": "Standard",
       "model_raw": [
@@ -2025,7 +2073,7 @@
       "row_url": "https://arxiv.org/abs/2505.15117"
     },
     {
-      "rank": 81,
+      "rank": 83,
       "system": "DeepSeek-R1-0528 + BM25",
       "agent": "Standard",
       "model_raw": [
@@ -2051,7 +2099,7 @@
       "row_url": "https://api-docs.deepseek.com/news/news250528"
     },
     {
-      "rank": 82,
+      "rank": 84,
       "system": "Qwen3-32B + Qwen3-Embed-4B",
       "agent": "Standard",
       "model_raw": [
@@ -2077,7 +2125,7 @@
       "row_url": "https://arxiv.org/abs/2505.09388"
     },
     {
-      "rank": 83,
+      "rank": 85,
       "system": "SearchR1-32B + Qwen3-Embed-0.6B",
       "agent": "Standard",
       "model_raw": [
@@ -2102,7 +2150,7 @@
       "row_url": "https://arxiv.org/abs/2505.15117"
     },
     {
-      "rank": 84,
+      "rank": 86,
       "system": "Qwen3-32B + Qwen3-Embed-0.6B",
       "agent": "Standard",
       "model_raw": [
@@ -2128,7 +2176,7 @@
       "row_url": "https://arxiv.org/abs/2505.09388"
     },
     {
-      "rank": 85,
+      "rank": 87,
       "system": "SearchR1-32B + BM25",
       "agent": "Standard",
       "model_raw": [
@@ -2153,7 +2201,7 @@
       "row_url": "https://arxiv.org/abs/2505.15117"
     },
     {
-      "rank": 86,
+      "rank": 88,
       "system": "oss-20b-low + BM25",
       "agent": "Standard",
       "model_raw": [
@@ -2179,7 +2227,7 @@
       "row_url": "https://openai.com/index/introducing-gpt-oss/"
     },
     {
-      "rank": 87,
+      "rank": 89,
       "system": "Qwen3-32B + BM25",
       "agent": "Standard",
       "model_raw": [
