@@ -1,0 +1,28 @@
+{
+  "id": "tool-research-security-horizon-refresh-2026-10-31",
+  "name": "Tool/research/security/long-horizon refresh comparison gaps",
+  "retrieved": "2026-10-31",
+  "tried": [
+    "https://andonlabs.com/_app/immutable/nodes/26.zOFxseIK.js",
+    "https://taubench.com/assets/index-QtX8yEBE.js",
+    "https://www.swe-marathon.org/assets/index-BqKcRchL.js",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/ava-zero_avartha_2026-10-27/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-8-live-extended-thinking_google_2026-10-07/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-8-live-extended-thinking_google_2026-10-07_banking/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-8-live-extended-thinking_google_2026-10-07_entity/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1_openai_2026-10-20/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1_openai_2026-10-20_banking/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1_openai_2026-10-20_entity/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-10-20/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-10-20_banking/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-10-20_entity/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/phonic-1_phonic_2026-10-29/submission.json",
+    "https://toolathlon.xyz/docs/leaderboard",
+    "https://toolathlon.xyz/docs/leaderboard.md"
+  ],
+  "reason_ja": "Toolathlonの25現行行と51旧版行の数値・名前・条件は一致したが、現行ページのシリアライズで検証バッジと行リンクが欠落し再確認不能。2表は部分確認とし良好なデータ・取得日を維持。tau voice v2は正規metadata/submission経路20件を取得したがv1と条件が異なるため既存表に混在させない。旧経路404は監査へ記録。Pine Voice 1.0は2エージェント構成を保持し、retail114の方法説明とinteraction113の不一致を明記。",
+  "affected_tables": [
+    "toolathlon",
+    "toolathlon-verified"
+  ]
+}

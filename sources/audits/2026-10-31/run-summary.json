@@ -1,0 +1,49 @@
+{
+  "run": "2026-10-31T00:00:00Z",
+  "checked_at": "2026-10-31T00:17:49.028263+00:00",
+  "baseline_commit": "5125f7c8053cdf745419b6b60815ac970ed55819",
+  "tables": 166,
+  "rows": 4503,
+  "models": 524,
+  "changed_tables": [
+    "apex-agents",
+    "apex-agents-corporate-lawyer",
+    "apex-agents-investment-banking",
+    "apex-agents-management-consultant",
+    "browsecomp-plus",
+    "gaia",
+    "swe-bench-live-lite",
+    "tau3-voice",
+    "tau3-voice-airline",
+    "tau3-voice-retail",
+    "tau3-voice-telecom"
+  ],
+  "unchanged_verified": 152,
+  "partial_check_preserved": [
+    "toolathlon",
+    "toolathlon-verified"
+  ],
+  "failed_preserved": [
+    "assistantbench"
+  ],
+  "category_counts": {
+    "web": 23,
+    "tool-use": 32,
+    "computer-use": 22,
+    "coding": 50,
+    "terminal": 5,
+    "security": 13,
+    "research": 9,
+    "general": 5,
+    "long-horizon": 7
+  },
+  "notes": [
+    "All9domains checked from current public primary data; no paid benchmarks, claims, cost, UI, code, workflow or gate changes.",
+    "Pine Voice1.0 plus Gemini4Argon is multi-model; standard/custom simulator and retail114 versus observed113 counts preserved.",
+    "GAIA top100 reselection removes tied Harness V8 row, not established withdrawal or performance decline.",
+    "APEX new overall observations differ from existing domain corrections.",
+    "AssistantBench503 preserves184 rows, original snapshot and successful retrieval date.",
+    "Toolathlon current serialization omits badges/links; numerical rows match, full metadata comparison incomplete and last-good retained.",
+    "Local fixed Almide fit4tests, strict build; Python16 and Node7 regression tests pass. Browser binary download returned invalid ZIP; full unchanged CI browser checks required."
+  ]
+}

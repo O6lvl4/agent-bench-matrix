@@ -36,10 +36,11 @@
   "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-minimal_google_2026-04-13/submission.json",
   "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/ava-zero_avartha_2026-10-22/submission.json",
   "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/phonic-1-user-sim-gpt-5-5_phonic_2026-10-22/submission.json",
-  "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/phonic-1_phonic_2026-10-22/submission.json"
+  "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/phonic-1_phonic_2026-10-22/submission.json",
+  "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-1-0_pineai_2026-10-27/submission.json"
  ],
- "retrieved": "2026-10-30",
- "newest_row_date": "2026-10-22",
+ "retrieved": "2026-10-31",
+ "newest_row_date": "2026-10-27",
  "snapshot": "sources/tau3-voice-retail/submissions.json",
  "paper": "https://arxiv.org/abs/2603.13686",
  "repo": "https://github.com/sierra-research/tau2-bench",
@@ -126,6 +127,27 @@
    "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha_openai_2026-09-09/submission.json"
   },
   {
+   "rank": 2,
+   "system": "Pine Voice 1.0",
+   "agent": "Pine AI two-agent voice/tool system",
+   "model_raw": [
+    "Pine Voice 1.0",
+    "gemini-4-argon"
+   ],
+   "model_ids": [
+    "pine-voice-1.0",
+    "gemini-4-argon"
+   ],
+   "model_config": "reasoning: enabled; user sim: v1.0 (gpt-4.1); voice model: pine-voice-1.0; submission type: standard; two-agent system: production ASR/LLM/TTS voice pipeline plus Gemini 4 Argon high background tool caller, shared context; prepended role scaffold; one trial; regular speech; local ElevenLabs personas; methodology claims full retail 114 but interaction_metrics reports 113 simulations (not resolved)",
+   "score": 78.76106194690266,
+   "score_extra": {},
+   "date": "2026-10-27",
+   "verified": true,
+   "open_source": null,
+   "org": "Pine AI",
+   "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-1-0_pineai_2026-10-27/submission.json"
+  },
+  {
    "rank": null,
    "system": "grok-voice-think-fast-1.0 + tool-mentor",
    "agent": "tool-mentor",
@@ -162,7 +184,7 @@
    "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-3-0_xai_2026-10-14/submission.json"
   },
   {
-   "rank": 2,
+   "rank": 3,
    "system": "phonic-1",
    "agent": null,
    "model_raw": [
@@ -181,7 +203,7 @@
    "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/phonic-1_phonic_2026-10-22/submission.json"
   },
   {
-   "rank": 3,
+   "rank": 4,
    "system": "Ava Zero",
    "agent": "Ava Zero",
    "model_raw": [
@@ -216,7 +238,7 @@
    "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/salesforce-launa-v1_salesforce_2026-10-06/submission.json"
   },
   {
-   "rank": 4,
+   "rank": 5,
    "system": "Pine Voice Preview",
    "agent": null,
    "model_raw": [
@@ -235,7 +257,7 @@
    "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-v1-0_pineai_2026-08-17/submission.json"
   },
   {
-   "rank": 5,
+   "rank": 6,
    "system": "grok-voice-think-fast-1.0",
    "agent": null,
    "model_raw": [
@@ -254,7 +276,7 @@
    "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0_xai_2026-04-21/submission.json"
   },
   {
-   "rank": 6,
+   "rank": 7,
    "system": "grok-voice-think-fast-2.0",
    "agent": null,
    "model_raw": [
@@ -294,7 +316,7 @@
    "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-24/submission.json"
   },
   {
-   "rank": 7,
+   "rank": 8,
    "system": "gpt-realtime-2",
    "agent": null,
    "model_raw": [
@@ -313,7 +335,7 @@
    "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-29/submission.json"
   },
   {
-   "rank": 8,
+   "rank": 9,
    "system": "qwen3.5-omni-plus-realtime",
    "agent": null,
    "model_raw": [
@@ -334,7 +356,7 @@
    "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-5-omni-plus-realtime_qwen_2026-08-06/submission.json"
   },
   {
-   "rank": 9,
+   "rank": 10,
    "system": "gemini-3.1-flash-live-preview-thinking-high",
    "agent": null,
    "model_raw": [
@@ -353,7 +375,7 @@
    "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-high_google_2026-04-02/submission.json"
   },
   {
-   "rank": 10,
+   "rank": 11,
    "system": "gpt-realtime-1.5",
    "agent": null,
    "model_raw": [
@@ -372,7 +394,7 @@
    "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1.5_sierra_2026-03-03/submission.json"
   },
   {
-   "rank": 11,
+   "rank": 12,
    "system": "gpt-realtime-2",
    "agent": null,
    "model_raw": [
@@ -391,7 +413,7 @@
    "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-minimal_openai_2026-07-01/submission.json"
   },
   {
-   "rank": 12,
+   "rank": 13,
    "system": "grok-voice-fast-1.0",
    "agent": null,
    "model_raw": [
@@ -410,7 +432,7 @@
    "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime_sierra_2026-03-03/submission.json"
   },
   {
-   "rank": 13,
+   "rank": 14,
    "system": "gpt-realtime-1.0",
    "agent": null,
    "model_raw": [
@@ -429,7 +451,7 @@
    "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1-0_openai_2026-04-13/submission.json"
   },
   {
-   "rank": 14,
+   "rank": 15,
    "system": "gemini-live-2.5-flash-native-audio",
    "agent": null,
    "model_raw": [
@@ -448,7 +470,7 @@
    "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-live-2.5-flash_sierra_2026-03-03/submission.json"
   },
   {
-   "rank": 15,
+   "rank": 16,
    "system": "Cascaded baseline",
    "agent": null,
    "model_raw": [
@@ -465,7 +487,7 @@
    "row_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/livekit-cascaded_livekit_2026-05-19/submission.json"
   },
   {
-   "rank": 16,
+   "rank": 17,
    "system": "gemini-3.1-flash-live-preview-thinking-minimal",
    "agent": null,
    "model_raw": [
