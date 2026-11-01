@@ -1,0 +1,39 @@
+{
+  "run": "2026-11-01T00:00:00Z",
+  "checked_at": "2026-11-01T00:15:15.155971+00:00",
+  "baseline_commit": "4c25998ac56bb522f69089c0fa7010df72efa887",
+  "tables": 166,
+  "rows": 4503,
+  "models": 524,
+  "changed_tables": [
+    "gaia"
+  ],
+  "unchanged_verified": 163,
+  "partial_check_preserved": [
+    "toolathlon",
+    "toolathlon-verified"
+  ],
+  "failed_preserved": [
+    "assistantbench"
+  ],
+  "category_counts": {
+    "coding": 50,
+    "computer-use": 22,
+    "security": 13,
+    "web": 23,
+    "tool-use": 32,
+    "terminal": 5,
+    "long-horizon": 7,
+    "general": 5,
+    "research": 9
+  },
+  "notes": [
+    "Only observed GAIA top100 selection and tied display order changed. No performance improvement or withdrawal is inferred.",
+    "Shadow Harness V1.08 replaced by Harness V8 at score91.03; three fresh official Gradio responses agreed. Existing99 common entries retain all non-rank fields.",
+    "No new model registration. Version-unspecified Grok remains model_ids=[], not attributed to any version.",
+    "AssistantBench HTTP503 and Toolathlon partial metadata checks are the same acquisition limitations as the preceding run; last-good data and success dates retained.",
+    "All nine domains checked; no paid evaluation, claims, cost, UI, code, workflow, authentication or gate changes.",
+    "Fixed Almide fit4tests and strict build passed; Python16 and Node7 regressions passed. Local pinned browser download returned invalidZIP, so unchanged CI browser check remains required.",
+    "Deterministic strict rebuild reproduces docs/data.json byte-for-byte; fit, models, claims and cost evidence remain unchanged."
+  ]
+}
