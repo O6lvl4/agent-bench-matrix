@@ -1,0 +1,47 @@
+{
+  "checked": "2026-11-01",
+  "status": "passed",
+  "scope": "Independent review of GAIA changed rows against saved original Gradio SSE responses and retained source snapshot; audit coverage/counters checked. No build/CI claim in this review.",
+  "baseline_commit": "4c25998ac56bb522f69089c0fa7010df72efa887",
+  "changed_tables": [
+    "gaia"
+  ],
+  "total_tables": 166,
+  "total_rows": 4503,
+  "registered_models": 524,
+  "category_counts": {
+    "coding": 50,
+    "computer-use": 22,
+    "security": 13,
+    "web": 23,
+    "tool-use": 32,
+    "terminal": 5,
+    "long-horizon": 7,
+    "general": 5,
+    "research": 9
+  },
+  "audit_status_counts": {
+    "unchanged": 118,
+    "changed": 1,
+    "partial-check": 2,
+    "unchanged_verified": 44,
+    "fetch_failure_preserved": 1
+  },
+  "gaia": {
+    "source_rows_verified": 100,
+    "new_top100_member": "Harness V8",
+    "previous_top100_member": "Shadow Harness V1.08",
+    "boundary_score": 91.03,
+    "retained_rows_unchanged_except_display_rank": 99,
+    "model_configurations_preserved": true,
+    "new_unversioned_model_not_guessed": true,
+    "same_board_test_tasks": 301,
+    "interpretation": "Observed equal-score top100 membership/rank selection change. Does not establish withdrawal, performance change, or score improvement.",
+    "raw_repeated_response_sha256": [
+      "661dd59eba833c2ab9a64fa93cb958b2a4e0fcf9e458517eadf4f890d314b6a1",
+      "661dd59eba833c2ab9a64fa93cb958b2a4e0fcf9e458517eadf4f890d314b6a1"
+    ]
+  },
+  "findings": [],
+  "formatting_note": "JSON indentation changed from 1 to 2 spaces in two edited files; semantic extraction passes. Prefer preserve baseline indentation to minimize diff."
+}
