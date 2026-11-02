@@ -1,0 +1,115 @@
+{
+  "checked": "2026-11-02",
+  "status": "pass",
+  "checks": {
+    "fresh_payloads_equal": true,
+    "table_metadata_retained_except_retrieved": true,
+    "snapshot_metadata_retained": true,
+    "existing_98_rows_unchanged_except_rank": true,
+    "new_scores_and_model_ids": true,
+    "all_rows_native_scores_levels_dates_org_urls_match": true,
+    "coverage_166_unique_all_registered": true,
+    "coverage_breakdown_correct": true,
+    "snapshot_equals_fresh_payload_table_headers_and_all_rows": true
+  },
+  "coverage": {
+    "unchanged": 162,
+    "failure": 1,
+    "changed": 1,
+    "partial": 2
+  },
+  "gaia_added": [
+    {
+      "rank": 99,
+      "system": "1028-4",
+      "agent": null,
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 91.03,
+      "score_extra": {
+        "level1": 95.7,
+        "level2": 88.68,
+        "level3": 89.8
+      },
+      "date": "2026-10-28",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 100,
+      "system": "Shadow Harness V1.08",
+      "agent": null,
+      "model_raw": [
+        "GPT  Claude  Grok  Gemini  DeepSeek"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 91.03,
+      "score_extra": {
+        "level1": 93.55,
+        "level2": 91.19,
+        "level3": 85.71
+      },
+      "date": "2026-10-09",
+      "verified": null,
+      "open_source": null,
+      "org": "Shadow ",
+      "row_url": null
+    }
+  ],
+  "gaia_removed": [
+    {
+      "rank": 98,
+      "system": "Shapartner V6",
+      "agent": null,
+      "model_raw": [
+        "Grok Claude"
+      ],
+      "model_ids": [],
+      "model_config": null,
+      "score": 91.03,
+      "score_extra": {
+        "level1": 96.77,
+        "level2": 89.94,
+        "level3": 83.67
+      },
+      "date": "2026-09-19",
+      "verified": null,
+      "open_source": null,
+      "org": "Shapartne",
+      "row_url": null
+    },
+    {
+      "rank": 94,
+      "system": "g14a1",
+      "agent": null,
+      "model_raw": [],
+      "model_ids": [],
+      "model_config": null,
+      "score": 91.03,
+      "score_extra": {
+        "level1": 95.7,
+        "level2": 91.19,
+        "level3": 81.63
+      },
+      "date": "2026-10-22",
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    }
+  ],
+  "unexpected_existing_row_changes": [],
+  "model_ids_review": "1028-4 has no model disclosed; Shadow Harness V1.08 lists GPT/Claude/Grok/Gemini/DeepSeek families, so neither permits individual-model attribution. Empty model_ids correct.",
+  "payload_hashes": {
+    "first": "de4d28cc10951915fee3b40d8ce4373a5c2c44b3a2a172a0e32d0bf90f41bc32",
+    "second": "de4d28cc10951915fee3b40d8ce4373a5c2c44b3a2a172a0e32d0bf90f41bc32",
+    "payload": "de4d28cc10951915fee3b40d8ce4373a5c2c44b3a2a172a0e32d0bf90f41bc32"
+  },
+  "scope": "Independent comparison of applied GAIA change against git HEAD and current retained source payloads; coverage recomputed from four audits. No external write.",
+  "source_wrapper_note": "Gradio payload includes metadata:null wrapper key; stored snapshot preserves existing headers/data format. All source headers and 100 complete native rows equal.",
+  "correction_verified": "DDDD1111 score_extra.agent_name_empty_on_board=true restored; all 98 retained rows now identical except rank."
+}
