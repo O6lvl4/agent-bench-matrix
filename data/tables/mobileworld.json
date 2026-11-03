@@ -10,17 +10,17 @@
   "metric": "Success rate on GUI-Only tasks (%)",
   "unit": "%",
   "higher_is_better": true,
-  "harness_ja": "max steps=50 で統一。結果はチームの評価と、軌跡を添えたコミュニティ提出(GitHub issue 経由)。足場は agent_type ごとに異なる。",
+  "harness_ja": "チームの評価と、軌跡を添えたコミュニティ提出（GitHub issue 経由）。足場は agent_type ごとに異なる。多くの行は max_steps=50 だが、LLM対話ターン・planner cycle・GUI操作数の数え方や上限が異なる提出もあるため、行別 model_config と score_extra を確認する。",
   "source": "https://tongyi-mai.github.io/MobileWorld/#leaderboard",
   "fetched": [
     "https://tongyi-mai.github.io/MobileWorld/leaderboard.json"
   ],
-  "retrieved": "2026-10-25",
-  "newest_row_date": "2026-10-21",
+  "retrieved": "2026-11-03",
+  "newest_row_date": "2026-10-29",
   "snapshot": "sources/mobileworld/leaderboard.json",
   "paper": "https://arxiv.org/abs/2512.19432",
   "repo": "https://github.com/Tongyi-MAI/MobileWorld",
-  "notes_ja": "ボードの既定表示は Type=General+Specialized・Tasks=GUI-Only(Agentic は非表示)。ここでは3種すべてを含め GUI-Only 降順で順位を付けた。日付はJSONのまま(2024年表記など明らかに怪しいものも直していない)。",
+  "notes_ja": "ボードの既定表示は Type=General+Specialized・Tasks=GUI-Only(Agentic は非表示)。ここでは3種すべてを含め GUI-Only 降順で順位を付けた。日付はJSONのまま(2024年表記など明らかに怪しいものも直していない)。 2026-11-03取得の追加2行はAgentic枠。MicarはSonnetとMiMoの複合構成で単独モデルに帰属させない。seek-useはアプリ知識ベースを使用し、GUI操作回数に上限を設けずplanner cycleを制限した提出である。",
   "rows": [
     {
       "rank": 1,
@@ -47,6 +47,29 @@
     },
     {
       "rank": 2,
+      "system": "seek-use (DeepSeek V4.1 Flash)",
+      "agent": "seek-use-harness",
+      "model_raw": [
+        "DeepSeek V4.1 Flash"
+      ],
+      "model_ids": [
+        "deepseek-v4.1-flash"
+      ],
+      "model_config": "category=Agentic; model_type=Agentic Framework; agent_type=seek-use-harness; Agentic result using seek-use-harness with deepseek-flash as the configured model alias, and an application knowledge base describing app interfaces and features. Author-reported planner-cycle limits varied from 10 to 75 across the 117 runs; GUI actions were uncapped (max_gui_turns=null). A planner cycle can contain multiple GUI actions, and retries within a cycle do not consume an additional planner cycle.",
+      "score": 77.78,
+      "score_extra": {
+        "runs": 1,
+        "num_images_in_history": 1,
+        "trajectory_url": "https://tongyi-mai.github.io/MobileWorld/trajs/seek-use-harness_mobileworld_117.json.gz"
+      },
+      "date": "2026-10-29",
+      "verified": null,
+      "open_source": null,
+      "org": "NextAI",
+      "row_url": "https://github.com/hyechow/seek-use"
+    },
+    {
+      "rank": 3,
       "system": "Kimi-K3",
       "agent": "general_e2e",
       "model_raw": [
@@ -69,7 +92,7 @@
       "row_url": "https://www.kimi.com/blog/kimi-k3"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "system": "Wuying-Mobile-27B",
       "agent": "wuying_mobile_agent",
       "model_raw": [
@@ -94,7 +117,32 @@
       "row_url": null
     },
     {
-      "rank": 4,
+      "rank": 5,
+      "system": "Micar-GUI-Agent (Claude Sonnet 5.5)",
+      "agent": "micar_agent",
+      "model_raw": [
+        "claude-sonnet-5.5",
+        "mimo-v2.5-flash"
+      ],
+      "model_ids": [
+        "claude-sonnet-5.5",
+        "mimo-v2.5-flash"
+      ],
+      "model_config": "category=Agentic; model_type=Agentic Framework; agent_type=micar_agent; LLM agentic framework driving midscene as grounding solution; use claude-sonnet-5.5 as planner, mimo-v2.5-flash as executor. Shell tools enabled. max_steps counts LLM interaction turns; multiple actions may be executed per turn.",
+      "score": 70.9,
+      "score_extra": {
+        "max_steps": 50,
+        "runs": 1,
+        "trajectory_url": "https://tongyi-mai.github.io/MobileWorld/trajs/micar-claude-sonnet-5-5.json.gz"
+      },
+      "date": "2026-10-24",
+      "verified": null,
+      "open_source": null,
+      "org": "Xiaomi",
+      "row_url": null
+    },
+    {
+      "rank": 6,
       "system": "GPT-5.6-Sol",
       "agent": "general_e2e",
       "model_raw": [
@@ -117,7 +165,7 @@
       "row_url": "https://openai.com/index/gpt-5-6/"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "system": "MagicGUI-Agent (GPT-5.4 + Seed-1.8)",
       "agent": "MagicGUI-Agent",
       "model_raw": [
@@ -142,7 +190,7 @@
       "row_url": null
     },
     {
-      "rank": 6,
+      "rank": 8,
       "system": "KnowAct-GUIClaw",
       "agent": "KnowAct-GUIClaw",
       "model_raw": [],
@@ -161,7 +209,7 @@
       "row_url": "https://github.com/HITsz-TMG/KnowAct"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "system": "Seed-2.0-Pro",
       "agent": "seed_agent",
       "model_raw": [
@@ -185,7 +233,7 @@
       "row_url": "https://seed.bytedance.com/en/seed2"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "system": "Micar-GUI-Agent (MIMO-V2.6-Flash)",
       "agent": "micar_agent",
       "model_raw": [
@@ -208,7 +256,7 @@
       "row_url": null
     },
     {
-      "rank": 9,
+      "rank": 11,
       "system": "GPT-5.5",
       "agent": "general_e2e",
       "model_raw": [
@@ -232,7 +280,7 @@
       "row_url": "https://openai.com/index/introducing-gpt-5-5/"
     },
     {
-      "rank": 10,
+      "rank": 12,
       "system": "Gemini-3.1-Pro-Preview",
       "agent": "general_e2e",
       "model_raw": [
@@ -256,7 +304,7 @@
       "row_url": "https://deepmind.google/models/gemini/pro/"
     },
     {
-      "rank": 11,
+      "rank": 13,
       "system": "Claude-Opus-4.7",
       "agent": "general_e2e",
       "model_raw": [
@@ -280,7 +328,7 @@
       "row_url": "https://www.anthropic.com/news/claude-opus-4-7"
     },
     {
-      "rank": 12,
+      "rank": 14,
       "system": "Kimi-K2.6",
       "agent": "general_e2e",
       "model_raw": [
@@ -304,7 +352,7 @@
       "row_url": "https://www.kimi.com/blog/kimi-k2-6"
     },
     {
-      "rank": 13,
+      "rank": 15,
       "system": "Gemini-3-Pro + UI-Ins-7B",
       "agent": "planner_executor",
       "model_raw": [
@@ -331,7 +379,7 @@
       "row_url": "https://deepmind.google/models/gemini/pro/"
     },
     {
-      "rank": 14,
+      "rank": 16,
       "system": "GPT-5 + UI-Ins-7B",
       "agent": "planner_executor",
       "model_raw": [
@@ -358,7 +406,7 @@
       "row_url": "https://openai.com/zh-Hans-CN/gpt-5/"
     },
     {
-      "rank": 15,
+      "rank": 17,
       "system": "Seed-1.8",
       "agent": "seed_agent",
       "model_raw": [
@@ -382,7 +430,7 @@
       "row_url": "https://seed.bytedance.com/en/seed1_8"
     },
     {
-      "rank": 16,
+      "rank": 18,
       "system": "Gemini-3-Pro",
       "agent": "general_e2e",
       "model_raw": [
@@ -406,7 +454,7 @@
       "row_url": "https://deepmind.google/models/gemini/pro/"
     },
     {
-      "rank": 17,
+      "rank": 19,
       "system": "Kimi-K2.5",
       "agent": "general_e2e",
       "model_raw": [
@@ -430,7 +478,7 @@
       "row_url": "https://github.com/MoonshotAI/Kimi-K2.5/blob/master/tech_report.pdf"
     },
     {
-      "rank": 18,
+      "rank": 20,
       "system": "Claude-4.5-Sonnet + UI-Ins-7B",
       "agent": "planner_executor",
       "model_raw": [
@@ -457,7 +505,7 @@
       "row_url": "https://www.anthropic.com/news/claude-sonnet-4-5"
     },
     {
-      "rank": 19,
+      "rank": 21,
       "system": "Claude-Sonnet-4.5",
       "agent": "general_e2e",
       "model_raw": [
@@ -481,7 +529,7 @@
       "row_url": "https://www.anthropic.com/news/claude-sonnet-4-5"
     },
     {
-      "rank": 20,
+      "rank": 22,
       "system": "Claude-Opus-4.6",
       "agent": "general_e2e",
       "model_raw": [
@@ -505,7 +553,7 @@
       "row_url": "https://www.anthropic.com/news/claude-opus-4-6"
     },
     {
-      "rank": 21,
+      "rank": 23,
       "system": "GUI-Owl-1.5-32B-Instruct",
       "agent": "gui_owl_1_5",
       "model_raw": [
@@ -529,7 +577,7 @@
       "row_url": "https://arxiv.org/pdf/2602.16855"
     },
     {
-      "rank": 22,
+      "rank": 24,
       "system": "Qwen3.5-397B-A17B",
       "agent": "general_e2e",
       "model_raw": [
@@ -553,7 +601,7 @@
       "row_url": "https://qwen.ai/blog?id=qwen3.5"
     },
     {
-      "rank": 23,
+      "rank": 25,
       "system": "ForgeOwl-8B",
       "agent": "gui_owl_1_5",
       "model_raw": [
@@ -575,7 +623,7 @@
       "row_url": "https://arxiv.org/abs/2606.19930"
     },
     {
-      "rank": 24,
+      "rank": 26,
       "system": "MAI-UI-235B-A22B",
       "agent": "mai_ui_agent",
       "model_raw": [
@@ -600,7 +648,7 @@
       "row_url": "https://tongyi-mai.github.io/MAI-UI/"
     },
     {
-      "rank": 25,
+      "rank": 27,
       "system": "GUI-Owl-1.5-8B-Instruct",
       "agent": "gui_owl_1_5",
       "model_raw": [
@@ -624,7 +672,7 @@
       "row_url": "https://arxiv.org/pdf/2602.16855"
     },
     {
-      "rank": 26,
+      "rank": 28,
       "system": "MAI-UI-32B",
       "agent": "mai_ui_agent",
       "model_raw": [
@@ -649,7 +697,7 @@
       "row_url": "https://tongyi-mai.github.io/MAI-UI/"
     },
     {
-      "rank": 27,
+      "rank": 29,
       "system": "Qwen3.5-122B-A10B",
       "agent": "general_e2e",
       "model_raw": [
@@ -673,7 +721,7 @@
       "row_url": "https://qwen.ai/blog?id=qwen3.5"
     },
     {
-      "rank": 28,
+      "rank": 30,
       "system": "GUI-Owl-1.5-2B-Instruct",
       "agent": "gui_owl_1_5",
       "model_raw": [
@@ -697,7 +745,7 @@
       "row_url": "https://arxiv.org/pdf/2602.16855"
     },
     {
-      "rank": 29,
+      "rank": 31,
       "system": "MemGUI-Agent-235B",
       "agent": "memgui",
       "model_raw": [
@@ -719,7 +767,7 @@
       "row_url": "https://memgui-agent.github.io/"
     },
     {
-      "rank": 30,
+      "rank": 32,
       "system": "MAI-UI-8B",
       "agent": "mai_ui_agent",
       "model_raw": [
@@ -744,7 +792,7 @@
       "row_url": "https://tongyi-mai.github.io/MAI-UI/"
     },
     {
-      "rank": 31,
+      "rank": 33,
       "system": "Doubao-1.5-UI-TARS",
       "agent": null,
       "model_raw": [
@@ -767,7 +815,7 @@
       "row_url": "https://seed.bytedance.com/zh/ui-tars"
     },
     {
-      "rank": 32,
+      "rank": 34,
       "system": "MemGUI-8B-SFT",
       "agent": "memgui",
       "model_raw": [
@@ -789,7 +837,7 @@
       "row_url": "https://memgui-agent.github.io/"
     },
     {
-      "rank": 33,
+      "rank": 35,
       "system": "UI-Venus-1.5-30B-A3B",
       "agent": "ui_venus_agent",
       "model_raw": [
@@ -811,7 +859,7 @@
       "row_url": "https://github.com/inclusionAI/UI-Venus/tree/UI-Venus-1.5"
     },
     {
-      "rank": 34,
+      "rank": 36,
       "system": "UI-Venus-72B",
       "agent": "ui_venus_agent",
       "model_raw": [
@@ -833,7 +881,7 @@
       "row_url": "https://arxiv.org/abs/2508.10833"
     },
     {
-      "rank": 35,
+      "rank": 37,
       "system": "GELab-Zero-4B",
       "agent": "gelab_agent",
       "model_raw": [
@@ -856,7 +904,7 @@
       "row_url": "https://arxiv.org/abs/2512.15431"
     },
     {
-      "rank": 36,
+      "rank": 38,
       "system": "Qwen3-VL-235B-A22B",
       "agent": "qwen3vl",
       "model_raw": [
@@ -881,7 +929,7 @@
       "row_url": "https://arxiv.org/abs/2511.21631"
     },
     {
-      "rank": 37,
+      "rank": 39,
       "system": "Qwen3-VL-32B",
       "agent": "qwen3vl",
       "model_raw": [
@@ -906,7 +954,7 @@
       "row_url": "https://arxiv.org/abs/2511.21631"
     },
     {
-      "rank": 38,
+      "rank": 40,
       "system": "ForgeQwen3-8B",
       "agent": "qwen3vl",
       "model_raw": [
@@ -928,7 +976,7 @@
       "row_url": "https://arxiv.org/abs/2606.19930"
     },
     {
-      "rank": 39,
+      "rank": 41,
       "system": "Qwen3-VL-8B",
       "agent": "qwen3vl",
       "model_raw": [
@@ -953,7 +1001,7 @@
       "row_url": "https://arxiv.org/abs/2511.21631"
     },
     {
-      "rank": 40,
+      "rank": 42,
       "system": "UI-Venus-7B",
       "agent": "ui_venus_agent",
       "model_raw": [
@@ -975,7 +1023,7 @@
       "row_url": "https://arxiv.org/abs/2508.10833"
     },
     {
-      "rank": 41,
+      "rank": 43,
       "system": "GUI-Owl-32B",
       "agent": "gui_owl_1_5",
       "model_raw": [
@@ -997,7 +1045,7 @@
       "row_url": "https://arxiv.org/abs/2508.15144"
     },
     {
-      "rank": 42,
+      "rank": 44,
       "system": "GUI-Owl-7B",
       "agent": "gui_owl_1_5",
       "model_raw": [

@@ -1,0 +1,50 @@
+{
+  "checked": "2026-11-03",
+  "review": "independent fresh source comparison and baseline preservation",
+  "checks": {
+    "mobileworld_fresh_snapshot_equal": true,
+    "mobileworld_42_existing_nonrank_unchanged": true,
+    "mobileworld_every_native_score_and_date": true,
+    "mobileworld_new_native_agent_org": true,
+    "mobileworld_all_rows_map_to_source": true,
+    "compound_two_model_ids": true,
+    "single_model_fit_only": true,
+    "all_existing_models_unchanged": true,
+    "mimo_distinct_weights_unknown": true,
+    "model_ids_registered": true,
+    "gaia_fresh_headers_and_data_equal": true,
+    "gaia_98_common_nonrank_unchanged": true,
+    "gaia_native_fields_equal": true,
+    "gaia_cutoff_only": true,
+    "gaia_unversioned_unassigned": true,
+    "coverage_166_unique_exact": true
+  },
+  "status": "pass",
+  "coverage": {
+    "unchanged": 116,
+    "changed": 1,
+    "partial-check": 2,
+    "unchanged_verified": 43,
+    "fetch_failure_preserved": 1,
+    "changed_verified": 1,
+    "partial_verified": 2
+  },
+  "mobileworld_added": [
+    "seek-use (DeepSeek V4.1 Flash)",
+    "Micar-GUI-Agent (Claude Sonnet 5.5)"
+  ],
+  "gaia_added": [
+    "Shapartner V6",
+    "g14a1"
+  ],
+  "gaia_removed": [
+    "1020-4",
+    "Shadow Harness V1.08"
+  ],
+  "preserved_baseline_normalizations": [
+    "MobileWorld date zero-padding and organization trim; two preexisting agent label overrides retained unchanged.",
+    "GAIA DDDD1111 existing placeholder retains agent_name_empty_on_board=true."
+  ],
+  "fresh_gaia_event": "11d5db7471a647b894bf8fa9d73cbe42",
+  "fresh_mobileworld_sha256": "78907b51e62cf84b2a6afc5d1c10ba8c1327120cc9d11009c56ca2346a5ba713"
+}

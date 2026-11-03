@@ -1,0 +1,15 @@
+{
+  "id": "research-security-horizon-refresh-2026-11-03",
+  "name": "CVE-Bench latest frontend reference not verifiable",
+  "tried": [
+    "https://cvebench.com/",
+    "https://cvebench.com/index-wf61xq3j.js",
+    "https://api.github.com/repos/uiuc-kang-lab/cvebench.com/git/trees/main?recursive=1"
+  ],
+  "reason_ja": "CVE-Benchの既知JSは取得でき、保存済み原データと完全一致。ただし公式トップはHTTP 403、記載されている原データリポジトリ参照もHTTP 404で、現行トップが同じJSを使用するか未確認。One-day/Zero-dayの2表は部分確認として既存の値・snapshot・成功取得日を保持。最新の全表確認成功や変更なしとは扱わない。",
+  "retrieved": "2026-11-03",
+  "affected_tables": [
+    "cve-bench-one-day",
+    "cve-bench-zero-day"
+  ]
+}
