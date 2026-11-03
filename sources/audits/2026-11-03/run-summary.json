@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-03",
+  "baseline_commit": "aad0d0dc8d7b11949874a2f3cdb31296e7a9d1b6",
+  "tables": 166,
+  "rows": 4505,
+  "models": 525,
+  "unchanged_verified": 159,
+  "changed": [
+    "gaia",
+    "mobileworld"
+  ],
+  "partial": [
+    "toolathlon",
+    "toolathlon-verified",
+    "cve-bench-one-day",
+    "cve-bench-zero-day"
+  ],
+  "fetch_failure_preserved": [
+    "assistantbench"
+  ],
+  "change_note": "MobileWorld adds two Agentic submissions with distinct step limits; one uses two models and is excluded from single-model matrix/fit. GAIA top100 tie cutoff changes two entries at the same 91.03 score, not a performance gain.",
+  "categories": {
+    "web": 23,
+    "computer-use": 22,
+    "long-horizon": 7,
+    "tool-use": 32,
+    "terminal": 5,
+    "coding": 50,
+    "general": 5,
+    "security": 13,
+    "research": 9
+  },
+  "no_paid_evaluation": true,
+  "no_code_ui_workflow_changes": true
+}
