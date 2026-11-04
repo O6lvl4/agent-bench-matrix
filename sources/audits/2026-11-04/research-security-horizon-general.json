@@ -1,0 +1,1114 @@
+{
+  "tables": [
+    {
+      "id": "browsecomp-plus",
+      "category": "research",
+      "prior_status": "unchanged",
+      "sources": [
+        {
+          "url": "https://tevatron-browsecomp-plus.hf.space/data/leaderboard.json",
+          "checked_at": "2026-11-04T00:12:52.014300+00:00",
+          "status": 200,
+          "final_url": "https://tevatron-browsecomp-plus.hf.space/data/leaderboard.json",
+          "bytes": 52620,
+          "sha256": "4dac741487cfbae1a9115f069e088c87f9f32e645c2eb0f6514767525a38fc13",
+          "prior_sha256": "4dac741487cfbae1a9115f069e088c87f9f32e645c2eb0f6514767525a38fc13",
+          "equal": true
+        },
+        {
+          "url": "https://huggingface.co/datasets/Tevatron/BrowseComp-Plus-results/resolve/main/agent_results.csv",
+          "checked_at": "2026-11-04T00:12:46.318742+00:00",
+          "status": 200,
+          "final_url": "https://huggingface.co/api/resolve-cache/datasets/Tevatron/BrowseComp-Plus-results/11cd1768405cf2d505bb27b9f2a1ad68e797c998/agent_results.csv?%2Fdatasets%2FTevatron%2FBrowseComp-Plus-results%2Fresolve%2Fmain%2Fagent_results.csv=&etag=%22cd3d8e81303712f33e5f72602ea816b6f43bf4eb%22",
+          "bytes": 21515,
+          "sha256": "e56843834767d29b9234f4cb17c0ac3eb30335004ba5249e0d28f70037a4b482",
+          "prior_sha256": "e56843834767d29b9234f4cb17c0ac3eb30335004ba5249e0d28f70037a4b482",
+          "equal": true
+        }
+      ],
+      "status": "unchanged",
+      "detail": "Fresh complete source payload SHA256 equal prior successful Nov3 audit payload."
+    },
+    {
+      "id": "cve-bench-one-day",
+      "category": "security",
+      "prior_status": "partial_verified",
+      "sources": [
+        {
+          "url": "https://cvebench.com/index-wf61xq3j.js",
+          "checked_at": "2026-11-04T00:12:39.392774+00:00",
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden",
+          "prior_sha256": "3ea79483ba2c9201b5bbcf89e64e39bf774a4b67eb03b5fc305732f00d6a0fc1",
+          "equal": false
+        },
+        {
+          "url": "https://cvebench.com/",
+          "checked_at": "2026-11-04T00:12:39.390633+00:00",
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden",
+          "prior_sha256": null,
+          "equal": false
+        }
+      ],
+      "status": "fetch_failure_preserved",
+      "detail": "Official primary source denied HTTP403; no bypass attempted. Preserve previous good table and success timestamp."
+    },
+    {
+      "id": "cve-bench-zero-day",
+      "category": "security",
+      "prior_status": "partial_verified",
+      "sources": [
+        {
+          "url": "https://cvebench.com/index-wf61xq3j.js",
+          "checked_at": "2026-11-04T00:12:39.392774+00:00",
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden",
+          "prior_sha256": "3ea79483ba2c9201b5bbcf89e64e39bf774a4b67eb03b5fc305732f00d6a0fc1",
+          "equal": false
+        },
+        {
+          "url": "https://cvebench.com/",
+          "checked_at": "2026-11-04T00:12:39.390633+00:00",
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden",
+          "prior_sha256": null,
+          "equal": false
+        }
+      ],
+      "status": "fetch_failure_preserved",
+      "detail": "Official primary source denied HTTP403; no bypass attempted. Preserve previous good table and success timestamp."
+    },
+    {
+      "id": "cybench",
+      "category": "security",
+      "prior_status": "unchanged",
+      "sources": [
+        {
+          "url": "https://cybench.github.io/data/leaderboard.csv",
+          "checked_at": "2026-11-04T00:12:39.393863+00:00",
+          "status": 200,
+          "final_url": "https://cybench.github.io/data/leaderboard.csv",
+          "bytes": 1179,
+          "sha256": "846bb17951ec9f7c103486d7c0344974decd2d57f1039df26f9e84986704da45",
+          "prior_sha256": "846bb17951ec9f7c103486d7c0344974decd2d57f1039df26f9e84986704da45",
+          "equal": true
+        }
+      ],
+      "status": "unchanged",
+      "detail": "Fresh complete source payload SHA256 equal prior successful Nov3 audit payload."
+    },
+    {
+      "id": "cybergym-agent-focused",
+      "category": "security",
+      "prior_status": "unchanged",
+      "sources": [
+        {
+          "url": "https://www.cybergym.io/cybergym/",
+          "checked_at": "2026-11-04T00:12:55.758339+00:00",
+          "status": 200,
+          "final_url": "https://www.cybergym.io/cybergym/",
+          "bytes": 31284,
+          "sha256": "768f35415a1b9f2b792cbf7fd7e51add14c92fd97b550565bff47de1516b496c",
+          "prior_sha256": "768f35415a1b9f2b792cbf7fd7e51add14c92fd97b550565bff47de1516b496c",
+          "equal": true
+        },
+        {
+          "url": "https://www.cybergym.io/assets/js/leaderboard.js",
+          "checked_at": "2026-11-04T00:12:52.774273+00:00",
+          "status": 200,
+          "final_url": "https://www.cybergym.io/assets/js/leaderboard.js",
+          "bytes": 41775,
+          "sha256": "7aa2d51c07d2bda8dc8be9910844441aabcfaa03b8b1a9adf1a24e3be45298f2",
+          "prior_sha256": "7aa2d51c07d2bda8dc8be9910844441aabcfaa03b8b1a9adf1a24e3be45298f2",
+          "equal": true
+        },
+        {
+          "url": "https://www.cybergym.io/assets/data/cybergym.json",
+          "checked_at": "2026-11-04T00:12:52.454355+00:00",
+          "status": 200,
+          "final_url": "https://www.cybergym.io/assets/data/cybergym.json",
+          "bytes": 40621,
+          "sha256": "c5aa28f57bc31f0c24aee998a8d5da379cfc6060a169dd030c431d58968bfe8d",
+          "prior_sha256": "c5aa28f57bc31f0c24aee998a8d5da379cfc6060a169dd030c431d58968bfe8d",
+          "equal": true
+        }
+      ],
+      "status": "unchanged",
+      "detail": "Fresh complete source payload SHA256 equal prior successful Nov3 audit payload."
+    },
+    {
+      "id": "cybergym-e2e",
+      "category": "security",
+      "prior_status": "unchanged",
+      "sources": [
+        {
+          "url": "https://www.cybergym.io/assets/data/cybergym-e2e.json",
+          "checked_at": "2026-11-04T00:12:52.354889+00:00",
+          "status": 200,
+          "final_url": "https://www.cybergym.io/assets/data/cybergym-e2e.json",
+          "bytes": 4152,
+          "sha256": "05a59f9f5c398bbabeb672164e7f172ecab00294f329a0a24a6a95b2a0951c34",
+          "prior_sha256": "05a59f9f5c398bbabeb672164e7f172ecab00294f329a0a24a6a95b2a0951c34",
+          "equal": true
+        },
+        {
+          "url": "https://www.cybergym.io/cybergym-e2e/",
+          "checked_at": "2026-11-04T00:12:53.278428+00:00",
+          "status": 200,
+          "final_url": "https://www.cybergym.io/cybergym-e2e/",
+          "bytes": 25612,
+          "sha256": "627b31e2a2112f89eec254ba30b2c0cffbb9b83d117faf29ffb6a708059ee8ff",
+          "prior_sha256": "627b31e2a2112f89eec254ba30b2c0cffbb9b83d117faf29ffb6a708059ee8ff",
+          "equal": true
+        }
+      ],
+      "status": "unchanged",
+      "detail": "Fresh complete source payload SHA256 equal prior successful Nov3 audit payload."
+    },
+    {
+      "id": "cybergym-model-focused",
+      "category": "security",
+      "prior_status": "unchanged",
+      "sources": [
+        {
+          "url": "https://www.cybergym.io/cybergym/",
+          "checked_at": "2026-11-04T00:12:55.758339+00:00",
+          "status": 200,
+          "final_url": "https://www.cybergym.io/cybergym/",
+          "bytes": 31284,
+          "sha256": "768f35415a1b9f2b792cbf7fd7e51add14c92fd97b550565bff47de1516b496c",
+          "prior_sha256": "768f35415a1b9f2b792cbf7fd7e51add14c92fd97b550565bff47de1516b496c",
+          "equal": true
+        },
+        {
+          "url": "https://www.cybergym.io/assets/js/leaderboard.js",
+          "checked_at": "2026-11-04T00:12:52.774273+00:00",
+          "status": 200,
+          "final_url": "https://www.cybergym.io/assets/js/leaderboard.js",
+          "bytes": 41775,
+          "sha256": "7aa2d51c07d2bda8dc8be9910844441aabcfaa03b8b1a9adf1a24e3be45298f2",
+          "prior_sha256": "7aa2d51c07d2bda8dc8be9910844441aabcfaa03b8b1a9adf1a24e3be45298f2",
+          "equal": true
+        },
+        {
+          "url": "https://www.cybergym.io/assets/data/cybergym.json",
+          "checked_at": "2026-11-04T00:12:52.454355+00:00",
+          "status": 200,
+          "final_url": "https://www.cybergym.io/assets/data/cybergym.json",
+          "bytes": 40621,
+          "sha256": "c5aa28f57bc31f0c24aee998a8d5da379cfc6060a169dd030c431d58968bfe8d",
+          "prior_sha256": "c5aa28f57bc31f0c24aee998a8d5da379cfc6060a169dd030c431d58968bfe8d",
+          "equal": true
+        }
+      ],
+      "status": "unchanged",
+      "detail": "Fresh complete source payload SHA256 equal prior successful Nov3 audit payload."
+    },
+    {
+      "id": "ecommerce-bench",
+      "category": "long-horizon",
+      "prior_status": "unchanged",
+      "sources": [
+        {
+          "url": "https://ecbench.github.io/showcase_data.json",
+          "checked_at": "2026-11-04T00:12:39.395536+00:00",
+          "status": 200,
+          "final_url": "https://ecbench.github.io/showcase_data.json",
+          "bytes": 389797,
+          "sha256": "92f5a96c47517afb176efaf87778b720c11ebc4c329663646c55f18b1fbfc33f",
+          "prior_sha256": "92f5a96c47517afb176efaf87778b720c11ebc4c329663646c55f18b1fbfc33f",
+          "equal": true
+        }
+      ],
+      "status": "unchanged",
+      "detail": "Fresh complete source payload SHA256 equal prior successful Nov3 audit payload."
+    },
+    {
+      "id": "exploitgym",
+      "category": "security",
+      "prior_status": "unchanged",
+      "sources": [
+        {
+          "url": "https://www.cybergym.io/assets/data/exploitgym.json",
+          "checked_at": "2026-11-04T00:12:52.770276+00:00",
+          "status": 200,
+          "final_url": "https://www.cybergym.io/assets/data/exploitgym.json",
+          "bytes": 14346,
+          "sha256": "bf8c380c061ce86b5a215f743994ad82c32829271d8f47c8054e8f8b6ecb4326",
+          "prior_sha256": "bf8c380c061ce86b5a215f743994ad82c32829271d8f47c8054e8f8b6ecb4326",
+          "equal": true
+        },
+        {
+          "url": "https://www.cybergym.io/exploitgym/",
+          "checked_at": "2026-11-04T00:12:56.818253+00:00",
+          "status": 200,
+          "final_url": "https://www.cybergym.io/exploitgym/",
+          "bytes": 33053,
+          "sha256": "28362c8becf5b9e630303688aa1bf2786c9db64ef51b47166cc0ccd526a12763",
+          "prior_sha256": "28362c8becf5b9e630303688aa1bf2786c9db64ef51b47166cc0ccd526a12763",
+          "equal": true
+        }
+      ],
+      "status": "unchanged",
+      "detail": "Fresh complete source payload SHA256 equal prior successful Nov3 audit payload."
+    },
+    {
+      "id": "hal-core-bench-hard",
+      "category": "research",
+      "prior_status": "unchanged",
+      "sources": [
+        {
+          "url": "https://hal.cs.princeton.edu/corebench_hard",
+          "checked_at": "2026-11-04T00:12:45.201652+00:00",
+          "status": 200,
+          "final_url": "https://hal.cs.princeton.edu/corebench_hard",
+          "bytes": 358438,
+          "sha256": "f46a6d73ead02529444c35c3f1d67898d4c88e799f8d8f6d9a47c99cfe527997",
+          "prior_sha256": "f46a6d73ead02529444c35c3f1d67898d4c88e799f8d8f6d9a47c99cfe527997",
+          "equal": true
+        }
+      ],
+      "status": "unchanged",
+      "detail": "Fresh complete source payload SHA256 equal prior successful Nov3 audit payload."
+    },
+    {
+      "id": "hal-scicode",
+      "category": "research",
+      "prior_status": "unchanged",
+      "sources": [
+        {
+          "url": "https://hal.cs.princeton.edu/scicode",
+          "checked_at": "2026-11-04T00:12:46.294686+00:00",
+          "status": 200,
+          "final_url": "https://hal.cs.princeton.edu/scicode",
+          "bytes": 292216,
+          "sha256": "50d72f921462a52888d012144c2a88e300720e1100ab6611bf7e146593d62a10",
+          "prior_sha256": "50d72f921462a52888d012144c2a88e300720e1100ab6611bf7e146593d62a10",
+          "equal": true
+        }
+      ],
+      "status": "unchanged",
+      "detail": "Fresh complete source payload SHA256 equal prior successful Nov3 audit payload."
+    },
+    {
+      "id": "hal-scienceagentbench",
+      "category": "research",
+      "prior_status": "unchanged",
+      "sources": [
+        {
+          "url": "https://hal.cs.princeton.edu/scienceagentbench",
+          "checked_at": "2026-11-04T00:12:46.312623+00:00",
+          "status": 200,
+          "final_url": "https://hal.cs.princeton.edu/scienceagentbench",
+          "bytes": 196981,
+          "sha256": "f576d5df56b23cf57da42bf848d55d8da5cbab1ba52e973aed033f646b6f26f9",
+          "prior_sha256": "f576d5df56b23cf57da42bf848d55d8da5cbab1ba52e973aed033f646b6f26f9",
+          "equal": true
+        }
+      ],
+      "status": "unchanged",
+      "detail": "Fresh complete source payload SHA256 equal prior successful Nov3 audit payload."
+    },
+    {
+      "id": "metr-time-horizon",
+      "category": "long-horizon",
+      "prior_status": "unchanged",
+      "sources": [
+        {
+          "url": "https://metr.org/assets/benchmark_results_1_1.yaml",
+          "checked_at": "2026-11-04T00:12:46.670911+00:00",
+          "status": 200,
+          "final_url": "https://metr.org/assets/benchmark_results_1_1.yaml",
+          "bytes": 16255,
+          "sha256": "aae31902b0519a4da73e16643915e5e8aca13cd3315c3aac893ce3d6dfe92ad9",
+          "prior_sha256": "aae31902b0519a4da73e16643915e5e8aca13cd3315c3aac893ce3d6dfe92ad9",
+          "equal": true
+        }
+      ],
+      "status": "unchanged",
+      "detail": "Fresh complete source payload SHA256 equal prior successful Nov3 audit payload."
+    },
+    {
+      "id": "metr-time-horizon-1.0",
+      "category": "long-horizon",
+      "prior_status": "unchanged",
+      "sources": [
+        {
+          "url": "https://metr.org/assets/benchmark_results_1_0.yaml",
+          "checked_at": "2026-11-04T00:12:46.663978+00:00",
+          "status": 200,
+          "final_url": "https://metr.org/assets/benchmark_results_1_0.yaml",
+          "bytes": 14328,
+          "sha256": "f15fd2f13cd8d28f06f5430fabf21dcd1284193ec152bdedc34e11dcc525df66",
+          "prior_sha256": "f15fd2f13cd8d28f06f5430fabf21dcd1284193ec152bdedc34e11dcc525df66",
+          "equal": true
+        }
+      ],
+      "status": "unchanged",
+      "detail": "Fresh complete source payload SHA256 equal prior successful Nov3 audit payload."
+    },
+    {
+      "id": "mind2web-2",
+      "category": "research",
+      "prior_status": "unchanged",
+      "sources": [
+        {
+          "url": "https://osu-nlp-group.github.io/Mind2Web-2/leaderboard_data.json",
+          "checked_at": "2026-11-04T00:12:47.330255+00:00",
+          "status": 200,
+          "final_url": "https://osu-nlp-group.github.io/Mind2Web-2/leaderboard_data.json",
+          "bytes": 7783,
+          "sha256": "ed954c3b30c7e32c26eb58d7a6612b21537db82fa6c51462455937036cb08702",
+          "prior_sha256": "ed954c3b30c7e32c26eb58d7a6612b21537db82fa6c51462455937036cb08702",
+          "equal": true
+        }
+      ],
+      "status": "unchanged",
+      "detail": "Fresh complete source payload SHA256 equal prior successful Nov3 audit payload."
+    },
+    {
+      "id": "mle-bench",
+      "category": "research",
+      "prior_status": "unchanged",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/openai/mle-bench/main/README.md",
+          "checked_at": "2026-11-04T00:12:47.406863+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/openai/mle-bench/main/README.md",
+          "bytes": 20988,
+          "sha256": "586bbc19cb2a3e11be61021866ef6436cf4b4d935bb1db088984b567b76595bb",
+          "prior_sha256": "586bbc19cb2a3e11be61021866ef6436cf4b4d935bb1db088984b567b76595bb",
+          "equal": true
+        }
+      ],
+      "status": "unchanged",
+      "detail": "Fresh complete source payload SHA256 equal prior successful Nov3 audit payload."
+    },
+    {
+      "id": "mle-bench-additional",
+      "category": "research",
+      "prior_status": "unchanged",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/openai/mle-bench/main/README.md",
+          "checked_at": "2026-11-04T00:12:47.406863+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/openai/mle-bench/main/README.md",
+          "bytes": 20988,
+          "sha256": "586bbc19cb2a3e11be61021866ef6436cf4b4d935bb1db088984b567b76595bb",
+          "prior_sha256": "586bbc19cb2a3e11be61021866ef6436cf4b4d935bb1db088984b567b76595bb",
+          "equal": true
+        }
+      ],
+      "status": "unchanged",
+      "detail": "Fresh complete source payload SHA256 equal prior successful Nov3 audit payload."
+    },
+    {
+      "id": "paperbench",
+      "category": "research",
+      "prior_status": "unchanged",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/openai/preparedness/main/project/paperbench/README.md",
+          "checked_at": "2026-11-04T00:12:51.381534+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/openai/preparedness/main/project/paperbench/README.md",
+          "bytes": 20104,
+          "sha256": "b50041ce9329b4a5a779c7114b8c21f6eab93cae91d309f5924f6ebe06f470cb",
+          "prior_sha256": "b50041ce9329b4a5a779c7114b8c21f6eab93cae91d309f5924f6ebe06f470cb",
+          "equal": true
+        }
+      ],
+      "status": "unchanged",
+      "detail": "Fresh complete source payload SHA256 equal prior successful Nov3 audit payload."
+    },
+    {
+      "id": "paperbench-code-dev",
+      "category": "research",
+      "prior_status": "unchanged",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/openai/preparedness/main/project/paperbench/README.md",
+          "checked_at": "2026-11-04T00:12:51.381534+00:00",
+          "status": 200,
+          "final_url": "https://raw.githubusercontent.com/openai/preparedness/main/project/paperbench/README.md",
+          "bytes": 20104,
+          "sha256": "b50041ce9329b4a5a779c7114b8c21f6eab93cae91d309f5924f6ebe06f470cb",
+          "prior_sha256": "b50041ce9329b4a5a779c7114b8c21f6eab93cae91d309f5924f6ebe06f470cb",
+          "equal": true
+        }
+      ],
+      "status": "unchanged",
+      "detail": "Fresh complete source payload SHA256 equal prior successful Nov3 audit payload."
+    },
+    {
+      "id": "sec-bench-poc-generation",
+      "category": "security",
+      "prior_status": "unchanged",
+      "sources": [
+        {
+          "url": "https://sec-bench.github.io/",
+          "checked_at": "2026-11-04T00:12:51.414327+00:00",
+          "status": 200,
+          "final_url": "https://sec-bench.github.io/",
+          "bytes": 219225,
+          "sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5",
+          "prior_sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5",
+          "equal": true
+        }
+      ],
+      "status": "unchanged",
+      "detail": "Fresh complete source payload SHA256 equal prior successful Nov3 audit payload."
+    },
+    {
+      "id": "sec-bench-pro-firefox",
+      "category": "security",
+      "prior_status": "unchanged",
+      "sources": [
+        {
+          "url": "https://sec-bench.github.io/",
+          "checked_at": "2026-11-04T00:12:51.414327+00:00",
+          "status": 200,
+          "final_url": "https://sec-bench.github.io/",
+          "bytes": 219225,
+          "sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5",
+          "prior_sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5",
+          "equal": true
+        }
+      ],
+      "status": "unchanged",
+      "detail": "Fresh complete source payload SHA256 equal prior successful Nov3 audit payload."
+    },
+    {
+      "id": "sec-bench-pro-linux",
+      "category": "security",
+      "prior_status": "unchanged",
+      "sources": [
+        {
+          "url": "https://sec-bench.github.io/",
+          "checked_at": "2026-11-04T00:12:51.414327+00:00",
+          "status": 200,
+          "final_url": "https://sec-bench.github.io/",
+          "bytes": 219225,
+          "sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5",
+          "prior_sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5",
+          "equal": true
+        }
+      ],
+      "status": "unchanged",
+      "detail": "Fresh complete source payload SHA256 equal prior successful Nov3 audit payload."
+    },
+    {
+      "id": "sec-bench-pro-overall",
+      "category": "security",
+      "prior_status": "unchanged",
+      "sources": [
+        {
+          "url": "https://sec-bench.github.io/",
+          "checked_at": "2026-11-04T00:12:51.414327+00:00",
+          "status": 200,
+          "final_url": "https://sec-bench.github.io/",
+          "bytes": 219225,
+          "sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5",
+          "prior_sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5",
+          "equal": true
+        }
+      ],
+      "status": "unchanged",
+      "detail": "Fresh complete source payload SHA256 equal prior successful Nov3 audit payload."
+    },
+    {
+      "id": "sec-bench-pro-v8",
+      "category": "security",
+      "prior_status": "unchanged",
+      "sources": [
+        {
+          "url": "https://sec-bench.github.io/",
+          "checked_at": "2026-11-04T00:12:51.414327+00:00",
+          "status": 200,
+          "final_url": "https://sec-bench.github.io/",
+          "bytes": 219225,
+          "sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5",
+          "prior_sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5",
+          "equal": true
+        }
+      ],
+      "status": "unchanged",
+      "detail": "Fresh complete source payload SHA256 equal prior successful Nov3 audit payload."
+    },
+    {
+      "id": "sec-bench-vulnerability-patching",
+      "category": "security",
+      "prior_status": "unchanged",
+      "sources": [
+        {
+          "url": "https://sec-bench.github.io/",
+          "checked_at": "2026-11-04T00:12:51.414327+00:00",
+          "status": 200,
+          "final_url": "https://sec-bench.github.io/",
+          "bytes": 219225,
+          "sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5",
+          "prior_sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5",
+          "equal": true
+        }
+      ],
+      "status": "unchanged",
+      "detail": "Fresh complete source payload SHA256 equal prior successful Nov3 audit payload."
+    },
+    {
+      "id": "swe-marathon-v1-0",
+      "category": "long-horizon",
+      "prior_status": "unchanged",
+      "sources": [
+        {
+          "url": "https://www.swe-marathon.org/",
+          "checked_at": "2026-11-04T00:12:56.850272+00:00",
+          "status": 200,
+          "final_url": "https://www.swe-marathon.org/",
+          "bytes": 4714,
+          "sha256": "06afed88bf43bfa6520745b41b55fca5fe751dbca8d79299aecb35478d2d2db1",
+          "prior_sha256": "06afed88bf43bfa6520745b41b55fca5fe751dbca8d79299aecb35478d2d2db1",
+          "equal": true
+        },
+        {
+          "url": "https://www.swe-marathon.org/assets/index-Dsh1_CSb.js",
+          "checked_at": "2026-11-04T00:12:56.886204+00:00",
+          "status": 200,
+          "final_url": "https://www.swe-marathon.org/assets/index-Dsh1_CSb.js",
+          "bytes": 5897498,
+          "sha256": "f7b28e0cceedb6621c8825ef2abacad3548fec13b3c4bca3818e518b93bf2f5f",
+          "prior_sha256": "f7b28e0cceedb6621c8825ef2abacad3548fec13b3c4bca3818e518b93bf2f5f",
+          "equal": true
+        }
+      ],
+      "status": "unchanged",
+      "detail": "Fresh complete source payload SHA256 equal prior successful Nov3 audit payload."
+    },
+    {
+      "id": "swe-marathon-v1-1",
+      "category": "long-horizon",
+      "prior_status": "unchanged",
+      "sources": [
+        {
+          "url": "https://www.swe-marathon.org/",
+          "checked_at": "2026-11-04T00:12:56.850272+00:00",
+          "status": 200,
+          "final_url": "https://www.swe-marathon.org/",
+          "bytes": 4714,
+          "sha256": "06afed88bf43bfa6520745b41b55fca5fe751dbca8d79299aecb35478d2d2db1",
+          "prior_sha256": "06afed88bf43bfa6520745b41b55fca5fe751dbca8d79299aecb35478d2d2db1",
+          "equal": true
+        },
+        {
+          "url": "https://www.swe-marathon.org/assets/index-Dsh1_CSb.js",
+          "checked_at": "2026-11-04T00:12:56.886204+00:00",
+          "status": 200,
+          "final_url": "https://www.swe-marathon.org/assets/index-Dsh1_CSb.js",
+          "bytes": 5897498,
+          "sha256": "f7b28e0cceedb6621c8825ef2abacad3548fec13b3c4bca3818e518b93bf2f5f",
+          "prior_sha256": "f7b28e0cceedb6621c8825ef2abacad3548fec13b3c4bca3818e518b93bf2f5f",
+          "equal": true
+        }
+      ],
+      "status": "unchanged",
+      "detail": "Fresh complete source payload SHA256 equal prior successful Nov3 audit payload."
+    },
+    {
+      "id": "vending-bench",
+      "category": "long-horizon",
+      "prior_status": "unchanged",
+      "sources": [
+        {
+          "url": "https://andonlabs.com/evals/vending-bench",
+          "checked_at": "2026-11-04T00:12:39.388865+00:00",
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden",
+          "prior_sha256": "f2b3b425915103cb5275dafa88f885f63e6ae358c823726a2cd2f78b7291f028",
+          "equal": false
+        },
+        {
+          "url": "https://andonlabs.com/_app/immutable/nodes/25.CVTjRCvv.js",
+          "checked_at": "2026-11-04T00:12:39.387838+00:00",
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden",
+          "prior_sha256": "0a6446ee71cdef1cee04325d59b0374722491d29ed920b19d32cd7b7efa07461",
+          "equal": false
+        }
+      ],
+      "status": "fetch_failure_preserved",
+      "detail": "Official primary source denied HTTP403; no bypass attempted. Preserve previous good table and success timestamp."
+    },
+    {
+      "id": "vending-bench-2",
+      "category": "long-horizon",
+      "prior_status": "unchanged",
+      "sources": [
+        {
+          "url": "https://andonlabs.com/evals/vending-bench-2",
+          "checked_at": "2026-11-04T00:12:39.389873+00:00",
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden",
+          "prior_sha256": "6d5df5e48b0d729f7467013b6e4dbe90bca5da8bcaf4cf047cc87b32758a2e8f",
+          "equal": false
+        },
+        {
+          "url": "https://andonlabs.com/_app/immutable/nodes/26.CKje-A28.js",
+          "checked_at": "2026-11-04T00:12:39.388350+00:00",
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden",
+          "prior_sha256": "c0dd6ccae4803818c7f8269cd7fd4a55bed12ba139000f5bbe8b516d546e06a8",
+          "equal": false
+        },
+        {
+          "url": "https://andonlabs.com/_app/immutable/chunks/3yXS6ZzI.js",
+          "checked_at": "2026-11-04T00:12:39.386872+00:00",
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden",
+          "prior_sha256": "4bcbb1529f6436c7ea866056225445db02911acba473b1028530845d0e7eb54c",
+          "equal": false
+        },
+        {
+          "url": "https://andonlabs.com/_app/immutable/chunks/Cs044IBN.js",
+          "checked_at": "2026-11-04T00:12:39.387329+00:00",
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden",
+          "prior_sha256": "4d2c8b4248d391fdf0b2d61c460ac13aaaa8749b4f0d6299eaef6330fc89609a",
+          "equal": false
+        }
+      ],
+      "status": "fetch_failure_preserved",
+      "detail": "Official primary source denied HTTP403; no bypass attempted. Preserve previous good table and success timestamp."
+    },
+    {
+      "id": "gaia",
+      "category": "general",
+      "prior_status": "changed",
+      "sources": [
+        {
+          "url": "https://gaia-benchmark-leaderboard.hf.space/gradio_api/call/refresh",
+          "method": "POST",
+          "body": {
+            "data": []
+          },
+          "status": 200,
+          "event_id": "c583e8ee00da458fbc4bd88b1ea2494b"
+        },
+        {
+          "url": "https://gaia-benchmark-leaderboard.hf.space/gradio_api/call/refresh/c583e8ee00da458fbc4bd88b1ea2494b",
+          "status": 200,
+          "bytes": 23171,
+          "sha256": "3864e1c778f547b1942788682754945b9493cbfac08f91e150a27016a2537da5"
+        }
+      ],
+      "status": "changed",
+      "detail": "Two independently fetched fresh events equal; candidate + proof supplied."
+    },
+    {
+      "id": "gaia2",
+      "category": "general",
+      "prior_status": "unchanged",
+      "sources": [
+        {
+          "url": "https://meta-agents-research-environments-leaderboard.hf.space/gradio_api/call/refresh_legacy",
+          "method": "POST",
+          "body": {
+            "data": []
+          },
+          "status": 200,
+          "event_id": "f10bee396012479e8961997230d5ccf7"
+        },
+        {
+          "url": "https://meta-agents-research-environments-leaderboard.hf.space/gradio_api/call/refresh_legacy/f10bee396012479e8961997230d5ccf7",
+          "status": 200,
+          "bytes": 1767,
+          "sha256": "3020957577cef9daf1b9a5ec8bb00ea9f54ed1d3259317816b1e206ce46d67ae"
+        }
+      ],
+      "status": "unchanged",
+      "detail": "Fresh complete event headers/data equal all16 baseline rows."
+    },
+    {
+      "id": "gaia2-cli",
+      "category": "general",
+      "prior_status": "unchanged",
+      "sources": [
+        {
+          "url": "https://huggingface.co/spaces/meta-agents-research-environments/leaderboard/raw/main/app.py",
+          "checked_at": "2026-11-04T00:12:46.327453+00:00",
+          "status": 200,
+          "final_url": "https://huggingface.co/spaces/meta-agents-research-environments/leaderboard/raw/main/app.py",
+          "bytes": 21000,
+          "sha256": "c7e686b548945dc8bf0556dccf39f3a9d3e1cd5cfec7b71432efaab7227b6c3a",
+          "prior_sha256": "c7e686b548945dc8bf0556dccf39f3a9d3e1cd5cfec7b71432efaab7227b6c3a",
+          "equal": true
+        }
+      ],
+      "status": "unchanged",
+      "detail": "Fresh complete source payload SHA256 equal prior successful Nov3 audit payload."
+    },
+    {
+      "id": "hal-gaia",
+      "category": "general",
+      "prior_status": "unchanged",
+      "sources": [
+        {
+          "url": "https://hal.cs.princeton.edu/gaia",
+          "checked_at": "2026-11-04T00:12:46.290555+00:00",
+          "status": 200,
+          "final_url": "https://hal.cs.princeton.edu/gaia",
+          "bytes": 357292,
+          "sha256": "916379d9022e7a8fd4abd8615c81c2fc958305e98f7764c913f63bf787e4138b",
+          "prior_sha256": "916379d9022e7a8fd4abd8615c81c2fc958305e98f7764c913f63bf787e4138b",
+          "equal": true
+        }
+      ],
+      "status": "unchanged",
+      "detail": "Fresh complete source payload SHA256 equal prior successful Nov3 audit payload."
+    },
+    {
+      "id": "skillsbench",
+      "category": "general",
+      "prior_status": "unchanged",
+      "sources": [
+        {
+          "url": "https://www.skillsbench.ai/_next/static/chunks/8e836c7a01322d0f.js",
+          "checked_at": "2026-11-04T00:12:56.842186+00:00",
+          "status": 200,
+          "final_url": "https://www.skillsbench.ai/_next/static/chunks/8e836c7a01322d0f.js",
+          "bytes": 12722,
+          "sha256": "d072e7b4adb2cb9d886fe9f5cde99cc573ae7d4bbaeede4d2a013a72d71b9ac3",
+          "prior_sha256": "d072e7b4adb2cb9d886fe9f5cde99cc573ae7d4bbaeede4d2a013a72d71b9ac3",
+          "equal": true
+        }
+      ],
+      "status": "unchanged",
+      "detail": "Fresh complete source payload SHA256 equal prior successful Nov3 audit payload."
+    }
+  ],
+  "requests": [
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/3yXS6ZzI.js",
+      "checked_at": "2026-11-04T00:12:39.386872+00:00",
+      "path": "/tmp/bench-other-20261104/bf05b5dc0f8d37a5.raw",
+      "status": 0,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/chunks/Cs044IBN.js",
+      "checked_at": "2026-11-04T00:12:39.387329+00:00",
+      "path": "/tmp/bench-other-20261104/7f424f12cdc2feca.raw",
+      "status": 0,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/nodes/25.CVTjRCvv.js",
+      "checked_at": "2026-11-04T00:12:39.387838+00:00",
+      "path": "/tmp/bench-other-20261104/7d7007fffcd40132.raw",
+      "status": 0,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://andonlabs.com/_app/immutable/nodes/26.CKje-A28.js",
+      "checked_at": "2026-11-04T00:12:39.388350+00:00",
+      "path": "/tmp/bench-other-20261104/a91ae1cadedf8e1f.raw",
+      "status": 0,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://andonlabs.com/evals/vending-bench",
+      "checked_at": "2026-11-04T00:12:39.388865+00:00",
+      "path": "/tmp/bench-other-20261104/f887d579d7ab643c.raw",
+      "status": 0,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://andonlabs.com/evals/vending-bench-2",
+      "checked_at": "2026-11-04T00:12:39.389873+00:00",
+      "path": "/tmp/bench-other-20261104/ebcec333cce22556.raw",
+      "status": 0,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://cvebench.com/",
+      "checked_at": "2026-11-04T00:12:39.390633+00:00",
+      "path": "/tmp/bench-other-20261104/c554be0d63acd22a.raw",
+      "status": 0,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://cvebench.com/index-wf61xq3j.js",
+      "checked_at": "2026-11-04T00:12:39.392774+00:00",
+      "path": "/tmp/bench-other-20261104/db72db5cbbcfe661.raw",
+      "status": 0,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://cybench.github.io/data/leaderboard.csv",
+      "checked_at": "2026-11-04T00:12:39.393863+00:00",
+      "path": "/tmp/bench-other-20261104/5ec58650facfaa29.raw",
+      "status": 200,
+      "final_url": "https://cybench.github.io/data/leaderboard.csv",
+      "bytes": 1179,
+      "sha256": "846bb17951ec9f7c103486d7c0344974decd2d57f1039df26f9e84986704da45"
+    },
+    {
+      "url": "https://ecbench.github.io/showcase_data.json",
+      "checked_at": "2026-11-04T00:12:39.395536+00:00",
+      "path": "/tmp/bench-other-20261104/99affb3adf9dc72b.raw",
+      "status": 200,
+      "final_url": "https://ecbench.github.io/showcase_data.json",
+      "bytes": 389797,
+      "sha256": "92f5a96c47517afb176efaf87778b720c11ebc4c329663646c55f18b1fbfc33f"
+    },
+    {
+      "url": "https://gaia-benchmark-leaderboard.hf.space/gradio_api/call/refresh",
+      "checked_at": "2026-11-04T00:12:39.396779+00:00",
+      "path": "/tmp/bench-other-20261104/c217d4c5e057b6c4.raw",
+      "status": 0,
+      "error": "HTTP Error 405: Method Not Allowed"
+    },
+    {
+      "url": "https://gaia-benchmark-leaderboard.hf.space/gradio_api/call/refresh/6c4a86cca901408c840b122ef7796766",
+      "checked_at": "2026-11-04T00:12:39.398156+00:00",
+      "path": "/tmp/bench-other-20261104/8d94919af278b786.raw",
+      "status": 200,
+      "final_url": "https://gaia-benchmark-leaderboard.hf.space/gradio_api/call/refresh/6c4a86cca901408c840b122ef7796766",
+      "bytes": 37,
+      "sha256": "a75f81260832ff0cfb61ae49d877214cf320ced20e0e8e57f586150cd00e6305"
+    },
+    {
+      "url": "https://hal.cs.princeton.edu/corebench_hard",
+      "checked_at": "2026-11-04T00:12:45.201652+00:00",
+      "path": "/tmp/bench-other-20261104/d8f029c455c4d55d.raw",
+      "status": 200,
+      "final_url": "https://hal.cs.princeton.edu/corebench_hard",
+      "bytes": 358438,
+      "sha256": "f46a6d73ead02529444c35c3f1d67898d4c88e799f8d8f6d9a47c99cfe527997"
+    },
+    {
+      "url": "https://hal.cs.princeton.edu/gaia",
+      "checked_at": "2026-11-04T00:12:46.290555+00:00",
+      "path": "/tmp/bench-other-20261104/43245ebfe9f82d77.raw",
+      "status": 200,
+      "final_url": "https://hal.cs.princeton.edu/gaia",
+      "bytes": 357292,
+      "sha256": "916379d9022e7a8fd4abd8615c81c2fc958305e98f7764c913f63bf787e4138b"
+    },
+    {
+      "url": "https://hal.cs.princeton.edu/scicode",
+      "checked_at": "2026-11-04T00:12:46.294686+00:00",
+      "path": "/tmp/bench-other-20261104/3dc7af377a3e03cd.raw",
+      "status": 200,
+      "final_url": "https://hal.cs.princeton.edu/scicode",
+      "bytes": 292216,
+      "sha256": "50d72f921462a52888d012144c2a88e300720e1100ab6611bf7e146593d62a10"
+    },
+    {
+      "url": "https://hal.cs.princeton.edu/scienceagentbench",
+      "checked_at": "2026-11-04T00:12:46.312623+00:00",
+      "path": "/tmp/bench-other-20261104/5f32eb43271d6f2f.raw",
+      "status": 200,
+      "final_url": "https://hal.cs.princeton.edu/scienceagentbench",
+      "bytes": 196981,
+      "sha256": "f576d5df56b23cf57da42bf848d55d8da5cbab1ba52e973aed033f646b6f26f9"
+    },
+    {
+      "url": "https://huggingface.co/datasets/Tevatron/BrowseComp-Plus-results/resolve/main/agent_results.csv",
+      "checked_at": "2026-11-04T00:12:46.318742+00:00",
+      "path": "/tmp/bench-other-20261104/69aaec6a14735903.raw",
+      "status": 200,
+      "final_url": "https://huggingface.co/api/resolve-cache/datasets/Tevatron/BrowseComp-Plus-results/11cd1768405cf2d505bb27b9f2a1ad68e797c998/agent_results.csv?%2Fdatasets%2FTevatron%2FBrowseComp-Plus-results%2Fresolve%2Fmain%2Fagent_results.csv=&etag=%22cd3d8e81303712f33e5f72602ea816b6f43bf4eb%22",
+      "bytes": 21515,
+      "sha256": "e56843834767d29b9234f4cb17c0ac3eb30335004ba5249e0d28f70037a4b482"
+    },
+    {
+      "url": "https://huggingface.co/spaces/meta-agents-research-environments/leaderboard/raw/main/app.py",
+      "checked_at": "2026-11-04T00:12:46.327453+00:00",
+      "path": "/tmp/bench-other-20261104/eef5a2c9f55fe438.raw",
+      "status": 200,
+      "final_url": "https://huggingface.co/spaces/meta-agents-research-environments/leaderboard/raw/main/app.py",
+      "bytes": 21000,
+      "sha256": "c7e686b548945dc8bf0556dccf39f3a9d3e1cd5cfec7b71432efaab7227b6c3a"
+    },
+    {
+      "url": "https://meta-agents-research-environments-leaderboard.hf.space/gradio_api/call/refresh_legacy",
+      "checked_at": "2026-11-04T00:12:46.348045+00:00",
+      "path": "/tmp/bench-other-20261104/3fc8897e742f9447.raw",
+      "status": 0,
+      "error": "HTTP Error 405: Method Not Allowed"
+    },
+    {
+      "url": "https://meta-agents-research-environments-leaderboard.hf.space/gradio_api/call/refresh_legacy/d49a6b5481b34de3a7152bb632d29fcf",
+      "checked_at": "2026-11-04T00:12:46.507271+00:00",
+      "path": "/tmp/bench-other-20261104/5a463ca6ce3fe7b8.raw",
+      "status": 200,
+      "final_url": "https://meta-agents-research-environments-leaderboard.hf.space/gradio_api/call/refresh_legacy/d49a6b5481b34de3a7152bb632d29fcf",
+      "bytes": 37,
+      "sha256": "a75f81260832ff0cfb61ae49d877214cf320ced20e0e8e57f586150cd00e6305"
+    },
+    {
+      "url": "https://metr.org/assets/benchmark_results_1_0.yaml",
+      "checked_at": "2026-11-04T00:12:46.663978+00:00",
+      "path": "/tmp/bench-other-20261104/b14cb70cd20d95f5.raw",
+      "status": 200,
+      "final_url": "https://metr.org/assets/benchmark_results_1_0.yaml",
+      "bytes": 14328,
+      "sha256": "f15fd2f13cd8d28f06f5430fabf21dcd1284193ec152bdedc34e11dcc525df66"
+    },
+    {
+      "url": "https://metr.org/assets/benchmark_results_1_1.yaml",
+      "checked_at": "2026-11-04T00:12:46.670911+00:00",
+      "path": "/tmp/bench-other-20261104/55c1d6cf12bbfba3.raw",
+      "status": 200,
+      "final_url": "https://metr.org/assets/benchmark_results_1_1.yaml",
+      "bytes": 16255,
+      "sha256": "aae31902b0519a4da73e16643915e5e8aca13cd3315c3aac893ce3d6dfe92ad9"
+    },
+    {
+      "url": "https://osu-nlp-group.github.io/Mind2Web-2/leaderboard_data.json",
+      "checked_at": "2026-11-04T00:12:47.330255+00:00",
+      "path": "/tmp/bench-other-20261104/c385c7d00debf8b2.raw",
+      "status": 200,
+      "final_url": "https://osu-nlp-group.github.io/Mind2Web-2/leaderboard_data.json",
+      "bytes": 7783,
+      "sha256": "ed954c3b30c7e32c26eb58d7a6612b21537db82fa6c51462455937036cb08702"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/mle-bench/main/README.md",
+      "checked_at": "2026-11-04T00:12:47.406863+00:00",
+      "path": "/tmp/bench-other-20261104/0cc4aa5fa4ceed69.raw",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/openai/mle-bench/main/README.md",
+      "bytes": 20988,
+      "sha256": "586bbc19cb2a3e11be61021866ef6436cf4b4d935bb1db088984b567b76595bb"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/preparedness/main/project/paperbench/README.md",
+      "checked_at": "2026-11-04T00:12:51.381534+00:00",
+      "path": "/tmp/bench-other-20261104/6b8da3a47db9d1cd.raw",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/openai/preparedness/main/project/paperbench/README.md",
+      "bytes": 20104,
+      "sha256": "b50041ce9329b4a5a779c7114b8c21f6eab93cae91d309f5924f6ebe06f470cb"
+    },
+    {
+      "url": "https://sec-bench.github.io/",
+      "checked_at": "2026-11-04T00:12:51.414327+00:00",
+      "path": "/tmp/bench-other-20261104/f34eda62a81c36dd.raw",
+      "status": 200,
+      "final_url": "https://sec-bench.github.io/",
+      "bytes": 219225,
+      "sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5"
+    },
+    {
+      "url": "https://tevatron-browsecomp-plus.hf.space/data/leaderboard.json",
+      "checked_at": "2026-11-04T00:12:52.014300+00:00",
+      "path": "/tmp/bench-other-20261104/6c9e8a47473ee3db.raw",
+      "status": 200,
+      "final_url": "https://tevatron-browsecomp-plus.hf.space/data/leaderboard.json",
+      "bytes": 52620,
+      "sha256": "4dac741487cfbae1a9115f069e088c87f9f32e645c2eb0f6514767525a38fc13"
+    },
+    {
+      "url": "https://www.cybergym.io/assets/data/cybergym-e2e.json",
+      "checked_at": "2026-11-04T00:12:52.354889+00:00",
+      "path": "/tmp/bench-other-20261104/9e6a2167ebc0c133.raw",
+      "status": 200,
+      "final_url": "https://www.cybergym.io/assets/data/cybergym-e2e.json",
+      "bytes": 4152,
+      "sha256": "05a59f9f5c398bbabeb672164e7f172ecab00294f329a0a24a6a95b2a0951c34"
+    },
+    {
+      "url": "https://www.cybergym.io/assets/data/cybergym.json",
+      "checked_at": "2026-11-04T00:12:52.454355+00:00",
+      "path": "/tmp/bench-other-20261104/c6b8eb4b86c6f9eb.raw",
+      "status": 200,
+      "final_url": "https://www.cybergym.io/assets/data/cybergym.json",
+      "bytes": 40621,
+      "sha256": "c5aa28f57bc31f0c24aee998a8d5da379cfc6060a169dd030c431d58968bfe8d"
+    },
+    {
+      "url": "https://www.cybergym.io/assets/data/exploitgym.json",
+      "checked_at": "2026-11-04T00:12:52.770276+00:00",
+      "path": "/tmp/bench-other-20261104/c2b9332665b312f3.raw",
+      "status": 200,
+      "final_url": "https://www.cybergym.io/assets/data/exploitgym.json",
+      "bytes": 14346,
+      "sha256": "bf8c380c061ce86b5a215f743994ad82c32829271d8f47c8054e8f8b6ecb4326"
+    },
+    {
+      "url": "https://www.cybergym.io/assets/js/leaderboard.js",
+      "checked_at": "2026-11-04T00:12:52.774273+00:00",
+      "path": "/tmp/bench-other-20261104/67f189db690b23a0.raw",
+      "status": 200,
+      "final_url": "https://www.cybergym.io/assets/js/leaderboard.js",
+      "bytes": 41775,
+      "sha256": "7aa2d51c07d2bda8dc8be9910844441aabcfaa03b8b1a9adf1a24e3be45298f2"
+    },
+    {
+      "url": "https://www.cybergym.io/cybergym-e2e/",
+      "checked_at": "2026-11-04T00:12:53.278428+00:00",
+      "path": "/tmp/bench-other-20261104/421761cd46be24cb.raw",
+      "status": 200,
+      "final_url": "https://www.cybergym.io/cybergym-e2e/",
+      "bytes": 25612,
+      "sha256": "627b31e2a2112f89eec254ba30b2c0cffbb9b83d117faf29ffb6a708059ee8ff"
+    },
+    {
+      "url": "https://www.cybergym.io/cybergym/",
+      "checked_at": "2026-11-04T00:12:55.758339+00:00",
+      "path": "/tmp/bench-other-20261104/fed75d3d8fca8a2e.raw",
+      "status": 200,
+      "final_url": "https://www.cybergym.io/cybergym/",
+      "bytes": 31284,
+      "sha256": "768f35415a1b9f2b792cbf7fd7e51add14c92fd97b550565bff47de1516b496c"
+    },
+    {
+      "url": "https://www.cybergym.io/exploitgym/",
+      "checked_at": "2026-11-04T00:12:56.818253+00:00",
+      "path": "/tmp/bench-other-20261104/07854342f1011c54.raw",
+      "status": 200,
+      "final_url": "https://www.cybergym.io/exploitgym/",
+      "bytes": 33053,
+      "sha256": "28362c8becf5b9e630303688aa1bf2786c9db64ef51b47166cc0ccd526a12763"
+    },
+    {
+      "url": "https://www.skillsbench.ai/_next/static/chunks/8e836c7a01322d0f.js",
+      "checked_at": "2026-11-04T00:12:56.842186+00:00",
+      "path": "/tmp/bench-other-20261104/5c3b61d48e75a109.raw",
+      "status": 200,
+      "final_url": "https://www.skillsbench.ai/_next/static/chunks/8e836c7a01322d0f.js",
+      "bytes": 12722,
+      "sha256": "d072e7b4adb2cb9d886fe9f5cde99cc573ae7d4bbaeede4d2a013a72d71b9ac3"
+    },
+    {
+      "url": "https://www.swe-marathon.org/",
+      "checked_at": "2026-11-04T00:12:56.850272+00:00",
+      "path": "/tmp/bench-other-20261104/d0f5bd3428fd7060.raw",
+      "status": 200,
+      "final_url": "https://www.swe-marathon.org/",
+      "bytes": 4714,
+      "sha256": "06afed88bf43bfa6520745b41b55fca5fe751dbca8d79299aecb35478d2d2db1"
+    },
+    {
+      "url": "https://www.swe-marathon.org/assets/index-Dsh1_CSb.js",
+      "checked_at": "2026-11-04T00:12:56.886204+00:00",
+      "path": "/tmp/bench-other-20261104/29290ee05517fd09.raw",
+      "status": 200,
+      "final_url": "https://www.swe-marathon.org/assets/index-Dsh1_CSb.js",
+      "bytes": 5897498,
+      "sha256": "f7b28e0cceedb6621c8825ef2abacad3548fec13b3c4bca3818e518b93bf2f5f"
+    }
+  ],
+  "checked_at": "2026-11-04T00:15:08.752914+00:00",
+  "baseline_commit": "5fc3346b86f8669ec2b11b027cef703aa16ab941",
+  "status_counts": {
+    "unchanged": 29,
+    "fetch_failure_preserved": 4,
+    "changed": 1
+  },
+  "requests_note": "GET405 on POST-only Gradio endpoints and stale event checks are diagnostic only, superseded by fresh POST events in per-table sources.",
+  "date": "2026-11-04"
+}
