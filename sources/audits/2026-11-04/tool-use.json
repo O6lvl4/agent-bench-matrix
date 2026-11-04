@@ -1,0 +1,1920 @@
+{
+  "baseline": "5fc3346b86f8669ec2b11b027cef703aa16ab941",
+  "checked": "2026-11-04",
+  "tables": [
+    {
+      "id": "apex-agents-management-consultant",
+      "category": "tool-use",
+      "status": "unchanged",
+      "old_rows": 68,
+      "note": "Every retained leaderboardData field and 68 configurations unchanged; current page props contain additional UI/trajectory fields outside stored projection.",
+      "checked": "2026-11-04",
+      "sources": [
+        {
+          "url": "https://www.mercor.com/apex/apex-agents-leaderboard/management-consultant-agent/",
+          "request_description": "https://www.mercor.com/apex/apex-agents-leaderboard/management-consultant-agent/",
+          "final_url": "https://www.mercor.com/apex/apex-agents-leaderboard/management-consultant-agent/",
+          "status": 200,
+          "bytes": 897074,
+          "sha256": "5b74f51153e106c4faddb0c9ebc0b7682015cf58cf117bb5330fc6b2beaec76f"
+        },
+        {
+          "url": "https://www.mercor.com/blog/introducing-apex-agents-1-1",
+          "request_description": "https://www.mercor.com/blog/introducing-apex-agents-1-1",
+          "final_url": "https://www.mercor.com/blog/introducing-apex-agents-1-1/",
+          "status": 200,
+          "bytes": 58432,
+          "sha256": "cbce2448bed4b16c1793d09d2b7a72da44e71bfb75e3ddca49ace57c305222bb"
+        }
+      ]
+    },
+    {
+      "id": "tau3-voice",
+      "category": "tool-use",
+      "status": "unchanged",
+      "old_rows": 24,
+      "differences": [],
+      "note": "Relevant live manifest has no new applicable submissions. Every retained field of every selected submission re-fetched and matched. Six voice submissions added to old banking manifest have only retail/airline/telecom results, so excluded from banking.",
+      "checked": "2026-11-04",
+      "sources": [
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "request_description": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "status": 200,
+          "bytes": 3812,
+          "sha256": "9baaaf615efc04442fc385c651cb3fa0b87d5cb930eda001670d63e173e37b48"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha-user-sim-gpt-5-5_openai_2026-09-09/submission.json",
+          "sha256": "1eac97fde74af2b66ced406261e59cc0ae3cd8f48be4d0d406db2754b5e197a2"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha_openai_2026-09-09/submission.json",
+          "sha256": "fe65fe145300e53338b3149f359854ead1858870f2a6ac5080ada90ba59075ca"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-gpt-5-5_pineai_2026-08-17/submission.json",
+          "sha256": "44a65df475470f1234a541a0df74b42102599457f2cff8d1dbb126cd80724f5b"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-v1-0_pineai_2026-08-17/submission.json",
+          "sha256": "019e2ee4d144cf5a845140942e3d3e9073ce664dce26fe729653a4c91ac31d10"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0-tool-mentor_pickle_2026-07-07/submission.json",
+          "sha256": "8f5c3e9c820a1b26721c073000da507afc5ef015c1e3ac44164ef5afd6356b1b"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0_xai_2026-04-21/submission.json",
+          "sha256": "70da2fc2cf9922789f97463bd68dd45859f9785d3f4fa14a4b3f0bd7000b29b6"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-08-06/submission.json",
+          "sha256": "1e3b9d37d975dd7b2b82a73aca9bcceaa16617dbd6312dc3fd65b9cbdb0f5e4e"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-5-omni-plus-realtime_qwen_2026-08-06/submission.json",
+          "sha256": "e2431f919b3bfa6a367fcff2609498b7cd5b6fc7505414323cbab6841544f17e"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-24/submission.json",
+          "sha256": "89dcccf3a8382c25c42555880a185970d2dbab745d1d253a91fbb55136563f47"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-high_google_2026-04-02/submission.json",
+          "sha256": "8e75b8ebd8d32ea993f1b1c7a4f82e0dbc1af87bc47bae85ca9b6c17d35a59b8"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-29/submission.json",
+          "sha256": "f95972b276928d46e694239fc134bd66976e86cc2ac76a92276b829af33c1a2a"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-minimal_openai_2026-07-01/submission.json",
+          "sha256": "24ff60aa6c6824a13c8be0a1c543de066601faa6c281f1383bbd1f3fb3061de9"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime_sierra_2026-03-03/submission.json",
+          "sha256": "7d206662b3177050eb88db8547533fca0c905073d8e1cbe0e86e749cc81324df"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1.5_sierra_2026-03-03/submission.json",
+          "sha256": "0982bf5ecf5b76bac05491073071a3c3821c1dc4f139cfe135112ae6585aea18"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/livekit-cascaded_livekit_2026-05-19/submission.json",
+          "sha256": "b8a4b52ac90c67a5992e9c56980b7ea40737ab276b205ed421d7eee9122555d1"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1-0_openai_2026-04-13/submission.json",
+          "sha256": "a16bf4a6c51a172ff0a3023cb75291ac609d61d6ca68f4b87a9d225890623003"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-minimal_google_2026-04-13/submission.json",
+          "sha256": "63dba43a203a9fc45676306839ecd3753b5857afc30d5f1b84d8636e4e610a1d"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-live-2.5-flash_sierra_2026-03-03/submission.json",
+          "sha256": "7af89d64a58c67178bb161d24f09ac8d0e130fde557ce18483b85c46e7a5996f"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-3-0_xai_2026-10-14/submission.json",
+          "sha256": "ba2fe869ab163c4df258ca8252f679484c0002ab1dc01e9bcc4e3059ea54f6e5"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/salesforce-launa-v1_salesforce_2026-10-06/submission.json",
+          "sha256": "59d7dbc3bc67d5091ab7319ed25978f65789bfffac1c491545a39a5f8edce928"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/ava-zero_avartha_2026-10-22/submission.json",
+          "sha256": "a8ffb60746047ebb9c1316b14246110f0a6d451001a690a9bb7da3b14a75c1ef"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/phonic-1-user-sim-gpt-5-5_phonic_2026-10-22/submission.json",
+          "sha256": "8fd864709d69297f87737fe78947939d5e77faafffbbc31d92d9ed279512cfbc"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/phonic-1_phonic_2026-10-22/submission.json",
+          "sha256": "ee10d266b33ef7eea72d601cf3721695f27792b0840c4d825600fb5a08d8ccf4"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-1-0_pineai_2026-10-27/submission.json",
+          "sha256": "3e44f7798668142aec85e5998cb1e8ceb77371b68d100f85fed292e065f4dcb2"
+        }
+      ]
+    },
+    {
+      "id": "tau3-voice-airline",
+      "category": "tool-use",
+      "status": "unchanged",
+      "old_rows": 24,
+      "differences": [],
+      "note": "Relevant live manifest has no new applicable submissions. Every retained field of every selected submission re-fetched and matched. Six voice submissions added to old banking manifest have only retail/airline/telecom results, so excluded from banking.",
+      "checked": "2026-11-04",
+      "sources": [
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "request_description": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "status": 200,
+          "bytes": 3812,
+          "sha256": "9baaaf615efc04442fc385c651cb3fa0b87d5cb930eda001670d63e173e37b48"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha_openai_2026-09-09/submission.json",
+          "sha256": "fe65fe145300e53338b3149f359854ead1858870f2a6ac5080ada90ba59075ca"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-gpt-5-5_pineai_2026-08-17/submission.json",
+          "sha256": "44a65df475470f1234a541a0df74b42102599457f2cff8d1dbb126cd80724f5b"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha-user-sim-gpt-5-5_openai_2026-09-09/submission.json",
+          "sha256": "1eac97fde74af2b66ced406261e59cc0ae3cd8f48be4d0d406db2754b5e197a2"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0-tool-mentor_pickle_2026-07-07/submission.json",
+          "sha256": "8f5c3e9c820a1b26721c073000da507afc5ef015c1e3ac44164ef5afd6356b1b"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-v1-0_pineai_2026-08-17/submission.json",
+          "sha256": "019e2ee4d144cf5a845140942e3d3e9073ce664dce26fe729653a4c91ac31d10"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0_xai_2026-04-21/submission.json",
+          "sha256": "70da2fc2cf9922789f97463bd68dd45859f9785d3f4fa14a4b3f0bd7000b29b6"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-24/submission.json",
+          "sha256": "89dcccf3a8382c25c42555880a185970d2dbab745d1d253a91fbb55136563f47"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-high_google_2026-04-02/submission.json",
+          "sha256": "8e75b8ebd8d32ea993f1b1c7a4f82e0dbc1af87bc47bae85ca9b6c17d35a59b8"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-29/submission.json",
+          "sha256": "f95972b276928d46e694239fc134bd66976e86cc2ac76a92276b829af33c1a2a"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-minimal_openai_2026-07-01/submission.json",
+          "sha256": "24ff60aa6c6824a13c8be0a1c543de066601faa6c281f1383bbd1f3fb3061de9"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-08-06/submission.json",
+          "sha256": "1e3b9d37d975dd7b2b82a73aca9bcceaa16617dbd6312dc3fd65b9cbdb0f5e4e"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-5-omni-plus-realtime_qwen_2026-08-06/submission.json",
+          "sha256": "e2431f919b3bfa6a367fcff2609498b7cd5b6fc7505414323cbab6841544f17e"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/livekit-cascaded_livekit_2026-05-19/submission.json",
+          "sha256": "b8a4b52ac90c67a5992e9c56980b7ea40737ab276b205ed421d7eee9122555d1"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-minimal_google_2026-04-13/submission.json",
+          "sha256": "63dba43a203a9fc45676306839ecd3753b5857afc30d5f1b84d8636e4e610a1d"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1.5_sierra_2026-03-03/submission.json",
+          "sha256": "0982bf5ecf5b76bac05491073071a3c3821c1dc4f139cfe135112ae6585aea18"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime_sierra_2026-03-03/submission.json",
+          "sha256": "7d206662b3177050eb88db8547533fca0c905073d8e1cbe0e86e749cc81324df"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1-0_openai_2026-04-13/submission.json",
+          "sha256": "a16bf4a6c51a172ff0a3023cb75291ac609d61d6ca68f4b87a9d225890623003"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-live-2.5-flash_sierra_2026-03-03/submission.json",
+          "sha256": "7af89d64a58c67178bb161d24f09ac8d0e130fde557ce18483b85c46e7a5996f"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-3-0_xai_2026-10-14/submission.json",
+          "sha256": "ba2fe869ab163c4df258ca8252f679484c0002ab1dc01e9bcc4e3059ea54f6e5"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/salesforce-launa-v1_salesforce_2026-10-06/submission.json",
+          "sha256": "59d7dbc3bc67d5091ab7319ed25978f65789bfffac1c491545a39a5f8edce928"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/ava-zero_avartha_2026-10-22/submission.json",
+          "sha256": "a8ffb60746047ebb9c1316b14246110f0a6d451001a690a9bb7da3b14a75c1ef"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/phonic-1-user-sim-gpt-5-5_phonic_2026-10-22/submission.json",
+          "sha256": "8fd864709d69297f87737fe78947939d5e77faafffbbc31d92d9ed279512cfbc"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/phonic-1_phonic_2026-10-22/submission.json",
+          "sha256": "ee10d266b33ef7eea72d601cf3721695f27792b0840c4d825600fb5a08d8ccf4"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-1-0_pineai_2026-10-27/submission.json",
+          "sha256": "3e44f7798668142aec85e5998cb1e8ceb77371b68d100f85fed292e065f4dcb2"
+        }
+      ]
+    },
+    {
+      "id": "mcp-universe-fc",
+      "category": "tool-use",
+      "status": "unchanged",
+      "old_rows": 21,
+      "note": "",
+      "checked": "2026-11-04",
+      "sources": [
+        {
+          "url": "https://mcp-universe.github.io/",
+          "request_description": "https://mcp-universe.github.io/",
+          "final_url": "https://mcp-universe.github.io/",
+          "status": 200,
+          "bytes": 119803,
+          "sha256": "59e44ce99072a91080fc5c0ebe9e9bbecfac1783d50b863568404ae919a3cff0"
+        }
+      ]
+    },
+    {
+      "id": "apex-agents-investment-banking",
+      "category": "tool-use",
+      "status": "unchanged",
+      "old_rows": 68,
+      "note": "Every retained leaderboardData field and 68 configurations unchanged; current page props contain additional UI/trajectory fields outside stored projection.",
+      "checked": "2026-11-04",
+      "sources": [
+        {
+          "url": "https://www.mercor.com/apex/apex-agents-leaderboard/investment-banking-analyst-agent/",
+          "request_description": "https://www.mercor.com/apex/apex-agents-leaderboard/investment-banking-analyst-agent/",
+          "final_url": "https://www.mercor.com/apex/apex-agents-leaderboard/investment-banking-analyst-agent/",
+          "status": 200,
+          "bytes": 537809,
+          "sha256": "934028f40553dfdc0b1971594d9aecc6cb7d7a69ece8fce07db9487a8072a5bf"
+        },
+        {
+          "url": "https://www.mercor.com/blog/introducing-apex-agents-1-1",
+          "request_description": "https://www.mercor.com/blog/introducing-apex-agents-1-1",
+          "final_url": "https://www.mercor.com/blog/introducing-apex-agents-1-1/",
+          "status": 200,
+          "bytes": 58432,
+          "sha256": "cbce2448bed4b16c1793d09d2b7a72da44e71bfb75e3ddca49ace57c305222bb"
+        }
+      ]
+    },
+    {
+      "id": "mcp-bench",
+      "category": "tool-use",
+      "status": "unchanged",
+      "old_rows": 20,
+      "note": "Current full source projection compared with snapshot",
+      "checked": "2026-11-04",
+      "sources": [
+        {
+          "url": "https://huggingface.co/spaces/mcpbench/mcp-bench",
+          "request_description": "https://huggingface.co/spaces/mcpbench/mcp-bench",
+          "final_url": "https://huggingface.co/spaces/mcpbench/mcp-bench",
+          "status": 200,
+          "bytes": 31594,
+          "sha256": "29e62a0fafb9d1d794bc8d942316b22e48f736793a31ec6cc6bc5d6d45c84e1d"
+        },
+        {
+          "url": "https://mcpbench-mcp-bench.static.hf.space/index.html",
+          "request_description": "https://mcpbench-mcp-bench.static.hf.space/index.html",
+          "final_url": "https://mcpbench-mcp-bench.static.hf.space/index.html",
+          "status": 200,
+          "bytes": 7701,
+          "sha256": "3b95d8c57e09b1bcbf60f7f2e681265234985a8e6165eaa5e0c67cae552cb0c0"
+        },
+        {
+          "url": "https://mcpbench-mcp-bench.static.hf.space/script.js",
+          "request_description": "https://mcpbench-mcp-bench.static.hf.space/script.js",
+          "final_url": "https://mcpbench-mcp-bench.static.hf.space/script.js",
+          "status": 200,
+          "bytes": 21490,
+          "sha256": "47abf1e3f5cfe7e9a43d6b5c9ba244a04005834b98d8afdb74eb000b32b9b342"
+        }
+      ]
+    },
+    {
+      "id": "tau2-bench-telecom",
+      "category": "tool-use",
+      "status": "unchanged",
+      "old_rows": 8,
+      "differences": [],
+      "note": "Relevant live manifest has no new applicable submissions. Every retained field of every selected submission re-fetched and matched. Six voice submissions added to old banking manifest have only retail/airline/telecom results, so excluded from banking.",
+      "checked": "2026-11-04",
+      "sources": [
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "request_description": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "status": 200,
+          "bytes": 3812,
+          "sha256": "9baaaf615efc04442fc385c651cb3fa0b87d5cb930eda001670d63e173e37b48"
+        },
+        {
+          "url": "https://taubench.com/",
+          "request_description": "https://taubench.com/",
+          "final_url": "https://taubench.com/",
+          "status": 200,
+          "bytes": 16542,
+          "sha256": "d76e3d4758297dc46f0074cdc6d808e030ddee29b448cfeddb356375f777c15f"
+        },
+        {
+          "url": "https://taubench.com/assets/index-QtX8yEBE.js",
+          "request_description": "https://taubench.com/assets/index-QtX8yEBE.js",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3.5-397b-a17b-think_sierra_2026-03-02/submission.json",
+          "sha256": "2cfb2c7d2a46e9f22154fa153dcdf155d50dbd5bf86233ecf564eccca1e5913e"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-5_sierra_2026-02-26/submission.json",
+          "sha256": "9c3b8b400e21d370cea27caec3643bfe6fd8385be9ed5135b585d0b976b6e34f"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-flash_sierra_2026-03-02/submission.json",
+          "sha256": "d1b7d1fc5d789662fb6eeb4a5ec01948295db397d2313df42c43c7fd8caf3637"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_sierra_2026-03-02/submission.json",
+          "sha256": "f5c7b2d432d4efc6d6c1533f87e61ae1673336579df9f5f5cf986c277f0afd18"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2_sierra_2026-02-26/submission.json",
+          "sha256": "343687b822edbcbff42a4d4632ecc6288a58d9817a7a02c8533081c5709c0ac6"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/glm-5-think_sierra_2026-03-02/submission.json",
+          "sha256": "fa27b9a1a7a4c8b15517ec1329ef21fcc700be2ca12f21659b60aeda99c7de8f"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_sierra_2026-02-26/submission.json",
+          "sha256": "e5ce9f12ab9e616db52e973e90b48144b7bafd29e35c4fd6c3e7fde573a9b8d8"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2-none_sierra_2026-02-26/submission.json",
+          "sha256": "e1be4bac436e8115f9253697d68b71867f17cfcb2bef5dfa6a756c0a89a70dab"
+        }
+      ]
+    },
+    {
+      "id": "tau2-bench-legacy",
+      "category": "tool-use",
+      "status": "unchanged",
+      "old_rows": 12,
+      "differences": [],
+      "note": "Relevant live manifest has no new applicable submissions. Every retained field of every selected submission re-fetched and matched. Six voice submissions added to old banking manifest have only retail/airline/telecom results, so excluded from banking.",
+      "checked": "2026-11-04",
+      "sources": [
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "request_description": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "status": 200,
+          "bytes": 3812,
+          "sha256": "9baaaf615efc04442fc385c651cb3fa0b87d5cb930eda001670d63e173e37b48"
+        },
+        {
+          "url": "https://taubench.com/",
+          "request_description": "https://taubench.com/",
+          "final_url": "https://taubench.com/",
+          "status": 200,
+          "bytes": 16542,
+          "sha256": "d76e3d4758297dc46f0074cdc6d808e030ddee29b448cfeddb356375f777c15f"
+        },
+        {
+          "url": "https://taubench.com/assets/index-QtX8yEBE.js",
+          "request_description": "https://taubench.com/assets/index-QtX8yEBE.js",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_google_2025-11-18/submission.json",
+          "sha256": "27134a3b100a87e0780f08fda0475f4ffe0ef247bc41484ad48cc9798ffbe796"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_anthropic_2025-10-02/submission.json",
+          "sha256": "20e3ef4c1c495dbf3ec155ffa4899d6478b75deccf16862d886def20a79dda11"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2026-01-23/submission.json",
+          "sha256": "eb480b51b464175389262778510061ed96bf8f4e6ae2b05eb80d3d2455473b5a"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/deepseek-v3.2_deepseek_2025-12-01/submission.json",
+          "sha256": "ea902585a8aa18933efd69bfcaee7a0d6f7134084f274c81b5ded67cab3fd35f"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5_sierra_2025-08-09/submission.json",
+          "sha256": "288a3ec7ff0fe305344fa7fd866a692754a67ad61fb5198c0b64ee4987a88636"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/toolorchestra_nvidia_2025-12-02/submission.json",
+          "sha256": "05ef54d0d64269f53b3a2b4bdd7ec5008a33b6c62a024e546d91a5a014bca77c"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2024_09_23/submission.json",
+          "sha256": "ebc4a976a9ccf834c06e7035681b8569b3a34b263c4f383da6499db1fbfd2969"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/kimi-k2_moonshot-ai_2025-07-11/submission.json",
+          "sha256": "87553297c0df116060a87aec279650fb6489950c49c0bd383dd6f897a4e7a0e1"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-3-7-sonnet_anthropic_2024-06-20/submission.json",
+          "sha256": "1578bde0f074632d32d1e21499ee3fd7c2e45737a686feaae6e822002f1a47dc"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/o4-mini_openai_2024-06-20/submission.json",
+          "sha256": "9cfd165d23c1500b6413af7ceb48b64a0fb672ce15e6069a12a36fd54e92bade"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1_openai_2024-06-20/submission.json",
+          "sha256": "69d0798527fc2cabf9168795e99dcec78128b440b5a4ad3abd1d788cc6db7954"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1-mini_openai_2024-06-20/submission.json",
+          "sha256": "2a86f83f6bfeff5b02015c9d7471602bcfd5fb732ef66f55f1fac4dcab20dff4"
+        }
+      ]
+    },
+    {
+      "id": "mcpmark-legacy",
+      "category": "tool-use",
+      "status": "unchanged",
+      "old_rows": 39,
+      "note": "Current full source projection compared with snapshot",
+      "checked": "2026-11-04",
+      "sources": [
+        {
+          "url": "https://mcpmark.ai/leaderboard",
+          "request_description": "https://mcpmark.ai/leaderboard",
+          "final_url": "https://mcpmark.ai/leaderboard",
+          "status": 200,
+          "bytes": 2390326,
+          "sha256": "d96a5e2594f1e5afeafff7007786674b6cac053a4aba5754ada7611ebd7570ce"
+        }
+      ]
+    },
+    {
+      "id": "mcp-atlas",
+      "category": "tool-use",
+      "status": "unchanged",
+      "old_rows": 34,
+      "note": "Current full source projection compared with snapshot",
+      "checked": "2026-11-04",
+      "sources": [
+        {
+          "url": "https://labs.scale.com/leaderboard/mcp_atlas",
+          "request_description": "https://labs.scale.com/leaderboard/mcp_atlas",
+          "final_url": "https://labs.scale.com/leaderboard/mcp_atlas",
+          "status": 200,
+          "bytes": 205346,
+          "sha256": "af36db81204254457a63f6baa333892584465468af18eef99e994f7b5827596e"
+        }
+      ]
+    },
+    {
+      "id": "tau2-bench-legacy-telecom",
+      "category": "tool-use",
+      "status": "unchanged",
+      "old_rows": 12,
+      "differences": [],
+      "note": "Relevant live manifest has no new applicable submissions. Every retained field of every selected submission re-fetched and matched. Six voice submissions added to old banking manifest have only retail/airline/telecom results, so excluded from banking.",
+      "checked": "2026-11-04",
+      "sources": [
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "request_description": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "status": 200,
+          "bytes": 3812,
+          "sha256": "9baaaf615efc04442fc385c651cb3fa0b87d5cb930eda001670d63e173e37b48"
+        },
+        {
+          "url": "https://taubench.com/",
+          "request_description": "https://taubench.com/",
+          "final_url": "https://taubench.com/",
+          "status": 200,
+          "bytes": 16542,
+          "sha256": "d76e3d4758297dc46f0074cdc6d808e030ddee29b448cfeddb356375f777c15f"
+        },
+        {
+          "url": "https://taubench.com/assets/index-QtX8yEBE.js",
+          "request_description": "https://taubench.com/assets/index-QtX8yEBE.js",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2026-01-23/submission.json",
+          "sha256": "eb480b51b464175389262778510061ed96bf8f4e6ae2b05eb80d3d2455473b5a"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_anthropic_2025-10-02/submission.json",
+          "sha256": "20e3ef4c1c495dbf3ec155ffa4899d6478b75deccf16862d886def20a79dda11"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_google_2025-11-18/submission.json",
+          "sha256": "27134a3b100a87e0780f08fda0475f4ffe0ef247bc41484ad48cc9798ffbe796"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/deepseek-v3.2_deepseek_2025-12-01/submission.json",
+          "sha256": "ea902585a8aa18933efd69bfcaee7a0d6f7134084f274c81b5ded67cab3fd35f"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5_sierra_2025-08-09/submission.json",
+          "sha256": "288a3ec7ff0fe305344fa7fd866a692754a67ad61fb5198c0b64ee4987a88636"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/toolorchestra_nvidia_2025-12-02/submission.json",
+          "sha256": "05ef54d0d64269f53b3a2b4bdd7ec5008a33b6c62a024e546d91a5a014bca77c"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2024_09_23/submission.json",
+          "sha256": "ebc4a976a9ccf834c06e7035681b8569b3a34b263c4f383da6499db1fbfd2969"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/kimi-k2_moonshot-ai_2025-07-11/submission.json",
+          "sha256": "87553297c0df116060a87aec279650fb6489950c49c0bd383dd6f897a4e7a0e1"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/o4-mini_openai_2024-06-20/submission.json",
+          "sha256": "9cfd165d23c1500b6413af7ceb48b64a0fb672ce15e6069a12a36fd54e92bade"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-3-7-sonnet_anthropic_2024-06-20/submission.json",
+          "sha256": "1578bde0f074632d32d1e21499ee3fd7c2e45737a686feaae6e822002f1a47dc"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1-mini_openai_2024-06-20/submission.json",
+          "sha256": "2a86f83f6bfeff5b02015c9d7471602bcfd5fb732ef66f55f1fac4dcab20dff4"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1_openai_2024-06-20/submission.json",
+          "sha256": "69d0798527fc2cabf9168795e99dcec78128b440b5a4ad3abd1d788cc6db7954"
+        }
+      ]
+    },
+    {
+      "id": "tau3-voice-banking",
+      "category": "tool-use",
+      "status": "unchanged",
+      "old_rows": 5,
+      "differences": [],
+      "note": "Relevant live manifest has no new applicable submissions. Every retained field of every selected submission re-fetched and matched. Six voice submissions added to old banking manifest have only retail/airline/telecom results, so excluded from banking.",
+      "checked": "2026-11-04",
+      "sources": [
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "request_description": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "status": 200,
+          "bytes": 3812,
+          "sha256": "9baaaf615efc04442fc385c651cb3fa0b87d5cb930eda001670d63e173e37b48"
+        },
+        {
+          "url": "https://taubench.com/",
+          "request_description": "https://taubench.com/",
+          "final_url": "https://taubench.com/",
+          "status": 200,
+          "bytes": 16542,
+          "sha256": "d76e3d4758297dc46f0074cdc6d808e030ddee29b448cfeddb356375f777c15f"
+        },
+        {
+          "url": "https://taubench.com/assets/index-QtX8yEBE.js",
+          "request_description": "https://taubench.com/assets/index-QtX8yEBE.js",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha-user-sim-gpt-5-5_openai_2026-09-09/submission.json",
+          "sha256": "1eac97fde74af2b66ced406261e59cc0ae3cd8f48be4d0d406db2754b5e197a2"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime-banking_xai_2026-07-13/submission.json",
+          "sha256": "34053c035861b7745c2b9d86b61c5a2503cfd5647f21583be39847af5024796b"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-high-banking_google_2026-07-13/submission.json",
+          "sha256": "a41d225d97e33489a78ee663455350be72312a04cb6ada2bb8cc75a0c9bd15fb"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-banking_openai_2026-07-12/submission.json",
+          "sha256": "2b9aa23aa956a5ab3adda84ccbed0e3de4f893850a65b5e9acc43ca5263cc034"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-astra-high-banking_openai_2026-09-16/submission.json",
+          "sha256": "e22ce6ba70eb02a5f4f296e546b3bed7c87c248df0e6fb6d36f7daabf90ce696"
+        }
+      ]
+    },
+    {
+      "id": "apex-agents-corporate-lawyer",
+      "category": "tool-use",
+      "status": "unchanged",
+      "old_rows": 68,
+      "note": "Every retained leaderboardData field and 68 configurations unchanged; current page props contain additional UI/trajectory fields outside stored projection.",
+      "checked": "2026-11-04",
+      "sources": [
+        {
+          "url": "https://www.mercor.com/apex/apex-agents-leaderboard/corporate-lawyer-agent/",
+          "request_description": "https://www.mercor.com/apex/apex-agents-leaderboard/corporate-lawyer-agent/",
+          "final_url": "https://www.mercor.com/apex/apex-agents-leaderboard/corporate-lawyer-agent/",
+          "status": 200,
+          "bytes": 824758,
+          "sha256": "21a53fadd5c6b675eeb0ea8f5032823afcc07ef8e0ae0f1fb51a1f5b5c11fd1b"
+        },
+        {
+          "url": "https://www.mercor.com/blog/introducing-apex-agents-1-1",
+          "request_description": "https://www.mercor.com/blog/introducing-apex-agents-1-1",
+          "final_url": "https://www.mercor.com/blog/introducing-apex-agents-1-1/",
+          "status": 200,
+          "bytes": 58432,
+          "sha256": "cbce2448bed4b16c1793d09d2b7a72da44e71bfb75e3ddca49ace57c305222bb"
+        }
+      ]
+    },
+    {
+      "id": "theagentcompany",
+      "category": "tool-use",
+      "status": "unchanged",
+      "old_rows": 17,
+      "note": "Current full source projection compared with snapshot",
+      "checked": "2026-11-04",
+      "sources": [
+        {
+          "url": "https://the-agent-company.com/",
+          "request_description": "https://the-agent-company.com/",
+          "final_url": "https://the-agent-company.com/",
+          "status": 200,
+          "bytes": 903,
+          "sha256": "5bda53b8046d6f995facd1ace03c3a7ba5043d23464562400a03e0109dad0bc9"
+        },
+        {
+          "url": "https://the-agent-company.com/static/js/main.6a1ea1e4.js",
+          "request_description": "https://the-agent-company.com/static/js/main.6a1ea1e4.js",
+          "final_url": "https://the-agent-company.com/static/js/main.6a1ea1e4.js",
+          "status": 200,
+          "bytes": 214932,
+          "sha256": "2b0e3eab9220b8b1761c932a6745528a57370778bcf1eb3f08f675c3d3bb056e"
+        }
+      ]
+    },
+    {
+      "id": "toolathlon-verified",
+      "category": "tool-use",
+      "status": "unchanged",
+      "old_rows": 25,
+      "note": "Both complete live HTML table cell arrays match stored tables after normalizing markdown escapes and em-dash/-- missing-value presentation; verified marks, identities, conditions, dates and numbers unchanged.",
+      "checked": "2026-11-04",
+      "sources": [
+        {
+          "url": "https://toolathlon.xyz/docs/leaderboard",
+          "request_description": "https://toolathlon.xyz/docs/leaderboard",
+          "final_url": "https://toolathlon.xyz/docs/leaderboard",
+          "status": 200,
+          "bytes": 445102,
+          "sha256": "c1d5fed7ab9736185a0f2d3c0bb497db064d27afd9280fb34ee25c2d53f1b4b6"
+        },
+        {
+          "url": "https://toolathlon.xyz/docs/leaderboard.md",
+          "request_description": "https://toolathlon.xyz/docs/leaderboard.md",
+          "final_url": "https://toolathlon.xyz/docs/leaderboard.md",
+          "status": 200,
+          "bytes": 22084,
+          "sha256": "f6c12089f63a35fab65f6ea159a3ceda8e8d0377f3b04c057aa6c22257ef414b"
+        }
+      ]
+    },
+    {
+      "id": "tau3-voice-retail",
+      "category": "tool-use",
+      "status": "unchanged",
+      "old_rows": 24,
+      "differences": [],
+      "note": "Relevant live manifest has no new applicable submissions. Every retained field of every selected submission re-fetched and matched. Six voice submissions added to old banking manifest have only retail/airline/telecom results, so excluded from banking.",
+      "checked": "2026-11-04",
+      "sources": [
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "request_description": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "status": 200,
+          "bytes": 3812,
+          "sha256": "9baaaf615efc04442fc385c651cb3fa0b87d5cb930eda001670d63e173e37b48"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-gpt-5-5_pineai_2026-08-17/submission.json",
+          "sha256": "44a65df475470f1234a541a0df74b42102599457f2cff8d1dbb126cd80724f5b"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha-user-sim-gpt-5-5_openai_2026-09-09/submission.json",
+          "sha256": "1eac97fde74af2b66ced406261e59cc0ae3cd8f48be4d0d406db2754b5e197a2"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha_openai_2026-09-09/submission.json",
+          "sha256": "fe65fe145300e53338b3149f359854ead1858870f2a6ac5080ada90ba59075ca"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0-tool-mentor_pickle_2026-07-07/submission.json",
+          "sha256": "8f5c3e9c820a1b26721c073000da507afc5ef015c1e3ac44164ef5afd6356b1b"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-v1-0_pineai_2026-08-17/submission.json",
+          "sha256": "019e2ee4d144cf5a845140942e3d3e9073ce664dce26fe729653a4c91ac31d10"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0_xai_2026-04-21/submission.json",
+          "sha256": "70da2fc2cf9922789f97463bd68dd45859f9785d3f4fa14a4b3f0bd7000b29b6"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-08-06/submission.json",
+          "sha256": "1e3b9d37d975dd7b2b82a73aca9bcceaa16617dbd6312dc3fd65b9cbdb0f5e4e"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-24/submission.json",
+          "sha256": "89dcccf3a8382c25c42555880a185970d2dbab745d1d253a91fbb55136563f47"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-29/submission.json",
+          "sha256": "f95972b276928d46e694239fc134bd66976e86cc2ac76a92276b829af33c1a2a"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-5-omni-plus-realtime_qwen_2026-08-06/submission.json",
+          "sha256": "e2431f919b3bfa6a367fcff2609498b7cd5b6fc7505414323cbab6841544f17e"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-high_google_2026-04-02/submission.json",
+          "sha256": "8e75b8ebd8d32ea993f1b1c7a4f82e0dbc1af87bc47bae85ca9b6c17d35a59b8"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1.5_sierra_2026-03-03/submission.json",
+          "sha256": "0982bf5ecf5b76bac05491073071a3c3821c1dc4f139cfe135112ae6585aea18"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-minimal_openai_2026-07-01/submission.json",
+          "sha256": "24ff60aa6c6824a13c8be0a1c543de066601faa6c281f1383bbd1f3fb3061de9"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime_sierra_2026-03-03/submission.json",
+          "sha256": "7d206662b3177050eb88db8547533fca0c905073d8e1cbe0e86e749cc81324df"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1-0_openai_2026-04-13/submission.json",
+          "sha256": "a16bf4a6c51a172ff0a3023cb75291ac609d61d6ca68f4b87a9d225890623003"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-live-2.5-flash_sierra_2026-03-03/submission.json",
+          "sha256": "7af89d64a58c67178bb161d24f09ac8d0e130fde557ce18483b85c46e7a5996f"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/livekit-cascaded_livekit_2026-05-19/submission.json",
+          "sha256": "b8a4b52ac90c67a5992e9c56980b7ea40737ab276b205ed421d7eee9122555d1"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-minimal_google_2026-04-13/submission.json",
+          "sha256": "63dba43a203a9fc45676306839ecd3753b5857afc30d5f1b84d8636e4e610a1d"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-3-0_xai_2026-10-14/submission.json",
+          "sha256": "ba2fe869ab163c4df258ca8252f679484c0002ab1dc01e9bcc4e3059ea54f6e5"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/salesforce-launa-v1_salesforce_2026-10-06/submission.json",
+          "sha256": "59d7dbc3bc67d5091ab7319ed25978f65789bfffac1c491545a39a5f8edce928"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/ava-zero_avartha_2026-10-22/submission.json",
+          "sha256": "a8ffb60746047ebb9c1316b14246110f0a6d451001a690a9bb7da3b14a75c1ef"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/phonic-1-user-sim-gpt-5-5_phonic_2026-10-22/submission.json",
+          "sha256": "8fd864709d69297f87737fe78947939d5e77faafffbbc31d92d9ed279512cfbc"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/phonic-1_phonic_2026-10-22/submission.json",
+          "sha256": "ee10d266b33ef7eea72d601cf3721695f27792b0840c4d825600fb5a08d8ccf4"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-1-0_pineai_2026-10-27/submission.json",
+          "sha256": "3e44f7798668142aec85e5998cb1e8ceb77371b68d100f85fed292e065f4dcb2"
+        }
+      ]
+    },
+    {
+      "id": "tau2-bench-airline",
+      "category": "tool-use",
+      "status": "unchanged",
+      "old_rows": 8,
+      "differences": [],
+      "note": "Relevant live manifest has no new applicable submissions. Every retained field of every selected submission re-fetched and matched. Six voice submissions added to old banking manifest have only retail/airline/telecom results, so excluded from banking.",
+      "checked": "2026-11-04",
+      "sources": [
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "request_description": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "status": 200,
+          "bytes": 3812,
+          "sha256": "9baaaf615efc04442fc385c651cb3fa0b87d5cb930eda001670d63e173e37b48"
+        },
+        {
+          "url": "https://taubench.com/",
+          "request_description": "https://taubench.com/",
+          "final_url": "https://taubench.com/",
+          "status": 200,
+          "bytes": 16542,
+          "sha256": "d76e3d4758297dc46f0074cdc6d808e030ddee29b448cfeddb356375f777c15f"
+        },
+        {
+          "url": "https://taubench.com/assets/index-QtX8yEBE.js",
+          "request_description": "https://taubench.com/assets/index-QtX8yEBE.js",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-5_sierra_2026-02-26/submission.json",
+          "sha256": "9c3b8b400e21d370cea27caec3643bfe6fd8385be9ed5135b585d0b976b6e34f"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2_sierra_2026-02-26/submission.json",
+          "sha256": "343687b822edbcbff42a4d4632ecc6288a58d9817a7a02c8533081c5709c0ac6"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/glm-5-think_sierra_2026-03-02/submission.json",
+          "sha256": "fa27b9a1a7a4c8b15517ec1329ef21fcc700be2ca12f21659b60aeda99c7de8f"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-flash_sierra_2026-03-02/submission.json",
+          "sha256": "d1b7d1fc5d789662fb6eeb4a5ec01948295db397d2313df42c43c7fd8caf3637"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3.5-397b-a17b-think_sierra_2026-03-02/submission.json",
+          "sha256": "2cfb2c7d2a46e9f22154fa153dcdf155d50dbd5bf86233ecf564eccca1e5913e"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_sierra_2026-03-02/submission.json",
+          "sha256": "f5c7b2d432d4efc6d6c1533f87e61ae1673336579df9f5f5cf986c277f0afd18"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_sierra_2026-02-26/submission.json",
+          "sha256": "e5ce9f12ab9e616db52e973e90b48144b7bafd29e35c4fd6c3e7fde573a9b8d8"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2-none_sierra_2026-02-26/submission.json",
+          "sha256": "e1be4bac436e8115f9253697d68b71867f17cfcb2bef5dfa6a756c0a89a70dab"
+        }
+      ]
+    },
+    {
+      "id": "tau2-bench-retail",
+      "category": "tool-use",
+      "status": "unchanged",
+      "old_rows": 9,
+      "differences": [],
+      "note": "Relevant live manifest has no new applicable submissions. Every retained field of every selected submission re-fetched and matched. Six voice submissions added to old banking manifest have only retail/airline/telecom results, so excluded from banking.",
+      "checked": "2026-11-04",
+      "sources": [
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "request_description": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "status": 200,
+          "bytes": 3812,
+          "sha256": "9baaaf615efc04442fc385c651cb3fa0b87d5cb930eda001670d63e173e37b48"
+        },
+        {
+          "url": "https://taubench.com/",
+          "request_description": "https://taubench.com/",
+          "final_url": "https://taubench.com/",
+          "status": 200,
+          "bytes": 16542,
+          "sha256": "d76e3d4758297dc46f0074cdc6d808e030ddee29b448cfeddb356375f777c15f"
+        },
+        {
+          "url": "https://taubench.com/assets/index-QtX8yEBE.js",
+          "request_description": "https://taubench.com/assets/index-QtX8yEBE.js",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3.5-397b-a17b-think_sierra_2026-03-02/submission.json",
+          "sha256": "2cfb2c7d2a46e9f22154fa153dcdf155d50dbd5bf86233ecf564eccca1e5913e"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/raft-30b-a3b_neu_2026-04-29/submission.json",
+          "sha256": "ea8fff2d8386ff90b9f63aefda32a3f1afe5d01b087fdea9bf178919edc44fe6"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2_sierra_2026-02-26/submission.json",
+          "sha256": "343687b822edbcbff42a4d4632ecc6288a58d9817a7a02c8533081c5709c0ac6"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-5_sierra_2026-02-26/submission.json",
+          "sha256": "9c3b8b400e21d370cea27caec3643bfe6fd8385be9ed5135b585d0b976b6e34f"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-flash_sierra_2026-03-02/submission.json",
+          "sha256": "d1b7d1fc5d789662fb6eeb4a5ec01948295db397d2313df42c43c7fd8caf3637"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_sierra_2026-03-02/submission.json",
+          "sha256": "f5c7b2d432d4efc6d6c1533f87e61ae1673336579df9f5f5cf986c277f0afd18"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2-none_sierra_2026-02-26/submission.json",
+          "sha256": "e1be4bac436e8115f9253697d68b71867f17cfcb2bef5dfa6a756c0a89a70dab"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/glm-5-think_sierra_2026-03-02/submission.json",
+          "sha256": "fa27b9a1a7a4c8b15517ec1329ef21fcc700be2ca12f21659b60aeda99c7de8f"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_sierra_2026-02-26/submission.json",
+          "sha256": "e5ce9f12ab9e616db52e973e90b48144b7bafd29e35c4fd6c3e7fde573a9b8d8"
+        }
+      ]
+    },
+    {
+      "id": "mcp-universe-agent",
+      "category": "tool-use",
+      "status": "unchanged",
+      "old_rows": 8,
+      "note": "",
+      "checked": "2026-11-04",
+      "sources": [
+        {
+          "url": "https://mcp-universe.github.io/",
+          "request_description": "https://mcp-universe.github.io/",
+          "final_url": "https://mcp-universe.github.io/",
+          "status": 200,
+          "bytes": 119803,
+          "sha256": "59e44ce99072a91080fc5c0ebe9e9bbecfac1783d50b863568404ae919a3cff0"
+        }
+      ]
+    },
+    {
+      "id": "appworld-test-challenge",
+      "category": "tool-use",
+      "status": "unchanged",
+      "old_rows": 23,
+      "note": "",
+      "checked": "2026-11-04",
+      "sources": [
+        {
+          "url": "https://appworld.dev/appworld/leaderboard",
+          "request_description": "https://appworld.dev/appworld/leaderboard",
+          "final_url": "https://appworld.dev/appworld/leaderboard",
+          "status": 200,
+          "bytes": 44517,
+          "sha256": "65243c61744ab0d7b181521a243d742908f1340c142c0a458b082ba570237769"
+        },
+        {
+          "url": "https://appworld.dev/appworld/leaderboard.json",
+          "request_description": "https://appworld.dev/appworld/leaderboard.json",
+          "final_url": "https://appworld.dev/appworld/leaderboard.json",
+          "status": 200,
+          "bytes": 41643,
+          "sha256": "5dc72e48e619f483af9035413bccb50e68f63446b6f84371f6e2989e595dc49d"
+        }
+      ]
+    },
+    {
+      "id": "hal-tau-bench-airline",
+      "category": "tool-use",
+      "status": "unchanged",
+      "old_rows": 26,
+      "note": "",
+      "checked": "2026-11-04",
+      "sources": [
+        {
+          "url": "https://hal.cs.princeton.edu/taubench_airline",
+          "request_description": "https://hal.cs.princeton.edu/taubench_airline",
+          "final_url": "https://hal.cs.princeton.edu/taubench_airline",
+          "status": 200,
+          "bytes": 253939,
+          "sha256": "83631f306f1fd6c85a6c0f7dcb53f9dec3915f6b6a323fc1dd46a9887209cc41"
+        }
+      ]
+    },
+    {
+      "id": "tau3-voice-telecom",
+      "category": "tool-use",
+      "status": "unchanged",
+      "old_rows": 24,
+      "differences": [],
+      "note": "Relevant live manifest has no new applicable submissions. Every retained field of every selected submission re-fetched and matched. Six voice submissions added to old banking manifest have only retail/airline/telecom results, so excluded from banking.",
+      "checked": "2026-11-04",
+      "sources": [
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "request_description": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "status": 200,
+          "bytes": 3812,
+          "sha256": "9baaaf615efc04442fc385c651cb3fa0b87d5cb930eda001670d63e173e37b48"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha-user-sim-gpt-5-5_openai_2026-09-09/submission.json",
+          "sha256": "1eac97fde74af2b66ced406261e59cc0ae3cd8f48be4d0d406db2754b5e197a2"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-v1-0_pineai_2026-08-17/submission.json",
+          "sha256": "019e2ee4d144cf5a845140942e3d3e9073ce664dce26fe729653a4c91ac31d10"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1-diamond-alpha_openai_2026-09-09/submission.json",
+          "sha256": "fe65fe145300e53338b3149f359854ead1858870f2a6ac5080ada90ba59075ca"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0-tool-mentor_pickle_2026-07-07/submission.json",
+          "sha256": "8f5c3e9c820a1b26721c073000da507afc5ef015c1e3ac44164ef5afd6356b1b"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-preview-user-sim-gpt-5-5_pineai_2026-08-17/submission.json",
+          "sha256": "44a65df475470f1234a541a0df74b42102599457f2cff8d1dbb126cd80724f5b"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-1-0_xai_2026-04-21/submission.json",
+          "sha256": "70da2fc2cf9922789f97463bd68dd45859f9785d3f4fa14a4b3f0bd7000b29b6"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-08-06/submission.json",
+          "sha256": "1e3b9d37d975dd7b2b82a73aca9bcceaa16617dbd6312dc3fd65b9cbdb0f5e4e"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-5-omni-plus-realtime_qwen_2026-08-06/submission.json",
+          "sha256": "e2431f919b3bfa6a367fcff2609498b7cd5b6fc7505414323cbab6841544f17e"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/xai-realtime_sierra_2026-03-03/submission.json",
+          "sha256": "7d206662b3177050eb88db8547533fca0c905073d8e1cbe0e86e749cc81324df"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-24/submission.json",
+          "sha256": "89dcccf3a8382c25c42555880a185970d2dbab745d1d253a91fbb55136563f47"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-high_google_2026-04-02/submission.json",
+          "sha256": "8e75b8ebd8d32ea993f1b1c7a4f82e0dbc1af87bc47bae85ca9b6c17d35a59b8"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2_openai_2026-06-29/submission.json",
+          "sha256": "f95972b276928d46e694239fc134bd66976e86cc2ac76a92276b829af33c1a2a"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1.5_sierra_2026-03-03/submission.json",
+          "sha256": "0982bf5ecf5b76bac05491073071a3c3821c1dc4f139cfe135112ae6585aea18"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-2-minimal_openai_2026-07-01/submission.json",
+          "sha256": "24ff60aa6c6824a13c8be0a1c543de066601faa6c281f1383bbd1f3fb3061de9"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-realtime-1-0_openai_2026-04-13/submission.json",
+          "sha256": "a16bf4a6c51a172ff0a3023cb75291ac609d61d6ca68f4b87a9d225890623003"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-flash-live-preview-thinking-minimal_google_2026-04-13/submission.json",
+          "sha256": "63dba43a203a9fc45676306839ecd3753b5857afc30d5f1b84d8636e4e610a1d"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-live-2.5-flash_sierra_2026-03-03/submission.json",
+          "sha256": "7af89d64a58c67178bb161d24f09ac8d0e130fde557ce18483b85c46e7a5996f"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/livekit-cascaded_livekit_2026-05-19/submission.json",
+          "sha256": "b8a4b52ac90c67a5992e9c56980b7ea40737ab276b205ed421d7eee9122555d1"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-3-0_xai_2026-10-14/submission.json",
+          "sha256": "ba2fe869ab163c4df258ca8252f679484c0002ab1dc01e9bcc4e3059ea54f6e5"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/salesforce-launa-v1_salesforce_2026-10-06/submission.json",
+          "sha256": "59d7dbc3bc67d5091ab7319ed25978f65789bfffac1c491545a39a5f8edce928"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/ava-zero_avartha_2026-10-22/submission.json",
+          "sha256": "a8ffb60746047ebb9c1316b14246110f0a6d451001a690a9bb7da3b14a75c1ef"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/phonic-1-user-sim-gpt-5-5_phonic_2026-10-22/submission.json",
+          "sha256": "8fd864709d69297f87737fe78947939d5e77faafffbbc31d92d9ed279512cfbc"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/phonic-1_phonic_2026-10-22/submission.json",
+          "sha256": "ee10d266b33ef7eea72d601cf3721695f27792b0840c4d825600fb5a08d8ccf4"
+        },
+        {
+          "unchanged": false,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/pine-voice-1-0_pineai_2026-10-27/submission.json",
+          "sha256": "3e44f7798668142aec85e5998cb1e8ceb77371b68d100f85fed292e065f4dcb2"
+        }
+      ]
+    },
+    {
+      "id": "bfcl-v4",
+      "category": "tool-use",
+      "status": "unchanged",
+      "old_rows": 109,
+      "note": "",
+      "checked": "2026-11-04",
+      "sources": [
+        {
+          "url": "https://gorilla.cs.berkeley.edu/leaderboard.html",
+          "request_description": "https://gorilla.cs.berkeley.edu/leaderboard.html",
+          "final_url": "https://gorilla.cs.berkeley.edu/leaderboard.html",
+          "status": 200,
+          "bytes": 16207,
+          "sha256": "ef72a8621b6ea1b8aa1d1b7691f73cc3079fd38e86f599c9a38cb626c911fc29"
+        },
+        {
+          "url": "https://gorilla.cs.berkeley.edu/index_main.js",
+          "request_description": "https://gorilla.cs.berkeley.edu/index_main.js",
+          "final_url": "https://gorilla.cs.berkeley.edu/index_main.js",
+          "status": 200,
+          "bytes": 57203,
+          "sha256": "98ce7e9968527e3341086ae942ad8e568c2760f6008d36b2845e8dce3a72c2c1"
+        },
+        {
+          "url": "https://gorilla.cs.berkeley.edu/data_overall.csv",
+          "request_description": "https://gorilla.cs.berkeley.edu/data_overall.csv",
+          "final_url": "https://gorilla.cs.berkeley.edu/data_overall.csv",
+          "status": 200,
+          "bytes": 33046,
+          "sha256": "ede5081a24bc5ac7f9b3b09a52af6bcfcd35aa0f1709239fed979db77a8159a6"
+        }
+      ]
+    },
+    {
+      "id": "mcpmark-verified",
+      "category": "tool-use",
+      "status": "unchanged",
+      "old_rows": 8,
+      "note": "Current full source projection compared with snapshot",
+      "checked": "2026-11-04",
+      "sources": [
+        {
+          "url": "https://mcpmark.ai/leaderboard/verified",
+          "request_description": "https://mcpmark.ai/leaderboard/verified",
+          "final_url": "https://mcpmark.ai/leaderboard/verified",
+          "status": 200,
+          "bytes": 1264306,
+          "sha256": "9276bb215905ad4115a5f1db0f06e837d3b2f0ad43bdbf96c68beaf8b270c546"
+        }
+      ]
+    },
+    {
+      "id": "apex-agents",
+      "category": "tool-use",
+      "status": "unchanged",
+      "old_rows": 68,
+      "note": "Every retained leaderboardData field and 68 configurations unchanged; current page props contain additional UI/trajectory fields outside stored projection.",
+      "checked": "2026-11-04",
+      "sources": [
+        {
+          "url": "https://www.mercor.com/apex/apex-agents-leaderboard/",
+          "request_description": "https://www.mercor.com/apex/apex-agents-leaderboard/",
+          "final_url": "https://www.mercor.com/apex/apex-agents-leaderboard/",
+          "status": 200,
+          "bytes": 192521,
+          "sha256": "4dab2df0871a53df54b5cb5a1ce78ae20da5189c1e850daac854a450c73a566e"
+        },
+        {
+          "url": "https://www.mercor.com/blog/introducing-apex-agents-1-1",
+          "request_description": "https://www.mercor.com/blog/introducing-apex-agents-1-1",
+          "final_url": "https://www.mercor.com/blog/introducing-apex-agents-1-1/",
+          "status": 200,
+          "bytes": 58432,
+          "sha256": "cbce2448bed4b16c1793d09d2b7a72da44e71bfb75e3ddca49ace57c305222bb"
+        }
+      ]
+    },
+    {
+      "id": "appworld-test-normal",
+      "category": "tool-use",
+      "status": "unchanged",
+      "old_rows": 23,
+      "note": "",
+      "checked": "2026-11-04",
+      "sources": [
+        {
+          "url": "https://appworld.dev/appworld/leaderboard",
+          "request_description": "https://appworld.dev/appworld/leaderboard",
+          "final_url": "https://appworld.dev/appworld/leaderboard",
+          "status": 200,
+          "bytes": 44517,
+          "sha256": "65243c61744ab0d7b181521a243d742908f1340c142c0a458b082ba570237769"
+        },
+        {
+          "url": "https://appworld.dev/appworld/leaderboard.json",
+          "request_description": "https://appworld.dev/appworld/leaderboard.json",
+          "final_url": "https://appworld.dev/appworld/leaderboard.json",
+          "status": 200,
+          "bytes": 41643,
+          "sha256": "5dc72e48e619f483af9035413bccb50e68f63446b6f84371f6e2989e595dc49d"
+        }
+      ]
+    },
+    {
+      "id": "tau2-bench-legacy-airline",
+      "category": "tool-use",
+      "status": "unchanged",
+      "old_rows": 16,
+      "differences": [],
+      "note": "Relevant live manifest has no new applicable submissions. Every retained field of every selected submission re-fetched and matched. Six voice submissions added to old banking manifest have only retail/airline/telecom results, so excluded from banking.",
+      "checked": "2026-11-04",
+      "sources": [
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "request_description": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "status": 200,
+          "bytes": 3812,
+          "sha256": "9baaaf615efc04442fc385c651cb3fa0b87d5cb930eda001670d63e173e37b48"
+        },
+        {
+          "url": "https://taubench.com/",
+          "request_description": "https://taubench.com/",
+          "final_url": "https://taubench.com/",
+          "status": 200,
+          "bytes": 16542,
+          "sha256": "d76e3d4758297dc46f0074cdc6d808e030ddee29b448cfeddb356375f777c15f"
+        },
+        {
+          "url": "https://taubench.com/assets/index-QtX8yEBE.js",
+          "request_description": "https://taubench.com/assets/index-QtX8yEBE.js",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_google_2025-11-18/submission.json",
+          "sha256": "27134a3b100a87e0780f08fda0475f4ffe0ef247bc41484ad48cc9798ffbe796"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_anthropic_2025-10-02/submission.json",
+          "sha256": "20e3ef4c1c495dbf3ec155ffa4899d6478b75deccf16862d886def20a79dda11"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2026-01-23/submission.json",
+          "sha256": "eb480b51b464175389262778510061ed96bf8f4e6ae2b05eb80d3d2455473b5a"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-3-7-sonnet_anthropic_2024-06-20/submission.json",
+          "sha256": "1578bde0f074632d32d1e21499ee3fd7c2e45737a686feaae6e822002f1a47dc"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/deepseek-v3.2_deepseek_2025-12-01/submission.json",
+          "sha256": "ea902585a8aa18933efd69bfcaee7a0d6f7134084f274c81b5ded67cab3fd35f"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5_sierra_2025-08-09/submission.json",
+          "sha256": "288a3ec7ff0fe305344fa7fd866a692754a67ad61fb5198c0b64ee4987a88636"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4_anthropic_2025-05-22/submission.json",
+          "sha256": "c87bd245d5b2c2ac6494b650c1804239f742fb49524d0e5f17a1dab415220b31"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4_anthropic_2025-05-22/submission.json",
+          "sha256": "e4e0813f7ce46327aad4065612edbdb04e0fb2cb1fbe05a77029be32573c8d61"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2024_09_23/submission.json",
+          "sha256": "ebc4a976a9ccf834c06e7035681b8569b3a34b263c4f383da6499db1fbfd2969"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/kimi-k2_moonshot-ai_2025-07-11/submission.json",
+          "sha256": "87553297c0df116060a87aec279650fb6489950c49c0bd383dd6f897a4e7a0e1"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-1_anthropic_2025-01-15/submission.json",
+          "sha256": "062f711a16ad29f27ee1611ef097de8f76810d18725028d70ea9349af19d28ed"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1_openai_2024-06-20/submission.json",
+          "sha256": "69d0798527fc2cabf9168795e99dcec78128b440b5a4ad3abd1d788cc6db7954"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/toolorchestra_nvidia_2025-12-02/submission.json",
+          "sha256": "05ef54d0d64269f53b3a2b4bdd7ec5008a33b6c62a024e546d91a5a014bca77c"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/o4-mini_openai_2024-06-20/submission.json",
+          "sha256": "9cfd165d23c1500b6413af7ceb48b64a0fb672ce15e6069a12a36fd54e92bade"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/o3_openai_2025-01-15/submission.json",
+          "sha256": "47462170900587697dfcac4e42e459a6cf50ae40eab8d758c9be5a43dcb04900"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1-mini_openai_2024-06-20/submission.json",
+          "sha256": "2a86f83f6bfeff5b02015c9d7471602bcfd5fb732ef66f55f1fac4dcab20dff4"
+        }
+      ]
+    },
+    {
+      "id": "tau2-bench",
+      "category": "tool-use",
+      "status": "unchanged",
+      "old_rows": 8,
+      "differences": [],
+      "note": "Relevant live manifest has no new applicable submissions. Every retained field of every selected submission re-fetched and matched. Six voice submissions added to old banking manifest have only retail/airline/telecom results, so excluded from banking.",
+      "checked": "2026-11-04",
+      "sources": [
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "request_description": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "status": 200,
+          "bytes": 3812,
+          "sha256": "9baaaf615efc04442fc385c651cb3fa0b87d5cb930eda001670d63e173e37b48"
+        },
+        {
+          "url": "https://taubench.com/",
+          "request_description": "https://taubench.com/",
+          "final_url": "https://taubench.com/",
+          "status": 200,
+          "bytes": 16542,
+          "sha256": "d76e3d4758297dc46f0074cdc6d808e030ddee29b448cfeddb356375f777c15f"
+        },
+        {
+          "url": "https://taubench.com/assets/index-QtX8yEBE.js",
+          "request_description": "https://taubench.com/assets/index-QtX8yEBE.js",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3.5-397b-a17b-think_sierra_2026-03-02/submission.json",
+          "sha256": "2cfb2c7d2a46e9f22154fa153dcdf155d50dbd5bf86233ecf564eccca1e5913e"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-5_sierra_2026-02-26/submission.json",
+          "sha256": "9c3b8b400e21d370cea27caec3643bfe6fd8385be9ed5135b585d0b976b6e34f"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2_sierra_2026-02-26/submission.json",
+          "sha256": "343687b822edbcbff42a4d4632ecc6288a58d9817a7a02c8533081c5709c0ac6"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-flash_sierra_2026-03-02/submission.json",
+          "sha256": "d1b7d1fc5d789662fb6eeb4a5ec01948295db397d2313df42c43c7fd8caf3637"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_sierra_2026-03-02/submission.json",
+          "sha256": "f5c7b2d432d4efc6d6c1533f87e61ae1673336579df9f5f5cf986c277f0afd18"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/glm-5-think_sierra_2026-03-02/submission.json",
+          "sha256": "fa27b9a1a7a4c8b15517ec1329ef21fcc700be2ca12f21659b60aeda99c7de8f"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_sierra_2026-02-26/submission.json",
+          "sha256": "e5ce9f12ab9e616db52e973e90b48144b7bafd29e35c4fd6c3e7fde573a9b8d8"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2-none_sierra_2026-02-26/submission.json",
+          "sha256": "e1be4bac436e8115f9253697d68b71867f17cfcb2bef5dfa6a756c0a89a70dab"
+        }
+      ]
+    },
+    {
+      "id": "toolathlon",
+      "category": "tool-use",
+      "status": "unchanged",
+      "old_rows": 51,
+      "note": "Both complete live HTML table cell arrays match stored tables after normalizing markdown escapes and em-dash/-- missing-value presentation; verified marks, identities, conditions, dates and numbers unchanged.",
+      "checked": "2026-11-04",
+      "sources": [
+        {
+          "url": "https://toolathlon.xyz/docs/leaderboard",
+          "request_description": "https://toolathlon.xyz/docs/leaderboard",
+          "final_url": "https://toolathlon.xyz/docs/leaderboard",
+          "status": 200,
+          "bytes": 445102,
+          "sha256": "c1d5fed7ab9736185a0f2d3c0bb497db064d27afd9280fb34ee25c2d53f1b4b6"
+        },
+        {
+          "url": "https://toolathlon.xyz/docs/leaderboard.md",
+          "request_description": "https://toolathlon.xyz/docs/leaderboard.md",
+          "final_url": "https://toolathlon.xyz/docs/leaderboard.md",
+          "status": 200,
+          "bytes": 22084,
+          "sha256": "f6c12089f63a35fab65f6ea159a3ceda8e8d0377f3b04c057aa6c22257ef414b"
+        }
+      ]
+    },
+    {
+      "id": "mcp-universe-react",
+      "category": "tool-use",
+      "status": "unchanged",
+      "old_rows": 28,
+      "note": "",
+      "checked": "2026-11-04",
+      "sources": [
+        {
+          "url": "https://mcp-universe.github.io/",
+          "request_description": "https://mcp-universe.github.io/",
+          "final_url": "https://mcp-universe.github.io/",
+          "status": 200,
+          "bytes": 119803,
+          "sha256": "59e44ce99072a91080fc5c0ebe9e9bbecfac1783d50b863568404ae919a3cff0"
+        }
+      ]
+    },
+    {
+      "id": "tau3-banking",
+      "category": "tool-use",
+      "status": "unchanged",
+      "old_rows": 28,
+      "differences": [],
+      "note": "Relevant live manifest has no new applicable submissions. Every retained field of every selected submission re-fetched and matched. Six voice submissions added to old banking manifest have only retail/airline/telecom results, so excluded from banking.",
+      "checked": "2026-11-04",
+      "sources": [
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "request_description": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "status": 200,
+          "bytes": 3812,
+          "sha256": "9baaaf615efc04442fc385c651cb3fa0b87d5cb930eda001670d63e173e37b48"
+        },
+        {
+          "url": "https://taubench.com/",
+          "request_description": "https://taubench.com/",
+          "final_url": "https://taubench.com/",
+          "status": 200,
+          "bytes": 16542,
+          "sha256": "d76e3d4758297dc46f0074cdc6d808e030ddee29b448cfeddb356375f777c15f"
+        },
+        {
+          "url": "https://taubench.com/assets/index-QtX8yEBE.js",
+          "request_description": "https://taubench.com/assets/index-QtX8yEBE.js",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-8-max_sierra_2026-08-04/submission.json",
+          "sha256": "afd5525e447a221f6997b6af8a6a72536acda81b0e7775fd7124836a13a9ad76"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-5_sierra_2026-08-04/submission.json",
+          "sha256": "4ab17f3f2e77cae8b2b4e4ba13413f7e2168104a772f25afe9d071950ed24ba2"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-4-5_sierra_2026-08-04/submission.json",
+          "sha256": "fb6414a4c05756d2ea00289684680f22fe3111a1ed69cf8d77c1071b1075bcb1"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-6-sol_sierra_2026-08-04/submission.json",
+          "sha256": "0394128dc04d58ff77846e404ce588d786988a5c2ffcb69a8af09f19c46c97a4"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-5_sierra_2026-05-05/submission.json",
+          "sha256": "24247d74b2a942da4c8f85503d0f8b95ba6e2d5df7158c2adf15049056d8b7f4"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/muse-spark-1-1_sierra_2026-08-04/submission.json",
+          "sha256": "5ec4d2b119542bb40358374e3408515dccf5f0b3dace60de7936a20cb9bf13da"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-7_sierra_2026-05-05/submission.json",
+          "sha256": "7ec10475f58a7d24c55548df9b8a04b6e6105dc25a6927f618c487185f28eca9"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-8_sierra_2026-08-04/submission.json",
+          "sha256": "13052291f58a74e601c4e577bce110a7fad93a126edaa87fb483e49df0823054"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-fable-5_sierra_2026-08-04/submission.json",
+          "sha256": "f5cb61669a7f9665a006031ae1779b59230dcb4527cf763cfc3d2c771878166b"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-4_sierra_2026-03-25/submission.json",
+          "sha256": "47fa11691a745682b86ffc91e1a57aef6d6d7cebe60df66820ebb310b518b0ab"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/kimi-k3_sierra_2026-08-04/submission.json",
+          "sha256": "71e1ac4413f59ceac04851843319f73b485280a756f3b69fb5f47836d65a52b6"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/glm-5-2_sierra_2026-08-04/submission.json",
+          "sha256": "58b36fd68b92eac5c9e72efce3952aa4004db2b7f6f520c2bcf2908c4845e801"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2_sierra_2026-02-26/submission.json",
+          "sha256": "343687b822edbcbff42a4d4632ecc6288a58d9817a7a02c8533081c5709c0ac6"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/distyl-buttonagent_distyl_2026-03-25/submission.json",
+          "sha256": "bb1984dd43557ac3e526f64eeaea0fd4467d924c69d38655d64dde0a45a2c522"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-flash_sierra_2026-03-02/submission.json",
+          "sha256": "d1b7d1fc5d789662fb6eeb4a5ec01948295db397d2313df42c43c7fd8caf3637"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-6_sierra_2026-05-05/submission.json",
+          "sha256": "880ea58f76664a0f0e06c3117c6a8b75c4007149d06cc3de04f852f62487f3f3"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-1-pro-preview_sierra_2026-05-05/submission.json",
+          "sha256": "16ada360be015c129cc704ab283535144305df1b1cb911750bb2ec6a2fde53ac"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_sierra_2026-02-26/submission.json",
+          "sha256": "e5ce9f12ab9e616db52e973e90b48144b7bafd29e35c4fd6c3e7fde573a9b8d8"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/inkling_sierra_2026-08-04/submission.json",
+          "sha256": "f5d7b5fae9986619bc3258d1be25b3577f46d4e61a1b6c8853933710eb3169b9"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-5_sierra_2026-02-26/submission.json",
+          "sha256": "9c3b8b400e21d370cea27caec3643bfe6fd8385be9ed5135b585d0b976b6e34f"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_sierra_2026-03-02/submission.json",
+          "sha256": "f5c7b2d432d4efc6d6c1533f87e61ae1673336579df9f5f5cf986c277f0afd18"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-4-2_sierra_2026-05-05/submission.json",
+          "sha256": "6187e4b645a9de92f40ba0d6b800c13200ef39c5bc95062d5ae8122251459fc6"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-4-fast_sierra_2026-05-05/submission.json",
+          "sha256": "e310d5fa844297cbb9b3ff0755f9784ddeae8daf99624f1003a8d0bdd973c237"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-2-5-pro_sierra_2026-05-05/submission.json",
+          "sha256": "b14f65b54ac7b733550cb1e04b986d17b7ff877de6ff79e94e8e98998035de6f"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-4-1-fast_sierra_2026-05-05/submission.json",
+          "sha256": "24efda601208398e37890ee127e37190b2080dc8eb34aa52fac0ee7f32ae1e08"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2-none_sierra_2026-02-26/submission.json",
+          "sha256": "e1be4bac436e8115f9253697d68b71867f17cfcb2bef5dfa6a756c0a89a70dab"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/glm-5-think_sierra_2026-03-02/submission.json",
+          "sha256": "fa27b9a1a7a4c8b15517ec1329ef21fcc700be2ca12f21659b60aeda99c7de8f"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3.5-397b-a17b-think_sierra_2026-03-02/submission.json",
+          "sha256": "2cfb2c7d2a46e9f22154fa153dcdf155d50dbd5bf86233ecf564eccca1e5913e"
+        }
+      ]
+    },
+    {
+      "id": "tau2-bench-legacy-retail",
+      "category": "tool-use",
+      "status": "unchanged",
+      "old_rows": 16,
+      "differences": [],
+      "note": "Relevant live manifest has no new applicable submissions. Every retained field of every selected submission re-fetched and matched. Six voice submissions added to old banking manifest have only retail/airline/telecom results, so excluded from banking.",
+      "checked": "2026-11-04",
+      "sources": [
+        {
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "request_description": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "final_url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/manifest.json",
+          "status": 200,
+          "bytes": 3812,
+          "sha256": "9baaaf615efc04442fc385c651cb3fa0b87d5cb930eda001670d63e173e37b48"
+        },
+        {
+          "url": "https://taubench.com/",
+          "request_description": "https://taubench.com/",
+          "final_url": "https://taubench.com/",
+          "status": 200,
+          "bytes": 16542,
+          "sha256": "d76e3d4758297dc46f0074cdc6d808e030ddee29b448cfeddb356375f777c15f"
+        },
+        {
+          "url": "https://taubench.com/assets/index-QtX8yEBE.js",
+          "request_description": "https://taubench.com/assets/index-QtX8yEBE.js",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_anthropic_2025-10-02/submission.json",
+          "sha256": "20e3ef4c1c495dbf3ec155ffa4899d6478b75deccf16862d886def20a79dda11"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-pro_google_2025-11-18/submission.json",
+          "sha256": "27134a3b100a87e0780f08fda0475f4ffe0ef247bc41484ad48cc9798ffbe796"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/toolorchestra_nvidia_2025-12-02/submission.json",
+          "sha256": "05ef54d0d64269f53b3a2b4bdd7ec5008a33b6c62a024e546d91a5a014bca77c"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-1_anthropic_2025-01-15/submission.json",
+          "sha256": "062f711a16ad29f27ee1611ef097de8f76810d18725028d70ea9349af19d28ed"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5_sierra_2025-08-09/submission.json",
+          "sha256": "288a3ec7ff0fe305344fa7fd866a692754a67ad61fb5198c0b64ee4987a88636"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4_anthropic_2025-05-22/submission.json",
+          "sha256": "e4e0813f7ce46327aad4065612edbdb04e0fb2cb1fbe05a77029be32573c8d61"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/deepseek-v3.2_deepseek_2025-12-01/submission.json",
+          "sha256": "ea902585a8aa18933efd69bfcaee7a0d6f7134084f274c81b5ded67cab3fd35f"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4_anthropic_2025-05-22/submission.json",
+          "sha256": "c87bd245d5b2c2ac6494b650c1804239f742fb49524d0e5f17a1dab415220b31"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2026-01-23/submission.json",
+          "sha256": "eb480b51b464175389262778510061ed96bf8f4e6ae2b05eb80d3d2455473b5a"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1_openai_2024-06-20/submission.json",
+          "sha256": "69d0798527fc2cabf9168795e99dcec78128b440b5a4ad3abd1d788cc6db7954"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/o3_openai_2025-01-15/submission.json",
+          "sha256": "47462170900587697dfcac4e42e459a6cf50ae40eab8d758c9be5a43dcb04900"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-max_qwen_2024_09_23/submission.json",
+          "sha256": "ebc4a976a9ccf834c06e7035681b8569b3a34b263c4f383da6499db1fbfd2969"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-3-7-sonnet_anthropic_2024-06-20/submission.json",
+          "sha256": "1578bde0f074632d32d1e21499ee3fd7c2e45737a686feaae6e822002f1a47dc"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/kimi-k2_moonshot-ai_2025-07-11/submission.json",
+          "sha256": "87553297c0df116060a87aec279650fb6489950c49c0bd383dd6f897a4e7a0e1"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/o4-mini_openai_2024-06-20/submission.json",
+          "sha256": "9cfd165d23c1500b6413af7ceb48b64a0fb672ce15e6069a12a36fd54e92bade"
+        },
+        {
+          "unchanged": true,
+          "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-4-1-mini_openai_2024-06-20/submission.json",
+          "sha256": "2a86f83f6bfeff5b02015c9d7471602bcfd5fb732ef66f55f1fac4dcab20dff4"
+        }
+      ]
+    }
+  ]
+}

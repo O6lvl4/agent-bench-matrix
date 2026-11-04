@@ -1,0 +1,22 @@
+{
+  "id": "research-security-horizon-refresh-2026-11-04",
+  "name": "CVE-Bench and Vending Bench sources unavailable",
+  "tried": [
+    "https://cvebench.com/index-wf61xq3j.js",
+    "https://cvebench.com/",
+    "https://andonlabs.com/evals/vending-bench",
+    "https://andonlabs.com/_app/immutable/nodes/25.CVTjRCvv.js",
+    "https://andonlabs.com/evals/vending-bench-2",
+    "https://andonlabs.com/_app/immutable/nodes/26.CKje-A28.js",
+    "https://andonlabs.com/_app/immutable/chunks/3yXS6ZzI.js",
+    "https://andonlabs.com/_app/immutable/chunks/Cs044IBN.js"
+  ],
+  "retrieved": "2026-11-04",
+  "affected_tables": [
+    "cve-bench-one-day",
+    "cve-bench-zero-day",
+    "vending-bench",
+    "vending-bench-2"
+  ],
+  "reason_ja": "CVE-Benchの公式トップ・既知JS、およびVending Benchの公式ページ・既知の関連資産がHTTP 403。最新の表を検証できないため既存の値・snapshot・成功取得日を保持。変更なしや取得成功とは扱わない。"
+}
