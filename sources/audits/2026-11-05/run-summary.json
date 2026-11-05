@@ -1,0 +1,52 @@
+{
+  "date": "2026-11-05",
+  "baseline_commit": "ad91609f7b8bcdf6852c3237a8eab157ad95d499",
+  "tables": 166,
+  "rows": 4511,
+  "models": 525,
+  "categories": {
+    "coding": 50,
+    "computer-use": 22,
+    "general": 5,
+    "long-horizon": 7,
+    "research": 9,
+    "security": 13,
+    "terminal": 5,
+    "tool-use": 32,
+    "web": 23
+  },
+  "status_counts": {
+    "changed": 8,
+    "failed": 1,
+    "partial-access": 10,
+    "unchanged": 147
+  },
+  "changed": [
+    "apex-agents",
+    "apex-agents-corporate-lawyer",
+    "apex-agents-investment-banking",
+    "apex-agents-management-consultant",
+    "appworld-test-challenge",
+    "appworld-test-normal",
+    "gaia",
+    "tau3-banking"
+  ],
+  "preserved_with_partial_access": [
+    "tau2-bench",
+    "tau2-bench-airline",
+    "tau2-bench-legacy",
+    "tau2-bench-legacy-airline",
+    "tau2-bench-legacy-retail",
+    "tau2-bench-legacy-telecom",
+    "tau2-bench-retail",
+    "tau2-bench-telecom",
+    "tau3-voice-banking",
+    "theagentcompany"
+  ],
+  "fetch_failure_preserved": [
+    "assistantbench"
+  ],
+  "change_note": "AppWorld adds three submissions to each of two splits; APEX corrects Kimi K3.1 Pro results in four tables; Tau banking adds Sierra-verified Cortex custom system. GAIA official top100 tie selection and display order changed, with no new top score or date. Custom/fine-tuned systems are not attributed to base models. Existing data and retrieval dates preserved for unchanged/inaccessible tables. Obsolete support routes and partial access documented separately.",
+  "no_paid_evaluation": true,
+  "no_code_ui_workflow_changes": true
+}

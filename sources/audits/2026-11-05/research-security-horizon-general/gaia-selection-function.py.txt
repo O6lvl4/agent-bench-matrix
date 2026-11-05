@@ -1,0 +1,21 @@
+# Source: https://huggingface.co/spaces/gaia-benchmark/leaderboard/raw/main/app.py
+# SHA256 of complete original payload: 3b5ae007d232951c3ed2505b862048f98b3b912314365256c3b0c106ae8cc579
+def get_dataframe_from_results(eval_results, split):
+    local_df = eval_results[split]
+    local_df = local_df.map(lambda row: {"model": model_hyperlink(row["url"], row["model"])})
+    local_df = local_df.remove_columns(["system_prompt", "url"])
+    local_df = local_df.rename_column("model", "Agent name")
+    local_df = local_df.rename_column("model_family", "Model family")
+    local_df = local_df.rename_column("score", "Average score (%)")
+    for i in [1, 2, 3]:
+        local_df = local_df.rename_column(f"score_level{i}", f"Level {i} score (%)")
+    local_df = local_df.rename_column("date", "Submission date")
+    df = pd.DataFrame(local_df)
+    df = df.sort_values(by=["Average score (%)"], ascending=False)
+    df = df.head(100)
+
+    numeric_cols = [c for c in local_df.column_names if "score" in c]
+    df[numeric_cols] = df[numeric_cols].multiply(100).round(decimals=2)
+    #df = df.style.format("{:.2%}", subset=numeric_cols)
+
+    return df

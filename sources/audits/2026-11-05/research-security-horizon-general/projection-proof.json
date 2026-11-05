@@ -1,0 +1,228 @@
+{
+  "browsecomp-plus": {
+    "equal": true,
+    "method": "Full parsed JSON structure"
+  },
+  "cve-bench-one-day": {
+    "equal": true,
+    "method": "Mechanical extraction using existing parser; all row fields match"
+  },
+  "cve-bench-zero-day": {
+    "equal": true,
+    "method": "Mechanical extraction using existing parser; all row fields match"
+  },
+  "cybench": {
+    "equal": true,
+    "method": "Mechanical extraction using existing parser; all row fields match"
+  },
+  "cybergym-agent-focused": {
+    "equal": true,
+    "method": "Full parsed JSON structure"
+  },
+  "cybergym-e2e": {
+    "equal": true,
+    "method": "Full parsed JSON structure"
+  },
+  "cybergym-model-focused": {
+    "equal": true,
+    "method": "All mechanically extracted row fields equal existing rows. Full source hash equal Nov 4; retained older snapshot includes non-displayed differences."
+  },
+  "ecommerce-bench": {
+    "equal": true,
+    "method": "Mechanical extraction using existing parser; all row fields match"
+  },
+  "exploitgym": {
+    "equal": true,
+    "method": "Full parsed JSON structure"
+  },
+  "gaia2-cli": {
+    "equal": true,
+    "method": "AST literal _GAIA2_CLI_DATA"
+  },
+  "hal-core-bench-hard": {
+    "equal": true,
+    "method": "HTML table DOM with whitespace-normalized text and identical attributes"
+  },
+  "hal-gaia": {
+    "equal": true,
+    "method": "HTML table DOM with whitespace-normalized text and identical attributes"
+  },
+  "hal-scicode": {
+    "equal": true,
+    "method": "HTML table DOM with whitespace-normalized text and identical attributes"
+  },
+  "hal-scienceagentbench": {
+    "equal": true,
+    "method": "HTML table DOM with whitespace-normalized text and identical attributes"
+  },
+  "metr-time-horizon-1.0": {
+    "equal": true,
+    "method": "Mechanical extraction using existing parser; all row fields match"
+  },
+  "metr-time-horizon": {
+    "equal": true,
+    "method": "Mechanical extraction using existing parser; all row fields match"
+  },
+  "mind2web-2": {
+    "equal": true,
+    "method": "Full parsed JSON structure"
+  },
+  "mle-bench-additional": {
+    "equal": true,
+    "method": "Mechanical extraction using existing parser; all row fields match"
+  },
+  "mle-bench": {
+    "equal": true,
+    "method": "Mechanical extraction using existing parser; all row fields match"
+  },
+  "paperbench-code-dev": {
+    "equal": true,
+    "method": "Mechanical extraction using existing parser; all row fields match"
+  },
+  "paperbench": {
+    "equal": true,
+    "method": "Mechanical extraction using existing parser; all row fields match"
+  },
+  "sec-bench-poc-generation": {
+    "equal": true,
+    "method": "All mechanically extracted row fields equal existing rows. Full source hash equal Nov 4; retained older snapshot includes non-displayed differences."
+  },
+  "sec-bench-pro-firefox": {
+    "equal": true,
+    "method": "HTML table DOM with whitespace-normalized text and identical attributes"
+  },
+  "sec-bench-pro-linux": {
+    "equal": true,
+    "method": "HTML table DOM with whitespace-normalized text and identical attributes"
+  },
+  "sec-bench-pro-overall": {
+    "equal": true,
+    "method": "All mechanically extracted row fields equal existing rows. Full source hash equal Nov 4; retained older snapshot includes non-displayed differences."
+  },
+  "sec-bench-pro-v8": {
+    "equal": true,
+    "method": "HTML table DOM with whitespace-normalized text and identical attributes"
+  },
+  "sec-bench-vulnerability-patching": {
+    "equal": true,
+    "method": "All mechanically extracted row fields equal existing rows. Full source hash equal Nov 4; retained older snapshot includes non-displayed differences."
+  },
+  "skillsbench": {
+    "equal": true,
+    "method": "Non-executing JS array literal; current page references active asset"
+  },
+  "swe-marathon-v1-0": {
+    "equal": true,
+    "method": "Entire archive row structures equal after removing ephemeral isNew badge only"
+  },
+  "swe-marathon-v1-1": {
+    "equal": true,
+    "method": "All 340 stored configurations and their full projected trials match; full bundle hash also unchanged"
+  },
+  "vending-bench-2": {
+    "equal": true,
+    "method": "Full runs (trim time series only), release dates and costs literals"
+  },
+  "vending-bench": {
+    "equal": true,
+    "method": "TSV literal var f; current page asset reference"
+  },
+  "gaia": {
+    "equal": false,
+    "method": "Two matching independent live events; each visible row validated against complete official test parquet",
+    "full_test_rows": 4107,
+    "display_rows": 100,
+    "above_cutoff": 92,
+    "tied_at_cutoff": 11,
+    "cutoff_score": 91.03,
+    "new_display_rows": [
+      {
+        "rank": 96,
+        "system": "Harness V8",
+        "agent": null,
+        "model_raw": [
+          "Grok"
+        ],
+        "model_ids": [],
+        "model_config": null,
+        "score": 91.03,
+        "score_extra": {
+          "level1": 97.85,
+          "level2": 89.94,
+          "level3": 81.63
+        },
+        "date": "2026-09-18",
+        "verified": null,
+        "open_source": null,
+        "org": "Harness",
+        "row_url": null
+      },
+      {
+        "rank": 99,
+        "system": "Shadow Harness V9",
+        "agent": null,
+        "model_raw": [
+          "Claude  GPT  Grok"
+        ],
+        "model_ids": [],
+        "model_config": null,
+        "score": 91.03,
+        "score_extra": {
+          "level1": 96.77,
+          "level2": 90.57,
+          "level3": 81.63
+        },
+        "date": "2026-09-18",
+        "verified": null,
+        "open_source": null,
+        "org": "Shadow",
+        "row_url": null
+      }
+    ],
+    "removed_display_rows": [
+      {
+        "rank": 94,
+        "system": "1028-4",
+        "agent": null,
+        "model_raw": [],
+        "model_ids": [],
+        "model_config": null,
+        "score": 91.03,
+        "score_extra": {
+          "level1": 95.7,
+          "level2": 88.68,
+          "level3": 89.8
+        },
+        "date": "2026-10-28",
+        "verified": null,
+        "open_source": null,
+        "org": null,
+        "row_url": null
+      },
+      {
+        "rank": 97,
+        "system": "1020-7",
+        "agent": null,
+        "model_raw": [],
+        "model_ids": [],
+        "model_config": null,
+        "score": 91.03,
+        "score_extra": {
+          "level1": 93.55,
+          "level2": 91.19,
+          "level3": 85.71
+        },
+        "date": "2026-10-20",
+        "verified": null,
+        "open_source": null,
+        "org": null,
+        "row_url": null
+      }
+    ],
+    "note": "Changed tie ordering and 2 cutoff selections, not evidence of improved scores or new submissions. Official event order retained. New ambiguous model-family strings remain unassigned."
+  },
+  "gaia2": {
+    "equal": true,
+    "method": "Complete live event headers, data and metadata identical"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "research-security-horizon-retired-assets-2026-11-05",
+  "name": "Retired source assets (current replacements verified)",
+  "tried": [
+    "https://andonlabs.com/_app/immutable/chunks/3sxjRzhT.js",
+    "https://andonlabs.com/_app/immutable/chunks/CdFT7FVG.js",
+    "https://andonlabs.com/_app/immutable/nodes/26.zOFxseIK.js",
+    "https://andonlabs.com/_app/immutable/nodes/27.DfnfhcbM.js",
+    "https://www.swe-marathon.org/assets/index-BqKcRchL.js"
+  ],
+  "retrieved": "2026-11-05",
+  "affected_tables": [
+    "vending-bench",
+    "vending-bench-2",
+    "swe-marathon-v1-0",
+    "swe-marathon-v1-1"
+  ],
+  "reason_ja": "保存済みの旧JS URL 5件はHTTP 404。今回取得した公式ページから現行JSを確認し、全データを検証できた。表データの取得失敗ではなく、旧出典URLの失効記録。現行JSのデータと保存済み表は同一のため、表・snapshot・取得日は保持。",
+  "current_sources_verified": true,
+  "audit": "sources/audits/2026-11-05/research-security-horizon-general.json"
+}
