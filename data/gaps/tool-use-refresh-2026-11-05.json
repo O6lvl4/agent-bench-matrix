@@ -1,0 +1,21 @@
+{
+  "id": "tool-use-refresh-2026-11-05",
+  "name": "Tool-use 公開データ再確認（2026-11-05）",
+  "tried": [
+    "https://taubench.com/assets/index-QtX8yEBE.js",
+    "https://the-agent-company.com/leaderboard",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/ava-zero_avartha_2026-10-27/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-8-live-extended-thinking_google_2026-10-07/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-8-live-extended-thinking_google_2026-10-07_banking/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-8-live-extended-thinking_google_2026-10-07_entity/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1_openai_2026-10-20/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1_openai_2026-10-20_banking/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1_openai_2026-10-20_entity/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-10-20/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-10-20_banking/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-10-20_entity/submission.json",
+    "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/phonic-1_phonic_2026-10-29/submission.json"
+  ],
+  "reason_ja": "登録済みTau JavaScriptとThe Agent Companyの旧leaderboard URLは404。成功したデータ投影は比較したが、部分取得表の取得日は保持。Tau voice-v2の旧submission.json経路11件も404だが、既知の正しいbenchmark-metadata.json／benchmark-submission.json経路で9パッケージを再取得済み。v2は旧voice v1と条件が異なるため混在させない。詳細はsources/audits/2026-11-05/tool-use.jsonおよびtool-use-voice-v2-proof.json。 bankingは該当manifestと全採録submissionの完全取得・比較を確認できたため、新規Cortex行と取得日を更新。旧補助JSの404はbankingデータ自体の欠落ではない。",
+  "retrieved": "2026-11-05"
+}
