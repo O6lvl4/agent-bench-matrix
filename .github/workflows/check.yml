@@ -16,15 +16,15 @@ jobs:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           repository: almide/almide
-          ref: e706ba8c4e32eb39983bd125cec1890d17094300
+          ref: 39f128a2d6af0cfc327d27913453e7af99c143fc
           path: .ci/almide
           persist-credentials: false
-      - run: rustup toolchain install 1.94.0 --profile minimal
+      - run: rustup toolchain install 1.97.0 --profile minimal
       - uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
         id: compiler
         with:
           path: .ci/almide/target/release/almide
-          key: almide-${{ runner.os }}-e706ba8c4e32eb39983bd125cec1890d17094300-rust1.94.0
+          key: almide-${{ runner.os }}-39f128a2d6af0cfc327d27913453e7af99c143fc-rust1.94.0
       - if: steps.compiler.outputs.cache-hit != 'true'
         run: cargo build --release --locked --bin almide --manifest-path .ci/almide/Cargo.toml
       # Every table must pass the checks, under --strict so a model the registry
