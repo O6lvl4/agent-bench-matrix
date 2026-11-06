@@ -451,9 +451,6 @@
     }
    },
    "effort": "max",
-   "descriptors": [
-    "Pro"
-   ],
    "company": "gpt",
    "logoUrl": "https://cdn.sanity.io/images/h6s14f4z/production/d0157b817dd39b0eeb64cd582258759f8577ce42-20x20.svg",
    "darkLogoUrl": null,
@@ -1996,6 +1993,63 @@
    "gradientStyle": "linear-gradient(to right, #8eb7ff, #468aff)",
    "release_date": "",
    "n_samples": 960
+  },
+  {
+   "model_name": "Hy4",
+   "model_id": "tencent/hy4",
+   "score": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 77.6
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 85.1
+    }
+   },
+   "error": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 4.5
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 3.6
+    }
+   },
+   "effort": "high",
+   "company": "tencent",
+   "logoUrl": "https://cdn.sanity.io/images/h6s14f4z/production/09b8616dd7058f51c56e39db88653e9e87b7db76-20x20.svg",
+   "darkLogoUrl": null,
+   "providerColorTo": "#0052D9",
+   "providerName": "Tencent",
+   "gradientStyle": "linear-gradient(to right, #8FB8FF, #0052D9)",
+   "release_date": "",
+   "n_samples": 960
+  },
+  {
+   "model_name": "Inkling 2 Small",
+   "model_id": "inkling-small-1102-rc17",
+   "score": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 46.8
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 60.9
+    }
+   },
+   "error": {
+    "pass-1": {
+     "loop_truncated_tools_agent": 5.1
+    },
+    "mean-score": {
+     "loop_truncated_tools_agent": 4.4
+    }
+   },
+   "company": "thinking-machines",
+   "logoUrl": "https://cdn.sanity.io/images/h6s14f4z/production/16834b49720d8d9d9cb700a60aa11689ec4bc27a-20x20.svg",
+   "darkLogoUrl": null,
+   "providerColorTo": "#A19696",
+   "providerName": "Thinking Machines",
+   "gradientStyle": "linear-gradient(to right, #D4CECE, #A19696)",
+   "release_date": "",
+   "n_samples": 956
   }
  ],
  "domains": [

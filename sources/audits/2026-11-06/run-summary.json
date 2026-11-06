@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-06",
+  "baseline_commit": "d1da06771e271329bbb484e7f44b591292cf8daf",
+  "tables": 166,
+  "rows": 4519,
+  "models": 527,
+  "categories": {
+    "coding": 50,
+    "computer-use": 22,
+    "general": 5,
+    "long-horizon": 7,
+    "research": 9,
+    "security": 13,
+    "terminal": 5,
+    "tool-use": 32,
+    "web": 23
+  },
+  "status_counts": {
+    "changed": 6,
+    "unchanged": 159,
+    "failed": 1
+  },
+  "changed": [
+    "apex-agents",
+    "apex-agents-corporate-lawyer",
+    "apex-agents-investment-banking",
+    "apex-agents-management-consultant",
+    "gaia",
+    "mcp-atlas"
+  ],
+  "fetch_failure_preserved": [
+    "assistantbench"
+  ],
+  "new_models": [
+    "hy4",
+    "inkling-2-small"
+  ],
+  "change_note": "APEX overall adds Hy4 and Inkling 2 Small; three domains add Hy4. MCP Atlas adds Gemini-4-Argon, Opus 5.5, Inkling Small 2. GAIA top100 tie selection changed. Existing normalization retained. Web/computer and coding/terminal unchanged. AssistantBench 503 retains prior good data and retrieval date. Supplemental obsolete/support routes documented independently. Vending and SWE Marathon current frontend parsing verified unchanged.",
+  "no_paid_evaluation": true,
+  "no_code_ui_workflow_changes": true
+}
