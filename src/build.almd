@@ -115,6 +115,25 @@ fn check_row(row: Value, i: Int, retrieved: String, at: String) -> List[Problem]
 fn row_dates(rows: List[Value]) -> List[String] =
   list.filter_map(rows, (r) => text_of(r, "date"))
 
+// Refresh health is independent of the date of the stored measurements.
+fn check_refresh(r: Value, retrieved: String, at: String) -> List[Problem] = {
+  var out = required_text(r, ["status", "checked", "reason_ja", "audit"], at)
+  let status = text_of(r, "status") ?? ""
+  if not list.contains(["current", "unavailable", "review_required"], status) then list.push(out, problem(at, "refresh.status が不正"))
+  let checked = text_of(r, "checked") ?? ""
+  if not regex.is_match(regex.new("^[0-9]{4}-[0-9]{2}-[0-9]{2}$"), checked) then list.push(out, problem(at, "refresh.checked は YYYY-MM-DD"))
+  if checked < retrieved then list.push(out, problem(at, "状態確認日が保存データの取得日より前"))
+  out = out + nullable(r, "last_successful_check", "date", at)
+  out = out + nullable(r, "runtime_stage", "text", at)
+  let success = text_of(r, "last_successful_check") ?? ""
+  if success != "" and not regex.is_match(regex.new("^[0-9]{4}-[0-9]{2}-[0-9]{2}$"), success) then list.push(out, problem(at, "refresh.last_successful_check は YYYY-MM-DD か null"))
+  if success != "" and (success < retrieved or success > checked) then list.push(out, problem(at, "成功確認日は取得日から状態確認日の間"))
+  if status == "current" and success != checked then list.push(out, problem(at, "current は今回の全行確認成功が必要"))
+  let audit = text_of(r, "audit") ?? ""
+  if not string.starts_with(audit, "sources/") or string.contains(audit, "..") then list.push(out, problem(at, "refresh.audit は sources/ 内の証拠ファイル"))
+  out
+}
+
 effect fn check_table(t: Value, stem: String) -> List[Problem] = {
   let at = "data/tables/" + stem + ".json"
   var out = required_text(t, ["id", "family", "name", "board", "category", "measures_ja", "harness_ja", "metric", "unit", "source", "retrieved", "snapshot"], at)
@@ -125,6 +144,25 @@ effect fn check_table(t: Value, stem: String) -> List[Problem] = {
   let source = text_of(t, "source") ?? ""
   if not is_link(source) then list.push(out, problem(at, "source がURLでない"))
   let retrieved = text_of(t, "retrieved") ?? ""
+  match value.get(t, "refresh") {
+    some(r) => {
+      out = out + check_refresh(r, retrieved, at)
+      let audit = text_of(r, "audit") ?? ""
+      if not string.starts_with(audit, "sources/") or string.contains(audit, "..") then list.push(out, problem(at, "refresh.audit のパスが不正"))
+      else if not fs.exists(audit) then list.push(out, problem(at, "refresh.audit のファイルが無い"))
+      else {
+        match json.parse(fs.read_text(audit)!) {
+          ok(evidence) => {
+            if (text_of(evidence, "id") ?? "") != id then list.push(out, problem(at, "refresh.audit の表IDが違う"))
+            if (text_of(evidence, "checked") ?? "") != (text_of(r, "checked") ?? "") then list.push(out, problem(at, "refresh.audit の確認日が違う"))
+            if json.stringify(or_null(value.get(evidence, "refresh"))) != json.stringify(r) then list.push(out, problem(at, "refresh が監査記録と一致しない"))
+          },
+          err(_) => list.push(out, problem(at, "refresh.audit がJSONでない")),
+        }
+      }
+    },
+    none => if id == "assistantbench" then list.push(out, problem(at, "AssistantBench は状態確認の refresh が必要")),
+  }
   if not regex.is_match(regex.new(DATE), retrieved) then list.push(out, problem(at, "retrieved は YYYY-MM-DD"))
   let snapshot = text_of(t, "snapshot") ?? ""
   if snapshot != "" and not fs.exists(snapshot) then list.push(out, problem(at, "snapshot のファイルが無い: " + snapshot))
@@ -446,4 +484,28 @@ effect fn main() -> Unit = {
   ]
   fs.write_text("docs/data.json", json.stringify(value.object(bundle)))!
   println("docs/data.json を書いた")
+}
+
+
+test "refresh dates distinguish stored values from successful checks" {
+  let r = value.object([
+    ("status", value.string("unavailable")), ("checked", value.string("2026-11-07")),
+    ("last_successful_check", value.string("2026-10-09")), ("runtime_stage", value.string("RUNTIME_ERROR")),
+    ("reason_ja", value.string("保存データ")), ("audit", value.string("sources/assistantbench/checks/audit.json")),
+  ])
+  assert_eq(list.len(check_refresh(r, "2026-10-05", "test")), 0)
+  assert(list.len(check_refresh(r, "2026-11-08", "test")) > 0)
+}
+
+test "current requires a successful full check on the checked date" {
+  let r = value.object([
+    ("status", value.string("current")), ("checked", value.string("2026-11-07")),
+    ("last_successful_check", value.string("2026-10-09")), ("runtime_stage", value.string("RUNNING")),
+    ("reason_ja", value.string("確認")), ("audit", value.string("sources/assistantbench/checks/audit.json")),
+  ])
+  assert(list.len(check_refresh(r, "2026-10-05", "test")) > 0)
+}
+
+test "refresh rejects missing fields and unknown statuses" {
+  assert(list.len(check_refresh(value.object([]), "2026-10-05", "test")) > 0)
 }

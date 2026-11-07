@@ -71,6 +71,24 @@ almide run src/build.almd -- --strict
 
 誤りに気づいたら、あるいは載せるべきボードがあれば Issue か PR をください。
 
+## AssistantBench の取得状態
+
+公式test表の更新は、通常のデータ更新・bundle再生成の前に次を実行します。
+
+```bash
+python3 scripts/refresh_assistantbench.py
+almide run src/build.almd -- --strict
+```
+
+既存の `collect_webcomputer_*.py` も同じ状態確認を使います。そのキャッシュを使う場合は、他の抽出処理の**後**に `python3 scripts/refresh_assistantbench.py --cache <同じキャッシュディレクトリ>` を実行してください。日付付きの旧抽出レシピを現在の更新手順として単独実行しないでください。
+
+- まず公式Hugging Face SpaceのAPIで稼働状態を取得します。`RUNTIME_ERROR` などの障害中は `/config` を繰り返し取得せず、既存の行の保存値・元snapshot・取得日を保持します。画面には **「最新未確認・保存データ」** を表示します。
+- `checked` は状態確認日、`last_successful_check` は全行の最終成功照合日、`retrieved` は保存データを取得した日です。取得失敗を「変更なし」「最新確認済み」に数えません。
+- 復旧すると同じ公式 `/config` の全行を検証して取得を再開します。同じ値なら元snapshotと取得日を維持し、成功確認日だけ更新します。変更値は機械的に取り出して新しいsnapshotに保存します。
+- 比較条件は **公式test 181問・Accuracy (%)** のままです。HALのdev 33問やBrowserGymの結果に置き換えません。既存投稿の削除・改名、列構造、Space実装revision、新しいベースモデル表記などは自動採用せず `review_required`（終了コード2）で止めます。新しい表記・revisionは一次資料を確認してから規則とテストを更新します。
+- 状態と取得証拠は `sources/assistantbench/checks/` に保存します。障害記録は正常な確認結果として終了コード0ですが、画面の警告は残ります。過去の `data/gaps/` は履歴として残し、現在の状態は表の `refresh` を使います。
+- このコマンドは公開GETとローカルファイル更新のみです。既存の日次更新から呼び出すためのもので、新しいスケジュール、投稿、認証情報、push、merge、デプロイは行いません。
+
 ## ローカル実行費用（試算）
 
 「実行費用」タブ（`#/cost`）は、登録済みモデルから選んで、検証できた量子化ファイルのサイズ・KVキャッシュ・仮の実行余裕を積み上げる別の層です。戦闘力の一覧から各モデルへ移動できます。重みが非公開のモデルや未調査のモデルには値を捏造しません。

@@ -128,8 +128,9 @@ for id in [k for k in T if k.startswith('real-')]:
  assert len(records)==len(prev['models']) and all(x in prev['models'] for x in records),id
  assert len(computed)==len(prev['computed']) and all(x in prev['computed'] for x in computed),(id,computed)
  prev['models']=records;prev['computed']=computed;save(t,prev,[u,'https://www.realevals.xyz/_next/static/chunks/app/(main)/page-89fe682a64228531.js'],'Flattened all task-level records; selected version and tab, recomputed v1 pass as nonempty evalsPassed and empty evalsFailed; v2 pass as points>0; passed/tasks ×100 rounded to 1 decimal; all records and scores match')
-# AssistantBench current Gradio config contains full initialized board.
-t=T['assistantbench'];u='https://assistantbench-leaderboard.hf.space/config';data=next(x for x in obj(u)['components'] if x['type']=='dataframe')['props']['value'];prev=old(t);assert data['headers']==prev['headers'] and data['data']==prev['data'];save(t,data,[u],'Extracted initialized Gradio dataframe with all 184 numeric rows; full equality with prior test board')
+# AssistantBench has a health-gated current updater; do not overwrite its
+# rows or freshness from this historical baseline. Run it after this recipe.
+AUD.append({"id":"assistantbench","status":"managed-separately","method":"Run scripts/refresh_assistantbench.py after this legacy recipe"})
 # BearCubs published Typescript array is JSON, no runtime evaluation.
 t=T['bearcubs'];u=t['fetched'][0];s=txt(u);records=json.loads(s[s.index('['):s.rindex(']')+1]);prev=old(t);assert records==prev['ts_data'];save(t,{'ts_data':records},[u],'Parsed published Typescript JSON array; compared every numeric field and row')
 # Google Sheets: main board rows, subset/human sections kept out of normalization.

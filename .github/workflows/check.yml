@@ -31,6 +31,8 @@ jobs:
       # does not know cannot slip into the matrix unnamed.
       - name: Fit tests
         run: .ci/almide/target/release/almide test src/fit.almd
+      - name: Source freshness schema tests
+        run: .ci/almide/target/release/almide test src/build.almd
       - name: Check data and rebuild the bundle
         run: .ci/almide/target/release/almide run src/build.almd -- --strict
       # The page serves the committed bundle, so it must be the one the data builds.
@@ -54,11 +56,21 @@ jobs:
         run: npx playwright install --with-deps chromium
       - name: Browser smoke and responsive screenshots
         run: node scripts/check_cost_browser.mjs
+      - name: Source freshness browser regression and responsive screenshots
+        run: node scripts/check_source_status_browser.mjs
       - name: Preserve browser QA screenshots
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
           name: cost-browser-qa
           path: .qa/cost/*.png
+          if-no-files-found: ignore
+          retention-days: 7
+      - name: Preserve source freshness browser QA screenshots
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: source-status-browser-qa
+          path: .qa/source-status/*.png
           if-no-files-found: ignore
           retention-days: 7
