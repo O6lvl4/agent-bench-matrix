@@ -5,6 +5,7 @@ python scripts/collect_webcomputer_20261005.py --cache /tmp/abm-webcomputer-fetc
 python scripts/refresh_webcomputer_20261005.py --cache /tmp/abm-webcomputer-fetch
 """
 import argparse,concurrent.futures,hashlib,json,pathlib,subprocess,urllib.request,urllib.error
+from refresh_assistantbench import CONFIG_URL, collect_to_cache
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 p=argparse.ArgumentParser();p.add_argument('--cache',default='/tmp/abm-webcomputer-fetch');P=pathlib.Path(p.parse_args().cache);P.mkdir(parents=True,exist_ok=True)
 BASE='ddbc61d';urls=set()
@@ -26,7 +27,10 @@ def fetch(u):
  except urllib.error.HTTPError as e:q={'status':e.code,'error':str(e)}
  except Exception as e:q={'error':str(e)}
  print(u,q.get('status'),q.get('bytes'),q.get('error'),flush=True);return u,q
-ix={}
+# Never repeatedly hit a known-broken Space. The canonical updater consumes
+# this health-gated cache after other legacy extraction recipes have run.
+urls.discard(CONFIG_URL)
+ix=collect_to_cache(P)
 with concurrent.futures.ThreadPoolExecutor(max_workers=12) as pool:ix.update(pool.map(fetch,sorted(urls)))
 u='https://huggingface.co/api/spaces/ServiceNow/browsergym-leaderboard';m=json.loads(pathlib.Path(ix[u]['path']).read_text());urls=['https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/resolve/'+m['sha']+'/'+x['rfilename'] for x in m['siblings'] if x['rfilename'].startswith('results/') and x['rfilename'].endswith('.json')]
 with concurrent.futures.ThreadPoolExecutor(max_workers=12) as pool:ix.update(pool.map(fetch,urls))

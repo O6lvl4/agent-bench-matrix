@@ -42,6 +42,26 @@ function link(url, text, cls) {
   return h("a", { href: url, target: "_blank", rel: "noopener noreferrer", class: cls }, text || url);
 }
 
+// Freshness belongs to the source table, not to a model or another board.
+function savedSource(t) {
+  return ["unavailable", "review_required"].includes(t.refresh?.status);
+}
+function sourceStatus(t, compact = false) {
+  const r = t.refresh;
+  if (!r) return null;
+  const saved = savedSource(t);
+  const dates = `保存データ取得 ${t.retrieved} ・ 最終成功確認 ${r.last_successful_check || "記録なし"} ・ 最終確認試行 ${r.checked}`;
+  if (compact) return h("span", {
+    class: "source-status-compact" + (saved ? " source-saved" : ""), title: dates,
+  }, saved ? "最新未確認・保存データ" : `最終成功確認 ${r.last_successful_check || "記録なし"}`);
+  return h("div", { class: "source-status" + (saved ? " source-saved" : ""), "data-source-table": t.id },
+    saved ? h("strong", {}, "最新未確認・保存データ") : null,
+    saved && r.reason_ja ? h("p", {}, r.reason_ja) : null,
+    h("p", { class: "source-dates" }, dates),
+    link(typeof r.audit === "string" && /^sources\/[a-zA-Z0-9_./-]+$/.test(r.audit) && !r.audit.split("/").includes("..")
+      ? `${REPO}/blob/main/${r.audit}` : null, "確認記録"));
+}
+
 // ── formatting ─────────────────────────────────────────────────────────────
 function fmtScore(v, unit) {
   if (typeof v !== "number" || !isFinite(v)) return "—";
@@ -334,7 +354,7 @@ function viewMatrix(main, _arg, params) {
             click: () => update({ sort: t.id === sort ? "" : t.id }),
             keydown: (e) => { if (e.key === "Enter") update({ sort: t.id === sort ? "" : t.id }); },
           },
-        }, t.name, " ", h("small", {}, t.board))))),
+        }, t.name, " ", h("small", {}, t.board)), sourceStatus(t, true)))),
   );
 
   const tbody = h("tbody", {}, models.map((x) => h("tr", {},
@@ -376,7 +396,7 @@ function viewMatrix(main, _arg, params) {
       return h("td", { style: `background: color-mix(in srgb, var(--heat) ${pct}%, transparent)` },
         h("button", {
           type: "button",
-          title: `${modelName(x.id)} / ${t.name}: ${fmtScore(r.score, t.unit)} ${unitLabel(t.unit)}(${r.system})`,
+          title: `${savedSource(t) ? "最新未確認・保存データ: " : ""}${modelName(x.id)} / ${t.name}: ${fmtScore(r.score, t.unit)} ${unitLabel(t.unit)}(${r.system})`,
           on: { click: () => openCell(x.id, t) },
         }, fmtScore(r.score, t.unit)));
     }))));
@@ -408,7 +428,7 @@ function openCell(modelId, t) {
   showDrawer(
     [h("h3", {}, modelName(modelId), " × ", t.name),
      h("p", {}, `${t.board} ・ ${t.metric}(${t.higher_is_better ? "高いほど良い" : "低いほど良い"})・ 取得 ${t.retrieved}`)],
-    [h("p", { class: "note" }, t.harness_ja),
+    [sourceStatus(t), h("p", { class: "note" }, t.harness_ja),
      cs.map((c) => claimEntry(t, c)),
      p ? h("div", { class: "entry" },
        h("div", { class: "score guess-text" }, (p.beyond ? (p.beyond === "above" ? "≳" : "≲") : "~") + fmtScore(p.value, t.unit), " ",
@@ -462,6 +482,7 @@ function viewBenchmarks(main) {
 function card(t) {
   return h("article", { class: "card" },
     h("h3", {}, h("a", { href: `#/table/${encodeURIComponent(t.id)}` }, t.name)),
+    sourceStatus(t),
     h("div", { class: "meta" },
       h("span", { class: "chip" }, t.board),
       h("span", { class: "chip" }, `${t.rows.length} 行`),
@@ -511,6 +532,7 @@ function viewTable(main, arg, params) {
     h("span", { class: "muted" }, `取得 ${t.retrieved}`),
     link(t.source, "リーダーボード"),
     link(`${REPO}/blob/main/${t.snapshot}`, "取得データ")));
+  if (t.refresh) main.append(sourceStatus(t));
   main.append(h("p", { class: "desc" }, t.measures_ja, " ", h("span", { class: "muted" }, t.harness_ja), t.notes_ja ? [" ", h("span", { class: "muted" }, t.notes_ja)] : null));
 
   const extraKeys = [...new Set(t.rows.flatMap((r) => Object.keys(r.score_extra || {})))];
@@ -675,7 +697,7 @@ function viewClaims(main) {
 // ── gaps ───────────────────────────────────────────────────────────────────
 function viewGaps(main) {
   const gaps = [...state.data.gaps].sort((a, b) => a.name.localeCompare(b.name));
-  main.append(h("p", { class: "note" }, "探したが、機械的に取得できる公開リーダーボードが見つからなかった表です。数字を推測で埋めない代わりに、無いことをここに残しています。"));
+  main.append(h("p", { class: "note" }, "機械的に取得できなかった表と、過去の取得失敗の記録です。各記録の日付時点の状態であり、保存済みの表がある場合は、その表の最新の確認状態も参照してください。数字を推測で埋めることはしません。"));
   if (!gaps.length) { main.append(h("p", { class: "empty" }, "ありません。")); return; }
   main.append(h("div", { class: "gaps" }, gaps.map((g) => h("article", { class: "gap" },
     h("h3", {}, g.name, h("span", { class: "muted", style: "font-weight:400" }, `  確認 ${g.retrieved}`)),

@@ -69,6 +69,31 @@
 | `rows[].verified` | ボード自身の検証マーク。ボードに無ければ `null` |
 | `rows[].open_source` | ボード自身がオープンと示している場合だけ `true`/`false`。推測しない |
 
+## 取得状態: 表の任意フィールド `refresh`
+
+AssistantBench公式test表では必須です。他の表は省略できます。保存データの日時と、取得を試みた日時を混同しないため、測定値から独立して持ちます。
+
+```json
+{
+  "status": "unavailable",
+  "checked": "2026-11-07",
+  "last_successful_check": "2026-10-09",
+  "runtime_stage": "RUNTIME_ERROR",
+  "reason_ja": "公式Spaceが起動できないため、保存データを表示しています。",
+  "audit": "sources/assistantbench/checks/<確認時刻>/audit.json"
+}
+```
+
+- `current`: 当日に同条件の全行を取得・検証済み。`last_successful_check` は `checked` と一致します。
+- `unavailable`: 公式データを取得できず、保存値を表示。取得成功・不変とは扱いません。
+- `review_required`: 取得形式・集合・正規化などに確認が必要。保存値を維持します。
+- `checked`: 状態を確認した日。`retrieved` を上書きするための日付ではありません。
+- `last_successful_check`: 同じ表の全行を最後に取得・照合できた日。不明なら `null`。
+- `runtime_stage`: 公式APIが返した稼働状態。不明なら `null`。
+- `audit`: 表ID・確認日・同じ `refresh` を含む監査JSON。ビルド時に一致と存在を検証します。
+
+障害と要確認のどちらも **「最新未確認・保存データ」** と表示します。値、並べ替え、モデル正規化、当てはめの条件を変えません。過去の取得失敗gapは履歴であり、現在の状態を決める情報ではありません。
+
 ## モデルIDの規則
 
 - 小文字。ベンダーが売っている名前とバージョンを、空白をハイフンにして並べる。
