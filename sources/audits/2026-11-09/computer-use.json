@@ -1,0 +1,344 @@
+{
+  "checked": "2026-11-09",
+  "tables": [
+    {
+      "id": "macagentbench",
+      "retrieved": "2026-11-09",
+      "status": "unchanged",
+      "old_rows": 30,
+      "rows": 30,
+      "method": "Parsed entire JSON artifact and compared every record/value with previous mechanically extracted snapshot",
+      "sources": [
+        {
+          "url": "https://jetastra.github.io/MacAgentBench/data/models/index.json",
+          "http_status": 200,
+          "bytes": 8538,
+          "sha256": "20d9e2f8ede68266a3e60f2f20c4ff5644a4bb06bd9a46af8688413c7b3ca9e0",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "venusbench-mobile",
+      "retrieved": "2026-11-09",
+      "status": "unchanged",
+      "old_rows": 11,
+      "rows": 11,
+      "method": "Parsed entire JSON artifact and compared every record/value with previous mechanically extracted snapshot",
+      "sources": [
+        {
+          "url": "https://ui-venus.github.io/VenusBench-Mobile-Leaderboard/results/venusbench-mobile.json",
+          "http_status": 200,
+          "bytes": 10426,
+          "sha256": "078ec9962b1ff73db9836f8f24ecf90cfd85598336219a41e660e4d0082cf9de",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "androidworld-mobileminiwob",
+      "retrieved": "2026-11-09",
+      "status": "unchanged",
+      "old_rows": 4,
+      "rows": 4,
+      "method": "Parsed all CSV cells; exact record/value equality with previous snapshot",
+      "sources": [
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo/export?format=csv&gid=1078963525",
+          "http_status": 200,
+          "bytes": 457,
+          "sha256": "d022affe1a8ec99cfc940bf645e85a089b2aa3afc123d59dafc3d8fa021c0b22",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "osuniverse",
+      "retrieved": "2026-11-09",
+      "status": "unchanged",
+      "old_rows": 8,
+      "rows": 8,
+      "method": "Extracted live HTML table; every row text, numeric cell and hyperlink matches previous snapshot",
+      "sources": [
+        {
+          "url": "https://agentsea.github.io/osuniverse/",
+          "http_status": 200,
+          "bytes": 22800,
+          "sha256": "15a1befde1c86308d65975b01495d0718e2598589994e8ffc83e585c1f0922b3",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "osworld-mcp",
+      "retrieved": "2026-11-09",
+      "status": "unchanged",
+      "old_rows": 22,
+      "rows": 22,
+      "method": "Extracted live HTML table; every row text, numeric cell and hyperlink matches previous snapshot",
+      "sources": [
+        {
+          "url": "https://osworld-mcp.github.io/",
+          "http_status": 200,
+          "bytes": 42986,
+          "sha256": "181cb1fa9d2c373fec67db088dfd380b52d4d323fa9cc380cc44b15e4ceaa4b4",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "cua-bench-eda-kicad",
+      "retrieved": "2026-11-09",
+      "status": "unchanged",
+      "old_rows": 10,
+      "rows": 10,
+      "method": "Extracted live HTML table; every row text, numeric cell and hyperlink matches previous snapshot",
+      "sources": [
+        {
+          "url": "https://cua.ai/cuabench/leaderboard",
+          "http_status": 200,
+          "bytes": 50286,
+          "sha256": "3afe29297024bc03c9419d177abcc59374efb6004c52e6d14241248abc8e5dae",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "mobileworld",
+      "retrieved": "2026-11-09",
+      "status": "unchanged",
+      "old_rows": 44,
+      "rows": 44,
+      "method": "Parsed all result records; retained reviewed normalization for exact old records; mechanically ingested new model and all numeric/configuration fields",
+      "sources": [
+        {
+          "url": "https://tongyi-mai.github.io/MobileWorld/leaderboard.json",
+          "http_status": 200,
+          "bytes": 21662,
+          "sha256": "f07125fe489072a6af54f8e7799c3c39e7901a614555cbd0f2596c260b41bb17",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "osworld-2-1-full-500steps",
+      "retrieved": "2026-11-09",
+      "status": "unchanged",
+      "old_rows": 7,
+      "rows": 7,
+      "method": "Compared every raw record within existing table release versions, step budget, dataset scope and modelType. Matching records unchanged; changes outside this table excluded.",
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "http_status": 200,
+          "bytes": 21228,
+          "sha256": "4cdcebeb33cd9c61cecfb275debc292326b48c209483d7da3ad66ee33d94b974",
+          "request_json": null
+        }
+      ],
+      "projection_conditions": {
+        "releaseVersions": [
+          "v2.1"
+        ],
+        "stepBudget": 500,
+        "datasetScope": "full",
+        "modelType": "e2e"
+      }
+    },
+    {
+      "id": "osworld-verified",
+      "retrieved": "2026-11-09",
+      "status": "unchanged",
+      "old_rows": 110,
+      "rows": 110,
+      "method": "Parsed every workbook sheet cell and compared all values (blank and absent cells equivalent); prior aggregation unchanged",
+      "sources": [
+        {
+          "url": "https://osworld-v1.xlang.ai/static/data/osworld_verified_results.xlsx",
+          "http_status": 200,
+          "bytes": 113066,
+          "sha256": "cf6b4b67eed566ddcd5a8b7ad2d89013157978dad0eea76ea12d2377471efc09",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "osworld-self-reported-a11y-tree",
+      "retrieved": "2026-11-09",
+      "status": "unchanged",
+      "old_rows": 15,
+      "rows": 15,
+      "method": "Parsed every workbook sheet cell and compared all values (blank and absent cells equivalent); prior aggregation unchanged",
+      "sources": [
+        {
+          "url": "https://osworld-v1.xlang.ai/static/data/self_reported_results.xlsx",
+          "http_status": 200,
+          "bytes": 24115,
+          "sha256": "3016a0665f7c4527f235cd72f2217d759461253c488ba03991f36ea44968f731",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "osworld-self-reported-screenshot-a11y-tree",
+      "retrieved": "2026-11-09",
+      "status": "unchanged",
+      "old_rows": 18,
+      "rows": 18,
+      "method": "Parsed every workbook sheet cell and compared all values (blank and absent cells equivalent); prior aggregation unchanged",
+      "sources": [
+        {
+          "url": "https://osworld-v1.xlang.ai/static/data/self_reported_results.xlsx",
+          "http_status": 200,
+          "bytes": 24115,
+          "sha256": "3016a0665f7c4527f235cd72f2217d759461253c488ba03991f36ea44968f731",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "osworld-self-reported-screenshot",
+      "retrieved": "2026-11-09",
+      "status": "unchanged",
+      "old_rows": 56,
+      "rows": 56,
+      "method": "Parsed every workbook sheet cell and compared all values (blank and absent cells equivalent); prior aggregation unchanged",
+      "sources": [
+        {
+          "url": "https://osworld-v1.xlang.ai/static/data/self_reported_results.xlsx",
+          "http_status": 200,
+          "bytes": 24115,
+          "sha256": "3016a0665f7c4527f235cd72f2217d759461253c488ba03991f36ea44968f731",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "osworld-self-reported-set-of-mark",
+      "retrieved": "2026-11-09",
+      "status": "unchanged",
+      "old_rows": 11,
+      "rows": 11,
+      "method": "Parsed every workbook sheet cell and compared all values (blank and absent cells equivalent); prior aggregation unchanged",
+      "sources": [
+        {
+          "url": "https://osworld-v1.xlang.ai/static/data/self_reported_results.xlsx",
+          "http_status": 200,
+          "bytes": 24115,
+          "sha256": "3016a0665f7c4527f235cd72f2217d759461253c488ba03991f36ea44968f731",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "androidworld",
+      "status": "unchanged",
+      "method": "Mechanically parsed all 48 rows; all fields identical except an ephemeral signed attachment URL, deliberately excluded from published provenance."
+    },
+    {
+      "id": "osworld-2-1-offline-500steps",
+      "status": "unchanged",
+      "method": "Compared every raw record within existing table release versions, step budget, dataset scope and modelType. Matching records unchanged; changes outside this table excluded.",
+      "projection_conditions": {
+        "releaseVersions": [
+          "v2.1"
+        ],
+        "stepBudget": 500,
+        "datasetScope": "offline",
+        "modelType": "e2e"
+      }
+    },
+    {
+      "id": "osworld-2-1-public-agents-full-450steps",
+      "status": "unchanged",
+      "method": "Compared every raw record within existing table release versions, step budget, dataset scope and modelType. Matching records unchanged; changes outside this table excluded.",
+      "projection_conditions": {
+        "releaseVersions": [
+          "v2.1"
+        ],
+        "stepBudget": 450,
+        "datasetScope": "full",
+        "modelType": "agent"
+      }
+    },
+    {
+      "id": "osworld-2-1-public-agents-full-500steps",
+      "status": "unchanged",
+      "method": "Compared every raw record within existing table release versions, step budget, dataset scope and modelType. Matching records unchanged; changes outside this table excluded.",
+      "projection_conditions": {
+        "releaseVersions": [
+          "v2.1"
+        ],
+        "stepBudget": 500,
+        "datasetScope": "full",
+        "modelType": "agent"
+      }
+    },
+    {
+      "id": "osworld-2-full-150steps",
+      "status": "unchanged",
+      "method": "Compared every raw record within existing table release versions, step budget, dataset scope and modelType. Matching records unchanged; changes outside this table excluded.",
+      "projection_conditions": {
+        "releaseVersions": [
+          "v2026.06.24"
+        ],
+        "stepBudget": 150,
+        "datasetScope": "full",
+        "modelType": "e2e"
+      }
+    },
+    {
+      "id": "osworld-2-full-300steps",
+      "status": "unchanged",
+      "method": "Compared every raw record within existing table release versions, step budget, dataset scope and modelType. Matching records unchanged; changes outside this table excluded.",
+      "projection_conditions": {
+        "releaseVersions": [
+          "v2026.06.24"
+        ],
+        "stepBudget": 300,
+        "datasetScope": "full",
+        "modelType": "e2e"
+      }
+    },
+    {
+      "id": "osworld-2-full-500steps",
+      "status": "unchanged",
+      "method": "Compared every raw record within existing table release versions, step budget, dataset scope and modelType. Matching records unchanged; changes outside this table excluded.",
+      "projection_conditions": {
+        "releaseVersions": [
+          "v2026.06.24",
+          "v2026.08.08"
+        ],
+        "stepBudget": 500,
+        "datasetScope": "full",
+        "modelType": "e2e"
+      }
+    },
+    {
+      "id": "osworld-2-offline-500steps",
+      "status": "unchanged",
+      "method": "Compared every raw record within existing table release versions, step budget, dataset scope and modelType. Matching records unchanged; changes outside this table excluded.",
+      "projection_conditions": {
+        "releaseVersions": [
+          "v2026.08.08"
+        ],
+        "stepBudget": 500,
+        "datasetScope": "offline",
+        "modelType": "e2e"
+      }
+    },
+    {
+      "id": "osworld-2-public-agents-full-450steps",
+      "status": "unchanged",
+      "method": "Compared every raw record within existing table release versions, step budget, dataset scope and modelType. Matching records unchanged; changes outside this table excluded.",
+      "projection_conditions": {
+        "releaseVersions": [
+          "v2026.08.08"
+        ],
+        "stepBudget": 450,
+        "datasetScope": "full",
+        "modelType": "agent"
+      }
+    }
+  ]
+}
