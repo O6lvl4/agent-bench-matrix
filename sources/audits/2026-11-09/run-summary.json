@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-09",
+  "baseline_commit": "fb4c3b8feb66ef22dd2eab0ba95bd6c55ba769fa",
+  "tables": 166,
+  "rows": 4519,
+  "models": 527,
+  "categories": {
+    "coding": 50,
+    "computer-use": 22,
+    "general": 5,
+    "long-horizon": 7,
+    "research": 9,
+    "security": 13,
+    "terminal": 5,
+    "tool-use": 32,
+    "web": 23
+  },
+  "status_counts": {
+    "changed": 1,
+    "unchanged": 161,
+    "unavailable": 1,
+    "review_required": 3
+  },
+  "changed": [
+    "gaia"
+  ],
+  "unavailable": [
+    "assistantbench"
+  ],
+  "review_required": [
+    "swe-marathon-v1-1",
+    "vending-bench",
+    "vending-bench-2"
+  ],
+  "new_models": [],
+  "change_note": "GAIA official top100 tie-band selection changed three entries and 91 retained rank fields; retained scores are unchanged. AssistantBench official Space RUNTIME_ERROR preserves 184 rows and last successful check 2026-10-09. Three long-horizon sources require current display/JS parsing review; saved values and retrieval dates preserved. Tau voice v2 eleven complete packages retrieved through correct URLs, kept separate from legacy voice tables.",
+  "no_paid_evaluation": true,
+  "no_code_ui_workflow_changes": true
+}

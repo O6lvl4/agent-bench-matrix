@@ -1,0 +1,21 @@
+{
+  "id": "research-horizon-refresh",
+  "name": "Research / long-horizon source format review required",
+  "retrieved": "2026-11-09",
+  "affected_tables": [
+    "swe-marathon-v1-1",
+    "vending-bench",
+    "vending-bench-2"
+  ],
+  "tried": [
+    "https://www.swe-marathon.org/",
+    "https://www.swe-marathon.org/assets/index-Dsh1_CSb.js",
+    "https://andonlabs.com/evals/vending-bench",
+    "https://andonlabs.com/_app/immutable/nodes/26.zOFxseIK.js",
+    "https://andonlabs.com/evals/vending-bench-2",
+    "https://andonlabs.com/_app/immutable/nodes/27.DfnfhcbM.js",
+    "https://andonlabs.com/_app/immutable/chunks/CdFT7FVG.js",
+    "https://andonlabs.com/_app/immutable/chunks/3sxjRzhT.js"
+  ],
+  "reason_ja": "SWE Marathon v1.1は現行JSの表示フィルタが既存抽出器の前提と一致せず、比較条件の再確認が必要。Vending Bench 1/2は公式ページ取得成功だが既知JSが404で現行ページの資産構造も変化。既存スコア・snapshot・最終成功取得日を保持し、最新確認済みとは扱わない。"
+}

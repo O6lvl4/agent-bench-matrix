@@ -2,14 +2,16 @@
  "id": "tau-voice-v2",
  "name": "τ-bench voice v2 (new manifest groups)",
  "tried": [
-  "https://taubench.com/",
-  "https://taubench.com/assets/index-Bds3jOxa.js",
   "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1_openai_2026-10-20/benchmark-metadata.json",
   "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1_openai_2026-10-20/benchmark-submission.json",
   "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-10-20/benchmark-metadata.json",
   "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-voice-think-fast-2-0_xai_2026-10-20/benchmark-submission.json",
   "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-8-live-extended-thinking_google_2026-10-07/benchmark-metadata.json",
   "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-8-live-extended-thinking_google_2026-10-07/benchmark-submission.json",
+  "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/ava-zero_avartha_2026-10-27/benchmark-metadata.json",
+  "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/ava-zero_avartha_2026-10-27/benchmark-submission.json",
+  "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/phonic-1_phonic_2026-10-29/benchmark-metadata.json",
+  "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/phonic-1_phonic_2026-10-29/benchmark-submission.json",
   "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1_openai_2026-10-20_banking/benchmark-metadata.json",
   "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1_openai_2026-10-20_banking/benchmark-submission.json",
   "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-live-1_openai_2026-10-20_entity/benchmark-metadata.json",
@@ -23,6 +25,6 @@
   "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-8-live-extended-thinking_google_2026-10-07_entity/benchmark-metadata.json",
   "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-3-8-live-extended-thinking_google_2026-10-07_entity/benchmark-submission.json"
  ],
- "reason_ja": "現行JavaScriptから正しいbenchmark-metadata.json／benchmark-submission.json経路を確認し、3モデル×総合・banking・entityの9パッケージ18原データを取得。全9件でsummary.complete=trueを確認。voice-v2は6言語など旧voice v1と評価枠が異なるため既存表へ混在させない。版・revision・試行・集計値をsources/audits/2026-10-25/tau-voice-v2-extract.jsonに保存したが、新版の独立表・条件定義は未整備のため未採録。旧経路の404は取得不能ではなく経路変更だった。",
- "retrieved": "2026-10-25"
+ "reason_ja": "公式manifestのvoice-v2総合5件・domain別6件について、正しいbenchmark-metadata.json／benchmark-submission.jsonの22原データを取得。旧submission.json経路の404は経路変更によるもので、取得不能ではない。voice-v2は旧voice v1と評価枠が異なるため既存表へ混在させない。版・revision・試行・集計値・完全性表示をsources/audits/2026-11-09/tau-voice-v2-extract.jsonに保存したが、新版の独立表・条件定義は未整備のため未採録。",
+ "retrieved": "2026-11-09"
 }
