@@ -15,12 +15,12 @@
  "fetched": [
   "https://labs.scale.com/leaderboard/mcp_atlas"
  ],
- "retrieved": "2026-11-06",
+ "retrieved": "2026-11-11",
  "newest_row_date": "2026-11-06",
- "snapshot": "sources/mcp-atlas/leaderboard_entries.json",
+ "snapshot": "sources/mcp-atlas/leaderboard_entries_2026-11-11.json",
  "paper": "https://arxiv.org/abs/2602.00933",
  "repo": "https://github.com/scaleapi/mcp-atlas",
- "notes_ja": "rank は現行RSCデータの値(1〜34)を転記。ページが読み込む共通レンダラーも entry.rank を直接表示する。一方、ページ脚注は信頼区間上限による「Rank (UB)」の説明のままで、現行データの連番順位と一致しない。± は ci_plus_minus。date は掲載データの createdAt(登録日)。2026年4月に採点方法を更新し全モデルを再採点したとページに記載。ページ上部の「83.6% Top Pass Rate」は表の最高値(88.1)と食い違う。",
+ "notes_ja": "rank は公式RSCデータの entry.rank をそのまま転記し、ページ脚注の「Rank (UB)」式から独自に再計算していない。± は ci_plus_minus。date は掲載データの createdAt(登録日)。2026年4月に採点方法を更新し全モデルを再採点したとページに記載。スコアは各 entry.score を採用し、ページ上部の「Top Pass Rate」の概要値から補完・置換しない。",
  "rows": [
   {
    "rank": 1,
@@ -87,90 +87,6 @@
   },
   {
    "rank": 4,
-   "system": "Opus 5.5",
-   "agent": null,
-   "model_raw": [
-    "Opus 5.5"
-   ],
-   "model_ids": [
-    "claude-opus-5.5"
-   ],
-   "model_config": null,
-   "score": 85.4,
-   "score_extra": {
-    "ci_plus_minus": 2.2
-   },
-   "date": "2026-11-05",
-   "verified": null,
-   "open_source": null,
-   "org": "anthropic",
-   "row_url": null
-  },
-  {
-   "rank": 5,
-   "system": "Gemini 3.5 Flash (high)",
-   "agent": null,
-   "model_raw": [
-    "Gemini 3.5 Flash (high)"
-   ],
-   "model_ids": [
-    "gemini-3.5-flash"
-   ],
-   "model_config": "high",
-   "score": 83.6,
-   "score_extra": {
-    "ci_plus_minus": 2.3
-   },
-   "date": "2026-05-19",
-   "verified": null,
-   "open_source": null,
-   "org": "google",
-   "row_url": null
-  },
-  {
-   "rank": 6,
-   "system": "Qwen3.8-2.4T-A95B (xHigh)",
-   "agent": null,
-   "model_raw": [
-    "Qwen3.8-2.4T-A95B (xHigh)"
-   ],
-   "model_ids": [
-    "qwen3.8-2.4t-a95b"
-   ],
-   "model_config": "xHigh",
-   "score": 84.5,
-   "score_extra": {
-    "ci_plus_minus": 2.25
-   },
-   "date": "2026-09-17",
-   "verified": null,
-   "open_source": null,
-   "org": "alibaba",
-   "row_url": null
-  },
-  {
-   "rank": 7,
-   "system": "GLM 5.3",
-   "agent": null,
-   "model_raw": [
-    "GLM 5.3"
-   ],
-   "model_ids": [
-    "glm-5.3"
-   ],
-   "model_config": null,
-   "score": 84.2,
-   "score_extra": {
-    "ci_plus_minus": 2.15
-   },
-   "date": "2026-09-17",
-   "verified": null,
-   "open_source": null,
-   "org": "zai",
-   "row_url": null
-  },
-  {
-   "rank": 8,
    "system": "claude-opus-5 (xhigh)",
    "agent": null,
    "model_raw": [
@@ -191,11 +107,32 @@
    "row_url": null
   },
   {
-   "rank": 9,
-   "system": "Inkling Small 2 ",
+   "rank": 5,
+   "system": "Opus 5.5",
    "agent": null,
    "model_raw": [
-    "Inkling Small 2 "
+    "Opus 5.5"
+   ],
+   "model_ids": [
+    "claude-opus-5.5"
+   ],
+   "model_config": null,
+   "score": 85.4,
+   "score_extra": {
+    "ci_plus_minus": 2.2
+   },
+   "date": "2026-11-05",
+   "verified": null,
+   "open_source": null,
+   "org": "anthropic",
+   "row_url": null
+  },
+  {
+   "rank": 6,
+   "system": "Inkling 2 Small",
+   "agent": null,
+   "model_raw": [
+    "Inkling 2 Small"
    ],
    "model_ids": [
     "inkling-2-small"
@@ -212,7 +149,70 @@
    "row_url": null
   },
   {
+   "rank": 7,
+   "system": "Qwen3.8-2.4T-A95B (xHigh)",
+   "agent": null,
+   "model_raw": [
+    "Qwen3.8-2.4T-A95B (xHigh)"
+   ],
+   "model_ids": [
+    "qwen3.8-2.4t-a95b"
+   ],
+   "model_config": "xHigh",
+   "score": 84.5,
+   "score_extra": {
+    "ci_plus_minus": 2.25
+   },
+   "date": "2026-09-17",
+   "verified": null,
+   "open_source": null,
+   "org": "alibaba",
+   "row_url": null
+  },
+  {
+   "rank": 8,
+   "system": "GLM 5.3",
+   "agent": null,
+   "model_raw": [
+    "GLM 5.3"
+   ],
+   "model_ids": [
+    "glm-5.3"
+   ],
+   "model_config": null,
+   "score": 84.2,
+   "score_extra": {
+    "ci_plus_minus": 2.15
+   },
+   "date": "2026-09-17",
+   "verified": null,
+   "open_source": null,
+   "org": "zai",
+   "row_url": null
+  },
+  {
    "rank": 9,
+   "system": "Gemini 3.5 Flash (high)",
+   "agent": null,
+   "model_raw": [
+    "Gemini 3.5 Flash (high)"
+   ],
+   "model_ids": [
+    "gemini-3.5-flash"
+   ],
+   "model_config": "high",
+   "score": 83.6,
+   "score_extra": {
+    "ci_plus_minus": 2.3
+   },
+   "date": "2026-05-19",
+   "verified": null,
+   "open_source": null,
+   "org": "google",
+   "row_url": null
+  },
+  {
+   "rank": 10,
    "system": "Claude Fable 5",
    "agent": null,
    "model_raw": [
@@ -233,7 +233,7 @@
    "row_url": null
   },
   {
-   "rank": 10,
+   "rank": 11,
    "system": "kimi-k3 (max)",
    "agent": null,
    "model_raw": [
@@ -254,7 +254,7 @@
    "row_url": null
   },
   {
-   "rank": 11,
+   "rank": 12,
    "system": "Muse Spark",
    "agent": null,
    "model_raw": [
@@ -275,7 +275,7 @@
    "row_url": null
   },
   {
-   "rank": 12,
+   "rank": 13,
    "system": "claude-opus-4-8 (max)",
    "agent": null,
    "model_raw": [
@@ -296,7 +296,7 @@
    "row_url": null
   },
   {
-   "rank": 13,
+   "rank": 14,
    "system": "gpt-5.6 (sol)",
    "agent": null,
    "model_raw": [
@@ -317,7 +317,7 @@
    "row_url": null
   },
   {
-   "rank": 14,
+   "rank": 15,
    "system": "Inkling-small",
    "agent": null,
    "model_raw": [
@@ -338,7 +338,7 @@
    "row_url": null
   },
   {
-   "rank": 15,
+   "rank": 16,
    "system": "claude-opus-4-7 (max)",
    "agent": null,
    "model_raw": [
@@ -359,7 +359,7 @@
    "row_url": null
   },
   {
-   "rank": 16,
+   "rank": 17,
    "system": "gemini-3.1-pro-preview (high)",
    "agent": null,
    "model_raw": [
@@ -380,7 +380,7 @@
    "row_url": null
   },
   {
-   "rank": 17,
+   "rank": 18,
    "system": "glm-5p2",
    "agent": null,
    "model_raw": [
@@ -401,7 +401,7 @@
    "row_url": null
   },
   {
-   "rank": 18,
+   "rank": 19,
    "system": "claude-opus-4-6 (max)",
    "agent": null,
    "model_raw": [
@@ -422,7 +422,7 @@
    "row_url": null
   },
   {
-   "rank": 19,
+   "rank": 20,
    "system": "Inkling (xHigh)",
    "agent": null,
    "model_raw": [
@@ -443,7 +443,7 @@
    "row_url": null
   },
   {
-   "rank": 20,
+   "rank": 21,
    "system": "glm-5p1",
    "agent": null,
    "model_raw": [
@@ -464,7 +464,7 @@
    "row_url": null
   },
   {
-   "rank": 21,
+   "rank": 22,
    "system": "gpt-5.5 (xhigh)",
    "agent": null,
    "model_raw": [
@@ -485,7 +485,7 @@
    "row_url": null
   },
   {
-   "rank": 22,
+   "rank": 23,
    "system": "gpt-5.4 (xhigh)",
    "agent": null,
    "model_raw": [
@@ -506,7 +506,7 @@
    "row_url": null
   },
   {
-   "rank": 23,
+   "rank": 24,
    "system": "gemini-3-pro-preview",
    "agent": null,
    "model_raw": [
@@ -527,7 +527,7 @@
    "row_url": null
   },
   {
-   "rank": 24,
+   "rank": 25,
    "system": "claude-opus-4-5 (high)",
    "agent": null,
    "model_raw": [
@@ -548,7 +548,7 @@
    "row_url": null
   },
   {
-   "rank": 25,
+   "rank": 26,
    "system": "claude-sonnet-4-6",
    "agent": null,
    "model_raw": [
@@ -569,7 +569,7 @@
    "row_url": null
   },
   {
-   "rank": 26,
+   "rank": 27,
    "system": "gpt-5.2 (xhigh)",
    "agent": null,
    "model_raw": [
@@ -590,7 +590,7 @@
    "row_url": null
   },
   {
-   "rank": 27,
+   "rank": 28,
    "system": "kimi-k2p5",
    "agent": null,
    "model_raw": [
@@ -611,7 +611,7 @@
    "row_url": null
   },
   {
-   "rank": 28,
+   "rank": 29,
    "system": "Nemotron 3 Ultra (thinking)",
    "agent": null,
    "model_raw": [
@@ -632,7 +632,7 @@
    "row_url": null
   },
   {
-   "rank": 29,
+   "rank": 30,
    "system": "gemini-3-flash-preview",
    "agent": null,
    "model_raw": [
@@ -653,7 +653,7 @@
    "row_url": null
   },
   {
-   "rank": 30,
+   "rank": 31,
    "system": "claude-sonnet-4-5 (thinking)",
    "agent": null,
    "model_raw": [
@@ -674,7 +674,7 @@
    "row_url": null
   },
   {
-   "rank": 31,
+   "rank": 32,
    "system": "glm-4p7",
    "agent": null,
    "model_raw": [
@@ -695,7 +695,7 @@
    "row_url": null
   },
   {
-   "rank": 32,
+   "rank": 33,
    "system": "gemini-3.1-flash-lite (high)",
    "agent": null,
    "model_raw": [
@@ -716,7 +716,7 @@
    "row_url": null
   },
   {
-   "rank": 33,
+   "rank": 34,
    "system": "gpt-5.4-mini (xhigh)",
    "agent": null,
    "model_raw": [
@@ -737,7 +737,7 @@
    "row_url": null
   },
   {
-   "rank": 34,
+   "rank": 35,
    "system": "gpt-5.1 (high)",
    "agent": null,
    "model_raw": [
@@ -758,7 +758,7 @@
    "row_url": null
   },
   {
-   "rank": 35,
+   "rank": 36,
    "system": "o3-pro",
    "agent": null,
    "model_raw": [
@@ -779,7 +779,7 @@
    "row_url": null
   },
   {
-   "rank": 36,
+   "rank": 37,
    "system": "claude-haiku-4-5",
    "agent": null,
    "model_raw": [
