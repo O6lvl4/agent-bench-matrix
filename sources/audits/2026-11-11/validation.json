@@ -1,0 +1,37 @@
+{
+  "checked": "2026-11-11",
+  "compiler_commit": "39f128a2d6af0cfc327d27913453e7af99c143fc",
+  "rust": "1.97.0",
+  "local_checks": {
+    "fit_tests": {
+      "passed": 4
+    },
+    "source_freshness_schema_tests": {
+      "passed": 3
+    },
+    "strict_build": {
+      "passed": true,
+      "tables": 166,
+      "rows": 4547,
+      "models": 530,
+      "unknown_model_ids": 0
+    },
+    "repeat_bundle_sha256_match": true,
+    "python_regression_tests": {
+      "passed": 33
+    },
+    "javascript_regression_tests": {
+      "passed": 12
+    },
+    "cost_projection_unchanged": true,
+    "cost_schema_check": true,
+    "diff_whitespace": true,
+    "all_table_audit_coverage": 166
+  },
+  "bundle_sha256": "9155548dbc044b2b38bfc82d9dd72dc143cd23bf33da9d0482656bf58348ea1d",
+  "local_browser_checks": {
+    "status": "blocked",
+    "reason": "Pinned browser CDN archive invalid; installed Chromium launch is blocked by the local Unix-socket sandbox. Existing browser gates must pass in unchanged GitHub CI before merge."
+  },
+  "publication_checks": "Pending PR CI and separate Pages deployment; not claimed successful in this pre-publication audit."
+}

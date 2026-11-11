@@ -17,9 +17,9 @@
     "https://www.cybergym.io/cybergym/",
     "https://www.cybergym.io/assets/js/leaderboard.js"
   ],
-  "retrieved": "2026-10-30",
-  "newest_row_date": "2026-10-16",
-  "snapshot": "sources/cybergym-agent-focused/cybergym.json",
+  "retrieved": "2026-11-11",
+  "newest_row_date": "2026-10-18",
+  "snapshot": "sources/cybergym-agent-focused/cybergym-2026-11-11.json",
   "paper": "https://arxiv.org/abs/2506.02548",
   "repo": "https://github.com/sunblaze-ucb/cybergym",
   "notes_ja": "ボードの Type フィルタで分けた表(trials=1 かつ hidden ではない行、dynamic と test-time mem. の両方を含む)。90% を超える行はランダム順のカードとして表示され順位が無いため rank は null(score_extra.lead_card_unranked)。以前の版の結果(subRows)も rank null の行として入れた。score は score_10 を百分率にした値。通常の表の rank は、先頭に表示されるカード数を含めた順位。JiuXuan の旧 GLM-5.1 行は公式 subRows として保持し、新しい JT236B 行とは別モデル・別の足場条件の結果として扱う。",
@@ -71,6 +71,29 @@
       "open_source": null,
       "org": "Lyrie",
       "row_url": "https://lyrie.ai/cybergym"
+    },
+    {
+      "rank": null,
+      "system": "Crimson",
+      "agent": "Crimson",
+      "model_raw": [
+        "DeepSeek-V4.1-Flash"
+      ],
+      "model_ids": [
+        "deepseek-v4.1-flash"
+      ],
+      "model_config": null,
+      "score": 99.0,
+      "score_extra": {
+        "trials": 1,
+        "dynamic": true,
+        "lead_card_unranked": true
+      },
+      "date": "2026-09-18",
+      "verified": null,
+      "open_source": null,
+      "org": "Ansen",
+      "row_url": "https://github.com/ansenpent/crimson"
     },
     {
       "rank": null,
@@ -192,6 +215,30 @@
       "open_source": null,
       "org": "RO0T Lab",
       "row_url": "https://github.com/RO0TLab/RO0T-Agent/blob/main/README.md"
+    },
+    {
+      "rank": null,
+      "system": "elliot-v1",
+      "agent": "elliot-v1",
+      "model_raw": [
+        "elliot-rdt-v1"
+      ],
+      "model_ids": [
+        "elliot-rdt-v1"
+      ],
+      "model_config": null,
+      "score": 97.28,
+      "score_extra": {
+        "trials": 1,
+        "dynamic": true,
+        "test_time_memory": true,
+        "lead_card_unranked": true
+      },
+      "date": "2026-10-06",
+      "verified": null,
+      "open_source": null,
+      "org": "Elliot R&D",
+      "row_url": "https://github.com/elliot-rdt/cybergym-submission-elliot-ai-v1/"
     },
     {
       "rank": null,
@@ -405,6 +452,29 @@
     },
     {
       "rank": null,
+      "system": "TieYing (铁鹰)",
+      "agent": "TieYing (铁鹰)",
+      "model_raw": [
+        "GLM-5.3"
+      ],
+      "model_ids": [
+        "glm-5.3"
+      ],
+      "model_config": null,
+      "score": 96.35,
+      "score_extra": {
+        "trials": 1,
+        "dynamic": true,
+        "lead_card_unranked": true
+      },
+      "date": "2026-10-10",
+      "verified": null,
+      "open_source": null,
+      "org": "China Mobile",
+      "row_url": null
+    },
+    {
+      "rank": null,
       "system": "Panshi (磐石)",
       "agent": "Panshi (磐石)",
       "model_raw": [
@@ -522,6 +592,78 @@
       "open_source": null,
       "org": "Bybit",
       "row_url": "https://github.com/bybit-sec/cybergym"
+    },
+    {
+      "rank": null,
+      "system": "AWS Continuum",
+      "agent": "AWS Continuum",
+      "model_raw": [
+        "Claude Opus 5"
+      ],
+      "model_ids": [
+        "claude-opus-5"
+      ],
+      "model_config": null,
+      "score": 94.16,
+      "score_extra": {
+        "trials": 1,
+        "lead_card_unranked": true
+      },
+      "date": "2026-10-15",
+      "verified": null,
+      "open_source": null,
+      "org": "AWS",
+      "row_url": null
+    },
+    {
+      "rank": null,
+      "system": "Li-Argus",
+      "agent": "Li-Argus",
+      "model_raw": [
+        "DeepSeek-V4.1-Flash",
+        "GPT-5.6-Luna",
+        "GLM-5.3"
+      ],
+      "model_ids": [
+        "deepseek-v4.1-flash",
+        "gpt-5.6-luna",
+        "glm-5.3"
+      ],
+      "model_config": "Multi-model",
+      "score": 93.83,
+      "score_extra": {
+        "trials": 1,
+        "dynamic": true,
+        "lead_card_unranked": true
+      },
+      "date": "2026-10-18",
+      "verified": null,
+      "open_source": null,
+      "org": "Li Auto",
+      "row_url": "https://security.lixiang.com/blog/cybergem/"
+    },
+    {
+      "rank": null,
+      "system": "BladeSec Agent",
+      "agent": "BladeSec Agent",
+      "model_raw": [
+        "GLM-5.3"
+      ],
+      "model_ids": [
+        "glm-5.3"
+      ],
+      "model_config": null,
+      "score": 93.63,
+      "score_extra": {
+        "trials": 1,
+        "dynamic": true,
+        "lead_card_unranked": true
+      },
+      "date": "2026-10-09",
+      "verified": null,
+      "open_source": null,
+      "org": "BladeSec",
+      "row_url": "https://github.com/BladeSec-AI/cybergym-bladesec-agent"
     },
     {
       "rank": null,
@@ -901,6 +1043,29 @@
     },
     {
       "rank": null,
+      "system": "adversarial-patch-agent-v1",
+      "agent": "adversarial-patch-agent-v1",
+      "model_raw": [
+        "GLM-5.3"
+      ],
+      "model_ids": [
+        "glm-5.3"
+      ],
+      "model_config": null,
+      "score": 90.71,
+      "score_extra": {
+        "trials": 1,
+        "dynamic": true,
+        "lead_card_unranked": true
+      },
+      "date": "2026-10-12",
+      "verified": null,
+      "open_source": null,
+      "org": "Red Hat",
+      "row_url": "https://github.com/gx-ai-architect/CyberGym-Writeup"
+    },
+    {
+      "rank": null,
       "system": "HiAUDIT Agent",
       "agent": "HiAUDIT Agent",
       "model_raw": [
@@ -924,7 +1089,7 @@
       "row_url": "https://techfund.jp/en/media/cybergym"
     },
     {
-      "rank": 29,
+      "rank": 36,
       "system": "Crystalline",
       "agent": "Crystalline",
       "model_raw": [
@@ -946,7 +1111,7 @@
       "row_url": "https://github.com/synchopate/cybergym-logos"
     },
     {
-      "rank": 30,
+      "rank": 37,
       "system": "TriLane",
       "agent": "TriLane",
       "model_raw": [
@@ -968,7 +1133,7 @@
       "row_url": "https://github.com/xyun92/trilane/blob/main/docs/cybergym-submission-report.md"
     },
     {
-      "rank": 31,
+      "rank": 38,
       "system": "Gusion",
       "agent": "Gusion",
       "model_raw": [
@@ -989,7 +1154,7 @@
       "row_url": "https://github.com/EBWi11/Gusion/blob/add-level1-technical-report/README.md"
     },
     {
-      "rank": 32,
+      "rank": 39,
       "system": "RedbudAI",
       "agent": "RedbudAI",
       "model_raw": [
@@ -1012,7 +1177,7 @@
       "row_url": "https://redbud.tsinghua.edu.cn/posts/cybergym.html"
     },
     {
-      "rank": 33,
+      "rank": 40,
       "system": "Velldepth Agent",
       "agent": "Velldepth Agent",
       "model_raw": [
@@ -1033,7 +1198,7 @@
       "row_url": "https://alibaba-velldepth.github.io/writeups/"
     },
     {
-      "rank": 34,
+      "rank": 41,
       "system": "Xuanwu Atuin AI",
       "agent": "Xuanwu Atuin AI",
       "model_raw": [
@@ -1077,7 +1242,7 @@
       "row_url": "https://xlab.tencent.com/en/2026/07/02/xuanwu-atuin-cybergym/"
     },
     {
-      "rank": 35,
+      "rank": 42,
       "system": "MopMonk Agent",
       "agent": "MopMonk Agent",
       "model_raw": [
@@ -1098,7 +1263,7 @@
       "row_url": "https://github.com/MopMonkAI/MopMonkAgent"
     },
     {
-      "rank": 36,
+      "rank": 43,
       "system": "XD Agent",
       "agent": "XD Agent",
       "model_raw": [
@@ -1119,7 +1284,7 @@
       "row_url": "https://github.com/XDxAI/XD-Agent/blob/main/CyberGym_submission_XDagent.md"
     },
     {
-      "rank": 37,
+      "rank": 44,
       "system": "SageAgent",
       "agent": "SageAgent",
       "model_raw": [

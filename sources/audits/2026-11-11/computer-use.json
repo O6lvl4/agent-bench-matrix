@@ -1,0 +1,497 @@
+{
+  "checked": "2026-11-11",
+  "tables": [
+    {
+      "id": "androidworld",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows": 48,
+      "rows_changed": false,
+      "method": "Fresh full CSV SHA256 exactly matches the independently verified 2026-11-09 source. Every saved CSV cell matches after preserving existing omission of an ephemeral attachment link (row 15, column 12) and a contact email in the submission footer (row 55, column 2). No score, identity, rank, date, trial count, note, or durable link changes.",
+      "previous_audit": "sources/audits/2026-11-09/computer-use.json",
+      "sources": [
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo/export?format=csv&gid=0",
+          "status": 200,
+          "bytes": 9203,
+          "sha256": "fa55b5154926e6027efa02dda6a07d15e008b3e314adbc20d0980ce537aca8f0"
+        }
+      ]
+    },
+    {
+      "id": "androidworld-mobileminiwob",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows": 4,
+      "rows_changed": false,
+      "method": "Parsed all CSV cells; exact record/value equality with previous snapshot",
+      "sources": [
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo/export?format=csv&gid=1078963525",
+          "status": 200,
+          "bytes": 457,
+          "sha256": "d022affe1a8ec99cfc940bf645e85a089b2aa3afc123d59dafc3d8fa021c0b22",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "cua-bench-eda-kicad",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows": 10,
+      "rows_changed": false,
+      "method": "Extracted live HTML table; every row text, numeric cell and hyperlink matches previous snapshot",
+      "sources": [
+        {
+          "url": "https://cua.ai/cuabench/leaderboard",
+          "status": 200,
+          "bytes": 50286,
+          "sha256": "dc0c8475bd180a8d923d1769b3ac35784a5702f51d5e9bc1213f4f5e7c5cff99",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "macagentbench",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows": 30,
+      "rows_changed": false,
+      "method": "Parsed entire JSON artifact and compared every record/value with previous mechanically extracted snapshot",
+      "sources": [
+        {
+          "url": "https://jetastra.github.io/MacAgentBench/data/models/index.json",
+          "status": 200,
+          "bytes": 8538,
+          "sha256": "20d9e2f8ede68266a3e60f2f20c4ff5644a4bb06bd9a46af8688413c7b3ca9e0",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "mobileworld",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows": 44,
+      "rows_changed": false,
+      "method": "Parsed all result records; retained reviewed normalization for exact old records; mechanically ingested new model and all numeric/configuration fields",
+      "sources": [
+        {
+          "url": "https://tongyi-mai.github.io/MobileWorld/leaderboard.json",
+          "status": 200,
+          "bytes": 21662,
+          "sha256": "f07125fe489072a6af54f8e7799c3c39e7901a614555cbd0f2596c260b41bb17",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "osuniverse",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows": 8,
+      "rows_changed": false,
+      "method": "Extracted live HTML table; every row text, numeric cell and hyperlink matches previous snapshot",
+      "sources": [
+        {
+          "url": "https://agentsea.github.io/osuniverse/",
+          "status": 200,
+          "bytes": 22800,
+          "sha256": "15a1befde1c86308d65975b01495d0718e2598589994e8ffc83e585c1f0922b3",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "osworld-2-1-full-500steps",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows": 7,
+      "rows_changed": false,
+      "method": "Compared every raw record within exact existing release, step budget, dataset scope, and model type; separate release populations preserved.",
+      "projection_conditions": {
+        "releaseVersions": [
+          "v2.1"
+        ],
+        "stepBudget": 500,
+        "datasetScope": "full",
+        "modelType": "e2e"
+      },
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json?v=leaderboard-musespark-v10",
+          "status": 200,
+          "bytes": 21228,
+          "sha256": "4cdcebeb33cd9c61cecfb275debc292326b48c209483d7da3ad66ee33d94b974"
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-musespark-v10",
+          "status": 200,
+          "bytes": 18526,
+          "sha256": "4c425a9ae9edcdb4a9809e3b3ce6530c0c58e40e02d96e953b5cb773cb3dac63"
+        }
+      ]
+    },
+    {
+      "id": "osworld-2-1-offline-500steps",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows": 5,
+      "rows_changed": false,
+      "method": "Compared every raw record within exact existing release, step budget, dataset scope, and model type; separate release populations preserved.",
+      "projection_conditions": {
+        "releaseVersions": [
+          "v2.1"
+        ],
+        "stepBudget": 500,
+        "datasetScope": "offline",
+        "modelType": "e2e"
+      },
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "status": 200,
+          "bytes": 21228,
+          "sha256": "4cdcebeb33cd9c61cecfb275debc292326b48c209483d7da3ad66ee33d94b974"
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+          "status": 200,
+          "bytes": 18526,
+          "sha256": "4c425a9ae9edcdb4a9809e3b3ce6530c0c58e40e02d96e953b5cb773cb3dac63"
+        }
+      ]
+    },
+    {
+      "id": "osworld-2-1-public-agents-full-450steps",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows": 1,
+      "rows_changed": false,
+      "method": "Compared every raw record within exact existing release, step budget, dataset scope, and model type; separate release populations preserved.",
+      "projection_conditions": {
+        "releaseVersions": [
+          "v2.1"
+        ],
+        "stepBudget": 450,
+        "datasetScope": "full",
+        "modelType": "agent"
+      },
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json?v=leaderboard-musespark-v10",
+          "status": 200,
+          "bytes": 21228,
+          "sha256": "4cdcebeb33cd9c61cecfb275debc292326b48c209483d7da3ad66ee33d94b974"
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-musespark-v10",
+          "status": 200,
+          "bytes": 18526,
+          "sha256": "4c425a9ae9edcdb4a9809e3b3ce6530c0c58e40e02d96e953b5cb773cb3dac63"
+        }
+      ]
+    },
+    {
+      "id": "osworld-2-1-public-agents-full-500steps",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows": 1,
+      "rows_changed": false,
+      "method": "Compared every raw record within exact existing release, step budget, dataset scope, and model type; separate release populations preserved.",
+      "projection_conditions": {
+        "releaseVersions": [
+          "v2.1"
+        ],
+        "stepBudget": 500,
+        "datasetScope": "full",
+        "modelType": "agent"
+      },
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "status": 200,
+          "bytes": 21228,
+          "sha256": "4cdcebeb33cd9c61cecfb275debc292326b48c209483d7da3ad66ee33d94b974"
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+          "status": 200,
+          "bytes": 18526,
+          "sha256": "4c425a9ae9edcdb4a9809e3b3ce6530c0c58e40e02d96e953b5cb773cb3dac63"
+        }
+      ]
+    },
+    {
+      "id": "osworld-2-full-150steps",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows": 6,
+      "rows_changed": false,
+      "method": "Compared every raw record within exact existing release, step budget, dataset scope, and model type; separate release populations preserved.",
+      "projection_conditions": {
+        "releaseVersions": [
+          "v2026.06.24"
+        ],
+        "stepBudget": 150,
+        "datasetScope": "full",
+        "modelType": "e2e"
+      },
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "status": 200,
+          "bytes": 21228,
+          "sha256": "4cdcebeb33cd9c61cecfb275debc292326b48c209483d7da3ad66ee33d94b974"
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+          "status": 200,
+          "bytes": 18526,
+          "sha256": "4c425a9ae9edcdb4a9809e3b3ce6530c0c58e40e02d96e953b5cb773cb3dac63"
+        }
+      ]
+    },
+    {
+      "id": "osworld-2-full-300steps",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows": 7,
+      "rows_changed": false,
+      "method": "Compared every raw record within exact existing release, step budget, dataset scope, and model type; separate release populations preserved.",
+      "projection_conditions": {
+        "releaseVersions": [
+          "v2026.06.24"
+        ],
+        "stepBudget": 300,
+        "datasetScope": "full",
+        "modelType": "e2e"
+      },
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "status": 200,
+          "bytes": 21228,
+          "sha256": "4cdcebeb33cd9c61cecfb275debc292326b48c209483d7da3ad66ee33d94b974"
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+          "status": 200,
+          "bytes": 18526,
+          "sha256": "4c425a9ae9edcdb4a9809e3b3ce6530c0c58e40e02d96e953b5cb773cb3dac63"
+        }
+      ]
+    },
+    {
+      "id": "osworld-2-full-500steps",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows": 16,
+      "rows_changed": false,
+      "method": "Compared every raw record within exact existing release, step budget, dataset scope, and model type; separate release populations preserved.",
+      "projection_conditions": {
+        "releaseVersions": [
+          "v2026.06.24",
+          "v2026.08.08"
+        ],
+        "stepBudget": 500,
+        "datasetScope": "full",
+        "modelType": "e2e"
+      },
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "status": 200,
+          "bytes": 21228,
+          "sha256": "4cdcebeb33cd9c61cecfb275debc292326b48c209483d7da3ad66ee33d94b974"
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+          "status": 200,
+          "bytes": 18526,
+          "sha256": "4c425a9ae9edcdb4a9809e3b3ce6530c0c58e40e02d96e953b5cb773cb3dac63"
+        }
+      ]
+    },
+    {
+      "id": "osworld-2-offline-500steps",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows": 11,
+      "rows_changed": false,
+      "method": "Compared every raw record within exact existing release, step budget, dataset scope, and model type; separate release populations preserved.",
+      "projection_conditions": {
+        "releaseVersions": [
+          "v2026.08.08"
+        ],
+        "stepBudget": 500,
+        "datasetScope": "offline",
+        "modelType": "e2e"
+      },
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json",
+          "status": 200,
+          "bytes": 21228,
+          "sha256": "4cdcebeb33cd9c61cecfb275debc292326b48c209483d7da3ad66ee33d94b974"
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-v21-v1",
+          "status": 200,
+          "bytes": 18526,
+          "sha256": "4c425a9ae9edcdb4a9809e3b3ce6530c0c58e40e02d96e953b5cb773cb3dac63"
+        }
+      ]
+    },
+    {
+      "id": "osworld-2-public-agents-full-450steps",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows": 1,
+      "rows_changed": false,
+      "method": "Compared every raw record within exact existing release, step budget, dataset scope, and model type; separate release populations preserved.",
+      "projection_conditions": {
+        "releaseVersions": [
+          "v2026.08.08"
+        ],
+        "stepBudget": 450,
+        "datasetScope": "full",
+        "modelType": "agent"
+      },
+      "sources": [
+        {
+          "url": "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json?v=leaderboard-musespark-v10",
+          "status": 200,
+          "bytes": 21228,
+          "sha256": "4cdcebeb33cd9c61cecfb275debc292326b48c209483d7da3ad66ee33d94b974"
+        },
+        {
+          "url": "https://osworld-v2.xlang.ai/static/js/leaderboard.js?v=leaderboard-musespark-v10",
+          "status": 200,
+          "bytes": 18526,
+          "sha256": "4c425a9ae9edcdb4a9809e3b3ce6530c0c58e40e02d96e953b5cb773cb3dac63"
+        }
+      ]
+    },
+    {
+      "id": "osworld-mcp",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows": 22,
+      "rows_changed": false,
+      "method": "Extracted live HTML table; every row text, numeric cell and hyperlink matches previous snapshot",
+      "sources": [
+        {
+          "url": "https://osworld-mcp.github.io/",
+          "status": 200,
+          "bytes": 42986,
+          "sha256": "181cb1fa9d2c373fec67db088dfd380b52d4d323fa9cc380cc44b15e4ceaa4b4",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "osworld-self-reported-a11y-tree",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows": 15,
+      "rows_changed": false,
+      "method": "Parsed every workbook sheet cell and compared all values (blank and absent cells equivalent); prior aggregation unchanged",
+      "sources": [
+        {
+          "url": "https://osworld-v1.xlang.ai/static/data/self_reported_results.xlsx",
+          "status": 200,
+          "bytes": 24115,
+          "sha256": "3016a0665f7c4527f235cd72f2217d759461253c488ba03991f36ea44968f731",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "osworld-self-reported-screenshot",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows": 56,
+      "rows_changed": false,
+      "method": "Parsed every workbook sheet cell and compared all values (blank and absent cells equivalent); prior aggregation unchanged",
+      "sources": [
+        {
+          "url": "https://osworld-v1.xlang.ai/static/data/self_reported_results.xlsx",
+          "status": 200,
+          "bytes": 24115,
+          "sha256": "3016a0665f7c4527f235cd72f2217d759461253c488ba03991f36ea44968f731",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "osworld-self-reported-screenshot-a11y-tree",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows": 18,
+      "rows_changed": false,
+      "method": "Parsed every workbook sheet cell and compared all values (blank and absent cells equivalent); prior aggregation unchanged",
+      "sources": [
+        {
+          "url": "https://osworld-v1.xlang.ai/static/data/self_reported_results.xlsx",
+          "status": 200,
+          "bytes": 24115,
+          "sha256": "3016a0665f7c4527f235cd72f2217d759461253c488ba03991f36ea44968f731",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "osworld-self-reported-set-of-mark",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows": 11,
+      "rows_changed": false,
+      "method": "Parsed every workbook sheet cell and compared all values (blank and absent cells equivalent); prior aggregation unchanged",
+      "sources": [
+        {
+          "url": "https://osworld-v1.xlang.ai/static/data/self_reported_results.xlsx",
+          "status": 200,
+          "bytes": 24115,
+          "sha256": "3016a0665f7c4527f235cd72f2217d759461253c488ba03991f36ea44968f731",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "osworld-verified",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows": 110,
+      "rows_changed": false,
+      "method": "Parsed every workbook sheet cell and compared all values (blank and absent cells equivalent); prior aggregation unchanged",
+      "sources": [
+        {
+          "url": "https://osworld-v1.xlang.ai/static/data/osworld_verified_results.xlsx",
+          "status": 200,
+          "bytes": 113066,
+          "sha256": "cf6b4b67eed566ddcd5a8b7ad2d89013157978dad0eea76ea12d2377471efc09",
+          "request_json": null
+        }
+      ]
+    },
+    {
+      "id": "venusbench-mobile",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows": 11,
+      "rows_changed": false,
+      "method": "Parsed entire JSON artifact and compared every record/value with previous mechanically extracted snapshot",
+      "sources": [
+        {
+          "url": "https://ui-venus.github.io/VenusBench-Mobile-Leaderboard/results/venusbench-mobile.json",
+          "status": 200,
+          "bytes": 10426,
+          "sha256": "078ec9962b1ff73db9836f8f24ecf90cfd85598336219a41e660e4d0082cf9de",
+          "request_json": null
+        }
+      ]
+    }
+  ]
+}

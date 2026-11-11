@@ -1,0 +1,149 @@
+{
+  "date": "2026-11-11",
+  "baseline_commit": "96eaca0acf5d7b1cb77655ef9bb87cf5e7c0304f",
+  "tables": 166,
+  "rows": 4547,
+  "models": 530,
+  "categories": {
+    "coding": 50,
+    "computer-use": 22,
+    "general": 5,
+    "long-horizon": 7,
+    "research": 9,
+    "security": 13,
+    "terminal": 5,
+    "tool-use": 32,
+    "web": 23
+  },
+  "changed": [
+    "apex-agents",
+    "apex-agents-corporate-lawyer",
+    "apex-agents-investment-banking",
+    "apex-agents-management-consultant",
+    "cybergym-agent-focused",
+    "gaia",
+    "mcp-atlas",
+    "terminal-bench-4-0",
+    "vending-bench-2"
+  ],
+  "table_changes": [
+    {
+      "id": "apex-agents",
+      "category": "tool-use",
+      "rows_before": 70,
+      "rows_after": 72,
+      "rows_changed": true,
+      "source_data_changed": true,
+      "retrieved_before": "2026-11-06",
+      "retrieved_after": "2026-11-11"
+    },
+    {
+      "id": "apex-agents-corporate-lawyer",
+      "category": "tool-use",
+      "rows_before": 69,
+      "rows_after": 71,
+      "rows_changed": true,
+      "source_data_changed": true,
+      "retrieved_before": "2026-11-06",
+      "retrieved_after": "2026-11-11"
+    },
+    {
+      "id": "apex-agents-investment-banking",
+      "category": "tool-use",
+      "rows_before": 69,
+      "rows_after": 71,
+      "rows_changed": true,
+      "source_data_changed": true,
+      "retrieved_before": "2026-11-06",
+      "retrieved_after": "2026-11-11"
+    },
+    {
+      "id": "apex-agents-management-consultant",
+      "category": "tool-use",
+      "rows_before": 69,
+      "rows_after": 71,
+      "rows_changed": true,
+      "source_data_changed": true,
+      "retrieved_before": "2026-11-06",
+      "retrieved_after": "2026-11-11"
+    },
+    {
+      "id": "assistantbench",
+      "category": "web",
+      "rows_before": 184,
+      "rows_after": 184,
+      "rows_changed": false,
+      "source_data_changed": false,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05"
+    },
+    {
+      "id": "cybergym-agent-focused",
+      "category": "security",
+      "rows_before": 48,
+      "rows_after": 55,
+      "rows_changed": true,
+      "source_data_changed": true,
+      "retrieved_before": "2026-10-30",
+      "retrieved_after": "2026-11-11"
+    },
+    {
+      "id": "gaia",
+      "category": "general",
+      "rows_before": 100,
+      "rows_after": 100,
+      "rows_changed": true,
+      "source_data_changed": true,
+      "retrieved_before": "2026-11-09",
+      "retrieved_after": "2026-11-11"
+    },
+    {
+      "id": "mcp-atlas",
+      "category": "tool-use",
+      "rows_before": 37,
+      "rows_after": 37,
+      "rows_changed": true,
+      "source_data_changed": true,
+      "retrieved_before": "2026-11-06",
+      "retrieved_after": "2026-11-11"
+    },
+    {
+      "id": "terminal-bench-4-0",
+      "category": "terminal",
+      "rows_before": 35,
+      "rows_after": 47,
+      "rows_changed": true,
+      "source_data_changed": true,
+      "retrieved_before": "2026-10-25",
+      "retrieved_after": "2026-11-11"
+    },
+    {
+      "id": "vending-bench-2",
+      "category": "long-horizon",
+      "rows_before": 73,
+      "rows_after": 74,
+      "rows_changed": true,
+      "source_data_changed": true,
+      "retrieved_before": "2026-10-29",
+      "retrieved_after": "2026-11-11"
+    }
+  ],
+  "preserved_unavailable": [
+    "assistantbench",
+    "swe-marathon-v1-0",
+    "swe-marathon-v1-1"
+  ],
+  "new_models": [
+    "elliot-rdt-v1",
+    "claude-fable-5.2",
+    "muse-ember"
+  ],
+  "no_paid_evaluation": true,
+  "no_code_ui_workflow_changes": true,
+  "status_counts": {
+    "changed": 9,
+    "unchanged": 154,
+    "unavailable": 3
+  },
+  "change_note": "Same-board conditions retained. Terminal-Bench 4.0 adds 12 submissions; APEX adds 2 models in each of 4 tables; CyberGym agent-focused adds 7 submissions; Vending-Bench 2 adds GPT-6.1 Sol; GAIA official top100 has 2 tied-boundary membership replacements, not new submissions or score improvements; MCP-Atlas source spellings/ranks refreshed without changing measurements. AssistantBench runtime outage and SWE-Marathon current bundle 404 preserve stored values and prior dates."
+}

@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+		<link rel="icon" type="image/png" href="../favicon.png" />
+		<link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png" />
+		<link rel="shortcut icon" href="../favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Essential Meta Tags -->
+		<meta name="keywords" content="AI, evaluations, safety, Andon Labs" />
+
+		<!-- Plausible analytics -->
+		<script
+			defer
+			data-domain="andonlabs.com"
+			data-api="https://plausible.io/api/event"
+			src="/js/plausible.js"
+		></script>
+		<script src="/js/plausible-init.js"></script>
+
+		<meta http-equiv="content-security-policy" content="default-src 'self'; frame-src 'self' https://js.stripe.com https://*.js.stripe.com https://checkout.stripe.com https://hooks.stripe.com https://platform.twitter.com https://syndication.twitter.com https://www.youtube.com https://www.youtube-nocookie.com https://overfits.ai https://chainofthreads.ai https://layern.ai; worker-src 'self' blob:; connect-src 'self' https:; font-src 'self' data:; img-src 'self' data: blob: https:; media-src 'self' blob: https:; object-src 'none'; script-src 'self' https://js.stripe.com https://platform.twitter.com 'sha256-wjZZsAW+11DPZjRWI/UsTkZ2QKqIQRwYAIo/noJ3aqg='; style-src 'self' 'unsafe-inline'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+		<link href="../_app/immutable/entry/start.DJvwqp0I.js" rel="modulepreload">
+		<link href="../_app/immutable/entry/payload.DSmR2FwN.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/CRzLMJPS.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/DvkeXHZf.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/DBYuwT8e.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/D92Gmbvh.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/CbADPH2h.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/D0PsOH7w.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/CvlLlHQ2.js" rel="modulepreload">
+		<link href="../_app/immutable/entry/app.CVdHunI1.js" rel="modulepreload">
+		<link href="../_app/immutable/nodes/0.C5lgCnW0.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/B9oikuO8.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/m7_49co3.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/Bn22Uv8_.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/7dBkedGA.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/CcrfGBoW.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/BEFCaZ2b.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/BZ8OsEXx.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/Db0OEeIi.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/BN_pv7L6.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/Dcu66HsW.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/CM6Gcz_R.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/D_VYWMsd.js" rel="modulepreload">
+		<link href="../_app/immutable/nodes/3.BqDjhesw.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/UfTbEGaR.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/3PFpfFKw.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/D9AhCN_e.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/CuIxdBNQ.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/DbuTaGkI.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/viGqq8oc.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/s9tcevrd.js" rel="modulepreload">
+		<link href="../_app/immutable/nodes/26.BWa4wRWF.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/CFaEr43e.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/BJ3kiwcX.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/DMN_kevX.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/BHbtdVuH.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/D-tRoYT7.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/DNxJlTgF.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/BGBWMuRW.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/BtxzA6DR.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/CZTsV7bt.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/CUL44HRX.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/CF2k-a-P.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/HTeZQgi2.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/C5a2ex4z.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/Db0q5_zr.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/CCch3uox.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/BdhA_-74.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/Oy1DmU3w.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/DsifcgaE.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/CofFyNE2.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/BDD_3Z9c.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/DdeSqe7G.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/BcBSEtwn.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/Dvp_ANuB.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/RobXhXPM.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/CdX2DFUs.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/BrLX0w5a.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/J0g4tm6a.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/C-xt5IFp.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/DDnAXsKv.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/BPma3sZW.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/C1m9lhuP.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/B47owdAy.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/C3zQeDaw.js" rel="modulepreload">
+		<link href="../_app/env.js" rel="modulepreload">
+		<!--j6jtfs--><meta name="description" content="We're releasing Vending-Bench 2, a benchmark for measuring AI model performance on running a business over long time horizons. Models are tasked with running a simulated vending machine business over a year and scored on their bank account balance at the end."/> <meta property="og:title" content="Vending-Bench 2 | Andon Labs"/> <meta property="og:description" content="We're releasing Vending-Bench 2, a benchmark for measuring AI model performance on running a business over long time horizons. Models are tasked with running a simulated vending machine business over a year and scored on their bank account balance at the end."/> <meta property="og:image" content="https://andonlabs.com/og_vend_2.webp"/> <meta property="og:url" content="https://andonlabs.com/evals/vending-bench-2"/> <meta property="og:type" content="website"/> <meta name="twitter:card" content="summary_large_image"/> <meta name="twitter:title" content="Vending-Bench 2 | Andon Labs"/> <meta name="twitter:description" content="We're releasing Vending-Bench 2, a benchmark for measuring AI model performance on running a business over long time horizons. Models are tasked with running a simulated vending machine business over a year and scored on their bank account balance at the end."/> <meta name="twitter:image" content="https://andonlabs.com/og_vend_2.webp"/><!----><title>Vending-Bench 2 | Andon Labs</title>
+		<link href="../_app/immutable/assets/0.DlnxnS5j.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/Path.CLTjM0aN.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/chart.Dx1in8pa.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/VendingMachineTable.D-AQAa7r.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/Voronoi.ce7atosu.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/ChartAnnotations.Bw8CGteN.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/Labels.sEaJtb97.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/Legend.l8ERUJ3w.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/DefaultTooltip.B8rxq6AH.css" rel="stylesheet">
+	</head>
+
+	<body data-sveltekit-preload-data="hover">
+		<div class="bg-background min-h-screen p-2 md:p-4"><!--[--><!--[--><!--[0--><!--[--><!----> <!--[-1--><!--]--><!----> <header class="site-nav fixed inset-x-0 top-0 z-40 svelte-qgym72" data-tone="dark" data-solid="false" data-menu="false" style="--nav-p: 1; --nav-shift: 0px; --banner-h: 0px"><div class="glass svelte-qgym72"></div> <!--[-1--><!--]--> <div class="site-nav-body svelte-qgym72" role="presentation"><div class="px-6 md:px-24"><div class="site-nav-row mx-auto flex max-w-site items-center justify-between gap-6 svelte-qgym72"><a href="/" class="site-nav-logo svelte-qgym72" aria-label="Andon Labs home"><span class="logo svelte-yn5y7r" role="img" aria-label="Andon Labs"><svg viewBox="0 0 179 50" fill="currentColor" aria-hidden="true" class="svelte-yn5y7r"><path class="logo-mark" fill-rule="evenodd" clip-rule="evenodd" d="M0 34.8837C0 43.2322 6.71573 50 15 50C23.2843 50 30 43.2322 30 34.8837V15.1163C30 6.76779 23.2843 0 15 0C6.71573 0 0 6.76779 0 15.1163V34.8837ZM27.6923 15.1163C27.6923 22.1804 22.0098 27.907 15 27.907C7.99023 27.907 2.30769 22.1804 2.30769 15.1163C2.30769 8.05217 7.99023 2.32558 15 2.32558C22.0098 2.32558 27.6923 8.05217 27.6923 15.1163ZM27.9746 22.9494C25.3007 27.0998 20.2762 30.2326 15 30.2326C9.72385 30.2326 4.69932 27.0998 2.02537 22.9494C2.82049 29.2431 8.53873 34.4961 15 34.4961C21.4613 34.4961 27.1795 29.2431 27.9746 22.9494ZM15 41.0853C8.53873 41.0853 2.82049 35.8322 2.02537 29.5386C4.69932 33.6889 9.72385 36.8217 15 36.8217C20.2762 36.8217 25.3007 33.6889 27.9746 29.5386C27.1795 35.8322 21.4613 41.0853 15 41.0853ZM2.02537 36.1277C2.82049 42.4214 8.53873 47.6744 15 47.6744C21.4613 47.6744 27.1795 42.4214 27.9746 36.1277C25.3007 40.2781 20.2762 43.4109 15 43.4109C9.72385 43.4109 4.69932 40.2781 2.02537 36.1277Z"></path><g class="logo-wordmark svelte-yn5y7r"><path d="M178.811 24.4329H176.246C175.867 22.8305 174.724 22.0293 172.816 22.0293C172.006 22.0293 171.294 22.1824 170.682 22.4884C170.07 22.7945 169.764 23.2536 169.764 23.8658C169.764 24.4239 169.944 24.856 170.304 25.1621C170.682 25.4501 171.24 25.6752 171.979 25.8372L174.031 26.2423C175.561 26.5304 176.768 27.0075 177.65 27.6736C178.55 28.3218 179 29.285 179 30.5633C179 31.9676 178.442 33.0749 177.326 33.8851C176.21 34.6772 174.796 35.0733 173.086 35.0733C171.285 35.0733 169.836 34.5782 168.738 33.588C167.64 32.5978 167.009 31.4095 166.847 30.0232H169.44C169.872 32.0036 171.105 32.9938 173.14 32.9938C174.112 32.9938 174.913 32.8048 175.543 32.4267C176.192 32.0306 176.516 31.4995 176.516 30.8334C176.516 30.1492 176.255 29.6271 175.732 29.267C175.21 28.9069 174.49 28.6278 173.572 28.4298L171.411 27.9977C170.187 27.7276 169.188 27.2955 168.414 26.7014C167.658 26.1073 167.28 25.1981 167.28 23.9738C167.28 22.7315 167.829 21.7503 168.927 21.0301C170.043 20.2919 171.429 19.9229 173.086 19.9229C174.652 19.9229 175.94 20.3279 176.948 21.1381C177.956 21.9303 178.577 23.0286 178.811 24.4329Z"></path><path d="M156.353 23.4336C155.543 24.3518 155.138 25.7111 155.138 27.5115C155.138 29.3119 155.543 30.6713 156.353 31.5895C157.181 32.5077 158.19 32.9668 159.378 32.9668C160.656 32.9668 161.664 32.4897 162.403 31.5355C163.159 30.5632 163.537 29.2219 163.537 27.5115C163.537 25.8011 163.159 24.4688 162.403 23.5146C161.664 22.5424 160.656 22.0563 159.378 22.0563C158.19 22.0563 157.181 22.5154 156.353 23.4336ZM152.788 15.1427H155.246V22.4884C156.218 20.796 157.802 19.9498 159.999 19.9498C161.745 19.9498 163.213 20.634 164.401 22.0023C165.607 23.3706 166.21 25.207 166.21 27.5115C166.21 29.8341 165.607 31.6795 164.401 33.0478C163.213 34.3981 161.745 35.0733 159.999 35.0733C157.802 35.0733 156.218 34.2271 155.246 32.5347V34.7222H152.788V15.1427Z"></path><path d="M147.938 28.6458V27.7275C145.472 27.9616 143.635 28.3037 142.429 28.7538C141.241 29.2039 140.647 29.897 140.647 30.8333C140.647 31.5354 140.899 32.0935 141.403 32.5076C141.907 32.9217 142.591 33.1288 143.455 33.1288C144.752 33.1288 145.823 32.7777 146.669 32.0755C147.515 31.3734 147.938 30.2301 147.938 28.6458ZM142.915 35.0732C141.493 35.0732 140.304 34.7041 139.35 33.966C138.396 33.2098 137.919 32.1836 137.919 30.8873C137.919 30.0591 138.135 29.3479 138.567 28.7538C139.017 28.1596 139.701 27.6735 140.62 27.2954C141.556 26.8994 142.573 26.5933 143.671 26.3772C144.77 26.1612 146.129 25.9631 147.749 25.7831V25.432C147.749 23.0735 146.651 21.8942 144.454 21.8942C143.446 21.8942 142.654 22.1463 142.078 22.6504C141.502 23.1545 141.187 23.8657 141.133 24.7839H138.594C138.702 23.2895 139.323 22.1013 140.458 21.2191C141.61 20.3369 142.933 19.8958 144.427 19.8958C146.426 19.8958 147.893 20.3819 148.829 21.3541C149.766 22.3263 150.225 23.8387 150.207 25.8911L150.18 29.2399C150.162 31.5984 150.288 33.4259 150.558 34.7221H148.073C147.965 34.02 147.902 33.3538 147.884 32.7237C146.966 34.29 145.31 35.0732 142.915 35.0732Z"></path><path d="M127.568 15.1427V32.3456H137.911V34.7222H124.813V15.1427H127.568Z"></path><path d="M107.031 20.1929V22.3804C108.022 20.76 109.588 19.9498 111.73 19.9498C114.917 19.9498 116.51 21.8133 116.51 25.5401V34.7222H114.053V26.2693C114.053 24.937 113.837 23.9107 113.405 23.1906C112.991 22.4524 112.144 22.0833 110.866 22.0833C109.66 22.0833 108.715 22.4884 108.031 23.2986C107.364 24.1088 107.031 25.2881 107.031 26.8364V34.7222H104.574V20.1929H107.031Z"></path><path d="M91.3989 27.5116C91.3989 29.33 91.813 30.6893 92.6412 31.5895C93.4694 32.4717 94.5046 32.9128 95.7469 32.9128C96.9712 32.9128 97.9974 32.4537 98.8256 31.5355C99.6718 30.6173 100.095 29.276 100.095 27.5116C100.095 25.6931 99.6808 24.3428 98.8526 23.4606C98.0244 22.5604 96.9892 22.1103 95.7469 22.1103C94.5046 22.1103 93.4694 22.5514 92.6412 23.4336C91.813 24.2978 91.3989 25.6571 91.3989 27.5116ZM90.8588 21.8943C92.2451 20.598 93.8745 19.9498 95.7469 19.9498C97.6193 19.9498 99.2487 20.598 100.635 21.8943C102.021 23.1906 102.714 25.063 102.714 27.5116C102.714 29.9601 102.021 31.8326 100.635 33.1288C99.2487 34.4251 97.6193 35.0733 95.7469 35.0733C93.8745 35.0733 92.2451 34.4251 90.8588 33.1288C89.4725 31.8326 88.7793 29.9601 88.7793 27.5116C88.7793 25.063 89.4725 23.1906 90.8588 21.8943Z"></path><path d="M84.4716 22.4884V15.1427H86.9292V34.7222H84.4716V32.5347C83.4994 34.2271 81.915 35.0733 79.7185 35.0733C77.9721 35.0733 76.4958 34.3981 75.2895 33.0478C74.1012 31.6795 73.5071 29.8341 73.5071 27.5115C73.5071 25.207 74.1012 23.3706 75.2895 22.0023C76.4958 20.634 77.9721 19.9498 79.7185 19.9498C81.915 19.9498 83.4994 20.796 84.4716 22.4884ZM83.3373 31.5895C84.1655 30.6713 84.5796 29.3119 84.5796 27.5115C84.5796 25.7111 84.1655 24.3518 83.3373 23.4336C82.5271 22.5154 81.5279 22.0563 80.3396 22.0563C79.0614 22.0563 78.0441 22.5424 77.2879 23.5146C76.5498 24.4688 76.1807 25.8011 76.1807 27.5115C76.1807 29.2219 76.5498 30.5632 77.2879 31.5355C78.0441 32.4897 79.0614 32.9668 80.3396 32.9668C81.5279 32.9668 82.5271 32.5077 83.3373 31.5895Z"></path><path d="M62.431 20.1929V22.3804C63.4212 20.76 64.9875 19.9498 67.13 19.9498C70.3168 19.9498 71.9101 21.8133 71.9101 25.5401V34.7222H69.4526V26.2693C69.4526 24.937 69.2365 23.9107 68.8044 23.1906C68.3903 22.4524 67.5441 22.0833 66.2658 22.0833C65.0596 22.0833 64.1143 22.4884 63.4302 23.2986C62.764 24.1088 62.431 25.2881 62.431 26.8364V34.7222H59.9734V20.1929H62.431Z"></path><path d="M41.281 34.7222L48.5457 15.1427H51.7324L59.1051 34.7222H56.1344L54.5951 30.4822H45.602L44.0896 34.7222H41.281ZM50.058 17.9243L46.4392 28.1327H53.7309L50.058 17.9243Z"></path></g></svg></span><!----></a> <nav aria-label="Main" class="nav-links hidden items-center lg:flex svelte-1wyzykw"><!--[--><!--[-1--><a href="/pion" class="cursor-pointer transition-opacity duration-200 hover:opacity-60 data-[current=true]:underline data-[current=true]:decoration-current/80 data-[current=true]:decoration-1 data-[current=true]:underline-offset-6 svelte-1wyzykw" data-current="false">Pion</a><!--]--><!--[0--><button type="button" class="cursor-pointer transition-opacity duration-200 hover:opacity-60 data-[current=true]:underline data-[current=true]:decoration-current/80 data-[current=true]:decoration-1 data-[current=true]:underline-offset-6 svelte-1wyzykw" aria-haspopup="true" aria-expanded="false" aria-controls="site-desktop-menu" data-current="false">Real-world</button><!--]--><!--[0--><button type="button" class="cursor-pointer transition-opacity duration-200 hover:opacity-60 data-[current=true]:underline data-[current=true]:decoration-current/80 data-[current=true]:decoration-1 data-[current=true]:underline-offset-6 svelte-1wyzykw" aria-haspopup="true" aria-expanded="false" aria-controls="site-desktop-menu" data-current="true">Evals</button><!--]--><!--[-1--><a href="/publications" class="cursor-pointer transition-opacity duration-200 hover:opacity-60 data-[current=true]:underline data-[current=true]:decoration-current/80 data-[current=true]:decoration-1 data-[current=true]:underline-offset-6 svelte-1wyzykw" data-current="false">Publications</a><!--]--><!--[-1--><a href="/join" class="cursor-pointer transition-opacity duration-200 hover:opacity-60 data-[current=true]:underline data-[current=true]:decoration-current/80 data-[current=true]:decoration-1 data-[current=true]:underline-offset-6 svelte-1wyzykw" data-current="false">Join the Lab</a><!--]--><!--]--></nav><!----> <button type="button" class="-mr-2 grid h-10 w-10 place-items-center lg:hidden" aria-label="Open menu" aria-expanded="false" aria-controls="site-menu"><span class="icon svelte-1yhwxt3" aria-hidden="true"><span class="svelte-1yhwxt3"></span> <span class="svelte-1yhwxt3"></span></span></button><!----></div></div> <div class="menu-sheet absolute inset-x-0 top-0 -z-10 overflow-hidden text-black lg:hidden svelte-z4wsrs" inert="" id="site-menu" role="dialog" aria-modal="true" aria-label="Menu" style="height: 0px;"><nav tabindex="-1" aria-label="Main" class="menu-scroll h-full overflow-y-auto overscroll-contain px-6 pb-12 outline-none md:px-24 svelte-1teknyd"><ul class="mx-auto max-w-site divide-y divide-black/10"><!--[--><!--[1--><li class="menu-item py-3.5 text-lg tracking-tight svelte-1teknyd" style="--i: 0"><a href="/pion" class="group inline-flex items-center gap-2"><span class="transition-opacity duration-200 group-hover:opacity-60 group-aria-[current=page]:underline group-aria-[current=page]:decoration-black/65 group-aria-[current=page]:decoration-1 group-aria-[current=page]:underline-offset-6">Pion</span> <!--[-1--><!--]--></a><!----></li><!--]--><!--[0--><li class="menu-item py-5 first:pt-0 svelte-1teknyd" style="--i: 1"><p class="mb-2 text-xs text-black/50">Real-world</p> <div class="space-y-3"><!--[--><div><!--[-1--><!--]--> <ul class="space-y-1 text-base"><!--[--><li><a href="/radio" class="group inline-flex items-center gap-2"><span class="transition-opacity duration-200 group-hover:opacity-60 group-aria-[current=page]:underline group-aria-[current=page]:decoration-black/65 group-aria-[current=page]:decoration-1 group-aria-[current=page]:underline-offset-6">Radio</span> <!--[-1--><!--]--></a><!----></li><li><a href="/market" class="group inline-flex items-center gap-2"><span class="transition-opacity duration-200 group-hover:opacity-60 group-aria-[current=page]:underline group-aria-[current=page]:decoration-black/65 group-aria-[current=page]:decoration-1 group-aria-[current=page]:underline-offset-6">Market</span> <!--[-1--><!--]--></a><!----></li><li><a href="/cafe" class="group inline-flex items-center gap-2"><span class="transition-opacity duration-200 group-hover:opacity-60 group-aria-[current=page]:underline group-aria-[current=page]:decoration-black/65 group-aria-[current=page]:decoration-1 group-aria-[current=page]:underline-offset-6">Cafe</span> <!--[-1--><!--]--></a><!----></li><!--]--></ul></div><!--]--></div></li><!--]--><!--[0--><li class="menu-item py-5 first:pt-0 svelte-1teknyd" style="--i: 2"><p class="mb-2 text-xs text-black/50">Evals</p> <div class="space-y-3"><!--[--><div><!--[0--><p class="mb-1 text-[11px] text-black/35">Retail</p><!--]--> <ul class="space-y-1 text-base"><!--[--><li><a href="/evals/vending-bench-2" class="group inline-flex items-center gap-2" aria-current="page"><span class="transition-opacity duration-200 group-hover:opacity-60 group-aria-[current=page]:underline group-aria-[current=page]:decoration-black/65 group-aria-[current=page]:decoration-1 group-aria-[current=page]:underline-offset-6">Vending-Bench 2</span> <!--[-1--><!--]--></a><!----></li><li><a href="/evals/vending-bench-arena" class="group inline-flex items-center gap-2"><span class="transition-opacity duration-200 group-hover:opacity-60 group-aria-[current=page]:underline group-aria-[current=page]:decoration-black/65 group-aria-[current=page]:decoration-1 group-aria-[current=page]:underline-offset-6">Vending-Bench Arena</span> <!--[-1--><!--]--></a><!----></li><li><a href="/evals/vending-bench" class="group inline-flex items-center gap-2"><span class="transition-opacity duration-200 group-hover:opacity-60 group-aria-[current=page]:underline group-aria-[current=page]:decoration-black/65 group-aria-[current=page]:decoration-1 group-aria-[current=page]:underline-offset-6">Vending-Bench</span> <!--[0--><span class="rounded-full border border-black/10 bg-black/5 px-1.5 py-0.5 text-[10px] leading-none">Deprecated</span><!--]--></a><!----></li><!--]--></ul></div><div><!--[0--><p class="mb-1 text-[11px] text-black/35">Robot</p><!--]--> <ul class="space-y-1 text-base"><!--[--><li><a href="/evals/drone-bench" class="group inline-flex items-center gap-2"><span class="transition-opacity duration-200 group-hover:opacity-60 group-aria-[current=page]:underline group-aria-[current=page]:decoration-black/65 group-aria-[current=page]:decoration-1 group-aria-[current=page]:underline-offset-6">Drone-Bench</span> <!--[-1--><!--]--></a><!----></li><li><a href="/evals/butter-bench" class="group inline-flex items-center gap-2"><span class="transition-opacity duration-200 group-hover:opacity-60 group-aria-[current=page]:underline group-aria-[current=page]:decoration-black/65 group-aria-[current=page]:decoration-1 group-aria-[current=page]:underline-offset-6">Butter-Bench</span> <!--[-1--><!--]--></a><!----></li><li><a href="/evals/blueprint-bench-2" class="group inline-flex items-center gap-2"><span class="transition-opacity duration-200 group-hover:opacity-60 group-aria-[current=page]:underline group-aria-[current=page]:decoration-black/65 group-aria-[current=page]:decoration-1 group-aria-[current=page]:underline-offset-6">Blueprint-Bench 2</span> <!--[-1--><!--]--></a><!----></li><!--]--></ul></div><!--]--></div></li><!--]--><!--[1--><li class="menu-item py-3.5 text-lg tracking-tight svelte-1teknyd" style="--i: 3"><a href="/publications" class="group inline-flex items-center gap-2"><span class="transition-opacity duration-200 group-hover:opacity-60 group-aria-[current=page]:underline group-aria-[current=page]:decoration-black/65 group-aria-[current=page]:decoration-1 group-aria-[current=page]:underline-offset-6">Publications</span> <!--[-1--><!--]--></a><!----></li><!--]--><!--[1--><li class="menu-item py-3.5 text-lg tracking-tight svelte-1teknyd" style="--i: 4"><a href="/join" class="group inline-flex items-center gap-2"><span class="transition-opacity duration-200 group-hover:opacity-60 group-aria-[current=page]:underline group-aria-[current=page]:decoration-black/65 group-aria-[current=page]:decoration-1 group-aria-[current=page]:underline-offset-6">Join the Lab</span> <!--[-1--><!--]--></a><!----></li><!--]--><!--]--></ul></nav><!----></div><!----> <div class="menu-sheet absolute inset-x-0 top-0 -z-10 overflow-hidden text-black hidden lg:block svelte-z4wsrs" inert="" id="site-desktop-menu" style="height: 0px;"><div class="menu-body pb-12 svelte-13zterx" style="padding-left: 0px;"><div class="flex w-max gap-10"><!--[-1--><!--]--></div></div><!----></div><!----></div></header><!----> <main><!--[--><!--[0--><!--[--><div class="rounded-[15px] text-white min-h-120 md:min-h-200 w-full bg-cover bg-center p-4 md:px-20 md:pt-10 md:pb-12 flex relative" style="background-image: url('/images/evals/vending-bench-2/bg.webp')"><!--[0--><!--[0--><div class="absolute inset-0 rounded-[15px] md:hidden" style="background: linear-gradient(180deg, rgba(0,0,0,0.62) 0%, rgba(0,0,0,0.45) 30%, rgba(0,0,0,0.40) 55%, rgba(0,0,0,0.72) 100%)"></div> <div class="absolute inset-0 rounded-[15px] hidden md:block" style="background: linear-gradient(180deg, rgba(0,0,0,0.50) 0%, rgba(0,0,0,0.22) 30%, rgba(0,0,0,0.12) 55%, rgba(0,0,0,0.62) 100%)"></div><!--]--><!--]--> <div class="relative z-10 w-full max-w-site mx-auto flex flex-col justify-between"><div class="h-9 md:h-[50px]" aria-hidden="true"></div><!----> <div class="mx-auto w-full " style="max-width: 1000px;"><div class="w-full lg:max-w-2xl lg:text-shadow-none [text-shadow:0_2px_4px_rgba(0,0,0,0.3)]"><!--[0--><p class="text-lg">Eval</p><!--]--> <h1 class="type-display mt-4">Vending-Bench 2</h1> <!--[0--><p class="text-sm md:text-lg leading-tight mt-4">We're releasing Vending-Bench 2, a benchmark for measuring AI model performance on running a business over long time horizons. Models are tasked with running a simulated vending machine business over a year and scored on their bank account balance at the end.</p><!--]--></div> <!--[-1--><!--]--> <!--[-1--><!--]--></div></div></div><!----> <div class="w-full px-4 md:px-20 pb-10 md:pb-20 pt-10 md:pt-20"><div class="mx-auto prose-sm md:prose" style="max-width: 1000px;"><!--[0--><!--[--><!--[-1--><!--[--><p>Long-term coherence in agents is more important than ever. Coding agents can now write code autonomously for hours, and the length and breadth of tasks AI models are able to complete is likely to increase. We expect models to soon take active part in the economy, managing entire businesses. But to do this, they have to stay coherent and efficient over very long time horizons. This is what Vending-Bench 2 measures: the ability of models to stay coherent and successfully manage a simulated business over the course of a year. Our results show that while models are improving at this, current frontier models handle this with varying degrees of success.</p> <div class="flex items-baseline justify-between mb-0"><h3 class="!mb-0">Money balance over time</h3> <div class="not-prose translate-y-0.5"><!--[--><!--[--><!--[--><!--[--><!--$s1--><!--[0--><button data-slot="dialog-trigger" id="bits-s1" aria-haspopup="dialog" aria-expanded="false" data-dialog-trigger="" data-state="closed" class="p-1.5 rounded-md text-gray-400 hover:text-gray-600 hover:bg-gray-100 transition-colors" title="Export chart"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-download"><!--[--><!----><path d="M12 15V3"><!----></path><!----><!----><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"><!----></path><!----><!----><path d="m7 10 5 5 5-5"><!----></path><!----><!--]--><!----><!----></svg><!----></button><!----><!--]--><!--]--><!--]--> <!--[--><!--[--><!--[-1--><!--]--><!--]--><!--]--><!----><!--]--><!--]--><!----></div></div> <p class="text-sm text-gray-500 mb-4">Average across runs</p> <div class="not-prose mb-4"><div style="--legend-rows: 1" class="pb-[calc(var(--legend-rows)*1rem)] sm:pb-[calc(var(--legend-rows)*0.4rem)] [&amp;_.lc-legend-swatch-group]:justify-center"><!--[--><!--$s2--><div data-chart="chart-s2" data-slot="chart" class="flex aspect-video justify-center overflow-visible text-xs [&amp;_.stroke-white]:stroke-transparent [&amp;_.lc-line]:stroke-border/50 [&amp;_.lc-highlight-line]:stroke-0 [&amp;_.lc-area-path]:opacity-100 [&amp;_.lc-highlight-line]:opacity-100 [&amp;_.lc-highlight-point]:opacity-100 [&amp;_.lc-spline-path]:opacity-100 [&amp;_.lc-text-svg]:overflow-visible [&amp;_.lc-text]:text-xs [&amp;_.lc-axis-tick]:stroke-0 [&amp;_.lc-rule-x-line:not(.lc-grid-x-rule)]:stroke-0 [&amp;_.lc-rule-y-line:not(.lc-grid-y-rule)]:stroke-0 [&amp;_.lc-grid-x-radial-line]:stroke-border [&amp;_.lc-grid-x-radial-circle]:stroke-border [&amp;_.lc-grid-y-radial-line]:stroke-border [&amp;_.lc-grid-y-radial-circle]:stroke-border [&amp;_.lc-legend-container[data-placement='bottom']]:top-[calc(100%-1rem)] [&amp;_.lc-legend-container[data-placement='bottom']]:bottom-auto [&amp;_.lc-legend-swatch-button]:items-center [&amp;_.lc-legend-swatch-button]:gap-1.5 [&amp;_.lc-legend-swatch-group]:items-start [&amp;_.lc-legend-swatch-group]:content-start [&amp;_.lc-legend-swatch-group]:gap-x-4 [&amp;_.lc-legend-swatch-group]:gap-y-1 [&amp;_.lc-legend-swatch-group]:flex-wrap [&amp;_.lc-legend-swatch]:size-2.5 [&amp;_.lc-legend-swatch]:rounded-[2px] [&amp;_.lc-labels-text:not([fill])]:fill-foreground [&amp;_text]:stroke-transparent [&amp;_.lc-axis-tick-label]:fill-muted-foreground [&amp;_.lc-axis-tick-label]:font-normal [&amp;_.lc-tooltip-rects-g]:fill-transparent [&amp;_.lc-layout-svg-g]:fill-transparent [&amp;_.lc-root-container]:w-full h-80 sm:h-96 w-full"><!--[0--><!----><!----><style> [data-chart=chart-s2] {
+	--color-Gemini 4 Carbon: #0284C7;
+	--color-GPT-6 Astra: #14532D;
+	--color-Muse Wonder Full: #701A75;
+	--color-Claude Opus 5: #C9184A;
+	--color-Grok 4.7: #0B7285;
+	--color-GLM-5.2: #9D174D;
+}
+.dark [data-chart=chart-s2] {
+	--color-Gemini 4 Carbon: #0284C7;
+	--color-GPT-6 Astra: #14532D;
+	--color-Muse Wonder Full: #701A75;
+	--color-Claude Opus 5: #C9184A;
+	--color-Grok 4.7: #0B7285;
+	--color-GLM-5.2: #9D174D;
+}</style><!----><!----><!--]--><!----> <!--[--><!--[-1--><!--]--><!--]--><!----></div><!--]--> <div class="text-center text-sm text-gray-600 -mt-11 mb-4">Days in simulation</div></div><!----></div> <div class="not-prose flex gap-2 mt-2 mb-14"><button class="px-3 py-1.5 text-sm rounded-full transition-colors bg-gray-900 text-white" aria-pressed="true" title="Highest average balance from each of OpenAI, Anthropic, xAI, and Zhipu">Frontier</button> <button class="px-3 py-1.5 text-sm rounded-full transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200" aria-pressed="false">Open</button> <button class="px-3 py-1.5 text-sm rounded-full transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200" aria-pressed="false">All</button></div> <h3>Current leaderboard</h3> <p class="text-sm text-gray-500 mb-4">Average across runs</p> <div class="not-prose mb-4"><div class="relative w-full overflow-auto"><table class="w-full caption-bottom text-sm"><!--[--><thead class="[&amp;_tr]:border-b"><!--[--><tr class="hover:bg-muted/50 data-[state=selected]:bg-muted border-b transition-colors"><!--[--><th class="text-muted-foreground h-12 px-4 text-left align-middle font-medium [&amp;:has([role=checkbox])]:pr-0"><!--[--><!--]--></th><!----> <th class="text-muted-foreground h-12 px-4 text-left align-middle font-medium [&amp;:has([role=checkbox])]:pr-0"><!--[--><!---->Model<!--]--></th><!----> <th class="text-muted-foreground h-12 px-4 text-left align-middle font-medium [&amp;:has([role=checkbox])]:pr-0"><!--[--><!---->Money Balance<!--]--></th><!----><!--]--></tr><!--]--></thead><!----> <tbody class="[&amp;_tr:last-child]:border-0"><!--[--><!--[--><tr class="hover:bg-muted/50 data-[state=selected]:bg-muted border-b transition-colors"><!--[--><td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-muted-foreground"><!--[--><!---->1<!--]--></td><!----> <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0"><!--[--><div class="flex items-center gap-1"><!--[0--><img src="/images/logos/gemini.png" alt="Gemini 4 Carbon" class="w-4 h-4 rounded-full object-contain"/><!--]--> Gemini 4 Carbon <!--[0--><!----><span class="focus:ring-ring inline-flex select-none items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-hidden focus:ring-2 focus:ring-offset-2 bg-secondary text-secondary-foreground hover:bg-secondary/80 border-transparent ml-2"><!--[--><!---->New<!--]--><!----></span><!----><!--]--></div><!--]--></td><!----> <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0"><!--[--><!--[-1--><div class="money-balance-high  svelte-182vx4s">$16,484.21 <!--[0--><span class="std-error svelte-182vx4s" title="Standard error of the mean across 6 runs">± $1,096</span><!--]--> <!--[-1--><!--]--></div><!--]--><!--]--></td><!----><!--]--></tr><tr class="hover:bg-muted/50 data-[state=selected]:bg-muted border-b transition-colors"><!--[--><td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-muted-foreground"><!--[--><!---->2<!--]--></td><!----> <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0"><!--[--><div class="flex items-center gap-1"><!--[0--><img src="/images/logos/openai.png" alt="GPT-6 Astra" class="w-4 h-4 rounded-full object-contain"/><!--]--> GPT-6 Astra <!--[-1--><!--]--></div><!--]--></td><!----> <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0"><!--[--><!--[-1--><div class="money-balance-high  svelte-182vx4s">$15,514.70 <!--[0--><span class="std-error svelte-182vx4s" title="Standard error of the mean across 6 runs">± $1,074</span><!--]--> <!--[-1--><!--]--></div><!--]--><!--]--></td><!----><!--]--></tr><tr class="hover:bg-muted/50 data-[state=selected]:bg-muted border-b transition-colors"><!--[--><td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-muted-foreground"><!--[--><!---->3<!--]--></td><!----> <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0"><!--[--><div class="flex items-center gap-1"><!--[0--><img src="/images/logos/openai.png" alt="GPT-6 Sol" class="w-4 h-4 rounded-full object-contain"/><!--]--> GPT-6 Sol <!--[-1--><!--]--></div><!--]--></td><!----> <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0"><!--[--><!--[-1--><div class="money-balance-high  svelte-182vx4s">$14,427.85 <!--[0--><span class="std-error svelte-182vx4s" title="Standard error of the mean across 6 runs">± $1,051</span><!--]--> <!--[-1--><!--]--></div><!--]--><!--]--></td><!----><!--]--></tr><tr class="hover:bg-muted/50 data-[state=selected]:bg-muted border-b transition-colors"><!--[--><td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-muted-foreground"><!--[--><!---->4<!--]--></td><!----> <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0"><!--[--><div class="flex items-center gap-1"><!--[0--><img src="/images/logos/gemini.png" alt="Gemini 4 Argon" class="w-4 h-4 rounded-full object-contain"/><!--]--> Gemini 4 Argon <!--[0--><!----><span class="focus:ring-ring inline-flex select-none items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-hidden focus:ring-2 focus:ring-offset-2 bg-secondary text-secondary-foreground hover:bg-secondary/80 border-transparent ml-2"><!--[--><!---->New<!--]--><!----></span><!----><!--]--></div><!--]--></td><!----> <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0"><!--[--><!--[-1--><div class="money-balance-high  svelte-182vx4s">$13,718.16 <!--[0--><span class="std-error svelte-182vx4s" title="Standard error of the mean across 6 runs">± $3,100</span><!--]--> <!--[-1--><!--]--></div><!--]--><!--]--></td><!----><!--]--></tr><tr class="hover:bg-muted/50 data-[state=selected]:bg-muted border-b transition-colors"><!--[--><td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-muted-foreground"><!--[--><!---->5<!--]--></td><!----> <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0"><!--[--><div class="flex items-center gap-1"><!--[0--><img src="/images/logos/openai.png" alt="GPT-6.1 Sol" class="w-4 h-4 rounded-full object-contain"/><!--]--> GPT-6.1 Sol <!--[0--><!----><span class="focus:ring-ring inline-flex select-none items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-hidden focus:ring-2 focus:ring-offset-2 bg-secondary text-secondary-foreground hover:bg-secondary/80 border-transparent ml-2"><!--[--><!---->New<!--]--><!----></span><!----><!--]--></div><!--]--></td><!----> <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0"><!--[--><!--[-1--><div class="money-balance-high  svelte-182vx4s">$12,860.61 <!--[0--><span class="std-error svelte-182vx4s" title="Standard error of the mean across 6 runs">± $1,043</span><!--]--> <!--[-1--><!--]--></div><!--]--><!--]--></td><!----><!--]--></tr><tr class="hover:bg-muted/50 data-[state=selected]:bg-muted border-b transition-colors"><!--[--><td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-muted-foreground"><!--[--><!---->6<!--]--></td><!----> <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0"><!--[--><div class="flex items-center gap-1"><!--[0--><img src="/images/logos/meta.webp" alt="Muse Wonder Full" class="w-4 h-4 rounded-full object-contain"/><!--]--> Muse Wonder Full <!--[0--><!----><span class="focus:ring-ring inline-flex select-none items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-hidden focus:ring-2 focus:ring-offset-2 bg-secondary text-secondary-foreground hover:bg-secondary/80 border-transparent ml-2"><!--[--><!---->New<!--]--><!----></span><!----><!--]--></div><!--]--></td><!----> <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0"><!--[--><!--[-1--><div class="money-balance-high  svelte-182vx4s">$12,291.56 <!--[0--><span class="std-error svelte-182vx4s" title="Standard error of the mean across 6 runs">± $885</span><!--]--> <!--[-1--><!--]--></div><!--]--><!--]--></td><!----><!--]--></tr><tr class="hover:bg-muted/50 data-[state=selected]:bg-muted border-b transition-colors"><!--[--><td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-muted-foreground"><!--[--><!---->7<!--]--></td><!----> <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0"><!--[--><div class="flex items-center gap-1"><!--[0--><img src="/images/logos/anthropic.png" alt="Claude Opus 5" class="w-4 h-4 rounded-full object-contain"/><!--]--> Claude Opus 5 <!--[-1--><!--]--></div><!--]--></td><!----> <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0"><!--[--><!--[-1--><div class="money-balance-high  svelte-182vx4s">$11,181.87 <!--[0--><span class="std-error svelte-182vx4s" title="Standard error of the mean across 6 runs">± $2,094</span><!--]--> <!--[-1--><!--]--></div><!--]--><!--]--></td><!----><!--]--></tr><tr class="hover:bg-muted/50 data-[state=selected]:bg-muted border-b transition-colors"><!--[--><td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-muted-foreground"><!--[--><!---->8<!--]--></td><!----> <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0"><!--[--><div class="flex items-center gap-1"><!--[0--><img src="/images/logos/anthropic.png" alt="Claude Sonnet 5.5" class="w-4 h-4 rounded-full object-contain"/><!--]--> Claude Sonnet 5.5 <!--[0--><!----><span class="focus:ring-ring inline-flex select-none items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-hidden focus:ring-2 focus:ring-offset-2 bg-secondary text-secondary-foreground hover:bg-secondary/80 border-transparent ml-2"><!--[--><!---->New<!--]--><!----></span><!----><!--]--></div><!--]--></td><!----> <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0"><!--[--><!--[-1--><div class="money-balance-high  svelte-182vx4s">$11,165.28 <!--[0--><span class="std-error svelte-182vx4s" title="Standard error of the mean across 6 runs">± $1,585</span><!--]--> <!--[-1--><!--]--></div><!--]--><!--]--></td><!----><!--]--></tr><tr class="hover:bg-muted/50 data-[state=selected]:bg-muted border-b transition-colors"><!--[--><td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-muted-foreground"><!--[--><!---->9<!--]--></td><!----> <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0"><!--[--><div class="flex items-center gap-1"><!--[0--><img src="/images/logos/anthropic.png" alt="Claude Opus 4.7" class="w-4 h-4 rounded-full object-contain"/><!--]--> Claude Opus 4.7 <!--[-1--><!--]--></div><!--]--></td><!----> <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0"><!--[--><!--[-1--><div class="money-balance-high  svelte-182vx4s">$10,936.76 <!--[0--><span class="std-error svelte-182vx4s" title="Standard error of the mean across 6 runs">± $1,181</span><!--]--> <!--[-1--><!--]--></div><!--]--><!--]--></td><!----><!--]--></tr><tr class="hover:bg-muted/50 data-[state=selected]:bg-muted border-b transition-colors"><!--[--><td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-muted-foreground"><!--[--><!---->10<!--]--></td><!----> <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0"><!--[--><div class="flex items-center gap-1"><!--[0--><img src="/images/logos/grok.png" alt="Grok 4.7" class="w-4 h-4 rounded-full object-contain"/><!--]--> Grok 4.7 <!--[-1--><!--]--></div><!--]--></td><!----> <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0"><!--[--><!--[-1--><div class="money-balance-high  svelte-182vx4s">$10,536.83 <!--[0--><span class="std-error svelte-182vx4s" title="Standard error of the mean across 6 runs">± $652</span><!--]--> <!--[-1--><!--]--></div><!--]--><!--]--></td><!----><!--]--></tr><!--]--><!--]--></tbody><!----><!--]--></table></div><!----> <!--[0--><button class="w-full flex items-center justify-center p-2 text-gray-500 hover:text-gray-700 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-chevron-down w-5 h-5 transform transition-transform duration-200 "><!--[--><!----><path d="m6 9 6 6 6-6"><!----></path><!----><!--]--><!----><!----></svg><!----> <span class="ml-2 text-sm">Show 64 more</span></button><!--]--> <!--[-1--><!--]--><!----></div> <div class="not-prose flex gap-2 mt-2 mb-10"><button class="px-3 py-1.5 text-sm rounded-full transition-colors bg-gray-900 text-white">Arithmetic mean</button> <button class="px-3 py-1.5 text-sm rounded-full transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200">Geometric mean</button></div> <p>The leaderboard shows significant spread in performance. The top-performing models tend to share two traits: they maintain a consistent rate of tool use throughout the year-long simulation with no signs of performance degradation, and they are effective at sourcing products at good prices — whether through persistent negotiation or by finding better suppliers.</p> <div class="bg-gray-100 rounded-lg md:rounded-[15px] p-4 md:p-6 mb-12 mt-6 flex-1 not-prose"><div class="gap-6"><div class="text-xl mb-4 flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-swords"><!--[--><!----><polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5"><!----></polyline><!----><!----><line x1="13" x2="19" y1="19" y2="13"><!----></line><!----><!----><line x1="16" x2="20" y1="16" y2="20"><!----></line><!----><!----><line x1="19" x2="21" y1="21" y2="19"><!----></line><!----><!----><polyline points="14.5 6.5 18 3 21 3 21 6 17.5 9.5"><!----></polyline><!----><!----><line x1="5" x2="9" y1="14" y2="18"><!----></line><!----><!----><line x1="7" x2="4" y1="17" y2="20"><!----></line><!----><!----><line x1="3" x2="5" y1="19" y2="21"><!----></line><!----><!--]--><!----><!----></svg><!----> Vending-Bench Arena</div> <div class="text-sm md:text-base"><p>Vending-Bench Arena is a version of Vending-Bench 2 that adds a crucial component: competition. It's our first multi-agent eval, where all participating agents manage their own vending machine at the same location. This leads to price wars and tough strategy decisions. Agents may also collaborate and trade with each other if they so choose, but all scoring is individual.</p></div> <!--[0--><a href="/evals/vending-bench-arena"><!----><button data-button-root="true" tabindex="0" class="ring-offset-background focus-visible:ring-ring inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 mt-4 space-x-2"><!--[--><span>See the arena results</span><!--]--><!----><!----></button><!----><!----></a><!--]--><!----></div></div> <div class="flex items-baseline justify-between mb-0"><h2 class="!mb-0">Performance vs. release date</h2> <div class="not-prose translate-y-0.5"><!--[--><!--[--><!--[--><!--[--><!--$s3--><!--[0--><button data-slot="dialog-trigger" id="bits-s3" aria-haspopup="dialog" aria-expanded="false" data-dialog-trigger="" data-state="closed" class="p-1.5 rounded-md text-gray-400 hover:text-gray-600 hover:bg-gray-100 transition-colors" title="Export chart"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-download"><!--[--><!----><path d="M12 15V3"><!----></path><!----><!----><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"><!----></path><!----><!----><path d="m7 10 5 5 5-5"><!----></path><!----><!--]--><!----><!----></svg><!----></button><!----><!--]--><!--]--><!--]--> <!--[--><!--[--><!--[-1--><!--]--><!--]--><!--]--><!----><!--]--><!--]--><!----></div></div> <p>SOTA frontier models are labeled and a trend line is fitted through them, with a projection into the near future.</p> <div class="not-prose mb-4"><!--[--><!--$s4--><div data-chart="chart-s4" data-slot="chart" class="flex aspect-video justify-center overflow-visible text-xs [&amp;_.stroke-white]:stroke-transparent [&amp;_.lc-line]:stroke-border/50 [&amp;_.lc-highlight-line]:stroke-0 [&amp;_.lc-area-path]:opacity-100 [&amp;_.lc-highlight-line]:opacity-100 [&amp;_.lc-highlight-point]:opacity-100 [&amp;_.lc-spline-path]:opacity-100 [&amp;_.lc-text-svg]:overflow-visible [&amp;_.lc-text]:text-xs [&amp;_.lc-axis-tick]:stroke-0 [&amp;_.lc-rule-x-line:not(.lc-grid-x-rule)]:stroke-0 [&amp;_.lc-rule-y-line:not(.lc-grid-y-rule)]:stroke-0 [&amp;_.lc-grid-x-radial-line]:stroke-border [&amp;_.lc-grid-x-radial-circle]:stroke-border [&amp;_.lc-grid-y-radial-line]:stroke-border [&amp;_.lc-grid-y-radial-circle]:stroke-border [&amp;_.lc-legend-container[data-placement='bottom']]:top-[calc(100%-1rem)] [&amp;_.lc-legend-container[data-placement='bottom']]:bottom-auto [&amp;_.lc-legend-swatch-button]:items-center [&amp;_.lc-legend-swatch-button]:gap-1.5 [&amp;_.lc-legend-swatch-group]:items-start [&amp;_.lc-legend-swatch-group]:content-start [&amp;_.lc-legend-swatch-group]:gap-x-4 [&amp;_.lc-legend-swatch-group]:gap-y-1 [&amp;_.lc-legend-swatch-group]:flex-wrap [&amp;_.lc-legend-swatch]:size-2.5 [&amp;_.lc-legend-swatch]:rounded-[2px] [&amp;_.lc-labels-text:not([fill])]:fill-foreground [&amp;_text]:stroke-transparent [&amp;_.lc-axis-tick-label]:fill-muted-foreground [&amp;_.lc-axis-tick-label]:font-normal [&amp;_.lc-tooltip-rects-g]:fill-transparent [&amp;_.lc-layout-svg-g]:fill-transparent [&amp;_.lc-root-container]:w-full h-80 sm:h-96 w-full"><!--[0--><!----><!----><style> [data-chart=chart-s4] {
+	--color-Gemini 2.5 Pro: #3B82F6;
+	--color-Gemini 2.5 Flash: #60A5FA;
+	--color-Qwen3 235B A22B Thinking: #6366F1;
+	--color-GPT-OSS-120b: #86EFAC;
+	--color-GPT-5 mini: #4ADE80;
+	--color-Claude Sonnet 4.5: #E07B39;
+	--color-Claude Haiku 4.5: #F59E6B;
+	--color-MiniMax-M2: #F59E0B;
+	--color-GPT-5.1: #22C55E;
+	--color-Gemini 3 Pro: #2563EB;
+	--color-Grok 4.1 Fast: #06B6D4;
+	--color-Claude Opus 4.5: #D45D2B;
+	--color-DeepSeek-V3.2: #8B5CF6;
+	--color-GPT-5.2: #16A34A;
+	--color-Gemini 3 Flash: #93C5FD;
+	--color-GLM-4.7: #EC4899;
+	--color-Kimi K2.5: #14B8A6;
+	--color-Claude Opus 4.6: #B8451A;
+	--color-GPT-5.3-Codex: #15803D;
+	--color-GLM-5: #DB2777;
+	--color-MiniMax-M2.5: #FBBF24;
+	--color-Qwen 3.5 Plus: #A78BFA;
+	--color-Claude Sonnet 4.6: #E0453B;
+	--color-Gemini 3.1 Pro: #0EA5E9;
+	--color-Gemini 3.1 Pro Custom Tools: #38BDF8;
+	--color-GPT-5.4: #0D9488;
+	--color-Grok 4.20: #0891B2;
+	--color-Qwen 3.6 Plus: #7C3AED;
+	--color-GLM-5.1: #BE185D;
+	--color-Claude Opus 4.7: #7A2E0E;
+	--color-Kimi K2.6: #0D9488;
+	--color-Qwen 3.6 Max: #5B21B6;
+	--color-GPT-5.5: #059669;
+	--color-Deepseek V4 Pro: #7C3AED;
+	--color-Grok 4.3: #0E7490;
+	--color-Gemini 3.5 Flash: #22D3EE;
+	--color-Claude Opus 4.8 - High: #C13A1B;
+	--color-Claude Opus 4.8 - Max: #5A1F00;
+	--color-Claude Fable 5 - High: #9D4EDD;
+	--color-Claude Fable 5 - Low: #C77DFF;
+	--color-Claude Fable 5 - Max: #7B2CBF;
+	--color-Claude Fable 5 - Medium: #B266E3;
+	--color-Claude Fable 5 - None: #DDB8FF;
+	--color-MiniMax-M3: #D97706;
+	--color-Kimi K2.7 Code: #0F766E;
+	--color-GLM-5.2: #9D174D;
+	--color-Claude Sonnet 5: #FF2D20;
+	--color-Grok 4.5: #155E75;
+	--color-GPT-5.6 Luna: #A3E635;
+	--color-GPT-5.6 Sol: #3F6212;
+	--color-GPT-5.6 Terra: #65A30D;
+	--color-Muse Spark 1.1: #A21CAF;
+	--color-Kimi K3 (Fireworks): #2DD4BF;
+	--color-Kimi K3 (Moonshot): #115E59;
+	--color-Claude Opus 5: #C9184A;
+	--color-Grok 4.6: #083344;
+	--color-GLM-5.3: #831843;
+	--color-Claude Fable 5.1: #3C096C;
+	--color-Gemini 3.8 Flash: #1E3A8A;
+	--color-GPT-6 Astra: #14532D;
+	--color-Grok 4.7: #0B7285;
+	--color-Claude Opus 5.5: #A4133C;
+	--color-GPT-6 Sol: #166534;
+	--color-Claude Sonnet 5.5: #D62828;
+	--color-GPT-6.1 Sol: #16A34A;
+	--color-Gemini 4 Argon: #1D4ED8;
+	--color-Claude Haiku 5.5: #FFB347;
+	--color-Muse Wonder: #C026D3;
+	--color-Muse Wonder Full: #701A75;
+	--color-Gemini 4 Carbon: #0284C7;
+	--color-GPT-6.1 Terra: #4D7C0F;
+}
+.dark [data-chart=chart-s4] {
+	--color-Gemini 2.5 Pro: #3B82F6;
+	--color-Gemini 2.5 Flash: #60A5FA;
+	--color-Qwen3 235B A22B Thinking: #6366F1;
+	--color-GPT-OSS-120b: #86EFAC;
+	--color-GPT-5 mini: #4ADE80;
+	--color-Claude Sonnet 4.5: #E07B39;
+	--color-Claude Haiku 4.5: #F59E6B;
+	--color-MiniMax-M2: #F59E0B;
+	--color-GPT-5.1: #22C55E;
+	--color-Gemini 3 Pro: #2563EB;
+	--color-Grok 4.1 Fast: #06B6D4;
+	--color-Claude Opus 4.5: #D45D2B;
+	--color-DeepSeek-V3.2: #8B5CF6;
+	--color-GPT-5.2: #16A34A;
+	--color-Gemini 3 Flash: #93C5FD;
+	--color-GLM-4.7: #EC4899;
+	--color-Kimi K2.5: #14B8A6;
+	--color-Claude Opus 4.6: #B8451A;
+	--color-GPT-5.3-Codex: #15803D;
+	--color-GLM-5: #DB2777;
+	--color-MiniMax-M2.5: #FBBF24;
+	--color-Qwen 3.5 Plus: #A78BFA;
+	--color-Claude Sonnet 4.6: #E0453B;
+	--color-Gemini 3.1 Pro: #0EA5E9;
+	--color-Gemini 3.1 Pro Custom Tools: #38BDF8;
+	--color-GPT-5.4: #0D9488;
+	--color-Grok 4.20: #0891B2;
+	--color-Qwen 3.6 Plus: #7C3AED;
+	--color-GLM-5.1: #BE185D;
+	--color-Claude Opus 4.7: #7A2E0E;
+	--color-Kimi K2.6: #0D9488;
+	--color-Qwen 3.6 Max: #5B21B6;
+	--color-GPT-5.5: #059669;
+	--color-Deepseek V4 Pro: #7C3AED;
+	--color-Grok 4.3: #0E7490;
+	--color-Gemini 3.5 Flash: #22D3EE;
+	--color-Claude Opus 4.8 - High: #C13A1B;
+	--color-Claude Opus 4.8 - Max: #5A1F00;
+	--color-Claude Fable 5 - High: #9D4EDD;
+	--color-Claude Fable 5 - Low: #C77DFF;
+	--color-Claude Fable 5 - Max: #7B2CBF;
+	--color-Claude Fable 5 - Medium: #B266E3;
+	--color-Claude Fable 5 - None: #DDB8FF;
+	--color-MiniMax-M3: #D97706;
+	--color-Kimi K2.7 Code: #0F766E;
+	--color-GLM-5.2: #9D174D;
+	--color-Claude Sonnet 5: #FF2D20;
+	--color-Grok 4.5: #155E75;
+	--color-GPT-5.6 Luna: #A3E635;
+	--color-GPT-5.6 Sol: #3F6212;
+	--color-GPT-5.6 Terra: #65A30D;
+	--color-Muse Spark 1.1: #A21CAF;
+	--color-Kimi K3 (Fireworks): #2DD4BF;
+	--color-Kimi K3 (Moonshot): #115E59;
+	--color-Claude Opus 5: #C9184A;
+	--color-Grok 4.6: #083344;
+	--color-GLM-5.3: #831843;
+	--color-Claude Fable 5.1: #3C096C;
+	--color-Gemini 3.8 Flash: #1E3A8A;
+	--color-GPT-6 Astra: #14532D;
+	--color-Grok 4.7: #0B7285;
+	--color-Claude Opus 5.5: #A4133C;
+	--color-GPT-6 Sol: #166534;
+	--color-Claude Sonnet 5.5: #D62828;
+	--color-GPT-6.1 Sol: #16A34A;
+	--color-Gemini 4 Argon: #1D4ED8;
+	--color-Claude Haiku 5.5: #FFB347;
+	--color-Muse Wonder: #C026D3;
+	--color-Muse Wonder Full: #701A75;
+	--color-Gemini 4 Carbon: #0284C7;
+	--color-GPT-6.1 Terra: #4D7C0F;
+}</style><!----><!----><!--]--><!----> <!--[--><!--[-1--><!--]--><!--]--><!----></div><!--]--> <!--[0--><div class="text-center text-sm text-gray-500 -mt-3">Linear fit (R² = 0.96), +$854/month</div><!--]--><!----></div> <div class="not-prose flex gap-2 mb-14"><button class="px-3 py-1.5 text-sm rounded-full transition-colors bg-gray-900 text-white">Linear scale</button> <button class="px-3 py-1.5 text-sm rounded-full transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200">Log scale</button></div> <div class="flex items-baseline justify-between mb-0"><h2 class="!mb-0">Frontier lag analysis</h2> <div class="not-prose translate-y-0.5"><!--[--><!--[--><!--[--><!--[--><!--$s5--><!--[0--><button data-slot="dialog-trigger" id="bits-s5" aria-haspopup="dialog" aria-expanded="false" data-dialog-trigger="" data-state="closed" class="p-1.5 rounded-md text-gray-400 hover:text-gray-600 hover:bg-gray-100 transition-colors" title="Export chart"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-download"><!--[--><!----><path d="M12 15V3"><!----></path><!----><!----><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"><!----></path><!----><!----><path d="m7 10 5 5 5-5"><!----></path><!----><!--]--><!----><!----></svg><!----></button><!----><!--]--><!--]--><!--]--> <!--[--><!--[--><!--[-1--><!--]--><!--]--><!--]--><!----><!--]--><!--]--><!----></div></div> <p>Comparing SOTA frontier progression between model groups, with linear regression and projected crossover points.</p> <div class="not-prose mb-4"><!--[--><!--$s6--><div data-chart="chart-s6" data-slot="chart" class="flex aspect-video justify-center overflow-visible text-xs [&amp;_.stroke-white]:stroke-transparent [&amp;_.lc-line]:stroke-border/50 [&amp;_.lc-highlight-line]:stroke-0 [&amp;_.lc-area-path]:opacity-100 [&amp;_.lc-highlight-line]:opacity-100 [&amp;_.lc-highlight-point]:opacity-100 [&amp;_.lc-spline-path]:opacity-100 [&amp;_.lc-text-svg]:overflow-visible [&amp;_.lc-text]:text-xs [&amp;_.lc-axis-tick]:stroke-0 [&amp;_.lc-rule-x-line:not(.lc-grid-x-rule)]:stroke-0 [&amp;_.lc-rule-y-line:not(.lc-grid-y-rule)]:stroke-0 [&amp;_.lc-grid-x-radial-line]:stroke-border [&amp;_.lc-grid-x-radial-circle]:stroke-border [&amp;_.lc-grid-y-radial-line]:stroke-border [&amp;_.lc-grid-y-radial-circle]:stroke-border [&amp;_.lc-legend-container[data-placement='bottom']]:top-[calc(100%-1rem)] [&amp;_.lc-legend-container[data-placement='bottom']]:bottom-auto [&amp;_.lc-legend-swatch-button]:items-center [&amp;_.lc-legend-swatch-button]:gap-1.5 [&amp;_.lc-legend-swatch-group]:items-start [&amp;_.lc-legend-swatch-group]:content-start [&amp;_.lc-legend-swatch-group]:gap-x-4 [&amp;_.lc-legend-swatch-group]:gap-y-1 [&amp;_.lc-legend-swatch-group]:flex-wrap [&amp;_.lc-legend-swatch]:size-2.5 [&amp;_.lc-legend-swatch]:rounded-[2px] [&amp;_.lc-labels-text:not([fill])]:fill-foreground [&amp;_text]:stroke-transparent [&amp;_.lc-axis-tick-label]:fill-muted-foreground [&amp;_.lc-axis-tick-label]:font-normal [&amp;_.lc-tooltip-rects-g]:fill-transparent [&amp;_.lc-layout-svg-g]:fill-transparent [&amp;_.lc-root-container]:w-full h-80 sm:h-96 w-full"><!--[0--><!----><!----><style> [data-chart=chart-s6] {
+	--color-Gemini 2.5 Pro: #3B82F6;
+	--color-Gemini 2.5 Flash: #60A5FA;
+	--color-Claude Sonnet 4.5: #E07B39;
+	--color-GPT-5.1: #22C55E;
+	--color-Gemini 3 Pro: #2563EB;
+	--color-Grok 4.1 Fast: #06B6D4;
+	--color-Claude Opus 4.5: #D45D2B;
+	--color-DeepSeek-V3.2: #8B5CF6;
+	--color-GPT-5.2: #16A34A;
+	--color-Gemini 3 Flash: #93C5FD;
+	--color-GLM-4.7: #EC4899;
+	--color-Kimi K2.5: #14B8A6;
+	--color-Claude Opus 4.6: #B8451A;
+	--color-GPT-5.3-Codex: #15803D;
+	--color-GLM-5: #DB2777;
+	--color-Claude Sonnet 4.6: #E0453B;
+	--color-Gemini 3.1 Pro: #0EA5E9;
+	--color-Gemini 3.1 Pro Custom Tools: #38BDF8;
+	--color-GPT-5.4: #0D9488;
+	--color-Grok 4.20: #0891B2;
+	--color-Qwen 3.6 Plus: #7C3AED;
+	--color-GLM-5.1: #BE185D;
+	--color-Claude Opus 4.7: #7A2E0E;
+	--color-Kimi K2.6: #0D9488;
+	--color-Qwen 3.6 Max: #5B21B6;
+	--color-GPT-5.5: #059669;
+	--color-Deepseek V4 Pro: #7C3AED;
+	--color-Gemini 3.5 Flash: #22D3EE;
+	--color-Claude Opus 4.8 - High: #C13A1B;
+	--color-Claude Opus 4.8 - Max: #5A1F00;
+	--color-Claude Fable 5 - High: #9D4EDD;
+	--color-Claude Fable 5 - Low: #C77DFF;
+	--color-Claude Fable 5 - Max: #7B2CBF;
+	--color-Claude Fable 5 - Medium: #B266E3;
+	--color-Claude Fable 5 - None: #DDB8FF;
+	--color-MiniMax-M3: #D97706;
+	--color-Kimi K2.7 Code: #0F766E;
+	--color-GLM-5.2: #9D174D;
+	--color-Claude Sonnet 5: #FF2D20;
+	--color-Grok 4.5: #155E75;
+	--color-GPT-5.6 Luna: #A3E635;
+	--color-GPT-5.6 Sol: #3F6212;
+	--color-GPT-5.6 Terra: #65A30D;
+	--color-Muse Spark 1.1: #A21CAF;
+	--color-Kimi K3 (Fireworks): #2DD4BF;
+	--color-Kimi K3 (Moonshot): #115E59;
+	--color-Claude Opus 5: #C9184A;
+	--color-Grok 4.6: #083344;
+	--color-GLM-5.3: #831843;
+	--color-Claude Fable 5.1: #3C096C;
+	--color-Gemini 3.8 Flash: #1E3A8A;
+	--color-GPT-6 Astra: #14532D;
+	--color-Grok 4.7: #0B7285;
+	--color-Claude Opus 5.5: #A4133C;
+	--color-GPT-6 Sol: #166534;
+	--color-Claude Sonnet 5.5: #D62828;
+	--color-GPT-6.1 Sol: #16A34A;
+	--color-Gemini 4 Argon: #1D4ED8;
+	--color-Claude Haiku 5.5: #FFB347;
+	--color-Muse Wonder: #C026D3;
+	--color-Muse Wonder Full: #701A75;
+	--color-Gemini 4 Carbon: #0284C7;
+	--color-GPT-6.1 Terra: #4D7C0F;
+}
+.dark [data-chart=chart-s6] {
+	--color-Gemini 2.5 Pro: #3B82F6;
+	--color-Gemini 2.5 Flash: #60A5FA;
+	--color-Claude Sonnet 4.5: #E07B39;
+	--color-GPT-5.1: #22C55E;
+	--color-Gemini 3 Pro: #2563EB;
+	--color-Grok 4.1 Fast: #06B6D4;
+	--color-Claude Opus 4.5: #D45D2B;
+	--color-DeepSeek-V3.2: #8B5CF6;
+	--color-GPT-5.2: #16A34A;
+	--color-Gemini 3 Flash: #93C5FD;
+	--color-GLM-4.7: #EC4899;
+	--color-Kimi K2.5: #14B8A6;
+	--color-Claude Opus 4.6: #B8451A;
+	--color-GPT-5.3-Codex: #15803D;
+	--color-GLM-5: #DB2777;
+	--color-Claude Sonnet 4.6: #E0453B;
+	--color-Gemini 3.1 Pro: #0EA5E9;
+	--color-Gemini 3.1 Pro Custom Tools: #38BDF8;
+	--color-GPT-5.4: #0D9488;
+	--color-Grok 4.20: #0891B2;
+	--color-Qwen 3.6 Plus: #7C3AED;
+	--color-GLM-5.1: #BE185D;
+	--color-Claude Opus 4.7: #7A2E0E;
+	--color-Kimi K2.6: #0D9488;
+	--color-Qwen 3.6 Max: #5B21B6;
+	--color-GPT-5.5: #059669;
+	--color-Deepseek V4 Pro: #7C3AED;
+	--color-Gemini 3.5 Flash: #22D3EE;
+	--color-Claude Opus 4.8 - High: #C13A1B;
+	--color-Claude Opus 4.8 - Max: #5A1F00;
+	--color-Claude Fable 5 - High: #9D4EDD;
+	--color-Claude Fable 5 - Low: #C77DFF;
+	--color-Claude Fable 5 - Max: #7B2CBF;
+	--color-Claude Fable 5 - Medium: #B266E3;
+	--color-Claude Fable 5 - None: #DDB8FF;
+	--color-MiniMax-M3: #D97706;
+	--color-Kimi K2.7 Code: #0F766E;
+	--color-GLM-5.2: #9D174D;
+	--color-Claude Sonnet 5: #FF2D20;
+	--color-Grok 4.5: #155E75;
+	--color-GPT-5.6 Luna: #A3E635;
+	--color-GPT-5.6 Sol: #3F6212;
+	--color-GPT-5.6 Terra: #65A30D;
+	--color-Muse Spark 1.1: #A21CAF;
+	--color-Kimi K3 (Fireworks): #2DD4BF;
+	--color-Kimi K3 (Moonshot): #115E59;
+	--color-Claude Opus 5: #C9184A;
+	--color-Grok 4.6: #083344;
+	--color-GLM-5.3: #831843;
+	--color-Claude Fable 5.1: #3C096C;
+	--color-Gemini 3.8 Flash: #1E3A8A;
+	--color-GPT-6 Astra: #14532D;
+	--color-Grok 4.7: #0B7285;
+	--color-Claude Opus 5.5: #A4133C;
+	--color-GPT-6 Sol: #166534;
+	--color-Claude Sonnet 5.5: #D62828;
+	--color-GPT-6.1 Sol: #16A34A;
+	--color-Gemini 4 Argon: #1D4ED8;
+	--color-Claude Haiku 5.5: #FFB347;
+	--color-Muse Wonder: #C026D3;
+	--color-Muse Wonder Full: #701A75;
+	--color-Gemini 4 Carbon: #0284C7;
+	--color-GPT-6.1 Terra: #4D7C0F;
+}</style><!----><!----><!--]--><!----> <!--[--><!--[-1--><!--]--><!--]--><!----></div><!--]--> <!--[0--><div class="text-center text-sm text-gray-500 -mt-3">Chinese: +$1,047/month (R² = 0.98) · Western: +$854/month (R² = 0.96) · Chinese lags by ~108 days · Projected crossover: Feb 2028</div><!--]--> <div class="flex justify-center gap-4 mt-2 text-sm text-gray-600"><span class="flex items-center gap-1.5"><span class="inline-block w-3 h-3 rounded-full" style="background: #E11D48"></span> Chinese</span> <span class="flex items-center gap-1.5"><span class="inline-block w-3 h-3 rounded-full" style="background: #2563EB"></span> Western</span></div> <p class="text-center text-xs text-gray-400 mt-1">Only profitable models are included.</p><!----></div> <div class="not-prose flex gap-2 mb-14"><button class="px-3 py-1.5 text-sm rounded-full transition-colors bg-gray-900 text-white">Chinese vs Western</button> <button class="px-3 py-1.5 text-sm rounded-full transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200">Open vs Closed</button></div> <div class="flex items-baseline justify-between mb-0"><h2 class="!mb-0">Score vs. cost per run</h2> <div class="not-prose translate-y-0.5"><!--[--><!--[--><!--[--><!--[--><!--$s7--><!--[0--><button data-slot="dialog-trigger" id="bits-s7" aria-haspopup="dialog" aria-expanded="false" data-dialog-trigger="" data-state="closed" class="p-1.5 rounded-md text-gray-400 hover:text-gray-600 hover:bg-gray-100 transition-colors" title="Export chart"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-download"><!--[--><!----><path d="M12 15V3"><!----></path><!----><!----><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"><!----></path><!----><!----><path d="m7 10 5 5 5-5"><!----></path><!----><!--]--><!----><!----></svg><!----></button><!----><!--]--><!--]--><!--]--> <!--[--><!--[--><!--[-1--><!--]--><!--]--><!--]--><!----><!--]--><!--]--><!----></div></div> <p>Score vs. mean cost per run using each LLM provider’s API to run Vending-Bench 2. Costs are calculated from the provider’s input and output token pricing, without caching.</p> <div class="not-prose mb-14"><div class="relative"><div class="absolute -left-12 top-1/2 -translate-y-1/2 -rotate-90 text-sm text-gray-500 whitespace-nowrap">Score ($)</div> <!--[--><!--$s8--><div data-chart="chart-s8" data-slot="chart" class="flex aspect-video justify-center overflow-visible text-xs [&amp;_.stroke-white]:stroke-transparent [&amp;_.lc-line]:stroke-border/50 [&amp;_.lc-highlight-line]:stroke-0 [&amp;_.lc-area-path]:opacity-100 [&amp;_.lc-highlight-line]:opacity-100 [&amp;_.lc-highlight-point]:opacity-100 [&amp;_.lc-spline-path]:opacity-100 [&amp;_.lc-text-svg]:overflow-visible [&amp;_.lc-text]:text-xs [&amp;_.lc-axis-tick]:stroke-0 [&amp;_.lc-rule-x-line:not(.lc-grid-x-rule)]:stroke-0 [&amp;_.lc-rule-y-line:not(.lc-grid-y-rule)]:stroke-0 [&amp;_.lc-grid-x-radial-line]:stroke-border [&amp;_.lc-grid-x-radial-circle]:stroke-border [&amp;_.lc-grid-y-radial-line]:stroke-border [&amp;_.lc-grid-y-radial-circle]:stroke-border [&amp;_.lc-legend-container[data-placement='bottom']]:top-[calc(100%-1rem)] [&amp;_.lc-legend-container[data-placement='bottom']]:bottom-auto [&amp;_.lc-legend-swatch-button]:items-center [&amp;_.lc-legend-swatch-button]:gap-1.5 [&amp;_.lc-legend-swatch-group]:items-start [&amp;_.lc-legend-swatch-group]:content-start [&amp;_.lc-legend-swatch-group]:gap-x-4 [&amp;_.lc-legend-swatch-group]:gap-y-1 [&amp;_.lc-legend-swatch-group]:flex-wrap [&amp;_.lc-legend-swatch]:size-2.5 [&amp;_.lc-legend-swatch]:rounded-[2px] [&amp;_.lc-labels-text:not([fill])]:fill-foreground [&amp;_text]:stroke-transparent [&amp;_.lc-axis-tick-label]:fill-muted-foreground [&amp;_.lc-axis-tick-label]:font-normal [&amp;_.lc-tooltip-rects-g]:fill-transparent [&amp;_.lc-layout-svg-g]:fill-transparent [&amp;_.lc-root-container]:w-full h-80 sm:h-96 w-full"><!--[0--><!----><!----><style> [data-chart=chart-s8] {
+	--color-GPT-5 mini: #4ADE80;
+	--color-MiniMax-M2.5: #FBBF24;
+	--color-Claude Haiku 5.5: #FFB347;
+	--color-GPT-OSS-120b: #86EFAC;
+	--color-Gemini 2.5 Flash: #60A5FA;
+	--color-Qwen 3.5 35B A3B: var(--chart-6);
+	--color-MiniMax-M2: #F59E0B;
+	--color-Grok 4.1 Fast: #06B6D4;
+	--color-Qwen 3.5 Plus: #A78BFA;
+	--color-Qwen 3.5 27B: var(--chart-6);
+	--color-DeepSeek-V3.2: #8B5CF6;
+	--color-Gemini 3 Flash: #93C5FD;
+	--color-Qwen3 235B A22B Thinking: #6366F1;
+	--color-Muse Spark 1.1: #A21CAF;
+	--color-GPT-5.1: #22C55E;
+	--color-Kimi K2.5: #14B8A6;
+	--color-GPT-5.6 Luna: #A3E635;
+	--color-GPT-6.1 Terra: #4D7C0F;
+	--color-Qwen 3.6 Plus: #7C3AED;
+	--color-GPT-5.3-Codex: #15803D;
+	--color-Gemini 3.8 Flash: #1E3A8A;
+	--color-GLM-4.7: #EC4899;
+	--color-Gemini 2.5 Pro: #3B82F6;
+	--color-Grok 4.3: #0E7490;
+	--color-Claude Haiku 4.5: #F59E6B;
+	--color-GPT-5.2: #16A34A;
+	--color-Gemini 3.1 Pro Custom Tools: #38BDF8;
+	--color-Qwen3 Max: #818CF8;
+	--color-GPT-6 Sol: #166534;
+	--color-GPT-5.4: #0D9488;
+	--color-Qwen 3.6 Max: #5B21B6;
+	--color-Kimi K2.6: #0D9488;
+	--color-GLM-5.3: #831843;
+	--color-GPT-6.1 Sol: #16A34A;
+	--color-GLM-5: #DB2777;
+	--color-GPT-5.6 Terra: #65A30D;
+	--color-Gemini 3 Pro: #2563EB;
+	--color-GLM-5.1: #BE185D;
+	--color-Grok 4.5: #155E75;
+	--color-Gemini 3.5 Flash: #22D3EE;
+	--color-GLM-5.2: #9D174D;
+	--color-Grok 4.20: #0891B2;
+	--color-Gemini 3.1 Pro: #0EA5E9;
+	--color-Claude Sonnet 5.5: #D62828;
+	--color-Grok 4.6: #083344;
+	--color-Claude Sonnet 5: #FF2D20;
+	--color-Grok 4.7: #0B7285;
+	--color-Gemini 4 Argon: #1D4ED8;
+	--color-GPT-5.5: #059669;
+	--color-Claude Sonnet 4.6: #E0453B;
+	--color-Kimi K3 (Moonshot): #115E59;
+	--color-Deepseek V4 Pro: #7C3AED;
+	--color-Muse Wonder: #C026D3;
+	--color-Claude Sonnet 4.5: #E07B39;
+	--color-GPT-5.6 Sol: #3F6212;
+	--color-Gemini 4 Carbon: #0284C7;
+	--color-Claude Opus 4.8 - Max: #5A1F00;
+	--color-Claude Opus 4.8 - High: #C13A1B;
+	--color-Claude Opus 5.5: #A4133C;
+	--color-Claude Opus 5: #C9184A;
+	--color-Claude Opus 4.7: #7A2E0E;
+	--color-Claude Opus 4.6: #B8451A;
+	--color-GPT-6 Astra: #14532D;
+	--color-Claude Opus 4.5: #D45D2B;
+	--color-Claude Fable 5 - Max: #7B2CBF;
+	--color-Claude Fable 5 - Medium: #B266E3;
+	--color-Claude Fable 5 - Low: #C77DFF;
+	--color-Claude Fable 5 - None: #DDB8FF;
+	--color-Claude Fable 5 - High: #9D4EDD;
+	--color-Claude Fable 5.1: #3C096C;
+}
+.dark [data-chart=chart-s8] {
+	--color-GPT-5 mini: #4ADE80;
+	--color-MiniMax-M2.5: #FBBF24;
+	--color-Claude Haiku 5.5: #FFB347;
+	--color-GPT-OSS-120b: #86EFAC;
+	--color-Gemini 2.5 Flash: #60A5FA;
+	--color-Qwen 3.5 35B A3B: var(--chart-6);
+	--color-MiniMax-M2: #F59E0B;
+	--color-Grok 4.1 Fast: #06B6D4;
+	--color-Qwen 3.5 Plus: #A78BFA;
+	--color-Qwen 3.5 27B: var(--chart-6);
+	--color-DeepSeek-V3.2: #8B5CF6;
+	--color-Gemini 3 Flash: #93C5FD;
+	--color-Qwen3 235B A22B Thinking: #6366F1;
+	--color-Muse Spark 1.1: #A21CAF;
+	--color-GPT-5.1: #22C55E;
+	--color-Kimi K2.5: #14B8A6;
+	--color-GPT-5.6 Luna: #A3E635;
+	--color-GPT-6.1 Terra: #4D7C0F;
+	--color-Qwen 3.6 Plus: #7C3AED;
+	--color-GPT-5.3-Codex: #15803D;
+	--color-Gemini 3.8 Flash: #1E3A8A;
+	--color-GLM-4.7: #EC4899;
+	--color-Gemini 2.5 Pro: #3B82F6;
+	--color-Grok 4.3: #0E7490;
+	--color-Claude Haiku 4.5: #F59E6B;
+	--color-GPT-5.2: #16A34A;
+	--color-Gemini 3.1 Pro Custom Tools: #38BDF8;
+	--color-Qwen3 Max: #818CF8;
+	--color-GPT-6 Sol: #166534;
+	--color-GPT-5.4: #0D9488;
+	--color-Qwen 3.6 Max: #5B21B6;
+	--color-Kimi K2.6: #0D9488;
+	--color-GLM-5.3: #831843;
+	--color-GPT-6.1 Sol: #16A34A;
+	--color-GLM-5: #DB2777;
+	--color-GPT-5.6 Terra: #65A30D;
+	--color-Gemini 3 Pro: #2563EB;
+	--color-GLM-5.1: #BE185D;
+	--color-Grok 4.5: #155E75;
+	--color-Gemini 3.5 Flash: #22D3EE;
+	--color-GLM-5.2: #9D174D;
+	--color-Grok 4.20: #0891B2;
+	--color-Gemini 3.1 Pro: #0EA5E9;
+	--color-Claude Sonnet 5.5: #D62828;
+	--color-Grok 4.6: #083344;
+	--color-Claude Sonnet 5: #FF2D20;
+	--color-Grok 4.7: #0B7285;
+	--color-Gemini 4 Argon: #1D4ED8;
+	--color-GPT-5.5: #059669;
+	--color-Claude Sonnet 4.6: #E0453B;
+	--color-Kimi K3 (Moonshot): #115E59;
+	--color-Deepseek V4 Pro: #7C3AED;
+	--color-Muse Wonder: #C026D3;
+	--color-Claude Sonnet 4.5: #E07B39;
+	--color-GPT-5.6 Sol: #3F6212;
+	--color-Gemini 4 Carbon: #0284C7;
+	--color-Claude Opus 4.8 - Max: #5A1F00;
+	--color-Claude Opus 4.8 - High: #C13A1B;
+	--color-Claude Opus 5.5: #A4133C;
+	--color-Claude Opus 5: #C9184A;
+	--color-Claude Opus 4.7: #7A2E0E;
+	--color-Claude Opus 4.6: #B8451A;
+	--color-GPT-6 Astra: #14532D;
+	--color-Claude Opus 4.5: #D45D2B;
+	--color-Claude Fable 5 - Max: #7B2CBF;
+	--color-Claude Fable 5 - Medium: #B266E3;
+	--color-Claude Fable 5 - Low: #C77DFF;
+	--color-Claude Fable 5 - None: #DDB8FF;
+	--color-Claude Fable 5 - High: #9D4EDD;
+	--color-Claude Fable 5.1: #3C096C;
+}</style><!----><!----><!--]--><!----> <!--[--><!--[-1--><!--]--><!--]--><!----></div><!--]--> <div class="text-center text-sm text-gray-500 -mt-3">Cost per run ($)</div></div><!----></div> <h2>Improvements from our original Vending-Bench</h2> <p>Vending-Bench 2 keeps the core idea from Vending-Bench of managing a business in a lifelike setting, but introduces more real-world messiness inspired by learnings from our vending machine deployments:</p> <ul><li>Suppliers may be adversarial and actively try to exploit the agent, quoting unreasonable prices or even trying bait-and-switch tactics. The agents must realize this and look for other options to stay profitable.</li> <li>Negotiation is key to success. Even honest suppliers will try to get the most out of their customers.</li> <li>Deliveries can be delayed and trusted suppliers can go out of business, forcing agents to build robust supply chains and always have a plan B.</li> <li>Unhappy customers can reach out at any time demanding costly refunds.</li></ul> <p>We’ve also streamlined the scoring system, evaluating models on money balance after a year and clarified the scoring criteria, such that agents know exactly what to optimize for. Better planning tools, such as proper note-taking and reminder systems have been added as well.</p> <h2>How Vending-Bench works</h2> <p>Models are tasked with making as much money as possible managing their vending business given a $500 starting balance. They are given a year, unless they go bankrupt and fail to pay the $2 daily fee for the vending machine for more than 10 consecutive days, in which case they are terminated early. Models can search the internet to find suitable suppliers and then contact them through e-mail to make orders. Delivered items arrive at a storage facility, and the models are given tools to move items between storage and the vending machine. Revenue is generated through customer sales, which depend on factors such as day of the week, season, weather, and price.</p> <div class="flex justify-center w-full flex-col items-center"><img src="/images/evals/vending-bench-2/vending_bench_2_setup.png" alt="Vending-Bench 2 Setup" style="width: 100%; max-width: 600px;"/></div> <p>Running a model for a full year results in 3000-6000 messages in total, and a model averages 60-100 million tokens in output during a run.</p> <h3>System prompt</h3> <p>A good way to understand the benchmark is to read the system prompt given to the agents:</p> <div class="relative bg-white p-4 mb-8 rounded-lg border border-gray-200 group/trace"><!--[-1--><!--]--> <div class="relative space-y-4 max-h-[250px] overflow-hidden"><!--[--><!--[-1--><!--]--> <!--[1--><div><div class="text-gray-500 text-sm whitespace-pre-wrap"><div class="text-xs text-gray-400 mb-1 text-center">system</div> You are Charles Paxton, an autonomous AI agent designed to manage a vending machine business.
+
+You work for Vendings and Stuff, a company that operates vending machines in various locations.
+You have been tasked with managing a vending machine located in San Francisco.
+
+Vendings and Stuff will not provide any additional help or support, so you must rely on your own capabilities to succeed.
+Your performance will be evaluated after a year based on your ability to generate profits and manage the vending machine effectively.
+Your primary goal is to maximize profits and your bank account balance over the course of one year. You will be judged solely on your bank account balance at the end of one year of operation. Unrealized potential profits do not count towards your balance.
+
+Your task is to generate profits from it by stocking it with popular products that you can buy from wholesalers. The following information might be useful:
+- Your email is charles.paxton@vendingsandstuff.com
+- Your email inbox refreshes automatically during the night.
+- Your home office and main storage space is located at 1680 Mission St, San Francisco, CA 94103 - any orders should be shipped here and will be automatically registered in your storage inventory when they arrive.
+- Your vending machine is located at outdoors by 1421 Bay St, San Francisco, CA 94123.
+- Customers can pay using cash or credit card. Credit card payments will show up in your account automatically within a day, while cash must be collected from the machine manually.
+- The location charges a daily fee of $2 for operating the vending machine. If you are unable to pay the daily fee for 10 consecutive days, you will be terminated.
+- You will be charged for the output tokens you generate on a weekly basis, the cost is $100 per million output tokens.
+- Due to bandwidth limitations, your tool calls will take time to complete. You can also only make one tool call at a time. Plan accordingly. You are also expected to sleep at night.
+- Your context window is limited to roughly 69000 tokens. When reached, older messages will be trimmed automatically, keeping approximately 61% of messages.
+- Getting a good deal on products is important for maximizing profits. Exploration and negotiation are encouraged.
+- You have payment system that allows you to make payments via email. The internal system at Vendings and Stuff will automatically process these payments and deduct the amount from your balance. You cannot use any other form of payment. Remember to be absolutely certain that you want to make a payment before using this tool, as payments are irreversible.
+- There is no "user" in this context. Any user messages are reminders for you to keep going. Do not wait for any instructions. You have full agency to manage the vending machine and are expected to do what it takes to maximize profits.
+
+
+But remember that you are in charge and you should do whatever it takes to maximize your bank account balance after one year of operation.</div></div><!--]--><!--]--><!----> <!--[0--><div class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white to-transparent"></div><!--]--></div> <!--[0--><button class="w-full flex items-center justify-center p-2 text-gray-500 hover:text-gray-700 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-chevron-down w-5 h-5 transform transition-transform duration-200 "><!--[--><!----><path d="m6 9 6 6 6-6"><!----></path><!----><!--]--><!----><!----></svg><!----> <span class="ml-2 text-sm">Show more</span></button><!--]--></div><!----> <h2>Where’s the ceiling?</h2> <p>In many benchmarks, the main metric is a percentage of tasks completed or questions answered correctly. Maximum performance is 100%, and results close to this indicate saturation. For Vending-Bench, it’s harder to get this intuition because the main metric is dollars made. We’ve designed it so there’s no ceiling, meaning a superintelligent AI could theoretically make almost infinite money. A perfect strategy would look something like this:</p> <ol><li>Find suppliers for extremely valuable items (there’s nothing stopping the model from sourcing items with higher value than what’s typically found in a vending machine)</li> <li>Negotiate down the price to zero (the suppliers are other LLMs who can be jailbroken to give away stuff for free)</li> <li>Keep the machine always stocked in an optimal configuration (daily sales are simulated based on equations that can be gamed. See <a href="https://arxiv.org/pdf/2502.15840" rel="nofollow">our paper</a> from the original Vending-Bench for details – Vending-Bench 2 keeps the same sales simulation)</li></ol> <p>Executing a perfect strategy would be insanely hard, even for the smartest humans. However, we estimate that a “good” performance could easily do 10x better than the current best LLMs. We arrive at this by:</p> <ol><li>Picking the most profitable items found by the LLMs from the initial run of Vending-Bench 2 (this was “Doritos family-size”). This is conservative; we know from experience that vending machines can sell much higher value items. Our real-life AI vending machines sell tungsten cubes for $500.</li> <li>Estimating that a good player could negotiate to get half price from suppliers. Once again, this is conservative; humans frequently manage to negotiate to get things for free in our real-life vending machines.</li> <li>Assuming a good human could figure out an optimal configuration if they did enough data analysis from the first 60 days of sales.</li></ol> <p>Putting this together, we calculate that a “good” strategy could make $206 per day for 302 days – roughly $63k in a year.</p> <div class="not-prose mb-14 mt-8"><div style="--legend-rows: 1" class="pb-[calc(var(--legend-rows)*1rem)] sm:pb-[calc(var(--legend-rows)*0.4rem)] [&amp;_.lc-legend-swatch-group]:justify-center"><!--[--><!--$s9--><div data-chart="chart-s9" data-slot="chart" class="flex aspect-video justify-center overflow-visible text-xs [&amp;_.stroke-white]:stroke-transparent [&amp;_.lc-line]:stroke-border/50 [&amp;_.lc-highlight-line]:stroke-0 [&amp;_.lc-area-path]:opacity-100 [&amp;_.lc-highlight-line]:opacity-100 [&amp;_.lc-highlight-point]:opacity-100 [&amp;_.lc-spline-path]:opacity-100 [&amp;_.lc-text-svg]:overflow-visible [&amp;_.lc-text]:text-xs [&amp;_.lc-axis-tick]:stroke-0 [&amp;_.lc-rule-x-line:not(.lc-grid-x-rule)]:stroke-0 [&amp;_.lc-rule-y-line:not(.lc-grid-y-rule)]:stroke-0 [&amp;_.lc-grid-x-radial-line]:stroke-border [&amp;_.lc-grid-x-radial-circle]:stroke-border [&amp;_.lc-grid-y-radial-line]:stroke-border [&amp;_.lc-grid-y-radial-circle]:stroke-border [&amp;_.lc-legend-container[data-placement='bottom']]:top-[calc(100%-1rem)] [&amp;_.lc-legend-container[data-placement='bottom']]:bottom-auto [&amp;_.lc-legend-swatch-button]:items-center [&amp;_.lc-legend-swatch-button]:gap-1.5 [&amp;_.lc-legend-swatch-group]:items-start [&amp;_.lc-legend-swatch-group]:content-start [&amp;_.lc-legend-swatch-group]:gap-x-4 [&amp;_.lc-legend-swatch-group]:gap-y-1 [&amp;_.lc-legend-swatch-group]:flex-wrap [&amp;_.lc-legend-swatch]:size-2.5 [&amp;_.lc-legend-swatch]:rounded-[2px] [&amp;_.lc-labels-text:not([fill])]:fill-foreground [&amp;_text]:stroke-transparent [&amp;_.lc-axis-tick-label]:fill-muted-foreground [&amp;_.lc-axis-tick-label]:font-normal [&amp;_.lc-tooltip-rects-g]:fill-transparent [&amp;_.lc-layout-svg-g]:fill-transparent [&amp;_.lc-root-container]:w-full h-80 sm:h-96 w-full"><!--[0--><!----><!----><style> [data-chart=chart-s9] {
+	--color-Gemini 4 Carbon: #0284C7;
+	--color-GPT-6 Astra: #14532D;
+	--color-Muse Wonder Full: #701A75;
+	--color-Claude Opus 5: #C9184A;
+	--color-Grok 4.7: #0B7285;
+	--color-GLM-5.2: #9D174D;
+	--color-Human-Baseline: #EE5353;
+}
+.dark [data-chart=chart-s9] {
+	--color-Gemini 4 Carbon: #0284C7;
+	--color-GPT-6 Astra: #14532D;
+	--color-Muse Wonder Full: #701A75;
+	--color-Claude Opus 5: #C9184A;
+	--color-Grok 4.7: #0B7285;
+	--color-GLM-5.2: #9D174D;
+	--color-Human-Baseline: #EE5353;
+}</style><!----><!----><!--]--><!----> <!--[--><!--[-1--><!--]--><!--]--><!----></div><!--]--> <div class="text-center text-sm text-gray-600 -mt-11 mb-4">Days in simulation</div></div><!----></div> <p>The gap between current models and this “good” baseline shows there’s plenty of headroom in Vending-Bench 2. Models are getting better at staying coherent over long time horizons, but there are still analytical skills required that need to be applied in the right way to get a maximal score, that models do not currently exhibit.</p> <section class="not-prose mt-16 mb-12"><h2 class="text-2xl mb-3">Citation</h2> <div class="relative"><pre class="overflow-x-auto rounded-lg bg-gray-100 px-5 py-4 pr-14 font-mono text-sm text-gray-800">@misc{andonlabs2025vendingbench2,
+  title={Vending-Bench 2},
+  author={Andon Labs},
+  year={2025},
+  url={https://andonlabs.com/evals/vending-bench-2}
+}</pre> <button type="button" aria-label="Copy BibTeX" class="absolute top-3 right-3 inline-flex items-center gap-1.5 rounded-md border border-gray-300 bg-white px-2.5 py-1.5 text-xs text-gray-700 hover:bg-gray-50 transition-colors"><!--[-1--><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-copy w-3.5 h-3.5"><!--[--><!----><rect width="14" height="14" x="8" y="8" rx="2" ry="2"><!----></rect><!----><!----><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"><!----></path><!----><!--]--><!----><!----></svg><!----> <span>Copy</span><!--]--></button></div></section><!----><!--]--><!--]--><!--]--><!----><!--]--><!----></div></div><!----><!--]--><!--]--><!--]--><!----></main> <footer class="mt-16 md:mt-28 px-4 py-12 md:px-20 md:py-20"><div class="max-w-site mx-auto"><div class="grid gap-12 md:grid-cols-2 md:gap-16 lg:gap-24"><div><img src="/images/logo-dark.svg" alt="Andon Labs Logo" class="w-40 md:w-48"/> <p class="mt-8 type-body text-gray-600">Interested in what we do? Contact us at hi (at) andonlabs.com</p></div> <div class="md:justify-self-end md:mt-10"><p class="type-small text-gray-400">Backed by</p> <img src="/images/yc.png" alt="Y Combinator" class="mt-4 h-10 w-auto"/></div></div> <div class="mt-16 md:mt-24 pt-8 border-t border-gray-200 flex flex-col sm:flex-row gap-4 sm:justify-between sm:items-center"><p class="type-small text-gray-400">© 2026 Andon Labs Inc. All rights reserved.</p> <a href="/privacy" class="type-small text-gray-400 hover:text-black">Privacy Policy</a></div></div></footer><!----> <!--[-1--><!--]--><!----><!--]--><!--]--><!--]--><!----> <!--[-1--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_nm6t3x = {
+						base: new URL("..", location).pathname.slice(0, -1),
+						version: "1794199667173",
+						env: null
+					};
+
+					const element = document.currentScript.parentElement;
+
+					import("../_app/env.js").then(({ env }) => {
+						__sveltekit_nm6t3x.env = env;
+
+						import("../_app/immutable/entry/start.DJvwqp0I.js").then(async (kit) => {
+							kit.init(__sveltekit_nm6t3x);
+							const app = await import("../_app/immutable/entry/app.CVdHunI1.js");
+							kit.start(app, element, {
+									node_ids: [0, 3, 26],
+									data: [{type:"data",data:null,uses:{}},{type:"data",data:{title:"Vending-Bench 2",description:"We're releasing Vending-Bench 2, a benchmark for measuring AI model performance on running a business over long time horizons. Models are tasked with running a simulated vending machine business over a year and scored on their bank account balance at the end.",imagePath:"/images/evals/vending-bench-2/bg.webp",bgPosition:void 0,paperPath:void 0,video:void 0,ogImagePath:"/og_vend_2.webp",reportComingSoon:false,maxWidth:void 0,typeLabel:"Eval",heroHeight:"tall",overlay:"gradient"},uses:{route:1}},null],
+									form: null,
+									error: null
+								});
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

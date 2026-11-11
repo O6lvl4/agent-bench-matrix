@@ -1,0 +1,646 @@
+{
+  "checked": "2026-11-11",
+  "tables": [
+    {
+      "id": "browsecomp-plus",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows_before": 89,
+      "rows_after": 89,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "method": "Mechanically parsed complete current primary source under the existing table scope; retained reviewed model normalization. Table and snapshot preserved byte-for-byte when rows are unchanged.",
+      "sources": [
+        {
+          "url": "https://tevatron-browsecomp-plus.hf.space/data/leaderboard.json",
+          "status": "200",
+          "error": "",
+          "bytes": 52620,
+          "sha256": "4dac741487cfbae1a9115f069e088c87f9f32e645c2eb0f6514767525a38fc13"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Tevatron/BrowseComp-Plus-results/resolve/main/agent_results.csv",
+          "status": "200",
+          "error": "",
+          "bytes": 21515,
+          "sha256": "e56843834767d29b9234f4cb17c0ac3eb30335004ba5249e0d28f70037a4b482"
+        }
+      ]
+    },
+    {
+      "id": "cve-bench-one-day",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows_before": 2,
+      "rows_after": 2,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "method": "Mechanically parsed complete current primary source under the existing table scope; retained reviewed model normalization. Table and snapshot preserved byte-for-byte when rows are unchanged.",
+      "sources": [
+        {
+          "url": "https://cvebench.com/index-wf61xq3j.js",
+          "status": "200",
+          "error": "",
+          "bytes": 3992,
+          "sha256": "3ea79483ba2c9201b5bbcf89e64e39bf774a4b67eb03b5fc305732f00d6a0fc1"
+        }
+      ]
+    },
+    {
+      "id": "cve-bench-zero-day",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows_before": 2,
+      "rows_after": 2,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "method": "Mechanically parsed complete current primary source under the existing table scope; retained reviewed model normalization. Table and snapshot preserved byte-for-byte when rows are unchanged.",
+      "sources": [
+        {
+          "url": "https://cvebench.com/index-wf61xq3j.js",
+          "status": "200",
+          "error": "",
+          "bytes": 3992,
+          "sha256": "3ea79483ba2c9201b5bbcf89e64e39bf774a4b67eb03b5fc305732f00d6a0fc1"
+        }
+      ]
+    },
+    {
+      "id": "cybench",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows_before": 24,
+      "rows_after": 24,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "method": "Mechanically parsed complete current primary source under the existing table scope; retained reviewed model normalization. Table and snapshot preserved byte-for-byte when rows are unchanged.",
+      "sources": [
+        {
+          "url": "https://cybench.github.io/data/leaderboard.csv",
+          "status": "200",
+          "error": "",
+          "bytes": 1179,
+          "sha256": "846bb17951ec9f7c103486d7c0344974decd2d57f1039df26f9e84986704da45"
+        }
+      ]
+    },
+    {
+      "id": "cybergym-agent-focused",
+      "checked": "2026-11-11",
+      "status": "changed",
+      "rows_before": 48,
+      "rows_after": 55,
+      "rows_changed_or_added": 16,
+      "rows_removed_or_changed": 9,
+      "method": "Parsed official focus/trials=1 data and subrows under current renderer rules; lead cards remain unranked and table rank offset follows card count. Model-focused records exactly compared with reviewed snapshot.",
+      "source_snapshot": "sources/cybergym-agent-focused/cybergym-2026-11-11.json",
+      "sources": [
+        {
+          "url": "https://www.cybergym.io/assets/data/cybergym.json",
+          "status": "200",
+          "error": "",
+          "bytes": 43958,
+          "sha256": "5a5f638ab57531c66a10ba4db54ab20c72af720f0fcb07423951bfef8af4d506"
+        },
+        {
+          "url": "https://www.cybergym.io/cybergym/",
+          "status": "200",
+          "error": "",
+          "bytes": 31284,
+          "sha256": "768f35415a1b9f2b792cbf7fd7e51add14c92fd97b550565bff47de1516b496c"
+        },
+        {
+          "url": "https://www.cybergym.io/assets/js/leaderboard.js",
+          "status": "200",
+          "error": "",
+          "bytes": 41775,
+          "sha256": "7aa2d51c07d2bda8dc8be9910844441aabcfaa03b8b1a9adf1a24e3be45298f2"
+        }
+      ]
+    },
+    {
+      "id": "cybergym-e2e",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows_before": 12,
+      "rows_after": 12,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "method": "Parsed official focus/trials=1 data and subrows under current renderer rules; lead cards remain unranked and table rank offset follows card count. Model-focused records exactly compared with reviewed snapshot.",
+      "sources": [
+        {
+          "url": "https://www.cybergym.io/assets/data/cybergym-e2e.json",
+          "status": "200",
+          "error": "",
+          "bytes": 4152,
+          "sha256": "05a59f9f5c398bbabeb672164e7f172ecab00294f329a0a24a6a95b2a0951c34"
+        },
+        {
+          "url": "https://www.cybergym.io/cybergym-e2e/",
+          "status": "200",
+          "error": "",
+          "bytes": 25612,
+          "sha256": "627b31e2a2112f89eec254ba30b2c0cffbb9b83d117faf29ffb6a708059ee8ff"
+        }
+      ]
+    },
+    {
+      "id": "cybergym-model-focused",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows_before": 47,
+      "rows_after": 47,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "method": "Parsed official focus/trials=1 data and subrows under current renderer rules; lead cards remain unranked and table rank offset follows card count. Model-focused records exactly compared with reviewed snapshot.",
+      "sources": [
+        {
+          "url": "https://www.cybergym.io/assets/data/cybergym.json",
+          "status": "200",
+          "error": "",
+          "bytes": 43958,
+          "sha256": "5a5f638ab57531c66a10ba4db54ab20c72af720f0fcb07423951bfef8af4d506"
+        },
+        {
+          "url": "https://www.cybergym.io/cybergym/",
+          "status": "200",
+          "error": "",
+          "bytes": 31284,
+          "sha256": "768f35415a1b9f2b792cbf7fd7e51add14c92fd97b550565bff47de1516b496c"
+        },
+        {
+          "url": "https://www.cybergym.io/assets/js/leaderboard.js",
+          "status": "200",
+          "error": "",
+          "bytes": 41775,
+          "sha256": "7aa2d51c07d2bda8dc8be9910844441aabcfaa03b8b1a9adf1a24e3be45298f2"
+        }
+      ]
+    },
+    {
+      "id": "ecommerce-bench",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows_before": 21,
+      "rows_after": 21,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "method": "Mechanically parsed complete current primary source under the existing table scope; retained reviewed model normalization. Table and snapshot preserved byte-for-byte when rows are unchanged.",
+      "sources": [
+        {
+          "url": "https://ecbench.github.io/showcase_data.json",
+          "status": "200",
+          "error": "",
+          "bytes": 389797,
+          "sha256": "92f5a96c47517afb176efaf87778b720c11ebc4c329663646c55f18b1fbfc33f"
+        }
+      ]
+    },
+    {
+      "id": "exploitgym",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows_before": 27,
+      "rows_after": 27,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "method": "Mechanically parsed complete current primary source under the existing table scope; retained reviewed model normalization. Table and snapshot preserved byte-for-byte when rows are unchanged.",
+      "sources": [
+        {
+          "url": "https://www.cybergym.io/assets/data/exploitgym.json",
+          "status": "200",
+          "error": "",
+          "bytes": 14346,
+          "sha256": "bf8c380c061ce86b5a215f743994ad82c32829271d8f47c8054e8f8b6ecb4326"
+        }
+      ]
+    },
+    {
+      "id": "hal-core-bench-hard",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows_before": 49,
+      "rows_after": 49,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "method": "Mechanically parsed complete current primary source under the existing table scope; retained reviewed model normalization. Table and snapshot preserved byte-for-byte when rows are unchanged.",
+      "sources": [
+        {
+          "url": "https://hal.cs.princeton.edu/corebench_hard",
+          "status": "200",
+          "error": "",
+          "bytes": 358438,
+          "sha256": "f46a6d73ead02529444c35c3f1d67898d4c88e799f8d8f6d9a47c99cfe527997"
+        }
+      ]
+    },
+    {
+      "id": "hal-scicode",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows_before": 33,
+      "rows_after": 33,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "method": "Mechanically parsed complete current primary source under the existing table scope; retained reviewed model normalization. Table and snapshot preserved byte-for-byte when rows are unchanged.",
+      "sources": [
+        {
+          "url": "https://hal.cs.princeton.edu/scicode",
+          "status": "200",
+          "error": "",
+          "bytes": 292216,
+          "sha256": "50d72f921462a52888d012144c2a88e300720e1100ab6611bf7e146593d62a10"
+        }
+      ]
+    },
+    {
+      "id": "hal-scienceagentbench",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows_before": 23,
+      "rows_after": 23,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "method": "Mechanically parsed complete current primary source under the existing table scope; retained reviewed model normalization. Table and snapshot preserved byte-for-byte when rows are unchanged.",
+      "sources": [
+        {
+          "url": "https://hal.cs.princeton.edu/scienceagentbench",
+          "status": "200",
+          "error": "",
+          "bytes": 196981,
+          "sha256": "f576d5df56b23cf57da42bf848d55d8da5cbab1ba52e973aed033f646b6f26f9"
+        }
+      ]
+    },
+    {
+      "id": "metr-time-horizon-1.0",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows_before": 33,
+      "rows_after": 33,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "method": "Mechanically parsed complete current primary source under the existing table scope; retained reviewed model normalization. Table and snapshot preserved byte-for-byte when rows are unchanged.",
+      "sources": [
+        {
+          "url": "https://metr.org/assets/benchmark_results_1_0.yaml",
+          "status": "200",
+          "error": "",
+          "bytes": 14328,
+          "sha256": "f15fd2f13cd8d28f06f5430fabf21dcd1284193ec152bdedc34e11dcc525df66"
+        }
+      ]
+    },
+    {
+      "id": "metr-time-horizon",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows_before": 26,
+      "rows_after": 26,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "method": "Mechanically parsed complete current primary source under the existing table scope; retained reviewed model normalization. Table and snapshot preserved byte-for-byte when rows are unchanged.",
+      "sources": [
+        {
+          "url": "https://metr.org/assets/benchmark_results_1_1.yaml",
+          "status": "200",
+          "error": "",
+          "bytes": 16255,
+          "sha256": "aae31902b0519a4da73e16643915e5e8aca13cd3315c3aac893ce3d6dfe92ad9"
+        }
+      ]
+    },
+    {
+      "id": "mind2web-2",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows_before": 13,
+      "rows_after": 13,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "method": "Mechanically parsed complete current primary source under the existing table scope; retained reviewed model normalization. Table and snapshot preserved byte-for-byte when rows are unchanged.",
+      "sources": [
+        {
+          "url": "https://osu-nlp-group.github.io/Mind2Web-2/leaderboard_data.json",
+          "status": "200",
+          "error": "",
+          "bytes": 7783,
+          "sha256": "ed954c3b30c7e32c26eb58d7a6612b21537db82fa6c51462455937036cb08702"
+        }
+      ]
+    },
+    {
+      "id": "mle-bench-additional",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows_before": 2,
+      "rows_after": 2,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "method": "Mechanically parsed complete current primary source under the existing table scope; retained reviewed model normalization. Table and snapshot preserved byte-for-byte when rows are unchanged.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/openai/mle-bench/main/README.md",
+          "status": "200",
+          "error": "",
+          "bytes": 20988,
+          "sha256": "586bbc19cb2a3e11be61021866ef6436cf4b4d935bb1db088984b567b76595bb"
+        }
+      ]
+    },
+    {
+      "id": "mle-bench",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows_before": 28,
+      "rows_after": 28,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "method": "Mechanically parsed complete current primary source under the existing table scope; retained reviewed model normalization. Table and snapshot preserved byte-for-byte when rows are unchanged.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/openai/mle-bench/main/README.md",
+          "status": "200",
+          "error": "",
+          "bytes": 20988,
+          "sha256": "586bbc19cb2a3e11be61021866ef6436cf4b4d935bb1db088984b567b76595bb"
+        }
+      ]
+    },
+    {
+      "id": "paperbench-code-dev",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows_before": 1,
+      "rows_after": 1,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "method": "Mechanically parsed complete current primary source under the existing table scope; retained reviewed model normalization. Table and snapshot preserved byte-for-byte when rows are unchanged.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/openai/preparedness/main/project/paperbench/README.md",
+          "status": "200",
+          "error": "",
+          "bytes": 20104,
+          "sha256": "b50041ce9329b4a5a779c7114b8c21f6eab93cae91d309f5924f6ebe06f470cb"
+        }
+      ]
+    },
+    {
+      "id": "paperbench",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows_before": 10,
+      "rows_after": 10,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "method": "Mechanically parsed complete current primary source under the existing table scope; retained reviewed model normalization. Table and snapshot preserved byte-for-byte when rows are unchanged.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/openai/preparedness/main/project/paperbench/README.md",
+          "status": "200",
+          "error": "",
+          "bytes": 20104,
+          "sha256": "b50041ce9329b4a5a779c7114b8c21f6eab93cae91d309f5924f6ebe06f470cb"
+        }
+      ]
+    },
+    {
+      "id": "sec-bench-poc-generation",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows_before": 3,
+      "rows_after": 3,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "method": "Mechanically parsed complete current primary source under the existing table scope; retained reviewed model normalization. Table and snapshot preserved byte-for-byte when rows are unchanged.",
+      "sources": [
+        {
+          "url": "https://sec-bench.github.io/",
+          "status": "200",
+          "error": "",
+          "bytes": 219225,
+          "sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5"
+        }
+      ]
+    },
+    {
+      "id": "sec-bench-pro-firefox",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows_before": 6,
+      "rows_after": 6,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "method": "Mechanically parsed complete current primary source under the existing table scope; retained reviewed model normalization. Table and snapshot preserved byte-for-byte when rows are unchanged.",
+      "sources": [
+        {
+          "url": "https://sec-bench.github.io/",
+          "status": "200",
+          "error": "",
+          "bytes": 219225,
+          "sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5"
+        }
+      ]
+    },
+    {
+      "id": "sec-bench-pro-linux",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows_before": 6,
+      "rows_after": 6,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "method": "Mechanically parsed complete current primary source under the existing table scope; retained reviewed model normalization. Table and snapshot preserved byte-for-byte when rows are unchanged.",
+      "sources": [
+        {
+          "url": "https://sec-bench.github.io/",
+          "status": "200",
+          "error": "",
+          "bytes": 219225,
+          "sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5"
+        }
+      ]
+    },
+    {
+      "id": "sec-bench-pro-overall",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows_before": 6,
+      "rows_after": 6,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "method": "Mechanically parsed complete current primary source under the existing table scope; retained reviewed model normalization. Table and snapshot preserved byte-for-byte when rows are unchanged.",
+      "sources": [
+        {
+          "url": "https://sec-bench.github.io/",
+          "status": "200",
+          "error": "",
+          "bytes": 219225,
+          "sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5"
+        }
+      ]
+    },
+    {
+      "id": "sec-bench-pro-v8",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows_before": 6,
+      "rows_after": 6,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "method": "Mechanically parsed complete current primary source under the existing table scope; retained reviewed model normalization. Table and snapshot preserved byte-for-byte when rows are unchanged.",
+      "sources": [
+        {
+          "url": "https://sec-bench.github.io/",
+          "status": "200",
+          "error": "",
+          "bytes": 219225,
+          "sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5"
+        }
+      ]
+    },
+    {
+      "id": "sec-bench-vulnerability-patching",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows_before": 5,
+      "rows_after": 5,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "method": "Mechanically parsed complete current primary source under the existing table scope; retained reviewed model normalization. Table and snapshot preserved byte-for-byte when rows are unchanged.",
+      "sources": [
+        {
+          "url": "https://sec-bench.github.io/",
+          "status": "200",
+          "error": "",
+          "bytes": 219225,
+          "sha256": "e01142eb1af97dfc56ba68467ac87971a9f2377e922cc33bf34b1bcc679a90e5"
+        }
+      ]
+    },
+    {
+      "id": "swe-marathon-v1-0",
+      "checked": "2026-11-11",
+      "status": "preserved",
+      "rows_before": 16,
+      "reason": "AssertionError: ('https://www.swe-marathon.org/assets/index-CCdcZqNC.js', '404')",
+      "sources": [
+        {
+          "url": "https://www.swe-marathon.org/",
+          "status": "200",
+          "error": "",
+          "bytes": 4714,
+          "sha256": "4966cf07d2bcf00f261e22d072cbd6ef83dccf3abd66998c5b8b33fdff2ac758"
+        },
+        {
+          "url": "https://www.swe-marathon.org/assets/index-CCdcZqNC.js",
+          "status": "404",
+          "error": "",
+          "bytes": 79,
+          "sha256": "5988e064bba94bd052194d567697fe6c2a3aaa90a6db260f41f56c9a6c560126"
+        }
+      ]
+    },
+    {
+      "id": "swe-marathon-v1-1",
+      "checked": "2026-11-11",
+      "status": "preserved",
+      "rows_before": 17,
+      "reason": "AssertionError: ('https://www.swe-marathon.org/assets/index-CCdcZqNC.js', '404')",
+      "sources": [
+        {
+          "url": "https://www.swe-marathon.org/",
+          "status": "200",
+          "error": "",
+          "bytes": 4714,
+          "sha256": "4966cf07d2bcf00f261e22d072cbd6ef83dccf3abd66998c5b8b33fdff2ac758"
+        },
+        {
+          "url": "https://www.swe-marathon.org/assets/index-CCdcZqNC.js",
+          "status": "404",
+          "error": "",
+          "bytes": 79,
+          "sha256": "5988e064bba94bd052194d567697fe6c2a3aaa90a6db260f41f56c9a6c560126"
+        }
+      ]
+    },
+    {
+      "id": "vending-bench-2",
+      "checked": "2026-11-11",
+      "status": "changed",
+      "rows_before": 73,
+      "rows_after": 74,
+      "rows_changed_or_added": 70,
+      "rows_removed_or_changed": 69,
+      "method": "Discovered current node/chunk links from official page and imports, parsed JS literals without executing them, extracted all same-condition rows and metrics; retired URLs do not prevent current-source verification.",
+      "source_snapshot": "sources/vending-bench-2/vb2_data-2026-11-11.json",
+      "sources": [
+        {
+          "url": "https://andonlabs.com/evals/vending-bench-2",
+          "status": "200",
+          "error": "",
+          "bytes": 84063,
+          "sha256": "f2c574d16122e5787a871360a29ad7e4639d365db0dda65f5ab785d92c3ae0a7"
+        },
+        {
+          "url": "https://andonlabs.com/_app/immutable/nodes/26.BWa4wRWF.js",
+          "status": "200",
+          "error": "",
+          "bytes": 34526,
+          "sha256": "39cc4cd156a1186d7d380e437927bc7348307bc140f45487d7e0fe8e281666f9"
+        },
+        {
+          "url": "https://andonlabs.com/_app/immutable/chunks/J0g4tm6a.js",
+          "status": "200",
+          "error": "",
+          "bytes": 766176,
+          "sha256": "321711456e9b1637ef303b1fd82026ed51eab601a96c25786d5e06341e37117b"
+        },
+        {
+          "url": "https://andonlabs.com/_app/immutable/chunks/DDnAXsKv.js",
+          "status": "200",
+          "error": "",
+          "bytes": 5162,
+          "sha256": "a6fffe2e839e3bb71982c443f06e32a48572261bec948869c0b4a78b19c9362c"
+        }
+      ]
+    },
+    {
+      "id": "vending-bench",
+      "checked": "2026-11-11",
+      "status": "unchanged",
+      "rows_before": 27,
+      "rows_after": 27,
+      "rows_changed_or_added": 0,
+      "rows_removed_or_changed": 0,
+      "method": "Discovered current node/chunk links from official page and imports, parsed JS literals without executing them, extracted all same-condition rows and metrics; retired URLs do not prevent current-source verification.",
+      "sources": [
+        {
+          "url": "https://andonlabs.com/evals/vending-bench",
+          "status": "200",
+          "error": "",
+          "bytes": 61368,
+          "sha256": "99eeb054e0133e26c240815a9df261328e0cab44c6fabb93cbd158c5fa75776c"
+        },
+        {
+          "url": "https://andonlabs.com/_app/immutable/nodes/25.CVTjRCvv.js",
+          "status": "200",
+          "error": "",
+          "bytes": 7694,
+          "sha256": "0a6446ee71cdef1cee04325d59b0374722491d29ed920b19d32cd7b7efa07461"
+        }
+      ]
+    }
+  ],
+  "model_proposals": [
+    {
+      "id": "gpt-5.6-luna",
+      "name": "GPT-5.6-Luna",
+      "vendor": null,
+      "open_weights": null,
+      "weights_url": null,
+      "aliases": []
+    }
+  ]
+}
