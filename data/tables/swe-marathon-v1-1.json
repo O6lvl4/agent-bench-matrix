@@ -14,17 +14,41 @@
   "source": "https://www.swe-marathon.org/",
   "fetched": [
     "https://www.swe-marathon.org/",
-    "https://www.swe-marathon.org/assets/index-Dsh1_CSb.js"
+    "https://www.swe-marathon.org/assets/index-DKfRJv_D.js"
   ],
-  "retrieved": "2026-10-21",
+  "retrieved": "2026-11-12",
   "newest_row_date": null,
-  "snapshot": "sources/swe-marathon-v1-1/task_results_trimmed.json",
+  "snapshot": "sources/swe-marathon-v1-1/task_results_trimmed-2026-11-12.json",
   "paper": null,
   "repo": "https://github.com/abundant-ai/swe-marathon",
-  "notes_ja": "表はサイトの JS に埋め込まれたタスク別試行データから、サイト自身の集計式(reward>=1 の試行割合、表示対象の推論量のみ)で再計算した。行ごとの日付は無く、試行開始時刻の最新は 2026-10-13。サイトの明示的なモデル除外と推論量フィルタを適用し、現在表示される構成だけを含める。過去の行が表示対象から外れたことは性能低下を意味しない。",
+  "notes_ja": "表はサイトの JS に埋め込まれたタスク別試行データから、サイト自身の集計式(reward>=1 の試行割合、表示対象の推論量のみ)で再計算した。行ごとの日付は無く、試行開始時刻の最新は 2026-11-07。サイトの明示的なモデル除外と推論量フィルタを適用し、現在表示される構成だけを含める。過去の行が表示対象から外れたことは性能低下を意味しない。",
   "rows": [
     {
       "rank": 1,
+      "system": "Gemini 4 Carbon (high) / Antigravity CLI",
+      "agent": "Antigravity CLI",
+      "model_raw": [
+        "Gemini 4 Carbon"
+      ],
+      "model_ids": [
+        "gemini-4-carbon"
+      ],
+      "model_config": "reasoning_effort=high",
+      "score": 53.75,
+      "score_extra": {
+        "partial_avg_pct": 82.77312500000001,
+        "trials": 160,
+        "cost_trials": 0,
+        "tokens_avg_m": 30.184061975000002
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 2,
       "system": "Muse Wonder Full (max) / Muse Code",
       "agent": "Muse Code",
       "model_raw": [
@@ -48,7 +72,7 @@
       "row_url": null
     },
     {
-      "rank": 2,
+      "rank": 3,
       "system": "Muse Wonder (max) / Muse Code",
       "agent": "Muse Code",
       "model_raw": [
@@ -72,7 +96,7 @@
       "row_url": null
     },
     {
-      "rank": 3,
+      "rank": 4,
       "system": "Claude Sonnet 5.5 (max) / Claude Code",
       "agent": "Claude Code",
       "model_raw": [
@@ -97,7 +121,7 @@
       "row_url": null
     },
     {
-      "rank": 4,
+      "rank": 5,
       "system": "Claude Haiku 5.5 (max) / Claude Code",
       "agent": "Claude Code",
       "model_raw": [
@@ -122,7 +146,7 @@
       "row_url": null
     },
     {
-      "rank": 5,
+      "rank": 6,
       "system": "Kimi K3 (max) / Claude Code",
       "agent": "Claude Code",
       "model_raw": [
@@ -147,7 +171,7 @@
       "row_url": null
     },
     {
-      "rank": 6,
+      "rank": 7,
       "system": "Muse Spark 1.3 (max) / Muse Code",
       "agent": "Muse Code",
       "model_raw": [
@@ -172,7 +196,7 @@
       "row_url": null
     },
     {
-      "rank": 7,
+      "rank": 8,
       "system": "Claude Opus 5.5 (max) / Claude Code",
       "agent": "Claude Code",
       "model_raw": [
@@ -197,7 +221,7 @@
       "row_url": null
     },
     {
-      "rank": 8,
+      "rank": 9,
       "system": "Claude Fable 5.1 (max) / Claude Code",
       "agent": "Claude Code",
       "model_raw": [
@@ -222,7 +246,7 @@
       "row_url": null
     },
     {
-      "rank": 9,
+      "rank": 10,
       "system": "Grok 4.7 (high) / Grok Build",
       "agent": "Grok Build",
       "model_raw": [
@@ -246,7 +270,7 @@
       "row_url": null
     },
     {
-      "rank": 10,
+      "rank": 11,
       "system": "Gemini 4 Argon (high) / Gemini CLI",
       "agent": "Gemini CLI",
       "model_raw": [
@@ -271,7 +295,7 @@
       "row_url": null
     },
     {
-      "rank": 11,
+      "rank": 12,
       "system": "GPT-6-astra (max) / Codex",
       "agent": "Codex",
       "model_raw": [
@@ -296,7 +320,7 @@
       "row_url": null
     },
     {
-      "rank": 12,
+      "rank": 13,
       "system": "GLM 5.3 (max) / Claude Code",
       "agent": "Claude Code",
       "model_raw": [
@@ -321,7 +345,7 @@
       "row_url": null
     },
     {
-      "rank": 13,
+      "rank": 14,
       "system": "GPT-6.1 Sol (max) / Codex",
       "agent": "Codex",
       "model_raw": [
@@ -346,7 +370,32 @@
       "row_url": null
     },
     {
-      "rank": 14,
+      "rank": 15,
+      "system": "Inkling 2 Small (xhigh) / Claude Code",
+      "agent": "Claude Code",
+      "model_raw": [
+        "Inkling 2 Small"
+      ],
+      "model_ids": [
+        "inkling-2-small"
+      ],
+      "model_config": "reasoning_effort=xhigh",
+      "score": 38.75,
+      "score_extra": {
+        "partial_avg_pct": 85.1775,
+        "trials": 160,
+        "cost_trials": 160,
+        "cost_avg_usd": 424.39107091874985,
+        "tokens_avg_m": 81.975942425
+      },
+      "date": null,
+      "verified": null,
+      "open_source": null,
+      "org": null,
+      "row_url": null
+    },
+    {
+      "rank": 16,
       "system": "GLM 5.3 Flash (max) / Claude Code",
       "agent": "Claude Code",
       "model_raw": [
@@ -371,7 +420,7 @@
       "row_url": null
     },
     {
-      "rank": 15,
+      "rank": 17,
       "system": "GPT-6 Luna (max) / Codex",
       "agent": "Codex",
       "model_raw": [
@@ -396,7 +445,7 @@
       "row_url": null
     },
     {
-      "rank": 16,
+      "rank": 18,
       "system": "Gemini 3.7 Flash (max) / OpenCode",
       "agent": "OpenCode",
       "model_raw": [
@@ -421,7 +470,7 @@
       "row_url": null
     },
     {
-      "rank": 17,
+      "rank": 19,
       "system": "DeepSeek V4 Pro (max) / Mini-SWE-Agent",
       "agent": "Mini-SWE-Agent",
       "model_raw": [
