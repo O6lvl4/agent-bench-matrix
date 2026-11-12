@@ -1,0 +1,89 @@
+{
+  "date": "2026-11-12",
+  "baseline_commit": "5d1a5d3d2d1a1610e127c2ec94c6fde1af15ddcf",
+  "tables": 166,
+  "rows": 4549,
+  "models": 530,
+  "categories": {
+    "coding": 50,
+    "computer-use": 22,
+    "general": 5,
+    "long-horizon": 7,
+    "research": 9,
+    "security": 13,
+    "terminal": 5,
+    "tool-use": 32,
+    "web": 23
+  },
+  "status_counts": {
+    "unchanged": 161,
+    "changed": 4,
+    "unavailable": 1
+  },
+  "changed": [
+    "terminal-bench-4-0",
+    "gaia",
+    "swe-marathon-v1-1",
+    "androidworld"
+  ],
+  "table_changes": [
+    {
+      "id": "androidworld",
+      "category": "computer-use",
+      "rows_before": 48,
+      "rows_after": 48,
+      "rows_changed": true,
+      "retrieved_before": "2026-10-10",
+      "retrieved_after": "2026-11-12"
+    },
+    {
+      "id": "assistantbench",
+      "category": "web",
+      "rows_before": 184,
+      "rows_after": 184,
+      "rows_changed": false,
+      "retrieved_before": "2026-10-05",
+      "retrieved_after": "2026-10-05"
+    },
+    {
+      "id": "gaia",
+      "category": "general",
+      "rows_before": 100,
+      "rows_after": 100,
+      "rows_changed": true,
+      "retrieved_before": "2026-11-11",
+      "retrieved_after": "2026-11-12"
+    },
+    {
+      "id": "swe-marathon-v1-1",
+      "category": "long-horizon",
+      "rows_before": 17,
+      "rows_after": 19,
+      "rows_changed": true,
+      "retrieved_before": "2026-10-21",
+      "retrieved_after": "2026-11-12"
+    },
+    {
+      "id": "terminal-bench-4-0",
+      "category": "terminal",
+      "rows_before": 47,
+      "rows_after": 47,
+      "rows_changed": true,
+      "retrieved_before": "2026-11-11",
+      "retrieved_after": "2026-11-12"
+    }
+  ],
+  "preserved_unavailable": [
+    "assistantbench"
+  ],
+  "new_models": [],
+  "no_paid_evaluation": true,
+  "no_code_ui_workflow_changes": true,
+  "coverage_audits": [
+    "sources/audits/2026-11-12/coding.json",
+    "sources/audits/2026-11-12/tool-general.json",
+    "sources/audits/2026-11-12/research-security-horizon.json",
+    "sources/audit-2026-11-12/web-computer/coverage.json"
+  ],
+  "change_note": "SWE-Marathon v1.1 current official source recovered: 2 rows added, each 20 tasks x 8 trials, existing 17 measurement rows preserved except source rank. v1.0 recovered unchanged. Terminal-Bench 4.0 corrects source-published token counters without changing accuracy/cost/trials. GAIA top100 has 3 membership replacements including one new Nov11 ensemble; existing row scores unchanged. AndroidWorld adds one source link, no score change. AssistantBench official RUNTIME_ERROR preserves saved 184 rows, Oct5 retrieval and Oct9 last-success date. Old retired-asset/request-format 404s remain recorded separately from successful current sources."
+}

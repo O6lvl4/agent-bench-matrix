@@ -1,0 +1,35 @@
+{
+  "checked": "2026-11-12",
+  "compiler_commit": "39f128a2d6af0cfc327d27913453e7af99c143fc",
+  "compiler_version": "almide 0.69.0 (release, 39f128a2d)",
+  "compiler_source": "https://github.com/almide/almide/releases/tag/v0.69.0",
+  "compiler_archive_sha256": "4c917b56e4de8ee08da9d5b0b9355d129fe82e11afbf3dd9a628cdf0632f10b9",
+  "rust": "1.97.0",
+  "local_checks": {
+    "fit_tests": 4,
+    "source_freshness_schema_tests": 3,
+    "strict_build": {
+      "passed": true,
+      "tables": 166,
+      "rows": 4549,
+      "models": 530,
+      "unknown_model_ids": 0
+    },
+    "repeat_bundle_sha256_match": true,
+    "python_regression_tests": 33,
+    "javascript_regression_tests": 12,
+    "cost_projection_unchanged": true,
+    "cost_schema_check": true,
+    "all_table_audit_coverage": 166,
+    "swe_marathon_source_slices_recalculation": 19,
+    "pinned_source_build": "cargo build --release --locked --bin almide at the pinned commit with Rust 1.97.0, single-job retry after resource SIGKILL",
+    "source_built_compiler_tests_and_bundle": "Repeated 4 fit tests, 3 schema tests and strict build using the source-built compiler; bundle SHA256 identical to the hash-verified official release."
+  },
+  "bundle_sha256": "d05607b16b6fbe7bac44052cf06371006560acf1a9cc0125a9ec7e80dc549b02",
+  "local_browser_checks": {
+    "status": "blocked",
+    "reason": "Pinned browser CDN archive invalid. Installed Chromium fails with socket() Operation not permitted in local sandbox. Unmodified browser CI gates must pass before merge."
+  },
+  "raw_source_whitespace": "Official AndroidWorld CSV preserved exactly, including an existing trailing space and its source line endings; no source data cleaned to satisfy whitespace heuristics.",
+  "publication_checks": "Pending PR CI and independent Pages deployment. Not yet claimed published."
+}

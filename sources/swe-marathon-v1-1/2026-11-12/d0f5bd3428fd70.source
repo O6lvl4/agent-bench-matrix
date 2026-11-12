@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SWE-Marathon</title>
+    <meta
+      name="description"
+      content="SWE-Marathon v1.1: 20 updated, multi-hour software engineering tasks with tighter verification, closed-internet execution, and GPU post-training. Fresh leaderboard coming soon."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#FFFFFF" />
+    <script>
+      (() => {
+        const STORAGE_KEY = "swe-marathon-theme";
+        const modes = ["light", "dark"];
+        const media = window.matchMedia("(prefers-color-scheme: dark)");
+        const themeColor = { light: "#FFFFFF", dark: "#121312" };
+
+        function storedMode() {
+          const value = localStorage.getItem(STORAGE_KEY);
+          return modes.includes(value) ? value : effectiveTheme("system");
+        }
+
+        function effectiveTheme(mode) {
+          return mode === "system" ? (media.matches ? "dark" : "light") : mode;
+        }
+
+        function applyTheme(mode) {
+          const effective = effectiveTheme(mode);
+          document.documentElement.dataset.theme = effective;
+          document.documentElement.dataset.themeMode = mode;
+          document.documentElement.style.colorScheme = effective;
+          document.querySelector('meta[name="theme-color"]')?.setAttribute("content", themeColor[effective]);
+
+          const button = document.querySelector("[data-theme-toggle]");
+          if (button) {
+            const next = mode === "dark" ? "light" : "dark";
+            button.textContent = mode === "dark" ? "☾" : "☼";
+            button.setAttribute("aria-label", `Switch to ${next} mode`);
+            button.setAttribute("title", `Switch to ${next} mode`);
+            button.setAttribute("aria-pressed", String(mode === "dark"));
+          }
+        }
+
+        window.SWEMarathonTheme = {
+          set(mode) {
+            const next = modes.includes(mode) ? mode : effectiveTheme("system");
+            localStorage.setItem(STORAGE_KEY, next);
+            applyTheme(next);
+          },
+          cycle() {
+            const mode = storedMode();
+            this.set(mode === "dark" ? "light" : "dark");
+          },
+        };
+
+        applyTheme(storedMode());
+        media.addEventListener("change", () => {
+          if (!modes.includes(localStorage.getItem(STORAGE_KEY))) applyTheme(effectiveTheme("system"));
+        });
+        document.addEventListener("DOMContentLoaded", () => {
+          applyTheme(storedMode());
+        });
+      })();
+    </script>
+    <link rel="canonical" href="https://www.swe-marathon.org/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="SWE-Marathon" />
+    <meta property="og:title" content="SWE-Marathon" />
+    <meta
+      property="og:description"
+      content="SWE-Marathon v1.1 updates all 20 long-horizon software engineering tasks. Explore the current task suite and archived v1.0 results."
+    />
+    <meta property="og:url" content="https://www.swe-marathon.org/" />
+    <meta property="og:image" content="https://www.swe-marathon.org/og-image-staircase-20260605.png" />
+    <meta property="og:image:secure_url" content="https://www.swe-marathon.org/og-image-staircase-20260605.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="SWE-Marathon benchmark preview card" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SWE-Marathon" />
+    <meta
+      name="twitter:description"
+      content="SWE-Marathon v1.1 updates all 20 long-horizon software engineering tasks. Fresh leaderboard coming soon."
+    />
+    <meta name="twitter:image" content="https://www.swe-marathon.org/og-image-staircase-20260605.png" />
+
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/assets/index-DKfRJv_D.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Dh1EMpsq.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
