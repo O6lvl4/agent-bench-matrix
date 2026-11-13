@@ -187,3 +187,25 @@ AssistantBench公式test表では必須です。他の表は省略できます�
 更新時は元ページ／APIの取得内容とURL・日時を `sources/cost/` に保存してから機械的に取り出します。過去に取得していない価格を「昔はこの価格だったはず」で補いません。同一SKUの出典付き履歴以外はグラフへ混ぜません。新しい観測は既存履歴を消さず追記します。自動巡回・有料API・認証情報は本機能の範囲外です。
 
 価格の原本は `sources/cost/prices/snapshots/YYYY-MM-DD.json`（同日複数回は時刻などを付記）として保存します。更新は新しいファイルを追加し、以前の観測時刻は保持します。抽出器は全スナップショットを統合し、同じ販売店・SKU・URL・観測時刻の矛盾はエラーにします。同日中に在庫が変わった場合、画面の現在価格はその販売店掲載の最終観測を使います。過去の「在庫あり」を後の「在庫なし」より優先しません。
+
+## 提供・料金: `docs/runtime-data.json`
+
+ベンチマークではない独立した層です。配信元がモデルを API で出している 1 件(提供 = 配信元 × モデル)ごとに、取得時点の掲載単価を置きます。`docs/data.json`・戦闘力の当てはめには入りません。
+
+```bash
+python3 scripts/fetch_runtime.py     # 公開 GET のみ。sources/runtime/snapshots/<日付>/ を新規作成(既存は上書きしない)
+python3 scripts/build_runtime.py     # オフライン。最新スナップショットから docs/runtime-data.json を作る
+python3 scripts/build_runtime.py --check
+```
+
+- `sources`: 出どころ。`kind` は `official`(配信元自身の料金表)か `aggregator`(中継事業者の掲載単価)。`snapshot` が保存した原本、`sha256` は展開後の応答本文のハッシュ。
+- `offerings[]`: `model_id`(登録簿のID)、`provider`(配信元)、`source_id`、`source_model`(出どころの表記そのまま)、`input_per_mtok` / `output_per_mtok` / `cached_input_per_mtok`(USD / 100 万トークン。出どころが載せていなければ `null`)、`context_length`、`quantization`、`tier`、`region`、`tiered`(入力長などで単価が変わる提供。値は基本区分)。
+- `unmatched`: 出どころごとの、登録簿と名前が一致せず載せなかった行の数と例。
+- `speed`: 速度計測の状態。現在は `not_collected` で、理由と試した URL を持ちます。
+
+現在の出どころ: Cloudflare Workers AI の料金ページ、AWS Price List API(Bedrock、us-east-1、オンデマンド標準区分)、Ollama の料金ページの従量単価表、OpenRouter のモデル別エンドポイント API。
+
+- モデルへの対応づけは、綴り(大文字小文字・区切り)を正規化して登録簿の ID・別名・表示名と**完全一致**したものだけです。Cloudflare の `-fp8` などの配備接尾辞は量子化として読み、名前からは外します。似ているだけの名前は対応づけません。2 つのモデルが同じ綴りになる場合はどちらにも対応づけません。
+- OpenRouter の `:free` などの変種 ID は別の提供なので対応づけません。負の単価(要求ごとに決まる価格)の行は入れません。
+- 月額プラン(利用クレジット込み)と従量単価は料金体系が違うので、プランを単価に直しません。
+- **速度は入れていません。** OpenRouter のエンドポイント API は `throughput_last_30m` / `latency_last_30m` を持ちますが、API キーなしの要求には `null` を返します。認証情報を使わない方針なので、取得できるまで値を置きません。推測や他所の数字の転記で埋めません。
