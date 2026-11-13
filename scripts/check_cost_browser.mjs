@@ -6,7 +6,7 @@ import { readFile, mkdir } from 'node:fs/promises';
 const root = new URL('../docs/', import.meta.url);
 const artifacts = new URL('../.qa/cost/', import.meta.url);
 await mkdir(artifacts, { recursive: true });
-const allowed = new Set(['index.html', 'app.js', 'cost.js', 'style.css', 'data.json', 'cost-data.json']);
+const allowed = new Set(['index.html', 'app.js', 'cost.js', 'runtime.js', 'style.css', 'data.json', 'cost-data.json', 'runtime-data.json']);
 const server = createServer(async (req, res) => {
   const name = new URL(req.url, 'http://localhost').pathname.slice(1) || 'index.html';
   if (!allowed.has(name)) { res.writeHead(404); res.end(); return; }

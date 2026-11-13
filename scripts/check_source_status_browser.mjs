@@ -14,7 +14,7 @@ const warning = '最新未確認・保存データ';
 const source = JSON.parse(await readFile(new URL('../data/tables/assistantbench.json', root), 'utf8'));
 assert.deepEqual(table.rows, source.rows, 'Generated scores must match the preserved source table');
 await mkdir(artifacts, { recursive: true });
-const allowed = new Set(['index.html', 'app.js', 'cost.js', 'style.css', 'data.json', 'cost-data.json']);
+const allowed = new Set(['index.html', 'app.js', 'cost.js', 'runtime.js', 'style.css', 'data.json', 'cost-data.json', 'runtime-data.json']);
 const server = createServer(async (req, res) => {
   const name = new URL(req.url, 'http://localhost').pathname.slice(1) || 'index.html';
   if (!allowed.has(name)) { res.writeHead(404); res.end(); return; }

@@ -46,6 +46,8 @@ jobs:
           git diff --exit-code -- sources/cost/model-research.json sources/cost/prices/model-cost-prices.json data/cost.json
       - name: Validate isolated local-run cost data
         run: python3 scripts/build_cost.py --check
+      - name: Hosted price bundle is what the saved snapshot builds
+        run: python3 scripts/build_runtime.py --check
       - name: Cost schema regression tests
         run: python3 -m unittest discover -s tests -p 'test_*.py'
       - name: Install pinned UI test dependencies

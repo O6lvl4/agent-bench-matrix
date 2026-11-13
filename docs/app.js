@@ -1,4 +1,5 @@
 import { renderCost } from "./cost.js";
+import { renderRuntime, byModel } from "./runtime.js";
 
 // Agent Bench Matrix — reads data.json (written by tools/build.almd) and renders it.
 // Every string on the page comes from a leaderboard someone else runs, so nothing is
@@ -89,7 +90,7 @@ function fmtExtra(v) {
 }
 
 // ── data ───────────────────────────────────────────────────────────────────
-const state = { costData: null, costError: null, data: null, models: new Map(), cells: new Map(), modelIds: [], tables: [], byId: new Map(), firstSeen: new Map(), claims: new Map(), claimOnly: new Set() };
+const state = { runtimeData: null, runtimeError: null, runtimeModels: new Map(), costData: null, costError: null, data: null, models: new Map(), cells: new Map(), modelIds: [], tables: [], byId: new Map(), firstSeen: new Map(), claims: new Map(), claimOnly: new Set() };
 
 function prepare(data) {
   state.data = data;
@@ -194,10 +195,14 @@ function render() {
   for (const a of document.querySelectorAll("#tabs a")) {
     if (a.dataset.view === view) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
   }
+  const views = { runtime: viewRuntime, cost: viewCost, matrix: viewMatrix, ability: viewAbility, benchmarks: viewBenchmarks, table: viewTable, claims: viewClaims, gaps: viewGaps, about: viewAbout };
   const main = document.getElementById("view");
   main.replaceChildren();
   closeDrawer();
-  const views = { cost: viewCost, matrix: viewMatrix, ability: viewAbility, benchmarks: viewBenchmarks, table: viewTable, claims: viewClaims, gaps: viewGaps, about: viewAbout };
+  const strip = document.getElementById("stats");
+  if (strip) strip.hidden = (views[view] ? view : "matrix") !== "matrix";
+  const search = document.getElementById("global-search");
+  if (search) search.value = params.get("q") || "";
   (views[view] || viewMatrix)(main, arg, params);
 }
 
@@ -210,6 +215,20 @@ function viewCost(main, _arg, params) {
   renderCost(main, { models: state.models, data: state.costData, params,
     navigate: (p) => {
       setHash("cost", null, p);
+      render();
+    } });
+}
+
+// Hosted-inference prices are observations of a provider's price list, isolated
+// from benchmark scores exactly like the local-run estimates above.
+function viewRuntime(main, _arg, params) {
+  if (!state.runtimeData) {
+    main.append(h("p", { class: "empty" }, "料金データを読み込めませんでした。", state.runtimeError || ""));
+    return;
+  }
+  renderRuntime(main, { data: state.runtimeData, models: state.models, ratingOf, params,
+    navigate: (p) => {
+      setHash("runtime", null, p);
       render();
     } });
 }
@@ -242,33 +261,36 @@ function viewMatrix(main, _arg, params) {
   })();
   const isRecent = (id) => (state.firstSeen.get(id) || "") >= cutoff;
 
-  main.append(h("p", { class: "note" },
-    h("strong", {}, "列ごとに走らせ方が違います。"),
-    "比べてよいのは同じ列の中だけです。セルはそのモデル単体で走らせた行のうち最良の値で、押すと全行と出典が出ます。複数のモデルを組み合わせた行はマトリクスに入れず、「表」タブにだけ出しています。"));
-
   const present = CATEGORY_ORDER.filter((c) => state.tables.some((t) => t.category === c));
-  main.append(h("div", { class: "controls" },
-    h("div", { class: "cats", role: "group", "aria-label": "分野" },
-      h("button", { type: "button", "aria-pressed": cats.size === 0 ? "true" : "false", on: { click: () => update({ cat: "" }) } }, "すべて"),
-      present.map((c) => h("button", {
-        type: "button", "aria-pressed": cats.has(c) ? "true" : "false",
-        on: { click: () => { const s = new Set(cats); s.has(c) ? s.delete(c) : s.add(c); update({ cat: [...s].join(",") }); } },
-      }, CATEGORY_NAMES[c]))),
-    h("label", {}, "モデル", h("input", {
-      type: "search", value: q, placeholder: "名前・ベンダーで絞る",
-      on: { change: (e) => update({ q: e.target.value.trim() }) },
-    })),
-    h("label", {}, h("input", { type: "checkbox", checked: openOnly, on: { change: (e) => update({ open: e.target.checked ? "1" : "" }) } }), "オープンウェイトのみ"),
-    h("label", { title: `既定では古いモデル・日付不明のモデルも表示。オフにすると ${cutoff} 以降にボードへ初めて載ったモデルと、それが載っている表だけを出す` },
-      h("input", { type: "checkbox", checked: all, on: { change: (e) => update({ all: e.target.checked ? "1" : "0" }) } }), "古いモデル・表も出す"),
-    h("label", { title: "実測のない枡に、当てはめから計算した推定値(~付き・薄い字)を入れる" },
-      h("input", { type: "checkbox", checked: guess, on: { change: (e) => update({ guess: e.target.checked ? "" : "0" }) } }), "空きを推定で埋める"),
-    h("label", {}, "載っている表が", h("input", { type: "number", min: 1, value: min, on: { change: (e) => update({ min: e.target.value }) } }), "以上"),
-    h("label", {}, "並び", h("select", { on: { change: (e) => update({ sort: e.target.value }) } },
-      h("option", { value: "", selected: sort === "" }, "新しいモデル順(ボードに初めて載った日)"),
-      h("option", { value: "coverage", selected: sort === "coverage" }, "載っている表の数"),
-      state.tables.some((t) => t.id === sort) ? h("option", { value: sort, selected: true }, `列: ${state.byId.get(sort).name}`) : null)),
-  ));
+  const panel = h("section", { class: "panel matrix-panel" },
+    h("div", { class: "matrix-titlebar" },
+      h("div", {}, h("span", { class: "eyebrow" }, "導出された代表値"), h("h2", {}, "モデル × リーダーボード")),
+      h("p", {}, h("strong", {}, "列ごとに走らせ方が違います。"),
+        "比べてよいのは同じ列の中だけです。セルはそのモデル単体で走らせた行のうち最良の値で、押すと全行と出典が出ます。複数のモデルを組み合わせた行はマトリクスに入れず、「表」タブにだけ出しています。")),
+    h("div", { class: "panel-toolbar" },
+      h("div", { class: "field-tabs cats", role: "group", "aria-label": "分野" },
+        h("button", { type: "button", "aria-pressed": cats.size === 0 ? "true" : "false", on: { click: () => update({ cat: "" }) } }, "すべて"),
+        present.map((c) => h("button", {
+          type: "button", "aria-pressed": cats.has(c) ? "true" : "false",
+          on: { click: () => { const s = new Set(cats); s.has(c) ? s.delete(c) : s.add(c); update({ cat: [...s].join(",") }); } },
+        }, CATEGORY_NAMES[c]))),
+      h("div", { class: "legend", "aria-label": "凡例" },
+        h("span", {}, h("i", { class: "legend-dot measured" }), "実測"),
+        h("span", {}, h("b", { class: "claim-text" }, "†"), "自己申告"),
+        h("span", {}, h("b", {}, "~"), "推定"),
+        h("span", {}, h("b", { class: "muted" }, "·"), "値なし"))),
+    h("div", { class: "panel-toolbar controls" },
+      h("label", {}, h("input", { type: "checkbox", checked: openOnly, on: { change: (e) => update({ open: e.target.checked ? "1" : "" }) } }), "オープンウェイトのみ"),
+      h("label", { title: `既定では古いモデル・日付不明のモデルも表示。オフにすると ${cutoff} 以降にボードへ初めて載ったモデルと、それが載っている表だけを出す` },
+        h("input", { type: "checkbox", checked: all, on: { change: (e) => update({ all: e.target.checked ? "1" : "0" }) } }), "古いモデル・表も出す"),
+      h("label", { title: "実測のない枡に、当てはめから計算した推定値(~付き)を入れる" },
+        h("input", { type: "checkbox", checked: guess, on: { change: (e) => update({ guess: e.target.checked ? "" : "0" }) } }), "空きを推定で埋める"),
+      h("label", {}, "載っている表が", h("input", { type: "number", min: 1, value: min, on: { change: (e) => update({ min: e.target.value }) } }), "以上"),
+      h("label", {}, "並び", h("select", { on: { change: (e) => update({ sort: e.target.value }) } },
+        h("option", { value: "", selected: sort === "" }, "新しいモデル順(ボードに初めて載った日)"),
+        h("option", { value: "coverage", selected: sort === "coverage" }, "載っている表の数"),
+        state.tables.some((t) => t.id === sort) ? h("option", { value: sort, selected: true }, `列: ${state.byId.get(sort).name}`) : null))));
+  main.append(panel);
 
   const needle = q.toLowerCase();
   const candidates = state.modelIds
@@ -314,7 +336,7 @@ function viewMatrix(main, _arg, params) {
   }
 
   if (models.length === 0 || tables.length === 0) {
-    main.append(h("p", { class: "empty" }, "条件に合うモデルがありません。"));
+    panel.append(h("p", { class: "empty" }, "条件に合うモデルがありません。"));
     return;
   }
 
@@ -340,41 +362,48 @@ function viewMatrix(main, _arg, params) {
     if (last && last.cat === t.category) last.n++; else groups.push({ cat: t.category, n: 1 });
   }
 
+  const direction = (t) => (t.higher_is_better ? "高いほど良い" : "低いほど良い");
   const thead = h("thead", {},
     h("tr", { class: "cat" },
-      h("th", { class: "corner", rowspan: 2 },
-        h("div", {}, `${models.length} モデル × ${tables.length} 表`),
-        h("div", { class: "muted", style: "font-weight:400;font-size:11px" }, sortIdx >= 0 ? "列名を押すと並べ替え(もう一度で解除)" : "列名を押すとその列で並べ替え")),
+      h("th", { class: "corner model-col", rowspan: 2 },
+        h("div", { class: "th-main" }, "モデル ", h("span", {}, `${models.length} 件 × ${tables.length} 表`)),
+        h("div", { class: "th-sub" }, "戦闘力は総合の推定値(~)。", sortIdx >= 0 ? "列名をもう一度押すと並べ替えを解除" : "列名を押すとその列で並べ替え")),
       groups.map((g) => h("th", { colspan: g.n }, CATEGORY_NAMES[g.cat]))),
     h("tr", { class: "col" },
       tables.map((t) => h("th", { scope: "col", title: `${t.name} — ${t.board}(${t.metric})` },
-        h("div", {
-          class: "colhead" + (t.id === sort ? " sorted" : ""),
-          role: "button", tabindex: 0,
-          on: {
-            click: () => update({ sort: t.id === sort ? "" : t.id }),
-            keydown: (e) => { if (e.key === "Enter") update({ sort: t.id === sort ? "" : t.id }); },
-          },
-        }, t.name, " ", h("small", {}, t.board)), sourceStatus(t, true)))),
+        h("div", { class: "board-head" },
+          h("div", {
+            class: "colhead" + (t.id === sort ? " sorted" : ""),
+            role: "button", tabindex: 0,
+            on: {
+              click: () => update({ sort: t.id === sort ? "" : t.id }),
+              keydown: (e) => { if (e.key === "Enter") update({ sort: t.id === sort ? "" : t.id }); },
+            },
+          }, h("span", { class: "colname" }, t.name), " ", h("small", {}, t.board)),
+          h("span", { class: "board-meta" }, `${unitLabel(t.unit)}・${direction(t)}`),
+          sourceStatus(t, true) || h("span", { class: "fetch-state ok" }, `取得 ${t.retrieved}`))))),
   );
 
-  const tbody = h("tbody", {}, models.map((x) => h("tr", {},
+  const tbody = h("tbody", {}, models.map((x, n) => h("tr", {},
     h("th", { scope: "row", title: x.id },
-      (() => {
-        const r = ratingOf(x.id);
-        return r ? h("span", { class: "rating", title: `推定の戦闘力 ${r.rating.toFixed(1)} ± ${r.se.toFixed(1)}(実測 ${r.n} 表)` }, r.rating.toFixed(0)) : null;
-      })(),
-      modelName(x.id),
-      x.m?.open_weights ? h("span", { class: "chip ow", title: "オープンウェイト" }, "open") : null,
-      x.m?.vendor ? h("span", { class: "vendor" }, x.m.vendor) : null,
-      state.firstSeen.get(x.id) ? h("span", { class: "vendor mono", title: "ボードに初めて載った日" }, state.firstSeen.get(x.id)) : null),
+      h("div", { class: "model-cell" },
+        h("span", { class: "rank" }, n + 1),
+        h("div", { class: "model-info" },
+          h("strong", {}, modelName(x.id)),
+          h("span", {},
+            [x.m?.vendor, x.m?.open_weights === true ? "オープンウェイト" : null, state.firstSeen.get(x.id)].filter(Boolean).join(" · "))),
+        (() => {
+          const r = ratingOf(x.id);
+          return r ? h("div", { class: "power-score rating", title: `推定の戦闘力 ${r.rating.toFixed(1)} ± ${r.se.toFixed(1)}(実測 ${r.n} 表)` },
+            h("b", {}, "~" + r.rating.toFixed(1)), h("span", {}, "± " + r.se.toFixed(1)), h("small", {}, `実測 ${r.n}`)) : h("div", { class: "power-score none", title: "当てはめに入る実測がない" }, h("b", {}, "—"));
+        })())),
     x.cells.map((r, i) => {
       const t = tables[i];
       if (!r) {
         const cs = claimsFor(x.id, t.id);
         if (cs.length) {
           const c = cs[0];
-          return h("td", { class: "claim" },
+          return h("td", { class: "claim claimed" },
             h("button", {
               type: "button",
               title: `自己申告(ボードの数字ではない): ${c.doc.vendor} が「${c.doc.title}」で出した ${c.figure.benchmark_raw} の値`,
@@ -382,9 +411,9 @@ function viewMatrix(main, _arg, params) {
             }, "†" + fmtScore(c.figure.value, t.unit)));
         }
         const p = guess ? predict(t, x.id) : null;
-        if (!p) return h("td", { class: "none" }, "·");
+        if (!p) return h("td", { class: "none", title: "値なし: このボードにこのモデルの行はない" }, "·");
         const beyond = p.beyond ? (p.beyond === "above" ? "≳" : "≲") : "~";
-        return h("td", { class: "guess" },
+        return h("td", { class: "guess estimated" },
           h("button", {
             type: "button",
             title: p.beyond
@@ -393,8 +422,8 @@ function viewMatrix(main, _arg, params) {
             on: { click: () => openCell(x.id, t) },
           }, beyond + fmtScore(p.value, t.unit)));
       }
-      const pct = Math.round(8 + shade(t, r.score) * 52);
-      return h("td", { style: `background: color-mix(in srgb, var(--heat) ${pct}%, transparent)` },
+      const pct = Math.round(4 + shade(t, r.score) * 30);
+      return h("td", { class: "measured", style: `background: color-mix(in srgb, var(--heat) ${pct}%, transparent)` },
         h("button", {
           type: "button",
           title: `${savedSource(t) ? "最新未確認・保存データ: " : ""}${modelName(x.id)} / ${t.name}: ${fmtScore(r.score, t.unit)} ${unitLabel(t.unit)}(${r.system})`,
@@ -402,7 +431,10 @@ function viewMatrix(main, _arg, params) {
         }, fmtScore(r.score, t.unit)));
     }))));
 
-  main.append(h("div", { class: "scroller" }, h("table", { class: "matrix" }, thead, tbody)));
+  panel.append(h("div", { class: "scroller table-scroller" }, h("table", { class: "matrix matrix-table" }, thead, tbody)),
+    h("div", { class: "table-footer" },
+      h("span", {}, `表示 ${models.length} / ${state.modelIds.length} モデル · ${tables.length} / ${state.tables.length} リーダーボード`),
+      h("span", {}, "別のリーダーボード間でスコアを直接比較しないでください。")));
 }
 
 // ── drawer ─────────────────────────────────────────────────────────────────
@@ -426,10 +458,17 @@ function openCell(modelId, t) {
   const cs = rows.length ? [] : claimsFor(modelId, t.id);
   const p = rows.length || cs.length ? null : predict(t, modelId);
   const r = ratingOf(modelId, p?.scope);
+  const kind = rows.length ? "実測" : cs.length ? "自己申告" : p ? "推定" : "値なし";
   showDrawer(
-    [h("h3", {}, modelName(modelId), " × ", t.name),
-     h("p", {}, `${t.board} ・ ${t.metric}(${t.higher_is_better ? "高いほど良い" : "低いほど良い"})・ 取得 ${t.retrieved}`)],
-    [sourceStatus(t), h("p", { class: "note" }, t.harness_ja),
+    [h("span", { class: "eyebrow" }, "セル値の根拠 · ", kind),
+     h("h3", {}, modelName(modelId), " × ", t.name),
+     h("p", {}, `${t.board} ・ ${t.metric}(${t.higher_is_better ? "高いほど良い" : "低いほど良い"})`)],
+    [h("div", { class: "drawer-path" },
+       h("span", {}, "分野"), h("b", {}, CATEGORY_NAMES[t.category] || t.category), h("i", { "aria-hidden": "true" }, "›"),
+       h("span", {}, "ベンチマーク"), h("b", {}, t.family), h("i", { "aria-hidden": "true" }, "›"),
+       h("span", {}, "リーダーボード"), h("b", {}, t.name)),
+     sourceStatus(t), h("p", { class: "note" }, h("strong", {}, "走らせ方 "), t.harness_ja),
+     !rows.length && !cs.length && !p ? h("div", { class: "entry" }, h("p", { class: "muted" }, "このボードにこのモデルの行はなく、推定も出せません。空欄ではなく、値がないものとして扱います。")) : null,
      cs.map((c) => claimEntry(t, c)),
      p ? h("div", { class: "entry" },
        h("div", { class: "score guess-text" }, (p.beyond ? (p.beyond === "above" ? "≳" : "≲") : "~") + fmtScore(p.value, t.unit), " ",
@@ -442,7 +481,11 @@ function openCell(modelId, t) {
          r ? `、実測 ${r.n} 表` : "", `）を、この表の目盛りに戻した値です。`),
        h("p", {}, h("a", { href: "#/ability" }, "推定のしかた →"))) : null,
      rows.map((x) => entry(t, x)),
-     h("p", {}, h("a", { href: `#/table/${encodeURIComponent(t.id)}` }, "この表をすべて見る →"))]);
+     h("div", { class: "source-box" },
+       h("div", {}, h("span", {}, "出典"), h("b", {}, link(t.source, "リーダーボード"), " ", link(`${REPO}/blob/main/${t.snapshot}`, "取得データ"))),
+       h("div", {}, h("span", {}, "取得日"), h("b", { class: "mono" }, t.retrieved)),
+       h("div", {}, h("span", {}, "最新の行"), h("b", { class: "mono" }, t.newest_row_date || "行に日付なし"))),
+     h("a", { class: "button secondary drawer-button", href: `#/table/${encodeURIComponent(t.id)}` }, "この表をすべて見る →")]);
 }
 function entry(t, r) {
   const extras = Object.entries(r.score_extra || {});
@@ -465,12 +508,19 @@ function showDrawer(title, body) {
   document.getElementById("drawer-body").replaceChildren(...body.flat().filter(Boolean));
   const d = document.getElementById("drawer");
   d.hidden = false;
+  const o = document.getElementById("drawer-overlay");
+  if (o) o.hidden = false;
   document.getElementById("drawer-close").focus();
 }
-function closeDrawer() { document.getElementById("drawer").hidden = true; }
+function closeDrawer() {
+  document.getElementById("drawer").hidden = true;
+  const o = document.getElementById("drawer-overlay");
+  if (o) o.hidden = true;
+}
 
 // ── benchmarks ─────────────────────────────────────────────────────────────
 function viewBenchmarks(main) {
+  main.append(pageHeading("カタログ", "ベンチマーク", `${CATEGORY_ORDER.filter((c) => state.tables.some((t) => t.category === c)).length} 分野 · ${new Set(state.tables.map((t) => t.family)).size} ベンチマーク · ${state.tables.length} リーダーボード`));
   main.append(h("p", { class: "note" }, "1枚のカード = 1つのリーダーボードの表です。同じベンチでも、載っている場所が違えば走らせ方が違うので別のカードにしています。"));
   for (const c of CATEGORY_ORDER) {
     const ts = state.tables.filter((t) => t.category === c);
@@ -480,8 +530,28 @@ function viewBenchmarks(main) {
       h("div", { class: "cards" }, ts.map(card))));
   }
 }
+// Whether the fit uses a board, and what the fit learned about it. A board with
+// fewer than three measured models says nothing about standings, so it is left out.
+function fitOf(t) {
+  for (const scope of [t.category, "overall"]) {
+    const st = state.data.fit?.[scope]?.tables?.[t.id];
+    if (st) return st;
+  }
+  return null;
+}
+function fitBadge(t) {
+  return fitOf(t)
+    ? h("span", { class: "fit yes", title: "戦闘力の当てはめに使っている" }, "当てはめ採用")
+    : h("span", { class: "fit near", title: "実測が3モデルに満たない表は順位を語らないので、当てはめに使わない" }, "除外: 実測3モデル未満");
+}
+function pageHeading(eyebrow, title, sub) {
+  return h("div", { class: "page-heading" },
+    h("div", {}, h("span", { class: "eyebrow" }, eyebrow), h("h2", {}, title), sub ? h("p", {}, sub) : null));
+}
 function card(t) {
+  const st = fitOf(t);
   return h("article", { class: "card" },
+    h("div", { class: "card-kicker" }, h("span", { class: "entity-type" }, t.family), fitBadge(t)),
     h("h3", {}, h("a", { href: `#/table/${encodeURIComponent(t.id)}` }, t.name)),
     sourceStatus(t),
     h("div", { class: "meta" },
@@ -495,6 +565,11 @@ function card(t) {
       h("dt", {}, "走らせ方"), h("dd", {}, t.harness_ja),
       t.tasks_note ? [h("dt", {}, "タスク数"), h("dd", {}, t.tasks_note)] : null,
       t.notes_ja ? [h("dt", {}, "注意"), h("dd", {}, t.notes_ja)] : null),
+    st ? h("div", { class: "leaderboard-property", title: "当てはめで決まった、この表の性質" },
+      h("span", {}, "水準 ", h("b", {}, st.b.toFixed(2))),
+      h("span", {}, "広がり ", h("b", {}, st.s.toFixed(2))),
+      h("span", {}, "実測モデル ", h("b", {}, st.n)),
+      h("span", {}, "観測範囲 ", h("b", {}, `${fmtScore(st.lo, t.unit)}–${fmtScore(st.hi, t.unit)}`))) : null,
     h("div", { class: "links" },
       link(t.source, "リーダーボード"),
       link(t.paper, "論文"),
@@ -523,13 +598,13 @@ function viewTable(main, arg, params) {
         const ts = state.tables.filter((x) => x.category === c);
         return ts.length ? h("optgroup", { label: CATEGORY_NAMES[c] },
           ts.map((x) => h("option", { value: x.id, selected: x.id === t.id }, `${x.name}(${x.board})`))) : null;
-      }))),
-    h("label", {}, "絞り込み", h("input", { type: "search", value: params.get("q") || "", placeholder: "名前・エージェント・モデル", on: { change: (e) => update({ q: e.target.value.trim() }) } }))));
+      })))));
 
   main.append(h("div", { class: "table-head" },
     h("h2", {}, t.name),
     h("span", { class: "chip" }, t.board),
     h("span", { class: "chip" }, CATEGORY_NAMES[t.category]),
+    fitBadge(t),
     h("span", { class: "muted" }, `取得 ${t.retrieved}`),
     link(t.source, "リーダーボード"),
     link(`${REPO}/blob/main/${t.snapshot}`, "取得データ")));
@@ -603,6 +678,7 @@ function viewAbility(main, _arg, params) {
     render();
   };
 
+  main.append(pageHeading("推定指標", "戦闘力", "実測から当てはめた推定です。リーダーボードが公表した数字ではありません。"));
   main.append(h("p", { class: "note" },
     h("strong", {}, "ここだけは実測ではなく推定です。"),
     "表ごとに標準化した実測値を z とし、", h("code", {}, "z(表, モデル) ≈ b(表) + s(表) × a(モデル)"),
@@ -619,7 +695,6 @@ function viewAbility(main, _arg, params) {
         type: "button", "aria-pressed": s === scope ? "true" : "false",
         on: { click: () => update({ scope: s === "overall" ? "" : s }) },
       }, s === "overall" ? "総合" : CATEGORY_NAMES[s]))),
-    h("label", {}, "モデル", h("input", { type: "search", value: params.get("q") || "", placeholder: "名前・ベンダー", on: { change: (e) => update({ q: e.target.value.trim() }) } })),
     h("label", {}, h("input", { type: "checkbox", checked: openOnly, on: { change: (e) => update({ open: e.target.checked ? "1" : "" }) } }), "オープンウェイトのみ"),
     h("label", { title: "その軸で実測が何表あるか" }, "実測が", h("input", { type: "number", min: 1, value: minN, on: { change: (e) => update({ n: e.target.value }) } }), "表以上")));
 
@@ -636,13 +711,14 @@ function viewAbility(main, _arg, params) {
   const cats = CATEGORY_ORDER.filter((c) => state.data.fit?.[c]);
   // The bar spans what is on screen, so differences at the top stay visible
   // instead of every frontier model filling the width.
-  const lo = Math.min(...rows.map((x) => x.r.rating));
-  const hi = Math.max(...rows.map((x) => x.r.rating));
-  const bar = (r) => {
-    const pct = hi > lo ? ((r.rating - lo) / (hi - lo)) * 100 : 50;
-    return h("span", { class: "bar", title: `${lo.toFixed(1)} 〜 ${hi.toFixed(1)} の中での位置` },
-      h("span", { class: "bar-fill", style: `width:${Math.max(2, pct).toFixed(1)}%` }));
-  };
+  // The band is the rating ± its error on the same span, so a model measured
+  // on few boards visibly carries a wider band.
+  const lo = Math.min(...rows.map((x) => x.r.rating - x.r.se));
+  const hi = Math.max(...rows.map((x) => x.r.rating + x.r.se));
+  const at = (v) => (hi > lo ? Math.min(100, Math.max(0, ((v - lo) / (hi - lo)) * 100)) : 50);
+  const bar = (r) => h("span", { class: "bar bar-track", title: `${r.rating.toFixed(1)} ± ${r.se.toFixed(1)}(表示範囲 ${lo.toFixed(1)} 〜 ${hi.toFixed(1)})` },
+    h("span", { class: "bar-fill", style: `width:${Math.max(1, at(r.rating)).toFixed(1)}%` }),
+    h("span", { class: "bar-band", style: `left:${at(r.rating - r.se).toFixed(1)}%;width:${Math.max(0.6, at(r.rating + r.se) - at(r.rating - r.se)).toFixed(1)}%` }));
   main.append(h("div", { class: "plain-wrap" }, h("table", { class: "plain ability" },
     h("thead", {}, h("tr", {},
       h("th", { class: "num" }, "順位"),
@@ -656,13 +732,14 @@ function viewAbility(main, _arg, params) {
       h("td", {}, modelName(x.id),
         x.m?.open_weights ? h("span", { class: "chip ow" }, "open") : null,
         x.m?.vendor ? h("span", { class: "vendor" }, x.m.vendor) : null,
+        state.runtimeModels.has(x.id) ? h("a", { href: "#/runtime?model=" + encodeURIComponent(x.id), class: "cost-model-link runtime-model-link", title: "配信元ごとの掲載単価" }, `提供 ${state.runtimeModels.get(x.id).length} 件 →`) : null,
         h("a", { href: "#/cost?model=" + encodeURIComponent(x.id), class: "cost-model-link" }, "実行費用 →")),
-      h("td", { class: "num" }, x.r.rating.toFixed(1), h("span", { class: "muted" }, " ±", x.r.se.toFixed(1))),
+      h("td", { class: "num est" }, "~" + x.r.rating.toFixed(1), h("span", { class: "muted" }, " ±", x.r.se.toFixed(1))),
       h("td", {}, bar(x.r)),
       h("td", { class: "num" }, x.r.n),
       cats.map((c) => {
         const r = ratingOf(x.id, c);
-        return h("td", { class: "num" + (r ? "" : " muted"), title: r ? `実測 ${r.n} 表 ・ ±${r.se.toFixed(1)}` : "その分野の実測なし" }, r ? r.rating.toFixed(0) : "·");
+        return h("td", { class: "num" + (r ? "" : " muted"), title: r ? `推定 ・ 実測 ${r.n} 表 ・ ±${r.se.toFixed(1)}` : "その分野の実測なし" }, r ? "~" + r.rating.toFixed(0) : "·");
       })))))));
   main.append(h("p", { class: "muted", style: "font-size:12px" }, `${rows.length} モデル。この数字はボードが公表したものではなく、実測から当てはめた推定です。`));
 }
@@ -670,6 +747,7 @@ function viewAbility(main, _arg, params) {
 // ── 自己申告 ───────────────────────────────────────────────────────────────
 function viewClaims(main) {
   const docs = [...(state.data.claims || [])].sort((a, b) => (b.published || "").localeCompare(a.published || ""));
+  main.append(pageHeading("観測 · 開発元の公表", "自己申告", "リーダーボードの数字とは別の層です。† を付けて区別します。"));
   main.append(h("p", { class: "note" },
     h("strong", {}, "ここにある数字は、出した側が自分で走らせて公表したものです。"),
     "どのリーダーボードにも載っていないモデルを、それでも並べて見るための層で、ボードの数字とは書式(†)も置き場所も分けています。戦闘力の当てはめには入れません。数字は元の文書から機械的に取り出し、取り出した部分を保存しています。"));
@@ -698,6 +776,7 @@ function viewClaims(main) {
 // ── gaps ───────────────────────────────────────────────────────────────────
 function viewGaps(main) {
   const gaps = [...state.data.gaps].sort((a, b) => a.name.localeCompare(b.name));
+  main.append(pageHeading("取得状態", "取れなかった表", `${gaps.length} 件。空欄にせず、取れなかったこととして残しています。`));
   main.append(h("p", { class: "note" }, "機械的に取得できなかった表と、過去の取得失敗の記録です。各記録の日付時点の状態であり、保存済みの表がある場合は、その表の最新の確認状態も参照してください。数字を推測で埋めることはしません。"));
   if (!gaps.length) { main.append(h("p", { class: "empty" }, "ありません。")); return; }
   main.append(h("div", { class: "gaps" }, gaps.map((g) => h("article", { class: "gap" },
@@ -709,6 +788,7 @@ function viewGaps(main) {
 // ── about ──────────────────────────────────────────────────────────────────
 function viewAbout(main) {
   const d = state.data;
+  main.append(pageHeading("算出方法とデータ方針", "このデータについて"));
   main.append(h("div", { class: "prose" },
     h("h2", {}, "何をまとめたか"),
     h("p", {}, "エージェント(道具を使い、複数の手順で課題を解くAI)を測るベンチマークについて、各ベンチが自分で公開しているリーダーボードの表を集め、モデルごとに並べ直したものです。単発のコード生成(HumanEval など)や知識問題は入れていません。"),
@@ -745,10 +825,38 @@ function viewAbout(main) {
 function stats() {
   const d = state.data;
   const rows = d.tables.reduce((n, t) => n + t.rows.length, 0);
-  const item = (label, value) => h("div", {}, h("dt", {}, label), h("dd", {}, value));
+  const saved = d.tables.filter(savedSource).length;
+  const item = (label, value, sub, warn) => h("div", {}, h("span", {}, label), h("strong", {}, value), h("small", { class: warn ? "status-warn" : null }, sub));
   document.getElementById("stats").replaceChildren(
-    item("表", d.tables.length), item("行", rows.toLocaleString()), item("モデル", state.modelIds.length),
-    item("自己申告", (d.claims || []).reduce((n, c) => n + c.figures.length, 0)), item("取得日", d.generated || "—"));
+    item("収録モデル", state.modelIds.length.toLocaleString(), `開発元 ${new Set(state.modelIds.map((id) => state.models.get(id)?.vendor).filter(Boolean)).size} 組織`),
+    item("リーダーボード", d.tables.length, `${new Set(d.tables.map((t) => t.family)).size} ベンチマーク · 取得できず ${d.gaps.length} 件`),
+    item("掲載行(実測)", rows.toLocaleString(), `自己申告 ${(d.claims || []).reduce((n, c) => n + c.figures.length, 0)} 件は別の層`),
+    item("最終取得", d.generated || "—", saved ? `最新未確認 ${saved} 表` : "すべて確認済み", saved > 0));
+  const g = document.getElementById("generated");
+  if (g) g.textContent = `取得日 ${d.generated || "—"}`;
+}
+
+// The top bar search narrows whichever list is on screen; elsewhere it opens the matrix.
+function wireChrome() {
+  const search = document.getElementById("global-search");
+  if (search) search.addEventListener("change", () => {
+    const { view, arg, params } = parseHash();
+    const target = ["matrix", "ability", "table"].includes(view) ? view : "matrix";
+    const p = target === view ? new URLSearchParams(params) : new URLSearchParams();
+    const q = search.value.trim();
+    if (q) p.set("q", q); else p.delete("q");
+    setHash(target, target === view ? arg : null, p);
+    render();
+  });
+  const toggle = document.getElementById("theme-toggle");
+  if (toggle) toggle.addEventListener("click", () => {
+    const root = document.documentElement;
+    const dark = root.dataset.theme ? root.dataset.theme === "dark" : window.matchMedia?.("(prefers-color-scheme: dark)").matches;
+    root.dataset.theme = dark ? "light" : "dark";
+    try { localStorage.setItem("abm-theme", root.dataset.theme); } catch (e) { /* private mode: the choice lasts for this page only */ }
+  });
+  const overlay = document.getElementById("drawer-overlay");
+  if (overlay) overlay.addEventListener("click", closeDrawer);
 }
 
 async function boot() {
@@ -765,7 +873,14 @@ async function boot() {
     if (!res.ok) throw new Error(String(res.status));
     state.costData = await res.json();
   } catch (e) { state.costError = e.message; }
+  try {
+    const res = await fetch("runtime-data.json", { cache: "no-cache" });
+    if (!res.ok) throw new Error(String(res.status));
+    state.runtimeData = await res.json();
+    state.runtimeModels = byModel(state.runtimeData);
+  } catch (e) { state.runtimeError = e.message; }
   stats();
+  wireChrome();
   document.getElementById("drawer-close").addEventListener("click", closeDrawer);
   document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeDrawer(); });
   window.addEventListener("hashchange", render);
