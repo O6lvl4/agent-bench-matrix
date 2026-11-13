@@ -221,7 +221,7 @@ function viewMatrix(main, _arg, params) {
   const openOnly = params.get("open") === "1";
   const min = Math.max(1, parseInt(params.get("min") || "1", 10) || 1);
   const sort = params.get("sort") || "";
-  const all = params.get("all") === "1";
+  const all = params.get("all") !== "0";
   const guess = params.get("guess") !== "0";
 
   const update = (patch) => {
@@ -233,7 +233,8 @@ function viewMatrix(main, _arg, params) {
 
   // "Recent" is read off the data, not asserted: a model is recent when a board
   // first dated it within a year of the newest retrieval, and a table is shown
-  // when it holds at least one recent model. Undated models only appear with "all".
+  // when it holds at least one recent model. All models, including undated ones,
+  // appear by default; all=0 explicitly opts into the recent-only filter.
   const cutoff = (() => {
     const d = new Date((state.data.generated || "1970-01-01") + "T00:00:00Z");
     d.setUTCDate(d.getUTCDate() - 365);
@@ -258,8 +259,8 @@ function viewMatrix(main, _arg, params) {
       on: { change: (e) => update({ q: e.target.value.trim() }) },
     })),
     h("label", {}, h("input", { type: "checkbox", checked: openOnly, on: { change: (e) => update({ open: e.target.checked ? "1" : "" }) } }), "オープンウェイトのみ"),
-    h("label", { title: `既定では ${cutoff} 以降にボードへ初めて載ったモデルと、それが載っている表だけを出す` },
-      h("input", { type: "checkbox", checked: all, on: { change: (e) => update({ all: e.target.checked ? "1" : "" }) } }), "古いモデル・表も出す"),
+    h("label", { title: `既定では古いモデル・日付不明のモデルも表示。オフにすると ${cutoff} 以降にボードへ初めて載ったモデルと、それが載っている表だけを出す` },
+      h("input", { type: "checkbox", checked: all, on: { change: (e) => update({ all: e.target.checked ? "1" : "0" }) } }), "古いモデル・表も出す"),
     h("label", { title: "実測のない枡に、当てはめから計算した推定値(~付き・薄い字)を入れる" },
       h("input", { type: "checkbox", checked: guess, on: { change: (e) => update({ guess: e.target.checked ? "" : "0" }) } }), "空きを推定で埋める"),
     h("label", {}, "載っている表が", h("input", { type: "number", min: 1, value: min, on: { change: (e) => update({ min: e.target.value }) } }), "以上"),
