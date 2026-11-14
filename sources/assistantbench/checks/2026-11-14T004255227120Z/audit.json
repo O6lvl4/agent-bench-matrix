@@ -1,0 +1,43 @@
+{
+  "id": "assistantbench",
+  "checked": "2026-11-14",
+  "checked_at": "2026-11-14T00:42:55.227120+00:00",
+  "status": "unavailable",
+  "refresh": {
+    "status": "unavailable",
+    "checked": "2026-11-14",
+    "last_successful_check": "2026-10-09",
+    "runtime_stage": "RUNTIME_ERROR",
+    "reason_ja": "公式Spaceが RUNTIME_ERROR のため、保存データを表示しています。",
+    "audit": "sources/assistantbench/checks/2026-11-14T004255227120Z/audit.json"
+  },
+  "old_rows": 184,
+  "rows": 184,
+  "previous_data_retrieved": "2026-10-05",
+  "data_retrieved_after": "2026-10-05",
+  "source_snapshot": "sources/assistantbench/board_test.json",
+  "sources": [
+    {
+      "url": "https://huggingface.co/api/spaces/AssistantBench/leaderboard",
+      "method": "GET",
+      "status": 200,
+      "final_url": "https://huggingface.co/api/spaces/AssistantBench/leaderboard",
+      "bytes": 3149,
+      "sha256": "d3186eb490a9b790472d7423c40d998930df977013cd73676d59d4e0d0f52d18",
+      "snapshot": "sources/assistantbench/checks/2026-11-14T004255227120Z/assistantbench-space.json"
+    },
+    {
+      "url": "https://assistantbench-leaderboard.hf.space/config",
+      "skipped": true,
+      "reason": "公式Spaceが RUNTIME_ERROR のため、保存データを表示しています。"
+    }
+  ],
+  "previous_success_evidence": null,
+  "scope": {
+    "split": "test",
+    "tasks": 181,
+    "metric": "Accuracy",
+    "unit": "%",
+    "reviewed_space_revision": "6309f9b4d23c6ecdffb3964188574d092093b66e"
+  }
+}

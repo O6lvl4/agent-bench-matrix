@@ -1,0 +1,15 @@
+{
+  "id": "webcomputer-refresh-2026-11-14",
+  "name": "Web / computer-use source availability and scope review",
+  "tried": [
+    "https://assistantbench-leaderboard.hf.space/config",
+    "https://arena.xlang.ai/",
+    "https://arena.xlang.ai/leaderboard",
+    "https://huggingface.co/api/datasets/ST-WebAgentBench/st-webagentbench-data",
+    "https://st-webagentbench-st-webagentbench-leaderboard.hf.space/config",
+    "https://www.hud.ai/leaderboards",
+    "https://osworld-v2.xlang.ai/static/data/leaderboard/official-results.json"
+  ],
+  "reason_ja": "既存45表のうち43表は現行の全対象レコードを照合して不変、AndroidWorldは更新。AssistantBench公式SpaceはRUNTIME_ERRORで保存値を維持。追加候補探索ではarena.xlang.aiの2URLがタイムアウト、ST-WebAgentBenchデータAPIが401、configが503、HUD旧leaderboards URLが404。OSWorld MiniMax M3.1 Flashはofficial=falseのe2e行であり、既存のv2公式実行表とは条件が異なるため候補として保存し未採用。詳細は sources/webcomputer-audit-2026-11-14/audit.json と osworld-candidate.json。",
+  "retrieved": "2026-11-14"
+}
