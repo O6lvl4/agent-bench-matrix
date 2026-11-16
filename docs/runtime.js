@@ -103,7 +103,7 @@ export function renderRuntime(main, { data, models, ratingOf, params, navigate }
         const s = sources.get(o.source_id);
         return h("tr", {},
           h("td", {}, h("strong", {}, o.provider), h("div", { class: "muted mono runtime-id" }, o.source_model)),
-          h("td", {}, h("span", { class: "pill" + (s.kind === "official" ? "" : " alternate"), title: s.note_ja }, s.kind === "official" ? "公式の料金表" : `${s.name} 経由`)),
+          h("td", {}, h("span", { class: "tag" + (s.kind === "official" ? "" : " alternate"), title: s.note_ja }, s.kind === "official" ? "公式の料金表" : `${s.name} 経由`)),
           h("td", { class: "num" }, usd(o.input_per_mtok), o.tiered ? h("span", { class: "muted", title: "入力長などで単価が変わる。基本区分の単価" }, " *") : null),
           h("td", { class: "num" + (o.cached_input_per_mtok === null ? " muted" : "") }, usd(o.cached_input_per_mtok)),
           h("td", { class: "num" + (o.output_per_mtok === null ? " muted" : "") }, usd(o.output_per_mtok)),
@@ -152,7 +152,7 @@ export function renderRuntime(main, { data, models, ratingOf, params, navigate }
     h("span", { class: "eyebrow" }, "出典"),
     h("h3", {}, "料金の出どころ"),
     h("dl", {}, data.sources.map((s) => [
-      h("dt", {}, s.name, " ", h("span", { class: "pill" + (s.kind === "official" ? "" : " alternate") }, s.kind === "official" ? "公式" : "中継事業者")),
+      h("dt", {}, s.name, " ", h("span", { class: "tag" + (s.kind === "official" ? "" : " alternate") }, s.kind === "official" ? "公式" : "中継事業者")),
       h("dd", {}, s.note_ja, " ", h("span", { class: "mono muted" }, `取得 ${s.retrieved_at}`), " ", link(s.url, "料金ページ"), " ", link(`${REPO}/blob/main/${s.snapshot}`, "取得データ"),
         data.unmatched?.[s.id]?.unmatched ? h("div", { class: "muted" }, `${data.unmatched[s.id].rows} 行のうち ${data.unmatched[s.id].unmatched} 行は、登録簿のモデルと名前が一致しなかったので載せていません。`) : null)])),
     h("ul", { class: "muted" }, (data.limitations_ja || []).map((t) => h("li", {}, t)))));

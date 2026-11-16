@@ -68,6 +68,8 @@ for (const status of ['unavailable', 'review_required', 'current', null]) {
       assert.equal(headers[index].textContent.includes(warning), saved);
       assert.equal(Boolean(headers[index].querySelector('.source-status-compact')), Boolean(status));
       headers.filter((_, i) => i !== index).forEach(h => assert(!h.textContent.includes(warning)));
+      // Rows are drawn in batches; draw them all so the search below sees every model.
+      for (let more; (more = view().querySelector('.matrix-more:not([hidden])'));) more.click();
       const button = [...view().querySelectorAll('tbody tr')].map(row => row.querySelectorAll('td')[index]?.querySelector('button')).find(Boolean);
       const score = button.textContent;
       button.click();

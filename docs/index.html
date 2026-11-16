@@ -6,27 +6,35 @@
 <title>Agent Bench Matrix</title>
 <meta name="description" content="エージェント向けベンチマークの公開リーダーボードを、モデル・エージェントごとに一枚の表にまとめたもの。数字はすべて各ボードの公開データから取得し、出典付き。">
 <script>
-// Applied before first paint so a saved theme never flashes the other one.
-try { var t = localStorage.getItem("abm-theme"); if (t === "light" || t === "dark") document.documentElement.dataset.theme = t; } catch (e) {}
+// Applied before first paint so the chosen theme never flashes the other one.
+(function () {
+  var t = null;
+  try { t = localStorage.getItem("abm-theme"); } catch (e) {}
+  if (t !== "light" && t !== "dark") t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  document.documentElement.dataset.theme = t;
+})();
 </script>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="top">
-  <div class="topbar">
-    <a class="brand" href="#/matrix"><span class="brand-mark" aria-hidden="true">AB</span><h1>Agent Bench Matrix</h1></a>
-    <p class="topbar-meta"><span>公開データ版</span><span class="dot" aria-hidden="true"></span><span id="generated">取得日 —</span></p>
-    <label class="global-search">
-      <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-      <input type="search" id="global-search" placeholder="モデル・開発元で絞り込む" aria-label="モデル・開発元で絞り込む">
-    </label>
-    <a class="topbar-link" href="#/about">算出方法とデータ方針</a>
-    <button type="button" class="icon-button" id="theme-toggle" aria-label="テーマを切り替える">
-      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>
-    </button>
-  </div>
-  <nav class="tabs" id="tabs">
-    <a href="#/matrix" data-view="matrix">マトリクス</a>
+<div class="app-shell">
+<header class="topbar">
+  <a class="brand" href="#/matrix"><span class="brand-mark" aria-hidden="true">AB</span><span>Agent Bench Matrix</span></a>
+  <div class="topbar-meta"><span>公開データ版</span><span class="dot" aria-hidden="true"></span><span id="generated">最終取得 —</span></div>
+  <label class="global-search">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+    <input id="global-search" placeholder="モデル、組織を検索" aria-label="モデル、組織を検索">
+    <kbd>⌘ K</kbd>
+  </label>
+  <a class="topbar-link" href="#/about">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
+    算出方法とデータ方針
+  </a>
+  <button type="button" class="icon-button" id="theme-toggle" aria-label="テーマを切り替える"></button>
+</header>
+<main>
+  <nav class="tabs" id="tabs" hidden>
+    <a href="#/matrix" data-view="matrix">← データ探索</a>
     <a href="#/ability" data-view="ability">戦闘力(推定)</a>
     <a href="#/runtime" data-view="runtime">提供・料金</a>
     <a href="#/cost" data-view="cost">実行費用</a>
@@ -36,26 +44,25 @@ try { var t = localStorage.getItem("abm-theme"); if (t === "light" || t === "dar
     <a href="#/gaps" data-view="gaps">取れなかった表</a>
     <a href="#/about" data-view="about">このデータについて</a>
   </nav>
-</header>
-<div class="wrap">
-  <section class="summary-strip" id="stats" aria-label="データ概要" hidden></section>
-</div>
-<main class="wrap" id="view" aria-live="polite">
-  <p class="loading">読み込み中…</p>
-</main>
-<div class="drawer-overlay" id="drawer-overlay" hidden></div>
-<aside class="drawer" id="drawer" hidden>
-  <div class="drawer-head">
-    <div id="drawer-title"></div>
-    <button type="button" class="icon-button close" id="drawer-close" aria-label="閉じる">
-      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
-    </button>
+  <div id="view" aria-live="polite">
+    <p class="loading">読み込み中…</p>
   </div>
-  <div class="drawer-body" id="drawer-body"></div>
-</aside>
-<footer class="wrap foot">
+</main>
+<div class="detail-overlay" id="drawer-overlay" hidden>
+  <aside class="detail-drawer" id="drawer" hidden>
+    <div class="drawer-head">
+      <div id="drawer-title"></div>
+      <button type="button" class="icon-button" id="drawer-close" aria-label="詳細を閉じる">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+    <div id="drawer-body"></div>
+  </aside>
+</div>
+<footer class="foot">
   <p>データの出所は各リーダーボードです。誤りや新しいボードは <a href="https://github.com/O6lvl4/agent-bench-matrix/issues">Issue</a> へ。</p>
 </footer>
+</div>
 <script type="module" src="app.js"></script>
 </body>
 </html>
