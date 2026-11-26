@@ -354,12 +354,22 @@ fn fit_value(f: fit.Fit, models: List[String]) -> Value = {
 
 // The overall axis, plus one per category: a model can be strong at terminal
 // work and weak at GUI work, and a single number hides that.
+// Terminal-Bench 4.1 regrades saved 4.0 trials. Keep both measured tables
+// in the bundle, but do not count the same evidence twice in any fit axis.
+fn fit_tables(tables: List[Value]) -> List[Value] = {
+  let ids = list.filter_map(tables, (t) => text_of(t, "id"))
+  if list.contains(ids, "terminal-bench-4-1") then
+    list.filter(tables, (t) => (text_of(t, "id") ?? "") != "terminal-bench-4-0")
+  else tables
+}
+
 fn fitted(tables: List[Value]) -> Value = {
-  let cells = cells_of(tables)
+  let eligible = fit_tables(tables)
+  let cells = cells_of(eligible)
   let all_models = distinct_strings(list.map(cells, (c) => c.m))
   var out: List[(String, Value)] = [("overall", fit_value(fit.fit_cells(cells), all_models))]
   for c in CATEGORIES {
-    let ids = list.filter_map(tables, (t) => if (text_of(t, "category") ?? "") == c then text_of(t, "id") else none)
+    let ids = list.filter_map(eligible, (t) => if (text_of(t, "category") ?? "") == c then text_of(t, "id") else none)
     let sub = list.filter(cells, (cell) => list.contains(ids, cell.t))
     if not list.is_empty(sub) then list.push(out, (c, fit_value(fit.fit_cells(sub), distinct_strings(list.map(sub, (x) => x.m)))))
   }
@@ -508,4 +518,13 @@ test "current requires a successful full check on the checked date" {
 
 test "refresh rejects missing fields and unknown statuses" {
   assert(list.len(check_refresh(value.object([]), "2026-10-05", "test")) > 0)
+}
+
+
+test "Terminal-Bench regrades are not counted twice" {
+  let old = value.object([("id", value.string("terminal-bench-4-0"))])
+  let revised = value.object([("id", value.string("terminal-bench-4-1"))])
+  let other = value.object([("id", value.string("terminal-bench-3-0"))])
+  assert_eq(list.filter_map(fit_tables([old, other]), (t) => text_of(t, "id")), ["terminal-bench-4-0", "terminal-bench-3-0"])
+  assert_eq(list.filter_map(fit_tables([old, other, revised]), (t) => text_of(t, "id")), ["terminal-bench-3-0", "terminal-bench-4-1"])
 }
